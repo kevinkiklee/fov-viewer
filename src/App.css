@@ -434,9 +434,35 @@
     min-width: 0;
     border-right: none;
     border-top: 1px solid var(--border);
+    order: 2;
+  }
+
+  .canvas-area {
+    order: 1;
   }
 
   .canvas-main {
-    padding: 12px;
+    padding: 8px 12px;
+  }
+
+  .canvas-bottom {
+    padding: 8px 12px;
+  }
+
+  .sidebar__header {
+    padding-bottom: 8px;
+  }
+
+  .action-bar {
+    flex-direction: row;
+  }
+
+  .action-bar__btn {
+    flex: 1;
+  }
+
+  .scene-strip {
+    justify-content: flex-start;
+    padding-bottom: 4px;
   }
 }
