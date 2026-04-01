@@ -328,6 +328,70 @@
   opacity: 0.9;
 }
 
+.fov-canvas {
+  display: block;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.shortcut-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.shortcut-overlay__card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  min-width: 320px;
+  max-width: 400px;
+}
+
+.shortcut-overlay__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.shortcut-overlay__header h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.shortcut-overlay__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shortcut-overlay__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.shortcut-overlay__key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  padding: 4px 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 /* Mobile layout */
 @media (max-width: 1023px) {
   .app {
