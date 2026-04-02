@@ -2,39 +2,24 @@
 
 A browser-based tool that helps photographers visualize and compare field of view across different focal lengths and sensor sizes. Built for learning — understand how focal length and crop factor affect framing.
 
+**[Live Demo](https://kevinkiklee.github.io/fov-viewer/)**
+
 ![FOV Viewer Screenshot](docs/screenshot.png)
 
 ## Features
 
-### Compare Up to 3 Lenses
-Start with one lens and add up to two more. Each lens gets its own color-coded overlay rectangle drawn on the image, showing exactly what that focal length would capture. Remove lenses you don't need with the X button.
-
-### Focal Length Control
-Continuous logarithmic slider from 14mm to 800mm with snap-to-preset behavior. Quick-select buttons for common focal lengths: 14mm, 20mm, 24mm, 35mm, 50mm, 85mm, 135mm, 200mm, 400mm, 600mm, 800mm.
-
-### Sensor / Crop Factor Presets
-Choose from 6 sensor sizes per lens — Medium Format (0.79x), Full Frame (1.0x), APS-C Nikon/Sony (1.5x), APS-C Canon (1.6x), Micro Four Thirds (2.0x), and 1" Sensor (2.7x). Equivalent focal length is displayed automatically when using a crop sensor.
-
-### Draggable Overlays
-Click and drag any FOV rectangle to reposition it on the image. Works on both desktop (mouse) and mobile (touch). Rectangles are constrained to stay within the photo boundaries. Hit "Center" to reset all positions.
-
-### Landscape / Portrait Orientation
-Toggle between landscape and portrait orientation to see how FOV changes when you rotate the camera.
-
-### 5 Sample Scenes
-Curated photos for different shooting scenarios — landscape, portrait, bird/wildlife, city street, and milky way/night sky. Each scene demonstrates different reasons you might choose one focal length over another.
-
-### Shareable Links
-Every setting is encoded in the URL query parameters. Change any control and the URL updates in real time. Copy the link to share your exact comparison with someone else.
-
-### Copy to Clipboard
-Export the current canvas view (image + overlay rectangles) as a PNG to your clipboard with one click. Falls back to file download if clipboard API isn't available.
-
-### Dark / Light Theme
-Dark theme by default (easier on the eyes for photo work). Toggle with the sun/moon button. Preference is saved to localStorage.
-
-### Responsive Design
-Full sidebar layout on desktop, stacked layout on mobile with full-width image canvas. Touch-draggable overlays on mobile.
+| Feature | Description |
+|---------|-------------|
+| **Up to 3 lenses** | Add color-coded overlay rectangles showing what each focal length captures. Remove any lens with the X button. |
+| **Focal length control** | Logarithmic slider from 14–800mm with snap-to-preset. Quick-select buttons for 11 common focal lengths. |
+| **Sensor presets** | 6 sensor sizes per lens — Medium Format (0.79x), Full Frame (1.0x), APS-C Nikon/Sony (1.5x), APS-C Canon (1.6x), Micro Four Thirds (2.0x), 1" Sensor (2.7x). Shows equivalent focal length automatically. |
+| **Draggable overlays** | Click and drag FOV rectangles to reposition. Works with mouse and touch. Hit "Center" to reset. |
+| **Orientation toggle** | Switch between landscape and portrait to see how FOV changes when you rotate the camera. |
+| **5 sample scenes** | Landscape, portrait, bird/wildlife, city street, and milky way — each suited to different focal lengths. |
+| **Shareable links** | All settings encoded in URL query params. Change a control and the URL updates in real time. |
+| **Copy to clipboard** | Export the canvas (image + overlays) as PNG. Falls back to file download if clipboard API is unavailable. |
+| **Dark / light theme** | Dark default. Toggle with sun/moon button. Preference saved to localStorage. |
+| **Responsive** | Sidebar on desktop, stacked on mobile. Touch-draggable overlays. |
 
 ## Tech Stack
 

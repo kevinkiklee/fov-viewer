@@ -23,6 +23,7 @@ interface Rect {
   color: string
   label: string
   index: number
+  focalLength: number
   fov: { horizontal: number; vertical: number }
 }
 
@@ -38,7 +39,6 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasPro
     return calcFOV(lens.focalLength, sensor.cropFactor)
   })
 
-  const fovKey = fovs.map((f) => `${f.horizontal},${f.vertical}`).join('|')
 
   const computeRects = useCallback((canvas: HTMLCanvasElement): Rect[] => {
     const w = canvas.width
@@ -65,10 +65,11 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasPro
         color: LENS_COLORS[i],
         label: LENS_LABELS[i],
         index: i,
+        focalLength: lenses[i].focalLength,
         fov,
       }
     })
-  }, [fovKey, offsets, orientation])
+  }, [fovs, lenses, offsets, orientation])
 
   const draw = useCallback(() => {
     const canvas = canvasRef.current
@@ -99,7 +100,7 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasPro
     ctx.font = `600 ${fontSize}px -apple-system, BlinkMacSystemFont, sans-serif`
 
     for (const r of rects) {
-      const text = `${r.label} — ${r.fov.horizontal.toFixed(1)}° × ${r.fov.vertical.toFixed(1)}°`
+      const text = `${r.label} — ${r.focalLength}mm`
       ctx.fillStyle = r.color
       // Label above top-left of rect
       const labelY = r.y - 6 * dpr
@@ -239,8 +240,7 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasPro
     const newDx = Math.max(-maxDx, Math.min(maxDx, rawDx))
     const newDy = Math.max(-maxDy, Math.min(maxDy, rawDy))
     setOffsets((prev) => ({ ...prev, [drag.index]: { dx: newDx, dy: newDy } }))
-  // eslint-disable-next-line react-hooks/exhaustive-deps -- fovKey is a stable serialization of fovs
-  }, [canvasRef, getCanvasCoords, fovKey, orientation])
+  }, [canvasRef, getCanvasCoords, fovs, orientation])
 
   const handleMouseMove = useCallback((e: React.MouseEvent) => {
     const canvas = canvasRef.current
