@@ -7,7 +7,6 @@ export const SENSORS: SensorPreset[] = [
   { id: 'apsc_c', name: 'APS-C (Canon)', cropFactor: 1.6 },
   { id: 'm43', name: 'Micro Four Thirds', cropFactor: 2.0 },
   { id: '1in', name: '1" Sensor', cropFactor: 2.7 },
-  { id: 'phone', name: 'Smartphone', cropFactor: 6.0 },
 ]
 
 export function getSensor(id: string): SensorPreset {

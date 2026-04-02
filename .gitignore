@@ -1,3 +1,18 @@
 node_modules
 dist
 .superpowers
+
+# Editor / OS
+.DS_Store
+*.swp
+*.swo
+.idea
+.vscode
+*.local
+
+# Environment
+.env
+.env.*
+
+# Build artifacts
+*.tsbuildinfo

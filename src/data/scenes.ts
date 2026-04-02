@@ -1,6 +1,6 @@
-import landscape from '../assets/landscape.jpg'
 import person from '../assets/person.jpg'
-import wildlife from '../assets/wildlife.jpg'
+import portrait from '../assets/portrait.jpg'
+import bird from '../assets/bird2.jpg'
 import city from '../assets/city.jpg'
 import milkyway from '../assets/milkyway.jpg'
 
@@ -11,9 +11,9 @@ export interface Scene {
 }
 
 export const SCENES: Scene[] = [
-  { id: 'landscape', name: 'Landscape', src: landscape },
-  { id: 'person', name: 'Person', src: person },
-  { id: 'wildlife', name: 'Wildlife', src: wildlife },
+  { id: 'person', name: 'Landscape', src: person },
+  { id: 'portrait', name: 'Portrait', src: portrait },
+  { id: 'bird', name: 'Bird', src: bird },
   { id: 'city', name: 'City Street', src: city },
   { id: 'milkyway', name: 'Milky Way', src: milkyway },
 ]

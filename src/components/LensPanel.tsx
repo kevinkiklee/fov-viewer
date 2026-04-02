@@ -1,7 +1,24 @@
+import { useMemo } from 'react'
 import type { LensConfig } from '../types'
 import { FOCAL_LENGTHS, FOCAL_MIN, FOCAL_MAX } from '../data/focalLengths'
 import { SENSORS, getSensor } from '../data/sensors'
-import { calcFOV, calcEquivFocalLength } from '../utils/fov'
+import { calcEquivFocalLength } from '../utils/fov'
+
+// Logarithmic scale: maps focal length to 0–1000 slider position
+const LOG_MIN = Math.log(FOCAL_MIN)
+const LOG_MAX = Math.log(FOCAL_MAX)
+const SLIDER_STEPS = 1000
+
+function focalToSlider(focal: number): number {
+  return Math.round(((Math.log(focal) - LOG_MIN) / (LOG_MAX - LOG_MIN)) * SLIDER_STEPS)
+}
+
+function sliderToFocal(pos: number): number {
+  return Math.round(Math.exp(LOG_MIN + (pos / SLIDER_STEPS) * (LOG_MAX - LOG_MIN)))
+}
+
+// Snap to preset if within this many slider units
+const SNAP_THRESHOLD = 15
 
 interface LensPanelProps {
   label: string
@@ -12,14 +29,45 @@ interface LensPanelProps {
   onChange: (updates: Partial<LensConfig>) => void
   onFocus: () => void
   onToggleCollapse: () => void
+  onRemove?: () => void
 }
 
 export function LensPanel({
-  label, color, config, isActive, collapsed, onChange, onFocus, onToggleCollapse,
+  label, color, config, isActive, collapsed, onChange, onFocus, onToggleCollapse, onRemove,
 }: LensPanelProps) {
   const sensor = getSensor(config.sensorId)
-  const fov = calcFOV(config.focalLength, sensor.cropFactor)
+  const isCrop = sensor.cropFactor > 1
+  const minFocal = isCrop ? FOCAL_MIN : 14
   const equiv = calcEquivFocalLength(config.focalLength, sensor.cropFactor)
+
+  const sliderMin = focalToSlider(minFocal)
+  const sliderVal = focalToSlider(Math.max(config.focalLength, minFocal))
+
+  const presetPositions = useMemo(
+    () => FOCAL_LENGTHS.filter((fl) => fl.value >= minFocal).map((fl) => ({
+      value: fl.value,
+      pct: ((focalToSlider(fl.value) - sliderMin) / (SLIDER_STEPS - sliderMin)) * 100,
+    })),
+    [minFocal, sliderMin],
+  )
+
+  const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const pos = Number(e.target.value)
+    let focal = sliderToFocal(pos)
+
+    // Snap to nearest preset if close
+    for (const fl of FOCAL_LENGTHS) {
+      if (fl.value < minFocal) continue
+      const presetPos = focalToSlider(fl.value)
+      if (Math.abs(pos - presetPos) <= SNAP_THRESHOLD) {
+        focal = fl.value
+        break
+      }
+    }
+
+    focal = Math.max(minFocal, Math.min(FOCAL_MAX, focal))
+    onChange({ focalLength: focal })
+  }
 
   return (
     <div
@@ -32,6 +80,15 @@ export function LensPanel({
         <span className="lens-panel__equiv">
           {sensor.cropFactor !== 1 ? `≡ ${equiv}mm equiv` : ''}
         </span>
+        {onRemove && (
+          <button
+            className="lens-panel__remove"
+            onClick={(e) => { e.stopPropagation(); onRemove() }}
+            title="Remove lens"
+          >
+            ✕
+          </button>
+        )}
       </div>
 
       <div className="lens-panel__focal">
@@ -39,29 +96,40 @@ export function LensPanel({
           <span className="lens-panel__sublabel">Focal length</span>
           <span className="lens-panel__value">{config.focalLength}mm</span>
         </div>
-        <input
-          type="range"
-          className="lens-panel__slider"
-          min={FOCAL_MIN}
-          max={FOCAL_MAX}
-          step={1}
-          value={config.focalLength}
-          onChange={(e) => onChange({ focalLength: Number(e.target.value) })}
-          style={{ accentColor: color }}
-        />
+        <div className="lens-panel__slider-wrap">
+          <input
+            type="range"
+            className="lens-panel__slider"
+            min={sliderMin}
+            max={SLIDER_STEPS}
+            step={1}
+            value={sliderVal}
+            onChange={handleSliderChange}
+            style={{ accentColor: color }}
+          />
+          <div className="lens-panel__ticks">
+            {presetPositions.map((p) => (
+              <div
+                key={p.value}
+                className="lens-panel__tick"
+                style={{ left: `${p.pct}%` }}
+              />
+            ))}
+          </div>
+        </div>
       </div>
 
       {!collapsed && (
         <>
           <div className="lens-panel__presets">
-            {FOCAL_LENGTHS.map((fl) => (
+            {FOCAL_LENGTHS.filter((fl) => fl.value >= minFocal).map((fl) => (
               <button
                 key={fl.value}
                 className={`lens-panel__preset ${config.focalLength === fl.value ? 'lens-panel__preset--active' : ''}`}
                 style={config.focalLength === fl.value ? { background: color, color: '#fff' } : undefined}
                 onClick={(e) => { e.stopPropagation(); onChange({ focalLength: fl.value }) }}
               >
-                {fl.value}
+                {fl.value}mm
               </button>
             ))}
           </div>
@@ -71,7 +139,13 @@ export function LensPanel({
             <select
               className="lens-panel__select"
               value={config.sensorId}
-              onChange={(e) => onChange({ sensorId: e.target.value })}
+              onChange={(e) => {
+                const newSensor = getSensor(e.target.value)
+                const newMin = newSensor.cropFactor > 1 ? FOCAL_MIN : 14
+                const updates: Partial<LensConfig> = { sensorId: e.target.value }
+                if (config.focalLength < newMin) updates.focalLength = newMin
+                onChange(updates)
+              }}
               onClick={(e) => e.stopPropagation()}
             >
               {SENSORS.map((s) => (
@@ -82,9 +156,6 @@ export function LensPanel({
             </select>
           </div>
 
-          <div className="lens-panel__fov">
-            FOV: {fov.horizontal.toFixed(1)}° × {fov.vertical.toFixed(1)}°
-          </div>
         </>
       )}
     </div>

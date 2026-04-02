@@ -1,38 +1,37 @@
 import { useEffect, useRef } from 'react'
-import type { AppState } from '../types'
-import { DEFAULT_STATE } from '../types'
+import type { AppState, LensConfig } from '../types'
 import { SENSORS } from '../data/sensors'
 
 const SENSOR_IDS = new Set(SENSORS.map((s) => s.id))
+const LENS_KEYS = ['a', 'b', 'c'] as const
+const SENSOR_KEYS = ['sa', 'sb', 'sc'] as const
 
 function clampFocal(v: number): number {
   return Math.max(8, Math.min(800, Math.round(v)))
+}
+
+function parseLens(params: URLSearchParams, fKey: string, sKey: string): LensConfig | null {
+  const f = Number(params.get(fKey))
+  if (!f || f < 8 || f > 800) return null
+  const lens: LensConfig = { focalLength: clampFocal(f), sensorId: 'ff' }
+  const s = params.get(sKey)
+  if (s && SENSOR_IDS.has(s)) lens.sensorId = s
+  return lens
 }
 
 export function parseQueryParams(): Partial<AppState> {
   const params = new URLSearchParams(window.location.search)
   const state: Partial<AppState> = {}
 
-  const a = Number(params.get('a'))
-  if (a && a >= 8 && a <= 800) state.lensA = { ...DEFAULT_STATE.lensA, focalLength: clampFocal(a) }
-
-  const sa = params.get('sa')
-  if (sa && SENSOR_IDS.has(sa)) state.lensA = { ...(state.lensA ?? DEFAULT_STATE.lensA), sensorId: sa }
-
-  const b = Number(params.get('b'))
-  if (b && b >= 8 && b <= 800) state.lensB = { ...DEFAULT_STATE.lensB, focalLength: clampFocal(b) }
-
-  const sb = params.get('sb')
-  if (sb && SENSOR_IDS.has(sb)) state.lensB = { ...(state.lensB ?? DEFAULT_STATE.lensB), sensorId: sb }
+  const lenses: LensConfig[] = []
+  for (let i = 0; i < 3; i++) {
+    const lens = parseLens(params, LENS_KEYS[i], SENSOR_KEYS[i])
+    if (lens) lenses.push(lens)
+  }
+  if (lenses.length > 0) state.lenses = lenses
 
   const img = Number(params.get('img'))
   if (!isNaN(img) && img >= 0 && img <= 4) state.imageIndex = img
-
-  const mode = params.get('mode')
-  if (mode === 'overlay' || mode === 'side') state.mode = mode
-
-  const d = Number(params.get('d'))
-  if (d && d > 0 && d <= 10000) state.distance = d
 
   const theme = params.get('theme')
   if (theme === 'dark' || theme === 'light') state.theme = theme
@@ -42,13 +41,11 @@ export function parseQueryParams(): Partial<AppState> {
 
 export function stateToQueryString(state: AppState): string {
   const params = new URLSearchParams()
-  params.set('a', String(state.lensA.focalLength))
-  params.set('sa', state.lensA.sensorId)
-  params.set('b', String(state.lensB.focalLength))
-  params.set('sb', state.lensB.sensorId)
+  state.lenses.forEach((lens, i) => {
+    params.set(LENS_KEYS[i], String(lens.focalLength))
+    params.set(SENSOR_KEYS[i], lens.sensorId)
+  })
   params.set('img', String(state.imageIndex))
-  params.set('mode', state.mode)
-  params.set('d', String(state.distance))
   params.set('theme', state.theme)
   return params.toString()
 }

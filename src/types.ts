@@ -15,25 +15,33 @@ export interface LensConfig {
 }
 
 export type ViewMode = 'overlay' | 'side'
+export type Orientation = 'landscape' | 'portrait'
+
+export const LENS_COLORS = ['#3b82f6', '#f59e0b', '#10b981']
+export const LENS_LABELS = ['A', 'B', 'C']
+export const MAX_LENSES = 3
 
 export interface AppState {
-  lensA: LensConfig
-  lensB: LensConfig
+  lenses: LensConfig[]
   imageIndex: number
   mode: ViewMode
+  orientation: Orientation
   distance: number
   theme: 'dark' | 'light'
-  activeLens: 'a' | 'b'
+  activeLens: number
   showShortcuts: boolean
 }
 
 export const DEFAULT_STATE: AppState = {
-  lensA: { focalLength: 35, sensorId: 'ff' },
-  lensB: { focalLength: 85, sensorId: 'ff' },
+  lenses: [
+    { focalLength: 20, sensorId: 'ff' },
+    { focalLength: 35, sensorId: 'ff' },
+  ],
   imageIndex: 0,
   mode: 'overlay',
+  orientation: window.innerWidth < 1024 ? 'portrait' : 'landscape',
   distance: 10,
   theme: 'dark',
-  activeLens: 'a',
+  activeLens: 0,
   showShortcuts: false,
 }
