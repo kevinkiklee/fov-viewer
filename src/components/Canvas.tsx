@@ -224,7 +224,7 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasPro
 
     const hit = [...rects]
       .sort((a, b) => (a.w * a.h) - (b.w * b.h))
-      .find((r) => cx >= r.x && cx <= r.x + r.w && cy >= r.y && cy <= r.y + r.h)
+      .find((r) => hitTestRect(r, cx, cy))
 
     if (hit) {
       const off = offsets[hit.index] ?? { dx: 0, dy: 0 }
@@ -280,7 +280,7 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasPro
     } else {
       const { cx, cy } = getCanvasCoords(e.clientX, e.clientY)
       const rects = computeRects(canvas)
-      const hover = rects.some((r) => cx >= r.x && cx <= r.x + r.w && cy >= r.y && cy <= r.y + r.h)
+      const hover = rects.some((r) => hitTestRect(r, cx, cy))
       canvas.style.cursor = hover ? 'grab' : 'default'
     }
   }, [canvasRef, computeRects, getCanvasCoords, moveDrag])
@@ -333,6 +333,46 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasPro
       onTouchCancel={handleTouchEnd}
     />
   )
+}
+
+// Minimum clickable size for small rects (in canvas pixels)
+const MIN_HIT_SIZE = 30
+
+function hitTestRect(r: Rect, cx: number, cy: number): boolean {
+  const dpr = window.devicePixelRatio || 1
+
+  // Test the rect itself, with a minimum hit area centered on the rect
+  const hitW = Math.max(r.w, MIN_HIT_SIZE * dpr)
+  const hitH = Math.max(r.h, MIN_HIT_SIZE * dpr)
+  const hitX = r.x + r.w / 2 - hitW / 2
+  const hitY = r.y + r.h / 2 - hitH / 2
+  if (cx >= hitX && cx <= hitX + hitW && cy >= hitY && cy <= hitY + hitH) return true
+
+  // Test the label pill area
+  const fontSize = 12 * dpr
+  const padX = 6 * dpr
+  const padY = 3 * dpr
+  // Approximate label width (can't measure without ctx, use estimate)
+  const labelW = (r.label.length + r.focalLength.toString().length + 5) * fontSize * 0.6
+  const textH = fontSize
+
+  const labelY = r.y - 6 * dpr
+  let tx: number, ty: number
+  if (labelY > textH + padY * 2) {
+    tx = r.x + 4 * dpr
+    ty = labelY
+  } else {
+    tx = r.x + 8 * dpr
+    ty = r.y + 18 * dpr
+  }
+
+  const pillX = tx - padX
+  const pillY = ty - textH - padY + 2 * dpr
+  const pillW = labelW + padX * 2
+  const pillH = textH + padY * 2
+  if (cx >= pillX && cx <= pillX + pillW && cy >= pillY && cy <= pillY + pillH) return true
+
+  return false
 }
 
 function drawImageCover(
