@@ -169,15 +169,16 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasPro
         const textH = fontSize
         const pillH = textH + padY * 2
 
-        // Stack upward: A closest to rect, B above A, C above B
+        // Stack upward: C closest to rect, B above, A at top
         const baseY = r.y - 6 * dpr
+        const reverseIdx = group.length - 1 - si
         let tx: number, ty: number
         if (baseY > (pillH * group.length) + 4 * dpr) {
           tx = r.x + 4 * dpr
-          ty = baseY - si * (pillH + 2 * dpr)
+          ty = baseY - reverseIdx * (pillH + 2 * dpr)
         } else {
           tx = r.x + 8 * dpr
-          ty = r.y + 18 * dpr + si * (pillH + 2 * dpr)
+          ty = r.y + 18 * dpr + reverseIdx * (pillH + 2 * dpr)
         }
 
         // Draw background pill
