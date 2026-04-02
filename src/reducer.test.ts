@@ -122,7 +122,6 @@ describe('App reducer', () => {
       imageIndex: 4,
       theme: 'light',
       activeLens: 0,
-      showShortcuts: true,
     }
     const state = reducer(modified, { type: 'RESET' })
     expect(state.lenses).toEqual(DEFAULT_STATE.lenses)

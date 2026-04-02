@@ -29,7 +29,6 @@ export interface AppState {
   distance: number
   theme: 'dark' | 'light'
   activeLens: number
-  showShortcuts: boolean
 }
 
 export const DEFAULT_STATE: AppState = {
@@ -43,5 +42,4 @@ export const DEFAULT_STATE: AppState = {
   distance: 10,
   theme: 'dark',
   activeLens: 0,
-  showShortcuts: false,
 }
