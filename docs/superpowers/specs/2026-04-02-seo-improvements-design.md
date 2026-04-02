@@ -159,7 +159,14 @@ Each page contains:
 Each page contains:
 - Unique `<title>` and `<meta description>` targeting the learning query
 - `<h1>`, `<h2>` structure with keyword-rich headings
-- 300-500 words of original educational content
+- 800-1500 words of original educational content (longer = better for SEO on informational queries)
+- Professional editorial tone — written as if by a working photographer, not a marketing bot. Cite specific real-world scenarios, name real lens models where relevant, use precise technical language. No filler phrases ("in this article we will explore..."), no listicle fluff. Every sentence should teach something.
+- **Factual accuracy is critical.** All FOV math, crop factor numbers, sensor dimensions, and optical principles must be physically correct. Double-check: crop factors (FF=1.0, APS-C Nikon/Sony=1.5, APS-C Canon=1.6, M4/3=2.0, 1"=2.7, MF 44x33=0.79), the rectilinear FOV formula, and lens compression (which is a function of distance, not focal length — a common misconception to address correctly).
+- **Illustrations and visuals in every article:**
+  - Embedded FOV Viewer tool comparisons via `<iframe>` with `?embed=1` and relevant presets (e.g., crop factor article embeds `?a=50&sa=ff&b=50&sb=apsc_n&embed=1`)
+  - Diagrams created as inline SVGs: sensor size comparison chart, FOV angle diagrams, crop factor multiplication visual, focal length vs perspective diagram
+  - Comparison image pairs using the app's existing scene photos cropped to illustrate the point (e.g., "here's what 24mm vs 85mm looks like on the same scene")
+  - Tables for reference data (equivalent focal lengths across sensors, FOV angles at common focal lengths)
 - "Try it yourself" CTA links opening the tool with relevant presets
 - Internal links to related articles and comparison pages
 - Breadcrumb navigation: Home > Learn > [this article]
