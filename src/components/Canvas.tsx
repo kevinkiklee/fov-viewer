@@ -88,11 +88,17 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasPro
     const rects = computeRects(canvas)
     if (rects.length === 0) return
 
-    // Draw rect borders
+    // Draw rect borders (inset by half stroke width so edges aren't clipped)
+    const lineW = 3 * dpr
+    const half = lineW / 2
     for (const r of rects) {
       ctx.strokeStyle = r.color
-      ctx.lineWidth = 3 * dpr
-      ctx.strokeRect(r.x, r.y, r.w, r.h)
+      ctx.lineWidth = lineW
+      const rx = Math.max(half, r.x)
+      const ry = Math.max(half, r.y)
+      const rr = Math.min(w - half, r.x + r.w)
+      const rb = Math.min(h - half, r.y + r.h)
+      ctx.strokeRect(rx, ry, rr - rx, rb - ry)
     }
 
     // Labels with background pill for readability
