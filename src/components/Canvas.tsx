@@ -239,6 +239,7 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasPro
     const newDx = Math.max(-maxDx, Math.min(maxDx, rawDx))
     const newDy = Math.max(-maxDy, Math.min(maxDy, rawDy))
     setOffsets((prev) => ({ ...prev, [drag.index]: { dx: newDx, dy: newDy } }))
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- fovKey is a stable serialization of fovs
   }, [canvasRef, getCanvasCoords, fovKey, orientation])
 
   const handleMouseMove = useCallback((e: React.MouseEvent) => {
