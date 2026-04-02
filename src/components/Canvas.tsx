@@ -97,49 +97,78 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasPro
     const rects = computeRects(canvas)
     if (rects.length === 0) return
 
-    // Draw rect borders (inset by half stroke width so edges aren't clipped)
+    // Draw rect borders with dashed pattern alternating colors when overlapping
     const lineW = 3 * dpr
     const half = lineW / 2
+    const dashLen = 10 * dpr
+
     for (const r of rects) {
-      ctx.strokeStyle = r.color
-      ctx.lineWidth = lineW
       const rx = Math.max(half, r.x)
       const ry = Math.max(half, r.y)
       const rr = Math.min(w - half, r.x + r.w)
       const rb = Math.min(h - half, r.y + r.h)
-      ctx.strokeRect(rx, ry, rr - rx, rb - ry)
+
+      // Check if any other rect overlaps this one (same size = overlapping)
+      const overlapping = rects.filter((o) => o !== r && Math.abs(o.w - r.w) < 2 && Math.abs(o.h - r.h) < 2)
+
+      if (overlapping.length > 0) {
+        // Draw alternating dashed border
+        ctx.lineWidth = lineW
+        ctx.setLineDash([dashLen, dashLen])
+        // First color: this rect
+        ctx.lineDashOffset = 0
+        ctx.strokeStyle = r.color
+        ctx.strokeRect(rx, ry, rr - rx, rb - ry)
+        // Second color: first overlapping rect
+        ctx.lineDashOffset = dashLen
+        ctx.strokeStyle = overlapping[0].color
+        ctx.strokeRect(rx, ry, rr - rx, rb - ry)
+        ctx.setLineDash([])
+      } else {
+        ctx.strokeStyle = r.color
+        ctx.lineWidth = lineW
+        ctx.setLineDash([])
+        ctx.strokeRect(rx, ry, rr - rx, rb - ry)
+      }
     }
 
-    // Labels with background pill for readability
+    // Labels — always show all, stacked vertically when at same position
     const fontSize = 12 * dpr
     const padX = 6 * dpr
     const padY = 3 * dpr
     ctx.font = `600 ${fontSize}px -apple-system, BlinkMacSystemFont, sans-serif`
+
+    // Group rects that have the same position (overlapping)
+    const labelOffsets: Record<string, number> = {}
 
     for (const r of rects) {
       const text = `${r.label} — ${r.focalLength}mm`
       const metrics = ctx.measureText(text)
       const textW = metrics.width
       const textH = fontSize
+      const pillH = textH + padY * 2
 
-      // Position: above top-left, or inside if too close to top
-      const labelY = r.y - 6 * dpr
+      // Track stacking for overlapping rects
+      const posKey = `${Math.round(r.x)},${Math.round(r.y)}`
+      const stackIndex = labelOffsets[posKey] ?? 0
+      labelOffsets[posKey] = stackIndex + 1
+
+      // Position: above top-left, stacked down for overlapping labels
+      const baseY = r.y - 6 * dpr
       let tx: number, ty: number
-      if (labelY > textH + padY * 2) {
+      if (baseY > (pillH * (stackIndex + 1)) + 4 * dpr) {
         tx = r.x + 4 * dpr
-        ty = labelY
+        ty = baseY - stackIndex * (pillH + 2 * dpr)
       } else {
         tx = r.x + 8 * dpr
-        ty = r.y + 18 * dpr
+        ty = r.y + 18 * dpr + stackIndex * (pillH + 2 * dpr)
       }
 
       // Draw background pill
       const pillX = tx - padX
       const pillY = ty - textH - padY + 2 * dpr
       const pillW = textW + padX * 2
-      const pillH = textH + padY * 2
       const pillR = 4 * dpr
-      // Store pill bounds for hit testing
       r.pill = { x: pillX, y: pillY, w: pillW, h: pillH }
 
       ctx.fillStyle = 'rgba(0, 0, 0, 0.6)'
