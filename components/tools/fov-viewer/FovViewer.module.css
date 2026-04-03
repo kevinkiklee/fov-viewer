@@ -198,12 +198,12 @@
 /* Add lens button */
 .addLensBtn {
   width: 100%;
-  padding: 10px;
+  padding: 6px;
   background: var(--bg-surface);
   border: 2px dashed var(--border);
   border-radius: 10px;
   color: var(--text-secondary);
-  font-size: 13px;
+  font-size: 12px;
   cursor: pointer;
   transition: border-color 0.15s, color 0.15s;
 }
@@ -280,20 +280,19 @@
 .actionBar {
   background: var(--bg-surface);
   border-radius: 10px;
-  padding: 14px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
 .actionBarBtn {
-  padding: 8px 12px;
-  min-height: 44px;
+  padding: 6px 12px;
   background: var(--bg-primary);
   border: 1px solid var(--border);
   border-radius: 6px;
   color: var(--text-primary);
-  font-size: 13px;
+  font-size: 12px;
   cursor: pointer;
   text-align: center;
   transition: background 0.15s;
