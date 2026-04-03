@@ -1,15 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>FOV Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — FOV Viewer</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/content-styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="site-header__logo">FOV Viewer</a>
+    <nav class="site-header__nav">
+      <a href="/">Tool</a>
+      <a href="/compare/">Compare</a>
+      <a href="/learn/">Learn</a>
+    </nav>
+  </header>
+
+  <div class="content" style="text-align: center; padding-top: 80px;">
+    <h1>Page Not Found</h1>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+
+    <h2 style="margin-top: 48px;">Popular Comparisons</h2>
+    <p>
+      <a href="/compare/24mm-vs-35mm.html">24mm vs 35mm</a> &middot;
+      <a href="/compare/35mm-vs-50mm.html">35mm vs 50mm</a> &middot;
+      <a href="/compare/50mm-vs-85mm.html">50mm vs 85mm</a> &middot;
+      <a href="/compare/85mm-vs-200mm.html">85mm vs 200mm</a>
+    </p>
+
+    <h2 style="margin-top: 32px;">Learn</h2>
+    <p>
+      <a href="/learn/crop-factor-explained.html">Crop Factor Explained</a> &middot;
+      <a href="/learn/focal-length-guide.html">Focal Length Guide</a> &middot;
+      <a href="/learn/best-focal-lengths-portrait.html">Best Portrait Lenses</a>
+    </p>
+
+    <p style="margin-top: 48px;">
+      <a class="cta" href="/">Open FOV Viewer Tool</a>
+    </p>
+  </div>
+
+  <footer class="site-footer">
+    <a href="/">Tool</a>
+    <a href="/compare/">Compare</a>
+    <a href="/learn/">Learn</a>
+    <a href="https://github.com/kevinkiklee/fov-viewer" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+
   <script>
     var path = window.location.pathname;
-    var query = window.location.search;
-    window.location.replace(
-      window.location.origin + '/fov-viewer/' + query
-    );
+    if (path === '/' || path.startsWith('/?')) {
+      window.location.replace('/' + window.location.search);
+    }
   </script>
-</head>
-<body></body>
+</body>
 </html>
