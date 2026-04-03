@@ -5,7 +5,7 @@ export const TOOLS: ToolDef[] = [
   { slug: 'color-harmony', name: 'Color Harmony Picker', description: 'Build color palettes for photography shoots', dev: 'live', prod: 'live', category: 'visualizer' },
   { slug: 'exposure-simulator', name: 'Exposure Triangle Simulator', description: 'See how aperture, shutter speed, and ISO interact', dev: 'live', prod: 'draft', category: 'visualizer' },
   { slug: 'dof-calculator', name: 'Depth of Field Calculator', description: 'Calculate near focus, far focus, and total depth of field', dev: 'live', prod: 'draft', category: 'calculator' },
-  { slug: 'hyperfocal-table', name: 'Hyperfocal Distance Table', description: 'Quick-reference hyperfocal distances for any lens and aperture', dev: 'live', prod: 'draft', category: 'reference' },
+  { slug: 'hyperfocal-simulator', name: 'Hyperfocal Distance Simulator', description: 'Learn where to focus for maximum sharpness from foreground to infinity', dev: 'live', prod: 'draft', category: 'visualizer' },
   { slug: 'shutter-speed-guide', name: 'Shutter Speed Guide', description: 'Find the minimum safe shutter speed for sharp handheld shots', dev: 'live', prod: 'draft', category: 'calculator' },
   { slug: 'nd-filter-calculator', name: 'ND Filter Calculator', description: 'Calculate exposure time with any ND filter', dev: 'live', prod: 'draft', category: 'calculator' },
   { slug: 'diffraction-limit', name: 'Diffraction Limit Calculator', description: 'Find the sharpest aperture for your sensor', dev: 'live', prod: 'draft', category: 'calculator' },

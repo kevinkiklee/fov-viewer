@@ -23,7 +23,8 @@ const FF_DIAG = Math.sqrt(36 * 36 + 24 * 24)
 
 const ALL_SENSOR_IDS = SENSOR_DIMS.map((s) => s.id) as unknown as string[]
 const ALL_SENSOR_ID_SET = new Set(ALL_SENSOR_IDS)
-const DEFAULT_VISIBLE = ALL_SENSOR_IDS.join(',')
+const DEFAULT_VISIBLE_IDS = ['ff', 'apsc_n', 'm43', 'phone']
+const DEFAULT_VISIBLE = DEFAULT_VISIBLE_IDS.join(',')
 
 const PARAM_SCHEMA = {
   show: {
@@ -105,17 +106,9 @@ function ControlsPanel({
       </div>
 
       {mode === 'pixel-density' && (
-        <label className={ss.resolutionField}>
-          Resolution
-          <input
-            type="number"
-            min={1}
-            max={200}
-            value={resolution}
-            onChange={(e) => onResolutionChange(Math.max(1, Number(e.target.value)))}
-          />
-          MP
-        </label>
+        <p style={{ fontSize: 11, color: 'var(--text-secondary)', lineHeight: 1.5, margin: 0 }}>
+          Showing common megapixel counts for each sensor. Larger pixels (bigger cells) capture more light.
+        </p>
       )}
     </>
   )
@@ -123,10 +116,17 @@ function ControlsPanel({
 
 export function SensorSize() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const params = parseQueryState(PARAM_SCHEMA)
-  const [visible, setVisible] = useState<Set<string>>(() => new Set(params.show ? params.show.split(',') : ALL_SENSOR_IDS))
-  const [mode, setMode] = useState<DisplayMode>(params.mode ?? 'overlay')
-  const [resolution, setResolution] = useState(params.mp ?? 24)
+  const [visible, setVisible] = useState<Set<string>>(() => new Set(DEFAULT_VISIBLE_IDS))
+  const [mode, setMode] = useState<DisplayMode>('overlay')
+  const [resolution, setResolution] = useState(24)
+
+  // Hydrate from URL params on client only to avoid SSR mismatch
+  useEffect(() => {
+    const params = parseQueryState(PARAM_SCHEMA)
+    if (params.show) setVisible(new Set(params.show.split(',')))
+    if (params.mode) setMode(params.mode)
+    if (params.mp) setResolution(params.mp)
+  }, [])
 
   useToolQuerySync(
     { show: Array.from(visible).join(','), mode, mp: resolution },
@@ -271,6 +271,7 @@ function drawOverlay(
 
   const sorted = [...sensors].sort((a, b) => b.w * b.h - a.w * a.h)
 
+  // Draw all rects first (fills + strokes)
   for (const s of sorted) {
     const rw = s.w * scale
     const rh = s.h * scale
@@ -286,23 +287,45 @@ function drawOverlay(
     ctx.strokeStyle = rgba(s.color, 0.7)
     ctx.lineWidth = 1.5
     ctx.stroke()
+  }
+
+  // Draw labels separately — place each at the bottom-left of its rect,
+  // staggered upward to avoid overlaps
+  const pillH = 18
+  const labelGap = 2
+  let nextLabelBottom = cy + (sorted[0]?.h ?? 0) * scale / 2 - 6 // start near bottom of largest rect
+
+  for (let i = sorted.length - 1; i >= 0; i--) {
+    const s = sorted[i]
+    const rw = s.w * scale
+    const rh = s.h * scale
+    const x = cx - rw / 2
+    const y = cy - rh / 2
 
     const label = s.name
     ctx.font = '11px system-ui, sans-serif'
     const textW = ctx.measureText(label).width
-    const pillX = x + 6
-    const pillY = y + 6
     const pillW = textW + 10
-    const pillH = 18
+
+    // Place label at the bottom-left of this rect, but don't overlap previous labels
+    const idealY = y + rh - pillH - 6
+    const pillY = Math.min(idealY, nextLabelBottom - pillH - labelGap)
+    const pillX = x + 6
 
     roundRect(ctx, pillX, pillY, pillW, pillH, 3)
-    ctx.fillStyle = rgba(s.color, 0.2)
+    ctx.fillStyle = rgba(s.color, 0.25)
     ctx.fill()
+    roundRect(ctx, pillX, pillY, pillW, pillH, 3)
+    ctx.strokeStyle = rgba(s.color, 0.5)
+    ctx.lineWidth = 0.5
+    ctx.stroke()
 
     ctx.fillStyle = s.color
     ctx.textAlign = 'left'
     ctx.textBaseline = 'middle'
     ctx.fillText(label, pillX + 5, pillY + pillH / 2)
+
+    nextLabelBottom = pillY
   }
 
   const largest = sorted[0]
@@ -419,62 +442,147 @@ function drawSideBySide(
   ctx.textBaseline = 'alphabetic'
 }
 
+// Common megapixel counts for real cameras per sensor type
+const COMMON_MP: Record<string, number[]> = {
+  mf: [50, 100, 150],
+  ff: [24, 45, 61],
+  apsc_n: [24, 26, 33],
+  apsc_c: [24, 32],
+  m43: [20, 25],
+  '1in': [20],
+  phone: [12, 48, 108],
+}
+
 function drawPixelDensity(
   ctx: CanvasRenderingContext2D,
   W: number, H: number, pad: number,
   sensors: SensorDim[],
   resolution: number,
 ) {
-  const pitches = sensors.map((s) => ({
-    ...s,
-    pitch: pixelPitch(s.w, resolution),
-  }))
-  const maxPitch = Math.max(...pitches.map((p) => p.pitch))
-  const baseCellSize = 7
-  const labelHeight = 40
-  const gridSize = 64
-  const gap = 20
-  const totalGridW = pitches.length * gridSize + (pitches.length - 1) * gap
-  let x = (W - totalGridW) / 2
-  const gridTop = (H - gridSize - labelHeight) / 2
+  // Each sensor gets a column. Within each column, show grids for common MP values.
+  // Grid physical size is proportional to actual sensor dimensions.
 
-  for (const p of pitches) {
-    const cellSize = (p.pitch / maxPitch) * baseCellSize
-    const cols = Math.floor(gridSize / cellSize)
-    const rows = Math.floor(gridSize / cellSize)
-    const actualW = cols * cellSize
-    const actualH = rows * cellSize
-    const offsetX = x + (gridSize - actualW) / 2
-    const offsetY = gridTop + (gridSize - actualH) / 2
+  const colGap = 24
+  const rowGap = 12
+  const labelH = 32
 
-    for (let row = 0; row < rows; row++) {
-      for (let col = 0; col < cols; col++) {
-        const cx = offsetX + col * cellSize
-        const cy = offsetY + row * cellSize
-        ctx.fillStyle = rgba(p.color, 0.15)
-        ctx.fillRect(cx, cy, cellSize, cellSize)
-        ctx.strokeStyle = rgba(p.color, 0.3)
-        ctx.lineWidth = 0.3
-        ctx.strokeRect(cx, cy, cellSize, cellSize)
-      }
-    }
+  // Find maximum sensor dimension for scaling
+  const maxSensorW = Math.max(...sensors.map((s) => s.w))
 
-    roundRect(ctx, offsetX, offsetY, actualW, actualH, 2)
-    ctx.strokeStyle = rgba(p.color, 0.6)
-    ctx.lineWidth = 1.5
-    ctx.stroke()
+  // Compute how much horizontal space we need
+  const maxResolutions = Math.max(...sensors.map((s) => (COMMON_MP[s.id] ?? [resolution]).length))
+  const availW = W - pad * 2
+  const availH = H - pad * 2
+  const colW = Math.min(
+    (availW - (sensors.length - 1) * colGap) / sensors.length,
+    200,
+  )
 
-    ctx.fillStyle = p.color
-    ctx.font = '10px system-ui, sans-serif'
+  // Scale: map sensor mm to pixels so the largest sensor fills colW
+  const sensorScale = (colW - 8) / maxSensorW
+
+  const totalW = sensors.length * colW + (sensors.length - 1) * colGap
+  let colX = (W - totalW) / 2
+
+  for (const s of sensors) {
+    const mpList = COMMON_MP[s.id] ?? [resolution]
+    const sensorPxW = s.w * sensorScale
+    const sensorPxH = s.h * sensorScale
+
+    // Center the column header
+    ctx.fillStyle = s.color
+    ctx.font = 'bold 11px system-ui, sans-serif'
     ctx.textAlign = 'center'
     ctx.textBaseline = 'top'
-    ctx.fillText(p.name.split(' (')[0], x + gridSize / 2, gridTop + gridSize + 8)
+    const shortName = s.name.split(' (')[0]
+    ctx.fillText(shortName, colX + colW / 2, pad)
 
-    ctx.fillStyle = rgba(p.color, 0.6)
-    ctx.font = '10px monospace'
-    ctx.fillText(`${p.pitch.toFixed(2)} µm`, x + gridSize / 2, gridTop + gridSize + 22)
+    // Draw each MP variant vertically
+    let gridY = pad + 20
 
-    x += gridSize + gap
+    for (const mp of mpList) {
+      const pitch = pixelPitch(s.w, mp)
+
+      // Draw sensor-sized rectangle with pixel grid inside
+      const rx = colX + (colW - sensorPxW) / 2
+      const ry = gridY
+
+      if (ry + sensorPxH + labelH > availH + pad) break // out of vertical space
+
+      // Pixel grid: cell size proportional to pixel pitch
+      // Use a consistent visual scale: 1µm = some pixels
+      const cellSize = Math.max(pitch * sensorScale * 0.25, 1.5)
+      const cols = Math.max(1, Math.floor(sensorPxW / cellSize))
+      const rows = Math.max(1, Math.floor(sensorPxH / cellSize))
+      const actualGridW = cols * cellSize
+      const actualGridH = rows * cellSize
+      const gridOffX = rx + (sensorPxW - actualGridW) / 2
+      const gridOffY = ry + (sensorPxH - actualGridH) / 2
+
+      // Background fill for sensor area
+      roundRect(ctx, rx, ry, sensorPxW, sensorPxH, 3)
+      ctx.fillStyle = rgba(s.color, 0.06)
+      ctx.fill()
+
+      // Draw pixel grid (limit total cells to avoid performance issues)
+      const maxCells = 2000
+      if (cols * rows <= maxCells) {
+        for (let r = 0; r < rows; r++) {
+          for (let c = 0; c < cols; c++) {
+            const cx = gridOffX + c * cellSize
+            const cy = gridOffY + r * cellSize
+            ctx.fillStyle = rgba(s.color, 0.12)
+            ctx.fillRect(cx, cy, cellSize, cellSize)
+            ctx.strokeStyle = rgba(s.color, 0.25)
+            ctx.lineWidth = 0.3
+            ctx.strokeRect(cx, cy, cellSize, cellSize)
+          }
+        }
+      } else {
+        // Too many cells — just fill with a solid grid pattern hint
+        ctx.fillStyle = rgba(s.color, 0.12)
+        ctx.fillRect(gridOffX, gridOffY, actualGridW, actualGridH)
+
+        // Draw a few representative grid lines
+        ctx.strokeStyle = rgba(s.color, 0.2)
+        ctx.lineWidth = 0.5
+        const step = Math.max(actualGridW / 20, 3)
+        for (let lx = gridOffX; lx <= gridOffX + actualGridW; lx += step) {
+          ctx.beginPath()
+          ctx.moveTo(lx, gridOffY)
+          ctx.lineTo(lx, gridOffY + actualGridH)
+          ctx.stroke()
+        }
+        for (let ly = gridOffY; ly <= gridOffY + actualGridH; ly += step) {
+          ctx.beginPath()
+          ctx.moveTo(gridOffX, ly)
+          ctx.lineTo(gridOffX + actualGridW, ly)
+          ctx.stroke()
+        }
+      }
+
+      // Sensor border
+      roundRect(ctx, rx, ry, sensorPxW, sensorPxH, 3)
+      ctx.strokeStyle = rgba(s.color, 0.6)
+      ctx.lineWidth = 1.5
+      ctx.stroke()
+
+      // MP label below
+      ctx.fillStyle = s.color
+      ctx.font = '10px system-ui, sans-serif'
+      ctx.textAlign = 'center'
+      ctx.textBaseline = 'top'
+      ctx.fillText(`${mp} MP`, colX + colW / 2, ry + sensorPxH + 4)
+
+      // Pixel pitch
+      ctx.fillStyle = rgba(s.color, 0.5)
+      ctx.font = '9px monospace'
+      ctx.fillText(`${pitch.toFixed(2)} µm`, colX + colW / 2, ry + sensorPxH + 17)
+
+      gridY += sensorPxH + labelH + rowGap
+    }
+
+    colX += colW + colGap
   }
 
   ctx.textBaseline = 'alphabetic'

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { HistogramExplainer } from '@/components/tools/histogram/HistogramExplainer'
+import { ExifViewer } from '@/components/tools/exif-viewer/ExifViewer'
 
 export const metadata: Metadata = {
   title: 'EXIF Viewer',
@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function ExifViewerPage() {
-  return <HistogramExplainer />
+  return <ExifViewer />
 }

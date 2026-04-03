@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo, useCallback, useEffect } from 'react'
 import { hslToRgb, rgbToHsl, complementary, analogous, triadic, splitComplementary, tetradic } from '@/lib/math/color'
 import { ToolActions } from '@/components/shared/ToolActions'
 import { LearnPanel } from '@/components/shared/LearnPanel'
@@ -73,14 +73,26 @@ const PARAM_SCHEMA = {
 }
 
 export function ColorHarmony() {
-  const params = parseQueryState(PARAM_SCHEMA)
-  const [hue, setHue] = useState(params.h ?? 200)
-  const [saturation, setSaturation] = useState(params.sat ?? 70)
-  const [lightness, setLightness] = useState(params.l ?? 50)
-  const [harmony, setHarmony] = useState<HarmonyType>(params.type ?? 'complementary')
-  const [splitAngle, setSplitAngle] = useState(params.split ?? 30)
-  const [tetradicOffset, setTetradicOffset] = useState(params.tet ?? 60)
-  const [analogousSpread, setAnalogousSpread] = useState(params.spread ?? 30)
+  // Initialize with defaults to avoid hydration mismatch (server has no query params)
+  const [hue, setHue] = useState(200)
+  const [saturation, setSaturation] = useState(70)
+  const [lightness, setLightness] = useState(50)
+  const [harmony, setHarmony] = useState<HarmonyType>('complementary')
+  const [splitAngle, setSplitAngle] = useState(30)
+  const [tetradicOffset, setTetradicOffset] = useState(60)
+  const [analogousSpread, setAnalogousSpread] = useState(30)
+
+  // Hydrate from URL query params after mount
+  useEffect(() => {
+    const params = parseQueryState(PARAM_SCHEMA)
+    if (params.h != null) setHue(params.h)
+    if (params.sat != null) setSaturation(params.sat)
+    if (params.l != null) setLightness(params.l)
+    if (params.type) setHarmony(params.type)
+    if (params.split != null) setSplitAngle(params.split)
+    if (params.tet != null) setTetradicOffset(params.tet)
+    if (params.spread != null) setAnalogousSpread(params.spread)
+  }, [])
 
   useToolQuerySync(
     { h: hue, sat: saturation, l: lightness, type: harmony, split: splitAngle, tet: tetradicOffset, spread: analogousSpread },

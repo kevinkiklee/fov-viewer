@@ -373,11 +373,30 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef, cleanCanvas
     return () => observer.disconnect()
   }, [canvasRef, draw, orientation])
 
-  // Reset offsets when lenses change (count, focal length, or sensor)
-  const lensKey = lenses.map((l) => `${l.focalLength}-${l.sensorId}`).join('|')
+  // Reset offset only for the lens that changed, preserve others
+  const prevLensKeysRef = useRef<string[]>([])
+  const lensKeys = lenses.map((l) => `${l.focalLength}-${l.sensorId}`)
   useEffect(() => {
-    onOffsetsChange({})
-  }, [lensKey])
+    const prev = prevLensKeysRef.current
+    if (prev.length !== lensKeys.length) {
+      // Lens count changed (added/removed) — reset all
+      onOffsetsChange({})
+    } else {
+      // Only reset offsets for lenses whose focal length or sensor changed
+      const changed: number[] = []
+      for (let i = 0; i < lensKeys.length; i++) {
+        if (lensKeys[i] !== prev[i]) changed.push(i)
+      }
+      if (changed.length > 0) {
+        onOffsetsChange((prev) => {
+          const next = { ...prev }
+          for (const i of changed) delete next[i]
+          return next
+        })
+      }
+    }
+    prevLensKeysRef.current = lensKeys
+  }, [lensKeys.join('|')])
 
   // Listen for center-overlays event
   useEffect(() => {

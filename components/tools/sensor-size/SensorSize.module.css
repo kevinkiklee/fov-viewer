@@ -102,6 +102,7 @@
 
 .checkLabel input:checked ~ .checkName {
   color: var(--text-primary);
+  font-weight: 600;
 }
 
 /* ── Mode toggle ── */
