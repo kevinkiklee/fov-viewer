@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { ToolPageShell } from '@/components/shared/ToolPageShell'
 import { HistogramExplainer } from '@/components/tools/histogram/HistogramExplainer'
 
 export const metadata: Metadata = {
@@ -8,9 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function HistogramPage() {
-  return (
-    <ToolPageShell slug="histogram">
-      <HistogramExplainer />
-    </ToolPageShell>
-  )
+  return <HistogramExplainer />
 }

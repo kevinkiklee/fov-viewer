@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { ToolPageShell } from '@/components/shared/ToolPageShell'
 import { ShutterSpeedGuide } from '@/components/tools/shutter-speed-guide/ShutterSpeedGuide'
 
 export const metadata: Metadata = {
@@ -8,9 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function ShutterSpeedGuidePage() {
-  return (
-    <ToolPageShell slug="shutter-speed-guide">
-      <ShutterSpeedGuide />
-    </ToolPageShell>
-  )
+  return <ShutterSpeedGuide />
 }

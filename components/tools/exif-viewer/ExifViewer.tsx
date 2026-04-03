@@ -3,6 +3,8 @@
 import { useState, useCallback } from 'react'
 import ExifReader from 'exifreader'
 import { FileDropZone } from '@/components/shared/FileDropZone'
+import { LearnPanel } from '@/components/shared/LearnPanel'
+import { getToolBySlug } from '@/lib/data/tools'
 import styles from './ExifViewer.module.css'
 
 interface ExifResult {
@@ -126,6 +128,20 @@ function Section({ title, rows }: { title: string; rows: [string, string][] }) {
   )
 }
 
+const tool = getToolBySlug('exif-viewer')!
+
+function ControlsPanel({ onFile }: { onFile: (file: File) => void }) {
+  return (
+    <>
+      <div className={styles.header}>
+        <h1 className={styles.title}>{tool.name}</h1>
+        <p className={styles.description}>{tool.description}</p>
+      </div>
+      <FileDropZone onFile={onFile} />
+    </>
+  )
+}
+
 export function ExifViewer() {
   const [data, setData] = useState<ExifResult | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -148,58 +164,72 @@ export function ExifViewer() {
   }, [])
 
   return (
-    <div className={styles.wrapper}>
-      <FileDropZone onFile={handleFile} />
+    <div className={styles.app}>
+      <div className={styles.appBody}>
+        <div className={styles.sidebar}>
+          <ControlsPanel onFile={handleFile} />
+        </div>
 
-      {error && <div className={styles.error}>{error}</div>}
+        <div className={styles.main}>
+          {error && <div className={styles.error}>{error}</div>}
 
-      {data && (
-        <>
-          <Section
-            title="Camera"
-            rows={[
-              ['Make', data.camera.make],
-              ['Model', data.camera.model],
-            ]}
-          />
-          <Section
-            title="Lens"
-            rows={[
-              ['Lens Model', data.lens.model],
-              ['Lens Make', data.lens.make],
-            ]}
-          />
-          <Section
-            title="Settings"
-            rows={[
-              ['Aperture', data.settings.fNumber],
-              ['Shutter Speed', data.settings.exposureTime],
-              ['ISO', data.settings.iso],
-              ['Focal Length', data.settings.focalLength],
-              ['Focal Length (35mm equiv.)', data.settings.focalLength35],
-            ]}
-          />
-          <Section
-            title="Image"
-            rows={[
-              ['Width', data.image.width],
-              ['Height', data.image.height],
-              ['Orientation', data.image.orientation],
-            ]}
-          />
-          <Section title="Date" rows={[['Date Taken', data.date]]} />
-          {data.gps && (
-            <Section
-              title="GPS"
-              rows={[
-                ['Latitude', data.gps.latitude],
-                ['Longitude', data.gps.longitude],
-              ]}
-            />
-          )}
-          <Section title="Software" rows={[['Software', data.software]]} />
-        </>
-      )}
+          {data ? (
+            <>
+              <Section
+                title="Camera"
+                rows={[
+                  ['Make', data.camera.make],
+                  ['Model', data.camera.model],
+                ]}
+              />
+              <Section
+                title="Lens"
+                rows={[
+                  ['Lens Model', data.lens.model],
+                  ['Lens Make', data.lens.make],
+                ]}
+              />
+              <Section
+                title="Settings"
+                rows={[
+                  ['Aperture', data.settings.fNumber],
+                  ['Shutter Speed', data.settings.exposureTime],
+                  ['ISO', data.settings.iso],
+                  ['Focal Length', data.settings.focalLength],
+                  ['Focal Length (35mm equiv.)', data.settings.focalLength35],
+                ]}
+              />
+              <Section
+                title="Image"
+                rows={[
+                  ['Width', data.image.width],
+                  ['Height', data.image.height],
+                  ['Orientation', data.image.orientation],
+                ]}
+              />
+              <Section title="Date" rows={[['Date Taken', data.date]]} />
+              {data.gps && (
+                <Section
+                  title="GPS"
+                  rows={[
+                    ['Latitude', data.gps.latitude],
+                    ['Longitude', data.gps.longitude],
+                  ]}
+                />
+              )}
+              <Section title="Software" rows={[['Software', data.software]]} />
+            </>
+          ) : !error ? (
+            <div className={styles.emptyMain}>Upload an image to view its EXIF data</div>
+          ) : null}
+        </div>
+
+        <LearnPanel slug="exif-viewer" />
+      </div>
+
+      <div className={styles.mobileControls}>
+        <ControlsPanel onFile={handleFile} />
+      </div>
     </div>
   )
 }

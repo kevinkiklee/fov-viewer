@@ -2,8 +2,10 @@
 
 import { useState, useMemo } from 'react'
 import { calcEV } from '@/lib/math/exposure'
+import { getToolBySlug } from '@/lib/data/tools'
 import { parseQueryState, useToolQuerySync, intParam } from '@/lib/utils/querySync'
-import styles from '../shared/Calculator.module.css'
+import { LearnPanel } from '@/components/shared/LearnPanel'
+import calc from '../shared/Calculator.module.css'
 import ev from './EVChart.module.css'
 
 const APERTURES = [1.4, 2, 2.8, 4, 5.6, 8, 11, 16, 22]
@@ -46,113 +48,56 @@ const PARAM_SCHEMA = {
   },
 }
 
-export function EVChart() {
-  const params = parseQueryState(PARAM_SCHEMA)
-  const [selected, setSelected] = useState<SelectedCell | null>(null)
-  const [conditionEV, setConditionEV] = useState<number | null>(params.ev !== undefined ? params.ev : null)
+const tool = getToolBySlug('ev-chart')!
 
-  useToolQuerySync({ ev: conditionEV }, PARAM_SCHEMA)
-
-  // Pre-compute all EV values at ISO 100
-  const evGrid = useMemo(() => {
-    return SHUTTER_SPEEDS.map((s) =>
-      APERTURES.map((a) => Math.round(calcEV(a, s) * 10) / 10)
-    )
-  }, [])
-
-  const matchingISOs = useMemo(() => {
-    if (!selected) return []
-    // For a given EV at ISO 100, find which ISOs can achieve equivalent exposure
-    // at different EVs. Show ISO options that give the same exposure.
-    return ISOS.map((iso) => ({
-      iso,
-      effectiveEV: selected.evValue + Math.log2(iso / 100),
-    }))
-  }, [selected])
-
+function ControlsPanel({ conditionEV, selected, matchingISOs, onConditionChange }: {
+  conditionEV: number | null
+  selected: SelectedCell | null
+  matchingISOs: { iso: number; effectiveEV: number }[]
+  onConditionChange: (ev: number | null) => void
+}) {
   return (
-    <div>
-      <div className={ev.toolbar}>
-        <div className={styles.field}>
-          <label className={styles.label}>Lighting Condition</label>
-          <select
-            className={styles.select}
-            value={conditionEV ?? ''}
-            onChange={(e) => {
-              const val = e.target.value
-              setConditionEV(val ? Number(val) : null)
-            }}
-          >
-            <option value="">— None —</option>
-            {LIGHTING_CONDITIONS.map((c) => (
-              <option key={c.label} value={c.ev}>
-                {c.label} (EV {c.ev})
-              </option>
-            ))}
-          </select>
-        </div>
+    <>
+      <div className={ev.header}>
+        <h1 className={ev.title}>{tool.name}</h1>
+        <p className={ev.description}>{tool.description}</p>
       </div>
 
-      <div className={styles.tableWrap}>
-        <table className={styles.table}>
-          <thead>
-            <tr>
-              <th className={ev.cornerCell}>Shutter \ Aperture</th>
-              {APERTURES.map((a) => (
-                <th key={a}>f/{a}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {SHUTTER_SPEEDS.map((s, si) => (
-              <tr key={si}>
-                <th style={{ textAlign: 'left' }}>{formatShutter(s)}</th>
-                {APERTURES.map((a, ai) => {
-                  const cellEV = evGrid[si][ai]
-                  const roundedEV = Math.round(cellEV)
-                  const isSelected = selected?.apertureIdx === ai && selected?.shutterIdx === si
-                  const isHighlighted = conditionEV !== null && roundedEV === conditionEV
-
-                  return (
-                    <td
-                      key={ai}
-                      className={`${isSelected ? ev.cellSelected : ''} ${isHighlighted ? ev.cellHighlighted : ''}`}
-                      onClick={() => setSelected({ apertureIdx: ai, shutterIdx: si, evValue: cellEV })}
-                      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setSelected({ apertureIdx: ai, shutterIdx: si, evValue: cellEV }) }}
-                      tabIndex={0}
-                      role="button"
-                      aria-label={`EV ${cellEV.toFixed(1)} at f/${APERTURES[ai]} ${formatShutter(s)}`}
-                      aria-pressed={isSelected}
-                      style={{ cursor: 'pointer' }}
-                    >
-                      {cellEV.toFixed(1)}
-                    </td>
-                  )
-                })}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <div className={calc.field}>
+        <label className={calc.label}>Lighting Condition</label>
+        <select
+          className={calc.select}
+          value={conditionEV ?? ''}
+          onChange={(e) => {
+            const val = e.target.value
+            onConditionChange(val ? Number(val) : null)
+          }}
+        >
+          <option value="">— None —</option>
+          {LIGHTING_CONDITIONS.map((c) => (
+            <option key={c.label} value={c.ev}>
+              {c.label} (EV {c.ev})
+            </option>
+          ))}
+        </select>
       </div>
 
       {selected && (
-        <div className={ev.details}>
-          <div className={styles.results}>
-            <div className={styles.resultCard}>
-              <span className={styles.resultLabel}>Aperture</span>
-              <span className={styles.resultValue}>f/{APERTURES[selected.apertureIdx]}</span>
-            </div>
-            <div className={styles.resultCard}>
-              <span className={styles.resultLabel}>Shutter</span>
-              <span className={styles.resultValue}>{formatShutter(SHUTTER_SPEEDS[selected.shutterIdx])}</span>
-            </div>
-            <div className={styles.resultCard}>
-              <span className={styles.resultLabel}>EV (ISO 100)</span>
-              <span className={styles.resultValue}>{selected.evValue.toFixed(1)}</span>
-            </div>
+        <>
+          <div className={calc.resultCard}>
+            <span className={calc.resultLabel}>Selected Cell</span>
+            <span className={calc.resultValue}>EV {selected.evValue.toFixed(1)}</span>
+          </div>
+          <div className={calc.resultCard}>
+            <span className={calc.resultLabel}>Aperture</span>
+            <span className={calc.resultValue}>f/{APERTURES[selected.apertureIdx]}</span>
+          </div>
+          <div className={calc.resultCard}>
+            <span className={calc.resultLabel}>Shutter</span>
+            <span className={calc.resultValue}>{formatShutter(SHUTTER_SPEEDS[selected.shutterIdx])}</span>
           </div>
 
-          <div className={ev.isoTable}>
+          <div>
             <h3 className={ev.isoTitle}>Equivalent EV at different ISOs</h3>
             <div className={ev.isoGrid}>
               {matchingISOs.map(({ iso, effectiveEV }) => (
@@ -163,8 +108,97 @@ export function EVChart() {
               ))}
             </div>
           </div>
-        </div>
+        </>
       )}
+    </>
+  )
+}
+
+export function EVChart() {
+  const params = parseQueryState(PARAM_SCHEMA)
+  const [selected, setSelected] = useState<SelectedCell | null>(null)
+  const [conditionEV, setConditionEV] = useState<number | null>(params.ev !== undefined ? params.ev : null)
+
+  useToolQuerySync({ ev: conditionEV }, PARAM_SCHEMA)
+
+  const evGrid = useMemo(() => {
+    return SHUTTER_SPEEDS.map((s) =>
+      APERTURES.map((a) => Math.round(calcEV(a, s) * 10) / 10)
+    )
+  }, [])
+
+  const matchingISOs = useMemo(() => {
+    if (!selected) return []
+    return ISOS.map((iso) => ({
+      iso,
+      effectiveEV: selected.evValue + Math.log2(iso / 100),
+    }))
+  }, [selected])
+
+  const controlsProps = {
+    conditionEV,
+    selected,
+    matchingISOs,
+    onConditionChange: setConditionEV,
+  }
+
+  return (
+    <div className={ev.app}>
+      <div className={ev.appBody}>
+        <div className={ev.sidebar}>
+          <ControlsPanel {...controlsProps} />
+        </div>
+
+        <div className={ev.main}>
+          <div className={calc.tableWrap}>
+            <table className={calc.table}>
+              <thead>
+                <tr>
+                  <th className={ev.cornerCell}>Shutter \ Aperture</th>
+                  {APERTURES.map((a) => (
+                    <th key={a}>f/{a}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {SHUTTER_SPEEDS.map((s, si) => (
+                  <tr key={si}>
+                    <th style={{ textAlign: 'left' }}>{formatShutter(s)}</th>
+                    {APERTURES.map((a, ai) => {
+                      const cellEV = evGrid[si][ai]
+                      const roundedEV = Math.round(cellEV)
+                      const isSelected = selected?.apertureIdx === ai && selected?.shutterIdx === si
+                      const isHighlighted = conditionEV !== null && roundedEV === conditionEV
+
+                      return (
+                        <td
+                          key={ai}
+                          className={`${isSelected ? ev.cellSelected : ''} ${isHighlighted ? ev.cellHighlighted : ''}`}
+                          onClick={() => setSelected({ apertureIdx: ai, shutterIdx: si, evValue: cellEV })}
+                          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setSelected({ apertureIdx: ai, shutterIdx: si, evValue: cellEV }) }}
+                          tabIndex={0}
+                          role="button"
+                          aria-label={`EV ${cellEV.toFixed(1)} at f/${APERTURES[ai]} ${formatShutter(s)}`}
+                          aria-pressed={isSelected}
+                          style={{ cursor: 'pointer' }}
+                        >
+                          {cellEV.toFixed(1)}
+                        </td>
+                      )
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <LearnPanel slug="ev-chart" />
+      </div>
+
+      <div className={ev.mobileControls}>
+        <ControlsPanel {...controlsProps} />
+      </div>
     </div>
   )
 }

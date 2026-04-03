@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { ToolPageShell } from '@/components/shared/ToolPageShell'
 import { HyperfocalTable } from '@/components/tools/hyperfocal-table/HyperfocalTable'
 
 export const metadata: Metadata = {
@@ -8,9 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function HyperfocalTablePage() {
-  return (
-    <ToolPageShell slug="hyperfocal-table">
-      <HyperfocalTable />
-    </ToolPageShell>
-  )
+  return <HyperfocalTable />
 }

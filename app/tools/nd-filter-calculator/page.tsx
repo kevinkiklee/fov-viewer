@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { ToolPageShell } from '@/components/shared/ToolPageShell'
 import { NdFilterCalculator } from '@/components/tools/nd-filter-calculator/NdFilterCalculator'
 
 export const metadata: Metadata = {
@@ -8,9 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function NdFilterCalculatorPage() {
-  return (
-    <ToolPageShell slug="nd-filter-calculator">
-      <NdFilterCalculator />
-    </ToolPageShell>
-  )
+  return <NdFilterCalculator />
 }

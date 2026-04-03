@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { ToolPageShell } from '@/components/shared/ToolPageShell'
 import { WhiteBalance } from '@/components/tools/white-balance/WhiteBalance'
 
 export const metadata: Metadata = {
@@ -8,9 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function WhiteBalancePage() {
-  return (
-    <ToolPageShell slug="white-balance">
-      <WhiteBalance />
-    </ToolPageShell>
-  )
+  return <WhiteBalance />
 }

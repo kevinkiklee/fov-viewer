@@ -44,53 +44,10 @@
 .mobileControls {
   display: none;
 }
-
-/* EV-specific styles */
-.cornerCell {
-  text-align: left !important;
-  font-size: 11px;
-}
-.cellSelected {
-  background: var(--accent) !important;
-  color: #fff !important;
-  font-weight: 700;
-}
-.cellHighlighted {
-  background: rgba(59, 130, 246, 0.15) !important;
-  border-color: var(--accent) !important;
-}
-.details {
-  margin-top: 16px;
-}
-.isoTitle {
+.tableTitle {
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 8px;
-}
-.isoGrid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-}
-.isoCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-  padding: 4px 8px;
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  min-width: 80px;
-}
-.isoLabel {
-  font-size: 11px;
-  color: var(--text-secondary);
-}
-.isoValue {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 600;
 }
 
 @media (max-width: 1023px) {
@@ -113,9 +70,5 @@
     flex-direction: column;
     gap: 16px;
     padding: 16px;
-  }
-  .isoCard {
-    min-height: 44px;
-    justify-content: center;
   }
 }

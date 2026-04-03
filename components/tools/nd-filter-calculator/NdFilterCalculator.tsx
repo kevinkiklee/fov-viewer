@@ -2,8 +2,11 @@
 
 import { useState, useMemo } from 'react'
 import { shutterWithNd, formatShutterSpeed } from '@/lib/math/exposure'
+import { getToolBySlug } from '@/lib/data/tools'
 import { parseQueryState, useToolQuerySync, intParam } from '@/lib/utils/querySync'
-import styles from '../shared/Calculator.module.css'
+import { LearnPanel } from '@/components/shared/LearnPanel'
+import calc from '../shared/Calculator.module.css'
+import nd from './NdFilterCalculator.module.css'
 
 const BASE_SHUTTER_SPEEDS = [
   { label: '1/8000', value: 1 / 8000 },
@@ -44,91 +47,124 @@ const PARAM_SCHEMA = {
   nd: intParam(2, 0, 9),
 }
 
+const tool = getToolBySlug('nd-filter-calculator')!
+
+function ControlsPanel({ baseIdx, ndIdx, resultSpeed, ndStops, onBaseChange, onNdChange }: {
+  baseIdx: number
+  ndIdx: number
+  resultSpeed: number
+  ndStops: number
+  onBaseChange: (idx: number) => void
+  onNdChange: (idx: number) => void
+}) {
+  return (
+    <>
+      <div className={nd.header}>
+        <h1 className={nd.title}>{tool.name}</h1>
+        <p className={nd.description}>{tool.description}</p>
+      </div>
+
+      <div className={calc.field}>
+        <label className={calc.label}>Base Shutter Speed</label>
+        <select
+          className={calc.select}
+          value={baseIdx}
+          onChange={(e) => onBaseChange(Number(e.target.value))}
+        >
+          {BASE_SHUTTER_SPEEDS.map((s, i) => (
+            <option key={s.label} value={i}>
+              {s.label}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div className={calc.field}>
+        <label className={calc.label}>ND Filter</label>
+        <select
+          className={calc.select}
+          value={ndIdx}
+          onChange={(e) => onNdChange(Number(e.target.value))}
+        >
+          {ND_FILTERS.map((f, i) => (
+            <option key={f.factor} value={i}>
+              {f.label}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div className={calc.resultCard}>
+        <span className={calc.resultLabel}>Resulting Shutter Speed</span>
+        <span className={calc.resultValue}>{formatShutterSpeed(resultSpeed)}</span>
+      </div>
+      <div className={calc.resultCard}>
+        <span className={calc.resultLabel}>Stops Added</span>
+        <span className={calc.resultValue}>{ndStops}</span>
+      </div>
+    </>
+  )
+}
+
 export function NdFilterCalculator() {
   const params = parseQueryState(PARAM_SCHEMA)
-  const [baseIdx, setBaseIdx] = useState(params.base ?? 6) // 1/125
-  const [ndIdx, setNdIdx] = useState(params.nd ?? 2) // ND8
+  const [baseIdx, setBaseIdx] = useState(params.base ?? 6)
+  const [ndIdx, setNdIdx] = useState(params.nd ?? 2)
 
   useToolQuerySync({ base: baseIdx, nd: ndIdx }, PARAM_SCHEMA)
 
   const baseShutter = BASE_SHUTTER_SPEEDS[baseIdx].value
-  const nd = ND_FILTERS[ndIdx]
+  const ndFilter = ND_FILTERS[ndIdx]
 
-  const resultSpeed = useMemo(() => shutterWithNd(baseShutter, nd.stops), [baseShutter, nd.stops])
+  const resultSpeed = useMemo(() => shutterWithNd(baseShutter, ndFilter.stops), [baseShutter, ndFilter.stops])
+
+  const controlsProps = {
+    baseIdx,
+    ndIdx,
+    resultSpeed,
+    ndStops: ndFilter.stops,
+    onBaseChange: setBaseIdx,
+    onNdChange: setNdIdx,
+  }
 
   return (
-    <div>
-      <div className={styles.layout}>
-        <div className={styles.controls}>
-          <div className={styles.field}>
-            <label className={styles.label}>Base Shutter Speed</label>
-            <select
-              className={styles.select}
-              value={baseIdx}
-              onChange={(e) => setBaseIdx(Number(e.target.value))}
-            >
-              {BASE_SHUTTER_SPEEDS.map((s, i) => (
-                <option key={s.label} value={i}>
-                  {s.label}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div className={styles.field}>
-            <label className={styles.label}>ND Filter</label>
-            <select
-              className={styles.select}
-              value={ndIdx}
-              onChange={(e) => setNdIdx(Number(e.target.value))}
-            >
-              {ND_FILTERS.map((f, i) => (
-                <option key={f.factor} value={i}>
-                  {f.label}
-                </option>
-              ))}
-            </select>
-          </div>
+    <div className={nd.app}>
+      <div className={nd.appBody}>
+        <div className={nd.sidebar}>
+          <ControlsPanel {...controlsProps} />
         </div>
 
-        <div className={styles.results}>
-          <div className={styles.resultCard}>
-            <span className={styles.resultLabel}>Resulting Shutter Speed</span>
-            <span className={styles.resultValue}>{formatShutterSpeed(resultSpeed)}</span>
-          </div>
-          <div className={styles.resultCard}>
-            <span className={styles.resultLabel}>Stops Added</span>
-            <span className={styles.resultValue}>{nd.stops}</span>
-          </div>
-        </div>
-      </div>
-
-      <div style={{ marginTop: 16 }}>
-        <h3 style={{ fontSize: 12, fontWeight: 600, marginBottom: 8 }}>
-          Quick Reference
-        </h3>
-        <div className={styles.tableWrap}>
-          <table className={styles.table}>
-            <thead>
-              <tr>
-                <th style={{ textAlign: 'left' }}>Base</th>
-                {TABLE_FILTERS.map((f) => (
-                  <th key={f.factor}>{f.label}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {BASE_SHUTTER_SPEEDS.map((s) => (
-                <tr key={s.label}>
-                  <td style={{ textAlign: 'left', fontWeight: 500 }}>{s.label}</td>
+        <div className={nd.main}>
+          <h3 className={nd.tableTitle}>Quick Reference</h3>
+          <div className={calc.tableWrap}>
+            <table className={calc.table}>
+              <thead>
+                <tr>
+                  <th style={{ textAlign: 'left' }}>Base</th>
                   {TABLE_FILTERS.map((f) => (
-                    <td key={f.factor}>{formatShutterSpeed(shutterWithNd(s.value, f.stops))}</td>
+                    <th key={f.factor}>{f.label}</th>
                   ))}
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {BASE_SHUTTER_SPEEDS.map((s) => (
+                  <tr key={s.label}>
+                    <td style={{ textAlign: 'left', fontWeight: 500 }}>{s.label}</td>
+                    {TABLE_FILTERS.map((f) => (
+                      <td key={f.factor}>{formatShutterSpeed(shutterWithNd(s.value, f.stops))}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
+
+        <LearnPanel slug="nd-filter-calculator" />
+      </div>
+
+      <div className={nd.mobileControls}>
+        <ControlsPanel {...controlsProps} />
       </div>
     </div>
   )

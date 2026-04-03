@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { ToolPageShell } from '@/components/shared/ToolPageShell'
 import { EVChart } from '@/components/tools/ev-chart/EVChart'
 
 export const metadata: Metadata = {
@@ -8,9 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function EVChartPage() {
-  return (
-    <ToolPageShell slug="ev-chart">
-      <EVChart />
-    </ToolPageShell>
-  )
+  return <EVChart />
 }

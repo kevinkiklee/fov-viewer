@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { ToolPageShell } from '@/components/shared/ToolPageShell'
 import { ExifViewer } from '@/components/tools/exif-viewer/ExifViewer'
 
 export const metadata: Metadata = {
@@ -8,9 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function ExifViewerPage() {
-  return (
-    <ToolPageShell slug="exif-viewer">
-      <ExifViewer />
-    </ToolPageShell>
-  )
+  return <ExifViewer />
 }
