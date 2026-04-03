@@ -4,6 +4,7 @@ import './App.css'
 import type { AppState, LensConfig, Orientation } from './types'
 import { DEFAULT_STATE, LENS_COLORS, LENS_LABELS, MAX_LENSES } from './types'
 import { parseQueryParams, useQuerySync } from './hooks/useQuerySync'
+import { useDynamicMeta } from './hooks/useDynamicMeta'
 
 import { copyCanvasToClipboard, copyLinkToClipboard } from './utils/export'
 import { Sidebar } from './components/Sidebar'
@@ -80,6 +81,7 @@ function App() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
 
   useQuerySync(state)
+  useDynamicMeta(state.lenses)
 
   document.documentElement.setAttribute('data-theme', state.theme)
   localStorage.setItem('fov-theme', state.theme)
