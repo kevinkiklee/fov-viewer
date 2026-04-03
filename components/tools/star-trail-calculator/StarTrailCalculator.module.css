@@ -1,0 +1,264 @@
+/* Sidebar + canvas layout matching Exposure Simulator pattern */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.appBody {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 280px;
+  min-width: 280px;
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Mode toggle buttons */
+.modeToggle {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modeBtn {
+  flex: 1;
+  padding: 8px 12px;
+  min-height: 44px;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s, color 0.15s;
+}
+
+.modeBtn:first-child {
+  border-right: 1px solid var(--border);
+}
+
+.modeBtn:hover {
+  background: var(--bg-surface);
+}
+
+.modeBtnActive {
+  background: var(--accent);
+  color: #fff;
+}
+
+.modeBtnActive:hover {
+  background: var(--accent);
+}
+
+/* Slider fields */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fieldLabel {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.fieldValue {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.select {
+  width: 100%;
+  padding: 6px 8px;
+  min-height: 44px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  padding: 6px 8px;
+  min-height: 44px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.slider {
+  width: 100%;
+  accent-color: var(--accent);
+  height: 6px;
+  cursor: pointer;
+}
+
+/* Result cards */
+.resultCard {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.resultLabel {
+  font-size: 11px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.resultValue {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.resultNote {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* Canvas area */
+.canvasArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  gap: 8px;
+}
+
+.presetStrip {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.presetStripLabel {
+  font-size: 12px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.presetBtn {
+  padding: 4px 12px;
+  min-height: 32px;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.presetBtn:hover {
+  border-color: var(--accent);
+}
+
+.presetBtnActive {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.canvasMain {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.starCanvas {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  background: #050510;
+  border-radius: 8px;
+}
+
+/* Mobile layout */
+.mobileControls {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .app {
+    height: auto;
+    overflow: visible;
+  }
+
+  .appBody {
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .mobileControls {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .topbar {
+    justify-content: center;
+  }
+
+  .canvasMain {
+    padding: 4px;
+    flex: none;
+  }
+
+  .starCanvas {
+    border-radius: 0;
+  }
+
+  .slider {
+    height: 44px;
+  }
+}

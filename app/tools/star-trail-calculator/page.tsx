@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { ToolPageShell } from '@/components/shared/ToolPageShell'
 import { StarTrailCalculator } from '@/components/tools/star-trail-calculator/StarTrailCalculator'
 
 export const metadata: Metadata = {
@@ -8,9 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function StarTrailCalculatorPage() {
-  return (
-    <ToolPageShell slug="star-trail-calculator">
-      <StarTrailCalculator />
-    </ToolPageShell>
-  )
+  return <StarTrailCalculator />
 }
