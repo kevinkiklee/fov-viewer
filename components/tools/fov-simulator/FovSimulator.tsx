@@ -20,6 +20,7 @@ import { DistortionCanvas } from './DistortionCanvas'
 import { ShareModal } from './ShareModal'
 import { FrameInfoPanel } from './FrameInfoPanel'
 import { ViewModeToggle } from './ViewModeToggle'
+import { CompressionScene } from './CompressionScene'
 import { CropStrip } from './CropStrip'
 import styles from './FovSimulator.module.css'
 
@@ -229,7 +230,11 @@ export function FovSimulator() {
               />
             )}
             {state.viewMode === 'compression' && (
-              <div style={{ color: 'var(--text-secondary)', fontSize: 14 }}>Compression view coming soon</div>
+              <CompressionScene
+                lens={state.lenses[state.activeLens]}
+                activeLensIndex={state.activeLens}
+                distance={state.distance}
+              />
             )}
           </section>
 
