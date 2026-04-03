@@ -74,6 +74,7 @@ Content is defined as structured data in `lib/data/education/content.ts` and `co
 
 ## Design
 
+- **No page scroll.** The application must fit within the viewport (100vh). The page never scrolls — only individual panels (controls, canvas, LearnPanel) scroll internally via `overflow-y: auto`. This is a hard constraint for all tool pages and the homepage.
 - **FOV Simulator is the reference implementation.** All tools should match its look and feel: dark surface panels, compact controls, same spacing/typography tokens, and consistent use of `var(--accent)` for interactive elements.
 - **Three-column layout**: ToolPageShell renders tool content (left/center) + LearnPanel (right sidebar, collapsible). Full-height tools (FOV Simulator, Color Harmony) manage their own layout but include LearnPanel directly.
 - **Nav mega-menu**: Tools dropdown groups tools by category (Visualizers, Calculators, Reference, File Tools) with name + description per item.

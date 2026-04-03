@@ -363,6 +363,7 @@ export function ColorHarmony() {
             </button>
           ))}
           <div className={styles.copyGroup}>
+            <span className={styles.copyLabel}>Copy colors</span>
             <button className={styles.copyBtn} onClick={() => copyPalette('hex')} title="Copy hex codes">
               {copiedFormat === 'hex' ? 'Copied!' : 'Hex'}
             </button>

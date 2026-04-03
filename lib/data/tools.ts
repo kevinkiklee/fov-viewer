@@ -13,8 +13,7 @@ export const TOOLS: ToolDef[] = [
   { slug: 'white-balance', name: 'White Balance Visualizer', description: 'See how color temperature affects your photos', dev: 'live', prod: 'draft', category: 'visualizer' },
   { slug: 'ev-chart', name: 'EV Chart', description: 'Interactive exposure value reference chart', dev: 'live', prod: 'draft', category: 'reference' },
   { slug: 'sensor-size', name: 'Sensor Size Comparison', description: 'Compare camera sensor sizes visually', dev: 'live', prod: 'draft', category: 'visualizer' },
-  { slug: 'exif-viewer', name: 'EXIF Viewer', description: 'View photo metadata without uploading — 100% client-side', dev: 'live', prod: 'draft', category: 'file-tool' },
-  { slug: 'histogram', name: 'Histogram Explainer', description: 'Understand your photo\'s histogram with annotations', dev: 'live', prod: 'draft', category: 'file-tool' },
+  { slug: 'exif-viewer', name: 'EXIF Viewer', description: 'View EXIF metadata and histogram for any photo — 100% client-side', dev: 'live', prod: 'draft', category: 'file-tool' },
   { slug: 'perspective-compression-simulator', name: 'Perspective Compression Simulator', description: 'See how focal length affects background compression', dev: 'live', prod: 'draft', category: 'visualizer' },
 ]
 
