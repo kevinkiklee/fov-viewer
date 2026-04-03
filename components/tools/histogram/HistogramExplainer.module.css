@@ -47,52 +47,41 @@
   display: none;
 }
 
-/* Histogram-specific styles */
-.tabs {
-  display: flex;
-  gap: 4px;
+/* ── Histogram grid (3 side-by-side) ── */
+.histogramGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
 }
-.tab {
-  padding: 6px 12px;
-  font-size: 12px;
-  font-family: inherit;
-  background: var(--bg-surface);
-  color: var(--text-secondary);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.15s, color 0.15s;
-}
-.tab:hover {
-  color: var(--text-primary);
-}
-.tabActive {
-  background: var(--accent);
-  color: #fff;
-  border-color: var(--accent);
-}
-.canvasWrap {
-  position: relative;
+.histCard {
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 14px;
-  flex: 1;
+  padding: 12px;
   display: flex;
   flex-direction: column;
+}
+.histLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
 }
 .canvas {
   width: 100%;
   flex: 1;
-  min-height: 200px;
+  min-height: 140px;
   display: block;
 }
 .regionLabels {
   display: flex;
   justify-content: space-between;
-  font-size: 11px;
-  color: var(--text-muted);
+  font-size: 9px;
+  color: var(--text-secondary);
   margin-top: 4px;
+  opacity: 0.6;
 }
 .annotations {
   display: flex;
@@ -116,6 +105,24 @@
   border: 1px solid var(--border);
   border-radius: 10px;
 }
+/* ── Image preview ── */
+.imagePreview {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.previewImg {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 6px;
+  display: block;
+}
+
 .emptyMain {
   flex: 1;
   display: flex;
@@ -146,11 +153,7 @@
     gap: 16px;
     padding: 16px;
   }
-  .tab {
-    min-height: 44px;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .histogramGrid {
+    grid-template-columns: 1fr;
   }
 }

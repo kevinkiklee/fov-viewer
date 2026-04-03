@@ -65,17 +65,15 @@ function drawHistogram(
 
 const tool = getToolBySlug('histogram')!
 
-const modes: { key: ViewMode; label: string }[] = [
+const HISTOGRAM_MODES: { key: ViewMode; label: string }[] = [
   { key: 'luminance', label: 'Luminance' },
   { key: 'rgb', label: 'RGB Overlay' },
   { key: 'channels', label: 'All Channels' },
 ]
 
-function ControlsPanel({ hist, clip, mode, onModeChange, onFile }: {
+function ControlsPanel({ hist, clip, onFile }: {
   hist: HistogramData | null
   clip: ClipInfo | null
-  mode: ViewMode
-  onModeChange: (m: ViewMode) => void
   onFile: (file: File) => void
 }) {
   return (
@@ -89,19 +87,6 @@ function ControlsPanel({ hist, clip, mode, onModeChange, onFile }: {
 
       {hist && (
         <>
-          <div className={styles.tabs}>
-            {modes.map((m) => (
-              <button
-                key={m.key}
-                className={`${styles.tab} ${mode === m.key ? styles.tabActive : ''}`}
-                onClick={() => onModeChange(m.key)}
-                aria-pressed={mode === m.key}
-              >
-                {m.label}
-              </button>
-            ))}
-          </div>
-
           {(clip?.hasBlackClip || clip?.hasWhiteClip) && (
             <div className={styles.annotations}>
               {clip?.hasBlackClip && (
@@ -128,11 +113,52 @@ function ControlsPanel({ hist, clip, mode, onModeChange, onFile }: {
   )
 }
 
+/** A single histogram canvas with a label */
+function HistogramCard({ hist, mode, label }: {
+  hist: HistogramData
+  mode: ViewMode
+  label: string
+}) {
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+
+  const draw = useCallback(() => {
+    if (canvasRef.current) {
+      drawHistogram(canvasRef.current, hist, mode)
+    }
+  }, [hist, mode])
+
+  useEffect(() => { draw() }, [draw])
+
+  useEffect(() => {
+    const el = canvasRef.current
+    if (!el) return
+    const observer = new ResizeObserver(() => draw())
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [draw])
+
+  return (
+    <div className={styles.histCard}>
+      <div className={styles.histLabel}>{label}</div>
+      <canvas
+        ref={canvasRef}
+        className={styles.canvas}
+        aria-label={`${label} histogram`}
+        role="img"
+      />
+      <div className={styles.regionLabels}>
+        <span>Shadows</span>
+        <span>Midtones</span>
+        <span>Highlights</span>
+      </div>
+    </div>
+  )
+}
+
 export function HistogramExplainer() {
   const [hist, setHist] = useState<HistogramData | null>(null)
   const [clip, setClip] = useState<ClipInfo | null>(null)
-  const [mode, setMode] = useState<ViewMode>('luminance')
-  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const [imageUrl, setImageUrl] = useState<string | null>(null)
 
   const handleFile = useCallback((file: File) => {
     const img = new Image()
@@ -149,29 +175,15 @@ export function HistogramExplainer() {
       const clipping = detectClipping(histogram)
       setHist(histogram)
       setClip(clipping)
-      URL.revokeObjectURL(url)
+      setImageUrl((prev) => {
+        if (prev) URL.revokeObjectURL(prev)
+        return url
+      })
     }
     img.src = url
   }, [])
 
-  useEffect(() => {
-    if (hist && canvasRef.current) {
-      drawHistogram(canvasRef.current, hist, mode)
-    }
-  }, [hist, mode])
-
-  useEffect(() => {
-    if (!hist || !canvasRef.current) return
-    const observer = new ResizeObserver(() => {
-      if (canvasRef.current && hist) {
-        drawHistogram(canvasRef.current, hist, mode)
-      }
-    })
-    observer.observe(canvasRef.current)
-    return () => observer.disconnect()
-  }, [hist, mode])
-
-  const controlsProps = { hist, clip, mode, onModeChange: setMode, onFile: handleFile }
+  const controlsProps = { hist, clip, onFile: handleFile }
 
   return (
     <div className={styles.app}>
@@ -182,14 +194,19 @@ export function HistogramExplainer() {
 
         <div className={styles.main}>
           {hist ? (
-            <div className={styles.canvasWrap}>
-              <canvas ref={canvasRef} className={styles.canvas} aria-label={`Histogram showing ${mode} channel distribution`} role="img" />
-              <div className={styles.regionLabels}>
-                <span>Shadows</span>
-                <span>Midtones</span>
-                <span>Highlights</span>
+            <>
+              {imageUrl && (
+                <div className={styles.imagePreview}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={imageUrl} alt="Uploaded photo" className={styles.previewImg} />
+                </div>
+              )}
+              <div className={styles.histogramGrid}>
+                {HISTOGRAM_MODES.map((m) => (
+                  <HistogramCard key={m.key} hist={hist} mode={m.key} label={m.label} />
+                ))}
               </div>
-            </div>
+            </>
           ) : (
             <div className={styles.emptyMain}>Upload an image to see its histogram</div>
           )}
