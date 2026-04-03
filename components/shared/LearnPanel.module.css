@@ -77,14 +77,14 @@
 }
 
 .sectionTitle {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--text-primary);
   margin: 0;
 }
 
 .sectionText {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--text-secondary);
   line-height: 1.5;
   margin: 0;
@@ -98,7 +98,7 @@
 }
 
 .factor {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--text-secondary);
   line-height: 1.4;
 }
@@ -118,14 +118,14 @@
 
 .tipLabel {
   color: #f59e0b;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 2px;
 }
 
 .tipText {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--text-secondary);
   line-height: 1.4;
 }
@@ -150,26 +150,26 @@
 }
 
 .challengeLabel {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   color: #10b981;
 }
 
 .challengeDifficulty {
   margin-left: auto;
-  font-size: 9px;
+  font-size: 10px;
   color: var(--text-muted);
   text-transform: capitalize;
 }
 
 .challengeScenario {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--text-secondary);
   line-height: 1.4;
 }
 
 .challengeHint {
-  font-size: 9px;
+  font-size: 11px;
   color: var(--text-muted);
   font-style: italic;
 }
@@ -184,8 +184,8 @@
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  padding: 5px 8px;
-  font-size: 10px;
+  padding: 6px 10px;
+  font-size: 12px;
   color: var(--text-secondary);
   cursor: pointer;
   text-align: left;
@@ -220,8 +220,8 @@
   color: #fff;
   border: none;
   border-radius: var(--radius-sm);
-  padding: 6px 10px;
-  font-size: 10px;
+  padding: 8px 12px;
+  font-size: 12px;
   cursor: pointer;
   font-weight: 500;
 }
@@ -236,19 +236,19 @@
 }
 
 .feedbackSuccess {
-  font-size: 10px;
+  font-size: 12px;
   color: #10b981;
   line-height: 1.4;
 }
 
 .feedbackFailure {
-  font-size: 10px;
+  font-size: 12px;
   color: #ef4444;
   line-height: 1.4;
 }
 
 .completedBadge {
-  font-size: 9px;
+  font-size: 11px;
   color: #10b981;
   font-weight: 600;
 }

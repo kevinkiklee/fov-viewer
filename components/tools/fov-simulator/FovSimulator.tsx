@@ -16,9 +16,7 @@ import { LensPanel } from './LensPanel'
 import { SceneStrip } from './SceneStrip'
 import { ActionBar } from './ActionBar'
 import { Canvas } from './Canvas'
-import { DistortionCanvas } from './DistortionCanvas'
 import { ShareModal } from './ShareModal'
-import { FrameInfoPanel } from './FrameInfoPanel'
 import { ViewModeToggle } from './ViewModeToggle'
 import { CompressionScene } from './CompressionScene'
 import { CropStrip } from './CropStrip'
@@ -33,7 +31,6 @@ type Action =
   | { type: 'SET_ORIENTATION'; payload: Orientation }
   | { type: 'SET_DISTANCE'; payload: number }
   | { type: 'SET_VIEW_MODE'; payload: ViewMode }
-  | { type: 'SET_SHOW_GRID'; payload: boolean }
   | { type: 'SET_SHOW_GUIDES'; payload: boolean }
   | { type: 'RESET' }
   | { type: 'HYDRATE'; payload: Partial<FovSimulatorState> }
@@ -71,8 +68,6 @@ function reducer(state: FovSimulatorState, action: Action): FovSimulatorState {
       return { ...state, distance: action.payload }
     case 'SET_VIEW_MODE':
       return { ...state, viewMode: action.payload }
-    case 'SET_SHOW_GRID':
-      return { ...state, showGrid: action.payload }
     case 'SET_SHOW_GUIDES':
       return { ...state, showGuides: action.payload }
     case 'RESET':
@@ -91,7 +86,6 @@ export function FovSimulator() {
   const [collapsed, setCollapsed] = useState<Record<number, boolean>>({})
   const [showShare, setShowShare] = useState(false)
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
-  const distortionCanvasRef = useRef<HTMLCanvasElement | null>(null)
   const { theme, setTheme } = useTheme()
 
   useQuerySync(state)
@@ -106,11 +100,10 @@ export function FovSimulator() {
   }, [hydrated])
 
   const handleCopyImage = useCallback(async () => {
-    const canvas = state.viewMode === 'distortion' ? distortionCanvasRef.current : canvasRef.current
-    if (!canvas) return
-    const success = await copyCanvasToClipboard(canvas)
+    if (!canvasRef.current) return
+    const success = await copyCanvasToClipboard(canvasRef.current)
     setToast(success ? 'Copied image!' : 'Failed to copy')
-  }, [state.viewMode])
+  }, [])
 
   const handleCopyLink = useCallback(async () => {
     const success = await copyLinkToClipboard()
@@ -171,23 +164,6 @@ export function FovSimulator() {
             onChange={(m) => dispatch({ type: 'SET_VIEW_MODE', payload: m })}
           />
 
-          {state.viewMode === 'distortion' && (
-            <div style={{ background: 'var(--bg-surface)', borderRadius: 10, padding: '10px 14px' }}>
-              <label style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: 'var(--text-secondary)', cursor: 'pointer' }}>
-                <input type="checkbox" checked={state.showGrid} onChange={(e) => dispatch({ type: 'SET_SHOW_GRID', payload: e.target.checked })} style={{ accentColor: 'var(--accent)' }} />
-                Show distortion grid
-              </label>
-            </div>
-          )}
-
-          <FrameInfoPanel
-            lenses={state.lenses}
-            distance={state.distance}
-            showGuides={state.showGuides}
-            onDistanceChange={(d) => dispatch({ type: 'SET_DISTANCE', payload: d })}
-            onShowGuidesChange={(v) => dispatch({ type: 'SET_SHOW_GUIDES', payload: v })}
-          />
-
           <ActionBar
             onCopyImage={handleCopyImage}
             onCopyLink={handleCopyLink}
@@ -224,15 +200,6 @@ export function FovSimulator() {
                 distance={state.distance}
                 showGuides={state.showGuides}
                 activeLens={state.activeLens}
-              />
-            )}
-            {state.viewMode === 'distortion' && (
-              <DistortionCanvas
-                lens={state.lenses[state.activeLens]}
-                imageIndex={state.imageIndex}
-                orientation={state.orientation}
-                showGrid={state.showGrid}
-                canvasRef={distortionCanvasRef}
               />
             )}
             {state.viewMode === 'compression' && (
@@ -298,23 +265,6 @@ export function FovSimulator() {
         <ViewModeToggle
           value={state.viewMode}
           onChange={(m) => dispatch({ type: 'SET_VIEW_MODE', payload: m })}
-        />
-
-        {state.viewMode === 'distortion' && (
-          <div style={{ background: 'var(--bg-surface)', borderRadius: 10, padding: '10px 14px' }}>
-            <label style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: 'var(--text-secondary)', cursor: 'pointer' }}>
-              <input type="checkbox" checked={state.showGrid} onChange={(e) => dispatch({ type: 'SET_SHOW_GRID', payload: e.target.checked })} style={{ accentColor: 'var(--accent)' }} />
-              Show distortion grid
-            </label>
-          </div>
-        )}
-
-        <FrameInfoPanel
-          lenses={state.lenses}
-          distance={state.distance}
-          showGuides={state.showGuides}
-          onDistanceChange={(d) => dispatch({ type: 'SET_DISTANCE', payload: d })}
-          onShowGuidesChange={(v) => dispatch({ type: 'SET_SHOW_GUIDES', payload: v })}
         />
 
         <ActionBar

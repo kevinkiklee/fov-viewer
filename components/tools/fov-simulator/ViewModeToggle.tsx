@@ -5,7 +5,6 @@ import styles from './ViewModeToggle.module.css'
 
 const OPTIONS: { value: ViewMode; label: string }[] = [
   { value: 'fov', label: 'FOV' },
-  { value: 'distortion', label: 'Distortion' },
   { value: 'compression', label: 'Compression' },
 ]
 

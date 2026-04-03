@@ -41,9 +41,8 @@ export function parseQueryParams(): Partial<FovSimulatorState> {
   if (Number.isInteger(dist) && dist >= 3 && dist <= 100) state.distance = dist
 
   const mode = params.get('mode')
-  if (mode === 'distortion' || mode === 'compression') state.viewMode = mode as ViewMode
+  if (mode === 'compression') state.viewMode = mode as ViewMode
 
-  if (params.get('grid') === '1') state.showGrid = true
   if (params.get('guides') === '1') state.showGuides = true
 
   return state
@@ -58,7 +57,6 @@ export function stateToQueryString(state: FovSimulatorState): string {
   params.set('img', String(state.imageIndex))
   if (state.distance !== 10) params.set('dist', String(state.distance))
   if (state.viewMode !== 'fov') params.set('mode', state.viewMode)
-  if (state.showGrid) params.set('grid', '1')
   if (state.showGuides) params.set('guides', '1')
   return params.toString()
 }

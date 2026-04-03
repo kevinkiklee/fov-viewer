@@ -47,21 +47,6 @@ export interface ToolEducation {
   challenges: Challenge[]
 }
 
-export interface LearningPath {
-  id: string
-  name: string
-  description: string
-  /** Ordered list of tool slugs + challenge IDs */
-  steps: LearningPathStep[]
-}
-
-export interface LearningPathStep {
-  toolSlug: string
-  challengeId: string
-  /** Brief context for why this step matters in the path */
-  context: string
-}
-
 export interface ChallengeProgress {
   [challengeId: string]: {
     completed: boolean

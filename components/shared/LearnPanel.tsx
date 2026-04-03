@@ -86,7 +86,12 @@ export function LearnPanel({ slug }: LearnPanelProps) {
               />
             ))}
           </div>
-          <ChallengeCard challenge={challenge} />
+          <ChallengeCard
+            challenge={challenge}
+            onAdvance={challengeIndex < edu.challenges.length - 1
+              ? () => setChallengeIndex(challengeIndex + 1)
+              : undefined}
+          />
         </>
       )}
     </div>
@@ -111,7 +116,7 @@ function ChallengeNavDot({ index, challengeId, active, onClick }: { index: numbe
   )
 }
 
-function ChallengeCard({ challenge }: { challenge: Challenge }) {
+function ChallengeCard({ challenge, onAdvance }: { challenge: Challenge; onAdvance?: () => void }) {
   const [selected, setSelected] = useState<string | null>(null)
   const [result, setResult] = useState<'success' | 'failure' | null>(null)
   const [completed, setCompleted] = useState(false)
@@ -177,7 +182,16 @@ function ChallengeCard({ challenge }: { challenge: Challenge }) {
         </button>
       )}
 
-      {result === 'success' && <div className={styles.feedbackSuccess}>{challenge.successMessage}</div>}
+      {result === 'success' && (
+        <>
+          <div className={styles.feedbackSuccess}>{challenge.successMessage}</div>
+          {onAdvance && (
+            <button className={styles.checkBtn} onClick={onAdvance}>
+              Next Challenge &rarr;
+            </button>
+          )}
+        </>
+      )}
       {result === 'failure' && <div className={styles.feedbackFailure}>{challenge.failureMessage}</div>}
     </div>
   )
