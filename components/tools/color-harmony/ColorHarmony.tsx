@@ -1,9 +1,10 @@
 'use client'
 
 import { useState, useMemo, useCallback } from 'react'
-import { hslToRgb, rgbToHsl, complementary, analogous, triadic, splitComplementary } from '@/lib/math/color'
+import { hslToRgb, complementary, analogous, triadic, splitComplementary } from '@/lib/math/color'
 import styles from '../shared/Calculator.module.css'
 import ch from './ColorHarmony.module.css'
+import { ColorWheel } from './ColorWheel'
 
 type HarmonyType = 'complementary' | 'analogous' | 'triadic' | 'split-complementary'
 
@@ -67,9 +68,6 @@ export function ColorHarmony() {
 
   const suggestion = useMemo(() => getSuggestion(hue, harmony), [hue, harmony])
 
-  const baseRgb = useMemo(() => hslToRgb(hue, saturation, lightness), [hue, saturation, lightness])
-  const baseHex = rgbToHex(baseRgb.r, baseRgb.g, baseRgb.b)
-
   const copyHex = useCallback(async (hex: string) => {
     try {
       await navigator.clipboard.writeText(hex)
@@ -83,27 +81,6 @@ export function ColorHarmony() {
   return (
     <div className={styles.layout}>
       <div className={styles.controls}>
-        <div className={styles.field}>
-          <label className={styles.label}>
-            Base Color
-          </label>
-          <input
-            type="color"
-            value={baseHex}
-            onChange={(e) => {
-              const hex = e.target.value
-              const r = parseInt(hex.slice(1, 3), 16)
-              const g = parseInt(hex.slice(3, 5), 16)
-              const b = parseInt(hex.slice(5, 7), 16)
-              const hsl = rgbToHsl(r, g, b)
-              setHue(hsl.h)
-              setSaturation(hsl.s)
-              setLightness(hsl.l)
-            }}
-            className={ch.colorInput}
-          />
-        </div>
-
         <div className={styles.field}>
           <label className={styles.label}>
             Hue: <span className={styles.value}>{hue}&deg;</span>
@@ -164,6 +141,14 @@ export function ColorHarmony() {
       </div>
 
       <div>
+        <ColorWheel
+          saturation={saturation}
+          lightness={lightness}
+          harmonyHues={harmonyHues}
+          onHueChange={setHue}
+          onSaturationChange={setSaturation}
+        />
+
         <div className={ch.palette}>
           {swatches.map((s, i) => (
             <button
