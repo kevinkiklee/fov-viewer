@@ -4,7 +4,7 @@ import { useRef, useEffect, useCallback, useState } from 'react'
 import type { LensConfig } from '@/lib/types'
 import type { Orientation } from './types'
 import { LENS_COLORS, LENS_LABELS } from './types'
-import { calcFOV, calcCropRatio } from '@/lib/math/fov'
+import { calcFOV, calcCropRatio, calcFrameWidth, calcEquivFocalLength } from '@/lib/math/fov'
 import { getSensor } from '@/lib/data/sensors'
 import { SCENES } from '@/lib/data/scenes'
 import styles from './FovSimulator.module.css'
@@ -14,6 +14,9 @@ interface CanvasProps {
   imageIndex: number
   orientation: Orientation
   canvasRef: React.RefObject<HTMLCanvasElement | null>
+  distance: number
+  showGuides: boolean
+  activeLens: number
 }
 
 // Reference FOV: 14mm on full frame defines the widest view the canvas shows.
@@ -41,7 +44,88 @@ interface Rect {
   pill?: PillBounds
 }
 
-export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasProps) {
+const FRAMING_GUIDES = [
+  { label: 'full body', height: 5.5 },
+  { label: 'waist up', height: 3.0 },
+  { label: 'head & shoulders', height: 1.5 },
+  { label: 'headshot', height: 0.8 },
+]
+
+/**
+ * Draw framing guide markers on the left interior edge of an FOV rect.
+ * Each guide represents a typical human subject framing height in meters.
+ * Guides that don't fit within the rect or are too small are skipped.
+ */
+function drawFramingGuides(
+  ctx: CanvasRenderingContext2D,
+  rect: Rect,
+  verticalFrameHeight: number,
+  dpr: number,
+) {
+  const tickLen = 18 * dpr
+  const lineX = rect.x + tickLen + 4 * dpr
+  const fontSize = 10 * dpr
+  ctx.font = `500 ${fontSize}px -apple-system, BlinkMacSystemFont, sans-serif`
+  ctx.setLineDash([3 * dpr, 3 * dpr])
+  ctx.lineWidth = 1.5 * dpr
+
+  const connectorLines: Array<{ x: number; topY: number; botY: number }> = []
+
+  for (const guide of FRAMING_GUIDES) {
+    const fraction = guide.height / verticalFrameHeight
+    if (fraction > 1 || fraction < 0.05) continue
+
+    const guideY = rect.y + rect.h * (1 - fraction)
+
+    // Top tick mark (dashed) at guide level
+    ctx.strokeStyle = 'rgba(255, 255, 255, 0.7)'
+    ctx.beginPath()
+    ctx.moveTo(rect.x + 2 * dpr, guideY)
+    ctx.lineTo(rect.x + tickLen, guideY)
+    ctx.stroke()
+
+    // Bottom tick mark at rect bottom
+    const botY = rect.y + rect.h
+    ctx.beginPath()
+    ctx.moveTo(rect.x + 2 * dpr, botY)
+    ctx.lineTo(rect.x + tickLen, botY)
+    ctx.stroke()
+
+    connectorLines.push({ x: lineX, topY: guideY, botY })
+
+    // Label with semi-transparent background
+    const labelText = guide.label
+    const metrics = ctx.measureText(labelText)
+    const labelW = metrics.width + 6 * dpr
+    const labelH = fontSize + 4 * dpr
+    const labelX = rect.x + tickLen + 6 * dpr
+    const labelY = guideY - 1 * dpr
+
+    ctx.setLineDash([])
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.55)'
+    ctx.beginPath()
+    ctx.roundRect(labelX, labelY - labelH + 2 * dpr, labelW, labelH, 3 * dpr)
+    ctx.fill()
+
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.9)'
+    ctx.fillText(labelText, labelX + 3 * dpr, labelY)
+
+    ctx.setLineDash([3 * dpr, 3 * dpr])
+  }
+
+  // Draw vertical connector lines
+  for (const { x, topY, botY } of connectorLines) {
+    ctx.strokeStyle = 'rgba(255, 255, 255, 0.5)'
+    ctx.beginPath()
+    ctx.moveTo(x, topY)
+    ctx.lineTo(x, botY)
+    ctx.stroke()
+  }
+
+  ctx.setLineDash([])
+}
+
+export function Canvas({ lenses, imageIndex, orientation, canvasRef, distance, showGuides, activeLens }: CanvasProps) {
   const imageRef = useRef<HTMLImageElement | null>(null)
   const animFrameRef = useRef<number>(0)
   const drawnRectsRef = useRef<Rect[]>([])
@@ -154,6 +238,15 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasPro
       }
     }
 
+    // Draw framing guides for the active lens (if enabled)
+    if (showGuides && rects[activeLens]) {
+      const activeRect = rects[activeLens]
+      const activeFov = fovs[activeLens]
+      const verticalFOV = orientation === 'portrait' ? activeFov.horizontal : activeFov.vertical
+      const verticalFrameHeight = calcFrameWidth(verticalFOV, distance)
+      drawFramingGuides(ctx, activeRect, verticalFrameHeight, dpr)
+    }
+
     // Draw lens labels (e.g. "A -- 50mm") as colored pills above each rect.
     // When multiple rects share the same position, labels stack vertically.
     const fontSize = 12 * dpr
@@ -175,7 +268,11 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasPro
 
       for (let si = 0; si < group.length; si++) {
         const r = group[si]
-        const text = `${r.label} — ${r.focalLength}mm`
+        const sensor = getSensor(lenses[r.index].sensorId)
+        const equivText = sensor.cropFactor !== 1
+          ? ` (${calcEquivFocalLength(r.focalLength, sensor.cropFactor)}mm eq)`
+          : ''
+        const text = `${r.label} — ${r.focalLength}mm${equivText}`
         const metrics = ctx.measureText(text)
         const textW = metrics.width
         const textH = fontSize
@@ -213,7 +310,7 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef }: CanvasPro
 
     // Store rects with pill bounds for hit testing
     drawnRectsRef.current = rects
-  }, [canvasRef, computeRects])
+  }, [canvasRef, computeRects, showGuides, activeLens, distance, fovs, orientation, lenses])
 
   // Load image
   useEffect(() => {

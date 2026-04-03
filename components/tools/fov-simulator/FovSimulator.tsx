@@ -200,6 +200,9 @@ export function FovSimulator() {
                 imageIndex={state.imageIndex}
                 orientation={state.orientation}
                 canvasRef={canvasRef}
+                distance={state.distance}
+                showGuides={state.showGuides}
+                activeLens={state.activeLens}
               />
             )}
             {state.viewMode === 'distortion' && (
