@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Dev server runs at `http://localhost:5173/`.
+Dev server runs at `http://localhost:3000`.
 
 ## Development Workflow
 
@@ -25,57 +25,45 @@ Dev server runs at `http://localhost:5173/`.
 ## Project Structure
 
 ```
-src/
-├── App.tsx                 # Root component, state reducer
-├── App.css                 # All styles (CSS custom properties for theming)
-├── types.ts                # Shared types and constants
-├── components/
-│   ├── Canvas.tsx           # Image + overlay rendering, drag logic
-│   ├── LensPanel.tsx        # Focal length slider, presets, sensor select
-│   ├── Sidebar.tsx          # Desktop sidebar wrapper
-│   ├── SceneStrip.tsx       # Image thumbnail selector
-│   ├── ActionBar.tsx        # Copy image / Copy link / Reset buttons
-│   ├── ThemeToggle.tsx      # Dark/light toggle
-│   └── Toast.tsx            # Brief notification popup
-├── hooks/
-│   └── useQuerySync.ts      # Bidirectional state <-> URL query params
-├── utils/
-│   ├── fov.ts               # FOV math (angles, crop ratios, equivalents)
-│   └── export.ts            # Canvas -> clipboard/PNG
-├── data/
-│   ├── sensors.ts           # Sensor presets
-│   ├── focalLengths.ts      # Focal length presets
-│   └── scenes.ts            # Sample image references
-└── assets/                  # Sample photos (JPG)
+app/                    Routes (homepage, tool pages, glossary)
+components/
+  layout/               Nav, Footer, ThemeProvider, ThemeToggle
+  shared/               ToolPageShell, FileDropZone, DraftBanner, Toast
+  tools/                One directory per tool + shared/
+lib/
+  math/                 Pure calculation modules with co-located tests
+  data/                 Tool registry, sensors, focal lengths, scenes, glossary
+  utils/                Export helpers
+  types.ts              Shared TypeScript types
+public/                 Static assets (images, icons, manifest)
 ```
 
-## Architecture Notes
+## Adding a New Tool
 
-- **State**: Single `useReducer` in App.tsx with dynamic `lenses[]` array (1-3 items)
-- **Rendering**: `<canvas>` element draws the image and colored overlay rectangles
-- **FOV reference**: 14mm full frame = edge of the photo. Wider lenses extend beyond
-- **Dragging**: Mouse and touch events on canvas, with per-lens offset tracking
-- **URL sync**: All state serialized to query params via `history.replaceState`
-- **Theming**: CSS custom properties on `[data-theme]` attribute
+1. **Math module** (if the tool needs calculations): create `lib/math/yourtool.ts` with pure functions and `lib/math/yourtool.test.ts` with tests.
+2. **Component**: create `components/tools/your-tool/YourTool.tsx` (add `'use client'` at the top if it uses state, effects, or event handlers) and `YourTool.module.css` for styles.
+3. **Route**: create `app/tools/your-tool/page.tsx`. Import and render the component inside `ToolPageShell`.
+4. **Registry**: add an entry to the `TOOLS` array in `lib/data/tools.ts`:
+   ```ts
+   { slug: 'your-tool', name: 'Your Tool', description: '...', status: 'draft', category: 'calculator' }
+   ```
+   Set `status: 'live'` when the tool is ready for production.
+5. **Verify**: run `npm test && npm run build`.
 
-## Adding a New Sample Scene
+## Adding a Glossary Term
 
-1. Add a landscape-oriented JPG (4000px+ wide) to `src/assets/`
-2. Import it in `src/data/scenes.ts` and add to the `SCENES` array
-3. Update the image index cap in `src/hooks/useQuerySync.ts`
-
-## Adding a New Sensor Preset
-
-1. Add the entry to `SENSORS` array in `src/data/sensors.ts`
-2. The ID must be unique and URL-safe (used in query params)
+Add the term to the `GLOSSARY` array in `lib/data/glossary.ts`. Terms are sorted alphabetically in the UI. Each entry needs a `term`, `definition`, and optionally a `category`.
 
 ## Code Style
 
-- No component library — custom CSS only
-- BEM-style CSS class names (e.g. `.lens-panel__header`)
-- Named exports for all components
-- Types in `src/types.ts`
-- No emojis in code
+- **CSS Modules** for component styles (`Component.module.css`), not global CSS
+- **Design tokens** via CSS custom properties for colors, spacing, typography
+- **`'use client'`** directive on interactive components; everything else is a server component by default
+- **Named exports** for all components
+- **No external UI libraries** — custom CSS only
+- **Pure math**: calculation logic in `lib/math/` with no React dependencies
+- **TDD**: write tests for math modules before or alongside implementation
+- **No emojis in code**
 
 ## Reporting Issues
 

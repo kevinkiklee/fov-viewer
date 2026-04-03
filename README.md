@@ -1,34 +1,37 @@
 # Photo Tools
 
-Free photography calculators, simulators, and references. The FOV Viewer helps photographers visualize and compare field of view across different focal lengths and sensor sizes.
+15 free photography calculators, simulators, and references — no ads, no sign-up, runs entirely in the browser.
 
 **[Live Demo](https://photo-tools.iser.io/)**
 
-![FOV Viewer Screenshot](docs/screenshot.png)
+## Tools
 
-## Features
-
-| Feature | Description |
-|---------|-------------|
-| **Up to 3 lenses** | Add color-coded overlay rectangles showing what each focal length captures. Remove any lens with the X button. |
-| **Focal length control** | Logarithmic slider from 14–800mm with snap-to-preset. Quick-select buttons for 11 common focal lengths. |
-| **Sensor presets** | 6 sensor sizes per lens — Medium Format (0.79x), Full Frame (1.0x), APS-C Nikon/Sony (1.5x), APS-C Canon (1.6x), Micro Four Thirds (2.0x), 1" Sensor (2.7x). Shows equivalent focal length automatically. |
-| **Draggable overlays** | Click and drag FOV rectangles to reposition. Works with mouse and touch. Hit "Center" to reset. |
-| **Orientation toggle** | Switch between landscape and portrait to see how FOV changes when you rotate the camera. |
-| **5 sample scenes** | Landscape, portrait, bird/wildlife, city street, and milky way — each suited to different focal lengths. |
-| **Shareable links** | All settings encoded in URL query params. Change a control and the URL updates in real time. |
-| **Copy to clipboard** | Export the canvas (image + overlays) as PNG. Falls back to file download if clipboard API is unavailable. |
-| **Dark / light theme** | Dark default. Toggle with sun/moon button. Preference saved to localStorage. |
-| **Responsive** | Sidebar on desktop, stacked on mobile. Touch-draggable overlays. |
+| Tool | Description |
+|------|-------------|
+| **FOV Viewer** | Compare field of view across focal lengths and sensor sizes |
+| **Exposure Triangle Simulator** | See how aperture, shutter speed, and ISO interact |
+| **Depth of Field Calculator** | Calculate near focus, far focus, and total depth of field |
+| **Hyperfocal Distance Table** | Quick-reference hyperfocal distances for any lens and aperture |
+| **Shutter Speed Guide** | Find the minimum safe shutter speed for sharp handheld shots |
+| **ND Filter Calculator** | Calculate exposure time with any ND filter |
+| **Diffraction Limit Calculator** | Find the sharpest aperture for your sensor |
+| **Star Trail Calculator** | Calculate max exposure for sharp stars or plan star trail shots |
+| **White Balance Visualizer** | See how color temperature affects your photos |
+| **Color Harmony Picker** | Build color palettes for photography shoots |
+| **EV Chart** | Interactive exposure value reference chart |
+| **Sensor Size Comparison** | Compare camera sensor sizes visually |
+| **EXIF Viewer** | View photo metadata without uploading — 100% client-side |
+| **Histogram Explainer** | Understand your photo's histogram with annotations |
+| **Glossary** | Photography terms and definitions |
 
 ## Tech Stack
 
+- Next.js 16 (App Router, Turbopack)
 - React 19 + TypeScript
-- Vite
 - Vitest + Testing Library
-- Canvas API for rendering
-- CSS custom properties for theming
-- Zero runtime dependencies beyond React
+- CSS Modules + custom properties
+- Canvas API
+- Vercel
 
 ## Development
 
@@ -37,13 +40,13 @@ npm install
 npm run dev
 ```
 
-Dev server runs at `http://localhost:5173/`.
+Dev server runs at `http://localhost:3000`.
 
 ## Testing
 
 ```bash
-npm test          # single run
-npm run test:watch # watch mode
+npm test            # single run (149 tests)
+npm run test:watch  # watch mode
 ```
 
 ## Build
@@ -52,33 +55,19 @@ npm run test:watch # watch mode
 npm run build
 ```
 
-Static output goes to `dist/`.
+## Lint
+
+```bash
+npm run lint
+```
 
 ## Deployment
 
-Push to `main` — GitHub Actions automatically builds and deploys to GitHub Pages.
+Push to `main` triggers:
+1. GitHub Actions CI (audit, lint, test, build)
+2. Vercel auto-deploy to production
 
-To set up:
-1. Create a GitHub repo called `fov-viewer`
-2. Push this code to `main`
-3. Go to Settings > Pages > Source: "GitHub Actions"
-
-## URL Parameters
-
-All state is encoded in the URL for sharing:
-
-| Param | Description | Example |
-|-------|-------------|---------|
-| `a` | Lens A focal length (mm) | `a=20` |
-| `b` | Lens B focal length (mm) | `b=85` |
-| `c` | Lens C focal length (mm) | `c=200` |
-| `sa` | Lens A sensor | `sa=ff` |
-| `sb` | Lens B sensor | `sb=apsc_n` |
-| `sc` | Lens C sensor | `sc=m43` |
-| `img` | Image index (0-4) | `img=0` |
-| `theme` | `dark` or `light` | `theme=dark` |
-
-Sensor codes: `mf`, `ff`, `apsc_n`, `apsc_c`, `m43`, `1in`
+Live at [photo-tools.iser.io](https://photo-tools.iser.io/).
 
 ## License
 

@@ -1,6 +1,6 @@
-# FOV Viewer — Local Development Guide
+# Photo Tools — Local Development Guide
 
-A client-side React app that helps photographers visualize and compare field of view across different focal lengths and sensor sizes.
+A Next.js 16 App Router hub with 15 free photography calculators, simulators, and references.
 
 ## Prerequisites
 
@@ -13,145 +13,99 @@ A client-side React app that helps photographers visualize and compare field of 
 ## Quick Start
 
 ```bash
-git clone <repo-url> && cd photo-tools
-
-# Automated setup (installs deps, runs lint, tests, type-check):
-./scripts/setup.sh
-
-# Start dev server:
+git clone https://github.com/kevinkiklee/photo-tools.git
+cd photo-tools
+npm install
 npm run dev
-# Open http://localhost:5173/
+# Open http://localhost:3000
 ```
-
-## Manual Setup
-
-```bash
-npm ci                # Install dependencies (lockfile-exact)
-npm run dev           # Start Vite dev server with HMR
-```
-
-> The dev server runs at `http://localhost:5173/`.
 
 ## Available Scripts
 
 | Command | Description |
 |---------|-------------|
-| `npm run dev` | Start Vite dev server with HMR |
-| `npm run build` | Type-check (`tsc -b`) then build for production (`dist/`) |
-| `npm run preview` | Serve the production build locally |
+| `npm run dev` | Start Next.js dev server with Turbopack |
+| `npm run build` | Production build via `next build` |
+| `npm run start` | Serve production build locally |
 | `npm run lint` | Run ESLint |
-| `npm run test` | Run all Vitest tests once |
+| `npm test` | Run all Vitest tests once |
 | `npm run test:watch` | Run tests in watch mode |
 
 ## Project Structure
 
 ```
-fov-viewer/
-├── index.html                  # Entry HTML (CSP + referrer policy)
-├── vite.config.ts              # Vite config (base path, React plugin, Vitest)
-├── tsconfig.json               # TypeScript project references
-├── package.json
-├── scripts/
-│   └── setup.sh                # Automated local setup script
-├── docs/
-│   └── SETUP.md                # This file
+photo-tools/
+├── app/
+│   ├── layout.tsx                  # Root layout (Nav, Footer, ThemeProvider)
+│   ├── page.tsx                    # Homepage — tool hub grid
+│   ├── globals.css                 # Global styles + design tokens
+│   ├── tools/
+│   │   ├── fov-viewer/page.tsx     # Each tool has its own route
+│   │   ├── dof-calculator/page.tsx
+│   │   ├── exposure-simulator/page.tsx
+│   │   └── ...                     # 14 tool routes total
+│   └── learn/
+│       └── glossary/page.tsx       # Photography glossary
+├── components/
+│   ├── layout/                     # Nav, Footer, ThemeProvider, ThemeToggle
+│   ├── shared/                     # ToolPageShell, FileDropZone, DraftBanner, Toast, AdSlot
+│   └── tools/                      # One directory per tool + shared/
+│       ├── fov-viewer/
+│       ├── dof-calculator/
+│       ├── shared/                 # Components shared across tools
+│       └── ...
+├── lib/
+│   ├── math/                       # Pure calculation modules (with co-located tests)
+│   │   ├── fov.ts / fov.test.ts
+│   │   ├── dof.ts / dof.test.ts
+│   │   ├── exposure.ts / exposure.test.ts
+│   │   ├── diffraction.ts / diffraction.test.ts
+│   │   ├── startrail.ts / startrail.test.ts
+│   │   ├── color.ts / color.test.ts
+│   │   └── histogram.ts / histogram.test.ts
+│   ├── data/                       # Static data + registry (with tests)
+│   │   ├── tools.ts                # Tool registry (slug, name, status, category)
+│   │   ├── sensors.ts              # Sensor presets
+│   │   ├── focalLengths.ts         # Focal length presets
+│   │   ├── scenes.ts               # Sample scene definitions
+│   │   └── glossary.ts             # Photography glossary terms
+│   ├── utils/
+│   │   └── export.ts               # Canvas export helpers
+│   └── types.ts                    # Shared TypeScript types
+├── public/                         # Static assets (images, icons, manifest, sitemap)
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml          # CI: audit → lint → test → build → deploy
-├── src/
-│   ├── main.tsx                # React entry point
-│   ├── App.tsx                 # Root component, state reducer
-│   ├── App.css                 # All component styles (BEM)
-│   ├── theme.css               # CSS custom properties (dark/light)
-│   ├── types.ts                # Shared types, DEFAULT_STATE, constants
-│   ├── components/
-│   │   ├── Canvas.tsx          # Canvas rendering: cover-fit images, FOV overlays, drag
-│   │   ├── LensPanel.tsx       # Focal length log-slider, presets, sensor select
-│   │   ├── Sidebar.tsx         # Desktop sidebar layout wrapper
-│   │   ├── SceneStrip.tsx      # Scene thumbnail selector
-│   │   ├── ActionBar.tsx       # Copy image, copy link, reset buttons
-│   │   ├── ThemeToggle.tsx     # Dark/light theme toggle
-│   │   └── Toast.tsx           # Brief notification popup
-│   ├── hooks/
-│   │   └── useQuerySync.ts     # Bidirectional state ↔ URL query param sync
-│   ├── utils/
-│   │   ├── fov.ts              # FOV math (angles, frame width, crop ratio)
-│   │   └── export.ts           # Canvas → clipboard/PNG export
-│   ├── data/
-│   │   ├── sensors.ts          # 6 sensor presets (MF → 1" sensor)
-│   │   ├── focalLengths.ts     # 12 focal length presets (8mm–800mm)
-│   │   └── scenes.ts           # 5 scene image definitions
-│   └── assets/                 # Scene images (1600px wide, JPEG 80%)
-│       ├── person.jpg
-│       ├── portrait.jpg
-│       ├── bird2.jpg
-│       ├── city.jpg
-│       └── milkyway.jpg
-└── Test files (co-located):
-    ├── src/utils/fov.test.ts
-    ├── src/utils/export.test.ts
-    ├── src/data/sensors.test.ts
-    ├── src/data/focalLengths.test.ts
-    ├── src/hooks/useQuerySync.test.ts
-    ├── src/reducer.test.ts
-    └── src/integration.test.ts
+│       └── deploy.yml              # CI: audit → lint → test → build → deploy
+└── package.json
 ```
 
 ## Architecture
 
-### State Management
+### Tool Registry
 
-Single `useReducer` in `App.tsx`. State shape:
+All tools are defined in `lib/data/tools.ts`. Each tool has a `slug`, `name`, `description`, `status` (`live` or `draft`), and `category`. The homepage reads this registry to display available tools. Draft tools are hidden from the homepage but accessible by direct URL (with a draft banner).
 
-```ts
-interface AppState {
-  lenses: LensConfig[]      // Up to 3 lenses, each with focalLength + sensorId
-  imageIndex: number         // Active scene (0–4)
-  orientation: Orientation   // 'landscape' | 'portrait'
-  theme: 'dark' | 'light'
-  activeLens: number         // Index of selected lens
-  // ...
-}
-```
+### Pure Math Modules
 
-State is synced bidirectionally with URL query params (`?a=35&sa=ff&b=85&sb=apsc_n&img=0&theme=dark`) via `useQuerySync`.
+Calculation logic lives in `lib/math/` as pure functions with no React dependencies. Each module has co-located tests. This makes the math easy to test independently and reuse across components.
 
-### Canvas Rendering
+### Components
 
-- Uses `<canvas>` with `drawImageCover()` for aspect-ratio-preserving image fill
-- FOV overlay rectangles sized against a fixed reference FOV (14mm full frame)
-- Rectangles are draggable (mouse + touch) with position clamping
-- Supports landscape (3:2) and portrait (2:3) orientations
+- `components/layout/` — site-wide layout (Nav, Footer, theme)
+- `components/shared/` — reusable across tools (ToolPageShell wraps every tool page)
+- `components/tools/` — tool-specific UI, one directory per tool
 
-### Focal Length Slider
+### Styling
 
-- Logarithmic scale so wide-angle presets (14–85mm) get more slider space
-- Snaps to nearest preset within a threshold
-- Tick marks at each preset position
-- 8mm preset only shows for crop sensors; 14mm minimum for full frame/medium format
+CSS Modules for component scoping. Design tokens (colors, spacing, typography) defined as CSS custom properties. Dark/light theme via `[data-theme]` attribute.
 
-### Theming
+## How to Add a New Tool
 
-CSS custom properties on `[data-theme="dark"|"light"]`. Dark by default. Persisted to `localStorage`.
-
-## Testing
-
-```bash
-npm test               # Run once
-npm run test:watch     # Watch mode
-```
-
-**7 test files, 85+ tests** covering:
-
-| File | Scope |
-|------|-------|
-| `fov.test.ts` | FOV math: angles, frame width, crop ratio, equiv focal length |
-| `sensors.test.ts` | Sensor presets, getSensor fallback |
-| `focalLengths.test.ts` | Preset ordering, bounds, labels |
-| `export.test.ts` | Clipboard/download helpers |
-| `useQuerySync.test.ts` | URL parse/serialize round-trips |
-| `reducer.test.ts` | All reducer actions, immutability, composition |
-| `integration.test.ts` | Cross-module: FOV + sensors + serialization |
+1. **Math module** (if needed): create `lib/math/yourtool.ts` with pure calculation functions and `lib/math/yourtool.test.ts` with tests.
+2. **Component**: create `components/tools/your-tool/YourTool.tsx` (with `'use client'` if interactive) and `YourTool.module.css`.
+3. **Route**: create `app/tools/your-tool/page.tsx` that wraps the component in `ToolPageShell`.
+4. **Registry**: add the tool to the `TOOLS` array in `lib/data/tools.ts` with `status: 'draft'`. Change to `'live'` when ready.
+5. **Test**: run `npm test` to verify. Run `npm run build` to confirm the build passes.
 
 ## CI/CD Pipeline
 
@@ -160,44 +114,31 @@ On push to `main`, `.github/workflows/deploy.yml` runs:
 1. `npm ci` — install exact dependencies
 2. `npm audit --omit=dev` — check for vulnerabilities
 3. `npm run lint` — ESLint
-4. `npm test` — Vitest
-5. `npm run build` — TypeScript + Vite production build
-6. Deploy `dist/` to GitHub Pages
+4. `npm test` — Vitest (149 tests)
+5. `npm run build` — Next.js production build
 
-To test a production build locally:
+Vercel auto-deploys from `main` to production at `photo-tools.iser.io`.
 
-```bash
-npm run build && npm run preview
-```
-
-## Security
-
-- **CSP meta tag** in `index.html` — restricts scripts/styles to same-origin, images to self/data/blob
-- **Referrer policy** — `no-referrer` prevents URL state leaking via Referer header
-- **No external requests** — all images bundled, no CDN/API calls at runtime
-- **No `eval`/`innerHTML`** — all rendering via React or Canvas API
-- **Dependency audit** — `npm audit` runs in CI before every deploy
-
-## Image Assets
-
-Scene images in `src/assets/` are optimized:
-- 1600px wide, JPEG 80% quality
-- Sourced from Unsplash (free license)
-- ~300–550 KB each (~2.1 MB total)
-
-When adding/replacing images, resize to 1600px wide:
+## Testing
 
 ```bash
-sips --resampleWidth 1600 -s formatOptions 80 src/assets/new-image.jpg --out src/assets/new-image.jpg
+npm test               # Run once
+npm run test:watch     # Watch mode
 ```
+
+**13 test files, 149 tests** covering:
+
+| Area | Files |
+|------|-------|
+| Math modules | `fov`, `dof`, `exposure`, `diffraction`, `startrail`, `color`, `histogram` |
+| Data modules | `tools`, `sensors`, `focalLengths`, `scenes`, `glossary` |
+| Integration | Cross-module tests |
 
 ## Troubleshooting
 
 | Issue | Fix |
 |-------|-----|
-| Blank page at `localhost:5173` | Check the dev server is running (`npm run dev`) |
+| Blank page at `localhost:3000` | Check the dev server is running (`npm run dev`) |
 | `npm ci` fails | Delete `node_modules` and retry, or ensure Node 20+ |
 | Tests fail to run | Run `npm ci` to ensure vitest is installed |
 | Build fails on types | Run `npx tsc --noEmit` to see TypeScript errors |
-| Images look blurry | Ensure source images are at least 1600px wide |
-| Canvas blank after orientation change | Click the center button (⊞) to reset overlay positions |
