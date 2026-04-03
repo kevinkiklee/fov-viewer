@@ -8,6 +8,9 @@ import {
   solveForShutter,
   solveForAperture,
   solveForISO,
+  calcCircleOfConfusion,
+  calcMotionBlurAmount,
+  calcNoiseAmplitude,
 } from './exposure'
 
 describe('calcEV', () => {
@@ -132,5 +135,68 @@ describe('solve exposure triangle', () => {
     // Verify round-trip: solve for shutter using computed ISO should match
     const shutterBack = solveForShutter(ev, aperture, iso)
     expect(shutterBack).toBeCloseTo(shutter, 5)
+  })
+})
+
+describe('calcCircleOfConfusion', () => {
+  it('returns 0 at the focus distance', () => {
+    expect(calcCircleOfConfusion(0.3, 0.3, 1.4)).toBe(0)
+  })
+  it('returns larger CoC for wider apertures', () => {
+    const cocWide = calcCircleOfConfusion(0.8, 0.3, 1.4)
+    const cocNarrow = calcCircleOfConfusion(0.8, 0.3, 22)
+    expect(cocWide).toBeGreaterThan(cocNarrow)
+  })
+  it('returns larger CoC for points further from focus', () => {
+    const cocNear = calcCircleOfConfusion(0.4, 0.3, 5.6)
+    const cocFar = calcCircleOfConfusion(0.9, 0.3, 5.6)
+    expect(cocFar).toBeGreaterThan(cocNear)
+  })
+  it('returns 0 for f/22 regardless of depth (near-zero blur)', () => {
+    const coc = calcCircleOfConfusion(0.8, 0.3, 22)
+    expect(coc).toBeLessThan(0.01)
+  })
+  it('clamps to maxRadius', () => {
+    const coc = calcCircleOfConfusion(1.0, 0.3, 1.4)
+    expect(coc).toBeLessThanOrEqual(20)
+  })
+})
+
+describe('calcMotionBlurAmount', () => {
+  it('returns 0 for very fast shutter speeds', () => {
+    expect(calcMotionBlurAmount(1/8000)).toBeLessThan(0.5)
+  })
+  it('returns max blur for 30s exposure', () => {
+    expect(calcMotionBlurAmount(30)).toBe(40)
+  })
+  it('returns more blur for slower shutters', () => {
+    const blurFast = calcMotionBlurAmount(1/1000)
+    const blurSlow = calcMotionBlurAmount(1/30)
+    expect(blurSlow).toBeGreaterThan(blurFast)
+  })
+  it('clamps to maxBlur', () => {
+    expect(calcMotionBlurAmount(30, 40)).toBeLessThanOrEqual(40)
+  })
+})
+
+describe('calcNoiseAmplitude', () => {
+  it('returns 0 at ISO 100', () => {
+    expect(calcNoiseAmplitude(100)).toBe(0)
+  })
+  it('returns small value at ISO 200', () => {
+    const amp = calcNoiseAmplitude(200)
+    expect(amp).toBeGreaterThan(0)
+    expect(amp).toBeLessThan(0.1)
+  })
+  it('increases with ISO', () => {
+    const amp400 = calcNoiseAmplitude(400)
+    const amp3200 = calcNoiseAmplitude(3200)
+    const amp25600 = calcNoiseAmplitude(25600)
+    expect(amp3200).toBeGreaterThan(amp400)
+    expect(amp25600).toBeGreaterThan(amp3200)
+  })
+  it('returns max amplitude at ISO 25600', () => {
+    const amp = calcNoiseAmplitude(25600)
+    expect(amp).toBeCloseTo(0.5, 1)
   })
 })

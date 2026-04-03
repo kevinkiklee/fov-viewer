@@ -134,3 +134,31 @@ export function solveForAperture(ev: number, shutterSpeed: number, iso: number):
 export function solveForISO(ev: number, aperture: number, shutterSpeed: number): number {
   return (100 * aperture * aperture) / (shutterSpeed * Math.pow(2, ev))
 }
+
+export function calcCircleOfConfusion(
+  depth: number,
+  focusDistance: number,
+  aperture: number,
+  maxRadius: number = 20
+): number {
+  const maxAperture = 1.4
+  const minAperture = 22
+  const apertureScale = 1.0 - Math.log2(aperture / maxAperture) / Math.log2(minAperture / maxAperture)
+  const coc = Math.abs(depth - focusDistance) * apertureScale * maxRadius
+  return Math.min(Math.max(coc, 0), maxRadius)
+}
+
+export function calcMotionBlurAmount(shutterSpeed: number, maxBlur: number = 40): number {
+  const minShutter = 1 / 8000
+  const maxShutter = 30
+  const logMin = Math.log2(minShutter)
+  const logMax = Math.log2(maxShutter)
+  const logCurrent = Math.log2(Math.max(shutterSpeed, minShutter))
+  const t = (logCurrent - logMin) / (logMax - logMin)
+  return Math.min(Math.max(t * maxBlur, 0), maxBlur)
+}
+
+export function calcNoiseAmplitude(iso: number): number {
+  if (iso <= 100) return 0
+  return Math.log2(iso / 100) / 16
+}
