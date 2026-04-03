@@ -1,0 +1,126 @@
+/* Matches FOV Viewer's canvas area styling */
+.canvasArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  gap: 8px;
+}
+
+.sceneStrip {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.sceneStripLabel {
+  font-size: 12px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.sceneThumb {
+  width: 48px;
+  height: 32px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: opacity 0.15s, border-color 0.15s;
+}
+
+.sceneThumb:hover {
+  opacity: 1;
+}
+
+.sceneThumbActive {
+  border-color: var(--accent);
+  opacity: 1;
+}
+
+.sceneThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.canvasMain {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.canvas {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 40px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  text-align: center;
+}
+
+.fallbackImg {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  opacity: 0.7;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 1023px) {
+  .topbar {
+    justify-content: center;
+  }
+
+  .canvasMain {
+    padding: 4px;
+    flex: none;
+  }
+
+  .canvas {
+    border-radius: 0;
+  }
+
+  .sceneStrip {
+    justify-content: flex-start;
+    padding-bottom: 4px;
+  }
+}
