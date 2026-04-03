@@ -19,7 +19,7 @@ export function SceneStrip({ selectedIndex, onChange }: SceneStripProps) {
           onClick={() => onChange(i)}
           title={scene.name}
         >
-          <img src={scene.src} alt={scene.name} />
+          <img src={scene.src} alt={scene.altText} />
         </button>
       ))}
     </div>
