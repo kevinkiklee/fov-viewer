@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { getLiveTools } from '@/lib/data/tools'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://phototools.io'
+  const baseUrl = 'https://www.phototools.io'
   
   // Base routes
   const routes: MetadataRoute.Sitemap = [

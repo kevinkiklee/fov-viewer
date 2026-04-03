@@ -13,7 +13,7 @@ interface ShareModalProps {
 export function ShareModal({ toolName, toolSlug, onClose, onToast }: ShareModalProps) {
   const [copied, setCopied] = useState<string | null>(null)
 
-  const baseUrl = 'https://phototools.io'
+  const baseUrl = 'https://www.phototools.io'
   const toolUrl = `${baseUrl}/tools/${toolSlug}`
   const embedUrl = `${toolUrl}?embed=1`
   const label = toolName

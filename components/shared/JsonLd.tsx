@@ -34,7 +34,7 @@ export function JsonLd() {
           price: '0',
           priceCurrency: 'USD',
         },
-        url: `https://phototools.io/tools/${tool.slug}`,
+        url: `https://www.phototools.io/tools/${tool.slug}`,
       }
 
       const breadcrumbs = {
@@ -45,19 +45,19 @@ export function JsonLd() {
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://phototools.io',
+            item: 'https://www.phototools.io',
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: CATEGORY_LABELS[tool.category],
-            item: `https://phototools.io/#${tool.category}`,
+            item: `https://www.phototools.io/#${tool.category}`,
           },
           {
             '@type': 'ListItem',
             position: 3,
             name: tool.name,
-            item: `https://phototools.io/tools/${tool.slug}`,
+            item: `https://www.phototools.io/tools/${tool.slug}`,
           },
         ],
       }

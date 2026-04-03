@@ -4,7 +4,7 @@ import { ThemeProvider } from '@/components/layout/ThemeProvider'
 import { JsonLd } from '@/components/shared/JsonLd'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://phototools.io'),
+  metadataBase: new URL('https://www.phototools.io'),
   title: {
     default: 'PhotoTools — Free Photography Tools',
     template: '%s | PhotoTools',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'PhotoTools — Free Photography Tools',
     description: 'Free browser-based photography tools: FOV viewer, DoF calculator, exposure simulator, and more.',
-    url: 'https://phototools.io',
+    url: 'https://www.phototools.io',
     siteName: 'PhotoTools',
     images: [
       {
@@ -42,7 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'PhotoTools',
-    url: 'https://phototools.io',
+    url: 'https://www.phototools.io',
     description: 'Free browser-based photography calculators, simulators, and references.',
   }
 

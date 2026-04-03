@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://phototools.io/sitemap.xml',
+    sitemap: 'https://www.phototools.io/sitemap.xml',
   }
 }
