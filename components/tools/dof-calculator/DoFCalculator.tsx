@@ -5,6 +5,7 @@ import { calcDoF } from '@/lib/math/dof'
 import { SENSORS } from '@/lib/data/sensors'
 import { FOCAL_LENGTHS } from '@/lib/data/focalLengths'
 import { parseQueryState, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
+import { LearnPanel } from '@/components/shared/LearnPanel'
 import { DoFDiagram } from './DoFDiagram'
 import { DoFCanvas } from './DoFCanvas'
 import type { SceneKey } from './DoFCanvas'
@@ -257,6 +258,7 @@ export function DoFCalculator() {
             />
           </div>
         </div>
+        <LearnPanel slug="dof-calculator" />
       </div>
 
       {/* Mobile: controls below canvas */}

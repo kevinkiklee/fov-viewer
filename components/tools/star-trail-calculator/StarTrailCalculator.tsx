@@ -6,6 +6,7 @@ import { pixelPitch } from '@/lib/math/diffraction'
 import { SENSORS } from '@/lib/data/sensors'
 import { FOCAL_LENGTHS } from '@/lib/data/focalLengths'
 import { parseQueryState, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
+import { LearnPanel } from '@/components/shared/LearnPanel'
 import { StarTrailCanvas } from './StarTrailCanvas'
 import css from './StarTrailCalculator.module.css'
 
@@ -348,6 +349,7 @@ export function StarTrailCalculator() {
             />
           </div>
         </div>
+        <LearnPanel slug="star-trail-calculator" />
       </div>
 
       {/* Mobile: controls below canvas */}

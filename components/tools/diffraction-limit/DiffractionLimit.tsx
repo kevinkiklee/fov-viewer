@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react'
 import { pixelPitch, diffractionLimitedAperture } from '@/lib/math/diffraction'
 import { SENSORS } from '@/lib/data/sensors'
 import { parseQueryState, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
+import { LearnPanel } from '@/components/shared/LearnPanel'
 import { DiffractionCanvas, type DetailType } from './DiffractionCanvas'
 import css from './DiffractionLimit.module.css'
 
@@ -223,6 +224,7 @@ export function DiffractionLimit() {
             />
           </div>
         </div>
+        <LearnPanel slug="diffraction-limit" />
       </div>
 
       {/* Mobile: controls below canvas */}

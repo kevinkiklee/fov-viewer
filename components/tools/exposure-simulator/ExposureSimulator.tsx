@@ -3,6 +3,7 @@
 import { useState, useMemo, useCallback } from 'react'
 import { calcEV } from '@/lib/math/exposure'
 import { parseQueryState, useToolQuerySync, intParam, strParam } from '@/lib/utils/querySync'
+import { LearnPanel } from '@/components/shared/LearnPanel'
 import { ExposurePreview } from './ExposurePreview'
 import sim from './ExposureSimulator.module.css'
 
@@ -286,6 +287,7 @@ export function ExposureSimulator() {
           shutterSpeed={shutter}
           iso={iso}
         />
+        <LearnPanel slug="exposure-simulator" />
       </div>
 
       {/* Mobile: controls below canvas */}

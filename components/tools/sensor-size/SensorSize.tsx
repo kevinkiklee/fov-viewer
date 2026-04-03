@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect, useCallback } from 'react'
-import styles from '../shared/Calculator.module.css'
+import { LearnPanel } from '@/components/shared/LearnPanel'
 import ss from './SensorSize.module.css'
 import { pixelPitch } from '@/lib/math/diffraction'
 import { parseQueryState, useToolQuerySync, strParam, intParam } from '@/lib/utils/querySync'
@@ -18,7 +18,6 @@ const SENSOR_DIMS = [
 
 type DisplayMode = 'overlay' | 'side-by-side' | 'pixel-density'
 
-/** Full-frame diagonal (mm), used to compute crop factors for the comparison table. */
 const FF_DIAG = Math.sqrt(36 * 36 + 24 * 24)
 
 const ALL_SENSOR_IDS = SENSOR_DIMS.map((s) => s.id) as unknown as string[]
@@ -36,6 +35,31 @@ const PARAM_SCHEMA = {
   },
   mode: strParam<DisplayMode>('overlay', ['overlay', 'side-by-side', 'pixel-density'] as const),
   mp: intParam(24, 1, 200),
+}
+
+/** Hex color to rgba with alpha */
+function rgba(hex: string, a: number): string {
+  const n = parseInt(hex.replace('#', ''), 16)
+  return `rgba(${(n >> 16) & 0xff},${(n >> 8) & 0xff},${n & 0xff},${a})`
+}
+
+/** Draw a rounded rectangle */
+function roundRect(
+  ctx: CanvasRenderingContext2D,
+  x: number, y: number, w: number, h: number, r: number,
+) {
+  r = Math.min(r, w / 2, h / 2)
+  ctx.beginPath()
+  ctx.moveTo(x + r, y)
+  ctx.lineTo(x + w - r, y)
+  ctx.arcTo(x + w, y, x + w, y + r, r)
+  ctx.lineTo(x + w, y + h - r)
+  ctx.arcTo(x + w, y + h, x + w - r, y + h, r)
+  ctx.lineTo(x + r, y + h)
+  ctx.arcTo(x, y + h, x, y + h - r, r)
+  ctx.lineTo(x, y + r)
+  ctx.arcTo(x, y, x + r, y, r)
+  ctx.closePath()
 }
 
 export function SensorSize() {
@@ -69,145 +93,38 @@ export function SensorSize() {
 
     const dpr = window.devicePixelRatio || 1
     const cssWidth = canvas.clientWidth
-    const cssHeight = 350
+    const cssHeight = 420
     canvas.width = cssWidth * dpr
     canvas.height = cssHeight * dpr
     canvas.style.height = `${cssHeight}px`
     ctx.scale(dpr, dpr)
-
     ctx.clearRect(0, 0, cssWidth, cssHeight)
 
     if (visibleSensors.length === 0) return
 
-    const padding = 20
+    const padding = 30
 
     if (mode === 'overlay') {
-      // Overlay mode: all sensors drawn centered on the same point.
-      // Scale is determined by the largest sensor so all fit within the canvas.
-      // Drawing order is largest-first so smaller sensors appear on top.
-      const maxW = Math.max(...visibleSensors.map((s) => s.w))
-      const maxH = Math.max(...visibleSensors.map((s) => s.h))
-      const scale = Math.min((cssWidth - padding * 2) / maxW, (cssHeight - padding * 2) / maxH)
-      const cx = cssWidth / 2
-      const cy = cssHeight / 2
-
-      const sorted = [...visibleSensors].sort((a, b) => b.w * b.h - a.w * a.h)
-      for (const s of sorted) {
-        const rw = s.w * scale
-        const rh = s.h * scale
-        ctx.strokeStyle = s.color
-        ctx.lineWidth = 2
-        ctx.strokeRect(cx - rw / 2, cy - rh / 2, rw, rh)
-
-        // Label
-        ctx.fillStyle = s.color
-        ctx.font = '11px system-ui, sans-serif'
-        ctx.textAlign = 'left'
-        ctx.fillText(s.name, cx - rw / 2 + 4, cy - rh / 2 + 14)
-      }
+      drawOverlay(ctx, cssWidth, cssHeight, padding, visibleSensors)
     } else if (mode === 'side-by-side') {
-      // Side-by-side mode: sensors arranged horizontally, aligned at the bottom
-      // edge, with uniform scale so relative sizes are visually accurate.
-      const totalW = visibleSensors.reduce((sum, s) => sum + s.w, 0)
-      const gap = 8
-      const totalGap = (visibleSensors.length - 1) * gap
-      const maxH = Math.max(...visibleSensors.map((s) => s.h))
-      const scaleX = (cssWidth - padding * 2 - totalGap) / totalW
-      const scaleY = (cssHeight - padding * 2 - 20) / maxH // 20 for label space
-      const scale = Math.min(scaleX, scaleY)
-
-      const totalScaledW = visibleSensors.reduce((sum, s) => sum + s.w * scale, 0) + totalGap
-      let x = (cssWidth - totalScaledW) / 2
-      const baseY = cssHeight - padding
-
-      for (const s of visibleSensors) {
-        const rw = s.w * scale
-        const rh = s.h * scale
-
-        ctx.strokeStyle = s.color
-        ctx.lineWidth = 2
-        ctx.strokeRect(x, baseY - rh, rw, rh)
-
-        // Label below
-        ctx.fillStyle = s.color
-        ctx.font = '10px system-ui, sans-serif'
-        ctx.textAlign = 'center'
-        ctx.fillText(s.name, x + rw / 2, baseY - rh - 4)
-
-        x += rw + gap
-      }
+      drawSideBySide(ctx, cssWidth, cssHeight, padding, visibleSensors)
     } else {
-      // Pixel density mode: draw grids where cell size is proportional to pixel pitch
-      const pitches = visibleSensors.map((s) => ({
-        ...s,
-        pitch: pixelPitch(s.w, resolution),
-      }))
-      const maxPitch = Math.max(...pitches.map((p) => p.pitch))
-      const baseCellSize = 6 // px for the largest pitch
-      const labelHeight = 32
-      const gridSize = 60 // px for the grid box (square)
-      const gap = 16
-      const totalGridW = pitches.length * gridSize + (pitches.length - 1) * gap
-      let x = (cssWidth - totalGridW) / 2
-      const gridTop = (cssHeight - gridSize - labelHeight) / 2
-
-      for (const p of pitches) {
-        const cellSize = (p.pitch / maxPitch) * baseCellSize
-        const cols = Math.floor(gridSize / cellSize)
-        const rows = Math.floor(gridSize / cellSize)
-
-        // Draw grid cells
-        ctx.fillStyle = p.color + '33' // 20% opacity
-        ctx.strokeStyle = p.color
-        ctx.lineWidth = 0.5
-
-        for (let row = 0; row < rows; row++) {
-          for (let col = 0; col < cols; col++) {
-            const cx = x + col * cellSize
-            const cy = gridTop + row * cellSize
-            ctx.fillRect(cx, cy, cellSize, cellSize)
-            ctx.strokeRect(cx, cy, cellSize, cellSize)
-          }
-        }
-
-        // Border around the grid area
-        ctx.strokeStyle = p.color
-        ctx.lineWidth = 1.5
-        ctx.strokeRect(x, gridTop, cols * cellSize, rows * cellSize)
-
-        // Label below
-        ctx.fillStyle = p.color
-        ctx.font = '11px monospace'
-        ctx.textAlign = 'center'
-        const labelX = x + gridSize / 2
-        ctx.fillText(p.name, labelX, gridTop + gridSize + 14)
-        ctx.fillStyle = '#888888'
-        ctx.font = '10px monospace'
-        ctx.fillText(`${p.pitch.toFixed(2)} µm`, labelX, gridTop + gridSize + 26)
-
-        x += gridSize + gap
-      }
+      drawPixelDensity(ctx, cssWidth, cssHeight, padding, visibleSensors, resolution)
     }
   }, [visibleSensors, mode, resolution])
 
-  // Redraw when data or mode changes
-  useEffect(() => {
-    drawCanvas()
-  }, [drawCanvas])
+  useEffect(() => { drawCanvas() }, [drawCanvas])
 
-  // Redraw when canvas container resizes
   useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
-    const observer = new ResizeObserver(() => {
-      drawCanvas()
-    })
+    const observer = new ResizeObserver(() => drawCanvas())
     observer.observe(canvas)
     return () => observer.disconnect()
   }, [drawCanvas])
 
   return (
-    <div>
+    <div className={ss.wrapper}>
       <div className={ss.toolbar}>
         <div className={ss.checkboxes}>
           {SENSOR_DIMS.map((s) => (
@@ -218,66 +135,56 @@ export function SensorSize() {
                 onChange={() => toggleSensor(s.id)}
               />
               <span className={ss.checkDot} style={{ backgroundColor: s.color }} />
-              <span>{s.name}</span>
+              <span className={ss.checkName}>{s.name}</span>
             </label>
           ))}
         </div>
 
-        <div className={ss.modeToggle}>
-          <button
-            className={`${ss.modeBtn} ${mode === 'overlay' ? ss.modeBtnActive : ''}`}
-            onClick={() => setMode('overlay')}
-            aria-pressed={mode === 'overlay'}
-          >
-            Overlay
-          </button>
-          <button
-            className={`${ss.modeBtn} ${mode === 'side-by-side' ? ss.modeBtnActive : ''}`}
-            onClick={() => setMode('side-by-side')}
-            aria-pressed={mode === 'side-by-side'}
-          >
-            Side by Side
-          </button>
-          <button
-            className={`${ss.modeBtn} ${mode === 'pixel-density' ? ss.modeBtnActive : ''}`}
-            onClick={() => setMode('pixel-density')}
-            aria-pressed={mode === 'pixel-density'}
-          >
-            Pixel Density
-          </button>
-        </div>
+        <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+          <div className={ss.modeToggle}>
+            {(['overlay', 'side-by-side', 'pixel-density'] as const).map((m) => (
+              <button
+                key={m}
+                className={`${ss.modeBtn} ${mode === m ? ss.modeBtnActive : ''}`}
+                onClick={() => setMode(m)}
+                aria-pressed={mode === m}
+              >
+                {m === 'overlay' ? 'Overlay' : m === 'side-by-side' ? 'Side by Side' : 'Pixel Density'}
+              </button>
+            ))}
+          </div>
 
-        {mode === 'pixel-density' && (
-          <label className={ss.resolutionField}>
-            Resolution
-            <input
-              type="number"
-              min={1}
-              max={200}
-              value={resolution}
-              onChange={(e) => setResolution(Math.max(1, Number(e.target.value)))}
-            />
-            MP
-          </label>
-        )}
+          {mode === 'pixel-density' && (
+            <label className={ss.resolutionField}>
+              <input
+                type="number"
+                min={1}
+                max={200}
+                value={resolution}
+                onChange={(e) => setResolution(Math.max(1, Number(e.target.value)))}
+              />
+              MP
+            </label>
+          )}
+        </div>
       </div>
 
       <canvas
         ref={canvasRef}
         className={ss.canvas}
-        style={{ width: '100%', height: 350 }}
+        style={{ width: '100%', height: 420 }}
         aria-label={`Sensor size comparison in ${mode} mode`}
         role="img"
       />
 
-      <div className={styles.tableWrap} style={{ marginTop: 16 }}>
-        <table className={styles.table}>
+      <div className={ss.tableWrap}>
+        <table className={ss.table}>
           <thead>
             <tr>
               <th style={{ textAlign: 'left' }}>Sensor</th>
               <th>Width (mm)</th>
               <th>Height (mm)</th>
-              <th>Area (mm&sup2;)</th>
+              <th>Area (mm²)</th>
               <th>Crop Factor</th>
             </tr>
           </thead>
@@ -289,8 +196,10 @@ export function SensorSize() {
               return (
                 <tr key={s.id}>
                   <td style={{ textAlign: 'left' }}>
-                    <span className={ss.tableDot} style={{ backgroundColor: s.color }} />
-                    {s.name}
+                    <div className={ss.sensorCell}>
+                      <span className={ss.tableDot} style={{ backgroundColor: s.color }} />
+                      {s.name}
+                    </div>
                   </td>
                   <td>{s.w}</td>
                   <td>{s.h}</td>
@@ -302,6 +211,248 @@ export function SensorSize() {
           </tbody>
         </table>
       </div>
+      <LearnPanel slug="sensor-size" />
     </div>
   )
+}
+
+// ── Drawing functions ──
+
+type SensorDim = typeof SENSOR_DIMS[number]
+
+function drawOverlay(
+  ctx: CanvasRenderingContext2D,
+  W: number, H: number, pad: number,
+  sensors: SensorDim[],
+) {
+  const maxW = Math.max(...sensors.map((s) => s.w))
+  const maxH = Math.max(...sensors.map((s) => s.h))
+  const scale = Math.min((W - pad * 2) / maxW, (H - pad * 2) / maxH)
+  const cx = W / 2
+  const cy = H / 2
+
+  // Draw largest first so smaller sensors appear on top
+  const sorted = [...sensors].sort((a, b) => b.w * b.h - a.w * a.h)
+
+  for (const s of sorted) {
+    const rw = s.w * scale
+    const rh = s.h * scale
+    const x = cx - rw / 2
+    const y = cy - rh / 2
+    const r = Math.min(4, rw * 0.02)
+
+    // Fill
+    roundRect(ctx, x, y, rw, rh, r)
+    ctx.fillStyle = rgba(s.color, 0.08)
+    ctx.fill()
+
+    // Border
+    roundRect(ctx, x, y, rw, rh, r)
+    ctx.strokeStyle = rgba(s.color, 0.7)
+    ctx.lineWidth = 1.5
+    ctx.stroke()
+
+    // Label — positioned at top-left corner, with a background pill
+    const label = s.name
+    ctx.font = '11px system-ui, sans-serif'
+    const textW = ctx.measureText(label).width
+    const pillX = x + 6
+    const pillY = y + 6
+    const pillW = textW + 10
+    const pillH = 18
+
+    roundRect(ctx, pillX, pillY, pillW, pillH, 3)
+    ctx.fillStyle = rgba(s.color, 0.2)
+    ctx.fill()
+
+    ctx.fillStyle = s.color
+    ctx.textAlign = 'left'
+    ctx.textBaseline = 'middle'
+    ctx.fillText(label, pillX + 5, pillY + pillH / 2)
+  }
+
+  // Dimension annotation for the largest visible sensor
+  const largest = sorted[0]
+  const lw = largest.w * scale
+  const lh = largest.h * scale
+  const lx = cx - lw / 2
+  const ly = cy - lh / 2
+
+  ctx.strokeStyle = rgba(largest.color, 0.3)
+  ctx.lineWidth = 1
+  ctx.setLineDash([3, 3])
+
+  // Width dimension line (below)
+  const dimY = ly + lh + 16
+  ctx.beginPath()
+  ctx.moveTo(lx, dimY)
+  ctx.lineTo(lx + lw, dimY)
+  ctx.stroke()
+  // End ticks
+  ctx.beginPath()
+  ctx.moveTo(lx, dimY - 4)
+  ctx.lineTo(lx, dimY + 4)
+  ctx.stroke()
+  ctx.beginPath()
+  ctx.moveTo(lx + lw, dimY - 4)
+  ctx.lineTo(lx + lw, dimY + 4)
+  ctx.stroke()
+
+  ctx.setLineDash([])
+  ctx.fillStyle = rgba(largest.color, 0.5)
+  ctx.font = '10px system-ui, sans-serif'
+  ctx.textAlign = 'center'
+  ctx.textBaseline = 'top'
+  ctx.fillText(`${largest.w} mm`, cx, dimY + 4)
+
+  // Height dimension line (right)
+  const dimX = lx + lw + 16
+  ctx.setLineDash([3, 3])
+  ctx.beginPath()
+  ctx.moveTo(dimX, ly)
+  ctx.lineTo(dimX, ly + lh)
+  ctx.stroke()
+  ctx.beginPath()
+  ctx.moveTo(dimX - 4, ly)
+  ctx.lineTo(dimX + 4, ly)
+  ctx.stroke()
+  ctx.beginPath()
+  ctx.moveTo(dimX - 4, ly + lh)
+  ctx.lineTo(dimX + 4, ly + lh)
+  ctx.stroke()
+
+  ctx.setLineDash([])
+  ctx.save()
+  ctx.translate(dimX + 6, cy)
+  ctx.rotate(-Math.PI / 2)
+  ctx.fillText(`${largest.h} mm`, 0, 0)
+  ctx.restore()
+
+  ctx.textBaseline = 'alphabetic'
+}
+
+function drawSideBySide(
+  ctx: CanvasRenderingContext2D,
+  W: number, H: number, pad: number,
+  sensors: SensorDim[],
+) {
+  const gap = 12
+  const labelSpace = 36
+  const totalW = sensors.reduce((sum, s) => sum + s.w, 0)
+  const totalGap = (sensors.length - 1) * gap
+  const maxH = Math.max(...sensors.map((s) => s.h))
+  const scaleX = (W - pad * 2 - totalGap) / totalW
+  const scaleY = (H - pad * 2 - labelSpace) / maxH
+  const scale = Math.min(scaleX, scaleY)
+
+  const totalScaledW = sensors.reduce((sum, s) => sum + s.w * scale, 0) + totalGap
+  let x = (W - totalScaledW) / 2
+  const baseY = H - pad - labelSpace
+
+  for (const s of sensors) {
+    const rw = s.w * scale
+    const rh = s.h * scale
+    const r = Math.min(4, rw * 0.03)
+    const rx = x
+    const ry = baseY - rh
+
+    // Fill
+    roundRect(ctx, rx, ry, rw, rh, r)
+    ctx.fillStyle = rgba(s.color, 0.12)
+    ctx.fill()
+
+    // Border
+    roundRect(ctx, rx, ry, rw, rh, r)
+    ctx.strokeStyle = rgba(s.color, 0.7)
+    ctx.lineWidth = 1.5
+    ctx.stroke()
+
+    // Dimension inside
+    ctx.fillStyle = rgba(s.color, 0.5)
+    ctx.font = '9px system-ui, sans-serif'
+    ctx.textAlign = 'center'
+    ctx.textBaseline = 'bottom'
+    if (rw > 40) {
+      ctx.fillText(`${s.w}×${s.h}`, rx + rw / 2, ry + rh - 4)
+    }
+
+    // Name below
+    ctx.fillStyle = s.color
+    ctx.font = '10px system-ui, sans-serif'
+    ctx.textAlign = 'center'
+    ctx.textBaseline = 'top'
+    const nameLabel = s.name.length > 14 ? s.name.replace(' (', '\n(') : s.name
+    const lines = nameLabel.split('\n')
+    lines.forEach((line, i) => {
+      ctx.fillText(line, rx + rw / 2, baseY + 6 + i * 13)
+    })
+
+    x += rw + gap
+  }
+
+  ctx.textBaseline = 'alphabetic'
+}
+
+function drawPixelDensity(
+  ctx: CanvasRenderingContext2D,
+  W: number, H: number, pad: number,
+  sensors: SensorDim[],
+  resolution: number,
+) {
+  const pitches = sensors.map((s) => ({
+    ...s,
+    pitch: pixelPitch(s.w, resolution),
+  }))
+  const maxPitch = Math.max(...pitches.map((p) => p.pitch))
+  const baseCellSize = 7
+  const labelHeight = 40
+  const gridSize = 64
+  const gap = 20
+  const totalGridW = pitches.length * gridSize + (pitches.length - 1) * gap
+  let x = (W - totalGridW) / 2
+  const gridTop = (H - gridSize - labelHeight) / 2
+
+  for (const p of pitches) {
+    const cellSize = (p.pitch / maxPitch) * baseCellSize
+    const cols = Math.floor(gridSize / cellSize)
+    const rows = Math.floor(gridSize / cellSize)
+    const actualW = cols * cellSize
+    const actualH = rows * cellSize
+    const offsetX = x + (gridSize - actualW) / 2
+    const offsetY = gridTop + (gridSize - actualH) / 2
+
+    // Grid cells
+    for (let row = 0; row < rows; row++) {
+      for (let col = 0; col < cols; col++) {
+        const cx = offsetX + col * cellSize
+        const cy = offsetY + row * cellSize
+        ctx.fillStyle = rgba(p.color, 0.15)
+        ctx.fillRect(cx, cy, cellSize, cellSize)
+        ctx.strokeStyle = rgba(p.color, 0.3)
+        ctx.lineWidth = 0.3
+        ctx.strokeRect(cx, cy, cellSize, cellSize)
+      }
+    }
+
+    // Border
+    roundRect(ctx, offsetX, offsetY, actualW, actualH, 2)
+    ctx.strokeStyle = rgba(p.color, 0.6)
+    ctx.lineWidth = 1.5
+    ctx.stroke()
+
+    // Label
+    ctx.fillStyle = p.color
+    ctx.font = '10px system-ui, sans-serif'
+    ctx.textAlign = 'center'
+    ctx.textBaseline = 'top'
+    ctx.fillText(p.name.split(' (')[0], x + gridSize / 2, gridTop + gridSize + 8)
+
+    ctx.fillStyle = rgba(p.color, 0.6)
+    ctx.font = '10px monospace'
+    ctx.fillText(`${p.pitch.toFixed(2)} µm`, x + gridSize / 2, gridTop + gridSize + 22)
+
+    x += gridSize + gap
+  }
+
+  ctx.textBaseline = 'alphabetic'
 }
