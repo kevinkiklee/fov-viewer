@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react'
 import { reciprocalRule, formatShutterSpeed } from '@/lib/math/exposure'
 import { SENSORS } from '@/lib/data/sensors'
 import { FOCAL_LENGTHS } from '@/lib/data/focalLengths'
+import { parseQueryState, useToolQuerySync, intParam, sensorParam } from '@/lib/utils/querySync'
 import styles from '../shared/Calculator.module.css'
 
 const STABILIZATION = [
@@ -21,11 +22,21 @@ const SUBJECT_MOTION = [
   { label: 'Vehicle', stops: 4 },
 ]
 
+const PARAM_SCHEMA = {
+  fl: intParam(50, 8, 800),
+  s: sensorParam('ff'),
+  stab: intParam(0, 0, 3),
+  motion: intParam(0, 0, 4),
+}
+
 export function ShutterSpeedGuide() {
-  const [focalLength, setFocalLength] = useState(50)
-  const [sensorId, setSensorId] = useState('ff')
-  const [stabIdx, setStabIdx] = useState(0)
-  const [motionIdx, setMotionIdx] = useState(0)
+  const params = parseQueryState(PARAM_SCHEMA)
+  const [focalLength, setFocalLength] = useState(params.fl ?? 50)
+  const [sensorId, setSensorId] = useState(params.s ?? 'ff')
+  const [stabIdx, setStabIdx] = useState(params.stab ?? 0)
+  const [motionIdx, setMotionIdx] = useState(params.motion ?? 0)
+
+  useToolQuerySync({ fl: focalLength, s: sensorId, stab: stabIdx, motion: motionIdx }, PARAM_SCHEMA)
 
   const sensor = SENSORS.find((s) => s.id === sensorId) ?? SENSORS[1]
   const stab = STABILIZATION[stabIdx]

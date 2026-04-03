@@ -24,6 +24,8 @@ interface ColorWheelProps {
   onHueChange: (hue: number) => void
   onSaturationChange: (saturation: number) => void
   onSecondaryDrag: (nodeIndex: number, hue: number) => void
+  /** For monochromatic: drag a node along the radius to adjust its saturation */
+  onMonoDrag?: (nodeIndex: number, saturation: number) => void
 }
 
 const DESKTOP_SIZE = 440
@@ -60,6 +62,7 @@ export function ColorWheel({
   onHueChange,
   onSaturationChange,
   onSecondaryDrag,
+  onMonoDrag,
 }: ColorWheelProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [size, setSize] = useState(DESKTOP_SIZE)
@@ -223,9 +226,16 @@ export function ColorWheel({
     const cssRadius = rect.width / 2
 
     for (const nodeIdx of draggableNodes) {
-      const h = harmonyHues[nodeIdx]
-      if (h === undefined) continue
-      const pos = hueToPos(h, saturation, rect.width / 2, rect.height / 2, cssRadius)
+      let pos: { x: number; y: number }
+      if (monochromaticPoints && monochromaticPoints[nodeIdx]) {
+        // Monochromatic: position based on the point's own saturation
+        const mp = monochromaticPoints[nodeIdx]
+        pos = hueToPos(mp.h, mp.s, rect.width / 2, rect.height / 2, cssRadius)
+      } else {
+        const h = harmonyHues[nodeIdx]
+        if (h === undefined) continue
+        pos = hueToPos(h, saturation, rect.width / 2, rect.height / 2, cssRadius)
+      }
       const dx = (clientX - rect.left) - pos.x
       const dy = (clientY - rect.top) - pos.y
       if (Math.sqrt(dx * dx + dy * dy) < NODE_HIT_RADIUS) {
@@ -233,7 +243,7 @@ export function ColorWheel({
       }
     }
     return null
-  }, [draggableNodes, harmonyHues, saturation])
+  }, [draggableNodes, harmonyHues, saturation, monochromaticPoints])
 
   const onPointerDown = useCallback((e: React.PointerEvent<HTMLCanvasElement>) => {
     const canvas = canvasRef.current
@@ -277,11 +287,18 @@ export function ColorWheel({
         const maxDist = canvas.getBoundingClientRect().width / 2
         onSaturationChange(Math.round(Math.min(dist / maxDist, 1) * 100))
       } else if (typeof dragModeRef.current === 'number') {
-        // Dragging a secondary node — report the hue angle to the parent
-        onSecondaryDrag(dragModeRef.current, Math.round(angle) % 360)
+        if (monochromaticPoints && onMonoDrag) {
+          // Monochromatic: adjust saturation (distance from center along the hue axis)
+          const maxDist = canvas.getBoundingClientRect().width / 2
+          const newSat = Math.round(Math.min(dist / maxDist, 1) * 100)
+          onMonoDrag(dragModeRef.current, newSat)
+        } else {
+          // Other harmonies: adjust hue angle
+          onSecondaryDrag(dragModeRef.current, Math.round(angle) % 360)
+        }
       }
     })
-  }, [getAngleFromPointer, onHueChange, onSaturationChange, onSecondaryDrag])
+  }, [getAngleFromPointer, onHueChange, onSaturationChange, onSecondaryDrag, monochromaticPoints, onMonoDrag])
 
   const onPointerUp = useCallback(() => {
     dragModeRef.current = null

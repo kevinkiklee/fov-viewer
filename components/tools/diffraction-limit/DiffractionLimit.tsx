@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react'
 import { pixelPitch, diffractionLimitedAperture } from '@/lib/math/diffraction'
 import { SENSORS } from '@/lib/data/sensors'
+import { parseQueryState, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
 import { DiffractionCanvas, type DetailType } from './DiffractionCanvas'
 import css from './DiffractionLimit.module.css'
 
@@ -33,6 +34,13 @@ function sliderToAperture(value: number): number {
 function apertureToSlider(aperture: number): number {
   const logF = Math.log(Math.max(MIN_F, Math.min(MAX_F, aperture)))
   return ((logF - MIN_LOG) / (MAX_LOG - MIN_LOG)) * 100
+}
+
+const PARAM_SCHEMA = {
+  s: sensorParam('ff'),
+  mp: intParam(24, 1, 200),
+  ap: numParam(apertureToSlider(8), 0, 100),
+  dt: strParam<DetailType>('text', ['text', 'foliage', 'architecture', 'fabric']),
 }
 
 function sharpnessAssessment(currentAperture: number, limitAperture: number) {
@@ -149,10 +157,13 @@ function ControlsPanel({
 }
 
 export function DiffractionLimit() {
-  const [sensorId, setSensorId] = useState('ff')
-  const [resolution, setResolution] = useState(24)
-  const [apertureSlider, setApertureSlider] = useState(apertureToSlider(8))
-  const [detailType, setDetailType] = useState<DetailType>('text')
+  const params = parseQueryState(PARAM_SCHEMA)
+  const [sensorId, setSensorId] = useState(params.s ?? 'ff')
+  const [resolution, setResolution] = useState(params.mp ?? 24)
+  const [apertureSlider, setApertureSlider] = useState(params.ap ?? apertureToSlider(8))
+  const [detailType, setDetailType] = useState<DetailType>(params.dt ?? 'text')
+
+  useToolQuerySync({ s: sensorId, mp: resolution, ap: apertureSlider, dt: detailType }, PARAM_SCHEMA)
 
   const sensor = SENSORS.find((s) => s.id === sensorId) ?? SENSORS[1]
   const width = sensorWidth(sensor.cropFactor)

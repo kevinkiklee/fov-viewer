@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import { calcEV } from '@/lib/math/exposure'
+import { parseQueryState, useToolQuerySync, intParam } from '@/lib/utils/querySync'
 import styles from '../shared/Calculator.module.css'
 import ev from './EVChart.module.css'
 
@@ -32,9 +33,25 @@ interface SelectedCell {
   evValue: number
 }
 
+const LIGHTING_EVS: number[] = LIGHTING_CONDITIONS.map((c) => c.ev)
+
+const PARAM_SCHEMA = {
+  ev: {
+    default: null as number | null,
+    parse: (raw: string) => {
+      const n = Math.round(Number(raw))
+      return !isNaN(n) && LIGHTING_EVS.includes(n) ? n : undefined
+    },
+    serialize: (v: number | null) => v !== null ? String(v) : '',
+  },
+}
+
 export function EVChart() {
+  const params = parseQueryState(PARAM_SCHEMA)
   const [selected, setSelected] = useState<SelectedCell | null>(null)
-  const [conditionEV, setConditionEV] = useState<number | null>(null)
+  const [conditionEV, setConditionEV] = useState<number | null>(params.ev !== undefined ? params.ev : null)
+
+  useToolQuerySync({ ev: conditionEV }, PARAM_SCHEMA)
 
   // Pre-compute all EV values at ISO 100
   const evGrid = useMemo(() => {

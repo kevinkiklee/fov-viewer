@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import { kelvinToRgb } from '@/lib/math/color'
+import { parseQueryState, useToolQuerySync, intParam } from '@/lib/utils/querySync'
 import styles from '../shared/Calculator.module.css'
 import wb from './WhiteBalance.module.css'
 
@@ -16,8 +17,15 @@ const PRESETS = [
   { name: 'Blue Sky', kelvin: 10000 },
 ] as const
 
+const PARAM_SCHEMA = {
+  k: intParam(5500, 2000, 10000),
+}
+
 export function WhiteBalance() {
-  const [kelvin, setKelvin] = useState(5500)
+  const params = parseQueryState(PARAM_SCHEMA)
+  const [kelvin, setKelvin] = useState(params.k ?? 5500)
+
+  useToolQuerySync({ k: kelvin }, PARAM_SCHEMA)
 
   const rgb = useMemo(() => kelvinToRgb(kelvin), [kelvin])
   const bgColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`

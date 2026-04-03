@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import { shutterWithNd, formatShutterSpeed } from '@/lib/math/exposure'
+import { parseQueryState, useToolQuerySync, intParam } from '@/lib/utils/querySync'
 import styles from '../shared/Calculator.module.css'
 
 const BASE_SHUTTER_SPEEDS = [
@@ -38,9 +39,17 @@ const ND_FILTERS = [
 
 const TABLE_FILTERS = ND_FILTERS.filter((f) => [3, 6, 10].includes(f.stops))
 
+const PARAM_SCHEMA = {
+  base: intParam(6, 0, 15),
+  nd: intParam(2, 0, 9),
+}
+
 export function NdFilterCalculator() {
-  const [baseIdx, setBaseIdx] = useState(6) // 1/125
-  const [ndIdx, setNdIdx] = useState(2) // ND8
+  const params = parseQueryState(PARAM_SCHEMA)
+  const [baseIdx, setBaseIdx] = useState(params.base ?? 6) // 1/125
+  const [ndIdx, setNdIdx] = useState(params.nd ?? 2) // ND8
+
+  useToolQuerySync({ base: baseIdx, nd: ndIdx }, PARAM_SCHEMA)
 
   const baseShutter = BASE_SHUTTER_SPEEDS[baseIdx].value
   const nd = ND_FILTERS[ndIdx]

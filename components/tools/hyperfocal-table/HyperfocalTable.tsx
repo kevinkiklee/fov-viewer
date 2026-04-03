@@ -3,13 +3,21 @@
 import { useState, useMemo } from 'react'
 import { calcHyperfocal } from '@/lib/math/dof'
 import { SENSORS } from '@/lib/data/sensors'
+import { parseQueryState, useToolQuerySync, sensorParam } from '@/lib/utils/querySync'
 import styles from '../shared/Calculator.module.css'
 
 const FOCAL_LENGTHS = [14, 20, 24, 28, 35, 50, 85, 100, 135, 200]
 const APERTURES = [2.8, 4, 5.6, 8, 11, 16, 22]
 
+const PARAM_SCHEMA = {
+  s: sensorParam('ff'),
+}
+
 export function HyperfocalTable() {
-  const [sensorId, setSensorId] = useState('ff')
+  const params = parseQueryState(PARAM_SCHEMA)
+  const [sensorId, setSensorId] = useState(params.s ?? 'ff')
+
+  useToolQuerySync({ s: sensorId }, PARAM_SCHEMA)
 
   const sensor = SENSORS.find((s) => s.id === sensorId) ?? SENSORS[1]
   const coc = 0.03 / sensor.cropFactor

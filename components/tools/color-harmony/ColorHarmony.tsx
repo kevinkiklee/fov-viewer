@@ -4,6 +4,7 @@ import { useState, useMemo, useCallback } from 'react'
 import { hslToRgb, rgbToHsl, complementary, analogous, triadic, splitComplementary, tetradic, monochromatic } from '@/lib/math/color'
 import { ToolActions } from '@/components/shared/ToolActions'
 import { LearnPanel } from '@/components/shared/LearnPanel'
+import { parseQueryState, useToolQuerySync, intParam, strParam } from '@/lib/utils/querySync'
 import styles from './ColorHarmony.module.css'
 import { ColorWheel } from './ColorWheel'
 
@@ -65,14 +66,32 @@ function getSuggestion(hue: number, type: HarmonyType): string {
   }
 }
 
+const PARAM_SCHEMA = {
+  h: intParam(200, 0, 359),
+  sat: intParam(70, 0, 100),
+  l: intParam(50, 0, 100),
+  type: strParam<HarmonyType>('complementary', ['complementary', 'analogous', 'triadic', 'split-complementary', 'tetradic', 'monochromatic'] as const),
+  split: intParam(30, 10, 80),
+  tet: intParam(60, 10, 170),
+  spread: intParam(30, 5, 60),
+}
+
 export function ColorHarmony() {
-  const [hue, setHue] = useState(200)
-  const [saturation, setSaturation] = useState(70)
-  const [lightness, setLightness] = useState(50)
-  const [harmony, setHarmony] = useState<HarmonyType>('complementary')
-  const [splitAngle, setSplitAngle] = useState(30)
-  const [tetradicOffset, setTetradicOffset] = useState(60)
-  const [analogousSpread, setAnalogousSpread] = useState(30)
+  const params = parseQueryState(PARAM_SCHEMA)
+  const [hue, setHue] = useState(params.h ?? 200)
+  const [saturation, setSaturation] = useState(params.sat ?? 70)
+  const [lightness, setLightness] = useState(params.l ?? 50)
+  const [harmony, setHarmony] = useState<HarmonyType>(params.type ?? 'complementary')
+  const [splitAngle, setSplitAngle] = useState(params.split ?? 30)
+  const [tetradicOffset, setTetradicOffset] = useState(params.tet ?? 60)
+  const [analogousSpread, setAnalogousSpread] = useState(params.spread ?? 30)
+
+  useToolQuerySync(
+    { h: hue, sat: saturation, l: lightness, type: harmony, split: splitAngle, tet: tetradicOffset, spread: analogousSpread },
+    PARAM_SCHEMA,
+  )
+  const [monoInnerSat, setMonoInnerSat] = useState(40)
+  const [monoOuterSat, setMonoOuterSat] = useState(90)
   const [copiedHex, setCopiedHex] = useState<string | null>(null)
   const [copiedFormat, setCopiedFormat] = useState<string | null>(null)
 
@@ -98,8 +117,8 @@ export function ColorHarmony() {
   )
 
   const monoPoints = useMemo(
-    () => harmony === 'monochromatic' ? monochromatic(hue, saturation, lightness) : undefined,
-    [harmony, hue, saturation, lightness],
+    () => harmony === 'monochromatic' ? monochromatic(hue, saturation, lightness, monoInnerSat, monoOuterSat) : undefined,
+    [harmony, hue, saturation, lightness, monoInnerSat, monoOuterSat],
   )
 
   const swatches = useMemo(() => {
@@ -175,7 +194,18 @@ export function ColorHarmony() {
     }
   }, [harmony, hue])
 
+  // For monochromatic: drag nodes adjust saturation along the radius
+  const handleMonoDrag = useCallback((nodeIndex: number, newSat: number) => {
+    const clamped = Math.round(Math.min(100, Math.max(0, newSat)))
+    if (nodeIndex === 0) {
+      setMonoOuterSat(clamped)
+    } else if (nodeIndex === 2) {
+      setMonoInnerSat(clamped)
+    }
+  }, [])
+
   const draggableNodes = useMemo(() => {
+    if (harmony === 'monochromatic') return [0, 2]
     if (harmony === 'split-complementary') return [1, 2]
     if (harmony === 'analogous') return [0, 2]
     if (harmony === 'tetradic') return [1, 3]
@@ -349,6 +379,7 @@ export function ColorHarmony() {
             onHueChange={setHue}
             onSaturationChange={setSaturation}
             onSecondaryDrag={handleSecondaryDrag}
+            onMonoDrag={handleMonoDrag}
           />
         </div>
       </div>

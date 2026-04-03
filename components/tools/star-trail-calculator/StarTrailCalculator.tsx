@@ -5,6 +5,7 @@ import { rule500, ruleNPF, stackingTime, formatDuration } from '@/lib/math/start
 import { pixelPitch } from '@/lib/math/diffraction'
 import { SENSORS } from '@/lib/data/sensors'
 import { FOCAL_LENGTHS } from '@/lib/data/focalLengths'
+import { parseQueryState, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
 import { StarTrailCanvas } from './StarTrailCanvas'
 import css from './StarTrailCalculator.module.css'
 
@@ -20,6 +21,18 @@ const LATITUDE_PRESETS = [
 /** Derive sensor width from crop factor (FF = 36mm) */
 function sensorWidth(cropFactor: number): number {
   return 36 / cropFactor
+}
+
+const PARAM_SCHEMA = {
+  mode: strParam<'sharp' | 'trails'>('sharp', ['sharp', 'trails']),
+  fl: intParam(24, 8, 800),
+  s: sensorParam('ff'),
+  mp: intParam(24, 1, 200),
+  f: numParam(2.8, 1.4, 22),
+  lat: intParam(45, 0, 90),
+  exp: intParam(30, 1, 300),
+  frames: intParam(60, 1, 9999),
+  gap: intParam(2, 0, 60),
 }
 
 function ControlsPanel({
@@ -242,17 +255,23 @@ function ControlsPanel({
 }
 
 export function StarTrailCalculator() {
-  const [mode, setMode] = useState<'sharp' | 'trails'>('sharp')
-  const [focalLength, setFocalLength] = useState(24)
-  const [sensorId, setSensorId] = useState('ff')
-  const [resolution, setResolution] = useState(24)
-  const [aperture, setAperture] = useState(2.8)
-  const [latitude, setLatitude] = useState(45)
+  const params = parseQueryState(PARAM_SCHEMA)
+  const [mode, setMode] = useState<'sharp' | 'trails'>(params.mode ?? 'sharp')
+  const [focalLength, setFocalLength] = useState(params.fl ?? 24)
+  const [sensorId, setSensorId] = useState(params.s ?? 'ff')
+  const [resolution, setResolution] = useState(params.mp ?? 24)
+  const [aperture, setAperture] = useState(params.f ?? 2.8)
+  const [latitude, setLatitude] = useState(params.lat ?? 45)
 
   // Trail mode inputs
-  const [exposurePerFrame, setExposurePerFrame] = useState(30)
-  const [numFrames, setNumFrames] = useState(60)
-  const [gap, setGap] = useState(2)
+  const [exposurePerFrame, setExposurePerFrame] = useState(params.exp ?? 30)
+  const [numFrames, setNumFrames] = useState(params.frames ?? 60)
+  const [gap, setGap] = useState(params.gap ?? 2)
+
+  useToolQuerySync(
+    { mode, fl: focalLength, s: sensorId, mp: resolution, f: aperture, lat: latitude, exp: exposurePerFrame, frames: numFrames, gap },
+    PARAM_SCHEMA,
+  )
 
   const sensor = SENSORS.find((s) => s.id === sensorId) ?? SENSORS[1]
   const width = sensorWidth(sensor.cropFactor)

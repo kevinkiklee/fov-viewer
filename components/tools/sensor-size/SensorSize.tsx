@@ -4,6 +4,7 @@ import { useState, useRef, useEffect, useCallback } from 'react'
 import styles from '../shared/Calculator.module.css'
 import ss from './SensorSize.module.css'
 import { pixelPitch } from '@/lib/math/diffraction'
+import { parseQueryState, useToolQuerySync, strParam, intParam } from '@/lib/utils/querySync'
 
 const SENSOR_DIMS = [
   { id: 'mf', name: 'Medium Format', w: 43.8, h: 32.9, color: '#8b5cf6' },
@@ -20,11 +21,34 @@ type DisplayMode = 'overlay' | 'side-by-side' | 'pixel-density'
 /** Full-frame diagonal (mm), used to compute crop factors for the comparison table. */
 const FF_DIAG = Math.sqrt(36 * 36 + 24 * 24)
 
+const ALL_SENSOR_IDS = SENSOR_DIMS.map((s) => s.id) as unknown as string[]
+const ALL_SENSOR_ID_SET = new Set(ALL_SENSOR_IDS)
+const DEFAULT_VISIBLE = ALL_SENSOR_IDS.join(',')
+
+const PARAM_SCHEMA = {
+  show: {
+    default: DEFAULT_VISIBLE,
+    parse: (raw: string) => {
+      const ids = raw.split(',').filter((id) => ALL_SENSOR_ID_SET.has(id))
+      return ids.length > 0 ? ids.join(',') : undefined
+    },
+    serialize: (v: string) => v,
+  },
+  mode: strParam<DisplayMode>('overlay', ['overlay', 'side-by-side', 'pixel-density'] as const),
+  mp: intParam(24, 1, 200),
+}
+
 export function SensorSize() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const [visible, setVisible] = useState<Set<string>>(() => new Set(SENSOR_DIMS.map((s) => s.id)))
-  const [mode, setMode] = useState<DisplayMode>('overlay')
-  const [resolution, setResolution] = useState(24)
+  const params = parseQueryState(PARAM_SCHEMA)
+  const [visible, setVisible] = useState<Set<string>>(() => new Set(params.show ? params.show.split(',') : ALL_SENSOR_IDS))
+  const [mode, setMode] = useState<DisplayMode>(params.mode ?? 'overlay')
+  const [resolution, setResolution] = useState(params.mp ?? 24)
+
+  useToolQuerySync(
+    { show: Array.from(visible).join(','), mode, mp: resolution },
+    PARAM_SCHEMA,
+  )
 
   const toggleSensor = useCallback((id: string) => {
     setVisible((prev) => {
