@@ -14,7 +14,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   { term: 'Burst Mode', definition: 'A shooting mode where the camera takes multiple frames per second in rapid succession. Useful for capturing fast action or selecting the best moment.' },
   { term: 'Chromatic Aberration', definition: 'A lens defect where different wavelengths of light focus at slightly different points, causing color fringing along high-contrast edges. More common in cheaper lenses and at wide apertures.' },
   { term: 'Circle of Confusion', definition: 'The largest blur circle that still appears as a point to the human eye. It determines the boundaries of acceptable sharpness and is used in depth of field calculations.' },
-  { term: 'Color Temperature', definition: 'A measurement in Kelvin that describes the warmth or coolness of a light source. Lower values (2700K) appear warm/orange; higher values (6500K+) appear cool/blue.', relatedTool: 'white-balance' },
+  { term: 'Color Temperature', definition: 'A measurement in Kelvin that describes the warmth or coolness of a light source. Lower values (2700K) appear warm/orange; higher values (6500K+) appear cool/blue.', relatedTool: 'white-balance-visualizer' },
   { term: 'Crop Factor', definition: 'The ratio of a camera sensor\'s diagonal to that of a 35mm full-frame sensor. It affects the effective focal length and field of view.', relatedTool: 'sensor-size' },
   { term: 'Depth of Field', definition: 'The range of distance in a scene that appears acceptably sharp. Controlled by aperture, focal length, and subject distance.', relatedTool: 'dof-calculator' },
   { term: 'Diffraction', definition: 'The bending of light as it passes through a small aperture, which softens the image. It sets a practical limit on how far you can stop down a lens.', relatedTool: 'diffraction-limit' },
@@ -59,7 +59,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   { term: 'Tilt-Shift', definition: 'A lens that can tilt the plane of focus and shift the image circle relative to the sensor. Used for architecture photography and selective focus effects.' },
   { term: 'Underexposure', definition: 'When an image receives too little light, causing shadow areas to lose detail and appear noisy. The opposite of overexposure.' },
   { term: 'Vignetting', definition: 'A darkening of the corners and edges of an image relative to the center. Can be caused by lens design, filters, or lens hoods, and is sometimes added intentionally in post.' },
-  { term: 'White Balance', definition: 'A camera setting that adjusts colors so that white objects appear neutral under different lighting conditions. Can be set automatically or manually using Kelvin values.', relatedTool: 'white-balance' },
+  { term: 'White Balance', definition: 'A camera setting that adjusts colors so that white objects appear neutral under different lighting conditions. Can be set automatically or manually using Kelvin values.', relatedTool: 'white-balance-visualizer' },
   { term: 'Wide-Angle', definition: 'A lens with a short focal length (typically below 35mm on full frame) that captures a broader field of view. Often used for landscapes, architecture, and interiors.' },
   { term: 'Zoom Lens', definition: 'A lens with a variable focal length range, allowing the photographer to change framing without moving. Offers versatility at the cost of size, weight, and sometimes sharpness.' },
 ]

@@ -5,16 +5,16 @@ import type { LensConfig } from '@/lib/types'
 import type { FovSimulatorState, Orientation } from './types'
 import { DEFAULT_FOV_STATE, LENS_COLORS, LENS_LABELS, MAX_LENSES } from './types'
 import { parseQueryParams, useQuerySync } from './querySync'
-import { copyCanvasToClipboard } from '@/lib/utils/export'
 import { useTheme } from '@/components/layout/ThemeProvider'
 import { ThemeToggle } from '@/components/layout/ThemeToggle'
 import { LearnPanel } from '@/components/shared/LearnPanel'
-import { Toast } from '@/components/shared/Toast'
+
 
 import { ToolActions } from '@/components/shared/ToolActions'
 import { Sidebar } from './Sidebar'
 import { LensPanel } from './LensPanel'
-import { SceneStrip } from './SceneStrip'
+import { SCENES } from '@/lib/data/scenes'
+import { ScenePicker } from '@/components/shared/ScenePicker'
 import { Canvas, type OverlayOffsets } from './Canvas'
 import { CropStrip } from './CropStrip'
 import styles from './FovSimulator.module.css'
@@ -76,13 +76,26 @@ function reducer(state: FovSimulatorState, action: Action): FovSimulatorState {
 export function FovSimulator() {
   const [state, dispatch] = useReducer(reducer, DEFAULT_FOV_STATE)
   const [hydrated, setHydrated] = useState(false)
-  const [toast, setToast] = useState<string | null>(null)
   const [collapsed, setCollapsed] = useState<Record<number, boolean>>({})
   const [overlayOffsets, setOverlayOffsets] = useState<OverlayOffsets>({})
   const [cropExpanded, setCropExpanded] = useState(false)
+  const [customImageSrc, setCustomImageSrc] = useState<string | null>(null)
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const cleanCanvasRef = useRef<HTMLCanvasElement>(null)
   const { theme, setTheme } = useTheme()
+
+  const handleCustomFile = useCallback((file: File) => {
+    if (!file.type.startsWith('image/')) return
+    if (customImageSrc) URL.revokeObjectURL(customImageSrc)
+    setCustomImageSrc(URL.createObjectURL(file))
+    dispatch({ type: 'SET_IMAGE', payload: -1 })
+  }, [customImageSrc])
+
+  const handleCustomRemove = useCallback(() => {
+    if (customImageSrc) URL.revokeObjectURL(customImageSrc)
+    setCustomImageSrc(null)
+    if (state.imageIndex === -1) dispatch({ type: 'SET_IMAGE', payload: 0 })
+  }, [customImageSrc, state.imageIndex])
 
   useQuerySync(state)
 
@@ -94,12 +107,6 @@ export function FovSimulator() {
       ?? (window.innerWidth < 1024 ? 'portrait' : 'landscape')
     dispatch({ type: 'HYDRATE', payload: { ...queryOverrides, orientation } })
   }, [hydrated])
-
-  const handleCopyImage = useCallback(async () => {
-    if (!canvasRef.current) return
-    const success = await copyCanvasToClipboard(canvasRef.current)
-    setToast(success ? 'Copied image!' : 'Failed to copy')
-  }, [])
 
   const rotateBtn = (
     <button
@@ -129,7 +136,7 @@ export function FovSimulator() {
       <div className={styles.appBody}>
         {/* Desktop sidebar */}
         <Sidebar>
-          <ToolActions toolName="FOV Simulator" toolSlug="fov-simulator" />
+          <ToolActions toolName="FOV Simulator" toolSlug="fov-simulator" onReset={() => dispatch({ type: 'RESET' })} canvasRef={canvasRef} imageFilename="fov-comparison.png" />
           {state.lenses.map((lens, i) => (
             <LensPanel
               key={i}
@@ -151,23 +158,19 @@ export function FovSimulator() {
             </button>
           )}
 
-          <div className={styles.actionBar}>
-            <button className={`${styles.actionBarBtn} ${styles.actionBarBtnPrimary}`} onClick={handleCopyImage}>
-              Copy image
-            </button>
-            <button className={styles.actionBarBtn} onClick={() => dispatch({ type: 'RESET' })}>
-              Reset
-            </button>
-          </div>
         </Sidebar>
 
         {/* Canvas area */}
         <main className={styles.canvasArea}>
           {/* Top bar: scene strip + rotate/center (desktop only) */}
           <nav className={styles.canvasTopbar}>
-            <SceneStrip
+            <ScenePicker
+              scenes={SCENES}
               selectedIndex={state.imageIndex}
-              onChange={(i) => dispatch({ type: 'SET_IMAGE', payload: i })}
+              onSelect={(i) => dispatch({ type: 'SET_IMAGE', payload: i })}
+              customSrc={customImageSrc}
+              onCustomFile={handleCustomFile}
+              onCustomRemove={handleCustomRemove}
             />
             <span className={styles.desktopOnly}>{rotateBtn}</span>
             <span className={styles.desktopOnly}>{centerBtn}</span>
@@ -185,6 +188,7 @@ export function FovSimulator() {
               activeLens={state.activeLens}
               offsets={overlayOffsets}
               onOffsetsChange={setOverlayOffsets}
+              customImageSrc={customImageSrc}
             />
           </section>
 
@@ -241,18 +245,14 @@ export function FovSimulator() {
           </button>
         )}
 
-        <ToolActions toolName="FOV Simulator" toolSlug="fov-simulator" />
+        <ToolActions toolName="FOV Simulator" toolSlug="fov-simulator" canvasRef={canvasRef} imageFilename="fov-comparison.png" />
         <div className={styles.actionBar}>
-          <button className={`${styles.actionBarBtn} ${styles.actionBarBtnPrimary}`} onClick={handleCopyImage}>
-            Copy image
-          </button>
           <button className={styles.actionBarBtn} onClick={() => dispatch({ type: 'RESET' })}>
             Reset
           </button>
         </div>
       </div>
 
-      <Toast message={toast} onDone={() => setToast(null)} />
       <canvas ref={cleanCanvasRef} style={{ display: 'none' }} />
     </div>
   )

@@ -2,6 +2,9 @@ export interface SensorPreset {
   id: string
   name: string
   cropFactor: number
+  w?: number
+  h?: number
+  color?: string
 }
 
 export interface FocalLengthPreset {

@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useEffect, useCallback, useState } from 'react'
+import { useRef, useEffect, useCallback, useState, useImperativeHandle, forwardRef } from 'react'
 import { hslToRgb } from '@/lib/math/color'
 import ch from './ColorHarmony.module.css'
 
@@ -51,7 +51,11 @@ function hueToPos(hue: number, sat: number, cx: number, cy: number, radius: numb
   return { x: cx + dist * Math.cos(angleRad), y: cy + dist * Math.sin(angleRad) }
 }
 
-export function ColorWheel({
+export interface ColorWheelHandle {
+  getCanvas(): HTMLCanvasElement | null
+}
+
+export const ColorWheel = forwardRef<ColorWheelHandle, ColorWheelProps>(function ColorWheel({
   hue,
   saturation,
   lightness,
@@ -63,8 +67,12 @@ export function ColorWheel({
   onSaturationChange,
   onSecondaryDrag,
   onMonoDrag,
-}: ColorWheelProps) {
+}, ref) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+
+  useImperativeHandle(ref, () => ({
+    getCanvas: () => canvasRef.current,
+  }))
   const [size, setSize] = useState(DESKTOP_SIZE)
   const rafRef = useRef<number>(0)
 
@@ -101,7 +109,7 @@ export function ColorWheel({
         if (angle < 0) angle += 360
 
         const sat = (dist / r) * 100
-        const rgb = hslToRgb(angle, sat, 50)
+        const rgb = hslToRgb(angle, sat, lightness)
 
         const idx = (y * canvasPixels + x) * 4
         data[idx] = rgb.r
@@ -111,7 +119,7 @@ export function ColorWheel({
       }
     }
     ctx.putImageData(imageData, 0, 0)
-  }, [canvasPixels])
+  }, [canvasPixels, lightness])
 
   // Helper: draw a dot with optional key-color double ring
   const drawDot = useCallback((ctx: CanvasRenderingContext2D, x: number, y: number, hex: string, isBase: boolean) => {
@@ -327,4 +335,4 @@ export function ColorWheel({
       />
     </div>
   )
-}
+})

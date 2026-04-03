@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback, useRef, useEffect } from 'react'
+import { useState, useCallback, useRef, useEffect, forwardRef, useImperativeHandle } from 'react'
 import ExifReader from 'exifreader'
 import { PhotoUploadPanel } from '@/components/shared/PhotoUploadPanel'
 import { LearnPanel } from '@/components/shared/LearnPanel'
@@ -316,11 +316,19 @@ function drawSingleHistogram(
   }
 }
 
-function HistogramTriple({ imageUrl }: { imageUrl: string }) {
+interface HistogramTripleHandle {
+  getCanvases(): (HTMLCanvasElement | null)[]
+}
+
+const HistogramTriple = forwardRef<HistogramTripleHandle, { imageUrl: string }>(function HistogramTriple({ imageUrl }, ref) {
   const lumaRef = useRef<HTMLCanvasElement>(null)
   const redRef = useRef<HTMLCanvasElement>(null)
   const greenRef = useRef<HTMLCanvasElement>(null)
   const blueRef = useRef<HTMLCanvasElement>(null)
+
+  useImperativeHandle(ref, () => ({
+    getCanvases: () => [lumaRef.current, redRef.current, greenRef.current, blueRef.current],
+  }))
 
   useEffect(() => {
     const img = new Image()
@@ -368,7 +376,7 @@ function HistogramTriple({ imageUrl }: { imageUrl: string }) {
       </div>
     </div>
   )
-}
+})
 
 // ── Main Component ──
 
@@ -393,6 +401,9 @@ export function ExifViewer() {
   const [data, setData] = useState<ExifResult | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [imageUrl, setImageUrl] = useState<string | null>(null)
+  const exportCanvasRef = useRef<HTMLCanvasElement>(null)
+  const histogramRef = useRef<HistogramTripleHandle>(null)
+  const photoImgRef = useRef<HTMLImageElement>(null)
 
   const loadFromUrl = useCallback(async (url: string) => {
     setError(null)
@@ -428,6 +439,132 @@ export function ExifViewer() {
     reader.readAsArrayBuffer(file)
   }, [imageUrl])
 
+  const buildExportCanvas = useCallback(() => {
+    const canvas = exportCanvasRef.current
+    if (!canvas || !data) return
+
+    const dpr = 2
+    const margin = 32
+    const gap = 16
+    const colW = 400
+    const photoMaxH = 300
+    const histH = 80
+    const histGap = 8
+
+    // Measure photo dimensions
+    const img = photoImgRef.current
+    const photoW = colW
+    const photoH = img ? Math.min(photoMaxH, (img.naturalHeight / img.naturalWidth) * colW) : photoMaxH
+
+    // Build EXIF text rows
+    const sections: { title: string; rows: [string, string][] }[] = [
+      { title: 'Camera', rows: [['Make', data.camera.make], ['Model', data.camera.model]] },
+      { title: 'Lens', rows: [['Lens Model', data.lens.model], ['Lens Make', data.lens.make]] },
+      { title: 'Exposure', rows: [
+        ['Aperture', data.settings.fNumber], ['Shutter Speed', data.settings.exposureTime],
+        ['ISO', data.settings.iso], ['Focal Length', data.settings.focalLength],
+        ['35mm Equiv.', data.settings.focalLength35], ['Program', data.settings.exposureProgram],
+        ['Metering', data.settings.meteringMode], ['Flash', data.settings.flash],
+        ['White Balance', data.settings.whiteBalance], ['Focus Distance', data.settings.focusDistance],
+      ]},
+      { title: 'Image', rows: [
+        ['Dimensions', data.image.widthRaw && data.image.heightRaw ? `${data.image.width} × ${data.image.height}` : DASH],
+        ['Megapixels', data.image.megapixels], ['Aspect Ratio', data.image.aspectRatio],
+        ['Color Space', data.image.colorSpace], ['File Size', data.file.size],
+      ]},
+      { title: 'Date', rows: [['Date Taken', data.date]] },
+    ]
+    if (data.gps) sections.push({ title: 'GPS', rows: [['Latitude', data.gps.latitude], ['Longitude', data.gps.longitude]] })
+    if (data.software !== DASH) sections.push({ title: 'Software', rows: [['Software', data.software]] })
+
+    // Filter out dash-only rows
+    const filteredSections = sections.map(s => ({
+      ...s,
+      rows: s.rows.filter(([, v]) => v !== DASH),
+    })).filter(s => s.rows.length > 0)
+
+    // Measure EXIF height
+    const sectionTitleH = 24
+    const rowH = 18
+    const sectionGap = 12
+    const exifH = filteredSections.reduce((h, s) => h + sectionTitleH + s.rows.length * rowH + sectionGap, 0)
+
+    // Left column: photo + histograms. Right column: EXIF data
+    const leftH = photoH + gap + (histH + histGap) * 4 - histGap
+    const rightH = exifH
+    const contentH = Math.max(leftH, rightH)
+    const totalW = margin * 2 + colW + gap + colW
+    const totalH = margin * 2 + contentH
+
+    canvas.width = totalW * dpr
+    canvas.height = totalH * dpr
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+    ctx.scale(dpr, dpr)
+
+    // Background
+    ctx.fillStyle = '#1a1a2e'
+    ctx.fillRect(0, 0, totalW, totalH)
+
+    // Draw photo
+    let y = margin
+    if (img) {
+      ctx.drawImage(img, margin, y, photoW, photoH)
+    }
+    y += photoH + gap
+
+    // Draw histograms
+    const histCanvases = histogramRef.current?.getCanvases() ?? []
+    const histLabels = ['Luminance', 'Red', 'Green', 'Blue']
+    const histColors = ['rgba(255,255,255,0.6)', 'rgba(239,68,68,0.7)', 'rgba(34,197,94,0.7)', 'rgba(59,130,246,0.7)']
+    for (let i = 0; i < 4; i++) {
+      // Histogram background
+      ctx.fillStyle = 'rgba(255,255,255,0.04)'
+      ctx.fillRect(margin, y, colW, histH)
+
+      // Draw histogram canvas content
+      const hc = histCanvases[i]
+      if (hc) {
+        ctx.drawImage(hc, margin, y, colW, histH)
+      }
+
+      // Label
+      ctx.fillStyle = histColors[i]
+      ctx.font = '10px system-ui, sans-serif'
+      ctx.textAlign = 'left'
+      ctx.textBaseline = 'top'
+      ctx.fillText(histLabels[i], margin + 4, y + 4)
+
+      y += histH + histGap
+    }
+
+    // Draw EXIF sections (right column)
+    let ey = margin
+    const exifX = margin + colW + gap
+    for (const section of filteredSections) {
+      // Section title
+      ctx.fillStyle = '#ffffff'
+      ctx.font = 'bold 12px system-ui, sans-serif'
+      ctx.textAlign = 'left'
+      ctx.textBaseline = 'top'
+      ctx.fillText(section.title, exifX, ey)
+      ey += sectionTitleH
+
+      for (const [label, value] of section.rows) {
+        ctx.fillStyle = '#888'
+        ctx.font = '11px system-ui, sans-serif'
+        ctx.textAlign = 'left'
+        ctx.fillText(label, exifX, ey)
+
+        ctx.fillStyle = '#ccc'
+        ctx.textAlign = 'left'
+        ctx.fillText(value, exifX + 140, ey)
+        ey += rowH
+      }
+      ey += sectionGap
+    }
+  }, [data])
+
   // Auto-load sample photo on mount
   useEffect(() => {
     loadFromUrl(SAMPLE_PHOTO)
@@ -437,7 +574,7 @@ export function ExifViewer() {
     <div className={styles.app}>
       <div className={styles.appBody}>
         <div className={styles.sidebar}>
-          <ToolActions toolName="EXIF Viewer" toolSlug="exif-viewer" />
+          <ToolActions toolName="EXIF Viewer" toolSlug="exif-viewer" canvasRef={exportCanvasRef} imageFilename="exif-data.png" onBeforeCopyImage={buildExportCanvas} />
           <ControlsPanel onFile={handleFile} onSample={() => loadFromUrl(SAMPLE_PHOTO)} />
         </div>
 
@@ -446,7 +583,7 @@ export function ExifViewer() {
 
           {imageUrl && (
             <div className={styles.imagePreview}>
-              <img src={imageUrl} alt="Uploaded photo" className={styles.previewImg} />
+              <img ref={photoImgRef} src={imageUrl} alt="Uploaded photo" className={styles.previewImg} />
             </div>
           )}
 
@@ -454,7 +591,7 @@ export function ExifViewer() {
             <>
               <AnalysisCards analysis={data.analysis} />
 
-              {imageUrl && <HistogramTriple imageUrl={imageUrl} />}
+              {imageUrl && <HistogramTriple ref={histogramRef} imageUrl={imageUrl} />}
 
               <div className={styles.sectionsGrid}>
                 <Section title="Camera" rows={[
@@ -502,6 +639,7 @@ export function ExifViewer() {
       <div className={styles.mobileControls}>
         <ControlsPanel onFile={handleFile} onSample={() => loadFromUrl(SAMPLE_PHOTO)} />
       </div>
+      <canvas ref={exportCanvasRef} style={{ display: 'none' }} />
     </div>
   )
 }

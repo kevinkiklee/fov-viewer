@@ -22,10 +22,12 @@
   font-size: var(--text-md);
   color: var(--text-primary);
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
 .logoAccent {
   color: var(--accent);
+  margin-left: 0.04em;
 }
 
 .logo:hover {

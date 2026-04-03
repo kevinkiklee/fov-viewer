@@ -161,7 +161,7 @@ function PerspectiveCompression(p: IconProps) {
 
 const ICON_MAP: Record<string, (props: IconProps) => React.JSX.Element> = {
   'fov-simulator': FovSimulator,
-  'color-harmony': ColorHarmony,
+  'color-scheme-generator': ColorHarmony,
   'exposure-simulator': ExposureSimulator,
   'dof-calculator': DofCalculator,
   'hyperfocal-simulator': HyperfocalSimulator,
@@ -169,7 +169,7 @@ const ICON_MAP: Record<string, (props: IconProps) => React.JSX.Element> = {
   'nd-filter-calculator': NdFilterCalculator,
   'diffraction-limit': DiffractionLimit,
   'star-trail-calculator': StarTrailCalculator,
-  'white-balance': WhiteBalance,
+  'white-balance-visualizer': WhiteBalance,
   'sensor-size': SensorSize,
   'exif-viewer': ExifViewer,
   'perspective-compression-simulator': PerspectiveCompression,

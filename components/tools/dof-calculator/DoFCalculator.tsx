@@ -10,9 +10,8 @@ import { ToolActions } from '@/components/shared/ToolActions'
 import { DoFDiagram } from './DoFDiagram'
 import { DoFCanvas } from './DoFCanvas'
 import type { SceneKey } from './DoFCanvas'
+import { APERTURES } from '@/lib/data/camera'
 import s from './DoFCalculator.module.css'
-
-const APERTURES = [1.4, 2, 2.8, 4, 5.6, 8, 11, 16, 22]
 
 const PARAM_SCHEMA = {
   fl: intParam(50, 8, 800),

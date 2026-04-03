@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo, useCallback, useRef } from 'react'
 import { kelvinToRgb } from '@/lib/math/color'
 import { getToolBySlug } from '@/lib/data/tools'
+import { WB_PRESETS } from '@/lib/data/whiteBalance'
 import { useQueryInit, useToolQuerySync, intParam } from '@/lib/utils/querySync'
 import { LearnPanel } from '@/components/shared/LearnPanel'
 import { ToolActions } from '@/components/shared/ToolActions'
@@ -11,27 +12,16 @@ import { WbPreview } from './WbPreview'
 import calc from '../shared/Calculator.module.css'
 import wb from './WhiteBalance.module.css'
 
-const PRESETS = [
-  { name: 'Candle', kelvin: 1900 },
-  { name: 'Tungsten', kelvin: 2700 },
-  { name: 'Fluorescent', kelvin: 4000 },
-  { name: 'Daylight', kelvin: 5500 },
-  { name: 'Flash', kelvin: 5600 },
-  { name: 'Cloudy', kelvin: 6500 },
-  { name: 'Shade', kelvin: 7500 },
-  { name: 'Blue Sky', kelvin: 10000 },
-] as const
-
 const PARAM_SCHEMA = {
   k: intParam(5500, 2000, 10000),
 }
 
-const tool = getToolBySlug('white-balance')!
+const tool = getToolBySlug('white-balance-visualizer')!
 
 function ControlsPanel({ kelvin, rgb, activePreset, onKelvinChange, onFile }: {
   kelvin: number
   rgb: { r: number; g: number; b: number }
-  activePreset: (typeof PRESETS)[number] | undefined
+  activePreset: (typeof WB_PRESETS)[number] | undefined
   onKelvinChange: (k: number) => void
   onFile: (file: File) => void
 }) {
@@ -70,7 +60,7 @@ function ControlsPanel({ kelvin, rgb, activePreset, onKelvinChange, onFile }: {
       <div className={calc.field}>
         <label className={calc.label}>Presets</label>
         <div className={wb.presetRow}>
-          {PRESETS.map((p) => (
+          {WB_PRESETS.map((p) => (
             <button
               key={p.name}
               className={`${wb.presetBtn} ${kelvin === p.kelvin ? wb.presetBtnActive : ''}`}
@@ -119,18 +109,24 @@ function ControlsPanel({ kelvin, rgb, activePreset, onKelvinChange, onFile }: {
 export function WhiteBalance() {
   const [kelvin, setKelvin] = useState(5500)
   const [customSrc, setCustomSrc] = useState<string | null>(null)
+  const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useQueryInit(PARAM_SCHEMA, { k: setKelvin })
   useToolQuerySync({ k: kelvin }, PARAM_SCHEMA)
 
   const rgb = useMemo(() => kelvinToRgb(kelvin), [kelvin])
 
-  const activePreset = PRESETS.find((p) => p.kelvin === kelvin)
+  const activePreset = WB_PRESETS.find((p) => p.kelvin === kelvin)
 
   const handleFile = useCallback((file: File) => {
     if (!file.type.startsWith('image/')) return
     if (customSrc) URL.revokeObjectURL(customSrc)
     setCustomSrc(URL.createObjectURL(file))
+  }, [customSrc])
+
+  const handleRemoveCustom = useCallback(() => {
+    if (customSrc) URL.revokeObjectURL(customSrc)
+    setCustomSrc(null)
   }, [customSrc])
 
   const controlsProps = { kelvin, rgb, activePreset, onKelvinChange: setKelvin, onFile: handleFile }
@@ -139,13 +135,13 @@ export function WhiteBalance() {
     <div className={wb.app}>
       <div className={wb.appBody}>
         <div className={wb.sidebar}>
-          <ToolActions toolName="White Balance Visualizer" toolSlug="white-balance" />
+          <ToolActions toolName="White Balance Visualizer" toolSlug="white-balance-visualizer" canvasRef={canvasRef} imageFilename="white-balance.png" />
           <ControlsPanel {...controlsProps} />
         </div>
 
-        <WbPreview rgb={rgb} kelvin={kelvin} customSrc={customSrc} onFile={handleFile} />
+        <WbPreview rgb={rgb} kelvin={kelvin} customSrc={customSrc} onFile={handleFile} onRemoveCustom={handleRemoveCustom} canvasRef={canvasRef} />
 
-        <LearnPanel slug="white-balance" />
+        <LearnPanel slug="white-balance-visualizer" />
       </div>
 
       <div className={wb.mobileControls}>

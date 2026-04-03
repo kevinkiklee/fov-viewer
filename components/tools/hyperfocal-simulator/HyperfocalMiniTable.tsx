@@ -1,8 +1,7 @@
 'use client'
 
 import { calcHyperfocal } from '@/lib/math/dof'
-
-const APERTURES = [1.4, 2, 2.8, 4, 5.6, 8, 11, 16, 22]
+import { APERTURES } from '@/lib/data/camera'
 
 interface HyperfocalMiniTableProps {
   focalLength: number

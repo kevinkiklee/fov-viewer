@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-PhotoTools is an educational photography application — free calculators, simulators, and references plus a glossary. Built as a Next.js 16 App Router hub with a tool registry system. Deployed to Vercel at `phototools.io`.
+PhotoTools is an educational photography application — free calculators, simulators, and references plus a glossary. Built as a Next.js 16 App Router hub with a tool registry system. Deployed to Vercel at `www.phototools.io`.
 
 **Business model**: SEO-driven traffic + advertisement revenue. All decisions should consider SEO impact (shareable URLs, metadata, semantic HTML, page titles) and ad placement compatibility (clean layout with predictable content regions, no layout shift).
 
@@ -22,7 +22,7 @@ PhotoTools is an educational photography application — free calculators, simul
 - `npm run dev` — start dev server with Turbopack at `http://localhost:3000`
 - `npm run build` — production build via `next build`
 - `npm run start` — serve production build locally
-- `npm test` — run Vitest tests (170 tests across 14 files)
+- `npm test` — run Vitest tests (212 tests across 18 files)
 - `npm run test:watch` — run tests in watch mode
 - `npm run lint` — run ESLint
 
@@ -32,8 +32,8 @@ PhotoTools is an educational photography application — free calculators, simul
 - **Tool Registry**: `lib/data/tools.ts` defines all tools with slug, name, description, `dev`/`prod` status fields (`'live'`/`'draft'`), and category. `getLiveTools()` filters by the appropriate status per environment. `getToolBySlug()` looks up by slug.
 - **Education System**: `lib/data/education/` contains per-tool educational content (beginner/deeper explanations, key factors, pro tips, tooltips, challenges). `LearnPanel` renders as a right sidebar on every tool page.
 - **Pure Math Modules**: `lib/math/` contains pure functions for FOV, DOF, exposure (including shader math for CoC, motion blur, noise), diffraction, star trails, color, and histogram calculations. Each has co-located `.test.ts` files. TDD approach — math is tested independently from UI.
-- **Components**: organized into `components/layout/` (Nav, Footer, ThemeProvider, ThemeToggle), `components/shared/` (ToolPageShell, LearnPanel, InfoTooltip, ShareModal, ToolActions, FileDropZone, DraftBanner, Toast), and `components/tools/` (one directory per tool + `shared/` for cross-tool components).
-- **Data**: `lib/data/` contains tool registry, education content, sensors, focal lengths, scenes, and glossary terms — each with tests.
+- **Components**: organized into `components/layout/` (Nav, Footer, ThemeProvider, ThemeToggle), `components/shared/` (ToolPageShell, LearnPanel, ToolIcon, InfoTooltip, ShareModal, ToolActions, FileDropZone, PhotoUploadPanel, ScenePicker, CopyImageButton, DraftBanner, Toast, Breadcrumbs, JsonLd), and `components/tools/` (one directory per tool + `shared/` for cross-tool components).
+- **Data**: `lib/data/` contains tool registry, education content, sensors (with dimensions/colors), focal lengths, scenes, glossary, camera settings (apertures/shutter speeds/ISOs), ND filters, and white balance presets — each with tests.
 
 ## Key Directories
 
@@ -45,7 +45,7 @@ components/
   tools/                One directory per tool + shared/
 lib/
   math/                 Pure calculation modules (fov, dof, exposure, etc.)
-  data/                 Tool registry, education content, sensors, focal lengths, scenes, glossary
+  data/                 Tool registry, education content, sensors, focal lengths, scenes, glossary, camera, ndFilters, whiteBalance
   data/education/       Per-tool educational content, challenge definitions, types
   utils/                Export helpers
   types.ts              Shared TypeScript types
@@ -89,11 +89,11 @@ Content is defined as structured data in `lib/data/education/content.ts` and `co
 - **Named exports** for all components
 - **No external UI libraries** — custom CSS only
 - **Test files** co-located next to source files (`*.test.ts`)
-- **14 test files, 171 tests** covering math, data, and integration
+- **18 test files, 212 tests** covering math, data, education, and integration
 
 ## Deployment
 
 - Vercel auto-deploys from `main` branch
 - GitHub Actions CI: `npm ci` → `npm audit` → `npm run lint` → `npm test` → `npm run build`
-- Custom domain: `phototools.io`
+- Custom domain: `www.phototools.io` (apex `phototools.io` redirects to www)
 - NEVER push to remote or deploy without explicit user instruction

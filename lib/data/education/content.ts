@@ -839,9 +839,9 @@ export const TOOL_EDUCATION: ToolEducation[] = [
     ],
   },
 
-  // ── Tool 6: white-balance ───────────────────────────────────────────
+  // ── Tool 6: white-balance-visualizer ────────────────────────────────
   {
-    slug: 'white-balance',
+    slug: 'white-balance-visualizer',
     beginner:
       'White balance adjusts the colors in your photo so that white objects actually appear white under any lighting. Different light sources have different color temperatures — a candle is warm and orange, while shade is cool and blue. Your camera\'s white balance setting compensates for these differences so colors look natural.',
     deeper:

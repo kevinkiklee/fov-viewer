@@ -101,3 +101,38 @@ describe('Color temperature produces valid RGB', () => {
     expect(Math.abs(hues[1] - hues[0])).toBeCloseTo(180, 0)
   })
 })
+
+describe('Sensor dimensions consistency', () => {
+  it('sensor physical width correlates inversely with crop factor', () => {
+    const ff = SENSORS.find(s => s.id === 'ff')!
+    for (const sensor of SENSORS) {
+      if (sensor.id === 'ff') continue
+      if (sensor.cropFactor > 1) {
+        expect(sensor.w!).toBeLessThan(ff.w!)
+      } else if (sensor.cropFactor < 1) {
+        expect(sensor.w!).toBeGreaterThan(ff.w!)
+      }
+    }
+  })
+
+  it('crop factor roughly equals 36/sensorWidth for landscape sensors', () => {
+    // Full frame is 36mm wide, crop factor ~= 36/w (diagonal-based, so approximate)
+    for (const sensor of SENSORS) {
+      const approxCrop = 36 / sensor.w!
+      // Allow generous tolerance since crop factor is diagonal-based, not width-based
+      expect(sensor.cropFactor).toBeCloseTo(approxCrop, 0)
+    }
+  })
+})
+
+describe('ND filter math matches data', () => {
+  it('ND filter stops produce correct shutter multiplication', () => {
+    const base = 1 / 125
+    // 3-stop ND should give 8x longer exposure
+    const nd3 = shutterWithNd(base, 3)
+    expect(nd3).toBeCloseTo(base * 8, 6)
+    // 10-stop ND should give 1024x longer exposure
+    const nd10 = shutterWithNd(base, 10)
+    expect(nd10).toBeCloseTo(base * 1024, 6)
+  })
+})

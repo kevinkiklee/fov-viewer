@@ -1,14 +1,5 @@
-import type { Metadata } from 'next'
-import { ColorHarmony } from '@/components/tools/color-harmony/ColorHarmony'
+import { redirect } from 'next/navigation'
 
-export const metadata: Metadata = {
-  title: 'Color Harmony Picker',
-  description: 'Build color palettes for photography shoots using color theory.',
-  openGraph: {
-    images: ['/images/og/color-harmony.jpg'],
-  },
-}
-
-export default function ColorHarmonyPage() {
-  return <ColorHarmony />
+export default function ColorHarmonyRedirect() {
+  redirect('/tools/color-scheme-generator')
 }

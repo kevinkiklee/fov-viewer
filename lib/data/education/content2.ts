@@ -471,7 +471,7 @@ export const TOOL_EDUCATION_2: ToolEducation[] = [
 
   // ── Tool 13: Color Harmony Picker ──────────────────────────────────
   {
-    slug: 'color-harmony',
+    slug: 'color-scheme-generator',
     beginner:
       'Color harmony is about choosing colors that look good together. Just like musical chords, certain color combinations create pleasing visual relationships. Photographers use color harmony to plan wardrobe, set design, and even timing of outdoor shoots to get the right palette from nature.',
     deeper:

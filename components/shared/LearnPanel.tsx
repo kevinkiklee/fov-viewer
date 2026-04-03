@@ -74,25 +74,24 @@ export function LearnPanel({ slug }: LearnPanelProps) {
 
       {/* Challenge section */}
       {challenge && (
-        <>
-          <div className={styles.challengeNav}>
-            {edu.challenges.map((c, i) => (
-              <ChallengeNavDot
-                key={c.id}
-                index={i}
-                challengeId={c.id}
-                active={i === challengeIndex}
-                onClick={() => setChallengeIndex(i)}
-              />
-            ))}
-          </div>
           <ChallengeCard
             challenge={challenge}
             onAdvance={challengeIndex < edu.challenges.length - 1
               ? () => setChallengeIndex(challengeIndex + 1)
               : undefined}
-          />
-        </>
+          >
+            <div className={styles.challengeNav}>
+              {edu.challenges.map((c, i) => (
+                <ChallengeNavDot
+                  key={c.id}
+                  index={i}
+                  challengeId={c.id}
+                  active={i === challengeIndex}
+                  onClick={() => setChallengeIndex(i)}
+                />
+              ))}
+            </div>
+          </ChallengeCard>
       )}
     </aside>
   )
@@ -116,7 +115,7 @@ function ChallengeNavDot({ index, challengeId, active, onClick }: { index: numbe
   )
 }
 
-function ChallengeCard({ challenge, onAdvance }: { challenge: Challenge; onAdvance?: () => void }) {
+function ChallengeCard({ challenge, onAdvance, children }: { challenge: Challenge; onAdvance?: () => void; children?: React.ReactNode }) {
   const [selected, setSelected] = useState<string | null>(null)
   const [result, setResult] = useState<'success' | 'failure' | null>(null)
   const [completed, setCompleted] = useState(false)
@@ -144,6 +143,7 @@ function ChallengeCard({ challenge, onAdvance }: { challenge: Challenge; onAdvan
         <span className={styles.challengeLabel}>Challenge</span>
         <span className={styles.challengeDifficulty}>{challenge.difficulty}</span>
       </div>
+      {children}
       <div className={styles.challengeScenario}>{challenge.scenario}</div>
       {challenge.hint && <div className={styles.challengeHint}>Hint: {challenge.hint}</div>}
 
