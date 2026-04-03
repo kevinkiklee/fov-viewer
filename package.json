@@ -13,6 +13,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "exifreader": "^4.37.0",
     "next": "^16.2.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

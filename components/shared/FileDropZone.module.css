@@ -1,0 +1,35 @@
+.dropZone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-xl);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  text-align: center;
+  min-height: 160px;
+}
+.dropZone:hover,
+.dropZoneDragOver {
+  border-color: var(--accent);
+  background: var(--bg-secondary);
+}
+.prompt {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+.fileName {
+  font-size: var(--text-sm);
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+  word-break: break-all;
+}
+.privacy {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin-top: var(--space-xs);
+}
