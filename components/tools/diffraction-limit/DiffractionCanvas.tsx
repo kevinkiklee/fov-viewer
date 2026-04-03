@@ -164,14 +164,17 @@ export function DiffractionCanvas({ pixelPitchUm, limitAperture, currentAperture
   const [dividerX, setDividerX] = useState(0.5) // 0..1
   const draggingRef = useRef(false)
 
-  // Compute blur radius from physics
+  // Compute blur radius from physics — smooth ramp, no hard threshold
   const airyDiskDiameter = 2.44 * 0.55 * currentAperture // µm, green light
-  const isDiffracted = currentAperture > limitAperture
-  // Scale factor: convert µm difference to canvas px blur
-  const scaleFactor = 0.8
-  const blurRadius = isDiffracted
-    ? Math.max(0, (airyDiskDiameter - pixelPitchUm) * scaleFactor)
-    : 0
+  // Ratio of airy disk to pixel pitch: <1 = sharp, >1 = diffraction-limited
+  const ratio = airyDiskDiameter / pixelPitchUm
+  // Smooth ramp: starts subtly at ratio ~0.7, fully engaged by ratio ~1.3
+  // Uses a smooth sigmoid-like curve instead of a hard cutoff
+  const rampStart = 0.7
+  const t = Math.max(0, (ratio - rampStart) / (1 - rampStart))
+  const smoothT = t * t * (3 - 2 * t) // smoothstep
+  const scaleFactor = 0.6
+  const blurRadius = smoothT * (airyDiskDiameter - pixelPitchUm * rampStart) * scaleFactor
 
   const renderCanvas = useCallback(() => {
     const canvas = canvasRef.current
@@ -282,7 +285,7 @@ export function DiffractionCanvas({ pixelPitchUm, limitAperture, currentAperture
         f/{optimalAperture.toFixed(1)} — Sharp
       </span>
       <span className={`${css.splitLabel} ${css.splitLabelRight}`}>
-        f/{currentAperture.toFixed(1)} — {isDiffracted ? 'Diffracted' : 'Sharp'}
+        f/{currentAperture.toFixed(1)} — {blurRadius > 0.5 ? 'Diffracted' : 'Sharp'}
       </span>
 
       {/* Draggable divider */}
