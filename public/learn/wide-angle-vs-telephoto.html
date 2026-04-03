@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wide Angle vs Telephoto — How Focal Length Changes Perspective | FOV Viewer</title>
+  <meta name="description" content="Wide angle lenses exaggerate depth and expand space; telephoto lenses flatten it. Learn when to use each, what actually causes perspective distortion, and how to control the look of your photographs.">
+  <link rel="canonical" href="https://fov-viewer.iser.io/learn/wide-angle-vs-telephoto.html">
+  <link rel="stylesheet" href="/content-styles.css">
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fov-viewer.iser.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://fov-viewer.iser.io/learn/" },
+        { "@type": "ListItem", "position": 3, "name": "Wide Angle vs Telephoto" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Wide Angle vs Telephoto — How Focal Length Changes Perspective",
+      "description": "Wide angle lenses exaggerate depth and expand space; telephoto lenses flatten it. Learn when to use each, what actually causes perspective distortion, and how to control the look of your photographs.",
+      "url": "https://fov-viewer.iser.io/learn/wide-angle-vs-telephoto.html",
+      "author": { "@type": "Organization", "name": "FOV Viewer" }
+    }
+  ]
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSRBYSNCEJ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-GSRBYSNCEJ');</script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="site-header__logo">FOV Viewer</a>
+    <nav class="site-header__nav">
+      <a href="/">Tool</a>
+      <a href="/compare/">Compare</a>
+      <a href="/learn/" class="active">Learn</a>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="/">Home</a> <span>&rsaquo;</span> <a href="/learn/">Learn</a> <span>&rsaquo;</span> Wide Angle vs Telephoto
+  </nav>
+
+  <div class="content">
+    <h1>Wide Angle vs Telephoto</h1>
+    <p class="subtitle">How focal length changes perspective — and how to use each end of the range intentionally.</p>
+
+    <p>Focal length determines more than how much of a scene fits in the frame. It changes — via its effect on working distance — how objects at different depths relate to one another, how space feels, and whether a photograph seems to invite the viewer inside the scene or observe it from a distance. Understanding the visual language of wide-angle and telephoto lenses is one of the most practical skills in photography.</p>
+
+    <h2>The two extremes at a glance</h2>
+
+    <figure>
+      <svg class="diagram" viewBox="0 0 620 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Side-by-side diagram comparing wide angle and telephoto perspective rendering">
+        <rect width="620" height="260" fill="#16213e" rx="8"/>
+
+        <!-- === LEFT PANEL: Wide angle === -->
+        <text x="16" y="26" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="600">Wide angle (e.g. 24mm) — expanded depth</text>
+
+        <!-- Ground plane -->
+        <line x1="16" y1="210" x2="294" y2="210" stroke="#1e3a5f" stroke-width="1"/>
+
+        <!-- Camera -->
+        <rect x="16" y="174" width="26" height="18" rx="3" fill="none" stroke="#3b82f6" stroke-width="2"/>
+        <circle cx="29" cy="183" r="4" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+        <rect x="31" y="171" width="7" height="5" rx="1" fill="#3b82f6"/>
+
+        <!-- FOV cone lines -->
+        <line x1="42" y1="183" x2="294" y2="80" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+        <line x1="42" y1="183" x2="294" y2="210" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+
+        <!-- Foreground subject (large) -->
+        <!-- person silhouette near camera -->
+        <circle cx="120" cy="156" r="10" fill="#34d399"/>
+        <rect x="116" y="166" width="8" height="22" rx="2" fill="#34d399"/>
+        <text x="120" y="202" fill="#34d399" font-size="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">subject</text>
+        <text x="120" y="213" fill="#34d399" font-size="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">(large)</text>
+
+        <!-- Background mountain (small) -->
+        <polygon points="240,130 215,175 265,175" fill="#475569"/>
+        <text x="240" y="188" fill="#94a3b8" font-size="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">background</text>
+        <text x="240" y="199" fill="#94a3b8" font-size="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">(small)</text>
+
+        <!-- Distance label -->
+        <line x1="42" y1="228" x2="108" y2="228" stroke="#3b82f6" stroke-width="1"/>
+        <text x="75" y="242" fill="#3b82f6" font-size="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">close</text>
+
+        <!-- Wide angle label -->
+        <text x="16" y="258" fill="#3b82f6" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="600">Near objects loom; far objects recede dramatically</text>
+
+        <!-- Divider -->
+        <line x1="310" y1="10" x2="310" y2="250" stroke="#1e3a5f" stroke-width="1"/>
+
+        <!-- === RIGHT PANEL: Telephoto === -->
+        <text x="322" y="26" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="600">Telephoto (e.g. 200mm) — compressed depth</text>
+
+        <!-- Ground plane -->
+        <line x1="322" y1="210" x2="604" y2="210" stroke="#1e3a5f" stroke-width="1"/>
+
+        <!-- Camera (farther back) -->
+        <rect x="322" y="174" width="26" height="18" rx="3" fill="none" stroke="#fb923c" stroke-width="2"/>
+        <circle cx="335" cy="183" r="4" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+        <rect x="337" y="171" width="7" height="5" rx="1" fill="#fb923c"/>
+
+        <!-- Narrow FOV cone lines -->
+        <line x1="348" y1="183" x2="604" y2="153" stroke="#fb923c" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+        <line x1="348" y1="183" x2="604" y2="210" stroke="#fb923c" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+
+        <!-- Foreground subject (medium — farther away) -->
+        <circle cx="490" cy="161" r="8" fill="#34d399"/>
+        <rect x="486" y="169" width="7" height="19" rx="2" fill="#34d399"/>
+        <text x="490" y="202" fill="#34d399" font-size="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">subject</text>
+        <text x="490" y="213" fill="#34d399" font-size="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">(similar size)</text>
+
+        <!-- Background mountain (similar size — compressed) -->
+        <polygon points="565,148 548,180 582,180" fill="#475569"/>
+        <text x="565" y="193" fill="#94a3b8" font-size="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">background</text>
+        <text x="565" y="204" fill="#94a3b8" font-size="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">(similar size)</text>
+
+        <!-- Distance label -->
+        <line x1="348" y1="228" x2="482" y2="228" stroke="#fb923c" stroke-width="1"/>
+        <text x="415" y="242" fill="#fb923c" font-size="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">far back</text>
+
+        <!-- Tele label -->
+        <text x="322" y="258" fill="#fb923c" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="600">Near and far objects appear similar in size (stacking)</text>
+      </svg>
+      <figcaption>Wide angle (left): the photographer is close, so near and far objects appear very different in size — depth feels exaggerated. Telephoto (right): the photographer is far back, so the ratio between near and far distances is smaller — objects appear to stack together.</figcaption>
+    </figure>
+
+    <h2>Wide angle: 14–35mm</h2>
+
+    <p>Wide-angle lenses encompass a large field of view — typically 63° or more from corner to corner on a full-frame sensor. Because they require you to get close to fill the frame with a subject, they produce the dramatic size relationships that define the wide-angle look.</p>
+
+    <p><strong>Exaggerated depth.</strong> When you stand close to a foreground element and shoot wide, the near objects appear large relative to those in the distance. A cobblestone in the foreground can appear as large as a building half a block away. This is not a lens artifact — it is the natural result of being close enough that the distance to near objects is a meaningful fraction of the distance to far ones. The ratio between near and far distances is large, so the apparent size difference is large.</p>
+
+    <p><strong>Expanded apparent space.</strong> Because near objects loom and far objects recede, wide-angle photographs give a sense of spaciousness. Rooms look larger. Landscapes feel more expansive. This is why interior architectural photography is almost always shot wide — you want to convey the full dimensions of the space, not compress it.</p>
+
+    <p><strong>Stretching at the edges.</strong> Wide-angle photographs often show objects near the frame edges appearing stretched or distorted. It is important to distinguish two separate phenomena here. <em>Perspective distortion</em> is geometric: an object near the edge of a wide-angle frame is rendered at an angle that makes it appear elongated. This is not a flaw in the lens — it is correct geometry. A sphere near the edge of a rectilinear frame is actually an ellipse in the projection, because the camera is casting a three-dimensional scene onto a flat plane. <em>Barrel distortion</em>, by contrast, is a lens design artifact: straight lines bow outward from the center. Most modern wide-angle lenses correct barrel distortion well, but perspective distortion is inherent to the geometry and cannot be corrected without changing shooting position or focal length.</p>
+
+    <p><strong>Wide angle puts you in the scene.</strong> The characteristic of wide-angle photography is that the viewer feels present in the environment. A wide-angle street photograph includes context — signs, buildings, passersby — that situates the subject in a place. The foreground draws the eye inward. You feel like you are standing there.</p>
+
+    <h2>Telephoto: 85–800mm</h2>
+
+    <p>Telephoto lenses have a narrow field of view — as little as 3° at 800mm on a full-frame sensor. To fill the frame with a subject at typical telephoto focal lengths, you must stand far away. That distance is what produces the visual effects telephoto images are known for.</p>
+
+    <p><strong>Flattened depth perception.</strong> From a distance, the ratio of near-to-far distances is small. A subject at 50 meters and a wall at 60 meters behind them are at a 1:1.2 ratio from your position — they appear nearly the same size. A wide-angle photographer standing 1 meter from the subject would see those same objects at a 1:61 ratio — they would appear dramatically different in size. Same scene, different positions, completely different depth rendering.</p>
+
+    <p><strong>The stacking effect.</strong> At long telephoto focal lengths, objects that are physically hundreds of meters apart appear to occupy the same plane. City streets shot at 400mm look like walls of buildings packed impossibly tight. A cyclist on a road appears inches from a distant hill behind them. Telephoto photography compresses space into layers, which can make environments feel dense, dramatic, or abstract.</p>
+
+    <p><strong>Subject isolation.</strong> The combination of long focal length and close focusing distance enables shallow depth of field. At 200mm f/2.8, the in-focus plane is thin and the out-of-focus background renders as smooth blur. This isolates the subject visually, which is why portrait and wildlife photographers favor telephoto lenses. The subject stands apart from whatever is behind it.</p>
+
+    <p><strong>Telephoto observes the scene.</strong> Where wide angle immerses you in an environment, telephoto documents it from a remove. Sports photography, wildlife, and news photography often favor telephoto not just for physical reach but for the observational quality it imparts — the sense of watching events unfold from a distance, without the subject being aware of the camera.</p>
+
+    <h2>The normal range: 40–50mm</h2>
+
+    <p>Between the two extremes sits the "normal" focal length — typically 40–50mm on full frame. At around 43mm, the diagonal of a 36×24mm frame matches the focal length, which is often cited as the mathematical definition of "normal." In practice, 50mm is the conventional standard.</p>
+
+    <p>Normal lenses neither exaggerate nor compress perspective noticeably. Objects at different depths appear at sizes that match roughly what your eye expects. Depth rendition is neither dramatic nor flat. This makes normal focal lengths excellent for documentary and street photography, where unobtrusive, natural-looking images are the goal. Many photographers find 50mm the most versatile single focal length precisely because its perspective makes no strong statement — it renders the world as the world appears.</p>
+
+    <h2>Perspective distortion vs barrel/pincushion distortion</h2>
+
+    <p>These two terms are often confused, and the confusion leads to incorrect conclusions about what lenses do.</p>
+
+    <p><strong>Perspective distortion</strong> is a geometric consequence of shooting distance and camera angle. It is not caused by the lens at all. When you photograph a person at close range with any camera — film, digital, phone — the nose projects several centimeters closer to the lens than the ears, so it appears disproportionately large. Back up and use any focal length to reframe, and the nose looks normal. The effect is entirely about distance.</p>
+
+    <p><strong>Barrel distortion</strong> (bulging outward at the edges) and <strong>pincushion distortion</strong> (pinching inward) are lens design artifacts — deviations from rectilinear projection caused by the way optical elements refract light. Barrel distortion is common in wide-angle lenses; pincushion distortion is common in telephoto lenses. Modern lenses and camera software apply corrections automatically. These distortions cause straight lines to appear curved; they are independent of shooting distance and can be corrected in post-processing. Perspective distortion cannot.</p>
+
+    <h2>Working distance and subject size</h2>
+
+    <p>There is a practical relationship that connects focal length, subject size, and perspective: to keep a subject the same size in the frame, you must adjust your distance as you change focal length. Doubling the focal length requires doubling the distance; halving the focal length requires halving the distance.</p>
+
+    <p>This distance change is what actually alters perspective. When you switch from 24mm to 200mm and step back to keep the subject the same size, you are not just zooming in — you are fundamentally changing the geometry of the scene. The background now appears larger and closer behind the subject. The depth relationships are different. This is the mechanism behind what photographers call "lens compression," though the compression is caused by the distance change, not the focal length change itself. (For a detailed treatment, see the <a href="understanding-lens-compression.html">Understanding Lens Compression</a> article.)</p>
+
+    <p>The practical implication: if you want to photograph a subject with a specific relationship between the subject and its background, your choice of focal length forces your working distance, which then determines the perspective. A headshot at 85mm and a headshot at 35mm (from farther back) will have the same subject size but different backgrounds — the 85mm version will show less background, and what is visible will appear closer and larger. These are creative choices, not technical constraints.</p>
+
+    <h2>When to use each</h2>
+
+    <p><strong>Wide angle (14–35mm):</strong> architecture and interiors; landscape photography where foreground-background depth is part of the composition; environmental portraits where context matters; astrophotography (wide star fields); scenes where you want the viewer to feel inside the environment.</p>
+
+    <p><strong>Normal (40–50mm):</strong> street photography; documentary; everyday reportage; travel; situations where you want natural-looking images without a strong perspective statement.</p>
+
+    <p><strong>Telephoto (85–800mm):</strong> wildlife and sports (physical distance); isolating subjects from busy backgrounds; compressing a scene for abstract or dramatic effect; portraits where you want background separation; the moon and celestial objects.</p>
+
+    <h2>Compare 24mm and 200mm side by side</h2>
+
+    <p>The tool below shows the field of view difference between a 24mm and 200mm lens on a full-frame sensor. The 24mm captures roughly 74° horizontally; the 200mm captures about 10°. The 200mm rectangle sits entirely inside the 24mm frame, showing exactly how much of the wide-angle view the telephoto discards.</p>
+
+    <iframe class="tool-embed" src="/?a=24&sa=ff&b=200&sb=ff&embed=1" title="24mm vs 200mm" loading="lazy"></iframe>
+
+    <a class="cta" href="/?a=24&sa=ff&b=200&sb=ff">Explore 24mm vs 200mm in the tool &rarr;</a>
+
+    <h2>Summary</h2>
+
+    <ul>
+      <li>Wide-angle lenses (14–35mm) require close working distances, which exaggerates near-far size differences and makes spaces feel expansive.</li>
+      <li>Telephoto lenses (85–800mm) require farther working distances, which flattens depth, stacks objects, and isolates subjects.</li>
+      <li>Normal lenses (40–50mm) produce perspective that matches the visual expectation of an observer on the scene.</li>
+      <li>Perspective distortion is caused by shooting distance, not the lens. Barrel and pincushion distortion are lens design artifacts — these are different things.</li>
+      <li>Wide angle puts you "in" the scene; telephoto lets you observe it from outside.</li>
+      <li>To keep subject size constant while changing focal length, you must adjust working distance — and that distance change is what actually changes perspective.</li>
+    </ul>
+
+    <h2>Related</h2>
+    <div class="card-grid">
+      <a class="card" href="understanding-lens-compression.html">
+        <h3>Understanding Lens Compression</h3>
+        <p>Why telephoto lenses appear to compress perspective — and why distance is the real cause, not focal length.</p>
+      </a>
+      <a class="card" href="focal-length-guide.html">
+        <h3>Focal Length Guide</h3>
+        <p>What every focal length from 14mm to 800mm looks like and when to reach for each one.</p>
+      </a>
+      <a class="card" href="/compare/24mm-vs-50mm.html">
+        <h3>24mm vs 50mm</h3>
+        <p>Wide-angle vs normal — how the perspective and field of view differ in real shooting scenarios.</p>
+      </a>
+      <a class="card" href="/compare/85mm-vs-200mm.html">
+        <h3>85mm vs 200mm</h3>
+        <p>Portrait prime vs telephoto — compression, background separation, and working distance compared.</p>
+      </a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <a href="/">Tool</a>
+    <a href="/compare/">Compare</a>
+    <a href="/learn/">Learn</a>
+    <a href="https://github.com/kevinkiklee/fov-viewer" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+</body>
+</html>
