@@ -12,112 +12,55 @@ import type { HistogramData } from '@/lib/math/histogram'
 import styles from './ExifViewer.module.css'
 
 const DASH = '\u2014'
+const SAMPLE_PHOTO = '/images/exposure-simulator/landscape.jpg'
 
 const EXPOSURE_PROGRAMS: Record<string, string> = {
-  '0': 'Not defined',
-  '1': 'Manual',
-  '2': 'Program AE',
-  '3': 'Aperture Priority',
-  '4': 'Shutter Priority',
-  '5': 'Creative',
-  '6': 'Action',
-  '7': 'Portrait',
-  '8': 'Landscape',
+  '0': 'Not defined', '1': 'Manual', '2': 'Program AE', '3': 'Aperture Priority',
+  '4': 'Shutter Priority', '5': 'Creative', '6': 'Action', '7': 'Portrait', '8': 'Landscape',
 }
 
 const METERING_MODES: Record<string, string> = {
-  '0': 'Unknown',
-  '1': 'Average',
-  '2': 'Center-weighted',
-  '3': 'Spot',
-  '4': 'Multi-spot',
-  '5': 'Multi-segment',
-  '6': 'Partial',
+  '0': 'Unknown', '1': 'Average', '2': 'Center-weighted', '3': 'Spot',
+  '4': 'Multi-spot', '5': 'Multi-segment', '6': 'Partial',
 }
 
 const FLASH_MODES: Record<number, string> = {
-  0x00: 'No flash',
-  0x01: 'Flash fired',
-  0x05: 'Flash fired, strobe return not detected',
-  0x07: 'Flash fired, strobe return detected',
-  0x08: 'Flash did not fire, compulsory',
-  0x09: 'Flash fired, compulsory',
-  0x0D: 'Flash fired, compulsory, return not detected',
-  0x0F: 'Flash fired, compulsory, return detected',
-  0x10: 'Flash did not fire, compulsory suppressed',
-  0x18: 'Flash did not fire, auto',
-  0x19: 'Flash fired, auto',
-  0x1D: 'Flash fired, auto, return not detected',
-  0x1F: 'Flash fired, auto, return detected',
-  0x20: 'No flash function',
-  0x41: 'Flash fired, red-eye reduction',
-  0x45: 'Flash fired, red-eye, return not detected',
-  0x47: 'Flash fired, red-eye, return detected',
-  0x49: 'Flash fired, compulsory, red-eye',
-  0x4D: 'Flash fired, compulsory, red-eye, return not detected',
-  0x4F: 'Flash fired, compulsory, red-eye, return detected',
-  0x59: 'Flash fired, auto, red-eye',
-  0x5D: 'Flash fired, auto, red-eye, return not detected',
-  0x5F: 'Flash fired, auto, red-eye, return detected',
+  0x00: 'No flash', 0x01: 'Flash fired', 0x05: 'Flash fired, strobe return not detected',
+  0x07: 'Flash fired, strobe return detected', 0x08: 'Flash did not fire, compulsory',
+  0x09: 'Flash fired, compulsory', 0x10: 'Flash did not fire, compulsory suppressed',
+  0x18: 'Flash did not fire, auto', 0x19: 'Flash fired, auto',
+  0x20: 'No flash function', 0x41: 'Flash fired, red-eye reduction',
 }
 
-const WHITE_BALANCE: Record<string, string> = {
-  '0': 'Auto',
-  '1': 'Manual',
-}
-
-const COLOR_SPACES: Record<string, string> = {
-  '1': 'sRGB',
-  '2': 'Adobe RGB',
-  '65535': 'Uncalibrated',
-}
+const WHITE_BALANCE: Record<string, string> = { '0': 'Auto', '1': 'Manual' }
+const COLOR_SPACES: Record<string, string> = { '1': 'sRGB', '2': 'Adobe RGB', '65535': 'Uncalibrated' }
 
 interface ExifResult {
   camera: { make: string; model: string }
   lens: { model: string; make: string }
   settings: {
-    fNumber: string
-    fNumberRaw: number | null
-    exposureTime: string
-    exposureTimeRaw: number | null
-    iso: string
-    isoRaw: number | null
-    focalLength: string
-    focalLengthRaw: number | null
-    focalLength35: string
-    exposureProgram: string
-    meteringMode: string
-    flash: string
-    whiteBalance: string
-    focusDistance: string
+    fNumber: string; fNumberRaw: number | null
+    exposureTime: string; exposureTimeRaw: number | null
+    iso: string; isoRaw: number | null
+    focalLength: string; focalLengthRaw: number | null; focalLength35: string
+    exposureProgram: string; meteringMode: string; flash: string
+    whiteBalance: string; focusDistance: string
   }
   image: {
-    width: string
-    widthRaw: number | null
-    height: string
-    heightRaw: number | null
-    orientation: string
-    colorSpace: string
-    megapixels: string
-    aspectRatio: string
+    width: string; widthRaw: number | null; height: string; heightRaw: number | null
+    orientation: string; colorSpace: string; megapixels: string; aspectRatio: string
   }
   file: { size: string }
   date: string
   gps: { latitude: string; longitude: string } | null
   software: string
-  analysis: {
-    ev: string | null
-    evDescription: string | null
-    diffractionWarning: string | null
-  }
+  analysis: { ev: string | null; evDescription: string | null; diffractionWarning: string | null }
 }
 
 function getTagValue(tags: ExifReader.Tags, key: string): string | undefined {
   const tag = tags[key]
   if (!tag) return undefined
-  if ('description' in tag && typeof tag.description === 'string' && tag.description) {
-    return tag.description
-  }
+  if ('description' in tag && typeof tag.description === 'string' && tag.description) return tag.description
   if ('value' in tag) {
     const v = tag.value as unknown
     if (typeof v === 'string') return v
@@ -139,22 +82,19 @@ function formatExposureTime(raw: string | undefined): string {
   const num = parseFloat(raw)
   if (isNaN(num)) return raw
   if (num >= 1) return `${num}s`
-  const denom = Math.round(1 / num)
-  return `1/${denom}s`
+  return `1/${Math.round(1 / num)}s`
 }
 
 function formatFNumber(raw: string | undefined): string {
   if (!raw) return DASH
   const num = parseFloat(raw)
-  if (isNaN(num)) return raw
-  return `f/${num}`
+  return isNaN(num) ? raw : `f/${num}`
 }
 
 function formatFocalLength(raw: string | undefined): string {
   if (!raw) return DASH
   const num = parseFloat(raw)
-  if (isNaN(num)) return raw
-  return `${num}mm`
+  return isNaN(num) ? raw : `${num}mm`
 }
 
 function formatFileSize(bytes: number): string {
@@ -164,24 +104,16 @@ function formatFileSize(bytes: number): string {
 }
 
 function formatAspectRatio(w: number, h: number): string {
-  const gcd = (a: number, b: number): number => b === 0 ? a : gcd(b, a % b)
-  const d = gcd(w, h)
-  const rw = w / d
-  const rh = h / d
-  // Simplify common ratios
-  if (rw === 3 && rh === 2) return '3:2'
-  if (rw === 2 && rh === 3) return '2:3'
-  if (rw === 4 && rh === 3) return '4:3'
-  if (rw === 3 && rh === 4) return '3:4'
-  if (rw === 16 && rh === 9) return '16:9'
-  if (rw === 9 && rh === 16) return '9:16'
-  if (rw === 1 && rh === 1) return '1:1'
-  // For large numbers, approximate
   const ratio = w / h
   if (Math.abs(ratio - 1.5) < 0.02) return '3:2'
   if (Math.abs(ratio - 1.333) < 0.02) return '4:3'
   if (Math.abs(ratio - 1.778) < 0.02) return '16:9'
-  return `${rw}:${rh}`
+  if (Math.abs(ratio - 1) < 0.02) return '1:1'
+  if (Math.abs(ratio - 0.667) < 0.02) return '2:3'
+  if (Math.abs(ratio - 0.75) < 0.02) return '3:4'
+  const gcd = (a: number, b: number): number => b === 0 ? a : gcd(b, a % b)
+  const d = gcd(w, h)
+  return `${w / d}:${h / d}`
 }
 
 function evDescription(ev: number): string {
@@ -209,8 +141,7 @@ function parseFlash(tags: ExifReader.Tags): string {
 }
 
 function parseGps(tags: ExifReader.Tags): { latitude: string; longitude: string } | null {
-  const lat = tags['GPSLatitude']
-  const lon = tags['GPSLongitude']
+  const lat = tags['GPSLatitude'], lon = tags['GPSLongitude']
   if (!lat || !lon) return null
   const latDesc = 'description' in lat ? lat.description : undefined
   const lonDesc = 'description' in lon ? lon.description : undefined
@@ -228,9 +159,7 @@ function parseExif(tags: ExifReader.Tags, fileSize: number): ExifResult {
   const widthRaw = getTagNumeric(tags, 'ImageWidth') ?? getTagNumeric(tags, 'PixelXDimension')
   const heightRaw = getTagNumeric(tags, 'ImageHeight') ?? getTagNumeric(tags, 'PixelYDimension')
 
-  // Exposure analysis
-  let ev: string | null = null
-  let evDesc: string | null = null
+  let ev: string | null = null, evDesc: string | null = null
   if (fNumberRaw && exposureTimeRaw) {
     const evVal = calcEV(fNumberRaw, exposureTimeRaw)
     const totalEV = isoRaw ? evVal + Math.log2(isoRaw / 100) : evVal
@@ -238,7 +167,6 @@ function parseExif(tags: ExifReader.Tags, fileSize: number): ExifResult {
     evDesc = evDescription(totalEV)
   }
 
-  // Diffraction check — estimate sensor width from 35mm equiv
   let diffractionWarning: string | null = null
   if (fNumberRaw && focalLengthRaw && widthRaw && heightRaw) {
     const focalLength35Raw = getTagNumeric(tags, 'FocalLengthIn35mmFilm')
@@ -249,58 +177,38 @@ function parseExif(tags: ExifReader.Tags, fileSize: number): ExifResult {
       const pitch = pixelPitch(sensorWidth, mp)
       const limitAperture = diffractionLimitedAperture(pitch)
       if (fNumberRaw > limitAperture) {
-        diffractionWarning = `Shot at f/${fNumberRaw} — past the diffraction limit of f/${limitAperture.toFixed(1)} for this sensor. Sharpness may be reduced.`
+        diffractionWarning = `Shot at f/${fNumberRaw} — past diffraction limit f/${limitAperture.toFixed(1)}. Sharpness may be reduced.`
       }
     }
   }
 
-  // Megapixels + aspect ratio
-  let megapixels = DASH
-  let aspectRatio = DASH
+  let megapixels = DASH, aspectRatio = DASH
   if (widthRaw && heightRaw) {
     megapixels = `${((widthRaw * heightRaw) / 1e6).toFixed(1)} MP`
     aspectRatio = formatAspectRatio(widthRaw, heightRaw)
   }
 
-  const exposureProgramRaw = getTagValue(tags, 'ExposureProgram')
-  const meteringModeRaw = getTagValue(tags, 'MeteringMode')
-  const whiteBalanceRaw = getTagValue(tags, 'WhiteBalance')
-  const colorSpaceRaw = getTagValue(tags, 'ColorSpace')
-
   return {
-    camera: {
-      make: getTagValue(tags, 'Make') ?? DASH,
-      model: getTagValue(tags, 'Model') ?? DASH,
-    },
-    lens: {
-      model: getTagValue(tags, 'LensModel') ?? DASH,
-      make: getTagValue(tags, 'LensMake') ?? DASH,
-    },
+    camera: { make: getTagValue(tags, 'Make') ?? DASH, model: getTagValue(tags, 'Model') ?? DASH },
+    lens: { model: getTagValue(tags, 'LensModel') ?? DASH, make: getTagValue(tags, 'LensMake') ?? DASH },
     settings: {
-      fNumber: formatFNumber(getTagValue(tags, 'FNumber')),
-      fNumberRaw,
-      exposureTime: formatExposureTime(getTagValue(tags, 'ExposureTime')),
-      exposureTimeRaw,
-      iso: isoRaw ? String(isoRaw) : DASH,
-      isoRaw,
-      focalLength: formatFocalLength(getTagValue(tags, 'FocalLength')),
-      focalLengthRaw,
+      fNumber: formatFNumber(getTagValue(tags, 'FNumber')), fNumberRaw,
+      exposureTime: formatExposureTime(getTagValue(tags, 'ExposureTime')), exposureTimeRaw,
+      iso: isoRaw ? String(isoRaw) : DASH, isoRaw,
+      focalLength: formatFocalLength(getTagValue(tags, 'FocalLength')), focalLengthRaw,
       focalLength35: formatFocalLength(getTagValue(tags, 'FocalLengthIn35mmFilm')),
-      exposureProgram: exposureProgramRaw ? (EXPOSURE_PROGRAMS[exposureProgramRaw] ?? exposureProgramRaw) : DASH,
-      meteringMode: meteringModeRaw ? (METERING_MODES[meteringModeRaw] ?? meteringModeRaw) : DASH,
+      exposureProgram: EXPOSURE_PROGRAMS[getTagValue(tags, 'ExposureProgram') ?? ''] ?? getTagValue(tags, 'ExposureProgram') ?? DASH,
+      meteringMode: METERING_MODES[getTagValue(tags, 'MeteringMode') ?? ''] ?? getTagValue(tags, 'MeteringMode') ?? DASH,
       flash: parseFlash(tags),
-      whiteBalance: whiteBalanceRaw ? (WHITE_BALANCE[whiteBalanceRaw] ?? whiteBalanceRaw) : DASH,
+      whiteBalance: WHITE_BALANCE[getTagValue(tags, 'WhiteBalance') ?? ''] ?? getTagValue(tags, 'WhiteBalance') ?? DASH,
       focusDistance: getTagValue(tags, 'SubjectDistance') ?? getTagValue(tags, 'FocusDistance') ?? DASH,
     },
     image: {
-      width: widthRaw ? String(widthRaw) : DASH,
-      widthRaw,
-      height: heightRaw ? String(heightRaw) : DASH,
-      heightRaw,
+      width: widthRaw ? String(widthRaw) : DASH, widthRaw,
+      height: heightRaw ? String(heightRaw) : DASH, heightRaw,
       orientation: getTagValue(tags, 'Orientation') ?? DASH,
-      colorSpace: colorSpaceRaw ? (COLOR_SPACES[colorSpaceRaw] ?? colorSpaceRaw) : DASH,
-      megapixels,
-      aspectRatio,
+      colorSpace: COLOR_SPACES[getTagValue(tags, 'ColorSpace') ?? ''] ?? getTagValue(tags, 'ColorSpace') ?? DASH,
+      megapixels, aspectRatio,
     },
     file: { size: formatFileSize(fileSize) },
     date: getTagValue(tags, 'DateTimeOriginal') ?? getTagValue(tags, 'DateTime') ?? DASH,
@@ -313,11 +221,10 @@ function parseExif(tags: ExifReader.Tags, fileSize: number): ExifResult {
 // ── UI Components ──
 
 function Row({ label, value }: { label: string; value: string }) {
-  const isMissing = value === DASH
   return (
     <tr>
       <td>{label}</td>
-      <td className={isMissing ? styles.missing : undefined}>{value}</td>
+      <td className={value === DASH ? styles.missing : undefined}>{value}</td>
     </tr>
   )
 }
@@ -328,9 +235,7 @@ function Section({ title, rows }: { title: string; rows: [string, string][] }) {
       <div className={styles.sectionTitle}>{title}</div>
       <table className={styles.table}>
         <tbody>
-          {rows.map(([label, value]) => (
-            <Row key={label} label={label} value={value} />
-          ))}
+          {rows.map(([label, value]) => <Row key={label} label={label} value={value} />)}
         </tbody>
       </table>
     </div>
@@ -346,9 +251,7 @@ function AnalysisCards({ analysis }: { analysis: ExifResult['analysis'] }) {
         <div className={styles.analysisCard}>
           <div className={styles.analysisLabel}>Exposure Value</div>
           <div className={styles.analysisValue}>{analysis.ev}</div>
-          {analysis.evDescription && (
-            <div className={styles.analysisNote}>{analysis.evDescription}</div>
-          )}
+          {analysis.evDescription && <div className={styles.analysisNote}>{analysis.evDescription}</div>}
         </div>
       )}
       {analysis.diffractionWarning && (
@@ -358,16 +261,83 @@ function AnalysisCards({ analysis }: { analysis: ExifResult['analysis'] }) {
   )
 }
 
-function MiniHistogram({ imageUrl }: { imageUrl: string }) {
-  const canvasRef = useRef<HTMLCanvasElement>(null)
+// ── 3-panel histogram ──
+
+function drawSingleHistogram(
+  canvas: HTMLCanvasElement,
+  hist: HistogramData,
+  mode: 'luminance' | 'rgb' | 'channels',
+) {
+  const dpr = window.devicePixelRatio || 1
+  const w = canvas.clientWidth
+  const h = canvas.clientHeight
+  canvas.width = w * dpr
+  canvas.height = h * dpr
+  const ctx = canvas.getContext('2d')
+  if (!ctx) return
+  ctx.scale(dpr, dpr)
+  ctx.clearRect(0, 0, w, h)
+
+  const barW = w / 256 + 0.5
+
+  if (mode === 'luminance') {
+    const max = Math.max(...hist.luma.slice(1, 255))
+    if (max === 0) return
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.35)'
+    for (let i = 0; i < 256; i++) {
+      const bh = (hist.luma[i] / max) * h
+      ctx.fillRect((i / 255) * w, h - bh, barW, bh)
+    }
+  } else if (mode === 'rgb') {
+    const max = Math.max(
+      ...hist.r.slice(1, 255),
+      ...hist.g.slice(1, 255),
+      ...hist.b.slice(1, 255),
+    )
+    if (max === 0) return
+    const chs: [number[], string][] = [
+      [hist.r, 'rgba(239, 68, 68, 0.35)'],
+      [hist.g, 'rgba(34, 197, 94, 0.35)'],
+      [hist.b, 'rgba(59, 130, 246, 0.35)'],
+    ]
+    for (const [ch, color] of chs) {
+      ctx.fillStyle = color
+      for (let i = 0; i < 256; i++) {
+        const bh = (ch[i] / max) * h
+        ctx.fillRect((i / 255) * w, h - bh, barW, bh)
+      }
+    }
+  } else {
+    // Individual channels stacked
+    const max = Math.max(
+      ...hist.r.slice(1, 255),
+      ...hist.g.slice(1, 255),
+      ...hist.b.slice(1, 255),
+    )
+    if (max === 0) return
+    const chs: [number[], string][] = [
+      [hist.b, 'rgba(59, 130, 246, 0.5)'],
+      [hist.g, 'rgba(34, 197, 94, 0.5)'],
+      [hist.r, 'rgba(239, 68, 68, 0.5)'],
+    ]
+    for (const [ch, color] of chs) {
+      ctx.fillStyle = color
+      for (let i = 0; i < 256; i++) {
+        const bh = (ch[i] / max) * h
+        ctx.fillRect((i / 255) * w, h - bh, barW, bh)
+      }
+    }
+  }
+}
+
+function HistogramTriple({ imageUrl }: { imageUrl: string }) {
+  const lumaRef = useRef<HTMLCanvasElement>(null)
+  const rgbRef = useRef<HTMLCanvasElement>(null)
+  const chRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
-
     const img = new Image()
     img.onload = () => {
-      // Draw image to offscreen canvas to get pixel data
       const offscreen = document.createElement('canvas')
       const maxDim = 400
       const scale = Math.min(maxDim / img.width, maxDim / img.height, 1)
@@ -377,75 +347,31 @@ function MiniHistogram({ imageUrl }: { imageUrl: string }) {
       if (!offCtx) return
       offCtx.drawImage(img, 0, 0, offscreen.width, offscreen.height)
       const imageData = offCtx.getImageData(0, 0, offscreen.width, offscreen.height)
-
       const hist = computeHistogram(imageData.data, offscreen.width, offscreen.height)
-      const clipping = detectClipping(hist)
 
-      // Draw histogram
-      const dpr = window.devicePixelRatio || 1
-      const w = canvas.clientWidth
-      const h = canvas.clientHeight
-      canvas.width = w * dpr
-      canvas.height = h * dpr
-      const ctx = canvas.getContext('2d')
-      if (!ctx) return
-      ctx.scale(dpr, dpr)
-
-      ctx.clearRect(0, 0, w, h)
-
-      const maxVal = Math.max(...hist.luma.slice(1, 255))
-      if (maxVal === 0) return
-
-      // Luma histogram
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.3)'
-      for (let i = 0; i < 256; i++) {
-        const x = (i / 255) * w
-        const barH = (hist.luma[i] / maxVal) * h
-        ctx.fillRect(x, h - barH, w / 256 + 0.5, barH)
-      }
-
-      // RGB overlay
-      const channels: [number[], string][] = [
-        [hist.r, 'rgba(239, 68, 68, 0.2)'],
-        [hist.g, 'rgba(34, 197, 94, 0.2)'],
-        [hist.b, 'rgba(59, 130, 246, 0.2)'],
-      ]
-      for (const [ch, color] of channels) {
-        ctx.fillStyle = color
-        for (let i = 0; i < 256; i++) {
-          const x = (i / 255) * w
-          const barH = (ch[i] / maxVal) * h
-          ctx.fillRect(x, h - barH, w / 256 + 0.5, barH)
-        }
-      }
-
-      // Clipping indicators
-      if (clipping.hasBlackClip) {
-        ctx.fillStyle = 'rgba(239, 68, 68, 0.6)'
-        ctx.fillRect(0, 0, 3, h)
-      }
-      if (clipping.hasWhiteClip) {
-        ctx.fillStyle = 'rgba(239, 68, 68, 0.6)'
-        ctx.fillRect(w - 3, 0, 3, h)
-      }
+      if (lumaRef.current) drawSingleHistogram(lumaRef.current, hist, 'luminance')
+      if (rgbRef.current) drawSingleHistogram(rgbRef.current, hist, 'rgb')
+      if (chRef.current) drawSingleHistogram(chRef.current, hist, 'channels')
     }
     img.src = imageUrl
   }, [imageUrl])
 
   return (
-    <div className={styles.section}>
-      <div className={styles.sectionTitle}>Histogram</div>
-      <div className={styles.histogramWrap}>
-        <canvas
-          ref={canvasRef}
-          className={styles.histogramCanvas}
-          aria-label="Image histogram"
-          role="img"
-        />
-        <div className={styles.histogramLabels}>
-          <span>Shadows</span>
-          <span>Highlights</span>
-        </div>
+    <div className={styles.histogramRow}>
+      <div className={styles.histogramPanel}>
+        <div className={styles.histogramTitle}>Luminance</div>
+        <canvas ref={lumaRef} className={styles.histogramCanvas} />
+        <div className={styles.histogramLabels}><span>Shadows</span><span>Highlights</span></div>
+      </div>
+      <div className={styles.histogramPanel}>
+        <div className={styles.histogramTitle}>RGB Overlay</div>
+        <canvas ref={rgbRef} className={styles.histogramCanvas} />
+        <div className={styles.histogramLabels}><span>Shadows</span><span>Highlights</span></div>
+      </div>
+      <div className={styles.histogramPanel}>
+        <div className={styles.histogramTitle}>Channels</div>
+        <canvas ref={chRef} className={styles.histogramCanvas} />
+        <div className={styles.histogramLabels}><span>Shadows</span><span>Highlights</span></div>
       </div>
     </div>
   )
@@ -455,7 +381,7 @@ function MiniHistogram({ imageUrl }: { imageUrl: string }) {
 
 const tool = getToolBySlug('exif-viewer')!
 
-function ControlsPanel({ onFile }: { onFile: (file: File) => void }) {
+function ControlsPanel({ onFile, onSample }: { onFile: (file: File) => void; onSample: () => void }) {
   return (
     <>
       <div className={styles.header}>
@@ -463,6 +389,9 @@ function ControlsPanel({ onFile }: { onFile: (file: File) => void }) {
         <p className={styles.description}>{tool.description}</p>
       </div>
       <FileDropZone onFile={onFile} />
+      <button className={styles.sampleBtn} onClick={onSample}>
+        Try sample photo
+      </button>
     </>
   )
 }
@@ -472,10 +401,24 @@ export function ExifViewer() {
   const [error, setError] = useState<string | null>(null)
   const [imageUrl, setImageUrl] = useState<string | null>(null)
 
+  const loadFromUrl = useCallback(async (url: string) => {
+    setError(null)
+    setData(null)
+    setImageUrl(url)
+    try {
+      const resp = await fetch(url)
+      const buffer = await resp.arrayBuffer()
+      const tags = ExifReader.load(buffer)
+      setData(parseExif(tags, buffer.byteLength))
+    } catch {
+      setError('Could not read EXIF data from this image.')
+    }
+  }, [])
+
   const handleFile = useCallback((file: File) => {
     setError(null)
     setData(null)
-    if (imageUrl) URL.revokeObjectURL(imageUrl)
+    if (imageUrl && imageUrl.startsWith('blob:')) URL.revokeObjectURL(imageUrl)
     setImageUrl(URL.createObjectURL(file))
 
     const reader = new FileReader()
@@ -485,18 +428,22 @@ export function ExifViewer() {
         const tags = ExifReader.load(buffer)
         setData(parseExif(tags, file.size))
       } catch {
-        setError('Could not read EXIF data from this image. The file may not contain metadata.')
+        setError('Could not read EXIF data from this image.')
       }
     }
     reader.onerror = () => setError('Failed to read the file.')
     reader.readAsArrayBuffer(file)
   }, [imageUrl])
 
+  const handleSample = useCallback(() => {
+    loadFromUrl(SAMPLE_PHOTO)
+  }, [loadFromUrl])
+
   return (
     <div className={styles.app}>
       <div className={styles.appBody}>
         <div className={styles.sidebar}>
-          <ControlsPanel onFile={handleFile} />
+          <ControlsPanel onFile={handleFile} onSample={handleSample} />
         </div>
 
         <div className={styles.main}>
@@ -506,62 +453,52 @@ export function ExifViewer() {
             <>
               <AnalysisCards analysis={data.analysis} />
 
-              {imageUrl && <MiniHistogram imageUrl={imageUrl} />}
+              {imageUrl && <HistogramTriple imageUrl={imageUrl} />}
 
-              <Section
-                title="Camera"
-                rows={[
+              <div className={styles.sectionsGrid}>
+                <Section title="Camera" rows={[
                   ['Make', data.camera.make],
                   ['Model', data.camera.model],
-                ]}
-              />
-              <Section
-                title="Lens"
-                rows={[
+                ]} />
+                <Section title="Lens" rows={[
                   ['Lens Model', data.lens.model],
                   ['Lens Make', data.lens.make],
-                ]}
-              />
-              <Section
-                title="Exposure"
-                rows={[
+                ]} />
+                <Section title="Exposure" rows={[
                   ['Aperture', data.settings.fNumber],
                   ['Shutter Speed', data.settings.exposureTime],
                   ['ISO', data.settings.iso],
                   ['Focal Length', data.settings.focalLength],
-                  ['Focal Length (35mm)', data.settings.focalLength35],
-                  ['Exposure Program', data.settings.exposureProgram],
-                  ['Metering Mode', data.settings.meteringMode],
+                  ['35mm Equiv.', data.settings.focalLength35],
+                  ['Program', data.settings.exposureProgram],
+                  ['Metering', data.settings.meteringMode],
                   ['Flash', data.settings.flash],
                   ['White Balance', data.settings.whiteBalance],
                   ['Focus Distance', data.settings.focusDistance],
-                ]}
-              />
-              <Section
-                title="Image"
-                rows={[
+                ]} />
+                <Section title="Image" rows={[
                   ['Dimensions', data.image.widthRaw && data.image.heightRaw ? `${data.image.width} × ${data.image.height}` : DASH],
                   ['Megapixels', data.image.megapixels],
                   ['Aspect Ratio', data.image.aspectRatio],
                   ['Color Space', data.image.colorSpace],
                   ['Orientation', data.image.orientation],
                   ['File Size', data.file.size],
-                ]}
-              />
-              <Section title="Date" rows={[['Date Taken', data.date]]} />
-              {data.gps && (
-                <Section
-                  title="GPS"
-                  rows={[
-                    ['Latitude', data.gps.latitude],
-                    ['Longitude', data.gps.longitude],
-                  ]}
-                />
-              )}
-              <Section title="Software" rows={[['Software', data.software]]} />
+                ]} />
+                <Section title="Date" rows={[['Date Taken', data.date]]} />
+                {data.gps && <Section title="GPS" rows={[
+                  ['Latitude', data.gps.latitude],
+                  ['Longitude', data.gps.longitude],
+                ]} />}
+                <Section title="Software" rows={[['Software', data.software]]} />
+              </div>
             </>
           ) : !error ? (
-            <div className={styles.emptyMain}>Upload an image to view its EXIF data</div>
+            <div className={styles.emptyMain}>
+              <span>Upload an image to view its EXIF data</span>
+              <button className={styles.sampleBtn} onClick={handleSample}>
+                Or try a sample photo
+              </button>
+            </div>
           ) : null}
         </div>
 
@@ -569,7 +506,7 @@ export function ExifViewer() {
       </div>
 
       <div className={styles.mobileControls}>
-        <ControlsPanel onFile={handleFile} />
+        <ControlsPanel onFile={handleFile} onSample={handleSample} />
       </div>
     </div>
   )

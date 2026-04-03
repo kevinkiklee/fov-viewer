@@ -3,7 +3,7 @@
 import { useState, useMemo } from 'react'
 import { shutterWithNd, formatShutterSpeed } from '@/lib/math/exposure'
 import { getToolBySlug } from '@/lib/data/tools'
-import { parseQueryState, useToolQuerySync, intParam } from '@/lib/utils/querySync'
+import { useQueryInit, useToolQuerySync, intParam } from '@/lib/utils/querySync'
 import { LearnPanel } from '@/components/shared/LearnPanel'
 import calc from '../shared/Calculator.module.css'
 import nd from './NdFilterCalculator.module.css'
@@ -107,9 +107,9 @@ function ControlsPanel({ baseIdx, ndIdx, resultSpeed, ndStops, onBaseChange, onN
 }
 
 export function NdFilterCalculator() {
-  const params = parseQueryState(PARAM_SCHEMA)
-  const [baseIdx, setBaseIdx] = useState(params.base ?? 6)
-  const [ndIdx, setNdIdx] = useState(params.nd ?? 2)
+  const [baseIdx, setBaseIdx] = useState(6)
+  const [ndIdx, setNdIdx] = useState(2)
+  useQueryInit(PARAM_SCHEMA, { base: setBaseIdx, nd: setNdIdx })
 
   useToolQuerySync({ base: baseIdx, nd: ndIdx }, PARAM_SCHEMA)
 

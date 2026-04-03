@@ -28,7 +28,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   { term: 'Full Frame', definition: 'A sensor size equivalent to 35mm film (36 x 24mm). It is the reference standard for focal length and crop factor calculations.' },
   { term: 'Golden Hour', definition: 'The period shortly after sunrise or before sunset when sunlight is warm, soft, and directional. Highly prized for landscape and portrait photography.' },
   { term: 'Histogram', definition: 'A graph showing the distribution of brightness values in an image. The left side represents shadows, the right side highlights.', relatedTool: 'exif-viewer' },
-  { term: 'Hyperfocal Distance', definition: 'The closest focusing distance at which everything from half that distance to infinity is acceptably sharp. Maximizes depth of field for a given aperture.', relatedTool: 'hyperfocal-table' },
+  { term: 'Hyperfocal Distance', definition: 'The closest focusing distance at which everything from half that distance to infinity is acceptably sharp. Maximizes depth of field for a given aperture.', relatedTool: 'hyperfocal-simulator' },
   { term: 'Image Stabilization', definition: 'A system that reduces camera shake blur, either in the lens (OIS) or the camera body (IBIS). Typically provides 3-7 stops of handheld shooting advantage.' },
   { term: 'ISO', definition: 'A measure of the camera sensor\'s sensitivity to light. Higher ISO values brighten the image but introduce more noise.' },
   { term: 'JPEG', definition: 'A compressed image file format that applies lossy compression. Smaller file sizes but less editing flexibility compared to RAW.' },

@@ -3,7 +3,7 @@
 import { useState, useMemo } from 'react'
 import { pixelPitch, diffractionLimitedAperture } from '@/lib/math/diffraction'
 import { SENSORS } from '@/lib/data/sensors'
-import { parseQueryState, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
+import { useQueryInit, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
 import { LearnPanel } from '@/components/shared/LearnPanel'
 import { DiffractionCanvas, type DetailType } from './DiffractionCanvas'
 import css from './DiffractionLimit.module.css'
@@ -158,11 +158,11 @@ function ControlsPanel({
 }
 
 export function DiffractionLimit() {
-  const params = parseQueryState(PARAM_SCHEMA)
-  const [sensorId, setSensorId] = useState(params.s ?? 'ff')
-  const [resolution, setResolution] = useState(params.mp ?? 24)
-  const [apertureSlider, setApertureSlider] = useState(params.ap ?? apertureToSlider(8))
-  const [detailType, setDetailType] = useState<DetailType>(params.dt ?? 'text')
+  const [sensorId, setSensorId] = useState('ff')
+  const [resolution, setResolution] = useState(24)
+  const [apertureSlider, setApertureSlider] = useState(apertureToSlider(8))
+  const [detailType, setDetailType] = useState<DetailType>('text')
+  useQueryInit(PARAM_SCHEMA, { s: setSensorId, mp: setResolution, ap: setApertureSlider, dt: setDetailType })
 
   useToolQuerySync({ s: sensorId, mp: resolution, ap: apertureSlider, dt: detailType }, PARAM_SCHEMA)
 

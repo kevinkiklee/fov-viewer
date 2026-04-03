@@ -3,7 +3,7 @@ import type { ToolEducation } from './types'
 export const TOOL_EDUCATION_2: ToolEducation[] = [
   // ── Tool 8: Hyperfocal Distance Table ──────────────────────────────
   {
-    slug: 'hyperfocal-table',
+    slug: 'hyperfocal-simulator',
     beginner:
       'The hyperfocal distance is the closest point you can focus on while still keeping everything at infinity acceptably sharp. When you focus at the hyperfocal distance, your depth of field extends from half that distance all the way to infinity. Landscape photographers use this technique to maximize sharpness from foreground to horizon.',
     deeper:

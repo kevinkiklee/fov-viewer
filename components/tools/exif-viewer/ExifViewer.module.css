@@ -45,14 +45,35 @@
   display: none;
 }
 
+/* Sample photo button */
+.sampleBtn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-family: inherit;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+.sampleBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* 2-column EXIF sections */
+.sectionsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
 /* EXIF-specific styles */
 .section {
   display: flex;
   flex-direction: column;
   gap: 4px;
-}
-.section + .section {
-  margin-top: 16px;
 }
 .sectionTitle {
   font-size: 11px;
@@ -94,11 +115,13 @@
 .emptyMain {
   flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: var(--text-muted);
   font-size: 13px;
   height: 100%;
+  gap: 12px;
 }
 
 /* Analysis cards */
@@ -142,24 +165,40 @@
   line-height: 1.4;
 }
 
-/* Histogram */
-.histogramWrap {
+/* 3 histograms side by side */
+.histogramRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.histogramPanel {
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 10px;
 }
 
+.histogramTitle {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
 .histogramCanvas {
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: block;
 }
 
 .histogramLabels {
   display: flex;
   justify-content: space-between;
-  font-size: 10px;
+  font-size: 9px;
   color: var(--text-muted);
   margin-top: 4px;
 }
@@ -184,5 +223,11 @@
     flex-direction: column;
     gap: 16px;
     padding: 16px;
+  }
+  .sectionsGrid {
+    grid-template-columns: 1fr;
+  }
+  .histogramRow {
+    grid-template-columns: 1fr;
   }
 }

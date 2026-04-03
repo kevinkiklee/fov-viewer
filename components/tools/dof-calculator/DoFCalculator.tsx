@@ -4,7 +4,7 @@ import { useState, useMemo, useCallback } from 'react'
 import { calcDoF } from '@/lib/math/dof'
 import { SENSORS } from '@/lib/data/sensors'
 import { FOCAL_LENGTHS } from '@/lib/data/focalLengths'
-import { parseQueryState, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
+import { useQueryInit, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
 import { LearnPanel } from '@/components/shared/LearnPanel'
 import { DoFDiagram } from './DoFDiagram'
 import { DoFCanvas } from './DoFCanvas'
@@ -168,12 +168,12 @@ function ResultsPanel({ nearFocus, farFocus, totalDoF, hyperfocal }: {
 }
 
 export function DoFCalculator() {
-  const params = parseQueryState(PARAM_SCHEMA)
-  const [focalLength, setFocalLength] = useState(params.fl ?? 50)
-  const [aperture, setAperture] = useState(params.f ?? 2.8)
-  const [sliderVal, setSliderVal] = useState(distanceToSlider(params.d ?? 3))
-  const [sensorId, setSensorId] = useState(params.s ?? 'ff')
-  const [scene, setScene] = useState<SceneKey>(params.scene ?? 'portrait')
+  const [focalLength, setFocalLength] = useState(50)
+  const [aperture, setAperture] = useState(2.8)
+  const [sliderVal, setSliderVal] = useState(distanceToSlider(3))
+  const [sensorId, setSensorId] = useState('ff')
+  const [scene, setScene] = useState<SceneKey>('portrait')
+  useQueryInit(PARAM_SCHEMA, { fl: setFocalLength, f: setAperture, d: (v: number) => setSliderVal(distanceToSlider(v)), s: setSensorId, scene: setScene })
 
   const distance = sliderToDistance(sliderVal)
 

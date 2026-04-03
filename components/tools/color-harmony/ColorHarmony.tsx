@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useMemo, useCallback, useEffect } from 'react'
+import { useState, useMemo, useCallback } from 'react'
 import { hslToRgb, rgbToHsl, complementary, analogous, triadic, splitComplementary, tetradic } from '@/lib/math/color'
 import { ToolActions } from '@/components/shared/ToolActions'
 import { LearnPanel } from '@/components/shared/LearnPanel'
-import { parseQueryState, useToolQuerySync, intParam, strParam } from '@/lib/utils/querySync'
+import { useQueryInit, useToolQuerySync, intParam, strParam } from '@/lib/utils/querySync'
 import styles from './ColorHarmony.module.css'
 import { ColorWheel } from './ColorWheel'
 import { PhotoPicker } from './PhotoPicker'
@@ -73,7 +73,6 @@ const PARAM_SCHEMA = {
 }
 
 export function ColorHarmony() {
-  // Initialize with defaults to avoid hydration mismatch (server has no query params)
   const [hue, setHue] = useState(200)
   const [saturation, setSaturation] = useState(70)
   const [lightness, setLightness] = useState(50)
@@ -82,18 +81,15 @@ export function ColorHarmony() {
   const [tetradicOffset, setTetradicOffset] = useState(60)
   const [analogousSpread, setAnalogousSpread] = useState(30)
 
-  // Hydrate from URL query params after mount
-  useEffect(() => {
-    const params = parseQueryState(PARAM_SCHEMA)
-    if (params.h != null) setHue(params.h)
-    if (params.sat != null) setSaturation(params.sat)
-    if (params.l != null) setLightness(params.l)
-    if (params.type) setHarmony(params.type)
-    if (params.split != null) setSplitAngle(params.split)
-    if (params.tet != null) setTetradicOffset(params.tet)
-    if (params.spread != null) setAnalogousSpread(params.spread)
-  }, [])
-
+  useQueryInit(PARAM_SCHEMA, {
+    h: setHue,
+    sat: setSaturation,
+    l: setLightness,
+    type: setHarmony,
+    split: setSplitAngle,
+    tet: setTetradicOffset,
+    spread: setAnalogousSpread,
+  })
   useToolQuerySync(
     { h: hue, sat: saturation, l: lightness, type: harmony, split: splitAngle, tet: tetradicOffset, spread: analogousSpread },
     PARAM_SCHEMA,
@@ -221,6 +217,10 @@ export function ColorHarmony() {
             </div>
           </div>
 
+          <div className={styles.suggestion}>
+            {suggestion}
+          </div>
+
           <div className={styles.field}>
             <span className={styles.label}>Key Color</span>
             <div className={styles.keyColorRow}>
@@ -316,9 +316,6 @@ export function ColorHarmony() {
             </div>
           )}
 
-          <div className={styles.suggestion}>
-            {suggestion}
-          </div>
 
       </aside>
 

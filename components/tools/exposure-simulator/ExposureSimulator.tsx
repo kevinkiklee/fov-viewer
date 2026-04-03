@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useCallback } from 'react'
 import { calcEV } from '@/lib/math/exposure'
-import { parseQueryState, useToolQuerySync, intParam, strParam } from '@/lib/utils/querySync'
+import { useQueryInit, useToolQuerySync, intParam, strParam } from '@/lib/utils/querySync'
 import { LearnPanel } from '@/components/shared/LearnPanel'
 import { ExposurePreview } from './ExposurePreview'
 import sim from './ExposureSimulator.module.css'
@@ -196,11 +196,11 @@ function ControlsPanel({ aperture, apertureIdx, shutter, shutterIdx, iso, isoIdx
 }
 
 export function ExposureSimulator() {
-  const params = parseQueryState(PARAM_SCHEMA)
-  const [apertureIdx, setApertureIdx] = useState(params.ai ?? APERTURES.indexOf(5.6))
-  const [shutterIdx, setShutterIdx] = useState(params.si ?? SHUTTER_SPEEDS.indexOf(1/125))
-  const [isoIdx, setIsoIdx] = useState(params.ii ?? 0)
-  const [lock, setLock] = useState<LockTarget>(params.lock ?? 'iso')
+  const [apertureIdx, setApertureIdx] = useState(APERTURES.indexOf(5.6))
+  const [shutterIdx, setShutterIdx] = useState(SHUTTER_SPEEDS.indexOf(1/125))
+  const [isoIdx, setIsoIdx] = useState(0)
+  const [lock, setLock] = useState<LockTarget>('iso')
+  useQueryInit(PARAM_SCHEMA, { ai: setApertureIdx, si: setShutterIdx, ii: setIsoIdx, lock: setLock })
 
   const aperture = APERTURES[apertureIdx]
   const shutter = SHUTTER_SPEEDS[shutterIdx]

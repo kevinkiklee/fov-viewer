@@ -3,7 +3,7 @@
 import { useState, useMemo, useCallback } from 'react'
 import { kelvinToRgb } from '@/lib/math/color'
 import { getToolBySlug } from '@/lib/data/tools'
-import { parseQueryState, useToolQuerySync, intParam } from '@/lib/utils/querySync'
+import { useQueryInit, useToolQuerySync, intParam } from '@/lib/utils/querySync'
 import { LearnPanel } from '@/components/shared/LearnPanel'
 import { FileDropZone } from '@/components/shared/FileDropZone'
 import { WbPreview } from './WbPreview'
@@ -116,10 +116,10 @@ function ControlsPanel({ kelvin, rgb, activePreset, onKelvinChange, onFile }: {
 }
 
 export function WhiteBalance() {
-  const params = parseQueryState(PARAM_SCHEMA)
-  const [kelvin, setKelvin] = useState(params.k ?? 5500)
+  const [kelvin, setKelvin] = useState(5500)
   const [customSrc, setCustomSrc] = useState<string | null>(null)
 
+  useQueryInit(PARAM_SCHEMA, { k: setKelvin })
   useToolQuerySync({ k: kelvin }, PARAM_SCHEMA)
 
   const rgb = useMemo(() => kelvinToRgb(kelvin), [kelvin])

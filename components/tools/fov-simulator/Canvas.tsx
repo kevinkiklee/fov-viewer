@@ -218,12 +218,13 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef, cleanCanvas
       const rr = Math.min(w - half, r.x + r.w)
       const rb = Math.min(h - half, r.y + r.h)
 
-      // Find all rects overlapping this one (same size)
+      // Find all rects overlapping this one (same size AND same position)
       const group = [r]
       for (let j = i + 1; j < rects.length; j++) {
         if (drawn.has(j)) continue
         const o = rects[j]
-        if (Math.abs(o.w - r.w) < 2 && Math.abs(o.h - r.h) < 2) {
+        if (Math.abs(o.w - r.w) < 2 && Math.abs(o.h - r.h) < 2
+            && Math.abs(o.x - r.x) < 2 && Math.abs(o.y - r.y) < 2) {
           group.push(o)
           drawn.add(j)
         }

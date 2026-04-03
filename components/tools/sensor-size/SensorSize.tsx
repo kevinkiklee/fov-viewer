@@ -5,7 +5,7 @@ import { LearnPanel } from '@/components/shared/LearnPanel'
 import { getToolBySlug } from '@/lib/data/tools'
 import ss from './SensorSize.module.css'
 import { pixelPitch } from '@/lib/math/diffraction'
-import { parseQueryState, useToolQuerySync, strParam, intParam } from '@/lib/utils/querySync'
+import { useQueryInit, useToolQuerySync, strParam, intParam } from '@/lib/utils/querySync'
 
 const SENSOR_DIMS = [
   { id: 'mf', name: 'Medium Format', w: 43.8, h: 32.9, color: '#8b5cf6' },
@@ -120,14 +120,11 @@ export function SensorSize() {
   const [mode, setMode] = useState<DisplayMode>('overlay')
   const [resolution, setResolution] = useState(24)
 
-  // Hydrate from URL params on client only to avoid SSR mismatch
-  useEffect(() => {
-    const params = parseQueryState(PARAM_SCHEMA)
-    if (params.show) setVisible(new Set(params.show.split(',')))
-    if (params.mode) setMode(params.mode)
-    if (params.mp) setResolution(params.mp)
-  }, [])
-
+  useQueryInit(PARAM_SCHEMA, {
+    show: (v: string) => setVisible(new Set(v.split(','))),
+    mode: setMode,
+    mp: setResolution,
+  })
   useToolQuerySync(
     { show: Array.from(visible).join(','), mode, mp: resolution },
     PARAM_SCHEMA,

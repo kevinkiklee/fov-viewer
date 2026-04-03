@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 /**
  * Generic query parameter sync for tool state.
@@ -58,6 +58,33 @@ export function useToolQuerySync<S extends Record<string, unknown>>(state: S, sc
     const url = qs ? `${window.location.pathname}?${qs}` : window.location.pathname
     window.history.replaceState(null, '', url)
   })
+}
+
+/**
+ * Hook that parses URL params after hydration and applies them via setters.
+ * Returns true once hydration is complete.
+ * Call this ONCE in each tool component, passing a map of param key → setter.
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function useQueryInit(
+  schema: Record<string, ParamDef<any>>,
+  setters: Record<string, (val: any) => void>,
+): boolean {
+  const [hydrated, setHydrated] = useState(false)
+  useEffect(() => {
+    if (hydrated) return
+    const params = new URLSearchParams(window.location.search)
+    for (const key in schema) {
+      const raw = params.get(key)
+      if (raw === null) continue
+      const val = schema[key].parse(raw)
+      if (val !== undefined) {
+        setters[key](val)
+      }
+    }
+    setHydrated(true)
+  }, [hydrated, schema, setters])
+  return hydrated
 }
 
 // ── Common param builders ──

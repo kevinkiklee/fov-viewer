@@ -4,7 +4,7 @@ import { useState, useMemo, useCallback } from 'react'
 import { calcDoF } from '@/lib/math/dof'
 import { SENSORS } from '@/lib/data/sensors'
 import { FOCAL_LENGTHS } from '@/lib/data/focalLengths'
-import { parseQueryState, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
+import { useQueryInit, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
 import { DoFDiagram } from '@/components/tools/dof-calculator/DoFDiagram'
 import { DoFCanvas } from '@/components/tools/dof-calculator/DoFCanvas'
 import type { SceneKey } from '@/components/tools/dof-calculator/DoFCanvas'
@@ -105,15 +105,21 @@ function SettingsPanel({
 }
 
 export function HyperfocalSimulator() {
-  const params = parseQueryState(PARAM_SCHEMA)
-  const [focalLength, setFocalLength] = useState(params.fl ?? 24)
-  const [aperture, setAperture] = useState(params.f ?? 8)
-  const [sliderVal, setSliderVal] = useState(distanceToSlider(params.d ?? 3))
-  const [sensorId, setSensorId] = useState(params.s ?? 'ff')
-  const [scene, setScene] = useState<HyperfocalScene>(params.scene ?? 'landscape')
+  const [focalLength, setFocalLength] = useState(24)
+  const [aperture, setAperture] = useState(8)
+  const [sliderVal, setSliderVal] = useState(distanceToSlider(3))
+  const [sensorId, setSensorId] = useState('ff')
+  const [scene, setScene] = useState<HyperfocalScene>('landscape')
 
   const distance = sliderToDistance(sliderVal)
 
+  useQueryInit(PARAM_SCHEMA, {
+    fl: setFocalLength,
+    f: setAperture,
+    d: (v: number) => setSliderVal(distanceToSlider(v)),
+    s: setSensorId,
+    scene: setScene,
+  })
   useToolQuerySync({ fl: focalLength, f: aperture, d: distance, s: sensorId, scene }, PARAM_SCHEMA)
 
   const sensor = SENSORS.find((sen) => sen.id === sensorId) ?? SENSORS[1]

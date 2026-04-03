@@ -5,7 +5,7 @@ import { rule500, ruleNPF, stackingTime, formatDuration } from '@/lib/math/start
 import { pixelPitch } from '@/lib/math/diffraction'
 import { SENSORS } from '@/lib/data/sensors'
 import { FOCAL_LENGTHS } from '@/lib/data/focalLengths'
-import { parseQueryState, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
+import { useQueryInit, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
 import { LearnPanel } from '@/components/shared/LearnPanel'
 import { StarTrailCanvas } from './StarTrailCanvas'
 import css from './StarTrailCalculator.module.css'
@@ -256,18 +256,18 @@ function ControlsPanel({
 }
 
 export function StarTrailCalculator() {
-  const params = parseQueryState(PARAM_SCHEMA)
-  const [mode, setMode] = useState<'sharp' | 'trails'>(params.mode ?? 'sharp')
-  const [focalLength, setFocalLength] = useState(params.fl ?? 24)
-  const [sensorId, setSensorId] = useState(params.s ?? 'ff')
-  const [resolution, setResolution] = useState(params.mp ?? 24)
-  const [aperture, setAperture] = useState(params.f ?? 2.8)
-  const [latitude, setLatitude] = useState(params.lat ?? 45)
+  const [mode, setMode] = useState<'sharp' | 'trails'>('sharp')
+  const [focalLength, setFocalLength] = useState(24)
+  const [sensorId, setSensorId] = useState('ff')
+  const [resolution, setResolution] = useState(24)
+  const [aperture, setAperture] = useState(2.8)
+  const [latitude, setLatitude] = useState(45)
 
   // Trail mode inputs
-  const [exposurePerFrame, setExposurePerFrame] = useState(params.exp ?? 30)
-  const [numFrames, setNumFrames] = useState(params.frames ?? 60)
-  const [gap, setGap] = useState(params.gap ?? 2)
+  const [exposurePerFrame, setExposurePerFrame] = useState(30)
+  const [numFrames, setNumFrames] = useState(60)
+  const [gap, setGap] = useState(2)
+  useQueryInit(PARAM_SCHEMA, { mode: setMode, fl: setFocalLength, s: setSensorId, mp: setResolution, f: setAperture, lat: setLatitude, exp: setExposurePerFrame, frames: setNumFrames, gap: setGap })
 
   useToolQuerySync(
     { mode, fl: focalLength, s: sensorId, mp: resolution, f: aperture, lat: latitude, exp: exposurePerFrame, frames: numFrames, gap },
