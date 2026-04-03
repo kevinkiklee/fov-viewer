@@ -3,6 +3,7 @@
 import { useState, useMemo, useCallback } from 'react'
 import { hslToRgb, rgbToHsl, complementary, analogous, triadic, splitComplementary, tetradic } from '@/lib/math/color'
 import { ToolActions } from '@/components/shared/ToolActions'
+import { LearnPanel } from '@/components/shared/LearnPanel'
 import styles from './ColorHarmony.module.css'
 import { ColorWheel } from './ColorWheel'
 
@@ -20,13 +21,13 @@ function rgbToHex(r: number, g: number, b: number): string {
   return '#' + [r, g, b].map((c) => c.toString(16).padStart(2, '0')).join('')
 }
 
-function getHarmonyHues(hue: number, type: HarmonyType, splitAngle: number, analogousSpread: number): number[] {
+function getHarmonyHues(hue: number, type: HarmonyType, splitAngle: number, analogousSpread: number, tetradicOffset: number): number[] {
   switch (type) {
     case 'complementary': return complementary(hue)
     case 'analogous': return analogous(hue, analogousSpread)
     case 'triadic': return triadic(hue)
     case 'split-complementary': return splitComplementary(hue, splitAngle)
-    case 'tetradic': return tetradic(hue)
+    case 'tetradic': return tetradic(hue, tetradicOffset)
   }
 }
 
@@ -64,6 +65,7 @@ export function ColorHarmony() {
   const [lightness, setLightness] = useState(50)
   const [harmony, setHarmony] = useState<HarmonyType>('complementary')
   const [splitAngle, setSplitAngle] = useState(30)
+  const [tetradicOffset, setTetradicOffset] = useState(60)
   const [analogousSpread, setAnalogousSpread] = useState(30)
   const [copiedHex, setCopiedHex] = useState<string | null>(null)
   const [copiedFormat, setCopiedFormat] = useState<string | null>(null)
@@ -85,8 +87,8 @@ export function ColorHarmony() {
   const baseIndex = getBaseIndex(harmony)
 
   const harmonyHues = useMemo(
-    () => getHarmonyHues(hue, harmony, splitAngle, analogousSpread),
-    [hue, harmony, splitAngle, analogousSpread],
+    () => getHarmonyHues(hue, harmony, splitAngle, analogousSpread, tetradicOffset),
+    [hue, harmony, splitAngle, analogousSpread, tetradicOffset],
   )
 
   const swatches = useMemo(() => {
@@ -139,12 +141,26 @@ export function ColorHarmony() {
       if (diff > 180) diff -= 360
       if (diff < -180) diff += 360
       setAnalogousSpread(Math.round(Math.min(60, Math.max(5, Math.abs(diff)))))
+    } else if (harmony === 'tetradic') {
+      // Nodes 1 and 3 control the offset (rectangle width).
+      // Node 1 is at hue+offset, node 3 is at hue+180+offset.
+      // Compute offset from dragged position relative to the base hue (node 0) or its opposite (node 2).
+      let diff: number
+      if (nodeIndex === 1) {
+        diff = draggedHue - hue
+      } else {
+        diff = draggedHue - ((hue + 180) % 360)
+      }
+      if (diff > 180) diff -= 360
+      if (diff < -180) diff += 360
+      setTetradicOffset(Math.round(Math.min(170, Math.max(10, Math.abs(diff)))))
     }
   }, [harmony, hue])
 
   const draggableNodes = useMemo(() => {
     if (harmony === 'split-complementary') return [1, 2]
     if (harmony === 'analogous') return [0, 2]
+    if (harmony === 'tetradic') return [1, 3]
     return []
   }, [harmony])
 
@@ -238,6 +254,17 @@ export function ColorHarmony() {
             </div>
           )}
 
+          {harmony === 'tetradic' && (
+            <div className={styles.field}>
+              <span className={styles.label}>Rectangle width: <span className={styles.value}>{tetradicOffset}°</span>{tetradicOffset === 90 && ' (square)'}</span>
+              <input
+                type="range" className={styles.slider}
+                min={10} max={170} step={1} value={tetradicOffset}
+                onChange={(e) => setTetradicOffset(Number(e.target.value))}
+              />
+            </div>
+          )}
+
           <div className={styles.suggestion}>
             {suggestion}
           </div>
@@ -306,6 +333,7 @@ export function ColorHarmony() {
           />
         </div>
       </div>
+      <LearnPanel slug="color-harmony" />
     </div>
   )
 }

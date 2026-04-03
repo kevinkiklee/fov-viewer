@@ -192,6 +192,6 @@ export function splitComplementary(hue: number, splitAngle: number = 30): number
  * Provides rich color variety with two complementary pairs.
  * @returns [baseHue, baseHue + 60, baseHue + 180, baseHue + 240]
  */
-export function tetradic(hue: number): number[] {
-  return [normalizeHue(hue), normalizeHue(hue + 60), normalizeHue(hue + 180), normalizeHue(hue + 240)]
+export function tetradic(hue: number, offset: number = 60): number[] {
+  return [normalizeHue(hue), normalizeHue(hue + offset), normalizeHue(hue + 180), normalizeHue(hue + 180 + offset)]
 }

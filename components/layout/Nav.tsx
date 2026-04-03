@@ -12,14 +12,19 @@ interface NavProps {
 }
 
 export function Nav({ theme, onThemeChange }: NavProps) {
-  const [open, setOpen] = useState(false)
-  const ref = useRef<HTMLDivElement>(null)
+  const [toolsOpen, setToolsOpen] = useState(false)
+  const [learnOpen, setLearnOpen] = useState(false)
+  const toolsRef = useRef<HTMLDivElement>(null)
+  const learnRef = useRef<HTMLDivElement>(null)
   const tools = getLiveTools()
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
-      if (ref.current && !ref.current.contains(e.target as Node)) {
-        setOpen(false)
+      if (toolsRef.current && !toolsRef.current.contains(e.target as Node)) {
+        setToolsOpen(false)
+      }
+      if (learnRef.current && !learnRef.current.contains(e.target as Node)) {
+        setLearnOpen(false)
       }
     }
     document.addEventListener('mousedown', handleClickOutside)
@@ -29,27 +34,47 @@ export function Nav({ theme, onThemeChange }: NavProps) {
   return (
     <nav className={styles.nav}>
       <Link href="/" className={styles.logo}>PhotoTools</Link>
-      <div className={styles.dropdownWrapper} ref={ref}>
+      <div className={styles.dropdownWrapper} ref={toolsRef}>
         <button
           className={styles.dropdownButton}
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
+          onClick={() => setToolsOpen((v) => !v)}
+          aria-expanded={toolsOpen}
           aria-haspopup="true"
         >
-          Tools {open ? '\u25B2' : '\u25BC'}
+          Tools {toolsOpen ? '\u25B2' : '\u25BC'}
         </button>
-        {open && (
+        {toolsOpen && (
           <div className={styles.dropdownMenu}>
             {tools.map((tool) => (
               <Link
                 key={tool.slug}
                 href={`/tools/${tool.slug}`}
                 className={styles.dropdownItem}
-                onClick={() => setOpen(false)}
+                onClick={() => setToolsOpen(false)}
               >
                 {tool.name}
               </Link>
             ))}
+          </div>
+        )}
+      </div>
+      <div className={styles.dropdownWrapper} ref={learnRef}>
+        <button
+          className={styles.dropdownButton}
+          onClick={() => setLearnOpen((v) => !v)}
+          aria-expanded={learnOpen}
+          aria-haspopup="true"
+        >
+          Learn {learnOpen ? '\u25B2' : '\u25BC'}
+        </button>
+        {learnOpen && (
+          <div className={styles.dropdownMenu}>
+            <Link href="/learn/paths" className={styles.dropdownItem} onClick={() => setLearnOpen(false)}>
+              Learning Paths
+            </Link>
+            <Link href="/learn/glossary" className={styles.dropdownItem} onClick={() => setLearnOpen(false)}>
+              Glossary
+            </Link>
           </div>
         )}
       </div>

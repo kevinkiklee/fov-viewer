@@ -1,6 +1,15 @@
-.container {
+.outer {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
   padding: 16px;
-  width: 100%;
 }
 
 .header {
@@ -18,4 +27,15 @@
   color: var(--text-secondary);
   margin: 0;
   line-height: 1.4;
+}
+
+@media (max-width: 1023px) {
+  .outer {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .main {
+    overflow-y: visible;
+  }
 }

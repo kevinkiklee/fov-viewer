@@ -163,6 +163,14 @@ describe('color harmonies', () => {
     expect(hues[3]).toBe(240)
   })
 
+  it('tetradic accepts custom offset (square at 90°)', () => {
+    const hues = tetradic(0, 90)
+    expect(hues[0]).toBe(0)
+    expect(hues[1]).toBe(90)
+    expect(hues[2]).toBe(180)
+    expect(hues[3]).toBe(270)
+  })
+
   it('all harmony functions normalize hues to 0-360', () => {
     const fns = [complementary, analogous, triadic, splitComplementary, tetradic]
     for (const fn of fns) {

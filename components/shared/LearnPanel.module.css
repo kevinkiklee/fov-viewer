@@ -1,0 +1,315 @@
+.panel {
+  width: 260px;
+  min-width: 260px;
+  background: var(--bg-primary);
+  border-left: 1px solid var(--border);
+  padding: 12px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.headerTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.spacer {
+  flex: 1;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 2px;
+  line-height: 1;
+}
+
+.closeBtn:hover {
+  color: var(--text-primary);
+}
+
+/* Collapsed state: thin strip with reopen button */
+.collapsed {
+  width: 32px;
+  min-width: 32px;
+  background: var(--bg-primary);
+  border-left: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 12px;
+}
+
+.reopenBtn {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 14px;
+  cursor: pointer;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding: 4px 2px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.reopenBtn:hover {
+  color: var(--accent-hover);
+}
+
+/* Sections */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sectionTitle {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.sectionText {
+  font-size: 10px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Key factors */
+.factors {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.factor {
+  font-size: 10px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.factorLabel {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Pro tip callout */
+.tip {
+  background: var(--bg-surface);
+  border-left: 2px solid #f59e0b;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 6px 8px;
+}
+
+.tipLabel {
+  color: #f59e0b;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.tipText {
+  font-size: 10px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* Challenge card */
+.challenge {
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.challengeHeader {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.challengeIcon {
+  font-size: 12px;
+}
+
+.challengeLabel {
+  font-size: 10px;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.challengeDifficulty {
+  margin-left: auto;
+  font-size: 9px;
+  color: var(--text-muted);
+  text-transform: capitalize;
+}
+
+.challengeScenario {
+  font-size: 10px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.challengeHint {
+  font-size: 9px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.challengeOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.challengeOption {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 5px 8px;
+  font-size: 10px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s;
+}
+
+.challengeOption:hover {
+  border-color: var(--accent);
+  color: var(--text-primary);
+}
+
+.challengeOptionSelected {
+  border-color: var(--accent);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.challengeOptionCorrect {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.challengeOptionWrong {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.checkBtn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.checkBtn:hover {
+  background: var(--accent-hover);
+}
+
+.checkBtn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.feedbackSuccess {
+  font-size: 10px;
+  color: #10b981;
+  line-height: 1.4;
+}
+
+.feedbackFailure {
+  font-size: 10px;
+  color: #ef4444;
+  line-height: 1.4;
+}
+
+.completedBadge {
+  font-size: 9px;
+  color: #10b981;
+  font-weight: 600;
+}
+
+/* Challenge navigation */
+.challengeNav {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.challengeNavDot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  color: var(--text-muted);
+  font-size: 9px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.challengeNavDot:hover {
+  border-color: var(--accent);
+}
+
+.challengeNavDotActive {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.challengeNavDotComplete {
+  background: #10b981;
+  border-color: #10b981;
+  color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 1023px) {
+  .panel {
+    width: 100%;
+    min-width: 0;
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .collapsed {
+    width: 100%;
+    min-width: 0;
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding: 8px;
+    align-items: center;
+  }
+
+  .reopenBtn {
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+  }
+}
