@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding Lens Compression — How Focal Length Changes Perspective | FOV Viewer</title>
+  <meta name="description" content="What photographers call 'lens compression' is actually caused by shooting distance, not focal length. Learn the science, see the proof, and use compression intentionally.">
+  <link rel="canonical" href="https://fov-viewer.iser.io/learn/understanding-lens-compression.html">
+  <link rel="stylesheet" href="/content-styles.css">
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fov-viewer.iser.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://fov-viewer.iser.io/learn/" },
+        { "@type": "ListItem", "position": 3, "name": "Understanding Lens Compression" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Understanding Lens Compression — How Focal Length Changes Perspective",
+      "description": "What photographers call 'lens compression' is actually caused by shooting distance, not focal length. Learn the science, see the proof, and use compression intentionally.",
+      "url": "https://fov-viewer.iser.io/learn/understanding-lens-compression.html",
+      "author": { "@type": "Organization", "name": "FOV Viewer" }
+    }
+  ]
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSRBYSNCEJ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-GSRBYSNCEJ');</script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="site-header__logo">FOV Viewer</a>
+    <nav class="site-header__nav">
+      <a href="/">Tool</a>
+      <a href="/compare/">Compare</a>
+      <a href="/learn/" class="active">Learn</a>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="/">Home</a> <span>&rsaquo;</span> <a href="/learn/">Learn</a> <span>&rsaquo;</span> Understanding Lens Compression
+  </nav>
+
+  <div class="content">
+    <h1>Understanding Lens Compression</h1>
+    <p class="subtitle">How focal length changes perspective — and why the popular explanation is technically wrong.</p>
+
+    <p>Ask any photographer what a telephoto lens does to perspective and you will hear the same answer: it "compresses" the scene, making background objects appear larger and closer to the subject. That answer is useful shorthand, but it is not quite right. Understanding why reveals something important about how cameras actually work — and gives you a real tool for controlling how your photographs look.</p>
+
+    <h2>What compression looks like</h2>
+
+    <p>Photographic compression describes a visual effect where objects at different distances appear more similar in size than they do in person. A portrait shot on a 200mm lens shows a blurred background that appears large and close behind the subject. A photograph of a city street shot at 400mm stacks buildings that are actually a block apart, making them look like a dense, flat wall. A telephoto shot of the moon rising behind a distant skyline makes the moon look enormous — far larger than it appears to the naked eye from the same position.</p>
+
+    <p>The opposite is equally striking. A wide-angle lens photograph of a forest path makes the trees near the camera loom large while the canopy at the end of the path appears tiny and remote, emphasizing the sense of depth and distance. The near and far objects appear very different in size, which makes the scene feel expansive and three-dimensional.</p>
+
+    <h2>Why it actually happens</h2>
+
+    <p>Here is the key fact: perspective is determined entirely by the camera's position in space, not by which lens is attached to it.</p>
+
+    <p>The geometry is straightforward. When you are standing close to a subject, the angular difference between looking at a near foreground object and a far background object is large. As you move farther away, that angular difference shrinks — both objects are now roughly the same distance from you in relative terms, so they subtend similar angles to your lens. They appear more similar in size.</p>
+
+    <p>Distance is the cause. Focal length is only relevant insofar as telephoto lenses are typically used from farther away — because that is when they are useful for framing the subject at the right size.</p>
+
+    <h2>The proof: crop a wide-angle image</h2>
+
+    <p>The clearest demonstration is one any photographer can perform. Set up a camera on a tripod. Shoot the same scene twice from the same position: once with a 24mm lens and once with a 200mm lens. Now crop the center of the 24mm image to match the 200mm framing. The perspective in the cropped 24mm shot is <em>identical</em> to the 200mm shot. Buildings stack the same way. The background elements appear the same relative size behind the subject. The only difference is resolution — the 200mm has more pixels on the subject because the sensor is used more efficiently.</p>
+
+    <p>If focal length itself caused compression, this would not be possible. The crop test proves that both lenses are recording identical geometry from the same position. The lens does not distort space; it simply determines how much of the scene is recorded.</p>
+
+    <figure>
+      <svg class="diagram" viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing how camera-to-subject distance determines perspective compression">
+        <rect width="600" height="280" fill="#16213e" rx="8"/>
+
+        <!-- === SCENARIO A: Close position, wide lens === -->
+        <text x="20" y="28" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="600">Close position (wide lens)</text>
+
+        <!-- Camera icon -->
+        <rect x="20" y="40" width="28" height="20" rx="3" fill="none" stroke="#3b82f6" stroke-width="2"/>
+        <circle cx="34" cy="50" r="5" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+        <rect x="36" y="37" width="8" height="6" rx="1" fill="#3b82f6"/>
+
+        <!-- Foreground tree (large, nearby) -->
+        <!-- trunk -->
+        <rect x="160" y="52" width="8" height="22" fill="#6b7280"/>
+        <!-- canopy -->
+        <polygon points="164,30 150,60 178,60" fill="#34d399"/>
+        <text x="158" y="82" fill="#34d399" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">near tree</text>
+
+        <!-- Background mountain (small) -->
+        <polygon points="260,60 230,90 290,90" fill="#475569"/>
+        <text x="260" y="102" fill="#94a3b8" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">mountain</text>
+
+        <!-- Angular lines from camera to near tree top and mountain top -->
+        <line x1="48" y1="50" x2="164" y2="30" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+        <line x1="48" y1="50" x2="260" y2="60" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+
+        <!-- Large angle arc -->
+        <path d="M 68 43 A 22 22 0 0 1 70 53" fill="none" stroke="#f472b6" stroke-width="1.5"/>
+        <text x="80" y="50" fill="#f472b6" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif">large angle</text>
+        <text x="80" y="62" fill="#f472b6" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif">= objects look</text>
+        <text x="80" y="74" fill="#f472b6" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif">very different</text>
+
+        <!-- Distance markers -->
+        <line x1="48" y1="98" x2="164" y2="98" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrow)"/>
+        <text x="106" y="112" fill="#3b82f6" font-size="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">2m</text>
+        <line x1="48" y1="106" x2="260" y2="106" stroke="#94a3b8" stroke-width="1"/>
+        <text x="154" y="120" fill="#94a3b8" font-size="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">500m</text>
+
+        <!-- Divider -->
+        <line x1="0" y1="138" x2="600" y2="138" stroke="#1e3a5f" stroke-width="1"/>
+
+        <!-- === SCENARIO B: Far position, tele lens === -->
+        <text x="20" y="160" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="600">Far position (telephoto lens)</text>
+
+        <!-- Camera icon — far left but lens barrel extended -->
+        <rect x="20" y="172" width="28" height="20" rx="3" fill="none" stroke="#fb923c" stroke-width="2"/>
+        <circle cx="34" cy="182" r="5" fill="none" stroke="#fb923c" stroke-width="1.5"/>
+        <rect x="36" y="169" width="8" height="6" rx="1" fill="#fb923c"/>
+
+        <!-- Foreground tree (smaller, now farther) -->
+        <rect x="240" y="186" width="5" height="15" fill="#6b7280"/>
+        <polygon points="242,173 233,192 251,192" fill="#34d399"/>
+        <text x="242" y="207" fill="#34d399" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">near tree</text>
+
+        <!-- Background mountain (similar apparent size) -->
+        <polygon points="370,182 348,208 392,208" fill="#475569"/>
+        <text x="370" y="222" fill="#94a3b8" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">mountain</text>
+
+        <!-- Angular lines from camera to near tree top and mountain top -->
+        <line x1="48" y1="182" x2="242" y2="173" stroke="#fb923c" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+        <line x1="48" y1="182" x2="370" y2="182" stroke="#fb923c" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+
+        <!-- Small angle arc -->
+        <path d="M 78 178 A 30 30 0 0 1 78 183" fill="none" stroke="#f472b6" stroke-width="1.5"/>
+        <text x="92" y="178" fill="#f472b6" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif">small angle</text>
+        <text x="92" y="190" fill="#f472b6" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif">= objects look</text>
+        <text x="92" y="202" fill="#f472b6" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif">similar (compressed)</text>
+
+        <!-- Distance markers -->
+        <line x1="48" y1="228" x2="242" y2="228" stroke="#fb923c" stroke-width="1"/>
+        <text x="145" y="242" fill="#fb923c" font-size="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">100m</text>
+        <line x1="48" y1="236" x2="370" y2="236" stroke="#94a3b8" stroke-width="1"/>
+        <text x="209" y="250" fill="#94a3b8" font-size="9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">600m</text>
+
+        <!-- Key callout -->
+        <text x="430" y="210" fill="#fbbf24" font-size="11" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="600">100m vs 600m</text>
+        <text x="430" y="225" fill="#fbbf24" font-size="11" font-family="-apple-system, BlinkMacSystemFont, sans-serif">= 6× ratio</text>
+        <text x="430" y="165" fill="#a78bfa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="600">2m vs 500m</text>
+        <text x="430" y="180" fill="#a78bfa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, sans-serif">= 250× ratio</text>
+        <text x="430" y="260" fill="#64748b" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif">Smaller ratio =</text>
+        <text x="430" y="273" fill="#64748b" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif">more compression</text>
+      </svg>
+      <figcaption>From close range, the foreground tree and background mountain are at a ratio of roughly 250:1 in distance — they look very different in size. From far away the ratio shrinks to 6:1, so the two objects appear more similar in size. Distance is the cause; focal length is not.</figcaption>
+    </figure>
+
+    <h2>The misconception — and why it persists</h2>
+
+    <p>The phrase "telephoto lenses compress perspective" is not malicious misinformation. It is a practical shorthand that happens to be imprecise. When photographers reach for a 300mm lens, they almost always move farther from the subject to achieve proper framing — and the compression follows naturally. The correlation is real even if the causation is misattributed.</p>
+
+    <p>The shorthand is harmless in casual conversation. The problem arises when a photographer believes the lens itself is responsible, because that belief leads to incorrect conclusions. "I need a telephoto to compress this scene" — true in practice. "I can compress this scene without moving" — false. If you stand in one spot and zoom from 24mm to 200mm, the perspective stays identical. You are just cropping tighter. No compression has occurred.</p>
+
+    <h2>Wide-angle "distortion" follows the same logic</h2>
+
+    <p>Wide-angle lenses get blamed for distorting faces in portraits — stretched noses, exaggerated ears, unflattering proportions. The real culprit is shooting distance, not focal length.</p>
+
+    <p>A nose looks large at 24mm because you are 30 centimeters from the subject. At that distance, a nose that projects 2–3cm forward represents a meaningful fraction of the total camera-to-face distance, so it appears significantly larger than the rest of the face. Back up to a normal portrait distance and use 85mm to reframe — the nose looks fine. The lens did not change the nose; the distance did.</p>
+
+    <p>This is why shooting wide-angle portraits from across the room works perfectly well. Fashion photographers occasionally shoot environmental portraits on 24mm or 35mm from 10–15 feet away with excellent results. The subject looks natural because the shooting distance is natural. The only reason close-distance wide-angle portraits look distorted is that you have placed the camera uncomfortably close to the subject.</p>
+
+    <h2>Focal length and distance are independent controls</h2>
+
+    <p>This is the practical payoff. Once you understand that focal length controls framing and distance controls perspective, you realize they can be adjusted independently:</p>
+
+    <ul>
+      <li><strong>To change perspective, move your feet.</strong> Want the background to look larger and more compressed behind your subject? Walk backward. Want the scene to feel more expansive with the subject looming in the foreground? Walk forward. No lens change required.</li>
+      <li><strong>To change framing without changing perspective, change focal length.</strong> If you have found a position you like — where the foreground and background relate exactly the way you want — switch lenses to include more or less of the scene without disturbing that relationship.</li>
+      <li><strong>To change both, do both.</strong> Move forward and switch to a wider lens. You get a new subject size in the frame and a new perspective on the scene simultaneously.</li>
+    </ul>
+
+    <p>This framework is liberating. Perspective is not locked to focal length. You are not constrained to shoot portraits at 85mm to get flattering results — you can shoot them at 35mm from farther away, or at 135mm from a slightly different distance, and achieve similar perspective with different backgrounds in the frame.</p>
+
+    <h2>Using compression intentionally</h2>
+
+    <p><strong>Stacking architecture or landscapes.</strong> A 400mm+ telephoto pointed down a street compresses buildings that are physically hundreds of meters apart into a flat, dense pattern. City photographers use this to emphasize the texture and density of urban environments. The buildings appear to crowd together in a way that feels more intense than the physical reality. This only works if you position yourself far enough from the nearest building — which is exactly the distance that causes the compression.</p>
+
+    <p><strong>The moon behind a subject.</strong> The classic "enormous moon" photograph requires a telephoto lens and a shooting position far enough from the subject that the moon — which subtends about 0.5° of arc — appears large relative to the person or landmark in the foreground. The subject must also be far away; a person standing 5 meters from the camera will appear too large relative to the moon. Move the subject to 100 meters away, back up further yourself, and use 400–600mm. Now both the subject and the moon are at similar angular sizes from your position.</p>
+
+    <p><strong>Wildlife and sports isolation.</strong> Long lenses allow tight framing from a distance that keeps the subject's environment in perspective compression. Two athletes competing at the sideline appear closer together than they are; a bird of prey in flight appears against an abstract background of compressed trees. The compression is a useful artistic choice, not a side effect to avoid.</p>
+
+    <p><strong>Wide angle for emphasizing scale.</strong> The opposite of compression — getting close with a wide lens and letting the dramatic distance ratio between near and far objects make a scene feel vast. A hiker in the foreground looks large and immediate; the mountain range behind them looks distant and imposing. This is the natural perspective of the scene from that position, rendered faithfully by the wide-angle lens.</p>
+
+    <h2>Compare 24mm and 200mm side by side</h2>
+
+    <p>The tool below shows the field of view difference between a 24mm and 200mm lens on a full-frame camera. Notice that 200mm captures a small central rectangle of what 24mm sees. From the same position, the perspective inside that rectangle is identical — the 200mm simply records more pixels in that area.</p>
+
+    <iframe class="tool-embed" src="/?a=24&sa=ff&b=200&sb=ff&embed=1" title="24mm vs 200mm perspective" loading="lazy"></iframe>
+
+    <a class="cta" href="/?a=24&sa=ff&b=200&sb=ff">Explore 24mm vs 200mm in the tool &rarr;</a>
+
+    <h2>Summary</h2>
+
+    <ul>
+      <li>Perspective compression is caused by camera-to-subject distance, not focal length.</li>
+      <li>A 200mm and 24mm lens shot from the same position record identical perspective — the 200mm just crops tighter.</li>
+      <li>Telephoto lenses correlate with compression because they are used from farther away, not because of the focal length itself.</li>
+      <li>Wide-angle "distortion" is similarly caused by close shooting distances, not the lens.</li>
+      <li>Move your feet to change perspective. Change focal length to change framing. These are independent controls.</li>
+    </ul>
+
+    <h2>Related</h2>
+    <div class="card-grid">
+      <a class="card" href="wide-angle-vs-telephoto.html">
+        <h3>Wide-Angle vs Telephoto</h3>
+        <p>How the two ends of the focal length spectrum differ in perspective, use cases, and creative effect.</p>
+      </a>
+      <a class="card" href="focal-length-guide.html">
+        <h3>Focal Length Guide</h3>
+        <p>What every focal length from 14mm to 800mm looks like and when to reach for each one.</p>
+      </a>
+      <a class="card" href="/compare/85mm-vs-200mm.html">
+        <h3>85mm vs 200mm</h3>
+        <p>Portrait prime vs telephoto — compression, background separation, and working distance compared.</p>
+      </a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <a href="/">Tool</a>
+    <a href="/compare/">Compare</a>
+    <a href="/learn/">Learn</a>
+    <a href="https://github.com/kevinkiklee/fov-viewer" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+</body>
+</html>
