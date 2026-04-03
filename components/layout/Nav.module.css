@@ -4,7 +4,7 @@
   background: var(--bg-secondary);
   border-bottom: 1px solid var(--border);
   position: relative;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .navInner {
@@ -39,6 +39,7 @@
   text-decoration: none;
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-sm);
+  transition: color var(--duration-fast) var(--ease-out), background var(--duration-fast) var(--ease-out);
 }
 
 .navLink:hover {
@@ -54,6 +55,9 @@
 .dropdownWrapper {
   position: relative;
   margin-left: var(--space-md);
+  align-self: stretch;
+  display: flex;
+  align-items: center;
 }
 
 .dropdownButton {
@@ -64,6 +68,7 @@
   color: var(--text-secondary);
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-sm);
+  transition: color var(--duration-fast) var(--ease-out), background var(--duration-fast) var(--ease-out);
 }
 
 .dropdownButton:hover {
@@ -91,6 +96,7 @@
 }
 
 /* Mega menu (Tools) — anchored below the dropdown button */
+/* Hidden by default, shown via CSS :hover (pre-hydration) or JS class (post-hydration) */
 .megaMenu {
   position: absolute;
   top: 100%;
@@ -100,11 +106,19 @@
   border: 1px solid var(--border);
   border-radius: 0 0 var(--radius-md) var(--radius-md);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
-  z-index: 200;
-  display: grid;
+  z-index: 1000;
+  display: none;
   grid-template-columns: repeat(var(--mega-cols, 3), 200px);
   gap: 0;
   padding: var(--space-md);
+  pointer-events: auto;
+}
+
+/* CSS hover fallback — works before React hydrates */
+.dropdownWrapper:hover .megaMenu,
+.megaMenuOpen {
+  display: grid;
+  animation: fadeInUp var(--duration-normal) var(--ease-out);
 }
 
 .megaColumn {

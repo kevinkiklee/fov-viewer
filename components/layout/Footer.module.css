@@ -3,6 +3,7 @@
   padding: 6px var(--space-md);
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-md);
   font-size: var(--text-xs, 11px);
   color: var(--text-secondary);

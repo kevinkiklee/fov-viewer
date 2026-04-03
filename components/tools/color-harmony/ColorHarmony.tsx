@@ -246,14 +246,6 @@ export function ColorHarmony() {
                 maxLength={7}
               />
             </div>
-            <PhotoUploadPanel
-              label="Pick from Photo"
-              prompt="Drop a photo here or click to browse"
-              onFile={(file) => {
-                setPhotoFile(file)
-                setShowPhotoPicker(true)
-              }}
-            />
           </div>
 
           <div className={styles.field}>
@@ -316,7 +308,14 @@ export function ColorHarmony() {
             </div>
           )}
 
-
+          <PhotoUploadPanel
+            label="Pick from Photo"
+            prompt="Drop a photo here or click to browse"
+            onFile={(file) => {
+              setPhotoFile(file)
+              setShowPhotoPicker(true)
+            }}
+          />
       </aside>
 
       {/* Right side: palette bar + wheel */}
@@ -331,8 +330,8 @@ export function ColorHarmony() {
               title={i === baseIndex ? 'Key color — click to copy hex' : 'Click to copy hex'}
             >
               <div className={styles.paletteBarInfo}>
-                {i === baseIndex && <span className={styles.keyLabel}>KEY</span>}
                 <span className={styles.paletteBarHex}>
+                  {i === baseIndex && <span className={styles.keyLabel}>KEY</span>}
                   {copiedHex === s.hex ? 'Copied!' : s.hex}
                 </span>
                 <span className={styles.paletteBarRgb}>

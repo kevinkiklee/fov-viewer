@@ -45,6 +45,15 @@
   font-size: 12px;
   font-family: inherit;
   cursor: pointer;
+  transition: border-color var(--duration-fast) var(--ease-out);
+}
+
+.select:hover, .input:hover {
+  border-color: var(--accent);
+}
+
+.select:focus, .input:focus {
+  border-color: var(--accent);
 }
 .slider {
   width: 100%;
@@ -69,6 +78,7 @@
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: 10px;
+  animation: scaleIn var(--duration-slow) var(--ease-out) both;
 }
 .resultLabel {
   font-size: 11px;

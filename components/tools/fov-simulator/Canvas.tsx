@@ -22,7 +22,6 @@ interface CanvasProps {
   activeLens: number
   offsets: OverlayOffsets
   onOffsetsChange: React.Dispatch<React.SetStateAction<OverlayOffsets>>
-  onDraw?: () => void
 }
 
 // Reference FOV: 14mm on full frame defines the widest view the canvas shows.
@@ -131,13 +130,11 @@ function drawFramingGuides(
   ctx.setLineDash([])
 }
 
-export function Canvas({ lenses, imageIndex, orientation, canvasRef, cleanCanvasRef, distance, showGuides, activeLens, offsets, onOffsetsChange, onDraw }: CanvasProps) {
+export function Canvas({ lenses, imageIndex, orientation, canvasRef, cleanCanvasRef, distance, showGuides, activeLens, offsets, onOffsetsChange }: CanvasProps) {
   const imageRef = useRef<HTMLImageElement | null>(null)
   const animFrameRef = useRef<number>(0)
   const drawnRectsRef = useRef<Rect[]>([])
   const dragRef = useRef<{ index: number; startX: number; startY: number; origDx: number; origDy: number } | null>(null)
-  const onDrawRef = useRef(onDraw)
-  onDrawRef.current = onDraw
 
   const fovs = lenses.map((lens) => {
     const sensor = getSensor(lens.sensorId)
@@ -327,8 +324,8 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef, cleanCanvas
     // Store rects with pill bounds for hit testing
     drawnRectsRef.current = rects
 
-    // Notify parent that the canvas (including cleanCanvas) has been drawn
-    onDrawRef.current?.()
+    // Signal CropStrip that the clean canvas has fresh content
+    cleanCanvas?.dispatchEvent(new Event('draw'))
   }, [canvasRef, computeRects, showGuides, activeLens, distance, fovs, orientation, lenses])
 
   // Load image

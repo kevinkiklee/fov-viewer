@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  animation: slideInLeft var(--duration-slow) var(--ease-out) both;
 }
 
 .header {

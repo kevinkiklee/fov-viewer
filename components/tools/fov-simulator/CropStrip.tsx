@@ -19,21 +19,20 @@ interface CropThumbProps {
   isActive: boolean
   onSelect: () => void
   offset: { dx: number; dy: number }
-  drawVersion: number
   cleanCanvasRef: React.RefObject<HTMLCanvasElement | null>
 }
 
-function CropThumb({ lens, orientation, color, lensIndex, isActive, onSelect, offset, drawVersion, cleanCanvasRef }: CropThumbProps) {
+function CropThumb({ lens, orientation, color, lensIndex, isActive, onSelect, offset, cleanCanvasRef }: CropThumbProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
-  useEffect(() => {
+  const render = () => {
     const canvas = canvasRef.current
     const mainCanvas = cleanCanvasRef.current
     if (!canvas || !mainCanvas) return
+    if (mainCanvas.width === 0 || mainCanvas.height === 0) return
 
     const parent = canvas.parentElement
     if (!parent) return
-    if (mainCanvas.width === 0 || mainCanvas.height === 0) return
 
     const dpr = window.devicePixelRatio || 1
     const displayW = parent.offsetWidth
@@ -51,7 +50,6 @@ function CropThumb({ lens, orientation, color, lensIndex, isActive, onSelect, of
     const mainW = mainCanvas.width
     const mainH = mainCanvas.height
 
-    // Compute the overlay rect position on the main canvas (same logic as Canvas.tsx)
     const ratioW = calcCropRatio(
       isPortrait ? fov.vertical : fov.horizontal,
       isPortrait ? REF_FOV.vertical : REF_FOV.horizontal,
@@ -66,10 +64,20 @@ function CropThumb({ lens, orientation, color, lensIndex, isActive, onSelect, of
     const rectX = (mainW - rectW) / 2 + offset.dx
     const rectY = (mainH - rectH) / 2 + offset.dy
 
-    // Copy that exact region from the clean canvas (no overlays)
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     ctx.drawImage(mainCanvas, rectX, rectY, rectW, rectH, 0, 0, canvas.width, canvas.height)
-  }, [lens, orientation, offset, drawVersion, cleanCanvasRef])
+  }
+
+  // Re-render when lens/orientation/offset changes
+  useEffect(render, [lens, orientation, offset, cleanCanvasRef])
+
+  // Re-render when Canvas signals a fresh draw on the cleanCanvas
+  useEffect(() => {
+    const cleanCanvas = cleanCanvasRef.current
+    if (!cleanCanvas) return
+    cleanCanvas.addEventListener('draw', render)
+    return () => cleanCanvas.removeEventListener('draw', render)
+  })
 
   return (
     <button
@@ -94,10 +102,9 @@ interface CropStripProps {
   expanded: boolean
   onToggleExpand: () => void
   cleanCanvasRef: React.RefObject<HTMLCanvasElement | null>
-  drawVersion: number
 }
 
-export function CropStrip({ lenses, imageIndex, orientation, activeLens, onSelectLens, offsets, expanded, onToggleExpand, cleanCanvasRef, drawVersion }: CropStripProps) {
+export function CropStrip({ lenses, imageIndex, orientation, activeLens, onSelectLens, offsets, expanded, onToggleExpand, cleanCanvasRef }: CropStripProps) {
   return (
     <div className={`${styles.strip} ${expanded ? styles.stripExpanded : ''}`}>
       <div className={styles.stripHeader}>
@@ -106,21 +113,22 @@ export function CropStrip({ lenses, imageIndex, orientation, activeLens, onSelec
           {expanded ? '▾' : '▴'}
         </button>
       </div>
-      <div className={styles.thumbs}>
-        {lenses.map((lens, i) => (
-          <CropThumb
-            key={i}
-            lens={lens}
-            orientation={orientation}
-            color={LENS_COLORS[i]}
-            lensIndex={i}
-            isActive={activeLens === i}
-            onSelect={() => onSelectLens(i)}
-            offset={offsets[i] ?? { dx: 0, dy: 0 }}
-            drawVersion={drawVersion}
-            cleanCanvasRef={cleanCanvasRef}
-          />
-        ))}
+      <div className={styles.thumbsWrap}>
+        <div className={styles.thumbs}>
+          {lenses.map((lens, i) => (
+            <CropThumb
+              key={i}
+              lens={lens}
+              orientation={orientation}
+              color={LENS_COLORS[i]}
+              lensIndex={i}
+              isActive={activeLens === i}
+              onSelect={() => onSelectLens(i)}
+              offset={offsets[i] ?? { dx: 0, dy: 0 }}
+              cleanCanvasRef={cleanCanvasRef}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )

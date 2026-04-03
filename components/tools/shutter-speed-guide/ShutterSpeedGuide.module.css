@@ -18,6 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  animation: slideInLeft var(--duration-slow) var(--ease-out) both;
 }
 .header {
   display: flex;
@@ -39,6 +40,7 @@
   flex: 1;
   overflow: hidden;
   min-width: 0;
+  animation: fadeIn var(--duration-slow) var(--ease-out) both;
   min-height: 0;
   display: flex;
   align-items: stretch;

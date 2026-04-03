@@ -61,29 +61,30 @@ export function Nav({ theme, onThemeChange }: NavProps) {
           >
             Tools {toolsOpen ? '\u25B2' : '\u25BC'}
           </button>
-          {toolsOpen && (
-            <div className={styles.megaMenu} style={{ '--mega-cols': grouped.length } as React.CSSProperties}>
-              {grouped.map((group) => (
-                <div key={group.category} className={styles.megaColumn}>
-                  <div className={styles.megaCategoryLabel}>{group.label}</div>
-                  {group.tools.map((tool) => (
-                    <Link
-                      key={tool.slug}
-                      href={`/tools/${tool.slug}`}
-                      className={styles.megaItem}
-                      onClick={(e) => { if (!e.metaKey && !e.ctrlKey) setToolsOpen(false) }}
-                    >
-                      <span className={styles.megaItemHeader}>
-                        <ToolIcon slug={tool.slug} width={16} height={16} className={styles.megaItemIcon} />
-                        <span className={styles.megaItemName}>{tool.name}</span>
-                      </span>
-                      <span className={styles.megaItemDesc}>{tool.description}</span>
-                    </Link>
-                  ))}
-                </div>
-              ))}
-            </div>
-          )}
+          <div
+            className={`${styles.megaMenu} ${toolsOpen ? styles.megaMenuOpen : ''}`}
+            style={{ '--mega-cols': grouped.length } as React.CSSProperties}
+          >
+            {grouped.map((group) => (
+              <div key={group.category} className={styles.megaColumn}>
+                <div className={styles.megaCategoryLabel}>{group.label}</div>
+                {group.tools.map((tool) => (
+                  <Link
+                    key={tool.slug}
+                    href={`/tools/${tool.slug}`}
+                    className={styles.megaItem}
+                    onClick={(e) => { if (!e.metaKey && !e.ctrlKey) setToolsOpen(false) }}
+                  >
+                    <span className={styles.megaItemHeader}>
+                      <ToolIcon slug={tool.slug} width={16} height={16} className={styles.megaItemIcon} />
+                      <span className={styles.megaItemName}>{tool.name}</span>
+                    </span>
+                    <span className={styles.megaItemDesc}>{tool.description}</span>
+                  </Link>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
         <Link href="/learn/glossary" className={styles.navLink}>Glossary</Link>
         <div className={styles.spacer} />

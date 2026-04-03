@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  animation: slideInLeft var(--duration-slow) var(--ease-out) both;
 }
 
 /* Right side: palette bar on top, wheel below */
@@ -26,19 +27,23 @@
   min-height: 0;
 }
 
-/* Palette bar: compact, not full width, inside the right area */
+/* Palette bar: compact, contained within right area */
 .paletteBar {
   display: flex;
   padding: 10px 16px;
-  gap: 10px;
+  gap: 8px;
   border-bottom: 1px solid var(--border);
   flex-shrink: 0;
   justify-content: center;
+  overflow: hidden;
+  min-width: 0;
 }
 
 .paletteBarSwatch {
+  flex: 1;
+  min-width: 0;
   height: 56px;
-  padding: 0 12px;
+  padding: 6px 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +51,7 @@
   border: 2px solid transparent;
   border-radius: 8px;
   font-family: inherit;
-  transition: transform 0.15s, box-shadow 0.15s;
+  transition: transform var(--duration-normal) var(--ease-spring), box-shadow var(--duration-normal) var(--ease-out);
 }
 
 .paletteBarSwatchKey {
@@ -71,26 +76,31 @@
 
 .paletteBarInfo {
   display: flex;
-  gap: 8px;
+  flex-direction: column;
+  gap: 2px;
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
-  padding: 4px 10px;
-  border-radius: 20px;
-  white-space: nowrap;
+  padding: 4px 8px;
+  border-radius: 10px;
   backdrop-filter: blur(4px);
+  width: 100%;
 }
 
 .paletteBarHex {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   font-family: var(--font-mono);
   font-size: 11px;
   color: #fff;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .paletteBarRgb {
   font-family: var(--font-mono);
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.65);
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.55);
   white-space: nowrap;
 }
 
@@ -146,7 +156,10 @@
   cursor: pointer;
   text-align: left;
   font-family: inherit;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  transition: background var(--duration-fast) var(--ease-out),
+              color var(--duration-fast) var(--ease-out),
+              border-color var(--duration-fast) var(--ease-out),
+              transform var(--duration-fast) var(--ease-out);
 }
 
 .radioBtn:hover {
@@ -217,7 +230,8 @@
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  margin-left: auto;
+  flex-shrink: 0;
+  margin-left: 12px;
 }
 
 .copyLabel {
