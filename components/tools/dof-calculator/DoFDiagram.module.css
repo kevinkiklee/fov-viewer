@@ -1,0 +1,39 @@
+.container {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  overflow: hidden;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tickLabel {
+  font-size: 9px;
+  fill: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.boundaryLabel {
+  font-size: 10px;
+  fill: var(--accent);
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.subjectLabel {
+  font-size: 10px;
+  fill: var(--accent);
+  font-weight: 600;
+}
+
+.dofLabel {
+  font-size: 11px;
+  fill: var(--accent);
+  font-family: var(--font-mono);
+  font-weight: 600;
+}

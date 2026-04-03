@@ -1,17 +1,24 @@
 .footer {
   border-top: 1px solid var(--border);
-  padding: var(--space-lg) var(--space-md);
-  text-align: center;
-  font-size: var(--text-sm);
+  padding: 6px var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  font-size: var(--text-xs, 11px);
   color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.footer p {
+  margin: 0;
 }
 
 .links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--space-sm) var(--space-md);
-  margin-bottom: var(--space-sm);
+  gap: var(--space-xs, 4px) var(--space-sm);
 }
 
 .link {

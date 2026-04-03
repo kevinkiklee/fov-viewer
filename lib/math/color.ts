@@ -165,8 +165,8 @@ export function complementary(hue: number): number[] {
  * Creates a smooth, unified feel. Common in nature and golden-hour landscapes.
  * @returns [baseHue - 30, baseHue, baseHue + 30]
  */
-export function analogous(hue: number): number[] {
-  return [normalizeHue(hue - 30), normalizeHue(hue), normalizeHue(hue + 30)]
+export function analogous(hue: number, spread: number = 30): number[] {
+  return [normalizeHue(hue - spread), normalizeHue(hue), normalizeHue(hue + spread)]
 }
 
 /**
@@ -183,6 +183,15 @@ export function triadic(hue: number): number[] {
  * to its complement. Less tension than complementary, more variety than analogous.
  * @returns [baseHue, baseHue + 150, baseHue + 210]
  */
-export function splitComplementary(hue: number): number[] {
-  return [normalizeHue(hue), normalizeHue(hue + 150), normalizeHue(hue + 210)]
+export function splitComplementary(hue: number, splitAngle: number = 30): number[] {
+  return [normalizeHue(hue), normalizeHue(hue + 180 - splitAngle), normalizeHue(hue + 180 + splitAngle)]
+}
+
+/**
+ * Tetradic (rectangular) harmony — four colors forming a rectangle on the wheel.
+ * Provides rich color variety with two complementary pairs.
+ * @returns [baseHue, baseHue + 60, baseHue + 180, baseHue + 240]
+ */
+export function tetradic(hue: number): number[] {
+  return [normalizeHue(hue), normalizeHue(hue + 60), normalizeHue(hue + 180), normalizeHue(hue + 240)]
 }

@@ -28,7 +28,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   return (
     <ThemeContext value={{ theme, setTheme }}>
       <Nav theme={theme} onThemeChange={setTheme} />
-      <main style={{ flex: 1 }}>{children}</main>
+      <main style={{ flex: 1, minHeight: 0, overflow: 'auto' }}>{children}</main>
       <Footer />
     </ThemeContext>
   )

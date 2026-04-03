@@ -1,30 +1,32 @@
 'use client'
 
 import { useState, useMemo, useCallback } from 'react'
-import { hslToRgb, complementary, analogous, triadic, splitComplementary } from '@/lib/math/color'
+import { hslToRgb, complementary, analogous, triadic, splitComplementary, tetradic } from '@/lib/math/color'
 import styles from '../shared/Calculator.module.css'
 import ch from './ColorHarmony.module.css'
 import { ColorWheel } from './ColorWheel'
 
-type HarmonyType = 'complementary' | 'analogous' | 'triadic' | 'split-complementary'
+type HarmonyType = 'complementary' | 'analogous' | 'triadic' | 'split-complementary' | 'tetradic'
 
 const HARMONY_OPTIONS: { value: HarmonyType; label: string }[] = [
   { value: 'complementary', label: 'Complementary' },
   { value: 'analogous', label: 'Analogous' },
   { value: 'triadic', label: 'Triadic' },
   { value: 'split-complementary', label: 'Split Complementary' },
+  { value: 'tetradic', label: 'Tetradic' },
 ]
 
 function rgbToHex(r: number, g: number, b: number): string {
   return '#' + [r, g, b].map((c) => c.toString(16).padStart(2, '0')).join('')
 }
 
-function getHarmonyHues(hue: number, type: HarmonyType): number[] {
+function getHarmonyHues(hue: number, type: HarmonyType, splitAngle: number, analogousSpread: number): number[] {
   switch (type) {
     case 'complementary': return complementary(hue)
-    case 'analogous': return analogous(hue)
+    case 'analogous': return analogous(hue, analogousSpread)
     case 'triadic': return triadic(hue)
-    case 'split-complementary': return splitComplementary(hue)
+    case 'split-complementary': return splitComplementary(hue, splitAngle)
+    case 'tetradic': return tetradic(hue)
   }
 }
 
@@ -46,6 +48,8 @@ function getSuggestion(hue: number, type: HarmonyType): string {
     case 'split-complementary':
       if (isWarm) return 'Use for: contrasting wardrobe against a natural backdrop'
       return 'Use for: balanced product photography with visual variety'
+    case 'tetradic':
+      return 'Use for: rich editorial layouts and complex multi-subject compositions'
   }
 }
 
@@ -54,9 +58,14 @@ export function ColorHarmony() {
   const [saturation, setSaturation] = useState(70)
   const [lightness, setLightness] = useState(50)
   const [harmony, setHarmony] = useState<HarmonyType>('complementary')
+  const [splitAngle, setSplitAngle] = useState(30)
+  const [analogousSpread, setAnalogousSpread] = useState(30)
   const [copiedHex, setCopiedHex] = useState<string | null>(null)
 
-  const harmonyHues = useMemo(() => getHarmonyHues(hue, harmony), [hue, harmony])
+  const harmonyHues = useMemo(
+    () => getHarmonyHues(hue, harmony, splitAngle, analogousSpread),
+    [hue, harmony, splitAngle, analogousSpread],
+  )
 
   const swatches = useMemo(() => {
     return harmonyHues.map((h) => {
@@ -78,12 +87,44 @@ export function ColorHarmony() {
     }
   }, [])
 
+  // Handle secondary node drag from the color wheel.
+  // The wheel reports which node index was dragged to which hue angle.
+  // We compute the new spread/split angle from the difference.
+  const handleSecondaryDrag = useCallback((nodeIndex: number, draggedHue: number) => {
+    if (harmony === 'split-complementary') {
+      // Nodes 1 and 2 are the split pair, opposite the base hue.
+      // splitAngle = |draggedHue - (hue + 180)|, clamped to 10-80
+      const opposite = (hue + 180) % 360
+      let diff = draggedHue - opposite
+      // Normalize to -180..180
+      if (diff > 180) diff -= 360
+      if (diff < -180) diff += 360
+      const newAngle = Math.round(Math.min(80, Math.max(10, Math.abs(diff))))
+      setSplitAngle(newAngle)
+    } else if (harmony === 'analogous') {
+      // Nodes 0 and 2 are the spread pair around the base hue (node 1).
+      // spread = |draggedHue - hue|, clamped to 5-60
+      let diff = draggedHue - hue
+      if (diff > 180) diff -= 360
+      if (diff < -180) diff += 360
+      const newSpread = Math.round(Math.min(60, Math.max(5, Math.abs(diff))))
+      setAnalogousSpread(newSpread)
+    }
+  }, [harmony, hue])
+
+  // Which node indices are draggable for adjusting the angle (not the base hue)
+  const draggableNodes = useMemo(() => {
+    if (harmony === 'split-complementary') return [1, 2]
+    if (harmony === 'analogous') return [0, 2]
+    return []
+  }, [harmony])
+
   return (
     <div className={styles.layout}>
       <div className={styles.controls}>
         <div className={styles.field}>
           <label className={styles.label}>
-            Hue: <span className={styles.value}>{hue}&deg;</span>
+            Hue: <span className={styles.value}>{hue}°</span>
           </label>
           <input
             type="range"
@@ -142,11 +183,14 @@ export function ColorHarmony() {
 
       <div>
         <ColorWheel
+          hue={hue}
           saturation={saturation}
           lightness={lightness}
           harmonyHues={harmonyHues}
+          draggableNodes={draggableNodes}
           onHueChange={setHue}
           onSaturationChange={setSaturation}
+          onSecondaryDrag={handleSecondaryDrag}
         />
 
         <div className={ch.palette}>

@@ -1,10 +1,10 @@
 .toolbar {
-  margin-bottom: var(--space-md);
+  margin-bottom: 14px;
   max-width: 300px;
 }
 .cornerCell {
   text-align: left !important;
-  font-size: var(--text-xs);
+  font-size: 11px;
 }
 .cellSelected {
   background: var(--accent) !important;
@@ -16,38 +16,38 @@
   border-color: var(--accent) !important;
 }
 .details {
-  margin-top: var(--space-lg);
+  margin-top: 16px;
 }
 .isoTable {
-  margin-top: var(--space-md);
+  margin-top: 14px;
 }
 .isoTitle {
-  font-size: var(--text-sm);
+  font-size: 12px;
   font-weight: 600;
-  margin-bottom: var(--space-sm);
+  margin-bottom: 8px;
 }
 .isoGrid {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-xs);
+  gap: 4px;
 }
 .isoCard {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2px;
-  padding: var(--space-xs) var(--space-sm);
+  padding: 4px 8px;
   background: var(--bg-surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
+  border-radius: 6px;
   min-width: 80px;
 }
 .isoLabel {
-  font-size: var(--text-xs);
+  font-size: 11px;
   color: var(--text-secondary);
 }
 .isoValue {
   font-family: var(--font-mono);
-  font-size: var(--text-sm);
+  font-size: 12px;
   font-weight: 600;
 }

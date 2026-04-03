@@ -7,6 +7,7 @@ import {
   analogous,
   triadic,
   splitComplementary,
+  tetradic,
 } from './color'
 
 describe('kelvinToRgb', () => {
@@ -140,8 +141,30 @@ describe('color harmonies', () => {
     expect(hues[2]).toBe(210)
   })
 
+  it('splitComplementary accepts custom split angle', () => {
+    const hues = splitComplementary(0, 45)
+    expect(hues[1]).toBe(135)
+    expect(hues[2]).toBe(225)
+  })
+
+  it('analogous accepts custom spread', () => {
+    const hues = analogous(60, 15)
+    expect(hues[0]).toBe(45)
+    expect(hues[1]).toBe(60)
+    expect(hues[2]).toBe(75)
+  })
+
+  it('tetradic returns 4 hues forming a rectangle', () => {
+    const hues = tetradic(0)
+    expect(hues).toHaveLength(4)
+    expect(hues[0]).toBe(0)
+    expect(hues[1]).toBe(60)
+    expect(hues[2]).toBe(180)
+    expect(hues[3]).toBe(240)
+  })
+
   it('all harmony functions normalize hues to 0-360', () => {
-    const fns = [complementary, analogous, triadic, splitComplementary]
+    const fns = [complementary, analogous, triadic, splitComplementary, tetradic]
     for (const fn of fns) {
       const hues = fn(350)
       for (const h of hues) {

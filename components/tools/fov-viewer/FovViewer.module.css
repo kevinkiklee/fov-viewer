@@ -2,7 +2,7 @@
 .app {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 44px); /* subtract nav height */
+  height: 100%;
   overflow: hidden;
 }
 

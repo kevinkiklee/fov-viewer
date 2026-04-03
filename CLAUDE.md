@@ -51,6 +51,10 @@ public/                 Images, icons, manifest, sitemap, robots.txt
 
 Tools have a `status` field in `lib/data/tools.ts`: `'live'` (visible on homepage) or `'draft'` (hidden, accessible only by direct URL with a draft banner). To publish a tool, change its status to `'live'`.
 
+## Design
+
+- **FOV Viewer is the reference implementation.** All tools should match its look and feel: dark surface panels, compact controls, same spacing/typography tokens, and consistent use of `var(--accent)` for interactive elements.
+
 ## Conventions
 
 - **CSS Modules** for component styles (e.g. `Component.module.css`), design tokens via CSS custom properties

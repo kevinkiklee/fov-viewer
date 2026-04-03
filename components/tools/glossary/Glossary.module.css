@@ -1,13 +1,13 @@
 .search {
   width: 100%;
-  padding: var(--space-sm) var(--space-md);
-  font-size: var(--text-md);
+  padding: 8px 14px;
+  font-size: 14px;
   font-family: inherit;
   background: var(--bg-surface);
   color: var(--text-primary);
   border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  margin-bottom: var(--space-md);
+  border-radius: 10px;
+  margin-bottom: 14px;
 }
 .search::placeholder {
   color: var(--text-muted);
@@ -15,22 +15,22 @@
 .alphabet {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-xs);
-  margin-bottom: var(--space-lg);
+  gap: 4px;
+  margin-bottom: 16px;
 }
 .letterBtn {
   padding: 2px 8px;
   min-width: 32px;
   min-height: 32px;
-  font-size: var(--text-xs);
+  font-size: 11px;
   font-family: var(--font-mono);
   font-weight: 600;
   background: var(--bg-surface);
   color: var(--text-secondary);
   border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.1s, color 0.1s;
+  transition: background 0.15s, color 0.15s;
 }
 @media (max-width: 1024px) {
   .letterBtn {
@@ -56,18 +56,18 @@
   border-color: var(--border);
 }
 .section {
-  margin-bottom: var(--space-lg);
+  margin-bottom: 16px;
 }
 .sectionLetter {
-  font-size: var(--text-lg);
+  font-size: 20px;
   font-weight: 700;
   color: var(--accent);
-  margin-bottom: var(--space-sm);
-  padding-bottom: var(--space-xs);
+  margin-bottom: 8px;
+  padding-bottom: 4px;
   border-bottom: 1px solid var(--border-subtle);
 }
 .termItem {
-  padding: var(--space-sm) 0;
+  padding: 8px 0;
   border-bottom: 1px solid var(--border-subtle);
 }
 .termItem:last-child {
@@ -75,19 +75,19 @@
 }
 .termName {
   font-weight: 600;
-  font-size: var(--text-md);
+  font-size: 14px;
   color: var(--text-primary);
 }
 .termDef {
-  font-size: var(--text-sm);
+  font-size: 12px;
   color: var(--text-secondary);
   line-height: 1.6;
-  margin-top: var(--space-xs);
+  margin-top: 4px;
 }
 .toolLink {
   display: inline-block;
-  margin-top: var(--space-xs);
-  font-size: var(--text-sm);
+  margin-top: 4px;
+  font-size: 12px;
   color: var(--accent);
   text-decoration: none;
   font-weight: 500;
@@ -97,8 +97,8 @@
   text-decoration: underline;
 }
 .noResults {
-  font-size: var(--text-sm);
+  font-size: 12px;
   color: var(--text-muted);
-  padding: var(--space-lg) 0;
+  padding: 16px 0;
   text-align: center;
 }
