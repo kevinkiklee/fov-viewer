@@ -5,6 +5,7 @@ import { kelvinToRgb } from '@/lib/math/color'
 import { getToolBySlug } from '@/lib/data/tools'
 import { parseQueryState, useToolQuerySync, intParam } from '@/lib/utils/querySync'
 import { LearnPanel } from '@/components/shared/LearnPanel'
+import { WbPreview } from './WbPreview'
 import calc from '../shared/Calculator.module.css'
 import wb from './WhiteBalance.module.css'
 
@@ -117,7 +118,6 @@ export function WhiteBalance() {
   useToolQuerySync({ k: kelvin }, PARAM_SCHEMA)
 
   const rgb = useMemo(() => kelvinToRgb(kelvin), [kelvin])
-  const bgColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`
 
   const activePreset = PRESETS.find((p) => p.kelvin === kelvin)
 
@@ -130,11 +130,7 @@ export function WhiteBalance() {
           <ControlsPanel {...controlsProps} />
         </div>
 
-        <div className={wb.main}>
-          <div className={wb.preview} style={{ backgroundColor: bgColor }}>
-            <span className={wb.previewLabel}>{kelvin}K</span>
-          </div>
-        </div>
+        <WbPreview rgb={rgb} kelvin={kelvin} />
 
         <LearnPanel slug="white-balance" />
       </div>
