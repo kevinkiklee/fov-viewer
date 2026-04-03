@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'FOV Simulator — Compare Focal Lengths',
   description: 'Compare field of view across different focal lengths and sensor sizes. Free, interactive, shareable.',
   openGraph: {
-    images: ['/images/og/fov-simulator.jpg'],
+    images: ['/images/og/fov-simulator.png'],
   },
 }
 

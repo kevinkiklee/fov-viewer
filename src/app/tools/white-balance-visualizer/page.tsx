@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'White Balance Visualizer',
   description: 'See how color temperature affects your photos.',
   openGraph: {
-    images: ['/images/og/white-balance.jpg'],
+    images: ['/images/og/white-balance.png'],
   },
 }
 

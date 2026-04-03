@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Sensor Size Comparison',
   description: 'Compare camera sensor sizes visually with an interactive overlay.',
   openGraph: {
-    images: ['/images/og/sensor-size.jpg'],
+    images: ['/images/og/sensor-size.png'],
   },
 }
 

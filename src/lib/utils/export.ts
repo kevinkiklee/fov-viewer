@@ -25,7 +25,7 @@ export async function copyCanvasToClipboard(canvas: HTMLCanvasElement, filename 
       (ctx as any).letterSpacing = '0.5px'
     }
     
-    const text = 'Generated with phototools.io'
+    const text = 'phototools.io'
     const textMetrics = ctx.measureText(text)
     const textWidth = textMetrics.width
     

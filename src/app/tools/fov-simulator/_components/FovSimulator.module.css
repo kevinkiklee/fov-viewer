@@ -63,6 +63,8 @@
   border-left: 3px solid;
   cursor: pointer;
   transition: box-shadow 0.2s;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .lensPanelActive {
@@ -194,6 +196,8 @@
   padding: 4px 8px;
   font-size: 11px;
   cursor: pointer;
+  min-width: 0;
+  flex: 1;
 }
 
 /* Add lens button */
