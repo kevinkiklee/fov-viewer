@@ -93,6 +93,37 @@
   font-weight: 600;
 }
 
+/* Lighting condition buttons */
+.conditionBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.conditionBtn {
+  padding: 4px 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 11px;
+  font-family: inherit;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  white-space: nowrap;
+}
+.conditionBtn:hover {
+  border-color: var(--accent);
+}
+.conditionBtnActive {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.conditionBtnNone {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
 @media (max-width: 1023px) {
   .app {
     height: auto;

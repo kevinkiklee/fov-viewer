@@ -65,21 +65,23 @@ function ControlsPanel({ conditionEV, selected, matchingISOs, onConditionChange 
 
       <div className={calc.field}>
         <label className={calc.label}>Lighting Condition</label>
-        <select
-          className={calc.select}
-          value={conditionEV ?? ''}
-          onChange={(e) => {
-            const val = e.target.value
-            onConditionChange(val ? Number(val) : null)
-          }}
-        >
-          <option value="">— None —</option>
+        <div className={ev.conditionBtns}>
+          <button
+            className={`${ev.conditionBtn} ${ev.conditionBtnNone} ${conditionEV === null ? ev.conditionBtnActive : ''}`}
+            onClick={() => onConditionChange(null)}
+          >
+            None
+          </button>
           {LIGHTING_CONDITIONS.map((c) => (
-            <option key={c.label} value={c.ev}>
+            <button
+              key={c.label}
+              className={`${ev.conditionBtn} ${conditionEV === c.ev ? ev.conditionBtnActive : ''}`}
+              onClick={() => onConditionChange(c.ev)}
+            >
               {c.label} (EV {c.ev})
-            </option>
+            </button>
           ))}
-        </select>
+        </div>
       </div>
 
       {selected && (
