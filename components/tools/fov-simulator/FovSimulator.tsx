@@ -2,7 +2,7 @@
 
 import { useReducer, useRef, useCallback, useState, useEffect } from 'react'
 import type { LensConfig } from '@/lib/types'
-import type { FovSimulatorState, Orientation, ViewMode } from './types'
+import type { FovSimulatorState, Orientation } from './types'
 import { DEFAULT_FOV_STATE, LENS_COLORS, LENS_LABELS, MAX_LENSES } from './types'
 import { parseQueryParams, useQuerySync } from './querySync'
 import { copyCanvasToClipboard, copyLinkToClipboard } from '@/lib/utils/export'
@@ -17,8 +17,6 @@ import { SceneStrip } from './SceneStrip'
 import { ActionBar } from './ActionBar'
 import { Canvas } from './Canvas'
 import { ShareModal } from './ShareModal'
-import { ViewModeToggle } from './ViewModeToggle'
-import { CompressionScene } from './CompressionScene'
 import { CropStrip } from './CropStrip'
 import styles from './FovSimulator.module.css'
 
@@ -30,7 +28,6 @@ type Action =
   | { type: 'SET_ACTIVE_LENS'; payload: number }
   | { type: 'SET_ORIENTATION'; payload: Orientation }
   | { type: 'SET_DISTANCE'; payload: number }
-  | { type: 'SET_VIEW_MODE'; payload: ViewMode }
   | { type: 'SET_SHOW_GUIDES'; payload: boolean }
   | { type: 'RESET' }
   | { type: 'HYDRATE'; payload: Partial<FovSimulatorState> }
@@ -66,8 +63,6 @@ function reducer(state: FovSimulatorState, action: Action): FovSimulatorState {
       return { ...state, orientation: action.payload }
     case 'SET_DISTANCE':
       return { ...state, distance: action.payload }
-    case 'SET_VIEW_MODE':
-      return { ...state, viewMode: action.payload }
     case 'SET_SHOW_GUIDES':
       return { ...state, showGuides: action.payload }
     case 'RESET':
@@ -159,11 +154,6 @@ export function FovSimulator() {
             </button>
           )}
 
-          <ViewModeToggle
-            value={state.viewMode}
-            onChange={(m) => dispatch({ type: 'SET_VIEW_MODE', payload: m })}
-          />
-
           <ActionBar
             onCopyImage={handleCopyImage}
             onCopyLink={handleCopyLink}
@@ -176,50 +166,33 @@ export function FovSimulator() {
         <main className={styles.canvasArea}>
           {/* Top bar: scene strip + rotate/center (desktop only) */}
           <nav className={styles.canvasTopbar}>
-            {state.viewMode !== 'compression' ? (
-              <SceneStrip
-                selectedIndex={state.imageIndex}
-                onChange={(i) => dispatch({ type: 'SET_IMAGE', payload: i })}
-              />
-            ) : (
-              <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
-                Perspective Compression Demo
-              </span>
-            )}
-            {state.viewMode === 'fov' && <span className={styles.desktopOnly}>{rotateBtn}</span>}
-            {state.viewMode === 'fov' && <span className={styles.desktopOnly}>{centerBtn}</span>}
+            <SceneStrip
+              selectedIndex={state.imageIndex}
+              onChange={(i) => dispatch({ type: 'SET_IMAGE', payload: i })}
+            />
+            <span className={styles.desktopOnly}>{rotateBtn}</span>
+            <span className={styles.desktopOnly}>{centerBtn}</span>
           </nav>
 
           <section className={styles.canvasMain}>
-            {state.viewMode === 'fov' && (
-              <Canvas
-                lenses={state.lenses}
-                imageIndex={state.imageIndex}
-                orientation={state.orientation}
-                canvasRef={canvasRef}
-                distance={state.distance}
-                showGuides={state.showGuides}
-                activeLens={state.activeLens}
-              />
-            )}
-            {state.viewMode === 'compression' && (
-              <CompressionScene
-                lens={state.lenses[state.activeLens]}
-                activeLensIndex={state.activeLens}
-                distance={state.distance}
-              />
-            )}
-          </section>
-
-          {state.viewMode === 'fov' && (
-            <CropStrip
+            <Canvas
               lenses={state.lenses}
               imageIndex={state.imageIndex}
               orientation={state.orientation}
+              canvasRef={canvasRef}
+              distance={state.distance}
+              showGuides={state.showGuides}
               activeLens={state.activeLens}
-              onSelectLens={(i) => dispatch({ type: 'SET_ACTIVE_LENS', payload: i })}
             />
-          )}
+          </section>
+
+          <CropStrip
+            lenses={state.lenses}
+            imageIndex={state.imageIndex}
+            orientation={state.orientation}
+            activeLens={state.activeLens}
+            onSelectLens={(i) => dispatch({ type: 'SET_ACTIVE_LENS', payload: i })}
+          />
         </main>
         <LearnPanel slug="fov-simulator" />
       </div>
@@ -231,8 +204,8 @@ export function FovSimulator() {
           <span className={styles.mobileLogoText}>FOV Simulator</span>
         </div>
         <div className={styles.mobileToolbarRight}>
-          {state.viewMode === 'fov' && rotateBtn}
-          {state.viewMode === 'fov' && centerBtn}
+          {rotateBtn}
+          {centerBtn}
           <ThemeToggle theme={theme} onChange={setTheme} />
         </div>
       </div>
@@ -261,11 +234,6 @@ export function FovSimulator() {
             + Add lens
           </button>
         )}
-
-        <ViewModeToggle
-          value={state.viewMode}
-          onChange={(m) => dispatch({ type: 'SET_VIEW_MODE', payload: m })}
-        />
 
         <ActionBar
           onCopyImage={handleCopyImage}

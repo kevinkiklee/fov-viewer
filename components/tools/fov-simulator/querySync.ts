@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react'
 import type { LensConfig } from '@/lib/types'
 import { SENSORS } from '@/lib/data/sensors'
-import type { FovSimulatorState, ViewMode } from './types'
+import type { FovSimulatorState } from './types'
 
 const SENSOR_IDS = new Set(SENSORS.map((s) => s.id))
 const LENS_KEYS = ['a', 'b', 'c'] as const
@@ -40,9 +40,6 @@ export function parseQueryParams(): Partial<FovSimulatorState> {
   const dist = Number(params.get('dist'))
   if (Number.isInteger(dist) && dist >= 3 && dist <= 100) state.distance = dist
 
-  const mode = params.get('mode')
-  if (mode === 'compression') state.viewMode = mode as ViewMode
-
   if (params.get('guides') === '1') state.showGuides = true
 
   return state
@@ -56,7 +53,6 @@ export function stateToQueryString(state: FovSimulatorState): string {
   })
   params.set('img', String(state.imageIndex))
   if (state.distance !== 10) params.set('dist', String(state.distance))
-  if (state.viewMode !== 'fov') params.set('mode', state.viewMode)
   if (state.showGuides) params.set('guides', '1')
   return params.toString()
 }

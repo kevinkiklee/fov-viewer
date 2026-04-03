@@ -97,9 +97,14 @@ export function ColorHarmony() {
     [hue, harmony, splitAngle, analogousSpread, tetradicOffset],
   )
 
+  const monoPoints = useMemo(
+    () => harmony === 'monochromatic' ? monochromatic(hue, saturation, lightness) : undefined,
+    [harmony, hue, saturation, lightness],
+  )
+
   const swatches = useMemo(() => {
-    if (harmony === 'monochromatic') {
-      return monochromatic(hue, saturation, lightness).map((hsl) => {
+    if (harmony === 'monochromatic' && monoPoints) {
+      return monoPoints.map((hsl) => {
         const rgb = hslToRgb(hsl.h, hsl.s, hsl.l)
         const hex = rgbToHex(rgb.r, rgb.g, rgb.b)
         return { hue: hsl.h, rgb, hex }
@@ -340,6 +345,7 @@ export function ColorHarmony() {
             harmonyHues={harmonyHues}
             baseIndex={baseIndex}
             draggableNodes={draggableNodes}
+            monochromaticPoints={monoPoints}
             onHueChange={setHue}
             onSaturationChange={setSaturation}
             onSecondaryDrag={handleSecondaryDrag}

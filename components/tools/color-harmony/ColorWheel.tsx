@@ -4,6 +4,12 @@ import { useRef, useEffect, useCallback, useState } from 'react'
 import { hslToRgb } from '@/lib/math/color'
 import ch from './ColorHarmony.module.css'
 
+interface MonoPoint {
+  h: number
+  s: number
+  l: number
+}
+
 interface ColorWheelProps {
   hue: number
   saturation: number
@@ -11,11 +17,12 @@ interface ColorWheelProps {
   harmonyHues: number[]
   /** Index of the base (key) hue in harmonyHues */
   baseIndex: number
-  /** Node indices that can be individually dragged to adjust angles (e.g. [1,2] for split comp) */
+  /** Node indices that can be individually dragged to adjust angles */
   draggableNodes: number[]
+  /** For monochromatic: HSL points to show along the hue radius */
+  monochromaticPoints?: MonoPoint[]
   onHueChange: (hue: number) => void
   onSaturationChange: (saturation: number) => void
-  /** Called when a draggable secondary node is dragged. Reports the node index and its new hue. */
   onSecondaryDrag: (nodeIndex: number, hue: number) => void
 }
 
@@ -49,6 +56,7 @@ export function ColorWheel({
   harmonyHues,
   baseIndex,
   draggableNodes,
+  monochromaticPoints,
   onHueChange,
   onSaturationChange,
   onSecondaryDrag,
@@ -102,66 +110,85 @@ export function ColorWheel({
     ctx.putImageData(imageData, 0, 0)
   }, [canvasPixels, lightness])
 
-  // Draw the harmony overlay (lines + dots)
+  // Helper: draw a dot with optional key-color double ring
+  const drawDot = useCallback((ctx: CanvasRenderingContext2D, x: number, y: number, hex: string, isBase: boolean) => {
+    const dotRadius = (isBase ? 11 : 8) * dpr
+
+    // Filled dot
+    ctx.beginPath()
+    ctx.arc(x, y, dotRadius, 0, Math.PI * 2)
+    ctx.fillStyle = hex
+    ctx.fill()
+    ctx.strokeStyle = '#ffffff'
+    ctx.lineWidth = 2.5 * dpr
+    ctx.stroke()
+
+    // Key color: outer ring
+    if (isBase) {
+      ctx.beginPath()
+      ctx.arc(x, y, dotRadius + 4 * dpr, 0, Math.PI * 2)
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.5)'
+      ctx.lineWidth = 1.5 * dpr
+      ctx.stroke()
+    }
+  }, [dpr])
+
+  // Draw the harmony overlay — Adobe Color style: lines from center to each dot
   const drawOverlay = useCallback((ctx: CanvasRenderingContext2D) => {
     const cx = canvasPixels / 2
     const cy = canvasPixels / 2
     const r = cx
 
+    // Monochromatic: dots along the same hue angle at different saturations
+    if (monochromaticPoints && monochromaticPoints.length > 0) {
+      const monoPoints = monochromaticPoints.map((p) => {
+        const pos = hueToPos(p.h, p.s, cx, cy, r)
+        return { ...pos, ...p }
+      })
+
+      // Single line from center through all dots to the outermost
+      const outermost = monoPoints.reduce((a, b) =>
+        Math.hypot(a.x - cx, a.y - cy) > Math.hypot(b.x - cx, b.y - cy) ? a : b
+      )
+      ctx.beginPath()
+      ctx.moveTo(cx, cy)
+      ctx.lineTo(outermost.x, outermost.y)
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)'
+      ctx.lineWidth = 1.5 * dpr
+      ctx.stroke()
+
+      // Dots along the radius
+      monoPoints.forEach((p, i) => {
+        const rgb = hslToRgb(p.h, p.s, p.l)
+        const hex = rgbToHex(rgb.r, rgb.g, rgb.b)
+        drawDot(ctx, p.x, p.y, hex, i === baseIndex)
+      })
+      return
+    }
+
+    // Standard harmonies: lines from center to each dot on the rim
     const points = harmonyHues.map((h) => {
       const pos = hueToPos(h, saturation, cx, cy, r)
       return { ...pos, hue: h }
     })
 
-    // Connecting lines
-    if (points.length > 1) {
+    // Lines from center to each dot
+    points.forEach((p) => {
       ctx.beginPath()
-      ctx.moveTo(points[0].x, points[0].y)
-      for (let i = 1; i < points.length; i++) {
-        ctx.lineTo(points[i].x, points[i].y)
-      }
-      ctx.closePath()
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.5)'
-      ctx.lineWidth = 2 * dpr
+      ctx.moveTo(cx, cy)
+      ctx.lineTo(p.x, p.y)
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)'
+      ctx.lineWidth = 1.5 * dpr
       ctx.stroke()
-    }
+    })
 
-    // Dots — key color dot is larger with a double ring
+    // Dots on the rim
     points.forEach((p, i) => {
-      const isBase = i === baseIndex
-      const isDraggable = draggableNodes.includes(i)
-      const dotRadius = (isBase ? 10 : 6) * dpr
       const rgb = hslToRgb(p.hue, saturation, lightness)
       const hex = rgbToHex(rgb.r, rgb.g, rgb.b)
-
-      // Filled dot
-      ctx.beginPath()
-      ctx.arc(p.x, p.y, dotRadius, 0, Math.PI * 2)
-      ctx.fillStyle = hex
-      ctx.fill()
-      ctx.strokeStyle = '#ffffff'
-      ctx.lineWidth = 2 * dpr
-      ctx.stroke()
-
-      // Key color: extra outer ring
-      if (isBase) {
-        ctx.beginPath()
-        ctx.arc(p.x, p.y, dotRadius + 4 * dpr, 0, Math.PI * 2)
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.6)'
-        ctx.lineWidth = 2 * dpr
-        ctx.stroke()
-      }
-
-      // Draggable node hint ring
-      if (isDraggable && !isBase) {
-        ctx.beginPath()
-        ctx.arc(p.x, p.y, dotRadius + 3 * dpr, 0, Math.PI * 2)
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.25)'
-        ctx.lineWidth = 1 * dpr
-        ctx.stroke()
-      }
+      drawDot(ctx, p.x, p.y, hex, i === baseIndex)
     })
-  }, [canvasPixels, harmonyHues, saturation, lightness, hue, dpr, draggableNodes, baseIndex])
+  }, [canvasPixels, harmonyHues, saturation, lightness, dpr, draggableNodes, baseIndex, monochromaticPoints, drawDot])
 
   // Redraw on any change
   useEffect(() => {

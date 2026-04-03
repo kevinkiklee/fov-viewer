@@ -1,11 +1,9 @@
 'use client'
 
 import { useEffect, useRef, useCallback } from 'react'
-import type { LensConfig } from '@/lib/types'
 import { calcCameraDistance } from '@/lib/math/compression'
 import { calcFOV } from '@/lib/math/fov'
 import { getSensor } from '@/lib/data/sensors'
-import { LENS_COLORS } from './types'
 import { compressionVertexShader } from './shaders/compression.vert'
 import { compressionFragmentShader } from './shaders/compression.frag'
 import styles from './CompressionScene.module.css'
@@ -19,6 +17,8 @@ const PILLAR_SEGMENTS = 16
 const REF_FOCAL = 50
 const SUBJECT_DIST = 10 // distance to nearest pillar at ref focal
 
+const ACCENT_COLOR = '#3b82f6'
+
 const PILLAR_COLORS: [number, number, number][] = [
   [0.93, 0.26, 0.26], // red
   [0.95, 0.61, 0.15], // orange
@@ -31,8 +31,8 @@ const GROUND_COLOR: [number, number, number] = [0.15, 0.15, 0.20]
 
 /* ─── Props ─── */
 export interface CompressionSceneProps {
-  lens: LensConfig
-  activeLensIndex: number
+  focalLength: number
+  sensorId: string
   distance: number
 }
 
@@ -111,12 +111,9 @@ function buildCylinder(
     const x1 = cx + radius * cos1, z1 = cz + radius * sin1
 
     // Side quad (two triangles)
-    // Triangle 1: bottom-left, bottom-right, top-left
     positions.push(x0, 0, z0,  x1, 0, z1,  x0, height, z0)
-    // Triangle 2: top-left, bottom-right, top-right
     positions.push(x0, height, z0,  x1, 0, z1,  x1, height, z1)
 
-    // Average normal for the side face
     const nx0 = cos0, nz0 = sin0
     const nx1 = cos1, nz1 = sin1
     for (let t = 0; t < 6; t++) {
@@ -188,7 +185,6 @@ function createProgram(gl: WebGL2RenderingContext, vertSrc: string, fragSrc: str
   if (!program) throw new Error('Failed to create program')
   gl.attachShader(program, vert)
   gl.attachShader(program, frag)
-  // Bind attribute locations before linking
   gl.bindAttribLocation(program, 0, 'a_position')
   gl.bindAttribLocation(program, 1, 'a_normal')
   gl.bindAttribLocation(program, 2, 'a_color')
@@ -205,7 +201,7 @@ function createProgram(gl: WebGL2RenderingContext, vertSrc: string, fragSrc: str
 
 /* ─── Component ─── */
 
-export function CompressionScene({ lens, activeLensIndex, distance }: CompressionSceneProps) {
+export function CompressionScene({ focalLength, sensorId, distance }: CompressionSceneProps) {
   const sceneCanvasRef = useRef<HTMLCanvasElement>(null)
   const diagramCanvasRef = useRef<HTMLCanvasElement>(null)
   const glRef = useRef<WebGL2RenderingContext | null>(null)
@@ -244,21 +240,18 @@ export function CompressionScene({ lens, activeLensIndex, distance }: Compressio
     gl.bindVertexArray(vao)
     vaoRef.current = vao
 
-    // Position buffer (location 0)
     const posBuf = gl.createBuffer()
     gl.bindBuffer(gl.ARRAY_BUFFER, posBuf)
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(geo.positions), gl.STATIC_DRAW)
     gl.enableVertexAttribArray(0)
     gl.vertexAttribPointer(0, 3, gl.FLOAT, false, 0, 0)
 
-    // Normal buffer (location 1)
     const normBuf = gl.createBuffer()
     gl.bindBuffer(gl.ARRAY_BUFFER, normBuf)
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(geo.normals), gl.STATIC_DRAW)
     gl.enableVertexAttribArray(1)
     gl.vertexAttribPointer(1, 3, gl.FLOAT, false, 0, 0)
 
-    // Color buffer (location 2)
     const colBuf = gl.createBuffer()
     gl.bindBuffer(gl.ARRAY_BUFFER, colBuf)
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(geo.colors), gl.STATIC_DRAW)
@@ -296,9 +289,9 @@ export function CompressionScene({ lens, activeLensIndex, distance }: Compressio
     gl.useProgram(program)
     gl.bindVertexArray(vao)
 
-    const sensor = getSensor(lens.sensorId)
-    const cameraDist = calcCameraDistance(lens.focalLength, REF_FOCAL, distance)
-    const fov = calcFOV(lens.focalLength, sensor.cropFactor)
+    const sensor = getSensor(sensorId)
+    const cameraDist = calcCameraDistance(focalLength, REF_FOCAL, distance)
+    const fov = calcFOV(focalLength, sensor.cropFactor)
     const vFovRad = (fov.vertical * Math.PI) / 180
 
     const aspect = canvas.width / canvas.height
@@ -316,7 +309,7 @@ export function CompressionScene({ lens, activeLensIndex, distance }: Compressio
 
     gl.drawArrays(gl.TRIANGLES, 0, vertCountRef.current)
     gl.bindVertexArray(null)
-  }, [lens, distance])
+  }, [focalLength, sensorId, distance])
 
   // Render top-down diagram
   const renderDiagram = useCallback(() => {
@@ -335,13 +328,12 @@ export function CompressionScene({ lens, activeLensIndex, distance }: Compressio
     ctx.fillStyle = 'rgba(20, 20, 30, 1)'
     ctx.fillRect(0, 0, w, h)
 
-    const sensor = getSensor(lens.sensorId)
-    const cameraDist = calcCameraDistance(lens.focalLength, REF_FOCAL, distance)
-    const fov = calcFOV(lens.focalLength, sensor.cropFactor)
+    const sensor = getSensor(sensorId)
+    const cameraDist = calcCameraDistance(focalLength, REF_FOCAL, distance)
+    const fov = calcFOV(focalLength, sensor.cropFactor)
     const hFovRad = (fov.horizontal * Math.PI) / 180
 
     // Coordinate mapping: camera on left, pillars to right
-    // Total depth range: camera to farthest pillar
     const farthestPillarZ = SUBJECT_DIST + (PILLAR_COUNT - 1) * PILLAR_SPACING
     const maxRange = cameraDist + farthestPillarZ + 5
     const margin = 30 * dpr
@@ -351,7 +343,6 @@ export function CompressionScene({ lens, activeLensIndex, distance }: Compressio
     const mapX = (dist: number) => margin + ((cameraDist - dist) / maxRange) * usableW
     const mapY = (offset: number) => h / 2 + offset * (usableH / 2)
 
-    // Camera position (at cameraDist from nearest pillar, which is at -SUBJECT_DIST in scene)
     const cameraX = mapX(0)
     const centerY = h / 2
 
@@ -362,11 +353,9 @@ export function CompressionScene({ lens, activeLensIndex, distance }: Compressio
     const topY = mapY(-halfSpread / maxRange * 2)
     const botY = mapY(halfSpread / maxRange * 2)
 
-    const lensColor = LENS_COLORS[activeLensIndex] ?? '#3b82f6'
-
     ctx.save()
     ctx.globalAlpha = 0.12
-    ctx.fillStyle = lensColor
+    ctx.fillStyle = ACCENT_COLOR
     ctx.beginPath()
     ctx.moveTo(cameraX, centerY)
     ctx.lineTo(coneEndX, topY)
@@ -377,7 +366,7 @@ export function CompressionScene({ lens, activeLensIndex, distance }: Compressio
 
     ctx.save()
     ctx.globalAlpha = 0.5
-    ctx.strokeStyle = lensColor
+    ctx.strokeStyle = ACCENT_COLOR
     ctx.lineWidth = 1 * dpr
     ctx.beginPath()
     ctx.moveTo(cameraX, centerY)
@@ -399,7 +388,7 @@ export function CompressionScene({ lens, activeLensIndex, distance }: Compressio
     }
 
     // Draw camera as triangle
-    ctx.fillStyle = lensColor
+    ctx.fillStyle = ACCENT_COLOR
     ctx.beginPath()
     const triSize = 6 * dpr
     ctx.moveTo(cameraX + triSize, centerY)
@@ -412,11 +401,11 @@ export function CompressionScene({ lens, activeLensIndex, distance }: Compressio
     ctx.fillStyle = 'rgba(255, 255, 255, 0.7)'
     ctx.font = `${10 * dpr}px system-ui, sans-serif`
     ctx.textAlign = 'center'
-    ctx.fillText(`${lens.focalLength}mm`, cameraX, centerY - 10 * dpr)
+    ctx.fillText(`${focalLength}mm`, cameraX, centerY - 10 * dpr)
 
     const nearPillarX = mapX(-SUBJECT_DIST)
     ctx.fillText(`${Math.round(cameraDist)}ft`, (cameraX + nearPillarX) / 2, centerY + 14 * dpr)
-  }, [lens, activeLensIndex, distance])
+  }, [focalLength, sensorId, distance])
 
   // Resize observer for 3D canvas
   useEffect(() => {
