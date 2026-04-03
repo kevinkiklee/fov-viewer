@@ -11,11 +11,11 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com" />
     <meta name="referrer" content="no-referrer" />
-    <title>FOV Viewer — Focal Length Comparison Tool</title>
+    <title>FOV Viewer — Camera Field of View & Focal Length Comparison Tool</title>
 
     <!-- Open Graph (Reddit, Discord, Slack, etc.) -->
-    <meta property="og:title" content="FOV Viewer — Focal Length Comparison Tool" />
-    <meta property="og:description" content="Visualize and compare camera field of view across focal lengths and sensor sizes. See what 24mm vs 85mm vs 200mm actually looks like." />
+    <meta property="og:title" content="FOV Viewer — Camera Field of View & Focal Length Comparison Tool" />
+    <meta property="og:description" content="Free tool to visualize and compare camera field of view across focal lengths (14mm to 800mm) and sensor sizes (full frame, APS-C, Micro Four Thirds). See what 24mm vs 85mm actually looks like." />
     <meta property="og:image" content="https://fov-viewer.iser.io/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -24,12 +24,71 @@
 
     <!-- Twitter/X card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="FOV Viewer — Focal Length Comparison Tool" />
-    <meta name="twitter:description" content="Visualize and compare camera field of view across focal lengths and sensor sizes." />
+    <meta name="twitter:title" content="FOV Viewer — Camera Field of View & Focal Length Comparison Tool" />
+    <meta name="twitter:description" content="Free tool to visualize and compare camera field of view across focal lengths and sensor sizes." />
     <meta name="twitter:image" content="https://fov-viewer.iser.io/og-image.jpg" />
 
     <!-- General meta -->
-    <meta name="description" content="A browser-based tool for photographers to visualize and compare field of view across different focal lengths and sensor sizes." />
+    <meta name="description" content="Free tool to visualize and compare camera field of view across focal lengths (14mm to 800mm) and sensor sizes (full frame, APS-C, Micro Four Thirds). See what 24mm vs 85mm actually looks like. Understand crop factor and equivalent focal lengths." />
+    <meta name="keywords" content="focal length comparison, field of view calculator, crop factor calculator, camera FOV, 24mm vs 50mm, 35mm vs 85mm, full frame vs APS-C, lens comparison tool, photography tool, focal length visualizer" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "FOV Viewer",
+      "description": "Free tool to visualize and compare camera field of view across focal lengths and sensor sizes",
+      "url": "https://fov-viewer.iser.io/",
+      "applicationCategory": "PhotographyApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "browserRequirements": "Requires JavaScript"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is field of view in photography?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Field of view (FOV) is the angular extent of the scene captured by a camera lens, measured in degrees. A wider field of view (e.g., 14mm lens on full frame = 114 degrees horizontal) captures more of the scene, while a narrower field of view (e.g., 200mm = 10.3 degrees) isolates a small portion. FOV depends on two factors: focal length and sensor size." }
+        },
+        {
+          "@type": "Question",
+          "name": "How does crop factor affect field of view?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Crop factor describes how much smaller a sensor is relative to a 36x24mm full-frame sensor. A smaller sensor captures a smaller portion of the image circle projected by the lens, effectively narrowing the field of view. Multiply the focal length by the crop factor to get the full-frame equivalent: a 50mm lens on APS-C (1.5x) gives the same FOV as 75mm on full frame." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between full frame and APS-C?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Full frame sensors measure 36x24mm (crop factor 1.0x). APS-C sensors are smaller: 23.5x15.6mm for Nikon/Sony (1.5x crop) and 22.2x14.8mm for Canon (1.6x crop). The same lens produces a narrower field of view on APS-C. A 35mm lens on APS-C gives roughly the same FOV as a 50mm lens on full frame." }
+        },
+        {
+          "@type": "Question",
+          "name": "What focal length is best for portraits?",
+          "acceptedAnswer": { "@type": "Answer", "text": "85mm on full frame is the classic portrait focal length, offering a natural perspective with flattering compression and comfortable working distance. 50mm works well for environmental portraits, and 135mm provides even more compression for tight headshots. On APS-C, divide by the crop factor: a 56mm lens gives the 85mm-equivalent FOV." }
+        },
+        {
+          "@type": "Question",
+          "name": "What focal length is best for landscape photography?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Wide-angle lenses between 14mm and 35mm (full frame) are most common for landscapes. 24mm is versatile — wide enough to capture expansive scenes without extreme distortion. 14-20mm creates dramatic wide perspectives. 35mm works for landscapes where you want to include foreground interest without exaggerating distances." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I compare two focal lengths?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Use this tool: select two lenses, choose your sensor size, and see their fields of view overlaid on the same scene. The colored rectangles show exactly how much of the scene each focal length captures. You can drag the overlays to compare different portions of the frame." }
+        },
+        {
+          "@type": "Question",
+          "name": "What does 50mm look like on a crop sensor?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A 50mm lens on an APS-C sensor (1.5x crop) gives the same field of view as a 75mm lens on full frame. On Micro Four Thirds (2.0x crop), 50mm gives a 100mm-equivalent FOV. The lens itself doesn't change — the sensor crops into the center of the image circle, narrowing what you see." }
+        }
+      ]
+    }
+    </script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSRBYSNCEJ"></script>
@@ -41,7 +100,25 @@
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <h1>Camera Field of View &amp; Focal Length Comparison Tool</h1>
+      <p>Visualize how different focal lengths change your field of view. Compare lenses from 14mm ultra-wide to 800mm super-telephoto across sensor sizes including full frame (36&times;24mm), APS-C (Nikon/Sony 1.5&times; crop, Canon 1.6&times; crop), Micro Four Thirds (2.0&times; crop), medium format (0.79&times; crop), and 1-inch sensors (2.7&times; crop). Understand how crop factor affects equivalent focal length and see exactly what each combination looks like on real-world scenes.</p>
+
+      <section>
+        <h2>Frequently Asked Questions</h2>
+        <details><summary>What is field of view in photography?</summary><p>Field of view (FOV) is the angular extent of the scene captured by a camera lens, measured in degrees. A wider field of view (e.g., 14mm lens on full frame = 114&deg; horizontal) captures more of the scene, while a narrower field of view (e.g., 200mm = 10.3&deg;) isolates a small portion. FOV depends on two factors: focal length and sensor size.</p></details>
+        <details><summary>How does crop factor affect field of view?</summary><p>Crop factor describes how much smaller a sensor is relative to a 36&times;24mm full-frame sensor. A smaller sensor captures a smaller portion of the image circle projected by the lens, effectively narrowing the field of view. Multiply the focal length by the crop factor to get the full-frame equivalent: a 50mm lens on APS-C (1.5&times;) gives the same FOV as 75mm on full frame. The actual focal length doesn&rsquo;t change &mdash; only the field of view does.</p></details>
+        <details><summary>What is the difference between full frame and APS-C?</summary><p>Full frame sensors measure 36&times;24mm (crop factor 1.0&times;). APS-C sensors are smaller: 23.5&times;15.6mm for Nikon/Sony (1.5&times; crop) and 22.2&times;14.8mm for Canon (1.6&times; crop). The same lens produces a narrower field of view on APS-C. A 35mm lens on APS-C gives roughly the same FOV as a 50mm lens on full frame.</p></details>
+        <details><summary>What focal length is best for portraits?</summary><p>85mm on full frame is the classic portrait focal length, offering a natural perspective with flattering compression and comfortable working distance (about 2&ndash;3 meters for a head-and-shoulders shot). 50mm works well for environmental portraits, and 135mm provides even more compression for tight headshots. On APS-C, divide by the crop factor: a 56mm lens gives the 85mm-equivalent FOV.</p></details>
+        <details><summary>What focal length is best for landscape photography?</summary><p>Wide-angle lenses between 14mm and 35mm (full frame) are most common for landscapes. 24mm is versatile &mdash; wide enough to capture expansive scenes without extreme distortion. 14&ndash;20mm creates dramatic wide perspectives. 35mm works for landscapes where you want to include foreground interest without exaggerating the distance between near and far elements.</p></details>
+        <details><summary>How do I compare two focal lengths?</summary><p>Use this tool: select two lenses (e.g., 35mm and 85mm), choose your sensor size, and see their fields of view overlaid on the same scene. The colored rectangles show exactly how much of the scene each focal length captures. You can drag the overlays to compare different portions of the frame.</p></details>
+        <details><summary>What does 50mm look like on a crop sensor?</summary><p>A 50mm lens on an APS-C sensor (1.5&times; crop) gives the same field of view as a 75mm lens on full frame. On Micro Four Thirds (2.0&times; crop), 50mm gives a 100mm-equivalent FOV. The lens itself doesn&rsquo;t change &mdash; the sensor crops into the center of the image circle, narrowing what you see.</p></details>
+      </section>
+
+      <noscript>
+        <p>FOV Viewer requires JavaScript to run. Please enable JavaScript in your browser to use the focal length comparison tool.</p>
+      </noscript>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
