@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Frame vs APS-C at 50mm — Field of View Comparison | FOV Viewer</title>
+  <meta name="description" content="Compare full frame and APS-C at 50mm. FF gives 46.8°; APS-C (1.5× crop) gives ~31.4°, equivalent to 75mm. Same lens, different sensor — see the difference.">
+  <link rel="canonical" href="https://fov-viewer.iser.io/compare/full-frame-vs-apsc.html">
+  <link rel="stylesheet" href="/content-styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fov-viewer.iser.io/" },
+      { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://fov-viewer.iser.io/compare/" },
+      { "@type": "ListItem", "position": 3, "name": "Full Frame vs APS-C at 50mm" }
+    ]
+  }
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSRBYSNCEJ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-GSRBYSNCEJ');</script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="site-header__logo">FOV Viewer</a>
+    <nav class="site-header__nav">
+      <a href="/">Tool</a>
+      <a href="/compare/" class="active">Compare</a>
+      <a href="/learn/">Learn</a>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="/">Home</a> <span>&rsaquo;</span>
+    <a href="/compare/">Compare</a> <span>&rsaquo;</span>
+    Full Frame vs APS-C at 50mm
+  </nav>
+
+  <div class="content">
+    <h1>Full Frame vs APS-C at 50mm — Field of View Comparison</h1>
+    <p class="subtitle">Same lens, different sensor — how the 1.5× crop factor changes your field of view.</p>
+
+    <p>Mounting the same 50mm lens on a full-frame body and an APS-C body (with Nikon/Sony's 1.5× crop factor) produces noticeably different results. On <strong>full frame, 50mm delivers a 46.8° horizontal field of view</strong> — the familiar standard normal perspective. On the APS-C sensor, the smaller imaging area captures only a portion of the circle projected by the lens, resulting in a field of view equivalent to a <strong>75mm lens on full frame, approximately 31.4°</strong>. The lens itself has not changed; the sensor simply crops into the centre of the image circle.</p>
+
+    <p>This crop effect is often described as "free reach" — a phrase that reflects the practical advantage for wildlife, sports, and bird photographers. A 300mm telephoto on full frame becomes equivalent to a 450mm telephoto on APS-C (Nikon/Sony) without any optical conversion or loss of image quality from the lens itself. The trade-off is that achieving wide-angle compositions is harder: a 24mm full-frame wide angle becomes equivalent to 36mm on APS-C, which is perfectly pleasant but noticeably narrower. Ultra-wide photography (below 24mm equivalent) on APS-C requires specialty lenses designed specifically for the smaller sensor format.</p>
+
+    <p>Understanding the crop factor also changes how you evaluate second-hand lens purchases. A 50mm f/1.8 prime that costs much less than an 85mm f/1.8 will behave like an 85mm portrait lens on an APS-C body, giving you an expensive-looking shallow depth of field and flattering working distance at a fraction of the cost. Many photographers deliberately exploit this: they buy full-frame glass for its optical quality and accept that the crop factor will shift their effective focal lengths upward, turning normal lenses into short telephoto lenses and telephoto lenses into powerful reach machines.</p>
+
+    <iframe class="tool-embed" src="/?a=50&sa=ff&b=50&sb=apsc_n&embed=1" title="Full frame vs APS-C field of view comparison at 50mm" loading="lazy"></iframe>
+    <a class="cta" href="/?a=50&sa=ff&b=50&sb=apsc_n">Try it yourself in the tool &rarr;</a>
+
+    <h2>Specs at a Glance</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Sensor</th>
+          <th>Focal Length</th>
+          <th>Horizontal FOV</th>
+          <th>Full Frame Equivalent</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Full Frame</strong></td>
+          <td>50mm</td>
+          <td>46.8°</td>
+          <td>50mm (1.0× crop)</td>
+        </tr>
+        <tr>
+          <td><strong>APS-C (Nikon/Sony)</strong></td>
+          <td>50mm</td>
+          <td>~31.4°</td>
+          <td>75mm (1.5× crop)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Related Comparisons</h2>
+    <div class="card-grid">
+      <a class="card" href="full-frame-vs-m43.html">
+        <h3>Full Frame vs Micro Four Thirds</h3>
+        <p>The 2.0× crop — even more reach, even harder to go wide.</p>
+      </a>
+      <a class="card" href="50mm-vs-85mm.html">
+        <h3>50mm vs 85mm</h3>
+        <p>What 50mm looks like on full frame vs its APS-C equivalent.</p>
+      </a>
+      <a class="card" href="24mm-vs-35mm.html">
+        <h3>24mm vs 35mm</h3>
+        <p>APS-C turns a 24mm into roughly 36mm — see the difference.</p>
+      </a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <a href="/">Tool</a>
+    <a href="/compare/">Compare</a>
+    <a href="/learn/">Learn</a>
+    <a href="https://github.com/kevinkiklee/fov-viewer" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+</body>
+</html>
