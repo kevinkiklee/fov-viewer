@@ -4,6 +4,9 @@ import { NdFilterCalculator } from '@/components/tools/nd-filter-calculator/NdFi
 export const metadata: Metadata = {
   title: 'ND Filter Calculator',
   description: 'Calculate exposure time with any ND filter. Quick-reference table included.',
+  openGraph: {
+    images: ['/images/og/nd-filter-calculator.jpg'],
+  },
 }
 
 export default function NdFilterCalculatorPage() {

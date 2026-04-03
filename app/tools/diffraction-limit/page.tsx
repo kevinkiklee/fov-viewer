@@ -4,6 +4,9 @@ import { DiffractionLimit } from '@/components/tools/diffraction-limit/Diffracti
 export const metadata: Metadata = {
   title: 'Diffraction Limit Calculator',
   description: 'Find the sharpest aperture for your sensor before diffraction softening.',
+  openGraph: {
+    images: ['/images/og/diffraction-limit.jpg'],
+  },
 }
 
 export default function DiffractionLimitPage() {
