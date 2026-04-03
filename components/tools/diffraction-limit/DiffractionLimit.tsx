@@ -5,6 +5,7 @@ import { pixelPitch, diffractionLimitedAperture } from '@/lib/math/diffraction'
 import { SENSORS } from '@/lib/data/sensors'
 import { useQueryInit, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
 import { LearnPanel } from '@/components/shared/LearnPanel'
+import { ToolActions } from '@/components/shared/ToolActions'
 import { DiffractionCanvas, type DetailType } from './DiffractionCanvas'
 import css from './DiffractionLimit.module.css'
 
@@ -195,6 +196,7 @@ export function DiffractionLimit() {
     <div className={css.app}>
       <div className={css.appBody}>
         <div className={css.sidebar}>
+          <ToolActions toolName="Diffraction Limit Calculator" toolSlug="diffraction-limit" />
           <ControlsPanel {...controlsProps} />
         </div>
 

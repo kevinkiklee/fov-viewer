@@ -27,16 +27,17 @@ export function ToolActions({ toolName, toolSlug }: ToolActionsProps) {
           title: toolName,
           url: window.location.href,
         })
-        return
       } catch {
-        // User cancelled or not supported — fall through to modal
+        // User cancelled — do nothing
       }
+      return
     }
     setShowShare(true)
   }, [toolName])
 
   return (
     <>
+      <h2 className={styles.title}>{toolName}</h2>
       <div className={styles.actions}>
         <button className={styles.btn} onClick={handleCopyLink} aria-label="Copy link">
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">

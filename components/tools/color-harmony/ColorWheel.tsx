@@ -101,7 +101,7 @@ export function ColorWheel({
         if (angle < 0) angle += 360
 
         const sat = (dist / r) * 100
-        const rgb = hslToRgb(angle, sat, lightness)
+        const rgb = hslToRgb(angle, sat, 50)
 
         const idx = (y * canvasPixels + x) * 4
         data[idx] = rgb.r
@@ -111,7 +111,7 @@ export function ColorWheel({
       }
     }
     ctx.putImageData(imageData, 0, 0)
-  }, [canvasPixels, lightness])
+  }, [canvasPixels])
 
   // Helper: draw a dot with optional key-color double ring
   const drawDot = useCallback((ctx: CanvasRenderingContext2D, x: number, y: number, hex: string, isBase: boolean) => {

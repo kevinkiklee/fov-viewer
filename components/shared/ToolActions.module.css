@@ -1,7 +1,12 @@
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
 .actions {
   display: flex;
   gap: 6px;
-  margin-bottom: 16px;
 }
 
 .btn {

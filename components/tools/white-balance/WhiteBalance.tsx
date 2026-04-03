@@ -5,6 +5,7 @@ import { kelvinToRgb } from '@/lib/math/color'
 import { getToolBySlug } from '@/lib/data/tools'
 import { useQueryInit, useToolQuerySync, intParam } from '@/lib/utils/querySync'
 import { LearnPanel } from '@/components/shared/LearnPanel'
+import { ToolActions } from '@/components/shared/ToolActions'
 import { PhotoUploadPanel } from '@/components/shared/PhotoUploadPanel'
 import { WbPreview } from './WbPreview'
 import calc from '../shared/Calculator.module.css'
@@ -138,6 +139,7 @@ export function WhiteBalance() {
     <div className={wb.app}>
       <div className={wb.appBody}>
         <div className={wb.sidebar}>
+          <ToolActions toolName="White Balance Visualizer" toolSlug="white-balance" />
           <ControlsPanel {...controlsProps} />
         </div>
 

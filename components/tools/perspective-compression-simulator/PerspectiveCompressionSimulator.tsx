@@ -4,6 +4,7 @@ import { useReducer, useState, useEffect, useRef, useMemo } from 'react'
 import { FOCAL_LENGTHS, FOCAL_MIN, FOCAL_MAX } from '@/lib/data/focalLengths'
 import { SENSORS, getSensor } from '@/lib/data/sensors'
 import { calcEquivFocalLength } from '@/lib/math/fov'
+import { ToolActions } from '@/components/shared/ToolActions'
 import { CompressionScene } from './CompressionScene'
 import styles from './PerspectiveCompressionSimulator.module.css'
 
@@ -294,6 +295,7 @@ export function PerspectiveCompressionSimulator() {
       <div className={styles.appBody}>
         {/* Desktop sidebar */}
         <aside className={styles.sidebar}>
+          <ToolActions toolName="Perspective Compression Simulator" toolSlug="perspective-compression-simulator" />
           <Controls state={state} dispatch={dispatch} />
         </aside>
 

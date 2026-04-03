@@ -6,6 +6,7 @@ import { SENSORS } from '@/lib/data/sensors'
 import { FOCAL_LENGTHS } from '@/lib/data/focalLengths'
 import { useQueryInit, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
 import { LearnPanel } from '@/components/shared/LearnPanel'
+import { ToolActions } from '@/components/shared/ToolActions'
 import { DoFDiagram } from './DoFDiagram'
 import { DoFCanvas } from './DoFCanvas'
 import type { SceneKey } from './DoFCanvas'
@@ -217,10 +218,7 @@ export function DoFCalculator() {
       <div className={s.appBody}>
         {/* Desktop sidebar */}
         <div className={s.sidebar}>
-          <div className={s.header}>
-            <h2 className={s.title}>Depth of Field Calculator</h2>
-            <p className={s.description}>Calculate DoF and visualize bokeh for any lens and sensor.</p>
-          </div>
+          <ToolActions toolName="Depth of Field Calculator" toolSlug="dof-calculator" />
           <SettingsPanel {...settingsProps} />
           <ResultsPanel {...resultsProps} />
         </div>

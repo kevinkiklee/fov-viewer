@@ -4,6 +4,7 @@ import { useState, useRef, useEffect, useCallback } from 'react'
 import { formatShutterSpeed } from '@/lib/math/exposure'
 import { getToolBySlug } from '@/lib/data/tools'
 import { LearnPanel } from '@/components/shared/LearnPanel'
+import { ToolActions } from '@/components/shared/ToolActions'
 import calc from '../shared/Calculator.module.css'
 import ss from './ShutterSpeedGuide.module.css'
 
@@ -247,6 +248,7 @@ export function ShutterSpeedGuide() {
     <div className={ss.app}>
       <div className={ss.appBody}>
         <div className={ss.sidebar}>
+          <ToolActions toolName="Shutter Speed Guide" toolSlug="shutter-speed-guide" />
           <ControlsPanel shutterIdx={shutterIdx} onShutterChange={setShutterIdx} />
         </div>
 

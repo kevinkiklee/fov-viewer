@@ -7,6 +7,7 @@ import { SENSORS } from '@/lib/data/sensors'
 import { FOCAL_LENGTHS } from '@/lib/data/focalLengths'
 import { useQueryInit, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
 import { LearnPanel } from '@/components/shared/LearnPanel'
+import { ToolActions } from '@/components/shared/ToolActions'
 import { StarTrailCanvas } from './StarTrailCanvas'
 import css from './StarTrailCalculator.module.css'
 
@@ -319,6 +320,7 @@ export function StarTrailCalculator() {
       <div className={css.appBody}>
         {/* Desktop sidebar */}
         <div className={css.sidebar}>
+          <ToolActions toolName="Star Trail Calculator" toolSlug="star-trail-calculator" />
           <ControlsPanel {...controlsProps} />
         </div>
 

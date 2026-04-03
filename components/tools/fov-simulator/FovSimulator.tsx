@@ -5,18 +5,17 @@ import type { LensConfig } from '@/lib/types'
 import type { FovSimulatorState, Orientation } from './types'
 import { DEFAULT_FOV_STATE, LENS_COLORS, LENS_LABELS, MAX_LENSES } from './types'
 import { parseQueryParams, useQuerySync } from './querySync'
-import { copyCanvasToClipboard, copyLinkToClipboard } from '@/lib/utils/export'
+import { copyCanvasToClipboard } from '@/lib/utils/export'
 import { useTheme } from '@/components/layout/ThemeProvider'
 import { ThemeToggle } from '@/components/layout/ThemeToggle'
 import { LearnPanel } from '@/components/shared/LearnPanel'
 import { Toast } from '@/components/shared/Toast'
 
+import { ToolActions } from '@/components/shared/ToolActions'
 import { Sidebar } from './Sidebar'
 import { LensPanel } from './LensPanel'
 import { SceneStrip } from './SceneStrip'
-import { ActionBar } from './ActionBar'
 import { Canvas, type OverlayOffsets } from './Canvas'
-import { ShareModal } from './ShareModal'
 import { CropStrip } from './CropStrip'
 import styles from './FovSimulator.module.css'
 
@@ -79,7 +78,6 @@ export function FovSimulator() {
   const [hydrated, setHydrated] = useState(false)
   const [toast, setToast] = useState<string | null>(null)
   const [collapsed, setCollapsed] = useState<Record<number, boolean>>({})
-  const [showShare, setShowShare] = useState(false)
   const [overlayOffsets, setOverlayOffsets] = useState<OverlayOffsets>({})
   const [cropExpanded, setCropExpanded] = useState(false)
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
@@ -101,11 +99,6 @@ export function FovSimulator() {
     if (!canvasRef.current) return
     const success = await copyCanvasToClipboard(canvasRef.current)
     setToast(success ? 'Copied image!' : 'Failed to copy')
-  }, [])
-
-  const handleCopyLink = useCallback(async () => {
-    const success = await copyLinkToClipboard()
-    setToast(success ? 'Link copied!' : 'Failed to copy')
   }, [])
 
   const rotateBtn = (
@@ -136,6 +129,7 @@ export function FovSimulator() {
       <div className={styles.appBody}>
         {/* Desktop sidebar */}
         <Sidebar>
+          <ToolActions toolName="FOV Simulator" toolSlug="fov-simulator" />
           {state.lenses.map((lens, i) => (
             <LensPanel
               key={i}
@@ -157,12 +151,14 @@ export function FovSimulator() {
             </button>
           )}
 
-          <ActionBar
-            onCopyImage={handleCopyImage}
-            onCopyLink={handleCopyLink}
-            onReset={() => dispatch({ type: 'RESET' })}
-            onShare={() => setShowShare(true)}
-          />
+          <div className={styles.actionBar}>
+            <button className={`${styles.actionBarBtn} ${styles.actionBarBtnPrimary}`} onClick={handleCopyImage}>
+              Copy image
+            </button>
+            <button className={styles.actionBarBtn} onClick={() => dispatch({ type: 'RESET' })}>
+              Reset
+            </button>
+          </div>
         </Sidebar>
 
         {/* Canvas area */}
@@ -245,21 +241,17 @@ export function FovSimulator() {
           </button>
         )}
 
-        <ActionBar
-          onCopyImage={handleCopyImage}
-          onCopyLink={handleCopyLink}
-          onReset={() => dispatch({ type: 'RESET' })}
-          onShare={() => setShowShare(true)}
-        />
+        <ToolActions toolName="FOV Simulator" toolSlug="fov-simulator" />
+        <div className={styles.actionBar}>
+          <button className={`${styles.actionBarBtn} ${styles.actionBarBtnPrimary}`} onClick={handleCopyImage}>
+            Copy image
+          </button>
+          <button className={styles.actionBarBtn} onClick={() => dispatch({ type: 'RESET' })}>
+            Reset
+          </button>
+        </div>
       </div>
 
-      {showShare && (
-        <ShareModal
-          state={state}
-          onClose={() => setShowShare(false)}
-          onToast={(msg) => { setToast(msg); setShowShare(false) }}
-        />
-      )}
       <Toast message={toast} onDone={() => setToast(null)} />
       <canvas ref={cleanCanvasRef} style={{ display: 'none' }} />
     </div>

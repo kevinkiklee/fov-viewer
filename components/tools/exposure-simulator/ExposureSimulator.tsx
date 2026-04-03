@@ -4,6 +4,7 @@ import { useState, useMemo, useCallback } from 'react'
 import { calcEV } from '@/lib/math/exposure'
 import { useQueryInit, useToolQuerySync, intParam, strParam } from '@/lib/utils/querySync'
 import { LearnPanel } from '@/components/shared/LearnPanel'
+import { ToolActions } from '@/components/shared/ToolActions'
 import { ExposurePreview } from './ExposurePreview'
 import sim from './ExposureSimulator.module.css'
 
@@ -279,6 +280,7 @@ export function ExposureSimulator() {
     <div className={sim.app}>
       <div className={sim.appBody}>
         <div className={sim.sidebar}>
+          <ToolActions toolName="Exposure Triangle Simulator" toolSlug="exposure-simulator" />
           <ControlsPanel {...controlsProps} />
         </div>
 

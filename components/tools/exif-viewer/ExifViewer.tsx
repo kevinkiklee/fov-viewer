@@ -4,6 +4,7 @@ import { useState, useCallback, useRef, useEffect } from 'react'
 import ExifReader from 'exifreader'
 import { PhotoUploadPanel } from '@/components/shared/PhotoUploadPanel'
 import { LearnPanel } from '@/components/shared/LearnPanel'
+import { ToolActions } from '@/components/shared/ToolActions'
 import { getToolBySlug } from '@/lib/data/tools'
 import { calcEV } from '@/lib/math/exposure'
 import { diffractionLimitedAperture, pixelPitch } from '@/lib/math/diffraction'
@@ -436,6 +437,7 @@ export function ExifViewer() {
     <div className={styles.app}>
       <div className={styles.appBody}>
         <div className={styles.sidebar}>
+          <ToolActions toolName="EXIF Viewer" toolSlug="exif-viewer" />
           <ControlsPanel onFile={handleFile} onSample={() => loadFromUrl(SAMPLE_PHOTO)} />
         </div>
 

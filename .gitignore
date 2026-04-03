@@ -3,6 +3,12 @@ node_modules
 out
 .superpowers
 docs/superpowers
+.claude
+__tests__/
+coverage
+dist
+build
+.github
 
 # Editor / OS
 .DS_Store
@@ -19,8 +25,6 @@ docs/superpowers
 # Build artifacts
 *.tsbuildinfo
 
-# AI context files
-GEMINI.md
 
 # Source examples (not published)
 examples/

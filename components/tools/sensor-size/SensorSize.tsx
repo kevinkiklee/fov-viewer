@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback, type ReactNode } from 'react'
 import { LearnPanel } from '@/components/shared/LearnPanel'
+import { ToolActions } from '@/components/shared/ToolActions'
 import { getToolBySlug } from '@/lib/data/tools'
 import ss from './SensorSize.module.css'
 import { pixelPitch } from '@/lib/math/diffraction'
@@ -190,10 +191,7 @@ export function SensorSize() {
     <div className={ss.app}>
       <div className={ss.appBody}>
         <div className={ss.sidebar}>
-          <div className={ss.header}>
-            <h1 className={ss.title}>{tool?.name}</h1>
-            <p className={ss.description}>{tool?.description}</p>
-          </div>
+          <ToolActions toolName="Sensor Size Comparison" toolSlug="sensor-size" />
           <ControlsPanel {...controlsProps} />
         </div>
 

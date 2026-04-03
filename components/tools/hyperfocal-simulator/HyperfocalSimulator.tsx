@@ -5,6 +5,7 @@ import { calcDoF } from '@/lib/math/dof'
 import { SENSORS } from '@/lib/data/sensors'
 import { FOCAL_LENGTHS } from '@/lib/data/focalLengths'
 import { useQueryInit, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
+import { ToolActions } from '@/components/shared/ToolActions'
 import { DoFDiagram } from '@/components/tools/dof-calculator/DoFDiagram'
 import { DoFCanvas } from '@/components/tools/dof-calculator/DoFCanvas'
 import type { SceneKey } from '@/components/tools/dof-calculator/DoFCanvas'
@@ -155,10 +156,7 @@ export function HyperfocalSimulator() {
     <div className={s.app}>
       <div className={s.appBody}>
         <div className={s.sidebar}>
-          <div className={s.header}>
-            <h2 className={s.title}>Hyperfocal Distance Simulator</h2>
-            <p className={s.description}>Drag to find the focus sweet spot where everything from foreground to infinity is sharp.</p>
-          </div>
+          <ToolActions toolName="Hyperfocal Distance Simulator" toolSlug="hyperfocal-simulator" />
           <SettingsPanel {...settingsProps} />
           <div className={s.panel}>
             <HyperfocalResults result={result} distance={distance} isAtHyperfocal={isAtHyperfocal} />
