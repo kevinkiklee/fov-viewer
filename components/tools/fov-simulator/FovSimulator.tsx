@@ -8,6 +8,7 @@ import { parseQueryParams, useQuerySync } from './querySync'
 import { copyCanvasToClipboard, copyLinkToClipboard } from '@/lib/utils/export'
 import { useTheme } from '@/components/layout/ThemeProvider'
 import { ThemeToggle } from '@/components/layout/ThemeToggle'
+import { LearnPanel } from '@/components/shared/LearnPanel'
 import { Toast } from '@/components/shared/Toast'
 
 import { Sidebar } from './Sidebar'
@@ -15,6 +16,7 @@ import { LensPanel } from './LensPanel'
 import { SceneStrip } from './SceneStrip'
 import { ActionBar } from './ActionBar'
 import { Canvas } from './Canvas'
+import { DistortionCanvas } from './DistortionCanvas'
 import { ShareModal } from './ShareModal'
 import { FrameInfoPanel } from './FrameInfoPanel'
 import { ViewModeToggle } from './ViewModeToggle'
@@ -87,6 +89,7 @@ export function FovSimulator() {
   const [collapsed, setCollapsed] = useState<Record<number, boolean>>({})
   const [showShare, setShowShare] = useState(false)
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
+  const distortionCanvasRef = useRef<HTMLCanvasElement | null>(null)
   const { theme, setTheme } = useTheme()
 
   useQuerySync(state)
@@ -101,10 +104,11 @@ export function FovSimulator() {
   }, [hydrated])
 
   const handleCopyImage = useCallback(async () => {
-    if (!canvasRef.current) return
-    const success = await copyCanvasToClipboard(canvasRef.current)
+    const canvas = state.viewMode === 'distortion' ? distortionCanvasRef.current : canvasRef.current
+    if (!canvas) return
+    const success = await copyCanvasToClipboard(canvas)
     setToast(success ? 'Copied image!' : 'Failed to copy')
-  }, [])
+  }, [state.viewMode])
 
   const handleCopyLink = useCallback(async () => {
     const success = await copyLinkToClipboard()
@@ -165,6 +169,15 @@ export function FovSimulator() {
             onChange={(m) => dispatch({ type: 'SET_VIEW_MODE', payload: m })}
           />
 
+          {state.viewMode === 'distortion' && (
+            <div style={{ background: 'var(--bg-surface)', borderRadius: 10, padding: '10px 14px' }}>
+              <label style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: 'var(--text-secondary)', cursor: 'pointer' }}>
+                <input type="checkbox" checked={state.showGrid} onChange={(e) => dispatch({ type: 'SET_SHOW_GRID', payload: e.target.checked })} style={{ accentColor: 'var(--accent)' }} />
+                Show distortion grid
+              </label>
+            </div>
+          )}
+
           <FrameInfoPanel
             lenses={state.lenses}
             distance={state.distance}
@@ -206,13 +219,20 @@ export function FovSimulator() {
               />
             )}
             {state.viewMode === 'distortion' && (
-              <div style={{ color: 'var(--text-secondary)', fontSize: 14 }}>Distortion view coming soon</div>
+              <DistortionCanvas
+                lens={state.lenses[state.activeLens]}
+                imageIndex={state.imageIndex}
+                orientation={state.orientation}
+                showGrid={state.showGrid}
+                canvasRef={distortionCanvasRef}
+              />
             )}
             {state.viewMode === 'compression' && (
               <div style={{ color: 'var(--text-secondary)', fontSize: 14 }}>Compression view coming soon</div>
             )}
           </section>
         </main>
+        <LearnPanel slug="fov-simulator" />
       </div>
 
       {/* Mobile toolbar below canvas: logo + rotate + center + theme */}
@@ -257,6 +277,15 @@ export function FovSimulator() {
           value={state.viewMode}
           onChange={(m) => dispatch({ type: 'SET_VIEW_MODE', payload: m })}
         />
+
+        {state.viewMode === 'distortion' && (
+          <div style={{ background: 'var(--bg-surface)', borderRadius: 10, padding: '10px 14px' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: 'var(--text-secondary)', cursor: 'pointer' }}>
+              <input type="checkbox" checked={state.showGrid} onChange={(e) => dispatch({ type: 'SET_SHOW_GRID', payload: e.target.checked })} style={{ accentColor: 'var(--accent)' }} />
+              Show distortion grid
+            </label>
+          </div>
+        )}
 
         <FrameInfoPanel
           lenses={state.lenses}
