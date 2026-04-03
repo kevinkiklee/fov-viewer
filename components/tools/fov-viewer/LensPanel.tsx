@@ -88,6 +88,7 @@ export function LensPanel({
             className={styles.lensPanelRemove}
             onClick={(e) => { e.stopPropagation(); onRemove() }}
             title="Remove lens"
+            aria-label={`Remove ${label}`}
           >
             \u2715
           </button>
@@ -109,6 +110,7 @@ export function LensPanel({
             value={sliderVal}
             onChange={handleSliderChange}
             style={{ accentColor: color }}
+            aria-label={`${label} focal length: ${config.focalLength}mm`}
           />
           <div className={styles.lensPanelTicks}>
             {presetPositions.map((p) => (
@@ -142,6 +144,7 @@ export function LensPanel({
             <select
               className={styles.lensPanelSelect}
               value={config.sensorId}
+              aria-label={`${label} sensor`}
               onChange={(e) => {
                 const newSensor = getSensor(e.target.value)
                 const newMin = newSensor.cropFactor > 1 ? FOCAL_MIN : 14

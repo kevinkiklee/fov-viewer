@@ -6,6 +6,7 @@
 }
 .lockBtn {
   padding: var(--space-xs) var(--space-sm);
+  min-height: 44px;
   background: var(--bg-surface);
   color: var(--text-secondary);
   border: 1px solid var(--border);
@@ -35,6 +36,11 @@
   grid-template-columns: 100px 1fr 100px;
   align-items: center;
   gap: var(--space-sm);
+}
+@media (max-width: 1024px) {
+  .effectRow {
+    grid-template-columns: 80px 1fr 80px;
+  }
 }
 .effectLabel {
   font-size: var(--text-sm);

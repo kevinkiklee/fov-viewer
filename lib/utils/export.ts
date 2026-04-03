@@ -31,9 +31,9 @@ function downloadBlob(blob: Blob, filename: string): void {
   URL.revokeObjectURL(url)
 }
 
-export function copyLinkToClipboard(): boolean {
+export async function copyLinkToClipboard(): Promise<boolean> {
   try {
-    navigator.clipboard.writeText(window.location.href)
+    await navigator.clipboard.writeText(window.location.href)
     return true
   } catch {
     return false

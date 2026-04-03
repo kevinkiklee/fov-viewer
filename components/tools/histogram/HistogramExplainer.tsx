@@ -124,6 +124,7 @@ export function HistogramExplainer() {
                 key={m.key}
                 className={`${styles.tab} ${mode === m.key ? styles.tabActive : ''}`}
                 onClick={() => setMode(m.key)}
+                aria-pressed={mode === m.key}
               >
                 {m.label}
               </button>
@@ -131,7 +132,7 @@ export function HistogramExplainer() {
           </div>
 
           <div className={styles.canvasWrap}>
-            <canvas ref={canvasRef} className={styles.canvas} />
+            <canvas ref={canvasRef} className={styles.canvas} aria-label={`Histogram showing ${mode} channel distribution`} role="img" />
             <div className={styles.regionLabels}>
               <span>Shadows</span>
               <span>Midtones</span>

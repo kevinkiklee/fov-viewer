@@ -167,6 +167,8 @@ export function ExposureSimulator() {
               key={t}
               className={`${sim.lockBtn} ${lock === t ? sim.lockBtnActive : ''}`}
               onClick={() => setLock(t)}
+              aria-pressed={lock === t}
+              aria-label={`Lock ${t === 'aperture' ? 'Aperture' : t === 'shutter' ? 'Shutter' : 'ISO'}`}
             >
               {t === 'aperture' ? 'Aperture' : t === 'shutter' ? 'Shutter' : 'ISO'}
             </button>
@@ -176,7 +178,7 @@ export function ExposureSimulator() {
         <div className={styles.field}>
           <label className={styles.label}>
             Aperture: <span className={styles.value}>f/{aperture}</span>
-            {lock === 'aperture' && <span className={sim.lockIcon}> 🔒</span>}
+            {lock === 'aperture' && <span className={sim.lockIcon}> (locked)</span>}
           </label>
           <input
             type="range"
@@ -193,7 +195,7 @@ export function ExposureSimulator() {
         <div className={styles.field}>
           <label className={styles.label}>
             Shutter Speed: <span className={styles.value}>{formatShutter(shutter)}</span>
-            {lock === 'shutter' && <span className={sim.lockIcon}> 🔒</span>}
+            {lock === 'shutter' && <span className={sim.lockIcon}> (locked)</span>}
           </label>
           <input
             type="range"
@@ -210,7 +212,7 @@ export function ExposureSimulator() {
         <div className={styles.field}>
           <label className={styles.label}>
             ISO: <span className={styles.value}>{iso}</span>
-            {lock === 'iso' && <span className={sim.lockIcon}> 🔒</span>}
+            {lock === 'iso' && <span className={sim.lockIcon}> (locked)</span>}
           </label>
           <input
             type="range"

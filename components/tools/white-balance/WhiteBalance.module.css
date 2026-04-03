@@ -15,6 +15,7 @@
   align-items: center;
   gap: 2px;
   padding: var(--space-xs) var(--space-sm);
+  min-height: 44px;
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);

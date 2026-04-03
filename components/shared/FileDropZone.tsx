@@ -62,6 +62,7 @@ export function FileDropZone({ onFile }: FileDropZoneProps) {
       onDragLeave={handleDragLeave}
       role="button"
       tabIndex={0}
+      aria-label={fileName ? `Selected file: ${fileName}. Click to choose a different image` : 'Drop an image here or click to browse'}
       onKeyDown={(e) => {
         if (e.key === 'Enter' || e.key === ' ') handleClick()
       }}

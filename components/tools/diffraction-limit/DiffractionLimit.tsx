@@ -132,8 +132,8 @@ export function DiffractionLimit() {
               fontSize: 'var(--text-xs)',
             }}
           >
-            <span style={{ color: 'green' }}>Sharp</span>
-            <span style={{ color: 'red' }}>Diffraction-softened</span>
+            <span style={{ color: 'green' }}>Sharp (below f/{limitAperture.toFixed(1)})</span>
+            <span style={{ color: 'red' }}>Diffraction-softened (above f/{limitAperture.toFixed(1)})</span>
           </div>
         </div>
       </div>

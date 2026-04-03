@@ -20,6 +20,8 @@
 }
 .letterBtn {
   padding: 2px 8px;
+  min-width: 32px;
+  min-height: 32px;
   font-size: var(--text-xs);
   font-family: var(--font-mono);
   font-weight: 600;
@@ -29,6 +31,15 @@
   border-radius: var(--radius-sm);
   cursor: pointer;
   transition: background 0.1s, color 0.1s;
+}
+@media (max-width: 1024px) {
+  .letterBtn {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .letterBtn:hover {
   background: var(--accent);

@@ -34,7 +34,7 @@ export function SensorSize() {
 
   const visibleSensors = SENSOR_DIMS.filter((s) => visible.has(s.id))
 
-  useEffect(() => {
+  const drawCanvas = useCallback(() => {
     const canvas = canvasRef.current
     if (!canvas) return
     const ctx = canvas.getContext('2d')
@@ -110,6 +110,22 @@ export function SensorSize() {
     }
   }, [visibleSensors, mode])
 
+  // Redraw when data or mode changes
+  useEffect(() => {
+    drawCanvas()
+  }, [drawCanvas])
+
+  // Redraw when canvas container resizes
+  useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const observer = new ResizeObserver(() => {
+      drawCanvas()
+    })
+    observer.observe(canvas)
+    return () => observer.disconnect()
+  }, [drawCanvas])
+
   return (
     <div>
       <div className={ss.toolbar}>
@@ -131,12 +147,14 @@ export function SensorSize() {
           <button
             className={`${ss.modeBtn} ${mode === 'overlay' ? ss.modeBtnActive : ''}`}
             onClick={() => setMode('overlay')}
+            aria-pressed={mode === 'overlay'}
           >
             Overlay
           </button>
           <button
             className={`${ss.modeBtn} ${mode === 'side-by-side' ? ss.modeBtnActive : ''}`}
             onClick={() => setMode('side-by-side')}
+            aria-pressed={mode === 'side-by-side'}
           >
             Side by Side
           </button>
@@ -147,6 +165,8 @@ export function SensorSize() {
         ref={canvasRef}
         className={ss.canvas}
         style={{ width: '100%', height: 350 }}
+        aria-label={`Sensor size comparison in ${mode} mode`}
+        role="img"
       />
 
       <div className={styles.tableWrap} style={{ marginTop: 'var(--space-md)' }}>

@@ -101,6 +101,11 @@ export function EVChart() {
                       key={ai}
                       className={`${isSelected ? ev.cellSelected : ''} ${isHighlighted ? ev.cellHighlighted : ''}`}
                       onClick={() => setSelected({ apertureIdx: ai, shutterIdx: si, evValue: cellEV })}
+                      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setSelected({ apertureIdx: ai, shutterIdx: si, evValue: cellEV }) }}
+                      tabIndex={0}
+                      role="button"
+                      aria-label={`EV ${cellEV.toFixed(1)} at f/${APERTURES[ai]} ${formatShutter(s)}`}
+                      aria-pressed={isSelected}
                       style={{ cursor: 'pointer' }}
                     >
                       {cellEV.toFixed(1)}

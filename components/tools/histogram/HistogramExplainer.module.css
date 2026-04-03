@@ -10,6 +10,7 @@
 }
 .tab {
   padding: var(--space-sm) var(--space-md);
+  min-height: 44px;
   font-size: var(--text-sm);
   font-family: inherit;
   background: var(--bg-surface);

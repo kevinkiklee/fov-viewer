@@ -48,6 +48,7 @@ export function Glossary() {
         className={styles.search}
         type="text"
         placeholder="Search terms..."
+        aria-label="Search glossary terms"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />

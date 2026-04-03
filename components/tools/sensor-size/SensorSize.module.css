@@ -32,6 +32,7 @@
 }
 .modeBtn {
   padding: var(--space-xs) var(--space-sm);
+  min-height: 44px;
   background: var(--bg-surface);
   color: var(--text-secondary);
   border: none;

@@ -64,9 +64,12 @@ function reducer(state: FovViewerState, action: Action): FovViewerState {
 function getInitialState(): FovViewerState {
   if (typeof window === 'undefined') return DEFAULT_FOV_STATE
   const queryOverrides = parseQueryParams()
+  const orientation = queryOverrides.orientation
+    ?? (window.innerWidth < 1024 ? 'portrait' : 'landscape')
   return {
     ...DEFAULT_FOV_STATE,
     ...queryOverrides,
+    orientation,
   }
 }
 
@@ -85,8 +88,8 @@ export function FovViewer() {
     setToast(success ? 'Copied image!' : 'Failed to copy')
   }, [])
 
-  const handleCopyLink = useCallback(() => {
-    const success = copyLinkToClipboard()
+  const handleCopyLink = useCallback(async () => {
+    const success = await copyLinkToClipboard()
     setToast(success ? 'Link copied!' : 'Failed to copy')
   }, [])
 

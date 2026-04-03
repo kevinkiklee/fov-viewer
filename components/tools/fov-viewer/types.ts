@@ -19,6 +19,6 @@ export const DEFAULT_FOV_STATE: FovViewerState = {
     { focalLength: 35, sensorId: 'ff' },
   ],
   imageIndex: 0,
-  orientation: typeof window !== 'undefined' && window.innerWidth < 1024 ? 'portrait' : 'landscape',
+  orientation: 'landscape',
   activeLens: 0,
 }
