@@ -246,7 +246,7 @@ export function PhotoPicker({ onColorPick, onClose }: PhotoPickerProps) {
           onChange={handleInputChange}
         />
 
-        {!imageLoaded ? (
+        {!imageLoaded && (
           /* Drop zone */
           <div
             className={`${styles.dropZone} ${dragOver ? styles.dropZoneDragOver : ''}`}
@@ -265,18 +265,18 @@ export function PhotoPicker({ onColorPick, onClose }: PhotoPickerProps) {
             <span className={styles.dropPrompt}>Drop a photo here or click to browse</span>
             <span className={styles.dropSub}>Click anywhere on the photo to sample that color</span>
           </div>
-        ) : (
-          /* Canvas area */
-          <div className={styles.canvasWrapper}>
-            <canvas
-              ref={canvasRef}
-              className={styles.canvas}
-              onPointerMove={handlePointerMove}
-              onPointerLeave={handlePointerLeave}
-              onPointerDown={handlePointerDown}
-            />
-          </div>
         )}
+
+        {/* Canvas always in DOM so drawImage can write to it before state updates */}
+        <div className={styles.canvasWrapper} style={{ display: imageLoaded ? 'flex' : 'none' }}>
+          <canvas
+            ref={canvasRef}
+            className={styles.canvas}
+            onPointerMove={handlePointerMove}
+            onPointerLeave={handlePointerLeave}
+            onPointerDown={handlePointerDown}
+          />
+        </div>
 
         {imageLoaded && (
           <button className={styles.changeLink} onClick={handleChangePhoto}>

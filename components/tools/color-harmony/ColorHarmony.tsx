@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useMemo, useCallback } from 'react'
-import { hslToRgb, rgbToHsl, complementary, analogous, triadic, splitComplementary, tetradic, monochromatic } from '@/lib/math/color'
+import { hslToRgb, rgbToHsl, complementary, analogous, triadic, splitComplementary, tetradic } from '@/lib/math/color'
 import { ToolActions } from '@/components/shared/ToolActions'
 import { LearnPanel } from '@/components/shared/LearnPanel'
 import { parseQueryState, useToolQuerySync, intParam, strParam } from '@/lib/utils/querySync'
@@ -9,10 +9,9 @@ import styles from './ColorHarmony.module.css'
 import { ColorWheel } from './ColorWheel'
 import { PhotoPicker } from './PhotoPicker'
 
-type HarmonyType = 'monochromatic' | 'complementary' | 'analogous' | 'triadic' | 'split-complementary' | 'tetradic'
+type HarmonyType = 'complementary' | 'analogous' | 'triadic' | 'split-complementary' | 'tetradic'
 
 const HARMONY_OPTIONS: { value: HarmonyType; label: string }[] = [
-  { value: 'monochromatic', label: 'Monochromatic' },
   { value: 'complementary', label: 'Complementary' },
   { value: 'analogous', label: 'Analogous' },
   { value: 'triadic', label: 'Triadic' },
@@ -26,7 +25,6 @@ function rgbToHex(r: number, g: number, b: number): string {
 
 function getHarmonyHues(hue: number, type: HarmonyType, splitAngle: number, analogousSpread: number, tetradicOffset: number): number[] {
   switch (type) {
-    case 'monochromatic': return [hue]
     case 'complementary': return complementary(hue)
     case 'analogous': return analogous(hue, analogousSpread)
     case 'triadic': return triadic(hue)
@@ -38,7 +36,6 @@ function getHarmonyHues(hue: number, type: HarmonyType, splitAngle: number, anal
 /** Index of the base (key) hue in the harmonyHues array */
 function getBaseIndex(type: HarmonyType): number {
   if (type === 'analogous') return 1
-  if (type === 'monochromatic') return 1 // middle swatch is the base
   return 0
 }
 
@@ -47,8 +44,6 @@ function getSuggestion(hue: number, type: HarmonyType): string {
   const isCool = hue >= 170 && hue < 270
 
   switch (type) {
-    case 'monochromatic':
-      return 'Great for: minimalist photography, fog/mist scenes, and elegant product shots'
     case 'complementary':
       if (isWarm) return 'Great for: warm sunset portraits with cool shadow contrast'
       if (isCool) return 'Great for: moody blue-hour shots with warm accent lighting'
@@ -71,7 +66,7 @@ const PARAM_SCHEMA = {
   h: intParam(200, 0, 359),
   sat: intParam(70, 0, 100),
   l: intParam(50, 0, 100),
-  type: strParam<HarmonyType>('complementary', ['complementary', 'analogous', 'triadic', 'split-complementary', 'tetradic', 'monochromatic'] as const),
+  type: strParam<HarmonyType>('complementary', ['complementary', 'analogous', 'triadic', 'split-complementary', 'tetradic'] as const),
   split: intParam(30, 10, 80),
   tet: intParam(60, 10, 170),
   spread: intParam(30, 5, 60),
@@ -91,8 +86,6 @@ export function ColorHarmony() {
     { h: hue, sat: saturation, l: lightness, type: harmony, split: splitAngle, tet: tetradicOffset, spread: analogousSpread },
     PARAM_SCHEMA,
   )
-  const [monoInnerSat, setMonoInnerSat] = useState(40)
-  const [monoOuterSat, setMonoOuterSat] = useState(90)
   const [showPhotoPicker, setShowPhotoPicker] = useState(false)
   const [copiedHex, setCopiedHex] = useState<string | null>(null)
   const [copiedFormat, setCopiedFormat] = useState<string | null>(null)
@@ -122,19 +115,7 @@ export function ColorHarmony() {
     [hue, harmony, splitAngle, analogousSpread, tetradicOffset],
   )
 
-  const monoPoints = useMemo(
-    () => harmony === 'monochromatic' ? monochromatic(hue, saturation, lightness, monoInnerSat, monoOuterSat) : undefined,
-    [harmony, hue, saturation, lightness, monoInnerSat, monoOuterSat],
-  )
-
   const swatches = useMemo(() => {
-    if (harmony === 'monochromatic' && monoPoints) {
-      return monoPoints.map((hsl) => {
-        const rgb = hslToRgb(hsl.h, hsl.s, hsl.l)
-        const hex = rgbToHex(rgb.r, rgb.g, rgb.b)
-        return { hue: hsl.h, rgb, hex }
-      })
-    }
     return harmonyHues.map((h) => {
       const rgb = hslToRgb(h, saturation, lightness)
       const hex = rgbToHex(rgb.r, rgb.g, rgb.b)
@@ -200,18 +181,7 @@ export function ColorHarmony() {
     }
   }, [harmony, hue])
 
-  // For monochromatic: drag nodes adjust saturation along the radius
-  const handleMonoDrag = useCallback((nodeIndex: number, newSat: number) => {
-    const clamped = Math.round(Math.min(100, Math.max(0, newSat)))
-    if (nodeIndex === 0) {
-      setMonoOuterSat(clamped)
-    } else if (nodeIndex === 2) {
-      setMonoInnerSat(clamped)
-    }
-  }, [])
-
   const draggableNodes = useMemo(() => {
-    if (harmony === 'monochromatic') return [0, 2]
     if (harmony === 'split-complementary') return [1, 2]
     if (harmony === 'analogous') return [0, 2]
     if (harmony === 'tetradic') return [1, 3]
@@ -386,11 +356,9 @@ export function ColorHarmony() {
             harmonyHues={harmonyHues}
             baseIndex={baseIndex}
             draggableNodes={draggableNodes}
-            monochromaticPoints={monoPoints}
             onHueChange={setHue}
             onSaturationChange={setSaturation}
             onSecondaryDrag={handleSecondaryDrag}
-            onMonoDrag={handleMonoDrag}
           />
         </div>
       </div>

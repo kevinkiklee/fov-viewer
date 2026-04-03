@@ -58,6 +58,27 @@
   object-fit: cover;
 }
 
+.uploadThumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-surface);
+  border: 2px dashed var(--border);
+  opacity: 0.7;
+}
+
+.uploadThumb:hover {
+  border-style: dashed;
+  border-color: var(--accent);
+  opacity: 1;
+}
+
+.uploadIcon {
+  font-size: 18px;
+  color: var(--text-muted);
+  line-height: 1;
+}
+
 .kelvinBadge {
   font-size: 12px;
   font-family: var(--font-mono);
