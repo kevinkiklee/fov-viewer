@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { ToolPageShell } from '@/components/shared/ToolPageShell'
 import { ExposureSimulator } from '@/components/tools/exposure-simulator/ExposureSimulator'
 
 export const metadata: Metadata = {
@@ -8,9 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function ExposureSimulatorPage() {
-  return (
-    <ToolPageShell slug="exposure-simulator">
-      <ExposureSimulator />
-    </ToolPageShell>
-  )
+  return <ExposureSimulator />
 }
