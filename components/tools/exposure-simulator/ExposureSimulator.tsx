@@ -16,9 +16,6 @@ function formatShutter(s: number): string {
   return `1/${Math.round(1 / s)}`
 }
 
-function clamp(val: number, min: number, max: number) {
-  return Math.max(min, Math.min(max, val))
-}
 
 function findNearest(arr: number[], target: number): number {
   let best = arr[0]

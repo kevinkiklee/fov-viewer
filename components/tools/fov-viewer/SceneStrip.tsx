@@ -19,7 +19,6 @@ export function SceneStrip({ selectedIndex, onChange }: SceneStripProps) {
           onClick={() => onChange(i)}
           title={scene.name}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={scene.src} alt={scene.name} />
         </button>
       ))}

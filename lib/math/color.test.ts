@@ -18,14 +18,14 @@ describe('kelvinToRgb', () => {
   })
 
   it('2700K (warm/incandescent) has high red, low blue', () => {
-    const { r, g, b } = kelvinToRgb(2700)
+    const { r, b } = kelvinToRgb(2700)
     expect(r).toBe(255)
     expect(b).toBeLessThan(100)
     expect(r).toBeGreaterThan(b)
   })
 
   it('10000K (overcast/blue) has high blue component', () => {
-    const { r, g, b } = kelvinToRgb(10000)
+    const { r, b } = kelvinToRgb(10000)
     expect(b).toBe(255)
     expect(r).toBeLessThan(b)
   })
