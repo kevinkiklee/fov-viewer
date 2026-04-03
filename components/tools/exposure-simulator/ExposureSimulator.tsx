@@ -84,7 +84,9 @@ export function ExposureSimulator() {
   const shutter = SHUTTER_SPEEDS[shutterIdx]
   const iso = ISOS[isoIdx]
 
-  const ev = useMemo(() => calcEV(aperture, shutter), [aperture, shutter])
+  const ev100 = useMemo(() => calcEV(aperture, shutter), [aperture, shutter])
+  // Total EV including ISO adjustment
+  const totalEV = ev100 + Math.log2(iso / 100)
 
   // When user moves a slider, compensate the unlocked parameters
   const handleApertureChange = useCallback((newIdx: number) => {
@@ -93,25 +95,24 @@ export function ExposureSimulator() {
     setApertureIdx(newIdx)
 
     if (lock === 'shutter') {
-      // Adjust ISO to maintain EV
-      // EV_new_at_iso100 = log2(newAperture^2 / shutter)
-      // We need ISO such that EV_with_iso = ev
-      // EV_with_iso = EV100 + log2(ISO/100)
+      // Adjust ISO to maintain totalEV
+      // totalEV = log2(newAperture^2 / shutter) + log2(newIso/100)
       const ev100New = calcEV(newAperture, shutter)
-      const neededIsoLog = ev - ev100New // log2(ISO/100)
+      const neededIsoLog = totalEV - ev100New // log2(newIso/100)
       const neededIso = 100 * Math.pow(2, neededIsoLog)
       const nearestIso = findNearest(ISOS, neededIso)
       setIsoIdx(ISOS.indexOf(nearestIso))
     } else if (lock === 'iso') {
-      // Adjust shutter to maintain EV
-      // EV = log2(N^2/t) + log2(ISO/100)
-      // t = N^2 / 2^(EV - log2(ISO/100))
-      const evAtIso100 = ev - Math.log2(iso / 100)
-      const neededShutter = (newAperture * newAperture) / Math.pow(2, evAtIso100)
+      // Adjust shutter to maintain totalEV
+      // totalEV = log2(N^2/t) + log2(ISO/100)
+      // log2(N^2/t) = totalEV - log2(ISO/100)
+      // t = N^2 / 2^(totalEV - log2(ISO/100))
+      const targetEV100 = totalEV - Math.log2(iso / 100)
+      const neededShutter = (newAperture * newAperture) / Math.pow(2, targetEV100)
       const nearestShutter = findNearest(SHUTTER_SPEEDS, neededShutter)
       setShutterIdx(SHUTTER_SPEEDS.indexOf(nearestShutter))
     }
-  }, [lock, shutter, iso, ev])
+  }, [lock, shutter, iso, totalEV])
 
   const handleShutterChange = useCallback((newIdx: number) => {
     const newShutter = SHUTTER_SPEEDS[newIdx]
@@ -119,18 +120,20 @@ export function ExposureSimulator() {
     setShutterIdx(newIdx)
 
     if (lock === 'aperture') {
+      // Adjust ISO to maintain totalEV
       const ev100New = calcEV(aperture, newShutter)
-      const neededIsoLog = ev - ev100New
+      const neededIsoLog = totalEV - ev100New
       const neededIso = 100 * Math.pow(2, neededIsoLog)
       const nearestIso = findNearest(ISOS, neededIso)
       setIsoIdx(ISOS.indexOf(nearestIso))
     } else if (lock === 'iso') {
-      const evAtIso100 = ev - Math.log2(iso / 100)
-      const neededAperture = Math.sqrt(newShutter * Math.pow(2, evAtIso100))
+      // Adjust aperture to maintain totalEV
+      const targetEV100 = totalEV - Math.log2(iso / 100)
+      const neededAperture = Math.sqrt(newShutter * Math.pow(2, targetEV100))
       const nearestAperture = findNearest(APERTURES, neededAperture)
       setApertureIdx(APERTURES.indexOf(nearestAperture))
     }
-  }, [lock, aperture, iso, ev])
+  }, [lock, aperture, iso, totalEV])
 
   const handleIsoChange = useCallback((newIdx: number) => {
     const newIso = ISOS[newIdx]
@@ -138,20 +141,21 @@ export function ExposureSimulator() {
     setIsoIdx(newIdx)
 
     if (lock === 'aperture') {
-      // Adjust shutter: t = N^2 * 100 / (2^ev * newIso)...
-      // Actually maintain overall EV: ev = log2(N^2/t) + log2(ISO/100)
-      // With fixed aperture and new ISO: t = N^2 / 2^(ev - log2(newIso/100))
-      const evAtIso100 = ev - Math.log2(newIso / 100)
-      const neededShutter = (aperture * aperture) / Math.pow(2, evAtIso100)
+      // Adjust shutter to maintain totalEV with new ISO
+      // totalEV = log2(N^2/newT) + log2(newIso/100)
+      // log2(N^2/newT) = totalEV - log2(newIso/100)
+      const targetEV100 = totalEV - Math.log2(newIso / 100)
+      const neededShutter = (aperture * aperture) / Math.pow(2, targetEV100)
       const nearestShutter = findNearest(SHUTTER_SPEEDS, neededShutter)
       setShutterIdx(SHUTTER_SPEEDS.indexOf(nearestShutter))
     } else if (lock === 'shutter') {
-      const evAtIso100 = ev - Math.log2(newIso / 100)
-      const neededAperture = Math.sqrt(shutter * Math.pow(2, evAtIso100))
+      // Adjust aperture to maintain totalEV with new ISO
+      const targetEV100 = totalEV - Math.log2(newIso / 100)
+      const neededAperture = Math.sqrt(shutter * Math.pow(2, targetEV100))
       const nearestAperture = findNearest(APERTURES, neededAperture)
       setApertureIdx(APERTURES.indexOf(nearestAperture))
     }
-  }, [lock, aperture, shutter, ev])
+  }, [lock, aperture, shutter, totalEV])
 
   return (
     <div className={styles.layout}>
@@ -224,7 +228,7 @@ export function ExposureSimulator() {
       <div>
         <div className={styles.resultCard} style={{ marginBottom: 'var(--space-md)' }}>
           <span className={styles.resultLabel}>Exposure Value (EV)</span>
-          <span className={styles.resultValue}>{(ev + Math.log2(iso / 100)).toFixed(1)}</span>
+          <span className={styles.resultValue}>{totalEV.toFixed(1)}</span>
         </div>
 
         <div className={sim.effects}>

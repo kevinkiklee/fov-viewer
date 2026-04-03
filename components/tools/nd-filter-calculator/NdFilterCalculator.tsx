@@ -33,7 +33,7 @@ const ND_FILTERS = [
   { label: 'ND128 (7 stops)', factor: 128, stops: 7 },
   { label: 'ND256 (8 stops)', factor: 256, stops: 8 },
   { label: 'ND512 (9 stops)', factor: 512, stops: 9 },
-  { label: 'ND1000 (10 stops)', factor: 1000, stops: 10 },
+  { label: 'ND1024 (10 stops)', factor: 1024, stops: 10 },
 ]
 
 const TABLE_FILTERS = ND_FILTERS.filter((f) => [3, 6, 10].includes(f.stops))

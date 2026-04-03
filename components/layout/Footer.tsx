@@ -12,7 +12,7 @@ export function Footer() {
             {tool.name}
           </Link>
         ))}
-        <Link href="/glossary" className={styles.link}>Glossary</Link>
+        <Link href="/learn/glossary" className={styles.link}>Glossary</Link>
       </div>
       <p>&copy; {new Date().getFullYear()} Photo Tools</p>
     </footer>
