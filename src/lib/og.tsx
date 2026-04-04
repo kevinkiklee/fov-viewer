@@ -47,69 +47,69 @@ export async function generateOgImage(slug: string) {
         <div
           style={{
             position: 'absolute',
-            right: -20,
-            top: -40,
-            width: 400,
-            height: 400,
-            border: '1.5px solid rgba(245, 158, 11, 0.06)',
+            right: -40,
+            top: -80,
+            width: 600,
+            height: 600,
+            border: '2px solid rgba(245, 158, 11, 0.06)',
             transform: 'rotate(45deg)',
-            borderRadius: 40,
+            borderRadius: 60,
           }}
         />
         {/* Geometric diamonds — middle */}
         <div
           style={{
             position: 'absolute',
-            right: 30,
-            top: 10,
-            width: 300,
-            height: 300,
-            border: '1.5px solid rgba(245, 158, 11, 0.10)',
+            right: 40,
+            top: 0,
+            width: 460,
+            height: 460,
+            border: '2px solid rgba(245, 158, 11, 0.10)',
             transform: 'rotate(45deg)',
-            borderRadius: 30,
+            borderRadius: 45,
           }}
         />
         {/* Geometric diamonds — inner with emoji */}
         <div
           style={{
             position: 'absolute',
-            right: 80,
-            top: 60,
-            width: 200,
-            height: 200,
+            right: 120,
+            top: 80,
+            width: 300,
+            height: 300,
             background: 'rgba(245, 158, 11, 0.03)',
-            border: '1.5px solid rgba(245, 158, 11, 0.14)',
+            border: '2px solid rgba(245, 158, 11, 0.14)',
             transform: 'rotate(45deg)',
-            borderRadius: 20,
+            borderRadius: 30,
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
           }}
         >
-          <span style={{ fontSize: 56, transform: 'rotate(-45deg)' }}>{emoji}</span>
+          <span style={{ fontSize: 88, transform: 'rotate(-45deg)' }}>{emoji}</span>
         </div>
 
         {/* Left content */}
         <div
           style={{
             position: 'absolute',
-            left: 56,
+            left: 80,
             top: '50%',
             transform: 'translateY(-50%)',
-            maxWidth: '48%',
+            maxWidth: '52%',
             display: 'flex',
             flexDirection: 'column',
           }}
         >
           {/* Branding */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 24 }}>
-            <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#f59e0b' }} />
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 32 }}>
+            <div style={{ width: 14, height: 14, borderRadius: '50%', background: '#f59e0b' }} />
             <span
               style={{
                 color: '#f59e0b',
-                fontSize: 14,
+                fontSize: 22,
                 fontWeight: 700,
-                letterSpacing: 2,
+                letterSpacing: 3,
                 textTransform: 'uppercase' as const,
               }}
             >
@@ -120,31 +120,31 @@ export async function generateOgImage(slug: string) {
           {/* Tool name */}
           <div
             style={{
-              fontSize: 44,
+              fontSize: 64,
               fontWeight: 800,
               color: '#e5e5e5',
               lineHeight: 1.1,
-              marginBottom: 14,
+              marginBottom: 20,
             }}
           >
             {tool.name}
           </div>
 
           {/* Description */}
-          <div style={{ fontSize: 16, color: '#888888', lineHeight: 1.5 }}>
+          <div style={{ fontSize: 26, color: '#888888', lineHeight: 1.5 }}>
             {tool.description}
           </div>
 
           {/* Category pill */}
-          <div style={{ display: 'flex', marginTop: 20 }}>
+          <div style={{ display: 'flex', marginTop: 28 }}>
             <span
               style={{
                 color: '#f59e0b',
-                fontSize: 11,
+                fontSize: 16,
                 textTransform: 'uppercase' as const,
-                letterSpacing: 2,
-                border: '1px solid rgba(245, 158, 11, 0.25)',
-                padding: '4px 14px',
+                letterSpacing: 3,
+                border: '1.5px solid rgba(245, 158, 11, 0.25)',
+                padding: '6px 20px',
                 borderRadius: 100,
               }}
             >
@@ -160,7 +160,7 @@ export async function generateOgImage(slug: string) {
             bottom: 0,
             left: 0,
             width: '40%',
-            height: 3,
+            height: 4,
             background: 'linear-gradient(90deg, #f59e0b, transparent)',
           }}
         />
@@ -188,66 +188,66 @@ export async function generateHomepageOgImage() {
         <div
           style={{
             position: 'absolute',
-            right: -20,
-            top: -40,
-            width: 400,
-            height: 400,
-            border: '1.5px solid rgba(245, 158, 11, 0.06)',
+            right: -40,
+            top: -80,
+            width: 600,
+            height: 600,
+            border: '2px solid rgba(245, 158, 11, 0.06)',
             transform: 'rotate(45deg)',
-            borderRadius: 40,
+            borderRadius: 60,
           }}
         />
         <div
           style={{
             position: 'absolute',
-            right: 30,
-            top: 10,
+            right: 40,
+            top: 0,
+            width: 460,
+            height: 460,
+            border: '2px solid rgba(245, 158, 11, 0.10)',
+            transform: 'rotate(45deg)',
+            borderRadius: 45,
+          }}
+        />
+        <div
+          style={{
+            position: 'absolute',
+            right: 120,
+            top: 80,
             width: 300,
             height: 300,
-            border: '1.5px solid rgba(245, 158, 11, 0.10)',
+            background: 'rgba(245, 158, 11, 0.03)',
+            border: '2px solid rgba(245, 158, 11, 0.14)',
             transform: 'rotate(45deg)',
             borderRadius: 30,
-          }}
-        />
-        <div
-          style={{
-            position: 'absolute',
-            right: 80,
-            top: 60,
-            width: 200,
-            height: 200,
-            background: 'rgba(245, 158, 11, 0.03)',
-            border: '1.5px solid rgba(245, 158, 11, 0.14)',
-            transform: 'rotate(45deg)',
-            borderRadius: 20,
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
           }}
         >
-          <span style={{ fontSize: 56, transform: 'rotate(-45deg)' }}>📷</span>
+          <span style={{ fontSize: 88, transform: 'rotate(-45deg)' }}>📷</span>
         </div>
 
         {/* Left content */}
         <div
           style={{
             position: 'absolute',
-            left: 56,
+            left: 80,
             top: '50%',
             transform: 'translateY(-50%)',
-            maxWidth: '50%',
+            maxWidth: '55%',
             display: 'flex',
             flexDirection: 'column',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 24 }}>
-            <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#f59e0b' }} />
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 32 }}>
+            <div style={{ width: 14, height: 14, borderRadius: '50%', background: '#f59e0b' }} />
             <span
               style={{
                 color: '#f59e0b',
-                fontSize: 14,
+                fontSize: 22,
                 fontWeight: 700,
-                letterSpacing: 2,
+                letterSpacing: 3,
                 textTransform: 'uppercase' as const,
               }}
             >
@@ -257,17 +257,17 @@ export async function generateHomepageOgImage() {
 
           <div
             style={{
-              fontSize: 52,
+              fontSize: 72,
               fontWeight: 800,
               color: '#e5e5e5',
               lineHeight: 1.1,
-              marginBottom: 16,
+              marginBottom: 20,
             }}
           >
             Free Photography Tools
           </div>
 
-          <div style={{ fontSize: 18, color: '#888888', lineHeight: 1.5 }}>
+          <div style={{ fontSize: 28, color: '#888888', lineHeight: 1.5 }}>
             Interactive calculators, simulators, and visualizers for photographers. No sign-up required.
           </div>
         </div>
@@ -279,7 +279,7 @@ export async function generateHomepageOgImage() {
             bottom: 0,
             left: 0,
             width: '40%',
-            height: 3,
+            height: 4,
             background: 'linear-gradient(90deg, #f59e0b, transparent)',
           }}
         />

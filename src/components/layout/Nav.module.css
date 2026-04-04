@@ -223,6 +223,12 @@
   margin-left: auto;
 }
 
+.desktopThemeToggle {
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}
+
 /* Mobile close button — hidden on desktop */
 .megaCloseBtn {
   display: none;
@@ -232,6 +238,9 @@
 @media (max-width: 1023px) {
   .navInner {
     width: 100%;
+  }
+  .desktopThemeToggle {
+    display: none;
   }
 }
 

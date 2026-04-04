@@ -27,3 +27,5 @@ build
 
 # Source examples (not published)
 examples/
+.vercel
+.env*.local
