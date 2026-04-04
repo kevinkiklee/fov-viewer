@@ -120,18 +120,18 @@ export async function generateOgImage(slug: string) {
           {/* Tool name */}
           <div
             style={{
-              fontSize: 64,
+              fontSize: 48,
               fontWeight: 800,
               color: '#e5e5e5',
-              lineHeight: 1.1,
-              marginBottom: 20,
+              lineHeight: 1.15,
+              marginBottom: 24,
             }}
           >
             {tool.name}
           </div>
 
           {/* Description */}
-          <div style={{ fontSize: 26, color: '#888888', lineHeight: 1.5 }}>
+          <div style={{ fontSize: 24, color: '#888888', lineHeight: 1.5 }}>
             {tool.description}
           </div>
 
