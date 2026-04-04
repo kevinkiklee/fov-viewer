@@ -374,6 +374,49 @@
   transition: color var(--duration-fast);
 }
 
+/* Sensor model tooltip */
+.modelTooltip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 9px;
+  font-weight: 600;
+  cursor: help;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.modelTooltip::after {
+  content: attr(data-models);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  color: var(--text-primary);
+  font-size: 11px;
+  font-weight: 400;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity var(--duration-fast) var(--ease-out), transform var(--duration-fast) var(--ease-out);
+  z-index: 10;
+}
+
+.modelTooltip:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .customEditBtn {
   background: none;
   border: none;

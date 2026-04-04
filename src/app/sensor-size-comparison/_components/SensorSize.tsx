@@ -166,18 +166,24 @@ function ControlsPanel({
 
       <div className={ss.sectionLabel}>Sensors</div>
       <div className={ss.checkboxes}>
-        {(SENSORS as Required<SensorPreset>[]).map((s) => (
-          <label key={s.id} className={ss.checkLabel}>
-            <input
-              type="checkbox"
-              checked={visible.has(s.id)}
-              onChange={() => onToggleSensor(s.id)}
-            />
-            <span className={ss.checkDot} style={{ backgroundColor: s.color }} />
-            <span className={ss.checkName}>{s.name}</span>
-            <span className={ss.checkOutline} />
-          </label>
-        ))}
+        {(SENSORS as Required<SensorPreset>[]).map((s) => {
+          const models = POPULAR_MODELS[s.id]
+          return (
+            <label key={s.id} className={ss.checkLabel}>
+              <input
+                type="checkbox"
+                checked={visible.has(s.id)}
+                onChange={() => onToggleSensor(s.id)}
+              />
+              <span className={ss.checkDot} style={{ backgroundColor: s.color }} />
+              <span className={ss.checkName}>{s.name}</span>
+              {models && models.length > 0 && (
+                <span className={ss.modelTooltip} data-models={models.join(' · ')}>?</span>
+              )}
+              <span className={ss.checkOutline} />
+            </label>
+          )
+        })}
       </div>
 
       <div className={ss.sectionLabel}>Custom Sensors</div>
