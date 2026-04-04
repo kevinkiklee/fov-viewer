@@ -244,9 +244,10 @@ input[type="range"]::-moz-range-thumb {
 
 /* Mobile: allow page to scroll so stacked tool + LearnPanel layout works */
 @media (max-width: 1023px) {
-  body {
+  html, body {
     height: auto !important;
     min-height: 100vh;
+    overflow-x: hidden;
     overflow-y: auto !important;
   }
 }
