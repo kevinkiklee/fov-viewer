@@ -59,7 +59,7 @@ export function ToolActions({ toolName, toolSlug, onReset, canvasRef, imageFilen
             </svg>
           </button>
         )}
-        <button className={styles.btn} data-tooltip="Reset" onClick={onReset ?? (() => { window.location.href = `/${toolSlug}` })} aria-label="Reset">
+        <button className={`${styles.btn} ${styles.btnReset}`} data-tooltip="Reset" onClick={onReset ?? (() => { window.location.href = `/${toolSlug}` })} aria-label="Reset">
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="M2.5 8a5.5 5.5 0 1 1 1.3 3.5" />
             <polyline points="2 11.5 2.5 8.5 5.5 9" />

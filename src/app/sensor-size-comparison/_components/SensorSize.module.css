@@ -105,6 +105,7 @@
 .checkName {
   color: var(--text-secondary);
   transition: color 0.15s;
+  flex: 1;
 }
 
 .checkLabel input:checked ~ .checkName {
@@ -363,7 +364,6 @@
 }
 
 .customRemoveBtn {
-  margin-left: auto;
   background: none;
   border: none;
   color: var(--text-muted);
@@ -374,8 +374,72 @@
   transition: color var(--duration-fast);
 }
 
+.customEditBtn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  transition: color var(--duration-fast);
+}
+
+.customEditBtn:hover {
+  color: var(--accent);
+}
+
 .customRemoveBtn:hover {
   color: #ef4444;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+}
+
+.editActions {
+  display: flex;
+  gap: 6px;
+}
+
+.editCancelBtn {
+  flex: 1;
+  padding: 6px 10px;
+  background: none;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color var(--duration-fast);
+}
+
+.editCancelBtn:hover {
+  border-color: var(--text-secondary);
+}
+
+.deleteAllBtn {
+  padding: 6px 10px;
+  background: none;
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 6px;
+  font-size: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background var(--duration-fast), border-color var(--duration-fast);
+}
+
+.deleteAllBtn:hover {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.5);
 }
 
 .customWarning {

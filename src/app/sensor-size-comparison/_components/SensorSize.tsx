@@ -7,7 +7,7 @@ import { ToolActions } from '@/components/shared/ToolActions'
 import { getToolBySlug } from '@/lib/data/tools'
 import ss from './SensorSize.module.css'
 import { pixelPitch } from '@/lib/math/diffraction'
-import { useQueryInit, useToolQuerySync, strParam, intParam } from '@/lib/utils/querySync'
+// strParam and intParam kept for reference but query sync is manual
 import { SENSORS, POPULAR_MODELS, COMMON_MP, type MpEntry } from '@/lib/data/sensors'
 import type { SensorPreset } from '@/lib/types'
 
@@ -20,19 +20,7 @@ const ALL_SENSOR_ID_SET = new Set(ALL_SENSOR_IDS)
 const DEFAULT_VISIBLE_IDS = ['mf', 'ff', 'apsc_n', 'm43', 'phone']
 const DEFAULT_VISIBLE = DEFAULT_VISIBLE_IDS.join('+')
 
-const PARAM_SCHEMA = {
-  show: {
-    default: DEFAULT_VISIBLE,
-    parse: (raw: string) => {
-      // Support both + and , as separators; accept built-in and custom_ IDs
-      const ids = raw.split(/[+,]/).filter((id) => ALL_SENSOR_ID_SET.has(id) || id.startsWith('custom_'))
-      return ids.length > 0 ? ids.join('+') : undefined
-    },
-    serialize: (v: string) => v,
-  },
-  mode: strParam<DisplayMode>('overlay', ['overlay', 'side-by-side', 'pixel-density'] as const),
-  mp: intParam(24, 1, 200),
-}
+// Query params are parsed and synced manually in the component
 
 function rgba(hex: string, a: number): string {
   const n = parseInt(hex.replace('#', ''), 16)
@@ -105,9 +93,44 @@ function CustomSensorForm({ onAdd }: { onAdd: (name: string, w: number, h: numbe
   )
 }
 
+function EditSensorRow({ sensor, onSave, onCancel }: {
+  sensor: Required<SensorPreset>
+  onSave: (id: string, name: string, w: number, h: number, mp: number) => void
+  onCancel: () => void
+}) {
+  const mp = COMMON_MP[sensor.id]?.[0]?.mp ?? 0
+  const [name, setName] = useState(sensor.name)
+  const [w, setW] = useState(String(sensor.w))
+  const [h, setH] = useState(String(sensor.h))
+  const [mpVal, setMpVal] = useState(mp > 0 ? String(mp) : '')
+
+  const handleSave = () => {
+    const wn = Math.min(parseFloat(w), 99)
+    const hn = Math.min(parseFloat(h), 99)
+    if (!name.trim() || isNaN(wn) || isNaN(hn) || wn <= 0 || hn <= 0) return
+    onSave(sensor.id, name.trim(), wn, hn, parseFloat(mpVal) || 0)
+  }
+
+  return (
+    <div className={ss.editForm}>
+      <input className={ss.customInput} value={name} onChange={e => setName(e.target.value)} placeholder="Name" />
+      <div className={ss.customRow}>
+        <input className={ss.customInput} value={w} onChange={e => setW(e.target.value.slice(0, 5))} type="number" step="0.1" min="0.1" placeholder="W" />
+        <span className={ss.customX}>×</span>
+        <input className={ss.customInput} value={h} onChange={e => setH(e.target.value.slice(0, 5))} type="number" step="0.1" min="0.1" placeholder="H" />
+      </div>
+      <input className={ss.customInput} value={mpVal} onChange={e => setMpVal(e.target.value)} type="number" step="1" min="1" placeholder="MP" />
+      <div className={ss.editActions}>
+        <button className={ss.customAddBtn} onClick={handleSave}>Save</button>
+        <button className={ss.editCancelBtn} onClick={onCancel}>Cancel</button>
+      </div>
+    </div>
+  )
+}
+
 function ControlsPanel({
   visible, mode, resolution, customSensors,
-  onToggleSensor, onModeChange, onResolutionChange, onAddCustom, onRemoveCustom,
+  onToggleSensor, onModeChange, onResolutionChange, onAddCustom, onRemoveCustom, onRemoveAllCustom, onEditCustom,
 }: {
   visible: Set<string>
   mode: DisplayMode
@@ -118,7 +141,10 @@ function ControlsPanel({
   onResolutionChange: (v: number) => void
   onAddCustom: (name: string, w: number, h: number, mp: number) => void
   onRemoveCustom: (id: string) => void
+  onRemoveAllCustom: () => void
+  onEditCustom: (id: string, name: string, w: number, h: number, mp: number) => void
 }) {
+  const [editingId, setEditingId] = useState<string | null>(null)
   return (
     <>
       <ModeToggle
@@ -140,10 +166,34 @@ function ControlsPanel({
 
       <div className={ss.sectionLabel}>Sensors</div>
       <div className={ss.checkboxes}>
-        {[...SENSORS as Required<SensorPreset>[], ...customSensors]
-          .sort((a, b) => (b.w * b.h) - (a.w * a.h))
-          .map((s) => {
-            const isCustom = s.id.startsWith('custom_')
+        {(SENSORS as Required<SensorPreset>[]).map((s) => (
+          <label key={s.id} className={ss.checkLabel}>
+            <input
+              type="checkbox"
+              checked={visible.has(s.id)}
+              onChange={() => onToggleSensor(s.id)}
+            />
+            <span className={ss.checkDot} style={{ backgroundColor: s.color }} />
+            <span className={ss.checkName}>{s.name}</span>
+            <span className={ss.checkOutline} />
+          </label>
+        ))}
+      </div>
+
+      <div className={ss.sectionLabel}>Custom Sensors</div>
+      {customSensors.length > 0 && (
+        <div className={ss.checkboxes}>
+          {[...customSensors].sort((a, b) => (b.w * b.h) - (a.w * a.h)).map((s) => {
+            if (editingId === s.id) {
+              return (
+                <EditSensorRow
+                  key={s.id}
+                  sensor={s}
+                  onSave={(id, name, w, h, mp) => { onEditCustom(id, name, w, h, mp); setEditingId(null) }}
+                  onCancel={() => setEditingId(null)}
+                />
+              )
+            }
             return (
               <label key={s.id} className={ss.checkLabel}>
                 <input
@@ -153,23 +203,32 @@ function ControlsPanel({
                 />
                 <span className={ss.checkDot} style={{ backgroundColor: s.color }} />
                 <span className={ss.checkName}>{s.name}</span>
-                {isCustom && (
-                  <button
-                    className={ss.customRemoveBtn}
-                    onClick={(e) => { e.preventDefault(); onRemoveCustom(s.id) }}
-                    title="Remove"
-                  >
-                    ✕
-                  </button>
-                )}
+                <button
+                  className={ss.customEditBtn}
+                  onClick={(e) => { e.preventDefault(); setEditingId(s.id) }}
+                  title="Edit"
+                >
+                  ✎
+                </button>
+                <button
+                  className={ss.customRemoveBtn}
+                  onClick={(e) => { e.preventDefault(); onRemoveCustom(s.id) }}
+                  title="Remove"
+                >
+                  ✕
+                </button>
                 <span className={ss.checkOutline} />
               </label>
             )
           })}
-      </div>
-
-      <div className={ss.sectionLabel}>Custom Sensor</div>
+        </div>
+      )}
       <CustomSensorForm onAdd={onAddCustom} />
+      {customSensors.length > 0 && (
+        <button className={ss.deleteAllBtn} onClick={onRemoveAllCustom}>
+          Delete All Custom Sensors
+        </button>
+      )}
     </>
   )
 }
@@ -259,35 +318,64 @@ export function SensorSize() {
   const rafRef = useRef<number>(0)
   const prevVisibleRef = useRef<Set<string>>(new Set(DEFAULT_VISIBLE_IDS))
 
-  // Load custom sensors from localStorage or URL on mount
+  // Load custom sensors from localStorage or URL on mount, then apply show param
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
     const customParam = params.get('custom')
+    let loadedCustom: Required<SensorPreset>[] = []
+
+    // Always load localStorage sensors first
+    const storedCustom = loadCustomSensors()
+
     if (customParam) {
-      // URL takes precedence — load from query param
+      // Merge URL custom sensors with localStorage sensors (URL sensors use custom_url_* IDs)
       const fromUrl = decodeCustomParam(customParam)
-      if (fromUrl.length > 0) {
-        setCustomSensors(fromUrl)
-        setVisible(prev => {
-          const next = new Set(prev)
-          fromUrl.forEach(s => next.add(s.id))
-          return next
-        })
-        saveCustomSensors(fromUrl)
-        customColorIdx = fromUrl.length
-      }
+      // Combine: localStorage sensors + URL sensors (avoid ID conflicts)
+      const urlIds = new Set(fromUrl.map(s => s.id))
+      loadedCustom = [...storedCustom.filter(s => !urlIds.has(s.id)), ...fromUrl]
+      customColorIdx = loadedCustom.length
     } else {
-      // Load from localStorage
-      const stored = loadCustomSensors()
-      if (stored.length > 0) {
-        setCustomSensors(stored)
-        setVisible(prev => {
-          const next = new Set(prev)
-          stored.forEach(s => next.add(s.id))
-          return next
-        })
-      }
+      loadedCustom = storedCustom
     }
+
+    if (loadedCustom.length > 0) {
+      setCustomSensors(loadedCustom)
+    }
+
+    // Now apply show param — accept built-in IDs, loaded custom IDs, and any custom_ prefixed IDs
+    const showParam = params.get('show')
+    if (showParam && showParam.length > 0) {
+      // Explicit show param — select only what's specified
+      const customIds = new Set(loadedCustom.map(s => s.id))
+      const ids = showParam.split(/[+,]/).filter(id =>
+        ALL_SENSOR_ID_SET.has(id) || customIds.has(id) || id.startsWith('custom_')
+      )
+      if (ids.length > 0) {
+        setVisible(new Set(ids))
+      }
+    } else if (customParam && loadedCustom.length > 0) {
+      // Custom param but no show param — select all custom sensors only
+      setVisible(new Set(loadedCustom.map(s => s.id)))
+    } else if (loadedCustom.length > 0) {
+      // No URL params, but localStorage has custom sensors — add them to defaults
+      setVisible(prev => {
+        const next = new Set(prev)
+        loadedCustom.forEach(s => next.add(s.id))
+        return next
+      })
+    }
+
+    // Apply mode and mp params
+    const modeParam = params.get('mode')
+    if (modeParam && ['overlay', 'side-by-side', 'pixel-density'].includes(modeParam)) {
+      setMode(modeParam as DisplayMode)
+    }
+    const mpParam = params.get('mp')
+    if (mpParam) {
+      const n = parseInt(mpParam)
+      if (!isNaN(n) && n >= 1 && n <= 200) setResolution(n)
+    }
+
     setHydrated(true)
   }, [])
 
@@ -296,29 +384,47 @@ export function SensorSize() {
     if (hydrated) saveCustomSensors(customSensors)
   }, [customSensors, hydrated])
 
-  useQueryInit(PARAM_SCHEMA, {
-    show: (v: string) => setVisible(new Set(v.split(/[+,]/))),
-    mode: setMode,
-    mp: setResolution,
-  })
-
-  // Sync standard params + custom param to URL
-  const customParam = customSensors.length > 0 ? encodeCustomParam(customSensors) : ''
-  useToolQuerySync(
-    { show: Array.from(visible).filter(id => ALL_SENSOR_ID_SET.has(id) || customSensors.some(s => s.id === id)).join('+'), mode, mp: resolution },
-    PARAM_SCHEMA,
-  )
-  // Sync custom param separately (append to URL)
+  // Sync all params to URL (only after hydration)
   useEffect(() => {
     if (!hydrated) return
     const url = new URL(window.location.href)
+
+    // show param
+    const showVal = Array.from(visible).filter(id =>
+      ALL_SENSOR_ID_SET.has(id) || customSensors.some(s => s.id === id)
+    ).join('+')
+    if (showVal && showVal !== DEFAULT_VISIBLE) {
+      url.searchParams.set('show', showVal)
+    } else if (showVal === DEFAULT_VISIBLE) {
+      url.searchParams.delete('show')
+    } else {
+      url.searchParams.set('show', showVal)
+    }
+
+    // mode param
+    if (mode !== 'overlay') {
+      url.searchParams.set('mode', mode)
+    } else {
+      url.searchParams.delete('mode')
+    }
+
+    // mp param
+    if (resolution !== 24) {
+      url.searchParams.set('mp', String(resolution))
+    } else {
+      url.searchParams.delete('mp')
+    }
+
+    // custom param
+    const customParam = customSensors.length > 0 ? encodeCustomParam(customSensors) : ''
     if (customParam) {
       url.searchParams.set('custom', customParam)
     } else {
       url.searchParams.delete('custom')
     }
+
     window.history.replaceState(null, '', url.toString())
-  }, [customParam, hydrated])
+  }, [visible, mode, resolution, customSensors, hydrated])
 
   const allSensors = [...SENSORS as Required<SensorPreset>[], ...customSensors]
   const visibleSensors = allSensors.filter((s) => visible.has(s.id))
@@ -345,6 +451,27 @@ export function SensorSize() {
       COMMON_MP[id] = [{ mp, models: name }]
     }
   }, [])
+
+  const editCustomSensor = useCallback((id: string, name: string, w: number, h: number, mp: number) => {
+    const diag = Math.sqrt(w * w + h * h)
+    const cropFactor = FF_DIAG / diag
+    setCustomSensors(prev => prev.map(s => s.id === id ? { ...s, name, w, h, cropFactor } : s))
+    if (mp > 0) {
+      COMMON_MP[id] = [{ mp, models: name }]
+    } else {
+      delete COMMON_MP[id]
+    }
+  }, [])
+
+  const removeAllCustomSensors = useCallback(() => {
+    for (const s of customSensors) delete COMMON_MP[s.id]
+    setCustomSensors([])
+    setVisible(prev => {
+      const next = new Set(prev)
+      for (const s of customSensors) next.delete(s.id)
+      return next
+    })
+  }, [customSensors])
 
   const removeCustomSensor = useCallback((id: string) => {
     setCustomSensors(prev => prev.filter(s => s.id !== id))
@@ -535,13 +662,19 @@ export function SensorSize() {
     onResolutionChange: setResolution,
     onAddCustom: addCustomSensor,
     onRemoveCustom: removeCustomSensor,
+    onRemoveAllCustom: removeAllCustomSensors,
+    onEditCustom: editCustomSensor,
   }
 
   return (
     <div className={ss.app}>
       <div className={ss.appBody}>
         <div className={ss.sidebar}>
-          <ToolActions toolName="Sensor Size Comparison" toolSlug="sensor-size-comparison" canvasRef={canvasRef} imageFilename="sensor-comparison.png" />
+          <ToolActions toolName="Sensor Size Comparison" toolSlug="sensor-size-comparison" canvasRef={canvasRef} imageFilename="sensor-comparison.png" onReset={() => {
+            setVisible(new Set(DEFAULT_VISIBLE_IDS))
+            setMode('overlay')
+            setResolution(24)
+          }} />
           <ControlsPanel {...controlsProps} />
         </div>
 

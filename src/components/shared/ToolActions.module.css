@@ -78,3 +78,14 @@
 .btn:hover::after {
   opacity: 1;
 }
+
+.btnReset {
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.btnReset:hover {
+  color: #f87171;
+  border-color: rgba(239, 68, 68, 0.5);
+  background: rgba(239, 68, 68, 0.1);
+}
