@@ -4,7 +4,7 @@ export const TOOLS: ToolDef[] = [
   { slug: 'fov-simulator', name: 'FOV Simulator', description: 'Compare field of view across focal lengths and sensor sizes', dev: 'live', prod: 'live', category: 'visualizer' },
   { slug: 'color-scheme-generator', name: 'Color Scheme Generator', description: 'Build color palettes for photography shoots', dev: 'live', prod: 'live', category: 'visualizer' },
   { slug: 'exposure-simulator', name: 'Exposure Triangle Simulator', description: 'See how aperture, shutter speed, and ISO interact', dev: 'live', prod: 'disabled', category: 'visualizer' },
-  { slug: 'dof-calculator', name: 'Depth of Field Calculator', description: 'Calculate near focus, far focus, and total depth of field', dev: 'live', prod: 'draft', category: 'calculator' },
+  { slug: 'dof-calculator', name: 'Depth of Field Calculator', description: 'Calculate near focus, far focus, and total depth of field', dev: 'live', prod: 'disabled', category: 'calculator' },
   { slug: 'hyperfocal-simulator', name: 'Hyperfocal Distance Simulator', description: 'Learn where to focus for maximum sharpness from foreground to infinity', dev: 'live', prod: 'disabled', category: 'visualizer' },
   { slug: 'shutter-speed-visualizer', name: 'Shutter Speed Visualizer', description: 'Find the minimum safe shutter speed for sharp handheld shots', dev: 'live', prod: 'disabled', category: 'visualizer' },
   { slug: 'nd-filter-calculator', name: 'ND Filter Calculator', description: 'Calculate exposure time with any ND filter', dev: 'draft', prod: 'disabled', category: 'calculator' },

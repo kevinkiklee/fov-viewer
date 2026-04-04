@@ -233,7 +233,14 @@ function ChallengeCard({ challenge, onAdvance, onComplete, children }: { challen
           )}
         </>
       )}
-      {result === 'failure' && <div className={styles.feedbackFailure}>{challenge.failureMessage}</div>}
+      {result === 'failure' && (
+        <>
+          <div className={styles.feedbackFailure}>{challenge.failureMessage}</div>
+          <button className={styles.retryBtn} onClick={() => { setSelected(null); setResult(null) }}>
+            Try Again
+          </button>
+        </>
+      )}
     </div>
   )
 }

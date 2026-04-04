@@ -85,7 +85,7 @@ function ControlsPanel({
     <>
       {/* Results — above mode toggle for visibility */}
       {mode === 'sharp' ? (
-        <>
+        <div key="sharp-results" className={css.modePanel}>
           <div className={css.resultRow}>
             <div className={css.resultCardAccent}>
               <span className={css.resultLabel}>500 Rule</span>
@@ -96,7 +96,7 @@ function ControlsPanel({
               <span className={css.resultValue}>{sharpResults.maxNPF.toFixed(1)}s</span>
             </div>
           </div>
-          <div className={css.resultCard}>
+          <div className={css.resultCard} style={{ marginTop: 12 }}>
             <span className={css.resultLabel}>Recommendation</span>
             <span className={css.resultNote}>
               Use the NPF rule ({sharpResults.maxNPF.toFixed(1)}s) for pixel-level sharpness.
@@ -104,9 +104,9 @@ function ControlsPanel({
               trailing on high-resolution sensors.
             </span>
           </div>
-        </>
+        </div>
       ) : (
-        <>
+        <div key="trails-results" className={css.modePanel}>
           <div className={css.resultRow}>
             <div className={css.resultCardAccent}>
               <span className={css.resultLabel}>Shooting Time</span>
@@ -119,7 +119,7 @@ function ControlsPanel({
               </span>
             </div>
           </div>
-        </>
+        </div>
       )}
 
       <ModeToggle
@@ -135,7 +135,7 @@ function ControlsPanel({
 
       {/* Trail mode controls card */}
       {mode === 'trails' && (
-        <ControlPanel title="Stacking">
+        <ControlPanel title="Stacking" className={css.modePanel}>
           <FieldRow label="Exposure / frame (sec)" description="Shutter speed for each individual frame">
             <NumberStepper value={exposurePerFrame} min={1} max={600} onChange={onExposurePerFrameChange} />
           </FieldRow>

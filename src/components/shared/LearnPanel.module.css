@@ -264,6 +264,23 @@
   line-height: 1.4;
 }
 
+.retryBtn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: border-color var(--duration-fast) var(--ease-out),
+              color var(--duration-fast) var(--ease-out);
+}
+
+.retryBtn:hover {
+  border-color: var(--accent);
+  color: var(--text-primary);
+}
+
 .completedBadge {
   font-size: 11px;
   color: #10b981;
