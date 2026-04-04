@@ -123,7 +123,7 @@ function CropThumb({ lens, orientation, color, lensIndex, isActive, onSelect, of
   return (
     <button
       className={styles.thumb}
-      style={{ borderColor: color, opacity: isActive ? 1 : 0.6 }}
+      style={{ borderColor: color }}
       onClick={onSelect}
       title={`Lens ${LENS_LABELS[lensIndex]} — ${lens.focalLength}mm`}
     >
