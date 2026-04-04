@@ -2,13 +2,16 @@
 
 import { useState, useMemo, useCallback, useRef } from 'react'
 import { GLOSSARY } from '@/lib/data/glossary'
-import { TOOLS } from '@/lib/data/tools'
+import { getLiveTools } from '@/lib/data/tools'
 import styles from './Glossary.module.css'
 
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
+const LIVE_TOOLS = getLiveTools()
+const LIVE_SLUGS = new Set(LIVE_TOOLS.map((t) => t.slug))
+
 function getToolName(slug: string): string {
-  const tool = TOOLS.find((t) => t.slug === slug)
+  const tool = LIVE_TOOLS.find((t) => t.slug === slug)
   return tool?.name ?? slug
 }
 
@@ -84,7 +87,7 @@ export function Glossary() {
             <div key={entry.term} className={styles.termItem}>
               <div className={styles.termName}>{entry.term}</div>
               <div className={styles.termDef}>{entry.definition}</div>
-              {entry.relatedTool && (
+              {entry.relatedTool && LIVE_SLUGS.has(entry.relatedTool) && (
                 <a className={styles.toolLink} href={`/${entry.relatedTool}`}>
                   Try the {getToolName(entry.relatedTool)} &rarr;
                 </a>
