@@ -58,7 +58,7 @@ export function AdUnit({ slot, format, className, channel, testId }: AdUnitProps
     }
   }, [])
 
-  if (!isAdsEnabled()) return null
+  if (!isAdsEnabled() || !slot) return null
 
   const client = getAdsenseClient()
 
