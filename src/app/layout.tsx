@@ -10,13 +10,13 @@ import { AdScripts } from '@/components/shared/AdScripts'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.phototools.io'),
   title: {
-    default: 'PhotoTools — Free Photography Tools',
+    default: 'PhotoTools — Photography Tools',
     template: '%s | PhotoTools',
   },
-  description: 'Free browser-based photography tools: FOV viewer, DoF calculator, exposure simulator, and more. No sign-up required — your photos never leave your browser.',
+  description: 'Free photography tools: FOV simulator, Color scheme generator, EXIF viewer, Crop and frame photos, and more.',
   openGraph: {
     title: 'PhotoTools — Free Photography Tools',
-    description: 'Free browser-based photography tools: field of view simulator, color scheme generator, exif viewer, and more.',
+    description: 'Free photography tools: FOV simulator, Color scheme generator, EXIF viewer, Crop and frame photos, and more.',
     url: 'https://www.phototools.io',
     siteName: 'PhotoTools',
     locale: 'en_US',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'PhotoTools — Free Photography Tools',
-    description: 'Free browser-based photography tools: field of view simulator, color scheme generator, exif viewer, and more.',
+    description: 'Free photography tools: FOV simulator, Color scheme generator, EXIF viewer, Crop and frame photos, and more.',
   },
   alternates: {
     canonical: '/',
@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@type': 'WebSite',
     name: 'PhotoTools',
     url: 'https://www.phototools.io',
-    description: 'Free browser-based photography visualizers, simulators, and references.',
+    description: 'Free photography tools: FOV simulator, Color scheme generator, EXIF viewer, Crop and frame photos, and more.',
   }
 
   return (

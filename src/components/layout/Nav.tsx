@@ -22,7 +22,7 @@ const CATEGORY_LABELS: Record<ToolCategory, string> = {
   'file-tool': 'File Tools',
 }
 
-const CATEGORY_ORDER: ToolCategory[] = ['visualizer', 'calculator', 'reference', 'file-tool']
+const CATEGORY_ORDER: ToolCategory[] = ['file-tool', 'visualizer', 'calculator', 'reference']
 
 function useCanHover() {
   const [canHover, setCanHover] = useState(false)

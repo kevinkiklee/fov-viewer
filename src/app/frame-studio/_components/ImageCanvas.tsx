@@ -79,7 +79,16 @@ export function ImageCanvas({ image, crop, frameConfig, onDimensionsChange }: Im
     const imgH = displayH - imgY * 2
     ctx.drawImage(image, sx, sy, sw, sh, imgX, imgY, imgW, imgH)
 
-    onDimsRef.current?.({ width: imgW, height: imgH, offsetX: imgX, offsetY: imgY })
+    // Account for the flexbox centering of the canvas within the container
+    const canvasOffsetX = (maxW - displayW) / 2
+    const canvasOffsetY = (maxH - displayH) / 2
+
+    onDimsRef.current?.({ 
+      width: imgW, 
+      height: imgH, 
+      offsetX: canvasOffsetX + imgX, 
+      offsetY: canvasOffsetY + imgY 
+    })
   }, [image, crop, frameConfig])
 
   useEffect(() => {

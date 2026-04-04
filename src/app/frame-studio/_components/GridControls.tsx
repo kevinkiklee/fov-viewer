@@ -15,20 +15,29 @@ const GRID_TYPES: { id: GridType; label: string }[] = [
   { id: 'rule-of-thirds', label: 'Rule of Thirds' },
   { id: 'golden-ratio', label: 'Golden Ratio' },
   { id: 'golden-spiral', label: 'Golden Spiral' },
-  { id: 'diagonal-lines', label: 'Diagonal Lines' },
+  { id: 'diagonal-lines', label: 'Diagonal' },
   { id: 'center-cross', label: 'Center Cross' },
   { id: 'square-grid', label: 'Square Grid' },
   { id: 'triangles', label: 'Triangles' },
 ]
 
-const THICKNESS_OPTIONS: GridOptions['thickness'][] = ['thin', 'medium', 'thick']
+const PALETTE_COLORS = [
+  '#ffffff', // White
+  '#00ffff', // Cyan (Default)
+  '#00ff00', // Green
+  '#ff00ff', // Magenta
+  '#ffff00', // Yellow
+  '#ff0000', // Red
+  '#000000', // Black
+]
 
 export function GridControls({
   activeGrids, onActiveGridsChange, options, onOptionsChange,
 }: GridControlsProps) {
   const selectGrid = useCallback((id: GridType) => {
-    onActiveGridsChange(activeGrids.includes(id) ? [] : [id])
-  }, [activeGrids, onActiveGridsChange])
+    // Only 1 selectable at a time as requested
+    onActiveGridsChange([id])
+  }, [onActiveGridsChange])
 
   const updateOption = useCallback(<K extends keyof GridOptions>(key: K, value: GridOptions[K]) => {
     onOptionsChange({ ...options, [key]: value })
@@ -41,18 +50,43 @@ export function GridControls({
       <div className={styles.section}>
         <span className={styles.label}>Type</span>
         <div className={styles.gridTypes}>
-          {GRID_TYPES.map((g) => (
-            <label key={g.id} className={styles.gridType}>
-              <input
-                type="radio"
-                name="grid-type"
-                checked={activeGrids.includes(g.id)}
-                onChange={() => selectGrid(g.id)}
-                onClick={() => { if (activeGrids.includes(g.id)) selectGrid(g.id) }}
-              />
-              <span>{g.label}</span>
-            </label>
-          ))}
+          <label className={styles.gridBtn}>
+            <input
+              type="radio"
+              name="grid-type"
+              checked={activeGrids.length === 0}
+              onChange={() => onActiveGridsChange([])}
+            />
+            <span
+              className={styles.gridDot}
+              style={{
+                backgroundColor: 'transparent',
+                border: '1.5px solid var(--text-secondary)',
+                opacity: activeGrids.length === 0 ? 1 : 0.4
+              }}
+            />
+            <span className={styles.gridName}>None</span>
+            <span className={styles.gridOutline} />
+          </label>
+          {GRID_TYPES.map((g) => {
+            const isChecked = activeGrids.includes(g.id)
+            return (
+              <label key={g.id} className={styles.gridBtn}>
+                <input
+                  type="radio"
+                  name="grid-type"
+                  checked={isChecked}
+                  onChange={() => selectGrid(g.id)}
+                />
+                <span
+                  className={styles.gridDot}
+                  style={{ backgroundColor: options.color, opacity: isChecked ? options.opacity : 0.2 }}
+                />
+                <span className={styles.gridName}>{g.label}</span>
+                <span className={styles.gridOutline} />
+              </label>
+            )
+          })}
         </div>
       </div>
 
@@ -89,37 +123,15 @@ export function GridControls({
 
       <div className={styles.section}>
         <span className={styles.label}>Line Color</span>
-        <input
-          type="color"
-          value={options.color}
-          onChange={(e) => updateOption('color', e.target.value)}
-          className={styles.colorPicker}
-        />
-      </div>
-
-      <div className={styles.section}>
-        <span className={styles.label}>Opacity: {Math.round(options.opacity * 100)}%</span>
-        <input
-          type="range"
-          min={0}
-          max={100}
-          value={Math.round(options.opacity * 100)}
-          onChange={(e) => updateOption('opacity', parseInt(e.target.value) / 100)}
-          className={styles.slider}
-        />
-      </div>
-
-      <div className={styles.section}>
-        <span className={styles.label}>Thickness</span>
-        <div className={styles.thicknessBtns}>
-          {THICKNESS_OPTIONS.map((t) => (
+        <div className={styles.colorPalette}>
+          {PALETTE_COLORS.map((c) => (
             <button
-              key={t}
-              className={`${styles.thicknessBtn} ${options.thickness === t ? styles.active : ''}`}
-              onClick={() => updateOption('thickness', t)}
-            >
-              {t}
-            </button>
+              key={c}
+              className={`${styles.paletteBtn} ${options.color === c ? styles.active : ''}`}
+              style={{ backgroundColor: c }}
+              onClick={() => updateOption('color', c)}
+              title={c}
+            />
           ))}
         </div>
       </div>

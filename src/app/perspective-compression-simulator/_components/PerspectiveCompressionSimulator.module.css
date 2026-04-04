@@ -28,6 +28,7 @@
   flex-direction: column;
   min-width: 0;
   min-height: 0;
+  overflow: hidden;
 }
 
 .canvasMain {
@@ -35,47 +36,58 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 0;
   min-height: 0;
   overflow: hidden;
+  background: #000;
 }
 
-/* Reuse panel/slider/preset styles from FOV Simulator pattern */
+/* Right Sidebar (Desktop) */
+.desktopOnly {}
+
+/* Panels */
 .panel {
   background: var(--bg-surface);
-  border-radius: 10px;
-  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
 }
 
 .title {
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--accent);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
-  margin-bottom: 4px;
+  font-size: 13px;
+  margin-bottom: 8px;
 }
 
 .sublabel {
   color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .value {
   font-weight: 600;
+  font-family: var(--font-mono);
+  color: var(--text-primary);
 }
 
 .sliderWrap {
-  position: relative;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
+  margin: 12px 0;
 }
 
 .slider {
@@ -87,73 +99,152 @@
 
 .presets {
   display: flex;
-  gap: 4px;
+  gap: 6px;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin-top: 12px;
 }
 
 .preset {
-  padding: 3px 7px;
+  padding: 4px 10px;
   background: var(--bg-primary);
-  border: none;
-  border-radius: 4px;
-  font-size: 11px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 12px;
   color: var(--text-primary);
   cursor: pointer;
-  transition: background 0.15s;
+  transition: all 0.2s;
 }
 
 .preset:hover {
-  background: var(--border);
+  border-color: var(--accent);
+  background: var(--bg-surface);
 }
 
 .presetActive {
   background: var(--accent);
+  border-color: var(--accent);
   color: #000;
+  font-weight: 600;
 }
 
 .select {
   background: var(--bg-primary);
   color: var(--text-primary);
   border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 4px 8px;
-  font-size: 11px;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
   cursor: pointer;
+  width: 100%;
+  margin-top: 4px;
+}
+
+/* Toggle Switch */
+.toggleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.toggleLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider_round {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--border);
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.slider_round:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider_round {
+  background-color: var(--accent);
+}
+
+input:checked + .slider_round:before {
+  transform: translateX(20px);
 }
 
 .resetBtn {
   width: 100%;
-  padding: 6px 12px;
-  background: var(--bg-primary);
+  padding: 10px;
+  background: var(--bg-surface);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: 8px;
   color: var(--text-primary);
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 600;
   cursor: pointer;
-  text-align: center;
+  transition: all 0.2s;
 }
 
 .resetBtn:hover {
-  background: var(--border);
+  background: var(--bg-primary);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
-/* Mobile controls: hidden on desktop */
+/* Mobile */
 .mobileControls {
   display: none;
 }
 
-/* Mobile */
+.mobileOnly {
+  display: none;
+}
+
 @media (max-width: 1023px) {
+  .app {
+    height: auto;
+    overflow: auto;
+  }
   .appBody {
     flex-direction: column;
     overflow: visible;
   }
-  .sidebar {
+  .sidebar, .desktopOnly {
     display: none;
   }
   .canvasMain {
-    padding: 4px;
+    height: 60vh;
     flex: none;
   }
   .mobileControls {
@@ -161,5 +252,11 @@
     flex-direction: column;
     gap: 16px;
     padding: 16px;
+    background: var(--bg-primary);
+  }
+  .mobileOnly {
+    display: block;
+    padding: 16px;
+    border-top: 1px solid var(--border);
   }
 }

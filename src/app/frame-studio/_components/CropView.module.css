@@ -2,10 +2,22 @@
   width: 100%;
   height: 100%;
   position: relative;
+  /* Add padding to the wrapper to give the handles room when cropped fully to the edge */
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .cropper {
   width: 100%;
   height: 100%;
-  background: transparent;
+  background: transparent !important;
+  overflow: visible !important;
+}
+
+/* Force inner background elements to be transparent */
+.cropper :global(.vue-advanced-cropper__background) {
+  background: transparent !important;
+}
+.cropper :global(.advanced-cropper__background) {
+  background: transparent !important;
 }

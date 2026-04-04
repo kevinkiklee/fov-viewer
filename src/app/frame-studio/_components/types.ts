@@ -59,14 +59,17 @@ export interface CropState {
   height: number
 }
 
+export type AspectRatioType = number | null | 'original'
+
 export interface AspectRatioPreset {
   label: string
-  value: number | null
+  value: AspectRatioType
   w: number
   h: number
 }
 
 export const ASPECT_RATIOS: AspectRatioPreset[] = [
+  { label: 'Original', value: 'original', w: 0, h: 0 },
   { label: 'Free', value: null, w: 0, h: 0 },
   { label: '1:1', value: 1, w: 1, h: 1 },
   { label: '4:3', value: 4 / 3, w: 4, h: 3 },
@@ -77,9 +80,9 @@ export const ASPECT_RATIOS: AspectRatioPreset[] = [
 ]
 
 export const DEFAULT_GRID_OPTIONS: GridOptions = {
-  color: '#ffffff',
-  opacity: 0.7,
-  thickness: 'thin',
+  color: '#00ffff',
+  opacity: 0.8,
+  thickness: 'medium',
   spiralRotation: 0,
   gridDensity: 4,
 }

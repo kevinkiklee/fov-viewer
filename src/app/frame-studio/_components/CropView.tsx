@@ -3,16 +3,19 @@
 import { useRef, useCallback } from 'react'
 import { Cropper, type CropperRef } from 'react-advanced-cropper'
 import 'react-advanced-cropper/dist/style.css'
-import type { CropState } from './types'
+import type { CropState, GridType, GridOptions, AspectRatioType } from './types'
+import { CustomStencil } from './CustomStencil'
 import styles from './CropView.module.css'
 
 interface CropViewProps {
   image: HTMLImageElement
-  aspectRatio: number | null
+  aspectRatio: AspectRatioType
   onCropChange: (crop: CropState) => void
+  activeGrids: GridType[]
+  options: GridOptions
 }
 
-export function CropView({ image, aspectRatio, onCropChange }: CropViewProps) {
+export function CropView({ image, aspectRatio, onCropChange, activeGrids, options }: CropViewProps) {
   const cropperRef = useRef<CropperRef>(null)
 
   const handleChange = useCallback((cropper: CropperRef) => {
@@ -27,13 +30,28 @@ export function CropView({ image, aspectRatio, onCropChange }: CropViewProps) {
     }
   }, [onCropChange])
 
+  const numericRatio = aspectRatio === 'original' 
+    ? image.naturalWidth / image.naturalHeight 
+    : aspectRatio
+
   return (
     <div className={styles.wrapper}>
       <Cropper
         ref={cropperRef}
         src={image.src}
+        defaultSize={({ imageSize }) => ({
+          width: imageSize.width,
+          height: imageSize.height,
+        })}
+        stencilComponent={CustomStencil}
         stencilProps={{
-          aspectRatio: aspectRatio ?? undefined,
+          aspectRatio: numericRatio ?? undefined,
+          activeGrids,
+          options: {
+            ...options,
+            // Override grid color to match standard cropping overlay line color
+            color: 'rgba(255, 255, 255, 0.8)'
+          }
         }}
         onChange={handleChange}
         className={styles.cropper}

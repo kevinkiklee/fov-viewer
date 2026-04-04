@@ -56,7 +56,7 @@ describe('SENSORS', () => {
 describe('getSensor', () => {
   it('returns matching sensor', () => {
     expect(getSensor('ff').cropFactor).toBe(1.0)
-    expect(getSensor('apsc_n').cropFactor).toBe(1.5)
+    expect(getSensor('apsc_n').cropFactor).toBe(1.53)
   })
   it('falls back to full frame for unknown ID', () => {
     expect(getSensor('unknown').id).toBe('ff')

@@ -1,12 +1,12 @@
 'use client'
 
 import { useState, useCallback } from 'react'
-import { ASPECT_RATIOS, type AspectRatioPreset } from './types'
+import { ASPECT_RATIOS, type AspectRatioPreset, type AspectRatioType } from './types'
 import styles from './CropPanel.module.css'
 
 interface CropPanelProps {
-  selectedRatio: number | null
-  onRatioChange: (ratio: number | null) => void
+  selectedRatio: AspectRatioType
+  onRatioChange: (ratio: AspectRatioType) => void
   onApply: () => void
 }
 
@@ -16,8 +16,8 @@ export function CropPanel({ selectedRatio, onRatioChange, onApply }: CropPanelPr
   const [customH, setCustomH] = useState('')
 
   const handlePreset = useCallback((preset: AspectRatioPreset) => {
-    if (preset.value === null) {
-      onRatioChange(null)
+    if (preset.value === null || preset.value === 'original') {
+      onRatioChange(preset.value)
       return
     }
     const ratio = flipped ? preset.h / preset.w : preset.w / preset.h
@@ -27,7 +27,7 @@ export function CropPanel({ selectedRatio, onRatioChange, onApply }: CropPanelPr
   const handleFlip = useCallback(() => {
     setFlipped((f) => {
       const next = !f
-      if (selectedRatio !== null && selectedRatio !== 1) {
+      if (selectedRatio !== null && selectedRatio !== 'original' && selectedRatio !== 1) {
         onRatioChange(1 / selectedRatio)
       }
       return next
@@ -48,8 +48,8 @@ export function CropPanel({ selectedRatio, onRatioChange, onApply }: CropPanelPr
         <span className={styles.label}>Aspect Ratio</span>
         <div className={styles.ratios}>
           {ASPECT_RATIOS.map((r) => {
-            const ratio = r.value === null
-              ? null
+            const ratio = r.value === null || r.value === 'original'
+              ? r.value
               : flipped && r.value !== 1 ? r.h / r.w : r.w / r.h
             const isActive = selectedRatio === ratio
             return (

@@ -1,42 +1,57 @@
 'use client'
 
-import { useReducer, useState, useEffect, useRef, useMemo } from 'react'
+import { useReducer, useState, useEffect, useRef } from 'react'
 import { FOCAL_LENGTHS, FOCAL_MIN, FOCAL_MAX } from '@/lib/data/focalLengths'
 import { SENSORS, getSensor } from '@/lib/data/sensors'
 import { calcEquivFocalLength } from '@/lib/math/fov'
 import { ToolActions } from '@/components/shared/ToolActions'
+import { InfoTooltip } from '@/components/shared/InfoTooltip'
+import { LearnPanel } from '@/components/shared/LearnPanel'
+import { getEducationBySlug } from '@/lib/data/education'
+import { calcCameraDistance } from '@/lib/math/compression'
 import { CompressionScene } from './CompressionScene'
 import styles from './PerspectiveCompressionSimulator.module.css'
 
 /* ─── State ─── */
 
 interface State {
-  focalLength: number   // 14-800
-  sensorId: string      // sensor ID
-  distance: number      // 3-100 feet
+  focalLength: number         // 14-800mm
+  sensorId: string            // sensor ID
+  distance: number            // Actual distance in feet
+  maintainSubjectSize: boolean
 }
 
 const DEFAULT_STATE: State = {
   focalLength: 50,
   sensorId: 'ff',
-  distance: 10,
+  distance: 15,
+  maintainSubjectSize: true,
 }
 
 type Action =
   | { type: 'SET_FOCAL_LENGTH'; payload: number }
   | { type: 'SET_SENSOR'; payload: string }
   | { type: 'SET_DISTANCE'; payload: number }
+  | { type: 'SET_MAINTAIN_SIZE'; payload: boolean }
   | { type: 'RESET' }
   | { type: 'HYDRATE'; payload: Partial<State> }
 
 function reducer(state: State, action: Action): State {
   switch (action.type) {
-    case 'SET_FOCAL_LENGTH':
-      return { ...state, focalLength: action.payload }
+    case 'SET_FOCAL_LENGTH': {
+      const newFocal = action.payload
+      if (state.maintainSubjectSize && state.focalLength > 0) {
+        const newDistance = calcCameraDistance(newFocal, state.focalLength, state.distance)
+        return { ...state, focalLength: newFocal, distance: Math.max(3, Math.min(500, newDistance)) }
+      }
+      return { ...state, focalLength: newFocal }
+    }
     case 'SET_SENSOR':
       return { ...state, sensorId: action.payload }
     case 'SET_DISTANCE':
       return { ...state, distance: action.payload }
+    case 'SET_MAINTAIN_SIZE':
+      return { ...state, maintainSubjectSize: action.payload }
     case 'RESET':
       return { ...DEFAULT_STATE }
     case 'HYDRATE':
@@ -62,7 +77,11 @@ function parseQueryParams(): Partial<State> {
   if (s && SENSOR_IDS.has(s)) state.sensorId = s
 
   const dist = Number(params.get('dist'))
-  if (Number.isInteger(dist) && dist >= 3 && dist <= 100) state.distance = dist
+  if (!isNaN(dist) && dist >= 3 && dist <= 500) state.distance = dist
+
+  const m = params.get('m')
+  if (m === '1') state.maintainSubjectSize = true
+  if (m === '0') state.maintainSubjectSize = false
 
   return state
 }
@@ -71,7 +90,8 @@ function stateToQueryString(state: State): string {
   const params = new URLSearchParams()
   params.set('fl', String(state.focalLength))
   params.set('s', state.sensorId)
-  if (state.distance !== 10) params.set('dist', String(state.distance))
+  params.set('dist', state.distance.toFixed(1))
+  params.set('m', state.maintainSubjectSize ? '1' : '0')
   return params.toString()
 }
 
@@ -108,20 +128,21 @@ const SNAP_THRESHOLD = 15
 /* ─── Logarithmic distance slider ─── */
 
 const DIST_MIN = 3
-const DIST_MAX = 100
+const DIST_MAX = 500
 const LOG_DIST_MIN = Math.log(DIST_MIN)
 const LOG_DIST_MAX = Math.log(DIST_MAX)
 const DIST_SLIDER_STEPS = 500
 
 function distToSlider(dist: number): number {
-  return Math.round(((Math.log(dist) - LOG_DIST_MIN) / (LOG_DIST_MAX - LOG_DIST_MIN)) * DIST_SLIDER_STEPS)
+  const clamped = Math.max(DIST_MIN, Math.min(DIST_MAX, dist))
+  return Math.round(((Math.log(clamped) - LOG_DIST_MIN) / (LOG_DIST_MAX - LOG_DIST_MIN)) * DIST_SLIDER_STEPS)
 }
 
 function sliderToDist(pos: number): number {
-  return Math.round(Math.exp(LOG_DIST_MIN + (pos / DIST_SLIDER_STEPS) * (LOG_DIST_MAX - LOG_DIST_MIN)))
+  return Math.exp(LOG_DIST_MIN + (pos / DIST_SLIDER_STEPS) * (LOG_DIST_MAX - LOG_DIST_MIN))
 }
 
-const DIST_PRESETS = [5, 10, 25, 50]
+const DIST_PRESETS = [5, 15, 50, 150]
 
 /* ─── Sidebar controls (shared between desktop and mobile) ─── */
 
@@ -131,6 +152,9 @@ interface ControlsProps {
 }
 
 function Controls({ state, dispatch }: ControlsProps) {
+  const education = getEducationBySlug('perspective-compression-simulator')
+  const tooltips = education?.tooltips
+
   const sensor = getSensor(state.sensorId)
   const isCrop = sensor.cropFactor > 1
   const minFocal = isCrop ? FOCAL_MIN : 14
@@ -138,14 +162,6 @@ function Controls({ state, dispatch }: ControlsProps) {
 
   const sliderMin = focalToSlider(Math.max(minFocal, 14))
   const sliderVal = focalToSlider(Math.max(state.focalLength, minFocal))
-
-  const presetPositions = useMemo(
-    () => FOCAL_LENGTHS.filter((fl) => fl.value >= minFocal).map((fl) => ({
-      value: fl.value,
-      pct: ((focalToSlider(fl.value) - sliderMin) / (SLIDER_STEPS - sliderMin)) * 100,
-    })),
-    [minFocal, sliderMin],
-  )
 
   const handleFocalSlider = (e: React.ChangeEvent<HTMLInputElement>) => {
     const pos = Number(e.target.value)
@@ -175,17 +191,23 @@ function Controls({ state, dispatch }: ControlsProps) {
     <>
       {/* Focal Length panel */}
       <div className={styles.panel}>
-        <div className={styles.title}>Focal Length</div>
+        <div className={styles.title}>Camera Settings</div>
+        
         <div className={styles.row}>
-          <span className={styles.sublabel}>Focal length</span>
+          <span className={styles.sublabel}>
+            Focal Length
+            {tooltips?.focalLength && <InfoTooltip tooltip={tooltips.focalLength} />}
+          </span>
           <span className={styles.value}>{state.focalLength}mm</span>
         </div>
+        
         {sensor.cropFactor !== 1 && (
           <div className={styles.row}>
-            <span className={styles.sublabel}>Equiv.</span>
+            <span className={styles.sublabel}>Equivalent (35mm)</span>
             <span className={styles.value}>{equiv}mm</span>
           </div>
         )}
+
         <div className={styles.sliderWrap}>
           <input
             type="range"
@@ -198,20 +220,20 @@ function Controls({ state, dispatch }: ControlsProps) {
             aria-label={`Focal length: ${state.focalLength}mm`}
           />
         </div>
+
         <div className={styles.presets}>
-          {FOCAL_LENGTHS.filter((fl) => fl.value >= minFocal).map((fl) => (
+          {[24, 35, 50, 85, 135, 200, 400].filter(fl => fl >= minFocal).map((fl) => (
             <button
-              key={fl.value}
-              className={`${styles.preset} ${state.focalLength === fl.value ? styles.presetActive : ''}`}
-              onClick={() => dispatch({ type: 'SET_FOCAL_LENGTH', payload: fl.value })}
+              key={fl}
+              className={`${styles.preset} ${state.focalLength === fl ? styles.presetActive : ''}`}
+              onClick={() => dispatch({ type: 'SET_FOCAL_LENGTH', payload: fl })}
             >
-              {fl.value}mm
+              {fl}mm
             </button>
           ))}
         </div>
 
-        <div className={styles.row}>
-          <span className={styles.sublabel}>Sensor</span>
+        <div className={styles.row} style={{ marginTop: '16px' }}>
           <select
             className={styles.select}
             value={state.sensorId}
@@ -236,11 +258,16 @@ function Controls({ state, dispatch }: ControlsProps) {
 
       {/* Distance panel */}
       <div className={styles.panel}>
-        <div className={styles.title}>Subject Distance</div>
+        <div className={styles.title}>Perspective & Distance</div>
+        
         <div className={styles.row}>
-          <span className={styles.sublabel}>Distance</span>
-          <span className={styles.value}>{state.distance} ft</span>
+          <span className={styles.sublabel}>
+            Subject Distance
+            {tooltips?.distance && <InfoTooltip tooltip={tooltips.distance} />}
+          </span>
+          <span className={styles.value}>{state.distance.toFixed(1)} ft</span>
         </div>
+
         <div className={styles.sliderWrap}>
           <input
             type="range"
@@ -250,24 +277,40 @@ function Controls({ state, dispatch }: ControlsProps) {
             step={1}
             value={distToSlider(state.distance)}
             onChange={handleDistSlider}
-            aria-label={`Subject distance: ${state.distance} ft`}
+            aria-label={`Subject distance: ${state.distance.toFixed(1)} ft`}
           />
         </div>
+
         <div className={styles.presets}>
           {DIST_PRESETS.map((d) => (
             <button
               key={d}
-              className={`${styles.preset} ${state.distance === d ? styles.presetActive : ''}`}
+              className={`${styles.preset} ${Math.abs(state.distance - d) < 0.1 ? styles.presetActive : ''}`}
               onClick={() => dispatch({ type: 'SET_DISTANCE', payload: d })}
             >
               {d} ft
             </button>
           ))}
         </div>
+
+        <div className={styles.toggleRow}>
+          <div className={styles.toggleLabel}>
+            Maintain Subject Size
+            {tooltips?.maintainSize && <InfoTooltip tooltip={tooltips.maintainSize} />}
+          </div>
+          <label className={styles.switch}>
+            <input
+              type="checkbox"
+              checked={state.maintainSubjectSize}
+              onChange={(e) => dispatch({ type: 'SET_MAINTAIN_SIZE', payload: e.target.checked })}
+            />
+            <span className={styles.slider_round}></span>
+          </label>
+        </div>
       </div>
 
       <button className={styles.resetBtn} onClick={() => dispatch({ type: 'RESET' })}>
-        Reset
+        Reset All
       </button>
     </>
   )
@@ -295,7 +338,11 @@ export function PerspectiveCompressionSimulator() {
       <div className={styles.appBody}>
         {/* Desktop sidebar */}
         <aside className={styles.sidebar}>
-          <ToolActions toolName="Perspective Compression Simulator" toolSlug="perspective-compression-simulator" />
+          <ToolActions 
+            toolName="Perspective Compression Simulator" 
+            toolSlug="perspective-compression-simulator" 
+            onReset={() => dispatch({ type: 'RESET' })}
+          />
           <Controls state={state} dispatch={dispatch} />
         </aside>
 
@@ -309,11 +356,21 @@ export function PerspectiveCompressionSimulator() {
             />
           </section>
         </main>
+
+        {/* Desktop: LearnPanel as right sidebar */}
+        <div className={styles.desktopOnly}>
+          <LearnPanel slug="perspective-compression-simulator" />
+        </div>
       </div>
 
       {/* Mobile controls */}
       <div className={styles.mobileControls}>
         <Controls state={state} dispatch={dispatch} />
+      </div>
+
+      {/* Mobile: LearnPanel below controls */}
+      <div className={styles.mobileOnly}>
+        <LearnPanel slug="perspective-compression-simulator" />
       </div>
     </div>
   )

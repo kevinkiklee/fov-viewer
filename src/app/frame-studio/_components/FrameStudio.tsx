@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import { PhotoUploadPanel } from '@/components/shared/PhotoUploadPanel'
 import { LearnPanel } from '@/components/shared/LearnPanel'
 import { DraftBanner } from '@/components/shared/DraftBanner'
@@ -15,7 +15,7 @@ import { FramePanel } from './FramePanel'
 import { GridControls } from './GridControls'
 import { ExportDialog } from './ExportDialog'
 import type {
-  EditorMode, GridType, GridOptions, FrameConfig, CropState,
+  EditorMode, GridType, GridOptions, FrameConfig, CropState, AspectRatioType
 } from './types'
 import { DEFAULT_GRID_OPTIONS, DEFAULT_FRAME_CONFIG } from './types'
 import styles from './FrameStudio.module.css'
@@ -29,6 +29,7 @@ const MODE_OPTIONS: { value: EditorMode; label: string }[] = [
 ]
 
 const NO_FRAME_CONFIG: FrameConfig = { ...DEFAULT_FRAME_CONFIG, borderWidth: 0 }
+const DEFAULT_PHOTO_URL = '/images/scenes/wildlife.jpg'
 
 export function FrameStudio() {
   const tool = getToolBySlug(SLUG)
@@ -45,28 +46,45 @@ export function FrameStudio() {
 
   const [canvasDims, setCanvasDims] = useState({ width: 0, height: 0, offsetX: 0, offsetY: 0 })
   const [showExport, setShowExport] = useState(false)
-  const [aspectRatio, setAspectRatio] = useState<number | null>(null)
+  const [aspectRatio, setAspectRatio] = useState<AspectRatioType>('original')
 
   const handleFile = useCallback((file: File) => {
     setOriginalFile(file)
-    setOriginalMimeType(file.type || 'image/png')
+    setOriginalMimeType(file.type || 'image/jpeg')
     const img = new Image()
     img.onload = () => setOriginalImage(img)
     img.src = URL.createObjectURL(file)
   }, [])
 
-  const handleReset = useCallback(() => {
+  useEffect(() => {
+    fetch(DEFAULT_PHOTO_URL)
+      .then((res) => res.blob())
+      .then((blob) => {
+        const file = new File([blob], 'wildlife.jpg', { type: 'image/jpeg' })
+        handleFile(file)
+      })
+      .catch((err) => console.error('Failed to load default photo', err))
+  }, [handleFile])
+
+  const handleResetEdits = useCallback(() => {
     setMode('view')
-    setOriginalFile(null)
-    setOriginalImage(null)
     setCropState(null)
-    setActiveGrids([])
+    setActiveGrids(['rule-of-thirds'])
     setGridOptions(DEFAULT_GRID_OPTIONS)
     setFrameConfig(DEFAULT_FRAME_CONFIG)
-
-    setShowExport(false)
-    setAspectRatio(null)
+    setAspectRatio('original')
   }, [])
+
+  const handleDeletePhoto = useCallback(() => {
+    setOriginalFile(null)
+    setOriginalImage(null)
+    setShowExport(false)
+    handleResetEdits()
+  }, [handleResetEdits])
+
+  const handleReset = useCallback(() => {
+    handleDeletePhoto()
+  }, [handleDeletePhoto])
 
   const handleApplyCrop = useCallback(() => {
     setMode('view')
@@ -95,9 +113,19 @@ export function FrameStudio() {
       />
 
       {originalImage && (
-        <button className={styles.exportBtn} onClick={() => setShowExport(true)}>
-          Export
-        </button>
+        <div className={styles.actionGroup}>
+          <div className={styles.actionRow}>
+            <button className={styles.secondaryBtn} onClick={handleResetEdits}>
+              Reset Photo
+            </button>
+            <button className={styles.dangerBtn} onClick={handleDeletePhoto}>
+              Delete Photo
+            </button>
+          </div>
+          <button className={styles.exportBtn} onClick={() => setShowExport(true)}>
+            Export
+          </button>
+        </div>
       )}
     </>
   )
@@ -133,6 +161,8 @@ export function FrameStudio() {
                       image={originalImage}
                       aspectRatio={aspectRatio}
                       onCropChange={setCropState}
+                      activeGrids={activeGrids}
+                      options={gridOptions}
                     />
                   ) : (
                     <>

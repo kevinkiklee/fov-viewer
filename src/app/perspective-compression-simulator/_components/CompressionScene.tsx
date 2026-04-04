@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useRef, useCallback } from 'react'
-import { calcCameraDistance } from '@/lib/math/compression'
 import { calcFOV } from '@/lib/math/fov'
 import { getSensor } from '@/lib/data/sensors'
 import { compressionVertexShader } from './shaders/compression.vert'
@@ -9,31 +8,32 @@ import { compressionFragmentShader } from './shaders/compression.frag'
 import styles from './CompressionScene.module.css'
 
 /* ─── Constants ─── */
-const PILLAR_COUNT = 5
-const PILLAR_SPACING = 5 // ft between pillars
-const PILLAR_RADIUS = 0.3
-const PILLAR_HEIGHT = 4.0
+const PILLAR_COUNT = 6
+const PILLAR_SPACING = 15 // ft between pillars
+const PILLAR_RADIUS = 0.4
+const PILLAR_HEIGHT = 6.0
 const PILLAR_SEGMENTS = 16
-const REF_FOCAL = 50
-const SUBJECT_DIST = 10 // distance to nearest pillar at ref focal
+const PILLAR_X = 2.5 // Shifted from center
 
 const ACCENT_COLOR = '#3b82f6'
 
 const PILLAR_COLORS: [number, number, number][] = [
-  [0.93, 0.26, 0.26], // red
+  [0.93, 0.26, 0.26], // red (Subject)
   [0.95, 0.61, 0.15], // orange
   [0.95, 0.85, 0.20], // yellow
   [0.25, 0.78, 0.35], // green
   [0.30, 0.50, 0.90], // blue
+  [0.60, 0.40, 0.80], // purple
 ]
 
-const GROUND_COLOR: [number, number, number] = [0.15, 0.15, 0.20]
+const GROUND_COLOR: [number, number, number] = [0.12, 0.12, 0.18]
+const GRID_COLOR: [number, number, number] = [0.25, 0.25, 0.35]
 
 /* ─── Props ─── */
 export interface CompressionSceneProps {
   focalLength: number
   sensorId: string
-  distance: number
+  distance: number // Actual distance to the first pillar
 }
 
 /* ─── Matrix utilities (no deps) ─── */
@@ -134,8 +134,8 @@ function buildCylinder(
   return { positions, normals, colors }
 }
 
-function buildGroundPlane(): GeoArrays {
-  const s = 40
+function buildGroundPlaneWithGrid(): GeoArrays {
+  const s = 300 // Larger plane for telephoto shots
   const positions = [
     -s, 0, -s,   s, 0, -s,  -s, 0, s,
     -s, 0,  s,   s, 0, -s,   s, 0, s,
@@ -147,6 +147,46 @@ function buildGroundPlane(): GeoArrays {
   const colors: number[] = []
   for (let i = 0; i < 6; i++) {
     colors.push(GROUND_COLOR[0], GROUND_COLOR[1], GROUND_COLOR[2])
+  }
+
+  // Add grid lines as very thin boxes
+  const gridSpacing = 15
+  const gridRadius = 0.05
+  for (let x = -s; x <= s; x += gridSpacing) {
+    const line = buildBox(x, 0, 0, gridRadius, 0.01, s, GRID_COLOR)
+    positions.push(...line.positions)
+    normals.push(...line.normals)
+    colors.push(...line.colors)
+  }
+  for (let z = -s; z <= s; z += gridSpacing) {
+    const line = buildBox(0, 0, z, s, 0.01, gridRadius, GRID_COLOR)
+    positions.push(...line.positions)
+    normals.push(...line.normals)
+    colors.push(...line.colors)
+  }
+
+  return { positions, normals, colors }
+}
+
+function buildBox(cx: number, cy: number, cz: number, rx: number, ry: number, rz: number, color: [number, number, number]): GeoArrays {
+  const p = [
+    cx-rx,cy-ry,cz-rz, cx+rx,cy-ry,cz-rz, cx+rx,cy+ry,cz-rz, cx-rx,cy+ry,cz-rz,
+    cx-rx,cy-ry,cz+rz, cx+rx,cy-ry,cz+rz, cx+rx,cy+ry,cz+rz, cx-rx,cy+ry,cz+rz
+  ]
+  const idx = [
+    0,1,2, 0,2,3, 4,5,6, 4,6,7, 0,4,7, 0,7,3, 1,5,6, 1,6,2, 0,1,5, 0,5,4, 3,2,6, 3,6,7
+  ]
+  const ns = [
+    0,0,-1, 0,0,1, -1,0,0, 1,0,0, 0,-1,0, 0,1,0
+  ]
+  const positions: number[] = [], normals: number[] = [], colors: number[] = []
+  for (let i = 0; i < 6; i++) {
+    for (let j = 0; j < 6; j++) {
+      const v = idx[i*6+j]
+      positions.push(p[v*3], p[v*3+1], p[v*3+2])
+      normals.push(ns[i*3], ns[i*3+1], ns[i*3+2])
+      colors.push(color[0], color[1], color[2])
+    }
   }
   return { positions, normals, colors }
 }
@@ -214,7 +254,7 @@ export function CompressionScene({ focalLength, sensorId, distance }: Compressio
     const canvas = sceneCanvasRef.current
     if (!canvas) return
 
-    const gl = canvas.getContext('webgl2')
+    const gl = canvas.getContext('webgl2', { antialias: true })
     if (!gl) return
     glRef.current = gl
 
@@ -228,10 +268,10 @@ export function CompressionScene({ focalLength, sensorId, distance }: Compressio
     programRef.current = program
 
     // Build scene geometry
-    const parts: GeoArrays[] = [buildGroundPlane()]
+    const parts: GeoArrays[] = [buildGroundPlaneWithGrid()]
     for (let i = 0; i < PILLAR_COUNT; i++) {
-      const pz = -(SUBJECT_DIST + i * PILLAR_SPACING)
-      parts.push(buildCylinder(0, pz, PILLAR_RADIUS, PILLAR_HEIGHT, PILLAR_SEGMENTS, PILLAR_COLORS[i]))
+      const pz = -(i * PILLAR_SPACING)
+      parts.push(buildCylinder(PILLAR_X, pz, PILLAR_RADIUS, PILLAR_HEIGHT, PILLAR_SEGMENTS, PILLAR_COLORS[i % PILLAR_COLORS.length]))
     }
     const geo = mergeGeo(...parts)
     vertCountRef.current = geo.positions.length / 3
@@ -290,21 +330,21 @@ export function CompressionScene({ focalLength, sensorId, distance }: Compressio
     gl.bindVertexArray(vao)
 
     const sensor = getSensor(sensorId)
-    const cameraDist = calcCameraDistance(focalLength, REF_FOCAL, distance)
     const fov = calcFOV(focalLength, sensor.cropFactor)
     const vFovRad = (fov.vertical * Math.PI) / 180
 
     const aspect = canvas.width / canvas.height
-    const cameraZ = cameraDist - SUBJECT_DIST
-    const eye: [number, number, number] = [0, PILLAR_HEIGHT * 0.5, cameraZ]
-    const target: [number, number, number] = [0, PILLAR_HEIGHT * 0.5, cameraZ - 1]
+    // Camera is 'distance' away from the first pillar (which is at Z=0)
+    const cameraZ = distance 
+    const eye: [number, number, number] = [0, PILLAR_HEIGHT * 0.45, cameraZ]
+    const target: [number, number, number] = [PILLAR_X * 0.5, PILLAR_HEIGHT * 0.45, 0]
 
-    const projection = mat4Perspective(vFovRad, aspect, 0.1, 200.0)
+    const projection = mat4Perspective(vFovRad, aspect, 0.5, 800.0)
     const view = mat4LookAt(eye, target, [0, 1, 0])
 
     gl.uniformMatrix4fv(gl.getUniformLocation(program, 'u_projection'), false, projection)
     gl.uniformMatrix4fv(gl.getUniformLocation(program, 'u_view'), false, view)
-    gl.uniform3f(gl.getUniformLocation(program, 'u_lightDir'), 0.3, 1.0, 0.5)
+    gl.uniform3f(gl.getUniformLocation(program, 'u_lightDir'), 0.5, 1.0, 0.5)
     gl.uniform3f(gl.getUniformLocation(program, 'u_cameraPos'), eye[0], eye[1], eye[2])
 
     gl.drawArrays(gl.TRIANGLES, 0, vertCountRef.current)
@@ -329,32 +369,30 @@ export function CompressionScene({ focalLength, sensorId, distance }: Compressio
     ctx.fillRect(0, 0, w, h)
 
     const sensor = getSensor(sensorId)
-    const cameraDist = calcCameraDistance(focalLength, REF_FOCAL, distance)
     const fov = calcFOV(focalLength, sensor.cropFactor)
     const hFovRad = (fov.horizontal * Math.PI) / 180
 
-    // Coordinate mapping: camera on left, pillars to right
-    const farthestPillarZ = SUBJECT_DIST + (PILLAR_COUNT - 1) * PILLAR_SPACING
-    const maxRange = cameraDist + farthestPillarZ + 5
-    const margin = 30 * dpr
+    // Map world coordinates to canvas
+    // Camera at Z = distance
+    // Pillars at Z = 0, -15, -30...
+    const maxRange = Math.max(distance, 150) + 20
+    const margin = 40 * dpr
     const usableW = w - margin * 2
-    const usableH = h - 10 * dpr
-
-    const mapX = (dist: number) => margin + ((cameraDist - dist) / maxRange) * usableW
-    const mapY = (offset: number) => h / 2 + offset * (usableH / 2)
-
-    const cameraX = mapX(0)
+    
+    const mapX = (z: number) => margin + ((distance - z) / maxRange) * usableW
     const centerY = h / 2
 
+    const cameraX = mapX(distance)
+
     // Draw FOV cone
-    const coneLen = farthestPillarZ + 10
+    const coneLen = 200
     const halfSpread = Math.tan(hFovRad / 2) * coneLen
-    const coneEndX = mapX(-coneLen)
-    const topY = mapY(-halfSpread / maxRange * 2)
-    const botY = mapY(halfSpread / maxRange * 2)
+    const coneEndX = mapX(distance - coneLen)
+    const topY = centerY - (halfSpread / maxRange) * usableW
+    const botY = centerY + (halfSpread / maxRange) * usableW
 
     ctx.save()
-    ctx.globalAlpha = 0.12
+    ctx.globalAlpha = 0.15
     ctx.fillStyle = ACCENT_COLOR
     ctx.beginPath()
     ctx.moveTo(cameraX, centerY)
@@ -378,33 +416,39 @@ export function CompressionScene({ focalLength, sensorId, distance }: Compressio
 
     // Draw pillars as circles
     for (let i = 0; i < PILLAR_COUNT; i++) {
-      const pillarDist = SUBJECT_DIST + i * PILLAR_SPACING
-      const px = mapX(-pillarDist)
-      const [r, g, b] = PILLAR_COLORS[i]
+      const pz = -(i * PILLAR_SPACING)
+      const px = mapX(pz)
+      const [r, g, b] = PILLAR_COLORS[i % PILLAR_COLORS.length]
       ctx.fillStyle = `rgb(${Math.round(r * 255)}, ${Math.round(g * 255)}, ${Math.round(b * 255)})`
       ctx.beginPath()
       ctx.arc(px, centerY, 4 * dpr, 0, Math.PI * 2)
       ctx.fill()
+      
+      // Label first pillar
+      if (i === 0) {
+        ctx.fillStyle = 'white'
+        ctx.font = `bold ${9 * dpr}px sans-serif`
+        ctx.textAlign = 'center'
+        ctx.fillText('SUBJECT', px, centerY - 10 * dpr)
+      }
     }
 
     // Draw camera as triangle
     ctx.fillStyle = ACCENT_COLOR
     ctx.beginPath()
-    const triSize = 6 * dpr
+    const triSize = 7 * dpr
     ctx.moveTo(cameraX + triSize, centerY)
-    ctx.lineTo(cameraX - triSize * 0.6, centerY - triSize * 0.7)
-    ctx.lineTo(cameraX - triSize * 0.6, centerY + triSize * 0.7)
+    ctx.lineTo(cameraX - triSize * 0.6, centerY - triSize * 0.8)
+    ctx.lineTo(cameraX - triSize * 0.6, centerY + triSize * 0.8)
     ctx.closePath()
     ctx.fill()
 
     // Labels
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.7)'
-    ctx.font = `${10 * dpr}px system-ui, sans-serif`
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.8)'
+    ctx.font = `${11 * dpr}px system-ui, sans-serif`
     ctx.textAlign = 'center'
-    ctx.fillText(`${focalLength}mm`, cameraX, centerY - 10 * dpr)
-
-    const nearPillarX = mapX(-SUBJECT_DIST)
-    ctx.fillText(`${Math.round(cameraDist)}ft`, (cameraX + nearPillarX) / 2, centerY + 14 * dpr)
+    ctx.fillText(`${focalLength}mm`, cameraX, centerY - 15 * dpr)
+    ctx.fillText(`${Math.round(distance)}ft`, (cameraX + mapX(0)) / 2, centerY + 18 * dpr)
   }, [focalLength, sensorId, distance])
 
   // Resize observer for 3D canvas

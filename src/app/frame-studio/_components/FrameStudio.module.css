@@ -42,6 +42,11 @@
   padding: 12px;
   min-height: 0;
   overflow: hidden;
+  background-color: var(--canvas-bg, #e5e5e5); /* Light gray default for light mode */
+}
+
+:global([data-theme="dark"]) .canvasMain {
+  background-color: var(--canvas-bg, #262626); /* Darker gray for dark mode */
 }
 
 .canvasWrap {
@@ -53,13 +58,55 @@
   height: 100%;
 }
 
+/* Action Buttons */
+.actionGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.actionRow {
+  display: flex;
+  gap: 8px;
+}
+
+.secondaryBtn,
+.dangerBtn {
+  flex: 1;
+  padding: 8px;
+  background: var(--surface-2);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.secondaryBtn:hover {
+  background: var(--surface-hover);
+  border-color: var(--text-secondary);
+}
+
+.dangerBtn {
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.dangerBtn:hover {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.5);
+}
+
 /* Export button */
 .exportBtn {
   width: 100%;
   padding: 10px 16px;
   border: none;
   background: var(--accent);
-  color: var(--text-on-accent, #fff);
+  color: #000;
   font-size: 0.8125rem;
   font-weight: 600;
   border-radius: 8px;
