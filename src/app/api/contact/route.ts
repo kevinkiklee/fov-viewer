@@ -1,7 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+function getResend() {
+  const key = process.env.RESEND_API_KEY
+  if (!key) throw new Error('RESEND_API_KEY is not configured')
+  return new Resend(key)
+}
 
 const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000
 const RATE_LIMIT_MAX = 3
@@ -78,6 +82,7 @@ export async function POST(request: NextRequest) {
   }
 
   try {
+    const resend = getResend()
     await resend.emails.send({
       from: 'PhotoTools Contact <onboarding@resend.dev>',
       to: 'kevinkiklee@gmail.com',

@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { JsonLd } from '@/components/shared/JsonLd'
 
 export const metadata: Metadata = {
   title: 'Terms of Service | PhotoTools',
@@ -14,9 +13,8 @@ export default function TermsPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: 'Terms of Service | PhotoTools',
+    name: 'Terms of Service',
     url: 'https://www.phototools.io/terms',
-    description: metadata.description,
   }
 
   return (
@@ -28,7 +26,10 @@ export default function TermsPage() {
         overflowY: 'auto',
       }}
     >
-      <JsonLd data={jsonLd} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 'var(--space-sm)' }}>
         Terms of Service
       </h1>

@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { JsonLd } from '@/components/shared/JsonLd'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | PhotoTools',
@@ -14,9 +13,8 @@ export default function PrivacyPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: 'Privacy Policy | PhotoTools',
+    name: 'Privacy Policy',
     url: 'https://www.phototools.io/privacy',
-    description: metadata.description,
   }
 
   return (
@@ -28,7 +26,10 @@ export default function PrivacyPage() {
         overflowY: 'auto',
       }}
     >
-      <JsonLd data={jsonLd} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 'var(--space-sm)' }}>
         Privacy Policy
       </h1>
