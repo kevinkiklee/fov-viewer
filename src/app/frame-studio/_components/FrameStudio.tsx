@@ -13,6 +13,7 @@ import { ImageCanvas } from './ImageCanvas'
 import { GridCanvas } from './GridCanvas'
 import { CropView } from './CropView'
 import { CropPanel } from './CropPanel'
+import { FramePanel } from './FramePanel'
 import { GridControls } from './GridControls'
 import type {
   EditorMode, GridType, GridOptions, FrameConfig, CropState,
@@ -144,6 +145,9 @@ export function FrameStudio() {
                     onRatioChange={setAspectRatio}
                     onApply={handleApplyCrop}
                   />
+                )}
+                {mode === 'frame' && (
+                  <FramePanel config={frameConfig} onChange={setFrameConfig} />
                 )}
                 {gridOpen && (
                   <GridControls
