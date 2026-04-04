@@ -148,6 +148,24 @@ function PerspectiveCompression(p: IconProps) {
   )
 }
 
+/** Frame Studio — crop/frame icon */
+function FrameStudioIcon(p: IconProps) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={s} height={s} fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" {...p}>
+      <rect x="3" y="3" width="18" height="18" rx="2" />
+      <rect x="6" y="6" width="12" height="12" rx="1" strokeDasharray="3 2" />
+      <path d="M9 3v3" />
+      <path d="M15 3v3" />
+      <path d="M9 18v3" />
+      <path d="M15 18v3" />
+      <path d="M3 9h3" />
+      <path d="M18 9h3" />
+      <path d="M3 15h3" />
+      <path d="M18 15h3" />
+    </svg>
+  )
+}
+
 const ICON_MAP: Record<string, (props: IconProps) => React.JSX.Element> = {
   'fov-simulator': FovSimulator,
   'color-scheme-generator': ColorHarmony,
@@ -162,6 +180,7 @@ const ICON_MAP: Record<string, (props: IconProps) => React.JSX.Element> = {
   'sensor-size-comparison': SensorSize,
   'exif-viewer': ExifViewer,
   'perspective-compression-simulator': PerspectiveCompression,
+  'frame-studio': FrameStudioIcon,
 }
 
 interface ToolIconProps extends IconProps {

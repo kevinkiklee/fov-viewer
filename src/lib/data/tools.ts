@@ -13,6 +13,7 @@ export const TOOLS: ToolDef[] = [
   { slug: 'white-balance-visualizer', name: 'White Balance Visualizer', description: 'See how color temperature affects your photos', dev: 'live', prod: 'live', category: 'visualizer' },
   { slug: 'sensor-size-comparison', name: 'Sensor Size Comparison', description: 'Compare camera sensor sizes visually', dev: 'live', prod: 'live', category: 'visualizer' },
   { slug: 'exif-viewer', name: 'EXIF Viewer', description: 'View EXIF metadata and histogram for any photo — 100% client-side', dev: 'live', prod: 'live', category: 'file-tool' },
+  { slug: 'frame-studio', name: 'Frame Studio', description: 'Crop, frame, and compose photos with grid overlays', dev: 'live', prod: 'disabled', category: 'file-tool' },
 ]
 
 function getStatus(tool: ToolDef): ToolStatus {
