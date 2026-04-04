@@ -3,7 +3,7 @@ import { ColorHarmony } from './_components/ColorHarmony'
 
 export const metadata: Metadata = {
   title: 'Color Scheme Generator',
-  description: 'Build color palettes for photography shoots using color theory.',
+  description: 'Generate color palettes for photography using complementary, analogous, triadic, and tetradic color harmonies. Interactive color wheel with photo picker.',
   openGraph: {
     images: ['/images/og/color-scheme-generator.png'],
   },

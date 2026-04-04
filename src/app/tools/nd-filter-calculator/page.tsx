@@ -3,7 +3,7 @@ import { NdFilterCalculator } from './_components/NdFilterCalculator'
 
 export const metadata: Metadata = {
   title: 'ND Filter Calculator',
-  description: 'Calculate exposure time with any ND filter. Quick-reference table included.',
+  description: 'Calculate the correct shutter speed when using ND filters. Supports any filter strength from ND2 to ND1000000 with a quick-reference table.',
   openGraph: {
     images: ['/images/og/nd-filter-calculator.jpg'],
   },

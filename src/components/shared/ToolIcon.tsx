@@ -170,7 +170,7 @@ const ICON_MAP: Record<string, (props: IconProps) => React.JSX.Element> = {
   'diffraction-limit': DiffractionLimit,
   'star-trail-calculator': StarTrailCalculator,
   'white-balance-visualizer': WhiteBalance,
-  'sensor-size': SensorSize,
+  'sensor-size-comparison': SensorSize,
   'exif-viewer': ExifViewer,
   'perspective-compression-simulator': PerspectiveCompression,
 }

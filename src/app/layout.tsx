@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Script from 'next/script'
+import { ViewTransition } from 'react'
 import './globals.css'
 import { ThemeProvider } from '@/components/layout/ThemeProvider'
 import { JsonLd } from '@/components/shared/JsonLd'
@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     default: 'PhotoTools — Free Photography Tools',
     template: '%s | PhotoTools',
   },
-  description: 'Free browser-based photography tools: FOV viewer, DoF calculator, exposure simulator, and more. No sign-up, runs entirely in your browser.',
+  description: 'Free browser-based photography tools: FOV viewer, DoF calculator, exposure simulator, and more. No sign-up required — your photos never leave your browser.',
   openGraph: {
     title: 'PhotoTools — Free Photography Tools',
-    description: 'Free browser-based photography tools: FOV viewer, DoF calculator, exposure simulator, and more.',
+    description: 'Free browser-based photography tools: field of view simulator, color scheme generator, exif viewer, and more.',
     url: 'https://www.phototools.io',
     siteName: 'PhotoTools',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'PhotoTools — Free Photography Tools',
-    description: 'Free browser-based photography tools: FOV viewer, DoF calculator, exposure simulator, and more.',
+    description: 'Free browser-based photography tools: field of view simulator, color scheme generator, exif viewer, and more.',
     images: ['/og-image.jpg'],
   },
   alternates: {
@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@type': 'WebSite',
     name: 'PhotoTools',
     url: 'https://www.phototools.io',
-    description: 'Free browser-based photography calculators, simulators, and references.',
+    description: 'Free browser-based photography visualizers, simulators, and references.',
   }
 
   return (
@@ -71,7 +71,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <JsonLd />
         <ThemeProvider>
-          {children}
+          <ViewTransition>
+            {children}
+          </ViewTransition>
         </ThemeProvider>
       </body>
     </html>

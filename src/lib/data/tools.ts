@@ -11,7 +11,7 @@ export const TOOLS: ToolDef[] = [
   { slug: 'diffraction-limit', name: 'Diffraction Limit Calculator', description: 'Find the sharpest aperture for your sensor', dev: 'draft', prod: 'draft', category: 'calculator' },
   { slug: 'star-trail-calculator', name: 'Star Trail Calculator', description: 'Calculate max exposure for sharp stars or plan star trail shots', dev: 'live', prod: 'draft', category: 'calculator' },
   { slug: 'white-balance-visualizer', name: 'White Balance Visualizer', description: 'See how color temperature affects your photos', dev: 'live', prod: 'live', category: 'visualizer' },
-  { slug: 'sensor-size', name: 'Sensor Size Comparison', description: 'Compare camera sensor sizes visually', dev: 'live', prod: 'live', category: 'visualizer' },
+  { slug: 'sensor-size-comparison', name: 'Sensor Size Comparison', description: 'Compare camera sensor sizes visually', dev: 'live', prod: 'live', category: 'visualizer' },
   { slug: 'exif-viewer', name: 'EXIF Viewer', description: 'View EXIF metadata and histogram for any photo — 100% client-side', dev: 'live', prod: 'live', category: 'file-tool' },
   { slug: 'perspective-compression-simulator', name: 'Perspective Compression Simulator', description: 'See how focal length affects background compression', dev: 'live', prod: 'draft', category: 'visualizer' },
 ]

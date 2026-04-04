@@ -65,6 +65,7 @@
 
 .customThumb {
   position: relative;
+  overflow: visible;
 }
 
 .removeBtn {

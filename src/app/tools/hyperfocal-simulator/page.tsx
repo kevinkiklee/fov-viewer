@@ -3,7 +3,7 @@ import { HyperfocalSimulator } from './_components/HyperfocalSimulator'
 
 export const metadata: Metadata = {
   title: 'Hyperfocal Distance Simulator',
-  description: 'Learn where to focus for maximum sharpness from foreground to infinity.',
+  description: 'Visualize hyperfocal distance for any lens and sensor. See exactly where to focus for maximum sharpness from foreground to infinity.',
   openGraph: {
     images: ['/images/og/hyperfocal-simulator.jpg'],
   },

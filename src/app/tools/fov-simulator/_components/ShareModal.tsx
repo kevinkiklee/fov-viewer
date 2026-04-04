@@ -24,7 +24,7 @@ function buildLabel(lenses: LensConfig[]): string {
 export function ShareModal({ state, onClose, onToast }: ShareModalProps) {
   const [copied, setCopied] = useState<string | null>(null)
   const qs = stateToQueryString(state)
-  const baseUrl = 'https://www.phototools.io/'
+  const baseUrl = 'https://www.phototools.io/tools/fov-simulator'
   const toolUrl = `${baseUrl}?${qs}`
   const embedUrl = `${baseUrl}?${qs}&embed=1`
   const label = buildLabel(state.lenses)

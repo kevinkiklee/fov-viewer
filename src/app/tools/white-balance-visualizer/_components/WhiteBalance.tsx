@@ -3,8 +3,8 @@
 import { useState, useMemo, useCallback, useRef } from 'react'
 import { kelvinToRgb } from '@/lib/math/color'
 import { getToolBySlug } from '@/lib/data/tools'
-import { WB_PRESETS } from '@/lib/data/whiteBalance'
-import { useQueryInit, useToolQuerySync, intParam } from '@/lib/utils/querySync'
+import { WB_PRESETS, WB_SCENES } from '@/lib/data/whiteBalance'
+import { useQueryInit, useToolQuerySync, intParam, strParam } from '@/lib/utils/querySync'
 import { LearnPanel } from '@/components/shared/LearnPanel'
 import { ToolActions } from '@/components/shared/ToolActions'
 import { PhotoUploadPanel } from '@/components/shared/PhotoUploadPanel'
@@ -12,8 +12,11 @@ import { WbPreview } from './WbPreview'
 import calc from '@/components/shared/Calculator.module.css'
 import wb from './WhiteBalance.module.css'
 
+const SCENE_IDS = WB_SCENES.map(s => s.id) as readonly string[]
+
 const PARAM_SCHEMA = {
   k: intParam(5500, 2000, 10000),
+  scene: strParam(SCENE_IDS[0], SCENE_IDS),
 }
 
 const tool = getToolBySlug('white-balance-visualizer')!
@@ -108,11 +111,14 @@ function ControlsPanel({ kelvin, rgb, activePreset, onKelvinChange, onFile }: {
 
 export function WhiteBalance() {
   const [kelvin, setKelvin] = useState(5500)
+  const [sceneId, setSceneId] = useState(SCENE_IDS[0])
   const [customSrc, setCustomSrc] = useState<string | null>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
-  useQueryInit(PARAM_SCHEMA, { k: setKelvin })
-  useToolQuerySync({ k: kelvin }, PARAM_SCHEMA)
+  const sceneIdx = WB_SCENES.findIndex(s => s.id === sceneId)
+
+  useQueryInit(PARAM_SCHEMA, { k: setKelvin, scene: setSceneId })
+  useToolQuerySync({ k: kelvin, scene: sceneId }, PARAM_SCHEMA)
 
   const rgb = useMemo(() => kelvinToRgb(kelvin), [kelvin])
 
@@ -139,7 +145,7 @@ export function WhiteBalance() {
           <ControlsPanel {...controlsProps} />
         </div>
 
-        <WbPreview rgb={rgb} kelvin={kelvin} customSrc={customSrc} onFile={handleFile} onRemoveCustom={handleRemoveCustom} canvasRef={canvasRef} />
+        <WbPreview rgb={rgb} kelvin={kelvin} customSrc={customSrc} onFile={handleFile} onRemoveCustom={handleRemoveCustom} canvasRef={canvasRef} sceneIdx={sceneIdx} onSceneChange={(idx) => { if (idx >= 0) setSceneId(WB_SCENES[idx].id) }} />
 
         <LearnPanel slug="white-balance-visualizer" />
       </div>

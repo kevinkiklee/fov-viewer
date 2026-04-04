@@ -15,19 +15,31 @@ interface WbPreviewProps {
   onFile: (file: File) => void
   onRemoveCustom?: () => void
   canvasRef: React.RefObject<HTMLCanvasElement | null>
+  sceneIdx: number
+  onSceneChange: (idx: number) => void
 }
 
-export function WbPreview({ rgb, kelvin, customSrc, onFile, onRemoveCustom, canvasRef }: WbPreviewProps) {
-  const [sceneIdx, setSceneIdx] = useState(0)
+export function WbPreview({ rgb, kelvin, customSrc, onFile, onRemoveCustom, canvasRef, sceneIdx, onSceneChange }: WbPreviewProps) {
+  const [localIdx, setLocalIdx] = useState(sceneIdx)
   const [dragOver, setDragOver] = useState(false)
+
+  // Keep local idx in sync with parent (for custom uploads, parent sets -1 indirectly)
+  useEffect(() => {
+    setLocalIdx(sceneIdx)
+  }, [sceneIdx])
 
   // Auto-switch to custom image when one is uploaded from the sidebar
   useEffect(() => {
-    if (customSrc !== null) setSceneIdx(-1)
+    if (customSrc !== null) setLocalIdx(-1)
   }, [customSrc])
 
-  const useCustom = customSrc !== null && sceneIdx === -1
-  const activeSrc = useCustom ? customSrc : WB_SCENES[sceneIdx]?.src ?? WB_SCENES[0].src
+  const handleSceneSelect = useCallback((idx: number) => {
+    setLocalIdx(idx)
+    if (idx >= 0) onSceneChange(idx)
+  }, [onSceneChange])
+
+  const useCustom = customSrc !== null && localIdx === -1
+  const activeSrc = useCustom ? customSrc : WB_SCENES[localIdx]?.src ?? WB_SCENES[0].src
   const { isLoading, error } = useWbRenderer(canvasRef, activeSrc, rgb)
 
   const handleDrop = useCallback((e: React.DragEvent) => {
@@ -36,7 +48,7 @@ export function WbPreview({ rgb, kelvin, customSrc, onFile, onRemoveCustom, canv
     const file = e.dataTransfer.files[0]
     if (file && file.type.startsWith('image/')) {
       onFile(file)
-      setSceneIdx(-1)
+      setLocalIdx(-1)
     }
   }, [onFile])
 
@@ -45,8 +57,8 @@ export function WbPreview({ rgb, kelvin, customSrc, onFile, onRemoveCustom, canv
       <div className={styles.topbar}>
         <ScenePicker
           scenes={scenes}
-          selectedIndex={sceneIdx}
-          onSelect={setSceneIdx}
+          selectedIndex={localIdx}
+          onSelect={handleSceneSelect}
           customSrc={customSrc}
           onCustomFile={onFile}
           onCustomRemove={onRemoveCustom}

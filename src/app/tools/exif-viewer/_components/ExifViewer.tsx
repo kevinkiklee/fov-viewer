@@ -623,10 +623,20 @@ export function ExifViewer() {
                   ['File Size', data.file.size],
                 ]} />
                 <Section title="Date" rows={[['Date Taken', data.date]]} />
-                {data.gps && <Section title="GPS" rows={[
-                  ['Latitude', data.gps.latitude],
-                  ['Longitude', data.gps.longitude],
-                ]} />}
+                {data.gps && (
+                  <div className={styles.section}>
+                    <div className={styles.sectionTitle}>GPS</div>
+                    <div className={styles.gpsWarning}>
+                      This photo contains location data. Be careful when sharing the original file.
+                    </div>
+                    <table className={styles.table}>
+                      <tbody>
+                        <Row label="Latitude" value={data.gps.latitude} />
+                        <Row label="Longitude" value={data.gps.longitude} />
+                      </tbody>
+                    </table>
+                  </div>
+                )}
                 <Section title="Software" rows={[['Software', data.software]]} />
               </div>
             </>

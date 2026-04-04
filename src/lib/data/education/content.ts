@@ -324,12 +324,12 @@ export const TOOL_EDUCATION: ToolEducation[] = [
         id: 'exp-concert-challenge',
         difficulty: 'advanced',
         scenario:
-          'You are photographing a concert in a dark venue. The performers are moving quickly under colored stage lights. You need at least 1/250s to freeze motion. Your fastest lens is f/2.8. What ISO do you likely need if the scene meters at EV 4?',
-        hint: 'At EV 4, f/2.8, calculate the ISO needed to achieve 1/250s. Each full stop of ISO doubles the brightness.',
+          'You are photographing a concert in a dark venue. The performers are moving quickly under colored stage lights. You need at least 1/250s to freeze motion. Your fastest lens is f/2.8. What ISO do you likely need if the scene meters at EV 6?',
+        hint: 'At EV 6, f/2.8, calculate the ISO needed to achieve 1/250s. Each full stop of ISO doubles the brightness.',
         successMessage:
-          'Correct! At EV 4 with f/2.8 and 1/250s, you need ISO 3200. Concert photography often demands high ISO — knowing your camera\'s usable ISO limit is critical for these situations.',
+          'Correct! At EV 6 with f/2.8 and 1/250s, you need ISO 3200. Concert photography often demands high ISO — knowing your camera\'s usable ISO limit is critical for these situations.',
         failureMessage:
-          'At EV 4, the combination of f/2.8 and 1/250s requires ISO 3200 to achieve proper exposure. Use the EV formula: EV = log2(N^2 / t) - log2(ISO / 100).',
+          'At EV 6, the combination of f/2.8 and 1/250s requires ISO 3200 to achieve proper exposure. The exposure formula balances aperture, shutter speed, and ISO against the available light.',
         targetField: 'iso',
         options: [
           { label: 'ISO 400', value: '400' },
@@ -483,9 +483,9 @@ export const TOOL_EDUCATION: ToolEducation[] = [
           'You have an APS-C camera (23.5mm x 15.6mm sensor) with 26MP resolution. At what approximate f-number does diffraction start to visibly soften your images? Assume 550nm wavelength.',
         hint: 'First calculate pixel pitch from the sensor width and horizontal pixel count, then find where the Airy disk diameter equals the pixel pitch.',
         successMessage:
-          'Correct! With a pixel pitch of about 3.9 micrometers, the diffraction limit falls near f/5.6. The Airy disk matches the pixel pitch at approximately f = pixel_pitch / (2.44 * 0.00055mm) = ~2.9, but accounting for Bayer demosaicing, visible softening begins around f/5.6.',
+          'Correct! With a pixel pitch of about 3.9 micrometers, the diffraction limit falls near f/5.6. The practical formula is: f_limit ≈ pixel_pitch / 0.67, which gives 3.9 / 0.67 ≈ 5.8. The 0.67 constant accounts for the Airy disk diameter at green light (550nm) and the Bayer filter pattern that reduces effective resolution. This is why high-density APS-C sensors hit diffraction limits at surprisingly wide apertures.',
         failureMessage:
-          'The pixel pitch for this sensor is about 3.9 micrometers. Using the Airy disk formula and accounting for Bayer demosaicing, diffraction becomes visible around f/5.6 to f/6.3.',
+          'The pixel pitch for this sensor is about 3.9 micrometers. Using the formula f_limit ≈ pixel_pitch / 0.67 gives approximately f/5.8, rounding to f/5.6. High-density APS-C sensors are diffraction-limited earlier than many photographers expect.',
         targetField: 'aperture',
         options: [
           { label: 'f/4', value: 'f/4' },
@@ -984,9 +984,9 @@ export const TOOL_EDUCATION: ToolEducation[] = [
           'You are shooting a moody, cinematic night scene in a city and want an intentional cold blue tone. The streetlights are sodium vapor (~2200K). What Kelvin white balance setting would give you the strongest blue shift?',
         hint: 'Setting WB much lower than the actual light source temperature will shift the image toward blue.',
         successMessage:
-          'Correct! Setting the WB to around 2200K (matching the sodium lights) would neutralize the color. Setting it lower — like Tungsten at 3200K — actually warms things. But for a blue shift, you would set WB to a low Kelvin value like 2500-3000K... wait, that is counterintuitive! Actually, the sodium lights at 2200K are already very warm. Setting WB to 3200K or higher tells the camera the light is warmer than it is and adds blue. The highest WB value produces the strongest blue shift.',
+          'Correct! Setting WB to 7500K (Shade preset) tells the camera the light source is very cool/blue — so it compensates by adding heavy warmth-correction. But since the actual sodium lights are only 2200K (very warm), this overcorrection swings past neutral into a strong blue cast. The higher you set the WB Kelvin above the actual light temperature, the stronger the blue shift.',
         failureMessage:
-          'Setting a WB Kelvin value much higher than the actual light source temperature makes the camera add maximum blue. With 2200K sodium lights, setting WB to 7500K+ creates the strongest cold blue look.',
+          'Setting a WB Kelvin value much higher than the actual light source temperature makes the camera overcorrect toward blue. With 2200K sodium lights, setting WB to 7500K+ creates the strongest cold blue look.',
         targetField: 'colorTemperature',
         options: [
           { label: '2200K (matching the sodium lights)', value: '2200' },

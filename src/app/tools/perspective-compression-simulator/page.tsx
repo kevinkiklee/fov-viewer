@@ -3,7 +3,7 @@ import { PerspectiveCompressionSimulator } from './_components/PerspectiveCompre
 
 export const metadata: Metadata = {
   title: 'Perspective Compression Simulator',
-  description: 'See how focal length affects background compression. Interactive 3D visualization.',
+  description: 'Interactive 3D simulator showing how focal length and distance affect perspective compression. See background compression change in real time.',
   openGraph: {
     images: ['/images/og/perspective-compression-simulator.jpg'],
   },

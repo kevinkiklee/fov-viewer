@@ -5,6 +5,7 @@
   border-bottom: 1px solid var(--border);
   position: relative;
   z-index: 1000;
+  view-transition-name: nav;
 }
 
 .navInner {

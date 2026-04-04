@@ -104,7 +104,7 @@ export const TOOL_EDUCATION_2: ToolEducation[] = [
 
   // ── Tool 10: Sensor Size Comparison ────────────────────────────────
   {
-    slug: 'sensor-size',
+    slug: 'sensor-size-comparison',
     beginner:
       'Camera sensors come in many different physical sizes, from the large medium-format chips used in studio cameras down to the tiny sensors in smartphones. A larger sensor captures more light, produces less noise, and makes it easier to blur backgrounds. Sensor size is one of the biggest factors separating camera categories.',
     deeper:
@@ -113,7 +113,7 @@ export const TOOL_EDUCATION_2: ToolEducation[] = [
       { label: 'Physical Dimensions', description: 'Width and height in millimeters determine the total light-gathering area and the field of view for a given lens.' },
       { label: 'Crop Factor', description: 'The ratio of the full-frame diagonal to the sensor diagonal. Multiplied by focal length, it gives the "equivalent" focal length.' },
       { label: 'Pixel Density', description: 'How tightly pixels are packed. Smaller pixel pitch means more detail but less light per pixel, affecting noise performance.' },
-      { label: 'Sensor Area', description: 'Total area in mm². A medium format sensor has roughly 1.7x the area of full frame, and about 13x the area of a smartphone sensor.' },
+      { label: 'Sensor Area', description: 'Total area in mm². A 44x33mm medium format sensor (Fujifilm GFX, Hasselblad X) has roughly 1.7x the area of full frame, while a larger 54x40mm medium format chip is about 2.5x. Full frame is roughly 13x the area of a flagship smartphone sensor.' },
     ],
     tips: [
       { text: 'Use the overlay mode to see exactly how much bigger one sensor is than another — the area difference is often more dramatic than the numbers suggest.' },
@@ -145,7 +145,7 @@ export const TOOL_EDUCATION_2: ToolEducation[] = [
         scenario: 'You want to see how a smartphone sensor compares to full frame. Which two sensors should you enable in the comparison?',
         hint: 'Look for "Full Frame" and the smartphone option.',
         successMessage: 'Correct! Comparing Full Frame and Smartphone shows just how dramatic the size difference is — the full-frame sensor is over 13 times larger by area.',
-        failureMessage: 'Enable "Full Frame" and "Smartphone (1/1.7\")" to see the comparison.',
+        failureMessage: 'Enable "Full Frame" and "Smartphone Flagship (1/1.3\")" to see the comparison.',
         targetField: 'sensor',
         options: [
           { label: 'Full Frame + Smartphone', value: 'ff-phone' },

@@ -26,7 +26,7 @@ export default function HomePage() {
       <div className={styles.hero}>
         <h1 className="sr-only">PhotoTools — Free Photography Tools</h1>
         <p className={styles.heroDesc}>
-          Free photography calculators, simulators, and references. No sign-up, no tracking, runs entirely in your browser.
+          Free photography calculators, simulators, and references. No sign-up required — your photos never leave your browser.
         </p>
       </div>
 

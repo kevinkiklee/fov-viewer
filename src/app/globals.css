@@ -96,6 +96,36 @@ input[type="range"]:focus-visible {
 
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
 
+/* ── View Transitions ── */
+::view-transition-group(*) {
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+::view-transition-old(*) {
+  animation: vt-slide-out 0.15s ease-in both;
+}
+
+::view-transition-new(*) {
+  animation: vt-slide-in 0.2s ease-out both;
+}
+
+/* Keep nav and footer stable during transitions */
+::view-transition-old(nav),
+::view-transition-new(nav),
+::view-transition-old(footer),
+::view-transition-new(footer) {
+  animation: none;
+}
+
+@keyframes vt-slide-out {
+  to { opacity: 0; transform: translateY(4px); }
+}
+
+@keyframes vt-slide-in {
+  from { opacity: 0; transform: translateY(-4px); }
+}
+
 /* ── Global keyframes ── */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -128,5 +158,10 @@ input[type="range"]:focus-visible {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-duration: 0.01ms !important;
   }
 }

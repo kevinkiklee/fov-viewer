@@ -14,8 +14,10 @@ export function ShareModal({ toolName, toolSlug, onClose, onToast }: ShareModalP
   const [copied, setCopied] = useState<string | null>(null)
 
   const baseUrl = 'https://www.phototools.io'
-  const toolUrl = `${baseUrl}/tools/${toolSlug}`
-  const embedUrl = `${toolUrl}?embed=1`
+  const search = typeof window !== 'undefined' ? window.location.search : ''
+  const toolUrl = `${baseUrl}/tools/${toolSlug}${search}`
+  const embedParams = search ? `${search}&embed=1` : '?embed=1'
+  const embedUrl = `${baseUrl}/tools/${toolSlug}${embedParams}`
   const label = toolName
 
   const snippets = {

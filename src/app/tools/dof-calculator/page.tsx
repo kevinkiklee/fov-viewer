@@ -3,7 +3,7 @@ import { DoFCalculator } from './_components/DoFCalculator'
 
 export const metadata: Metadata = {
   title: 'Depth of Field Calculator',
-  description: 'Calculate near focus, far focus, and total depth of field for any lens and sensor.',
+  description: 'Calculate depth of field for any lens, aperture, and sensor size. See near/far focus limits, hyperfocal distance, and background blur — free and interactive.',
   openGraph: {
     images: ['/images/og/dof-calculator.jpg'],
   },
