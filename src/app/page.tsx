@@ -3,6 +3,7 @@ import { getVisibleTools, getToolStatus } from '@/lib/data/tools'
 import { ToolIcon } from '@/components/shared/ToolIcon'
 import { AnimatedGrid, AnimatedItem } from '@/components/shared/AnimatedGrid'
 import type { ToolCategory } from '@/lib/types'
+import { AdUnit } from '@/components/shared/AdUnit'
 import styles from './page.module.css'
 
 const CATEGORIES: { key: ToolCategory; label: string }[] = [
@@ -35,6 +36,10 @@ export default function HomePage() {
         <p className={styles.heroDesc}>
           Free photography calculators, simulators, and references. No sign-up required — your photos never leave your browser.
         </p>
+      </div>
+
+      <div style={{ display: 'flex', justifyContent: 'center', margin: '0 0 24px' }}>
+        <AdUnit slot="" format="leaderboard" channel="homepage_leaderboard" />
       </div>
 
       {grouped.map((group) => (
