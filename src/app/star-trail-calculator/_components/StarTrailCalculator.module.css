@@ -194,7 +194,7 @@
   }
 
   .canvasMain {
-    padding: 4px;
+    padding: 10px;
     flex: none;
     min-height: 300px;
   }

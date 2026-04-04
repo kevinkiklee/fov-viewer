@@ -309,7 +309,10 @@ export function StarTrailCanvas({
     const parent = canvas.parentElement
     if (!parent) return
     const rect = parent.getBoundingClientRect()
-    const size = Math.min(rect.width - 48, rect.height - 48, 600)
+    const isMobile = rect.width < 768
+    const size = isMobile
+      ? rect.width
+      : Math.min(rect.width - 48, rect.height - 48, 600)
     const dpr = window.devicePixelRatio || 1
     canvas.width = size * dpr
     canvas.height = size * dpr

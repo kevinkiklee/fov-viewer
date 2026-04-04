@@ -35,7 +35,7 @@ const PARAM_SCHEMA = {
   lat: intParam(45, 0, 90),
   exp: intParam(30, 1, 300),
   frames: intParam(60, 1, 9999),
-  gap: intParam(2, 0, 60),
+  gap: intParam(1, 0, 60),
 }
 
 function ControlsPanel({
@@ -260,7 +260,7 @@ export function StarTrailCalculator() {
   // Trail mode inputs
   const [exposurePerFrame, setExposurePerFrame] = useState(30)
   const [numFrames, setNumFrames] = useState(60)
-  const [gap, setGap] = useState(2)
+  const [gap, setGap] = useState(1)
   useQueryInit(PARAM_SCHEMA, { mode: setMode, fl: setFocalLength, s: setSensorId, mp: setResolution, f: setAperture, lat: setLatitude, exp: setExposurePerFrame, frames: setNumFrames, gap: setGap })
 
   useToolQuerySync(
