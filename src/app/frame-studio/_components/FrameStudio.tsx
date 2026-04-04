@@ -10,8 +10,10 @@ import { ToolActions } from '@/components/shared/ToolActions'
 import { getToolBySlug, getToolStatus } from '@/lib/data/tools'
 import { Toolbar } from './Toolbar'
 import { ImageCanvas } from './ImageCanvas'
+import { GridCanvas } from './GridCanvas'
 import { CropView } from './CropView'
 import { CropPanel } from './CropPanel'
+import { GridControls } from './GridControls'
 import type {
   EditorMode, GridType, GridOptions, FrameConfig, CropState,
 } from './types'
@@ -33,6 +35,7 @@ export function FrameStudio() {
   const [gridOptions, setGridOptions] = useState<GridOptions>(DEFAULT_GRID_OPTIONS)
   const [frameConfig, setFrameConfig] = useState<FrameConfig>(DEFAULT_FRAME_CONFIG)
   const [gridOpen, setGridOpen] = useState(false)
+  const [canvasDims, setCanvasDims] = useState({ width: 0, height: 0, offsetX: 0, offsetY: 0 })
   const [showExport, setShowExport] = useState(false)
   const [aspectRatio, setAspectRatio] = useState<number | null>(null)
 
@@ -105,23 +108,51 @@ export function FrameStudio() {
                       onCropChange={setCropState}
                     />
                   ) : (
-                    <ImageCanvas
-                      image={originalImage}
-                      crop={cropState}
-                      frameConfig={mode === 'frame' ? frameConfig : DEFAULT_FRAME_CONFIG}
-                    />
+                    <>
+                      <ImageCanvas
+                        image={originalImage}
+                        crop={cropState}
+                        frameConfig={mode === 'frame' ? frameConfig : DEFAULT_FRAME_CONFIG}
+                        onDimensionsChange={setCanvasDims}
+                      />
+                      {activeGrids.length > 0 && canvasDims.width > 0 && (
+                        <div style={{
+                          position: 'absolute',
+                          left: `${canvasDims.offsetX}px`,
+                          top: `${canvasDims.offsetY}px`,
+                          pointerEvents: 'none',
+                        }}>
+                          <GridCanvas
+                            width={canvasDims.width}
+                            height={canvasDims.height}
+                            activeGrids={activeGrids}
+                            options={gridOptions}
+                          />
+                        </div>
+                      )}
+                    </>
                   )}
                 </div>
               )}
             </div>
 
-            {originalImage && mode === 'crop' && (
+            {originalImage && (mode === 'crop' || mode === 'frame' || gridOpen) && (
               <div className={styles.sidePanel}>
-                <CropPanel
-                  selectedRatio={aspectRatio}
-                  onRatioChange={setAspectRatio}
-                  onApply={handleApplyCrop}
-                />
+                {mode === 'crop' && (
+                  <CropPanel
+                    selectedRatio={aspectRatio}
+                    onRatioChange={setAspectRatio}
+                    onApply={handleApplyCrop}
+                  />
+                )}
+                {gridOpen && (
+                  <GridControls
+                    activeGrids={activeGrids}
+                    onActiveGridsChange={setActiveGrids}
+                    options={gridOptions}
+                    onOptionsChange={setGridOptions}
+                  />
+                )}
               </div>
             )}
           </div>
