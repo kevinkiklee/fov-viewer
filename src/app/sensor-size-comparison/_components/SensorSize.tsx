@@ -553,9 +553,10 @@ export function SensorSize() {
     const dpr = window.devicePixelRatio || 1
     const cssWidth = canvas.clientWidth
     const isMobile = cssWidth < 600
-    // Mobile: large canvas then crop. Desktop: use natural height.
+    // Pixel-density mode can be very tall — allocate generous height then crop
     const naturalHeight = canvas.clientHeight || 420
-    const maxHeight = isMobile ? 5000 : naturalHeight
+    const needsTallCanvas = isMobile || mode === 'pixel-density'
+    const maxHeight = needsTallCanvas ? 5000 : naturalHeight
     let cssHeight = maxHeight
     canvas.style.height = `${cssHeight}px`
     canvas.width = cssWidth * dpr
@@ -609,11 +610,10 @@ export function SensorSize() {
       contentH = drawPixelDensity(ctx, cssWidth, cssHeight, padding, sensors, resolution, alphaMap)
     }
 
-    // Crop canvas to actual content (mobile only)
-    if (isMobile && contentH < cssHeight) {
+    // Crop canvas to actual content height
+    if (needsTallCanvas && contentH < cssHeight) {
       const finalH = Math.max(contentH + padding, 200)
       canvas.style.height = `${finalH}px`
-      // Copy drawn content, resize, and redraw
       const imageData = ctx.getImageData(0, 0, canvas.width, Math.ceil(finalH * dpr))
       canvas.height = Math.ceil(finalH * dpr)
       ctx.putImageData(imageData, 0, 0)
@@ -1381,10 +1381,14 @@ function drawPixelDensity(
     // ── Desktop: all columns in a single row ──
     const colsPerRow = columns.length
     const availW = W - pad * 2
-    const colW = (availW - (colsPerRow - 1) * colGap) / colsPerRow
+    const maxColW = 140 // cap column width to prevent stretched sensors
+    const rawColW = (availW - (colsPerRow - 1) * colGap) / colsPerRow
+    const colW = Math.min(rawColW, maxColW)
     const sensorScale = (colW - 8) / maxSensorW
     const totalRowW = colsPerRow * colW + (colsPerRow - 1) * colGap
     let colX = (W - totalRowW) / 2
+
+    let maxGridY = 0
 
     for (const col of columns) {
       const colAlpha = alphaMap
@@ -1413,8 +1417,6 @@ function drawPixelDensity(
           const pitch = pixelPitch(s.w, mp, s.h)
           const rx = colX + (colW - sensorPxW) / 2
           const ry = gridY
-
-          if (ry + sensorPxH + labelH > H - pad) break
 
           ctx.save()
           ctx.globalAlpha = a
@@ -1486,11 +1488,12 @@ function drawPixelDensity(
         }
       }
 
+      if (gridY > maxGridY) maxGridY = gridY
       colX += colW + colGap
     }
-  }
 
-  ctx.textBaseline = 'alphabetic'
-  return H
+    ctx.textBaseline = 'alphabetic'
+    return maxGridY
+  }
 }
 

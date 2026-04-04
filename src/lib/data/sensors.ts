@@ -77,8 +77,6 @@ export const COMMON_MP: Record<string, MpEntry[]> = {
     { mp: 24, models: 'Sony A7 III / Nikon Z6 III / Canon R6 Mark II / Leica SL2-S / Leica M10' },
     { mp: 33, models: 'Sony A7 IV' },
     { mp: 45, models: 'Canon R5 / Nikon Z8 / Nikon Z9' },
-    { mp: 47, models: 'Leica Q2 / Leica SL2' },
-    { mp: 60, models: 'Leica M11 / Leica Q3 / Leica SL3' },
     { mp: 61, models: 'Sony A7R V / Sigma fp L' },
   ],
   apsc_n: [
