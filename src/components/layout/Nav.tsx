@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { getAllTools, getToolStatus } from '@/lib/data/tools'
+import { getVisibleTools, getToolStatus } from '@/lib/data/tools'
 import type { ToolCategory } from '@/lib/types'
 import { ToolIcon } from '@/components/shared/ToolIcon'
 import { ThemeToggle } from './ThemeToggle'
@@ -37,7 +37,7 @@ export function Nav({ theme, onThemeChange }: NavProps) {
   const toolsRef = useRef<HTMLDivElement>(null)
   const canHover = useCanHover()
   const pathname = usePathname()
-  const tools = getAllTools()
+  const tools = getVisibleTools()
 
   const MAX_PER_COLUMN = 5
 
@@ -126,7 +126,7 @@ export function Nav({ theme, onThemeChange }: NavProps) {
                         return (
                           <Link
                             key={tool.slug}
-                            href={`/tools/${tool.slug}`}
+                            href={`/${tool.slug}`}
                             className={styles.megaItem}
                             onClick={(e) => { if (!e.metaKey && !e.ctrlKey) setToolsOpen(false) }}
                           >

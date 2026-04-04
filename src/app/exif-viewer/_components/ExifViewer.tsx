@@ -385,10 +385,6 @@ const tool = getToolBySlug('exif-viewer')!
 function ControlsPanel({ onFile, onSample }: { onFile: (file: File) => void; onSample: () => void }) {
   return (
     <>
-      <div className={styles.header}>
-        <h1 className={styles.title}>{tool.name}</h1>
-        <p className={styles.description}>{tool.description}</p>
-      </div>
       <PhotoUploadPanel onFile={onFile} />
       <button className={styles.sampleBtn} onClick={onSample}>
         Load example photo

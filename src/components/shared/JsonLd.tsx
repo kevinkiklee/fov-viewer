@@ -16,9 +16,9 @@ export function JsonLd() {
   
   if (!pathname) return null
 
-  if (pathname.startsWith('/tools/')) {
-    const slug = pathname.split('/').pop()
-    if (!slug) return null
+  {
+    const slug = pathname.slice(1) // remove leading /
+    if (!slug || slug.includes('/')) return null
     const tool = getToolBySlug(slug)
     
     if (tool) {
@@ -34,7 +34,7 @@ export function JsonLd() {
           price: '0',
           priceCurrency: 'USD',
         },
-        url: `https://www.phototools.io/tools/${tool.slug}`,
+        url: `https://www.phototools.io/${tool.slug}`,
       }
 
       const breadcrumbs = {
@@ -57,7 +57,7 @@ export function JsonLd() {
             '@type': 'ListItem',
             position: 3,
             name: tool.name,
-            item: `https://www.phototools.io/tools/${tool.slug}`,
+            item: `https://www.phototools.io/${tool.slug}`,
           },
         ],
       }

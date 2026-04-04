@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Add all live tools
   const tools = getLiveTools()
   const toolRoutes: MetadataRoute.Sitemap = tools.map((tool) => ({
-    url: `${baseUrl}/tools/${tool.slug}`,
+    url: `${baseUrl}/${tool.slug}`,
     lastModified: new Date(),
     changeFrequency: 'weekly',
     priority: 0.9,

@@ -85,7 +85,7 @@ export function Glossary() {
               <div className={styles.termName}>{entry.term}</div>
               <div className={styles.termDef}>{entry.definition}</div>
               {entry.relatedTool && (
-                <a className={styles.toolLink} href={`/tools/${entry.relatedTool}`}>
+                <a className={styles.toolLink} href={`/${entry.relatedTool}`}>
                   Try the {getToolName(entry.relatedTool)} &rarr;
                 </a>
               )}

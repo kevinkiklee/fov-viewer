@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getAllTools, getToolStatus } from '@/lib/data/tools'
+import { getVisibleTools, getToolStatus } from '@/lib/data/tools'
 import { ToolIcon } from '@/components/shared/ToolIcon'
 import { AnimatedGrid, AnimatedItem } from '@/components/shared/AnimatedGrid'
 import type { ToolCategory } from '@/lib/types'
@@ -13,7 +13,7 @@ const CATEGORIES: { key: ToolCategory; label: string }[] = [
 ]
 
 export default function HomePage() {
-  const tools = getAllTools()
+  const tools = getVisibleTools()
 
   const grouped = CATEGORIES
     .map((cat) => ({
@@ -47,7 +47,7 @@ export default function HomePage() {
                 return (
                   <AnimatedItem key={tool.slug}>
                     <Link
-                      href={`/tools/${tool.slug}`}
+                      href={`/${tool.slug}`}
                       className={styles.card}
                     >
                       <div className={styles.cardHeader}>

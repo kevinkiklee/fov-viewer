@@ -6,16 +6,23 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Legacy /tools/* URLs → root-level
+      {
+        source: '/tools/:slug',
+        destination: '/:slug',
+        permanent: true,
+      },
+      // Old domain redirect
       {
         source: '/',
         has: [{ type: 'host', value: 'fov-viewer.iser.io' }],
-        destination: 'https://www.phototools.io/tools/fov-simulator',
+        destination: 'https://www.phototools.io/fov-simulator',
         permanent: true,
       },
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'fov-viewer.iser.io' }],
-        destination: 'https://www.phototools.io/tools/fov-simulator',
+        destination: 'https://www.phototools.io/fov-simulator',
         permanent: true,
       },
     ]

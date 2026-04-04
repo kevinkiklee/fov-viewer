@@ -17,7 +17,7 @@ export interface LensConfig {
   sensorId: string
 }
 
-export type ToolStatus = 'live' | 'draft'
+export type ToolStatus = 'live' | 'draft' | 'disabled'
 export type ToolCategory = 'calculator' | 'visualizer' | 'reference' | 'file-tool'
 
 export interface ToolDef {

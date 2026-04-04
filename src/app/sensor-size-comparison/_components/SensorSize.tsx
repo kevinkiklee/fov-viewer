@@ -24,8 +24,8 @@ const PARAM_SCHEMA = {
   show: {
     default: DEFAULT_VISIBLE,
     parse: (raw: string) => {
-      // Support both + and , as separators for backwards compat
-      const ids = raw.split(/[+,]/).filter((id) => ALL_SENSOR_ID_SET.has(id))
+      // Support both + and , as separators; accept built-in and custom_ IDs
+      const ids = raw.split(/[+,]/).filter((id) => ALL_SENSOR_ID_SET.has(id) || id.startsWith('custom_'))
       return ids.length > 0 ? ids.join('+') : undefined
     },
     serialize: (v: string) => v,
@@ -189,6 +189,62 @@ let overlayRects: SensorRect[] = []
 const CUSTOM_COLORS = ['#06b6d4', '#f97316', '#84cc16', '#e879f9', '#facc15', '#fb7185']
 let customColorIdx = 0
 
+const STORAGE_KEY = 'phototools:custom-sensors'
+
+type StoredCustomSensor = { id: string; name: string; w: number; h: number; cropFactor: number; color: string; mp?: number }
+
+function loadCustomSensors(): Required<SensorPreset>[] {
+  if (typeof window === 'undefined') return []
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY)
+    if (!raw) return []
+    const stored: StoredCustomSensor[] = JSON.parse(raw)
+    // Restore COMMON_MP entries
+    for (const s of stored) {
+      if (s.mp && s.mp > 0) {
+        COMMON_MP[s.id] = [{ mp: s.mp, models: s.name }]
+      }
+    }
+    customColorIdx = stored.length
+    return stored.map(s => ({ id: s.id, name: s.name, w: s.w, h: s.h, cropFactor: s.cropFactor, color: s.color }))
+  } catch { return [] }
+}
+
+function saveCustomSensors(sensors: Required<SensorPreset>[]) {
+  try {
+    const stored: StoredCustomSensor[] = sensors.map(s => ({
+      id: s.id, name: s.name, w: s.w, h: s.h, cropFactor: s.cropFactor, color: s.color,
+      mp: COMMON_MP[s.id]?.[0]?.mp,
+    }))
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(stored))
+  } catch { /* ignore */ }
+}
+
+/** Encode custom sensors as a query param: name~w~h~mp, ... */
+function encodeCustomParam(sensors: Required<SensorPreset>[]): string {
+  return sensors.map(s => {
+    const mp = COMMON_MP[s.id]?.[0]?.mp ?? 0
+    return `${s.name}~${s.w}~${s.h}~${mp}`
+  }).join(',')
+}
+
+function decodeCustomParam(raw: string): Required<SensorPreset>[] {
+  if (!raw) return []
+  return raw.split(',').map((entry, i) => {
+    const [name, ws, hs, mps] = entry.split('~')
+    const w = parseFloat(ws)
+    const h = parseFloat(hs)
+    const mp = parseFloat(mps) || 0
+    if (!name || isNaN(w) || isNaN(h) || w <= 0 || h <= 0) return null
+    const id = `custom_url_${i}`
+    const color = CUSTOM_COLORS[i % CUSTOM_COLORS.length]
+    const diag = Math.sqrt(w * w + h * h)
+    const cropFactor = FF_DIAG / diag
+    if (mp > 0) COMMON_MP[id] = [{ mp, models: name }]
+    return { id, name, w, h, cropFactor, color } as Required<SensorPreset>
+  }).filter(Boolean) as Required<SensorPreset>[]
+}
+
 export function SensorSize() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [visible, setVisible] = useState<Set<string>>(() => new Set(DEFAULT_VISIBLE_IDS))
@@ -196,21 +252,73 @@ export function SensorSize() {
   const [resolution, setResolution] = useState(24)
   const [hoveredSensor, setHoveredSensor] = useState<string | null>(null)
   const [customSensors, setCustomSensors] = useState<Required<SensorPreset>[]>([])
+  const [hydrated, setHydrated] = useState(false)
 
   // Animation state: maps sensor id → { progress: 0..1, direction: 'in' | 'out', startTime }
   const animRef = useRef<Map<string, { progress: number; direction: 'in' | 'out'; startTime: number }>>(new Map())
   const rafRef = useRef<number>(0)
   const prevVisibleRef = useRef<Set<string>>(new Set(DEFAULT_VISIBLE_IDS))
 
+  // Load custom sensors from localStorage or URL on mount
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    const customParam = params.get('custom')
+    if (customParam) {
+      // URL takes precedence — load from query param
+      const fromUrl = decodeCustomParam(customParam)
+      if (fromUrl.length > 0) {
+        setCustomSensors(fromUrl)
+        setVisible(prev => {
+          const next = new Set(prev)
+          fromUrl.forEach(s => next.add(s.id))
+          return next
+        })
+        saveCustomSensors(fromUrl)
+        customColorIdx = fromUrl.length
+      }
+    } else {
+      // Load from localStorage
+      const stored = loadCustomSensors()
+      if (stored.length > 0) {
+        setCustomSensors(stored)
+        setVisible(prev => {
+          const next = new Set(prev)
+          stored.forEach(s => next.add(s.id))
+          return next
+        })
+      }
+    }
+    setHydrated(true)
+  }, [])
+
+  // Persist custom sensors to localStorage when they change
+  useEffect(() => {
+    if (hydrated) saveCustomSensors(customSensors)
+  }, [customSensors, hydrated])
+
   useQueryInit(PARAM_SCHEMA, {
     show: (v: string) => setVisible(new Set(v.split(/[+,]/))),
     mode: setMode,
     mp: setResolution,
   })
+
+  // Sync standard params + custom param to URL
+  const customParam = customSensors.length > 0 ? encodeCustomParam(customSensors) : ''
   useToolQuerySync(
-    { show: Array.from(visible).join('+'), mode, mp: resolution },
+    { show: Array.from(visible).filter(id => ALL_SENSOR_ID_SET.has(id) || customSensors.some(s => s.id === id)).join('+'), mode, mp: resolution },
     PARAM_SCHEMA,
   )
+  // Sync custom param separately (append to URL)
+  useEffect(() => {
+    if (!hydrated) return
+    const url = new URL(window.location.href)
+    if (customParam) {
+      url.searchParams.set('custom', customParam)
+    } else {
+      url.searchParams.delete('custom')
+    }
+    window.history.replaceState(null, '', url.toString())
+  }, [customParam, hydrated])
 
   const allSensors = [...SENSORS as Required<SensorPreset>[], ...customSensors]
   const visibleSensors = allSensors.filter((s) => visible.has(s.id))
@@ -225,7 +333,7 @@ export function SensorSize() {
   }, [])
 
   const addCustomSensor = useCallback((name: string, w: number, h: number, mp: number) => {
-    const id = `custom_${Date.now()}`
+    const id = `custom_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`
     const color = CUSTOM_COLORS[customColorIdx % CUSTOM_COLORS.length]
     customColorIdx++
     const diag = Math.sqrt(w * w + h * h)
@@ -233,7 +341,6 @@ export function SensorSize() {
     const sensor: Required<SensorPreset> = { id, name, w, h, cropFactor, color }
     setCustomSensors(prev => [...prev, sensor])
     setVisible(prev => new Set([...prev, id]))
-    // Store MP for pixel density mode
     if (mp > 0) {
       COMMON_MP[id] = [{ mp, models: name }]
     }

@@ -17,7 +17,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   { term: 'Color Temperature', definition: 'A measurement in Kelvin that describes the warmth or coolness of a light source. Lower values (2700K) appear warm/orange; higher values (6500K+) appear cool/blue.', relatedTool: 'white-balance-visualizer' },
   { term: 'Crop Factor', definition: 'The ratio of a camera sensor\'s diagonal to that of a 35mm full-frame sensor. It affects the effective focal length and field of view.', relatedTool: 'sensor-size-comparison' },
   { term: 'Depth of Field', definition: 'The range of distance in a scene that appears acceptably sharp. Controlled by aperture, focal length, and subject distance.', relatedTool: 'dof-calculator' },
-  { term: 'Diffraction', definition: 'The bending of light as it passes through a small aperture, which softens the image. It sets a practical limit on how far you can stop down a lens.', relatedTool: 'diffraction-limit' },
+  { term: 'Diffraction', definition: 'The bending of light as it passes through a small aperture, which softens the image. It sets a practical limit on how far you can stop down a lens.' },
   { term: 'Dynamic Range', definition: 'The range between the darkest shadows and brightest highlights a camera can capture in a single exposure. Measured in stops (EV).' },
   { term: 'EV (Exposure Value)', definition: 'A number representing a combination of shutter speed and aperture that produces the same exposure. Each increment of 1 EV doubles or halves the light.' },
   { term: 'Exposure Compensation', definition: 'A camera control that overrides the metered exposure, typically in 1/3-stop increments. Positive values brighten the image; negative values darken it.' },

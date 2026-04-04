@@ -16,9 +16,9 @@ export function ShareModal({ toolName, toolSlug, onClose }: ShareModalProps) {
 
   const baseUrl = 'https://www.phototools.io'
   const search = typeof window !== 'undefined' ? window.location.search : ''
-  const toolUrl = `${baseUrl}/tools/${toolSlug}${search}`
+  const toolUrl = `${baseUrl}/${toolSlug}${search}`
   const embedParams = search ? `${search}&embed=1` : '?embed=1'
-  const embedUrl = `${baseUrl}/tools/${toolSlug}${embedParams}`
+  const embedUrl = `${baseUrl}/${toolSlug}${embedParams}`
   const label = toolName
 
   const snippets = {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { TOOLS, getToolBySlug, getLiveTools, getAllTools, getToolStatus } from './tools'
+import { TOOLS, getToolBySlug, getLiveTools, getVisibleTools, getAllTools, getToolStatus } from './tools'
 
 describe('TOOLS registry', () => {
   it('contains at least one tool', () => {
@@ -11,8 +11,8 @@ describe('TOOLS registry', () => {
       expect(tool.slug).toBeTruthy()
       expect(tool.name).toBeTruthy()
       expect(tool.description).toBeTruthy()
-      expect(['live', 'draft']).toContain(tool.dev)
-      expect(['live', 'draft']).toContain(tool.prod)
+      expect(['live', 'draft', 'disabled']).toContain(tool.dev)
+      expect(['live', 'draft', 'disabled']).toContain(tool.prod)
       expect(['calculator', 'visualizer', 'reference', 'file-tool']).toContain(tool.category)
     }
   })
@@ -44,16 +44,31 @@ describe('TOOLS registry', () => {
     expect(all).toEqual(TOOLS)
   })
 
-  it('getToolStatus returns live or draft', () => {
+  it('getToolStatus returns live, draft, or disabled', () => {
     for (const tool of TOOLS) {
-      expect(['live', 'draft']).toContain(getToolStatus(tool))
+      expect(['live', 'draft', 'disabled']).toContain(getToolStatus(tool))
     }
   })
 
-  it('getLiveTools is a subset of getAllTools', () => {
+  it('getLiveTools is a subset of getVisibleTools', () => {
     const live = getLiveTools()
-    const all = getAllTools()
+    const visible = getVisibleTools()
     for (const tool of live) {
+      expect(visible).toContainEqual(tool)
+    }
+  })
+
+  it('getVisibleTools excludes disabled tools', () => {
+    const visible = getVisibleTools()
+    for (const tool of visible) {
+      expect(getToolStatus(tool)).not.toBe('disabled')
+    }
+  })
+
+  it('getVisibleTools is a subset of getAllTools', () => {
+    const visible = getVisibleTools()
+    const all = getAllTools()
+    for (const tool of visible) {
       expect(all).toContainEqual(tool)
     }
   })
