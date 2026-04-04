@@ -28,6 +28,8 @@ const MODE_OPTIONS: { value: EditorMode; label: string }[] = [
   { value: 'frame', label: 'Frame' },
 ]
 
+const NO_FRAME_CONFIG: FrameConfig = { ...DEFAULT_FRAME_CONFIG, borderWidth: 0 }
+
 export function FrameStudio() {
   const tool = getToolBySlug(SLUG)
   const isDraft = tool ? getToolStatus(tool) === 'draft' : false
@@ -137,7 +139,7 @@ export function FrameStudio() {
                       <ImageCanvas
                         image={originalImage}
                         crop={cropState}
-                        frameConfig={mode === 'frame' ? frameConfig : { ...DEFAULT_FRAME_CONFIG, borderWidth: 0 }}
+                        frameConfig={mode === 'frame' ? frameConfig : NO_FRAME_CONFIG}
                         onDimensionsChange={setCanvasDims}
                       />
                       {activeGrids.length > 0 && canvasDims.width > 0 && (

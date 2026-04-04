@@ -15,6 +15,8 @@ interface ImageCanvasProps {
 export function ImageCanvas({ image, crop, frameConfig, onDimensionsChange }: ImageCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+  const onDimsRef = useRef(onDimensionsChange)
+  onDimsRef.current = onDimensionsChange
 
   const draw = useCallback(() => {
     const canvas = canvasRef.current
@@ -46,7 +48,6 @@ export function ImageCanvas({ image, crop, frameConfig, onDimensionsChange }: Im
     canvas.style.height = `${displayH}px`
     ctx.scale(dpr, dpr)
 
-    // Clear
     ctx.clearRect(0, 0, displayW, displayH)
 
     if (bw > 0) {
@@ -78,8 +79,8 @@ export function ImageCanvas({ image, crop, frameConfig, onDimensionsChange }: Im
     const imgH = displayH - imgY * 2
     ctx.drawImage(image, sx, sy, sw, sh, imgX, imgY, imgW, imgH)
 
-    onDimensionsChange?.({ width: imgW, height: imgH, offsetX: imgX, offsetY: imgY })
-  }, [image, crop, frameConfig, onDimensionsChange])
+    onDimsRef.current?.({ width: imgW, height: imgH, offsetX: imgX, offsetY: imgY })
+  }, [image, crop, frameConfig])
 
   useEffect(() => {
     draw()
