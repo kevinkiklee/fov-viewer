@@ -137,7 +137,7 @@ export function FrameStudio() {
                       <ImageCanvas
                         image={originalImage}
                         crop={cropState}
-                        frameConfig={mode === 'frame' ? frameConfig : DEFAULT_FRAME_CONFIG}
+                        frameConfig={mode === 'frame' ? frameConfig : { ...DEFAULT_FRAME_CONFIG, borderWidth: 0 }}
                         onDimensionsChange={setCanvasDims}
                       />
                       {activeGrids.length > 0 && canvasDims.width > 0 && (
