@@ -10,6 +10,8 @@ import { ToolActions } from '@/components/shared/ToolActions'
 import { getToolBySlug, getToolStatus } from '@/lib/data/tools'
 import { Toolbar } from './Toolbar'
 import { ImageCanvas } from './ImageCanvas'
+import { CropView } from './CropView'
+import { CropPanel } from './CropPanel'
 import type {
   EditorMode, GridType, GridOptions, FrameConfig, CropState,
 } from './types'
@@ -96,18 +98,32 @@ export function FrameStudio() {
                 />
               ) : (
                 <div className={styles.canvasArea}>
-                  {mode === 'view' || mode === 'frame' ? (
+                  {mode === 'crop' ? (
+                    <CropView
+                      image={originalImage}
+                      aspectRatio={aspectRatio}
+                      onCropChange={setCropState}
+                    />
+                  ) : (
                     <ImageCanvas
                       image={originalImage}
                       crop={cropState}
                       frameConfig={mode === 'frame' ? frameConfig : DEFAULT_FRAME_CONFIG}
                     />
-                  ) : (
-                    <p className={styles.placeholder}>Crop mode — cropper active</p>
                   )}
                 </div>
               )}
             </div>
+
+            {originalImage && mode === 'crop' && (
+              <div className={styles.sidePanel}>
+                <CropPanel
+                  selectedRatio={aspectRatio}
+                  onRatioChange={setAspectRatio}
+                  onApply={handleApplyCrop}
+                />
+              </div>
+            )}
           </div>
         </div>
         <LearnPanel slug={SLUG} />
