@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback, useEffect } from 'react'
-import { getEducationBySlug, isChallengeComplete, markChallengeComplete } from '@/lib/data/education'
+import { getEducationBySlug, isChallengeComplete, markChallengeComplete, clearChallengeProgressForTool } from '@/lib/data/education'
 import type { Challenge } from '@/lib/data/education/types'
 import styles from './LearnPanel.module.css'
 
@@ -14,6 +14,7 @@ export function LearnPanel({ slug }: LearnPanelProps) {
   const [collapsed, setCollapsed] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
   const [challengeIndex, setChallengeIndex] = useState(0)
+  const [completedIds, setCompletedIds] = useState<Set<string>>(new Set())
 
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth <= 1023)
@@ -21,6 +22,16 @@ export function LearnPanel({ slug }: LearnPanelProps) {
     window.addEventListener('resize', check)
     return () => window.removeEventListener('resize', check)
   }, [])
+
+  // Initialize completed state from localStorage
+  useEffect(() => {
+    if (!edu) return
+    const ids = new Set<string>()
+    for (const c of edu.challenges) {
+      if (isChallengeComplete(c.id)) ids.add(c.id)
+    }
+    setCompletedIds(ids)
+  }, [edu])
 
   if (!edu) return null
 
@@ -99,17 +110,32 @@ export function LearnPanel({ slug }: LearnPanelProps) {
             onAdvance={challengeIndex < edu.challenges.length - 1
               ? () => setChallengeIndex(challengeIndex + 1)
               : undefined}
+            onComplete={(id) => setCompletedIds((prev) => new Set(prev).add(id))}
           >
             <div className={styles.challengeNav}>
               {edu.challenges.map((c, i) => (
                 <ChallengeNavDot
                   key={c.id}
                   index={i}
-                  challengeId={c.id}
+                  complete={completedIds.has(c.id)}
                   active={i === challengeIndex}
                   onClick={() => setChallengeIndex(i)}
                 />
               ))}
+              {completedIds.size > 0 && (
+                <button
+                  className={styles.resetBtn}
+                  onClick={() => {
+                    clearChallengeProgressForTool(edu.challenges.map((c) => c.id))
+                    setCompletedIds(new Set())
+                    setChallengeIndex(0)
+                  }}
+                  aria-label="Reset all challenges"
+                  title="Reset all"
+                >
+                  ↺
+                </button>
+              )}
             </div>
           </ChallengeCard>
       )}
@@ -117,13 +143,7 @@ export function LearnPanel({ slug }: LearnPanelProps) {
   )
 }
 
-function ChallengeNavDot({ index, challengeId, active, onClick }: { index: number; challengeId: string; active: boolean; onClick: () => void }) {
-  const [complete, setComplete] = useState(false)
-
-  useEffect(() => {
-    setComplete(isChallengeComplete(challengeId))
-  }, [challengeId])
-
+function ChallengeNavDot({ index, complete, active, onClick }: { index: number; complete: boolean; active: boolean; onClick: () => void }) {
   let className = styles.challengeNavDot
   if (active) className += ' ' + styles.challengeNavDotActive
   if (complete) className += ' ' + styles.challengeNavDotComplete
@@ -135,7 +155,7 @@ function ChallengeNavDot({ index, challengeId, active, onClick }: { index: numbe
   )
 }
 
-function ChallengeCard({ challenge, onAdvance, children }: { challenge: Challenge; onAdvance?: () => void; children?: React.ReactNode }) {
+function ChallengeCard({ challenge, onAdvance, onComplete, children }: { challenge: Challenge; onAdvance?: () => void; onComplete?: (id: string) => void; children?: React.ReactNode }) {
   const [selected, setSelected] = useState<string | null>(null)
   const [result, setResult] = useState<'success' | 'failure' | null>(null)
   const [completed, setCompleted] = useState(false)
@@ -153,6 +173,7 @@ function ChallengeCard({ challenge, onAdvance, children }: { challenge: Challeng
     if (correct) {
       markChallengeComplete(challenge.id)
       setCompleted(true)
+      onComplete?.(challenge.id)
     }
   }, [selected, challenge])
 

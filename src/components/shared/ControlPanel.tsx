@@ -208,6 +208,52 @@ export function FieldRow({ label, value, children }: FieldRowProps) {
   )
 }
 
+/* ── Number stepper (input with +/- buttons) ── */
+
+interface NumberStepperProps {
+  value: number
+  min?: number
+  max?: number
+  step?: number
+  onChange: (v: number) => void
+}
+
+export function NumberStepper({ value, min = 0, max = 9999, step = 1, onChange }: NumberStepperProps) {
+  function clamp(v: number) {
+    return Math.max(min, Math.min(max, v))
+  }
+
+  return (
+    <div className={styles.stepper}>
+      <button
+        className={styles.stepperBtn}
+        onClick={(e) => { e.stopPropagation(); onChange(clamp(value - step)) }}
+        disabled={value <= min}
+        aria-label="Decrease"
+      >
+        −
+      </button>
+      <input
+        type="number"
+        className={styles.stepperInput}
+        value={value}
+        min={min}
+        max={max}
+        step={step}
+        onChange={(e) => onChange(clamp(Number(e.target.value) || min))}
+      />
+      <button
+        className={styles.stepperBtn}
+        onClick={(e) => { e.stopPropagation(); onChange(clamp(value + step)) }}
+        disabled={value >= max}
+        aria-label="Increase"
+      >
+        +
+      </button>
+    </div>
+  )
+}
+
 /* ── Slider field (generic, linear) ── */
 
 interface SliderFieldProps {

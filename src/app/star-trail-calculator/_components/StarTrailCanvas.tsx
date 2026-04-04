@@ -1,9 +1,14 @@
 'use client'
 
-import { useRef, useEffect, useCallback } from 'react'
+import { useRef, useEffect, useCallback, useImperativeHandle, type Ref } from 'react'
 import css from './StarTrailCalculator.module.css'
 
+export interface StarTrailCanvasHandle {
+  canvas: HTMLCanvasElement | null
+}
+
 interface StarTrailCanvasProps {
+  ref?: Ref<StarTrailCanvasHandle>
   mode: 'sharp' | 'trails'
   maxExposure500: number
   maxExposureNPF: number
@@ -55,6 +60,7 @@ function generateStars(count: number): Star[] {
 const STARS = generateStars(STAR_COUNT)
 
 export function StarTrailCanvas({
+  ref,
   mode,
   maxExposure500,
   maxExposureNPF,
@@ -63,6 +69,8 @@ export function StarTrailCanvas({
   exposurePerFrame,
 }: StarTrailCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+
+  useImperativeHandle(ref, () => ({ canvas: canvasRef.current }), [])
   const animRef = useRef<number>(0)
   const startTimeRef = useRef<number>(0)
 
@@ -77,17 +85,63 @@ export function StarTrailCanvas({
     [latitude],
   )
 
-  const drawBackground = useCallback(
+  // Horizon Y position: at low latitudes horizon is visible near the bottom.
+  // At lat >= ~70 we're looking nearly straight up, so no horizon.
+  const getHorizonY = useCallback(
+    (h: number) => {
+      if (latitude >= 70) return h + 10 // off-screen
+      // Horizon sits lower as latitude increases (looking more upward)
+      // lat 0 → horizon at 75% height, lat 70 → off-screen
+      const t = latitude / 70
+      return h * (0.75 + t * 0.3)
+    },
+    [latitude],
+  )
+
+  const drawSky = useCallback(
     (ctx: CanvasRenderingContext2D, w: number, h: number) => {
       // Dark sky gradient — lighter near horizon
-      const grad = ctx.createLinearGradient(0, 0, 0, h)
+      const horizonY = getHorizonY(h)
+      const grad = ctx.createLinearGradient(0, 0, 0, Math.min(horizonY, h))
       grad.addColorStop(0, '#020210')
       grad.addColorStop(0.6, '#050518')
-      grad.addColorStop(1, '#0a0a20')
+      grad.addColorStop(1, '#0c0c28')
       ctx.fillStyle = grad
       ctx.fillRect(0, 0, w, h)
     },
-    [],
+    [getHorizonY],
+  )
+
+  const drawTerrain = useCallback(
+    (ctx: CanvasRenderingContext2D, w: number, h: number) => {
+      const horizonY = getHorizonY(h)
+      if (horizonY >= h) return
+
+      // Horizon glow
+      const glowH = 40
+      const glow = ctx.createLinearGradient(0, horizonY - glowH, 0, horizonY)
+      glow.addColorStop(0, 'transparent')
+      glow.addColorStop(1, 'rgba(40, 30, 60, 0.4)')
+      ctx.fillStyle = glow
+      ctx.fillRect(0, horizonY - glowH, w, glowH)
+
+      // Terrain silhouette — gentle hills using sine waves
+      ctx.beginPath()
+      ctx.moveTo(0, horizonY)
+      for (let x = 0; x <= w; x += 2) {
+        const y = horizonY
+          - Math.sin(x * 0.008) * 12
+          - Math.sin(x * 0.02 + 1) * 6
+          - Math.sin(x * 0.05 + 3) * 3
+        ctx.lineTo(x, y)
+      }
+      ctx.lineTo(w, h)
+      ctx.lineTo(0, h)
+      ctx.closePath()
+      ctx.fillStyle = '#0a0a0e'
+      ctx.fill()
+    },
+    [getHorizonY],
   )
 
   const drawStar = useCallback(
@@ -110,7 +164,7 @@ export function StarTrailCanvas({
   const drawSharp = useCallback(
     (ctx: CanvasRenderingContext2D, w: number, h: number) => {
       ctx.clearRect(0, 0, w, h)
-      drawBackground(ctx, w, h)
+      drawSky(ctx, w, h)
 
       const { cx, cy } = getPolePosition(w, h)
       const maxR = Math.max(w, h) * 0.9
@@ -142,14 +196,12 @@ export function StarTrailCanvas({
       const limit = maxExposureNPF
 
       if (exposurePerFrame <= limit) {
-        // Green ring — safe, point-like star
         ctx.beginPath()
         ctx.arc(sx, sy, 8, 0, Math.PI * 2)
         ctx.strokeStyle = 'rgba(34, 197, 94, 0.7)'
         ctx.lineWidth = 1.5
         ctx.stroke()
       } else {
-        // Red streak showing trail amount
         const trailAngle = (exposurePerFrame / SIDEREAL_DAY) * Math.PI * 2
         ctx.beginPath()
         ctx.arc(cx, cy, sampleR, sampleAngle - trailAngle / 2, sampleAngle + trailAngle / 2)
@@ -159,19 +211,22 @@ export function StarTrailCanvas({
         ctx.stroke()
       }
 
+      // Terrain drawn on top — covers any stars/trails below horizon
+      drawTerrain(ctx, w, h)
+
       // Legend — bottom left, subtle
       ctx.font = '500 11px system-ui, sans-serif'
       ctx.fillStyle = 'rgba(255,255,255,0.35)'
       ctx.fillText(`500 Rule: ${maxExposure500.toFixed(1)}s`, 14, h - 30)
       ctx.fillText(`NPF Rule: ${maxExposureNPF.toFixed(1)}s`, 14, h - 14)
     },
-    [getPolePosition, maxExposure500, maxExposureNPF, exposurePerFrame, drawBackground, drawStar],
+    [getPolePosition, maxExposure500, maxExposureNPF, exposurePerFrame, drawSky, drawStar, drawTerrain],
   )
 
   const drawTrails = useCallback(
     (ctx: CanvasRenderingContext2D, w: number, h: number, progress: number) => {
       ctx.clearRect(0, 0, w, h)
-      drawBackground(ctx, w, h)
+      drawSky(ctx, w, h)
 
       const { cx, cy } = getPolePosition(w, h)
       const maxR = Math.max(w, h) * 0.9
@@ -211,13 +266,16 @@ export function StarTrailCanvas({
       ctx.fillStyle = 'rgba(255, 255, 200, 1)'
       ctx.fill()
 
+      // Terrain drawn on top — covers any trails below horizon
+      drawTerrain(ctx, w, h)
+
       // Legend
       ctx.font = '500 11px system-ui, sans-serif'
       ctx.fillStyle = 'rgba(255,255,255,0.35)'
       const arcDeg = ((currentArc * 180) / Math.PI).toFixed(1)
-      ctx.fillText(`Arc: ${arcDeg}\u00B0`, 14, h - 14)
+      ctx.fillText(`Arc: ${arcDeg}°`, 14, h - 14)
     },
-    [getPolePosition, totalExposure, drawBackground],
+    [getPolePosition, totalExposure, drawSky, drawTerrain],
   )
 
   useEffect(() => {

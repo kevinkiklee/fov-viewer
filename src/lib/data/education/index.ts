@@ -34,4 +34,10 @@ export function isChallengeComplete(challengeId: string): boolean {
   return getChallengeProgress()[challengeId]?.completed === true
 }
 
+export function clearChallengeProgressForTool(challengeIds: string[]): void {
+  const progress = getChallengeProgress()
+  for (const id of challengeIds) delete progress[id]
+  localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress))
+}
+
 export type { ToolEducation, ChallengeProgress, Challenge, ProTip, Tooltip } from './types'

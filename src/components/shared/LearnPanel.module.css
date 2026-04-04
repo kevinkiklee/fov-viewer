@@ -299,6 +299,30 @@
   transform: scale(1.15);
 }
 
+.resetBtn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  color: var(--text-muted);
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+  transition: border-color var(--duration-fast) var(--ease-out),
+              color var(--duration-fast) var(--ease-out),
+              transform var(--duration-fast) var(--ease-spring);
+}
+
+.resetBtn:hover {
+  border-color: #ef4444;
+  color: #ef4444;
+  transform: scale(1.15);
+}
+
 .challengeNavDotActive {
   border-color: var(--accent);
   color: var(--accent);

@@ -1,15 +1,15 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useRef, useMemo, useCallback } from 'react'
 import { rule500, ruleNPF, stackingTime, formatDuration } from '@/lib/math/startrail'
 import { pixelPitch } from '@/lib/math/diffraction'
 import { SENSORS } from '@/lib/data/sensors'
 import { useQueryInit, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
-import { ControlPanel, FocalLengthField, FieldRow, SliderField, controlPanelStyles as cp } from '@/components/shared/ControlPanel'
+import { ControlPanel, FocalLengthField, FieldRow, NumberStepper, SliderField, controlPanelStyles as cp } from '@/components/shared/ControlPanel'
 import { LearnPanel } from '@/components/shared/LearnPanel'
 import { ModeToggle } from '@/components/shared/ModeToggle'
 import { ToolActions } from '@/components/shared/ToolActions'
-import { StarTrailCanvas } from './StarTrailCanvas'
+import { StarTrailCanvas, type StarTrailCanvasHandle } from './StarTrailCanvas'
 import css from './StarTrailCalculator.module.css'
 
 const APERTURES = [1.4, 2, 2.8, 4, 5.6, 8, 11, 16, 22]
@@ -125,13 +125,30 @@ function ControlsPanel({
       <ModeToggle
         title="Display Mode"
         options={[
-          { value: 'sharp', label: 'Sharp Stars' },
           { value: 'trails', label: 'Star Trails' },
+          { value: 'sharp', label: 'Single Shot' },
         ]}
         value={mode}
         onChange={onModeChange}
         sticky
       />
+
+      {/* Trail mode controls card */}
+      {mode === 'trails' && (
+        <ControlPanel title="Stacking">
+          <FieldRow label="Exposure / frame (s)">
+            <NumberStepper value={exposurePerFrame} min={1} max={600} onChange={onExposurePerFrameChange} />
+          </FieldRow>
+
+          <FieldRow label="Frames">
+            <NumberStepper value={numFrames} min={1} max={999} onChange={onNumFramesChange} />
+          </FieldRow>
+
+          <FieldRow label="Gap (seconds)">
+            <NumberStepper value={gap} min={0} max={60} onChange={onGapChange} />
+          </FieldRow>
+        </ControlPanel>
+      )}
 
       {/* Camera controls card */}
       <ControlPanel title="Camera">
@@ -151,15 +168,8 @@ function ControlsPanel({
           </select>
         </FieldRow>
 
-        <FieldRow label="Resolution">
-          <input
-            type="number"
-            className={cp.input}
-            value={resolution}
-            min={1}
-            max={200}
-            onChange={(e) => onResolutionChange(Number(e.target.value) || 1)}
-          />
+        <FieldRow label="Resolution (MP)">
+          <NumberStepper value={resolution} min={1} max={200} onChange={onResolutionChange} />
         </FieldRow>
 
         <FieldRow label="Aperture">
@@ -192,52 +202,55 @@ function ControlsPanel({
           📍 Use My Location
         </button>
       </ControlPanel>
-
-      {/* Trail mode controls card */}
-      {mode === 'trails' && (
-        <ControlPanel title="Stacking">
-          <FieldRow label="Exposure / frame">
-            <select
-              className={cp.select}
-              value={exposurePerFrame}
-              onChange={(e) => onExposurePerFrameChange(Number(e.target.value))}
-            >
-              {EXPOSURE_OPTIONS.map((s) => (
-                <option key={s} value={s}>
-                  {s}s
-                </option>
-              ))}
-            </select>
-          </FieldRow>
-
-          <FieldRow label="Frames">
-            <input
-              type="number"
-              className={cp.input}
-              value={numFrames}
-              min={1}
-              onChange={(e) => onNumFramesChange(Number(e.target.value) || 1)}
-            />
-          </FieldRow>
-
-          <FieldRow label="Gap (seconds)">
-            <input
-              type="number"
-              className={cp.input}
-              value={gap}
-              min={0}
-              onChange={(e) => onGapChange(Number(e.target.value) || 0)}
-            />
-          </FieldRow>
-        </ControlPanel>
-      )}
-
     </>
   )
 }
 
+function drawInfoOverlay(canvas: HTMLCanvasElement, info: {
+  mode: string; focalLength: number; sensor: string; aperture: number;
+  latitude: number; resolution: number;
+  sharpResults?: { max500: number; maxNPF: number };
+  trailInfo?: { exposurePerFrame: number; numFrames: number; totalTime: string; totalExposure: string };
+}) {
+  const ctx = canvas.getContext('2d')
+  if (!ctx) return
+  const dpr = window.devicePixelRatio || 1
+  const w = canvas.width / dpr
+
+  ctx.save()
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+
+  // Semi-transparent bar at bottom
+  const barH = info.mode === 'trails' ? 56 : 44
+  const h = canvas.height / dpr
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.7)'
+  ctx.fillRect(0, h - barH, w, barH)
+
+  // Settings line
+  ctx.fillStyle = '#ccc'
+  ctx.font = '11px system-ui, sans-serif'
+  const settingsLine = `${info.focalLength}mm  ·  f/${info.aperture}  ·  ${info.sensor}  ·  ${info.resolution}MP  ·  Lat ${info.latitude}°`
+  ctx.fillText(settingsLine, 12, h - barH + 16)
+
+  // Results line
+  ctx.fillStyle = '#fff'
+  ctx.font = 'bold 12px system-ui, sans-serif'
+  if (info.mode === 'sharp' && info.sharpResults) {
+    ctx.fillText(`500 Rule: ${info.sharpResults.max500.toFixed(1)}s  ·  NPF Rule: ${info.sharpResults.maxNPF.toFixed(1)}s`, 12, h - barH + 36)
+  } else if (info.mode === 'trails' && info.trailInfo) {
+    ctx.fillText(`${info.trailInfo.exposurePerFrame}s × ${info.trailInfo.numFrames} frames  ·  Total: ${info.trailInfo.totalTime}`, 12, h - barH + 36)
+    ctx.fillStyle = '#999'
+    ctx.font = '11px system-ui, sans-serif'
+    ctx.fillText(`Exposure: ${info.trailInfo.totalExposure}`, 12, h - barH + 52)
+  }
+
+  ctx.restore()
+}
+
 export function StarTrailCalculator() {
-  const [mode, setMode] = useState<'sharp' | 'trails'>('sharp')
+  const [mode, setMode] = useState<'sharp' | 'trails'>('trails')
+  const canvasHandle = useRef<StarTrailCanvasHandle>(null)
+  const exportCanvasRef = useRef<HTMLCanvasElement>(null)
   const [focalLength, setFocalLength] = useState(24)
   const [sensorId, setSensorId] = useState('ff')
   const [resolution, setResolution] = useState(24)
@@ -272,6 +285,37 @@ export function StarTrailCalculator() {
 
   const totalExposure = exposurePerFrame * numFrames
 
+  const handleBeforeCopy = useCallback(() => {
+    const src = canvasHandle.current?.canvas
+    if (!src) return
+    // Create a copy canvas to draw the overlay on (so the live canvas isn't modified)
+    if (!exportCanvasRef.current) {
+      exportCanvasRef.current = document.createElement('canvas')
+    }
+    const dest = exportCanvasRef.current
+    dest.width = src.width
+    dest.height = src.height
+    const ctx = dest.getContext('2d')
+    if (!ctx) return
+    ctx.drawImage(src, 0, 0)
+
+    drawInfoOverlay(dest, {
+      mode,
+      focalLength,
+      sensor: sensor.name,
+      aperture,
+      latitude,
+      resolution,
+      sharpResults: mode === 'sharp' ? sharpResults : undefined,
+      trailInfo: mode === 'trails' ? {
+        exposurePerFrame,
+        numFrames,
+        totalTime: formatDuration(trailResult),
+        totalExposure: formatDuration(totalExposure),
+      } : undefined,
+    })
+  }, [mode, focalLength, sensor.name, aperture, latitude, resolution, sharpResults, exposurePerFrame, numFrames, trailResult, totalExposure])
+
   const controlsProps = {
     mode,
     focalLength,
@@ -300,7 +344,13 @@ export function StarTrailCalculator() {
       <div className={css.appBody}>
         {/* Desktop sidebar */}
         <div className={css.sidebar}>
-          <ToolActions toolName="Star Trail Calculator" toolSlug="star-trail-calculator" />
+          <ToolActions
+            toolName="Star Trail Calculator"
+            toolSlug="star-trail-calculator"
+            canvasRef={exportCanvasRef}
+            imageFilename="star-trail-calculator.png"
+            onBeforeCopyImage={handleBeforeCopy}
+          />
           <ControlsPanel {...controlsProps} />
         </div>
 
@@ -322,6 +372,7 @@ export function StarTrailCalculator() {
           </div>
           <div className={css.canvasMain}>
             <StarTrailCanvas
+              ref={canvasHandle}
               mode={mode}
               maxExposure500={sharpResults.max500}
               maxExposureNPF={sharpResults.maxNPF}

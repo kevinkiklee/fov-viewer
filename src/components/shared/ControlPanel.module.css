@@ -115,7 +115,7 @@
 /* Slider with tick marks */
 .sliderWrap {
   position: relative;
-  padding-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .slider {
@@ -129,17 +129,18 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
-  height: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 10px;
   pointer-events: none;
 }
 
 .tick {
   position: absolute;
   width: 1px;
-  height: 6px;
+  height: 10px;
   background: var(--text-secondary);
-  opacity: 0.4;
+  opacity: 0.3;
   transform: translateX(-0.5px);
 }
 
@@ -183,6 +184,56 @@
   cursor: pointer;
   min-width: 0;
   flex: 1;
+}
+
+/* Number stepper */
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.stepperBtn {
+  background: var(--bg-primary);
+  border: none;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-family: inherit;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, color 0.15s;
+  flex-shrink: 0;
+}
+
+.stepperBtn:hover:not(:disabled) {
+  background: var(--border);
+  color: var(--text-primary);
+}
+
+.stepperBtn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.stepperInput {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: none;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  font-size: 11px;
+  font-family: inherit;
+  width: 40px;
+  height: 28px;
+  text-align: center;
+  padding: 0;
 }
 
 /* Number input */
