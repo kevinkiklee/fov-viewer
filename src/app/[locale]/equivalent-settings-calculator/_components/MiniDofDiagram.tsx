@@ -36,11 +36,12 @@ export function MiniDofDiagram({
   const minD = Math.min(...allDist) * 0.8
   const maxD = Math.max(...allDist) * 1.2
 
-  const sX1 = mapX(sourceNear, minD, maxD)
-  const sX2 = mapX(sFar, minD, maxD)
-  const tX1 = mapX(targetNear, minD, maxD)
-  const tX2 = mapX(tFar, minD, maxD)
-  const subjectX = mapX(distance, minD, maxD)
+  const r = (n: number) => Math.round(n * 100) / 100
+  const sX1 = r(mapX(sourceNear, minD, maxD))
+  const sX2 = r(mapX(sFar, minD, maxD))
+  const tX1 = r(mapX(targetNear, minD, maxD))
+  const tX2 = r(mapX(tFar, minD, maxD))
+  const subjectX = r(mapX(distance, minD, maxD))
 
   return (
     <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} aria-hidden="true">
