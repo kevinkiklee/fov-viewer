@@ -1,5 +1,6 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import styles from './FovSimulator.module.css'
 
 interface ActionBarProps {
@@ -10,19 +11,20 @@ interface ActionBarProps {
 }
 
 export function ActionBar({ onCopyImage, onCopyLink, onReset, onShare }: ActionBarProps) {
+  const t = useTranslations('toolUI.fov-simulator')
   return (
     <div className={styles.actionBar}>
       <button className={`${styles.actionBarBtn} ${styles.actionBarBtnPrimary}`} onClick={onCopyImage}>
-        Copy image
+        {t('copyImage')}
       </button>
       <button className={styles.actionBarBtn} onClick={onCopyLink}>
-        Copy link
+        {t('copyLink')}
       </button>
       <button className={styles.actionBarBtn} onClick={onShare}>
-        Embed
+        {t('embed')}
       </button>
       <button className={styles.actionBarBtn} onClick={onReset}>
-        Reset
+        {t('reset')}
       </button>
     </div>
   )

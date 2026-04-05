@@ -13,7 +13,7 @@ export function calcCropFactor(w: number, h: number): number {
 /**
  * Aspect-ratio-aware crop factor.
  * Compares the sensor diagonal against a full-frame crop matched to the
- * sensor's aspect ratio, instead of the full 36×24 diagonal. More accurate
+ * sensor's aspect ratio, instead of the full 36x24 diagonal. More accurate
  * for sensors that don't share the 3:2 ratio (e.g., 4:3 Micro Four Thirds).
  */
 export function calcAspectCropFactor(w: number, h: number): number {

@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { ShutterSpeedGuide } from './_components/ShutterSpeedGuide'
 
-export const metadata: Metadata = {
-  title: 'Shutter Speed Visualizer',
-  description: 'Find the minimum shutter speed for sharp handheld photos. Accounts for focal length, sensor size, and image stabilization.',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.shutter-speed-visualizer')
+  return { title: t('title'), description: t('description') }
 }
 
 export default function ShutterSpeedVisualizerPage() {

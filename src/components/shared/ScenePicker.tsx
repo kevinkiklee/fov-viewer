@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef, useCallback } from 'react'
+import { useTranslations } from 'next-intl'
 import styles from './ScenePicker.module.css'
 
 export interface ScenePickerScene {
@@ -29,8 +30,9 @@ export function ScenePicker({
   customSrc = null,
   onCustomFile,
   onCustomRemove,
-  label = 'Scene:',
+  label,
 }: ScenePickerProps) {
+  const t = useTranslations('common.scene')
   const fileRef = useRef<HTMLInputElement>(null)
 
   const handleFileInput = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
@@ -51,7 +53,7 @@ export function ScenePicker({
 
   return (
     <div className={styles.strip}>
-      <span className={styles.label}>{label}</span>
+      <span className={styles.label}>{label ?? t('label')}</span>
       {scenes.map((scene, i) => (
         <button
           key={scene.id}
@@ -68,16 +70,16 @@ export function ScenePicker({
             <button
               className={`${styles.thumb} ${styles.customThumb} ${selectedIndex === -1 ? styles.thumbActive : ''}`}
               onClick={() => onSelect(-1)}
-              title="Your photo"
+              title={t('yourPhoto')}
             >
-              <img src={customSrc} alt="Your photo" />
-              <span className={styles.removeBtn} onClick={handleRemove} title="Remove photo">×</span>
+              <img src={customSrc} alt={t('yourPhoto')} />
+              <span className={styles.removeBtn} onClick={handleRemove} title={t('removePhoto')}>×</span>
             </button>
           )}
           <button
             className={`${styles.thumb} ${styles.uploadThumb}`}
             onClick={() => fileRef.current?.click()}
-            title="Upload photo"
+            title={t('uploadPhoto')}
           >
             <span className={styles.uploadIcon}>+</span>
           </button>

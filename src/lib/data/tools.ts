@@ -1,5 +1,8 @@
 import type { ToolDef, ToolStatus } from '@/lib/types'
 
+// i18n: name and description are duplicated in messages/en/tools.json.
+// These inline strings are kept for backward compatibility during migration.
+// Consumer components will be updated to use useTranslations('tools') instead.
 export const TOOLS: ToolDef[] = [
   { slug: 'fov-simulator', name: 'FOV Simulator', description: 'Compare field of view across focal lengths and sensor sizes', dev: 'live', prod: 'live', category: 'visualizer' },
   { slug: 'color-scheme-generator', name: 'Color Scheme Generator', description: 'Build color palettes for photography shoots', dev: 'live', prod: 'live', category: 'visualizer' },

@@ -1,5 +1,6 @@
 import { ImageResponse } from 'next/og'
 import { getToolBySlug } from '@/lib/data/tools'
+import { OgBackground, OgDiamonds, OgBranding, OgAccentLine } from './og-layout'
 
 const TOOL_EMOJIS: Record<string, string> = {
   'fov-simulator': '🔭',
@@ -32,64 +33,8 @@ export async function generateOgImage(slug: string) {
 
   return new ImageResponse(
     (
-      <div
-        style={{
-          width: '100%',
-          height: '100%',
-          display: 'flex',
-          position: 'relative',
-          background: 'linear-gradient(145deg, #0d0d0d 0%, #141414 60%, #1a1610 100%)',
-          fontFamily: 'system-ui, -apple-system, sans-serif',
-          overflow: 'hidden',
-        }}
-      >
-        {/* Geometric diamonds — outer */}
-        <div
-          style={{
-            position: 'absolute',
-            right: -40,
-            top: -80,
-            width: 600,
-            height: 600,
-            border: '2px solid rgba(245, 158, 11, 0.06)',
-            transform: 'rotate(45deg)',
-            borderRadius: 60,
-          }}
-        />
-        {/* Geometric diamonds — middle */}
-        <div
-          style={{
-            position: 'absolute',
-            right: 40,
-            top: 0,
-            width: 460,
-            height: 460,
-            border: '2px solid rgba(245, 158, 11, 0.10)',
-            transform: 'rotate(45deg)',
-            borderRadius: 45,
-          }}
-        />
-        {/* Geometric diamonds — inner with emoji */}
-        <div
-          style={{
-            position: 'absolute',
-            right: 120,
-            top: 80,
-            width: 300,
-            height: 300,
-            background: 'rgba(245, 158, 11, 0.03)',
-            border: '2px solid rgba(245, 158, 11, 0.14)',
-            transform: 'rotate(45deg)',
-            borderRadius: 30,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <span style={{ fontSize: 88, transform: 'rotate(-45deg)' }}>{emoji}</span>
-        </div>
-
-        {/* Left content */}
+      <OgBackground>
+        <OgDiamonds emoji={emoji} />
         <div
           style={{
             position: 'absolute',
@@ -101,23 +46,7 @@ export async function generateOgImage(slug: string) {
             flexDirection: 'column',
           }}
         >
-          {/* Branding */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 32 }}>
-            <div style={{ width: 14, height: 14, borderRadius: '50%', background: '#f59e0b' }} />
-            <span
-              style={{
-                color: '#f59e0b',
-                fontSize: 22,
-                fontWeight: 700,
-                letterSpacing: 3,
-                textTransform: 'uppercase' as const,
-              }}
-            >
-              PHOTOTOOLS.IO
-            </span>
-          </div>
-
-          {/* Tool name */}
+          <OgBranding />
           <div
             style={{
               fontSize: 48,
@@ -129,13 +58,9 @@ export async function generateOgImage(slug: string) {
           >
             {tool.name}
           </div>
-
-          {/* Description */}
           <div style={{ fontSize: 24, color: '#888888', lineHeight: 1.5 }}>
             {tool.description}
           </div>
-
-          {/* Category pill */}
           <div style={{ display: 'flex', marginTop: 28 }}>
             <span
               style={{
@@ -152,19 +77,8 @@ export async function generateOgImage(slug: string) {
             </span>
           </div>
         </div>
-
-        {/* Bottom accent line */}
-        <div
-          style={{
-            position: 'absolute',
-            bottom: 0,
-            left: 0,
-            width: '40%',
-            height: 4,
-            background: 'linear-gradient(90deg, #f59e0b, transparent)',
-          }}
-        />
-      </div>
+        <OgAccentLine />
+      </OgBackground>
     ),
     { width: 1200, height: 630 },
   )
@@ -173,62 +87,8 @@ export async function generateOgImage(slug: string) {
 export async function generateHomepageOgImage() {
   return new ImageResponse(
     (
-      <div
-        style={{
-          width: '100%',
-          height: '100%',
-          display: 'flex',
-          position: 'relative',
-          background: 'linear-gradient(145deg, #0d0d0d 0%, #141414 60%, #1a1610 100%)',
-          fontFamily: 'system-ui, -apple-system, sans-serif',
-          overflow: 'hidden',
-        }}
-      >
-        {/* Geometric diamonds */}
-        <div
-          style={{
-            position: 'absolute',
-            right: -40,
-            top: -80,
-            width: 600,
-            height: 600,
-            border: '2px solid rgba(245, 158, 11, 0.06)',
-            transform: 'rotate(45deg)',
-            borderRadius: 60,
-          }}
-        />
-        <div
-          style={{
-            position: 'absolute',
-            right: 40,
-            top: 0,
-            width: 460,
-            height: 460,
-            border: '2px solid rgba(245, 158, 11, 0.10)',
-            transform: 'rotate(45deg)',
-            borderRadius: 45,
-          }}
-        />
-        <div
-          style={{
-            position: 'absolute',
-            right: 120,
-            top: 80,
-            width: 300,
-            height: 300,
-            background: 'rgba(245, 158, 11, 0.03)',
-            border: '2px solid rgba(245, 158, 11, 0.14)',
-            transform: 'rotate(45deg)',
-            borderRadius: 30,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <span style={{ fontSize: 88, transform: 'rotate(-45deg)' }}>📷</span>
-        </div>
-
-        {/* Left content */}
+      <OgBackground>
+        <OgDiamonds emoji="📷" />
         <div
           style={{
             position: 'absolute',
@@ -240,21 +100,7 @@ export async function generateHomepageOgImage() {
             flexDirection: 'column',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 32 }}>
-            <div style={{ width: 14, height: 14, borderRadius: '50%', background: '#f59e0b' }} />
-            <span
-              style={{
-                color: '#f59e0b',
-                fontSize: 22,
-                fontWeight: 700,
-                letterSpacing: 3,
-                textTransform: 'uppercase' as const,
-              }}
-            >
-              PHOTOTOOLS.IO
-            </span>
-          </div>
-
+          <OgBranding />
           <div
             style={{
               fontSize: 56,
@@ -266,24 +112,12 @@ export async function generateHomepageOgImage() {
           >
             Free Photography Tools
           </div>
-
           <div style={{ fontSize: 28, color: '#888888', lineHeight: 1.5 }}>
             Interactive calculators, simulators, and visualizers for photographers. No sign-up required.
           </div>
         </div>
-
-        {/* Bottom accent line */}
-        <div
-          style={{
-            position: 'absolute',
-            bottom: 0,
-            left: 0,
-            width: '40%',
-            height: 4,
-            background: 'linear-gradient(90deg, #f59e0b, transparent)',
-          }}
-        />
-      </div>
+        <OgAccentLine />
+      </OgBackground>
     ),
     { width: 1200, height: 630 },
   )

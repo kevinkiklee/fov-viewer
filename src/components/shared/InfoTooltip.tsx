@@ -1,6 +1,7 @@
 'use client'
 
 import * as Tooltip from '@radix-ui/react-tooltip'
+import { useTranslations } from 'next-intl'
 import type { Tooltip as TooltipData } from '@/lib/data/education/types'
 import styles from './InfoTooltip.module.css'
 
@@ -9,13 +10,15 @@ interface InfoTooltipProps {
 }
 
 export function InfoTooltip({ tooltip }: InfoTooltipProps) {
+  const t = useTranslations('common.tooltip')
+
   return (
     <Tooltip.Provider delayDuration={200}>
       <Tooltip.Root>
         <Tooltip.Trigger asChild>
           <button
             className={styles.trigger}
-            aria-label={`Info: ${tooltip.term}`}
+            aria-label={t('infoLabel', { term: tooltip.term })}
             type="button"
           >
             &#9432;

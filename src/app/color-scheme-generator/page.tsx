@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { ColorHarmony } from './_components/ColorHarmony'
 
-export const metadata: Metadata = {
-  title: 'Color Scheme Generator',
-  description: 'Generate color palettes for photography using complementary, analogous, triadic, and tetradic color harmonies. Interactive color wheel with photo picker.',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.color-scheme-generator')
+  return { title: t('title'), description: t('description') }
 }
 
 export default function ColorSchemeGeneratorPage() {

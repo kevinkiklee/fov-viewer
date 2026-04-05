@@ -1,15 +1,15 @@
-import { TOOL_EDUCATION } from './content'
-import { TOOL_EDUCATION_2 } from './content2'
-import type { ToolEducation, ChallengeProgress } from './types'
+import { TOOL_EDUCATION_SKELETONS } from './content'
+import { TOOL_EDUCATION_SKELETONS_2 } from './content2'
+import type { ToolEducationSkeleton, ChallengeProgress } from './types'
 
-const ALL_EDUCATION: ToolEducation[] = [...TOOL_EDUCATION, ...TOOL_EDUCATION_2]
+const ALL_SKELETONS: ToolEducationSkeleton[] = [...TOOL_EDUCATION_SKELETONS, ...TOOL_EDUCATION_SKELETONS_2]
 
-export function getEducationBySlug(slug: string): ToolEducation | undefined {
-  return ALL_EDUCATION.find((e) => e.slug === slug)
+export function getSkeletonBySlug(slug: string): ToolEducationSkeleton | undefined {
+  return ALL_SKELETONS.find((s) => s.slug === slug)
 }
 
-export function getAllEducation(): ToolEducation[] {
-  return ALL_EDUCATION
+export function getAllSkeletons(): ToolEducationSkeleton[] {
+  return ALL_SKELETONS
 }
 
 const PROGRESS_KEY = 'phototools-challenge-progress'
@@ -40,4 +40,4 @@ export function clearChallengeProgressForTool(challengeIds: string[]): void {
   localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress))
 }
 
-export type { ToolEducation, ChallengeProgress, Challenge, ProTip, Tooltip } from './types'
+export type { ToolEducationSkeleton, ChallengeProgress, ChallengeSkeleton } from './types'

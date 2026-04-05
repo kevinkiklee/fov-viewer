@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { SensorSize } from './_components/SensorSize'
 
-export const metadata: Metadata = {
-  title: 'Sensor Size Comparison',
-  description: 'Compare camera sensor sizes from medium format to smartphone. See overlay, side-by-side, and pixel density views with real camera models.',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.sensor-size-comparison')
+  return { title: t('title'), description: t('description') }
 }
 
 export default function SensorSizePage() {

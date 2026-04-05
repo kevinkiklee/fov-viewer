@@ -1,3 +1,5 @@
+'use client'
+
 import React, { forwardRef, useRef, useImperativeHandle } from 'react'
 import { RectangleStencil } from 'react-advanced-cropper'
 import { getStencilCoordinates } from 'advanced-cropper'

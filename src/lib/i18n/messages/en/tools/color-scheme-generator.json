@@ -1,0 +1,57 @@
+{
+  "toolUI": {
+    "color-scheme-generator": {
+      "colorScheme": "Color Scheme",
+      "complementary": "Complementary",
+      "analogous": "Analogous",
+      "triadic": "Triadic",
+      "splitComplementary": "Split Complementary",
+      "tetradic": "Tetradic",
+      "keyColor": "Key Color",
+      "hue": "Hue:",
+      "saturation": "Saturation:",
+      "lightness": "Lightness:",
+      "splitAngle": "Split angle:",
+      "spread": "Spread:",
+      "rectangleWidth": "Rectangle width:",
+      "square": "(square)",
+      "pickFromPhoto": "Pick from Photo",
+      "dropPhotoPrompt": "Drop a photo here or click to browse",
+      "keyColorLabel": "Key color — click to copy hex",
+      "clickToCopyHex": "Click to copy hex",
+      "copiedExcl": "Copied!",
+      "copyColors": "Copy colors",
+      "hexFormat": "Hex",
+      "cssFormat": "CSS",
+      "rgbFormat": "RGB",
+      "copyHexCodes": "Copy hex codes",
+      "copyCssVariables": "Copy CSS variables",
+      "copyRgbValues": "Copy RGB values",
+      "pickColorFromPhoto": "Pick color from photo",
+      "close": "Close",
+      "dropPhotoOrBrowse": "Drop a photo here or click to browse",
+      "tapToChoose": "Tap to choose a photo",
+      "tapToSample": "Tap anywhere on the photo to sample that color",
+      "changePhoto": "Change photo",
+      "privacyNote": "Your photo stays in your browser — nothing is uploaded",
+      "suggestions": {
+        "complementary": {
+          "warm": "Great for: warm sunset portraits with cool shadow contrast",
+          "cool": "Great for: moody blue-hour shots with warm accent lighting",
+          "default": "Great for: high-contrast compositions with strong visual tension"
+        },
+        "analogous": {
+          "warm": "Great for: golden hour landscapes with unified warm tones",
+          "cool": "Great for: serene water scenes and twilight photography",
+          "default": "Great for: harmonious nature shots with smooth color transitions"
+        },
+        "triadic": "Use for: vibrant editorial work and bold creative portraits",
+        "splitComplementary": {
+          "warm": "Use for: contrasting wardrobe against a natural backdrop",
+          "default": "Use for: balanced product photography with visual variety"
+        },
+        "tetradic": "Use for: rich editorial layouts and complex multi-subject compositions"
+      }
+    }
+  }
+}

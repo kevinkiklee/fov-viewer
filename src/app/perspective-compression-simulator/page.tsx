@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { PerspectiveCompressionSimulator } from './_components/PerspectiveCompressionSimulator'
 
-export const metadata: Metadata = {
-  title: 'Perspective Compression Simulator',
-  description: 'Interactive 3D simulator showing how focal length and distance affect perspective compression. See background compression change in real time.',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.perspective-compression-simulator')
+  return { title: t('title'), description: t('description') }
 }
 
 export default function PerspectiveCompressionSimulatorPage() {

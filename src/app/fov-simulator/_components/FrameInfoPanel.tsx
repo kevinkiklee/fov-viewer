@@ -1,12 +1,11 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import type { LensConfig } from '@/lib/types'
 import { calcFOV, calcFrameWidth } from '@/lib/math/fov'
 import { getSensor } from '@/lib/data/sensors'
-import { LENS_COLORS, LENS_LABELS } from './types'
+import { LENS_COLORS, LENS_LABELS, DISTANCE_PRESETS } from '@/lib/data/fovSimulator'
 import styles from './FrameInfoPanel.module.css'
-
-const DISTANCE_PRESETS = [5, 10, 25, 50]
 const SLIDER_STEPS = 500
 const LOG_MIN = Math.log(3)
 const LOG_MAX = Math.log(100)
@@ -34,9 +33,10 @@ export function FrameInfoPanel({
   onDistanceChange,
   onShowGuidesChange,
 }: FrameInfoPanelProps) {
+  const t = useTranslations('toolUI.fov-simulator')
   return (
     <div className={styles.panel}>
-      <div className={styles.title}>Frame Info</div>
+      <div className={styles.title}>{t('frameInfo')}</div>
 
       <div className={styles.readout}>
         {lenses.map((lens, i) => {
@@ -49,7 +49,7 @@ export function FrameInfoPanel({
                 {LENS_LABELS[i]} {lens.focalLength}mm
               </span>
               <span className={styles.readoutValue}>
-                {frameWidth.toFixed(1)}ft wide
+                {frameWidth.toFixed(1)}ft {t('wide')}
               </span>
             </div>
           )
@@ -58,7 +58,7 @@ export function FrameInfoPanel({
 
       <div className={styles.sliderSection}>
         <div className={styles.sliderLabel}>
-          <span>Distance</span>
+          <span>{t('distance')}</span>
           <span>{distance.toFixed(0)}ft</span>
         </div>
         <input
@@ -90,7 +90,7 @@ export function FrameInfoPanel({
           checked={showGuides}
           onChange={(e) => onShowGuidesChange(e.target.checked)}
         />
-        Show framing guides
+        {t('showFramingGuides')}
       </label>
     </div>
   )

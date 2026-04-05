@@ -1,16 +1,21 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
+
 interface ThemeToggleProps {
   theme: string
   onChange: (theme: 'dark' | 'light') => void
 }
 
 export function ThemeToggle({ theme, onChange }: ThemeToggleProps) {
+  const t = useTranslations('common.theme')
+  const label = theme === 'dark' ? t('switchToLight') : t('switchToDark')
+
   return (
     <button
       onClick={() => onChange(theme === 'dark' ? 'light' : 'dark')}
-      title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-      aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+      title={label}
+      aria-label={label}
       style={{
         background: 'none',
         border: 'none',

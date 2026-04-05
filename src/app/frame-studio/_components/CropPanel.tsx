@@ -1,7 +1,9 @@
 'use client'
 
 import { useState, useCallback } from 'react'
-import { ASPECT_RATIOS, type AspectRatioPreset, type AspectRatioType } from './types'
+import { useTranslations } from 'next-intl'
+import type { AspectRatioPreset, AspectRatioType } from './types'
+import { ASPECT_RATIOS } from '@/lib/data/frameStudio'
 import styles from './CropPanel.module.css'
 
 interface CropPanelProps {
@@ -11,6 +13,7 @@ interface CropPanelProps {
 }
 
 export function CropPanel({ selectedRatio, onRatioChange, onApply }: CropPanelProps) {
+  const t = useTranslations('toolUI.frame-studio')
   const [flipped, setFlipped] = useState(false)
   const [customW, setCustomW] = useState('')
   const [customH, setCustomH] = useState('')
@@ -45,7 +48,7 @@ export function CropPanel({ selectedRatio, onRatioChange, onApply }: CropPanelPr
   return (
     <div className={styles.panel}>
       <div className={styles.section}>
-        <span className={styles.label}>Aspect Ratio</span>
+        <span className={styles.label}>{t('aspectRatio')}</span>
         <div className={styles.ratios}>
           {ASPECT_RATIOS.map((r) => {
             const ratio = r.value === null || r.value === 'original'
@@ -63,24 +66,24 @@ export function CropPanel({ selectedRatio, onRatioChange, onApply }: CropPanelPr
             )
           })}
         </div>
-        <button className={styles.flipBtn} onClick={handleFlip} title="Flip orientation">
+        <button className={styles.flipBtn} onClick={handleFlip} title={t('flipOrientation')}>
           <svg viewBox="0 0 16 16" width={14} height={14} fill="none" stroke="currentColor" strokeWidth={1.5}>
             {flipped
               ? <rect x="4" y="1" width="8" height="14" rx="1" />
               : <rect x="1" y="4" width="14" height="8" rx="1" />
             }
           </svg>
-          {flipped ? 'Portrait' : 'Landscape'}
+          {flipped ? t('portrait') : t('landscape')}
         </button>
       </div>
 
       <div className={styles.section}>
-        <span className={styles.label}>Custom Ratio</span>
+        <span className={styles.label}>{t('customRatio')}</span>
         <div className={styles.customRow}>
           <input
             type="number"
             className={styles.input}
-            placeholder="W"
+            placeholder={t('placeholderW')}
             value={customW}
             onChange={(e) => setCustomW(e.target.value)}
             min={1}
@@ -89,17 +92,17 @@ export function CropPanel({ selectedRatio, onRatioChange, onApply }: CropPanelPr
           <input
             type="number"
             className={styles.input}
-            placeholder="H"
+            placeholder={t('placeholderH')}
             value={customH}
             onChange={(e) => setCustomH(e.target.value)}
             min={1}
           />
-          <button className={styles.applyBtn} onClick={handleCustomApply}>Set</button>
+          <button className={styles.applyBtn} onClick={handleCustomApply}>{t('set')}</button>
         </div>
       </div>
 
       <button className={styles.doneBtn} onClick={onApply}>
-        Apply Crop
+        {t('applyCrop')}
       </button>
     </div>
   )

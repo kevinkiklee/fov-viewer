@@ -1,0 +1,21 @@
+{
+  "toolUI": {
+    "dof-calculator": {
+      "settings": "Settings",
+      "focalLength": "Focal Length",
+      "aperture": "Aperture",
+      "subjectDistance": "Subject Distance",
+      "sensor": "Sensor",
+      "results": "Results",
+      "nearFocus": "Near Focus",
+      "farFocus": "Far Focus",
+      "totalDoF": "Total DoF",
+      "hyperfocal": "Hyperfocal",
+      "scene": "Scene:",
+      "scenePortrait": "Portrait",
+      "sceneLandscape": "Landscape",
+      "sceneStreet": "Street",
+      "sceneMacro": "Macro"
+    }
+  }
+}

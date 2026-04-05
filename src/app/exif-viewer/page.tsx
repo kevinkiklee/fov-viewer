@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { ExifViewer } from './_components/ExifViewer'
 
-export const metadata: Metadata = {
-  title: 'EXIF Viewer',
-  description: 'View EXIF metadata, histogram, and image preview for any photo. 100% client-side — your photos never leave your device.',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.exif-viewer')
+  return { title: t('title'), description: t('description') }
 }
 
 export default function ExifViewerPage() {

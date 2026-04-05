@@ -13,9 +13,12 @@ interface GridCanvasProps {
   height: number
   activeGrids: GridType[]
   options: GridOptions
+  offset?: { x: number; y: number }
 }
 
-const GRID_DRAW_MAP: Record<GridType, (ctx: CanvasRenderingContext2D, w: number, h: number, opts: GridOptions) => void> = {
+type DrawFn = (ctx: CanvasRenderingContext2D, w: number, h: number, opts: GridOptions) => void
+
+const GRID_DRAW_MAP: Record<GridType, DrawFn> = {
   'rule-of-thirds': (ctx, w, h) => drawRuleOfThirds(ctx, w, h),
   'golden-ratio': (ctx, w, h) => drawGoldenRatio(ctx, w, h),
   'golden-spiral': (ctx, w, h, opts) => drawGoldenSpiral(ctx, w, h, opts.spiralRotation),
@@ -26,7 +29,7 @@ const GRID_DRAW_MAP: Record<GridType, (ctx: CanvasRenderingContext2D, w: number,
   'triangles': (ctx, w, h) => drawTriangles(ctx, w, h),
 }
 
-export function GridCanvas({ width, height, activeGrids, options }: GridCanvasProps) {
+export function GridCanvas({ width, height, activeGrids, options, offset }: GridCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   const draw = useCallback(() => {
@@ -48,14 +51,32 @@ export function GridCanvas({ width, height, activeGrids, options }: GridCanvasPr
     ctx.globalAlpha = options.opacity
     ctx.lineWidth = thicknessToPx(options.thickness)
 
+    const ox = offset?.x ?? 0
+    const oy = offset?.y ?? 0
+
     for (const gridType of activeGrids) {
       const drawFn = GRID_DRAW_MAP[gridType]
-      if (drawFn) {
+      if (!drawFn) continue
+
+      if (ox === 0 && oy === 0) {
         ctx.beginPath()
         drawFn(ctx, width, height, options)
+      } else {
+        // Tile 2×2 with modular wrapping so the pattern always fills the canvas
+        const px = ((ox % width) + width) % width
+        const py = ((oy % height) + height) % height
+        for (let dx = -1; dx <= 0; dx++) {
+          for (let dy = -1; dy <= 0; dy++) {
+            ctx.save()
+            ctx.translate(px + dx * width, py + dy * height)
+            ctx.beginPath()
+            drawFn(ctx, width, height, options)
+            ctx.restore()
+          }
+        }
       }
     }
-  }, [width, height, activeGrids, options])
+  }, [width, height, activeGrids, options, offset])
 
   useEffect(() => {
     draw()

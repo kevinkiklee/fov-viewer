@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { ViewTransition } from 'react'
 import Script from 'next/script'
+import { NextIntlClientProvider } from 'next-intl'
+import { getLocale, getMessages, getTranslations } from 'next-intl/server'
 
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
@@ -8,42 +10,42 @@ import { ThemeProvider } from '@/components/layout/ThemeProvider'
 import { JsonLd } from '@/components/shared/JsonLd'
 import { AdScripts } from '@/components/shared/AdScripts'
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://www.phototools.io'),
-  title: {
-    default: 'PhotoTools — Photography Tools',
-    template: '%s | PhotoTools',
-  },
-  description: 'Free photography tools: FOV simulator, Color scheme generator, EXIF viewer, Crop and frame photos, and more.',
-  openGraph: {
-    title: 'PhotoTools — Free Photography Tools',
-    description: 'Free photography tools: FOV simulator, Color scheme generator, EXIF viewer, Crop and frame photos, and more.',
-    url: 'https://www.phototools.io',
-    siteName: 'PhotoTools',
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'PhotoTools — Free Photography Tools',
-    description: 'Free photography tools: FOV simulator, Color scheme generator, EXIF viewer, Crop and frame photos, and more.',
-  },
-  alternates: {
-    canonical: '/',
-  },
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.site')
+  const description = t('description')
+  const ogTitle = t('ogTitle')
+  return {
+    metadataBase: new URL('https://www.phototools.io'),
+    title: { default: t('defaultTitle'), template: t('titleTemplate') },
+    description,
+    openGraph: {
+      title: ogTitle,
+      description,
+      url: 'https://www.phototools.io',
+      siteName: 'PhotoTools',
+      locale: 'en_US',
+      type: 'website',
+    },
+    twitter: { card: 'summary_large_image', title: ogTitle, description },
+    alternates: { canonical: '/' },
+  }
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale = await getLocale()
+  const messages = await getMessages()
+
+  const siteT = await getTranslations('metadata.site')
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'PhotoTools',
     url: 'https://www.phototools.io',
-    description: 'Free photography tools: FOV simulator, Color scheme generator, EXIF viewer, Crop and frame photos, and more.',
+    description: siteT('description'),
   }
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <head>
         {/* Consent-first ad loading: these scripts MUST be in <head> and load BEFORE
             AdSense (in <body> via AdScripts). Order matters:
@@ -73,11 +75,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <JsonLd />
-        <ThemeProvider>
-          <ViewTransition>
-            {children}
-          </ViewTransition>
-        </ThemeProvider>
+        <NextIntlClientProvider messages={messages}>
+          <ThemeProvider>
+            <ViewTransition>
+              {children}
+            </ViewTransition>
+          </ThemeProvider>
+        </NextIntlClientProvider>
 
         <SpeedInsights />
         <Script

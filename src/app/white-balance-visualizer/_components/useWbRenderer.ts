@@ -3,97 +3,8 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
 import { passthroughVertexShader } from './shaders/passthrough.vert'
 import { wbFragmentShader } from './shaders/wb.frag'
-
-interface GLResources {
-  gl: WebGL2RenderingContext
-  program: WebGLProgram
-  vao: WebGLVertexArrayObject
-  photoTexture: WebGLTexture | null
-  width: number
-  height: number
-}
-
-function compileShader(gl: WebGL2RenderingContext, type: number, source: string): WebGLShader {
-  const shader = gl.createShader(type)
-  if (!shader) throw new Error('Failed to create shader')
-  gl.shaderSource(shader, source)
-  gl.compileShader(shader)
-  if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-    const info = gl.getShaderInfoLog(shader)
-    gl.deleteShader(shader)
-    throw new Error(`Shader compile error: ${info}`)
-  }
-  return shader
-}
-
-function createProgram(gl: WebGL2RenderingContext, vertSrc: string, fragSrc: string): WebGLProgram {
-  const vert = compileShader(gl, gl.VERTEX_SHADER, vertSrc)
-  const frag = compileShader(gl, gl.FRAGMENT_SHADER, fragSrc)
-  const program = gl.createProgram()
-  if (!program) throw new Error('Failed to create program')
-  gl.attachShader(program, vert)
-  gl.attachShader(program, frag)
-  gl.linkProgram(program)
-  if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-    const info = gl.getProgramInfoLog(program)
-    gl.deleteProgram(program)
-    throw new Error(`Program link error: ${info}`)
-  }
-  gl.deleteShader(vert)
-  gl.deleteShader(frag)
-  return program
-}
-
-function loadImageAsTexture(gl: WebGL2RenderingContext, src: string): Promise<{ texture: WebGLTexture; width: number; height: number }> {
-  return new Promise((resolve, reject) => {
-    const img = new Image()
-    img.crossOrigin = 'anonymous'
-    img.onload = () => {
-      const texture = gl.createTexture()
-      if (!texture) { reject(new Error('Failed to create texture')); return }
-      gl.bindTexture(gl.TEXTURE_2D, texture)
-      gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true)
-      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA8, gl.RGBA, gl.UNSIGNED_BYTE, img)
-      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR)
-      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR)
-      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE)
-      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE)
-      resolve({ texture, width: img.naturalWidth, height: img.naturalHeight })
-    }
-    img.onerror = () => reject(new Error(`Failed to load image: ${src}`))
-    img.src = src
-  })
-}
-
-function setupFullScreenQuad(gl: WebGL2RenderingContext): WebGLVertexArrayObject {
-  const vao = gl.createVertexArray()
-  if (!vao) throw new Error('Failed to create vertex array')
-  gl.bindVertexArray(vao)
-
-  const positions = new Float32Array([
-    -1, -1,  1, -1,  -1, 1,
-    -1,  1,  1, -1,   1, 1,
-  ])
-  const texCoords = new Float32Array([
-    0, 0,  1, 0,  0, 1,
-    0, 1,  1, 0,  1, 1,
-  ])
-
-  const posBuf = gl.createBuffer()
-  gl.bindBuffer(gl.ARRAY_BUFFER, posBuf)
-  gl.bufferData(gl.ARRAY_BUFFER, positions, gl.STATIC_DRAW)
-  gl.enableVertexAttribArray(0)
-  gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0)
-
-  const texBuf = gl.createBuffer()
-  gl.bindBuffer(gl.ARRAY_BUFFER, texBuf)
-  gl.bufferData(gl.ARRAY_BUFFER, texCoords, gl.STATIC_DRAW)
-  gl.enableVertexAttribArray(1)
-  gl.vertexAttribPointer(1, 2, gl.FLOAT, false, 0, 0)
-
-  gl.bindVertexArray(null)
-  return vao
-}
+import type { GLResources } from './webgl-helpers'
+import { createProgram, loadImageAsTexture, setupFullScreenQuad } from './webgl-helpers'
 
 export function useWbRenderer(
   canvasRef: React.RefObject<HTMLCanvasElement | null>,
@@ -116,18 +27,18 @@ export function useWbRenderer(
     return { gl, program, vao, photoTexture: null, width: 0, height: 0 }
   }, [])
 
-  // Load scene texture
   useEffect(() => {
     if (!canvasRef.current || !sceneSrc) return
     let cancelled = false
 
+    const canvas = canvasRef.current
     const load = async () => {
       setIsLoading(true)
       setError(null)
 
       let resources = resourcesRef.current
       if (!resources) {
-        resources = initGL(canvasRef.current!)
+        resources = initGL(canvas)
         if (!resources) return
         resourcesRef.current = resources
       }
@@ -144,8 +55,6 @@ export function useWbRenderer(
 
         if (resources.photoTexture) gl.deleteTexture(resources.photoTexture)
         resources.photoTexture = result.texture
-
-        const canvas = canvasRef.current!
         canvas.width = result.width
         canvas.height = result.height
         resources.width = result.width
@@ -165,7 +74,6 @@ export function useWbRenderer(
     return () => { cancelled = true }
   }, [canvasRef, sceneSrc, initGL])
 
-  // Render — single pass, apply white balance multiplier
   useEffect(() => {
     const resources = resourcesRef.current
     if (!resources || !resources.photoTexture || isLoading) return
@@ -180,7 +88,6 @@ export function useWbRenderer(
     gl.bindTexture(gl.TEXTURE_2D, photoTexture)
     gl.uniform1i(gl.getUniformLocation(program, 'u_image'), 0)
 
-    // Normalize RGB so the max channel is 1.0 (preserves brightness)
     const maxCh = Math.max(rgb.r, rgb.g, rgb.b, 1)
     gl.uniform3f(
       gl.getUniformLocation(program, 'u_wbMultiplier'),
@@ -193,7 +100,6 @@ export function useWbRenderer(
     gl.bindVertexArray(null)
   }, [rgb.r, rgb.g, rgb.b, isLoading])
 
-  // Cleanup
   useEffect(() => {
     return () => {
       const resources = resourcesRef.current

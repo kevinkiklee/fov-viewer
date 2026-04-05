@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { FovSimulator } from './_components/FovSimulator'
 
-export const metadata: Metadata = {
-  title: 'FOV Simulator — Compare Focal Lengths',
-  description: 'Compare field of view across different focal lengths and sensor sizes. Free, interactive, shareable.',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.fov-simulator')
+  return { title: t('title'), description: t('description') }
 }
 
 export default function FovSimulatorPage() {

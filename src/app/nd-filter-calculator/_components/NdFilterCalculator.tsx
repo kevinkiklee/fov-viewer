@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import { useTranslations } from 'next-intl'
 import { shutterWithNd, formatShutterSpeed } from '@/lib/math/exposure'
 import { getToolBySlug } from '@/lib/data/tools'
 import { useQueryInit, useToolQuerySync, intParam } from '@/lib/utils/querySync'
@@ -28,6 +29,7 @@ function ControlsPanel({ baseIdx, ndIdx, resultSpeed, ndStops, onBaseChange, onN
   onBaseChange: (idx: number) => void
   onNdChange: (idx: number) => void
 }) {
+  const t = useTranslations('toolUI.nd-filter-calculator')
   return (
     <>
       <div className={nd.header}>
@@ -36,7 +38,7 @@ function ControlsPanel({ baseIdx, ndIdx, resultSpeed, ndStops, onBaseChange, onN
       </div>
 
       <div className={calc.field}>
-        <label className={calc.label}>Base Shutter Speed</label>
+        <label className={calc.label}>{t('baseShutterSpeed')}</label>
         <select
           className={calc.select}
           value={baseIdx}
@@ -51,7 +53,7 @@ function ControlsPanel({ baseIdx, ndIdx, resultSpeed, ndStops, onBaseChange, onN
       </div>
 
       <div className={calc.field}>
-        <label className={calc.label}>ND Filter</label>
+        <label className={calc.label}>{t('ndFilter')}</label>
         <select
           className={calc.select}
           value={ndIdx}
@@ -66,11 +68,11 @@ function ControlsPanel({ baseIdx, ndIdx, resultSpeed, ndStops, onBaseChange, onN
       </div>
 
       <div className={calc.resultCard}>
-        <span className={calc.resultLabel}>Resulting Shutter Speed</span>
+        <span className={calc.resultLabel}>{t('resultingShutterSpeed')}</span>
         <span className={calc.resultValue}>{formatShutterSpeed(resultSpeed)}</span>
       </div>
       <div className={calc.resultCard}>
-        <span className={calc.resultLabel}>Stops Added</span>
+        <span className={calc.resultLabel}>{t('stopsAdded')}</span>
         <span className={calc.resultValue}>{ndStops}</span>
       </div>
     </>
@@ -78,6 +80,7 @@ function ControlsPanel({ baseIdx, ndIdx, resultSpeed, ndStops, onBaseChange, onN
 }
 
 export function NdFilterCalculator() {
+  const t = useTranslations('toolUI.nd-filter-calculator')
   const [baseIdx, setBaseIdx] = useState(6)
   const [ndIdx, setNdIdx] = useState(2)
   useQueryInit(PARAM_SCHEMA, { base: setBaseIdx, nd: setNdIdx })
@@ -107,12 +110,12 @@ export function NdFilterCalculator() {
         </div>
 
         <div className={nd.main}>
-          <h3 className={nd.tableTitle}>Quick Reference</h3>
+          <h3 className={nd.tableTitle}>{t('quickReference')}</h3>
           <div className={calc.tableWrap}>
             <table className={calc.table}>
               <thead>
                 <tr>
-                  <th style={{ textAlign: 'left' }}>Base</th>
+                  <th style={{ textAlign: 'left' }}>{t('tableBase')}</th>
                   {TABLE_FILTERS.map((f) => (
                     <th key={f.factor}>{f.label}</th>
                   ))}

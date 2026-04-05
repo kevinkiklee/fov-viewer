@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { WhiteBalance } from './_components/WhiteBalance'
 
-export const metadata: Metadata = {
-  title: 'White Balance Visualizer',
-  description: 'See how white balance and color temperature affect your photos. Visualize changes from 2000K to 10000K with real-time preview.',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.white-balance-visualizer')
+  return { title: t('title'), description: t('description') }
 }
 
 export default function WhiteBalancePage() {

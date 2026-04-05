@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react'
 import { toast } from 'sonner'
+import { useTranslations } from 'next-intl'
 import * as Dialog from '@radix-ui/react-dialog'
 import styles from './ShareModal.module.css'
 
@@ -12,6 +13,8 @@ interface ShareModalProps {
 }
 
 export function ShareModal({ toolName, toolSlug, onClose }: ShareModalProps) {
+  const t = useTranslations('common.share')
+  const tToast = useTranslations('common.toast')
   const [copied, setCopied] = useState<string | null>(null)
 
   const baseUrl = 'https://www.phototools.io'
@@ -31,10 +34,10 @@ export function ShareModal({ toolName, toolSlug, onClose }: ShareModalProps) {
   const copy = useCallback((key: string, text: string) => {
     navigator.clipboard.writeText(text).then(() => {
       setCopied(key)
-      toast('Copied!')
+      toast(tToast('copied'))
       setTimeout(() => setCopied(null), 2000)
     })
-  }, [])
+  }, [tToast])
 
   return (
     <Dialog.Root open onOpenChange={(open) => { if (!open) onClose() }}>
@@ -42,46 +45,46 @@ export function ShareModal({ toolName, toolSlug, onClose }: ShareModalProps) {
         <Dialog.Overlay className={styles.overlay} />
         <Dialog.Content className={styles.modal} aria-describedby={undefined}>
           <div className={styles.header}>
-            <Dialog.Title className={styles.title}>Share &amp; Embed</Dialog.Title>
-            <Dialog.Close className={styles.closeBtn} aria-label="Close share modal">&times;</Dialog.Close>
+            <Dialog.Title className={styles.title}>{t('title')}</Dialog.Title>
+            <Dialog.Close className={styles.closeBtn} aria-label={t('closeModal')}>&times;</Dialog.Close>
           </div>
 
           <div className={styles.section}>
-            <label>Direct Link</label>
+            <label>{t('directLink')}</label>
             <div className={styles.row}>
               <input type="text" readOnly value={snippets.link} />
               <button onClick={() => copy('link', snippets.link)}>
-                {copied === 'link' ? 'Copied' : 'Copy'}
+                {copied === 'link' ? t('copied') : t('copy')}
               </button>
             </div>
           </div>
 
           <div className={styles.section}>
-            <label>Markdown (Reddit, GitHub)</label>
+            <label>{t('markdown')}</label>
             <div className={styles.row}>
               <input type="text" readOnly value={snippets.markdown} />
               <button onClick={() => copy('markdown', snippets.markdown)}>
-                {copied === 'markdown' ? 'Copied' : 'Copy'}
+                {copied === 'markdown' ? t('copied') : t('copy')}
               </button>
             </div>
           </div>
 
           <div className={styles.section}>
-            <label>BBCode (Forums)</label>
+            <label>{t('bbcode')}</label>
             <div className={styles.row}>
               <input type="text" readOnly value={snippets.bbcode} />
               <button onClick={() => copy('bbcode', snippets.bbcode)}>
-                {copied === 'bbcode' ? 'Copied' : 'Copy'}
+                {copied === 'bbcode' ? t('copied') : t('copy')}
               </button>
             </div>
           </div>
 
           <div className={styles.section}>
-            <label>HTML Embed</label>
+            <label>{t('htmlEmbed')}</label>
             <div className={styles.row}>
               <input type="text" readOnly value={snippets.iframe} />
               <button onClick={() => copy('iframe', snippets.iframe)}>
-                {copied === 'iframe' ? 'Copied' : 'Copy'}
+                {copied === 'iframe' ? t('copied') : t('copy')}
               </button>
             </div>
           </div>

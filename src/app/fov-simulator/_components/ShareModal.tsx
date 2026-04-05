@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useCallback } from 'react'
+import { useTranslations } from 'next-intl'
 import { toast } from 'sonner'
 import type { LensConfig } from '@/lib/types'
 import { getSensor } from '@/lib/data/sensors'
@@ -18,16 +19,18 @@ function buildLabel(lenses: LensConfig[]): string {
     const sensor = getSensor(l.sensorId)
     return `${l.focalLength}mm ${sensor.name}`
   })
-  return parts.join(' vs ') + ' FOV Comparison'
+  return parts.join(' vs ')
 }
 
 export function ShareModal({ state, onClose }: ShareModalProps) {
+  const t = useTranslations('toolUI.fov-simulator')
   const [copied, setCopied] = useState<string | null>(null)
   const qs = stateToQueryString(state)
   const baseUrl = 'https://www.phototools.io/fov-simulator'
   const toolUrl = `${baseUrl}?${qs}`
   const embedUrl = `${baseUrl}?${qs}&embed=1`
-  const label = buildLabel(state.lenses)
+  const labelParts = buildLabel(state.lenses)
+  const label = `${labelParts} ${t('fovComparison')}`
 
   const snippets = {
     link: toolUrl,
@@ -45,39 +48,39 @@ export function ShareModal({ state, onClose }: ShareModalProps) {
   }, [])
 
   return (
-    <div className={styles.shareModalOverlay} onClick={onClose} role="dialog" aria-label="Embed">
+    <div className={styles.shareModalOverlay} onClick={onClose} role="dialog" aria-label={t('embedTitle')}>
       <div className={styles.shareModal} onClick={(e) => e.stopPropagation()}>
         <div className={styles.shareModalHeader}>
-          <h3>Embed</h3>
-          <button className={styles.shareModalClose} onClick={onClose} aria-label="Close embed modal">&times;</button>
+          <h3>{t('embedTitle')}</h3>
+          <button className={styles.shareModalClose} onClick={onClose} aria-label={t('closeEmbedModal')}>&times;</button>
         </div>
 
         <div className={styles.shareModalSection}>
-          <label>Markdown (Reddit, GitHub)</label>
+          <label>{t('markdownLabel')}</label>
           <div className={styles.shareModalRow}>
             <input type="text" readOnly value={snippets.markdown} />
             <button onClick={() => copy('markdown', snippets.markdown)}>
-              {copied === 'markdown' ? 'Copied' : 'Copy'}
+              {copied === 'markdown' ? t('copied') : t('copy')}
             </button>
           </div>
         </div>
 
         <div className={styles.shareModalSection}>
-          <label>BBCode (Forums)</label>
+          <label>{t('bbcodeLabel')}</label>
           <div className={styles.shareModalRow}>
             <input type="text" readOnly value={snippets.bbcode} />
             <button onClick={() => copy('bbcode', snippets.bbcode)}>
-              {copied === 'bbcode' ? 'Copied' : 'Copy'}
+              {copied === 'bbcode' ? t('copied') : t('copy')}
             </button>
           </div>
         </div>
 
         <div className={styles.shareModalSection}>
-          <label>HTML Embed</label>
+          <label>{t('htmlEmbedLabel')}</label>
           <div className={styles.shareModalRow}>
             <input type="text" readOnly value={snippets.iframe} />
             <button onClick={() => copy('iframe', snippets.iframe)}>
-              {copied === 'iframe' ? 'Copied' : 'Copy'}
+              {copied === 'iframe' ? t('copied') : t('copy')}
             </button>
           </div>
         </div>

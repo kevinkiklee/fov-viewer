@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { FrameStudio } from './_components/FrameStudio'
 
-export const metadata: Metadata = {
-  title: 'Frame Studio',
-  description: 'Crop, frame, and compose photos with grid overlays. 100% client-side — your photos never leave your device.',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.frame-studio')
+  return { title: t('title'), description: t('description') }
 }
 
 export default function FrameStudioPage() {

@@ -1,5 +1,7 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
+
 interface HyperfocalBadgeProps {
   isAtHyperfocal: boolean
   nearLimit: number
@@ -11,6 +13,7 @@ function formatDist(m: number): string {
 }
 
 export function HyperfocalBadge({ isAtHyperfocal, nearLimit }: HyperfocalBadgeProps) {
+  const t = useTranslations('toolUI.hyperfocal-simulator')
   if (!isAtHyperfocal) return null
 
   return (
@@ -30,9 +33,9 @@ export function HyperfocalBadge({ isAtHyperfocal, nearLimit }: HyperfocalBadgePr
         pointerEvents: 'none',
       }}
     >
-      <div style={{ fontSize: 14 }}>∞ Sharp to infinity</div>
+      <div style={{ fontSize: 14 }}>∞ {t('sharpToInfinity')}</div>
       <div style={{ fontSize: 11, fontWeight: 400, opacity: 0.85 }}>
-        Near limit: {formatDist(nearLimit)}
+        {t('nearLimitBadge')} {formatDist(nearLimit)}
       </div>
     </div>
   )

@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { HyperfocalSimulator } from './_components/HyperfocalSimulator'
 
-export const metadata: Metadata = {
-  title: 'Hyperfocal Distance Simulator',
-  description: 'Visualize hyperfocal distance for any lens and sensor. See exactly where to focus for maximum sharpness from foreground to infinity.',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.hyperfocal-simulator')
+  return { title: t('title'), description: t('description') }
 }
 
 export default function HyperfocalSimulatorPage() {

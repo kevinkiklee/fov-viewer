@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { StarTrailCalculator } from './_components/StarTrailCalculator'
 
-export const metadata: Metadata = {
-  title: 'Star Trail Calculator',
-  description: 'Calculate the maximum exposure time for pinpoint stars using the 500, NPF, and other rules. Plan star trail stacking shots for any location.',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.star-trail-calculator')
+  return { title: t('title'), description: t('description') }
 }
 
 export default function StarTrailCalculatorPage() {

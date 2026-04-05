@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useCallback, useEffect } from 'react'
+import { useTranslations } from 'next-intl'
 import { useWbRenderer } from './useWbRenderer'
 import { WB_SCENES } from '@/lib/data/whiteBalance'
 import { ScenePicker } from '@/components/shared/ScenePicker'
@@ -20,6 +21,7 @@ interface WbPreviewProps {
 }
 
 export function WbPreview({ rgb, kelvin, customSrc, onFile, onRemoveCustom, canvasRef, sceneIdx, onSceneChange }: WbPreviewProps) {
+  const t = useTranslations('toolUI.white-balance-visualizer')
   const [localIdx, setLocalIdx] = useState(sceneIdx)
   const [dragOver, setDragOver] = useState(false)
 
@@ -77,7 +79,7 @@ export function WbPreview({ rgb, kelvin, customSrc, onFile, onRemoveCustom, canv
             <p>{error}</p>
           </div>
         ) : isLoading ? (
-          <div className={styles.loading}>Loading scene...</div>
+          <div className={styles.loading}>{t('loadingScene')}</div>
         ) : null}
         <canvas
           ref={canvasRef}

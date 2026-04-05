@@ -1,0 +1,34 @@
+{
+  "toolUI": {
+    "fov-simulator": {
+      "rotate": "Rotate",
+      "center": "Center",
+      "switchToPortrait": "Switch to portrait",
+      "switchToLandscape": "Switch to landscape",
+      "centerOverlays": "Center overlays",
+      "addLens": "+ Add lens",
+      "fovSimulator": "FOV Simulator",
+      "sensor": "Sensor",
+      "copyImage": "Copy image",
+      "copyLink": "Copy link",
+      "embed": "Embed",
+      "reset": "Reset",
+      "frameInfo": "Frame Info",
+      "distance": "Distance",
+      "showFramingGuides": "Show framing guides",
+      "wide": "wide",
+      "embedTitle": "Embed",
+      "closeEmbedModal": "Close embed modal",
+      "markdownLabel": "Markdown (Reddit, GitHub)",
+      "bbcodeLabel": "BBCode (Forums)",
+      "htmlEmbedLabel": "HTML Embed",
+      "copied": "Copied",
+      "copy": "Copy",
+      "cropView": "Crop view:",
+      "collapse": "Collapse",
+      "expand": "Expand",
+      "fovComparison": "FOV Comparison",
+      "loadingScene": "Loading scene..."
+    }
+  }
+}

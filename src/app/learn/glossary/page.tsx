@@ -1,24 +1,27 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { Glossary } from './_components/Glossary'
 import { GLOSSARY } from '@/lib/data/glossary'
 import { AdUnit } from '@/components/shared/AdUnit'
 import styles from './page.module.css'
 
-export const metadata: Metadata = {
-  title: 'Photography Glossary',
-  description: 'Searchable glossary of 50+ photography terms with definitions and links to interactive tools.',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.glossary')
+  return { title: t('title'), description: t('description') }
 }
 
-export default function GlossaryPage() {
+export default async function GlossaryPage() {
+  const t = await getTranslations('glossary')
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: GLOSSARY.map((entry) => ({
       '@type': 'Question',
-      name: `What is ${entry.term} in photography?`,
+      name: `What is ${t(`entries.${entry.id}.term` as Parameters<typeof t>[0])} in photography?`,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: entry.definition,
+        text: t(`entries.${entry.id}.definition` as Parameters<typeof t>[0]),
       },
     })),
   }
@@ -30,9 +33,9 @@ export default function GlossaryPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className={styles.main}>
-        <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 'var(--space-sm)' }}>Photography Glossary</h1>
+        <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 'var(--space-sm)' }}>{t('title')}</h1>
         <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--space-xl)' }}>
-          Searchable reference of photography terms. Click any term to see its definition.
+          {t('subtitle')}
         </p>
         <Glossary />
       </div>

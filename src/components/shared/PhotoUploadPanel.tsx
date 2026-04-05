@@ -1,5 +1,6 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { FileDropZone } from './FileDropZone'
 import styles from './PhotoUploadPanel.module.css'
 
@@ -11,10 +12,12 @@ interface PhotoUploadPanelProps {
   prompt?: string
 }
 
-export function PhotoUploadPanel({ onFile, label = 'Your Photo', prompt }: PhotoUploadPanelProps) {
+export function PhotoUploadPanel({ onFile, label, prompt }: PhotoUploadPanelProps) {
+  const t = useTranslations('common.fileUpload')
+
   return (
     <div className={styles.panel}>
-      <span className={styles.label}>{label}</span>
+      <span className={styles.label}>{label ?? t('defaultLabel')}</span>
       <FileDropZone onFile={onFile} prompt={prompt} />
     </div>
   )

@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { NdFilterCalculator } from './_components/NdFilterCalculator'
 
-export const metadata: Metadata = {
-  title: 'ND Filter Calculator',
-  description: 'Calculate the correct shutter speed when using ND filters. Supports any filter strength from ND2 to ND1000000 with a quick-reference table.',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.nd-filter-calculator')
+  return { title: t('title'), description: t('description') }
 }
 
 export default function NdFilterCalculatorPage() {

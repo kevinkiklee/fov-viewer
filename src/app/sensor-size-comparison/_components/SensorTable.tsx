@@ -1,0 +1,51 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
+import { calcCropFactor, calcAspectCropFactor } from '@/lib/data/sensors'
+import type { SensorPreset } from '@/lib/types'
+import { formatAspectRatio } from './sensorSizeHelpers'
+import ss from './SensorSize.module.css'
+
+export function SensorTable({ sensors }: { sensors: Required<SensorPreset>[] }) {
+  const t = useTranslations('toolUI.sensor-size-comparison')
+  const sorted = [...sensors].sort((a, b) => (b.w * b.h) - (a.w * a.h))
+  return (
+    <table className={ss.table}>
+      <thead>
+        <tr>
+          <th style={{ textAlign: 'left' }}>{t('tableSensor')}</th>
+          <th>{t('tableWidth')}</th>
+          <th>{t('tableHeight')}</th>
+          <th>{t('tableAspectRatio')}</th>
+          <th>{t('tableArea')}</th>
+          <th>{t('tableCropFactor')}</th>
+          <th>{t('tableAspectCrop')}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map((s) => {
+          const area = s.w * s.h
+          const crop = calcCropFactor(s.w, s.h)
+          const aspectCrop = calcAspectCropFactor(s.w, s.h)
+          const ratio = formatAspectRatio(s.w, s.h)
+          return (
+            <tr key={s.id}>
+              <td style={{ textAlign: 'left' }}>
+                <div className={ss.sensorCell}>
+                  <span className={ss.tableDot} style={{ backgroundColor: s.color }} />
+                  {s.name}
+                </div>
+              </td>
+              <td>{s.w}</td>
+              <td>{s.h}</td>
+              <td>{ratio}</td>
+              <td>{area.toFixed(1)}</td>
+              <td>{crop.toFixed(2)}x</td>
+              <td>{aspectCrop.toFixed(2)}x</td>
+            </tr>
+          )
+        })}
+      </tbody>
+    </table>
+  )
+}

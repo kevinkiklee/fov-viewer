@@ -1,108 +1,82 @@
 import { describe, it, expect } from 'vitest'
-import { getEducationBySlug, getAllEducation } from './index'
+import { getSkeletonBySlug } from './index'
+import { TOOL_EDUCATION_SKELETONS } from './content'
+import { TOOL_EDUCATION_SKELETONS_2 } from './content2'
 import { TOOLS } from '../tools'
 
-describe('Education content', () => {
-  it('every tool with education has valid structure', () => {
-    for (const tool of TOOLS) {
-      const edu = getEducationBySlug(tool.slug)
-      if (!edu) continue
-      expect(edu.slug).toBe(tool.slug)
-      expect(edu.beginner).toBeTruthy()
-      expect(edu.deeper).toBeTruthy()
-      expect(Array.isArray(edu.tips)).toBe(true)
-      expect(edu.tips.length).toBeGreaterThan(0)
-      expect(typeof edu.tooltips).toBe('object')
+const ALL_SKELETONS = [...TOOL_EDUCATION_SKELETONS, ...TOOL_EDUCATION_SKELETONS_2]
+
+describe('Education skeletons', () => {
+  it('every skeleton has a valid structure', () => {
+    for (const skel of ALL_SKELETONS) {
+      expect(skel.slug).toBeTruthy()
+      expect(skel.keyFactorCount).toBeGreaterThan(0)
+      expect(skel.tipCount).toBeGreaterThan(0)
+      expect(Array.isArray(skel.tooltipKeys)).toBe(true)
+      expect(skel.tooltipKeys.length).toBeGreaterThan(0)
     }
   })
 
-  it('challenges have required fields', () => {
-    for (const tool of TOOLS) {
-      const edu = getEducationBySlug(tool.slug)
-      if (!edu || !edu.challenges) continue
-      for (const c of edu.challenges) {
+  it('challenges have required skeleton fields', () => {
+    for (const skel of ALL_SKELETONS) {
+      for (const c of skel.challenges) {
         expect(c.id).toBeTruthy()
         expect(['beginner', 'intermediate', 'advanced']).toContain(c.difficulty)
-        expect(c.scenario).toBeTruthy()
-        expect(c.successMessage).toBeTruthy()
-        expect(c.failureMessage).toBeTruthy()
+        expect(c.targetField).toBeTruthy()
       }
     }
   })
 
-  it('tips have text', () => {
-    for (const tool of TOOLS) {
-      const edu = getEducationBySlug(tool.slug)
-      if (!edu) continue
-      for (const tip of edu.tips) {
-        expect(tip.text).toBeTruthy()
+  it('challenges with optionValues have a correctOption that matches one of the values', () => {
+    for (const skel of ALL_SKELETONS) {
+      for (const c of skel.challenges) {
+        if (c.optionValues && c.correctOption) {
+          expect(c.optionValues).toContain(c.correctOption)
+        }
       }
     }
   })
 
   it('returns undefined for unknown slug', () => {
-    expect(getEducationBySlug('nonexistent-tool')).toBeUndefined()
+    expect(getSkeletonBySlug('nonexistent-tool')).toBeUndefined()
   })
 
-  it('getAllEducation returns all entries', () => {
-    const all = getAllEducation()
-    expect(all.length).toBeGreaterThan(0)
-    for (const edu of all) {
-      expect(edu.slug).toBeTruthy()
-      expect(edu.beginner).toBeTruthy()
-    }
-  })
-
-  it('education slugs are unique', () => {
-    const all = getAllEducation()
-    const slugs = all.map((e) => e.slug)
+  it('skeleton slugs are unique', () => {
+    const slugs = ALL_SKELETONS.map((s) => s.slug)
     expect(new Set(slugs).size).toBe(slugs.length)
   })
 
-  it('every education slug matches a tool slug or known sub-feature', () => {
+  it('every skeleton slug matches a tool slug or known sub-feature', () => {
     const toolSlugs = new Set(TOOLS.map((t) => t.slug))
     const knownSubFeatures = new Set(['histogram']) // histogram is part of exif-viewer
-    const all = getAllEducation()
-    for (const edu of all) {
-      expect(toolSlugs.has(edu.slug) || knownSubFeatures.has(edu.slug)).toBe(true)
+    for (const skel of ALL_SKELETONS) {
+      expect(toolSlugs.has(skel.slug) || knownSubFeatures.has(skel.slug)).toBe(true)
     }
   })
 
   it('challenge IDs are globally unique', () => {
-    const all = getAllEducation()
     const ids: string[] = []
-    for (const edu of all) {
-      for (const c of edu.challenges) {
+    for (const skel of ALL_SKELETONS) {
+      for (const c of skel.challenges) {
         ids.push(c.id)
       }
     }
     expect(new Set(ids).size).toBe(ids.length)
   })
 
-  it('challenges with options have a correctOption that matches one of the option values', () => {
-    const all = getAllEducation()
-    for (const edu of all) {
-      for (const c of edu.challenges) {
-        if (c.options && c.correctOption) {
-          const values = c.options.map((o) => o.value)
-          expect(values).toContain(c.correctOption)
-        }
+  it('deeperSections is defined only for tools with array-based deeper content', () => {
+    for (const skel of ALL_SKELETONS) {
+      if (skel.deeperSections !== undefined) {
+        expect(skel.deeperSections).toBeGreaterThan(0)
       }
     }
   })
 
-  it('deeper field is either a string or array of sections with heading and text', () => {
-    const all = getAllEducation()
-    for (const edu of all) {
-      if (typeof edu.deeper === 'string') {
-        expect(edu.deeper.length).toBeGreaterThan(0)
-      } else {
-        expect(Array.isArray(edu.deeper)).toBe(true)
-        for (const section of edu.deeper) {
-          expect(section.heading).toBeTruthy()
-          expect(section.text).toBeTruthy()
-        }
-      }
+  it('getSkeletonBySlug returns correct skeleton', () => {
+    for (const skel of ALL_SKELETONS) {
+      const found = getSkeletonBySlug(skel.slug)
+      expect(found).toBeDefined()
+      expect(found!.slug).toBe(skel.slug)
     }
   })
 })

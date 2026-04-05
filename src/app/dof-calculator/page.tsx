@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { DoFCalculator } from './_components/DoFCalculator'
 
-export const metadata: Metadata = {
-  title: 'Depth of Field Calculator',
-  description: 'Calculate depth of field for any lens, aperture, and sensor size. See near/far focus limits, hyperfocal distance, and background blur — free and interactive.',
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.dof-calculator')
+  return { title: t('title'), description: t('description') }
 }
 
 export default function DoFCalculatorPage() {

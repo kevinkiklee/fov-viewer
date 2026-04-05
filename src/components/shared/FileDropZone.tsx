@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useCallback } from 'react'
+import { useTranslations } from 'next-intl'
 import styles from './FileDropZone.module.css'
 
 interface FileDropZoneProps {
@@ -10,6 +11,7 @@ interface FileDropZoneProps {
 }
 
 export function FileDropZone({ onFile, prompt: promptText }: FileDropZoneProps) {
+  const t = useTranslations('common.fileUpload')
   const [fileName, setFileName] = useState<string | null>(null)
   const [dragOver, setDragOver] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -64,7 +66,7 @@ export function FileDropZone({ onFile, prompt: promptText }: FileDropZoneProps) 
       onDragLeave={handleDragLeave}
       role="button"
       tabIndex={0}
-      aria-label={fileName ? `Selected file: ${fileName}. Click to choose a different image` : 'Drop an image here or click to browse'}
+      aria-label={fileName ? t('selectedFile', { fileName }) : t('dropPrompt')}
       onKeyDown={(e) => {
         if (e.key === 'Enter' || e.key === ' ') handleClick()
       }}
@@ -80,11 +82,11 @@ export function FileDropZone({ onFile, prompt: promptText }: FileDropZoneProps) 
         <span className={styles.fileName}>{fileName}</span>
       ) : (
         <>
-          <span className={styles.prompt}>{promptText ?? 'Drop an image here or click to browse'}</span>
-          <span className={styles.promptMobile}>Tap to choose a photo</span>
+          <span className={styles.prompt}>{promptText ?? t('dropPrompt')}</span>
+          <span className={styles.promptMobile}>{t('tapPrompt')}</span>
         </>
       )}
-      <span className={styles.privacy}>Your photos never leave your device</span>
+      <span className={styles.privacy}>{t('privacy')}</span>
     </div>
   )
 }

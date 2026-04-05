@@ -21,11 +21,11 @@ describe('WB_PRESETS', () => {
     const names = WB_PRESETS.map(p => p.name)
     expect(new Set(names).size).toBe(names.length)
   })
-  it('includes common lighting conditions', () => {
-    const names = WB_PRESETS.map(p => p.name.toLowerCase())
-    expect(names.some(n => n.includes('daylight'))).toBe(true)
-    expect(names.some(n => n.includes('tungsten'))).toBe(true)
-    expect(names.some(n => n.includes('shade') || n.includes('cloudy'))).toBe(true)
+  it('includes common lighting conditions (by kelvin)', () => {
+    const kelvins = WB_PRESETS.map(p => p.kelvin)
+    expect(kelvins).toContain(5500) // Daylight
+    expect(kelvins).toContain(2700) // Tungsten
+    expect(kelvins.some(k => k === 6500 || k === 7500)).toBe(true) // Cloudy or Shade
   })
 })
 

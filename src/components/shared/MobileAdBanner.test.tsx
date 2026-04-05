@@ -1,5 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
+import { NextIntlClientProvider } from 'next-intl'
+import messages from '@/lib/i18n/messages/en/common.json'
 
 vi.mock('@/lib/ads', () => ({
   isAdsEnabled: vi.fn(),
@@ -27,6 +29,14 @@ const mockSessionStorage = {
 
 Object.defineProperty(window, 'sessionStorage', { value: mockSessionStorage })
 
+function Wrapper({ children }: { children: React.ReactNode }) {
+  return (
+    <NextIntlClientProvider locale="en" messages={messages}>
+      {children}
+    </NextIntlClientProvider>
+  )
+}
+
 describe('MobileAdBanner', () => {
   beforeEach(() => {
     vi.resetAllMocks()
@@ -36,7 +46,7 @@ describe('MobileAdBanner', () => {
   it('renders nothing when ads are disabled', async () => {
     mockIsAdsEnabled.mockReturnValue(false)
     const { MobileAdBanner } = await import('./MobileAdBanner')
-    const { container } = render(<MobileAdBanner />)
+    const { container } = render(<MobileAdBanner />, { wrapper: Wrapper })
     expect(container.innerHTML).toBe('')
   })
 
@@ -44,21 +54,21 @@ describe('MobileAdBanner', () => {
     mockIsAdsEnabled.mockReturnValue(true)
     store['phototools-ad-dismissed'] = '1'
     const { MobileAdBanner } = await import('./MobileAdBanner')
-    const { container } = render(<MobileAdBanner />)
+    const { container } = render(<MobileAdBanner />, { wrapper: Wrapper })
     expect(container.innerHTML).toBe('')
   })
 
   it('renders banner when enabled and not dismissed', async () => {
     mockIsAdsEnabled.mockReturnValue(true)
     const { MobileAdBanner } = await import('./MobileAdBanner')
-    render(<MobileAdBanner />)
+    render(<MobileAdBanner />, { wrapper: Wrapper })
     expect(screen.getByLabelText('Close advertisement')).toBeTruthy()
   })
 
   it('dismisses on close button click', async () => {
     mockIsAdsEnabled.mockReturnValue(true)
     const { MobileAdBanner } = await import('./MobileAdBanner')
-    render(<MobileAdBanner />)
+    render(<MobileAdBanner />, { wrapper: Wrapper })
     fireEvent.click(screen.getByLabelText('Close advertisement'))
     expect(mockSessionStorage.setItem).toHaveBeenCalledWith('phototools-ad-dismissed', '1')
   })

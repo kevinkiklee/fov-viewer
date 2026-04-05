@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo, useCallback, useRef } from 'react'
+import { useTranslations } from 'next-intl'
 import { kelvinToRgb } from '@/lib/math/color'
 import { getToolBySlug } from '@/lib/data/tools'
 import { WB_PRESETS, WB_SCENES } from '@/lib/data/whiteBalance'
@@ -28,6 +29,7 @@ function ControlsPanel({ kelvin, rgb, activePreset, onKelvinChange, onFile }: {
   onKelvinChange: (k: number) => void
   onFile: (file: File) => void
 }) {
+  const t = useTranslations('toolUI.white-balance-visualizer')
   return (
     <>
       <div className={wb.header}>
@@ -37,7 +39,7 @@ function ControlsPanel({ kelvin, rgb, activePreset, onKelvinChange, onFile }: {
 
       <div className={calc.field}>
         <label className={calc.label}>
-          Color Temperature: <span className={calc.value}>{kelvin}K</span>
+          {t('colorTemperature')} <span className={calc.value}>{kelvin}K</span>
           {activePreset && (
             <span className={wb.presetTag}> ({activePreset.name})</span>
           )}
@@ -53,15 +55,15 @@ function ControlsPanel({ kelvin, rgb, activePreset, onKelvinChange, onFile }: {
         />
         <div className={wb.sliderLabels}>
           <span>2000K</span>
-          <span>Warm</span>
-          <span>Neutral</span>
-          <span>Cool</span>
+          <span>{t('warm')}</span>
+          <span>{t('neutral')}</span>
+          <span>{t('cool')}</span>
           <span>10000K</span>
         </div>
       </div>
 
       <div className={calc.field}>
-        <label className={calc.label}>Presets</label>
+        <label className={calc.label}>{t('presets')}</label>
         <div className={wb.presetRow}>
           {WB_PRESETS.map((p) => (
             <button
@@ -83,19 +85,19 @@ function ControlsPanel({ kelvin, rgb, activePreset, onKelvinChange, onFile }: {
 
       <div className={wb.rgbCards}>
         <div className={calc.resultCard}>
-          <span className={calc.resultLabel}>Red</span>
+          <span className={calc.resultLabel}>{t('red')}</span>
           <span className={calc.resultValue}>{rgb.r}</span>
         </div>
         <div className={calc.resultCard}>
-          <span className={calc.resultLabel}>Green</span>
+          <span className={calc.resultLabel}>{t('green')}</span>
           <span className={calc.resultValue}>{rgb.g}</span>
         </div>
         <div className={calc.resultCard}>
-          <span className={calc.resultLabel}>Blue</span>
+          <span className={calc.resultLabel}>{t('blue')}</span>
           <span className={calc.resultValue}>{rgb.b}</span>
         </div>
         <div className={calc.resultCard}>
-          <span className={calc.resultLabel}>Hex</span>
+          <span className={calc.resultLabel}>{t('hex')}</span>
           <span className={calc.resultValue}>
             #{rgb.r.toString(16).padStart(2, '0')}
             {rgb.g.toString(16).padStart(2, '0')}

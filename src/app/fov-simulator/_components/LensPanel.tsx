@@ -1,5 +1,6 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import type { LensConfig } from '@/lib/types'
 import { FOCAL_MIN } from '@/lib/data/focalLengths'
 import { SENSORS, getSensor } from '@/lib/data/sensors'
@@ -21,6 +22,7 @@ interface LensPanelProps {
 export function LensPanel({
   label, color, config, isActive, collapsed, onChange, onFocus, onRemove,
 }: LensPanelProps) {
+  const t = useTranslations('toolUI.fov-simulator')
   const sensor = getSensor(config.sensorId)
   const isCrop = sensor.cropFactor > 1
   const minFocal = isCrop ? FOCAL_MIN : 14
@@ -45,7 +47,7 @@ export function LensPanel({
       />
 
       {!collapsed && (
-        <FieldRow label="Sensor">
+        <FieldRow label={t('sensor')}>
           <select
             className={cp.select}
             value={config.sensorId}

@@ -6,6 +6,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useTranslations } from 'next-intl'
 import { isAdsEnabled } from '@/lib/ads'
 import { AdUnit } from './AdUnit'
 import styles from './MobileAdBanner.module.css'
@@ -13,6 +14,7 @@ import styles from './MobileAdBanner.module.css'
 const DISMISS_KEY = 'phototools-ad-dismissed'
 
 export function MobileAdBanner() {
+  const t = useTranslations('common.ad')
   const [visible, setVisible] = useState(false)
   const [dismissed, setDismissed] = useState(false)
 
@@ -38,7 +40,7 @@ export function MobileAdBanner() {
       <button
         className={styles.closeBtn}
         onClick={handleClose}
-        aria-label="Close advertisement"
+        aria-label={t('closeAd')}
       >
         &times;
       </button>

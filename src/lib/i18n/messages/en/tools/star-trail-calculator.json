@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "star-trail-calculator": {
+      "rule500": "500 Rule",
+      "ruleNPF": "NPF Rule",
+      "recommendation": "Recommendation",
+      "recommendationText": "Use the NPF rule ({npf}s) for pixel-level sharpness. The 500 rule ({r500}s) is a quick estimate but may show trailing on high-resolution sensors.",
+      "shootingTime": "Shooting Time",
+      "exposure": "Exposure",
+      "displayMode": "Display Mode",
+      "modeStarTrails": "Star Trails",
+      "modeSingleShot": "Single Shot",
+      "stacking": "Stacking",
+      "exposurePerFrame": "Exposure / frame (sec)",
+      "exposurePerFrameDesc": "Shutter speed for each individual frame",
+      "frames": "Frames",
+      "framesDesc": "Total number of photos to stack",
+      "gapSec": "Gap (sec)",
+      "gapDesc": "Delay between frames for buffer write",
+      "camera": "Camera",
+      "sensor": "Sensor",
+      "resolutionMP": "Resolution (MP)",
+      "apertureLabel": "Aperture",
+      "latitude": "Latitude",
+      "position": "Position",
+      "useMyLocation": "Use My Location",
+      "latitudeLabel": "Latitude:",
+      "equator": "Equator 0\u00b0",
+      "mid45": "Mid 45\u00b0",
+      "arctic70": "Arctic 70\u00b0"
+    }
+  }
+}

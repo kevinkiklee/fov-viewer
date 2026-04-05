@@ -1,10 +1,11 @@
 'use client'
 
 import { useRef, useEffect } from 'react'
+import { useTranslations } from 'next-intl'
 import type { LensConfig } from '@/lib/types'
 import type { Orientation } from './types'
 import type { OverlayOffsets } from './Canvas'
-import { LENS_COLORS, LENS_LABELS } from './types'
+import { LENS_COLORS, LENS_LABELS } from '@/lib/data/fovSimulator'
 import { calcFOV, calcCropRatio } from '@/lib/math/fov'
 import { getSensor } from '@/lib/data/sensors'
 import styles from './CropStrip.module.css'
@@ -52,6 +53,8 @@ interface CropThumbProps {
 
 function CropThumb({ lens, orientation, color, lensIndex, onSelect, offset, cleanCanvasRef, sourceImageRef }: CropThumbProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+
+  const renderRef = useRef<() => void>(() => {})
 
   const render = () => {
     const canvas = canvasRef.current
@@ -111,14 +114,17 @@ function CropThumb({ lens, orientation, color, lensIndex, onSelect, offset, clea
     }
   }
 
+  renderRef.current = render
+
   useEffect(render, [lens, orientation, offset, cleanCanvasRef, sourceImageRef])
 
   useEffect(() => {
     const cleanCanvas = cleanCanvasRef.current
     if (!cleanCanvas) return
-    cleanCanvas.addEventListener('draw', render)
-    return () => cleanCanvas.removeEventListener('draw', render)
-  })
+    const handler = () => renderRef.current()
+    cleanCanvas.addEventListener('draw', handler)
+    return () => cleanCanvas.removeEventListener('draw', handler)
+  }, [cleanCanvasRef])
 
   return (
     <button
@@ -147,11 +153,12 @@ interface CropStripProps {
 }
 
 export function CropStrip({ lenses, orientation, activeLens, onSelectLens, offsets, expanded, onToggleExpand, cleanCanvasRef, sourceImageRef }: CropStripProps) {
+  const t = useTranslations('toolUI.fov-simulator')
   return (
     <div className={`${styles.strip} ${expanded ? styles.stripExpanded : ''}`}>
       <div className={styles.stripHeader}>
-        <span className={styles.label}>Crop view:</span>
-        <button className={styles.expandBtn} onClick={onToggleExpand} title={expanded ? 'Collapse' : 'Expand'}>
+        <span className={styles.label}>{t('cropView')}</span>
+        <button className={styles.expandBtn} onClick={onToggleExpand} title={expanded ? t('collapse') : t('expand')}>
           {expanded ? '▾' : '▴'}
         </button>
       </div>

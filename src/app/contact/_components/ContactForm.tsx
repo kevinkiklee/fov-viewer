@@ -1,10 +1,12 @@
 'use client'
 
 import { useState, type FormEvent } from 'react'
+import { useTranslations } from 'next-intl'
 import { toast } from 'sonner'
 import styles from './ContactForm.module.css'
 
 export function ContactForm() {
+  const t = useTranslations('contact.form')
   const [sending, setSending] = useState(false)
   const [sent, setSent] = useState(false)
 
@@ -23,15 +25,15 @@ export function ContactForm() {
       })
 
       if (res.ok) {
-        toast.success('Message sent! We\'ll get back to you soon.')
+        toast.success(t('successToast'))
         setSent(true)
         form.reset()
       } else {
         const body = await res.json()
-        toast.error(body.error || 'Something went wrong. Please try again.')
+        toast.error(body.error || t('errorToast'))
       }
     } catch {
-      toast.error('Network error. Please check your connection and try again.')
+      toast.error(t('networkErrorToast'))
     } finally {
       setSending(false)
     }
@@ -41,10 +43,10 @@ export function ContactForm() {
     return (
       <div style={{ textAlign: 'center', padding: 'var(--space-xl) 0' }}>
         <p style={{ fontSize: 'var(--text-md)', fontWeight: 600, marginBottom: 'var(--space-sm)' }}>
-          Thanks for reaching out!
+          {t('sentTitle')}
         </p>
         <p style={{ color: 'var(--text-secondary)' }}>
-          We&apos;ll get back to you as soon as possible.
+          {t('sentMessage')}
         </p>
         <button
           onClick={() => setSent(false)}
@@ -59,7 +61,7 @@ export function ContactForm() {
             fontSize: 'var(--text-sm)',
           }}
         >
-          Send another message
+          {t('sendAnother')}
         </button>
       </div>
     )
@@ -69,12 +71,12 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className={styles.form}>
       {/* Honeypot — hidden from humans and screen readers */}
       <div className={styles.honeypot} aria-hidden="true">
-        <label htmlFor="website">Website</label>
+        <label htmlFor="website">{t('honeypotLabel')}</label>
         <input type="text" id="website" name="website" tabIndex={-1} autoComplete="off" />
       </div>
 
       <div className={styles.field}>
-        <label htmlFor="name" className={styles.label}>Name</label>
+        <label htmlFor="name" className={styles.label}>{t('nameLabel')}</label>
         <input
           type="text"
           id="name"
@@ -82,24 +84,24 @@ export function ContactForm() {
           required
           maxLength={100}
           className={styles.input}
-          placeholder="Your name"
+          placeholder={t('namePlaceholder')}
         />
       </div>
 
       <div className={styles.field}>
-        <label htmlFor="email" className={styles.label}>Email</label>
+        <label htmlFor="email" className={styles.label}>{t('emailLabel')}</label>
         <input
           type="email"
           id="email"
           name="email"
           required
           className={styles.input}
-          placeholder="your@email.com"
+          placeholder={t('emailPlaceholder')}
         />
       </div>
 
       <div className={styles.field}>
-        <label htmlFor="subject" className={styles.label}>Subject</label>
+        <label htmlFor="subject" className={styles.label}>{t('subjectLabel')}</label>
         <input
           type="text"
           id="subject"
@@ -107,25 +109,25 @@ export function ContactForm() {
           required
           maxLength={200}
           className={styles.input}
-          placeholder="What is this about?"
+          placeholder={t('subjectPlaceholder')}
         />
       </div>
 
       <div className={styles.field}>
-        <label htmlFor="message" className={styles.label}>Message</label>
+        <label htmlFor="message" className={styles.label}>{t('messageLabel')}</label>
         <textarea
           id="message"
           name="message"
           required
           maxLength={5000}
           className={styles.textarea}
-          placeholder="Your message..."
+          placeholder={t('messagePlaceholder')}
           rows={6}
         />
       </div>
 
       <button type="submit" disabled={sending} className={styles.submit}>
-        {sending ? 'Sending...' : 'Send Message'}
+        {sending ? t('sending') : t('submit')}
       </button>
     </form>
   )

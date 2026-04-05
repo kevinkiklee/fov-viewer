@@ -1,5 +1,6 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { calcHyperfocal } from '@/lib/math/dof'
 import { APERTURES } from '@/lib/data/camera'
 
@@ -15,10 +16,11 @@ function formatDist(m: number): string {
 }
 
 export function HyperfocalMiniTable({ focalLength, aperture, coc }: HyperfocalMiniTableProps) {
+  const t = useTranslations('toolUI.hyperfocal-simulator')
   return (
     <div>
       <div style={{ fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-secondary)', marginBottom: 8 }}>
-        Hyperfocal Reference — {focalLength}mm
+        {t('hyperfocalReference')} — {focalLength}mm
       </div>
       <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
         <tbody>

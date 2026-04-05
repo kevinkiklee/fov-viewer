@@ -1,7 +1,8 @@
 'use client'
 
 import { useRef, useEffect, useCallback, useState, useImperativeHandle, forwardRef } from 'react'
-import { hslToRgb } from '@/lib/math/color'
+import { drawWheelPixels, drawOverlay } from './drawWheel'
+import { useWheelPointer } from './useWheelPointer'
 import ch from './ColorHarmony.module.css'
 
 interface MonoPoint {
@@ -15,16 +16,12 @@ interface ColorWheelProps {
   saturation: number
   lightness: number
   harmonyHues: number[]
-  /** Index of the base (key) hue in harmonyHues */
   baseIndex: number
-  /** Node indices that can be individually dragged to adjust angles */
   draggableNodes: number[]
-  /** For monochromatic: HSL points to show along the hue radius */
   monochromaticPoints?: MonoPoint[]
   onHueChange: (hue: number) => void
   onSaturationChange: (saturation: number) => void
   onSecondaryDrag: (nodeIndex: number, hue: number) => void
-  /** For monochromatic: drag a node along the radius to adjust its saturation */
   onMonoDrag?: (nodeIndex: number, saturation: number) => void
 }
 
@@ -32,23 +29,9 @@ const DESKTOP_SIZE = 440
 const MOBILE_SIZE = 280
 const BREAKPOINT = 1024
 
-// Hit-test radius around a node dot (in CSS pixels)
-const NODE_HIT_RADIUS = 16
-
 function getCanvasSize(): number {
   if (typeof window === 'undefined') return DESKTOP_SIZE
   return window.innerWidth < BREAKPOINT ? MOBILE_SIZE : DESKTOP_SIZE
-}
-
-function rgbToHex(r: number, g: number, b: number): string {
-  return '#' + [r, g, b].map((c) => c.toString(16).padStart(2, '0')).join('')
-}
-
-/** Convert a hue angle to x,y on the wheel rim at the given saturation */
-function hueToPos(hue: number, sat: number, cx: number, cy: number, radius: number) {
-  const angleRad = (hue - 90) * (Math.PI / 180)
-  const dist = (sat / 100) * radius
-  return { x: cx + dist * Math.cos(angleRad), y: cy + dist * Math.sin(angleRad) }
 }
 
 export interface ColorWheelHandle {
@@ -73,11 +56,11 @@ export const ColorWheel = forwardRef<ColorWheelHandle, ColorWheelProps>(function
     getCanvas: () => canvasRef.current,
   }))
   const [size, setSize] = useState(DESKTOP_SIZE)
-  const rafRef = useRef<number>(0)
 
-  // Track which drag mode we're in:
-  // null = not dragging, 'wheel' = dragging the base hue, number = dragging that node index
-  const dragModeRef = useRef<null | 'wheel' | number>(null)
+  const { dragModeRef, onPointerDown, onPointerMove, onPointerUp } = useWheelPointer(
+    canvasRef, harmonyHues, saturation, draggableNodes, monochromaticPoints,
+    onHueChange, onSaturationChange, onSecondaryDrag, onMonoDrag,
+  )
 
   useEffect(() => {
     function handleResize() { setSize(getCanvasSize()) }
@@ -89,151 +72,13 @@ export const ColorWheel = forwardRef<ColorWheelHandle, ColorWheelProps>(function
   const dpr = typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1
   const canvasPixels = size * dpr
 
-  // Cache the wheel ImageData so overlay-only redraws skip the expensive pixel loop
   const wheelCacheRef = useRef<{ imageData: ImageData; lightness: number; size: number } | null>(null)
 
-  // Draw the HSL color wheel — inlined math, cached across overlay redraws
   const drawWheel = useCallback((ctx: CanvasRenderingContext2D) => {
-    const cache = wheelCacheRef.current
-    if (cache && cache.lightness === lightness && cache.size === canvasPixels) {
-      ctx.putImageData(cache.imageData, 0, 0)
-      return
-    }
-
-    const imageData = ctx.createImageData(canvasPixels, canvasPixels)
-    const data = imageData.data
-    const cx = canvasPixels / 2
-    const cy = canvasPixels / 2
-    const r = cx
-    const r2 = r * r
-    const invR = 1 / r
-    const RAD_TO_DEG = 180 / Math.PI
-
-    // Precompute lightness-dependent constant
-    const ln = lightness / 100
-    const k = 1 - Math.abs(2 * ln - 1)
-
-    for (let y = 0; y < canvasPixels; y++) {
-      const dy = y - cy
-      const dy2 = dy * dy
-      const rowOffset = y * canvasPixels
-
-      for (let x = 0; x < canvasPixels; x++) {
-        const dx = x - cx
-        const dist2 = dx * dx + dy2
-        if (dist2 > r2) continue
-
-        const dist = Math.sqrt(dist2)
-        let angle = Math.atan2(dx, -dy) * RAD_TO_DEG
-        if (angle < 0) angle += 360
-
-        // Inlined HSL→RGB (avoids function call + object alloc per pixel)
-        const sn = dist * invR
-        const c = k * sn
-        const hSector = angle / 60
-        const xc = c * (1 - Math.abs((hSector % 2) - 1))
-        const m = ln - c / 2
-
-        let r1: number, g1: number, b1: number
-        if (hSector < 1) { r1 = c; g1 = xc; b1 = 0 }
-        else if (hSector < 2) { r1 = xc; g1 = c; b1 = 0 }
-        else if (hSector < 3) { r1 = 0; g1 = c; b1 = xc }
-        else if (hSector < 4) { r1 = 0; g1 = xc; b1 = c }
-        else if (hSector < 5) { r1 = xc; g1 = 0; b1 = c }
-        else { r1 = c; g1 = 0; b1 = xc }
-
-        const idx = (rowOffset + x) * 4
-        data[idx]     = ((r1 + m) * 255 + 0.5) | 0
-        data[idx + 1] = ((g1 + m) * 255 + 0.5) | 0
-        data[idx + 2] = ((b1 + m) * 255 + 0.5) | 0
-        data[idx + 3] = 255
-      }
-    }
-    ctx.putImageData(imageData, 0, 0)
+    const imageData = drawWheelPixels(ctx, canvasPixels, lightness, wheelCacheRef.current)
     wheelCacheRef.current = { imageData, lightness, size: canvasPixels }
   }, [canvasPixels, lightness])
 
-  // Helper: draw a dot with optional key-color double ring
-  const drawDot = useCallback((ctx: CanvasRenderingContext2D, x: number, y: number, hex: string, isBase: boolean) => {
-    const dotRadius = (isBase ? 11 : 8) * dpr
-
-    // Filled dot
-    ctx.beginPath()
-    ctx.arc(x, y, dotRadius, 0, Math.PI * 2)
-    ctx.fillStyle = hex
-    ctx.fill()
-    ctx.strokeStyle = '#ffffff'
-    ctx.lineWidth = 2.5 * dpr
-    ctx.stroke()
-
-    // Key color: outer ring
-    if (isBase) {
-      ctx.beginPath()
-      ctx.arc(x, y, dotRadius + 4 * dpr, 0, Math.PI * 2)
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.5)'
-      ctx.lineWidth = 1.5 * dpr
-      ctx.stroke()
-    }
-  }, [dpr])
-
-  // Draw the harmony overlay — Adobe Color style: lines from center to each dot
-  const drawOverlay = useCallback((ctx: CanvasRenderingContext2D) => {
-    const cx = canvasPixels / 2
-    const cy = canvasPixels / 2
-    const r = cx
-
-    // Monochromatic: dots along the same hue angle at different saturations
-    if (monochromaticPoints && monochromaticPoints.length > 0) {
-      const monoPoints = monochromaticPoints.map((p) => {
-        const pos = hueToPos(p.h, p.s, cx, cy, r)
-        return { ...pos, ...p }
-      })
-
-      // Single line from center through all dots to the outermost
-      const outermost = monoPoints.reduce((a, b) =>
-        Math.hypot(a.x - cx, a.y - cy) > Math.hypot(b.x - cx, b.y - cy) ? a : b
-      )
-      ctx.beginPath()
-      ctx.moveTo(cx, cy)
-      ctx.lineTo(outermost.x, outermost.y)
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)'
-      ctx.lineWidth = 1.5 * dpr
-      ctx.stroke()
-
-      // Dots along the radius
-      monoPoints.forEach((p, i) => {
-        const rgb = hslToRgb(p.h, p.s, p.l)
-        const hex = rgbToHex(rgb.r, rgb.g, rgb.b)
-        drawDot(ctx, p.x, p.y, hex, i === baseIndex)
-      })
-      return
-    }
-
-    // Standard harmonies: lines from center to each dot on the rim
-    const points = harmonyHues.map((h) => {
-      const pos = hueToPos(h, saturation, cx, cy, r)
-      return { ...pos, hue: h }
-    })
-
-    // Lines from center to each dot
-    points.forEach((p) => {
-      ctx.beginPath()
-      ctx.moveTo(cx, cy)
-      ctx.lineTo(p.x, p.y)
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)'
-      ctx.lineWidth = 1.5 * dpr
-      ctx.stroke()
-    })
-
-    // Dots on the rim
-    points.forEach((p, i) => {
-      const rgb = hslToRgb(p.hue, saturation, lightness)
-      const hex = rgbToHex(rgb.r, rgb.g, rgb.b)
-      drawDot(ctx, p.x, p.y, hex, i === baseIndex)
-    })
-  }, [canvasPixels, harmonyHues, saturation, lightness, dpr, baseIndex, monochromaticPoints, drawDot])
-
-  // Redraw on any change
   useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
@@ -242,111 +87,8 @@ export const ColorWheel = forwardRef<ColorWheelHandle, ColorWheelProps>(function
     canvas.width = canvasPixels
     canvas.height = canvasPixels
     drawWheel(ctx)
-    drawOverlay(ctx)
-  }, [canvasPixels, drawWheel, drawOverlay])
-
-  // Compute angle from pointer position relative to wheel center (0 at top, clockwise)
-  const getAngleFromPointer = useCallback((clientX: number, clientY: number): { angle: number; dist: number } => {
-    const canvas = canvasRef.current
-    if (!canvas) return { angle: 0, dist: 0 }
-    const rect = canvas.getBoundingClientRect()
-    const x = clientX - rect.left - rect.width / 2
-    const y = clientY - rect.top - rect.height / 2
-    const dist = Math.sqrt(x * x + y * y)
-    let angle = Math.atan2(x, -y) * (180 / Math.PI)
-    if (angle < 0) angle += 360
-    return { angle, dist }
-  }, [])
-
-  // Check if pointer is near a draggable node
-  const hitTestNode = useCallback((clientX: number, clientY: number): number | null => {
-    const canvas = canvasRef.current
-    if (!canvas) return null
-    const rect = canvas.getBoundingClientRect()
-    const cssRadius = rect.width / 2
-
-    for (const nodeIdx of draggableNodes) {
-      let pos: { x: number; y: number }
-      if (monochromaticPoints && monochromaticPoints[nodeIdx]) {
-        // Monochromatic: position based on the point's own saturation
-        const mp = monochromaticPoints[nodeIdx]
-        pos = hueToPos(mp.h, mp.s, rect.width / 2, rect.height / 2, cssRadius)
-      } else {
-        const h = harmonyHues[nodeIdx]
-        if (h === undefined) continue
-        pos = hueToPos(h, saturation, rect.width / 2, rect.height / 2, cssRadius)
-      }
-      const dx = (clientX - rect.left) - pos.x
-      const dy = (clientY - rect.top) - pos.y
-      if (Math.sqrt(dx * dx + dy * dy) < NODE_HIT_RADIUS) {
-        return nodeIdx
-      }
-    }
-    return null
-  }, [draggableNodes, harmonyHues, saturation, monochromaticPoints])
-
-  const onPointerDown = useCallback((e: React.PointerEvent<HTMLCanvasElement>) => {
-    const canvas = canvasRef.current
-    if (!canvas) return
-
-    const rect = canvas.getBoundingClientRect()
-    const x = e.clientX - rect.left - rect.width / 2
-    const y = e.clientY - rect.top - rect.height / 2
-    const dist = Math.sqrt(x * x + y * y)
-    if (dist > rect.width / 2) return
-
-    canvas.setPointerCapture(e.pointerId)
-
-    // Check if we hit a draggable secondary node first
-    const hitNode = hitTestNode(e.clientX, e.clientY)
-    if (hitNode !== null) {
-      dragModeRef.current = hitNode
-      return
-    }
-
-    // Otherwise, drag the whole wheel (base hue + saturation)
-    dragModeRef.current = 'wheel'
-    const { angle } = getAngleFromPointer(e.clientX, e.clientY)
-    onHueChange(Math.round(angle) % 360)
-    const maxDist = rect.width / 2
-    onSaturationChange(Math.round(Math.min(dist / maxDist, 1) * 100))
-  }, [hitTestNode, getAngleFromPointer, onHueChange, onSaturationChange])
-
-  const onPointerMove = useCallback((e: React.PointerEvent<HTMLCanvasElement>) => {
-    if (dragModeRef.current === null) return
-    if (rafRef.current) cancelAnimationFrame(rafRef.current)
-
-    rafRef.current = requestAnimationFrame(() => {
-      const { angle, dist } = getAngleFromPointer(e.clientX, e.clientY)
-      const canvas = canvasRef.current
-      if (!canvas) return
-
-      if (dragModeRef.current === 'wheel') {
-        // Dragging base hue
-        onHueChange(Math.round(angle) % 360)
-        const maxDist = canvas.getBoundingClientRect().width / 2
-        onSaturationChange(Math.round(Math.min(dist / maxDist, 1) * 100))
-      } else if (typeof dragModeRef.current === 'number') {
-        if (monochromaticPoints && onMonoDrag) {
-          // Monochromatic: adjust saturation (distance from center along the hue axis)
-          const maxDist = canvas.getBoundingClientRect().width / 2
-          const newSat = Math.round(Math.min(dist / maxDist, 1) * 100)
-          onMonoDrag(dragModeRef.current, newSat)
-        } else {
-          // Other harmonies: adjust hue angle
-          onSecondaryDrag(dragModeRef.current, Math.round(angle) % 360)
-        }
-      }
-    })
-  }, [getAngleFromPointer, onHueChange, onSaturationChange, onSecondaryDrag, monochromaticPoints, onMonoDrag])
-
-  const onPointerUp = useCallback(() => {
-    dragModeRef.current = null
-    if (rafRef.current) {
-      cancelAnimationFrame(rafRef.current)
-      rafRef.current = 0
-    }
-  }, [])
+    drawOverlay(ctx, canvasPixels, harmonyHues, saturation, lightness, dpr, baseIndex, monochromaticPoints)
+  }, [canvasPixels, drawWheel, harmonyHues, saturation, lightness, dpr, baseIndex, monochromaticPoints])
 
   const isDragging = dragModeRef.current !== null
 

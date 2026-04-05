@@ -1,47 +1,10 @@
 'use client'
 
 import { useState, useRef } from 'react'
-import { useExposureRenderer, type SceneAssets } from './useExposureRenderer'
+import { useTranslations } from 'next-intl'
+import { EXPOSURE_SCENES } from '@/lib/data/exposureScenes'
+import { useExposureRenderer } from './useExposureRenderer'
 import styles from './ExposurePreview.module.css'
-
-const SCENES: { id: string; label: string; assets: SceneAssets }[] = [
-  {
-    id: 'street',
-    label: 'Street',
-    assets: {
-      photo: '/images/exposure-simulator/street.jpg',
-      depthMap: '/images/exposure-simulator/street-depth.png',
-      motionMask: '/images/exposure-simulator/street-motion.png',
-    },
-  },
-  {
-    id: 'landscape',
-    label: 'Landscape',
-    assets: {
-      photo: '/images/exposure-simulator/landscape.jpg',
-      depthMap: '/images/exposure-simulator/landscape-depth.png',
-      motionMask: '/images/exposure-simulator/landscape-motion.png',
-    },
-  },
-  {
-    id: 'portrait',
-    label: 'Portrait',
-    assets: {
-      photo: '/images/exposure-simulator/portrait.jpg',
-      depthMap: '/images/exposure-simulator/portrait-depth.png',
-      motionMask: '/images/exposure-simulator/portrait-motion.png',
-    },
-  },
-  {
-    id: 'lowlight',
-    label: 'Low Light',
-    assets: {
-      photo: '/images/exposure-simulator/lowlight.jpg',
-      depthMap: '/images/exposure-simulator/lowlight-depth.png',
-      motionMask: '/images/exposure-simulator/lowlight-motion.png',
-    },
-  },
-]
 
 interface ExposurePreviewProps {
   aperture: number
@@ -50,10 +13,11 @@ interface ExposurePreviewProps {
 }
 
 export function ExposurePreview({ aperture, shutterSpeed, iso }: ExposurePreviewProps) {
+  const t = useTranslations('toolUI.exposure-simulator')
   const [sceneIdx, setSceneIdx] = useState(0)
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
-  const currentScene = SCENES[sceneIdx]
+  const currentScene = EXPOSURE_SCENES[sceneIdx]
   const { isLoading, error } = useExposureRenderer(
     canvasRef,
     currentScene.assets,
@@ -66,23 +30,26 @@ export function ExposurePreview({ aperture, shutterSpeed, iso }: ExposurePreview
     <div className={styles.canvasArea}>
       <div className={styles.topbar}>
         <div className={styles.sceneStrip}>
-          <span className={styles.sceneStripLabel}>Scene:</span>
-          {SCENES.map((scene, idx) => (
+          <span className={styles.sceneStripLabel}>{t('scene')}</span>
+          {EXPOSURE_SCENES.map((scene, idx) => {
+            const label = t(scene.labelKey as Parameters<typeof t>[0])
+            return (
             <button
               key={scene.id}
               className={`${styles.sceneThumb} ${idx === sceneIdx ? styles.sceneThumbActive : ''}`}
               onClick={() => setSceneIdx(idx)}
-              aria-label={`Select ${scene.label} scene`}
-              title={scene.label}
+              aria-label={`Select ${label} scene`}
+              title={label}
             >
               <img
                 src={scene.assets.photo}
-                alt={scene.label}
+                alt={label}
                 width={48}
                 height={32}
               />
             </button>
-          ))}
+            )
+          })}
         </div>
       </div>
 
@@ -91,13 +58,13 @@ export function ExposurePreview({ aperture, shutterSpeed, iso }: ExposurePreview
           <div className={styles.fallback}>
             <img
               src={currentScene.assets.photo}
-              alt={currentScene.label}
+              alt={t(currentScene.labelKey as Parameters<typeof t>[0])}
               className={styles.fallbackImg}
             />
-            <p>{error}. Image effects preview is unavailable.</p>
+            <p>{error}. {t('imageEffectsUnavailable')}</p>
           </div>
         ) : isLoading ? (
-          <div className={styles.loading}>Loading scene...</div>
+          <div className={styles.loading}>{t('loadingScene')}</div>
         ) : null}
         <canvas
           ref={canvasRef}

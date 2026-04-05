@@ -1,13 +1,19 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { ContactForm } from './_components/ContactForm'
 
-export const metadata: Metadata = {
-  title: 'Contact | PhotoTools',
-  description: 'Get in touch with the PhotoTools team — questions, feedback, or suggestions about our photography tools.',
-  alternates: { canonical: 'https://www.phototools.io/contact' },
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('metadata.contact')
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: { canonical: 'https://www.phototools.io/contact' },
+  }
 }
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const t = await getTranslations('contact')
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
@@ -21,9 +27,9 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 'var(--space-sm)' }}>Contact Us</h1>
+      <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 'var(--space-sm)' }}>{t('title')}</h1>
       <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--space-xl)' }}>
-        Have a question, found a bug, or want to suggest a new tool? We&apos;d love to hear from you.
+        {t('description')}
       </p>
       <ContactForm />
     </div>

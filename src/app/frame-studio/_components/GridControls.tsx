@@ -1,7 +1,9 @@
 'use client'
 
 import { useCallback } from 'react'
+import { useTranslations } from 'next-intl'
 import type { GridType, GridOptions } from './types'
+import { GRID_TYPES, PALETTE_COLORS } from '@/lib/data/frameStudio'
 import styles from './GridControls.module.css'
 
 interface GridControlsProps {
@@ -9,34 +11,14 @@ interface GridControlsProps {
   onActiveGridsChange: (grids: GridType[]) => void
   options: GridOptions
   onOptionsChange: (options: GridOptions) => void
+  onResetGrid: () => void
 }
 
-const GRID_TYPES: { id: GridType; label: string }[] = [
-  { id: 'rule-of-thirds', label: 'Rule of Thirds' },
-  { id: 'golden-ratio', label: 'Golden Ratio' },
-  { id: 'golden-spiral', label: 'Golden Spiral' },
-  { id: 'golden-diagonal', label: 'Golden Diagonal' },
-  { id: 'diagonal-lines', label: 'Diagonal' },
-  { id: 'center-cross', label: 'Center Cross' },
-  { id: 'square-grid', label: 'Square Grid' },
-  { id: 'triangles', label: 'Triangles' },
-]
-
-const PALETTE_COLORS = [
-  '#ffffff', // White
-  '#00ffff', // Cyan (Default)
-  '#00ff00', // Green
-  '#ff00ff', // Magenta
-  '#ffff00', // Yellow
-  '#ff0000', // Red
-  '#000000', // Black
-]
-
 export function GridControls({
-  activeGrids, onActiveGridsChange, options, onOptionsChange,
+  activeGrids, onActiveGridsChange, options, onOptionsChange, onResetGrid,
 }: GridControlsProps) {
+  const t = useTranslations('toolUI.frame-studio')
   const selectGrid = useCallback((id: GridType) => {
-    // Only 1 selectable at a time as requested
     onActiveGridsChange([id])
   }, [onActiveGridsChange])
 
@@ -46,10 +28,10 @@ export function GridControls({
 
   return (
     <div className={styles.panel}>
-      <span className={styles.heading}>Grid Overlay</span>
+      <span className={styles.heading}>{t('gridOverlay')}</span>
 
       <div className={styles.section}>
-        <span className={styles.label}>Type</span>
+        <span className={styles.label}>{t('gridType')}</span>
         <select
           className={styles.gridSelect}
           value={activeGrids[0] ?? ''}
@@ -59,16 +41,16 @@ export function GridControls({
             else selectGrid(val as GridType)
           }}
         >
-          <option value="">None</option>
+          <option value="">{t('gridNone')}</option>
           {GRID_TYPES.map((g) => (
-            <option key={g.id} value={g.id}>{g.label}</option>
+            <option key={g.id} value={g.id}>{t(g.key)}</option>
           ))}
         </select>
       </div>
 
       {(activeGrids.includes('golden-spiral') || activeGrids.includes('golden-diagonal')) && (
-        <div className={styles.section}>
-          <span className={styles.label}>Rotation</span>
+        <div className={`${styles.section} ${styles.conditionalSection}`}>
+          <span className={styles.label}>{t('rotation')}</span>
           <div className={styles.rotationBtns}>
             {([0, 90, 180, 270] as const).map((r) => (
               <button
@@ -84,8 +66,8 @@ export function GridControls({
       )}
 
       {activeGrids.includes('square-grid') && (
-        <div className={styles.section}>
-          <span className={styles.label}>Grid Density: {options.gridDensity}x{options.gridDensity}</span>
+        <div className={`${styles.section} ${styles.conditionalSection}`}>
+          <span className={styles.label}>{t('gridDensity')} {options.gridDensity}x{options.gridDensity}</span>
           <input
             type="range"
             min={2}
@@ -98,7 +80,7 @@ export function GridControls({
       )}
 
       <div className={styles.section}>
-        <span className={styles.label}>Line Color</span>
+        <span className={styles.label}>{t('lineColor')}</span>
         <div className={styles.colorPalette}>
           {PALETTE_COLORS.map((c) => (
             <button
@@ -111,6 +93,10 @@ export function GridControls({
           ))}
         </div>
       </div>
+
+      {activeGrids.length > 0 && (
+        <button className={styles.resetBtn} onClick={onResetGrid}>{t('resetGrid')}</button>
+      )}
     </div>
   )
 }

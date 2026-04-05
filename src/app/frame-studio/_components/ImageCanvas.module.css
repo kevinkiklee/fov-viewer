@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  animation: fadeIn var(--duration-normal) var(--ease-out);
 }
 
 .canvas {

@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 import { getVisibleTools, getToolStatus } from '@/lib/data/tools'
 import type { ToolCategory } from '@/lib/types'
 import { ToolIcon } from '@/components/shared/ToolIcon'
@@ -15,11 +16,14 @@ interface NavProps {
   onThemeChange: (theme: 'dark' | 'light') => void
 }
 
-const CATEGORY_LABELS: Record<ToolCategory, string> = {
-  visualizer: 'Visualizers',
-  calculator: 'Calculators',
-  reference: 'Reference',
-  'file-tool': 'File Tools',
+function useCategoryLabels(): Record<ToolCategory, string> {
+  const t = useTranslations('common.nav.categories')
+  return {
+    visualizer: t('visualizer'),
+    calculator: t('calculator'),
+    reference: t('reference'),
+    'file-tool': t('file-tool'),
+  }
 }
 
 const CATEGORY_ORDER: ToolCategory[] = ['file-tool', 'visualizer', 'calculator', 'reference']
@@ -33,6 +37,8 @@ function useCanHover() {
 }
 
 export function Nav({ theme, onThemeChange }: NavProps) {
+  const t = useTranslations('common.nav')
+  const CATEGORY_LABELS = useCategoryLabels()
   const [toolsOpen, setToolsOpen] = useState(false)
   const toolsRef = useRef<HTMLDivElement>(null)
   const canHover = useCanHover()
@@ -98,7 +104,7 @@ export function Nav({ theme, onThemeChange }: NavProps) {
             aria-expanded={toolsOpen}
             aria-haspopup="true"
           >
-            Tools {toolsOpen ? '\u25B2' : '\u25BC'}
+            {t('tools')} {toolsOpen ? '\u25B2' : '\u25BC'}
           </button>
           <AnimatePresence>
             {toolsOpen && (
@@ -113,7 +119,7 @@ export function Nav({ theme, onThemeChange }: NavProps) {
                 <button
                   className={styles.megaCloseBtn}
                   onClick={() => setToolsOpen(false)}
-                  aria-label="Close menu"
+                  aria-label={t('closeMenu')}
                 >
                   &times;
                 </button>
@@ -143,7 +149,7 @@ export function Nav({ theme, onThemeChange }: NavProps) {
                           <span className={styles.megaItemHeader}>
                             <ToolIcon slug={tool.slug} width={16} height={16} className={styles.megaItemIcon} />
                             <span className={styles.megaItemName}>{tool.name}</span>
-                            <span className={styles.megaItemBadge}>Soon</span>
+                            <span className={styles.megaItemBadge}>{t('comingSoon')}</span>
                           </span>
                           <span className={styles.megaItemDesc}>{tool.description}</span>
                         </div>
@@ -155,7 +161,7 @@ export function Nav({ theme, onThemeChange }: NavProps) {
             )}
           </AnimatePresence>
         </div>
-        <Link href="/learn/glossary" className={styles.navLink}>Glossary</Link>
+        <Link href="/learn/glossary" className={styles.navLink}>{t('glossary')}</Link>
         <span className={styles.desktopThemeToggle}><ThemeToggle theme={theme} onChange={onThemeChange} /></span>
         <div className={styles.spacer} />
       </div>

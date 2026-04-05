@@ -1,4 +1,10 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
+
 export function DraftBanner() {
+  const t = useTranslations('common.draft')
+
   return (
     <div style={{
       background: '#f59e0b',
@@ -8,7 +14,7 @@ export function DraftBanner() {
       fontSize: 'var(--text-xs)',
       fontWeight: 600,
     }}>
-      Preview — This tool is not yet public
+      {t('banner')}
     </div>
   )
 }

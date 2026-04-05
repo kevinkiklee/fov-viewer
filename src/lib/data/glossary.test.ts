@@ -6,14 +6,13 @@ describe('GLOSSARY', () => {
   it('has 50+ terms', () => {
     expect(GLOSSARY.length).toBeGreaterThanOrEqual(50)
   })
-  it('terms are unique', () => {
-    const terms = GLOSSARY.map(g => g.term.toLowerCase())
-    expect(new Set(terms).size).toBe(terms.length)
+  it('ids are unique', () => {
+    const ids = GLOSSARY.map(g => g.id)
+    expect(new Set(ids).size).toBe(ids.length)
   })
-  it('all terms have definitions', () => {
+  it('all entries have ids', () => {
     for (const g of GLOSSARY) {
-      expect(g.term).toBeTruthy()
-      expect(g.definition).toBeTruthy()
+      expect(g.id).toBeTruthy()
     }
   })
   it('relatedTool slugs match actual tools', () => {
@@ -24,9 +23,9 @@ describe('GLOSSARY', () => {
       }
     }
   })
-  it('terms are sorted alphabetically', () => {
+  it('ids are sorted alphabetically', () => {
     for (let i = 1; i < GLOSSARY.length; i++) {
-      expect(GLOSSARY[i].term.toLowerCase() >= GLOSSARY[i-1].term.toLowerCase()).toBe(true)
+      expect(GLOSSARY[i].id.toLowerCase() >= GLOSSARY[i-1].id.toLowerCase()).toBe(true)
     }
   })
 })

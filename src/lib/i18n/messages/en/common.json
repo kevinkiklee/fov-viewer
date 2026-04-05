@@ -1,0 +1,101 @@
+{
+  "common": {
+    "nav": {
+      "tools": "Tools",
+      "glossary": "Glossary",
+      "closeMenu": "Close menu",
+      "comingSoon": "Soon",
+      "categories": {
+        "visualizer": "Visualizers",
+        "calculator": "Calculators",
+        "reference": "Reference",
+        "file-tool": "File Tools"
+      }
+    },
+    "footer": {
+      "glossary": "Glossary",
+      "about": "About",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookieSettings": "Cookie Settings"
+    },
+    "theme": {
+      "switchToLight": "Switch to light mode",
+      "switchToDark": "Switch to dark mode"
+    },
+    "actions": {
+      "copyImage": "Copy image",
+      "reset": "Reset",
+      "copyLink": "Copy link",
+      "share": "Share",
+      "embed": "Embed"
+    },
+    "toast": {
+      "linkCopied": "Link copied!",
+      "imageCopied": "Copied image!",
+      "failedToCopy": "Failed to copy",
+      "copied": "Copied!"
+    },
+    "learn": {
+      "title": "Learn",
+      "openPanel": "Open learn panel",
+      "collapsePanel": "Collapse learn panel",
+      "whatIsThis": "What is this?",
+      "howItWorks": "How it works",
+      "keyFactors": "Key factors",
+      "proTip": "Pro Tip",
+      "challenge": "Challenge",
+      "hint": "Hint: {hint}",
+      "completed": "Completed",
+      "checkAnswer": "Check Answer",
+      "nextChallenge": "Next Challenge",
+      "tryAgain": "Try Again",
+      "resetAll": "Reset all",
+      "resetAllChallenges": "Reset all challenges",
+      "challengeNumber": "Challenge {number}"
+    },
+    "share": {
+      "title": "Share & Embed",
+      "closeModal": "Close share modal",
+      "directLink": "Direct Link",
+      "markdown": "Markdown (Reddit, GitHub)",
+      "bbcode": "BBCode (Forums)",
+      "htmlEmbed": "HTML Embed",
+      "copy": "Copy",
+      "copied": "Copied"
+    },
+    "draft": {
+      "banner": "Preview — This tool is not yet public"
+    },
+    "fileUpload": {
+      "dropPrompt": "Drop an image here or click to browse",
+      "tapPrompt": "Tap to choose a photo",
+      "privacy": "Your photos never leave your device",
+      "selectedFile": "Selected file: {fileName}. Click to choose a different image",
+      "defaultLabel": "Your Photo"
+    },
+    "scene": {
+      "label": "Scene:",
+      "yourPhoto": "Your photo",
+      "removePhoto": "Remove photo",
+      "uploadPhoto": "Upload photo"
+    },
+    "controls": {
+      "focalLength": "Focal length",
+      "clickToEnterValue": "Click to enter a value",
+      "decrease": "Decrease",
+      "increase": "Increase"
+    },
+    "dof": {
+      "depthOfField": "Depth of field: {totalDoF} from {nearFocus} to {farFocus}",
+      "infinity": "Infinity"
+    },
+    "ad": {
+      "closeAd": "Close advertisement"
+    },
+    "tooltip": {
+      "infoLabel": "Info: {term}"
+    }
+  }
+}
