@@ -50,7 +50,8 @@
       "depthRulerFar": "Far",
       "depthRulerInFocus": "In Focus",
       "depthRulerSubject": "Subject",
-      "infinity": "∞"
+      "infinity": "∞",
+      "simulateDiffraction": "Simulate diffraction"
     }
   }
 }
