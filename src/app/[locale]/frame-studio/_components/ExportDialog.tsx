@@ -7,6 +7,7 @@ import { transferExif } from '@/lib/utils/exif'
 import {
   drawRuleOfThirds, drawGoldenRatio, drawGoldenSpiral, drawGoldenDiagonal,
   drawDiagonalLines, drawCenterCross, drawSquareGrid, drawTriangles,
+  GOLDEN_RATIO,
 } from '@/lib/math/grid'
 import type { FrameConfig, CropState, GridType, GridOptions } from './types'
 import { thicknessToPx } from './types'
@@ -38,8 +39,30 @@ const GRID_DRAW_MAP: Record<GridType, DrawFn> = {
   'triangles': (ctx, w, h) => drawTriangles(ctx, w, h),
 }
 
-function drawGridTiled(
-  ctx: CanvasRenderingContext2D, drawFn: DrawFn,
+function getLinePositions(
+  gridType: GridType, w: number, h: number, opts: GridOptions,
+): { v: number[]; h: number[] } | null {
+  switch (gridType) {
+    case 'rule-of-thirds':
+      return { v: [0, w / 3, 2 * w / 3], h: [0, h / 3, 2 * h / 3] }
+    case 'golden-ratio': {
+      const pw = w / GOLDEN_RATIO, ph = h / GOLDEN_RATIO
+      return { v: [0, w - pw, pw], h: [0, h - ph, ph] }
+    }
+    case 'center-cross':
+      return { v: [0, w / 2], h: [0, h / 2] }
+    case 'square-grid':
+      return {
+        v: Array.from({ length: opts.gridDensity }, (_, i) => (i * w) / opts.gridDensity),
+        h: Array.from({ length: opts.gridDensity }, (_, i) => (i * h) / opts.gridDensity),
+      }
+    default:
+      return null
+  }
+}
+
+function drawExportGrid(
+  ctx: CanvasRenderingContext2D, gridType: GridType, drawFn: DrawFn,
   originX: number, originY: number, gw: number, gh: number,
   ox: number, oy: number, opts: GridOptions,
 ) {
@@ -51,15 +74,30 @@ function drawGridTiled(
     ctx.restore()
     return
   }
-  const px = ((ox % gw) + gw) % gw
-  const py = ((oy % gh) + gh) % gh
-  for (let dx = -1; dx <= 0; dx++) {
-    for (let dy = -1; dy <= 0; dy++) {
-      ctx.save()
-      ctx.translate(originX + px + dx * gw, originY + py + dy * gh)
-      ctx.beginPath()
-      drawFn(ctx, gw, gh, opts)
-      ctx.restore()
+
+  const positions = getLinePositions(gridType, gw, gh, opts)
+  if (positions) {
+    ctx.beginPath()
+    for (const base of positions.v) {
+      const x = ((base + ox) % gw + gw) % gw
+      if (x > 0.5) { ctx.moveTo(originX + x, originY); ctx.lineTo(originX + x, originY + gh) }
+    }
+    for (const base of positions.h) {
+      const y = ((base + oy) % gh + gh) % gh
+      if (y > 0.5) { ctx.moveTo(originX, originY + y); ctx.lineTo(originX + gw, originY + y) }
+    }
+    ctx.stroke()
+  } else {
+    const px = ((ox % gw) + gw) % gw
+    const py = ((oy % gh) + gh) % gh
+    for (let dx = -1; dx <= 0; dx++) {
+      for (let dy = -1; dy <= 0; dy++) {
+        ctx.save()
+        ctx.translate(originX + px + dx * gw, originY + py + dy * gh)
+        ctx.beginPath()
+        drawFn(ctx, gw, gh, opts)
+        ctx.restore()
+      }
     }
   }
 }
@@ -137,7 +175,7 @@ export function ExportDialog({
         ctx.lineWidth = thicknessToPx(gridOptions.thickness)
         for (const gridType of activeGrids) {
           const drawFn = GRID_DRAW_MAP[gridType]
-          if (drawFn) drawGridTiled(ctx, drawFn, imgX, imgY, sw, sh, ox, oy, gridOptions)
+          if (drawFn) drawExportGrid(ctx, gridType, drawFn, imgX, imgY, sw, sh, ox, oy, gridOptions)
         }
         ctx.restore()
       }
