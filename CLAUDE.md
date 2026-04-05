@@ -220,6 +220,7 @@ GoogleAdSense integration managed via `src/lib/ads.ts` (configuration and featur
 - **Test files** co-located next to source files (`*.test.ts`)
 - **34 test files, 420 tests** covering math, data, education, ads, and component integration
 - **After file changes in `src/app/`**, clear `.next` cache (`rm -rf .next`) and restart dev server to avoid stale MIME type and 404 errors
+- **i18n strings required**: Whenever a new user-facing string is added or an existing one is modified, create or update the corresponding translation in the appropriate JSON file under `src/lib/i18n/messages/en/`. Never hardcode user-facing text directly in components — always use `useTranslations` (client) or `getTranslations` (server) to reference translation keys.
 - **Privacy Sandbox is deprecated** — do not discuss, recommend, or implement any Privacy Sandbox APIs (Topics, Attribution Reporting, Protected Audience, etc.)
 
 ## E2E Testing (Playwright)
