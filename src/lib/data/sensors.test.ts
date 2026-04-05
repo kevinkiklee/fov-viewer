@@ -14,7 +14,7 @@ describe('SENSORS', () => {
     for (const s of SENSORS) {
       expect(s.w).toBeGreaterThan(0)
       expect(s.h).toBeGreaterThan(0)
-      expect(s.w).toBeGreaterThan(s.h) // landscape orientation
+      expect(s.w!).toBeGreaterThan(s.h!) // landscape orientation
     }
   })
   it('all have a display color', () => {

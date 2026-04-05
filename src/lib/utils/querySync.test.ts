@@ -184,21 +184,18 @@ describe('parseQueryState', () => {
   }
 
   it('parses all valid params from the URL', () => {
-    // @ts-expect-error -- partial mock for testing
     vi.stubGlobal('location', { search: '?focal=85&iso=400&mode=manual&sensor=apsc' })
     const result = parseQueryState(schema)
     expect(result).toEqual({ focal: 85, iso: 400, mode: 'manual', sensor: 'apsc' })
   })
 
   it('returns empty object when no params are present', () => {
-    // @ts-expect-error -- partial mock for testing
     vi.stubGlobal('location', { search: '' })
     const result = parseQueryState(schema)
     expect(result).toEqual({})
   })
 
   it('ignores params not in the schema', () => {
-    // @ts-expect-error -- partial mock for testing
     vi.stubGlobal('location', { search: '?focal=85&unknown=999' })
     const result = parseQueryState(schema)
     expect(result).toEqual({ focal: 85 })
@@ -206,14 +203,12 @@ describe('parseQueryState', () => {
   })
 
   it('skips invalid param values while keeping valid ones', () => {
-    // @ts-expect-error -- partial mock for testing
     vi.stubGlobal('location', { search: '?focal=abc&iso=800&mode=invalid&sensor=mft' })
     const result = parseQueryState(schema)
     expect(result).toEqual({ iso: 800, sensor: 'mft' })
   })
 
   it('skips out-of-range numeric params', () => {
-    // @ts-expect-error -- partial mock for testing
     vi.stubGlobal('location', { search: '?focal=9999&iso=50' })
     const result = parseQueryState(schema)
     expect(result).toEqual({})
@@ -239,19 +234,22 @@ describe('stateToQuery', () => {
 
   it('omits params that match their defaults', () => {
     const state = { focal: 50, iso: 100, mode: 'auto' as const, sensor: 'ff' }
-    const qs = stateToQuery(state, schema)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const qs = stateToQuery(state, schema as any)
     expect(qs).toBe('')
   })
 
   it('includes only params that differ from defaults', () => {
     const state = { focal: 85, iso: 100, mode: 'auto' as const, sensor: 'ff' }
-    const qs = stateToQuery(state, schema)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const qs = stateToQuery(state, schema as any)
     expect(qs).toBe('focal=85')
   })
 
   it('includes multiple non-default params joined by ampersand', () => {
     const state = { focal: 85, iso: 400, mode: 'manual' as const, sensor: 'ff' }
-    const qs = stateToQuery(state, schema)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const qs = stateToQuery(state, schema as any)
     expect(qs).toBe('focal=85&iso=400&mode=manual')
   })
 
@@ -260,7 +258,8 @@ describe('stateToQuery', () => {
       'my key': strParam('a', ['a', 'b&c'] as const),
     }
     const state = { 'my key': 'b&c' as const }
-    const qs = stateToQuery(state, specialSchema)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const qs = stateToQuery(state, specialSchema as any)
     expect(qs).toBe('my%20key=b%26c')
   })
 
@@ -269,14 +268,16 @@ describe('stateToQuery', () => {
       ev: strParam('0', ['0', '+1', '+2'] as const),
     }
     const state = { ev: '+1' as const }
-    const qs = stateToQuery(state, plusSchema)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const qs = stateToQuery(state, plusSchema as any)
     expect(qs).toContain('+1')
     expect(qs).not.toContain('%2B')
   })
 
   it('includes all params when none match defaults', () => {
     const state = { focal: 200, iso: 800, mode: 'manual' as const, sensor: 'apsc' }
-    const qs = stateToQuery(state, schema)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const qs = stateToQuery(state, schema as any)
     expect(qs).toBe('focal=200&iso=800&mode=manual&sensor=apsc')
   })
 })
