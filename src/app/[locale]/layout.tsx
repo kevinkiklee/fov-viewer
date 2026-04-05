@@ -7,7 +7,6 @@ import { notFound } from 'next/navigation'
 
 import { Noto_Sans_JP } from 'next/font/google'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import './globals.css'
 import { ThemeProvider } from '@/components/layout/ThemeProvider'
 import { JsonLd } from '@/components/shared/JsonLd'
 import { AdScripts } from '@/components/shared/AdScripts'

@@ -2,7 +2,7 @@
   flex: 1;
   min-height: 0;
   overflow: auto;
-  width: 90%;
+  width: 80%;
   max-width: 1400px;
   margin: 0 auto;
   border-left: 1px solid var(--border);
