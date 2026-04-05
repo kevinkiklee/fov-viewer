@@ -77,8 +77,8 @@ export function SubjectFigure({
       width={w} height={h}
       viewBox={`0 0 ${vbW} ${vbH}`}
       style={{
-        position: 'absolute', left: '50%', bottom: '10%',
-        transform: 'translateX(-50%)',
+        position: 'absolute', left: '50%', top: '50%',
+        transform: 'translate(-50%, -50%)',
         pointerEvents: 'none', opacity: 0.85,
       }}
     >
