@@ -90,6 +90,15 @@ export function FrameStudio() {
     setAspectRatio('original')
   }, [])
 
+  const handleReset = useCallback(() => {
+    setShowExport(false)
+    handleResetEdits()
+    fetch(DEFAULT_PHOTO_URL)
+      .then((res) => res.blob())
+      .then((blob) => handleFile(new File([blob], 'wildlife.jpg', { type: 'image/jpeg' })))
+      .catch((err) => console.error('Failed to load default photo', err))
+  }, [handleResetEdits, handleFile])
+
   const handleDeletePhoto = useCallback(() => {
     setOriginalFile(null)
     setOriginalImage(null)
@@ -113,7 +122,7 @@ export function FrameStudio() {
       <div className={styles.app}>
         <div className={styles.appBody}>
           <aside className={styles.sidebar}>
-            <ToolActions toolSlug={SLUG} onReset={handleDeletePhoto} />
+            <ToolActions toolSlug={SLUG} onReset={handleReset} />
             <FrameSidebar {...sidebarProps} />
           </aside>
 
