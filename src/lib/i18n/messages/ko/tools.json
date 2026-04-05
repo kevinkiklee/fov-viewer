@@ -12,9 +12,17 @@
       "name": "노출 삼각형 시뮬레이터",
       "description": "조리개, 셔터 스피드, ISO가 어떻게 상호작용하는지 확인합니다"
     },
-    "dof-calculator": {
-      "name": "피사계 심도 계산기",
-      "description": "근접 초점, 원거리 초점, 총 피사계 심도를 계산합니다"
+    "dof-simulator": {
+      "name": "피사계 심도 시뮬레이터",
+      "description": "조리개, 초점 거리, 촬영 거리가 배경 흐림에 어떤 영향을 미치는지 시각화합니다"
+    },
+    "focus-stacking-calculator": {
+      "name": "포커스 스태킹 계산기",
+      "description": "전면에서 후면까지 선명하게 촬영하기 위한 최적의 초점 거리를 계산합니다"
+    },
+    "equivalent-settings-calculator": {
+      "name": "환산 설정 계산기",
+      "description": "센서 포맷 간 동일한 조리개와 초점 거리를 계산합니다"
     },
     "hyperfocal-simulator": {
       "name": "과초점 거리 시뮬레이터",

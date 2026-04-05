@@ -12,9 +12,17 @@
       "name": "Belichtingsdriehoeksimulator",
       "description": "Bekijk hoe diafragma, sluitertijd en ISO samenwerken"
     },
-    "dof-calculator": {
-      "name": "Scherptedieptecalculator",
-      "description": "Bereken nabijscherpte, verscherpte en totale scherptediepte"
+    "dof-simulator": {
+      "name": "Scherptedieptesimulator",
+      "description": "Visualiseer hoe diafragma, brandpuntsafstand en afstand de achtergrondvervaging beïnvloeden"
+    },
+    "focus-stacking-calculator": {
+      "name": "Focus stacking calculator",
+      "description": "Bereken optimale scherpstelpunten voor volledige scherpte"
+    },
+    "equivalent-settings-calculator": {
+      "name": "Equivalente instellingen calculator",
+      "description": "Vind het equivalente diafragma en brandpuntsafstand tussen sensorformaten"
     },
     "hyperfocal-simulator": {
       "name": "Hyperfocale afstand simulator",

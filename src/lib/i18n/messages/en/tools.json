@@ -12,9 +12,17 @@
       "name": "Exposure Triangle Simulator",
       "description": "See how aperture, shutter speed, and ISO interact"
     },
-    "dof-calculator": {
-      "name": "Depth of Field Calculator",
-      "description": "Calculate near focus, far focus, and total depth of field"
+    "dof-simulator": {
+      "name": "Depth-of-Field Simulator",
+      "description": "Visualize how aperture, focal length, and distance affect background blur"
+    },
+    "focus-stacking-calculator": {
+      "name": "Focus Stacking Calculator",
+      "description": "Calculate optimal focus distances for front-to-back sharpness"
+    },
+    "equivalent-settings-calculator": {
+      "name": "Equivalent Settings Calculator",
+      "description": "Find equivalent aperture and focal length across sensor formats"
     },
     "hyperfocal-simulator": {
       "name": "Hyperfocal Distance Simulator",

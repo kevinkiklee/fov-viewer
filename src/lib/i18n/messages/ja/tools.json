@@ -12,9 +12,17 @@
       "name": "露出トライアングルシミュレーター",
       "description": "絞り、シャッタースピード、ISO感度の相互作用を確認"
     },
-    "dof-calculator": {
-      "name": "被写界深度計算ツール",
-      "description": "前方被写界深度、後方被写界深度、全被写界深度を計算"
+    "dof-simulator": {
+      "name": "被写界深度シミュレーター",
+      "description": "絞り、焦点距離、撮影距離が背景ボケにどう影響するかを視覚化"
+    },
+    "focus-stacking-calculator": {
+      "name": "フォーカスブラケット計算ツール",
+      "description": "手前から奥までシャープに撮るための最適なピント位置を計算"
+    },
+    "equivalent-settings-calculator": {
+      "name": "換算設定計算ツール",
+      "description": "センサーフォーマット間で同等の絞りと焦点距離を算出"
     },
     "hyperfocal-simulator": {
       "name": "過焦点距離シミュレーター",

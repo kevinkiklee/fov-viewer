@@ -12,9 +12,17 @@
       "name": "Simulador do Triângulo de Exposição",
       "description": "Veja como abertura, velocidade do obturador e ISO interagem"
     },
-    "dof-calculator": {
-      "name": "Calculadora de Profundidade de Campo",
-      "description": "Calcule foco próximo, foco distante e profundidade de campo total"
+    "dof-simulator": {
+      "name": "Simulador de Profundidade de Campo",
+      "description": "Visualize como abertura, distância focal e distância afetam o desfoque do fundo"
+    },
+    "focus-stacking-calculator": {
+      "name": "Calculadora de Empilhamento de Foco",
+      "description": "Calcule as distâncias de foco ideais para nitidez total"
+    },
+    "equivalent-settings-calculator": {
+      "name": "Calculadora de Configurações Equivalentes",
+      "description": "Encontre abertura e distância focal equivalentes entre formatos de sensor"
     },
     "hyperfocal-simulator": {
       "name": "Simulador de Distância Hiperfocal",

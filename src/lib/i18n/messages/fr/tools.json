@@ -12,9 +12,17 @@
       "name": "Simulateur du triangle d'exposition",
       "description": "Découvre l'interaction entre ouverture, vitesse d'obturation et ISO"
     },
-    "dof-calculator": {
-      "name": "Calculateur de profondeur de champ",
-      "description": "Calcule la mise au point proche, lointaine et la profondeur de champ totale"
+    "dof-simulator": {
+      "name": "Simulateur de profondeur de champ",
+      "description": "Visualise comment l'ouverture, la focale et la distance affectent le flou d'arrière-plan"
+    },
+    "focus-stacking-calculator": {
+      "name": "Calculateur de focus stacking",
+      "description": "Calcule les distances de mise au point optimales pour une netteté totale"
+    },
+    "equivalent-settings-calculator": {
+      "name": "Calculateur de paramètres équivalents",
+      "description": "Trouve l'ouverture et la focale équivalentes entre formats de capteur"
     },
     "hyperfocal-simulator": {
       "name": "Simulateur de distance hyperfocale",

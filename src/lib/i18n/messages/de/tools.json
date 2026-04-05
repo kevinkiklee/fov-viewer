@@ -12,9 +12,17 @@
       "name": "Belichtungsdreieck-Simulator",
       "description": "Sieh, wie Blende, Verschlusszeit und ISO zusammenwirken"
     },
-    "dof-calculator": {
-      "name": "Schärfentieferechner",
-      "description": "Berechne Nahgrenze, Ferngrenze und gesamte Schärfentiefe"
+    "dof-simulator": {
+      "name": "Schärfentiefe-Simulator",
+      "description": "Visualisiere, wie Blende, Brennweite und Entfernung die Hintergrundunschärfe beeinflussen"
+    },
+    "focus-stacking-calculator": {
+      "name": "Fokus-Stacking-Rechner",
+      "description": "Berechne optimale Fokusabstände für durchgehende Schärfe"
+    },
+    "equivalent-settings-calculator": {
+      "name": "Äquivalente-Einstellungen-Rechner",
+      "description": "Finde die äquivalente Blende und Brennweite über Sensorformate hinweg"
     },
     "hyperfocal-simulator": {
       "name": "Hyperfokale-Distanz-Simulator",

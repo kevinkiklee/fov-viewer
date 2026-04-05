@@ -12,9 +12,17 @@
       "name": "Simulatore del triangolo dell'esposizione",
       "description": "Scopri come interagiscono apertura, tempo di posa e ISO"
     },
-    "dof-calculator": {
-      "name": "Calcolatore della profondità di campo",
-      "description": "Calcola il limite di messa a fuoco vicino, lontano e la profondità di campo totale"
+    "dof-simulator": {
+      "name": "Simulatore della profondità di campo",
+      "description": "Visualizza come apertura, lunghezza focale e distanza influenzano la sfocatura dello sfondo"
+    },
+    "focus-stacking-calculator": {
+      "name": "Calcolatore di focus stacking",
+      "description": "Calcola le distanze di messa a fuoco ottimali per la nitidezza totale"
+    },
+    "equivalent-settings-calculator": {
+      "name": "Calcolatore impostazioni equivalenti",
+      "description": "Trova apertura e lunghezza focale equivalenti tra formati di sensore"
     },
     "hyperfocal-simulator": {
       "name": "Simulatore della distanza iperfocale",
