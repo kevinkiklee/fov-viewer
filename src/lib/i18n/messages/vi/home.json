@@ -1,0 +1,13 @@
+{
+  "home": {
+    "heroTitle": "PhotoTools — Công cụ nhiếp ảnh miễn phí",
+    "heroDesc": "Máy tính, trình mô phỏng và tra cứu nhiếp ảnh miễn phí. Không cần đăng ký — ảnh của bạn không bao giờ rời khỏi trình duyệt.",
+    "comingSoon": "Sắp ra mắt",
+    "categories": {
+      "visualizer": "Trực quan hóa",
+      "calculator": "Máy tính",
+      "reference": "Tra cứu",
+      "file-tool": "Công cụ tệp"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "site": {
+      "defaultTitle": "PhotoTools — Narzędzia fotograficzne",
+      "titleTemplate": "%s | PhotoTools",
+      "description": "Bezpłatne narzędzia fotograficzne: symulator pola widzenia, generator schematów kolorów, przeglądarka EXIF, kadrowanie i ramki do zdjęć i wiele więcej.",
+      "ogTitle": "PhotoTools — Bezpłatne narzędzia fotograficzne"
+    },
+    "fov-simulator": {
+      "title": "Symulator pola widzenia — Porównaj ogniskowe",
+      "description": "Porównaj pole widzenia dla różnych ogniskowych i rozmiarów matrycy. Bezpłatny, interaktywny, z możliwością udostępniania."
+    },
+    "dof-simulator": {
+      "title": "Symulator głębi ostrości | PhotoTools",
+      "description": "Zwizualizuj, jak przysłona, ogniskowa i odległość wpływają na rozmycie tła dzięki symulacji WebGL w czasie rzeczywistym"
+    },
+    "focus-stacking-calculator": {
+      "title": "Kalkulator focus stackingu | PhotoTools",
+      "description": "Oblicz optymalne odległości ogniskowania dla ostrości od przodu do tyłu w fotografii makro i krajobrazowej"
+    },
+    "equivalent-settings-calculator": {
+      "title": "Kalkulator ekwiwalentnych ustawień | PhotoTools",
+      "description": "Znajdź ekwiwalentną przysłonę i ogniskową dla różnych formatów matrycy, aby dopasować głębię ostrości"
+    },
+    "exposure-simulator": {
+      "title": "Symulator trójkąta ekspozycji",
+      "description": "Interaktywny symulator trójkąta ekspozycji — zobacz, jak przysłona, czas naświetlania i ISO wpływają na obraz w czasie rzeczywistym z podglądem na żywo."
+    },
+    "star-trail-calculator": {
+      "title": "Kalkulator śladów gwiazd",
+      "description": "Oblicz maksymalny czas naświetlania dla punktowych gwiazd, korzystając z reguły 500, NPF i innych. Zaplanuj zdjęcia ze śladami gwiazd dla dowolnej lokalizacji."
+    },
+    "white-balance-visualizer": {
+      "title": "Wizualizator balansu bieli",
+      "description": "Zobacz, jak balans bieli i temperatura barwowa wpływają na Twoje zdjęcia. Wizualizuj zmiany od 2000K do 10000K z podglądem w czasie rzeczywistym."
+    },
+    "sensor-size-comparison": {
+      "title": "Porównanie rozmiarów matrycy",
+      "description": "Porównaj rozmiary matryc aparatów od średniego formatu po smartfon. Widoki nakładkowe, obok siebie oraz gęstości pikseli z rzeczywistymi modelami aparatów."
+    },
+    "color-scheme-generator": {
+      "title": "Generator schematów kolorów",
+      "description": "Generuj palety kolorów do fotografii, używając dopełniających, analogicznych, triadycznych i tetradycznych harmonii kolorów. Interaktywne koło barw z próbnikiem ze zdjęcia."
+    },
+    "frame-studio": {
+      "title": "Frame Studio",
+      "description": "Kadruj, ramkuj i komponuj zdjęcia z nakładkami siatki. 100% po stronie klienta — Twoje zdjęcia nigdy nie opuszczają urządzenia."
+    },
+    "exif-viewer": {
+      "title": "Przeglądarka EXIF",
+      "description": "Wyświetl metadane EXIF, histogram i podgląd dowolnego zdjęcia. 100% po stronie klienta — Twoje zdjęcia nigdy nie opuszczają urządzenia."
+    },
+    "hyperfocal-simulator": {
+      "title": "Symulator odległości hiperfokalnej",
+      "description": "Zwizualizuj odległość hiperfokalną dla dowolnego obiektywu i matrycy. Zobacz dokładnie, gdzie ustawić ostrość, aby uzyskać maksymalną ostrość od pierwszego planu do nieskończoności."
+    },
+    "shutter-speed-visualizer": {
+      "title": "Wizualizator czasu migawki",
+      "description": "Znajdź minimalny czas migawki dla ostrych zdjęć z ręki. Uwzględnia ogniskową, rozmiar matrycy i stabilizację obrazu."
+    },
+    "nd-filter-calculator": {
+      "title": "Kalkulator filtra ND",
+      "description": "Oblicz prawidłowy czas naświetlania przy użyciu filtrów ND. Obsługuje dowolną siłę filtra od ND2 do ND1000000 z tabelą szybkiego odniesienia."
+    },
+    "perspective-compression-simulator": {
+      "title": "Symulator kompresji perspektywy",
+      "description": "Interaktywny symulator 3D pokazujący, jak ogniskowa i odległość wpływają na kompresję perspektywy. Zobacz zmianę kompresji tła w czasie rzeczywistym."
+    },
+    "about": {
+      "title": "O nas",
+      "description": "PhotoTools to bezpłatna kolekcja kalkulatorów fotograficznych, symulatorów i materiałów referencyjnych działających w przeglądarce, dla fotografów na każdym poziomie zaawansowania."
+    },
+    "contact": {
+      "title": "Kontakt | PhotoTools",
+      "description": "Skontaktuj się z zespołem PhotoTools — pytania, opinie lub sugestie dotyczące naszych narzędzi fotograficznych."
+    },
+    "privacy": {
+      "title": "Polityka prywatności | PhotoTools",
+      "description": "Dowiedz się, jak PhotoTools obsługuje Twoje dane, w tym analitykę, pliki cookie i przesyłanie formularza kontaktowego na www.phototools.io."
+    },
+    "terms": {
+      "title": "Regulamin | PhotoTools",
+      "description": "Regulamin PhotoTools — dowiedz się o dozwolonym użytkowaniu, własności intelektualnej, wyłączeniach odpowiedzialności i ograniczeniach odpowiedzialności dla www.phototools.io."
+    },
+    "glossary": {
+      "title": "Słownik fotograficzny",
+      "description": "Przeszukiwalny słownik ponad 50 terminów fotograficznych z definicjami i linkami do interaktywnych narzędzi."
+    }
+  }
+}

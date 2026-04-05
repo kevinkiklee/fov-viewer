@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "focus-stacking-calculator": {
+      "settings": "设置",
+      "camera": "相机与镜头",
+      "focalLength": "焦距",
+      "aperture": "光圈",
+      "sensor": "传感器",
+      "depthRange": "深度范围",
+      "nearLimit": "近限",
+      "farLimit": "远限",
+      "overlap": "重叠",
+      "overlapDescription": "相邻拍摄之间的景深重叠百分比，确保无缝混合",
+      "results": "结果",
+      "shotCount": "所需拍摄数",
+      "totalDepth": "总深度",
+      "overlapMargin": "重叠余��",
+      "perShotDoF": "每张景深",
+      "focusStep": "对焦步进",
+      "exportPlan": "导出方案",
+      "exportCSV": "导出为 CSV",
+      "exportJSON": "导出为 JSON",
+      "diagram": "焦点堆叠示意图",
+      "diagramNear": "近",
+      "diagramFar": "远",
+      "diagramCoverage": "覆盖范围",
+      "diagramFocusPoints": "对焦点",
+      "diagramShot": "第 {number} 张",
+      "diagramOverlap": "重叠区域",
+      "diagramSharpZone": "清晰区域",
+      "diagramSubject": "被摄体",
+      "diagramSensor": "传感器",
+      "infinity": "∞",
+      "distanceUnit": "m",
+      "warning": "警告",
+      "tooFewShots": "深度范围在单次拍摄范围内 — 无需堆叠",
+      "tooManyShots": "此方案需要很多张拍摄。考虑使用更小的光圈来减少数量。",
+      "macroMode": "微距",
+      "landscapeMode": "风光"
+    }
+  }
+}

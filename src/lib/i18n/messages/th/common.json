@@ -1,0 +1,126 @@
+{
+  "common": {
+    "nav": {
+      "tools": "เครื่องมือ",
+      "glossary": "อภิธานศัพท์",
+      "closeMenu": "ปิดเมนู",
+      "comingSoon": "เร็วๆ นี้",
+      "categories": {
+        "visualizer": "ตัวจำลอง",
+        "calculator": "เครื่องคำนวณ",
+        "reference": "อ้างอิง",
+        "file-tool": "เครื่องมือไฟล์"
+      }
+    },
+    "footer": {
+      "glossary": "อภิธานศัพท์",
+      "about": "เกี่ยวกับ",
+      "contact": "ติดต่อ",
+      "privacy": "นโยบายความเป็นส่วนตัว",
+      "terms": "ข้อกำหนดการใช้งาน",
+      "cookieSettings": "การตั้งค่าคุกกี้"
+    },
+    "theme": {
+      "switchToLight": "เปลี่ยนเป็นโหมดสว่าง",
+      "switchToDark": "เปลี่ยนเป็นโหมดมืด"
+    },
+    "actions": {
+      "copyImage": "คัดลอกรูปภาพ",
+      "reset": "รีเซ็ต",
+      "copyLink": "คัดลอกลิงก์",
+      "share": "แชร์",
+      "embed": "ฝังตัว"
+    },
+    "toast": {
+      "linkCopied": "คัดลอกลิงก์แล้ว!",
+      "imageCopied": "คัดลอกรูปภาพแล้ว!",
+      "failedToCopy": "คัดลอกไม่สำเร็จ",
+      "copied": "คัดลอกแล้ว!"
+    },
+    "learn": {
+      "title": "เรียนรู้",
+      "openPanel": "เปิดแผงการเรียนรู้",
+      "collapsePanel": "ย่อแผงการเรียนรู้",
+      "whatIsThis": "นี่คืออะไร?",
+      "howItWorks": "ทำงานอย่างไร",
+      "keyFactors": "ปัจจัยสำคัญ",
+      "proTip": "เคล็ดลับจากมืออาชีพ",
+      "challenge": "โจทย์ท้าทาย",
+      "hint": "คำใบ้: {hint}",
+      "completed": "เสร็จสมบูรณ์",
+      "checkAnswer": "ตรวจคำตอบ",
+      "nextChallenge": "โจทย์ถัดไป",
+      "tryAgain": "ลองอีกครั้ง",
+      "resetAll": "รีเซ็ตทั้งหมด",
+      "resetAllChallenges": "รีเซ็ตโจทย์ทั้งหมด",
+      "challengeNumber": "โจทย์ที่ {number}"
+    },
+    "share": {
+      "title": "แชร์ & ฝังตัว",
+      "closeModal": "ปิดหน้าต่างแชร์",
+      "directLink": "ลิงก์ตรง",
+      "markdown": "Markdown (Reddit, GitHub)",
+      "bbcode": "BBCode (ฟอรัม)",
+      "htmlEmbed": "ฝัง HTML",
+      "copy": "คัดลอก",
+      "copied": "คัดลอกแล้ว"
+    },
+    "draft": {
+      "banner": "ตัวอย่าง — เครื่องมือนี้ยังไม่เปิดใช้งานสาธารณะ"
+    },
+    "fileUpload": {
+      "dropPrompt": "ลากรูปภาพมาวางที่นี่หรือคลิกเพื่อเลือกไฟล์",
+      "tapPrompt": "แตะเพื่อเลือกรูปภาพ",
+      "privacy": "รูปภาพของคุณจะไม่ถูกส่งออกจากอุปกรณ์",
+      "selectedFile": "ไฟล์ที่เลือก: {fileName} คลิกเพื่อเลือกรูปภาพอื่น",
+      "defaultLabel": "รูปภาพของคุณ"
+    },
+    "scene": {
+      "label": "ฉาก:",
+      "yourPhoto": "รูปภาพของคุณ",
+      "removePhoto": "ลบรูปภาพ",
+      "uploadPhoto": "อัปโหลดรูปภาพ"
+    },
+    "controls": {
+      "focalLength": "ทางยาวโฟกัส",
+      "aperture": "รูรับแสง",
+      "distance": "ระยะทาง",
+      "clickToEnterValue": "คลิกเพื่อป้อนค่า",
+      "decrease": "ลดลง",
+      "increase": "เพิ่มขึ้น"
+    },
+    "dof": {
+      "depthOfField": "ระยะชัดลึก: {totalDoF} จาก {nearFocus} ถึง {farFocus}",
+      "infinity": "อินฟินิตี้"
+    },
+    "ad": {
+      "closeAd": "ปิดโฆษณา"
+    },
+    "tooltip": {
+      "infoLabel": "ข้อมูล: {term}"
+    },
+    "notFound": {
+      "title": "ไม่พบหน้า",
+      "message": "หน้าที่คุณกำลังมองหาไม่มีอยู่หรือถูกย้ายไปแล้ว",
+      "backHome": "กลับหน้าหลัก",
+      "popularTools": "เครื่องมือยอดนิยม"
+    },
+    "breadcrumb": {
+      "home": "หน้าหลัก"
+    },
+    "relatedTools": {
+      "title": "เครื่องมือที่เกี่ยวข้อง"
+    },
+    "sensors": {
+      "mf_645": "มีเดียมฟอร์แมต (54x40)",
+      "mf": "มีเดียมฟอร์แมต (44x33)",
+      "mf_leica": "มีเดียมฟอร์แมต (45x30)",
+      "ff": "ฟูลเฟรม",
+      "apsc_n": "APS-C (1.5x)",
+      "apsc_c": "APS-C (Canon)",
+      "m43": "ไมโครโฟร์เธิร์ดส์",
+      "1in": "เซ็นเซอร์ 1\"",
+      "phone": "สมาร์ทโฟนเรือธง (1/1.3\")"
+    }
+  }
+}

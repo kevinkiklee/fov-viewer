@@ -1,0 +1,126 @@
+{
+  "education": {
+    "exif-viewer": {
+      "beginner": "Dữ liệu EXIF là thông tin ẩn được nhúng trong mỗi ảnh mà máy ảnh của bạn chụp. Nó ghi lại máy ảnh và ống kính bạn đã sử dụng, cài đặt chính xác (khẩu độ, tốc độ màn trập, ISO), ngày giờ, và đôi khi cả tọa độ GPS. Công cụ này đọc dữ liệu đó mà không tải ảnh lên đâu cả — mọi thứ diễn ra trong trình duyệt của bạn.",
+      "deeper": "EXIF (Exchangeable Image File Format) là tiêu chuẩn do JEITA/CIPA định nghĩa, lưu trữ metadata trong các tệp JPEG, TIFF và một số tệp RAW. Dữ liệu được ghi vào các phân đoạn cụ thể của header tệp dưới dạng các cặp khóa-giá trị có thẻ sử dụng cấu trúc IFD (Image File Directory) dựa trên TIFF. Có nhiều phần IFD: IFD0 cho thông tin ảnh cơ bản, EXIF sub-IFD cho cài đặt máy ảnh, GPS IFD cho vị trí địa lý, và Interop IFD cho dữ liệu tương thích. Các nhà sản xuất máy ảnh cũng ghi dữ liệu \"MakerNote\" riêng chứa hiệu chỉnh ống kính, điểm lấy nét, số lần chụp và các chi tiết cụ thể theo mẫu máy. Các nền tảng mạng xã hội thường xóa dữ liệu EXIF khi tải lên vì quyền riêng tư, nhưng tệp gốc trên thẻ nhớ luôn giữ nguyên. Hiểu EXIF giúp bạn học từ mẫu chụp của chính mình và phân tích ngược cài đặt đằng sau những bức ảnh bạn ngưỡng mộ.",
+      "keyFactors": {
+        "0": {
+          "label": "Máy ảnh & Ống kính",
+          "description": "Hãng, mẫu máy, tên ống kính và nhà sản xuất ống kính — hữu ích để xác định thiết bị trong ảnh bạn tìm thấy trực tuyến."
+        },
+        "1": {
+          "label": "Cài đặt phơi sáng",
+          "description": "Khẩu độ, tốc độ màn trập, ISO và tiêu cự — các thông số chụp cốt lõi được ghi lại cho mỗi khung hình."
+        },
+        "2": {
+          "label": "Ngày & GPS",
+          "description": "Khi nào và ở đâu ảnh được chụp. Lưu ý rằng dữ liệu GPS tiết lộ vị trí của bạn khi chia sẻ tệp."
+        },
+        "3": {
+          "label": "Phần mềm",
+          "description": "Hiển thị phần mềm chỉnh sửa nào đã lưu tệp lần cuối. Hữu ích để kiểm tra ảnh đã được xử lý chưa."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Kiểm tra tiêu cự và tương đương 35mm để hiểu nhiếp ảnh gia đã sử dụng góc nhìn rộng, tiêu chuẩn hay tele — điều này dạy bố cục hơn bất kỳ quy tắc một phần ba nào."
+        },
+        "1": {
+          "text": "Nếu ảnh bạn ngưỡng mộ được chụp ở ISO cao với khẩu độ rộng, cho thấy đó là tình huống thiếu sáng. Sử dụng EXIF để hiểu những ràng buộc mà nhiếp ảnh gia phải đối mặt."
+        },
+        "2": {
+          "text": "Trước khi chia sẻ ảnh trực tuyến, lưu ý rằng EXIF có thể chứa vị trí GPS của bạn. Xóa metadata bằng cài đặt xuất của phần mềm chỉnh sửa nếu quyền riêng tư là vấn đề quan tâm."
+        }
+      },
+      "tooltips": {
+        "Make": {
+          "term": "Hãng",
+          "definition": "Tên nhà sản xuất máy ảnh (ví dụ: Canon, Nikon, Sony) được lưu trong header EXIF."
+        },
+        "Model": {
+          "term": "Mẫu máy",
+          "definition": "Mẫu máy ảnh cụ thể (ví dụ: \"EOS R5\", \"Z 9\") đã chụp ảnh."
+        },
+        "Aperture": {
+          "term": "Khẩu độ",
+          "definition": "Số f mà ống kính được đặt. Số thấp hơn nghĩa là khẩu độ rộng hơn và nhiều ánh sáng hơn."
+        },
+        "Shutter Speed": {
+          "term": "Tốc độ màn trập",
+          "definition": "Thời gian cảm biến được phơi sáng. Biểu thị dưới dạng phân số (ví dụ: 1/250s) hoặc giây nguyên cho phơi sáng dài."
+        },
+        "ISO": {
+          "term": "ISO",
+          "definition": "Cài đặt độ nhạy sáng cảm biến. ISO cao hơn làm sáng ảnh nhưng thêm nhiễu."
+        },
+        "Focal Length": {
+          "term": "Tiêu cự",
+          "definition": "Tiêu cự thực tế của ống kính tính bằng millimet."
+        },
+        "Focal Length (35mm equiv)": {
+          "term": "Tiêu cự (tương đương 35mm)",
+          "definition": "Tiêu cự tương đương nếu chụp trên cảm biến full-frame 35mm. Hữu ích để so sánh góc nhìn giữa các kích thước cảm biến."
+        },
+        "GPS": {
+          "term": "GPS",
+          "definition": "Tọa độ vĩ độ và kinh độ được nhúng bởi máy ảnh có module GPS. Tiết lộ nơi ảnh được chụp."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Bạn tìm thấy một ảnh tuyệt đẹp trực tuyến và muốn biết ống kính nào đã được sử dụng. Phần EXIF nào sẽ cho bạn biết?",
+          "hint": "Thông tin máy ảnh và ống kính nằm ở các phần khác nhau.",
+          "successMessage": "Chính xác! Phần Ống kính hiển thị mẫu và nhà sản xuất ống kính.",
+          "failureMessage": "Phần Ống kính chứa mẫu ống kính — kiểm tra ở đó để xác định kính được sử dụng.",
+          "options": {
+            "0": { "label": "Máy ảnh" },
+            "1": { "label": "Ống kính" },
+            "2": { "label": "Cài đặt" }
+          }
+        },
+        "1": {
+          "scenario": "Bạn tải lên ảnh và thấy Khẩu độ: f/1.8, Tốc độ màn trập: 1/4000s, ISO: 100. Ảnh có khả năng được chụp trong ánh sáng mạnh hay yếu?",
+          "hint": "Tốc độ màn trập rất nhanh ở ISO thấp cho thấy nhiều ánh sáng có sẵn.",
+          "successMessage": "Đúng! Tốc độ màn trập nhanh (1/4000s) ở ISO cơ bản (100) cho thấy có nhiều ánh sáng — có khả năng ngoài trời sáng.",
+          "failureMessage": "Tốc độ màn trập 1/4000s ở ISO 100 nghĩa là máy ảnh cần rất ít độ nhạy và phơi sáng rất ngắn. Đó là cảnh ngoài trời sáng.",
+          "options": {
+            "0": { "label": "Ánh sáng mạnh — màn trập nhanh ở ISO thấp" },
+            "1": { "label": "Ánh sáng yếu — khẩu độ rộng bù đắp" }
+          }
+        },
+        "2": {
+          "scenario": "Ảnh hiển thị Tiêu cự: 50mm và Tiêu cự (tương đương 35mm): 75mm. Máy ảnh sử dụng cảm biến nào?",
+          "hint": "Tương đương 35mm là tiêu cự nhân với hệ số crop.",
+          "successMessage": "Chính xác! 75 / 50 = hệ số crop 1.5x, đó là cảm biến APS-C (biến thể Nikon/Sony).",
+          "failureMessage": "Chia tương đương 35mm cho tiêu cự thực tế: 75 / 50 = 1.5x. Hệ số crop đó phù hợp với APS-C (Nikon/Sony).",
+          "options": {
+            "0": { "label": "Full Frame (crop 1.0x)" },
+            "1": { "label": "APS-C (crop 1.5x)" },
+            "2": { "label": "Micro Four Thirds (crop 2.0x)" }
+          }
+        },
+        "3": {
+          "scenario": "Bạn thấy hai ảnh cùng cảnh. Ảnh A: f/2.8, 1/60s, ISO 3200. Ảnh B: f/2.8, 1/60s, ISO 200. Ảnh nào được chụp trong ánh sáng mạnh hơn?",
+          "hint": "ISO cao hơn bù đắp cho ít ánh sáng hơn.",
+          "successMessage": "Chính xác! Ảnh B ở ISO 200 có nhiều ánh sáng môi trường hơn. Ảnh A cần ISO 3200 (hơn 4 stop độ nhạy) để đạt cùng phơi sáng, nghĩa là cảnh tối hơn nhiều.",
+          "failureMessage": "Ảnh B ở trong ánh sáng mạnh hơn. Cùng khẩu độ và tốc độ màn trập, nhưng ISO 200 so với 3200 nghĩa là Ảnh A ở trong môi trường tối hơn nhiều và cần thêm 4 stop độ nhạy cảm biến.",
+          "options": {
+            "0": { "label": "Ảnh A (ISO 3200)" },
+            "1": { "label": "Ảnh B (ISO 200)" }
+          }
+        },
+        "4": {
+          "scenario": "Bạn đang phân tích ảnh động vật hoang dã: 400mm, f/5.6, 1/2000s, ISO 1600. EXIF hiển thị phần mềm là \"Adobe Lightroom Classic 13.1\". Bạn có thể suy luận gì về nhiếp ảnh gia và điều kiện chụp?",
+          "hint": "Xem xét tiêu cự dài, khẩu độ mở rộng nhất, tốc độ màn trập nhanh và ISO nâng cao cùng nhau.",
+          "successMessage": "Phân tích tuyệt vời! 400mm ở f/5.6 (có lẽ mở hết cho ống kính đó) với tốc độ 1/2000s cho thấy chủ thể di chuyển nhanh (chim hoặc động vật hoang dã đang hoạt động). ISO 1600 cho thấy không phải ánh nắng trực tiếp — có thể trời râm hoặc trong bóng. Trường Lightroom xác nhận đã xử lý hậu kỳ.",
+          "failureMessage": "Các cài đặt tiết lộ nhiều điều: 400mm f/5.6 là ống tele động vật hoang dã điển hình mở hết, 1/2000s đóng băng chuyển động nhanh, và ISO 1600 nghĩa là ánh sáng hạn chế (không phải nắng gắt). Mục Lightroom xác nhận tệp đã được xử lý.",
+          "options": {
+            "0": { "label": "Chủ thể nhanh trong ánh sáng vừa phải, đã xử lý hậu kỳ trong Lightroom" },
+            "1": { "label": "Chủ thể chậm trong ánh sáng mạnh, thẳng từ máy ảnh" },
+            "2": { "label": "Ảnh phong cảnh với nhòe chuyển động, chỉnh sửa nặng" }
+          }
+        }
+      }
+    }
+  }
+}

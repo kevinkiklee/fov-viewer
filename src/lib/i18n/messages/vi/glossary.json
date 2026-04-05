@@ -1,0 +1,240 @@
+{
+  "glossary": {
+    "title": "Thuật ngữ nhiếp ảnh",
+    "subtitle": "Bảng tra cứu thuật ngữ nhiếp ảnh có thể tìm kiếm. Nhấn vào bất kỳ thuật ngữ nào để xem định nghĩa.",
+    "searchPlaceholder": "Tìm thuật ngữ...",
+    "searchAriaLabel": "Tìm kiếm thuật ngữ",
+    "noResults": "Không có thuật ngữ nào phù hợp với tìm kiếm của bạn.",
+    "tryTool": "Thử {toolName}",
+    "entries": {
+      "aperture": {
+        "term": "Khẩu độ",
+        "definition": "Lỗ mở trong ống kính cho phép ánh sáng đi qua. Khẩu độ rộng hơn (số f thấp hơn) cho nhiều ánh sáng hơn và tạo chiều sâu trường ảnh nông hơn."
+      },
+      "aspect-ratio": {
+        "term": "Tỷ lệ khung hình",
+        "definition": "Mối quan hệ tỷ lệ giữa chiều rộng và chiều cao của ảnh. Các tỷ lệ phổ biến bao gồm 3:2 (DSLR tiêu chuẩn), 4:3 (Micro Four Thirds) và 16:9 (màn hình rộng)."
+      },
+      "autofocus": {
+        "term": "Lấy nét tự động",
+        "definition": "Hệ thống máy ảnh tự động điều chỉnh ống kính để đưa chủ thể vào tiêu điểm sắc nét. Các hệ thống hiện đại sử dụng phương pháp phát hiện pha hoặc phát hiện tương phản."
+      },
+      "bokeh": {
+        "term": "Bokeh",
+        "definition": "Chất lượng thẩm mỹ của các vùng ngoài vùng nét trong ảnh, đặc biệt là các điểm sáng. Bokeh mịn, tròn thường được ưa chuộng và chịu ảnh hưởng bởi thiết kế ống kính và hình dạng khẩu độ."
+      },
+      "bracketing": {
+        "term": "Chụp ngoặc",
+        "definition": "Chụp nhiều ảnh cùng một cảnh ở các cài đặt phơi sáng khác nhau. Được sử dụng cho nhiếp ảnh HDR hoặc để đảm bảo có ít nhất một khung hình phơi sáng đúng."
+      },
+      "bulb-mode": {
+        "term": "Chế độ Bulb",
+        "definition": "Cài đặt màn trập trong đó màn trập mở liên tục khi nút chụp được giữ. Được sử dụng cho phơi sáng rất dài vượt quá cài đặt hẹn giờ của máy ảnh."
+      },
+      "burst-mode": {
+        "term": "Chế độ chụp liên tục",
+        "definition": "Chế độ chụp trong đó máy ảnh chụp nhiều khung hình mỗi giây liên tiếp nhanh. Hữu ích để bắt khoảnh khắc hành động nhanh hoặc chọn thời điểm tốt nhất."
+      },
+      "chromatic-aberration": {
+        "term": "Quang sai màu",
+        "definition": "Lỗi ống kính khi các bước sóng ánh sáng khác nhau hội tụ tại các điểm hơi khác nhau, gây ra viền màu dọc theo các cạnh có độ tương phản cao. Phổ biến hơn ở các ống kính rẻ và ở khẩu độ rộng."
+      },
+      "circle-of-confusion": {
+        "term": "Vòng tròn nhòe",
+        "definition": "Vòng tròn nhòe lớn nhất vẫn xuất hiện như một điểm đối với mắt người. Nó xác định ranh giới độ nét chấp nhận được và được sử dụng trong tính toán chiều sâu trường ảnh."
+      },
+      "color-temperature": {
+        "term": "Nhiệt độ màu",
+        "definition": "Phép đo bằng Kelvin mô tả độ ấm hoặc lạnh của nguồn sáng. Giá trị thấp hơn (2700K) cho cảm giác ấm/cam; giá trị cao hơn (6500K+) cho cảm giác lạnh/xanh."
+      },
+      "crop-factor": {
+        "term": "Hệ số crop",
+        "definition": "Tỷ lệ đường chéo cảm biến máy ảnh so với cảm biến full-frame 35mm. Nó ảnh hưởng đến tiêu cự hiệu dụng và góc nhìn."
+      },
+      "depth-of-field": {
+        "term": "Chiều sâu trường ảnh",
+        "definition": "Vùng khoảng cách trong cảnh xuất hiện sắc nét chấp nhận được. Được kiểm soát bởi khẩu độ, tiêu cự và khoảng cách đến chủ thể."
+      },
+      "diffraction": {
+        "term": "Nhiễu xạ",
+        "definition": "Sự uốn cong của ánh sáng khi đi qua khẩu độ nhỏ, làm mềm ảnh. Nó đặt ra giới hạn thực tế cho việc thu nhỏ khẩu độ ống kính."
+      },
+      "dynamic-range": {
+        "term": "Dải động",
+        "definition": "Phạm vi giữa vùng tối nhất và vùng sáng nhất mà máy ảnh có thể ghi lại trong một lần phơi sáng. Được đo bằng stop (EV)."
+      },
+      "ev": {
+        "term": "EV (Giá trị phơi sáng)",
+        "definition": "Một con số đại diện cho sự kết hợp giữa tốc độ màn trập và khẩu độ tạo ra cùng mức phơi sáng. Mỗi bước tăng 1 EV tăng gấp đôi hoặc giảm một nửa ánh sáng."
+      },
+      "exposure-compensation": {
+        "term": "Bù phơi sáng",
+        "definition": "Điều khiển trên máy ảnh ghi đè phơi sáng đo được, thường theo bước 1/3 stop. Giá trị dương làm sáng ảnh; giá trị âm làm tối ảnh."
+      },
+      "exposure-triangle": {
+        "term": "Tam giác phơi sáng",
+        "definition": "Mối quan hệ giữa khẩu độ, tốc độ màn trập và ISO. Thay đổi một yếu tố đòi hỏi điều chỉnh các yếu tố khác để duy trì cùng mức phơi sáng."
+      },
+      "f-stop": {
+        "term": "F-Stop",
+        "definition": "Đơn vị đo khẩu độ ống kính. Mỗi stop đầy đủ (f/1.4, f/2, f/2.8, f/4...) giảm một nửa lượng ánh sáng đi qua ống kính."
+      },
+      "focal-length": {
+        "term": "Tiêu cự",
+        "definition": "Khoảng cách tính bằng millimet từ tâm quang học của ống kính đến cảm biến khi lấy nét ở vô cực. Nó xác định góc nhìn và độ phóng đại."
+      },
+      "focus-stacking": {
+        "term": "Chồng lấy nét",
+        "definition": "Kỹ thuật kết hợp nhiều ảnh lấy nét ở các khoảng cách khác nhau trong hậu kỳ để đạt chiều sâu trường ảnh lớn hơn so với một lần phơi sáng đơn lẻ."
+      },
+      "full-frame": {
+        "term": "Full Frame",
+        "definition": "Kích thước cảm biến tương đương phim 35mm (36 x 24mm). Đây là tiêu chuẩn tham chiếu cho tiêu cự và tính toán hệ số crop."
+      },
+      "golden-hour": {
+        "term": "Giờ vàng",
+        "definition": "Khoảng thời gian ngay sau bình minh hoặc trước hoàng hôn khi ánh sáng mặt trời ấm, mềm và có hướng. Rất được ưa chuộng cho nhiếp ảnh phong cảnh và chân dung."
+      },
+      "histogram": {
+        "term": "Biểu đồ Histogram",
+        "definition": "Đồ thị hiển thị phân bố giá trị độ sáng trong ảnh. Phía bên trái đại diện cho vùng tối, phía bên phải đại diện cho vùng sáng."
+      },
+      "hyperfocal-distance": {
+        "term": "Khoảng cách siêu tiêu cự",
+        "definition": "Khoảng cách lấy nét gần nhất mà tại đó mọi thứ từ nửa khoảng cách đó đến vô cực đều sắc nét chấp nhận được. Tối đa hóa chiều sâu trường ảnh cho khẩu độ nhất định."
+      },
+      "image-stabilization": {
+        "term": "Chống rung",
+        "definition": "Hệ thống giảm nhòe do rung máy ảnh, trong ống kính (OIS) hoặc thân máy (IBIS). Thường cung cấp lợi thế 3-7 stop khi chụp cầm tay."
+      },
+      "iso": {
+        "term": "ISO",
+        "definition": "Thước đo độ nhạy sáng của cảm biến máy ảnh. Giá trị ISO cao hơn làm sáng ảnh nhưng tạo thêm nhiễu."
+      },
+      "jpeg": {
+        "term": "JPEG",
+        "definition": "Định dạng tệp ảnh nén sử dụng nén có tổn hao. Kích thước tệp nhỏ hơn nhưng ít linh hoạt khi chỉnh sửa so với RAW."
+      },
+      "kelvin": {
+        "term": "Kelvin",
+        "definition": "Đơn vị dùng để đo nhiệt độ màu của ánh sáng. Nhiếp ảnh gia sử dụng giá trị Kelvin để đặt cân bằng trắng và phù hợp với màu sắc của ánh sáng môi trường."
+      },
+      "lens-compression": {
+        "term": "Nén ống kính",
+        "definition": "Hiệu ứng thị giác của ống kính tele làm cho các vật thể xa xuất hiện gần hơn với chủ thể tiền cảnh. Nó được gây ra bởi khoảng cách chụp xa, không phải bản thân ống kính."
+      },
+      "light-meter": {
+        "term": "Máy đo sáng",
+        "definition": "Thiết bị hoặc hệ thống máy ảnh đo cường độ ánh sáng để xác định cài đặt phơi sáng phù hợp. Máy ảnh sử dụng đo sáng phản xạ; máy đo cầm tay có thể đo ánh sáng tới."
+      },
+      "long-exposure": {
+        "term": "Phơi sáng dài",
+        "definition": "Ảnh chụp với tốc độ màn trập chậm, thường vài giây hoặc phút. Được sử dụng cho vệt sáng, nước mịn, vệt sao và cảnh thiếu sáng."
+      },
+      "macro": {
+        "term": "Macro",
+        "definition": "Nhiếp ảnh tái tạo chủ thể ở kích thước thật hoặc gần kích thước thật (tỷ lệ 1:1). Yêu cầu ống kính macro chuyên dụng hoặc ống nối dài."
+      },
+      "medium-format": {
+        "term": "Medium Format",
+        "definition": "Kích thước cảm biến lớn hơn full frame, thường khoảng 44 x 33mm hoặc 54 x 40mm. Cung cấp độ phân giải cao hơn, chiều sâu trường ảnh nông hơn và dải động lớn hơn."
+      },
+      "megapixel": {
+        "term": "Megapixel",
+        "definition": "Một triệu điểm ảnh. Số megapixel của cảm biến xác định độ phân giải tối đa của ảnh có thể chụp được."
+      },
+      "micro-four-thirds": {
+        "term": "Micro Four Thirds",
+        "definition": "Hệ thống máy ảnh không gương lật với cảm biến 17.3 x 13mm, cho hệ số crop 2x. Cung cấp thân máy và ống kính nhỏ gọn với chất lượng ảnh tốt."
+      },
+      "mirror-lock-up": {
+        "term": "Khóa gương",
+        "definition": "Tính năng DSLR lật gương lên trước khi màn trập kích hoạt, giảm rung. Được sử dụng cho ảnh sắc nét khi gắn trên chân máy, đặc biệt ở tốc độ màn trập chậm."
+      },
+      "nd-filter": {
+        "term": "Bộ lọc ND",
+        "definition": "Bộ lọc mật độ trung tính giảm lượng ánh sáng vào ống kính mà không ảnh hưởng đến màu sắc. Cho phép phơi sáng dài hơn hoặc khẩu độ rộng hơn trong điều kiện sáng."
+      },
+      "noise": {
+        "term": "Nhiễu",
+        "definition": "Biến đổi ngẫu nhiên về độ sáng và màu sắc trong ảnh kỹ thuật số, rõ nhất ở vùng tối và ở cài đặt ISO cao. Có thể giảm bằng phần mềm khử nhiễu."
+      },
+      "overexposure": {
+        "term": "Phơi sáng quá",
+        "definition": "Khi ảnh nhận quá nhiều ánh sáng, khiến vùng sáng bị cắt thành trắng hoàn toàn và mất chi tiết. Ngược lại với phơi sáng thiếu."
+      },
+      "panorama": {
+        "term": "Ảnh toàn cảnh",
+        "definition": "Ảnh góc rộng được tạo bằng cách ghép nhiều ảnh chồng lấp lại với nhau. Có thể bao phủ đến 360 độ của cảnh."
+      },
+      "pixel-pitch": {
+        "term": "Bước điểm ảnh",
+        "definition": "Khoảng cách tính bằng micromet giữa tâm của các điểm ảnh liền kề trên cảm biến. Bước điểm ảnh lớn hơn thường có nghĩa hiệu suất thiếu sáng tốt hơn."
+      },
+      "polarizer": {
+        "term": "Kính lọc phân cực",
+        "definition": "Bộ lọc giảm phản chiếu và chói từ bề mặt phi kim loại và có thể làm sâu bầu trời xanh. Nó hoạt động bằng cách chặn sóng ánh sáng dao động theo hướng cụ thể."
+      },
+      "prime-lens": {
+        "term": "Ống kính cố định",
+        "definition": "Ống kính có tiêu cự cố định (không zoom). Ống cố định thường sắc nét hơn, nhanh hơn (khẩu độ rộng hơn) và nhẹ hơn so với ống zoom tương đương."
+      },
+      "raw": {
+        "term": "RAW",
+        "definition": "Định dạng tệp không nén hoặc nén không tổn hao bảo toàn tất cả dữ liệu cảm biến. Cung cấp sự linh hoạt tối đa trong hậu kỳ với chi phí kích thước tệp lớn hơn."
+      },
+      "reciprocal-rule": {
+        "term": "Quy tắc nghịch đảo",
+        "definition": "Hướng dẫn cho rằng tốc độ màn trập tối thiểu khi cầm tay nên là 1/(tiêu cự) để tránh rung máy. Với ống kính 200mm, sử dụng ít nhất 1/200s."
+      },
+      "rule-of-thirds": {
+        "term": "Quy tắc một phần ba",
+        "definition": "Hướng dẫn bố cục chia khung hình thành lưới 3x3. Đặt chủ thể dọc theo các đường hoặc tại giao điểm thường tạo ra ảnh cân bằng hơn."
+      },
+      "sensor-size": {
+        "term": "Kích thước cảm biến",
+        "definition": "Kích thước vật lý của cảm biến hình ảnh máy ảnh. Cảm biến lớn hơn thu được nhiều ánh sáng hơn, cho chiều sâu trường ảnh nông hơn và thường tạo ít nhiễu hơn."
+      },
+      "shutter-speed": {
+        "term": "Tốc độ màn trập",
+        "definition": "Thời gian màn trập máy ảnh mở trong lần phơi sáng. Tốc độ nhanh hơn đóng băng chuyển động; tốc độ chậm hơn cho phép nhòe chuyển động."
+      },
+      "star-trails": {
+        "term": "Vệt sao",
+        "definition": "Vệt sáng được tạo ra bởi chuyển động biểu kiến của các ngôi sao trong phơi sáng dài. Có thể chụp trong một lần phơi sáng rất dài hoặc bằng cách chồng nhiều khung hình ngắn hơn."
+      },
+      "stop": {
+        "term": "Stop",
+        "definition": "Đơn vị thay đổi phơi sáng đại diện cho việc tăng gấp đôi hoặc giảm một nửa ánh sáng. Áp dụng cho khẩu độ, tốc độ màn trập và ISO như nhau."
+      },
+      "telephoto": {
+        "term": "Tele",
+        "definition": "Ống kính có tiêu cự dài hơn khoảng 70mm (tương đương full frame). Ống kính tele phóng đại chủ thể xa và nén phối cảnh."
+      },
+      "tilt-shift": {
+        "term": "Tilt-Shift",
+        "definition": "Ống kính có thể nghiêng mặt phẳng lấy nét và dịch chuyển vòng tròn ảnh so với cảm biến. Được sử dụng cho nhiếp ảnh kiến trúc và hiệu ứng lấy nét chọn lọc."
+      },
+      "underexposure": {
+        "term": "Phơi sáng thiếu",
+        "definition": "Khi ảnh nhận quá ít ánh sáng, khiến vùng tối mất chi tiết và xuất hiện nhiễu. Ngược lại với phơi sáng quá."
+      },
+      "vignetting": {
+        "term": "Tối góc",
+        "definition": "Hiện tượng tối các góc và cạnh của ảnh so với trung tâm. Có thể do thiết kế ống kính, bộ lọc hoặc loa che nắng gây ra, và đôi khi được thêm vào có chủ đích trong hậu kỳ."
+      },
+      "white-balance": {
+        "term": "Cân bằng trắng",
+        "definition": "Cài đặt máy ảnh điều chỉnh màu sắc để vật trắng xuất hiện trung tính dưới các điều kiện chiếu sáng khác nhau. Có thể đặt tự động hoặc thủ công sử dụng giá trị Kelvin."
+      },
+      "wide-angle": {
+        "term": "Góc rộng",
+        "definition": "Ống kính có tiêu cự ngắn (thường dưới 35mm trên full frame) bao quát góc nhìn rộng hơn. Thường được sử dụng cho phong cảnh, kiến trúc và nội thất."
+      },
+      "zoom-lens": {
+        "term": "Ống kính zoom",
+        "definition": "Ống kính có phạm vi tiêu cự thay đổi, cho phép nhiếp ảnh gia thay đổi khung hình mà không cần di chuyển. Cung cấp tính linh hoạt với đánh đổi kích thước, trọng lượng và đôi khi độ sắc nét."
+      }
+    }
+  }
+}

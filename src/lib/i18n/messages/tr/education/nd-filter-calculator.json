@@ -1,0 +1,112 @@
+{
+  "education": {
+    "nd-filter-calculator": {
+      "beginner": "ND (nötr yoğunluk) filtre, kamera objektifiniz için güneş gözlüğü gibidir. Renkleri değiştirmeden objektife giren ışık miktarını azaltarak parlak koşullarda daha yavaş enstantane hızları veya daha geniş diyaframlar kullanmanıza olanak tanır. Fotoğrafçıların gündüz vakti ipeksi şelaleler, pürüzsüz okyanuslar veya bulanık bulutlar oluşturmasını sağlayan budur.",
+      "deeper": "ND filtreler engelledikleri ışık adım sayısına göre derecelendirilir. ND2 filtre (1 adım) ışığı yarıya indirir, ND8 (3 adım) 1/8'ine düşürür ve ND1000 (10 adım) ışığı 1024 kat azaltır. İsimlendirme kuralları kafa karıştırıcı olabilir: \"ND8\" filtre faktörünün 8 (3 adım) olduğu anlamına gelirken, \"ND 0,9\" optik yoğunluk gösterimini kullanır (her 0,3 = 1 adım, yani 0,9 = 3 adım). Sonuçtaki enstantane hızı basitçe temel hızın filtre faktörüyle çarpılmasıdır. Örneğin, filtresiz pozlamanız 1/125s ise ve 10 adımlık ND (ND1000) eklerseniz, yeni enstantane hızı 1/125 x 1024 = yaklaşık 8 saniyedir. Birden fazla ND filtreyi üst üste eklemek adım değerlerini toplar ancak özellikle geniş açı objektiflerde vinyet ve renk sapmasına yol açabilir.",
+      "keyFactors": {
+        "0": {
+          "label": "Temel Enstantane Hızı",
+          "description": "Herhangi bir filtre olmadan doğru pozlama süresi. Önce sahneyi ölçün, sonra filtrelenmiş pozlamayı bu başlangıç noktasından hesaplayın."
+        },
+        "1": {
+          "label": "Filtre Gücü",
+          "description": "Adım cinsinden ölçülür. Her adım pozlama süresini iki katına çıkarır. Yaygın güçler: 3 adım (ND8), 6 adım (ND64) ve 10 adım (ND1000)."
+        },
+        "2": {
+          "label": "Filtre İstifleme",
+          "description": "Adım değerlerini toplayarak filtreleri birleştirebilirsiniz. 3 adım + 6 adım = 9 adım azalma. Geniş açı objektiflerde vinyete dikkat edin."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Güçlü bir ND filtre takmadan önce kadrajlayın ve odaklayın. 10 adım ışık azalmasıyla vizörünüz ve otomatik odaklamanız karanlıkta zorlanacaktır."
+        },
+        "1": {
+          "text": "Deniz manzaraları için 1-2 saniyelik pozlamalar küçük dalgacıkları dokuya dönüştürürken dalga yapısını korur. 30 saniye veya daha uzun pozlamalar tamamen düz, sisli su yaratır."
+        },
+        "2": {
+          "text": "Ucuz ND filtreler genellikle renk sapması (genellikle magenta veya kahverengi) ekler. Saygın markalardan kaliteli cam alın veya gri kart referansı kullanarak son işlemede sapmayı düzeltmeyi öğrenin."
+        }
+      },
+      "tooltips": {
+        "baseShutterSpeed": {
+          "term": "Temel Enstantane Hızı",
+          "definition": "Herhangi bir ND filtre takılmadan doğru pozlama için enstantane hızı. Başlangıç noktanız budur — hesaplayıcı bunu filtre faktörüyle çarpar."
+        },
+        "ndFilter": {
+          "term": "ND Filtre",
+          "definition": "Işık geçirgenliğini eşit olarak azaltan nötr yoğunluk filtresi. Filtre faktörü (ND2, ND4, ND8...) veya ışık azaltma adımı ile derecelendirilir. ND2 = 1 adım, ND4 = 2 adım, ND8 = 3 adım, vb."
+        },
+        "resultingShutterSpeed": {
+          "term": "Sonuç Enstantane Hızı",
+          "definition": "ND filtre hesaba katıldıktan sonraki yeni enstantane hızı. Temel enstantane hızının filtre faktörüyle çarpılmasıyla hesaplanır (ör. 10 adım ND için 1/125s x 1024)."
+        },
+        "stopsAdded": {
+          "term": "Eklenen Adımlar",
+          "definition": "ND filtrenin sağladığı ışık azaltma adım sayısı. Her adım gereken pozlama süresini iki katına çıkarır. 10 adım, pozlamanın 1024 kat daha uzun olduğu anlamına gelir."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Bir şelalede ve kameranız herhangi bir filtre olmadan 1/125s'de doğru pozlama ölçüyor. 3 adımlık bir ND filtre (ND8) takıyorsunuz. Yeni enstantane hızı nedir?",
+          "hint": "Her adım pozlama süresini iki katına çıkarır. 3 adım 2 x 2 x 2 = 8 kat daha uzun anlamına gelir.",
+          "successMessage": "Doğru! 1/125s x 8 = 1/15s. Bu, sudaki hareket bulanıklığı için iyi bir başlangıç, ancak ipeksi pürüzsüz sonuçlar için daha güçlü bir filtre isteyebilirsiniz.",
+          "failureMessage": "3 adımlık bir ND filtre pozlama süresini 8 ile çarpar (2^3 = 8). Yani 1/125s, 1/15s olur.",
+          "options": {
+            "0": { "label": "1/60s" },
+            "1": { "label": "1/30s" },
+            "2": { "label": "1/15s" },
+            "3": { "label": "1/8s" }
+          }
+        },
+        "1": {
+          "scenario": "Gökyüzünde hareket eden bulutların 30 saniyelik pozlamasını oluşturmak istiyorsunuz. Filtre olmadan doğru pozlama 1/30s. Kaç adım ND filtrelemeye ihtiyacınız var?",
+          "hint": "1/30s'den 30s'ye gitmeniz gerekiyor — bu 1/30 x faktör = 30, yani faktör = 900. En yakın 2'nin kuvvetini bulun.",
+          "successMessage": "Doğru! 1/30s'den 30s'ye gitmek yaklaşık 1000 katlık bir artıştır, bu da yaklaşık 10 adımdır. ND1000 (10 adım) filtre sizi yaklaşık 33 saniyeye getirir.",
+          "failureMessage": "Oran 30 / (1/30) = 900'dür. En yakın 2'nin kuvveti 1024'tür (2^10), yani 10 adımlık bir ND filtreye ihtiyacınız var.",
+          "options": {
+            "0": { "label": "6 adım (ND64)" },
+            "1": { "label": "8 adım (ND256)" },
+            "2": { "label": "10 adım (ND1000)" },
+            "3": { "label": "15 adım (ND32768)" }
+          }
+        },
+        "2": {
+          "scenario": "Gün batımında bir deniz manzarası çekiyorsunuz. Işık azalıyor ve temel pozlamanız (filtresiz) f/11, ISO 100'de 1/4s. Ultra pürüzsüz su için 2 dakikalık pozlama istiyorsunuz. Hangi ND filtre gücüne ihtiyacınız var?",
+          "hint": "1/4s'den 120s'ye yaklaşık 480 katlık bir faktördür. En yakın adım değerini bulun.",
+          "successMessage": "9 adımlık bir ND size 1/4 x 512 = 128 saniye veya 2 dakikanın biraz üzerini verir. Gün batımında o sisli, ruhani deniz manzarası görünümü için mükemmel.",
+          "failureMessage": "0,25s'den 120s'ye yaklaşık 480 katlık bir artıştır. 2^9 = 512, bu 480'e yakındır, yani 9 adımlık filtre sizi yaklaşık 128 saniyeye getirir.",
+          "options": {
+            "0": { "label": "6 adım" },
+            "1": { "label": "9 adım" },
+            "2": { "label": "10 adım" },
+            "3": { "label": "13 adım" }
+          }
+        },
+        "3": {
+          "scenario": "Parlak güneş ışığında f/1,4'te portre çekmek istiyorsunuz (temel pozlama: f/1,4, 1/8000s, ISO 100). Kameranızın maksimum enstantane hızı 1/8000s. ND filtre olmadan f/1,4'te çekebilir misiniz?",
+          "hint": "f/1,4, ISO 100'de 1/8000s'nin başarılabilir olup olmadığını veya sahnenin hâlâ aşırı pozlanmış olup olmadığını kontrol edin.",
+          "successMessage": "Doğru! Çok parlak bir günde (EV 15+), ISO 100'de f/1,4 genellikle çoğu kameranın başaramayacağı 1/8000s'den daha hızlı enstantaneler gerektirir. 2-3 adımlık bir ND filtre, aşırı pozlama olmadan tam açık çekim yapmanıza olanak tanır.",
+          "failureMessage": "Parlak güneş ışığında ISO 100'de f/1,4, kameranın 1/8000s sınırının ötesinde enstantane hızları gerektirebilir. Parlak koşullarda geniş diyafram çekimi için ND filtre şarttır.",
+          "options": {
+            "0": { "label": "Evet — 1/8000s yeterince hızlı" },
+            "1": { "label": "Hayır — muhtemelen 2-3 adım ND filtreye ihtiyacınız var" },
+            "2": { "label": "Telafi etmek için ISO'yu yükselt" }
+          }
+        },
+        "4": {
+          "scenario": "6 adımlık ve 3 adımlık bir ND filtreniz var. Temel pozlama 1/250s ile objektife istifleyerek takıyorsunuz. Sonuçtaki enstantane hızı nedir ve bu kurulumda neye dikkat etmelisiniz?",
+          "hint": "Adım değerlerini toplayın, sonra yeni pozlamayı hesaplayın. İstiflemanin optik yan etkilerini düşünün.",
+          "successMessage": "Doğru! 6 + 3 = 9 adım. 1/250 x 512 = yaklaşık 2 saniye. Geniş açı objektiflerde vinyete (karanlık köşeler) ve ucuz camdan renk sapmasına dikkat edin.",
+          "failureMessage": "İstifleme adım değerlerini toplar: 6 + 3 = 9 adım toplam. 2^9 = 512, yani 1/250 x 512 = ~2 saniye. İstifleme ayrıca vinyet ve renk sapmasına neden olabilir.",
+          "options": {
+            "0": { "label": "~0,5s, objektif parlamasına dikkat edin" },
+            "1": { "label": "~2s, vinyet ve renk sapmasına dikkat edin" },
+            "2": { "label": "~4s, sensör aşırı ısınmasına dikkat edin" },
+            "3": { "label": "~8s, istifleme konusunda endişe yok" }
+          }
+        }
+      }
+    }
+  }
+}

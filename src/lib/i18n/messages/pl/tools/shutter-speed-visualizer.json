@@ -1,0 +1,27 @@
+{
+  "toolUI": {
+    "shutter-speed-visualizer": {
+      "description": "Zobacz, jak czas migawki wpływa na rozmycie ruchu dla różnych obiektów.",
+      "shutterSpeed": "Czas migawki",
+      "shutterSpeedAriaLabel": "Czas migawki",
+      "sliderSlow": "Wolny (2 s)",
+      "sliderFast": "Szybki (1/4000)",
+      "selectedSpeed": "Wybrany czas",
+      "motionBlurAriaLabel": "Wizualizacja rozmycia ruchu dla różnych obiektów",
+      "verdictFrozen": "Zamrożony",
+      "verdictMostlySharp": "W większości ostry",
+      "verdictSlightBlur": "Lekkie rozmycie",
+      "verdictMotionBlur": "Rozmycie ruchu",
+      "standingPerson": "Stojąca osoba",
+      "slowWalk": "Wolny spacer",
+      "jogging": "Jogging",
+      "running": "Bieg",
+      "cyclist": "Rowerzysta",
+      "birdsInFlight": "Ptaki w locie",
+      "carCity": "Samochód (miasto)",
+      "f1Car": "Bolid F1",
+      "airplaneLanding": "Samolot (lądowanie)",
+      "stationary": "nieruchomy"
+    }
+  }
+}

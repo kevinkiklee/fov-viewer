@@ -1,0 +1,27 @@
+{
+  "toolUI": {
+    "shutter-speed-visualizer": {
+      "description": "ดูว่าความเร็วชัตเตอร์ส่งผลต่อการเบลอจากการเคลื่อนไหวของซับเจกต์ต่างๆ อย่างไร",
+      "shutterSpeed": "ความเร็วชัตเตอร์",
+      "shutterSpeedAriaLabel": "ความเร็วชัตเตอร์",
+      "sliderSlow": "ช้า (2s)",
+      "sliderFast": "เร็ว (1/4000)",
+      "selectedSpeed": "ความเร็วที่เลือก",
+      "motionBlurAriaLabel": "การแสดงผลการเบลอจากการเคลื่อนไหวสำหรับซับเจกต์ต่างๆ",
+      "verdictFrozen": "หยุดนิ่ง",
+      "verdictMostlySharp": "เกือบคม",
+      "verdictSlightBlur": "เบลอเล็กน้อย",
+      "verdictMotionBlur": "เบลอจากการเคลื่อนไหว",
+      "standingPerson": "คนยืน",
+      "slowWalk": "เดินช้า",
+      "jogging": "วิ่งเหยาะ",
+      "running": "วิ่งเร็ว",
+      "cyclist": "นักปั่นจักรยาน",
+      "birdsInFlight": "นกบิน",
+      "carCity": "รถยนต์ (ในเมือง)",
+      "f1Car": "รถ F1",
+      "airplaneLanding": "เครื่องบิน (ลงจอด)",
+      "stationary": "นิ่ง"
+    }
+  }
+}

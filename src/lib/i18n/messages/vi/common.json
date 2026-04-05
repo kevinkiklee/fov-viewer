@@ -1,0 +1,126 @@
+{
+  "common": {
+    "nav": {
+      "tools": "Công cụ",
+      "glossary": "Thuật ngữ",
+      "closeMenu": "Đóng menu",
+      "comingSoon": "Sắp ra",
+      "categories": {
+        "visualizer": "Trực quan hóa",
+        "calculator": "Máy tính",
+        "reference": "Tra cứu",
+        "file-tool": "Công cụ tệp"
+      }
+    },
+    "footer": {
+      "glossary": "Thuật ngữ",
+      "about": "Giới thiệu",
+      "contact": "Liên hệ",
+      "privacy": "Chính sách bảo mật",
+      "terms": "Điều khoản dịch vụ",
+      "cookieSettings": "Cài đặt cookie"
+    },
+    "theme": {
+      "switchToLight": "Chuyển sang chế độ sáng",
+      "switchToDark": "Chuyển sang chế độ tối"
+    },
+    "actions": {
+      "copyImage": "Sao chép ảnh",
+      "reset": "Đặt lại",
+      "copyLink": "Sao chép liên kết",
+      "share": "Chia sẻ",
+      "embed": "Nhúng"
+    },
+    "toast": {
+      "linkCopied": "Đã sao chép liên kết!",
+      "imageCopied": "Đã sao chép ảnh!",
+      "failedToCopy": "Không thể sao chép",
+      "copied": "Đã sao chép!"
+    },
+    "learn": {
+      "title": "Học",
+      "openPanel": "Mở bảng học tập",
+      "collapsePanel": "Thu gọn bảng học tập",
+      "whatIsThis": "Đây là gì?",
+      "howItWorks": "Cách hoạt động",
+      "keyFactors": "Yếu tố chính",
+      "proTip": "Mẹo chuyên nghiệp",
+      "challenge": "Thử thách",
+      "hint": "Gợi ý: {hint}",
+      "completed": "Hoàn thành",
+      "checkAnswer": "Kiểm tra đáp án",
+      "nextChallenge": "Thử thách tiếp",
+      "tryAgain": "Thử lại",
+      "resetAll": "Đặt lại tất cả",
+      "resetAllChallenges": "Đặt lại tất cả thử thách",
+      "challengeNumber": "Thử thách {number}"
+    },
+    "share": {
+      "title": "Chia sẻ & Nhúng",
+      "closeModal": "Đóng hộp thoại chia sẻ",
+      "directLink": "Liên kết trực tiếp",
+      "markdown": "Markdown (Reddit, GitHub)",
+      "bbcode": "BBCode (Diễn đàn)",
+      "htmlEmbed": "Nhúng HTML",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép"
+    },
+    "draft": {
+      "banner": "Xem trước — Công cụ này chưa được công khai"
+    },
+    "fileUpload": {
+      "dropPrompt": "Thả ảnh vào đây hoặc nhấn để duyệt",
+      "tapPrompt": "Nhấn để chọn ảnh",
+      "privacy": "Ảnh của bạn không bao giờ rời khỏi thiết bị",
+      "selectedFile": "Tệp đã chọn: {fileName}. Nhấn để chọn ảnh khác",
+      "defaultLabel": "Ảnh của bạn"
+    },
+    "scene": {
+      "label": "Cảnh:",
+      "yourPhoto": "Ảnh của bạn",
+      "removePhoto": "Xóa ảnh",
+      "uploadPhoto": "Tải ảnh lên"
+    },
+    "controls": {
+      "focalLength": "Tiêu cự",
+      "aperture": "Khẩu độ",
+      "distance": "Khoảng cách",
+      "clickToEnterValue": "Nhấn để nhập giá trị",
+      "decrease": "Giảm",
+      "increase": "Tăng"
+    },
+    "dof": {
+      "depthOfField": "Chiều sâu trường ảnh: {totalDoF} từ {nearFocus} đến {farFocus}",
+      "infinity": "Vô cực"
+    },
+    "ad": {
+      "closeAd": "Đóng quảng cáo"
+    },
+    "tooltip": {
+      "infoLabel": "Thông tin: {term}"
+    },
+    "notFound": {
+      "title": "Không tìm thấy trang",
+      "message": "Trang bạn đang tìm không tồn tại hoặc đã được di chuyển.",
+      "backHome": "Về trang chủ",
+      "popularTools": "Công cụ phổ biến"
+    },
+    "breadcrumb": {
+      "home": "Trang chủ"
+    },
+    "relatedTools": {
+      "title": "Công cụ liên quan"
+    },
+    "sensors": {
+      "mf_645": "Medium Format (54x40)",
+      "mf": "Medium Format (44x33)",
+      "mf_leica": "Medium Format (45x30)",
+      "ff": "Full Frame",
+      "apsc_n": "APS-C (1.5x)",
+      "apsc_c": "APS-C (Canon)",
+      "m43": "Micro Four Thirds",
+      "1in": "Cảm biến 1\"",
+      "phone": "Smartphone cao cấp (1/1.3\")"
+    }
+  }
+}

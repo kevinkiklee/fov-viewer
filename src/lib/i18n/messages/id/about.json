@@ -1,0 +1,28 @@
+{
+  "about": {
+    "title": "Tentang PhotoTools",
+    "subtitle": "Edukasi fotografi gratis, langsung di browser Anda.",
+    "sections": {
+      "whatIs": {
+        "title": "Apa itu PhotoTools?",
+        "body": "PhotoTools adalah kumpulan kalkulator fotografi interaktif, simulator, dan alat referensi yang sepenuhnya gratis. Baik Anda baru belajar segitiga eksposur untuk pertama kali atau menghitung jarak hiperfocal untuk pemotretan lanskap, PhotoTools memberikan alat visual hands-on untuk memperdalam pemahaman Anda tentang fotografi."
+      },
+      "whoIsItFor": {
+        "title": "Untuk siapa?",
+        "body": "Fotografer dari semua tingkat keahlian — mulai dari pemula yang mengeksplorasi bagaimana apertur memengaruhi kedalaman bidang hingga fotografer berpengalaman yang merencanakan sesi jejak bintang. Setiap alat dilengkapi panel pembelajaran dengan penjelasan, faktor kunci, tips pro, dan tantangan interaktif untuk menguji pengetahuan Anda."
+      },
+      "privacyFirst": {
+        "title": "Privasi diutamakan",
+        "body": "Semua perhitungan dan simulasi berjalan sepenuhnya di browser Anda. Foto Anda tidak pernah meninggalkan perangkat Anda — EXIF Viewer, misalnya, memproses gambar 100% di sisi klien. Tidak perlu mendaftar, dan tidak ada data pribadi yang dikumpulkan selain analitik anonim."
+      },
+      "builtBy": {
+        "title": "Dibuat oleh fotografer",
+        "body": "PhotoTools dibuat dan dikelola oleh seorang fotografer sekaligus software engineer yang menginginkan alat visual yang lebih baik untuk memahami sisi teknis fotografi. Alat-alat ini didasarkan pada optik dan fisika nyata — bukan perkiraan — sehingga Anda dapat mempercayai hasilnya di lapangan."
+      },
+      "getInTouch": {
+        "title": "Hubungi kami",
+        "body": "Punya saran, laporan bug, atau ide alat baru? Hubungi kami melalui <contactLink>halaman kontak</contactLink>."
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "home": {
+    "heroTitle": "PhotoTools — 免费摄影工具",
+    "heroDesc": "免费的摄影计算器、模拟器和参考资料。无需注册 — 您的照片不会离开浏览器。",
+    "comingSoon": "即将推出",
+    "categories": {
+      "visualizer": "可视化工具",
+      "calculator": "计算器",
+      "reference": "参考资料",
+      "file-tool": "文件工具"
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "education": {
+    "shutter-speed-visualizer": {
+      "beginner": "Panduan kecepatan rana membantu Anda menemukan kecepatan rana paling lambat yang dapat Anda gunakan sambil tetap mendapatkan foto genggam yang tajam. Jika kecepatan rana Anda terlalu lambat, goyangan kamera dari tangan Anda akan mengaburkan gambar. Kecepatan minimum yang aman bergantung pada panjang fokus, apakah Anda memiliki stabilisasi gambar, dan seberapa stabil tangan Anda.",
+      "deeper": "Aturan timbal balik klasik menyatakan bahwa untuk foto genggam yang tajam, kecepatan rana Anda harus setidaknya 1/(panjang fokus) detik — jadi lensa 200mm memerlukan setidaknya 1/200 detik. Pada kamera sensor crop, Anda harus menggunakan panjang fokus ekuivalen (misalnya 200mm pada crop 1,5x = 1/300 detik). Stabilisasi in-body (IBIS) dan stabilisasi optik (OIS) modern dapat memberi Anda 3-7 stop ekstra kelonggaran genggam, artinya lensa 200mm yang terstabilisasi mungkin tajam pada 1/15 detik atau bahkan lebih lambat. Namun, stabilisasi hanya mengkompensasi goyangan kamera, bukan gerakan subjek. Seseorang yang berjalan ke arah Anda pada 1/15 detik tetap akan blur terlepas dari stabilisasi. Untuk subjek yang bergerak, Anda harus memilih kecepatan rana berdasarkan kecepatan dan jarak subjek, bukan hanya panjang fokus.",
+      "keyFactors": {
+        "0": {
+          "label": "Panjang Fokus",
+          "description": "Panjang fokus yang lebih panjang memperbesar goyangan kamera. Aturan timbal balik (1/panjang fokus) adalah titik awal untuk menentukan kecepatan rana minimum."
+        },
+        "1": {
+          "label": "Stabilisasi Gambar",
+          "description": "OIS (berbasis lensa) biasanya menyediakan 2-4 stop manfaat. IBIS (berbasis bodi) menyediakan 3-5 stop. Kombinasi OIS+IBIS dapat mencapai 5-7 stop pada beberapa sistem."
+        },
+        "2": {
+          "label": "Gerakan Subjek",
+          "description": "Subjek diam hanya memerlukan kecepatan yang cukup untuk melawan goyangan kamera. Subjek bergerak memerlukan kecepatan lebih tinggi terlepas dari stabilisasi: berjalan (~1/125 detik), berlari (~1/500 detik), kendaraan (~1/1000 detik+)."
+        },
+        "3": {
+          "label": "Ukuran Sensor (Crop Factor)",
+          "description": "Kamera sensor crop secara efektif mengalikan panjang fokus untuk aturan timbal balik. Lensa 50mm pada crop 1,5x berperilaku seperti 75mm, jadi Anda memerlukan setidaknya 1/75 detik."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Sandarkan diri ke dinding, rapatkan siku, dan hembuskan napas perlahan sebelum menekan rana. Teknik yang baik dapat memberi Anda 1-2 stop ekstra kestabilan melampaui aturan timbal balik."
+        },
+        "1": {
+          "text": "Saat memotret orang, gerakan subjek biasanya menentukan kecepatan minimum Anda, bukan panjang fokus. Bahkan dengan lensa wide-angle dan stabilisasi, anak yang berlari memerlukan setidaknya 1/500 detik."
+        },
+        "2": {
+          "text": "Jika Anda konsisten memotret dalam cahaya rendah, investasikan pada bodi kamera dengan IBIS. Kemampuan memotret genggam pada 1/2 detik dengan lensa wide-angle membuka kemungkinan yang tidak bisa ditandingi oleh kinerja ISO tinggi apa pun."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Panjang Fokus",
+          "definition": "Panjang fokus lensa dalam milimeter. Langsung memengaruhi kecepatan rana aman minimum melalui aturan timbal balik: 1/(panjang fokus) untuk full frame, disesuaikan dengan crop factor untuk sensor yang lebih kecil."
+        },
+        "sensor": {
+          "term": "Ukuran Sensor",
+          "definition": "Ukuran sensor kamera, yang menentukan crop factor. APS-C (1,5x) dan Micro Four Thirds (2x) mengalikan panjang fokus efektif, memerlukan kecepatan rana yang lebih cepat untuk lensa yang sama."
+        },
+        "stabilization": {
+          "term": "Stabilisasi Gambar",
+          "definition": "Teknologi yang mengkompensasi goyangan kamera. OIS (Optical Image Stabilization) ada di lensa, IBIS (In-Body Image Stabilization) ada di bodi kamera. Keduanya dapat bekerja bersama untuk manfaat maksimal."
+        },
+        "subjectMotion": {
+          "term": "Gerakan Subjek",
+          "definition": "Seberapa cepat subjek Anda bergerak. Subjek diam hanya memerlukan kecepatan rana yang cukup untuk melawan goyangan kamera. Subjek bergerak memerlukan kecepatan lebih tinggi berdasarkan kecepatan dan arah relatif terhadap kamera."
+        },
+        "recommendedShutterSpeed": {
+          "term": "Kecepatan Rana yang Direkomendasikan",
+          "definition": "Kecepatan rana minimum yang dihitung untuk kombinasi spesifik Anda dari panjang fokus, stabilisasi, sensor, dan gerakan subjek. Memotret pada kecepatan ini atau lebih cepat seharusnya menghasilkan hasil yang tajam."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Anda memotret dengan lensa 100mm pada kamera full frame tanpa stabilisasi gambar. Subjek Anda berdiri diam. Berapa kecepatan rana minimum yang direkomendasikan?",
+          "hint": "Aturan timbal balik: kecepatan rana minimum = 1 / panjang fokus.",
+          "successMessage": "Benar! Aturan timbal balik mengatakan 1/100 detik untuk lensa 100mm pada full frame. Ini adalah titik awal klasik untuk ketajaman genggam.",
+          "failureMessage": "Untuk lensa 100mm pada full frame tanpa stabilisasi, aturan timbal balik memberikan 1/100 detik sebagai kecepatan rana aman minimum untuk subjek statis.",
+          "options": {
+            "0": { "label": "1/50 detik" },
+            "1": { "label": "1/100 detik" },
+            "2": { "label": "1/200 detik" },
+            "3": { "label": "1/500 detik" }
+          }
+        },
+        "1": {
+          "scenario": "Anda menggunakan lensa 50mm pada kamera APS-C (crop factor 1,5x) tanpa stabilisasi. Kecepatan rana minimum apa yang harus Anda gunakan untuk subjek diam?",
+          "hint": "Kalikan panjang fokus dengan crop factor sebelum menerapkan aturan timbal balik.",
+          "successMessage": "Tepat! 50mm x 1,5 = ekuivalen 75mm, jadi Anda memerlukan setidaknya 1/75 detik. Dalam praktiknya, membulatkan ke 1/80 detik adalah pilihan aman.",
+          "failureMessage": "Pada APS-C, crop factor (1,5x) berarti lensa 50mm berperilaku seperti lensa 75mm. Aturan timbal balik memberikan 1/75 detik sebagai kecepatan minimum.",
+          "options": {
+            "0": { "label": "1/50 detik" },
+            "1": { "label": "1/75 detik (bulatkan ke 1/80 detik)" },
+            "2": { "label": "1/100 detik" },
+            "3": { "label": "1/125 detik" }
+          }
+        },
+        "2": {
+          "scenario": "Anda memiliki lensa 200mm dengan OIS (4 stop stabilisasi) pada bodi full frame dengan IBIS (5 stop). Bersama mereka menyediakan sekitar 6 stop stabilisasi gabungan. Untuk subjek diam, berapa perkiraan kecepatan rana minimum?",
+          "hint": "Mulai dengan aturan timbal balik (1/200 detik) kemudian terapkan 6 stop manfaat stabilisasi.",
+          "successMessage": "Benar! Mulai dari 1/200 detik dan mendapatkan 6 stop: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3 detik. Sekitar 1/3 detik genggam dengan lensa 200mm — mengesankan tetapi dapat dicapai dengan stabilisasi modern!",
+          "failureMessage": "Dari 1/200 detik, setiap stop stabilisasi menggandakan waktu yang dapat digunakan: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3 detik. Enam stop stabilisasi dengan lensa 200mm memberikan sekitar 1/3 detik.",
+          "options": {
+            "0": { "label": "1/30 detik" },
+            "1": { "label": "1/8 detik" },
+            "2": { "label": "~1/3 detik" },
+            "3": { "label": "1 detik" }
+          }
+        },
+        "3": {
+          "scenario": "Anda memotret teman yang sedang jogging di taman menggunakan lensa 35mm pada kamera full frame dengan IBIS. IBIS Anda memberikan 5 stop stabilisasi, jadi aturan timbal balik saja akan membiarkan Anda memotret pada sekitar 1 detik. Haruskah Anda menggunakan 1 detik?",
+          "hint": "Stabilisasi mengkompensasi goyangan kamera, bukan gerakan subjek.",
+          "successMessage": "Benar! Stabilisasi hanya melawan goyangan kamera. Orang yang jogging memerlukan setidaknya 1/250 detik untuk membekukan gerakannya, terlepas dari seberapa bagus stabilisasi Anda.",
+          "failureMessage": "Stabilisasi tidak dapat membekukan subjek yang bergerak. Untuk orang yang jogging, Anda memerlukan setidaknya 1/250 detik untuk mencegah motion blur, bahkan jika kamera Anda bisa stabil pada 1 detik.",
+          "options": {
+            "0": { "label": "Ya — IBIS menangani semua gerakan" },
+            "1": { "label": "Tidak — gunakan setidaknya 1/250 detik untuk membekukan pelari" },
+            "2": { "label": "Tidak — gunakan 1/60 detik sebagai kompromi" },
+            "3": { "label": "Tergantung pada pengaturan ISO" }
+          }
+        },
+        "4": {
+          "scenario": "Anda ingin membuat foto panning pesepeda — pengendara harus tajam sementara latar belakang menunjukkan goresan motion blur. Anda menggunakan lensa 70mm pada full frame. Rentang kecepatan rana apa yang harus Anda coba?",
+          "hint": "Panning sengaja menggunakan kecepatan rana lambat sambil melacak subjek. Terlalu cepat membekukan semuanya; terlalu lambat mengaburkan bahkan subjek.",
+          "successMessage": "Benar! Untuk panning pesepeda, 1/30 detik hingga 1/60 detik adalah sweet spot. Ini cukup lambat untuk mengaburkan latar belakang menjadi goresan sementara gerakan pelacakan Anda menjaga pengendara tetap relatif tajam. Perlu latihan — potret dalam mode burst dan harapkan banyak yang ditolak.",
+          "failureMessage": "Panning memerlukan kecepatan rana yang cukup lambat untuk mengaburkan latar belakang tetapi cukup cepat agar pelacakan Anda menjaga subjek tetap tajam. Untuk pesepeda, 1/30 detik hingga 1/60 detik adalah rentang tipikal.",
+          "options": {
+            "0": { "label": "1/1000 detik hingga 1/2000 detik" },
+            "1": { "label": "1/250 detik hingga 1/500 detik" },
+            "2": { "label": "1/30 detik hingga 1/60 detik" },
+            "3": { "label": "1 detik hingga 2 detik" }
+          }
+        }
+      }
+    }
+  }
+}

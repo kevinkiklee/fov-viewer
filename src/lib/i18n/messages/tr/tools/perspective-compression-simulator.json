@@ -1,0 +1,13 @@
+{
+  "toolUI": {
+    "perspective-compression-simulator": {
+      "cameraSettings": "Kamera Ayarları",
+      "focalLength": "Odak Uzaklığı",
+      "equivalent35mm": "Eşdeğer (35mm)",
+      "perspectiveDistance": "Perspektif ve Mesafe",
+      "subjectDistance": "Konu Mesafesi",
+      "maintainSubjectSize": "Konu Boyutunu Koru",
+      "resetAll": "Tümünü Sıfırla"
+    }
+  }
+}

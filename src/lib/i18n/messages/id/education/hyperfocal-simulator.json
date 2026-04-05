@@ -1,0 +1,98 @@
+{
+  "education": {
+    "hyperfocal-simulator": {
+      "beginner": "Jarak hiperfocal adalah titik fokus terdekat di mana segala sesuatu hingga tak terhingga masih tampak tajam secara dapat diterima. Ketika Anda fokus pada jarak hiperfocal, kedalaman bidang Anda meluas dari setengah jarak tersebut hingga tak terhingga. Fotografer lanskap menggunakan teknik ini untuk memaksimalkan ketajaman dari latar depan hingga cakrawala.",
+      "deeper": "Jarak hiperfocal diturunkan dari persamaan lensa tipis dan konsep circle of confusion (CoC). Nilainya sama dengan panjang fokus kuadrat dibagi produk dari angka f dan diameter CoC: H = f² / (N × c). Segala sesuatu dari H/2 hingga tak terhingga berada dalam ketajaman yang dapat diterima. CoC bergantung pada ukuran sensor — sensor lebih kecil memiliki CoC yang dapat diterima lebih kecil, yang mendorong jarak hiperfocal lebih jauh untuk panjang fokus dan apertur yang sama. Inilah mengapa kamera sensor crop tampak memiliki kedalaman bidang yang lebih besar: standar CoC lebih ketat relatif terhadap area gambar. Dalam praktiknya, pelunakan difraksi pada apertur sangat kecil (f/16 ke atas pada kebanyakan sensor) berarti ada trade-off antara memaksimalkan kedalaman bidang dan mempertahankan ketajaman per-piksel.",
+      "keyFactors": {
+        "0": {
+          "label": "Panjang Fokus",
+          "description": "Panjang fokus yang lebih panjang secara dramatis meningkatkan jarak hiperfocal — nilainya berskala dengan kuadrat panjang fokus."
+        },
+        "1": {
+          "label": "Apertur",
+          "description": "Apertur lebih kecil (angka f lebih tinggi) mengurangi jarak hiperfocal, memperluas kedalaman bidang."
+        },
+        "2": {
+          "label": "Ukuran Sensor",
+          "description": "Sensor yang lebih kecil menggunakan circle of confusion yang lebih kecil, yang meningkatkan jarak hiperfocal untuk framing yang ekuivalen."
+        },
+        "3": {
+          "label": "Circle of Confusion",
+          "description": "Diameter titik blur maksimum yang dianggap \"tajam secara dapat diterima\" — biasanya 0,03mm untuk full frame."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Untuk pekerjaan lanskap cepat, fokus kira-kira sepertiga ke dalam adegan — ini mendekati titik hiperfocal untuk kebanyakan setup wide-angle."
+        },
+        "1": {
+          "text": "Hindari mengecilkan apertur melewati f/16 pada full frame atau f/11 pada APS-C. Difraksi akan membatalkan keuntungan kedalaman bidang yang Anda kejar."
+        },
+        "2": {
+          "text": "Gunakan pembesaran live view untuk memaku fokus secara presisi pada jarak hiperfocal daripada mengandalkan skala jarak lensa, yang sering tidak presisi pada lensa autofokus modern."
+        }
+      },
+      "tooltips": {
+        "Sensor": {
+          "term": "Sensor",
+          "definition": "Format sensor kamera. Sensor yang lebih kecil memiliki standar circle of confusion yang lebih ketat, yang menggeser semua jarak hiperfocal lebih jauh."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Anda memotret lanskap dengan lensa 24mm pada kamera full frame. Format sensor mana yang harus Anda pilih untuk melihat jarak hiperfocal full frame?",
+          "hint": "Full frame adalah ukuran sensor standar 35mm.",
+          "successMessage": "Benar! Full Frame adalah pilihan yang tepat untuk sensor standar 35mm.",
+          "failureMessage": "Kurang tepat — pilih sensor Full Frame untuk mencocokkan bodi kamera standar 35mm.",
+          "options": {
+            "0": { "label": "Full Frame" },
+            "1": { "label": "APS-C (Nikon/Sony)" },
+            "2": { "label": "Micro Four Thirds" }
+          }
+        },
+        "1": {
+          "scenario": "Melihat tabel untuk full frame, mana yang memiliki jarak hiperfocal lebih pendek: 24mm pada f/8, atau 50mm pada f/8?",
+          "hint": "Jarak hiperfocal meningkat dengan kuadrat panjang fokus.",
+          "successMessage": "Tepat! Lensa 24mm memiliki jarak hiperfocal yang jauh lebih pendek karena panjang fokus memiliki hubungan kuadrat.",
+          "failureMessage": "Sebenarnya, panjang fokus yang lebih pendek selalu menghasilkan jarak hiperfocal yang lebih pendek. 24mm menang di sini.",
+          "options": {
+            "0": { "label": "24mm pada f/8" },
+            "1": { "label": "50mm pada f/8" }
+          }
+        },
+        "2": {
+          "scenario": "Anda mendaki dengan kamera APS-C dan lensa 35mm. Anda ingin segala sesuatu dari sekitar 3 meter hingga tak terhingga tajam. Rentang apertur mana yang harus Anda lihat di tabel untuk menemukan jarak hiperfocal dekat 6 meter (sehingga setengahnya — 3m — adalah batas fokus dekat Anda)?",
+          "hint": "Ingat: fokus dekat = hiperfocal / 2. Cari apertur yang memberikan hiperfocal sekitar 6m.",
+          "successMessage": "Pemikiran bagus! Anda dengan tepat mengidentifikasi bahwa Anda memerlukan jarak hiperfocal sekitar 6m, dan menemukan rentang apertur yang tepat.",
+          "failureMessage": "Ingat, fokus dekat sama dengan setengah jarak hiperfocal. Anda memerlukan hiperfocal sekitar 6m untuk mendapatkan batas fokus dekat 3m.",
+          "options": {
+            "0": { "label": "f/2.8 — f/4" },
+            "1": { "label": "f/5.6 — f/8" },
+            "2": { "label": "f/16 — f/22" }
+          }
+        },
+        "3": {
+          "scenario": "Seorang teman beralih dari kamera full frame ke Micro Four Thirds tetapi tetap memotret dengan panjang fokus yang sama. Mereka mengeluh bahwa jarak hiperfocal tampak berbeda. Mengapa?",
+          "hint": "Circle of confusion dihitung berdasarkan ukuran sensor.",
+          "successMessage": "Tepat! Sensor M43 yang lebih kecil menggunakan CoC yang lebih kecil (sekitar 0,015mm vs 0,03mm), yang meningkatkan jarak hiperfocal untuk panjang fokus dan apertur yang sama.",
+          "failureMessage": "Faktor kuncinya adalah circle of confusion. Sensor yang lebih kecil memerlukan standar CoC yang lebih ketat, yang mendorong jarak hiperfocal lebih jauh.",
+          "options": {
+            "0": { "label": "Panjang fokus lensa berubah pada sensor crop" },
+            "1": { "label": "Sensor yang lebih kecil menggunakan circle of confusion yang lebih kecil" },
+            "2": { "label": "Kamera Micro Four Thirds memiliki autofokus yang kurang akurat" }
+          }
+        },
+        "4": {
+          "scenario": "Anda memotret arsitektur pada 14mm f/11 di full frame. Tabel menunjukkan jarak hiperfocal yang sangat pendek. Haruskah Anda mengecilkan lebih jauh ke f/22 untuk lebih banyak kedalaman bidang, atau apakah f/11 pilihan yang lebih baik?",
+          "hint": "Pertimbangkan apa yang terjadi pada ketajaman gambar pada apertur yang sangat kecil.",
+          "successMessage": "Sangat baik! Pada f/11, difraksi minimal di full frame, dan jarak hiperfocal pada 14mm sudah sangat pendek. Mengecilkan ke f/22 akan melunakkan gambar karena difraksi tanpa manfaat DoF yang berarti.",
+          "failureMessage": "Meskipun f/22 memberikan jarak hiperfocal yang lebih pendek di atas kertas, pelunakan difraksi pada f/22 di full frame sebenarnya mengurangi ketajaman gambar keseluruhan. Pada 14mm f/11, jarak hiperfocal sudah sangat pendek sehingga DoF ekstra tidak sepadan dengan penalti difraksi.",
+          "options": {
+            "0": { "label": "Kecilkan ke f/22 untuk kedalaman bidang maksimum" },
+            "1": { "label": "Tetap di f/11 — difraksi pada f/22 akan mengurangi ketajaman" }
+          }
+        }
+      }
+    }
+  }
+}

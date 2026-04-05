@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "focus-stacking-calculator": {
+      "settings": "การตั้งค่า",
+      "camera": "กล้อง & เลนส์",
+      "focalLength": "ทางยาวโฟกัส",
+      "aperture": "รูรับแสง",
+      "sensor": "เซ็นเซอร์",
+      "depthRange": "ช่วงความลึก",
+      "nearLimit": "ขีดจำกัดใกล้",
+      "farLimit": "ขีดจำกัดไกล",
+      "overlap": "การซ้อนทับ",
+      "overlapDescription": "เปอร์เซ็นต์การซ้อนทับ DoF ระหว่างช็อตข้างเคียงเพื่อให้แน่ใจว่ารวมกันได้ราบรื่น",
+      "results": "ผลลัพธ์",
+      "shotCount": "จำนวนช็อตที่ต้องการ",
+      "totalDepth": "ความลึกรวม",
+      "overlapMargin": "ส่วนต่างซ้อนทับ",
+      "perShotDoF": "DoF ต่อช็อต",
+      "focusStep": "ขั้นตอนโฟกัส",
+      "exportPlan": "ส่งออกแผน",
+      "exportCSV": "ส่งออกเป็น CSV",
+      "exportJSON": "ส่งออกเป็น JSON",
+      "diagram": "ไดอะแกรมโฟกัสสแตก",
+      "diagramNear": "ใกล้",
+      "diagramFar": "ไกล",
+      "diagramCoverage": "การครอบคลุม",
+      "diagramFocusPoints": "จุดโฟกัส",
+      "diagramShot": "ช็อต {number}",
+      "diagramOverlap": "เขตซ้อนทับ",
+      "diagramSharpZone": "เขตคม",
+      "diagramSubject": "ซับเจกต์",
+      "diagramSensor": "เซ็นเซอร์",
+      "infinity": "∞",
+      "distanceUnit": "m",
+      "warning": "คำเตือน",
+      "tooFewShots": "ช่วงความลึกอยู่ในช็อตเดียว — ไม่ต้องสแตก",
+      "tooManyShots": "แผนนี้ต้องใช้หลายช็อต พิจารณารูรับแสงที่แคบกว่าเพื่อลดจำนวน",
+      "macroMode": "มาโคร",
+      "landscapeMode": "ทิวทัศน์"
+    }
+  }
+}

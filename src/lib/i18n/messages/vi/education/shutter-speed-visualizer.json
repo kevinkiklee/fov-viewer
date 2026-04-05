@@ -1,0 +1,121 @@
+{
+  "education": {
+    "shutter-speed-visualizer": {
+      "beginner": "Hướng dẫn tốc độ màn trập giúp bạn tìm tốc độ màn trập chậm nhất có thể sử dụng mà vẫn có ảnh cầm tay sắc nét. Nếu tốc độ màn trập quá chậm, rung tay sẽ làm nhòe ảnh. Tốc độ an to��n tối thiểu phụ thuộc vào tiêu cự, liệu bạn có chống rung hay không, và tay bạn vững đến mức nào.",
+      "deeper": "Quy tắc \"nghịch đảo\" kinh điển nói rằng để có ảnh cầm tay sắc nét, tốc độ màn trập nên ít nhất 1/(tiêu cự) giây — ống 200mm cần ít nhất 1/200s. Trên máy cảm biến crop, bạn nên dùng tiêu cự tương đương (ví dụ: 200mm trên crop 1.5x = 1/300s). Chống rung trong thân máy (IBIS) và quang học (OIS) hiện đại có thể cho bạn thêm 3-7 stop cầm tay, nghĩa là ống 200mm có chống rung có thể nét ở 1/15s hoặc thậm chí chậm hơn. Tuy nhiên, chống rung chỉ bù rung máy, không phải chuyển động chủ thể. Người đi bộ về phía bạn ở 1/15s vẫn bị nhòe bất kể chống rung. Cho chủ thể di chuyển, bạn phải chọn tốc độ dựa trên vận tốc và khoảng cách chủ thể, không chỉ tiêu cự.",
+      "keyFactors": {
+        "0": {
+          "label": "Tiêu cự",
+          "description": "Tiêu cự dài hơn phóng đại rung máy. Quy tắc nghịch đảo (1/tiêu cự) là điểm xuất phát để xác định tốc độ màn trập tối thiểu."
+        },
+        "1": {
+          "label": "Chống rung",
+          "description": "OIS (trong ống kính) thường cung cấp 2-4 stop lợi ích. IBIS (trong thân máy) cung cấp 3-5 stop. OIS+IBIS kết hợp có thể đạt 5-7 stop trên một số hệ thống."
+        },
+        "2": {
+          "label": "Chuyển động chủ thể",
+          "description": "Chủ thể đứng yên chỉ cần đủ tốc độ chống rung máy. Chủ thể di chuyển cần tốc độ nhanh hơn bất kể chống rung: đi bộ (~1/125s), chạy bộ (~1/500s), xe cộ (~1/1000s+)."
+        },
+        "3": {
+          "label": "Kích thước cảm biến (Hệ số crop)",
+          "description": "Máy cảm biến crop nhân tiêu cự hiệu dụng cho quy tắc nghịch đảo. Ống 50mm trên crop 1.5x hoạt động như 75mm, nên bạn cần ít nhất 1/75s."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Tựa vào tường, khép khuỷu tay vào, và thở ra chậm trước khi nhấn nút chụp. Kỹ thuật tốt có thể cho bạn thêm 1-2 stop vững vàng ngoài quy tắc nghịch đảo."
+        },
+        "1": {
+          "text": "Khi chụp người, chuyển động chủ thể thường quyết định tốc độ tối thiểu, không phải tiêu cự. Ngay cả với ống góc rộng và chống rung, trẻ em chạy cần ít nhất 1/500s."
+        },
+        "2": {
+          "text": "Nếu bạn thường xuyên chụp thiếu sáng, hãy đầu tư thân máy có IBIS. Khả năng chụp cầm tay ở 1/2s với ống góc rộng mở ra những khả năng mà hiệu suất ISO cao không thể sánh được."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Tiêu cự",
+          "definition": "Tiêu cự ống kính tính bằng millimet. Ảnh hưởng trực tiếp tốc độ màn trập an toàn tối thiểu qua quy tắc nghịch đảo: 1/(tiêu cự) cho full-frame, điều chỉnh theo hệ số crop cho cảm biến nhỏ hơn."
+        },
+        "sensor": {
+          "term": "Kích thước cảm biến",
+          "definition": "Kích thước cảm biến máy ảnh, xác định hệ số crop. APS-C (1.5x) và Micro Four Thirds (2x) nhân tiêu cự hiệu dụng, đòi hỏi tốc độ màn trập nhanh hơn cho cùng ống kính."
+        },
+        "stabilization": {
+          "term": "Chống rung",
+          "definition": "Công nghệ bù rung máy. OIS (Chống rung quang học) trong ống kính, IBIS (Chống rung trong thân máy) trong máy ảnh. Chúng có thể kết hợp cho lợi ích tối đa."
+        },
+        "subjectMotion": {
+          "term": "Chuyển động chủ thể",
+          "definition": "Tốc độ chủ thể di chuyển. Chủ thể đứng yên chỉ cần đủ tốc độ chống rung máy. Chủ thể di chuyển cần tốc độ nhanh hơn dựa trên vận tốc và hướng so với máy ảnh."
+        },
+        "recommendedShutterSpeed": {
+          "term": "Tốc độ màn trập khuyến nghị",
+          "definition": "Tốc độ màn trập tối thiểu tính cho tổ hợp tiêu cự, chống rung, cảm biến và chuyển động chủ thể cụ thể. Chụp ở tốc độ này hoặc nhanh hơn nên cho kết quả sắc nét."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Bạn đang chụp với ống 100mm trên máy full-frame không có chống rung. Chủ thể đứng yên. Tốc độ màn trập khuyến nghị tối thiểu là bao nhiêu?",
+          "hint": "Quy tắc nghịch đảo: tốc độ tối thiểu = 1 / tiêu cự.",
+          "successMessage": "Chính xác! Quy tắc nghịch đảo cho 1/100s cho ống 100mm trên full frame. Đây là điểm xuất phát kinh điển cho ảnh cầm tay sắc nét.",
+          "failureMessage": "Cho ống 100mm trên full frame không chống rung, quy tắc nghịch đảo cho 1/100s là tốc độ an toàn tối thiểu cho chủ thể tĩnh.",
+          "options": {
+            "0": { "label": "1/50s" },
+            "1": { "label": "1/100s" },
+            "2": { "label": "1/200s" },
+            "3": { "label": "1/500s" }
+          }
+        },
+        "1": {
+          "scenario": "Bạn dùng ống 50mm trên máy APS-C (hệ số crop 1.5x) không chống rung. Tốc độ màn trập tối thiểu cho chủ thể tĩnh?",
+          "hint": "Nhân tiêu cự với hệ số crop trước khi áp dụng quy tắc nghịch đảo.",
+          "successMessage": "Đúng! 50mm x 1.5 = tương đương 75mm, nên bạn cần ít nhất 1/75s. Trong thực tế, làm tròn lên 1/80s là lựa chọn an toàn.",
+          "failureMessage": "Trên APS-C, hệ số crop (1.5x) nghĩa là ống 50mm hoạt động như 75mm. Quy tắc nghịch đảo cho 1/75s là tốc độ tối thiểu.",
+          "options": {
+            "0": { "label": "1/50s" },
+            "1": { "label": "1/75s (làm tròn lên 1/80s)" },
+            "2": { "label": "1/100s" },
+            "3": { "label": "1/125s" }
+          }
+        },
+        "2": {
+          "scenario": "Bạn có ống 200mm với OIS (4 stop chống rung) trên th��n máy full-frame có IBIS (5 stop). Cùng nhau chúng cung cấp khoảng 6 stop chống rung kết hợp. Cho chủ thể tĩnh, tốc độ màn trập tối thiểu xấp xỉ?",
+          "hint": "Bắt đầu từ quy tắc nghịch đảo (1/200s) rồi áp dụng 6 stop lợi ích chống rung.",
+          "successMessage": "Chính xác! Bắt đầu ở 1/200s và được 6 stop: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3s. Khoảng 1/3 giây cầm tay với ống 200mm — ấn tượng nhưng khả thi với chống rung hiện đại!",
+          "failureMessage": "Từ 1/200s, mỗi stop chống rung tăng gấp đôi thời gian sử dụng: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3s. Sáu stop chống rung với ống 200mm cho khoảng 1/3s.",
+          "options": {
+            "0": { "label": "1/30s" },
+            "1": { "label": "1/8s" },
+            "2": { "label": "~1/3s" },
+            "3": { "label": "1 giây" }
+          }
+        },
+        "3": {
+          "scenario": "Bạn đang chụp bạn bè chạy bộ trong công viên dùng ống 35mm trên máy full-frame có IBIS. IBIS cho 5 stop chống rung, nên quy tắc nghịch đảo sẽ cho phép bạn chụp ở khoảng 1 giây. Bạn có nên dùng 1 giây không?",
+          "hint": "Chống rung bù rung máy, không phải chuyển động chủ thể.",
+          "successMessage": "Chính xác! Chống rung chỉ bù rung máy. Người chạy bộ cần ít nhất 1/250s để đóng băng chuyển động, bất kể chống rung tốt đến đâu.",
+          "failureMessage": "Chống rung không thể đóng băng chủ thể đang di chuyển. Cho người chạy bộ, bạn cần ít nhất 1/250s để ngăn nhòe chuyển động, ngay cả khi máy ảnh có thể giữ vững ở 1 giây.",
+          "options": {
+            "0": { "label": "Có — IBIS xử lý mọi chuyển động" },
+            "1": { "label": "Không — dùng ít nhất 1/250s để đóng băng người chạy" },
+            "2": { "label": "Không — dùng 1/60s làm thỏa hiệp" },
+            "3": { "label": "Tùy thuộc cài đặt ISO" }
+          }
+        },
+        "4": {
+          "scenario": "Bạn muốn tạo ảnh panning của người đạp xe — người đi nên nét trong khi hậu cảnh có vệt nhòe. Bạn dùng ống 70mm trên full frame. Phạm vi tốc độ màn trập nào bạn nên thử?",
+          "hint": "Panning cố ý sử dụng tốc độ chậm trong khi theo dõi chủ thể. Quá nhanh đóng băng mọi thứ; quá chậm nhòe cả chủ thể.",
+          "successMessage": "Chính xác! Cho panning người đạp xe, 1/30s đến 1/60s là vùng ngọt. Đủ chậm để nhòe hậu cảnh thành vệt trong khi theo dõi giữ người đi tương đối nét. Cần luyện tập — chụp burst và chấp nhận nhiều ảnh bỏ.",
+          "failureMessage": "Panning đòi hỏi tốc độ đủ chậm để nhòe hậu cảnh nhưng đủ nhanh để theo dõi giữ chủ thể nét. Cho người đạp xe, 1/30s đến 1/60s là phạm vi điển hình.",
+          "options": {
+            "0": { "label": "1/1000s đến 1/2000s" },
+            "1": { "label": "1/250s đến 1/500s" },
+            "2": { "label": "1/30s đến 1/60s" },
+            "3": { "label": "1s đến 2s" }
+          }
+        }
+      }
+    }
+  }
+}

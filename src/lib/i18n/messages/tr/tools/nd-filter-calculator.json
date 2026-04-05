@@ -1,0 +1,12 @@
+{
+  "toolUI": {
+    "nd-filter-calculator": {
+      "baseShutterSpeed": "Temel Enstantane Hızı",
+      "ndFilter": "ND Filtre",
+      "resultingShutterSpeed": "Sonuç Enstantane Hızı",
+      "stopsAdded": "Eklenen Adımlar",
+      "quickReference": "Hızlı Referans",
+      "tableBase": "Temel"
+    }
+  }
+}

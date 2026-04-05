@@ -1,0 +1,51 @@
+{
+  "terms": {
+    "title": "Kullanım Koşulları",
+    "effectiveDate": "Yürürlük tarihi: 3 Nisan 2026",
+    "sections": {
+      "acceptance": {
+        "title": "Koşulların Kabulü",
+        "body": "www.phototools.io'ya (\"PhotoTools\" veya \"Site\") erişerek veya kullanarak bu Kullanım Koşullarına bağlı olmayı kabul edersiniz. Bu koşulları kabul etmiyorsanız, lütfen Siteyi kullanmayın. Bu koşullar PhotoTools'un tüm ziyaretçileri ve kullanıcıları için geçerlidir. Not: Bu Kullanım Koşullarının İngilizce sürümü bağlayıcıdır."
+      },
+      "descriptionOfService": {
+        "title": "Hizmet Tanımı",
+        "body": "PhotoTools, interaktif hesaplayıcılar, simülatörler ve referans materyalleri dahil olmak üzere ücretsiz eğitim amaçlı fotoğrafçılık araçları sunar. Site yalnızca bilgi ve eğitim amaçlıdır. Tüm araçlar kullanıcılara ücretsiz olarak sunulur ve fotoğrafçıların fotoğrafçılık kavramlarını öğrenmesine ve anlamasına yardımcı olmak için tasarlanmıştır."
+      },
+      "noWarranty": {
+        "title": "Garanti Yok",
+        "body": "PhotoTools, açık veya zımni herhangi bir garanti olmaksızın \"olduğu gibi\" sunulmaktadır. Bu sitedeki araçların, hesaplayıcıların veya bilgilerin doğru, eksiksiz veya herhangi bir amaca uygun olduğunu garanti etmiyoruz. Araçlarımızdan elde edilen sonuçlar yaklaşık değerlerdir ve kritik kararlar, profesyonel çalışmalar veya hassasiyet gerektiren durumlar için güvenilmemelidir. Önemli hesaplamaları her zaman yetkili profesyoneller veya güvenilir kaynaklarla doğrulayın."
+      },
+      "intellectualProperty": {
+        "title": "Fikri Mülkiyet",
+        "body": "PhotoTools üzerindeki tüm içerik — metin, grafikler, araç tasarımları, kod ve eğitim materyalleri dahil — aksi belirtilmediği sürece PhotoTools'un mülkiyetindedir. Araçları ve referans materyallerini kişisel ve eğitim amaçlı kullanabilirsiniz. Önceden yazılı izin alınmadan site içeriğinin çoğaltılması, yeniden dağıtılması veya ticari amaçla kullanılması yasaktır."
+      },
+      "acceptableUse": {
+        "title": "Kabul Edilebilir Kullanım",
+        "intro": "PhotoTools'u kullanırken aşağıdakileri yapmamayı kabul edersiniz:",
+        "items": {
+          "laws": "Yürürlükteki yerel, ulusal veya uluslararası yasa veya düzenlemeleri ihlal etmek",
+          "disrupt": "Sitenin çalışmasını, sunucularını veya ağlarını bozmak veya müdahale etmek",
+          "scrape": "Önceden yazılı izin almadan siteden veri kazımak, taramak veya sistematik olarak veri çıkarmak",
+          "misrepresent": "PhotoTools ile iletişimlerinizde kimliğinizi veya bağlantınızı yanlış beyan etmek",
+          "commercial": "İzin almadan kişisel referans dışında herhangi bir ticari amaç için siteyi kullanmak"
+        }
+      },
+      "thirdPartyContent": {
+        "title": "Üçüncü Taraf İçeriği",
+        "body": "PhotoTools üçüncü taraf reklamları gösterir ve harici web sitelerine bağlantılar içerebilir. Üçüncü taraf reklamverenlerinin veya bağlantı verilen sitelerin içeriğinden, doğruluğundan veya uygulamalarından sorumlu değiliz. Herhangi bir reklam veya harici bağlantının dahil edilmesi PhotoTools tarafından bir onay teşkil etmez. Üçüncü taraf hizmetleriyle etkileşimleriniz kendi koşulları ve gizlilik politikalarına tabidir."
+      },
+      "limitationOfLiability": {
+        "title": "Sorumluluk Sınırlaması",
+        "body": "Yasaların izin verdiği azami ölçüde, PhotoTools ve işletmecileri, Siteyi veya araçlarını kullanmanızdan — veya kullanamamanızdan — kaynaklanan doğrudan, dolaylı, arızi, özel veya sonuç olarak ortaya çıkan zararlardan sorumlu olmayacaktır. Bu, PhotoTools tarafından sağlanan bilgi veya hesaplamalara güvenilmesinden kaynaklanan zararları sınırlama olmaksızın içerir. Siteyi kullanımınız tamamen kendi sorumluluğunuzdadır."
+      },
+      "changesToTerms": {
+        "title": "Koşullardaki Değişiklikler",
+        "body": "Bu Kullanım Koşullarını istediğimiz zaman değiştirebiliriz. Güncellenmiş koşullar, revize edilmiş yürürlük tarihiyle birlikte bu sayfada yayınlanacaktır. Değişiklikler yayınlandıktan sonra PhotoTools'u kullanmaya devam etmeniz, revize edilmiş koşulları kabul ettiğiniz anlamına gelir. Bu koşulları düzenli olarak incelemenizi tavsiye ederiz."
+      },
+      "contact": {
+        "title": "İletişim",
+        "body": "Bu Kullanım Koşulları hakkında sorularınız varsa, lütfen <contactLink>iletişim sayfamız</contactLink> aracılığıyla bize ulaşın."
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "education": {
+    "hyperfocal-simulator": {
+      "beginner": "Odległość hiperfokalna to najbliższy punkt, na który możesz ustawić ostrość, utrzymując jednocześnie akceptowalną ostrość wszystkiego do nieskończoności. Gdy ustawisz ostrość na odległość hiperfokalną, głębia ostrości rozciąga się od połowy tej odległości aż do nieskończoności. Fotografowie krajobrazowi używają tej techniki, aby zmaksymalizować ostrość od pierwszego planu po horyzont.",
+      "deeper": "Odległość hiperfokalna jest wyprowadzana z równania cienkiej soczewki i koncepcji krążka rozproszenia (CoC). Równa się kwadratowi ogniskowej podzielonemu przez iloczyn numeru f i średnicy CoC: H = f² / (N × c). Wszystko od H/2 do nieskończoności mieści się w akceptowalnej ostrości. CoC zależy od rozmiaru matrycy — mniejsze matryce mają mniejszy akceptowalny CoC, co przesuwa odległość hiperfokalną dalej dla tej samej ogniskowej i przysłony. Dlatego aparaty z matrycą crop wydają się mieć większą głębię ostrości: standard CoC jest bardziej restrykcyjny względem powierzchni obrazu. W praktyce miękczenie dyfrakcyjne przy bardzo małych przysłonach (f/16 i więcej na większości matryc) oznacza kompromis między maksymalizacją głębi ostrości a utrzymaniem ostrości pikselowej.",
+      "keyFactors": {
+        "0": {
+          "label": "Ogniskowa",
+          "description": "Dłuższe ogniskowe dramatycznie zwiększają odległość hiperfokalną — rośnie z kwadratem ogniskowej."
+        },
+        "1": {
+          "label": "Przysłona",
+          "description": "Mniejsze przysłony (wyższe numery f) zmniejszają odległość hiperfokalną, rozszerzając głębię ostrości."
+        },
+        "2": {
+          "label": "Rozmiar matrycy",
+          "description": "Mniejsze matryce używają mniejszego krążka rozproszenia, co zwiększa odległość hiperfokalną przy ekwiwalentnym kadrowaniu."
+        },
+        "3": {
+          "label": "Krążek rozproszenia",
+          "description": "Maksymalna średnica plamki rozmycia uważana za «akceptowalnie ostrą» — zwykle 0,03 mm dla pełnej klatki."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Do szybkiej pracy krajobrazowej ustaw ostrość mniej więcej na jedną trzecią głębokości sceny — to przybliża punkt hiperfokalny dla większości zestawów szerokokątnych."
+        },
+        "1": {
+          "text": "Unikaj przymykania powyżej f/16 na pełnej klatce lub f/11 na APS-C. Dyfrakcja zniweluje zyski głębi ostrości, których szukasz."
+        },
+        "2": {
+          "text": "Używaj powiększenia live view, aby precyzyjnie ustawić ostrość na odległość hiperfokalną, zamiast polegać na skali odległości obiektywu, która jest często niedokładna w nowoczesnych obiektywach autofokusowych."
+        }
+      },
+      "tooltips": {
+        "Sensor": {
+          "term": "Matryca",
+          "definition": "Format matrycy aparatu. Mniejsze matryce mają bardziej restrykcyjny standard krążka rozproszenia, co przesuwa wszystkie odległości hiperfokalne dalej."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Fotografujesz krajobraz obiektywem 24 mm na pełnoklatkowym aparacie. Jaki format matrycy powinieneś wybrać, aby zobaczyć pełnoklatkowe odległości hiperfokalne?",
+          "hint": "Pełna klatka to standardowy rozmiar matrycy 35 mm.",
+          "successMessage": "Prawidłowo! Pełna Klatka to właściwy wybór dla standardowej matrycy 35 mm.",
+          "failureMessage": "Nie do końca — wybierz matrycę Pełna Klatka, aby dopasować do standardowego korpusu 35 mm.",
+          "options": {
+            "0": { "label": "Pełna Klatka" },
+            "1": { "label": "APS-C (Nikon/Sony)" },
+            "2": { "label": "Micro Four Thirds" }
+          }
+        },
+        "1": {
+          "scenario": "Patrząc na tabelę dla pełnej klatki, co ma krótszą odległość hiperfokalną: 24 mm przy f/8 czy 50 mm przy f/8?",
+          "hint": "Odległość hiperfokalna rośnie z kwadratem ogniskowej.",
+          "successMessage": "Zgadza się! Obiektyw 24 mm ma znacznie krótszą odległość hiperfokalną, ponieważ ogniskowa ma kwadratową zależność.",
+          "failureMessage": "Właściwie krótsze ogniskowe zawsze dają krótsze odległości hiperfokalne. Tutaj wygrywa 24 mm.",
+          "options": {
+            "0": { "label": "24 mm przy f/8" },
+            "1": { "label": "50 mm przy f/8" }
+          }
+        },
+        "2": {
+          "scenario": "Wędrówka z aparatem APS-C i obiektywem 35 mm. Chcesz, aby wszystko od około 3 metrów do nieskończoności było ostre. Jaki zakres przysłon powinieneś sprawdzić w tabeli, aby znaleźć odległość hiperfokalną bliską 6 metrom (tak aby jej połowa — 3 m — była Twoją bliską granicą ostrości)?",
+          "hint": "Pamiętaj: bliska granica = hiperfokalna / 2. Szukaj przysłony, która daje hiperfokalną około 6 m.",
+          "successMessage": "Świetne myślenie! Prawidłowo zidentyfikowałeś, że potrzebujesz odległości hiperfokalnej około 6 m i znalazłeś właściwy zakres przysłon.",
+          "failureMessage": "Pamiętaj, bliska granica ostrości równa się połowie odległości hiperfokalnej. Potrzebujesz hiperfokalnej około 6 m, aby uzyskać bliską granicę 3 m.",
+          "options": {
+            "0": { "label": "f/2.8 — f/4" },
+            "1": { "label": "f/5.6 — f/8" },
+            "2": { "label": "f/16 — f/22" }
+          }
+        },
+        "3": {
+          "scenario": "Przyjaciel przechodzi z pełnoklatkowego aparatu na Micro Four Thirds, ale fotografuje tymi samymi ogniskowymi. Narzeka, że odległości hiperfokalne wydają się inne. Dlaczego?",
+          "hint": "Krążek rozproszenia jest obliczany na podstawie rozmiaru matrycy.",
+          "successMessage": "Dokładnie! Mniejsza matryca M43 używa mniejszego CoC (około 0,015 mm vs 0,03 mm), co zwiększa odległości hiperfokalne dla tej samej ogniskowej i przysłony.",
+          "failureMessage": "Kluczowym czynnikiem jest krążek rozproszenia. Mniejsze matryce wymagają bardziej restrykcyjnego standardu CoC, co przesuwa odległości hiperfokalne dalej.",
+          "options": {
+            "0": { "label": "Ogniskowa obiektywu zmienia się na matrycach crop" },
+            "1": { "label": "Mniejsze matryce używają mniejszego krążka rozproszenia" },
+            "2": { "label": "Aparaty Micro Four Thirds mają mniej dokładny autofokus" }
+          }
+        },
+        "4": {
+          "scenario": "Fotografujesz architekturę przy 14 mm f/11 na pełnej klatce. Tabela pokazuje bardzo krótką odległość hiperfokalną. Czy powinieneś przymknąć dalej do f/22 dla jeszcze większej głębi ostrości, czy f/11 to lepszy wybór?",
+          "hint": "Zastanów się, co dzieje się z ostrością obrazu przy bardzo małych przysłonach.",
+          "successMessage": "Doskonale! Przy f/11 dyfrakcja jest minimalna na pełnej klatce, a odległość hiperfokalna przy 14 mm jest już bardzo krótka. Przymknięcie do f/22 zmiękcza obraz z powodu dyfrakcji bez znaczącej korzyści w GoO.",
+          "failureMessage": "Chociaż f/22 daje krótszą odległość hiperfokalną na papierze, miękczenie dyfrakcyjne przy f/22 na pełnej klatce faktycznie zmniejsza ogólną ostrość obrazu. Przy 14 mm f/11 odległość hiperfokalna jest już tak krótka, że dodatkowa GoO nie jest warta kary dyfrakcyjnej.",
+          "options": {
+            "0": { "label": "Przymknij do f/22 dla maksymalnej głębi ostrości" },
+            "1": { "label": "Zostań przy f/11 — dyfrakcja przy f/22 zmniejszy ostrość" }
+          }
+        }
+      }
+    }
+  }
+}

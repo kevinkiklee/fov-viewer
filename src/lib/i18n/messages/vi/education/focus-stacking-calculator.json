@@ -1,0 +1,113 @@
+{
+  "education": {
+    "focus-stacking-calculator": {
+      "beginner": "Chồng lấy nét là kỹ thuật chụp nhiều ảnh ở các khoảng cách lấy nét khác nhau và ghép chúng trong phần mềm để tạo ra ảnh có độ nét từ trước ra sau. Đây là kỹ thuật thiết yếu cho nhiếp ảnh macro, nơi chiều sâu trường ảnh mỏng như dao cạo, và hữu ích trong nhiếp ảnh phong cảnh khi bạn cần cả tiền cảnh gần và hậu cảnh xa đều nét.",
+      "deeper": {
+        "0": {
+          "heading": "Tại sao cần chồng lấy nét",
+          "text": "Ở độ phóng đại macro, ngay cả f/16 cũng chỉ cho vài millimet chiều sâu trường ảnh. Thu hẹp khẩu độ hơn nữa gây ra nhiễu xạ làm giảm chất lượng ảnh. Chồng lấy nét cho phép bạn chụp ở khẩu độ sắc nét nhất của ống kính (thường f/5.6-f/8) và kết hợp các lớp nét. Mỗi khung hình dịch chuyển tiêu điểm về phía trước một chút, bao phủ lớp mới của chủ thể."
+        },
+        "1": {
+          "heading": "Lên kế hoạch chồng",
+          "text": "Chìa khóa thành công là đảm bảo chiều sâu trường ảnh của mỗi ảnh chồng lấp ảnh kế tiếp 20-30%. Chồng lấp quá ít tạo ra khoảng trống không nét; quá nhiều lãng phí khung hình. Máy tính xác định DoF mỗi ảnh bằng công thức vòng tròn nhòe, trừ đi biên chồng lấp, và chia tổng phạm vi chiều sâu cho bước hiệu dụng để tính số ảnh."
+        },
+        "2": {
+          "heading": "Ghép & Căn chỉnh",
+          "text": "Phần mềm như Photoshop, Helicon Focus hoặc Zerene Stacker căn chỉnh các khung hình (xảy ra dịch chuyển phóng đại nhẹ khi thay đổi nét), sau đó chọn các pixel sắc nét nhất từ mỗi lớp. Chụp trên chân máy chắc chắn với ánh sáng nhất quán và sử dụng ray lấy nét cho bước tăng chính xác cho kết quả sạch nhất."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Khẩu độ",
+          "description": "Xác định chiều sâu trường ảnh mỗi ảnh. Khẩu độ vừa phải (f/5.6-f/8) cân bằng độ nét và DoF mỗi khung. Tránh khẩu độ rất nhỏ — nhiễu xạ giảm độ nét bạn đang chồng."
+        },
+        "1": {
+          "label": "Phạm vi chiều sâu",
+          "description": "Khoảng cách từ điểm gần nhất đến xa nhất bạn muốn nét. Phạm vi rộng hơn cần nhiều ảnh hơn. Trong macro có thể chỉ vài centimet; phong cảnh có thể từ mét đến vô cực."
+        },
+        "2": {
+          "label": "Chồng lấp",
+          "description": "Phần trăm DoF mỗi ảnh chồng lấp với ảnh liền kề. 20-30% là tiêu chuẩn. Ít hơn có nguy cơ trống; nhiều hơn lãng phí khung hình."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Sử dụng ray lấy nét thay vì vòng lấy nét ống kính cho chồng macro. Ray di chuyển toàn bộ máy ảnh về phía trước theo bước chính xác, tránh thay đổi phóng đại nhẹ xảy ra khi lấy nét lại ống kính."
+        },
+        "1": {
+          "text": "Giữ khẩu độ ở điểm ngọt của ống kính (thường f/5.6-f/8). Mục đích của chồng là tránh thu hẹp xuống f/16+, nên sử dụng khẩu độ sắc nét nhất và để chồng xử lý chiều sâu."
+        },
+        "2": {
+          "text": "Cho chồng phong cảnh, chụp từ trước ra sau: lấy nét vào phần tử gần nhất trước, sau đó bước lấy nét về phía vô cực. Điều này giúp căn chỉnh dễ hơn vì tiền cảnh (có nhiều thị sai nhất) được chụp trước."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Tiêu cự",
+          "definition": "Tiêu cự ống kính tính bằng millimet. Tiêu cự dài hơn giảm DoF mỗi ảnh, đòi hỏi nhiều khung hình hơn để bao phủ cùng phạm vi chiều sâu."
+        },
+        "aperture": {
+          "term": "Khẩu độ",
+          "definition": "Lỗ mở ống kính (số f). Cho chồng, sử dụng khẩu độ sắc nét nhất của ống kính thay vì thu hẹp — chồng cung cấp chiều sâu."
+        },
+        "sensor": {
+          "term": "Kích thước cảm biến",
+          "definition": "Cảm biến lớn hơn có DoF nông hơn m���i ảnh ở khung hình tương đương, có thể tăng số khung hình chồng cần thiết."
+        },
+        "nearLimit": {
+          "term": "Giới hạn gần",
+          "definition": "Điểm gần nhất trong cảnh bạn muốn nét. Đây là nơi ảnh đầu tiên trong chồng sẽ được lấy nét."
+        },
+        "farLimit": {
+          "term": "Giới hạn xa",
+          "definition": "Điểm xa nhất trong cảnh bạn muốn nét. Ảnh cuối cùng trong chồng sẽ bao phủ khoảng cách này."
+        },
+        "overlap": {
+          "term": "Chồng lấp",
+          "definition": "Phần trăm chồng lấp chiều sâu trường ảnh giữa các ảnh liên tiếp. 20-30% đảm bảo không có khoảng trống sau căn chỉnh và ghép phần mềm."
+        },
+        "shotCount": {
+          "term": "Số ảnh",
+          "definition": "Tổng số khung hình cần để bao phủ phạm vi chiều sâu với chồng lấp đã chỉ định. Nhiều ảnh hơn = nhiều xử lý hơn nhưng kết quả mượt hơn."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Bạn đang chụp bông hoa nhỏ dày 3cm từ cánh trước đến cuống sau. Ống macro ở f/8 cho khoảng 4mm DoF mỗi ảnh. Bạn cần khoảng bao nhiêu khung hình với chồng lấp 25%?",
+          "hint": "Mỗi ảnh bao phủ 4mm, nhưng chồng lấp 25% nghĩa là bước hiệu dụng là 3mm mỗi khung. Chia 30mm cho 3mm.",
+          "successMessage": "Chính xác! Với 4mm DoF và chồng lấp 25%, mỗi bước tiến 3mm. 30mm / 3mm = 10 ảnh để bao phủ toàn bộ bông hoa.",
+          "failureMessage": "Với chồng lấp 25%, bước hiệu dụng mỗi khung là 75% DoF: 4mm × 0.75 = 3mm. Bạn cần 30mm / 3mm = 10 ảnh.",
+          "options": {
+            "0": { "label": "5 ảnh" },
+            "1": { "label": "10 ảnh" },
+            "2": { "label": "20 ảnh" },
+            "3": { "label": "30 ảnh" }
+          }
+        },
+        "1": {
+          "scenario": "Bạn muốn kết quả sắc nét nhất có thể từ chồng lấy nét. Bạn nên chụp mỗi khung ở f/2.8, f/8, hay f/22?",
+          "hint": "Xem xét khẩu độ sắc nét nhất của ống kính và cách nhiễu xạ ảnh hưởng ở khẩu độ nhỏ.",
+          "successMessage": "Đúng! f/8 thường là khẩu độ sắc nét nhất cho hầu hết ống kính. f/2.8 có DoF quá mỏng mỗi ảnh (lãng phí khung hình) và f/22 bị nhiễu xạ làm mềm.",
+          "failureMessage": "f/8 là lựa chọn tốt nhất. f/2.8 cho DoF mỗi ảnh rất mỏng (cần nhiều khung hơn), và f/22 gây nhiễu xạ làm mềm phản tác dụng mục đích chồng để đạt nét.",
+          "options": {
+            "0": { "label": "f/2.8 — rộng nhất cho tốc độ nhanh nhất" },
+            "1": { "label": "f/8 — điểm ngọt ống kính" },
+            "2": { "label": "f/22 — DoF tối đa mỗi ảnh" }
+          }
+        },
+        "2": {
+          "scenario": "Sau khi ghép chồng lấy nét, bạn thấy một dải mềm ngang qua giữa ảnh nơi không có gì nét. Nguyên nhân có khả năng nhất là gì?",
+          "hint": "Hãy nghĩ về điều gì kết nối vùng nét của một khung với khung kế tiếp.",
+          "successMessage": "Chính xác! Chồng lấp không đủ giữa các khung liền kề tạo ra khoảng trống nơi không ảnh nào nét. Tăng chồng lấp lên 25-30% và chụp lại.",
+          "failureMessage": "Dải mềm thường nghĩa là khoảng cách giữa các bước lấy nét quá lớn — DoF của các khung liền kề không chồng lấp đủ. Tăng phần trăm chồng lấp.",
+          "options": {
+            "0": { "label": "Khẩu độ quá rộng" },
+            "1": { "label": "Chồng lấp không đủ giữa các bước lấy nét" },
+            "2": { "label": "Chân máy bị dịch chuyển trong quá trình chụp" },
+            "3": { "label": "ISO quá cao" }
+          }
+        }
+      }
+    }
+  }
+}

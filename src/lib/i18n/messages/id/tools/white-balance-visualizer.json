@@ -1,0 +1,16 @@
+{
+  "toolUI": {
+    "white-balance-visualizer": {
+      "colorTemperature": "Suhu Warna:",
+      "warm": "Hangat",
+      "neutral": "Netral",
+      "cool": "Dingin",
+      "presets": "Preset",
+      "red": "Merah",
+      "green": "Hijau",
+      "blue": "Biru",
+      "hex": "Hex",
+      "loadingScene": "Memuat adegan..."
+    }
+  }
+}

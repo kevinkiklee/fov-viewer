@@ -1,0 +1,169 @@
+{
+  "education": {
+    "dof-simulator": {
+      "beginner": "Chiều sâu trường ảnh (DoF) là vùng khoảng cách trong ảnh xuất hiện sắc nét chấp nhận được. DoF nông làm mờ hậu cảnh sau chủ thể, trong khi DoF sâu giữ mọi thứ từ tiền cảnh đến chân trời đều nét. Kiểm soát DoF là một trong những công cụ sáng tạo mạnh mẽ nhất trong nhiếp ảnh.",
+      "deeper": {
+        "0": {
+          "heading": "Cách DoF hoạt động",
+          "text": "Chiều sâu trường ảnh được chi phối bởi vòng tròn nhòe (CoC) — vết nhòe lớn nhất trên cảm biến vẫn trông sắc nét đối với mắt người. Ba yếu tố vật lý xác định DoF: tiêu cự, khẩu độ và khoảng cách đến chủ thể. Khẩu độ rộng hơn (số f thấp hơn) tạo DoF nông hơn vì ống kính hội tụ ánh sáng ở các góc dốc hơn, khiến các điểm ngoài vùng nét lan rộng thành các vòng tròn lớn hơn trên cảm biến."
+        },
+        "1": {
+          "heading": "Tiêu cự & Khoảng cách",
+          "text": "Tiêu cự dài hơn phóng đại hình ảnh, đồng thời phóng đại các vòng tròn nhòe, thu hẹp DoF. Di chuyển gần chủ thể hơn giảm DoF vì cùng lý do — sự khác biệt tương đối về khoảng cách giữa chủ thể và hậu cảnh trở nên lớn hơn. Khoảng cách siêu tiêu cự là khoảng cách lấy nét mà tại đó DoF mở rộng từ nửa khoảng cách đó đến vô cực, tối đa hóa độ nét trên toàn bộ cảnh."
+        },
+        "2": {
+          "heading": "Bokeh & Nhiễu xạ",
+          "text": "Bokeh là chất lượng của các vùng ngoài vùng nét. Số lượng và hình dạng cánh khẩu ảnh hưởng đến tính chất bokeh — càng nhiều cánh tròn tạo ra các điểm sáng mượt mà, tròn hơn. Ở các khẩu độ rất nhỏ (f/16+), nhiễu xạ khiến ánh sáng lan rộng khi đi qua rìa khẩu độ, làm mềm toàn bộ ảnh ngay cả trong vùng DoF. Luôn có một điểm ngọt — thường khoảng f/5.6-f/8 trên full-frame — nơi độ nét và chiều sâu trường ảnh được cân bằng tối ưu."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Khẩu độ",
+          "description": "Khẩu độ rộng (f/1.4-f/2.8) tạo DoF nông với bokeh mịn. Khẩu độ hẹp (f/8-f/16) tăng độ nét xuyên suốt cảnh."
+        },
+        "1": {
+          "label": "Tiêu cự",
+          "description": "Ống kính dài hơn nén phối cảnh và thu hẹp DoF ở cùng khẩu độ và khung hình. Ống kính 200mm ở f/4 có DoF ít hơn nhiều so với ống 35mm ở f/4."
+        },
+        "2": {
+          "label": "Khoảng cách chủ thể",
+          "description": "Bạn lấy nét càng gần, DoF càng nông. Nhiếp ảnh gia macro thường làm việc với DoF đo bằng millimet."
+        },
+        "3": {
+          "label": "Kích thước cảm biến",
+          "description": "Cảm biến lớn hơn đòi hỏi tiêu cự dài hơn cho cùng khung hình, gián tiếp thu hẹp DoF. Máy ảnh full-frame tạo DoF nông hơn máy Micro Four Thirds ở khung hình tương đương."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Cho ảnh chân dung nhóm, dùng f/5.6 hoặc hẹp hơn và để mọi người đứng trên cùng mặt phẳng lấy nét. Chỉ một người lệch nửa bước về phía trước cũng có thể bị mất nét ở khẩu độ rộng."
+        },
+        "1": {
+          "text": "Khi chụp phong cảnh, lấy nét ở khoảng cách siêu tiêu cự thay vì ở vô cực. Điều này tối đa hóa vùng nét từ tiền cảnh gần đến hậu cảnh xa."
+        },
+        "2": {
+          "text": "Nếu bạn muốn xóa phông tối đa cho chân dung, tăng tiêu cự và tiến gần chủ thể nhất có thể trong khuôn hình — cả hai thay đổi cộng dồn để giảm DoF đáng kể."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Tiêu cự",
+          "definition": "Khoảng cách tính bằng millimet từ tâm quang học của ống kính đến cảm biến khi lấy nét ở vô cực. Tiêu cự dài hơn phóng đại hình ảnh và thu hẹp chiều sâu trường ảnh."
+        },
+        "aperture": {
+          "term": "Khẩu độ",
+          "definition": "Kích thước lỗ mở ống kính, biểu thị bằng số f (ví dụ: f/2.8). Số f thấp hơn nghĩa là lỗ mở rộng hơn, cho nhiều ánh sáng hơn và chiều sâu trường ảnh nông hơn."
+        },
+        "subjectDistance": {
+          "term": "Khoảng cách chủ thể",
+          "definition": "Khoảng cách từ cảm biến máy ảnh đến điểm lấy nét. Khoảng cách lấy nét gần hơn cho chiều sâu trường ảnh nông hơn."
+        },
+        "sensor": {
+          "term": "Kích thước cảm biến",
+          "definition": "Kích thước vật lý của cảm biến máy ảnh. Cảm biến lớn hơn (full-frame, medium format) tạo chiều sâu trường ảnh nông hơn ở khung hình tương đương so với cảm biến nhỏ hơn (APS-C, Micro Four Thirds)."
+        },
+        "orientation": {
+          "term": "Hướng",
+          "definition": "Chuyển đổi giữa hướng ngang (landscape) và dọc (portrait). Điều này ảnh hưởng đến tham chiếu khung hình cho tính toán khoảng cách chủ thể."
+        },
+        "nearFocus": {
+          "term": "Giới hạn nét gần",
+          "definition": "Khoảng cách gần nhất từ máy ảnh vẫn xuất hiện sắc nét chấp nhận được. Mọi thứ gần hơn sẽ bị mờ."
+        },
+        "farFocus": {
+          "term": "Giới hạn nét xa",
+          "definition": "Khoảng cách xa nhất từ máy ảnh vẫn xuất hiện sắc nét chấp nhận được. Khi đạt đến vô cực, mọi thứ ngoài giới hạn gần đều nét."
+        },
+        "totalDoF": {
+          "term": "Tổng chiều sâu trường ảnh",
+          "definition": "Toàn bộ khoảng cách giữa giới hạn nét gần và xa — toàn bộ vùng xuất hiện sắc nét trong ảnh."
+        },
+        "hyperfocal": {
+          "term": "Khoảng cách siêu tiêu cự",
+          "definition": "Khoảng cách lấy nét tối đa hóa chiều sâu trường ảnh. Khi bạn lấy nét ở khoảng cách này, mọi thứ từ nửa khoảng cách siêu tiêu cự đến vô cực đều sắc nét."
+        },
+        "backgroundBlur": {
+          "term": "Mờ hậu cảnh",
+          "definition": "Thước đo mức độ mờ của hậu cảnh phía sau chủ thể. Giá trị cao hơn nghĩa là mờ mạnh hơn và chủ thể được tách biệt hơn."
+        },
+        "coc": {
+          "term": "Vòng tròn nhòe",
+          "definition": "Đường kính tối đa của vết nhòe trên cảm biến vẫn xuất hiện như một điểm đối với mắt người. Xác định ranh giới độ nét chấp nhận được cho tính toán chiều sâu trường ảnh."
+        },
+        "isolationScore": {
+          "term": "Điểm tách biệt",
+          "definition": "Đánh giá tổng hợp (0-100) cho biết mức độ chủ thể được tách biệt khỏi hậu cảnh, dựa trên mức mờ hậu cảnh so với kích thước chủ thể."
+        },
+        "bokehShape": {
+          "term": "Hình dạng bokeh",
+          "definition": "Hình dạng của các điểm sáng ngoài vùng nét, được xác định bởi số lượng và độ cong của cánh khẩu. Càng nhiều cánh tạo ra bokeh tròn, mượt hơn."
+        },
+        "diffractionWarning": {
+          "term": "Nhiễu xạ",
+          "definition": "Ở các khẩu độ rất nhỏ, ánh sáng bị uốn cong quanh rìa khẩu độ, làm mềm ảnh. Trên cảm biến full-frame, điều này thường trở nên đáng chú ý sau f/16."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Bạn đang chụp chân dung và muốn hậu cảnh mờ đẹp. Bạn nên chọn khẩu độ nào?",
+          "hint": "Số f thấp hơn nghĩa là lỗ mở ống kính rộng hơn và nhiều mờ hậu cảnh hơn.",
+          "successMessage": "Chính xác! Khẩu độ rộng như f/1.8 hoặc f/2.8 tạo chiều sâu trường ảnh nông, tách chủ thể khỏi hậu cảnh với bokeh đẹp.",
+          "failureMessage": "Chưa đúng. Khẩu độ hẹp như f/11 hoặc f/16 giữ nhiều phần cảnh trong vùng nét hơn. Để có mờ hậu cảnh, chọn khẩu độ rộng (số f thấp).",
+          "options": {
+            "0": { "label": "f/1.8" },
+            "1": { "label": "f/5.6" },
+            "2": { "label": "f/11" },
+            "3": { "label": "f/16" }
+          }
+        },
+        "1": {
+          "scenario": "Bạn đang chụp nhóm 8 người xếp thành hai hàng tại đám cưới. Khẩu độ nào giúp đảm bảo mọi người đều nét?",
+          "hint": "Với mọi người ở khoảng cách hơi khác nhau, bạn cần đủ chiều sâu trường ảnh để bao phủ cả hai hàng.",
+          "successMessage": "Lựa chọn tuyệt vời! f/5.6 cung cấp đủ chiều sâu trường ảnh để giữ cả hai hàng nét trong khi vẫn duy trì tốc độ màn trập khá nhanh trong nhà.",
+          "failureMessage": "Khẩu độ đó có thể để hàng sau mất nét hoặc hẹp không cần thiết. Cho hai hàng người, f/5.6 là điểm xuất phát đáng tin cậy.",
+          "options": {
+            "0": { "label": "f/1.4" },
+            "1": { "label": "f/2.8" },
+            "2": { "label": "f/5.6" },
+            "3": { "label": "f/22" }
+          }
+        },
+        "2": {
+          "scenario": "Bạn đang chụp phong cảnh với hoa dại cách 2 mét và núi ở hậu cảnh. Bạn dùng ống kính 24mm trên máy ảnh full-frame. Kỹ thuật nào sẽ tối đa hóa độ nét từ trước ra sau?",
+          "hint": "Có một khoảng cách cụ thể bạn có thể lấy nét để tối đa hóa vùng nét từ tiền cảnh đến vô cực.",
+          "successMessage": "Chính xác! Lấy nét ở khoảng cách siêu tiêu cự ở f/11 đảm bảo mọi thứ từ khoảng 1 mét đến vô cực đều nét chấp nhận được — hoàn hảo cho cảnh này.",
+          "failureMessage": "Lấy nét ở vô cực sẽ để hoa tiền cảnh bị mềm. Sử dụng khoảng cách siêu tiêu cự để mở rộng độ nét từ tiền cảnh gần qua đến vô cực.",
+          "options": {
+            "0": { "label": "Lấy nét vào hoa (2m)" },
+            "1": { "label": "Lấy nét vào núi (vô cực)" },
+            "2": { "label": "Lấy nét ở khoảng cách siêu tiêu cự" },
+            "3": { "label": "Lấy nét giữa hoa và núi" }
+          }
+        },
+        "3": {
+          "scenario": "Bạn đang chụp macro hoa và nhận thấy chỉ cánh hoa trước nét. Phần còn lại nhòe dần. Bạn đang ở f/5.6. Bạn nên làm gì để có nhiều phần hoa trong vùng nét hơn?",
+          "hint": "Ở khoảng cách lấy nét gần, DoF trở nên cực kỳ mỏng. Hãy xem xét khẩu độ.",
+          "successMessage": "Đúng! Thu hẹp khẩu độ xuống f/11 hoặc f/16 tăng DoF cực mỏng trong chụp macro. Chỉ cần cẩn thận với nhiễu xạ làm mềm ở các khẩu độ rất nhỏ.",
+          "failureMessage": "Mở khẩu độ rộng hơn sẽ làm DoF mỏng hơn nữa. Trong nhiếp ảnh macro, thu hẹp khẩu độ (số f cao hơn) là cách chính để có thêm chiều sâu.",
+          "options": {
+            "0": { "label": "Mở ra f/2.8 để có nhiều ánh sáng hơn" },
+            "1": { "label": "Thu hẹp xuống f/11" },
+            "2": { "label": "Chuyển sang ống kính rộng hơn" },
+            "3": { "label": "Di chuyển xa hoa hơn" }
+          }
+        },
+        "4": {
+          "scenario": "Bạn đang so sánh hai máy ảnh cho chụp chân dung: máy full-frame với ống kính 85mm f/1.8 và máy Micro Four Thirds với ống 42.5mm f/1.8. Cả hai tạo khung hình tương đương. Máy nào tạo chiều sâu trường ảnh nông hơn?",
+          "hint": "Hãy nghĩ về tiêu cự tương đương và cách kích thước cảm biến ảnh hưởng đến tính toán DoF ở cùng số f.",
+          "successMessage": "Chính xác! Máy ảnh full-frame tạo DoF nông hơn khoảng 2 stop. Mặc dù ống kính MFT có cùng số f, tiêu cự thực tế ngắn hơn (42.5mm so với 85mm) tạo ra chiều sâu trường ảnh sâu hơn ở khung hình tương đương.",
+          "failureMessage": "Mặc dù cả hai ống kính đều f/1.8, máy ảnh full-frame sử dụng tiêu cự thực tế dài hơn cho cùng khung hình, tạo DoF nông hơn đáng kể.",
+          "options": {
+            "0": { "label": "Full-frame với 85mm f/1.8" },
+            "1": { "label": "Micro Four Thirds với 42.5mm f/1.8" },
+            "2": { "label": "Cả hai tạo DoF giống hệt" }
+          }
+        }
+      }
+    }
+  }
+}

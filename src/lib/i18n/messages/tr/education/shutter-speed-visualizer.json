@@ -1,0 +1,121 @@
+{
+  "education": {
+    "shutter-speed-visualizer": {
+      "beginner": "Enstantane hızı kılavuzu, elde net bir fotoğraf çekerken kullanabileceğiniz en yavaş enstantane hızını bulmanıza yardımcı olur. Enstantane hızınız çok yavaşsa, ellerinizden kaynaklanan kamera sarsıntısı görüntüyü bulanıklaştırır. Minimum güvenli hız, odak uzaklığınıza, görüntü sabitlemenizin olup olmadığına ve ellerinizin ne kadar sabit olduğuna bağlıdır.",
+      "deeper": "Klasik \"karşılıklılık kuralı\", elde net fotoğraflar için enstantane hızınızın en az 1/(odak uzaklığı) saniye olması gerektiğini belirtir — yani 200mm'lik bir objektif en az 1/200s gerektirir. Kırpma sensörlü kameralarda eşdeğer odak uzaklığını kullanmalısınız (ör. 1,5x kırpma ile 200mm = 1/300s). Modern gövde içi sabitleme (IBIS) ve optik sabitleme (OIS) 3-7 ekstra adım elde çekim payı sağlayabilir, yani sabitlemiş 200mm objektif 1/15s veya daha yavaş hızlarda bile net olabilir. Ancak sabitleme yalnızca kamera sarsıntısını telafi eder, konu hareketini değil. 1/15s'de size doğru yürüyen bir kişi, sabitleme ne olursa olsun bulanık olacaktır. Hareketli konular için odak uzaklığına değil, konunun hızı ve mesafesine göre enstantane hızı seçmelisiniz.",
+      "keyFactors": {
+        "0": {
+          "label": "Odak Uzaklığı",
+          "description": "Daha uzun odak uzaklıkları kamera sarsıntısını büyütür. Karşılıklılık kuralı (1/odak uzaklığı) minimum enstantane hızını belirlemek için başlangıç noktasıdır."
+        },
+        "1": {
+          "label": "Görüntü Sabitleme",
+          "description": "OIS (objektif tabanlı) genellikle 2-4 adım fayda sağlar. IBIS (gövde tabanlı) 3-5 adım sağlar. Birleşik OIS+IBIS bazı sistemlerde 5-7 adım elde edebilir."
+        },
+        "2": {
+          "label": "Konu Hareketi",
+          "description": "Hareketsiz konular yalnızca kamera sarsıntısını karşılamaya yetecek hız gerektirir. Hareketli konular sabitleme ne olursa olsun daha hızlı hızlara ihtiyaç duyar: yürüyüş (~1/125s), koşu (~1/500s), araçlar (~1/1000s+)."
+        },
+        "3": {
+          "label": "Sensör Boyutu (Kırpma Faktörü)",
+          "description": "Kırpma sensörlü kameralar karşılıklılık kuralı için odak uzaklığını etkili olarak çarpar. 1,5x kırpma ile 50mm'lik bir objektif 75mm gibi davranır, yani en az 1/75s'ye ihtiyacınız var."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Bir duvara yaslanın, dirseklerinizi içe toplayın ve deklanşöre basmadan önce yavaşça nefes verin. İyi teknik karşılıklılık kuralının ötesinde 1-2 ekstra adım sağlamlık verebilir."
+        },
+        "1": {
+          "text": "İnsan çekerken genellikle minimum hızınızı odak uzaklığınız değil, konunun hareketi belirler. Geniş açı objektif ve sabitleme olsa bile koşan bir çocuk en az 1/500s gerektirir."
+        },
+        "2": {
+          "text": "Sürekli düşük ışıkta çekim yapıyorsanız, IBIS'li bir kamera gövdesine yatırım yapın. Geniş açı objektifle 1/2s'de elde çekim yapabilme yeteneği, hiçbir yüksek ISO performansının eşleyemeyeceği olasılıklar açar."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Odak Uzaklığı",
+          "definition": "Milimetre cinsinden objektif odak uzaklığı. Karşılıklılık kuralı aracılığıyla minimum güvenli enstantane hızını doğrudan etkiler: tam kare için 1/(odak uzaklığı), daha küçük sensörler için kırpma faktörüyle ayarlanır."
+        },
+        "sensor": {
+          "term": "Sensör Boyutu",
+          "definition": "Kırpma faktörünü belirleyen kamera sensör boyutu. APS-C (1,5x) ve Mikro Dört Üçlü (2x) etkili odak uzaklığını çarpar ve aynı objektif için daha hızlı enstantane hızları gerektirir."
+        },
+        "stabilization": {
+          "term": "Görüntü Sabitleme",
+          "definition": "Kamera sarsıntısını telafi eden teknoloji. OIS (Optik Görüntü Sabitleme) objektiftedir, IBIS (Gövde İçi Görüntü Sabitleme) kamera gövdesindedir. Maksimum fayda için birlikte çalışabilirler."
+        },
+        "subjectMotion": {
+          "term": "Konu Hareketi",
+          "definition": "Konunuzun ne kadar hızlı hareket ettiği. Hareketsiz konular yalnızca kamera sarsıntısını karşılamaya yetecek enstantane hızı gerektirir. Hareketli konular kameraya göre hız ve yönlerine göre daha hızlı hızlara ihtiyaç duyar."
+        },
+        "recommendedShutterSpeed": {
+          "term": "Önerilen Enstantane Hızı",
+          "definition": "Belirli odak uzaklığı, sabitleme, sensör ve konu hareketi kombinasyonunuz için hesaplanan minimum enstantane hızı. Bu hızda veya daha hızlısında çekim yapmak net sonuçlar üretmelidir."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Tam kare kamerada görüntü sabitleme olmadan 100mm objektifle çekim yapıyorsunuz. Konunuz hareketsiz duruyor. Minimum önerilen enstantane hızı nedir?",
+          "hint": "Karşılıklılık kuralı: minimum enstantane hızı = 1 / odak uzaklığı.",
+          "successMessage": "Doğru! Karşılıklılık kuralı tam karede 100mm objektif için 1/100s der. Bu, elde net çekim için klasik başlangıç noktasıdır.",
+          "failureMessage": "Sabitleme olmadan tam karede 100mm objektif için karşılıklılık kuralı statik konular için minimum güvenli enstantane hızı olarak 1/100s verir.",
+          "options": {
+            "0": { "label": "1/50s" },
+            "1": { "label": "1/100s" },
+            "2": { "label": "1/200s" },
+            "3": { "label": "1/500s" }
+          }
+        },
+        "1": {
+          "scenario": "Sabitleme olmadan APS-C kamerada (1,5x kırpma faktörü) 50mm objektif kullanıyorsunuz. Hareketsiz bir konu için minimum enstantane hızı ne olmalıdır?",
+          "hint": "Karşılıklılık kuralını uygulamadan önce odak uzaklığını kırpma faktörüyle çarpın.",
+          "successMessage": "Doğru! 50mm x 1,5 = 75mm eşdeğer, yani en az 1/75s'ye ihtiyacınız var. Pratikte 1/80s'ye yuvarlamak güvenli seçimdir.",
+          "failureMessage": "APS-C'de kırpma faktörü (1,5x), 50mm'lik bir objektifin 75mm gibi davrandığı anlamına gelir. Karşılıklılık kuralı minimum hız olarak 1/75s verir.",
+          "options": {
+            "0": { "label": "1/50s" },
+            "1": { "label": "1/75s (1/80s'ye yuvarla)" },
+            "2": { "label": "1/100s" },
+            "3": { "label": "1/125s" }
+          }
+        },
+        "2": {
+          "scenario": "OIS'li (4 adım sabitleme) 200mm objektifiniz IBIS'li (5 adım) tam kare gövde üzerinde. Birlikte yaklaşık 6 adım birleşik sabitleme sağlıyorlar. Hareketsiz bir konu için yaklaşık minimum enstantane hızı nedir?",
+          "hint": "Karşılıklılık kuralıyla (1/200s) başlayın ve 6 adım sabitleme faydası uygulayın.",
+          "successMessage": "Doğru! 1/200s'den başlayarak 6 adım kazanmak: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3s. 200mm objektifle yaklaşık 1/3 saniye elde — etkileyici ama modern sabitlemeyle başarılabilir!",
+          "failureMessage": "1/200s'den her sabitleme adımı kullanılabilir süreyi iki katına çıkarır: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3s. 200mm objektifle altı adım sabitleme yaklaşık 1/3s verir.",
+          "options": {
+            "0": { "label": "1/30s" },
+            "1": { "label": "1/8s" },
+            "2": { "label": "~1/3s" },
+            "3": { "label": "1 saniye" }
+          }
+        },
+        "3": {
+          "scenario": "IBIS'li tam kare kamerada 35mm objektifle parkta koşu yapan bir arkadaşınızı fotoğraflıyorsunuz. IBIS'iniz 5 adım sabitleme verir, yani karşılıklılık kuralı tek başına yaklaşık 1 saniyede çekim yapmanıza izin verirdi. 1 saniye kullanmalı mısınız?",
+          "hint": "Sabitleme kamera sarsıntısını telafi eder, konu hareketini değil.",
+          "successMessage": "Doğru! Sabitleme yalnızca kamera sarsıntısına karşı çalışır. Koşan bir kişi, sabitlemeniz ne kadar iyi olursa olsun hareketini dondurmak için en az 1/250s gerektirir.",
+          "failureMessage": "Sabitleme hareketli bir konuyu donduramaz. Koşu yapan bir kişi için, kameranız 1 saniyede sabit durabilse bile hareket bulanıklığını önlemek için en az 1/250s gerekir.",
+          "options": {
+            "0": { "label": "Evet — IBIS tüm hareketi halleder" },
+            "1": { "label": "Hayır — koşucuyu dondurmak için en az 1/250s kullan" },
+            "2": { "label": "Hayır — bir uzlaşma olarak 1/60s kullan" },
+            "3": { "label": "ISO ayarına bağlı" }
+          }
+        },
+        "4": {
+          "scenario": "Bir bisikletçinin panning çekimi yapmak istiyorsunuz — bisikletçi net olurken arka plan hareket bulanıklığı çizgileri göstersin. Tam karede 70mm objektif kullanıyorsunuz. Hangi enstantane hızı aralığını denemelisiniz?",
+          "hint": "Panning kasıtlı olarak konuyu takip ederken yavaş enstantane kullanır. Çok hızlı her şeyi dondurur; çok yavaş konuyu bile bulanıklaştırır.",
+          "successMessage": "Doğru! Bisikletçi panningi için 1/30s ile 1/60s arası ideal noktadır. Bu, arka planı çizgilere bulanıklaştıracak kadar yavaş ama takip hareketinizin bisikletçiyi nispeten net tutmasına yetecek kadar hızlıdır. Pratik gerektirir — seri çekim modunda çekin ve çok sayıda eleme beklemeyin.",
+          "failureMessage": "Panning, arka planı bulanıklaştıracak kadar yavaş ama takibinizin konuyu net tutmasına yetecek kadar hızlı bir enstantane hızı gerektirir. Bisikletçi için 1/30s ile 1/60s arası tipik aralıktır.",
+          "options": {
+            "0": { "label": "1/1000s ile 1/2000s" },
+            "1": { "label": "1/250s ile 1/500s" },
+            "2": { "label": "1/30s ile 1/60s" },
+            "3": { "label": "1s ile 2s" }
+          }
+        }
+      }
+    }
+  }
+}

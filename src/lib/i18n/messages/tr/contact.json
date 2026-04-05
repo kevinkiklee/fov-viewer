@@ -1,0 +1,25 @@
+{
+  "contact": {
+    "title": "Bize Ulaşın",
+    "description": "Bir sorunuz mu var, bir hata mı buldunuz veya yeni bir araç mı önermek istiyorsunuz? Sizden haber almaktan memnuniyet duyarız.",
+    "form": {
+      "nameLabel": "Ad",
+      "namePlaceholder": "Adınız",
+      "emailLabel": "E-posta",
+      "emailPlaceholder": "eposta@adresiniz.com",
+      "subjectLabel": "Konu",
+      "subjectPlaceholder": "Ne hakkında?",
+      "messageLabel": "Mesaj",
+      "messagePlaceholder": "Mesajınız...",
+      "submit": "Mesaj Gönder",
+      "sending": "Gönderiliyor...",
+      "honeypotLabel": "Web sitesi",
+      "successToast": "Mesaj gönderildi! En kısa sürede size dönüş yapacağız.",
+      "errorToast": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+      "networkErrorToast": "Ağ hatası. Lütfen bağlantınızı kontrol edip tekrar deneyin.",
+      "sentTitle": "İletişime geçtiğiniz için teşekkürler!",
+      "sentMessage": "En kısa sürede size dönüş yapacağız.",
+      "sendAnother": "Başka bir mesaj gönder"
+    }
+  }
+}

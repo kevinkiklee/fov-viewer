@@ -1,0 +1,28 @@
+{
+  "about": {
+    "title": "O PhotoTools",
+    "subtitle": "Bezpłatna edukacja fotograficzna, bezpośrednio w Twojej przeglądarce.",
+    "sections": {
+      "whatIs": {
+        "title": "Czym jest PhotoTools?",
+        "body": "PhotoTools to bezpłatna kolekcja interaktywnych kalkulatorów fotograficznych, symulatorów i narzędzi referencyjnych. Niezależnie od tego, czy po raz pierwszy poznajesz trójkąt ekspozycji, czy obliczasz odległość hiperfokalną do sesji krajobrazowej, PhotoTools oferuje praktyczne narzędzia wizualne, które pogłębią Twoje zrozumienie fotografii."
+      },
+      "whoIsItFor": {
+        "title": "Dla kogo jest PhotoTools?",
+        "body": "Dla fotografów na każdym poziomie zaawansowania — od początkujących odkrywających wpływ przysłony na głębię ostrości, po doświadczonych fotografów planujących sesję ze śladami gwiazd. Każde narzędzie zawiera panel edukacyjny z wyjaśnieniami, kluczowymi czynnikami, poradami profesjonalistów oraz interaktywnymi wyzwaniami do sprawdzenia wiedzy."
+      },
+      "privacyFirst": {
+        "title": "Prywatność przede wszystkim",
+        "body": "Wszystkie obliczenia i symulacje działają wyłącznie w Twojej przeglądarce. Twoje zdjęcia nigdy nie opuszczają Twojego urządzenia — na przykład przeglądarka EXIF przetwarza obrazy w 100% po stronie klienta. Nie jest wymagana rejestracja, a żadne dane osobowe nie są gromadzone poza anonimową analityką."
+      },
+      "builtBy": {
+        "title": "Stworzone przez fotografów",
+        "body": "PhotoTools jest tworzone i utrzymywane przez fotografa i inżyniera oprogramowania, który potrzebował lepszych narzędzi wizualnych do zrozumienia technicznej strony fotografii. Narzędzia opierają się na rzeczywistej optyce i fizyce — nie na przybliżeniach — dzięki czemu możesz zaufać wynikom w terenie."
+      },
+      "getInTouch": {
+        "title": "Skontaktuj się",
+        "body": "Masz sugestię, znalazłeś błąd lub masz pomysł na nowe narzędzie? Napisz do nas przez <contactLink>stronę kontaktową</contactLink>."
+      }
+    }
+  }
+}

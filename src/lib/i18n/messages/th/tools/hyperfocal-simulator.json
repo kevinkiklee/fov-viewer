@@ -1,0 +1,21 @@
+{
+  "toolUI": {
+    "hyperfocal-simulator": {
+      "settings": "การตั้งค่า",
+      "focalLength": "ทางยาวโฟกัส",
+      "aperture": "รูรับแสง",
+      "focusDistance": "ระยะโฟกัส:",
+      "sensor": "เซ็นเซอร์",
+      "scene": "ฉาก:",
+      "sceneLandscape": "ทิวทัศน์",
+      "sceneStreet": "สตรีท",
+      "hyperfocalDistance": "ระยะไฮเปอร์โฟกัส",
+      "nearLimit": "ขีดจำกัดใกล้",
+      "farLimit": "ขีดจำกัดไกล",
+      "focusDistanceResult": "ระยะโฟกัส",
+      "hyperfocalReference": "อ้างอิงไฮเปอร์โฟกัส",
+      "sharpToInfinity": "คมถึงอินฟินิตี้",
+      "nearLimitBadge": "ขีดจำกัดใกล้:"
+    }
+  }
+}

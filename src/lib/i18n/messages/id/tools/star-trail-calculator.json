@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "star-trail-calculator": {
+      "rule500": "Aturan 500",
+      "ruleNPF": "Aturan NPF",
+      "recommendation": "Rekomendasi",
+      "recommendationText": "Gunakan aturan NPF ({npf} dtk) untuk ketajaman tingkat piksel. Aturan 500 ({r500} dtk) adalah perkiraan cepat tetapi mungkin menunjukkan jejak pada sensor resolusi tinggi.",
+      "shootingTime": "Waktu Pemotretan",
+      "exposure": "Eksposur",
+      "displayMode": "Mode Tampilan",
+      "modeStarTrails": "Jejak Bintang",
+      "modeSingleShot": "Foto Tunggal",
+      "stacking": "Stacking",
+      "exposurePerFrame": "Eksposur / frame (dtk)",
+      "exposurePerFrameDesc": "Kecepatan rana untuk setiap frame individual",
+      "frames": "Frame",
+      "framesDesc": "Total jumlah foto untuk ditumpuk",
+      "gapSec": "Celah (dtk)",
+      "gapDesc": "Jeda antar frame untuk penulisan buffer",
+      "camera": "Kamera",
+      "sensor": "Sensor",
+      "resolutionMP": "Resolusi (MP)",
+      "apertureLabel": "Apertur",
+      "latitude": "Lintang",
+      "position": "Posisi",
+      "useMyLocation": "Gunakan Lokasi Saya",
+      "latitudeLabel": "Lintang:",
+      "equator": "Ekuator 0°",
+      "mid45": "Tengah 45°",
+      "arctic70": "Arktik 70°"
+    }
+  }
+}

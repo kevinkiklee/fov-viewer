@@ -1,0 +1,12 @@
+{
+  "toolUI": {
+    "nd-filter-calculator": {
+      "baseShutterSpeed": "ความเร็วชัตเตอร์ฐาน",
+      "ndFilter": "ฟิลเตอร์ ND",
+      "resultingShutterSpeed": "ความเร็วชัตเตอร์ผลลัพธ์",
+      "stopsAdded": "สต็อปที่เพิ่ม",
+      "quickReference": "อ้างอิงด่วน",
+      "tableBase": "ฐาน"
+    }
+  }
+}

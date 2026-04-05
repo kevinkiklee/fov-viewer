@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "histogram": {
+      "luminance": "Luminansi",
+      "rgbOverlay": "RGB Overlay",
+      "allChannels": "Semua Kanal",
+      "shadows": "Bayangan",
+      "midtones": "Midtone",
+      "highlights": "Highlight",
+      "blackClipping": "Black clipping",
+      "whiteClipping": "White clipping",
+      "pureBlack": "hitam murni",
+      "pureWhite": "putih murni",
+      "uploadPrompt": "Unggah gambar untuk melihat data EXIF dan histogram",
+      "uploadedPhoto": "Foto yang diunggah",
+      "noExifData": "Tidak ditemukan data EXIF dalam gambar ini.",
+      "sectionCamera": "Kamera",
+      "sectionLens": "Lensa",
+      "sectionSettings": "Pengaturan",
+      "sectionImage": "Gambar",
+      "sectionDate": "Tanggal",
+      "sectionGPS": "GPS",
+      "sectionSoftware": "Software",
+      "make": "Merek",
+      "model": "Model",
+      "lensModel": "Model Lensa",
+      "lensMake": "Merek Lensa",
+      "apertureLabel": "Apertur",
+      "shutterSpeed": "Kecepatan Rana",
+      "isoLabel": "ISO",
+      "focalLengthLabel": "Panjang Fokus",
+      "focalLength35mm": "Panjang Fokus (ekuiv. 35mm)",
+      "width": "Lebar",
+      "height": "Tinggi",
+      "orientationLabel": "Orientasi",
+      "dateTaken": "Tanggal Diambil",
+      "latitudeLabel": "Lintang",
+      "longitudeLabel": "Bujur",
+      "softwareLabel": "Software"
+    }
+  }
+}

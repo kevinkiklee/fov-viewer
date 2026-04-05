@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "sensor-size-comparison": {
+      "displayMode": "Mode Tampilan",
+      "modeOverlay": "Overlay",
+      "modeSideBySide": "Berdampingan",
+      "modePixelDensity": "Kepadatan Piksel",
+      "pixelDensityDescription": "Menampilkan jumlah megapiksel umum untuk setiap sensor. Piksel lebih besar (sel lebih besar) menangkap lebih banyak cahaya.",
+      "sensors": "Sensor",
+      "customSensors": "Sensor Kustom",
+      "placeholderName": "Nama",
+      "placeholderW": "L (mm)",
+      "placeholderH": "T (mm)",
+      "placeholderMP": "Megapiksel (opsional)",
+      "placeholderMPShort": "MP",
+      "maxDimensionWarning": "Dimensi sensor maksimum adalah 99 mm",
+      "addSensor": "Tambah Sensor",
+      "save": "Simpan",
+      "cancelEdit": "Batal",
+      "edit": "Edit",
+      "remove": "Hapus",
+      "deleteAllCustom": "Hapus Semua Sensor Kustom",
+      "tableSensor": "Sensor",
+      "tableWidth": "Lebar (mm)",
+      "tableHeight": "Tinggi (mm)",
+      "tableAspectRatio": "Rasio Aspek",
+      "tableArea": "Area (mm²)",
+      "tableCropFactor": "Crop Factor",
+      "tableAspectCrop": "Aspect Crop",
+      "canvasAriaLabel": "Perbandingan ukuran sensor dalam mode {mode}"
+    }
+  }
+}

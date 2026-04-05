@@ -1,0 +1,16 @@
+{
+  "toolUI": {
+    "white-balance-visualizer": {
+      "colorTemperature": "อุณหภูมิสี:",
+      "warm": "อุ่น",
+      "neutral": "กลาง",
+      "cool": "เย็น",
+      "presets": "พรีเซ็ต",
+      "red": "แดง",
+      "green": "เขียว",
+      "blue": "น้ำเงิน",
+      "hex": "Hex",
+      "loadingScene": "กำลังโหลดฉาก..."
+    }
+  }
+}

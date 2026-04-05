@@ -1,0 +1,68 @@
+{
+  "privacy": {
+    "title": "Kebijakan Privasi",
+    "effectiveDate": "Tanggal berlaku: 3 April 2026",
+    "sections": {
+      "overview": {
+        "title": "Ikhtisar",
+        "body": "PhotoTools mengoperasikan www.phototools.io, sumber daya edukasi fotografi gratis yang menawarkan kalkulator interaktif, simulator, dan alat referensi. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan menangani informasi saat Anda mengunjungi atau menggunakan situs kami. Dengan menggunakan PhotoTools, Anda menyetujui praktik yang dijelaskan dalam kebijakan ini. Versi Bahasa Inggris dari kebijakan ini adalah versi yang berwenang."
+      },
+      "informationWeCollect": {
+        "title": "Informasi yang Kami Kumpulkan",
+        "intro": "Kami mengumpulkan informasi minimal untuk mengoperasikan dan meningkatkan situs:",
+        "analytics": "<strong>Analitik:</strong> Kami menggunakan Google Analytics untuk memahami bagaimana pengunjung menggunakan situs (misalnya halaman yang dikunjungi, waktu di halaman, jenis perangkat). Data analitik dianonimkan — kami tidak mengumpulkan informasi yang dapat mengidentifikasi pribadi melalui analitik. Alamat IP dianonimkan sebelum disimpan.",
+        "contactForm": "<strong>Formulir kontak:</strong> Jika Anda mengirim formulir kontak, kami mengumpulkan nama, alamat email, subjek, dan pesan Anda. Informasi ini digunakan semata-mata untuk merespons pertanyaan Anda dan tidak disimpan melampaui pengiriman email — tidak disimpan di database atau dipertahankan dalam jangka panjang.",
+        "noAccounts": "<strong>Tanpa akun:</strong> PhotoTools tidak memerlukan pendaftaran pengguna atau akun. Kami tidak mengumpulkan kata sandi atau informasi pembayaran."
+      },
+      "cookies": {
+        "title": "Cookie",
+        "intro": "PhotoTools menggunakan cookie untuk mendukung fungsi analitik dan periklanan. Secara khusus:",
+        "analyticsCookies": "<strong>Cookie Google Analytics</strong> melacak penggunaan situs secara agregat dan anonim. Cookie ini membantu kami memahami alat mana yang paling banyak digunakan dan bagaimana meningkatkan situs.",
+        "adCookies": "<strong>Cookie periklanan pihak ketiga</strong> mungkin dipasang oleh mitra jaringan iklan kami untuk menayangkan iklan yang relevan dan mengukur kinerja iklan.",
+        "control": "Anda dapat mengontrol atau menonaktifkan cookie melalui pengaturan browser Anda. Perlu diketahui bahwa menonaktifkan cookie dapat memengaruhi fungsionalitas beberapa fitur."
+      },
+      "thirdPartyAdvertising": {
+        "title": "Periklanan Pihak Ketiga",
+        "body": "PhotoTools menampilkan iklan yang dilayani oleh jaringan iklan pihak ketiga. Jaringan ini mungkin menggunakan cookie dan teknologi pelacakan serupa untuk menayangkan iklan berdasarkan riwayat penjelajahan dan minat Anda (periklanan berbasis minat). Kami tidak mengontrol praktik data jaringan iklan pihak ketiga ini. Untuk informasi lebih lanjut, silakan tinjau kebijakan privasi jaringan tersebut atau kunjungi <naiLink>halaman opt-out Network Advertising Initiative</naiLink>."
+      },
+      "googleAdSense": {
+        "title": "Google AdSense",
+        "body1": "PhotoTools menggunakan Google AdSense untuk menampilkan iklan. Google AdSense mungkin menggunakan cookie dan web beacon untuk menayangkan iklan berdasarkan kunjungan Anda sebelumnya ke situs ini atau situs web lainnya. Penggunaan cookie periklanan oleh Google memungkinkan Google dan mitranya untuk menayangkan iklan berdasarkan pola penjelajahan Anda.",
+        "body2": "Anda dapat memilih keluar dari iklan yang dipersonalisasi dengan mengunjungi <adsSettingsLink>Pengaturan Iklan Google</adsSettingsLink>. Untuk informasi lebih lanjut tentang bagaimana Google menggunakan data, lihat <partnerSitesLink>Bagaimana Google menggunakan data saat Anda menggunakan situs mitra kami</partnerSitesLink>."
+      },
+      "cookieConsent": {
+        "title": "Persetujuan Cookie",
+        "body1": "Saat pertama kali mengunjungi PhotoTools, banner persetujuan cookie ditampilkan yang memungkinkan Anda menerima atau menolak cookie non-esensial. Banner ini didukung oleh CookieYes, Platform Manajemen Persetujuan bersertifikat Google yang mendukung IAB Transparency and Consent Framework (TCF) v2.3.",
+        "body2": "Anda dapat mengubah preferensi persetujuan Anda kapan saja dengan mengklik tautan pengaturan cookie di footer. Jika Anda menolak cookie periklanan, Anda tetap akan melihat iklan, tetapi iklan tersebut tidak akan dipersonalisasi berdasarkan riwayat penjelajahan Anda."
+      },
+      "ccpa": {
+        "title": "Penduduk California (CCPA)",
+        "body": "Berdasarkan California Consumer Privacy Act (CCPA), penduduk California memiliki hak untuk mengetahui informasi pribadi apa yang dikumpulkan, meminta penghapusannya, dan memilih keluar dari penjualannya. PhotoTools tidak menjual informasi pribadi. Cookie periklanan yang digunakan oleh mitra iklan kami mungkin merupakan \"penjualan\" berdasarkan CCPA — Anda dapat memilih keluar melalui banner persetujuan cookie atau dengan menghubungi kami melalui <contactLink>halaman kontak</contactLink>."
+      },
+      "dataSharing": {
+        "title": "Berbagi Data",
+        "intro": "Kami tidak menjual, memperdagangkan, atau menyewakan informasi pribadi Anda kepada pihak ketiga. Kami hanya membagikan data dalam keadaan terbatas berikut:",
+        "analytics": "Dengan <strong>Google Analytics</strong> untuk menganalisis lalu lintas dan pola penggunaan situs, tunduk pada kebijakan privasi Google.",
+        "advertising": "Dengan <strong>mitra periklanan</strong> sebagaimana dijelaskan di atas pada bagian Periklanan Pihak Ketiga.",
+        "contactForm": "Kami tidak membagikan pengiriman formulir kontak kepada pihak ketiga mana pun."
+      },
+      "childrensPrivacy": {
+        "title": "Privasi Anak-anak",
+        "body": "PhotoTools tidak ditujukan untuk anak-anak di bawah usia 13 tahun. Kami tidak secara sengaja mengumpulkan informasi pribadi dari anak-anak di bawah 13 tahun. Jika Anda yakin seorang anak di bawah 13 tahun telah memberikan informasi pribadi kepada kami, silakan hubungi kami agar kami dapat menghapusnya."
+      },
+      "yourRights": {
+        "title": "Hak Anda",
+        "body1": "Tergantung pada lokasi Anda, Anda mungkin memiliki hak berdasarkan undang-undang seperti GDPR (Uni Eropa) atau CCPA (California) terkait data pribadi Anda.",
+        "body2": "Karena PhotoTools mengumpulkan data pribadi minimal — dan tidak menyimpan pengiriman formulir kontak dalam jangka panjang — sebagian besar permintaan dapat ditangani dengan mudah. Anda dapat menghapus cookie kapan saja melalui pengaturan browser Anda. Untuk menggunakan hak data atau mengajukan permintaan privasi, silakan gunakan <contactLink>halaman kontak</contactLink> kami."
+      },
+      "changesToPolicy": {
+        "title": "Perubahan pada Kebijakan Ini",
+        "body": "Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Ketika kami melakukannya, kebijakan yang diperbarui akan diposting di halaman ini dengan tanggal berlaku yang direvisi. Kami menganjurkan Anda untuk meninjau kebijakan ini secara berkala. Penggunaan PhotoTools yang berkelanjutan setelah perubahan apa pun merupakan penerimaan Anda terhadap kebijakan yang diperbarui."
+      },
+      "contact": {
+        "title": "Kontak",
+        "body": "Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini atau bagaimana kami menangani data Anda, silakan hubungi kami melalui <contactLink>halaman kontak</contactLink> kami."
+      }
+    }
+  }
+}

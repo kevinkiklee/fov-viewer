@@ -1,0 +1,27 @@
+{
+  "toolUI": {
+    "shutter-speed-visualizer": {
+      "description": "查看快门速度如何影响不同被摄体的运动模糊。",
+      "shutterSpeed": "快门速度",
+      "shutterSpeedAriaLabel": "快门速度",
+      "sliderSlow": "慢（2s）",
+      "sliderFast": "快（1/4000）",
+      "selectedSpeed": "选定速度",
+      "motionBlurAriaLabel": "不同被摄体的运动模糊可视化",
+      "verdictFrozen": "冻结",
+      "verdictMostlySharp": "基本清晰",
+      "verdictSlightBlur": "轻微模糊",
+      "verdictMotionBlur": "运动模糊",
+      "standingPerson": "站立的人",
+      "slowWalk": "慢走",
+      "jogging": "慢跑",
+      "running": "跑步",
+      "cyclist": "骑行者",
+      "birdsInFlight": "飞行中的鸟",
+      "carCity": "汽车（城市）",
+      "f1Car": "F1 赛车",
+      "airplaneLanding": "飞机（降落）",
+      "stationary": "静止"
+    }
+  }
+}

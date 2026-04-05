@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "histogram": {
+      "luminance": "Luminance",
+      "rgbOverlay": "RGB Overlay",
+      "allChannels": "Tất cả kênh",
+      "shadows": "Vùng tối",
+      "midtones": "Tông trung",
+      "highlights": "Vùng sáng",
+      "blackClipping": "Cắt đen",
+      "whiteClipping": "Cắt trắng",
+      "pureBlack": "đen thuần",
+      "pureWhite": "trắng thuần",
+      "uploadPrompt": "Tải ảnh lên để xem dữ liệu EXIF và biểu đồ histogram",
+      "uploadedPhoto": "Ảnh đã tải",
+      "noExifData": "Không tìm thấy dữ liệu EXIF trong ảnh này.",
+      "sectionCamera": "Máy ảnh",
+      "sectionLens": "Ống kính",
+      "sectionSettings": "Cài đặt",
+      "sectionImage": "Ảnh",
+      "sectionDate": "Ngày",
+      "sectionGPS": "GPS",
+      "sectionSoftware": "Phần mềm",
+      "make": "Hãng",
+      "model": "Mẫu máy",
+      "lensModel": "Mẫu ống kính",
+      "lensMake": "Hãng ống kính",
+      "apertureLabel": "Khẩu độ",
+      "shutterSpeed": "Tốc độ màn trập",
+      "isoLabel": "ISO",
+      "focalLengthLabel": "Tiêu cự",
+      "focalLength35mm": "Tiêu cự (tương đương 35mm)",
+      "width": "Chiều rộng",
+      "height": "Chiều cao",
+      "orientationLabel": "Hướng",
+      "dateTaken": "Ngày chụp",
+      "latitudeLabel": "Vĩ độ",
+      "longitudeLabel": "Kinh độ",
+      "softwareLabel": "Phần mềm"
+    }
+  }
+}

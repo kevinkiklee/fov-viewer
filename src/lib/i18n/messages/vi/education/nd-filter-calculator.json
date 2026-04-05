@@ -1,0 +1,112 @@
+{
+  "education": {
+    "nd-filter-calculator": {
+      "beginner": "Bộ lọc ND (mật độ trung tính) giống như kính râm cho ống kính máy ảnh. Nó giảm lượng ánh sáng vào ống kính mà không thay đổi màu sắc, cho phép bạn sử dụng tốc độ màn trập chậm hơn hoặc khẩu độ rộng hơn trong điều kiện sáng. Đây là cách nhiếp ảnh gia tạo thác nước mịn, đại dương phẳng hoặc mây nhòe ban ngày.",
+      "deeper": "Bộ lọc ND được đánh giá theo số stop ánh sáng chúng chặn. ND2 (1 stop) giảm một nửa ánh sáng, ND8 (3 stop) giảm xuống 1/8, và ND1000 (10 stop) giảm ánh sáng 1024 lần. Quy ước đặt tên có thể gây nhầm lẫn: \"ND8\" nghĩa là hệ số lọc là 8 (3 stop), trong khi \"ND 0.9\" sử dụng ký hiệu mật độ quang (mỗi 0.3 = 1 stop, nên 0.9 = 3 stop). Tốc độ màn trập kết quả đơn giản là tốc độ cơ bản nhân với hệ số lọc. Ví dụ, nếu phơi sáng không lọc là 1/125s và bạn thêm ND 10-stop (ND1000), tốc độ mới là 1/125 x 1024 = khoảng 8 giây. Chồng nhiều bộ lọc ND cộng giá trị stop nhưng có thể gây tối góc và lệch màu, đặc biệt với ống góc rộng.",
+      "keyFactors": {
+        "0": {
+          "label": "Tốc độ màn trập cơ bản",
+          "description": "Thời gian phơi sáng đúng không có bộ lọc nào. Đo sáng cảnh trước, sau đó tính phơi sáng có lọc từ điểm xuất phát này."
+        },
+        "1": {
+          "label": "Cường độ bộ lọc",
+          "description": "Đo bằng stop. Mỗi stop tăng gấp đôi thời gian phơi sáng. Cường độ phổ biến: 3-stop (ND8), 6-stop (ND64), và 10-stop (ND1000)."
+        },
+        "2": {
+          "label": "Chồng bộ lọc",
+          "description": "Bạn có thể kết hợp bộ lọc bằng cách cộng giá trị stop. Chồng 3-stop + 6-stop cho 9 stop giảm. Cẩn thận tối góc trên ống góc rộng."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Bố cục và lấy nét trước khi gắn bộ lọc ND mạnh. Với 10 stop giảm ánh sáng, kính ngắm và lấy nét tự động sẽ gặp khó khăn trong bóng tối."
+        },
+        "1": {
+          "text": "Cho ảnh biển, phơi sáng 1-2 giây làm mịn gợn sóng nhỏ thành kết cấu trong khi giữ cấu trúc sóng. Phơi sáng 30 giây trở lên tạo nước phẳng hoàn toàn, mờ sương."
+        },
+        "2": {
+          "text": "Bộ lọc ND rẻ thường thêm lệch màu (thường tím hoặc nâu). Đầu tư kính chất lượng từ các hãng uy tín, hoặc học cách chỉnh lệch màu trong hậu kỳ sử dụng tham chiếu thẻ xám."
+        }
+      },
+      "tooltips": {
+        "baseShutterSpeed": {
+          "term": "Tốc độ màn trập cơ bản",
+          "definition": "Tốc độ màn trập cho phơi sáng đúng không có bộ lọc ND nào. Đây là điểm xuất phát — máy tính nhân nó với hệ số lọc."
+        },
+        "ndFilter": {
+          "term": "Bộ lọc ND",
+          "definition": "Bộ lọc mật độ trung tính giảm đều truyền ánh sáng. Đánh giá bằng hệ số lọc (ND2, ND4, ND8...) hoặc số stop giảm. ND2 = 1 stop, ND4 = 2 stop, ND8 = 3 stop, và tiếp tục."
+        },
+        "resultingShutterSpeed": {
+          "term": "Tốc độ màn trập kết quả",
+          "definition": "Tốc độ màn trập mới sau khi tính bộ lọc ND. Tính bằng cách nhân tốc độ cơ bản với hệ số lọc (ví dụ: 1/125s x 1024 cho ND 10-stop)."
+        },
+        "stopsAdded": {
+          "term": "Số stop thêm",
+          "definition": "Số stop giảm ánh sáng mà bộ lọc ND cung cấp. Mỗi stop tăng gấp đôi thời gian phơi sáng cần thiết. 10 stop nghĩa là phơi sáng dài gấp 1024 lần."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Bạn ở thác nước và máy ảnh đo phơi sáng đúng ở 1/125s không có bộ lọc. Bạn gắn bộ lọc ND 3-stop (ND8). Tốc độ màn trập mới là bao nhiêu?",
+          "hint": "Mỗi stop tăng gấp đôi thời gian phơi sáng. 3 stop nghĩa là 2 x 2 x 2 = 8 lần dài hơn.",
+          "successMessage": "Chính xác! 1/125s x 8 = 1/15s. Đây là khởi đầu tốt cho nhòe chuyển động nước, dù bạn có thể muốn bộ lọc mạnh hơn cho kết quả mịn như lụa.",
+          "failureMessage": "Bộ lọc ND 3-stop nhân thời gian phơi sáng với 8 (2^3 = 8). Nên 1/125s trở thành 1/15s.",
+          "options": {
+            "0": { "label": "1/60s" },
+            "1": { "label": "1/30s" },
+            "2": { "label": "1/15s" },
+            "3": { "label": "1/8s" }
+          }
+        },
+        "1": {
+          "scenario": "Bạn muốn tạo phơi sáng 30 giây cho mây di chuyển qua bầu trời. Không có bộ lọc, phơi sáng đúng là 1/30s. Bạn cần bao nhiêu stop lọc ND?",
+          "hint": "Bạn cần đi từ 1/30s đến 30s — tức 1/30 x hệ số = 30, nên hệ số = 900. Tìm lũy thừa 2 gần nhất.",
+          "successMessage": "Chính xác! Đi từ 1/30s đến 30s là tăng khoảng 1000x, tức khoảng 10 stop. Bộ lọc ND1000 (10-stop) đưa bạn đến khoảng 33 giây.",
+          "failureMessage": "Tỷ lệ là 30 / (1/30) = 900. Lũy thừa 2 gần nhất là 1024 (2^10), nên bạn cần bộ lọc ND 10-stop.",
+          "options": {
+            "0": { "label": "6 stop (ND64)" },
+            "1": { "label": "8 stop (ND256)" },
+            "2": { "label": "10 stop (ND1000)" },
+            "3": { "label": "15 stop (ND32768)" }
+          }
+        },
+        "2": {
+          "scenario": "Bạn đang chụp biển lúc hoàng hôn. Ánh sáng đang yếu dần và phơi sáng cơ bản (không lọc) là 1/4s ở f/11, ISO 100. Bạn muốn phơi sáng 2 phút cho nước siêu mịn. Bạn cần cường độ bộ lọc ND nào?",
+          "hint": "Từ 1/4s đến 120s là hệ số 480. Tìm giá trị stop gần nhất.",
+          "successMessage": "ND 9-stop sẽ cho 1/4 x 512 = 128 giây, hoặc hơn 2 phút. Hoàn hảo cho cái nhìn biển mộng mơ, huyền ảo lúc hoàng hôn.",
+          "failureMessage": "Từ 0.25s đến 120s là tăng khoảng 480x. 2^9 = 512, gần 480, nên bộ lọc 9-stop đưa bạn đến khoảng 128 giây.",
+          "options": {
+            "0": { "label": "6 stop" },
+            "1": { "label": "9 stop" },
+            "2": { "label": "10 stop" },
+            "3": { "label": "13 stop" }
+          }
+        },
+        "3": {
+          "scenario": "Bạn muốn chụp chân dung ở f/1.4 trong nắng gắt (phơi sáng cơ bản: f/1.4, 1/8000s, ISO 100). Tốc độ màn trập tối đa máy ảnh là 1/8000s. Bạn có thể chụp ở f/1.4 không có bộ lọc ND không?",
+          "hint": "Kiểm tra xem 1/8000s ở f/1.4 và ISO 100 có khả thi không, hay cảnh vẫn bị phơi sáng quá.",
+          "successMessage": "Chính xác! Vào ngày rất nắng (EV 15+), f/1.4 ở ISO 100 thường cần tốc độ nhanh hơn 1/8000s, mà hầu hết máy ảnh không đạt được. Bộ lọc ND 2-3 stop cho phép bạn chụp khẩu mở hết mà không phơi sáng quá.",
+          "failureMessage": "Trong nắng gắt, f/1.4 ở ISO 100 có thể yêu cầu tốc độ màn trập vượt quá giới hạn 1/8000s của máy ảnh. Bộ lọc ND thiết yếu cho chụp khẩu độ rộng trong điều kiện sáng.",
+          "options": {
+            "0": { "label": "Có — 1/8000s đủ nhanh" },
+            "1": { "label": "Không — bạn có lẽ cần bộ lọc ND 2-3 stop" },
+            "2": { "label": "Chỉ cần tăng ISO để bù" }
+          }
+        },
+        "4": {
+          "scenario": "Bạn có bộ lọc ND 6-stop và 3-stop. Bạn chồng chúng trên ống kính với phơi sáng cơ bản 1/250s. Tốc độ màn trập kết quả là bao nhiêu, và bạn nên cẩn thận gì với cách sắp đặt này?",
+          "hint": "Cộng giá trị stop lại, sau đó tính phơi sáng mới. Nghĩ về tác dụng phụ quang học của việc chồng.",
+          "successMessage": "Chính xác! 6 + 3 = 9 stop. 1/250 x 512 = khoảng 2 giây. Cẩn thận tối góc (góc tối) trên ống góc rộng và khả năng lệch màu từ kính rẻ.",
+          "failureMessage": "Chồng cộng giá trị stop: 6 + 3 = 9 stop tổng. 2^9 = 512, nên 1/250 x 512 = ~2 giây. Chồng cũng có thể gây tối góc và lệch màu.",
+          "options": {
+            "0": { "label": "~0.5s, cẩn thận lóa ống kính" },
+            "1": { "label": "~2s, cẩn thận tối góc và lệch màu" },
+            "2": { "label": "~4s, cẩn thận cảm biến quá nóng" },
+            "3": { "label": "~8s, không lo ngại khi chồng" }
+          }
+        }
+      }
+    }
+  }
+}

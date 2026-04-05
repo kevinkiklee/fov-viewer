@@ -1,0 +1,113 @@
+{
+  "education": {
+    "focus-stacking-calculator": {
+      "beginner": "Focus stacking adalah teknik di mana Anda mengambil beberapa foto pada jarak fokus yang berbeda dan menggabungkannya dalam software untuk membuat gambar dengan ketajaman depan-belakang. Ini penting untuk fotografi makro, di mana kedalaman bidang sangat tipis, dan berguna dalam fotografi lanskap ketika Anda memerlukan latar depan dekat dan latar belakang jauh sama-sama tajam.",
+      "deeper": {
+        "0": {
+          "heading": "Mengapa Stacking Diperlukan",
+          "text": "Pada pembesaran makro, bahkan f/16 mungkin hanya menghasilkan beberapa milimeter kedalaman bidang. Mengecilkan apertur lebih jauh memperkenalkan pelunakan difraksi yang menurunkan gambar. Focus stacking memungkinkan Anda memotret pada apertur tertajam lensa (biasanya f/5.6-f/8) dan menggabungkan irisan tajam. Setiap frame menggeser fokus sedikit ke depan, menutupi irisan baru dari subjek."
+        },
+        "1": {
+          "heading": "Merencanakan Stack",
+          "text": "Kunci stack yang berhasil adalah memastikan kedalaman bidang setiap foto tumpang tindih dengan foto berikutnya sebesar 20-30%. Tumpang tindih yang terlalu sedikit menciptakan celah di mana tidak ada yang tajam; terlalu banyak membuang frame tanpa manfaat. Kalkulator menentukan DoF per-foto menggunakan rumus circle of confusion, mengurangi margin tumpang tindih, dan membagi total rentang kedalaman dengan langkah efektif untuk menghitung jumlah foto."
+        },
+        "2": {
+          "heading": "Penggabungan & Penyelarasan",
+          "text": "Software seperti Photoshop, Helicon Focus, atau Zerene Stacker menyelaraskan frame (pergeseran pembesaran kecil terjadi saat fokus berubah), kemudian memilih piksel tertajam dari setiap layer. Memotret di tripod yang kokoh dengan pencahayaan konsisten dan menggunakan focus rail untuk peningkatan yang presisi menghasilkan hasil terbersih."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Apertur",
+          "description": "Menentukan kedalaman bidang per-foto. Apertur moderat (f/5.6-f/8) menyeimbangkan ketajaman dan DoF per frame. Hindari apertur sangat kecil — difraksi mengurangi ketajaman yang Anda cari dari stacking."
+        },
+        "1": {
+          "label": "Rentang Kedalaman",
+          "description": "Jarak dari titik terdekat ke titik terjauh yang ingin Anda tajamkan. Rentang yang lebih lebar memerlukan lebih banyak foto. Dalam pekerjaan makro ini mungkin hanya beberapa sentimeter; dalam lanskap bisa mencakup meter hingga tak terhingga."
+        },
+        "2": {
+          "label": "Tumpang Tindih",
+          "description": "Persentase DoF setiap foto yang tumpang tindih dengan foto yang berdekatan. 20-30% adalah standar. Kurang berisiko celah; lebih membuang frame."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Gunakan focus rail daripada cincin fokus lensa untuk stacking makro. Rail memindahkan seluruh kamera ke depan dalam peningkatan yang presisi, menghindari perubahan pembesaran kecil yang terjadi saat memfokuskan ulang lensa."
+        },
+        "1": {
+          "text": "Pertahankan apertur Anda pada sweet spot lensa (biasanya f/5.6-f/8). Tujuan stacking adalah menghindari pengecilan ke f/16+, jadi gunakan apertur tertajam dan biarkan stack menangani kedalaman."
+        },
+        "2": {
+          "text": "Untuk stack lanskap, potret dari depan ke belakang: fokus pada elemen terdekat terlebih dahulu, kemudian geser fokus menuju tak terhingga. Ini membuat penyelarasan lebih mudah karena latar depan (dengan paralaks terbanyak) ditangkap lebih dulu."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Panjang Fokus",
+          "definition": "Panjang fokus lensa dalam milimeter. Panjang fokus yang lebih panjang mengurangi kedalaman bidang per-foto, memerlukan lebih banyak frame untuk menutupi rentang kedalaman yang sama."
+        },
+        "aperture": {
+          "term": "Apertur",
+          "definition": "Bukaan lensa (angka f). Untuk stacking, gunakan apertur tertajam lensa daripada mengecilkan — stack menyediakan kedalaman."
+        },
+        "sensor": {
+          "term": "Ukuran Sensor",
+          "definition": "Sensor yang lebih besar memiliki kedalaman bidang per-foto yang lebih dangkal pada framing ekuivalen, yang dapat meningkatkan jumlah frame stack yang diperlukan."
+        },
+        "nearLimit": {
+          "term": "Batas Dekat",
+          "definition": "Titik terdekat dalam adegan yang ingin Anda tajamkan. Di sinilah foto pertama dalam stack akan difokuskan."
+        },
+        "farLimit": {
+          "term": "Batas Jauh",
+          "definition": "Titik terjauh dalam adegan yang ingin Anda tajamkan. Foto terakhir dalam stack akan menutupi jarak ini."
+        },
+        "overlap": {
+          "term": "Tumpang Tindih",
+          "definition": "Persentase tumpang tindih kedalaman bidang antara foto berturut-turut. 20-30% memastikan tidak ada celah setelah penyelarasan dan penggabungan software."
+        },
+        "shotCount": {
+          "term": "Jumlah Foto",
+          "definition": "Total jumlah frame yang diperlukan untuk menutupi rentang kedalaman dengan tumpang tindih yang ditentukan. Lebih banyak foto = lebih banyak pemrosesan tetapi hasil lebih halus."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Anda memotret bunga kecil yang kedalamannya 3cm dari kelopak depan ke batang belakang. Lensa makro Anda pada f/8 memberikan sekitar 4mm DoF per foto. Kira-kira berapa frame yang Anda butuhkan dengan tumpang tindih 25%?",
+          "hint": "Setiap foto menutupi 4mm, tetapi tumpang tindih 25% berarti langkah efektif adalah 3mm per frame. Bagi 30mm dengan 3mm.",
+          "successMessage": "Benar! Dengan 4mm DoF dan tumpang tindih 25%, setiap langkah maju 3mm. 30mm / 3mm = 10 foto untuk menutupi seluruh bunga.",
+          "failureMessage": "Dengan tumpang tindih 25%, langkah efektif setiap frame adalah 75% dari DoF: 4mm × 0,75 = 3mm. Anda memerlukan 30mm / 3mm = 10 foto.",
+          "options": {
+            "0": { "label": "5 foto" },
+            "1": { "label": "10 foto" },
+            "2": { "label": "20 foto" },
+            "3": { "label": "30 foto" }
+          }
+        },
+        "1": {
+          "scenario": "Anda ingin hasil setajam mungkin dari focus stack Anda. Haruskah Anda memotret setiap frame pada f/2.8, f/8, atau f/22?",
+          "hint": "Pertimbangkan apertur tertajam lensa dan bagaimana difraksi memengaruhi apertur kecil.",
+          "successMessage": "Tepat! f/8 biasanya adalah apertur tertajam untuk kebanyakan lensa. f/2.8 memiliki DoF per-foto yang terlalu sedikit (membuang frame) dan f/22 mengalami pelunakan difraksi.",
+          "failureMessage": "f/8 adalah pilihan terbaik. f/2.8 memberikan DoF per-foto yang sangat tipis (memerlukan lebih banyak frame), dan f/22 memperkenalkan pelunakan difraksi yang mengalahkan tujuan stacking untuk ketajaman.",
+          "options": {
+            "0": { "label": "f/2.8 — terlebar untuk rana tercepat" },
+            "1": { "label": "f/8 — sweet spot lensa" },
+            "2": { "label": "f/22 — DoF per-foto maksimum" }
+          }
+        },
+        "2": {
+          "scenario": "Setelah menggabungkan focus stack Anda, Anda melihat pita lembut di tengah gambar di mana tidak ada yang tajam. Apa yang kemungkinan besar salah?",
+          "hint": "Pikirkan tentang apa yang menghubungkan zona tajam satu frame ke frame berikutnya.",
+          "successMessage": "Tepat! Tumpang tindih yang tidak cukup antara frame yang berdekatan menciptakan celah di mana tidak ada foto yang tajam. Tingkatkan tumpang tindih ke 25-30% dan potret ulang.",
+          "failureMessage": "Pita lembut biasanya berarti celah antara langkah fokus terlalu besar — DoF frame yang berdekatan tidak cukup tumpang tindih. Tingkatkan persentase tumpang tindih.",
+          "options": {
+            "0": { "label": "Apertur terlalu lebar" },
+            "1": { "label": "Tumpang tindih tidak cukup antara langkah fokus" },
+            "2": { "label": "Tripod bergerak selama urutan" },
+            "3": { "label": "ISO terlalu tinggi" }
+          }
+        }
+      }
+    }
+  }
+}

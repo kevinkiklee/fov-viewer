@@ -1,0 +1,34 @@
+{
+  "toolUI": {
+    "fov-simulator": {
+      "rotate": "Xoay",
+      "center": "Căn giữa",
+      "switchToPortrait": "Chuyển sang dọc",
+      "switchToLandscape": "Chuyển sang ngang",
+      "centerOverlays": "Căn giữa lớp phủ",
+      "addLens": "+ Thêm ống kính",
+      "fovSimulator": "Mô phỏng góc nhìn",
+      "sensor": "Cảm biến",
+      "copyImage": "Sao chép ảnh",
+      "copyLink": "Sao chép liên kết",
+      "embed": "Nhúng",
+      "reset": "Đặt lại",
+      "frameInfo": "Thông tin khung",
+      "distance": "Khoảng cách",
+      "showFramingGuides": "Hiển thị hướng dẫn khung",
+      "wide": "rộng",
+      "embedTitle": "Nhúng",
+      "closeEmbedModal": "Đóng hộp thoại nhúng",
+      "markdownLabel": "Markdown (Reddit, GitHub)",
+      "bbcodeLabel": "BBCode (Diễn đàn)",
+      "htmlEmbedLabel": "Nhúng HTML",
+      "copied": "Đã sao chép",
+      "copy": "Sao chép",
+      "cropView": "Cắt xem:",
+      "collapse": "Thu gọn",
+      "expand": "Mở rộng",
+      "fovComparison": "So sánh FOV",
+      "loadingScene": "Đang tải cảnh..."
+    }
+  }
+}

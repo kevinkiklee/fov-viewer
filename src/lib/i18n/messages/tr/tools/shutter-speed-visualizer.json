@@ -1,0 +1,27 @@
+{
+  "toolUI": {
+    "shutter-speed-visualizer": {
+      "description": "Enstantane hızının farklı konularda hareket bulanıklığını nasıl etkilediğini görün.",
+      "shutterSpeed": "Enstantane Hızı",
+      "shutterSpeedAriaLabel": "Enstantane hızı",
+      "sliderSlow": "Yavaş (2s)",
+      "sliderFast": "Hızlı (1/4000)",
+      "selectedSpeed": "Seçilen Hız",
+      "motionBlurAriaLabel": "Farklı konular için hareket bulanıklığı görselleştirmesi",
+      "verdictFrozen": "Donmuş",
+      "verdictMostlySharp": "Çoğunlukla net",
+      "verdictSlightBlur": "Hafif bulanık",
+      "verdictMotionBlur": "Hareket bulanıklığı",
+      "standingPerson": "Ayakta duran kişi",
+      "slowWalk": "Yavaş yürüyüş",
+      "jogging": "Koşu",
+      "running": "Hızlı koşu",
+      "cyclist": "Bisikletçi",
+      "birdsInFlight": "Uçan kuşlar",
+      "carCity": "Araba (şehir içi)",
+      "f1Car": "F1 aracı",
+      "airplaneLanding": "Uçak (iniş)",
+      "stationary": "hareketsiz"
+    }
+  }
+}

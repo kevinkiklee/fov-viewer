@@ -1,0 +1,13 @@
+{
+  "toolUI": {
+    "perspective-compression-simulator": {
+      "cameraSettings": "Cài đặt máy ảnh",
+      "focalLength": "Tiêu cự",
+      "equivalent35mm": "Tương đương (35mm)",
+      "perspectiveDistance": "Phối cảnh & Khoảng cách",
+      "subjectDistance": "Khoảng cách chủ thể",
+      "maintainSubjectSize": "Giữ kích thước chủ thể",
+      "resetAll": "Đặt lại tất cả"
+    }
+  }
+}

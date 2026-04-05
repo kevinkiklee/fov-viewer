@@ -1,0 +1,25 @@
+{
+  "contact": {
+    "title": "Liên hệ",
+    "description": "Có câu hỏi, phát hiện lỗi, hoặc muốn đề xuất công cụ mới? Chúng tôi rất muốn nghe từ bạn.",
+    "form": {
+      "nameLabel": "Tên",
+      "namePlaceholder": "Tên của bạn",
+      "emailLabel": "Email",
+      "emailPlaceholder": "email@cuaban.com",
+      "subjectLabel": "Chủ đề",
+      "subjectPlaceholder": "Nội dung về vấn đề gì?",
+      "messageLabel": "Tin nhắn",
+      "messagePlaceholder": "Tin nhắn của bạn...",
+      "submit": "Gửi tin nhắn",
+      "sending": "Đang gửi...",
+      "honeypotLabel": "Website",
+      "successToast": "Đã gửi tin nhắn! Chúng tôi sẽ phản hồi sớm.",
+      "errorToast": "Đã xảy ra lỗi. Vui lòng thử lại.",
+      "networkErrorToast": "Lỗi mạng. Vui lòng kiểm tra kết nối và thử lại.",
+      "sentTitle": "Cảm ơn bạn đã liên hệ!",
+      "sentMessage": "Chúng tôi sẽ phản hồi bạn sớm nhất có thể.",
+      "sendAnother": "Gửi tin nhắn khác"
+    }
+  }
+}

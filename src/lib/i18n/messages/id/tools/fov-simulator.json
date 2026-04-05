@@ -1,0 +1,34 @@
+{
+  "toolUI": {
+    "fov-simulator": {
+      "rotate": "Putar",
+      "center": "Tengahkan",
+      "switchToPortrait": "Beralih ke potret",
+      "switchToLandscape": "Beralih ke lanskap",
+      "centerOverlays": "Tengahkan overlay",
+      "addLens": "+ Tambah lensa",
+      "fovSimulator": "Simulator FOV",
+      "sensor": "Sensor",
+      "copyImage": "Salin gambar",
+      "copyLink": "Salin tautan",
+      "embed": "Sematkan",
+      "reset": "Reset",
+      "frameInfo": "Info Frame",
+      "distance": "Jarak",
+      "showFramingGuides": "Tampilkan panduan framing",
+      "wide": "lebar",
+      "embedTitle": "Sematkan",
+      "closeEmbedModal": "Tutup modal sematkan",
+      "markdownLabel": "Markdown (Reddit, GitHub)",
+      "bbcodeLabel": "BBCode (Forum)",
+      "htmlEmbedLabel": "Sematkan HTML",
+      "copied": "Disalin",
+      "copy": "Salin",
+      "cropView": "Tampilan crop:",
+      "collapse": "Tutup",
+      "expand": "Buka",
+      "fovComparison": "Perbandingan FOV",
+      "loadingScene": "Memuat adegan..."
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "education": {
+    "perspective-compression-simulator": {
+      "beginner": "Perspektif sıkıştırma, farklı mesafelerdeki nesnelerin gerçekte olduklarından birbirine daha yakın göründüğü optik bir efekttir. En çok uzun telefoto objektifler (200mm veya 400mm gibi) uzak mesafeden kullanıldığında görülür. Yaygın inanışın aksine, sıkıştırmaya objektifin kendisi değil, kamera ile sahne arasındaki mesafe neden olur.",
+      "deeper": "Sıkıştırma, büyük mesafelerde ön plan konusu ile arka plan nesneleri arasındaki göreceli mesafe farkının küçük hale gelmesiyle oluşur. Örneğin, konunuzdan 30 metre uzaktaysanız ve arka plan onun 6 metre arkasındaysa, arka plan konudan yalnızca %20 daha uzaktadır. 1,5 metreden baktığınızda aynı 6 metrelik açıklık arka planı %500 daha uzak yapar. Uzaklaşıp konuyu \"kadrajı doldurmak\" için telefoto objektif kullanarak göreceli derinliği azaltırsınız, arka planın daha büyük ve konuya \"sıkıştırılmış\" görünmesini sağlarsınız.",
+      "keyFactors": {
+        "0": {
+          "label": "Çekim Mesafesi",
+          "description": "Sıkıştırmanın birincil nedeni. Konudan ne kadar uzaksanız, arka plan konuya göre o kadar sıkıştırılmış görünür."
+        },
+        "1": {
+          "label": "Odak Uzaklığı",
+          "description": "Telefoto objektifler görüntüyü büyüterek sıkıştırmanın görüldüğü bir mesafeden konuyu kadrajla doldurmanıza olanak tanır. Geniş açı objektifler yakın olmanızı gerektirir, bu da algılanan derinliği genişletir."
+        },
+        "2": {
+          "label": "Göreceli Derinlik",
+          "description": "Sıkıştırma, konu ile arka plan arasındaki mesafe, kamera ile konu arasındaki mesafeye göre küçük olduğunda en belirgindir."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Dağları bir konunun arkasında devasa göstermek için mümkün olduğunca uzağa çekilin ve en uzun telefoto objektifinizi kullanın. Bu, arka planı ön plana \"çeker\"."
+        },
+        "1": {
+          "text": "Portre fotoğrafçılığında 85mm veya 135mm objektif genellikle tercih edilir çünkü hafif sıkıştırma, geniş açı objektiflere kıyasla yüz hatlarının daha düzgün bir temsilini üretir."
+        },
+        "2": {
+          "text": "Bir ön planın yönlendirici çizgilerini vurgulamak ve bir alanı daha geniş ve açık hissettirmek için perspektif genişlemeyi (yakından geniş açı) kullanın."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Odak Uzaklığı",
+          "definition": "Objektifin büyütme gücü. Daha uzun odak uzaklıkları (telefoto) daha uzaktan çekim yapmanıza olanak tanır, bu da aslında perspektif sıkıştırmaya neden olan şeydir."
+        },
+        "distance": {
+          "term": "Konu Mesafesi",
+          "definition": "Kamera ile ana konu arasındaki mesafe. Bu mesafeyi artırmak perspektif sıkıştırmanın fiziksel nedenidir."
+        },
+        "maintainSize": {
+          "term": "Konu Boyutunu Koru",
+          "definition": "Odak uzaklığı değiştirildiğinde ana konuyu kadrajda aynı boyutta tutmak için kamera mesafesini otomatik olarak ayarlar. Bu, \"Dolly Zoom\" efektini gösterir."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Bir arkadaşınızın dağ önünde fotoğrafını çekmek istiyorsunuz ve dağın arkalarında mümkün olduğunca büyük görünmesini istiyorsunuz. Ne yapmalısınız?",
+          "hint": "Sıkıştırma mesafeden kaynaklanır ve telefoto objektifler uzaktan kadrajı doldurmanıza olanak tanır.",
+          "successMessage": "Kesinlikle! Uzaklaşıp telefoto objektif kullanarak arkadaşınız ile dağ arasındaki mesafeyi sıkıştırırsınız, dağın çok daha büyük görünmesini sağlarsınız.",
+          "failureMessage": "Tam değil. Geniş açı objektifle yaklaşmak dağı daha küçük ve daha uzak gösterir. Uzaklaşın ve yakınlaştırın!",
+          "options": {
+            "0": { "label": "Uzaklaş ve 200mm objektif kullan" },
+            "1": { "label": "Yaklaş ve 24mm objektif kullan" },
+            "2": { "label": "Yerinde kal ve 50mm objektif kullan" }
+          }
+        }
+      }
+    }
+  }
+}

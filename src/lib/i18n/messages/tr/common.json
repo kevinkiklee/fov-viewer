@@ -1,0 +1,126 @@
+{
+  "common": {
+    "nav": {
+      "tools": "Araçlar",
+      "glossary": "Sözlük",
+      "closeMenu": "Menüyü kapat",
+      "comingSoon": "Yakında",
+      "categories": {
+        "visualizer": "Görselleştiriciler",
+        "calculator": "Hesaplayıcılar",
+        "reference": "Referans",
+        "file-tool": "Dosya Araçları"
+      }
+    },
+    "footer": {
+      "glossary": "Sözlük",
+      "about": "Hakkında",
+      "contact": "İletişim",
+      "privacy": "Gizlilik Politikası",
+      "terms": "Kullanım Koşulları",
+      "cookieSettings": "Çerez Ayarları"
+    },
+    "theme": {
+      "switchToLight": "Açık temaya geç",
+      "switchToDark": "Koyu temaya geç"
+    },
+    "actions": {
+      "copyImage": "Görseli kopyala",
+      "reset": "Sıfırla",
+      "copyLink": "Bağlantıyı kopyala",
+      "share": "Paylaş",
+      "embed": "Göm"
+    },
+    "toast": {
+      "linkCopied": "Bağlantı kopyalandı!",
+      "imageCopied": "Görsel kopyalandı!",
+      "failedToCopy": "Kopyalama başarısız",
+      "copied": "Kopyalandı!"
+    },
+    "learn": {
+      "title": "Öğren",
+      "openPanel": "Öğrenme panelini aç",
+      "collapsePanel": "Öğrenme panelini daralt",
+      "whatIsThis": "Bu nedir?",
+      "howItWorks": "Nasıl çalışır",
+      "keyFactors": "Temel faktörler",
+      "proTip": "Profesyonel İpucu",
+      "challenge": "Meydan Okuma",
+      "hint": "İpucu: {hint}",
+      "completed": "Tamamlandı",
+      "checkAnswer": "Cevabı Kontrol Et",
+      "nextChallenge": "Sonraki Meydan Okuma",
+      "tryAgain": "Tekrar Dene",
+      "resetAll": "Tümünü sıfırla",
+      "resetAllChallenges": "Tüm meydan okumaları sıfırla",
+      "challengeNumber": "Meydan Okuma {number}"
+    },
+    "share": {
+      "title": "Paylaş ve Göm",
+      "closeModal": "Paylaşım penceresini kapat",
+      "directLink": "Doğrudan Bağlantı",
+      "markdown": "Markdown (Reddit, GitHub)",
+      "bbcode": "BBCode (Forumlar)",
+      "htmlEmbed": "HTML Gömme",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı"
+    },
+    "draft": {
+      "banner": "Önizleme — Bu araç henüz herkese açık değil"
+    },
+    "fileUpload": {
+      "dropPrompt": "Bir görsel sürükleyin veya göz atmak için tıklayın",
+      "tapPrompt": "Fotoğraf seçmek için dokunun",
+      "privacy": "Fotoğraflarınız cihazınızdan asla ayrılmaz",
+      "selectedFile": "Seçilen dosya: {fileName}. Farklı bir görsel seçmek için tıklayın",
+      "defaultLabel": "Fotoğrafınız"
+    },
+    "scene": {
+      "label": "Sahne:",
+      "yourPhoto": "Fotoğrafınız",
+      "removePhoto": "Fotoğrafı kaldır",
+      "uploadPhoto": "Fotoğraf yükle"
+    },
+    "controls": {
+      "focalLength": "Odak uzaklığı",
+      "aperture": "Diyafram",
+      "distance": "Mesafe",
+      "clickToEnterValue": "Değer girmek için tıklayın",
+      "decrease": "Azalt",
+      "increase": "Artır"
+    },
+    "dof": {
+      "depthOfField": "Alan derinliği: {totalDoF} — {nearFocus} ile {farFocus} arası",
+      "infinity": "Sonsuz"
+    },
+    "ad": {
+      "closeAd": "Reklamı kapat"
+    },
+    "tooltip": {
+      "infoLabel": "Bilgi: {term}"
+    },
+    "notFound": {
+      "title": "Sayfa Bulunamadı",
+      "message": "Aradığınız sayfa mevcut değil veya taşınmış.",
+      "backHome": "Ana Sayfaya Dön",
+      "popularTools": "Popüler Araçlar"
+    },
+    "breadcrumb": {
+      "home": "Ana Sayfa"
+    },
+    "relatedTools": {
+      "title": "İlgili Araçlar"
+    },
+    "sensors": {
+      "mf_645": "Orta Format (54x40)",
+      "mf": "Orta Format (44x33)",
+      "mf_leica": "Orta Format (45x30)",
+      "ff": "Tam Kare",
+      "apsc_n": "APS-C (1,5x)",
+      "apsc_c": "APS-C (Canon)",
+      "m43": "Mikro Dört Üçlü",
+      "1in": "1\" Sensör",
+      "phone": "Akıllı Telefon Amiral Gemisi (1/1,3\")"
+    }
+  }
+}

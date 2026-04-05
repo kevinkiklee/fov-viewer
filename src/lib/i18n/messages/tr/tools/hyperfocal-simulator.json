@@ -1,0 +1,21 @@
+{
+  "toolUI": {
+    "hyperfocal-simulator": {
+      "settings": "Ayarlar",
+      "focalLength": "Odak Uzaklığı",
+      "aperture": "Diyafram",
+      "focusDistance": "Odak Mesafesi:",
+      "sensor": "Sensör",
+      "scene": "Sahne:",
+      "sceneLandscape": "Manzara",
+      "sceneStreet": "Sokak",
+      "hyperfocalDistance": "Hiperfocal Mesafe",
+      "nearLimit": "Yakın Sınır",
+      "farLimit": "Uzak Sınır",
+      "focusDistanceResult": "Odak Mesafesi",
+      "hyperfocalReference": "Hiperfocal Referansı",
+      "sharpToInfinity": "Sonsuza kadar net",
+      "nearLimitBadge": "Yakın sınır:"
+    }
+  }
+}

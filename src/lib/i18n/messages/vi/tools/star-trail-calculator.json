@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "star-trail-calculator": {
+      "rule500": "Quy tắc 500",
+      "ruleNPF": "Quy tắc NPF",
+      "recommendation": "Khuyến nghị",
+      "recommendationText": "Sử dụng quy tắc NPF ({npf}s) cho độ nét pixel. Quy tắc 500 ({r500}s) là ước tính nhanh nhưng có thể hiển thị vệt trên cảm biến độ phân giải cao.",
+      "shootingTime": "Thời gian chụp",
+      "exposure": "Phơi sáng",
+      "displayMode": "Chế độ hiển thị",
+      "modeStarTrails": "Vệt sao",
+      "modeSingleShot": "Ảnh đơn",
+      "stacking": "Chồng ảnh",
+      "exposurePerFrame": "Phơi sáng / khung (giây)",
+      "exposurePerFrameDesc": "Tốc độ màn trập cho mỗi khung riêng lẻ",
+      "frames": "Khung hình",
+      "framesDesc": "Tổng số ảnh để chồng",
+      "gapSec": "Khoảng trống (giây)",
+      "gapDesc": "Độ trễ giữa các khung để ghi bộ đệm",
+      "camera": "Máy ảnh",
+      "sensor": "Cảm biến",
+      "resolutionMP": "Độ phân giải (MP)",
+      "apertureLabel": "Khẩu độ",
+      "latitude": "Vĩ độ",
+      "position": "Vị trí",
+      "useMyLocation": "Dùng vị trí của tôi",
+      "latitudeLabel": "Vĩ độ:",
+      "equator": "Xích đạo 0°",
+      "mid45": "Trung vĩ 45°",
+      "arctic70": "Bắc cực 70°"
+    }
+  }
+}

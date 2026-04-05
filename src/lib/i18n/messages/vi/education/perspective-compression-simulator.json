@@ -1,0 +1,60 @@
+{
+  "education": {
+    "perspective-compression-simulator": {
+      "beginner": "Nén phối cảnh là hiệu ứng quang học trong đó các vật thể ở khoảng cách khác nhau xuất hiện gần nhau hơn thực tế. Nó thường thấy nhất khi sử dụng ống tele dài (như 200mm hoặc 400mm) từ khoảng cách xa. Trái với niềm tin phổ biến, không phải bản thân ống kính gây ra nén, mà là khoảng cách giữa máy ảnh và cảnh.",
+      "deeper": "Nén xảy ra vì ở khoảng cách lớn, sự khác biệt tương đối về khoảng cách giữa chủ thể tiền cảnh và vật hậu cảnh trở nên nhỏ. Ví dụ, nếu bạn cách chủ thể 30 mét và hậu cảnh cách thêm 6 mét phía sau, hậu cảnh chỉ xa hơn chủ thể 20%. Từ 1.5 mét, cùng khoảng cách 6 mét đó làm hậu cảnh xa hơn 500%. Bằng cách di chuyển xa và sử dụng ống tele để \"lấp đầy khung\" với chủ thể, bạn giảm chiều sâu tương đối, làm hậu cảnh xuất hiện lớn hơn và \"nén\" vào chủ thể.",
+      "keyFactors": {
+        "0": {
+          "label": "Khoảng cách chụp",
+          "description": "Nguyên nhân chính của nén. Bạn càng xa chủ thể, hậu cảnh càng xuất hiện nén so với chủ thể."
+        },
+        "1": {
+          "label": "Tiêu cự",
+          "description": "Ống tele phóng đại ảnh, cho phép bạn lấp đầy khung với chủ thể từ khoảng cách nơi nén có thể nhìn thấy. Ống góc rộng đòi hỏi bạn ở gần, mở rộng chiều sâu cảm nhận."
+        },
+        "2": {
+          "label": "Chiều sâu tương đối",
+          "description": "Nén rõ nhất khi khoảng cách giữa chủ thể và hậu cảnh nhỏ so với khoảng cách giữa máy ảnh và chủ thể."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Để núi trông hùng vĩ đằng sau chủ thể, lùi xa nhất có thể và sử dụng ống tele dài nhất. Điều này \"kéo\" hậu cảnh gần tiền cảnh hơn."
+        },
+        "1": {
+          "text": "Trong nhiếp ảnh chân dung, ống kính 85mm hoặc 135mm thường được ưa chuộng vì nén nhẹ tạo ra biểu hiện khuôn mặt tự nhiên hơn so với ống góc rộng."
+        },
+        "2": {
+          "text": "Sử dụng mở rộng phối cảnh (góc rộng gần) để nhấn mạnh đường dẫn tiền cảnh và làm không gian cảm thấy rộng lớn và thoáng đãng hơn."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Tiêu cự",
+          "definition": "Sức phóng đại của ống kính. Tiêu cự dài hơn (tele) cho phép bạn chụp từ xa hơn, đó là điều thực sự gây ra nén phối cảnh."
+        },
+        "distance": {
+          "term": "Khoảng cách chủ thể",
+          "definition": "Khoảng cách giữa máy ảnh và chủ thể chính. Tăng khoảng cách này là nguyên nhân vật lý của nén phối cảnh."
+        },
+        "maintainSize": {
+          "term": "Giữ kích thước chủ thể",
+          "definition": "Tự động điều chỉnh khoảng cách máy ảnh khi thay đổi tiêu cự để giữ chủ thể chính cùng kích thước trong khung. Điều này minh họa hiệu ứng \"Dolly Zoom\"."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Bạn muốn chụp ảnh bạn bè trước núi, và muốn núi trông lớn nhất có thể phía sau. Bạn nên làm gì?",
+          "hint": "Nén do khoảng cách gây ra, và ống tele cho phép bạn lấp đầy khung từ xa.",
+          "successMessage": "Chính xác! Bằng cách di chuyển xa và sử dụng ống tele, bạn nén khoảng cách giữa bạn bè và núi, làm núi xuất hiện lớn hơn nhiều.",
+          "failureMessage": "Chưa đúng. Tiến gần với ống góc rộng sẽ làm núi trông nhỏ hơn và xa hơn. Hãy lùi xa và zoom vào!",
+          "options": {
+            "0": { "label": "Lùi xa và dùng ống 200mm" },
+            "1": { "label": "Tiến gần và dùng ống 24mm" },
+            "2": { "label": "Đứng yên và dùng ống 50mm" }
+          }
+        }
+      }
+    }
+  }
+}

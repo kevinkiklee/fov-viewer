@@ -1,0 +1,25 @@
+{
+  "contact": {
+    "title": "ติดต่อเรา",
+    "description": "มีคำถาม พบบั๊ก หรือต้องการแนะนำเครื่องมือใหม่? เรายินดีรับฟัง",
+    "form": {
+      "nameLabel": "ชื่อ",
+      "namePlaceholder": "ชื่อของคุณ",
+      "emailLabel": "อีเมล",
+      "emailPlaceholder": "your@email.com",
+      "subjectLabel": "หัวข้อ",
+      "subjectPlaceholder": "เรื่องนี้เกี่ยวกับอะไร?",
+      "messageLabel": "ข้อความ",
+      "messagePlaceholder": "ข้อความของคุณ...",
+      "submit": "ส่งข้อความ",
+      "sending": "กำลังส่ง...",
+      "honeypotLabel": "เว็บไซต์",
+      "successToast": "ส่งข้อความแล้ว! เราจะติดต่อกลับเร็วๆ นี้",
+      "errorToast": "เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง",
+      "networkErrorToast": "เกิดข้อผิดพลาดด้านเครือข่าย กรุณาตรวจสอบการเชื่อมต่อของคุณแล้วลองใหม่",
+      "sentTitle": "ขอบคุณที่ติดต่อมา!",
+      "sentMessage": "เราจะติดต่อกลับโดยเร็วที่สุด",
+      "sendAnother": "ส่งข้อความอื่น"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "education": {
+    "equivalent-settings-calculator": {
+      "beginner": "Różne rozmiary matryc dają różną głębię ostrości i pole widzenia nawet przy tej samej ogniskowej i przysłonie. Ekwiwalentne ustawienia pozwalają znaleźć kombinację obiektywu i przysłony na drugim aparacie, która odtworzy te same kadrowanie i rozmycie tła. Jest to niezbędne przy porównywaniu sprzętu różnych formatów lub przechodzeniu między systemami aparatów.",
+      "deeper": {
+        "0": {
+          "heading": "Współczynnik kadrowania",
+          "text": "Każda matryca ma współczynnik kadrowania względem pełnoklatkowego standardu 35 mm. Matryce APS-C mają współczynnik około 1,5×, Micro Four Thirds 2×, a średni format około 0,79×. Pomnożenie rzeczywistej ogniskowej przez współczynnik kadrowania daje pełnoklatkowe ekwiwalentne pole widzenia. Obiektyw 35 mm na APS-C kadruje jak 52,5 mm na pełnej klatce."
+        },
+        "1": {
+          "heading": "Ekwiwalentna przysłona i GoO",
+          "text": "Aby dopasować głębię ostrości między formatami, pomnóż numer f przez ten sam współczynnik kadrowania. Obiektyw f/1.4 na Micro Four Thirds daje GoO ekwiwalentną f/2.8 na pełnej klatce (1,4 × 2 = 2,8). Dlatego pełnoklatkowe aparaty są cenione za płytką GoO — można używać fizycznie jaśniejszych obiektywów przy szerszych rzeczywistych przysłonach, aby uzyskać rozmycie, którego mniejsze matryce nie mogą odtworzyć."
+        },
+        "2": {
+          "heading": "Ekwiwalentne ISO i całkowite światło",
+          "text": "Dopasowanie jasności ekspozycji między formatami wymaga dostosowania ISO o kwadrat współczynnika kadrowania. Większa matryca zbiera więcej całkowitego światła dla tej samej sceny, co oznacza, że może używać niższego ISO dla ekwiwalentnej wydajności szumowej. Pełnoklatkowa matryca przy ISO 800 daje podobny szum jak matryca APS-C przy ISO 356 i matryca Micro Four Thirds przy ISO 200."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Współczynnik kadrowania",
+          "description": "Stosunek przekątnej pełnoklatkowej matrycy do przekątnej docelowej matrycy. Ta jedna liczba napędza wszystkie obliczenia ekwiwalencji dla ogniskowej, przysłony i ISO."
+        },
+        "1": {
+          "label": "Rozmiar matrycy",
+          "description": "Fizycznie większe matryce wychwytują więcej światła i dają płytszą GoO przy ekwiwalentnym kadrowaniu. Kalkulator ekwiwalencji ujawnia dokładnie, jaką różnicę robi każdy format."
+        },
+        "2": {
+          "label": "Dostępne obiektywy",
+          "description": "Matematyka ekwiwalencji może wymagać obiektywu, który nie istnieje. 17 mm f/0.7 to ekwiwalent 35 mm f/1.4 na MFT — ale taki obiektyw nie jest produkowany. Rzeczywisty sprzęt ogranicza to, co jest osiągalne."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Porównując systemy aparatów, zawsze porównuj przy ekwiwalentnych ustawieniach zamiast dopasowywać numery f. Obiektyw f/2.8 na Micro Four Thirds nie daje takiego samego rozmycia tła jak f/2.8 na pełnej klatce — na MFT potrzebujesz f/1.4, aby to dopasować."
+        },
+        "1": {
+          "text": "Użyj ekwiwalencji do planowania zakupu obiektywów przy zmianie systemu. Jeśli lubisz wygląd 85 mm f/1.8 na pełnej klatce, szukaj 56 mm f/1.2 na APS-C lub 42.5 mm f/0.95 na MFT dla podobnego renderowania."
+        },
+        "2": {
+          "text": "Pamiętaj, że ekwiwalencja dotyczy głębi ostrości i pola widzenia, a nie jasności obiektywu dla ekspozycji. Obiektyw f/2.8 na dowolnym formacie wciąż wpuszcza tę samą ilość światła na jednostkę powierzchni — większa matryca po prostu zbiera więcej całkowitego światła ze względu na większą powierzchnię."
+        }
+      },
+      "tooltips": {
+        "sourceSensor": {
+          "term": "Matryca źródłowa",
+          "definition": "Format matrycy aparatu, którego ustawienia chcesz dopasować. Wszystkie obliczenia ekwiwalencji odnoszą się do tego punktu wyjścia."
+        },
+        "sourceFocalLength": {
+          "term": "Ogniskowa",
+          "definition": "Rzeczywista ogniskowa obiektywu na aparacie źródłowym. Zostanie przeliczona na ekwiwalentne ogniskowe na formatach docelowych."
+        },
+        "sourceAperture": {
+          "term": "Przysłona",
+          "definition": "Numer f na aparacie źródłowym. Ekwiwalentna przysłona na każdym formacie docelowym określa dopasowaną głębię ostrości."
+        },
+        "targetSensor": {
+          "term": "Matryca docelowa",
+          "definition": "Format matrycy, dla którego chcesz znaleźć ekwiwalentne ustawienia. Kalkulator stosuje względny współczynnik kadrowania do obliczenia dopasowanej ogniskowej i przysłony."
+        },
+        "cropFactor": {
+          "term": "Współczynnik kadrowania",
+          "definition": "Stosunek przekątnej pełnoklatkowej matrycy 35 mm do matrycy docelowej. Pomnóż ogniskową przez współczynnik kadrowania dla ekwiwalentnego pola widzenia; pomnóż przysłonę przez współczynnik kadrowania dla ekwiwalentnej GoO."
+        },
+        "equivalentFL": {
+          "term": "Ekwiwalentna ogniskowa",
+          "definition": "Ogniskowa na formacie docelowym, która daje to samo pole widzenia co ustawienie źródłowe."
+        },
+        "equivalentAperture": {
+          "term": "Ekwiwalentna przysłona",
+          "definition": "Numer f na formacie docelowym, który daje tę samą głębię ostrości co ustawienie źródłowe. Może być jaśniejszy niż jakikolwiek rzeczywisty obiektyw."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Fotografujesz portrety obiektywem 85 mm f/1.8 na pełnoklatkowym aparacie. Przyjaciel używa Micro Four Thirds (kadrowanie 2×). Jakiej ogniskowej potrzebuje Twój przyjaciel, aby dopasować pole widzenia?",
+          "hint": "Podziel pełnoklatkową ogniskową przez współczynnik kadrowania MFT, aby znaleźć potrzebny obiektyw.",
+          "successMessage": "Prawidłowo! 85 mm / 2 = 42.5 mm. Twój przyjaciel potrzebuje obiektywu 42.5 mm na Micro Four Thirds, aby uzyskać ten sam kadr co Twój 85 mm na pełnej klatce.",
+          "failureMessage": "Aby dopasować pole widzenia, podziel przez współczynnik kadrowania: 85 mm / 2 = 42.5 mm. To jest rzeczywista ogniskowa potrzebna na korpusie MFT.",
+          "options": {
+            "0": { "label": "42.5 mm" },
+            "1": { "label": "85 mm" },
+            "2": { "label": "170 mm" },
+            "3": { "label": "56 mm" }
+          }
+        },
+        "1": {
+          "scenario": "Twój przyjaciel znalazł obiektyw 42.5 mm f/1.8 do swojego aparatu MFT. Czy rozmycie tła będzie takie samo jak Twoje 85 mm f/1.8 na pełnej klatce?",
+          "hint": "Zastosuj współczynnik kadrowania również do przysłony, aby znaleźć ekwiwalentną GoO.",
+          "successMessage": "Zgadza się! 42.5 mm f/1.8 na MFT daje GoO ekwiwalentną 85 mm f/3.6 na pełnej klatce (1.8 × 2 = 3.6). Twoje pełnoklatkowe f/1.8 daje znacznie więcej rozmycia.",
+          "failureMessage": "Nie — MFT f/1.8 daje GoO ekwiwalentną f/3.6 na pełnej klatce (1.8 × 2× kadrowanie = 3.6). Aby dopasować rozmycie pełnoklatkowego f/1.8, Twój przyjaciel potrzebowałby f/0.9 na MFT, co nie istnieje.",
+          "options": {
+            "0": { "label": "Tak — to samo f/1.8 oznacza takie samo rozmycie" },
+            "1": { "label": "Nie — MFT f/1.8 odpowiada pełnoklatkowej głębi ostrości f/3.6" },
+            "2": { "label": "Nie — MFT daje więcej rozmycia, bo matryca jest mniejsza" }
+          }
+        },
+        "2": {
+          "scenario": "Fotograf przechodzący z pełnej klatki na APS-C (kadrowanie 1,5×) chce odtworzyć wygląd 50 mm f/1.4 z pełnej klatki. Jakiego ekwiwalentnego obiektywu i przysłony potrzebuje na APS-C?",
+          "hint": "Podziel ogniskową przez współczynnik kadrowania dla ekwiwalentnego pola widzenia. Podziel przysłonę przez współczynnik kadrowania dla ekwiwalentnej GoO.",
+          "successMessage": "Dokładnie! 50 / 1,5 = 33 mm dla pola widzenia i f/1.4 / 1,5 = f/0.93 dla dopasowanej GoO. Ponieważ nie istnieje obiektyw f/0.93, aparat APS-C nie może w pełni odtworzyć wyglądu pełnej klatki.",
+          "failureMessage": "Prawidłowa odpowiedź to ~33 mm f/0.93. Ponieważ 50 / 1,5 = 33,3 mm i 1,4 / 1,5 = 0,93. Nie istnieje obiektyw f/0.93, więc wyglądu pełnej klatki nie da się w pełni odtworzyć na APS-C.",
+          "options": {
+            "0": { "label": "35 mm f/1.4 — wystarczająco blisko" },
+            "1": { "label": "33 mm f/0.93 — dokładne dopasowanie, ale taki obiektyw nie istnieje" },
+            "2": { "label": "75 mm f/2.1 — pomnóż przez współczynnik kadrowania" }
+          }
+        }
+      }
+    }
+  }
+}

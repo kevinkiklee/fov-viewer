@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "focus-stacking-calculator": {
+      "settings": "Pengaturan",
+      "camera": "Kamera & Lensa",
+      "focalLength": "Panjang Fokus",
+      "aperture": "Apertur",
+      "sensor": "Sensor",
+      "depthRange": "Rentang Kedalaman",
+      "nearLimit": "Batas Dekat",
+      "farLimit": "Batas Jauh",
+      "overlap": "Tumpang Tindih",
+      "overlapDescription": "Persentase tumpang tindih DoF antara foto yang berdekatan untuk memastikan penggabungan yang mulus",
+      "results": "Hasil",
+      "shotCount": "Foto Diperlukan",
+      "totalDepth": "Total Kedalaman",
+      "overlapMargin": "Margin Tumpang Tindih",
+      "perShotDoF": "DoF Per-Foto",
+      "focusStep": "Langkah Fokus",
+      "exportPlan": "Ekspor Rencana",
+      "exportCSV": "Ekspor sebagai CSV",
+      "exportJSON": "Ekspor sebagai JSON",
+      "diagram": "Diagram Focus Stack",
+      "diagramNear": "Dekat",
+      "diagramFar": "Jauh",
+      "diagramCoverage": "Cakupan",
+      "diagramFocusPoints": "Titik fokus",
+      "diagramShot": "Foto {number}",
+      "diagramOverlap": "Zona tumpang tindih",
+      "diagramSharpZone": "Zona tajam",
+      "diagramSubject": "Subjek",
+      "diagramSensor": "Sensor",
+      "infinity": "∞",
+      "distanceUnit": "m",
+      "warning": "Peringatan",
+      "tooFewShots": "Rentang kedalaman berada dalam satu foto — tidak perlu stacking",
+      "tooManyShots": "Rencana ini memerlukan banyak foto. Pertimbangkan apertur yang lebih sempit untuk mengurangi jumlah.",
+      "macroMode": "Makro",
+      "landscapeMode": "Lanskap"
+    }
+  }
+}

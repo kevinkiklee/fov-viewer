@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "histogram": {
+      "luminance": "Luminans",
+      "rgbOverlay": "RGB Kaplama",
+      "allChannels": "Tüm Kanallar",
+      "shadows": "Gölgeler",
+      "midtones": "Orta Tonlar",
+      "highlights": "Parlak Alanlar",
+      "blackClipping": "Siyah kırpma",
+      "whiteClipping": "Beyaz kırpma",
+      "pureBlack": "saf siyah",
+      "pureWhite": "saf beyaz",
+      "uploadPrompt": "EXIF verilerini ve histogramı görüntülemek için bir görsel yükleyin",
+      "uploadedPhoto": "Yüklenen fotoğraf",
+      "noExifData": "Bu görüntüde EXIF verisi bulunamadı.",
+      "sectionCamera": "Kamera",
+      "sectionLens": "Objektif",
+      "sectionSettings": "Ayarlar",
+      "sectionImage": "Görüntü",
+      "sectionDate": "Tarih",
+      "sectionGPS": "GPS",
+      "sectionSoftware": "Yazılım",
+      "make": "Marka",
+      "model": "Model",
+      "lensModel": "Objektif Modeli",
+      "lensMake": "Objektif Markası",
+      "apertureLabel": "Diyafram",
+      "shutterSpeed": "Enstantane Hızı",
+      "isoLabel": "ISO",
+      "focalLengthLabel": "Odak Uzaklığı",
+      "focalLength35mm": "Odak Uzaklığı (35mm eşd.)",
+      "width": "Genişlik",
+      "height": "Yükseklik",
+      "orientationLabel": "Yön",
+      "dateTaken": "Çekim Tarihi",
+      "latitudeLabel": "Enlem",
+      "longitudeLabel": "Boylam",
+      "softwareLabel": "Yazılım"
+    }
+  }
+}

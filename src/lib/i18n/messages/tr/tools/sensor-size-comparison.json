@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "sensor-size-comparison": {
+      "displayMode": "Görüntüleme Modu",
+      "modeOverlay": "Kaplama",
+      "modeSideBySide": "Yan Yana",
+      "modePixelDensity": "Piksel Yoğunluğu",
+      "pixelDensityDescription": "Her sensör için yaygın megapiksel sayılarını gösteriyor. Daha büyük pikseller (büyük hücreler) daha fazla ışık yakalar.",
+      "sensors": "Sensörler",
+      "customSensors": "Özel Sensörler",
+      "placeholderName": "Ad",
+      "placeholderW": "G (mm)",
+      "placeholderH": "Y (mm)",
+      "placeholderMP": "Megapiksel (isteğe bağlı)",
+      "placeholderMPShort": "MP",
+      "maxDimensionWarning": "Maksimum sensör boyutu 99 mm'dir",
+      "addSensor": "Sensör Ekle",
+      "save": "Kaydet",
+      "cancelEdit": "İptal",
+      "edit": "Düzenle",
+      "remove": "Kaldır",
+      "deleteAllCustom": "Tüm Özel Sensörleri Sil",
+      "tableSensor": "Sensör",
+      "tableWidth": "Genişlik (mm)",
+      "tableHeight": "Yükseklik (mm)",
+      "tableAspectRatio": "En-Boy Oranı",
+      "tableArea": "Alan (mm²)",
+      "tableCropFactor": "Kırpma Faktörü",
+      "tableAspectCrop": "Oran Kırpması",
+      "canvasAriaLabel": "{mode} modunda sensör boyutu karşılaştırması"
+    }
+  }
+}

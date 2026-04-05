@@ -1,0 +1,43 @@
+{
+  "toolUI": {
+    "exposure-simulator": {
+      "lock": "Khóa:",
+      "lockAperture": "Khẩu độ",
+      "lockShutter": "Màn trập",
+      "lockISO": "ISO",
+      "lockApertureLabel": "Khóa khẩu độ",
+      "lockShutterLabel": "Khóa tốc độ màn trập",
+      "lockISOLabel": "Khóa ISO",
+      "aperture": "Khẩu độ:",
+      "shutterSpeed": "Tốc độ màn trập:",
+      "iso": "ISO:",
+      "locked": "(đã khóa)",
+      "exposureValue": "Giá trị phơi sáng (EV)",
+      "depthOfField": "Chiều sâu trường ảnh",
+      "motion": "Chuyển ��ộng",
+      "noise": "Nhiễu",
+      "dofVeryShallow": "Rất nông",
+      "dofShallow": "Nông",
+      "dofModerate": "Vừa phải",
+      "dofDeep": "Sâu",
+      "dofVeryDeep": "Rất sâu",
+      "motionFrozen": "Đóng băng",
+      "motionSharp": "Sắc nét",
+      "motionModerate": "Vừa phải",
+      "motionSlightBlur": "Nhòe nhẹ",
+      "motionBlurred": "Nhòe",
+      "noiseClean": "Sạch",
+      "noiseLow": "Nhiễu thấp",
+      "noiseModerate": "Nhiễu vừa",
+      "noiseNoisy": "Nhiều nhiễu",
+      "noiseVeryNoisy": "Rất nhiều nhiễu",
+      "scene": "Cảnh:",
+      "sceneStreet": "Đường phố",
+      "sceneLandscape": "Phong cảnh",
+      "scenePortrait": "Chân dung",
+      "sceneLowLight": "Thiếu sáng",
+      "imageEffectsUnavailable": "Xem trước hiệu ứng ảnh không khả dụng.",
+      "loadingScene": "Đang tải cảnh..."
+    }
+  }
+}

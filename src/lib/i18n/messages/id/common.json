@@ -1,0 +1,126 @@
+{
+  "common": {
+    "nav": {
+      "tools": "Alat",
+      "glossary": "Glosarium",
+      "closeMenu": "Tutup menu",
+      "comingSoon": "Segera",
+      "categories": {
+        "visualizer": "Visualisator",
+        "calculator": "Kalkulator",
+        "reference": "Referensi",
+        "file-tool": "Alat File"
+      }
+    },
+    "footer": {
+      "glossary": "Glosarium",
+      "about": "Tentang",
+      "contact": "Kontak",
+      "privacy": "Kebijakan Privasi",
+      "terms": "Ketentuan Layanan",
+      "cookieSettings": "Pengaturan Cookie"
+    },
+    "theme": {
+      "switchToLight": "Beralih ke mode terang",
+      "switchToDark": "Beralih ke mode gelap"
+    },
+    "actions": {
+      "copyImage": "Salin gambar",
+      "reset": "Reset",
+      "copyLink": "Salin tautan",
+      "share": "Bagikan",
+      "embed": "Sematkan"
+    },
+    "toast": {
+      "linkCopied": "Tautan disalin!",
+      "imageCopied": "Gambar disalin!",
+      "failedToCopy": "Gagal menyalin",
+      "copied": "Disalin!"
+    },
+    "learn": {
+      "title": "Pelajari",
+      "openPanel": "Buka panel pembelajaran",
+      "collapsePanel": "Tutup panel pembelajaran",
+      "whatIsThis": "Apa ini?",
+      "howItWorks": "Cara kerjanya",
+      "keyFactors": "Faktor kunci",
+      "proTip": "Tips Pro",
+      "challenge": "Tantangan",
+      "hint": "Petunjuk: {hint}",
+      "completed": "Selesai",
+      "checkAnswer": "Periksa Jawaban",
+      "nextChallenge": "Tantangan Berikutnya",
+      "tryAgain": "Coba Lagi",
+      "resetAll": "Reset semua",
+      "resetAllChallenges": "Reset semua tantangan",
+      "challengeNumber": "Tantangan {number}"
+    },
+    "share": {
+      "title": "Bagikan & Sematkan",
+      "closeModal": "Tutup modal bagikan",
+      "directLink": "Tautan Langsung",
+      "markdown": "Markdown (Reddit, GitHub)",
+      "bbcode": "BBCode (Forum)",
+      "htmlEmbed": "Sematkan HTML",
+      "copy": "Salin",
+      "copied": "Disalin"
+    },
+    "draft": {
+      "banner": "Pratinjau — Alat ini belum dipublikasikan"
+    },
+    "fileUpload": {
+      "dropPrompt": "Letakkan gambar di sini atau klik untuk memilih",
+      "tapPrompt": "Ketuk untuk memilih foto",
+      "privacy": "Foto Anda tidak pernah meninggalkan perangkat Anda",
+      "selectedFile": "File terpilih: {fileName}. Klik untuk memilih gambar lain",
+      "defaultLabel": "Foto Anda"
+    },
+    "scene": {
+      "label": "Adegan:",
+      "yourPhoto": "Foto Anda",
+      "removePhoto": "Hapus foto",
+      "uploadPhoto": "Unggah foto"
+    },
+    "controls": {
+      "focalLength": "Panjang fokus",
+      "aperture": "Apertur",
+      "distance": "Jarak",
+      "clickToEnterValue": "Klik untuk memasukkan nilai",
+      "decrease": "Kurangi",
+      "increase": "Tambah"
+    },
+    "dof": {
+      "depthOfField": "Kedalaman bidang: {totalDoF} dari {nearFocus} hingga {farFocus}",
+      "infinity": "Tak Terhingga"
+    },
+    "ad": {
+      "closeAd": "Tutup iklan"
+    },
+    "tooltip": {
+      "infoLabel": "Info: {term}"
+    },
+    "notFound": {
+      "title": "Halaman Tidak Ditemukan",
+      "message": "Halaman yang Anda cari tidak ada atau telah dipindahkan.",
+      "backHome": "Kembali ke Beranda",
+      "popularTools": "Alat Populer"
+    },
+    "breadcrumb": {
+      "home": "Beranda"
+    },
+    "relatedTools": {
+      "title": "Alat Terkait"
+    },
+    "sensors": {
+      "mf_645": "Medium Format (54x40)",
+      "mf": "Medium Format (44x33)",
+      "mf_leica": "Medium Format (45x30)",
+      "ff": "Full Frame",
+      "apsc_n": "APS-C (1,5x)",
+      "apsc_c": "APS-C (Canon)",
+      "m43": "Micro Four Thirds",
+      "1in": "Sensor 1\"",
+      "phone": "Smartphone Flagship (1/1,3\")"
+    }
+  }
+}

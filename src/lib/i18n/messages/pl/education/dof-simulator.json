@@ -1,0 +1,169 @@
+{
+  "education": {
+    "dof-simulator": {
+      "beginner": "Głębia ostrości (GoO) to zakres odległości na zdjęciu, który wydaje się akceptowalnie ostry. Płytka GoO rozmywa tło za obiektem, natomiast duża GoO utrzymuje ostrość wszystkiego od pierwszego planu do horyzontu. Kontrolowanie głębi ostrości jest jednym z najpotężniejszych narzędzi twórczych w fotografii.",
+      "deeper": {
+        "0": {
+          "heading": "Jak działa głębia ostrości",
+          "text": "Głębia ostrości jest determinowana przez krążek rozproszenia (CoC) — największą plamkę rozmycia na matrycy, która wciąż wygląda ostro dla ludzkiego oka. Trzy czynniki fizyczne określają GoO: ogniskowa, przysłona i odległość od obiektu. Szersza przysłona (niższy numer f) tworzy płytszą GoO, ponieważ obiektyw skupia światło pod bardziej stromymi kątami, powodując, że nieostre punkty rozkładają się w większe koła na matrycy."
+        },
+        "1": {
+          "heading": "Ogniskowa i odległość",
+          "text": "Dłuższe ogniskowe powiększają obraz, co również powiększa koła rozmycia, zawężając GoO. Zbliżanie się do obiektu zmniejsza GoO z tego samego powodu — względna różnica odległości między obiektem a tłem staje się większa. Odległość hiperfokalna to odległość ogniskowania, przy której GoO rozciąga się od połowy tej odległości do nieskończoności, maksymalizując ostrość w całej scenie."
+        },
+        "2": {
+          "heading": "Bokeh i dyfrakcja",
+          "text": "Bokeh odnosi się do jakości nieostrych obszarów. Liczba i kształt listków przysłony wpływają na charakter bokeh — bardziej zaokrąglone listki dają gładsze, bardziej okrągłe światła. Przy bardzo małych przysłonach (f/16+) dyfrakcja powoduje rozpraszanie światła na krawędziach przysłony, zmiękczając cały obraz nawet w strefie GoO. Zawsze istnieje punkt optymalny — zwykle około f/5.6-f/8 na pełnej klatce — gdzie ostrość i głębia ostrości są optymalnie zrównoważone."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Przysłona",
+          "description": "Szersze przysłony (f/1.4-f/2.8) tworzą płytką GoO z kremowym bokeh. Węższe przysłony (f/8-f/16) zwiększają ostrość w całej scenie."
+        },
+        "1": {
+          "label": "Ogniskowa",
+          "description": "Dłuższe obiektywy kompresują perspektywę i zawężają GoO przy tej samej przysłonie i kadrze. Obiektyw 200 mm przy f/4 ma znacznie mniejszą GoO niż 35 mm przy f/4."
+        },
+        "2": {
+          "label": "Odległość od obiektu",
+          "description": "Im bliżej ustawisz ostrość, tym płytsza GoO. Fotografowie makro często pracują z GoO mierzoną w milimetrach."
+        },
+        "3": {
+          "label": "Rozmiar matrycy",
+          "description": "Większe matryce wymagają dłuższych ogniskowych do tego samego kadru, co pośrednio zawęża GoO. Aparat pełnoklatkowy daje płytszą GoO niż Micro Four Thirds przy ekwiwalentnym kadrowaniu."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Do grupowych portretów używaj f/5.6 lub mniejszej przysłony i ustaw wszystkich w tej samej płaszczyźnie ogniskowej. Nawet jedna osoba pół kroku do przodu może wypaść z ostrości przy szerokich przysłonach."
+        },
+        "1": {
+          "text": "Przy krajobrazach ustaw ostrość na odległość hiperfokalną zamiast na nieskończoność. To maksymalizuje strefę ostrości od bliskiego pierwszego planu po dalekie tło."
+        },
+        "2": {
+          "text": "Jeśli chcesz maksymalnego rozmycia tła w portrecie, zwiększ ogniskową i podejdź jak najbliżej obiektu, na ile pozwala kadr — oba zmiany kumulują się, dramatycznie zmniejszając GoO."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Ogniskowa",
+          "definition": "Odległość w milimetrach od optycznego centrum obiektywu do matrycy przy ostrości na nieskończoność. Dłuższe ogniskowe powiększają obraz i zawężają głębię ostrości."
+        },
+        "aperture": {
+          "term": "Przysłona",
+          "definition": "Wielkość otworu obiektywu, wyrażona liczbą f (np. f/2.8). Niższe numery f oznaczają szerszy otwór, wpuszczający więcej światła i dający płytszą głębię ostrości."
+        },
+        "subjectDistance": {
+          "term": "Odległość od obiektu",
+          "definition": "Odległość od matrycy aparatu do punktu ostrości. Bliższe odległości ogniskowania dają płytszą głębię ostrości."
+        },
+        "sensor": {
+          "term": "Rozmiar matrycy",
+          "definition": "Fizyczne wymiary matrycy. Większe matryce (pełna klatka, średni format) dają płytszą głębię ostrości przy ekwiwalentnym kadrowaniu w porównaniu z mniejszymi matrycami (APS-C, Micro Four Thirds)."
+        },
+        "orientation": {
+          "term": "Orientacja",
+          "definition": "Przełączanie między orientacją poziomą (krajobraz) a pionową (portret). Wpływa na kadr odniesienia dla obliczeń odległości od obiektu."
+        },
+        "nearFocus": {
+          "term": "Bliska granica ostrości",
+          "definition": "Najbliższa odległość od aparatu, która wydaje się akceptowalnie ostra. Wszystko bliżej będzie wyglądać na rozmyte."
+        },
+        "farFocus": {
+          "term": "Daleka granica ostrości",
+          "definition": "Najdalsza odległość od aparatu, która wydaje się akceptowalnie ostra. Gdy osiąga nieskończoność, wszystko poza bliską granicą jest ostre."
+        },
+        "totalDoF": {
+          "term": "Całkowita głębia ostrości",
+          "definition": "Pełna odległość między bliską a daleką granicą ostrości — cała strefa, która wydaje się ostra na zdjęciu."
+        },
+        "hyperfocal": {
+          "term": "Odległość hiperfokalna",
+          "definition": "Odległość ogniskowania, która maksymalizuje głębię ostrości. Gdy ustawisz ostrość na tę odległość, wszystko od połowy odległości hiperfokalnej do nieskończoności wydaje się ostre."
+        },
+        "backgroundBlur": {
+          "term": "Rozmycie tła",
+          "definition": "Miara stopnia rozmycia tła za obiektem. Wyższe wartości oznaczają silniejsze rozmycie i lepszą separację obiektu."
+        },
+        "coc": {
+          "term": "Krążek rozproszenia",
+          "definition": "Maksymalna średnica plamki rozmycia na matrycy, która wciąż wygląda jak punkt dla ludzkiego oka. Określa granicę akceptowalnej ostrości w obliczeniach głębi ostrości."
+        },
+        "isolationScore": {
+          "term": "Wskaźnik izolacji",
+          "definition": "Ocena złożona (0-100) wskazująca, jak dobrze obiekt jest oddzielony od tła, na podstawie stopnia rozmycia tła względem rozmiaru obiektu."
+        },
+        "bokehShape": {
+          "term": "Kształt bokeh",
+          "definition": "Kształt nieostrych świateł, determinowany przez liczbę i krzywiznę listków przysłony. Więcej listków daje bardziej okrągłe, gładsze bokeh."
+        },
+        "diffractionWarning": {
+          "term": "Dyfrakcja",
+          "definition": "Przy bardzo małych przysłonach światło ugina się na krawędziach przysłony, zmiękczając obraz. Na pełnoklatkowych matrycach jest to zwykle zauważalne powyżej f/16."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Fotografujesz portret i chcesz pięknie rozmyte tło. Jaką przysłonę powinieneś wybrać?",
+          "hint": "Niższe numery f oznaczają szerszy otwór obiektywu i większe rozmycie tła.",
+          "successMessage": "Prawidłowo! Szeroka przysłona jak f/1.8 lub f/2.8 tworzy płytką głębię ostrości, oddzielając obiekt od tła przyjemnym bokeh.",
+          "failureMessage": "Nie do końca. Wąskie przysłony jak f/11 czy f/16 utrzymują więcej sceny w ostrości. Dla rozmycia tła wybierz szeroką przysłonę (niski numer f).",
+          "options": {
+            "0": { "label": "f/1.8" },
+            "1": { "label": "f/5.6" },
+            "2": { "label": "f/11" },
+            "3": { "label": "f/16" }
+          }
+        },
+        "1": {
+          "scenario": "Fotografujesz grupę 8 osób ustawionych w dwóch rzędach na weselu. Jaka przysłona pomoże zapewnić, że wszyscy będą ostro?",
+          "hint": "Przy osobach w nieco różnych odległościach potrzebujesz wystarczającej głębi ostrości, aby objąć oba rzędy.",
+          "successMessage": "Świetny wybór! f/5.6 zapewnia wystarczającą głębię ostrości, aby oba rzędy były ostre, przy jednoczesnym zachowaniu przyzwoitych czasów migawki w pomieszczeniu.",
+          "failureMessage": "Ta przysłona może pozostawić tylny rząd poza ostrością lub być niepotrzebnie wąska. Dla dwóch rzędów osób f/5.6 to niezawodny punkt wyjścia.",
+          "options": {
+            "0": { "label": "f/1.4" },
+            "1": { "label": "f/2.8" },
+            "2": { "label": "f/5.6" },
+            "3": { "label": "f/22" }
+          }
+        },
+        "2": {
+          "scenario": "Fotografujesz krajobraz z polnymi kwiatami 2 metry dalej i górami w tle. Używasz obiektywu 24 mm na pełnoklatkowym aparacie. Jaka technika zmaksymalizuje ostrość od przodu do tyłu?",
+          "hint": "Istnieje konkretna odległość, na którą możesz ustawić ostrość, aby zmaksymalizować strefę ostrości od pierwszego planu do nieskończoności.",
+          "successMessage": "Dokładnie! Ustawienie ostrości na odległość hiperfokalną przy f/11 zapewnia, że wszystko od około 1 metra do nieskończoności jest akceptowalnie ostre — idealne dla tej sceny.",
+          "failureMessage": "Ustawienie ostrości na nieskończoność pozostawi kwiaty na pierwszym planie miękkie. Użyj odległości hiperfokalnej, aby rozciągnąć ostrość od bliskiego pierwszego planu przez nieskończoność.",
+          "options": {
+            "0": { "label": "Ustaw ostrość na kwiaty (2 m)" },
+            "1": { "label": "Ustaw ostrość na góry (nieskończoność)" },
+            "2": { "label": "Ustaw ostrość na odległość hiperfokalną" },
+            "3": { "label": "Ustaw ostrość w połowie między kwiatami a górami" }
+          }
+        },
+        "3": {
+          "scenario": "Robisz makrofotografię kwiatu i zauważasz, że tylko przednie płatki są ostre. Reszta kwiatu rozmywa się. Jesteś przy f/5.6. Co powinieneś zrobić, aby więcej kwiatu było w ostrości?",
+          "hint": "Przy bliskich odległościach ogniskowania GoO staje się ekstremalnie cienka. Zastanów się nad przysłoną.",
+          "successMessage": "Dobrze! Przymknięcie do f/11 lub f/16 zwiększa cienką jak brzytwa GoO w makro. Tylko uważaj na miękczenie dyfrakcyjne przy bardzo małych przysłonach.",
+          "failureMessage": "Otwarcie przysłony szerzej sprawiłoby, że GoO byłaby jeszcze cieńsza. W makrofotografii przymykanie przysłony (wyższy numer f) to główny sposób na uzyskanie większej głębi.",
+          "options": {
+            "0": { "label": "Otwórz do f/2.8 dla więcej światła" },
+            "1": { "label": "Przymknij do f/11" },
+            "2": { "label": "Zmień na szerszy obiektyw" },
+            "3": { "label": "Oddal się od kwiatu" }
+          }
+        },
+        "4": {
+          "scenario": "Porównujesz dwa aparaty do portretów: pełnoklatkowy z obiektywem 85 mm f/1.8 i Micro Four Thirds z obiektywem 42.5 mm f/1.8. Oba dają ekwiwalentny kadr. Który aparat daje płytszą głębię ostrości?",
+          "hint": "Pomyśl o ekwiwalentnych ogniskowych i jak rozmiar matrycy wpływa na obliczenie GoO przy tym samym numerze f.",
+          "successMessage": "Prawidłowo! Pełna klatka daje około 2 stopnie płytszą GoO. Chociaż obiektyw MFT ma ten sam numer f, krótsza rzeczywista ogniskowa (42.5 mm vs 85 mm) daje głębszą głębię ostrości przy ekwiwalentnym kadrowaniu.",
+          "failureMessage": "Chociaż oba obiektywy mają f/1.8, pełnoklatkowy aparat używa dłuższej rzeczywistej ogniskowej do tego samego kadru, dając znacznie płytszą GoO.",
+          "options": {
+            "0": { "label": "Pełna klatka z 85 mm f/1.8" },
+            "1": { "label": "Micro Four Thirds z 42.5 mm f/1.8" },
+            "2": { "label": "Oba dają identyczną GoO" }
+          }
+        }
+      }
+    }
+  }
+}

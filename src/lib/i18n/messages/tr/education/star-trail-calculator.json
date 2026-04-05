@@ -1,0 +1,150 @@
+{
+  "education": {
+    "star-trail-calculator": {
+      "beginner": "Dünya döndüğü için yıldızlar gökyüzünde hareket ediyormuş gibi görünür. Obtüratörünüz yeterince uzun açık kalırsa, yıldızlar fotoğrafınızda izlere dönüşür. Yıldız izi hesaplayıcı, nokta yıldızlar için maksimum pozlama süresini bulmanıza veya güzel dairesel yıldız izi yayları oluşturmak için uzun pozlamalar planlamanıza yardımcı olur.",
+      "deeper": {
+        "0": {
+          "heading": "Yıldızlar Nasıl Hareket Eder",
+          "text": "Dünya yaklaşık 23 saat 56 dakikada (bir yıldız günü) 360° döner, yani yıldızlar göksel ekvator boyunca saniyede yaklaşık 15 yay saniyesi hareket eder. Kutuplara yakın yıldızlar (kuzeyde Kutup Yıldızı) daha küçük daireler çizer ve daha yavaş hareket ediyormuş gibi görünür."
+        },
+        "1": {
+          "heading": "500 Kuralı ve NPF Kuralı",
+          "text": "Klasik \"500 Kuralı\" etkili odak uzaklığınıza 500 bölerek iz görünmeden önceki maksimum pozlamayı tahmin eder — ancak daha düşük çözünürlüklü sensörler için tasarlanmıştır. NPF Kuralı piksel aralığı, odak uzaklığı, diyafram ve deklinasyonu hesaba katar, modern yüksek çözünürlüklü kameralar için daha kısa ve daha doğru sınırlar üretir."
+        },
+        "2": {
+          "heading": "Yıldız İzleri için İstifleme",
+          "text": "Kasıtlı yıldız izleri için fotoğrafçılar birçok kısa pozlama (genellikle her biri 30s) çekip yazılımda istifler. Bu, gürültü birikimini önler, boşluksuz izler sağlar ve tek bir kötü kare tüm çekimi mahvetmez."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Odak Uzaklığı",
+          "description": "Daha uzun odak uzaklıkları yıldız hareketini büyütür ve nokta yıldızlar için daha kısa pozlamalar gerektirir. 14mm'lik bir objektif 200mm'den 5-10 kat daha uzun pozlayabilir."
+        },
+        "1": {
+          "label": "Sensör Çözünürlüğü",
+          "description": "Daha yüksek çözünürlüklü sensörler daha kısa pozlama sürelerinde yıldız izini ortaya çıkarır. 500 Kuralı modern 40MP+ kameralar için fazla cömerttir."
+        },
+        "2": {
+          "label": "Enlem ve Deklinasyon",
+          "description": "Göksel kutuplara yakın yıldızlar saniyede daha az hareket eder. Kutup Yıldızına doğru çekmek izler görünmeden daha uzun pozlamalara izin verir."
+        },
+        "3": {
+          "label": "İstifleme ve Tek Pozlama",
+          "description": "Yıldız izleri için birçok kısa pozlamayı istiflemek, bir aşırı uzun tek pozlamadan daha temiz sonuçlar üretir ve kesintilerden kurtulmaya olanak tanır."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Modern kameralar için 500 Kuralı yerine NPF Kuralını kullanın. Sensör çözünürlüğünü hesaba katar ve özellikle yüksek megapiksel gövdelerle daha doğru maksimum pozlama süreleri üretir."
+        },
+        "1": {
+          "text": "Yıldız izi istifleme için kareler arasındaki boşlukları kablolu kumanda veya intervalometre kullanarak 2-3 saniyenin altında tutun. Daha uzun boşluklar pürüzsüz izler yerine noktalı izler oluşturur."
+        },
+        "2": {
+          "text": "Dramatik eşmerkezli daire izleri için kompozisyonunuza Kutup Yıldızını (veya Güney Göksel Kutbunu) dahil edin. Kutba yakın yıldızlar daha sıkı yaylar çizer."
+        }
+      },
+      "tooltips": {
+        "mode": {
+          "term": "Mod",
+          "definition": "Nokta yıldızlar için maksimum pozlama süresini hesaplamak üzere \"Net Yıldızlar\"ı veya kasıtlı iz efektleri için pozlama dizileri planlamak üzere \"Yıldız İzleri\"ni seçin."
+        },
+        "focalLength": {
+          "term": "Odak Uzaklığı",
+          "definition": "Milimetre cinsinden objektif odak uzaklığı. Daha uzun odak uzaklıkları görünür yıldız hareketini büyütür ve daha kısa bireysel pozlamalar gerektirir."
+        },
+        "sensor": {
+          "term": "Sensör Boyutu",
+          "definition": "Fiziksel sensör boyutları. Çözünürlükle birleştiğinde piksel aralığını belirler, bu da yıldız izinin ne kadar çabuk görünür hale geldiğini etkiler."
+        },
+        "resolution": {
+          "term": "Çözünürlük",
+          "definition": "Megapiksel cinsinden sensör çözünürlüğü. Daha yüksek çözünürlüklü kameralar yıldız izini daha erken ortaya çıkarır çünkü her piksel gökyüzünün daha küçük bir açısal alanını kapsar."
+        },
+        "aperture": {
+          "term": "Diyafram",
+          "definition": "Objektif açıklığı. Astrofotoğrafçılık için her karede en fazla yıldız ışığını yakalamak üzere mevcut en geniş diyaframı (en düşük f-sayısı) kullanın."
+        },
+        "latitude": {
+          "term": "Enlem",
+          "definition": "Coğrafi enleminiz. Yıldızların görünür hareket hızını etkiler — daha yüksek enlemlerde kutba yakın yıldızlar kadrajda daha yavaş hareket eder."
+        },
+        "exposurePerFrame": {
+          "term": "Kare Başına Pozlama",
+          "definition": "Yıldız izi dizisindeki her bir karenin enstantane hızı. Genellikle aşırı gürültüden kaçınırken yeterli ışık yakalamak için 15-30 saniye."
+        },
+        "numberOfFrames": {
+          "term": "Kare Sayısı",
+          "definition": "Kaç bireysel pozlama çekileceği. Daha fazla kare daha uzun, daha dramatik yıldız izleri anlamına gelir. 30'ar saniyelik 120 kare bir saatlik iz üretir."
+        },
+        "gapBetweenFrames": {
+          "term": "Kareler Arası Boşluk",
+          "definition": "Kameranın dosyayı kaydetmesi için pozlamalar arasındaki süre. Noktalı izlerden kaçınmak için mümkün olduğunca kısa tutun (1-3 saniye)."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Tam kare 24MP kamerada 24mm objektifle Samanyolu fotoğrafı çekiyorsunuz. 500 Kuralını kullanarak yıldızlar iz oluşturmaya başlamadan yaklaşık ne kadar pozlama yapabilirsiniz?",
+          "hint": "500 Kuralı: maksimum saniye = 500 / odak uzaklığı.",
+          "successMessage": "Doğru! 500 / 24 = yaklaşık 20 saniye. Bu iyi bir başlangıç noktası, ancak kritik netlik için NPF Kuralı biraz daha kısa süre önerebilir.",
+          "failureMessage": "500 Kuralını uygulayın: 500'ü odak uzaklığınıza (24mm) bölün. Bu size yaklaşık 20 saniye verir.",
+          "options": {
+            "0": { "label": "5 saniye" },
+            "1": { "label": "10 saniye" },
+            "2": { "label": "20 saniye" },
+            "3": { "label": "60 saniye" }
+          }
+        },
+        "1": {
+          "scenario": "Kırpma sensörlü kamerada (1,5x kırpma faktörü) 200mm objektifle Orion Bulutsusu fotoğrafı çekmek istiyorsunuz. 500 Kuralını kullanarak yaklaşık maksimum pozlama nedir?",
+          "hint": "Kırpma sensörle önce odak uzaklığını kırpma faktörüyle çarpın, sonra kuralı uygulayın.",
+          "successMessage": "Doğru! Etkili odak uzaklığı 200mm x 1,5 = 300mm. 500 / 300 = ~1,7 saniye. Kırpma sensörlerde telefoto uzaklıklarda iz görünmeden çok az zamanınız var.",
+          "failureMessage": "Kırpma faktörünü hesaba katmayı unutmayın: 200mm x 1,5 = 300mm etkili. Sonra 500 / 300 yaklaşık 1,7 saniye verir.",
+          "options": {
+            "0": { "label": "~1,7 saniye" },
+            "1": { "label": "~2,5 saniye" },
+            "2": { "label": "~5 saniye" },
+            "3": { "label": "~10 saniye" }
+          }
+        },
+        "2": {
+          "scenario": "2 saatlik bir yıldız izi fotoğrafı oluşturmak istiyorsunuz. 30 saniyelik pozlamalar ve 2 saniyelik aralıklarla çekim planlıyorsunuz. Kaç kareye ihtiyacınız olacak?",
+          "hint": "32 saniyelik aralıkların (30s pozlama + 2s boşluk) 2 saate (7200 saniye) kaçar tane sığdığını hesaplayın.",
+          "successMessage": "Doğru! 7200 saniye / 32 saniye/kare = 225 kare. 2 saatlik Dünya dönüşü boyunca pürüzsüz, sürekli izler elde edeceksiniz.",
+          "failureMessage": "İki saat = 7200 saniye. Her kare döngüsü 30s + 2s = 32s'dir. Gereken kare sayısını bulmak için 7200'ü 32'ye bölün.",
+          "options": {
+            "0": { "label": "120 kare" },
+            "1": { "label": "180 kare" },
+            "2": { "label": "225 kare" },
+            "3": { "label": "240 kare" }
+          }
+        },
+        "3": {
+          "scenario": "Arkadaşınız 50MP tam kare kamera kullanıyor ve 20mm objektifle 500 Kuralını izleyerek 25 saniyelik pozlama aldı. Yakınlaştırıldığında yıldızların kısa çizgiler gibi göründüğünden şikayet ediyor. Neden?",
+          "hint": "500 Kuralı eski, düşük çözünürlüklü sensörler için tasarlanmıştı.",
+          "successMessage": "Kesinlikle! 500 Kuralı yüksek çözünürlüklü sensörler için fazla cömerttir. 50MP tam kare sensör yaklaşık 4,4 mikrometre piksel aralığına sahiptir ve NPF Kuralı gerçekten net yıldızlar için yaklaşık 10-12 saniye önerir.",
+          "failureMessage": "500 Kuralı sensörlerin çok daha az megapiksel olduğu dönemde oluşturulmuştur. 50MP ile her piksel gökyüzünün çok daha küçük bir dilimini kapsar ve eski kameralarda görünmez olan yıldız hareketini ortaya çıkarır.",
+          "options": {
+            "0": { "label": "Objektif odak dışıydı" },
+            "1": { "label": "500 Kuralı yüksek çözünürlüklü sensörler için fazla cömert" },
+            "2": { "label": "Kamera rüzgarda sallanıyordu" },
+            "3": { "label": "20mm astrofotoğrafçılık için çok geniş" }
+          }
+        },
+        "4": {
+          "scenario": "1 saatlik bir yıldız izi görüntüsü istiyorsunuz. Deneyimli astrofotoğrafçılar neden tek bir 1 saatlik pozlama yerine birçok kısa pozlamayı (ör. 240 x 15s) istifler?",
+          "hint": "Aşırı uzun tek pozlama sırasında sensör gürültüsüne, pil ömrüne ve kurtarılabilirliğe ne olduğunu düşünün.",
+          "successMessage": "Doğru! Tek bir saat uzunluğundaki pozlama devasa termal gürültü biriktirir, pili bitirir ve herhangi bir şey yanlış giderse (titreşim, çiy, bir araba farı) tüm çekim mahvolur. Kısa kareleri istiflemek gürültüyü düşük tutar, kötü kareleri atmanıza izin verir ve çok daha hoşgörülüdür.",
+          "failureMessage": "Uzun tek pozlamalar ciddi termal gürültü biriktirir ve herhangi bir kesintiden toplam kayıp riski taşır. Kısa kareleri istiflemek gürültüyü yönetilebilir tutar, bozuk kareleri atmanıza izin verir ve daha temiz sonuçlar üretir.",
+          "options": {
+            "0": { "label": "İstifleme tek pozlamadan daha uzun izler üretir" },
+            "1": { "label": "Tek pozlamalar yıldız hareketini kaydedemez" },
+            "2": { "label": "İstifleme gürültüyü azaltır, kesintilerden kurtulmaya olanak tanır ve pil tasarrufu sağlar" },
+            "3": { "label": "Pratik bir fark yoktur — tamamen kişisel tercih meselesidir" }
+          }
+        }
+      }
+    }
+  }
+}

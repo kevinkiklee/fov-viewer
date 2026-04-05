@@ -1,0 +1,21 @@
+{
+  "toolUI": {
+    "hyperfocal-simulator": {
+      "settings": "Ustawienia",
+      "focalLength": "Ogniskowa",
+      "aperture": "Przysłona",
+      "focusDistance": "Odległość ostrości:",
+      "sensor": "Matryca",
+      "scene": "Scena:",
+      "sceneLandscape": "Krajobraz",
+      "sceneStreet": "Ulica",
+      "hyperfocalDistance": "Odległość hiperfokalna",
+      "nearLimit": "Bliska granica",
+      "farLimit": "Daleka granica",
+      "focusDistanceResult": "Odległość ostrości",
+      "hyperfocalReference": "Tabela hiperfokalna",
+      "sharpToInfinity": "Ostre do nieskończoności",
+      "nearLimitBadge": "Bliska granica:"
+    }
+  }
+}

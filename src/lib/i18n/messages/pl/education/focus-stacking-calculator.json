@@ -1,0 +1,113 @@
+{
+  "education": {
+    "focus-stacking-calculator": {
+      "beginner": "Focus stacking to technika, w której robimy wiele zdjęć przy różnych odległościach ogniskowania i łączymy je w oprogramowaniu, aby stworzyć obraz ostry od przodu do tyłu. Jest niezbędna w makrofotografii, gdzie głębia ostrości jest cienka jak brzytwa, i przydatna w fotografii krajobrazowej, gdy potrzeba zarówno ostrego bliskiego pierwszego planu, jak i odległego tła.",
+      "deeper": {
+        "0": {
+          "heading": "Dlaczego stacking jest konieczny",
+          "text": "Przy powiększeniach makro nawet f/16 może dać zaledwie kilka milimetrów głębi ostrości. Dalsze przymykanie wprowadza miękczenie dyfrakcyjne, które degraduje obraz. Focus stacking pozwala fotografować przy najostrzejszej przysłonie obiektywu (zwykle f/5.6-f/8) i łączyć ostre warstwy. Każda klatka przesuwa ostrość nieco do przodu, pokrywając nowy wycinek obiektu."
+        },
+        "1": {
+          "heading": "Planowanie stacku",
+          "text": "Kluczem do udanego stacku jest zapewnienie, że głębia ostrości każdego ujęcia nakłada się na następne o 20-30%. Zbyt mały nakład tworzy luki, gdzie nic nie jest ostre; zbyt duży marnuje klatki bez korzyści. Kalkulator określa GoO na ujęcie za pomocą formuły krążka rozproszenia, odejmuje margines nakładania i dzieli całkowity zakres głębokości przez efektywny krok, aby obliczyć liczbę ujęć."
+        },
+        "2": {
+          "heading": "Łączenie i wyrównywanie",
+          "text": "Oprogramowanie takie jak Photoshop, Helicon Focus czy Zerene Stacker wyrównuje klatki (przy zmianie ostrości występują niewielkie przesunięcia powiększenia), a następnie wybiera najostrzejsze piksele z każdej warstwy. Fotografowanie ze stabilnego statywu przy stałym oświetleniu i używanie szyny ogniskowania do precyzyjnych przyrostów daje najczystsze rezultaty."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Przysłona",
+          "description": "Określa głębię ostrości na ujęcie. Umiarkowana przysłona (f/5.6-f/8) balansuje ostrość i GoO na klatkę. Unikaj bardzo małych przysłon — dyfrakcja zmniejsza ostrość, której szukasz."
+        },
+        "1": {
+          "label": "Zakres głębokości",
+          "description": "Odległość od najbliższego do najdalszego punktu, który chcesz ostry. Szersze zakresy wymagają więcej ujęć. W makro mogą to być zaledwie centymetry; w krajobrazach od metrów do nieskończoności."
+        },
+        "2": {
+          "label": "Nakładanie",
+          "description": "Procent GoO każdego ujęcia, który nakłada się na sąsiednie ujęcia. 20-30% to standard. Mniej ryzykuje luki; więcej marnuje klatki."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Do stackingu makro używaj szyny ogniskowania zamiast pierścienia ostrości obiektywu. Szyna przesuwa cały aparat do przodu w precyzyjnych krokach, unikając niewielkich zmian powiększenia, które występują przy przestawianiu ostrości obiektywu."
+        },
+        "1": {
+          "text": "Utrzymuj przysłonę na optymalnym punkcie obiektywu (zwykle f/5.6-f/8). Sens stackingu polega na unikaniu przymykania do f/16+, więc używaj najostrzejszej przysłony i pozwól stackowi zająć się głębokością."
+        },
+        "2": {
+          "text": "Do stacków krajobrazowych fotografuj od przodu do tyłu: ustaw ostrość najpierw na najbliższy element, a następnie przesuwaj ostrość w kierunku nieskończoności. To ułatwia wyrównywanie, ponieważ pierwszy plan (z największą paralaksą) jest uchwycony jako pierwszy."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Ogniskowa",
+          "definition": "Ogniskowa obiektywu w milimetrach. Dłuższe ogniskowe zmniejszają GoO na ujęcie, wymagając więcej klatek do pokrycia tego samego zakresu głębokości."
+        },
+        "aperture": {
+          "term": "Przysłona",
+          "definition": "Otwór obiektywu (numer f). Do stackingu używaj najostrzejszej przysłony obiektywu zamiast przymykać — stack zapewni głębokość."
+        },
+        "sensor": {
+          "term": "Rozmiar matrycy",
+          "definition": "Większe matryce mają płytszą GoO na ujęcie przy ekwiwalentnym kadrowaniu, co może zwiększyć liczbę wymaganych klatek stacku."
+        },
+        "nearLimit": {
+          "term": "Bliska granica",
+          "definition": "Najbliższy punkt w scenie, który chcesz ostry. Tutaj będzie ustawiona ostrość pierwszego ujęcia w stacku."
+        },
+        "farLimit": {
+          "term": "Daleka granica",
+          "definition": "Najdalszy punkt w scenie, który chcesz ostry. Ostatnie ujęcie w stacku pokryje tę odległość."
+        },
+        "overlap": {
+          "term": "Nakładanie",
+          "definition": "Procent nakładania głębi ostrości między kolejnymi ujęciami. 20-30% zapewnia brak luk po wyrównaniu i łączeniu w oprogramowaniu."
+        },
+        "shotCount": {
+          "term": "Liczba ujęć",
+          "definition": "Całkowita liczba klatek potrzebnych do pokrycia zakresu głębokości z określonym nakładaniem. Więcej ujęć = więcej przetwarzania, ale gładsze wyniki."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Fotografujesz mały kwiat o głębokości 3 cm od przedniego płatka do tylnej łodygi. Twój obiektyw makro przy f/8 daje około 4 mm GoO na ujęcie. Ile klatek potrzebujesz przy 25% nakładaniu?",
+          "hint": "Każde ujęcie pokrywa 4 mm, ale 25% nakładania oznacza, że efektywny krok to 3 mm na klatkę. Podziel 30 mm przez 3 mm.",
+          "successMessage": "Prawidłowo! Przy 4 mm GoO i 25% nakładaniu każdy krok przesuwa o 3 mm. 30 mm / 3 mm = 10 ujęć na pokrycie całego kwiatu.",
+          "failureMessage": "Przy 25% nakładaniu efektywny krok każdej klatki to 75% GoO: 4 mm × 0,75 = 3 mm. Potrzebujesz 30 mm / 3 mm = 10 ujęć.",
+          "options": {
+            "0": { "label": "5 ujęć" },
+            "1": { "label": "10 ujęć" },
+            "2": { "label": "20 ujęć" },
+            "3": { "label": "30 ujęć" }
+          }
+        },
+        "1": {
+          "scenario": "Chcesz najostrzejszy możliwy rezultat ze stacku ogniskowania. Czy powinieneś fotografować każdą klatkę przy f/2.8, f/8 czy f/22?",
+          "hint": "Rozważ najostrzejszą przysłonę obiektywu i jak dyfrakcja wpływa na małe przysłony.",
+          "successMessage": "Zgadza się! f/8 jest zazwyczaj najostrzejszą przysłoną dla większości obiektywów. f/2.8 ma zbyt małą GoO na ujęcie (marnując klatki), a f/22 cierpi na miękczenie dyfrakcyjne.",
+          "failureMessage": "f/8 to najlepszy wybór. f/2.8 daje bardzo cienką GoO na ujęcie (wymagając wielu dodatkowych klatek), a f/22 wprowadza miękczenie dyfrakcyjne, które niweczy cel stackowania dla ostrości.",
+          "options": {
+            "0": { "label": "f/2.8 — najszersza dla szybszego czasu" },
+            "1": { "label": "f/8 — optymalny punkt obiektywu" },
+            "2": { "label": "f/22 — maksymalna GoO na ujęcie" }
+          }
+        },
+        "2": {
+          "scenario": "Po połączeniu stacku zauważasz miękki pas w środku obrazu, gdzie nic nie jest ostre. Co najprawdopodobniej poszło nie tak?",
+          "hint": "Pomyśl, co łączy strefę ostrości jednej klatki z następną.",
+          "successMessage": "Dokładnie! Niewystarczające nakładanie między sąsiednimi klatkami tworzy lukę, gdzie żadne ujęcie nie jest ostre. Zwiększ nakładanie do 25-30% i sfotografuj ponownie.",
+          "failureMessage": "Miękki pas zazwyczaj oznacza, że luka między krokami ostrości była zbyt duża — GoO sąsiednich klatek nie nakładała się wystarczająco. Zwiększ procent nakładania.",
+          "options": {
+            "0": { "label": "Przysłona była zbyt szeroka" },
+            "1": { "label": "Niewystarczające nakładanie między krokami ostrości" },
+            "2": { "label": "Statyw poruszył się podczas sekwencji" },
+            "3": { "label": "ISO było zbyt wysokie" }
+          }
+        }
+      }
+    }
+  }
+}

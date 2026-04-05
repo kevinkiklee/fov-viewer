@@ -1,0 +1,120 @@
+{
+  "education": {
+    "histogram": {
+      "beginner": "Biểu đồ histogram là đồ thị hiển thị mức sáng hoặc tối của các điểm ảnh trong ảnh. Phía bên trái đại diện cho vùng tối (vùng đen), giữa đại diện cho tông trung, và phía bên phải đại diện cho vùng sáng (vùng trắng). Nếu đồ thị dồn về một bên, ảnh có thể bị phơi sáng thiếu hoặc quá.",
+      "deeper": "Histogram vẽ số lượng điểm ảnh (trục dọc) theo mức sáng (trục ngang, 0-255 cho ảnh 8-bit). Trong chế độ luminance, độ sáng mỗi pixel được tính bằng trung bình có trọng số của kênh đỏ, xanh lá và xanh dương (thường 0.299R + 0.587G + 0.114B, phù hợp nhận thức con người). Chế độ RGB hiển thị ba phân bố riêng biệt, tiết lộ kênh màu nào có thể bị cắt độc lập — kênh đỏ đẩy lên 255 trong khi xanh dương vẫn ổn cho thấy vùng sáng bị cắt ở tông ấm, như bầu trời hoàng hôn. \"Cắt\" xảy ra khi giá trị pixel chạm ranh giới 0 hoặc 255, nghĩa là chi tiết vùng tối hoặc sáng đã bị mất không thể phục hồi. Cắt đen (pixel ở 0) mất chi tiết vùng tối; cắt trắng (pixel ở 255) mất chi tiết vùng sáng. Chụp RAW cho khoảng 2-3 stop thêm dự trữ vùng sáng có thể phục hồi ngoài histogram JPEG, đó là lý do nhiều nhiếp ảnh gia \"phơi sáng về bên phải\" (ETTR) — đẩy phơi sáng sáng nhất có thể mà không cắt dữ liệu RAW.",
+      "keyFactors": {
+        "0": {
+          "label": "Phân bố tông",
+          "description": "Hình dạng tổng thể cho biết ảnh tối (nặng trái), sáng (nặng phải), hoặc cân bằng (trải đều phạm vi)."
+        },
+        "1": {
+          "label": "Cắt",
+          "description": "Đỉnh nhọn ở hai đầu xa cho thấy mất chi tiết ở vùng tối hoặc sáng."
+        },
+        "2": {
+          "label": "Tách kênh",
+          "description": "Chế độ RGB tiết lộ hành vi từng kênh màu — hữu ích để phát hiện cắt theo màu cụ thể trong cảnh bão hòa."
+        },
+        "3": {
+          "label": "Dải động",
+          "description": "Histogram trải đầy chiều rộng mà không cắt cho thấy sử dụng tốt dải động có sẵn."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Không có hình dạng histogram \"hoàn hảo\". Ảnh mèo đen trên ghế sofa tối nên nặng bên trái. Đánh giá histogram dựa trên ý đồ sáng tạo, không phải đường cong lý tưởng."
+        },
+        "1": {
+          "text": "Kiểm tra chế độ RGB overlay cho ảnh hoàng hôn và đèn neon. Kênh đỏ thường bị cắt trước kênh xanh dương rất lâu, gây mất chi tiết trong vùng sáng ấm ngay cả khi histogram luminance trông ổn."
+        },
+        "2": {
+          "text": "Nếu bạn thấy cảnh báo cắt ở cả hai đầu đồng thời, cảnh có lẽ vượt quá dải động máy ảnh. Hãy xem xét chụp ngoặc cho HDR hoặc sử dụng bộ lọc ND chuyển tiếp."
+        }
+      },
+      "tooltips": {
+        "View Mode": {
+          "term": "Chế độ xem",
+          "definition": "Luminance hiển thị độ sáng tổng thể. RGB Overlay hiển thị cả ba kênh màu chồng lên nhau. Tất cả kênh hiển thị RGB cộng luminance cùng nhau."
+        },
+        "Shadows": {
+          "term": "Vùng tối",
+          "definition": "Vùng ngoài cùng bên trái histogram (khoảng 0-85), đại diện cho tông tối nhất trong ảnh."
+        },
+        "Midtones": {
+          "term": "Tông trung",
+          "definition": "Vùng trung tâm (khoảng 86-170), đại diện cho độ sáng trung bình — tông da và hầu hết kết cấu tự nhiên nằm ở đây."
+        },
+        "Highlights": {
+          "term": "Vùng sáng",
+          "definition": "Vùng ngoài cùng bên phải (khoảng 171-255), đại diện cho tông sáng nhất: bầu trời, phản chiếu và nguồn sáng."
+        },
+        "Black Clipping": {
+          "term": "Cắt đen",
+          "definition": "Phần trăm pixel ở độ sáng 0 (đen thuần). Giá trị cao nghĩa là chi tiết vùng tối đã bị mất và không thể phục hồi."
+        },
+        "White Clipping": {
+          "term": "Cắt trắng",
+          "definition": "Phần trăm pixel ở độ sáng 255 (trắng thuần). Giá trị cao nghĩa là chi tiết vùng sáng đã bị cháy."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Bạn tải ảnh lên và histogram dồn mạnh về bên trái với gần như không có gì bên phải. Điều này cho biết gì về ảnh?",
+          "hint": "Trái = tối, phải = sáng.",
+          "successMessage": "Chính xác! Histogram nặng trái nghĩa là ảnh chủ yếu tông tối — có thể bị phơi sáng thiếu, hoặc có thể là ảnh tối theo chủ đích/low-key.",
+          "failureMessage": "Histogram dồn về trái cho thấy ảnh chủ yếu tối. Điều này thường nghĩa là phơi sáng thiếu.",
+          "options": {
+            "0": { "label": "Ảnh bị phơi sáng thiếu hoặc rất tối" },
+            "1": { "label": "Ảnh bị phơi sáng quá hoặc rất sáng" },
+            "2": { "label": "Ảnh có phơi sáng hoàn hảo" }
+          }
+        },
+        "1": {
+          "scenario": "Chế độ xem nào bạn nên dùng để thấy phân bố sáng tổng thể của ảnh trong một đồ thị duy nhất?",
+          "hint": "Một chế độ kết hợp tất cả thông tin màu thành một đường cong sáng duy nhất.",
+          "successMessage": "Đúng! Chế độ Luminance hiển thị một đường cong duy nhất đại diện cho độ sáng cảm nhận tổng thể.",
+          "failureMessage": "Chế độ Luminance là cách xem đơn giản nhất — kết hợp R, G, B thành một đường cong sáng.",
+          "options": {
+            "0": { "label": "Luminance" },
+            "1": { "label": "RGB Overlay" },
+            "2": { "label": "Tất cả kênh" }
+          }
+        },
+        "2": {
+          "scenario": "Bạn chụp hoàng hôn rực rỡ và histogram luminance trông ổn, nhưng khi chuyển sang RGB Overlay bạn thấy kênh đỏ đâm lên phía bên phải cùng. Chuyện gì đang xảy ra?",
+          "hint": "Các kênh màu riêng lẻ có thể bị cắt ngay cả khi luminance tổng thể không bị.",
+          "successMessage": "Chính xác! Kênh đỏ bị cắt — vùng sáng hoàng hôn đã mất chi tiết ở tông đỏ ngay cả khi độ sáng tổng thể trông chấp nhận được. Bạn đang mất sắc thái màu ấm.",
+          "failureMessage": "Kênh đỏ bị cắt độc lập. Vùng sáng ấm bão hòa (hoàng hôn, lửa) thường đẩy đỏ lên 255 trong khi xanh lá và xanh dương vẫn ổn, mất chi tiết màu ở những tông đó.",
+          "options": {
+            "0": { "label": "Kênh đỏ bị cắt — mất chi tiết vùng sáng ấm" },
+            "1": { "label": "Ảnh bị phơi sáng quá tổng thể" },
+            "2": { "label": "Cân bằng trắng sai" }
+          }
+        },
+        "3": {
+          "scenario": "Công cụ báo cáo 2.3% cắt đen và 0.1% cắt trắng. Bạn có nên điều chỉnh phơi sáng không?",
+          "hint": "Lượng cắt nhỏ là bình thường — vùng tối thuần đen và vùng sáng phản chiếu gương là bình thường.",
+          "successMessage": "Đánh giá tốt! 2.3% cắt đen là khiêm tốn và thường chỉ là vùng tối sâu hoặc rìa tối. 0.1% cắt trắng có lẽ là điểm phản chiếu gương (phản xạ mặt trời). Phơi sáng này ổn cho hầu hết mục đích.",
+          "failureMessage": "Các phần trăm cắt này khá nhỏ. Một chút cắt đen ở vùng tối sâu và cắt trắng nhỏ từ phản chiếu gương là bình thường và kỳ vọng. Không cần điều chỉnh.",
+          "options": {
+            "0": { "label": "Tăng phơi sáng để giảm cắt đen" },
+            "1": { "label": "Ổn thôi — cắt nhỏ ở vùng tối và phản chiếu gương là bình thường" },
+            "2": { "label": "Giảm phơi sáng để loại bỏ cắt trắng" }
+          }
+        },
+        "4": {
+          "scenario": "Bạn đang chụp cảnh tương phản cao: cô dâu mặc váy trắng đứng trong nhà thờ tối. Histogram hiển thị đỉnh mạnh ở cả hai cực với khoảng trống ở tông trung. Bạn nên xử lý thế nào?",
+          "hint": "Khi dải động cảnh vượt quá phạm vi cảm biến, bạn cần kỹ thuật đa phơi sáng.",
+          "successMessage": "Hoàn hảo! Histogram hai đỉnh này cho thấy cảnh vượt quá dải động cảm biến. Chụp ngoặc phơi sáng (HDR) thu cả nội thất tối và chi tiết váy sáng. Thay thế, sử dụng flash bổ sung để nâng vùng tối.",
+          "failureMessage": "Histogram hai đỉnh (đỉnh ở cả hai cực, giữa trống) nghĩa là cảnh có dải động nhiều hơn cảm biến có thể thu trong một lần chụp. Chụp ngoặc phơi sáng cho HDR, hoặc sử dụng flash bổ sung để giảm tỷ lệ tương phản.",
+          "options": {
+            "0": { "label": "Chụp ngoặc phơi sáng cho HDR hoặc sử dụng flash bổ sung" },
+            "1": { "label": "Phơi sáng cho tông trung và hy vọng tốt nhất" },
+            "2": { "label": "Chuyển sang đen trắng để ẩn vấn đề" }
+          }
+        }
+      }
+    }
+  }
+}

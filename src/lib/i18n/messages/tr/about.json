@@ -1,0 +1,28 @@
+{
+  "about": {
+    "title": "PhotoTools Hakkında",
+    "subtitle": "Ücretsiz fotoğrafçılık eğitimi, doğrudan tarayıcınızda.",
+    "sections": {
+      "whatIs": {
+        "title": "PhotoTools Nedir?",
+        "body": "PhotoTools, interaktif fotoğrafçılık hesaplayıcıları, simülatörleri ve referans araçlarından oluşan ücretsiz bir koleksiyondur. İster ilk kez pozlama üçgenini öğrenin, ister bir manzara çekimi için hiperfocal mesafeyi hesaplayın — PhotoTools, fotoğrafçılık anlayışınızı derinleştirmek için uygulamalı görsel araçlar sunar."
+      },
+      "whoIsItFor": {
+        "title": "Kime Göre?",
+        "body": "Her seviyeden fotoğrafçıya — diyaframın alan derinliğini nasıl etkilediğini keşfeden yeni başlayanlardan, yıldız izi çekimi planlayan deneyimli fotoğrafçılara kadar. Her araç, açıklamalar, temel faktörler, profesyonel ipuçları ve bilginizi test edecek interaktif meydan okumalar içeren bir öğrenme paneli sunar."
+      },
+      "privacyFirst": {
+        "title": "Önce Gizlilik",
+        "body": "Tüm hesaplamalar ve simülasyonlar tamamen tarayıcınızda çalışır. Fotoğraflarınız cihazınızdan asla ayrılmaz — örneğin EXIF Görüntüleyici, görüntüleri %100 istemci tarafında işler. Kayıt olmanız gerekmez ve anonim analitik dışında hiçbir kişisel veri toplanmaz."
+      },
+      "builtBy": {
+        "title": "Fotoğrafçılar Tarafından Yapıldı",
+        "body": "PhotoTools, fotoğrafçılığın teknik yönünü anlamak için daha iyi görsel araçlar isteyen bir fotoğrafçı ve yazılım mühendisi tarafından geliştirilmekte ve sürdürülmektedir. Araçlar, yaklaşık değerlere değil, gerçek optik ve fiziğe dayanır — bu sayede sahada sonuçlara güvenebilirsiniz."
+      },
+      "getInTouch": {
+        "title": "İletişime Geçin",
+        "body": "Bir öneriniz, hata raporunuz veya araç fikriniz mi var? <contactLink>İletişim sayfası</contactLink> üzerinden bize ulaşın."
+      }
+    }
+  }
+}

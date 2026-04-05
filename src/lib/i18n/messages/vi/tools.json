@@ -1,0 +1,64 @@
+{
+  "tools": {
+    "fov-simulator": {
+      "name": "Mô phỏng góc nhìn",
+      "description": "So sánh góc nhìn giữa các tiêu cự và kích thước cảm biến"
+    },
+    "color-scheme-generator": {
+      "name": "Tạo phối màu",
+      "description": "Xây dựng bảng màu cho các buổi chụp ảnh"
+    },
+    "exposure-simulator": {
+      "name": "Mô phỏng tam giác phơi sáng",
+      "description": "Xem cách khẩu độ, tốc độ màn trập và ISO tương tác với nhau"
+    },
+    "dof-simulator": {
+      "name": "Mô phỏng chiều sâu trường ảnh",
+      "description": "Trực quan hóa cách khẩu độ, tiêu cự và khoảng cách ảnh hưởng đến xóa phông"
+    },
+    "focus-stacking-calculator": {
+      "name": "Máy tính chồng lấy nét",
+      "description": "Tính khoảng cách lấy nét tối ưu để đạt độ nét từ trước ra sau"
+    },
+    "equivalent-settings-calculator": {
+      "name": "Máy tính cài đặt tương đương",
+      "description": "Tìm khẩu độ và tiêu cự tương đương giữa các định dạng cảm biến"
+    },
+    "hyperfocal-simulator": {
+      "name": "Mô phỏng khoảng cách siêu tiêu cự",
+      "description": "Tìm hiểu nơi cần lấy nét để đạt độ nét tối đa từ tiền cảnh đến vô cực"
+    },
+    "shutter-speed-visualizer": {
+      "name": "Trực quan hóa tốc độ màn trập",
+      "description": "Tìm tốc độ màn trập an toàn tối thiểu để chụp cầm tay sắc nét"
+    },
+    "nd-filter-calculator": {
+      "name": "Máy tính bộ lọc ND",
+      "description": "Tính thời gian phơi sáng với mọi bộ lọc ND"
+    },
+    "star-trail-calculator": {
+      "name": "Máy tính vệt sao",
+      "description": "Tính phơi sáng tối đa cho sao sắc nét hoặc lên kế hoạch chụp vệt sao"
+    },
+    "perspective-compression-simulator": {
+      "name": "Mô phỏng nén phối cảnh",
+      "description": "Xem cách tiêu cự ảnh hưởng đến nén hậu cảnh"
+    },
+    "white-balance-visualizer": {
+      "name": "Trực quan hóa cân bằng trắng",
+      "description": "Xem cách nhiệt độ màu ảnh hưởng đến ảnh của bạn"
+    },
+    "sensor-size-comparison": {
+      "name": "So sánh kích thước cảm biến",
+      "description": "So sánh trực quan kích thước cảm biến máy ảnh"
+    },
+    "frame-studio": {
+      "name": "Frame Studio",
+      "description": "Cắt, đóng khung và bố cục ảnh với các lưới hỗ trợ"
+    },
+    "exif-viewer": {
+      "name": "Trình xem EXIF",
+      "description": "Xem metadata EXIF và biểu đồ histogram cho mọi ảnh — 100% phía máy khách"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "site": {
+      "defaultTitle": "PhotoTools — Fotoğrafçılık Araçları",
+      "titleTemplate": "%s | PhotoTools",
+      "description": "Ücretsiz fotoğrafçılık araçları: Görüş alanı simülatörü, Renk şeması üreteci, EXIF görüntüleyici, Fotoğraf kırpma ve çerçeveleme ve daha fazlası.",
+      "ogTitle": "PhotoTools — Ücretsiz Fotoğrafçılık Araçları"
+    },
+    "fov-simulator": {
+      "title": "Görüş Alanı Simülatörü — Odak Uzaklıklarını Karşılaştırın",
+      "description": "Farklı odak uzaklıkları ve sensör boyutlarında görüş alanını karşılaştırın. Ücretsiz, interaktif, paylaşılabilir."
+    },
+    "dof-simulator": {
+      "title": "Alan Derinliği Simülatörü | PhotoTools",
+      "description": "Diyafram, odak uzaklığı ve mesafenin arka plan bulanıklığını nasıl etkilediğini gerçek zamanlı WebGL simülasyonuyla görselleştirin"
+    },
+    "focus-stacking-calculator": {
+      "title": "Odak İstifleme Hesaplayıcı | PhotoTools",
+      "description": "Makro ve manzara fotoğrafçılığında önden arkaya netlik için optimal odak mesafelerini hesaplayın"
+    },
+    "equivalent-settings-calculator": {
+      "title": "Eşdeğer Ayar Hesaplayıcı | PhotoTools",
+      "description": "Alan derinliğini eşleştirmek için farklı sensör formatlarında eşdeğer diyafram ve odak uzaklığını bulun"
+    },
+    "exposure-simulator": {
+      "title": "Pozlama Üçgeni Simülatörü",
+      "description": "İnteraktif pozlama üçgeni simülatörü — diyafram, enstantane hızı ve ISO'nun görüntünüzü nasıl etkilediğini canlı önizleme ile gerçek zamanlı görün."
+    },
+    "star-trail-calculator": {
+      "title": "Yıldız İzi Hesaplayıcı",
+      "description": "500, NPF ve diğer kuralları kullanarak nokta yıldızlar için maksimum pozlama süresini hesaplayın. Herhangi bir konum için yıldız izi istifleme çekimlerini planlayın."
+    },
+    "white-balance-visualizer": {
+      "title": "Beyaz Dengesi Görselleştirici",
+      "description": "Beyaz dengesi ve renk sıcaklığının fotoğraflarınızı nasıl etkilediğini görün. 2000K'den 10000K'ye değişimleri gerçek zamanlı önizleme ile görselleştirin."
+    },
+    "sensor-size-comparison": {
+      "title": "Sensör Boyutu Karşılaştırma",
+      "description": "Orta formattan akıllı telefona kamera sensör boyutlarını karşılaştırın. Gerçek kamera modelleriyle üst üste, yan yana ve piksel yoğunluğu görünümlerini inceleyin."
+    },
+    "color-scheme-generator": {
+      "title": "Renk Şeması Üreteci",
+      "description": "Tamamlayıcı, analog, triadik ve tetradik renk uyumlarını kullanarak fotoğrafçılık için renk paletleri oluşturun. Fotoğraf seçicili interaktif renk çarkı."
+    },
+    "frame-studio": {
+      "title": "Çerçeve Stüdyosu",
+      "description": "Fotoğrafları kırpın, çerçeveleyin ve ızgara kaplamaları ile düzenleyin. %100 istemci tarafı — fotoğraflarınız cihazınızdan asla ayrılmaz."
+    },
+    "exif-viewer": {
+      "title": "EXIF Görüntüleyici",
+      "description": "Herhangi bir fotoğrafın EXIF meta verilerini, histogramını ve görsel önizlemesini görüntüleyin. %100 istemci tarafı — fotoğraflarınız cihazınızdan asla ayrılmaz."
+    },
+    "hyperfocal-simulator": {
+      "title": "Hiperfocal Mesafe Simülatörü",
+      "description": "Herhangi bir objektif ve sensör için hiperfocal mesafeyi görselleştirin. Ön plandan sonsuza kadar maksimum netlik için nereye odaklanmanız gerektiğini tam olarak görün."
+    },
+    "shutter-speed-visualizer": {
+      "title": "Enstantane Hızı Görselleştirici",
+      "description": "Elde net fotoğraflar için minimum enstantane hızını bulun. Odak uzaklığı, sensör boyutu ve görüntü sabitlemeyi hesaba katar."
+    },
+    "nd-filter-calculator": {
+      "title": "ND Filtre Hesaplayıcı",
+      "description": "ND filtre kullanırken doğru enstantane hızını hesaplayın. ND2'den ND1000000'e kadar her filtre gücünü hızlı referans tablosuyla destekler."
+    },
+    "perspective-compression-simulator": {
+      "title": "Perspektif Sıkıştırma Simülatörü",
+      "description": "Odak uzaklığı ve mesafenin perspektif sıkıştırmayı nasıl etkilediğini gösteren interaktif 3D simülatör. Arka plan sıkıştırmasının gerçek zamanlı değişimini görün."
+    },
+    "about": {
+      "title": "Hakkında",
+      "description": "PhotoTools, her seviyeden fotoğrafçı için tarayıcı tabanlı ücretsiz fotoğrafçılık hesaplayıcıları, simülatörleri ve referanslarından oluşan bir koleksiyondur."
+    },
+    "contact": {
+      "title": "İletişim | PhotoTools",
+      "description": "PhotoTools ekibiyle iletişime geçin — fotoğrafçılık araçlarımız hakkında sorular, geri bildirimler veya öneriler."
+    },
+    "privacy": {
+      "title": "Gizlilik Politikası | PhotoTools",
+      "description": "PhotoTools'un www.phototools.io adresinde analitik, çerezler ve iletişim formu gönderimleri dahil verilerinizi nasıl işlediğini öğrenin."
+    },
+    "terms": {
+      "title": "Kullanım Koşulları | PhotoTools",
+      "description": "PhotoTools Kullanım Koşulları — www.phototools.io için kabul edilebilir kullanım, fikri mülkiyet, sorumluluk reddi ve sorumluluk sınırlamaları hakkında bilgi edinin."
+    },
+    "glossary": {
+      "title": "Fotoğrafçılık Sözlüğü",
+      "description": "Tanımlar ve interaktif araç bağlantıları ile 50'den fazla fotoğrafçılık terimini içeren aranabilir sözlük."
+    }
+  }
+}

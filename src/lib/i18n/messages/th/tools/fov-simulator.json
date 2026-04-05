@@ -1,0 +1,34 @@
+{
+  "toolUI": {
+    "fov-simulator": {
+      "rotate": "หมุน",
+      "center": "จัดกลาง",
+      "switchToPortrait": "เปลี่ยนเป็นแนวตั้ง",
+      "switchToLandscape": "เปลี่ยนเป็นแนวนอน",
+      "centerOverlays": "จัดกลางการซ้อนทับ",
+      "addLens": "+ เพิ่มเลนส์",
+      "fovSimulator": "ตัวจำลองมุมรับภาพ",
+      "sensor": "เซ็นเซอร์",
+      "copyImage": "คัดลอกรูปภาพ",
+      "copyLink": "คัดลอกลิงก์",
+      "embed": "ฝังตัว",
+      "reset": "รีเซ็ต",
+      "frameInfo": "ข้อมูลเฟรม",
+      "distance": "ระยะทาง",
+      "showFramingGuides": "แสดงเส้นนำจัดเฟรม",
+      "wide": "กว้าง",
+      "embedTitle": "ฝังตัว",
+      "closeEmbedModal": "ปิดหน้าต่างฝัง",
+      "markdownLabel": "Markdown (Reddit, GitHub)",
+      "bbcodeLabel": "BBCode (ฟอรัม)",
+      "htmlEmbedLabel": "ฝัง HTML",
+      "copied": "คัดลอกแล้ว",
+      "copy": "คัดลอก",
+      "cropView": "มุมมองครอป:",
+      "collapse": "ย่อ",
+      "expand": "ขยาย",
+      "fovComparison": "เปรียบเทียบ FOV",
+      "loadingScene": "กำลังโหลดฉาก..."
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "histogram": {
+      "luminance": "ความสว่าง",
+      "rgbOverlay": "RGB ซ้อนทับ",
+      "allChannels": "ทุกช่อง",
+      "shadows": "เงามืด",
+      "midtones": "โทนกลาง",
+      "highlights": "ไฮไลท์",
+      "blackClipping": "การตัดดำ",
+      "whiteClipping": "การตัดขาว",
+      "pureBlack": "ดำบริสุทธิ์",
+      "pureWhite": "ขาวบริสุทธิ์",
+      "uploadPrompt": "อัปโหลดภาพเพื่อดูข้อมูล EXIF และฮิสโตแกรม",
+      "uploadedPhoto": "ภาพที่อัปโหลด",
+      "noExifData": "ไม่พบข้อมูล EXIF ในภาพนี้",
+      "sectionCamera": "กล้อง",
+      "sectionLens": "เลนส์",
+      "sectionSettings": "การตั้งค่า",
+      "sectionImage": "ภาพ",
+      "sectionDate": "วันที่",
+      "sectionGPS": "GPS",
+      "sectionSoftware": "ซอฟต์แวร์",
+      "make": "ยี่ห้อ",
+      "model": "รุ่น",
+      "lensModel": "รุ่นเลนส์",
+      "lensMake": "ยี่ห้อเลนส์",
+      "apertureLabel": "รูรับแสง",
+      "shutterSpeed": "ความเร็วชัตเตอร์",
+      "isoLabel": "ISO",
+      "focalLengthLabel": "ทางยาวโฟกัส",
+      "focalLength35mm": "ทางยาวโฟกัส (เทียบเท่า 35mm)",
+      "width": "ความกว้าง",
+      "height": "ความสูง",
+      "orientationLabel": "การวางแนว",
+      "dateTaken": "วันที่ถ่าย",
+      "latitudeLabel": "ละติจูด",
+      "longitudeLabel": "ลองจิจูด",
+      "softwareLabel": "ซอฟต์แวร์"
+    }
+  }
+}

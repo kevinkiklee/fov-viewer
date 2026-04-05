@@ -1,0 +1,98 @@
+{
+  "education": {
+    "hyperfocal-simulator": {
+      "beginner": "Khoảng cách siêu tiêu cự là điểm lấy nét gần nhất mà tại đó mọi thứ ở vô cực vẫn sắc nét chấp nhận được. Khi bạn lấy nét ở khoảng cách siêu tiêu cự, chiều sâu trường ảnh mở rộng từ nửa khoảng cách đó đến tận vô cực. Nhiếp ảnh gia phong cảnh sử dụng kỹ thuật này để tối đa hóa độ nét từ tiền cảnh đến chân trời.",
+      "deeper": "Khoảng cách siêu tiêu cự được suy ra từ phương trình thấu kính mỏng và khái niệm vòng tròn nhòe (CoC). Nó bằng bình phương tiêu cự chia cho tích của số f và đường kính CoC: H = f² / (N × c). Mọi thứ từ H/2 đến vô cực nằm trong vùng nét chấp nhận được. CoC phụ thuộc vào kích thước cảm biến — cảm biến nhỏ hơn có CoC chấp nhận nhỏ hơn, đẩy khoảng cách siêu tiêu cự xa hơn cho cùng tiêu cự và khẩu độ. Đây là lý do máy ảnh cảm biến crop dường như có chiều sâu trường ảnh lớn hơn: tiêu chuẩn CoC chặt hơn so với diện tích ảnh. Trong thực tế, nhiễu xạ làm mềm ở các khẩu độ rất nhỏ (f/16 trở lên trên hầu hết cảm biến) nghĩa là có sự đánh đổi giữa tối đa hóa chiều sâu trường ảnh và duy trì độ nét trên mỗi pixel.",
+      "keyFactors": {
+        "0": {
+          "label": "Tiêu cự",
+          "description": "Tiêu cự dài hơn tăng đáng kể khoảng cách siêu tiêu cự — tỷ lệ với bình phương tiêu cự."
+        },
+        "1": {
+          "label": "Khẩu độ",
+          "description": "Khẩu độ nhỏ hơn (số f cao hơn) giảm khoảng cách siêu tiêu cự, mở rộng chiều sâu trường ảnh."
+        },
+        "2": {
+          "label": "Kích thước cảm biến",
+          "description": "Cảm biến nhỏ hơn sử dụng vòng tròn nhòe nhỏ hơn, tăng khoảng cách siêu tiêu cự cho khung hình tương đương."
+        },
+        "3": {
+          "label": "Vòng tròn nhòe",
+          "description": "Đường kính vết nhòe tối đa được coi là \"sắc nét chấp nhận được\" — thường 0.03mm cho full frame."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Để chụp phong cảnh nhanh, lấy nét khoảng một phần ba vào cảnh — gần đúng điểm siêu tiêu cự cho hầu hết cài đặt góc rộng."
+        },
+        "1": {
+          "text": "Tránh thu hẹp quá f/16 trên full-frame hoặc f/11 trên APS-C. Nhiễu xạ sẽ phản tác dụng lợi ích chiều sâu trường ảnh bạn đang theo đuổi."
+        },
+        "2": {
+          "text": "Sử dụng phóng to live view để lấy nét chính xác ở khoảng cách siêu tiêu cự thay vì dựa vào thang khoảng cách ống kính, thường không chính xác trên ống kính lấy nét tự động hiện đại."
+        }
+      },
+      "tooltips": {
+        "Sensor": {
+          "term": "Cảm biến",
+          "definition": "Định dạng cảm biến máy ảnh. Cảm biến nhỏ hơn có tiêu chuẩn vòng tròn nhòe chặt hơn, đẩy mọi khoảng cách siêu tiêu cự xa hơn."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Bạn đang chụp phong cảnh với ống 24mm trên máy full-frame. Định dạng cảm biến nào bạn nên chọn để xem khoảng cách siêu tiêu cự full-frame?",
+          "hint": "Full frame là kích thước cảm biến 35mm tiêu chuẩn.",
+          "successMessage": "Chính xác! Full Frame là lựa chọn đúng cho cảm biến 35mm tiêu chuẩn.",
+          "failureMessage": "Chưa đúng — chọn cảm biến Full Frame để phù hợp với thân máy 35mm tiêu chuẩn.",
+          "options": {
+            "0": { "label": "Full Frame" },
+            "1": { "label": "APS-C (Nikon/Sony)" },
+            "2": { "label": "Micro Four Thirds" }
+          }
+        },
+        "1": {
+          "scenario": "Nhìn vào bảng cho full frame, cái nào có khoảng cách siêu tiêu cự ngắn hơn: 24mm ở f/8, hay 50mm ở f/8?",
+          "hint": "Khoảng cách siêu tiêu cự tăng theo bình phương tiêu cự.",
+          "successMessage": "Đúng! Ống 24mm có khoảng cách siêu tiêu cự ngắn hơn nhiều vì tiêu cự có quan hệ bình phương.",
+          "failureMessage": "Thực tế, tiêu cự ngắn hơn luôn cho khoảng cách siêu tiêu cự ngắn hơn. 24mm thắng ở đây.",
+          "options": {
+            "0": { "label": "24mm ở f/8" },
+            "1": { "label": "50mm ở f/8" }
+          }
+        },
+        "2": {
+          "scenario": "Bạn đi bộ đường dài với máy APS-C và ống 35mm. Bạn muốn mọi thứ từ khoảng 3 mét đến vô cực nét. Phạm vi khẩu độ nào bạn nên xem trong bảng để tìm khoảng cách siêu tiêu cự gần 6 mét (để nửa — 3m — là giới hạn nét gần)?",
+          "hint": "Nhớ: nét gần = siêu tiêu cự / 2. Tìm khẩu độ cho siêu tiêu cự khoảng 6m.",
+          "successMessage": "Suy nghĩ tuyệt vời! Bạn đã xác định đúng cần khoảng cách siêu tiêu cự khoảng 6m, và tìm đúng phạm vi khẩu độ.",
+          "failureMessage": "Nhớ, nét gần bằng nửa khoảng cách siêu tiêu cự. Bạn cần siêu tiêu cự khoảng 6m để có giới hạn nét gần 3m.",
+          "options": {
+            "0": { "label": "f/2.8 — f/4" },
+            "1": { "label": "f/5.6 — f/8" },
+            "2": { "label": "f/16 — f/22" }
+          }
+        },
+        "3": {
+          "scenario": "Bạn bè chuyển từ máy full-frame sang Micro Four Thirds nhưng vẫn chụp cùng tiêu cự. Họ phàn nàn khoảng cách siêu tiêu cự dường như khác. Tại sao?",
+          "hint": "Vòng tròn nhòe được tính dựa trên kích thước cảm biến.",
+          "successMessage": "Chính xác! Cảm biến M43 nhỏ hơn sử dụng CoC nhỏ hơn (khoảng 0.015mm so với 0.03mm), tăng khoảng cách siêu tiêu cự cho cùng tiêu cự và khẩu độ.",
+          "failureMessage": "Yếu tố then chốt là vòng tròn nhòe. Cảm biến nhỏ hơn đòi hỏi tiêu chuẩn CoC chặt hơn, đẩy khoảng cách siêu tiêu cự xa hơn.",
+          "options": {
+            "0": { "label": "Tiêu cự ống kính thay đổi trên cảm biến crop" },
+            "1": { "label": "Cảm biến nhỏ hơn sử dụng vòng tròn nhòe nhỏ hơn" },
+            "2": { "label": "Máy Micro Four Thirds có lấy nét tự động kém chính xác hơn" }
+          }
+        },
+        "4": {
+          "scenario": "Bạn đang chụp kiến trúc ở 14mm f/11 trên full frame. Bảng hiển thị khoảng cách siêu tiêu cự rất ngắn. Bạn nên thu hẹp thêm xuống f/22 để có chiều sâu trường ảnh nhiều hơn, hay f/11 là lựa chọn tốt hơn?",
+          "hint": "Xem xét điều gì xảy ra với độ nét ảnh ở các khẩu độ rất nhỏ.",
+          "successMessage": "Xuất sắc! Ở f/11, nhiễu xạ tối thiểu trên full frame, và khoảng cách siêu tiêu cự ở 14mm đã rất ngắn. Thu hẹp xuống f/22 sẽ làm mềm ảnh do nhiễu xạ mà không có lợi ích DoF đáng kể.",
+          "failureMessage": "Mặc dù f/22 cho khoảng cách siêu tiêu cự ngắn hơn trên giấy, nhiễu xạ làm mềm ở f/22 trên full frame thực tế giảm độ nét tổng thể. Ở 14mm f/11, khoảng cách siêu tiêu cự đã rất ngắn nên DoF thêm không đáng hình phạt nhiễu xạ.",
+          "options": {
+            "0": { "label": "Thu hẹp xuống f/22 để chiều sâu trường ảnh tối đa" },
+            "1": { "label": "Giữ f/11 — nhiễu xạ ở f/22 sẽ giảm độ nét" }
+          }
+        }
+      }
+    }
+  }
+}

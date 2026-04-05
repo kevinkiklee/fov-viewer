@@ -1,0 +1,150 @@
+{
+  "education": {
+    "star-trail-calculator": {
+      "beginner": "Gwiazdy wydają się poruszać po niebie, ponieważ Ziemia się obraca. Jeśli migawka jest otwarta wystarczająco długo, gwiazdy rozciągną się w smugi na zdjęciu. Kalkulator śladów gwiazd pomaga znaleźć maksymalny czas naświetlania dla punktowych gwiazd lub planować długie ekspozycje do tworzenia pięknych kołowych łuków śladów gwiazd.",
+      "deeper": {
+        "0": {
+          "heading": "Jak poruszają się gwiazdy",
+          "text": "Ziemia obraca się o 360° w około 23 godziny i 56 minut (dzień gwiazdowy), więc gwiazdy poruszają się z prędkością około 15 sekund kątowych na sekundę na równiku niebieskim. Gwiazdy blisko biegunów (Polaris na północy) kreślą mniejsze okręgi i wydają się poruszać wolniej."
+        },
+        "1": {
+          "heading": "Reguła 500 vs reguła NPF",
+          "text": "Klasyczna «reguła 500» dzieli 500 przez efektywną ogniskową, aby oszacować maksymalną ekspozycję przed widocznym rozmyciem ruchu — ale została zaprojektowana dla matryc o niższej rozdzielczości. Reguła NPF uwzględnia rozmiar piksela, ogniskową, przysłonę i deklinację, dając krótsze i dokładniejsze limity dla nowoczesnych aparatów o wysokiej rozdzielczości."
+        },
+        "2": {
+          "heading": "Stackowanie śladów gwiazd",
+          "text": "Do celowych śladów gwiazd fotografowie robią wiele krótszych ekspozycji (zwykle 30 s każda) i łączą je w oprogramowaniu. To pozwala uniknąć narastania szumu, umożliwia ciągłe ślady bez przerw i oznacza, że jedna zła klatka nie zrujnuje całego ujęcia."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Ogniskowa",
+          "description": "Dłuższe ogniskowe powiększają ruch gwiazd, wymagając krótszych ekspozycji dla punktowych gwiazd. Obiektyw 14 mm może naświetlać 5-10 razy dłużej niż 200 mm."
+        },
+        "1": {
+          "label": "Rozdzielczość matrycy",
+          "description": "Matryce o wyższej rozdzielczości ujawniają smugi gwiazd przy krótszych czasach ekspozycji. Reguła 500 jest zbyt hojna dla nowoczesnych aparatów 40 MP+."
+        },
+        "2": {
+          "label": "Szerokość geograficzna i deklinacja",
+          "description": "Gwiazdy blisko biegunów niebieskich poruszają się mniej na sekundę. Celowanie w kierunku Polaris pozwala na dłuższe ekspozycje przed pojawieniem się smug."
+        },
+        "3": {
+          "label": "Stackowanie vs pojedyncza ekspozycja",
+          "description": "Do śladów gwiazd stackowanie wielu krótkich ekspozycji daje czystsze rezultaty niż jedna ekstremalnie długa ekspozycja i pozwala na odzyskiwanie po przerwach."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Używaj reguły NPF zamiast reguły 500 dla nowoczesnych aparatów. Uwzględnia rozdzielczość matrycy i daje dokładniejsze maksymalne czasy ekspozycji, szczególnie z korpusami o wysokiej megapikselowości."
+        },
+        "1": {
+          "text": "Do stackowania śladów gwiazd utrzymuj przerwy między klatkami poniżej 2-3 sekund, używając przewodu spustowego lub intervalometru. Dłuższe przerwy tworzą kropkowane zamiast gładkich smug."
+        },
+        "2": {
+          "text": "Umieść Polaris (lub Biegun Południowy Nieba) w kompozycji dla dramatycznych koncentrycznych kołowych smug. Gwiazdy bliżej bieguna kreślą ciaśniejsze łuki."
+        }
+      },
+      "tooltips": {
+        "mode": {
+          "term": "Tryb",
+          "definition": "Wybierz «Ostre gwiazdy» do obliczenia maksymalnego czasu ekspozycji dla punktowych gwiazd lub «Ślady gwiazd» do planowania sekwencji ekspozycji dla celowych efektów smug."
+        },
+        "focalLength": {
+          "term": "Ogniskowa",
+          "definition": "Ogniskowa obiektywu w milimetrach. Dłuższe ogniskowe powiększają pozorny ruch gwiazd, wymagając krótszych pojedynczych ekspozycji."
+        },
+        "sensor": {
+          "term": "Rozmiar matrycy",
+          "definition": "Fizyczne wymiary matrycy. W połączeniu z rozdzielczością określa rozmiar piksela, który wpływa na to, jak szybko smugi gwiazd stają się widoczne."
+        },
+        "resolution": {
+          "term": "Rozdzielczość",
+          "definition": "Rozdzielczość matrycy w megapikselach. Aparaty o wyższej rozdzielczości ujawniają smugi gwiazd szybciej, ponieważ każdy piksel pokrywa mniejszy kąt nieba."
+        },
+        "aperture": {
+          "term": "Przysłona",
+          "definition": "Otwór obiektywu. Do astrofotografii używaj najszerszej dostępnej przysłony (najniższy numer f), aby uchwycić jak najwięcej światła gwiazd w każdej klatce."
+        },
+        "latitude": {
+          "term": "Szerokość geograficzna",
+          "definition": "Twoja szerokość geograficzna. Wpływa na pozorną szybkość ruchu gwiazd — na wyższych szerokościach gwiazdy blisko bieguna poruszają się wolniej w kadrze."
+        },
+        "exposurePerFrame": {
+          "term": "Ekspozycja na klatkę",
+          "definition": "Czas migawki dla każdej pojedynczej klatki w sekwencji śladów gwiazd. Zwykle 15-30 sekund, aby uchwycić wystarczająco światła przy unikaniu nadmiernego szumu."
+        },
+        "numberOfFrames": {
+          "term": "Liczba klatek",
+          "definition": "Ile pojedynczych ekspozycji wykonać. Więcej klatek oznacza dłuższe, bardziej dramatyczne ślady gwiazd. 120 klatek po 30 sekund daje jedną godzinę smug."
+        },
+        "gapBetweenFrames": {
+          "term": "Przerwa między klatkami",
+          "definition": "Czas między ekspozycjami na zapis pliku przez aparat. Utrzymuj jak najkrótszą (1-3 sekundy), aby uniknąć kropkowanych smug."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Fotografujesz Drogę Mleczną obiektywem 24 mm na pełnoklatkowym aparacie 24 MP. Używając reguły 500, jak długo możesz naświetlać, zanim gwiazdy zaczną się rozciągać?",
+          "hint": "Reguła 500: maksymalne sekundy = 500 / ogniskowa.",
+          "successMessage": "Zgadza się! 500 / 24 = około 20 sekund. To dobry punkt wyjścia, choć reguła NPF może sugerować nieco krótszy czas dla krytycznej ostrości.",
+          "failureMessage": "Zastosuj regułę 500: podziel 500 przez ogniskową (24 mm). To daje około 20 sekund.",
+          "options": {
+            "0": { "label": "5 sekund" },
+            "1": { "label": "10 sekund" },
+            "2": { "label": "20 sekund" },
+            "3": { "label": "60 sekund" }
+          }
+        },
+        "1": {
+          "scenario": "Chcesz sfotografować Mgławicę Oriona obiektywem 200 mm na aparacie z matrycą crop (współczynnik kadrowania 1,5x). Jaki jest przybliżony maksymalny czas ekspozycji według reguły 500?",
+          "hint": "Z matrycą crop najpierw pomnóż ogniskową przez współczynnik kadrowania, a następnie zastosuj regułę.",
+          "successMessage": "Prawidłowo! Efektywna ogniskowa to 200 mm × 1,5 = 300 mm. 500 / 300 = ~1,7 sekundy. Przy teleobiektywach na matrycach crop masz bardzo mało czasu przed pojawieniem się smug.",
+          "failureMessage": "Pamiętaj o uwzględnieniu współczynnika kadrowania: 200 mm × 1,5 = 300 mm efektywna. Następnie 500 / 300 daje około 1,7 sekundy.",
+          "options": {
+            "0": { "label": "~1,7 sekundy" },
+            "1": { "label": "~2,5 sekundy" },
+            "2": { "label": "~5 sekund" },
+            "3": { "label": "~10 sekund" }
+          }
+        },
+        "2": {
+          "scenario": "Chcesz stworzyć 2-godzinne zdjęcie ze śladami gwiazd. Planujesz 30-sekundowe ekspozycje z 2-sekundowymi przerwami. Ile klatek potrzebujesz?",
+          "hint": "Oblicz, ile 32-sekundowych interwałów (30 s ekspozycja + 2 s przerwa) zmieści się w 2 godzinach (7200 sekund).",
+          "successMessage": "Prawidłowo! 7200 sekund / 32 sekundy na klatkę = 225 klatek. Uzyskasz gładkie, ciągłe ślady przez 2 godziny obrotu Ziemi.",
+          "failureMessage": "Dwie godziny = 7200 sekund. Każdy cykl klatki to 30 s + 2 s = 32 s. Podziel 7200 przez 32, aby uzyskać liczbę potrzebnych klatek.",
+          "options": {
+            "0": { "label": "120 klatek" },
+            "1": { "label": "180 klatek" },
+            "2": { "label": "225 klatek" },
+            "3": { "label": "240 klatek" }
+          }
+        },
+        "3": {
+          "scenario": "Twój znajomy używa pełnoklatkowego aparatu 50 MP i zastosował regułę 500 z obiektywem 20 mm, uzyskując 25-sekundową ekspozycję. Narzeka, że gwiazdy wyglądają jak krótkie smugi po powiększeniu. Dlaczego?",
+          "hint": "Reguła 500 została zaprojektowana dla starszych matryc o niższej rozdzielczości.",
+          "successMessage": "Dokładnie! Reguła 500 jest zbyt hojna dla matryc o wysokiej rozdzielczości. Pełnoklatkowa matryca 50 MP ma rozmiar piksela około 4,4 mikrometra i reguła NPF zaleciłaby mniej więcej 10-12 sekund dla naprawdę ostrych gwiazd.",
+          "failureMessage": "Reguła 500 została stworzona, gdy matryce miały znacznie mniej megapikseli. Przy 50 MP każdy piksel pokrywa znacznie mniejszy wycinek nieba, ujawniając ruch gwiazd, który był niewidoczny na starszych aparatach.",
+          "options": {
+            "0": { "label": "Obiektyw był poza ostrością" },
+            "1": { "label": "Reguła 500 jest zbyt hojna dla matryc o wysokiej rozdzielczości" },
+            "2": { "label": "Aparat trząsł się na wietrze" },
+            "3": { "label": "20 mm jest zbyt szerokie do astrofotografii" }
+          }
+        },
+        "4": {
+          "scenario": "Chcesz 1-godzinne zdjęcie ze śladami gwiazd. Dlaczego doświadczeni astrofotografowie stackują wiele krótkich ekspozycji (np. 240 × 15 s) zamiast robić jedną 1-godzinną ekspozycję?",
+          "hint": "Pomyśl, co dzieje się z szumem termicznym matrycy, żywotnością baterii i możliwością odzyskiwania podczas ekstremalnie długiej pojedynczej ekspozycji.",
+          "successMessage": "Prawidłowo! Pojedyncza godzinna ekspozycja gromadzi ogromny szum termiczny, rozładowuje baterię, a jeśli cokolwiek pójdzie nie tak (wibracje, rosa, światło reflektora) całe ujęcie jest stracone. Stackowanie krótkich klatek utrzymuje szum na niskim poziomie, pozwala usunąć złe klatki i jest znacznie bardziej wybaczające.",
+          "failureMessage": "Długie pojedyncze ekspozycje budują poważny szum termiczny i ryzykują całkowitą stratę z powodu jakiegokolwiek zakłócenia. Stackowanie krótkich klatek utrzymuje szum na akceptowalnym poziomie, pozwala odrzucić zrujnowane klatki i daje czystsze rezultaty.",
+          "options": {
+            "0": { "label": "Stackowanie daje dłuższe ślady niż pojedyncza ekspozycja" },
+            "1": { "label": "Pojedyncze ekspozycje nie mogą zarejestrować ruchu gwiazd" },
+            "2": { "label": "Stackowanie zmniejsza szum, pozwala na odzyskiwanie po przerwach i oszczędza baterię" },
+            "3": { "label": "Nie ma praktycznej różnicy — to czysto osobiste preferencje" }
+          }
+        }
+      }
+    }
+  }
+}

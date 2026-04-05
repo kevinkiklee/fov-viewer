@@ -1,0 +1,150 @@
+{
+  "education": {
+    "star-trail-calculator": {
+      "beginner": "Bintang tampak bergerak melintasi langit karena Bumi berotasi. Jika rana Anda terbuka cukup lama, bintang akan bergaris menjadi jejak di foto Anda. Kalkulator jejak bintang membantu Anda menemukan waktu eksposur maksimum untuk bintang yang tajam, atau merencanakan eksposur panjang untuk membuat busur jejak bintang yang indah.",
+      "deeper": {
+        "0": {
+          "heading": "Bagaimana Bintang Bergerak",
+          "text": "Bumi berotasi 360° dalam waktu sekitar 23 jam 56 menit (hari sideris), jadi bintang bergerak sekitar 15 detik busur per detik di ekuator langit. Bintang di dekat kutub (Polaris di utara) menelusuri lingkaran yang lebih kecil dan tampak bergerak lebih lambat."
+        },
+        "1": {
+          "heading": "Aturan 500 vs. Aturan NPF",
+          "text": "Aturan klasik \"500\" membagi 500 dengan panjang fokus efektif Anda untuk memperkirakan eksposur maksimum sebelum jejak terlihat — tetapi ini dirancang untuk sensor resolusi lebih rendah. Aturan NPF memperhitungkan pixel pitch, panjang fokus, apertur, dan deklinasi, menghasilkan batas yang lebih pendek dan akurat untuk kamera resolusi tinggi modern."
+        },
+        "2": {
+          "heading": "Stacking untuk Jejak Bintang",
+          "text": "Untuk jejak bintang yang disengaja, fotografer memotret banyak eksposur pendek (biasanya 30 detik masing-masing) dan menumpuknya di software. Ini menghindari penumpukan noise, memungkinkan jejak tanpa celah, dan berarti satu frame buruk tidak merusak seluruh foto."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Panjang Fokus",
+          "description": "Panjang fokus yang lebih panjang memperbesar gerakan bintang, memerlukan eksposur lebih pendek untuk bintang yang tajam. Lensa 14mm dapat mengekspos 5-10 kali lebih lama dari lensa 200mm."
+        },
+        "1": {
+          "label": "Resolusi Sensor",
+          "description": "Sensor resolusi lebih tinggi mengungkapkan jejak bintang pada waktu eksposur yang lebih pendek. Aturan 500 terlalu longgar untuk kamera 40MP+ modern."
+        },
+        "2": {
+          "label": "Lintang & Deklinasi",
+          "description": "Bintang di dekat kutub langit bergerak lebih sedikit per detik. Mengarah ke Polaris memungkinkan eksposur lebih panjang sebelum jejak muncul."
+        },
+        "3": {
+          "label": "Stacking vs Eksposur Tunggal",
+          "description": "Untuk jejak bintang, menumpuk banyak eksposur pendek menghasilkan hasil lebih bersih daripada satu eksposur yang sangat panjang, dan memungkinkan pemulihan dari gangguan."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Gunakan Aturan NPF alih-alih Aturan 500 untuk kamera modern. Ini memperhitungkan resolusi sensor dan menghasilkan waktu eksposur maksimum yang lebih akurat, terutama dengan bodi megapiksel tinggi."
+        },
+        "1": {
+          "text": "Untuk stacking jejak bintang, pertahankan celah antar frame di bawah 2-3 detik menggunakan remote kabel atau intervalometer. Celah lebih panjang menciptakan jejak bertitik daripada halus."
+        },
+        "2": {
+          "text": "Sertakan Polaris (atau Kutub Langit Selatan) dalam komposisi Anda untuk jejak lingkaran konsentris yang dramatis. Bintang yang lebih dekat ke kutub menelusuri busur yang lebih ketat."
+        }
+      },
+      "tooltips": {
+        "mode": {
+          "term": "Mode",
+          "definition": "Pilih \"Bintang Tajam\" untuk menghitung waktu eksposur maksimum untuk bintang yang tajam, atau \"Jejak Bintang\" untuk merencanakan urutan eksposur untuk efek jejak yang disengaja."
+        },
+        "focalLength": {
+          "term": "Panjang Fokus",
+          "definition": "Panjang fokus lensa dalam milimeter. Panjang fokus yang lebih panjang memperbesar gerakan bintang yang tampak, memerlukan eksposur individual yang lebih pendek."
+        },
+        "sensor": {
+          "term": "Ukuran Sensor",
+          "definition": "Dimensi sensor fisik. Dikombinasikan dengan resolusi, menentukan pixel pitch, yang memengaruhi seberapa cepat jejak bintang menjadi terlihat."
+        },
+        "resolution": {
+          "term": "Resolusi",
+          "definition": "Resolusi sensor dalam megapiksel. Kamera resolusi lebih tinggi mengungkapkan jejak bintang lebih cepat karena setiap piksel mencakup area sudut langit yang lebih kecil."
+        },
+        "aperture": {
+          "term": "Apertur",
+          "definition": "Bukaan lensa. Untuk astrofotografi, gunakan apertur terlebar yang tersedia (angka f terendah) untuk menangkap cahaya bintang terbanyak di setiap frame."
+        },
+        "latitude": {
+          "term": "Lintang",
+          "definition": "Lintang geografis Anda. Memengaruhi laju gerakan nyata bintang — pada lintang lebih tinggi, bintang di dekat kutub bergerak lebih lambat melintasi frame."
+        },
+        "exposurePerFrame": {
+          "term": "Eksposur Per Frame",
+          "definition": "Kecepatan rana untuk setiap frame individual dalam urutan jejak bintang. Biasanya 15-30 detik untuk menangkap cukup cahaya sambil menghindari noise berlebih."
+        },
+        "numberOfFrames": {
+          "term": "Jumlah Frame",
+          "definition": "Berapa banyak eksposur individual yang akan diambil. Lebih banyak frame berarti jejak bintang yang lebih panjang dan dramatis. 120 frame pada 30 detik masing-masing menghasilkan satu jam jejak."
+        },
+        "gapBetweenFrames": {
+          "term": "Celah Antar Frame",
+          "definition": "Waktu antar eksposur agar kamera menyimpan file. Pertahankan sependek mungkin (1-3 detik) untuk menghindari jejak bertitik."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Anda memotret Bima Sakti dengan lensa 24mm pada kamera full frame 24MP. Menggunakan Aturan 500, kira-kira berapa lama Anda bisa mengekspos sebelum bintang mulai bergaris?",
+          "hint": "Aturan 500: detik maksimum = 500 / panjang fokus.",
+          "successMessage": "Tepat! 500 / 24 = sekitar 20 detik. Ini adalah titik awal yang baik, meskipun Aturan NPF mungkin menyarankan waktu yang sedikit lebih pendek untuk ketajaman kritis.",
+          "failureMessage": "Terapkan Aturan 500: bagi 500 dengan panjang fokus Anda (24mm). Itu memberi Anda sekitar 20 detik.",
+          "options": {
+            "0": { "label": "5 detik" },
+            "1": { "label": "10 detik" },
+            "2": { "label": "20 detik" },
+            "3": { "label": "60 detik" }
+          }
+        },
+        "1": {
+          "scenario": "Anda ingin memotret Nebula Orion dengan lensa 200mm pada kamera sensor crop (crop factor 1,5x). Berapa perkiraan eksposur maksimum menggunakan Aturan 500?",
+          "hint": "Dengan sensor crop, kalikan panjang fokus dengan crop factor terlebih dahulu, kemudian terapkan aturan.",
+          "successMessage": "Benar! Panjang fokus efektif adalah 200mm x 1,5 = 300mm. 500 / 300 = ~1,7 detik. Pada panjang telefoto pada sensor crop, Anda memiliki waktu sangat sedikit sebelum jejak muncul.",
+          "failureMessage": "Ingat untuk memperhitungkan crop factor: 200mm x 1,5 = 300mm efektif. Kemudian 500 / 300 memberikan sekitar 1,7 detik.",
+          "options": {
+            "0": { "label": "~1,7 detik" },
+            "1": { "label": "~2,5 detik" },
+            "2": { "label": "~5 detik" },
+            "3": { "label": "~10 detik" }
+          }
+        },
+        "2": {
+          "scenario": "Anda ingin membuat foto jejak bintang 2 jam. Anda berencana memotret eksposur 30 detik dengan celah 2 detik. Berapa frame yang Anda butuhkan?",
+          "hint": "Hitung berapa interval 32 detik (eksposur 30 detik + celah 2 detik) yang muat dalam 2 jam (7200 detik).",
+          "successMessage": "Benar! 7200 detik / 32 detik per frame = 225 frame. Anda akan mendapatkan jejak yang halus dan kontinu selama 2 jam rotasi Bumi.",
+          "failureMessage": "Dua jam = 7200 detik. Setiap siklus frame adalah 30 detik + 2 detik = 32 detik. Bagi 7200 dengan 32 untuk mendapatkan jumlah frame yang dibutuhkan.",
+          "options": {
+            "0": { "label": "120 frame" },
+            "1": { "label": "180 frame" },
+            "2": { "label": "225 frame" },
+            "3": { "label": "240 frame" }
+          }
+        },
+        "3": {
+          "scenario": "Teman Anda menggunakan kamera full frame 50MP dan mengikuti Aturan 500 dengan lensa 20mm, mendapatkan eksposur 25 detik. Mereka mengeluh bintang terlihat seperti goresan pendek saat diperbesar. Mengapa?",
+          "hint": "Aturan 500 dirancang untuk sensor resolusi lebih rendah yang lebih lama.",
+          "successMessage": "Tepat! Aturan 500 terlalu longgar untuk sensor resolusi tinggi. Sensor full frame 50MP memiliki pixel pitch sekitar 4,4 mikrometer, dan Aturan NPF akan merekomendasikan sekitar 10-12 detik untuk bintang yang benar-benar tajam.",
+          "failureMessage": "Aturan 500 dibuat ketika sensor memiliki jauh lebih sedikit megapiksel. Dengan 50MP, setiap piksel mencakup irisan langit yang jauh lebih kecil, mengungkapkan gerakan bintang yang tidak terlihat pada kamera lama.",
+          "options": {
+            "0": { "label": "Lensa tidak fokus" },
+            "1": { "label": "Aturan 500 terlalu longgar untuk sensor resolusi tinggi" },
+            "2": { "label": "Kamera bergoyang tertiup angin" },
+            "3": { "label": "20mm terlalu lebar untuk astrofotografi" }
+          }
+        },
+        "4": {
+          "scenario": "Anda ingin gambar jejak bintang 1 jam. Mengapa astrofotografer berpengalaman menumpuk banyak eksposur pendek (misalnya 240 x 15 detik) alih-alih mengambil satu eksposur 1 jam?",
+          "hint": "Pikirkan tentang apa yang terjadi pada noise sensor, daya baterai, dan kemampuan pemulihan selama eksposur tunggal yang sangat panjang.",
+          "successMessage": "Benar! Eksposur tunggal satu jam mengakumulasi noise termal yang masif, menguras baterai, dan jika sesuatu salah (getaran, embun, lampu sorot mobil) seluruh foto rusak. Menumpuk frame pendek menjaga noise rendah, memungkinkan Anda menghapus frame yang rusak, dan jauh lebih toleran.",
+          "failureMessage": "Eksposur tunggal panjang membangun noise termal yang parah dan berisiko kehilangan total dari gangguan apa pun. Menumpuk frame pendek menjaga noise dapat dikelola, memungkinkan Anda membuang frame yang rusak, dan menghasilkan hasil yang lebih bersih.",
+          "options": {
+            "0": { "label": "Stacking menghasilkan jejak lebih panjang daripada eksposur tunggal" },
+            "1": { "label": "Eksposur tunggal tidak dapat merekam gerakan bintang" },
+            "2": { "label": "Stacking mengurangi noise, memungkinkan pemulihan dari gangguan, dan menghemat baterai" },
+            "3": { "label": "Tidak ada perbedaan praktis — murni preferensi pribadi" }
+          }
+        }
+      }
+    }
+  }
+}

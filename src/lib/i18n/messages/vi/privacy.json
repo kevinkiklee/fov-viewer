@@ -1,0 +1,68 @@
+{
+  "privacy": {
+    "title": "Chính sách bảo mật",
+    "effectiveDate": "Ngày hiệu lực: 3 tháng 4, 2026",
+    "sections": {
+      "overview": {
+        "title": "Tổng quan",
+        "body": "PhotoTools vận hành www.phototools.io, một tài nguyên giáo dục nhiếp ảnh miễn phí cung cấp các công cụ tính toán, mô phỏng và tra cứu tương tác. Chính sách bảo mật này mô tả cách chúng tôi thu thập, sử dụng và xử lý thông tin khi bạn truy cập hoặc sử dụng trang web của chúng tôi. Bằng việc sử dụng PhotoTools, bạn đồng ý với các thông lệ được mô tả trong chính sách này. Phiên bản tiếng Anh của chính sách này là phiên bản có giá trị pháp lý."
+      },
+      "informationWeCollect": {
+        "title": "Thông tin chúng tôi thu thập",
+        "intro": "Chúng tôi thu thập thông tin tối thiểu để vận hành và cải thiện trang web:",
+        "analytics": "<strong>Phân tích:</strong> Chúng tôi sử dụng Google Analytics để hiểu cách khách truy cập sử dụng trang web (ví dụ: trang đã xem, thời gian trên trang, loại thiết bị). Dữ liệu phân tích được ẩn danh — chúng tôi không thu thập thông tin nhận dạng cá nhân thông qua phân tích. Địa chỉ IP được ẩn danh trước khi lưu trữ.",
+        "contactForm": "<strong>Biểu mẫu liên hệ:</strong> Nếu bạn gửi biểu mẫu liên hệ, chúng tôi thu thập tên, địa chỉ email, chủ đề và tin nhắn của bạn. Thông tin này chỉ được sử dụng để trả lời yêu cầu của bạn và không được lưu trữ ngoài việc gửi email — không được lưu vào cơ sở dữ liệu hay giữ lại lâu dài.",
+        "noAccounts": "<strong>Không có tài khoản:</strong> PhotoTools không yêu cầu đăng ký hoặc tài khoản người dùng. Chúng tôi không thu thập mật khẩu hoặc thông tin thanh toán."
+      },
+      "cookies": {
+        "title": "Cookie",
+        "intro": "PhotoTools sử dụng cookie để hỗ trợ chức năng phân tích và quảng cáo. Cụ thể:",
+        "analyticsCookies": "<strong>Cookie Google Analytics</strong> theo dõi việc sử dụng trang web dưới dạng tổng hợp và ẩn danh. Các cookie này giúp chúng tôi hiểu công cụ nào được sử dụng nhiều nhất và cách cải thiện trang web.",
+        "adCookies": "<strong>Cookie quảng cáo bên thứ ba</strong> có thể được đặt bởi các đối tác mạng quảng cáo của chúng tôi để phục vụ quảng cáo phù hợp và đo lường hiệu suất quảng cáo.",
+        "control": "Bạn có thể kiểm soát hoặc vô hiệu hóa cookie thông qua cài đặt trình duyệt. Lưu ý rằng việc vô hiệu hóa cookie có thể ảnh hưởng đến chức năng của một số tính năng."
+      },
+      "thirdPartyAdvertising": {
+        "title": "Quảng cáo bên thứ ba",
+        "body": "PhotoTools hiển thị quảng cáo được phục vụ bởi các mạng quảng cáo bên thứ ba. Các mạng này có thể sử dụng cookie và công nghệ theo dõi tương tự để phục vụ quảng cáo dựa trên lịch sử duyệt web và sở thích của bạn (quảng cáo dựa trên sở thích). Chúng tôi không kiểm soát các thông lệ dữ liệu của các mạng quảng cáo bên thứ ba này. Để biết thêm thông tin, vui lòng xem chính sách bảo mật của các mạng đó hoặc truy cập <naiLink>trang từ chối của Network Advertising Initiative</naiLink>."
+      },
+      "googleAdSense": {
+        "title": "Google AdSense",
+        "body1": "PhotoTools sử dụng Google AdSense để hiển thị quảng cáo. Google AdSense có thể sử dụng cookie và web beacon để phục vụ quảng cáo dựa trên các lần truy cập trước đó của bạn vào trang web này hoặc các trang web khác. Việc Google sử dụng cookie quảng cáo cho phép Google và các đối tác của mình phục vụ quảng cáo dựa trên mẫu duyệt web của bạn.",
+        "body2": "Bạn có thể từ chối quảng cáo cá nhân hóa bằng cách truy cập <adsSettingsLink>Cài đặt quảng cáo Google</adsSettingsLink>. Để biết thêm thông tin về cách Google sử dụng dữ liệu, xem <partnerSitesLink>Cách Google sử dụng dữ liệu khi bạn sử dụng các trang web đối tác của chúng tôi</partnerSitesLink>."
+      },
+      "cookieConsent": {
+        "title": "Chấp thuận cookie",
+        "body1": "Khi bạn truy cập PhotoTools lần đầu, một biểu ngữ chấp thuận cookie được hiển thị cho phép bạn chấp nhận hoặc từ chối cookie không thiết yếu. Biểu ngữ này được hỗ trợ bởi CookieYes, một Nền tảng quản lý chấp thuận được Google chứng nhận hỗ trợ IAB Transparency and Consent Framework (TCF) v2.3.",
+        "body2": "Bạn có thể thay đổi tùy chọn chấp thuận bất cứ lúc nào bằng cách nhấn vào liên kết cài đặt cookie ở chân trang. Nếu bạn từ chối cookie quảng cáo, bạn vẫn sẽ thấy quảng cáo, nhưng chúng sẽ không được cá nhân hóa theo lịch sử duyệt web của bạn."
+      },
+      "ccpa": {
+        "title": "Cư dân California (CCPA)",
+        "body": "Theo Đạo luật quyền riêng tư người tiêu dùng California (CCPA), cư dân California có quyền biết thông tin cá nhân nào được thu thập, yêu cầu xóa và từ chối việc bán thông tin. PhotoTools không bán thông tin cá nhân. Cookie quảng cáo được sử dụng bởi các đối tác quảng cáo của chúng tôi có thể cấu thành \"bán\" theo CCPA — bạn có thể từ chối thông qua biểu ngữ chấp thuận cookie hoặc bằng cách liên hệ với chúng tôi qua <contactLink>trang liên hệ</contactLink>."
+      },
+      "dataSharing": {
+        "title": "Chia sẻ dữ liệu",
+        "intro": "Chúng tôi không bán, trao đổi hoặc cho thuê thông tin cá nhân của bạn cho bên thứ ba. Chúng tôi chỉ chia sẻ dữ liệu trong các trường hợp hạn chế sau:",
+        "analytics": "Với <strong>Google Analytics</strong> để phân tích lưu lượng và mẫu sử dụng trang web, tuân theo chính sách bảo mật của Google.",
+        "advertising": "Với <strong>đối tác quảng cáo</strong> như mô tả ở trên trong phần Quảng cáo bên thứ ba.",
+        "contactForm": "Chúng tôi không chia sẻ nội dung biểu mẫu liên hệ với bất kỳ bên thứ ba nào."
+      },
+      "childrensPrivacy": {
+        "title": "Quyền riêng tư của trẻ em",
+        "body": "PhotoTools không hướng đến trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em dưới 13 tuổi. Nếu bạn tin rằng một trẻ dưới 13 tuổi đã cung cấp cho chúng tôi thông tin cá nhân, vui lòng liên hệ để chúng tôi có thể xóa thông tin đó."
+      },
+      "yourRights": {
+        "title": "Quyền của bạn",
+        "body1": "Tùy thuộc vào vị trí của bạn, bạn có thể có các quyền theo luật như GDPR (Liên minh Châu Âu) hoặc CCPA (California) liên quan đến dữ liệu cá nhân của bạn.",
+        "body2": "Vì PhotoTools thu thập dữ liệu cá nhân tối thiểu — và không lưu trữ nội dung biểu mẫu liên hệ lâu dài — hầu hết các yêu cầu có thể được giải quyết đơn giản. Bạn có thể xóa cookie bất cứ lúc nào thông qua cài đặt trình duyệt. Để thực hiện bất kỳ quyền dữ liệu nào hoặc gửi yêu cầu về quyền riêng tư, vui lòng sử dụng <contactLink>trang liên hệ</contactLink> của chúng tôi."
+      },
+      "changesToPolicy": {
+        "title": "Thay đổi chính sách này",
+        "body": "Chúng tôi có thể cập nhật Chính sách bảo mật này theo thời gian. Khi cập nhật, chính sách mới sẽ được đăng trên trang này với ngày hiệu lực đã sửa đổi. Chúng tôi khuyến khích bạn xem lại chính sách này định kỳ. Việc tiếp tục sử dụng PhotoTools sau bất kỳ thay đổi nào đều cấu thành sự chấp nhận chính sách cập nhật của bạn."
+      },
+      "contact": {
+        "title": "Liên hệ",
+        "body": "Nếu bạn có câu hỏi về Chính sách bảo mật này hoặc cách chúng tôi xử lý dữ liệu của bạn, vui lòng liên hệ qua <contactLink>trang liên hệ</contactLink> của chúng tôi."
+      }
+    }
+  }
+}

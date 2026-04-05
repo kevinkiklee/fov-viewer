@@ -1,0 +1,60 @@
+{
+  "education": {
+    "perspective-compression-simulator": {
+      "beginner": "Kompresi perspektif adalah efek optik di mana objek pada jarak yang berbeda tampak lebih dekat satu sama lain daripada kenyataannya. Ini paling sering terlihat saat menggunakan lensa telefoto panjang (seperti 200mm atau 400mm) dari jarak jauh. Berlawanan dengan kepercayaan umum, bukan lensa itu sendiri yang menyebabkan kompresi, melainkan jarak antara kamera dan adegan.",
+      "deeper": "Kompresi terjadi karena pada jarak jauh, perbedaan relatif jarak antara subjek latar depan dan objek latar belakang menjadi kecil. Misalnya, jika Anda 30 meter dari subjek dan latar belakang 6 meter lagi di belakang mereka, latar belakang hanya 20% lebih jauh dari subjek. Dari jarak 1,5 meter, celah 6 meter yang sama membuat latar belakang 500% lebih jauh. Dengan mundur jauh dan menggunakan lensa telefoto untuk \"mengisi frame\" dengan subjek, Anda mengurangi kedalaman relatif, membuat latar belakang tampak lebih besar dan \"terkompresi\" terhadap subjek.",
+      "keyFactors": {
+        "0": {
+          "label": "Jarak Pemotretan",
+          "description": "Penyebab utama kompresi. Semakin jauh Anda dari subjek, semakin terkompresi latar belakang akan tampak relatif terhadap subjek."
+        },
+        "1": {
+          "label": "Panjang Fokus",
+          "description": "Lensa telefoto memperbesar gambar, memungkinkan Anda mengisi frame dengan subjek dari jarak di mana kompresi terlihat. Lensa wide-angle mengharuskan Anda dekat, yang memperluas kedalaman yang dirasakan."
+        },
+        "2": {
+          "label": "Kedalaman Relatif",
+          "description": "Kompresi paling terlihat ketika jarak antara subjek dan latar belakang kecil dibandingkan dengan jarak antara kamera dan subjek."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Untuk membuat gunung terlihat besar di belakang subjek, mundur sejauh mungkin dan gunakan lensa telefoto terpanjang Anda. Ini \"menarik\" latar belakang lebih dekat ke latar depan."
+        },
+        "1": {
+          "text": "Dalam fotografi potret, lensa 85mm atau 135mm sering disukai karena kompresi ringan menghasilkan representasi fitur wajah yang lebih menarik dibandingkan lensa wide-angle."
+        },
+        "2": {
+          "text": "Gunakan ekspansi perspektif (wide-angle jarak dekat) untuk menekankan garis penuntun latar depan dan membuat ruang terasa lebih luas dan terbuka."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Panjang Fokus",
+          "definition": "Kekuatan pembesaran lensa. Panjang fokus lebih panjang (telefoto) memungkinkan Anda memotret dari jarak lebih jauh, yang sebenarnya menyebabkan kompresi perspektif."
+        },
+        "distance": {
+          "term": "Jarak Subjek",
+          "definition": "Jarak antara kamera dan subjek utama. Meningkatkan jarak ini adalah penyebab fisik kompresi perspektif."
+        },
+        "maintainSize": {
+          "term": "Pertahankan Ukuran Subjek",
+          "definition": "Secara otomatis menyesuaikan jarak kamera saat mengubah panjang fokus untuk menjaga subjek utama tetap berukuran sama di frame. Ini mendemonstrasikan efek \"Dolly Zoom\"."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Anda ingin mengambil foto teman di depan gunung, dan Anda ingin gunung terlihat sebesar mungkin di belakang mereka. Apa yang harus Anda lakukan?",
+          "hint": "Kompresi disebabkan oleh jarak, dan lensa telefoto memungkinkan Anda mengisi frame dari jarak jauh.",
+          "successMessage": "Tepat! Dengan mundur jauh dan menggunakan lensa telefoto, Anda mengompres jarak antara teman dan gunung, membuat gunung tampak jauh lebih besar.",
+          "failureMessage": "Kurang tepat. Mendekati dengan lensa wide-angle akan membuat gunung terlihat lebih kecil dan lebih jauh. Mundur dan zoom in!",
+          "options": {
+            "0": { "label": "Mundur dan gunakan lensa 200mm" },
+            "1": { "label": "Mendekati dan gunakan lensa 24mm" },
+            "2": { "label": "Tetap di tempat dan gunakan lensa 50mm" }
+          }
+        }
+      }
+    }
+  }
+}

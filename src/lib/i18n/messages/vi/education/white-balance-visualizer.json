@@ -1,0 +1,129 @@
+{
+  "education": {
+    "white-balance-visualizer": {
+      "beginner": "Cân bằng trắng điều chỉnh màu sắc trong ảnh để vật trắng thực sự xuất hiện trắng dưới mọi điều kiện chiếu sáng. Các nguồn sáng khác nhau có nhiệt độ màu khác nhau — nến ấm và cam, trong khi bóng râm mát và xanh. Cài đặt cân bằng trắng của máy ảnh bù cho những khác biệt này để màu sắc trông tự nhiên.",
+      "deeper": {
+        "0": {
+          "heading": "Nhiệt độ màu",
+          "text": "Nhiệt độ màu được đo bằng Kelvin (K) và tương ứng với màu ánh sáng phát ra bởi \"vật đen\" lý tưởng được nung nóng đến nhiệt độ đó. Giá trị thấp (2000–3500K) tạo ánh sáng ấm, cam đỏ (bóng sợi đốt, nến), trong khi giá trị cao (6500–10000K) tạo ánh sáng mát, xanh dương (bóng râm, trời râm)."
+        },
+        "1": {
+          "heading": "Cách cân bằng trắng hoạt động",
+          "text": "Hệ thống cân bằng trắng của máy ảnh áp dụng dịch chuyển màu ngược để trung hòa ám màu môi trường. Khi bạn đặt cân bằng trắng \"Tungsten\" (~3200K), máy ảnh thêm xanh dương để bù ám cam từ đèn sợi đốt. Trong nhiếp ảnh kỹ thuật số, cân bằng trắng được áp dụng dưới dạng hệ số nhân cho kênh đỏ và xanh dương so với xanh lá."
+        },
+        "2": {
+          "heading": "Ưu thế RAW",
+          "text": "Chụp định dạng RAW bảo toàn tất cả dữ liệu màu và cho phép bạn thay đổi cân bằng trắng tự do trong hậu kỳ không mất chất lượng — đơn giản là thẻ metadata áp dụng trong quá trình chuyển đổi."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Nhiệt độ màu (Kelvin)",
+          "description": "Thước đo số của màu ánh sáng. Kelvin thấp = ánh sáng ấm/cam. Kelvin cao = ánh sáng mát/xanh. Ánh sáng ban ngày khoảng 5500K."
+        },
+        "1": {
+          "label": "Nguồn sáng",
+          "description": "Các nguồn khác nhau phát nhiệt độ màu khác nhau: nến (~1800K), bóng tungsten (~2800K), đèn huỳnh quang (~4000K), nắng trưa (~5500K), trời râm (~6500K), bóng râm (~7500K)."
+        },
+        "2": {
+          "label": "RAW vs JPEG",
+          "description": "Chụp RAW cho phép thay đổi cân bằng trắng trong hậu kỳ không mất chất lượng. JPEG cố định cân bằng trắng vĩnh viễn, nên đúng ngay từ máy quan trọng hơn."
+        },
+        "3": {
+          "label": "Chiếu sáng hỗn hợp",
+          "description": "Cảnh có nhiều nguồn sáng ở nhiệt độ khác nhau (ví dụ: ánh sáng ban ngày từ cửa sổ + đèn tungsten) làm cho không thể trung hòa hoàn hảo tất cả màu cùng lúc."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Luôn chụp RAW nếu muốn linh hoạt tối đa để điều chỉnh cân bằng trắng sau. Tệp RAW lưu dữ liệu cảm biến chưa xử lý, nên thay đổi cân bằng trắng không mất chất."
+        },
+        "1": {
+          "text": "Cho hiệu ứng sáng tạo, thử cố ý \"sai\" cân bằng trắng. Đặt WB ánh sáng ban ngày trong giờ vàng làm hoàng hôn ấm hơn, trong khi WB tungsten ngoài trời tạo cái nhìn xanh lạnh ấn tượng."
+        },
+        "2": {
+          "text": "Trong tình huống chiếu sáng hỗn hợp (ví dụ: phòng được chiếu sáng bởi cả ánh sáng cửa sổ và đèn tungsten), sử dụng thẻ xám để đặt cân bằng trắng tùy chỉnh, hoặc gắn gel cho flash phù hợp nguồn sáng môi trường."
+        }
+      },
+      "tooltips": {
+        "colorTemperature": {
+          "term": "Nhiệt độ màu",
+          "definition": "Thước đo màu ánh sáng bằng Kelvin (K). Dựa trên màu lý thuyết của vật đen được nung nóng. Giá trị thấp ấm hơn (cam/đỏ), giá trị cao mát hơn (xanh)."
+        },
+        "preset": {
+          "term": "Preset cân bằng trắng",
+          "definition": "Cài đặt cân bằng trắng được định nghĩa sẵn cho nguồn sáng phổ biến. Preset bao gồm Tungsten (~3200K), Huỳnh quang (~4000K), Ánh sáng ban ngày (~5500K), Trời râm (~6500K), và Bóng râm (~7500K)."
+        },
+        "rgbValues": {
+          "term": "Giá trị RGB",
+          "definition": "Giá trị kênh đỏ, xanh lá và xanh dương (0-255 mỗi kênh) đại diện cho màu ánh sáng ở nhiệt độ đã chọn. Dùng để trực quan hóa cách nguồn sáng phủ màu lên cảnh."
+        },
+        "hexCode": {
+          "term": "Mã Hex",
+          "definition": "Biểu diễn màu bằng sáu ký tự thập lục phân (ví dụ: #FF8C00). Hữu ích để tham chiếu màu chính xác trong phần mềm thiết kế hoặc phát triển web."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Ảnh trong nhà dưới bóng đèn thường trông rất cam/vàng. Preset cân bằng trắng nào bạn nên dùng để sửa?",
+          "hint": "Bóng sợi đốt gia dụng phát ánh sáng ấm, cam khoảng 2800-3200K.",
+          "successMessage": "Chính xác! Preset Tungsten thêm xanh dương để bù ám cam của bóng sợi đốt, đưa màu sắc về trung tính.",
+          "failureMessage": "Bóng sợi đốt/tungsten phát ánh sáng cam ấm. Preset cân bằng trắng Tungsten được thiết kế đặc biệt để trung hòa ám này bằng cách thêm xanh dương.",
+          "options": {
+            "0": { "label": "Ánh sáng ban ngày" },
+            "1": { "label": "Tungsten" },
+            "2": { "label": "Bóng râm" },
+            "3": { "label": "Huỳnh quang" }
+          }
+        },
+        "1": {
+          "scenario": "Bạn đang chụp chân dung trong giờ vàng và muốn giữ ánh ấm đẹp của hoàng hôn. Cài đặt cân bằng trắng nào bạn nên dùng?",
+          "hint": "Nếu bạn đặt WB \"đúng\" cho giờ vàng, nó sẽ trung hòa tông ấm bạn muốn giữ.",
+          "successMessage": "Chính xác! Sử dụng preset Ánh sáng ban ngày (hoặc thậm chí Trời râm/Bóng râm) trong giờ vàng bảo toàn và tăng cường tông ấm thay vì trung hòa.",
+          "failureMessage": "Để bảo toàn ánh ấm giờ vàng, sử dụng WB không bù cho ánh sáng ấm. Ánh sáng ban ngày hoặc preset cao hơn sẽ giữ (và thậm chí tăng cường) sự ấm áp.",
+          "options": {
+            "0": { "label": "Cân bằng trắng tự động" },
+            "1": { "label": "Tungsten (để trung hòa sự ấm)" },
+            "2": { "label": "Ánh sáng ban ngày (để bảo toàn sự ấm)" },
+            "3": { "label": "Flash" }
+          }
+        },
+        "2": {
+          "scenario": "Bạn đang điều chỉnh cân bằng trắng thủ công bằng Kelvin. Ảnh trông quá xanh/lạnh. Bạn nên tăng hay giảm giá trị Kelvin để làm ấm?",
+          "hint": "Cài đặt WB Kelvin cho máy ảnh biết nhiệt độ màu nguồn sáng là gì. Đặt giá trị Kelvin cao hơn làm máy ảnh thêm nhiều ấm hơn.",
+          "successMessage": "Đúng! Tăng giá trị Kelvin cho máy ảnh biết ánh sáng mát hơn thực tế, nên máy bù bằng cách thêm ấm. Đặt K cao hơn để làm ấm ảnh lạnh.",
+          "failureMessage": "Khi tăng giá trị Kelvin, máy ảnh thêm nhiều ấm hơn để bù. Nên để sửa ảnh lạnh/xanh, tăng số Kelvin.",
+          "options": {
+            "0": { "label": "Tăng Kelvin (ví dụ: 5500K lên 7500K)" },
+            "1": { "label": "Giảm Kelvin (ví dụ: 5500K xuống 3200K)" },
+            "2": { "label": "Hướng Kelvin không ảnh hưởng đến ấm" }
+          }
+        },
+        "3": {
+          "scenario": "Bạn đang chụp nội thất nhà hàng có đèn treo tungsten ấm phía trên và ánh sáng ban ngày xanh mát từ cửa sổ lớn. Người gần cửa sổ trông xanh, và người dưới đèn trông cam. Cách tiếp cận tốt nhất?",
+          "hint": "Không có cài đặt cân bằng trắng đơn nào có thể chỉnh hai nhiệt độ màu rất khác đồng thời.",
+          "successMessage": "Chính xác! Gắn gel cho flash hoặc đèn phụ để phù hợp một nguồn chủ đạo, hoặc chọn WB thỏa hiệp và chỉnh chọn lọc trong hậu kỳ, là cách tiếp cận tốt nhất cho chiếu sáng hỗn hợp.",
+          "failureMessage": "Chiếu sáng hỗn hợp là một trong những thách thức WB khó nhất. Một WB đơn không thể chỉnh cả hai nguồn đồng thời. Bạn cần phù hợp nguồn sáng bằng gel hoặc sửa chọn lọc trong hậu kỳ.",
+          "options": {
+            "0": { "label": "Đặt WB Tungsten — sẽ sửa hết" },
+            "1": { "label": "Đặt WB Ánh sáng ban ngày — cửa sổ quan trọng hơn" },
+            "2": { "label": "Dùng Auto WB và chụp RAW, rồi chỉnh từng vùng trong hậu kỳ" },
+            "3": { "label": "Tăng ISO để màu chính xác hơn" }
+          }
+        },
+        "4": {
+          "scenario": "Bạn đang chụp cảnh đêm thành phố u ám, điện ảnh và muốn tông xanh lạnh có chủ đích. Đèn đường là natri hơi (~2200K). Cài đặt Kelvin cân bằng trắng nào sẽ cho bạn dịch chuyển xanh mạnh nhất?",
+          "hint": "Đặt WB thấp hơn nhiều so với nhiệt độ nguồn sáng thực sẽ dịch ảnh về xanh.",
+          "successMessage": "Chính xác! Đặt WB 7500K (preset Bóng râm) cho máy ảnh biết nguồn sáng rất mát/xanh — nên nó bù bằng cách thêm chỉnh ấm mạnh. Nhưng vì đèn natri thực sự chỉ 2200K (rất ấm), sự bù quá mức này vượt qua trung tính sang ám xanh mạnh. Bạn đặt WB Kelvin càng cao hơn nhiệt độ ánh sáng thực, dịch chuyển xanh càng mạnh.",
+          "failureMessage": "Đặt giá trị WB Kelvin cao hơn nhiều so với nhiệt độ nguồn sáng thực làm máy ảnh bù quá mức về xanh. Với đèn natri 2200K, đặt WB 7500K+ tạo cái nhìn xanh lạnh mạnh nhất.",
+          "options": {
+            "0": { "label": "2200K (phù hợp đèn natri)" },
+            "1": { "label": "3200K (preset Tungsten)" },
+            "2": { "label": "7500K hoặc cao hơn (preset Bóng râm)" },
+            "3": { "label": "5500K (preset Ánh sáng ban ngày)" }
+          }
+        }
+      }
+    }
+  }
+}

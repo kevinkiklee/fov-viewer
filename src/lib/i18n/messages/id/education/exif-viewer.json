@@ -1,0 +1,126 @@
+{
+  "education": {
+    "exif-viewer": {
+      "beginner": "Data EXIF adalah informasi tersembunyi yang tertanam dalam setiap foto yang diambil kamera Anda. Data ini mencatat kamera dan lensa yang digunakan, pengaturan yang tepat (apertur, kecepatan rana, ISO), tanggal dan waktu, dan terkadang bahkan koordinat GPS. Alat ini membaca data tersebut tanpa mengunggah foto Anda ke mana pun — semuanya terjadi di browser Anda.",
+      "deeper": "EXIF (Exchangeable Image File Format) adalah standar yang didefinisikan oleh JEITA/CIPA yang menyimpan metadata dalam file JPEG, TIFF, dan beberapa file RAW. Data ditulis ke dalam segmen tertentu dari header file sebagai pasangan kunci-nilai bertag menggunakan struktur IFD (Image File Directory) berbasis TIFF. Ada beberapa bagian IFD: IFD0 untuk info gambar dasar, sub-IFD EXIF untuk pengaturan kamera, IFD GPS untuk geolokasi, dan IFD Interop untuk data kompatibilitas. Produsen kamera juga menulis data \"MakerNote\" proprietary yang berisi koreksi lensa, titik fokus, jumlah rana, dan detail spesifik model lainnya. Platform media sosial sering menghapus data EXIF saat upload untuk privasi, tetapi file asli di kartu memori Anda selalu menyimpannya. Memahami EXIF membantu Anda belajar dari pola pemotretan Anda sendiri dan merekayasa balik pengaturan di balik foto yang Anda kagumi.",
+      "keyFactors": {
+        "0": {
+          "label": "Kamera & Lensa",
+          "description": "Merek, model, nama lensa, dan produsen lensa — berguna untuk mengidentifikasi peralatan dalam foto yang Anda temukan secara online."
+        },
+        "1": {
+          "label": "Pengaturan Eksposur",
+          "description": "Apertur, kecepatan rana, ISO, dan panjang fokus — parameter pemotretan inti yang dicatat untuk setiap frame."
+        },
+        "2": {
+          "label": "Tanggal & GPS",
+          "description": "Kapan dan di mana foto diambil. Perhatikan bahwa data GPS mengungkapkan lokasi Anda saat membagikan file."
+        },
+        "3": {
+          "label": "Software",
+          "description": "Menunjukkan software pengeditan mana yang terakhir menyimpan file. Berguna untuk memeriksa apakah gambar telah diproses."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Periksa panjang fokus dan ekuivalen 35mm untuk memahami apakah fotografer menggunakan perspektif wide, normal, atau telefoto — ini mengajarkan komposisi lebih dari rule of thirds mana pun."
+        },
+        "1": {
+          "text": "Jika foto yang Anda kagumi diambil pada ISO tinggi dengan apertur lebar, itu memberitahu Anda bahwa itu adalah situasi cahaya rendah. Gunakan EXIF untuk memahami kendala yang dihadapi fotografer."
+        },
+        "2": {
+          "text": "Sebelum membagikan foto secara online, sadarilah bahwa EXIF mungkin berisi lokasi GPS Anda. Hapus metadata menggunakan pengaturan ekspor software pengeditan Anda jika privasi menjadi perhatian."
+        }
+      },
+      "tooltips": {
+        "Make": {
+          "term": "Merek",
+          "definition": "Nama produsen kamera (misalnya Canon, Nikon, Sony) yang disimpan di header EXIF."
+        },
+        "Model": {
+          "term": "Model",
+          "definition": "Model kamera spesifik (misalnya \"EOS R5\", \"Z 9\") yang menangkap gambar."
+        },
+        "Aperture": {
+          "term": "Apertur",
+          "definition": "Angka f yang diatur pada lensa. Angka lebih rendah berarti apertur lebih lebar dan lebih banyak cahaya."
+        },
+        "Shutter Speed": {
+          "term": "Kecepatan Rana",
+          "definition": "Berapa lama sensor terpapar. Dinyatakan sebagai pecahan (misalnya 1/250 detik) atau detik penuh untuk eksposur panjang."
+        },
+        "ISO": {
+          "term": "ISO",
+          "definition": "Pengaturan sensitivitas sensor. ISO lebih tinggi mencerahkan gambar tetapi menambah noise."
+        },
+        "Focal Length": {
+          "term": "Panjang Fokus",
+          "definition": "Panjang fokus aktual lensa dalam milimeter."
+        },
+        "Focal Length (35mm equiv)": {
+          "term": "Panjang Fokus (ekuiv. 35mm)",
+          "definition": "Panjang fokus ekuivalen seolah dipotret pada sensor full frame 35mm. Berguna untuk membandingkan bidang pandang lintas ukuran sensor."
+        },
+        "GPS": {
+          "term": "GPS",
+          "definition": "Koordinat lintang dan bujur yang disematkan oleh kamera dengan modul GPS. Mengungkapkan di mana foto diambil."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Anda menemukan foto yang menakjubkan secara online dan ingin tahu lensa apa yang digunakan. Bagian EXIF mana yang akan memberitahu Anda?",
+          "hint": "Info kamera dan lensa ada di bagian yang berbeda.",
+          "successMessage": "Benar! Bagian Lensa menunjukkan model dan produsen lensa.",
+          "failureMessage": "Bagian Lensa berisi model lensa — periksa di sana untuk mengidentifikasi glass yang digunakan.",
+          "options": {
+            "0": { "label": "Kamera" },
+            "1": { "label": "Lensa" },
+            "2": { "label": "Pengaturan" }
+          }
+        },
+        "1": {
+          "scenario": "Anda mengunggah foto dan melihat Apertur: f/1.8, Kecepatan Rana: 1/4000 detik, ISO: 100. Apakah ini kemungkinan dipotret di cahaya terang atau redup?",
+          "hint": "Kecepatan rana yang sangat cepat pada ISO rendah menunjukkan banyak cahaya yang tersedia.",
+          "successMessage": "Tepat! Kecepatan rana cepat (1/4000 detik) pada ISO dasar (100) memberitahu Anda bahwa ada banyak cahaya — kemungkinan outdoor cerah.",
+          "failureMessage": "Kecepatan rana 1/4000 detik pada ISO 100 berarti kamera memerlukan sensitivitas sangat sedikit dan eksposur sangat pendek. Itu adalah adegan outdoor yang cerah.",
+          "options": {
+            "0": { "label": "Cahaya terang — rana cepat pada ISO rendah" },
+            "1": { "label": "Cahaya redup — apertur lebar mengkompensasi" }
+          }
+        },
+        "2": {
+          "scenario": "Sebuah foto menunjukkan Panjang Fokus: 50mm dan Panjang Fokus (ekuiv. 35mm): 75mm. Sensor apa yang digunakan kamera?",
+          "hint": "Ekuivalen 35mm adalah panjang fokus dikalikan crop factor.",
+          "successMessage": "Benar! 75 / 50 = crop factor 1,5x, yang merupakan sensor APS-C (varian Nikon/Sony).",
+          "failureMessage": "Bagi ekuivalen 35mm dengan panjang fokus aktual: 75 / 50 = 1,5x. Crop factor tersebut cocok dengan APS-C (Nikon/Sony).",
+          "options": {
+            "0": { "label": "Full Frame (crop 1,0x)" },
+            "1": { "label": "APS-C (crop 1,5x)" },
+            "2": { "label": "Micro Four Thirds (crop 2,0x)" }
+          }
+        },
+        "3": {
+          "scenario": "Anda melihat dua foto dari adegan yang sama. Foto A: f/2.8, 1/60 detik, ISO 3200. Foto B: f/2.8, 1/60 detik, ISO 200. Foto mana yang diambil di cahaya lebih terang?",
+          "hint": "ISO lebih tinggi mengkompensasi cahaya yang lebih sedikit.",
+          "successMessage": "Tepat! Foto B pada ISO 200 memiliki cahaya ambient yang jauh lebih banyak. Foto A memerlukan ISO 3200 (4 stop lebih sensitif) untuk mencapai eksposur yang sama, artinya adegan jauh lebih gelap.",
+          "failureMessage": "Foto B berada di cahaya lebih terang. Apertur dan kecepatan rana sama, tetapi ISO 200 vs 3200 berarti Foto A berada di lingkungan yang jauh lebih gelap dan memerlukan 4 stop lebih banyak sensitivitas sensor.",
+          "options": {
+            "0": { "label": "Foto A (ISO 3200)" },
+            "1": { "label": "Foto B (ISO 200)" }
+          }
+        },
+        "4": {
+          "scenario": "Anda menganalisis foto satwa liar: 400mm, f/5.6, 1/2000 detik, ISO 1600. EXIF menunjukkan field software adalah \"Adobe Lightroom Classic 13.1\". Apa yang bisa Anda simpulkan tentang fotografer dan kondisi pemotretannya?",
+          "hint": "Pertimbangkan panjang fokus panjang, apertur yang terbuka lebar, rana cepat, dan ISO yang tinggi secara bersama-sama.",
+          "successMessage": "Analisis bagus! 400mm pada f/5.6 (kemungkinan terbuka penuh untuk lensa tersebut) dengan rana cepat 1/2000 detik menunjukkan subjek yang bergerak cepat (burung atau satwa liar beraksi). ISO 1600 menunjukkan bukan sinar matahari cerah — mungkin mendung atau di tempat teduh. Field Lightroom mengonfirmasi pasca-pemrosesan telah dilakukan.",
+          "failureMessage": "Pengaturan mengungkapkan banyak hal: 400mm f/5.6 adalah telefoto satwa liar tipikal yang terbuka penuh, 1/2000 detik membekukan gerakan hewan yang cepat, dan ISO 1600 berarti cahaya terbatas (bukan matahari cerah). Entri Lightroom mengonfirmasi file telah diproses.",
+          "options": {
+            "0": { "label": "Subjek cepat di cahaya sedang, diproses di Lightroom" },
+            "1": { "label": "Subjek lambat di cahaya terang, langsung dari kamera" },
+            "2": { "label": "Foto lanskap dengan motion blur, diedit berat" }
+          }
+        }
+      }
+    }
+  }
+}

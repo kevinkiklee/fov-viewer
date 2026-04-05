@@ -1,0 +1,240 @@
+{
+  "glossary": {
+    "title": "Fotoğrafçılık Sözlüğü",
+    "subtitle": "Aranabilir fotoğrafçılık terimleri referansı. Tanımını görmek için herhangi bir terime tıklayın.",
+    "searchPlaceholder": "Terim ara...",
+    "searchAriaLabel": "Sözlük terimlerini ara",
+    "noResults": "Aramanızla eşleşen terim bulunamadı.",
+    "tryTool": "{toolName} aracını deneyin",
+    "entries": {
+      "aperture": {
+        "term": "Diyafram",
+        "definition": "Objektifteki ışığın geçtiği açıklık. Daha geniş bir diyafram (düşük f-sayısı) daha fazla ışık geçirir ve daha sığ bir alan derinliği oluşturur."
+      },
+      "aspect-ratio": {
+        "term": "En-Boy Oranı",
+        "definition": "Bir görüntünün genişliği ile yüksekliği arasındaki oransal ilişki. Yaygın oranlar arasında 3:2 (standart DSLR), 4:3 (Mikro Dört Üçlü) ve 16:9 (geniş ekran) bulunur."
+      },
+      "autofocus": {
+        "term": "Otomatik Odaklama",
+        "definition": "Bir konuyu net olarak odağa almak için objektifi otomatik olarak ayarlayan kamera sistemi. Modern sistemler faz algılama veya kontrast algılama yöntemlerini kullanır."
+      },
+      "bokeh": {
+        "term": "Bokeh",
+        "definition": "Bir görüntüdeki odak dışı alanların estetik kalitesi, özellikle parlak noktalar. Pürüzsüz, dairesel bokeh genellikle tercih edilir ve objektif tasarımı ile diyafram şeklinden etkilenir."
+      },
+      "bracketing": {
+        "term": "Basamaklama",
+        "definition": "Aynı sahnenin farklı pozlama ayarlarında birden fazla çekim yapılması. HDR fotoğrafçılığı için veya en az bir doğru pozlanmış kare elde etmek için kullanılır."
+      },
+      "bulb-mode": {
+        "term": "Bulb Modu",
+        "definition": "Deklanşör düğmesi basılı tutulduğu sürece obtüratörün açık kaldığı bir enstantane ayarı. Kameranın zamanlı ayarlarının ötesindeki çok uzun pozlamalar için kullanılır."
+      },
+      "burst-mode": {
+        "term": "Seri Çekim Modu",
+        "definition": "Kameranın saniyede birden fazla kare çektiği bir çekim modu. Hızlı hareket yakalamak veya en iyi anı seçmek için kullanışlıdır."
+      },
+      "chromatic-aberration": {
+        "term": "Kromatik Aberasyon",
+        "definition": "Farklı ışık dalga boylarının biraz farklı noktalara odaklanmasına neden olan bir objektif kusuru; yüksek kontrastlı kenarlarda renk saçılması oluşturur. Ucuz objektiflerde ve geniş diyaframlarda daha yaygındır."
+      },
+      "circle-of-confusion": {
+        "term": "Bulanıklık Çemberi",
+        "definition": "İnsan gözüne hâlâ bir nokta olarak görünen en büyük bulanıklık dairesi. Kabul edilebilir netlik sınırlarını belirler ve alan derinliği hesaplamalarında kullanılır."
+      },
+      "color-temperature": {
+        "term": "Renk Sıcaklığı",
+        "definition": "Bir ışık kaynağının sıcaklığını veya soğukluğunu tanımlayan Kelvin cinsinden bir ölçüm. Düşük değerler (2700K) sıcak/turuncu görünür; yüksek değerler (6500K+) soğuk/mavi görünür."
+      },
+      "crop-factor": {
+        "term": "Kırpma Faktörü",
+        "definition": "Bir kamera sensörünün köşegeninin 35mm tam kare sensör köşegenine oranı. Etkili odak uzaklığını ve görüş alanını etkiler."
+      },
+      "depth-of-field": {
+        "term": "Alan Derinliği",
+        "definition": "Bir sahnede kabul edilebilir derecede net görünen mesafe aralığı. Diyafram, odak uzaklığı ve konu mesafesi tarafından kontrol edilir."
+      },
+      "diffraction": {
+        "term": "Kırınım",
+        "definition": "Işığın küçük bir diyaframdan geçerken bükülmesi, bu da görüntüyü yumuşatır. Bir objektifi ne kadar kısabileceğinize pratik bir sınır koyar."
+      },
+      "dynamic-range": {
+        "term": "Dinamik Aralık",
+        "definition": "Bir kameranın tek bir pozlamada yakalayabildiği en koyu gölgeler ile en parlak ışıklar arasındaki aralık. Adım (EV) cinsinden ölçülür."
+      },
+      "ev": {
+        "term": "EV (Pozlama Değeri)",
+        "definition": "Aynı pozlamayı üreten enstantane hızı ve diyafram kombinasyonunu temsil eden bir sayı. Her 1 EV artışı ışığı ikiye katlar veya yarıya indirir."
+      },
+      "exposure-compensation": {
+        "term": "Pozlama Kompanzasyonu",
+        "definition": "Ölçülen pozlamayı geçersiz kılan, genellikle 1/3 adım artışlarla çalışan bir kamera kontrolü. Pozitif değerler görüntüyü aydınlatır; negatif değerler karartır."
+      },
+      "exposure-triangle": {
+        "term": "Pozlama Üçgeni",
+        "definition": "Diyafram, enstantane hızı ve ISO arasındaki ilişki. Birini değiştirmek, aynı pozlamayı korumak için diğerlerini ayarlamayı gerektirir."
+      },
+      "f-stop": {
+        "term": "F-Adımı",
+        "definition": "Objektif diyaframı için bir ölçü birimi. Her tam adım (f/1,4, f/2, f/2,8, f/4...) objektiften geçen ışık miktarını yarıya indirir."
+      },
+      "focal-length": {
+        "term": "Odak Uzaklığı",
+        "definition": "Sonsuzluğa odaklandığında objektifin optik merkezinden sensöre olan milimetre cinsinden mesafe. Görüş açısını ve büyütmeyi belirler."
+      },
+      "focus-stacking": {
+        "term": "Odak İstifleme",
+        "definition": "Farklı mesafelere odaklanan birden fazla görüntünün son işlemede birleştirilerek tek bir pozlamanın izin verdiğinden daha fazla alan derinliği elde etme tekniği."
+      },
+      "full-frame": {
+        "term": "Tam Kare",
+        "definition": "35mm filme eşdeğer sensör boyutu (36 x 24mm). Odak uzaklığı ve kırpma faktörü hesaplamaları için referans standarttır."
+      },
+      "golden-hour": {
+        "term": "Altın Saat",
+        "definition": "Gün doğumundan kısa süre sonra veya gün batımından kısa süre önce güneş ışığının sıcak, yumuşak ve yönlü olduğu dönem. Manzara ve portre fotoğrafçılığı için çok değerlidir."
+      },
+      "histogram": {
+        "term": "Histogram",
+        "definition": "Bir görüntüdeki parlaklık değerlerinin dağılımını gösteren bir grafik. Sol taraf gölgeleri, sağ taraf parlak alanları temsil eder."
+      },
+      "hyperfocal-distance": {
+        "term": "Hiperfocal Mesafe",
+        "definition": "Yarı mesafeden sonsuza kadar her şeyin kabul edilebilir derecede net olduğu en yakın odaklama mesafesi. Belirli bir diyafram için alan derinliğini maksimize eder."
+      },
+      "image-stabilization": {
+        "term": "Görüntü Sabitleme",
+        "definition": "Kamera sarsıntısı bulanıklığını azaltan, objektifte (OIS) veya kamera gövdesinde (IBIS) bulunan bir sistem. Genellikle 3-7 adım elde çekim avantajı sağlar."
+      },
+      "iso": {
+        "term": "ISO",
+        "definition": "Kamera sensörünün ışığa duyarlılığının bir ölçüsü. Daha yüksek ISO değerleri görüntüyü aydınlatır ancak daha fazla gürültü ekler."
+      },
+      "jpeg": {
+        "term": "JPEG",
+        "definition": "Kayıplı sıkıştırma uygulayan sıkıştırılmış bir görüntü dosya formatı. RAW'a kıyasla daha küçük dosya boyutları ancak daha az düzenleme esnekliği sunar."
+      },
+      "kelvin": {
+        "term": "Kelvin",
+        "definition": "Işığın renk sıcaklığını ölçmek için kullanılan birim. Fotoğrafçılar beyaz dengesini ayarlamak ve ortam aydınlatmasının rengini eşleştirmek için Kelvin değerlerini kullanır."
+      },
+      "lens-compression": {
+        "term": "Objektif Sıkıştırması",
+        "definition": "Bir telefoto objektifin uzak nesneleri ön plan konularına daha yakın göstermesinin görsel etkisi. Objektifin kendisinden değil, uzun çekim mesafesinden kaynaklanır."
+      },
+      "light-meter": {
+        "term": "Işık Ölçer",
+        "definition": "Doğru pozlama ayarlarını belirlemek için ışık yoğunluğunu ölçen bir cihaz veya kamera sistemi. Kameralar yansıyan ışık ölçümü kullanır; elde taşınan ölçerler düşen ışığı ölçebilir."
+      },
+      "long-exposure": {
+        "term": "Uzun Pozlama",
+        "definition": "Genellikle saniyeler veya dakikalar süren yavaş enstantane hızıyla çekilen bir fotoğraf. Işık izleri, pürüzsüz su, yıldız izleri ve düşük ışıklı sahneler için kullanılır."
+      },
+      "macro": {
+        "term": "Makro",
+        "definition": "Konuları gerçek boyutunda veya yakınında büyütme oranında (1:1 oranı) çoğaltan fotoğrafçılık. Özel makro objektifler veya uzatma tüpleri gerektirir."
+      },
+      "medium-format": {
+        "term": "Orta Format",
+        "definition": "Tam kareden daha büyük bir sensör boyutu, genellikle yaklaşık 44 x 33mm veya 54 x 40mm. Daha yüksek çözünürlük, daha sığ alan derinliği ve daha geniş dinamik aralık sunar."
+      },
+      "megapixel": {
+        "term": "Megapiksel",
+        "definition": "Bir milyon piksel. Bir sensörün megapiksel sayısı, yakalayabileceği görüntülerin maksimum çözünürlüğünü belirler."
+      },
+      "micro-four-thirds": {
+        "term": "Mikro Dört Üçlü",
+        "definition": "17,3 x 13mm ölçülerinde sensöre sahip, 2x kırpma faktörü veren aynasız kamera sistemi. İyi görüntü kalitesiyle kompakt gövdeler ve objektifler sunar."
+      },
+      "mirror-lock-up": {
+        "term": "Ayna Kilidi",
+        "definition": "Titreşimi azaltmak için obtüratör tetiklenmeden önce aynayı kaldıran bir DSLR özelliği. Özellikle yavaş enstantane hızlarında tripoda monte net çekimler için kullanılır."
+      },
+      "nd-filter": {
+        "term": "ND Filtre",
+        "definition": "Rengi etkilemeden objektife giren ışık miktarını azaltan nötr yoğunluk filtresi. Parlak koşullarda daha uzun pozlamalara veya daha geniş diyaframlara olanak tanır."
+      },
+      "noise": {
+        "term": "Gürültü",
+        "definition": "Dijital görüntülerde parlaklık ve renkte rastgele değişim, gölge alanlarında ve yüksek ISO ayarlarında en belirgindir. Gürültü azaltma yazılımıyla azaltılabilir."
+      },
+      "overexposure": {
+        "term": "Aşırı Pozlama",
+        "definition": "Bir görüntü çok fazla ışık aldığında, parlak alanların saf beyaza dönmesine ve detay kaybına neden olur. Yetersiz pozlamanın tersidir."
+      },
+      "panorama": {
+        "term": "Panorama",
+        "definition": "Birden fazla örtüşen fotoğrafın birleştirilmesiyle oluşturulan geniş açılı görüntü. Bir sahnenin 360 dereceye kadarını kapsayabilir."
+      },
+      "pixel-pitch": {
+        "term": "Piksel Aralığı",
+        "definition": "Sensördeki komşu piksellerin merkezleri arasındaki mikrometre cinsinden mesafe. Daha büyük piksel aralığı genellikle daha iyi düşük ışık performansı anlamına gelir."
+      },
+      "polarizer": {
+        "term": "Polarize Filtre",
+        "definition": "Metalik olmayan yüzeylerden yansımaları ve parlamayı azaltan ve mavi gökyüzünü derinleştirebilen bir filtre. Belirli bir yönde salınan ışık dalgalarını engelleyerek çalışır."
+      },
+      "prime-lens": {
+        "term": "Sabit Objektif",
+        "definition": "Sabit odak uzaklığına sahip (zum yok) bir objektif. Sabit objektifler genellikle karşılaştırılabilir zum objektiflerden daha keskin, daha hızlı (daha geniş diyafram) ve daha hafiftir."
+      },
+      "raw": {
+        "term": "RAW",
+        "definition": "Tüm sensör verilerini koruyan sıkıştırılmamış veya kayıpsız sıkıştırılmış dosya formatı. Daha büyük dosya boyutları karşılığında son işlemede maksimum esneklik sunar."
+      },
+      "reciprocal-rule": {
+        "term": "Karşılıklılık Kuralı",
+        "definition": "Elde çekim için minimum enstantane hızının kamera sarsıntısını önlemek için 1/(odak uzaklığı) olması gerektiğini belirten kılavuz. 200mm bir objektif için en az 1/200s kullanın."
+      },
+      "rule-of-thirds": {
+        "term": "Üçte Bir Kuralı",
+        "definition": "Kadrajı 3x3 ızgaraya bölen bir kompozisyon kılavuzu. Konuları çizgiler boyunca veya kesişim noktalarına yerleştirmek genellikle daha dengeli bir görüntü oluşturur."
+      },
+      "sensor-size": {
+        "term": "Sensör Boyutu",
+        "definition": "Bir kameranın görüntü sensörünün fiziksel boyutları. Daha büyük sensörler daha fazla ışık yakalar, daha sığ alan derinliği sunar ve genellikle daha az gürültü üretir."
+      },
+      "shutter-speed": {
+        "term": "Enstantane Hızı",
+        "definition": "Bir pozlama sırasında kameranın obtüratörünün açık kaldığı süre. Daha hızlı hızlar hareketi dondurur; daha yavaş hızlar hareket bulanıklığına izin verir."
+      },
+      "star-trails": {
+        "term": "Yıldız İzleri",
+        "definition": "Uzun pozlama sırasında yıldızların görünür hareketinin oluşturduğu ışık çizgileri. Tek bir çok uzun pozlamada veya birden fazla kısa karenin istiflemesiyle yakalanabilir."
+      },
+      "stop": {
+        "term": "Adım",
+        "definition": "Işığın iki katına çıkmasını veya yarıya inmesini temsil eden bir pozlama değişikliği birimi. Diyafram, enstantane hızı ve ISO için eşit olarak geçerlidir."
+      },
+      "telephoto": {
+        "term": "Telefoto",
+        "definition": "Yaklaşık 70mm'den (tam kare eşdeğeri) uzun odak uzaklığına sahip bir objektif. Telefoto objektifler uzak konuları büyütür ve perspektifi sıkıştırır."
+      },
+      "tilt-shift": {
+        "term": "Tilt-Shift",
+        "definition": "Odak düzlemini eğebilen ve görüntü çemberini sensöre göre kaydırabilen bir objektif. Mimari fotoğrafçılığı ve seçici odak efektleri için kullanılır."
+      },
+      "underexposure": {
+        "term": "Yetersiz Pozlama",
+        "definition": "Bir görüntü çok az ışık aldığında, gölge alanlarının detay kaybetmesine ve gürültülü görünmesine neden olur. Aşırı pozlamanın tersidir."
+      },
+      "vignetting": {
+        "term": "Vinyet",
+        "definition": "Bir görüntünün köşelerinin ve kenarlarının merkeze göre kararması. Objektif tasarımı, filtreler veya parasoleylerden kaynaklanabilir ve bazen son işlemede kasıtlı olarak eklenir."
+      },
+      "white-balance": {
+        "term": "Beyaz Dengesi",
+        "definition": "Farklı aydınlatma koşullarında beyaz nesnelerin nötr görünmesini sağlayan bir kamera ayarı. Otomatik olarak veya Kelvin değerleri kullanılarak manuel olarak ayarlanabilir."
+      },
+      "wide-angle": {
+        "term": "Geniş Açı",
+        "definition": "Kısa odak uzaklığına (tam karede genellikle 35mm'nin altında) sahip, daha geniş bir görüş alanı yakalayan bir objektif. Genellikle manzara, mimari ve iç mekan fotoğrafçılığında kullanılır."
+      },
+      "zoom-lens": {
+        "term": "Zum Objektif",
+        "definition": "Değişken odak uzaklığı aralığına sahip, fotoğrafçının hareket etmeden kadrajı değiştirmesine olanak tanıyan bir objektif. Boyut, ağırlık ve bazen netlik pahasına çok yönlülük sunar."
+      }
+    }
+  }
+}

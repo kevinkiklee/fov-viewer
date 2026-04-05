@@ -1,0 +1,43 @@
+{
+  "toolUI": {
+    "exposure-simulator": {
+      "lock": "ล็อก:",
+      "lockAperture": "รูรับแสง",
+      "lockShutter": "ชัตเตอร์",
+      "lockISO": "ISO",
+      "lockApertureLabel": "ล็อกรูรับแสง",
+      "lockShutterLabel": "ล็อกชัตเตอร์",
+      "lockISOLabel": "ล็อก ISO",
+      "aperture": "รูรับแสง:",
+      "shutterSpeed": "ความเร็วชัตเตอร์:",
+      "iso": "ISO:",
+      "locked": "(ล็อก)",
+      "exposureValue": "ค่าการรับแสง (EV)",
+      "depthOfField": "ระยะชัดลึก",
+      "motion": "การเคลื่อนไหว",
+      "noise": "นอยส์",
+      "dofVeryShallow": "ตื้นมาก",
+      "dofShallow": "ตื้น",
+      "dofModerate": "ปานกลาง",
+      "dofDeep": "ลึก",
+      "dofVeryDeep": "ลึกมาก",
+      "motionFrozen": "หยุดนิ่ง",
+      "motionSharp": "คม",
+      "motionModerate": "ปานกลาง",
+      "motionSlightBlur": "เบลอเล็กน้อย",
+      "motionBlurred": "เบลอ",
+      "noiseClean": "สะอาด",
+      "noiseLow": "นอยส์ต่ำ",
+      "noiseModerate": "นอยส์ปานกลาง",
+      "noiseNoisy": "มีนอยส์",
+      "noiseVeryNoisy": "นอยส์มาก",
+      "scene": "ฉาก:",
+      "sceneStreet": "สตรีท",
+      "sceneLandscape": "ทิวทัศน์",
+      "scenePortrait": "ภาพบุคคล",
+      "sceneLowLight": "แสงน้อย",
+      "imageEffectsUnavailable": "ตัวอย่างเอฟเฟกต์ภาพไม่พร้อมใช้งาน",
+      "loadingScene": "กำลังโหลดฉาก..."
+    }
+  }
+}

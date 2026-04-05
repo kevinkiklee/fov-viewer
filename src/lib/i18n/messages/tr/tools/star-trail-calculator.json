@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "star-trail-calculator": {
+      "rule500": "500 Kuralı",
+      "ruleNPF": "NPF Kuralı",
+      "recommendation": "Öneri",
+      "recommendationText": "Piksel düzeyinde netlik için NPF kuralını ({npf}s) kullanın. 500 kuralı ({r500}s) hızlı bir tahmindir ancak yüksek çözünürlüklü sensörlerde iz gösterebilir.",
+      "shootingTime": "Çekim Süresi",
+      "exposure": "Pozlama",
+      "displayMode": "Görüntüleme Modu",
+      "modeStarTrails": "Yıldız İzleri",
+      "modeSingleShot": "Tek Çekim",
+      "stacking": "İstifleme",
+      "exposurePerFrame": "Kare başına pozlama (sn)",
+      "exposurePerFrameDesc": "Her bir kare için enstantane hızı",
+      "frames": "Kareler",
+      "framesDesc": "İstiflenecek toplam fotoğraf sayısı",
+      "gapSec": "Boşluk (sn)",
+      "gapDesc": "Ara bellek yazımı için kareler arası gecikme",
+      "camera": "Kamera",
+      "sensor": "Sensör",
+      "resolutionMP": "Çözünürlük (MP)",
+      "apertureLabel": "Diyafram",
+      "latitude": "Enlem",
+      "position": "Konum",
+      "useMyLocation": "Konumumu Kullan",
+      "latitudeLabel": "Enlem:",
+      "equator": "Ekvator 0°",
+      "mid45": "Orta 45°",
+      "arctic70": "Arktik 70°"
+    }
+  }
+}

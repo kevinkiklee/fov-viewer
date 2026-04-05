@@ -1,0 +1,120 @@
+{
+  "education": {
+    "histogram": {
+      "beginner": "Histogram, fotoğrafınızdaki piksellerin ne kadar parlak veya karanlık olduğunu gösteren bir grafiktir. Sol taraf gölgeleri (karanlık alanlar), orta kısım orta tonları ve sağ taraf parlak alanları (aydınlık bölgeler) temsil eder. Grafik bir tarafa yığılmışsa fotoğrafınız yetersiz veya aşırı pozlanmış olabilir.",
+      "deeper": "Histogram, piksel sayısını (dikey eksen) parlaklık seviyesine (yatay eksen, 8-bit görüntüler için 0-255) göre çizer. Luminans modunda, her pikselin parlaklığı kırmızı, yeşil ve mavi kanalların ağırlıklı ortalaması olarak hesaplanır (genellikle 0,299R + 0,587G + 0,114B, insan algısına uygun). RGB modu üç ayrı dağılım gösterir ve hangi renk kanallarının bağımsız olarak kırpılabileceğini ortaya koyar — mavi iyiyken kırmızı kanalın 255'e itilmesi, gün batımı gökyüzü gibi sıcak tonlarda parlak alan kırpması olduğunu gösterir. \"Kırpma\", piksel değerlerinin 0 veya 255 sınırına ulaştığı zaman oluşur, yani gölge veya parlak alan detayı geri dönüşümsüz olarak kaybolmuştur. Siyah kırpma (0'daki pikseller) gölge detayını kaybeder; beyaz kırpma (255'teki pikseller) parlak alan detayını kaybeder. RAW çekim yapmak, JPEG histogramının gösterdiğinin yaklaşık 2-3 adım ötesinde kurtarılabilir parlak alan payı verir, bu yüzden birçok fotoğrafçı \"sağa doğru pozla\" (ETTR) yapar — RAW verisini kırpmadan pozlamayı mümkün olduğunca parlak iter.",
+      "keyFactors": {
+        "0": {
+          "label": "Tonal Dağılım",
+          "description": "Genel şekil görüntünün karanlık (sola yığılmış), parlak (sağa yığılmış) veya dengeli (aralık boyunca yayılmış) olup olmadığını söyler."
+        },
+        "1": {
+          "label": "Kırpma",
+          "description": "En sol veya sağ kenarlardaki sivri noktalar gölgelerde veya parlak alanlarda kayıp detay olduğunu gösterir."
+        },
+        "2": {
+          "label": "Kanal Ayrımı",
+          "description": "RGB modu bireysel renk kanalı davranışını ortaya koyar — doygun sahnelerde renge özgü kırpmayı tespit etmek için kullanışlıdır."
+        },
+        "3": {
+          "label": "Dinamik Aralık",
+          "description": "Kırpma olmadan tam genişliğe yayılan bir histogram, mevcut dinamik aralığın iyi kullanıldığını gösterir."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "\"Mükemmel\" bir histogram şekli yoktur. Karanlık bir koltukta oturan siyah bir kedinin fotoğrafı sola yığılmış olmalıdır. Histogramı ideal bir eğriye göre değil, yaratıcı amacınıza göre değerlendirin."
+        },
+        "1": {
+          "text": "Gün batımı ve neon ışıklı fotoğraflar için RGB kaplama modunu kontrol edin. Kırmızı kanal genellikle maviden çok önce kırpılır ve luminans histogramı iyi görünse bile sıcak parlak alanlarda detay kaybına neden olur."
+        },
+        "2": {
+          "text": "Her iki uçta aynı anda kırpma uyarıları görüyorsanız, sahne muhtemelen kameranızın dinamik aralığını aşıyor. HDR için basamaklama veya kademeli ND filtreler kullanmayı düşünün."
+        }
+      },
+      "tooltips": {
+        "View Mode": {
+          "term": "Görüntüleme Modu",
+          "definition": "Luminans genel parlaklığı gösterir. RGB Kaplama üç renk kanalını üst üste gösterir. Tüm Kanallar RGB artı luminansı birlikte gösterir."
+        },
+        "Shadows": {
+          "term": "Gölgeler",
+          "definition": "Histogramın en sol bölgesi (yaklaşık 0-85), görüntüdeki en karanlık tonları temsil eder."
+        },
+        "Midtones": {
+          "term": "Orta Tonlar",
+          "definition": "Orta bölge (yaklaşık 86-170), orta parlaklığı temsil eder — ten tonları ve çoğu doğal doku burada yer alır."
+        },
+        "Highlights": {
+          "term": "Parlak Alanlar",
+          "definition": "En sağ bölge (yaklaşık 171-255), en parlak tonları temsil eder: gökyüzleri, yansımalar ve ışık kaynakları."
+        },
+        "Black Clipping": {
+          "term": "Siyah Kırpma",
+          "definition": "Parlaklık 0'da (saf siyah) olan piksellerin yüzdesi. Yüksek değerler gölge detayının kaybolduğu ve kurtarılamayacağı anlamına gelir."
+        },
+        "White Clipping": {
+          "term": "Beyaz Kırpma",
+          "definition": "Parlaklık 255'te (saf beyaz) olan piksellerin yüzdesi. Yüksek değerler parlak alan detayının yanıp gittiği anlamına gelir."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Bir fotoğraf yüklüyorsunuz ve histogram sol tarafta yoğunlaşmış, sağ tarafta neredeyse hiçbir şey yok. Bu görüntü hakkında ne söylüyor?",
+          "hint": "Sol = karanlık, sağ = parlak.",
+          "successMessage": "Doğru! Sola yığılmış bir histogram görüntünün çoğunlukla karanlık tonlarda olduğu anlamına gelir — yetersiz pozlanmış olabilir veya kasıtlı olarak karanlık/düşük ton bir görüntü olabilir.",
+          "failureMessage": "Sola yığılmış histogram görüntünün baskın olarak karanlık olduğunu gösterir. Bu genellikle yetersiz pozlama anlamına gelir.",
+          "options": {
+            "0": { "label": "Görüntü yetersiz pozlanmış veya çok karanlık" },
+            "1": { "label": "Görüntü aşırı pozlanmış veya çok parlak" },
+            "2": { "label": "Görüntü mükemmel pozlanmış" }
+          }
+        },
+        "1": {
+          "scenario": "Fotoğrafınızın genel parlaklık dağılımını tek bir grafikte görmek için hangi görüntüleme modunu kullanmalısınız?",
+          "hint": "Bir mod tüm renk bilgisini tek bir parlaklık eğrisine birleştirir.",
+          "successMessage": "Doğru! Luminans modu genel algılanan parlaklığı temsil eden tek bir eğri gösterir.",
+          "failureMessage": "Luminans modu en basit görünümdür — R, G, B'yi tek bir parlaklık eğrisinde birleştirir.",
+          "options": {
+            "0": { "label": "Luminans" },
+            "1": { "label": "RGB Kaplama" },
+            "2": { "label": "Tüm Kanallar" }
+          }
+        },
+        "2": {
+          "scenario": "Canlı bir gün batımı çektiniz ve luminans histogramı iyi görünüyor, ama RGB Kaplamaya geçtiğinizde kırmızı kanalın en sağda sivrildiğini görüyorsunuz. Ne oluyor?",
+          "hint": "Genel luminans olmasa bile bireysel renk kanalları bağımsız olarak kırpılabilir.",
+          "successMessage": "Kesinlikle! Kırmızı kanal kırpılıyor — genel parlaklık kabul edilebilir görünse bile gün batımı parlak alanları kırmızı tonlarda detay kaybetti. Sıcak renk nüanslarını kaybediyorsunuz.",
+          "failureMessage": "Kırmızı kanal bağımsız olarak kırpılıyor. Doygun sıcak parlak alanlar (gün batımları, ateş) genellikle yeşil ve mavi iyiyken kırmızıyı 255'e iter ve bu tonlarda renk detayını kaybeder.",
+          "options": {
+            "0": { "label": "Kırmızı kanal kırpması — sıcak parlak alan detayı kayıp" },
+            "1": { "label": "Görüntü genel olarak aşırı pozlanmış" },
+            "2": { "label": "Beyaz dengesi yanlış" }
+          }
+        },
+        "3": {
+          "scenario": "Araç %2,3 siyah kırpma ve %0,1 beyaz kırpma raporluyor. Pozlamanızı ayarlamalı mısınız?",
+          "hint": "Küçük miktarlarda kırpma normaldir — saf siyah gölgeler ve aynamsı parlak noktalar beklenir.",
+          "successMessage": "İyi yargı! %2,3 siyah kırpma mütevazıdır ve genellikle derin gölgeler veya karanlık kenarlardır. %0,1 beyaz kırpma muhtemelen aynamsı parlak noktadır (güneş yansımaları). Bu pozlama çoğu amaç için uygundur.",
+          "failureMessage": "Bu kırpma yüzdeleri oldukça küçüktür. Derin gölgelerde biraz siyah kırpma ve aynamsı parlak noktalardan küçük beyaz kırpma normal ve beklenendir. Ayarlama gerekmez.",
+          "options": {
+            "0": { "label": "Siyah kırpmayı azaltmak için pozlamayı artır" },
+            "1": { "label": "Bu iyi — gölgelerde ve aynamsı parlak noktalardan küçük kırpma normaldir" },
+            "2": { "label": "Beyaz kırpmayı ortadan kaldırmak için pozlamayı azalt" }
+          }
+        },
+        "4": {
+          "scenario": "Yüksek kontrastlı bir sahne çekiyorsunuz: karanlık bir katedralde beyaz gelinlik giyen bir gelin. Histogram her iki uçta güçlü tepeler ve orta tonlarda boşluk gösteriyor. Bunu nasıl ele almalısınız?",
+          "hint": "Sahne dinamik aralığı kamera sensörünün aralığını aştığında, çoklu pozlama tekniğine ihtiyacınız var.",
+          "successMessage": "Mükemmel! Bu iki modlu histogram sahnenin sensörünüzün dinamik aralığını aştığını gösterir. Pozlama basamaklaması (HDR) hem karanlık iç mekanı hem de parlak elbise detayını yakalar. Alternatif olarak, gölgeleri kaldırmak için dolgu flaşı kullanın.",
+          "failureMessage": "İki modlu histogram (her iki uçta tepeler, boş orta) sahnenin sensörünüzün tek çekimde yakalayabileceğinden daha fazla dinamik aralığa sahip olduğu anlamına gelir. HDR için pozlama basamaklayın veya kontrast oranını azaltmak için dolgu flaşı kullanın.",
+          "options": {
+            "0": { "label": "HDR için pozlama basamakla veya dolgu flaşı kullan" },
+            "1": { "label": "Orta tonlara göre pozla ve en iyisini um" },
+            "2": { "label": "Sorunu gizlemek için siyah beyaza geç" }
+          }
+        }
+      }
+    }
+  }
+}

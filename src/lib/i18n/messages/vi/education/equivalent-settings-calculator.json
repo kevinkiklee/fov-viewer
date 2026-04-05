@@ -1,0 +1,112 @@
+{
+  "education": {
+    "equivalent-settings-calculator": {
+      "beginner": "Các kích thước cảm biến khác nhau tạo ra chiều sâu trường ảnh và góc nhìn khác nhau ngay cả ở cùng tiêu cự và khẩu độ. Cài đặt tương đương cho phép bạn tìm tổ hợp ống kính và khẩu độ trên máy ảnh thứ hai tái tạo cùng khung hình và mờ hậu cảnh. Điều này thiết yếu khi so sánh thiết bị giữa các định dạng hoặc chuyển đổi giữa các hệ thống máy ảnh.",
+      "deeper": {
+        "0": {
+          "heading": "Hệ số crop",
+          "text": "Mỗi cảm biến có hệ số crop so với tiêu chuẩn full-frame 35mm. Cảm biến APS-C có hệ số khoảng 1.5×, Micro Four Thirds 2× và medium format khoảng 0.79×. Nhân tiêu cự thực tế với hệ số crop cho tiêu cự tương đương full-frame về góc nhìn. Ống kính 35mm trên APS-C cho khung hình giống 52.5mm trên full frame."
+        },
+        "1": {
+          "heading": "Khẩu độ & DoF tương đương",
+          "text": "Để phù hợp chiều sâu trường ảnh giữa các định dạng, nhân số f với cùng hệ số crop. Ống kính f/1.4 trên Micro Four Thirds tạo DoF tương đương f/2.8 trên full frame (1.4 × 2 = 2.8). Đây là lý do máy ảnh full-frame được đánh giá cao cho DoF nông — bạn có thể sử dụng ống kính nhanh hơn thực sự ở khẩu độ rộng hơn để đạt mức mờ mà cảm biến nhỏ hơn không thể tái tạo."
+        },
+        "2": {
+          "heading": "ISO & Tổng ánh sáng tương đương",
+          "text": "Để phù hợp độ sáng phơi sáng giữa các định dạng đòi hỏi điều chỉnh ISO theo bình phương hệ số crop. Cảm biến lớn hơn thu được nhiều tổng ánh sáng hơn cho cùng cảnh, nghĩa là nó có thể sử dụng ISO thấp hơn cho hiệu suất nhiễu tương đương. Cảm biến full-frame ở ISO 800 tạo nhiễu tương tự cảm biến APS-C ở ISO 356 và cảm biến Micro Four Thirds ở ISO 200."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Hệ số crop",
+          "description": "Tỷ lệ đường chéo cảm biến full-frame so với đường chéo cảm biến mục tiêu. Con số duy nhất này chi phối mọi tính toán tương đương cho tiêu cự, khẩu độ và ISO."
+        },
+        "1": {
+          "label": "Kích thước cảm biến",
+          "description": "Cảm biến lớn hơn vật lý thu được nhiều ánh sáng hơn và tạo DoF nông hơn ở khung hình tương đương. Máy tính tương đương cho thấy chính xác mỗi định dạng tạo ra bao nhiêu khác biệt."
+        },
+        "2": {
+          "label": "Ống kính có sẵn",
+          "description": "Phép toán tương đương có thể yêu cầu ống kính không tồn tại. 17mm f/0.7 là tương đương 35mm f/1.4 trên MFT — nhưng không có ống kính nào như vậy được sản xuất. Thiết bị thực tế giới hạn những gì có thể đạt được."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Khi so sánh hệ thống máy ảnh, luôn so sánh ở cài đặt tương đương thay vì so khớp số f. Ống kính f/2.8 trên Micro Four Thirds không cho cùng mờ hậu cảnh như f/2.8 trên full frame — bạn cần f/1.4 trên MFT để phù hợp."
+        },
+        "1": {
+          "text": "Sử dụng tương đương để lên kế hoạch mua ống kính khi chuyển hệ thống. Nếu bạn thích cái nhìn của 85mm f/1.8 trên full frame, hãy tìm 56mm f/1.2 trên APS-C hoặc 42.5mm f/0.95 trên MFT cho rendering tương tự."
+        },
+        "2": {
+          "text": "Nhớ rằng tương đương áp dụng cho chiều sâu trường ảnh và góc nhìn, không phải tốc độ ống kính cho phơi sáng. Ống kính f/2.8 trên bất kỳ định dạng nào vẫn cho cùng lượng ánh sáng trên mỗi đơn vị diện tích — cảm biến lớn hơn chỉ thu được nhiều tổng ánh sáng hơn nhờ diện tích lớn hơn."
+        }
+      },
+      "tooltips": {
+        "sourceSensor": {
+          "term": "Cảm biến nguồn",
+          "definition": "Định dạng cảm biến của máy ảnh có cài đặt bạn muốn phù hợp. Mọi tính toán tương đương đều tương đối với điểm xuất phát này."
+        },
+        "sourceFocalLength": {
+          "term": "Tiêu cự",
+          "definition": "Tiêu cự thực tế của ống kính trên máy ảnh nguồn. Giá trị này sẽ được chuyển đổi sang tiêu cự tương đương trên các định dạng mục tiêu."
+        },
+        "sourceAperture": {
+          "term": "Khẩu độ",
+          "definition": "Số f trên máy ảnh nguồn. Khẩu độ tương đương trên mỗi định dạng mục tiêu xác định chiều sâu trường ảnh phù hợp."
+        },
+        "targetSensor": {
+          "term": "Cảm biến mục tiêu",
+          "definition": "Định dạng cảm biến bạn muốn tìm cài đặt tương đương. Máy tính áp dụng hệ số crop tương đối để tính tiêu cự và khẩu độ phù hợp."
+        },
+        "cropFactor": {
+          "term": "Hệ số crop",
+          "definition": "Tỷ lệ giữa đường chéo cảm biến full-frame 35mm và cảm biến mục tiêu. Nhân tiêu cự với hệ số crop để có FOV tương đương; nhân khẩu độ với hệ số crop để có DoF tương đương."
+        },
+        "equivalentFL": {
+          "term": "Tiêu cự tương đương",
+          "definition": "Tiêu cự trên định dạng mục tiêu tạo ra cùng góc nhìn như cài đặt nguồn."
+        },
+        "equivalentAperture": {
+          "term": "Khẩu độ tương đương",
+          "definition": "Số f trên định dạng mục tiêu tạo ra cùng chiều sâu trường ảnh như cài đặt nguồn. Có thể nhanh hơn bất kỳ ống kính thực nào."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Bạn chụp chân dung với ống kính 85mm f/1.8 trên máy ảnh full-frame. Bạn bè bạn dùng Micro Four Thirds (crop 2×). Tiêu cự nào bạn bè cần để phù hợp góc nhìn của bạn?",
+          "hint": "Chia tiêu cự full-frame cho hệ số crop MFT để tìm ống kính thực tế cần thiết.",
+          "successMessage": "Chính xác! 85mm / 2 = 42.5mm. Bạn bè cần ống kính 42.5mm trên Micro Four Thirds để có cùng khung hình như 85mm full frame của bạn.",
+          "failureMessage": "Để phù hợp góc nhìn, chia cho hệ số crop: 85mm / 2 = 42.5mm. Đó là tiêu cự thực tế cần trên thân máy MFT.",
+          "options": {
+            "0": { "label": "42.5mm" },
+            "1": { "label": "85mm" },
+            "2": { "label": "170mm" },
+            "3": { "label": "56mm" }
+          }
+        },
+        "1": {
+          "scenario": "Bạn bè tìm được ống kính 42.5mm f/1.8 cho máy MFT. Liệu mờ hậu cảnh có phù hợp với 85mm f/1.8 full frame của bạn không?",
+          "hint": "Áp dụng hệ số crop cho khẩu độ để tìm DoF tương đương.",
+          "successMessage": "Đúng! 42.5mm f/1.8 trên MFT cho DoF tương đương 85mm f/3.6 trên full frame (1.8 × 2 = 3.6). Ảnh f/1.8 full-frame của bạn tạo mờ nhiều hơn đáng kể.",
+          "failureMessage": "Không — MFT f/1.8 cho DoF tương đương f/3.6 trên full frame (1.8 × crop 2× = 3.6). Để phù hợp mờ f/1.8 full-frame, bạn bè cần f/0.9 trên MFT, không tồn tại.",
+          "options": {
+            "0": { "label": "Có — cùng f/1.8 nghĩa là cùng mức mờ" },
+            "1": { "label": "Không — MFT f/1.8 tương đương DoF full-frame f/3.6" },
+            "2": { "label": "Không — MFT tạo nhiều mờ hơn vì cảm biến nhỏ hơn" }
+          }
+        },
+        "2": {
+          "scenario": "Nhiếp ảnh gia chuyển từ full frame sang APS-C (crop 1.5×) muốn phù hợp diện mạo của 50mm f/1.4 trên full frame. Ống kính và khẩu độ tương đương nào cần trên APS-C?",
+          "hint": "Chia tiêu cự cho hệ số crop để có FOV tương đương. Chia khẩu độ cho hệ số crop để có DoF tương đương.",
+          "successMessage": "Chính xác! 50 / 1.5 = 33mm cho góc nhìn, và f/1.4 / 1.5 = f/0.93 cho DoF phù hợp. Vì không có ống kính f/0.93 nào tồn tại, máy ảnh APS-C không thể tái tạo hoàn toàn diện mạo full-frame.",
+          "failureMessage": "Đáp án đúng là ~33mm f/0.93. Vì 50 / 1.5 = 33.3mm và 1.4 / 1.5 = 0.93. Không có ống kính f/0.93 nào tồn tại, nên diện mạo full-frame không thể được phù hợp hoàn toàn trên APS-C.",
+          "options": {
+            "0": { "label": "35mm f/1.4 — gần đúng" },
+            "1": { "label": "33mm f/0.93 — phù hợp chính xác, nhưng không có ống kính như vậy" },
+            "2": { "label": "75mm f/2.1 — nhân với hệ số crop" }
+          }
+        }
+      }
+    }
+  }
+}

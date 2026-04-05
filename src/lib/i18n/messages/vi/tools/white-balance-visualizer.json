@@ -1,0 +1,16 @@
+{
+  "toolUI": {
+    "white-balance-visualizer": {
+      "colorTemperature": "Nhiệt độ màu:",
+      "warm": "Ấm",
+      "neutral": "Trung tính",
+      "cool": "Mát",
+      "presets": "Preset",
+      "red": "Đỏ",
+      "green": "Xanh lá",
+      "blue": "Xanh dương",
+      "hex": "Hex",
+      "loadingScene": "Đang tải cảnh..."
+    }
+  }
+}

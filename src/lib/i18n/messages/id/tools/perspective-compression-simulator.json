@@ -1,0 +1,13 @@
+{
+  "toolUI": {
+    "perspective-compression-simulator": {
+      "cameraSettings": "Pengaturan Kamera",
+      "focalLength": "Panjang Fokus",
+      "equivalent35mm": "Ekuivalen (35mm)",
+      "perspectiveDistance": "Perspektif & Jarak",
+      "subjectDistance": "Jarak Subjek",
+      "maintainSubjectSize": "Pertahankan Ukuran Subjek",
+      "resetAll": "Reset Semua"
+    }
+  }
+}

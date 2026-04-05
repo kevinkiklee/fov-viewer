@@ -1,0 +1,126 @@
+{
+  "common": {
+    "nav": {
+      "tools": "Narzędzia",
+      "glossary": "Słownik",
+      "closeMenu": "Zamknij menu",
+      "comingSoon": "Wkrótce",
+      "categories": {
+        "visualizer": "Wizualizatory",
+        "calculator": "Kalkulatory",
+        "reference": "Referencje",
+        "file-tool": "Narzędzia plikowe"
+      }
+    },
+    "footer": {
+      "glossary": "Słownik",
+      "about": "O nas",
+      "contact": "Kontakt",
+      "privacy": "Polityka prywatności",
+      "terms": "Regulamin",
+      "cookieSettings": "Ustawienia plików cookie"
+    },
+    "theme": {
+      "switchToLight": "Przełącz na tryb jasny",
+      "switchToDark": "Przełącz na tryb ciemny"
+    },
+    "actions": {
+      "copyImage": "Kopiuj obraz",
+      "reset": "Resetuj",
+      "copyLink": "Kopiuj link",
+      "share": "Udostępnij",
+      "embed": "Osadź"
+    },
+    "toast": {
+      "linkCopied": "Link skopiowany!",
+      "imageCopied": "Obraz skopiowany!",
+      "failedToCopy": "Nie udało się skopiować",
+      "copied": "Skopiowano!"
+    },
+    "learn": {
+      "title": "Nauka",
+      "openPanel": "Otwórz panel nauki",
+      "collapsePanel": "Zwiń panel nauki",
+      "whatIsThis": "Co to jest?",
+      "howItWorks": "Jak to działa",
+      "keyFactors": "Kluczowe czynniki",
+      "proTip": "Porada profesjonalisty",
+      "challenge": "Wyzwanie",
+      "hint": "Wskazówka: {hint}",
+      "completed": "Ukończono",
+      "checkAnswer": "Sprawdź odpowiedź",
+      "nextChallenge": "Następne wyzwanie",
+      "tryAgain": "Spróbuj ponownie",
+      "resetAll": "Resetuj wszystko",
+      "resetAllChallenges": "Resetuj wszystkie wyzwania",
+      "challengeNumber": "Wyzwanie {number}"
+    },
+    "share": {
+      "title": "Udostępnij i osadź",
+      "closeModal": "Zamknij okno udostępniania",
+      "directLink": "Link bezpośredni",
+      "markdown": "Markdown (Reddit, GitHub)",
+      "bbcode": "BBCode (fora)",
+      "htmlEmbed": "Osadzenie HTML",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano"
+    },
+    "draft": {
+      "banner": "Podgląd — To narzędzie nie jest jeszcze publiczne"
+    },
+    "fileUpload": {
+      "dropPrompt": "Upuść zdjęcie tutaj lub kliknij, aby przeglądać",
+      "tapPrompt": "Dotknij, aby wybrać zdjęcie",
+      "privacy": "Twoje zdjęcia nigdy nie opuszczają Twojego urządzenia",
+      "selectedFile": "Wybrany plik: {fileName}. Kliknij, aby wybrać inne zdjęcie",
+      "defaultLabel": "Twoje zdjęcie"
+    },
+    "scene": {
+      "label": "Scena:",
+      "yourPhoto": "Twoje zdjęcie",
+      "removePhoto": "Usuń zdjęcie",
+      "uploadPhoto": "Prześlij zdjęcie"
+    },
+    "controls": {
+      "focalLength": "Ogniskowa",
+      "aperture": "Przysłona",
+      "distance": "Odległość",
+      "clickToEnterValue": "Kliknij, aby wpisać wartość",
+      "decrease": "Zmniejsz",
+      "increase": "Zwiększ"
+    },
+    "dof": {
+      "depthOfField": "Głębia ostrości: {totalDoF} od {nearFocus} do {farFocus}",
+      "infinity": "Nieskończoność"
+    },
+    "ad": {
+      "closeAd": "Zamknij reklamę"
+    },
+    "tooltip": {
+      "infoLabel": "Informacja: {term}"
+    },
+    "notFound": {
+      "title": "Nie znaleziono strony",
+      "message": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
+      "backHome": "Wróć na stronę główną",
+      "popularTools": "Popularne narzędzia"
+    },
+    "breadcrumb": {
+      "home": "Strona główna"
+    },
+    "relatedTools": {
+      "title": "Powiązane narzędzia"
+    },
+    "sensors": {
+      "mf_645": "Średni format (54x40)",
+      "mf": "Średni format (44x33)",
+      "mf_leica": "Średni format (45x30)",
+      "ff": "Pełna klatka",
+      "apsc_n": "APS-C (1,5x)",
+      "apsc_c": "APS-C (Canon)",
+      "m43": "Micro Four Thirds",
+      "1in": "Matryca 1\"",
+      "phone": "Flagowy smartfon (1/1,3\")"
+    }
+  }
+}

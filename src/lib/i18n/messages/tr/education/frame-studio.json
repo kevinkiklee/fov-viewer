@@ -1,0 +1,133 @@
+{
+  "education": {
+    "frame-studio": {
+      "beginner": "Çerçeve Stüdyosu, fotoğraflarınızı doğrudan tarayıcıda kırpmanıza, çerçevelemenize ve düzenlemenize yardımcı olur. Kadrajlamanızı geliştirmek için kompozisyon ızgaraları kullanın, popüler en-boy oranlarına kırpın ve profesyonel görünümlü kenarlıklar ekleyin — herhangi bir görüntü kalitesi kaybetmeden.",
+      "deeper": {
+        "0": {
+          "heading": "Kompozisyon Izgaraları",
+          "text": "Üçte Bir Kuralı kadrajı 3×3 ızgaraya böler — konuları çizgiler boyunca veya kesişim noktalarına yerleştirmek doğal görsel denge yaratır. Altın Oran (yaklaşık 1,618:1) yüzyıllardır sanat ve mimaride kullanılan matematiksel olarak uyumlu bir bölünme sağlar. Altın Spiral, Fibonacci dizisinden türetilen logaritmik bir eğri boyunca gözü yönlendirir ve izleyiciyi görüntü boyunca yönlendirmek için kullanışlıdır."
+        },
+        "1": {
+          "heading": "En-Boy Oranları",
+          "text": "Farklı en-boy oranları farklı amaçlara hizmet eder. 1:1 (kare) sosyal medya ve simetrik kompozisyonlar için iyi çalışır. 3:2 klasik 35mm film oranıdır. 4:3 mikro dört üçlü ve eski dijital kameralarda yaygındır. 16:9 video ve sinematik kompozisyonlar için standart geniş ekran oranıdır. 5:4 geleneksel olarak 8×10 baskılar içindir."
+        },
+        "2": {
+          "heading": "Çerçeveleme ve Kenarlıklar",
+          "text": "Fotoğrafın etrafına kenarlık eklemek fiziksel bir paspatu ve çerçeve etkisini taklit eder. Beyaz paspatu görsel nefes alanı sağlar ve odağı içe yönlendirir. Kenarlığın görüntüye göre genişliği fotoğrafın algılanan \"ağırlığını\" etkiler. Galeri tarzı sunumlar genellikle daha geniş paspatular kullanır. İnce bir gölge, çerçeveli bir baskının duvarda durma şeklini simüle ederek derinlik yaratır."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Kompozisyon Izgarası",
+          "description": "Kaplama kılavuzları kadraj içinde konu yerleşimini değerlendirmenize ve iyileştirmenize yardımcı olur."
+        },
+        "1": {
+          "label": "En-Boy Oranı",
+          "description": "Genişlik-yükseklik oranı görüntünün nasıl hissettirdiğini etkiler — daha geniş oranlar sinematik, kare dengeli hissettirir."
+        },
+        "2": {
+          "label": "Kenarlık Genişliği",
+          "description": "Daha geniş kenarlıklar ağırlık ve odak ekler; dar kenarlıklar modern ve minimal hissettirir."
+        },
+        "3": {
+          "label": "Paspatu Rengi",
+          "description": "Beyaz paspatular sanat fotoğrafçılığı için klasiktir. Koyu paspatular daha açık görüntüleri vurgular. Renkli paspatular tamamlayabilir veya kontrast oluşturabilir."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Instagram gönderileri için akışta maksimum ekran alanı kaplamak amacıyla 4:5 (dikey) oranında kırpın."
+        },
+        "1": {
+          "text": "Baskı için kenarlık eklerken profesyonel bir görünüm için görüntünün kısa kenarının en az %10'u kadar paspatu genişliği kullanın."
+        },
+        "2": {
+          "text": "Altın Spiral, doğal akışı olan görüntüler için en etkilidir — su, yollar veya eğimli mimari."
+        }
+      },
+      "tooltips": {
+        "Aspect Ratio": {
+          "term": "En-Boy Oranı",
+          "definition": "Genişlik ve yükseklik arasındaki oransal ilişki. Yaygın oranlar arasında 3:2 (35mm), 4:3 (M43) ve 16:9 (geniş ekran) bulunur."
+        },
+        "Rule of Thirds": {
+          "term": "Üçte Bir Kuralı",
+          "definition": "Kadrajı 9 eşit parçaya bölen bir kompozisyon kılavuzu. Konuları kesişim noktalarına yerleştirmek görsel ilgi yaratır."
+        },
+        "Golden Ratio": {
+          "term": "Altın Oran",
+          "definition": "Doğada ve sanatta bulunan matematiksel bir oran (~1,618:1). Estetik açıdan hoş alan bölünmeleri yaratır."
+        },
+        "Border Width": {
+          "term": "Kenarlık Genişliği",
+          "definition": "Çerçeve kenarlığının piksel cinsinden kalınlığı. Görüntünün dışına eklenir, kırpmadan toplam boyutları artırır."
+        },
+        "Inner Mat": {
+          "term": "İç Paspatu",
+          "definition": "Dış çerçeve ile görüntü arasındaki ikinci, daha ince bir kenarlık — fiziksel bir resim çerçevesinin eğimli iç paspatusunu taklit eder."
+        },
+        "Corner Radius": {
+          "term": "Köşe Yarıçapı",
+          "definition": "Çerçeve kenarlığının köşelerini yuvarlar. Sıfır keskin köşeler verir, daha yüksek değerler daha yumuşak, yuvarlak bir görünüm verir."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Maksimum akış varlığı için Instagram'da bir portre fotoğrafı paylaşmak istiyorsunuz. Hangi en-boy oranını kullanmalısınız?",
+          "hint": "Instagram portre gönderileri genişten daha uzun bir oran kullanır.",
+          "successMessage": "Doğru! 4:5 Instagram akışında maksimum dikey alanı verir.",
+          "failureMessage": "Instagram portre gönderileri, maksimum akış alanı için 4:5 (5:4'ü dikeye çevirin) kullanır.",
+          "options": {
+            "0": { "label": "1:1 (Kare)" },
+            "1": { "label": "4:5 (Dikey)" },
+            "2": { "label": "16:9 (Geniş Ekran)" }
+          }
+        },
+        "1": {
+          "scenario": "Hangi kompozisyon ızgarası yeni başlayanlar için en yaygın öğretilen başlangıç noktasıdır?",
+          "hint": "Kadrajı 9 eşit bölüme ayırır.",
+          "successMessage": "Doğru! Üçte Bir Kuralı temel kompozisyon kılavuzudur.",
+          "failureMessage": "Üçte Bir Kuralı (3×3 ızgara) kompozisyon öğrenmek için en yaygın başlangıç noktasıdır.",
+          "options": {
+            "0": { "label": "Üçte Bir Kuralı" },
+            "1": { "label": "Altın Spiral" },
+            "2": { "label": "Çapraz Çizgiler" }
+          }
+        },
+        "2": {
+          "scenario": "8×10 kağıda galeri baskısı için bir fotoğraf hazırlıyorsunuz. Hangi en-boy oranı bu baskı boyutuna uyar?",
+          "hint": "8×10, bilinen bir orana sadeleşir.",
+          "successMessage": "Doğru! 5:4, 8×10 baskı boyutlarına mükemmel uyar.",
+          "failureMessage": "8×10, 4:5'e sadeleşir, bu da 5:4'ün dikey versiyonudur.",
+          "options": {
+            "0": { "label": "3:2" },
+            "1": { "label": "5:4" },
+            "2": { "label": "4:3" }
+          }
+        },
+        "3": {
+          "scenario": "Bir manzara fotoğrafında ön plandan arka plandaki dağlara kıvrılan bir nehir var. Hangi ızgara kaplaması bu doğal akışa en iyi uyar?",
+          "hint": "Bir ızgara türü doğal eğimli bir yol izler.",
+          "successMessage": "Harika seçim! Altın Spiral eğrileri ve yönlendirici çizgileri mükemmel takip eder.",
+          "failureMessage": "Altın Spiral, nehirler, yollar veya kıyı şeritleri gibi doğal eğimli elementlere sahip görüntüler için idealdir.",
+          "options": {
+            "0": { "label": "Merkez Artı" },
+            "1": { "label": "Altın Spiral" },
+            "2": { "label": "Kare Izgara" }
+          }
+        },
+        "4": {
+          "scenario": "Fotoğrafınızı sosyal medyada sunmak için temiz beyaz bir kenarlık istiyorsunuz. Hangi çerçeve ön ayarını kullanmalısınız?",
+          "hint": "Hangi ön ayarın size basit beyaz kenarlık verdiğini düşünün.",
+          "successMessage": "Doğru! Beyaz ön ayarı fotoğrafınızın etrafına 100px beyaz kenarlık ekler.",
+          "failureMessage": "Beyaz ön ayarı temiz, basit beyaz kenarlık sunumu için tasarlanmıştır.",
+          "options": {
+            "0": { "label": "Yok" },
+            "1": { "label": "Beyaz" },
+            "2": { "label": "Siyah" }
+          }
+        }
+      }
+    }
+  }
+}

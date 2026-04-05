@@ -1,0 +1,240 @@
+{
+  "glossary": {
+    "title": "Słownik fotograficzny",
+    "subtitle": "Przeszukiwalna baza terminów fotograficznych. Kliknij dowolny termin, aby zobaczyć jego definicję.",
+    "searchPlaceholder": "Szukaj terminów...",
+    "searchAriaLabel": "Szukaj terminów w słowniku",
+    "noResults": "Żadne terminy nie pasują do wyszukiwania.",
+    "tryTool": "Wypróbuj {toolName}",
+    "entries": {
+      "aperture": {
+        "term": "Przysłona",
+        "definition": "Otwór w obiektywie, przez który przechodzi światło. Szersza przysłona (niższy numer f) przepuszcza więcej światła i tworzy płytszą głębię ostrości."
+      },
+      "aspect-ratio": {
+        "term": "Proporcje obrazu",
+        "definition": "Stosunek szerokości do wysokości obrazu. Popularne proporcje to 3:2 (standardowa lustrzanka), 4:3 (Micro Four Thirds) i 16:9 (panoramiczny)."
+      },
+      "autofocus": {
+        "term": "Autofokus",
+        "definition": "System aparatu, który automatycznie reguluje obiektyw, aby uzyskać ostry obraz obiektu. Nowoczesne systemy wykorzystują metody detekcji fazy lub detekcji kontrastu."
+      },
+      "bokeh": {
+        "term": "Bokeh",
+        "definition": "Estetyczna jakość nieostrych obszarów obrazu, szczególnie świateł. Gładkie, okrągłe bokeh jest na ogół preferowane i zależy od konstrukcji obiektywu oraz kształtu przysłony."
+      },
+      "bracketing": {
+        "term": "Braketing",
+        "definition": "Wykonywanie wielu zdjęć tej samej sceny przy różnych ustawieniach ekspozycji. Stosowany w fotografii HDR lub w celu zapewnienia przynajmniej jednej poprawnie naświetlonej klatki."
+      },
+      "bulb-mode": {
+        "term": "Tryb Bulb",
+        "definition": "Ustawienie migawki, w którym migawka pozostaje otwarta tak długo, jak przycisk migawki jest wciśnięty. Używany do bardzo długich ekspozycji wykraczających poza ustawienia czasowe aparatu."
+      },
+      "burst-mode": {
+        "term": "Zdjęcia seryjne",
+        "definition": "Tryb fotografowania, w którym aparat wykonuje wiele klatek na sekundę w szybkiej sekwencji. Przydatny do rejestrowania szybkiej akcji lub wyboru najlepszego momentu."
+      },
+      "chromatic-aberration": {
+        "term": "Aberracja chromatyczna",
+        "definition": "Wada obiektywu, w której różne długości fali światła ogniskują się w nieco innych punktach, powodując kolorowe obwódki wzdłuż krawędzi o wysokim kontraście. Częściej występuje w tańszych obiektywach i przy szerokich przysłonach."
+      },
+      "circle-of-confusion": {
+        "term": "Krążek rozproszenia",
+        "definition": "Największe koło rozmycia, które wciąż wygląda jak punkt dla ludzkiego oka. Określa granice akceptowalnej ostrości i jest używany w obliczeniach głębi ostrości."
+      },
+      "color-temperature": {
+        "term": "Temperatura barwowa",
+        "definition": "Pomiar w kelwinach opisujący ciepło lub chłód źródła światła. Niższe wartości (2700K) wydają się ciepłe/pomarańczowe; wyższe wartości (6500K+) wydają się chłodne/niebieskie."
+      },
+      "crop-factor": {
+        "term": "Współczynnik kadrowania",
+        "definition": "Stosunek przekątnej matrycy aparatu do przekątnej pełnoklatkowej matrycy 35 mm. Wpływa na efektywną ogniskową i pole widzenia."
+      },
+      "depth-of-field": {
+        "term": "Głębia ostrości",
+        "definition": "Zakres odległości w scenie, który wydaje się akceptowalnie ostry. Kontrolowany przez przysłonę, ogniskową i odległość od obiektu."
+      },
+      "diffraction": {
+        "term": "Dyfrakcja",
+        "definition": "Ugięcie światła przechodzącego przez mały otwór, które zmiękcza obraz. Wyznacza praktyczny limit przymykania przysłony obiektywu."
+      },
+      "dynamic-range": {
+        "term": "Zakres dynamiczny",
+        "definition": "Zakres między najciemniejszymi cieniami a najjaśniejszymi światłami, jaki aparat może uchwycić w pojedynczej ekspozycji. Mierzony w stopniach (EV)."
+      },
+      "ev": {
+        "term": "EV (wartość ekspozycji)",
+        "definition": "Liczba reprezentująca kombinację czasu naświetlania i przysłony dającą tę samą ekspozycję. Każdy przyrost o 1 EV podwaja lub zmniejsza o połowę ilość światła."
+      },
+      "exposure-compensation": {
+        "term": "Kompensacja ekspozycji",
+        "definition": "Kontrolka aparatu, która nadpisuje zmierzoną ekspozycję, zwykle w krokach co 1/3 stopnia. Wartości dodatnie rozjaśniają obraz; ujemne go przyciemniają."
+      },
+      "exposure-triangle": {
+        "term": "Trójkąt ekspozycji",
+        "definition": "Zależność między przysłoną, czasem naświetlania a ISO. Zmiana jednego parametru wymaga dostosowania pozostałych, aby utrzymać tę samą ekspozycję."
+      },
+      "f-stop": {
+        "term": "Przesłona f",
+        "definition": "Jednostka miary przysłony obiektywu. Każdy pełny stopień (f/1.4, f/2, f/2.8, f/4...) zmniejsza o połowę ilość światła przechodzącego przez obiektyw."
+      },
+      "focal-length": {
+        "term": "Ogniskowa",
+        "definition": "Odległość w milimetrach od optycznego środka obiektywu do matrycy przy ostrości na nieskończoność. Określa kąt widzenia i powiększenie."
+      },
+      "focus-stacking": {
+        "term": "Focus stacking",
+        "definition": "Technika, w której wiele zdjęć nastawionych na różne odległości jest łączonych w obróbce cyfrowej, aby uzyskać większą głębię ostrości niż pozwala na to pojedyncza ekspozycja."
+      },
+      "full-frame": {
+        "term": "Pełna klatka",
+        "definition": "Rozmiar matrycy odpowiadający filmowi 35 mm (36 x 24 mm). Jest to standard odniesienia dla obliczeń ogniskowej i współczynnika kadrowania."
+      },
+      "golden-hour": {
+        "term": "Złota godzina",
+        "definition": "Okres krótko po wschodzie lub przed zachodem słońca, gdy światło jest ciepłe, miękkie i kierunkowe. Bardzo ceniony w fotografii krajobrazowej i portretowej."
+      },
+      "histogram": {
+        "term": "Histogram",
+        "definition": "Wykres pokazujący rozkład wartości jasności w obrazie. Lewa strona reprezentuje cienie, prawa strona — światła."
+      },
+      "hyperfocal-distance": {
+        "term": "Odległość hiperfokalna",
+        "definition": "Najbliższy punkt ostrości, przy którym wszystko od połowy tej odległości do nieskończoności jest akceptowalnie ostre. Maksymalizuje głębię ostrości dla danej przysłony."
+      },
+      "image-stabilization": {
+        "term": "Stabilizacja obrazu",
+        "definition": "System redukujący rozmycie spowodowane drganiami aparatu, znajdujący się w obiektywie (OIS) lub korpusie aparatu (IBIS). Zazwyczaj zapewnia 3-7 stopni przewagi przy fotografowaniu z ręki."
+      },
+      "iso": {
+        "term": "ISO",
+        "definition": "Miara czułości matrycy na światło. Wyższe wartości ISO rozjaśniają obraz, ale wprowadzają więcej szumu."
+      },
+      "jpeg": {
+        "term": "JPEG",
+        "definition": "Skompresowany format pliku obrazu stosujący kompresję stratną. Mniejsze rozmiary plików, ale mniejsza elastyczność edycji w porównaniu z RAW."
+      },
+      "kelvin": {
+        "term": "Kelwin",
+        "definition": "Jednostka używana do pomiaru temperatury barwowej światła. Fotografowie używają wartości w kelwinach do ustawiania balansu bieli i dopasowania koloru oświetlenia otoczenia."
+      },
+      "lens-compression": {
+        "term": "Kompresja obiektywu",
+        "definition": "Efekt wizualny teleobiektywu sprawiający, że odległe obiekty wydają się bliżej obiektów na pierwszym planie. Jest spowodowany dużą odległością fotografowania, a nie samym obiektywem."
+      },
+      "light-meter": {
+        "term": "Światłomierz",
+        "definition": "Urządzenie lub system aparatu mierzący natężenie światła w celu określenia prawidłowych ustawień ekspozycji. Aparaty używają pomiaru światła odbitego; ręczne światłomierze mogą mierzyć światło padające."
+      },
+      "long-exposure": {
+        "term": "Długa ekspozycja",
+        "definition": "Zdjęcie wykonane z wolnym czasem migawki, zwykle kilka sekund lub minut. Używane do smug świetlnych, gładkiej wody, śladów gwiazd i scen przy słabym oświetleniu."
+      },
+      "macro": {
+        "term": "Makro",
+        "definition": "Fotografia odwzorowująca obiekty w skali naturalnej lub zbliżonej do naturalnej (stosunek 1:1). Wymaga specjalistycznych obiektywów makro lub pierścieni pośrednich."
+      },
+      "medium-format": {
+        "term": "Średni format",
+        "definition": "Rozmiar matrycy większy niż pełna klatka, zwykle około 44 x 33 mm lub 54 x 40 mm. Oferuje wyższą rozdzielczość, płytszą głębię ostrości i większy zakres dynamiczny."
+      },
+      "megapixel": {
+        "term": "Megapiksel",
+        "definition": "Milion pikseli. Liczba megapikseli matrycy określa maksymalną rozdzielczość zdjęć, jakie może ona wykonać."
+      },
+      "micro-four-thirds": {
+        "term": "Micro Four Thirds",
+        "definition": "Bezlusterkowy system aparatów z matrycą o wymiarach 17,3 x 13 mm, co daje współczynnik kadrowania 2x. Oferuje kompaktowe korpusy i obiektywy z dobrą jakością obrazu."
+      },
+      "mirror-lock-up": {
+        "term": "Blokada lustra",
+        "definition": "Funkcja lustrzanki, która podnosi lustro przed otwarciem migawki, redukując wibracje. Używana do ostrych zdjęć ze statywu, szczególnie przy wolnych czasach migawki."
+      },
+      "nd-filter": {
+        "term": "Filtr ND",
+        "definition": "Filtr o neutralnej gęstości, który zmniejsza ilość światła wchodzącego do obiektywu bez wpływu na kolory. Umożliwia dłuższe ekspozycje lub szerszą przysłonę w jasnych warunkach."
+      },
+      "noise": {
+        "term": "Szum",
+        "definition": "Losowa zmienność jasności i koloru w cyfrowych obrazach, najbardziej widoczna w cieniach i przy wysokich ustawieniach ISO. Można go zmniejszyć za pomocą oprogramowania do redukcji szumów."
+      },
+      "overexposure": {
+        "term": "Prześwietlenie",
+        "definition": "Gdy obraz otrzymuje zbyt dużo światła, powodując, że światła obcinają się do czystej bieli i tracą szczegóły. Przeciwieństwo niedoświetlenia."
+      },
+      "panorama": {
+        "term": "Panorama",
+        "definition": "Szerokokątny obraz tworzony przez łączenie wielu nakładających się zdjęć. Może obejmować do 360 stopni sceny."
+      },
+      "pixel-pitch": {
+        "term": "Rozmiar piksela",
+        "definition": "Odległość w mikrometrach między środkami sąsiednich pikseli na matrycy. Większy rozmiar piksela na ogół oznacza lepszą wydajność przy słabym oświetleniu."
+      },
+      "polarizer": {
+        "term": "Filtr polaryzacyjny",
+        "definition": "Filtr redukujący odbicia i olśnienia od niemetalicznych powierzchni, który może pogłębić błękit nieba. Działa poprzez blokowanie fal świetlnych oscylujących w określonym kierunku."
+      },
+      "prime-lens": {
+        "term": "Obiektyw stałoogniskowy",
+        "definition": "Obiektyw o stałej ogniskowej (bez zoomu). Obiektywy stałoogniskowe są zazwyczaj ostrzejsze, jaśniejsze (szersza przysłona) i lżejsze niż porównywalne obiektywy zmiennoogniskowe."
+      },
+      "raw": {
+        "term": "RAW",
+        "definition": "Nieskompresowany lub bezstratnie skompresowany format pliku zachowujący wszystkie dane z matrycy. Oferuje maksymalną elastyczność w obróbce kosztem większych rozmiarów plików."
+      },
+      "reciprocal-rule": {
+        "term": "Reguła odwrotności",
+        "definition": "Wytyczna mówiąca, że minimalny czas migawki przy fotografowaniu z ręki powinien wynosić 1/(ogniskowa), aby uniknąć poruszenia aparatu. Dla obiektywu 200 mm należy użyć co najmniej 1/200 s."
+      },
+      "rule-of-thirds": {
+        "term": "Zasada trójpodziału",
+        "definition": "Wytyczna kompozycji dzieląca kadr na siatkę 3x3. Umieszczanie obiektów wzdłuż linii lub na ich przecięciach często tworzy bardziej wyważony obraz."
+      },
+      "sensor-size": {
+        "term": "Rozmiar matrycy",
+        "definition": "Fizyczne wymiary matrycy aparatu. Większe matryce wychwytują więcej światła, oferują płytszą głębię ostrości i generalnie produkują mniej szumu."
+      },
+      "shutter-speed": {
+        "term": "Czas migawki",
+        "definition": "Czas, przez który migawka aparatu jest otwarta podczas ekspozycji. Szybsze czasy zamrażają ruch; wolniejsze pozwalają na rozmycie ruchu."
+      },
+      "star-trails": {
+        "term": "Ślady gwiazd",
+        "definition": "Smugi światła tworzone przez pozorny ruch gwiazd podczas długiej ekspozycji. Można je uchwycić w jednej bardzo długiej ekspozycji lub przez łączenie wielu krótszych klatek."
+      },
+      "stop": {
+        "term": "Stopień",
+        "definition": "Jednostka zmiany ekspozycji reprezentująca podwojenie lub zmniejszenie o połowę ilości światła. Stosowana jednakowo do przysłony, czasu migawki i ISO."
+      },
+      "telephoto": {
+        "term": "Teleobiektyw",
+        "definition": "Obiektyw o ogniskowej dłuższej niż około 70 mm (ekwiwalent pełnej klatki). Teleobiektywy powiększają odległe obiekty i kompresują perspektywę."
+      },
+      "tilt-shift": {
+        "term": "Tilt-shift",
+        "definition": "Obiektyw, który może przechylać płaszczyznę ostrości i przesuwać koło obrazu względem matrycy. Używany w fotografii architektury i do efektów selektywnej ostrości."
+      },
+      "underexposure": {
+        "term": "Niedoświetlenie",
+        "definition": "Gdy obraz otrzymuje zbyt mało światła, powodując, że obszary cieni tracą szczegóły i wydają się szumowe. Przeciwieństwo prześwietlenia."
+      },
+      "vignetting": {
+        "term": "Winietowanie",
+        "definition": "Przyciemnienie rogów i krawędzi obrazu w stosunku do środka. Może być spowodowane konstrukcją obiektywu, filtrami lub osłonami obiektywu i jest czasami dodawane celowo w obróbce."
+      },
+      "white-balance": {
+        "term": "Balans bieli",
+        "definition": "Ustawienie aparatu korygujące kolory tak, aby białe obiekty wyglądały neutralnie przy różnych warunkach oświetleniowych. Może być ustawiony automatycznie lub ręcznie za pomocą wartości w kelwinach."
+      },
+      "wide-angle": {
+        "term": "Szeroki kąt",
+        "definition": "Obiektyw o krótkiej ogniskowej (zwykle poniżej 35 mm na pełnej klatce), który obejmuje szersze pole widzenia. Często używany w fotografii krajobrazowej, architektonicznej i wnętrz."
+      },
+      "zoom-lens": {
+        "term": "Obiektyw zmiennoogniskowy",
+        "definition": "Obiektyw o zmiennym zakresie ogniskowych, pozwalający fotografowi zmieniać kadrowanie bez przemieszczania się. Oferuje wszechstronność kosztem rozmiaru, wagi i czasem ostrości."
+      }
+    }
+  }
+}

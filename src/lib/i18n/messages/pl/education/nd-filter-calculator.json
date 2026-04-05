@@ -1,0 +1,112 @@
+{
+  "education": {
+    "nd-filter-calculator": {
+      "beginner": "Filtr ND (neutralnej gęstości) działa jak okulary przeciwsłoneczne dla obiektywu aparatu. Zmniejsza ilość światła wchodzącego do obiektywu bez zmiany kolorów, pozwalając na wolniejsze czasy naświetlania lub szerszą przysłonę w jasnych warunkach. Tak fotografowie tworzą jedwabiste wodospady, gładkie oceany lub rozmyte chmury w ciągu dnia.",
+      "deeper": "Filtry ND są klasyfikowane według liczby stopni światła, które blokują. Filtr ND2 (1 stopień) zmniejsza światło o połowę, ND8 (3 stopnie) redukuje do 1/8, a ND1000 (10 stopni) redukuje światło o współczynnik 1024. Konwencje nazewnictwa mogą być mylące: «ND8» oznacza współczynnik filtra 8 (3 stopnie), podczas gdy «ND 0.9» używa notacji gęstości optycznej (każde 0,3 = 1 stopień, więc 0,9 = 3 stopnie). Wynikowy czas naświetlania to po prostu czas bazowy pomnożony przez współczynnik filtra. Na przykład, jeśli ekspozycja bez filtra to 1/125 s i dodasz 10-stopniowy ND (ND1000), nowy czas naświetlania to 1/125 × 1024 = około 8 sekund. Łączenie wielu filtrów ND sumuje ich wartości stopniowe, ale może wprowadzić winietowanie i dominanty kolorystyczne, szczególnie z obiektywami szerokokątnymi.",
+      "keyFactors": {
+        "0": {
+          "label": "Bazowy czas naświetlania",
+          "description": "Prawidłowy czas ekspozycji bez żadnego filtra. Zmierz scenę najpierw, a następnie oblicz przefiltrowaną ekspozycję z tego punktu wyjścia."
+        },
+        "1": {
+          "label": "Siła filtra",
+          "description": "Mierzona w stopniach. Każdy stopień podwaja czas ekspozycji. Popularne siły: 3 stopnie (ND8), 6 stopni (ND64) i 10 stopni (ND1000)."
+        },
+        "2": {
+          "label": "Łączenie filtrów",
+          "description": "Możesz łączyć filtry, sumując ich wartości stopniowe. Stos 3 + 6 stopni daje 9 stopni redukcji. Uważaj na winietowanie na obiektywach szerokokątnych."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Skomponuj i ustaw ostrość przed założeniem silnego filtra ND. Przy 10 stopniach redukcji światła wizjer i autofokus będą miały problemy w ciemności."
+        },
+        "1": {
+          "text": "Do pejzaży morskich ekspozycje 1-2 sekundy wygładzają drobne zmarszczki w teksturę, zachowując strukturę fal. Ekspozycje 30 sekund lub dłuższe tworzą całkowicie płaską, mglistą wodę."
+        },
+        "2": {
+          "text": "Tanie filtry ND często dodają dominantę kolorystyczną (zwykle magenta lub brąz). Zainwestuj w jakościowe szkło renomowanych marek lub naucz się korygować dominantę w obróbce za pomocą szarej karty referencyjnej."
+        }
+      },
+      "tooltips": {
+        "baseShutterSpeed": {
+          "term": "Bazowy czas naświetlania",
+          "definition": "Czas migawki dla prawidłowej ekspozycji bez żadnego filtra ND. To Twój punkt wyjścia — kalkulator mnoży go przez współczynnik filtra."
+        },
+        "ndFilter": {
+          "term": "Filtr ND",
+          "definition": "Filtr o neutralnej gęstości, który równomiernie zmniejsza transmisję światła. Klasyfikowany przez współczynnik filtra (ND2, ND4, ND8...) lub stopnie redukcji światła. ND2 = 1 stopień, ND4 = 2 stopnie, ND8 = 3 stopnie itd."
+        },
+        "resultingShutterSpeed": {
+          "term": "Wynikowy czas naświetlania",
+          "definition": "Nowy czas migawki po uwzględnieniu filtra ND. Obliczany przez pomnożenie bazowego czasu migawki przez współczynnik filtra (np. 1/125 s × 1024 dla 10-stopniowego ND)."
+        },
+        "stopsAdded": {
+          "term": "Dodane stopnie",
+          "definition": "Liczba stopni redukcji światła przez filtr ND. Każdy stopień podwaja wymagany czas ekspozycji. 10 stopni oznacza, że ekspozycja jest 1024 razy dłuższa."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Jesteś przy wodospadzie i aparat mierzy prawidłową ekspozycję na 1/125 s bez filtra. Zakładasz 3-stopniowy filtr ND (ND8). Jaki jest nowy czas naświetlania?",
+          "hint": "Każdy stopień podwaja czas ekspozycji. 3 stopnie oznacza 2 × 2 × 2 = 8 razy dłużej.",
+          "successMessage": "Prawidłowo! 1/125 s × 8 = 1/15 s. To dobry początek na rozmycie ruchu wody, choć możesz chcieć jeszcze silniejszego filtra dla jedwabiście gładkich rezultatów.",
+          "failureMessage": "3-stopniowy filtr ND mnoży czas ekspozycji przez 8 (2^3 = 8). Więc 1/125 s staje się 1/15 s.",
+          "options": {
+            "0": { "label": "1/60 s" },
+            "1": { "label": "1/30 s" },
+            "2": { "label": "1/15 s" },
+            "3": { "label": "1/8 s" }
+          }
+        },
+        "1": {
+          "scenario": "Chcesz stworzyć 30-sekundową ekspozycję chmur przesuwających się po niebie. Bez filtra prawidłowa ekspozycja to 1/30 s. Ile stopni filtracji ND potrzebujesz?",
+          "hint": "Musisz przejść od 1/30 s do 30 s — to 1/30 × współczynnik = 30, więc współczynnik = 900. Znajdź najbliższą potęgę 2.",
+          "successMessage": "Prawidłowo! Przejście od 1/30 s do 30 s to mniej więcej 1000-krotny wzrost, czyli około 10 stopni. Filtr ND1000 (10-stopniowy) da Ci około 33 sekund.",
+          "failureMessage": "Stosunek to 30 / (1/30) = 900. Najbliższa potęga 2 to 1024 (2^10), więc potrzebujesz 10-stopniowego filtra ND.",
+          "options": {
+            "0": { "label": "6 stopni (ND64)" },
+            "1": { "label": "8 stopni (ND256)" },
+            "2": { "label": "10 stopni (ND1000)" },
+            "3": { "label": "15 stopni (ND32768)" }
+          }
+        },
+        "2": {
+          "scenario": "Fotografujesz pejzaż morski o zachodzie słońca. Światło gaśnie i Twoja bazowa ekspozycja (bez filtra) to teraz 1/4 s przy f/11, ISO 100. Chcesz 2-minutowe ekspozycje dla ultra gładkiej wody. Jakiej siły filtra ND potrzebujesz?",
+          "hint": "Od 1/4 s do 120 s to współczynnik 480. Znajdź najbliższą wartość stopniową.",
+          "successMessage": "9-stopniowy ND da Ci 1/4 × 512 = 128 sekund, czyli nieco ponad 2 minuty. Idealne na ten mglisty, eteryczny pejzaż morski o zachodzie.",
+          "failureMessage": "Od 0,25 s do 120 s to mniej więcej 480-krotny wzrost. 2^9 = 512, co jest bliskie 480, więc 9-stopniowy filtr daje około 128 sekund.",
+          "options": {
+            "0": { "label": "6 stopni" },
+            "1": { "label": "9 stopni" },
+            "2": { "label": "10 stopni" },
+            "3": { "label": "13 stopni" }
+          }
+        },
+        "3": {
+          "scenario": "Chcesz fotografować portret przy f/1.4 w jasnym świetle słonecznym (bazowa ekspozycja: f/1.4, 1/8000 s, ISO 100). Maksymalny czas migawki Twojego aparatu to 1/8000 s. Czy możesz fotografować przy f/1.4 bez filtra ND?",
+          "hint": "Sprawdź, czy 1/8000 s przy f/1.4 i ISO 100 jest osiągalne, czy scena jest nadal prześwietlona.",
+          "successMessage": "Prawidłowo! W bardzo jasny dzień (EV 15+), f/1.4 przy ISO 100 często wymaga czasów migawki szybszych niż 1/8000 s, co większość aparatów nie osiąga. 2-3-stopniowy filtr ND pozwala fotografować na pełnym otwarciu bez prześwietlenia.",
+          "failureMessage": "W jasnym świetle słonecznym f/1.4 przy ISO 100 może wymagać czasów migawki przekraczających limit aparatu 1/8000 s. Filtr ND jest niezbędny do fotografowania z szeroką przysłoną w jasnych warunkach.",
+          "options": {
+            "0": { "label": "Tak — 1/8000 s jest wystarczająco szybkie" },
+            "1": { "label": "Nie — prawdopodobnie potrzebujesz 2-3-stopniowego filtra ND" },
+            "2": { "label": "Po prostu podnieś ISO, aby skompensować" }
+          }
+        },
+        "4": {
+          "scenario": "Masz 6-stopniowy i 3-stopniowy filtr ND. Łączysz je na obiektywie z bazową ekspozycją 1/250 s. Jaki jest wynikowy czas naświetlania i na co powinieneś uważać przy tym zestawie?",
+          "hint": "Dodaj wartości stopniowe, a następnie oblicz nową ekspozycję. Pomyśl o optycznych efektach ubocznych łączenia.",
+          "successMessage": "Prawidłowo! 6 + 3 = 9 stopni. 1/250 × 512 = około 2 sekundy. Uważaj na winietowanie (ciemne rogi) na obiektywach szerokokątnych i potencjalne dominanty kolorystyczne z taniego szkła.",
+          "failureMessage": "Łączenie dodaje wartości stopniowe: 6 + 3 = 9 stopni razem. 2^9 = 512, więc 1/250 × 512 = ~2 sekundy. Łączenie może też powodować winietowanie i dominanty kolorystyczne.",
+          "options": {
+            "0": { "label": "~0,5 s, uważaj na flary" },
+            "1": { "label": "~2 s, uważaj na winietowanie i dominanty kolorystyczne" },
+            "2": { "label": "~4 s, uważaj na przegrzanie matrycy" },
+            "3": { "label": "~8 s, bez obaw przy łączeniu" }
+          }
+        }
+      }
+    }
+  }
+}

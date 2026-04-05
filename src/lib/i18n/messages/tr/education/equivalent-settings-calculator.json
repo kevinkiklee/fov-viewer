@@ -1,0 +1,112 @@
+{
+  "education": {
+    "equivalent-settings-calculator": {
+      "beginner": "Farklı sensör boyutları, aynı odak uzaklığı ve diyaframda bile farklı alan derinliği ve görüş alanı üretir. Eşdeğer ayarlar, ikinci bir kamerada aynı kadrajlama ve arka plan bulanıklığını yeniden üreten objektif ve diyafram kombinasyonunu bulmanızı sağlar. Bu, formatlar arası ekipman karşılaştırırken veya kamera sistemleri arasında geçiş yaparken çok önemlidir.",
+      "deeper": {
+        "0": {
+          "heading": "Kırpma Faktörü",
+          "text": "Her sensörün 35mm tam kare standarda göre bir kırpma faktörü vardır. APS-C sensörler yaklaşık 1,5×, Mikro Dört Üçlü 2× ve orta format yaklaşık 0,79× faktöre sahiptir. Gerçek odak uzaklığını kırpma faktörüyle çarpmak tam kare eşdeğeri görüş alanını verir. APS-C'de 35mm'lik bir objektif, tam karede 52,5mm gibi kadrajlar."
+        },
+        "1": {
+          "heading": "Eşdeğer Diyafram ve DoF",
+          "text": "Formatlar arası alan derinliğini eşleştirmek için f-sayısını aynı kırpma faktörüyle çarpın. Mikro Dört Üçlü'de f/1,4'lük bir objektif, tam karede f/2,8'e eşdeğer DoF üretir (1,4 × 2 = 2,8). Bu yüzden tam kare kameralar sığ DoF için değerlidir — daha küçük sensörlerin kopyalayamayacağı bulanıklık elde etmek için fiziksel olarak daha hızlı objektifleri daha geniş gerçek diyaframlarda kullanabilirsiniz."
+        },
+        "2": {
+          "heading": "Eşdeğer ISO ve Toplam Işık",
+          "text": "Formatlar arası pozlama parlaklığını eşleştirmek, ISO'yu kırpma faktörünün karesiyle ayarlamayı gerektirir. Daha büyük sensör aynı sahne için daha fazla toplam ışık toplar, bu da eşdeğer gürültü performansı için daha düşük ISO kullanabileceği anlamına gelir. ISO 800'de tam kare sensör, ISO 356'da APS-C sensörle ve ISO 200'de Mikro Dört Üçlü sensörle benzer gürültü üretir."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Kırpma Faktörü",
+          "description": "Tam kare sensör köşegeninin hedef sensör köşegenine oranı. Bu tek sayı, odak uzaklığı, diyafram ve ISO için tüm eşdeğerlik hesaplamalarını yönlendirir."
+        },
+        "1": {
+          "label": "Sensör Boyutu",
+          "description": "Fiziksel olarak daha büyük sensörler daha fazla ışık yakalar ve eşdeğer kadrajda daha sığ DoF üretir. Eşdeğerlik hesaplayıcı her formatın ne kadar fark yarattığını tam olarak ortaya koyar."
+        },
+        "2": {
+          "label": "Mevcut Objektifler",
+          "description": "Eşdeğerlik matematiği var olmayan bir objektif gerektirebilir. 17mm f/0,7, MFT'de 35mm f/1,4'ün eşdeğeridir — ama böyle bir objektif üretilmiyor. Gerçek dünya ekipmanları başarılabilecekleri sınırlar."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Kamera sistemlerini karşılaştırırken f-sayılarını eşleştirmek yerine her zaman eşdeğer ayarları karşılaştırın. Mikro Dört Üçlü'de f/2,8'lik bir objektif tam karede f/2,8 ile aynı arka plan bulanıklığını vermez — eşleşme için MFT'de f/1,4'e ihtiyacınız var."
+        },
+        "1": {
+          "text": "Sistem değiştirirken objektif alımlarını planlamak için eşdeğerliği kullanın. Tam karede 85mm f/1,8'in görünümünü seviyorsanız, benzer bir görüntü için APS-C'de 56mm f/1,2 veya MFT'de 42,5mm f/0,95 arayın."
+        },
+        "2": {
+          "text": "Eşdeğerliğin alan derinliği ve görüş alanı için geçerli olduğunu, pozlama için objektif hızına geçerli olmadığını unutmayın. Herhangi bir formatta f/2,8'lik bir objektif birim alan başına aynı miktarda ışık geçirir — daha büyük sensör sadece daha geniş alanı nedeniyle daha fazla toplam ışık toplar."
+        }
+      },
+      "tooltips": {
+        "sourceSensor": {
+          "term": "Kaynak Sensör",
+          "definition": "Ayarlarını eşleştirmek istediğiniz kameranın sensör formatı. Tüm eşdeğerlik hesaplamaları bu başlangıç noktasına göre yapılır."
+        },
+        "sourceFocalLength": {
+          "term": "Odak Uzaklığı",
+          "definition": "Kaynak kameranızdaki objektifin gerçek odak uzaklığı. Hedef formatlardaki eşdeğer odak uzaklıklarına dönüştürülecektir."
+        },
+        "sourceAperture": {
+          "term": "Diyafram",
+          "definition": "Kaynak kameranızdaki f-sayısı. Her hedef formattaki eşdeğer diyafram, eşleşen alan derinliğini belirler."
+        },
+        "targetSensor": {
+          "term": "Hedef Sensör",
+          "definition": "Eşdeğer ayarları bulmak istediğiniz sensör formatı. Hesaplayıcı, eşleşen odak uzaklığı ve diyaframı hesaplamak için göreceli kırpma faktörünü uygular."
+        },
+        "cropFactor": {
+          "term": "Kırpma Faktörü",
+          "definition": "35mm tam kare sensör köşegeni ile hedef sensör köşegeni arasındaki oran. Eşdeğer görüş alanı için odak uzaklığını kırpma faktörüyle çarpın; eşdeğer DoF için diyaframı kırpma faktörüyle çarpın."
+        },
+        "equivalentFL": {
+          "term": "Eşdeğer Odak Uzaklığı",
+          "definition": "Kaynak kurulumla aynı görüş alanını üreten hedef formattaki odak uzaklığı."
+        },
+        "equivalentAperture": {
+          "term": "Eşdeğer Diyafram",
+          "definition": "Kaynak kurulumla aynı alan derinliğini üreten hedef formattaki f-sayısı. Gerçek herhangi bir objektiften daha hızlı olabilir."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Tam kare kamerada 85mm f/1,8 objektifle portre çekiyorsunuz. Bir arkadaşınız Mikro Dört Üçlü (2× kırpma) kullanıyor. Arkadaşınızın görüş alanınızı eşleştirmek için hangi odak uzaklığına ihtiyacı var?",
+          "hint": "İhtiyaç duyulan gerçek objektifi bulmak için tam kare odak uzaklığını MFT kırpma faktörüne bölün.",
+          "successMessage": "Doğru! 85mm / 2 = 42,5mm. Arkadaşınızın tam karedeki 85mm'niz ile aynı kadrajı elde etmek için Mikro Dört Üçlü'de 42,5mm'lik bir objektife ihtiyacı var.",
+          "failureMessage": "Görüş alanını eşleştirmek için kırpma faktörüne bölün: 85mm / 2 = 42,5mm. MFT gövdede gereken gerçek odak uzaklığı budur.",
+          "options": {
+            "0": { "label": "42,5mm" },
+            "1": { "label": "85mm" },
+            "2": { "label": "170mm" },
+            "3": { "label": "56mm" }
+          }
+        },
+        "1": {
+          "scenario": "Arkadaşınız MFT kamerası için 42,5mm f/1,8'lik bir objektif buldu. Arka plan bulanıklığı tam karede 85mm f/1,8'inizi eşleyecek mi?",
+          "hint": "Eşdeğer DoF'u bulmak için kırpma faktörünü diyaframa da uygulayın.",
+          "successMessage": "Doğru! MFT'de 42,5mm f/1,8, tam karede 85mm f/3,6'ya eşdeğer DoF verir (1,8 × 2 = 3,6). Sizin f/1,8'lik tam kare çekiminiz önemli ölçüde daha fazla bulanıklık üretir.",
+          "failureMessage": "Hayır — MFT f/1,8, tam karede f/3,6'ya eşdeğer DoF verir (1,8 × 2× kırpma = 3,6). Tam karede f/1,8 bulanıklığınızı eşleştirmek için arkadaşınızın MFT'de f/0,9'a ihtiyacı olurdu ki bu mevcut değil.",
+          "options": {
+            "0": { "label": "Evet — aynı f/1,8 aynı bulanıklık demektir" },
+            "1": { "label": "Hayır — MFT f/1,8, tam karede f/3,6 alan derinliğine eşittir" },
+            "2": { "label": "Hayır — sensör daha küçük olduğu için MFT daha fazla bulanıklık üretir" }
+          }
+        },
+        "2": {
+          "scenario": "Tam kareden APS-C'ye (1,5× kırpma) geçen bir fotoğrafçı, tam karede 50mm f/1,4'ün görünümünü eşleştirmek istiyor. APS-C'de hangi eşdeğer objektif ve diyaframa ihtiyacı var?",
+          "hint": "Eşdeğer görüş alanı için odak uzaklığını kırpma faktörüne bölün. Eşdeğer DoF için diyaframı kırpma faktörüne bölün.",
+          "successMessage": "Kesinlikle! Görüş alanı için 50 / 1,5 = 33mm ve eşleşen DoF için f/1,4 / 1,5 = f/0,93. f/0,93 objektif mevcut olmadığından, APS-C kamera tam kare görünümünü tam olarak kopyalayamaz.",
+          "failureMessage": "Doğru cevap ~33mm f/0,93'tür. 50 / 1,5 = 33,3mm ve 1,4 / 1,5 = 0,93 olduğundan. f/0,93 objektif mevcut değil, bu yüzden tam kare görünümü APS-C'de tam olarak eşleştirilemez.",
+          "options": {
+            "0": { "label": "35mm f/1,4 — yaklaşık olarak yeterli" },
+            "1": { "label": "33mm f/0,93 — tam eşleşme, ama böyle bir objektif yok" },
+            "2": { "label": "75mm f/2,1 — kırpma faktörüyle çarp" }
+          }
+        }
+      }
+    }
+  }
+}

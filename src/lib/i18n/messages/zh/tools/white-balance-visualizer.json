@@ -1,0 +1,16 @@
+{
+  "toolUI": {
+    "white-balance-visualizer": {
+      "colorTemperature": "色温：",
+      "warm": "暖",
+      "neutral": "中性",
+      "cool": "冷",
+      "presets": "预设",
+      "red": "红",
+      "green": "绿",
+      "blue": "蓝",
+      "hex": "Hex",
+      "loadingScene": "加载场景..."
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "education": {
+    "hyperfocal-simulator": {
+      "beginner": "Hiperfocal mesafe, sonsuzdaki her şeyi hâlâ kabul edilebilir derecede net tutarken odaklayabileceğiniz en yakın noktadır. Hiperfocal mesafeye odakladığınızda alan derinliğiniz o mesafenin yarısından sonsuza kadar uzanır. Manzara fotoğrafçıları bu tekniği ön plandan ufka kadar netliği maksimize etmek için kullanır.",
+      "deeper": "Hiperfocal mesafe, ince objektif denkleminden ve bulanıklık çemberi (CoC) kavramından türetilir. Odak uzaklığının karesinin f-sayısı ile CoC çapının çarpımına bölünmesine eşittir: H = f² / (N × c). H/2'den sonsuza kadar her şey kabul edilebilir netlik dahilindedir. CoC sensör boyutuna bağlıdır — daha küçük sensörler daha küçük kabul edilebilir CoC'ye sahiptir, bu da aynı odak uzaklığı ve diyafram için hiperfocal mesafeyi daha uzağa iter. Bu yüzden kırpma sensörlü kameralar daha fazla alan derinliğine sahipmiş gibi görünür: CoC standardı görüntü alanına göre daha sıkıdır. Pratikte, çoğu sensörde çok küçük diyaframlardaki (f/16 ve ötesi) kırınım yumuşaması, alan derinliğini maksimize etme ile piksel başına netliği koruma arasında bir denge olduğu anlamına gelir.",
+      "keyFactors": {
+        "0": {
+          "label": "Odak Uzaklığı",
+          "description": "Daha uzun odak uzaklıkları hiperfocal mesafeyi dramatik olarak artırır — odak uzaklığının karesiyle orantılı olarak ölçeklenir."
+        },
+        "1": {
+          "label": "Diyafram",
+          "description": "Daha küçük diyaframlar (daha yüksek f-sayıları) hiperfocal mesafeyi azaltarak alan derinliğini genişletir."
+        },
+        "2": {
+          "label": "Sensör Boyutu",
+          "description": "Daha küçük sensörler daha küçük bulanıklık çemberi kullanır, bu da eşdeğer kadrajlama için hiperfocal mesafeyi artırır."
+        },
+        "3": {
+          "label": "Bulanıklık Çemberi",
+          "description": "\"Kabul edilebilir derecede net\" olarak kabul edilen maksimum bulanıklık noktası çapı — tam kare için genellikle 0,03mm."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Hızlı manzara çalışması için sahnenin yaklaşık üçte birine odaklayın — çoğu geniş açı kurulum için hiperfocal noktayı yaklaşık olarak verir."
+        },
+        "1": {
+          "text": "Tam karede f/16'nın, APS-C'de f/11'in ötesine kısmaktan kaçının. Kırınım, peşinde olduğunuz alan derinliği kazanımlarını geri alacaktır."
+        },
+        "2": {
+          "text": "Modern otomatik odaklama objektiflerinde genellikle hassas olmayan mesafe ölçeğine güvenmek yerine canlı görüntü büyütmesini kullanarak hiperfocal mesafede odağı tam tutturun."
+        }
+      },
+      "tooltips": {
+        "Sensor": {
+          "term": "Sensör",
+          "definition": "Kamera sensör formatı. Daha küçük sensörler daha sıkı bir bulanıklık çemberi standardına sahiptir, bu da tüm hiperfocal mesafeleri daha uzağa kaydırır."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Tam kare kamerada 24mm objektifle manzara çekiyorsunuz. Tam kare hiperfocal mesafelerini görmek için hangi sensör formatını seçmelisiniz?",
+          "hint": "Tam kare standart 35mm sensör boyutudur.",
+          "successMessage": "Doğru! Tam Kare standart 35mm kamera gövdesi için doğru seçimdir.",
+          "failureMessage": "Tam değil — standart 35mm kamera gövdesine uyması için Tam Kare sensörü seçin.",
+          "options": {
+            "0": { "label": "Tam Kare" },
+            "1": { "label": "APS-C (Nikon/Sony)" },
+            "2": { "label": "Mikro Dört Üçlü" }
+          }
+        },
+        "1": {
+          "scenario": "Tam kare tablosuna bakarak hangisinin daha kısa hiperfocal mesafeye sahip olduğunu söyleyin: f/8'de 24mm mi, yoksa f/8'de 50mm mi?",
+          "hint": "Hiperfocal mesafe odak uzaklığının karesiyle artar.",
+          "successMessage": "Doğru! 24mm objektif çok daha kısa hiperfocal mesafeye sahiptir çünkü odak uzaklığının karesel ilişkisi vardır.",
+          "failureMessage": "Aslında daha kısa odak uzaklıkları her zaman daha kısa hiperfocal mesafeler verir. 24mm burada kazanır.",
+          "options": {
+            "0": { "label": "f/8'de 24mm" },
+            "1": { "label": "f/8'de 50mm" }
+          }
+        },
+        "2": {
+          "scenario": "APS-C kamera ve 35mm objektifle yürüyüş yapıyorsunuz. Yaklaşık 3 metreden sonsuza kadar her şeyin net olmasını istiyorsunuz. Tabloda yaklaşık 6 metrelik bir hiperfocal mesafe (böylece yarısı — 3m — yakın odak sınırınız olsun) bulmak için hangi diyafram aralığına bakmalısınız?",
+          "hint": "Unutmayın: yakın odak = hiperfocal / 2. Yaklaşık 6m hiperfocal veren bir diyafram arayın.",
+          "successMessage": "Harika düşünce! Yaklaşık 6m'lik bir hiperfocal mesafeye ihtiyacınız olduğunu doğru olarak belirlediniz ve doğru diyafram aralığını buldunuz.",
+          "failureMessage": "Unutmayın, yakın odak hiperfocal mesafenin yarısına eşittir. 3m yakın odak sınırı elde etmek için hiperfocalin yaklaşık 6m olması gerekir.",
+          "options": {
+            "0": { "label": "f/2,8 — f/4" },
+            "1": { "label": "f/5,6 — f/8" },
+            "2": { "label": "f/16 — f/22" }
+          }
+        },
+        "3": {
+          "scenario": "Bir arkadaşınız tam kare kameradan Mikro Dört Üçlü'ye geçiyor ama aynı odak uzaklıklarıyla çekmeye devam ediyor. Hiperfocal mesafelerin farklı göründüğünden şikayet ediyor. Neden?",
+          "hint": "Bulanıklık çemberi sensör boyutuna göre hesaplanır.",
+          "successMessage": "Kesinlikle! Daha küçük M43 sensör daha küçük CoC kullanır (yaklaşık 0,015mm vs 0,03mm), bu da aynı odak uzaklığı ve diyafram için hiperfocal mesafeleri artırır.",
+          "failureMessage": "Temel faktör bulanıklık çemberidir. Daha küçük sensörler daha sıkı bir CoC standardı gerektirir, bu da hiperfocal mesafeleri daha uzağa iter.",
+          "options": {
+            "0": { "label": "Kırpma sensörlerde objektif odak uzaklığı değişir" },
+            "1": { "label": "Daha küçük sensörler daha küçük bulanıklık çemberi kullanır" },
+            "2": { "label": "Mikro Dört Üçlü kameralar daha az doğru otomatik odaklamaya sahiptir" }
+          }
+        },
+        "4": {
+          "scenario": "Tam karede 14mm f/11 ile mimari çekiyorsunuz. Tablo çok kısa bir hiperfocal mesafe gösteriyor. Daha fazla alan derinliği için f/22'ye mi kısmalısınız yoksa f/11 daha iyi bir seçim mi?",
+          "hint": "Çok küçük diyaframlarda görüntü netliğine ne olduğunu düşünün.",
+          "successMessage": "Mükemmel! f/11'de tam karede kırınım minimumdur ve 14mm'de hiperfocal mesafe zaten çok kısadır. f/22'ye kısmak anlamlı DoF faydası olmadan kırınım nedeniyle görüntüyü yumuşatır.",
+          "failureMessage": "f/22 kağıt üzerinde daha kısa hiperfocal mesafe verse de, tam karede f/22'deki kırınım yumuşaması aslında genel görüntü netliğini azaltır. 14mm f/11'de hiperfocal mesafe zaten o kadar kısa ki ekstra DoF, kırınım cezasına değmez.",
+          "options": {
+            "0": { "label": "Maksimum alan derinliği için f/22'ye kıs" },
+            "1": { "label": "f/11'de kal — f/22'deki kırınım netliği azaltır" }
+          }
+        }
+      }
+    }
+  }
+}

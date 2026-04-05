@@ -1,0 +1,125 @@
+{
+  "education": {
+    "sensor-size-comparison": {
+      "beginner": "Kamera sensörleri, stüdyo kameralarında kullanılan büyük orta format çiplerden akıllı telefonlardaki küçük sensörlere kadar birçok farklı fiziksel boyutta gelir. Daha büyük bir sensör daha fazla ışık yakalar, daha az gürültü üretir ve arka planları bulanıklaştırmayı kolaylaştırır. Sensör boyutu, kamera kategorilerini ayıran en büyük faktörlerden biridir.",
+      "deeper": {
+        "0": {
+          "heading": "Nasıl Çalışır",
+          "text": "Sensör boyutu fotoğrafçılığı birbirine bağlı birçok şekilde etkiler. Daha büyük bir sensör fotonları toplamak için daha geniş bir alana sahiptir, sinyal-gürültü oranını ve dinamik aralığı iyileştirir. Sensör boyutu, orta format stüdyo kameralardan akıllı telefon sensörlerine kadar kamera kategorileri arasındaki en önemli farklardan biridir."
+        },
+        "1": {
+          "heading": "Kırpma Faktörü",
+          "text": "\"Kırpma faktörü\" bir sensörün 35mm tam kare standardıyla nasıl karşılaştırıldığını tanımlar. 1,5x kırpma faktörlü bir APS-C sensör, 35mm'lik bir objektifle tam kare kameranın 52,5mm'lik bir objektifle vereceği görüş alanını verir. Bu kırpma faktörü ayrıca etkili alan derinliğini de çarpar — daha küçük bir sensör aynı kadrajlamada daha fazla alan derinliği veriyormuş gibi görünür çünkü görüş alanını eşleştirmek için daha geniş (daha kısa) bir objektife ihtiyacınız vardır."
+        },
+        "2": {
+          "heading": "Piksel Yoğunluğu",
+          "text": "Piksel yoğunluğu (piksel aralığı) piksellerin sensörde ne kadar sıkı paketlendiğini ölçer. Daha küçük bir sensöre daha fazla megapiksel paketlemek her piksel noktasını küçültür ve piksel başına ışık toplama kapasitesini azaltır. 24MP tam kare sensör ~6µm piksellere sahipken 24MP APS-C sensör ~4µm piksellere sahiptir, bu yüzden tam kare sensör genellikle yüksek ISO'da daha iyi performans gösterir."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Fiziksel Boyutlar",
+          "description": "Milimetre cinsinden genişlik ve yükseklik, toplam ışık toplama alanını ve belirli bir objektif için görüş alanını belirler."
+        },
+        "1": {
+          "label": "Kırpma Faktörü",
+          "description": "Tam kare köşegenin sensör köşegenine oranı. Odak uzaklığıyla çarpıldığında \"eşdeğer\" odak uzaklığını verir."
+        },
+        "2": {
+          "label": "Piksel Yoğunluğu",
+          "description": "Piksellerin ne kadar sıkı paketlendiği. Daha küçük piksel aralığı daha fazla detay ama piksel başına daha az ışık anlamına gelir ve gürültü performansını etkiler."
+        },
+        "3": {
+          "label": "Sensör Alanı",
+          "description": "mm² cinsinden toplam alan. 44x33mm orta format sensör (Fujifilm GFX, Hasselblad X) tam karenin yaklaşık 1,7 katı alana sahipken, daha büyük 54x40mm orta format çip yaklaşık 2,5 katıdır. Tam kare, amiral gemisi akıllı telefon sensörünün yaklaşık 13 katı alana sahiptir."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Bir sensörün diğerinden tam olarak ne kadar büyük olduğunu görmek için kaplama modunu kullanın — alan farkı genellikle rakamların önerdiğinden daha çarpıcıdır."
+        },
+        "1": {
+          "text": "Piksel yoğunluğu moduna geçin ve piksel aralığını karşılaştırmak için kamera çözünürlüğünüzü girin. Kameranız çok yüksek piksel yoğunluğuna sahipse, beklenenden daha geniş diyaframlarda kırınım sınırlarına ulaşabilirsiniz."
+        },
+        "2": {
+          "text": "Kameraları karşılaştırırken gürültü performansı için megapiksel sayısından çok sensör alanı önemlidir. 20MP tam kare sensör, yüksek ISO'da genellikle 40MP APS-C sensörden daha iyi performans gösterir."
+        }
+      },
+      "tooltips": {
+        "Sensor": {
+          "term": "Sensör",
+          "definition": "Görsel karşılaştırma ve veri tablosuna dahil etmek için bireysel sensör formatlarını açıp kapatın."
+        },
+        "Display Mode": {
+          "term": "Görüntüleme Modu",
+          "definition": "Kaplama tüm sensörleri aynı nokta merkezli gösterir. Yan Yana aynı ölçekte yanyana yerleştirir. Piksel Yoğunluğu piksellerin ne kadar sıkı paketlendiğini görselleştirir."
+        },
+        "Resolution": {
+          "term": "Çözünürlük",
+          "definition": "Piksel yoğunluğu modunda piksel aralığını hesaplamak için kullanılan toplam megapiksel sayısı. Aynı sensör boyutunda daha fazla megapiksel, daha küçük bireysel pikseller anlamına gelir."
+        },
+        "Crop Factor": {
+          "term": "Kırpma Faktörü",
+          "definition": "35mm tam kare köşegenin bu sensör köşegenine oranı. 1,5x kırpma faktörü, 50mm'lik bir objektifin tam karede 75mm'lik bir objektif gibi kadrajladığı anlamına gelir."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Tam kare sensör 36×24mm ölçülerindedir. APS-C sensörün 1,5x kırpma faktörü vardır. APS-C sensörün yaklaşık genişliği nedir?",
+          "hint": "Tam kare genişliğini kırpma faktörüne bölün.",
+          "successMessage": "Doğru! 36mm ÷ 1,5 ≈ 24mm. APS-C sensör yaklaşık 24×16mm'dir ve tam kare alanının yaklaşık %44'ünü kaplar.",
+          "failureMessage": "Tam kare genişliğini (36mm) kırpma faktörüne (1,5x) bölün: 36 ÷ 1,5 = 24mm.",
+          "options": {
+            "0": { "label": "24mm" },
+            "1": { "label": "30mm" },
+            "2": { "label": "18mm" }
+          }
+        },
+        "1": {
+          "scenario": "2,0x kırpma faktörlü sensöre sahip bir kameraya 50mm objektif takıyorsunuz. Hangi tam kare eşdeğer odak uzaklığını elde edersiniz?",
+          "hint": "Odak uzaklığını kırpma faktörüyle çarpın.",
+          "successMessage": "Doğru! 50mm × 2,0 = 100mm eşdeğer. Bu yüzden Mikro Dört Üçlü kameralar telefoto çalışma için popülerdir — her objektiften ekstra erişim elde edersiniz.",
+          "failureMessage": "Objektif odak uzaklığını kırpma faktörüyle çarpın: 50mm × 2,0 = 100mm eşdeğer.",
+          "options": {
+            "0": { "label": "25mm" },
+            "1": { "label": "75mm" },
+            "2": { "label": "100mm" }
+          }
+        },
+        "2": {
+          "scenario": "İki kameranın da 24 megapikseli var — biri tam kare (36×24mm) biri APS-C (24×16mm). Hangisi yüksek ISO gürültü performansında daha iyi ve neden?",
+          "hint": "Aynı sayıda pikselin farklı sensör alanlarına yayılmasının bireysel piksel boyutunu nasıl etkilediğini düşünün.",
+          "successMessage": "Kesinlikle! Tam kare sensör 24MP'yi daha geniş bir alana yayar, böylece her piksel fiziksel olarak daha büyük (~6µm vs ~4µm aralık) ve daha fazla foton yakalar, daha az gürültü üretir.",
+          "failureMessage": "Tam kare sensör kazanır — daha büyük alanda aynı megapiksel sayısı, daha fazla ışık toplayan daha büyük pikseller anlamına gelir ve yüksek ISO'da daha az gürültü üretir.",
+          "options": {
+            "0": { "label": "Tam kare — daha büyük pikseller daha fazla ışık toplar" },
+            "1": { "label": "APS-C — daha küçük sensörler daha verimlidir" },
+            "2": { "label": "Aynı gürültü — önemli olan megapiksel sayısıdır" }
+          }
+        },
+        "3": {
+          "scenario": "Karşılaştırma tablosuna bakarak hangi sensör formatının kırpma faktörü 2,0x'e en yakın olduğunu söyleyin?",
+          "hint": "Kırpma faktörü, tam kare köşegenin sensör köşegenine bölünmesidir.",
+          "successMessage": "Doğru! Mikro Dört Üçlü 2,0x kırpma faktörüne sahiptir, bu yüzden 25mm M43 objektif tam karede 50mm gibi kadrajlar.",
+          "failureMessage": "Mikro Dört Üçlü 2,0x kırpma faktörüne sahiptir. Tabloyu kontrol edin — köşegeni tam kare köşegenin tam yarısıdır.",
+          "options": {
+            "0": { "label": "APS-C (Canon)" },
+            "1": { "label": "Mikro Dört Üçlü" },
+            "2": { "label": "1\" Sensör" }
+          }
+        },
+        "4": {
+          "scenario": "Piksel yoğunluğu modunda 50MP orta format kamerayı 50MP tam kare kamerayla karşılaştırıyorsunuz. Her ikisi de aynı megapiksel sayısına sahip. Hangisinin piksel aralığı daha büyük ve bunun pratik avantajı nedir?",
+          "hint": "Piksel aralığı sensör genişliğinin yatay piksel sayısına bölünmesine bağlıdır.",
+          "successMessage": "Doğru! Orta format sensör fiziksel olarak daha büyüktür, bu yüzden 50MP'de pikselleri daha büyüktür (daha yüksek aralık). Bu, piksel başına yaklaşık 1/3 adım daha iyi ışık toplama ve biraz daha geç kırınım başlangıcı verir.",
+          "failureMessage": "Orta format sensör daha büyüktür, bu yüzden aynı çözünürlükte her piksel fiziksel olarak daha büyüktür. Daha büyük pikseller daha fazla foton toplar ve daha iyi dinamik aralık ile biraz daha geç kırınım sınırları verir.",
+          "options": {
+            "0": { "label": "Orta Format — piksel başına daha iyi ışık toplama ve dinamik aralık" },
+            "1": { "label": "Tam Kare — daha küçük pikseller daha verimlidir" },
+            "2": { "label": "Her ikisi de aynıdır çünkü aynı megapiksel sayısına sahipler" }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "sensor-size-comparison": {
+      "displayMode": "Chế độ hiển thị",
+      "modeOverlay": "Chồng lớp",
+      "modeSideBySide": "Cạnh nhau",
+      "modePixelDensity": "Mật độ điểm ảnh",
+      "pixelDensityDescription": "Hiển thị số megapixel phổ biến cho mỗi cảm biến. Pixel lớn hơn (ô lớn hơn) thu nhiều ánh sáng hơn.",
+      "sensors": "Cảm biến",
+      "customSensors": "Cảm biến tùy chỉnh",
+      "placeholderName": "Tên",
+      "placeholderW": "R (mm)",
+      "placeholderH": "C (mm)",
+      "placeholderMP": "Megapixel (tùy chọn)",
+      "placeholderMPShort": "MP",
+      "maxDimensionWarning": "Kích thước cảm biến tối đa là 99 mm",
+      "addSensor": "Thêm cảm biến",
+      "save": "Lưu",
+      "cancelEdit": "Hủy",
+      "edit": "Sửa",
+      "remove": "Xóa",
+      "deleteAllCustom": "Xóa tất cả cảm biến tùy chỉnh",
+      "tableSensor": "Cảm biến",
+      "tableWidth": "Rộng (mm)",
+      "tableHeight": "Cao (mm)",
+      "tableAspectRatio": "Tỷ lệ khung hình",
+      "tableArea": "Diện tích (mm²)",
+      "tableCropFactor": "Hệ số crop",
+      "tableAspectCrop": "Crop tỷ lệ",
+      "canvasAriaLabel": "So sánh kích thước cảm biến ở chế độ {mode}"
+    }
+  }
+}

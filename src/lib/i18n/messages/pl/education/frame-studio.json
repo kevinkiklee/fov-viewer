@@ -1,0 +1,133 @@
+{
+  "education": {
+    "frame-studio": {
+      "beginner": "Frame Studio pomaga kadrować, ramkować i komponować zdjęcia bezpośrednio w przeglądarce. Używaj siatek kompozycyjnych do poprawy kadrowania, przycinaj do popularnych proporcji i dodawaj profesjonalnie wyglądające ramki — wszystko bez utraty jakości obrazu.",
+      "deeper": {
+        "0": {
+          "heading": "Siatki kompozycyjne",
+          "text": "Zasada trójpodziału dzieli kadr na siatkę 3×3 — umieszczanie obiektów wzdłuż linii lub na przecięciach tworzy naturalną równowagę wizualną. Złoty podział (około 1,618:1) zapewnia matematycznie harmonijny podział używany w sztuce i architekturze od wieków. Złota spirala prowadzi oko wzdłuż logarytmicznej krzywej wywodzącej się z ciągu Fibonacciego, przydatnej do kierowania widza przez obraz."
+        },
+        "1": {
+          "heading": "Proporcje obrazu",
+          "text": "Różne proporcje służą różnym celom. 1:1 (kwadrat) dobrze sprawdza się w mediach społecznościowych i symetrycznych kompozycjach. 3:2 to klasyczna proporcja filmu 35 mm. 4:3 jest powszechna w systemach Micro Four Thirds i starszych aparatach cyfrowych. 16:9 to standardowa proporcja panoramiczna do wideo i kinematograficznych kompozycji. 5:4 jest tradycyjna dla wydruków 8×10."
+        },
+        "2": {
+          "heading": "Ramki i obramowania",
+          "text": "Dodanie obramowania wokół fotografii naśladuje efekt fizycznej passe-partout i ramki. Biała passe-partout zapewnia wizualną przestrzeń oddechową i kieruje uwagę do wewnątrz. Szerokość obramowania w stosunku do obrazu wpływa na postrzegany «ciężar» fotografii. Prezentacje galeryjne zwykle używają szerszych passe-partout. Subtelny cień tworzy głębię, symulując sposób, w jaki oprawiony wydruk wisi na ścianie."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Siatka kompozycyjna",
+          "description": "Nakładki pomocnicze pomagają ocenić i poprawić umieszczenie obiektu w kadrze."
+        },
+        "1": {
+          "label": "Proporcje obrazu",
+          "description": "Stosunek szerokości do wysokości wpływa na odczucie obrazu — szersze proporcje sprawiają wrażenie kinematograficznych, kwadrat — wyważonych."
+        },
+        "2": {
+          "label": "Szerokość obramowania",
+          "description": "Szersze obramowania dodają powagi i skupienia; wąskie wydają się nowoczesne i minimalistyczne."
+        },
+        "3": {
+          "label": "Kolor passe-partout",
+          "description": "Biała passe-partout to klasyk fotografii artystycznej. Ciemna passe-partout podkreśla jaśniejsze obrazy. Kolorowa passe-partout może uzupełniać lub kontrastować."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Do postów na Instagramie przycinaj do 4:5 (portret), aby zająć maksymalną przestrzeń ekranu w kanale."
+        },
+        "1": {
+          "text": "Dodając obramowanie do druku, użyj szerokości passe-partout co najmniej 10% krótszego wymiaru obrazu dla profesjonalnego wyglądu."
+        },
+        "2": {
+          "text": "Złota spirala jest najskuteczniejsza dla obrazów z naturalnym przepływem — woda, drogi lub zakrzywiona architektura."
+        }
+      },
+      "tooltips": {
+        "Aspect Ratio": {
+          "term": "Proporcje obrazu",
+          "definition": "Stosunek szerokości do wysokości. Popularne proporcje to 3:2 (35 mm), 4:3 (M43) i 16:9 (panoramiczny)."
+        },
+        "Rule of Thirds": {
+          "term": "Zasada trójpodziału",
+          "definition": "Wytyczna kompozycji dzieląca kadr na 9 równych części. Umieszczanie obiektów na punktach przecięcia tworzy zainteresowanie wizualne."
+        },
+        "Golden Ratio": {
+          "term": "Złoty podział",
+          "definition": "Proporcja matematyczna (~1,618:1) występująca w naturze i sztuce. Tworzy estetycznie przyjemne podziały przestrzeni."
+        },
+        "Border Width": {
+          "term": "Szerokość obramowania",
+          "definition": "Grubość obramowania ramki w pikselach. Wychodzi poza obraz, zwiększając wymiary całkowite bez przycinania."
+        },
+        "Inner Mat": {
+          "term": "Wewnętrzna passe-partout",
+          "definition": "Druga, cieńsza ramka między zewnętrznym obramowaniem a obrazem — naśladuje ściętą wewnętrzną passe-partout fizycznej ramki."
+        },
+        "Corner Radius": {
+          "term": "Promień narożnika",
+          "definition": "Zaokrągla narożniki obramowania ramki. Zero daje ostre narożniki, wyższe wartości dają łagodniejszy, zaokrąglony wygląd."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Chcesz opublikować zdjęcie portretowe na Instagramie, aby zajmowało maksymalną przestrzeń w kanale. Jakich proporcji powinieneś użyć?",
+          "hint": "Posty portretowe na Instagramie używają proporcji wyższych niż szerokich.",
+          "successMessage": "Prawidłowo! 4:5 daje Ci maksymalną pionową przestrzeń w kanale Instagrama.",
+          "failureMessage": "Posty portretowe na Instagramie używają proporcji 4:5 (obróć 5:4 do orientacji portretowej) dla maksymalnej przestrzeni w kanale.",
+          "options": {
+            "0": { "label": "1:1 (kwadrat)" },
+            "1": { "label": "4:5 (portret)" },
+            "2": { "label": "16:9 (panoramiczny)" }
+          }
+        },
+        "1": {
+          "scenario": "Która siatka kompozycyjna jest najczęściej nauczanym punktem wyjścia dla początkujących?",
+          "hint": "Dzieli kadr na 9 równych części.",
+          "successMessage": "Zgadza się! Zasada trójpodziału to podstawowy przewodnik kompozycyjny.",
+          "failureMessage": "Zasada trójpodziału (siatka 3×3) to najczęstszy punkt wyjścia do nauki kompozycji.",
+          "options": {
+            "0": { "label": "Zasada trójpodziału" },
+            "1": { "label": "Złota spirala" },
+            "2": { "label": "Linie przekątne" }
+          }
+        },
+        "2": {
+          "scenario": "Przygotowujesz zdjęcie do druku galeryjnego na papierze 8×10. Które proporcje odpowiadają temu rozmiarowi druku?",
+          "hint": "8×10 upraszcza się do dobrze znanej proporcji.",
+          "successMessage": "Prawidłowo! 5:4 idealnie pasuje do wymiarów druku 8×10.",
+          "failureMessage": "8×10 upraszcza się do 4:5, czyli portretowej wersji 5:4.",
+          "options": {
+            "0": { "label": "3:2" },
+            "1": { "label": "5:4" },
+            "2": { "label": "4:3" }
+          }
+        },
+        "3": {
+          "scenario": "Zdjęcie krajobrazowe przedstawia kręty strumień prowadzący od pierwszego planu do gór w tle. Która nakładka siatki najlepiej pasuje do tego naturalnego przepływu?",
+          "hint": "Jeden typ siatki podąża naturalną zakrzywioną ścieżką.",
+          "successMessage": "Świetny wybór! Złota spirala idealnie podąża za krzywymi i liniami prowadzącymi.",
+          "failureMessage": "Złota spirala jest idealna dla obrazów z naturalnymi zakrzywionymi elementami jak rzeki, drogi czy linie brzegowe.",
+          "options": {
+            "0": { "label": "Krzyż centralny" },
+            "1": { "label": "Złota spirala" },
+            "2": { "label": "Siatka kwadratowa" }
+          }
+        },
+        "4": {
+          "scenario": "Chcesz czystą białą ramkę do prezentacji zdjęcia w mediach społecznościowych. Który preset ramki powinieneś użyć?",
+          "hint": "Pomyśl, który preset daje prostą białą ramkę.",
+          "successMessage": "Prawidłowo! Preset Biały dodaje 100px białą ramkę wokół Twojego zdjęcia.",
+          "failureMessage": "Preset Biały jest zaprojektowany do czystej, prostej białej prezentacji ramki.",
+          "options": {
+            "0": { "label": "Brak" },
+            "1": { "label": "Biały" },
+            "2": { "label": "Czarny" }
+          }
+        }
+      }
+    }
+  }
+}

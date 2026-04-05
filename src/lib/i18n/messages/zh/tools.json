@@ -1,0 +1,64 @@
+{
+  "tools": {
+    "fov-simulator": {
+      "name": "视场角模拟器",
+      "description": "比较不同焦距和传感器尺寸下的视场角"
+    },
+    "color-scheme-generator": {
+      "name": "配色方案生成器",
+      "description": "为摄影拍摄创建色彩调色板"
+    },
+    "exposure-simulator": {
+      "name": "曝光三角模拟器",
+      "description": "查看光圈、快门速度和 ISO 如何相互影响"
+    },
+    "dof-simulator": {
+      "name": "景深模拟器",
+      "description": "可视化光圈、焦距和距离如何影响背景虚化"
+    },
+    "focus-stacking-calculator": {
+      "name": "焦点堆叠计算器",
+      "description": "计算实现前后清晰的最佳对焦距离"
+    },
+    "equivalent-settings-calculator": {
+      "name": "等效参数计算器",
+      "description": "查找不同传感器画幅之间的等效光圈和焦距"
+    },
+    "hyperfocal-simulator": {
+      "name": "超焦距模拟器",
+      "description": "了解在哪里对焦才能获得从前景到无穷远的最大清晰度"
+    },
+    "shutter-speed-visualizer": {
+      "name": "快门速度可视化",
+      "description": "找到手持拍摄清晰照片的最低安全快门速度"
+    },
+    "nd-filter-calculator": {
+      "name": "ND滤镜计算器",
+      "description": "计算使用任何 ND 滤镜时的曝光时间"
+    },
+    "star-trail-calculator": {
+      "name": "星轨计算器",
+      "description": "计算拍摄清晰星点的最长曝光时间或规划星轨拍摄"
+    },
+    "perspective-compression-simulator": {
+      "name": "透视压缩模拟器",
+      "description": "查看焦距如何影响背景压缩效果"
+    },
+    "white-balance-visualizer": {
+      "name": "白平衡可视化",
+      "description": "查看色温如何影响您的照片"
+    },
+    "sensor-size-comparison": {
+      "name": "传感器尺寸对比",
+      "description": "直观比较相机传感器尺寸"
+    },
+    "frame-studio": {
+      "name": "构图工作室",
+      "description": "裁剪、加框和使用网格叠加构图照片"
+    },
+    "exif-viewer": {
+      "name": "EXIF 查看器",
+      "description": "查看任何照片的 EXIF 元数据和直方图 — 100% 本地处理"
+    }
+  }
+}

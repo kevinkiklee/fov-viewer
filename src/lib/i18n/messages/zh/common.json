@@ -1,0 +1,126 @@
+{
+  "common": {
+    "nav": {
+      "tools": "工具",
+      "glossary": "术语表",
+      "closeMenu": "关闭菜单",
+      "comingSoon": "即将推出",
+      "categories": {
+        "visualizer": "可视化工具",
+        "calculator": "计算器",
+        "reference": "参考资料",
+        "file-tool": "文件工具"
+      }
+    },
+    "footer": {
+      "glossary": "术语表",
+      "about": "关于",
+      "contact": "联系我们",
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "cookieSettings": "Cookie 设置"
+    },
+    "theme": {
+      "switchToLight": "切换到浅色模式",
+      "switchToDark": "切换到深色模式"
+    },
+    "actions": {
+      "copyImage": "复制图片",
+      "reset": "重置",
+      "copyLink": "复制链接",
+      "share": "分享",
+      "embed": "嵌入"
+    },
+    "toast": {
+      "linkCopied": "链接已复制！",
+      "imageCopied": "图片已复制！",
+      "failedToCopy": "复制失败",
+      "copied": "已复制！"
+    },
+    "learn": {
+      "title": "学习",
+      "openPanel": "打开学习面板",
+      "collapsePanel": "收起学习面板",
+      "whatIsThis": "这是什么？",
+      "howItWorks": "工作原理",
+      "keyFactors": "关键因素",
+      "proTip": "专业技巧",
+      "challenge": "挑战",
+      "hint": "提示：{hint}",
+      "completed": "已完成",
+      "checkAnswer": "检查答案",
+      "nextChallenge": "下一个挑战",
+      "tryAgain": "再试一次",
+      "resetAll": "全部重置",
+      "resetAllChallenges": "重置所有挑战",
+      "challengeNumber": "挑战 {number}"
+    },
+    "share": {
+      "title": "分享与嵌入",
+      "closeModal": "关闭分享窗口",
+      "directLink": "直接链接",
+      "markdown": "Markdown（Reddit、GitHub）",
+      "bbcode": "BBCode（论坛）",
+      "htmlEmbed": "HTML 嵌入",
+      "copy": "复制",
+      "copied": "已复制"
+    },
+    "draft": {
+      "banner": "预览 — 此工具尚未公开发布"
+    },
+    "fileUpload": {
+      "dropPrompt": "将图片拖放到此处或点击浏览",
+      "tapPrompt": "点击选择照片",
+      "privacy": "您的照片不会离开您的设备",
+      "selectedFile": "已选择文件：{fileName}。点击选择其他图片",
+      "defaultLabel": "您的照片"
+    },
+    "scene": {
+      "label": "场景：",
+      "yourPhoto": "您的照片",
+      "removePhoto": "移除照片",
+      "uploadPhoto": "上传照片"
+    },
+    "controls": {
+      "focalLength": "焦距",
+      "aperture": "光圈",
+      "distance": "距离",
+      "clickToEnterValue": "点击输入数值",
+      "decrease": "减小",
+      "increase": "增大"
+    },
+    "dof": {
+      "depthOfField": "景深：{totalDoF}，从 {nearFocus} 到 {farFocus}",
+      "infinity": "无穷远"
+    },
+    "ad": {
+      "closeAd": "关闭广告"
+    },
+    "tooltip": {
+      "infoLabel": "信息：{term}"
+    },
+    "notFound": {
+      "title": "页面未找到",
+      "message": "您访问的页面不存在或已被移动。",
+      "backHome": "返回首页",
+      "popularTools": "热门工具"
+    },
+    "breadcrumb": {
+      "home": "首页"
+    },
+    "relatedTools": {
+      "title": "相关工具"
+    },
+    "sensors": {
+      "mf_645": "中画幅 (54x40)",
+      "mf": "中画幅 (44x33)",
+      "mf_leica": "中画幅 (45x30)",
+      "ff": "全画幅",
+      "apsc_n": "APS-C (1.5x)",
+      "apsc_c": "APS-C (佳能)",
+      "m43": "M4/3 微型四三系统",
+      "1in": "1英寸传感器",
+      "phone": "旗舰智能手机 (1/1.3\")"
+    }
+  }
+}

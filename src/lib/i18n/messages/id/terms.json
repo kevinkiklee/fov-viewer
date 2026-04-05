@@ -1,0 +1,51 @@
+{
+  "terms": {
+    "title": "Ketentuan Layanan",
+    "effectiveDate": "Tanggal berlaku: 3 April 2026",
+    "sections": {
+      "acceptance": {
+        "title": "Penerimaan Ketentuan",
+        "body": "Dengan mengakses atau menggunakan www.phototools.io (\"PhotoTools\" atau \"Situs\"), Anda setuju untuk terikat oleh Ketentuan Layanan ini. Jika Anda tidak menyetujui ketentuan ini, mohon jangan gunakan Situs ini. Ketentuan ini berlaku untuk semua pengunjung dan pengguna PhotoTools. Versi Bahasa Inggris dari ketentuan ini adalah versi yang berwenang."
+      },
+      "descriptionOfService": {
+        "title": "Deskripsi Layanan",
+        "body": "PhotoTools menyediakan alat fotografi edukasi gratis, termasuk kalkulator interaktif, simulator, dan materi referensi. Situs ini ditujukan hanya untuk tujuan informasi dan edukasi. Semua alat disediakan tanpa biaya bagi pengguna dan dirancang untuk membantu fotografer belajar dan memahami konsep fotografi."
+      },
+      "noWarranty": {
+        "title": "Tanpa Jaminan",
+        "body": "PhotoTools disediakan \"apa adanya\" tanpa jaminan apa pun, baik tersurat maupun tersirat. Kami tidak menjamin bahwa alat, kalkulator, atau informasi di situs ini akurat, lengkap, atau sesuai untuk tujuan tertentu. Hasil dari alat kami adalah perkiraan dan tidak boleh diandalkan untuk keputusan kritis, pekerjaan profesional, atau situasi di mana presisi sangat penting. Selalu verifikasi perhitungan penting dengan profesional yang memenuhi syarat atau sumber yang berwenang."
+      },
+      "intellectualProperty": {
+        "title": "Kekayaan Intelektual",
+        "body": "Semua konten di PhotoTools — termasuk teks, grafik, desain alat, kode, dan materi edukasi — adalah milik PhotoTools kecuali dinyatakan lain. Anda diperbolehkan menggunakan alat dan materi referensi untuk keperluan pribadi dan edukasi. Reproduksi, redistribusi, atau penggunaan komersial konten situs tanpa izin tertulis sebelumnya dilarang."
+      },
+      "acceptableUse": {
+        "title": "Penggunaan yang Dapat Diterima",
+        "intro": "Saat menggunakan PhotoTools, Anda setuju untuk tidak:",
+        "items": {
+          "laws": "Melanggar undang-undang atau peraturan lokal, nasional, atau internasional yang berlaku",
+          "disrupt": "Mengganggu atau mengintervensi operasi, server, atau jaringan situs",
+          "scrape": "Meng-scrape, crawl, atau secara sistematis mengekstrak data dari situs tanpa izin tertulis sebelumnya",
+          "misrepresent": "Menyalahartikan identitas atau afiliasi Anda dalam komunikasi dengan PhotoTools",
+          "commercial": "Menggunakan situs untuk tujuan komersial apa pun di luar referensi pribadi tanpa izin"
+        }
+      },
+      "thirdPartyContent": {
+        "title": "Konten Pihak Ketiga",
+        "body": "PhotoTools menampilkan iklan pihak ketiga dan mungkin menyertakan tautan ke situs web eksternal. Kami tidak bertanggung jawab atas konten, akurasi, atau praktik pengiklan pihak ketiga atau situs yang ditautkan. Pencantuman iklan atau tautan eksternal apa pun bukan merupakan dukungan dari PhotoTools. Interaksi Anda dengan layanan pihak ketiga diatur oleh ketentuan dan kebijakan privasi mereka sendiri."
+      },
+      "limitationOfLiability": {
+        "title": "Batasan Tanggung Jawab",
+        "body": "Sejauh yang diizinkan oleh hukum, PhotoTools dan operatornya tidak bertanggung jawab atas kerusakan langsung, tidak langsung, insidental, khusus, atau konsekuensial yang timbul dari penggunaan Anda — atau ketidakmampuan untuk menggunakan — Situs atau alat-alatnya. Ini termasuk, tanpa batasan, kerusakan yang dihasilkan dari ketergantungan pada informasi atau perhitungan yang disediakan oleh PhotoTools. Penggunaan Situs sepenuhnya atas risiko Anda sendiri."
+      },
+      "changesToTerms": {
+        "title": "Perubahan pada Ketentuan",
+        "body": "Kami dapat mengubah Ketentuan Layanan ini kapan saja. Ketentuan yang diperbarui akan diposting di halaman ini dengan tanggal berlaku yang direvisi. Penggunaan PhotoTools yang berkelanjutan setelah perubahan diposting merupakan penerimaan Anda terhadap ketentuan yang direvisi. Kami menganjurkan Anda untuk meninjau ketentuan ini secara berkala."
+      },
+      "contact": {
+        "title": "Kontak",
+        "body": "Jika Anda memiliki pertanyaan tentang Ketentuan Layanan ini, silakan hubungi kami melalui <contactLink>halaman kontak</contactLink> kami."
+      }
+    }
+  }
+}

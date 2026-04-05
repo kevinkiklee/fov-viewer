@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "focus-stacking-calculator": {
+      "settings": "Ustawienia",
+      "camera": "Aparat i obiektyw",
+      "focalLength": "Ogniskowa",
+      "aperture": "Przysłona",
+      "sensor": "Matryca",
+      "depthRange": "Zakres głębokości",
+      "nearLimit": "Bliska granica",
+      "farLimit": "Daleka granica",
+      "overlap": "Nakładanie",
+      "overlapDescription": "Procent nakładania GoO między sąsiednimi ujęciami zapewniający płynne łączenie",
+      "results": "Wyniki",
+      "shotCount": "Wymagane ujęcia",
+      "totalDepth": "Całkowita głębokość",
+      "overlapMargin": "Margines nakładania",
+      "perShotDoF": "GoO na ujęcie",
+      "focusStep": "Krok ostrości",
+      "exportPlan": "Eksportuj plan",
+      "exportCSV": "Eksportuj jako CSV",
+      "exportJSON": "Eksportuj jako JSON",
+      "diagram": "Diagram focus stackingu",
+      "diagramNear": "Blisko",
+      "diagramFar": "Daleko",
+      "diagramCoverage": "Pokrycie",
+      "diagramFocusPoints": "Pkt ostrości",
+      "diagramShot": "Ujęcie {number}",
+      "diagramOverlap": "Strefa nakładania",
+      "diagramSharpZone": "Strefa ostrości",
+      "diagramSubject": "Obiekt",
+      "diagramSensor": "Matryca",
+      "infinity": "∞",
+      "distanceUnit": "m",
+      "warning": "Ostrzeżenie",
+      "tooFewShots": "Zakres głębokości mieści się w jednym ujęciu — stacking nie jest potrzebny",
+      "tooManyShots": "Ten plan wymaga wielu ujęć. Rozważ węższą przysłonę, aby zmniejszyć liczbę.",
+      "macroMode": "Makro",
+      "landscapeMode": "Krajobraz"
+    }
+  }
+}

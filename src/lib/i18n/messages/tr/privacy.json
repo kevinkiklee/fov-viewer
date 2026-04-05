@@ -1,0 +1,68 @@
+{
+  "privacy": {
+    "title": "Gizlilik Politikası",
+    "effectiveDate": "Yürürlük tarihi: 3 Nisan 2026",
+    "sections": {
+      "overview": {
+        "title": "Genel Bakış",
+        "body": "PhotoTools, interaktif hesaplayıcılar, simülatörler ve referans araçları sunan ücretsiz bir eğitim amaçlı fotoğrafçılık kaynağı olan www.phototools.io'yu işletmektedir. Bu Gizlilik Politikası, sitemizi ziyaret ettiğinizde veya kullandığınızda bilgileri nasıl topladığımızı, kullandığımızı ve işlediğimizi açıklamaktadır. PhotoTools'u kullanarak bu politikada açıklanan uygulamaları kabul etmiş olursunuz. Not: Bu Gizlilik Politikasının İngilizce sürümü bağlayıcıdır."
+      },
+      "informationWeCollect": {
+        "title": "Topladığımız Bilgiler",
+        "intro": "Siteyi işletmek ve geliştirmek için minimum düzeyde bilgi topluyoruz:",
+        "analytics": "<strong>Analitik:</strong> Ziyaretçilerin siteyi nasıl kullandığını anlamak için Google Analytics kullanıyoruz (ör. ziyaret edilen sayfalar, sayfada geçirilen süre, cihaz türü). Analitik verileri anonimleştirilmiştir — analitik yoluyla kişisel olarak tanımlanabilir bilgi toplamıyoruz. IP adresleri depolanmadan önce anonimleştirilir.",
+        "contactForm": "<strong>İletişim formu:</strong> İletişim formunu gönderirseniz adınızı, e-posta adresinizi, konuyu ve mesajınızı topluyoruz. Bu bilgiler yalnızca sorgunuza yanıt vermek için kullanılır ve e-posta teslimi dışında saklanmaz — bir veritabanına kaydedilmez veya uzun süreli muhafaza edilmez.",
+        "noAccounts": "<strong>Hesap yok:</strong> PhotoTools kullanıcı kaydı veya hesap gerektirmez. Şifre veya ödeme bilgisi toplamıyoruz."
+      },
+      "cookies": {
+        "title": "Çerezler",
+        "intro": "PhotoTools, analitik ve reklam işlevselliğini desteklemek için çerezler kullanır. Özellikle:",
+        "analyticsCookies": "<strong>Google Analytics çerezleri</strong>, site kullanımını toplu ve anonimleştirilmiş biçimde izler. Bu çerezler hangi araçların en çok kullanıldığını ve siteyi nasıl geliştirebileceğimizi anlamamıza yardımcı olur.",
+        "adCookies": "<strong>Üçüncü taraf reklam çerezleri</strong>, reklam ağı ortaklarımız tarafından ilgili reklamlar sunmak ve reklam performansını ölçmek amacıyla ayarlanabilir.",
+        "control": "Çerezleri tarayıcı ayarlarınız üzerinden kontrol edebilir veya devre dışı bırakabilirsiniz. Çerezleri devre dışı bırakmanın bazı özelliklerin işlevselliğini etkileyebileceğini unutmayın."
+      },
+      "thirdPartyAdvertising": {
+        "title": "Üçüncü Taraf Reklamcılık",
+        "body": "PhotoTools, üçüncü taraf reklam ağları tarafından sunulan reklamlar gösterir. Bu ağlar, tarama geçmişinize ve ilgi alanlarınıza dayalı reklamlar sunmak için çerezler ve benzer izleme teknolojileri kullanabilir (ilgi alanına dayalı reklamcılık). Bu üçüncü taraf reklam ağlarının veri uygulamalarını kontrol etmiyoruz. Daha fazla bilgi için lütfen bu ağların gizlilik politikalarını inceleyin veya <naiLink>Network Advertising Initiative vazgeçme sayfasını</naiLink> ziyaret edin."
+      },
+      "googleAdSense": {
+        "title": "Google AdSense",
+        "body1": "PhotoTools, reklam göstermek için Google AdSense kullanır. Google AdSense, bu siteye veya diğer web sitelerine önceki ziyaretlerinize dayalı reklamlar sunmak için çerezler ve web işaretçileri kullanabilir. Google'ın reklam çerezlerini kullanması, Google'ın ve ortaklarının tarama alışkanlıklarınıza dayalı reklamlar sunmasını sağlar.",
+        "body2": "Kişiselleştirilmiş reklamcılıktan <adsSettingsLink>Google Reklam Ayarları</adsSettingsLink> sayfasını ziyaret ederek vazgeçebilirsiniz. Google'ın verileri nasıl kullandığı hakkında daha fazla bilgi için <partnerSitesLink>Google'ın ortaklarımızın sitelerini kullandığınızda verileri nasıl kullandığı</partnerSitesLink> sayfasına bakın."
+      },
+      "cookieConsent": {
+        "title": "Çerez Onayı",
+        "body1": "PhotoTools'u ilk ziyaret ettiğinizde, zorunlu olmayan çerezleri kabul etmenize veya reddetmenize olanak tanıyan bir çerez onay başlığı gösterilir. Bu başlık, IAB Şeffaflık ve Onay Çerçevesi (TCF) v2.3'ü destekleyen Google sertifikalı bir Onay Yönetim Platformu olan CookieYes tarafından desteklenmektedir.",
+        "body2": "Onay tercihlerinizi dilediğiniz zaman alt bilgideki çerez ayarları bağlantısına tıklayarak değiştirebilirsiniz. Reklam çerezlerini reddederseniz yine reklamlar görürsünüz, ancak bunlar tarama geçmişinize göre kişiselleştirilmez."
+      },
+      "ccpa": {
+        "title": "Kaliforniya Sakinleri (CCPA)",
+        "body": "Kaliforniya Tüketici Gizlilik Yasası (CCPA) kapsamında, Kaliforniya sakinlerinin hangi kişisel bilgilerin toplandığını bilme, silinmesini talep etme ve satışından vazgeçme hakları vardır. PhotoTools kişisel bilgi satmaz. Reklam ortaklarımız tarafından kullanılan reklam çerezleri CCPA kapsamında bir \"satış\" teşkil edebilir — çerez onay başlığı aracılığıyla veya <contactLink>iletişim sayfamız</contactLink> üzerinden bize ulaşarak vazgeçebilirsiniz."
+      },
+      "dataSharing": {
+        "title": "Veri Paylaşımı",
+        "intro": "Kişisel bilgilerinizi üçüncü taraflara satmıyoruz, takas etmiyoruz veya kiralamıyoruz. Verileri yalnızca aşağıdaki sınırlı durumlarda paylaşıyoruz:",
+        "analytics": "Site trafiğini ve kullanım kalıplarını analiz etmek için <strong>Google Analytics</strong> ile, Google'ın gizlilik politikasına tabidir.",
+        "advertising": "Yukarıda Üçüncü Taraf Reklamcılık bölümünde açıklandığı şekilde <strong>reklam ortakları</strong> ile.",
+        "contactForm": "İletişim formu gönderimlerini herhangi bir üçüncü tarafla paylaşmıyoruz."
+      },
+      "childrensPrivacy": {
+        "title": "Çocukların Gizliliği",
+        "body": "PhotoTools 13 yaşın altındaki çocuklara yönelik değildir. 13 yaşın altındaki çocuklardan bilerek kişisel bilgi toplamıyoruz. 13 yaşın altında bir çocuğun bize kişisel bilgi sağladığını düşünüyorsanız, lütfen kaldırabilmemiz için bizimle iletişime geçin."
+      },
+      "yourRights": {
+        "title": "Haklarınız",
+        "body1": "Bulunduğunuz konuma bağlı olarak, GDPR (Avrupa Birliği) veya CCPA (Kaliforniya) gibi yasalar kapsamında kişisel verilerinizle ilgili haklara sahip olabilirsiniz.",
+        "body2": "PhotoTools minimum düzeyde kişisel veri topladığından — ve iletişim formu gönderimlerini uzun süreli saklamadığından — çoğu talep kolayca karşılanabilir. Çerezleri tarayıcı ayarlarınızdan istediğiniz zaman temizleyebilirsiniz. Herhangi bir veri hakkını kullanmak veya gizlilik talebi göndermek için lütfen <contactLink>iletişim sayfamızı</contactLink> kullanın."
+      },
+      "changesToPolicy": {
+        "title": "Bu Politikadaki Değişiklikler",
+        "body": "Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Güncelleme yapıldığında, güncellenmiş politika revize edilmiş yürürlük tarihiyle birlikte bu sayfada yayınlanacaktır. Bu politikayı düzenli olarak incelemenizi tavsiye ederiz. Herhangi bir değişiklikten sonra PhotoTools'u kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir."
+      },
+      "contact": {
+        "title": "İletişim",
+        "body": "Bu Gizlilik Politikası veya verilerinizi nasıl işlediğimiz hakkında sorularınız varsa, lütfen <contactLink>iletişim sayfamız</contactLink> aracılığıyla bize ulaşın."
+      }
+    }
+  }
+}

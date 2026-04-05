@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "focus-stacking-calculator": {
+      "settings": "Cài đặt",
+      "camera": "Máy ảnh & Ống kính",
+      "focalLength": "Tiêu cự",
+      "aperture": "Khẩu độ",
+      "sensor": "Cảm biến",
+      "depthRange": "Phạm vi chiều sâu",
+      "nearLimit": "Giới hạn gần",
+      "farLimit": "Giới hạn xa",
+      "overlap": "Chồng lấp",
+      "overlapDescription": "Phần trăm chồng lấp DoF giữa các ảnh liền kề để đảm bảo ghép liền mạch",
+      "results": "Kết quả",
+      "shotCount": "Số ảnh cần",
+      "totalDepth": "Tổng chiều sâu",
+      "overlapMargin": "Biên chồng lấp",
+      "perShotDoF": "DoF mỗi ảnh",
+      "focusStep": "Bước lấy nét",
+      "exportPlan": "Xuất kế hoạch",
+      "exportCSV": "Xuất CSV",
+      "exportJSON": "Xuất JSON",
+      "diagram": "Sơ đồ chồng lấy nét",
+      "diagramNear": "Gần",
+      "diagramFar": "Xa",
+      "diagramCoverage": "Bao phủ",
+      "diagramFocusPoints": "Điểm nét",
+      "diagramShot": "Ảnh {number}",
+      "diagramOverlap": "Vùng chồng lấp",
+      "diagramSharpZone": "Vùng nét",
+      "diagramSubject": "Chủ thể",
+      "diagramSensor": "Cảm biến",
+      "infinity": "∞",
+      "distanceUnit": "m",
+      "warning": "Cảnh báo",
+      "tooFewShots": "Phạm vi chiều sâu nằm trong một ảnh đơn — không cần chồng",
+      "tooManyShots": "Kế hoạch này cần nhiều ảnh. Hãy xem xét khẩu độ hẹp hơn để giảm số lượng.",
+      "macroMode": "Macro",
+      "landscapeMode": "Phong cảnh"
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "education": {
+    "histogram": {
+      "beginner": "Histogram to wykres pokazujący, jak jasne lub ciemne są piksele na Twoim zdjęciu. Lewa strona reprezentuje cienie (ciemne obszary), środek — tony średnie, a prawa strona — światła (jasne obszary). Jeśli wykres jest skupiony po jednej stronie, Twoje zdjęcie może być niedoświetlone lub prześwietlone.",
+      "deeper": "Histogram przedstawia liczbę pikseli (oś pionowa) w funkcji poziomu jasności (oś pozioma, 0-255 dla obrazów 8-bitowych). W trybie luminancji jasność każdego piksela jest obliczana jako średnia ważona kanałów czerwonego, zielonego i niebieskiego (zwykle 0,299R + 0,587G + 0,114B, odpowiadająca ludzkiemu postrzeganiu). Tryb RGB pokazuje trzy oddzielne rozkłady, ujawniając, które kanały kolorów mogą niezależnie się obcinać — kanał czerwony wypchnięty do 255, podczas gdy niebieski jest w porządku, wskazuje na obcinanie świateł w ciepłych tonach, np. niebo o zachodzie słońca. «Obcinanie» (clipping) występuje, gdy wartości pikseli trafiają na granicę 0 lub 255, co oznacza, że szczegóły cieni lub świateł zostały nieodwracalnie utracone. Obcinanie czerni (piksele na 0) traci szczegóły cieni; obcinanie bieli (piksele na 255) traci szczegóły świateł. Fotografowanie w RAW daje około 2-3 dodatkowe stopnie odzyskiwalnego zapasu w światłach ponad to, co pokazuje histogram JPEG, dlatego wielu fotografów «naświetla w prawo» (ETTR) — przesuwając ekspozycję jak najjaśniej bez obcinania danych RAW.",
+      "keyFactors": {
+        "0": {
+          "label": "Rozkład tonalny",
+          "description": "Ogólny kształt mówi, czy obraz jest ciemny (ciężki od lewej), jasny (ciężki od prawej) czy zrównoważony (rozłożony na całym zakresie)."
+        },
+        "1": {
+          "label": "Obcinanie",
+          "description": "Szpilki na skrajnie lewej lub prawej krawędzi wskazują utratę szczegółów w cieniach lub światłach."
+        },
+        "2": {
+          "label": "Separacja kanałów",
+          "description": "Tryb RGB ujawnia zachowanie poszczególnych kanałów kolorów — przydatne do wykrywania obcinania specyficznego dla koloru w nasyconych scenach."
+        },
+        "3": {
+          "label": "Zakres dynamiczny",
+          "description": "Histogram rozciągający się na całą szerokość bez obcinania wskazuje dobre wykorzystanie dostępnego zakresu dynamicznego."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Nie istnieje «idealny» kształt histogramu. Zdjęcie czarnego kota na ciemnej kanapie powinno być ciężkie od lewej. Oceniaj histogram w kontekście twórczego zamiaru, nie idealnej krzywej."
+        },
+        "1": {
+          "text": "Sprawdź tryb nakładki RGB dla zdjęć zachodów słońca i neonów. Kanał czerwony często obcina się na długo przed niebieskim, powodując utratę szczegółów w ciepłych światłach, nawet gdy histogram luminancji wygląda dobrze."
+        },
+        "2": {
+          "text": "Jeśli widzisz ostrzeżenia o obcinaniu na obu końcach jednocześnie, scena prawdopodobnie przekracza zakres dynamiczny Twojego aparatu. Rozważ braketing do HDR lub użycie filtrów połówkowych ND."
+        }
+      },
+      "tooltips": {
+        "View Mode": {
+          "term": "Tryb widoku",
+          "definition": "Luminancja pokazuje ogólną jasność. Nakładka RGB pokazuje wszystkie trzy kanały kolorów nałożone. Wszystkie kanały pokazuje RGB plus luminancję razem."
+        },
+        "Shadows": {
+          "term": "Cienie",
+          "definition": "Najbardziej lewy region histogramu (mniej więcej 0-85), reprezentujący najciemniejsze tony w obrazie."
+        },
+        "Midtones": {
+          "term": "Tony średnie",
+          "definition": "Środkowy region (mniej więcej 86-170), reprezentujący średnią jasność — tony skóry i większość naturalnych tekstur mieszczą się tutaj."
+        },
+        "Highlights": {
+          "term": "Światła",
+          "definition": "Najbardziej prawy region (mniej więcej 171-255), reprezentujący najjaśniejsze tony: niebo, odbicia i źródła światła."
+        },
+        "Black Clipping": {
+          "term": "Obcinanie czerni",
+          "definition": "Procent pikseli o jasności 0 (czysta czerń). Wysokie wartości oznaczają, że szczegóły cieni zostały utracone i nie mogą być odzyskane."
+        },
+        "White Clipping": {
+          "term": "Obcinanie bieli",
+          "definition": "Procent pikseli o jasności 255 (czysta biel). Wysokie wartości oznaczają, że szczegóły świateł zostały wypalone."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Przesyłasz zdjęcie i histogram jest mocno wypchnięty w lewo, z prawie niczym po prawej stronie. Co to mówi o obrazie?",
+          "hint": "Lewo = ciemny, prawo = jasny.",
+          "successMessage": "Prawidłowo! Histogram ciężki od lewej oznacza, że obraz składa się głównie z ciemnych tonów — może być niedoświetlony lub może to być celowo ciemny/niskokluczowy obraz.",
+          "failureMessage": "Histogram skupiony po lewej wskazuje, że obraz jest przeważnie ciemny. Często oznacza to niedoświetlenie.",
+          "options": {
+            "0": { "label": "Obraz jest niedoświetlony lub bardzo ciemny" },
+            "1": { "label": "Obraz jest prześwietlony lub bardzo jasny" },
+            "2": { "label": "Obraz ma idealną ekspozycję" }
+          }
+        },
+        "1": {
+          "scenario": "Którego trybu widoku powinieneś użyć, aby zobaczyć ogólny rozkład jasności zdjęcia na jednym wykresie?",
+          "hint": "Jeden tryb łączy wszystkie informacje o kolorze w jedną krzywą jasności.",
+          "successMessage": "Zgadza się! Tryb luminancji pokazuje pojedynczą krzywą reprezentującą ogólną postrzeganą jasność.",
+          "failureMessage": "Tryb luminancji to najprostszy widok — łączy R, G, B w jedną krzywą jasności.",
+          "options": {
+            "0": { "label": "Luminancja" },
+            "1": { "label": "Nakładka RGB" },
+            "2": { "label": "Wszystkie kanały" }
+          }
+        },
+        "2": {
+          "scenario": "Sfotografowałeś żywy zachód słońca i histogram luminancji wygląda dobrze, ale po przełączeniu na Nakładkę RGB widzisz, że kanał czerwony szczytuje na skrajnie prawym końcu. Co się dzieje?",
+          "hint": "Poszczególne kanały kolorów mogą się obcinać nawet gdy ogólna luminancja tego nie robi.",
+          "successMessage": "Dokładnie! Kanał czerwony się obcina — światła zachodu traciły szczegóły w czerwonych tonach, mimo że ogólna jasność wygląda akceptowalnie. Tracisz niuanse ciepłych kolorów.",
+          "failureMessage": "Kanał czerwony obcina się niezależnie. Nasycone ciepłe światła (zachody słońca, ogień) często wypychają czerwony do 255, podczas gdy zielony i niebieski są w porządku, tracąc szczegóły kolorów w tych tonach.",
+          "options": {
+            "0": { "label": "Obcinanie kanału czerwonego — utrata szczegółów w ciepłych światłach" },
+            "1": { "label": "Obraz jest ogólnie prześwietlony" },
+            "2": { "label": "Balans bieli jest nieprawidłowy" }
+          }
+        },
+        "3": {
+          "scenario": "Narzędzie raportuje 2,3% obcinania czerni i 0,1% obcinania bieli. Czy powinieneś dostosować ekspozycję?",
+          "hint": "Małe ilości obcinania są normalne — czysto czarne cienie i lustrzane odbicia świetlne są oczekiwane.",
+          "successMessage": "Dobra ocena! 2,3% obcinania czerni jest umiarkowane i często to po prostu głębokie cienie lub ciemne krawędzie. 0,1% obcinania bieli to prawdopodobnie lustrzane odbicia (odbicia słoneczne). Ta ekspozycja jest w porządku do większości celów.",
+          "failureMessage": "Te procenty obcinania są dość małe. Niewielkie obcinanie czerni w głębokich cieniach i drobne obcinanie bieli z lustrzanych odblasków jest normalne i oczekiwane. Nie trzeba korygować.",
+          "options": {
+            "0": { "label": "Zwiększ ekspozycję, aby zmniejszyć obcinanie czerni" },
+            "1": { "label": "To jest w porządku — małe obcinanie w cieniach i lustrzanych światłach jest normalne" },
+            "2": { "label": "Zmniejsz ekspozycję, aby wyeliminować obcinanie bieli" }
+          }
+        },
+        "4": {
+          "scenario": "Fotografujesz scenę o wysokim kontraście: pannę młodą w białej sukni stojącą w ciemnej katedrze. Histogram pokazuje silne szczyty na obu krańcach z luką w tonach średnich. Jak powinieneś to obsłużyć?",
+          "hint": "Gdy zakres dynamiczny sceny przekracza zakres matrycy, potrzebujesz techniki wieloekspozycyjnej.",
+          "successMessage": "Doskonale! Ten bimodalny histogram wskazuje, że scena przekracza zakres dynamiczny Twojej matrycy. Braketing ekspozycji (HDR) uchwytuje zarówno ciemne wnętrze, jak i szczegóły jasnej sukni. Alternatywnie, użyj lampy wypełniającej, aby podnieść cienie.",
+          "failureMessage": "Bimodalny histogram (szczyty na obu krańcach, pusty środek) oznacza, że scena ma większy zakres dynamiczny niż Twoja matryca może uchwycić w jednym ujęciu. Wykonaj braketing ekspozycji do HDR lub użyj lampy wypełniającej, aby zmniejszyć stosunek kontrastu.",
+          "options": {
+            "0": { "label": "Braketing ekspozycji do HDR lub użyj lampy wypełniającej" },
+            "1": { "label": "Naświetl na tony średnie i licz na najlepsze" },
+            "2": { "label": "Zmień na czarno-biały, aby ukryć problem" }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "focus-stacking-calculator": {
+      "settings": "Ayarlar",
+      "camera": "Kamera ve Objektif",
+      "focalLength": "Odak Uzaklığı",
+      "aperture": "Diyafram",
+      "sensor": "Sensör",
+      "depthRange": "Derinlik Aralığı",
+      "nearLimit": "Yakın Sınır",
+      "farLimit": "Uzak Sınır",
+      "overlap": "Örtüşme",
+      "overlapDescription": "Sorunsuz birleştirme için komşu çekimler arasındaki DoF örtüşme yüzdesi",
+      "results": "Sonuçlar",
+      "shotCount": "Gerekli Çekim",
+      "totalDepth": "Toplam Derinlik",
+      "overlapMargin": "Örtüşme Payı",
+      "perShotDoF": "Çekim Başına DoF",
+      "focusStep": "Odak Adımı",
+      "exportPlan": "Planı Dışa Aktar",
+      "exportCSV": "CSV olarak dışa aktar",
+      "exportJSON": "JSON olarak dışa aktar",
+      "diagram": "Odak İstifleme Diyagramı",
+      "diagramNear": "Yakın",
+      "diagramFar": "Uzak",
+      "diagramCoverage": "Kapsam",
+      "diagramFocusPoints": "Odak nk.",
+      "diagramShot": "Çekim {number}",
+      "diagramOverlap": "Örtüşme bölgesi",
+      "diagramSharpZone": "Net bölge",
+      "diagramSubject": "Konu",
+      "diagramSensor": "Sensör",
+      "infinity": "∞",
+      "distanceUnit": "m",
+      "warning": "Uyarı",
+      "tooFewShots": "Derinlik aralığı tek çekim içinde — istifleme gerekmez",
+      "tooManyShots": "Bu plan çok sayıda çekim gerektiriyor. Sayıyı azaltmak için daha dar bir diyafram düşünün.",
+      "macroMode": "Makro",
+      "landscapeMode": "Manzara"
+    }
+  }
+}

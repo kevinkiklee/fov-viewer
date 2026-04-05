@@ -1,0 +1,64 @@
+{
+  "tools": {
+    "fov-simulator": {
+      "name": "Görüş Alanı Simülatörü",
+      "description": "Farklı odak uzaklıkları ve sensör boyutlarında görüş alanını karşılaştırın"
+    },
+    "color-scheme-generator": {
+      "name": "Renk Şeması Üreteci",
+      "description": "Fotoğraf çekimleri için renk paletleri oluşturun"
+    },
+    "exposure-simulator": {
+      "name": "Pozlama Üçgeni Simülatörü",
+      "description": "Diyafram, enstantane hızı ve ISO'nun etkileşimini görün"
+    },
+    "dof-simulator": {
+      "name": "Alan Derinliği Simülatörü",
+      "description": "Diyafram, odak uzaklığı ve mesafenin arka plan bulanıklığını nasıl etkilediğini görselleştirin"
+    },
+    "focus-stacking-calculator": {
+      "name": "Odak İstifleme Hesaplayıcı",
+      "description": "Önden arkaya netlik için optimal odak mesafelerini hesaplayın"
+    },
+    "equivalent-settings-calculator": {
+      "name": "Eşdeğer Ayar Hesaplayıcı",
+      "description": "Farklı sensör formatlarında eşdeğer diyafram ve odak uzaklığını bulun"
+    },
+    "hyperfocal-simulator": {
+      "name": "Hiperfocal Mesafe Simülatörü",
+      "description": "Ön plandan sonsuza kadar maksimum netlik için nereye odaklanacağınızı öğrenin"
+    },
+    "shutter-speed-visualizer": {
+      "name": "Enstantane Hızı Görselleştirici",
+      "description": "Elde net çekimler için minimum güvenli enstantane hızını bulun"
+    },
+    "nd-filter-calculator": {
+      "name": "ND Filtre Hesaplayıcı",
+      "description": "Herhangi bir ND filtre ile pozlama süresini hesaplayın"
+    },
+    "star-trail-calculator": {
+      "name": "Yıldız İzi Hesaplayıcı",
+      "description": "Net yıldızlar için maksimum pozlamayı hesaplayın veya yıldız izi çekimlerini planlayın"
+    },
+    "perspective-compression-simulator": {
+      "name": "Perspektif Sıkıştırma Simülatörü",
+      "description": "Odak uzaklığının arka plan sıkıştırmasını nasıl etkilediğini görün"
+    },
+    "white-balance-visualizer": {
+      "name": "Beyaz Dengesi Görselleştirici",
+      "description": "Renk sıcaklığının fotoğraflarınızı nasıl etkilediğini görün"
+    },
+    "sensor-size-comparison": {
+      "name": "Sensör Boyutu Karşılaştırma",
+      "description": "Kamera sensör boyutlarını görsel olarak karşılaştırın"
+    },
+    "frame-studio": {
+      "name": "Çerçeve Stüdyosu",
+      "description": "Fotoğrafları kırpın, çerçeveleyin ve ızgara kaplamaları ile düzenleyin"
+    },
+    "exif-viewer": {
+      "name": "EXIF Görüntüleyici",
+      "description": "Herhangi bir fotoğrafın EXIF meta verilerini ve histogramını görüntüleyin — %100 istemci tarafı"
+    }
+  }
+}

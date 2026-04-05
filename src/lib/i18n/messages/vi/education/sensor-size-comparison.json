@@ -1,0 +1,125 @@
+{
+  "education": {
+    "sensor-size-comparison": {
+      "beginner": "Cảm biến máy ảnh có nhiều kích thước vật lý khác nhau, từ chip medium-format lớn dùng trong máy studio cho đến cảm biến nhỏ trong smartphone. Cảm biến lớn hơn thu được nhiều ánh sáng hơn, tạo ít nhiễu hơn, và dễ xóa phông hậu cảnh hơn. Kích thước cảm biến là một trong những yếu tố lớn nhất phân biệt các loại máy ảnh.",
+      "deeper": {
+        "0": {
+          "heading": "Cách hoạt động",
+          "text": "Kích thước cảm biến ảnh hưởng đến nhiếp ảnh theo nhiều cách liên kết. Cảm biến lớn hơn có diện tích rộng hơn để thu photon, cải thiện tỷ lệ tín hiệu/nhiễu và dải động. Kích thước cảm biến là một trong những khác biệt quan trọng nhất giữa các loại máy ảnh — từ máy studio medium format đến cảm biến smartphone."
+        },
+        "1": {
+          "heading": "Hệ số crop",
+          "text": "\"Hệ số crop\" mô tả cách cảm biến so sánh với tiêu chuẩn full-frame 35mm. Cảm biến APS-C với hệ số crop 1.5x cho cùng góc nhìn với ống 35mm như máy full-frame với ống 52.5mm. Hệ số crop này cũng nhân chiều sâu trường ảnh hiệu dụng — cảm biến nhỏ hơn dường như cho nhiều DoF hơn ở cùng khung hình vì bạn cần ống rộng hơn (ngắn hơn) để phù hợp góc nhìn."
+        },
+        "2": {
+          "heading": "Mật độ điểm ảnh",
+          "text": "Mật độ điểm ảnh (bước điểm ảnh) đo mức độ điểm ảnh được sắp xếp chặt trên cảm biến. Đóng gói nhiều megapixel hơn trên cảm biến nhỏ hơn thu nhỏ mỗi điểm thu sáng, giảm khả năng thu sáng mỗi pixel. Cảm biến full-frame 24MP có pixel ~6µm trong khi cảm biến APS-C 24MP có pixel ~4µm, đó là lý do cảm biến full-frame thường hoạt động tốt hơn ở ISO cao."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Kích thước vật lý",
+          "description": "Chiều rộng và cao tính bằng millimet xác định tổng diện tích thu sáng và góc nhìn cho ống kính nhất định."
+        },
+        "1": {
+          "label": "Hệ số crop",
+          "description": "Tỷ lệ đường chéo full-frame so với đường chéo cảm biến. Nhân với tiêu cự cho tiêu cự \"tương đương\"."
+        },
+        "2": {
+          "label": "Mật độ điểm ảnh",
+          "description": "Mức độ sắp xếp chặt của điểm ảnh. Bước điểm ảnh nhỏ hơn nghĩa là nhiều chi tiết hơn nhưng ít ánh sáng mỗi pixel, ảnh hưởng hiệu suất nhiễu."
+        },
+        "3": {
+          "label": "Diện tích cảm biến",
+          "description": "Tổng diện tích mm². Cảm biến medium format 44x33mm (Fujifilm GFX, Hasselblad X) có diện tích gấp khoảng 1.7x full frame, trong khi chip medium format 54x40mm lớn hơn gấp khoảng 2.5x. Full frame gấp khoảng 13x diện tích cảm biến smartphone cao cấp."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Sử dụng chế độ overlay để thấy chính xác một cảm biến lớn hơn bao nhiêu so với cảm biến khác — sự khác biệt diện tích thường ấn tượng hơn con số gợi ý."
+        },
+        "1": {
+          "text": "Chuyển sang chế độ mật độ điểm ảnh và nhập độ phân giải máy ảnh để so sánh bước điểm ảnh. Nếu máy ảnh có mật độ điểm ảnh rất cao, bạn có thể gặp giới hạn nhiễu xạ ở khẩu độ rộng hơn dự kiến."
+        },
+        "2": {
+          "text": "Khi so sánh máy ảnh, diện tích cảm biến quan trọng hơn số megapixel cho hiệu suất nhiễu. Cảm biến full-frame 20MP thường vượt trội cảm biến APS-C 40MP ở ISO cao."
+        }
+      },
+      "tooltips": {
+        "Sensor": {
+          "term": "Cảm biến",
+          "definition": "Bật/tắt từng định dạng cảm biến để đưa vào so sánh trực quan và bảng dữ liệu."
+        },
+        "Display Mode": {
+          "term": "Chế độ hiển thị",
+          "definition": "Overlay hiển thị tất cả cảm biến căn giữa cùng điểm. Cạnh nhau đặt chúng bên cạnh nhau cùng tỷ lệ. Mật độ điểm ảnh trực quan hóa mức độ sắp xếp chặt của pixel."
+        },
+        "Resolution": {
+          "term": "Độ phân giải",
+          "definition": "Tổng số megapixel dùng để tính bước điểm ảnh trong chế độ mật độ. Nhiều megapixel hơn trên cùng kích thước cảm biến nghĩa là pixel riêng lẻ nhỏ hơn."
+        },
+        "Crop Factor": {
+          "term": "Hệ số crop",
+          "definition": "Tỷ lệ đường chéo full-frame 35mm so với đường chéo cảm biến này. Hệ số crop 1.5x nghĩa là ống 50mm cho khung hình giống ống 75mm trên full frame."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Cảm biến full-frame đo 36×24mm. Cảm biến APS-C có hệ số crop 1.5x. Chiều rộng xấp xỉ của cảm biến APS-C là bao nhiêu?",
+          "hint": "Chia chiều rộng full-frame cho hệ số crop.",
+          "successMessage": "Chính xác! 36mm ÷ 1.5 ≈ 24mm. Cảm biến APS-C khoảng 24×16mm, cho diện tích khoảng 44% full-frame.",
+          "failureMessage": "Chia chiều rộng full-frame (36mm) cho hệ số crop (1.5x): 36 ÷ 1.5 = 24mm.",
+          "options": {
+            "0": { "label": "24mm" },
+            "1": { "label": "30mm" },
+            "2": { "label": "18mm" }
+          }
+        },
+        "1": {
+          "scenario": "Bạn gắn ống 50mm trên máy ảnh cảm biến hệ số crop 2.0x. Tiêu cự tương đương full-frame bạn được là bao nhiêu?",
+          "hint": "Nhân tiêu cự với hệ số crop.",
+          "successMessage": "Đúng! 50mm × 2.0 = tương đương 100mm. Đây là lý do máy Micro Four Thirds phổ biến cho chụp tele — bạn được thêm tầm với từ mọi ống kính.",
+          "failureMessage": "Nhân tiêu cự ống kính với hệ số crop: 50mm × 2.0 = tương đương 100mm.",
+          "options": {
+            "0": { "label": "25mm" },
+            "1": { "label": "75mm" },
+            "2": { "label": "100mm" }
+          }
+        },
+        "2": {
+          "scenario": "Hai máy ảnh đều 24 megapixel — một full-frame (36×24mm) và một APS-C (24×16mm). Máy nào có hiệu suất nhiễu ISO cao tốt hơn, và tại sao?",
+          "hint": "Nghĩ về cách cùng số pixel trải trên diện tích cảm biến khác nhau ảnh hưởng kích thước pixel riêng lẻ.",
+          "successMessage": "Chính xác! Cảm biến full-frame trải 24MP trên diện tích lớn hơn, nên mỗi pixel lớn hơn vật lý (~6µm so với ~4µm bước) và thu nhiều photon hơn, tạo ít nhiễu hơn.",
+          "failureMessage": "Cảm biến full-frame thắng — cùng số megapixel trên diện tích lớn hơn nghĩa là pixel lớn hơn thu nhiều ánh sáng hơn, tạo ít nhiễu ở ISO cao.",
+          "options": {
+            "0": { "label": "Full frame — pixel lớn hơn thu nhiều ánh sáng hơn" },
+            "1": { "label": "APS-C — cảm biến nhỏ hơn hiệu quả hơn" },
+            "2": { "label": "Cùng nhiễu — số megapixel là quan trọng" }
+          }
+        },
+        "3": {
+          "scenario": "Nhìn vào bảng so sánh, định dạng cảm biến nào có hệ số crop gần nhất 2.0x?",
+          "hint": "Hệ số crop là đường chéo full-frame chia cho đường chéo cảm biến.",
+          "successMessage": "Chính xác! Micro Four Thirds có hệ số crop 2.0x, đó là lý do ống 25mm M43 cho khung hình giống 50mm trên full frame.",
+          "failureMessage": "Micro Four Thirds có hệ số crop 2.0x. Kiểm tra bảng — đường chéo của nó đúng bằng nửa đường chéo full-frame.",
+          "options": {
+            "0": { "label": "APS-C (Canon)" },
+            "1": { "label": "Micro Four Thirds" },
+            "2": { "label": "Cảm biến 1\"" }
+          }
+        },
+        "4": {
+          "scenario": "Bạn đang so sánh máy medium format 50MP với máy full-frame 50MP ở chế độ mật độ điểm ảnh. Cả hai cùng số megapixel. Máy nào có bước điểm ảnh lớn hơn, và ưu thế thực tế là gì?",
+          "hint": "Bước điểm ảnh phụ thuộc vào chiều rộng cảm biến chia cho số pixel ngang.",
+          "successMessage": "Đúng! Cảm biến medium format lớn hơn vật lý, nên ở 50MP pixel lớn hơn (bước cao hơn). Điều này cho khoảng 1/3 stop thu sáng tốt hơn mỗi pixel, cộng khởi đầu nhiễu xạ muộn hơn một chút.",
+          "failureMessage": "Cảm biến medium format lớn hơn, nên ở cùng độ phân giải mỗi pixel lớn hơn vật lý. Pixel lớn hơn thu nhiều photon hơn, cho dải động tốt hơn và giới hạn nhiễu xạ muộn hơn một chút.",
+          "options": {
+            "0": { "label": "Medium Format — thu sáng và dải động mỗi pixel tốt hơn" },
+            "1": { "label": "Full Frame — pixel nhỏ hơn hiệu quả hơn" },
+            "2": { "label": "Cả hai giống hệt vì cùng số megapixel" }
+          }
+        }
+      }
+    }
+  }
+}

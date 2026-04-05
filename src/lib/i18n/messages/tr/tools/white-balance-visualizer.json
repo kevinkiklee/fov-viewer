@@ -1,0 +1,16 @@
+{
+  "toolUI": {
+    "white-balance-visualizer": {
+      "colorTemperature": "Renk Sıcaklığı:",
+      "warm": "Sıcak",
+      "neutral": "Nötr",
+      "cool": "Soğuk",
+      "presets": "Ön Ayarlar",
+      "red": "Kırmızı",
+      "green": "Yeşil",
+      "blue": "Mavi",
+      "hex": "Hex",
+      "loadingScene": "Sahne yükleniyor..."
+    }
+  }
+}

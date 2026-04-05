@@ -1,0 +1,125 @@
+{
+  "education": {
+    "sensor-size-comparison": {
+      "beginner": "Matryce aparatów mają wiele różnych rozmiarów fizycznych — od dużych chipów średniego formatu używanych w aparatach studyjnych po maleńkie matryce w smartfonach. Większa matryca wychwytuje więcej światła, produkuje mniej szumu i ułatwia rozmycie tła. Rozmiar matrycy jest jednym z największych czynników odróżniających kategorie aparatów.",
+      "deeper": {
+        "0": {
+          "heading": "Jak to działa",
+          "text": "Rozmiar matrycy wpływa na fotografię na kilka powiązanych sposobów. Większa matryca ma większą powierzchnię do zbierania fotonów, poprawiając stosunek sygnału do szumu i zakres dynamiczny. Rozmiar matrycy jest jedną z najważniejszych różnic między kategoriami aparatów — od średnioformatowych aparatów studyjnych po matryce smartfonów."
+        },
+        "1": {
+          "heading": "Współczynnik kadrowania",
+          "text": "«Współczynnik kadrowania» opisuje, jak matryca porównuje się do pełnoklatkowego standardu 35 mm. Matryca APS-C ze współczynnikiem kadrowania 1,5x daje to samo pole widzenia z obiektywem 35 mm, co pełnoklatkowy aparat z obiektywem 52,5 mm. Ten współczynnik kadrowania mnoży również efektywną głębię ostrości — mniejsza matryca wydaje się dawać większą głębię ostrości przy tym samym kadrowaniu, ponieważ potrzebujesz szerszego (krótszego) obiektywu, aby dopasować pole widzenia."
+        },
+        "2": {
+          "heading": "Gęstość pikseli",
+          "text": "Gęstość pikseli (rozmiar piksela) mierzy, jak gęsto piksele są upakowane na matrycy. Upakowanie większej liczby megapikseli na mniejszej matrycy zmniejsza każdą fotokomórkę, redukując zbieranie światła na piksel. Pełnoklatkowa matryca 24 MP ma ~6 µm piksele, podczas gdy matryca APS-C 24 MP ma ~4 µm piksele, dlatego pełnoklatkowa matryca zazwyczaj lepiej radzi sobie przy wysokim ISO."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Wymiary fizyczne",
+          "description": "Szerokość i wysokość w milimetrach określają całkowitą powierzchnię zbierania światła i pole widzenia dla danego obiektywu."
+        },
+        "1": {
+          "label": "Współczynnik kadrowania",
+          "description": "Stosunek przekątnej pełnej klatki do przekątnej matrycy. Pomnożony przez ogniskową daje «ekwiwalentną» ogniskową."
+        },
+        "2": {
+          "label": "Gęstość pikseli",
+          "description": "Jak gęsto piksele są upakowane. Mniejszy rozmiar piksela oznacza więcej szczegółów, ale mniej światła na piksel, wpływając na wydajność szumową."
+        },
+        "3": {
+          "label": "Powierzchnia matrycy",
+          "description": "Całkowita powierzchnia w mm². Średnioformatowa matryca 44x33 mm (Fujifilm GFX, Hasselblad X) ma mniej więcej 1,7x powierzchnię pełnej klatki, natomiast większy chip 54x40 mm to około 2,5x. Pełna klatka ma mniej więcej 13x powierzchnię flagowej matrycy smartfona."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Użyj trybu nakładki, aby zobaczyć dokładnie, o ile jedna matryca jest większa od drugiej — różnica w powierzchni jest często bardziej dramatyczna, niż sugerują liczby."
+        },
+        "1": {
+          "text": "Przełącz na tryb gęstości pikseli i wpisz rozdzielczość swojego aparatu, aby porównać rozmiar pikseli. Jeśli Twój aparat ma bardzo wysoką gęstość pikseli, możesz napotkać limity dyfrakcji przy szerszych przysłonach niż oczekiwano."
+        },
+        "2": {
+          "text": "Porównując aparaty, powierzchnia matrycy ma większe znaczenie niż liczba megapikseli dla wydajności szumowej. Pełnoklatkowa matryca 20 MP zazwyczaj przewyższy matrycę APS-C 40 MP przy wysokim ISO."
+        }
+      },
+      "tooltips": {
+        "Sensor": {
+          "term": "Matryca",
+          "definition": "Włączaj i wyłączaj poszczególne formaty matryc, aby uwzględnić je w porównaniu wizualnym i tabeli danych."
+        },
+        "Display Mode": {
+          "term": "Tryb wyświetlania",
+          "definition": "Nakładka pokazuje wszystkie matryce wyśrodkowane na tym samym punkcie. Obok siebie umieszcza je obok siebie w tej samej skali. Gęstość pikseli wizualizuje, jak gęsto piksele są upakowane."
+        },
+        "Resolution": {
+          "term": "Rozdzielczość",
+          "definition": "Całkowita liczba megapikseli używana do obliczenia rozmiaru piksela w trybie gęstości pikseli. Więcej megapikseli na tej samej matrycy oznacza mniejsze indywidualne piksele."
+        },
+        "Crop Factor": {
+          "term": "Współczynnik kadrowania",
+          "definition": "Stosunek przekątnej pełnoklatkowej matrycy 35 mm do przekątnej tej matrycy. Współczynnik kadrowania 1,5x oznacza, że obiektyw 50 mm kadruje jak 75 mm na pełnej klatce."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Pełnoklatkowa matryca mierzy 36×24 mm. Matryca APS-C ma współczynnik kadrowania 1,5x. Jaka jest przybliżona szerokość matrycy APS-C?",
+          "hint": "Podziel szerokość pełnej klatki przez współczynnik kadrowania.",
+          "successMessage": "Prawidłowo! 36 mm ÷ 1,5 ≈ 24 mm. Matryca APS-C ma około 24×16 mm, co daje mniej więcej 44% powierzchni pełnej klatki.",
+          "failureMessage": "Podziel szerokość pełnej klatki (36 mm) przez współczynnik kadrowania (1,5x): 36 ÷ 1,5 = 24 mm.",
+          "options": {
+            "0": { "label": "24 mm" },
+            "1": { "label": "30 mm" },
+            "2": { "label": "18 mm" }
+          }
+        },
+        "1": {
+          "scenario": "Montujesz obiektyw 50 mm na aparacie z matrycą o współczynniku kadrowania 2,0x. Jaką pełnoklatkową ekwiwalentną ogniskową uzyskujesz?",
+          "hint": "Pomnóż ogniskową przez współczynnik kadrowania.",
+          "successMessage": "Zgadza się! 50 mm × 2,0 = ekwiwalent 100 mm. Dlatego aparaty Micro Four Thirds są popularne do telezdjęć — uzyskujesz dodatkowy zasięg z każdego obiektywu.",
+          "failureMessage": "Pomnóż ogniskową obiektywu przez współczynnik kadrowania: 50 mm × 2,0 = ekwiwalent 100 mm.",
+          "options": {
+            "0": { "label": "25 mm" },
+            "1": { "label": "75 mm" },
+            "2": { "label": "100 mm" }
+          }
+        },
+        "2": {
+          "scenario": "Dwa aparaty mają po 24 megapiksele — jeden pełnoklatkowy (36×24 mm) i jeden APS-C (24×16 mm). Który ma lepszą wydajność szumową przy wysokim ISO i dlaczego?",
+          "hint": "Pomyśl, jak ta sama liczba pikseli rozłożona na różnych powierzchniach matrycy wpływa na rozmiar poszczególnych pikseli.",
+          "successMessage": "Dokładnie! Pełnoklatkowa matryca rozkłada 24 MP na większej powierzchni, więc każdy piksel jest fizycznie większy (~6 µm vs ~4 µm rozmiar piksela) i wychwytuje więcej fotonów, dając mniej szumu.",
+          "failureMessage": "Pełnoklatkowa matryca wygrywa — ta sama liczba megapikseli na większej powierzchni oznacza większe piksele, które zbierają więcej światła, produkując mniej szumu przy wysokim ISO.",
+          "options": {
+            "0": { "label": "Pełna klatka — większe piksele zbierają więcej światła" },
+            "1": { "label": "APS-C — mniejsze matryce są bardziej wydajne" },
+            "2": { "label": "Ten sam szum — liczy się liczba megapikseli" }
+          }
+        },
+        "3": {
+          "scenario": "Patrząc na tabelę porównawczą, który format matrycy ma współczynnik kadrowania najbliższy 2,0x?",
+          "hint": "Współczynnik kadrowania to przekątna pełnej klatki podzielona przez przekątną matrycy.",
+          "successMessage": "Prawidłowo! Micro Four Thirds ma współczynnik kadrowania 2,0x, dlatego obiektyw M43 25 mm kadruje jak 50 mm na pełnej klatce.",
+          "failureMessage": "Micro Four Thirds ma współczynnik kadrowania 2,0x. Sprawdź tabelę — jego przekątna to dokładnie połowa przekątnej pełnej klatki.",
+          "options": {
+            "0": { "label": "APS-C (Canon)" },
+            "1": { "label": "Micro Four Thirds" },
+            "2": { "label": "Matryca 1\"" }
+          }
+        },
+        "4": {
+          "scenario": "Porównujesz średnioformatowy aparat 50 MP z pełnoklatkowym aparatem 50 MP w trybie gęstości pikseli. Oba mają tę samą liczbę megapikseli. Który aparat ma większy rozmiar piksela i jaką praktyczną zaletę to daje?",
+          "hint": "Rozmiar piksela zależy od szerokości matrycy podzielonej przez liczbę pikseli poziomych.",
+          "successMessage": "Zgadza się! Średnioformatowa matryca jest fizycznie większa, więc przy 50 MP jej piksele są większe (wyższy rozmiar piksela). Daje to około 1/3 stopnia lepszego zbierania światła na piksel oraz nieco późniejszy początek dyfrakcji.",
+          "failureMessage": "Średnioformatowa matryca jest większa, więc przy tej samej rozdzielczości każdy piksel jest fizycznie większy. Większe piksele zbierają więcej fotonów, dając lepszy zakres dynamiczny i nieco późniejsze limity dyfrakcji.",
+          "options": {
+            "0": { "label": "Średni format — lepsze zbieranie światła na piksel i zakres dynamiczny" },
+            "1": { "label": "Pełna klatka — mniejsze piksele są bardziej wydajne" },
+            "2": { "label": "Oba są identyczne, ponieważ mają tę samą liczbę megapikseli" }
+          }
+        }
+      }
+    }
+  }
+}

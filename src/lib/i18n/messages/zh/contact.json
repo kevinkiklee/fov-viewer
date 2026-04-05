@@ -1,0 +1,25 @@
+{
+  "contact": {
+    "title": "联系我们",
+    "description": "有问题、发现了 Bug 或想建议新工具？我们期待您的反馈。",
+    "form": {
+      "nameLabel": "姓名",
+      "namePlaceholder": "您的姓名",
+      "emailLabel": "邮箱",
+      "emailPlaceholder": "your@email.com",
+      "subjectLabel": "主题",
+      "subjectPlaceholder": "关于什么内容？",
+      "messageLabel": "留言",
+      "messagePlaceholder": "您的留言...",
+      "submit": "发送消息",
+      "sending": "发送中...",
+      "honeypotLabel": "网站",
+      "successToast": "消息已发送！我们会尽快回复您。",
+      "errorToast": "出了点问题，请重试。",
+      "networkErrorToast": "网络错误，请检查您的网络连接后重试。",
+      "sentTitle": "感谢您的来信！",
+      "sentMessage": "我们会尽快回复您。",
+      "sendAnother": "发送另一条消息"
+    }
+  }
+}

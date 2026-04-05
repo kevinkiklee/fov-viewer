@@ -1,0 +1,43 @@
+{
+  "toolUI": {
+    "exposure-simulator": {
+      "lock": "锁定：",
+      "lockAperture": "光圈",
+      "lockShutter": "快门",
+      "lockISO": "ISO",
+      "lockApertureLabel": "锁定光圈",
+      "lockShutterLabel": "锁定快门",
+      "lockISOLabel": "锁定 ISO",
+      "aperture": "光圈���",
+      "shutterSpeed": "快门速度：",
+      "iso": "ISO：",
+      "locked": "（已锁定）",
+      "exposureValue": "曝光值（EV）",
+      "depthOfField": "景深",
+      "motion": "运动",
+      "noise": "噪点",
+      "dofVeryShallow": "极浅",
+      "dofShallow": "浅",
+      "dofModerate": "适中",
+      "dofDeep": "深",
+      "dofVeryDeep": "极深",
+      "motionFrozen": "冻结",
+      "motionSharp": "清晰",
+      "motionModerate": "适中",
+      "motionSlightBlur": "轻微模糊",
+      "motionBlurred": "模糊",
+      "noiseClean": "干净",
+      "noiseLow": "低噪点",
+      "noiseModerate": "中等噪点",
+      "noiseNoisy": "有噪点",
+      "noiseVeryNoisy": "噪点很多",
+      "scene": "场景：",
+      "sceneStreet": "街景",
+      "sceneLandscape": "风光",
+      "scenePortrait": "人像",
+      "sceneLowLight": "低光",
+      "imageEffectsUnavailable": "图像效果预览不可用。",
+      "loadingScene": "加载场景..."
+    }
+  }
+}

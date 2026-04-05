@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "histogram": {
+      "luminance": "亮度",
+      "rgbOverlay": "RGB 叠加",
+      "allChannels": "全部通道",
+      "shadows": "阴影",
+      "midtones": "中间调",
+      "highlights": "高光",
+      "blackClipping": "黑色裁切",
+      "whiteClipping": "白色裁切",
+      "pureBlack": "纯黑",
+      "pureWhite": "纯白",
+      "uploadPrompt": "上传图片以查看 EXIF 数据和直方图",
+      "uploadedPhoto": "已上传的照片",
+      "noExifData": "此图像中未找到 EXIF 数据。",
+      "sectionCamera": "相机",
+      "sectionLens": "镜头",
+      "sectionSettings": "设置",
+      "sectionImage": "图像",
+      "sectionDate": "日期",
+      "sectionGPS": "GPS",
+      "sectionSoftware": "软件",
+      "make": "品牌",
+      "model": "型号",
+      "lensModel": "镜头型号",
+      "lensMake": "镜头品牌",
+      "apertureLabel": "光圈",
+      "shutterSpeed": "快门速度",
+      "isoLabel": "ISO",
+      "focalLengthLabel": "焦距",
+      "focalLength35mm": "焦距（35mm 等效）",
+      "width": "宽度",
+      "height": "高度",
+      "orientationLabel": "方向",
+      "dateTaken": "拍摄日期",
+      "latitudeLabel": "纬度",
+      "longitudeLabel": "经度",
+      "softwareLabel": "软件"
+    }
+  }
+}

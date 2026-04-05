@@ -1,0 +1,68 @@
+{
+  "privacy": {
+    "title": "隐私政策",
+    "effectiveDate": "生效日期：2026年4月3日（以英文版为准）",
+    "sections": {
+      "overview": {
+        "title": "概述",
+        "body": "PhotoTools 运营 www.phototools.io，这是一个免费的教育性摄影资源，提供交互式计算器、模拟器和参考工具。本隐私政策描述了我们在您访问或使用本站时如何收集、使用和处理信息。使用 PhotoTools 即表示您同意本政策中描述的做法。"
+      },
+      "informationWeCollect": {
+        "title": "我们收集的信息",
+        "intro": "我们仅收集运营和改善网站所需的最少信息：",
+        "analytics": "<strong>分析数据：</strong>我们使用 Google Analytics 来了解访客如何使用网站（例如访问的页面、停留时间、设备类型）。分析数据是匿名的 — 我们不通过分析收集个人身份信息。IP 地址在存储前已匿名化处理。",
+        "contactForm": "<strong>联系表单：</strong>如果您提交联系表单，我们会收集您的姓名、电子邮件地址、主题和消息。这些信息仅用于回复您的咨询，不会在邮件发送后额外存储 — 不会保存到数据库或长期保留。",
+        "noAccounts": "<strong>无需账户：</strong>PhotoTools 不要求用户注册或创建账户。我们不收集密码或支付信息。"
+      },
+      "cookies": {
+        "title": "Cookie",
+        "intro": "PhotoTools 使用 Cookie 来支持分析和广告功能。具体来说：",
+        "analyticsCookies": "<strong>Google Analytics Cookie</strong> 以汇总和匿名的形式跟踪网站使用情况。这些 Cookie 帮助我们了解哪些工具最常使用以及如何改善网站。",
+        "adCookies": "<strong>第三方广告 Cookie</strong> 可能由我们的广告网络合作伙伴设置，用于投放相关广告和衡量广告效果。",
+        "control": "您可以通过浏览器设置控制或禁用 Cookie。请注意，禁用 Cookie 可能会影响某些功能的使用。"
+      },
+      "thirdPartyAdvertising": {
+        "title": "第三方广告",
+        "body": "PhotoTools 展示由第三方广告网络提供的广告。这些网络可能使用 Cookie 和类似的跟踪技术，根据您的浏览历史和兴趣投放广告（基于兴趣的广告）。我们不控制这些第三方广告网络的数据处理做法。如需了解更多信息，请查看相关网络的隐私政策或访问<naiLink>网络广告倡议退出页面</naiLink>。"
+      },
+      "googleAdSense": {
+        "title": "Google AdSense",
+        "body1": "PhotoTools 使用 Google AdSense 展示广告。Google AdSense 可能使用 Cookie 和网络信标，根据您之前对本网站或其他网站的访问投放广告。Google 使用广告 Cookie 使其及其合作伙伴能够根据您的浏览模式投放广告。",
+        "body2": "您可以通过访问 <adsSettingsLink>Google 广告设置</adsSettingsLink> 退出个性化广告。如需了解更多关于 Google 如何使用数据的信息，请参阅<partnerSitesLink>当您使用我们合作伙伴的网站时 Google 如何使用数据</partnerSitesLink>。"
+      },
+      "cookieConsent": {
+        "title": "Cookie 同意",
+        "body1": "当您首次访问 PhotoTools 时，会显示一个 Cookie 同意横幅，允许您接受或拒绝非必要 Cookie。该横幅由 CookieYes 提供支持，这是一个经 Google 认证的同意管理平台，支持 IAB 透明度和同意框架 (TCF) v2.3。",
+        "body2": "您可以随时通过点击页脚中的 Cookie 设置链接更改您的同意偏好。如果您拒绝广告 Cookie，您仍会看到广告，但广告不会根据您的浏览历史进行个性化定制。"
+      },
+      "ccpa": {
+        "title": "加州居民 (CCPA)",
+        "body": "根据加州消费者隐私法案 (CCPA)，加州居民有权了解收集了哪些个人信息、请求删除这些信息以及选择退出其出售。PhotoTools 不出售个人信息。我们广告合作伙伴使用的广告 Cookie 可能构成 CCPA 下的“出售” — 您可以通过 Cookie 同意横幅或通过我们的<contactLink>联系页面</contactLink>联系我们来选择退出。"
+      },
+      "dataSharing": {
+        "title": "数据共享",
+        "intro": "我们不向第三方出售、交易或出租您的个人信息。我们仅在以下有限情况下共享数据：",
+        "analytics": "与 <strong>Google Analytics</strong> 共享以分析网站流量和使用模式，受 Google 隐私政策约束。",
+        "advertising": "与<strong>广告合作伙伴</strong>共享，如上述第三方广告部分所述。",
+        "contactForm": "我们不与任何第三方共享联系表单提交的内容。"
+      },
+      "childrensPrivacy": {
+        "title": "儿童隐私",
+        "body": "PhotoTools 不面向 13 岁以下的儿童。我们不会有意收集 13 岁以下儿童的个人信息。如果您认为 13 岁以下的儿童向我们提供了个人信息，请联系我们以便我们将其删除。"
+      },
+      "yourRights": {
+        "title": "您的权利",
+        "body1": "根据您的所在地，您可能依据 GDPR（欧盟）或 CCPA（加州）等法律享有关于个人数据的权利。",
+        "body2": "由于 PhotoTools 收集的个人数据极少 — 且不会长期存储联系表单提交内容 — 大多数请求可以简单处理。您可以随时通过浏览器设置清除 Cookie。如需行使任何数据权利或提交隐私请求，请使用我们的<contactLink>联系页面</contactLink>。"
+      },
+      "changesToPolicy": {
+        "title": "政策变更",
+        "body": "我们可能会不时更新本隐私政策。更新后的政策将发布在本页面上，并附有修订后的生效日期。我们建议您定期查阅本政策。在任何更改后继续使用 PhotoTools 即表示您接受更新后的政策。"
+      },
+      "contact": {
+        "title": "联系方式",
+        "body": "如果您对本隐私政策或我们如何处理您的数据有疑问，请通过我们的<contactLink>联系页面</contactLink>与我们联系。"
+      }
+    }
+  }
+}

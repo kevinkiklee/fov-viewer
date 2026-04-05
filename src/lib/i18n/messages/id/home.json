@@ -1,0 +1,13 @@
+{
+  "home": {
+    "heroTitle": "PhotoTools — Alat Fotografi Gratis",
+    "heroDesc": "Kalkulator, simulator, dan referensi fotografi gratis. Tanpa perlu mendaftar — foto Anda tidak pernah meninggalkan browser.",
+    "comingSoon": "Segera Hadir",
+    "categories": {
+      "visualizer": "Visualisator",
+      "calculator": "Kalkulator",
+      "reference": "Referensi",
+      "file-tool": "Alat File"
+    }
+  }
+}

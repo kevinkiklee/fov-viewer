@@ -1,0 +1,129 @@
+{
+  "education": {
+    "white-balance-visualizer": {
+      "beginner": "White balance menyesuaikan warna di foto Anda agar objek putih benar-benar tampak putih di bawah pencahayaan apa pun. Sumber cahaya yang berbeda memiliki suhu warna yang berbeda — lilin hangat dan oranye, sementara tempat teduh dingin dan biru. Pengaturan white balance kamera Anda mengkompensasi perbedaan ini agar warna terlihat alami.",
+      "deeper": {
+        "0": {
+          "heading": "Suhu warna",
+          "text": "Suhu warna diukur dalam Kelvin (K) dan sesuai dengan warna cahaya yang dipancarkan oleh \"benda hitam\" ideal yang dipanaskan ke suhu tersebut. Nilai lebih rendah (2000–3500K) menghasilkan cahaya yang hangat, kemerahan-oranye (bohlam pijar, lilin), sementara nilai lebih tinggi (6500–10000K) menghasilkan cahaya yang dingin, kebiruan (tempat teduh, langit mendung)."
+        },
+        "1": {
+          "heading": "Cara kerja white balance",
+          "text": "Sistem white balance kamera menerapkan pergeseran warna terbalik untuk menetralkan cast warna ambient. Ketika Anda mengatur white balance ke \"Tungsten\" (~3200K), kamera menambahkan biru untuk melawan cast oranye dari lampu pijar. Dalam fotografi digital, white balance diterapkan sebagai pengali pada kanal merah dan biru relatif terhadap hijau."
+        },
+        "2": {
+          "heading": "Keuntungan RAW",
+          "text": "Memotret dalam format RAW menyimpan semua data warna dan memungkinkan Anda mengubah white balance secara bebas dalam pasca-pemrosesan tanpa kehilangan kualitas — ini hanyalah tag metadata yang diterapkan selama konversi."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Suhu Warna (Kelvin)",
+          "description": "Ukuran numerik warna cahaya. Kelvin rendah = cahaya hangat/oranye. Kelvin tinggi = cahaya dingin/biru. Cahaya matahari siang sekitar 5500K."
+        },
+        "1": {
+          "label": "Sumber Cahaya",
+          "description": "Sumber berbeda memancarkan suhu warna berbeda: lilin (~1800K), bohlam pijar (~2800K), tabung fluoresen (~4000K), matahari siang (~5500K), langit mendung (~6500K), tempat teduh (~7500K)."
+        },
+        "2": {
+          "label": "RAW vs JPEG",
+          "description": "Memotret RAW memungkinkan Anda mengubah white balance di pasca tanpa kehilangan kualitas. JPEG membakar white balance secara permanen, jadi mengaturnya dengan benar di kamera lebih penting."
+        },
+        "3": {
+          "label": "Pencahayaan Campuran",
+          "description": "Adegan dengan beberapa sumber cahaya pada suhu berbeda (misalnya cahaya jendela + lampu pijar) membuat tidak mungkin untuk menetralkan semua warna secara sempurna bersamaan."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Selalu potret RAW jika Anda ingin fleksibilitas penuh untuk menyesuaikan white balance nanti. File RAW menyimpan data sensor yang belum diproses, jadi perubahan white balance bersifat lossless."
+        },
+        "1": {
+          "text": "Untuk efek kreatif, coba \"salah mencocokkan\" white balance secara sengaja. Mengatur WB daylight selama golden hour membuat matahari terbenam semakin hangat, sementara WB tungsten di luar ruangan menciptakan tampilan biru dingin yang dramatis."
+        },
+        "2": {
+          "text": "Dalam situasi pencahayaan campuran (misalnya ruangan yang diterangi cahaya jendela dan lampu pijar), gunakan kartu abu-abu untuk mengatur white balance kustom, atau pasang gel pada flash Anda untuk mencocokkan sumber cahaya ambient."
+        }
+      },
+      "tooltips": {
+        "colorTemperature": {
+          "term": "Suhu Warna",
+          "definition": "Ukuran warna cahaya dalam Kelvin (K). Berdasarkan warna teoretis benda hitam yang dipanaskan. Nilai lebih rendah lebih hangat (oranye/merah), nilai lebih tinggi lebih dingin (biru)."
+        },
+        "preset": {
+          "term": "Preset White Balance",
+          "definition": "Pengaturan white balance yang sudah ditentukan sebelumnya yang dikalibrasi untuk sumber cahaya umum. Preset meliputi Tungsten (~3200K), Fluorescent (~4000K), Daylight (~5500K), Cloudy (~6500K), dan Shade (~7500K)."
+        },
+        "rgbValues": {
+          "term": "Nilai RGB",
+          "definition": "Nilai kanal merah, hijau, dan biru (0-255 masing-masing) yang mewakili warna cahaya pada suhu yang dipilih. Digunakan untuk memvisualisasikan bagaimana sumber cahaya mewarnai adegan."
+        },
+        "hexCode": {
+          "term": "Kode Hex",
+          "definition": "Representasi heksadesimal enam karakter dari warna (misalnya #FF8C00). Berguna untuk mereferensikan warna yang tepat dalam software desain atau pengembangan web."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Foto indoor Anda di bawah bohlam lampu rumah biasa terlihat sangat oranye/kuning. Preset white balance mana yang harus Anda gunakan untuk memperbaikinya?",
+          "hint": "Bohlam pijar rumah tangga memancarkan cahaya bernada hangat, oranye sekitar 2800-3200K.",
+          "successMessage": "Benar! Preset Tungsten menambahkan biru untuk melawan cast oranye dari bohlam pijar, mengembalikan warna ke netral.",
+          "failureMessage": "Bohlam pijar/tungsten memancarkan cahaya oranye hangat. Preset white balance Tungsten dirancang khusus untuk menetralkan cast ini dengan menambahkan biru.",
+          "options": {
+            "0": { "label": "Daylight" },
+            "1": { "label": "Tungsten" },
+            "2": { "label": "Shade" },
+            "3": { "label": "Fluorescent" }
+          }
+        },
+        "1": {
+          "scenario": "Anda memotret potret selama golden hour dan ingin mempertahankan cahaya hangat yang indah dari matahari terbenam. Pengaturan white balance mana yang harus Anda gunakan?",
+          "hint": "Jika Anda mengatur WB yang \"benar\" untuk golden hour, itu akan menetralkan nada hangat yang ingin Anda pertahankan.",
+          "successMessage": "Benar! Menggunakan preset Daylight (atau bahkan Cloudy/Shade) selama golden hour mempertahankan dan meningkatkan nada hangat alih-alih menetralkannya.",
+          "failureMessage": "Untuk mempertahankan kehangatan golden hour, gunakan WB yang tidak mengkompensasi cahaya hangat. Daylight atau preset yang lebih tinggi akan mempertahankan (dan bahkan meningkatkan) kehangatan.",
+          "options": {
+            "0": { "label": "Auto White Balance" },
+            "1": { "label": "Tungsten (untuk menetralkan kehangatan)" },
+            "2": { "label": "Daylight (untuk mempertahankan kehangatan)" },
+            "3": { "label": "Flash" }
+          }
+        },
+        "2": {
+          "scenario": "Anda menyesuaikan white balance secara manual dalam Kelvin. Foto Anda terlihat terlalu biru/dingin. Haruskah Anda menaikkan atau menurunkan nilai Kelvin untuk menghangatkannya?",
+          "hint": "Pengaturan WB Kelvin memberitahu kamera berapa suhu warna sumber cahaya. Mengatur nilai Kelvin lebih tinggi membuat kamera menambahkan lebih banyak kehangatan.",
+          "successMessage": "Tepat! Menaikkan nilai Kelvin memberitahu kamera bahwa cahaya lebih dingin dari kenyataannya, jadi kamera mengkompensasi dengan menambahkan kehangatan. Atur K lebih tinggi untuk menghangatkan gambar yang terlihat dingin.",
+          "failureMessage": "Ketika Anda menaikkan nilai Kelvin, kamera menambahkan lebih banyak kehangatan untuk mengkompensasi. Jadi untuk memperbaiki gambar yang dingin/biru, naikkan angka Kelvin.",
+          "options": {
+            "0": { "label": "Naikkan Kelvin (misalnya 5500K ke 7500K)" },
+            "1": { "label": "Turunkan Kelvin (misalnya 5500K ke 3200K)" },
+            "2": { "label": "Arah Kelvin tidak memengaruhi kehangatan" }
+          }
+        },
+        "3": {
+          "scenario": "Anda memotret interior restoran yang memiliki lampu gantung tungsten hangat di atas dan cahaya biru siang hari yang masuk melalui jendela besar. Orang di dekat jendela terlihat biru, dan orang di bawah lampu terlihat oranye. Pendekatan apa yang terbaik?",
+          "hint": "Tidak ada satu pengaturan white balance yang dapat mengoreksi dua suhu warna yang sangat berbeda secara bersamaan.",
+          "successMessage": "Tepat! Memasang gel pada flash atau lampu tambahan untuk mencocokkan satu sumber dominan, atau memilih WB kompromi dan mengoreksi secara selektif di pasca, adalah pendekatan terbaik untuk pencahayaan campuran.",
+          "failureMessage": "Pencahayaan campuran adalah salah satu tantangan WB paling sulit. Satu WB tidak dapat mengoreksi kedua sumber secara bersamaan. Anda perlu mencocokkan sumber dengan gel atau memperbaikinya secara selektif di pasca.",
+          "options": {
+            "0": { "label": "Atur WB ke Tungsten — akan memperbaiki semuanya" },
+            "1": { "label": "Atur WB ke Daylight — jendela lebih penting" },
+            "2": { "label": "Gunakan Auto WB dan potret RAW, lalu koreksi setiap zona di pasca" },
+            "3": { "label": "Naikkan ISO untuk membuat warna lebih akurat" }
+          }
+        },
+        "4": {
+          "scenario": "Anda memotret adegan malam kota yang moody dan sinematik dan ingin nada biru dingin yang disengaja. Lampu jalan adalah sodium vapor (~2200K). Pengaturan white balance Kelvin apa yang akan memberi Anda pergeseran biru terkuat?",
+          "hint": "Mengatur WB jauh lebih rendah dari suhu sumber cahaya aktual akan menggeser gambar ke arah biru.",
+          "successMessage": "Benar! Mengatur WB ke 7500K (preset Shade) memberitahu kamera bahwa sumber cahaya sangat dingin/biru — jadi kamera mengkompensasi dengan menambahkan koreksi kehangatan yang berat. Tetapi karena lampu sodium aktual hanya 2200K (sangat hangat), koreksi berlebih ini melampaui netral menjadi cast biru yang kuat. Semakin tinggi Anda mengatur WB Kelvin di atas suhu cahaya aktual, semakin kuat pergeseran biru.",
+          "failureMessage": "Mengatur nilai WB Kelvin yang jauh lebih tinggi dari suhu sumber cahaya aktual membuat kamera mengkoreksi berlebihan ke arah biru. Dengan lampu sodium 2200K, mengatur WB ke 7500K+ menciptakan tampilan biru dingin yang paling kuat.",
+          "options": {
+            "0": { "label": "2200K (mencocokkan lampu sodium)" },
+            "1": { "label": "3200K (preset Tungsten)" },
+            "2": { "label": "7500K atau lebih tinggi (preset Shade)" },
+            "3": { "label": "5500K (preset Daylight)" }
+          }
+        }
+      }
+    }
+  }
+}

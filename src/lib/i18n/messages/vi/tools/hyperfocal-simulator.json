@@ -1,0 +1,21 @@
+{
+  "toolUI": {
+    "hyperfocal-simulator": {
+      "settings": "Cài đặt",
+      "focalLength": "Tiêu cự",
+      "aperture": "Khẩu độ",
+      "focusDistance": "Khoảng cách lấy nét:",
+      "sensor": "Cảm biến",
+      "scene": "Cảnh:",
+      "sceneLandscape": "Phong cảnh",
+      "sceneStreet": "Đường phố",
+      "hyperfocalDistance": "Khoảng cách siêu tiêu cự",
+      "nearLimit": "Giới hạn gần",
+      "farLimit": "Giới hạn xa",
+      "focusDistanceResult": "Khoảng cách lấy nét",
+      "hyperfocalReference": "Tra cứu siêu tiêu cự",
+      "sharpToInfinity": "Nét đến vô cực",
+      "nearLimitBadge": "Giới hạn gần:"
+    }
+  }
+}

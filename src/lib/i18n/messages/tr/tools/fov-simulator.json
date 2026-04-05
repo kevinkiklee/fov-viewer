@@ -1,0 +1,34 @@
+{
+  "toolUI": {
+    "fov-simulator": {
+      "rotate": "Döndür",
+      "center": "Ortala",
+      "switchToPortrait": "Dikeye geç",
+      "switchToLandscape": "Yataya geç",
+      "centerOverlays": "Kaplamaları ortala",
+      "addLens": "+ Objektif ekle",
+      "fovSimulator": "Görüş Alanı Simülatörü",
+      "sensor": "Sensör",
+      "copyImage": "Görseli kopyala",
+      "copyLink": "Bağlantıyı kopyala",
+      "embed": "Göm",
+      "reset": "Sıfırla",
+      "frameInfo": "Kadraj Bilgisi",
+      "distance": "Mesafe",
+      "showFramingGuides": "Kadraj kılavuzlarını göster",
+      "wide": "geniş",
+      "embedTitle": "Göm",
+      "closeEmbedModal": "Gömme penceresini kapat",
+      "markdownLabel": "Markdown (Reddit, GitHub)",
+      "bbcodeLabel": "BBCode (Forumlar)",
+      "htmlEmbedLabel": "HTML Gömme",
+      "copied": "Kopyalandı",
+      "copy": "Kopyala",
+      "cropView": "Kırpma görünümü:",
+      "collapse": "Daralt",
+      "expand": "Genişlet",
+      "fovComparison": "FOV Karşılaştırması",
+      "loadingScene": "Sahne yükleniyor..."
+    }
+  }
+}

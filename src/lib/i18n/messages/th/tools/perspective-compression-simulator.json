@@ -1,0 +1,13 @@
+{
+  "toolUI": {
+    "perspective-compression-simulator": {
+      "cameraSettings": "การตั้งค่ากล้อง",
+      "focalLength": "ทางยาวโฟกัส",
+      "equivalent35mm": "เทียบเท่า (35mm)",
+      "perspectiveDistance": "เปอร์สเปกทีฟ & ระยะทาง",
+      "subjectDistance": "ระยะทางซับเจกต์",
+      "maintainSubjectSize": "รักษาขนาดซับเจกต์",
+      "resetAll": "รีเซ็ตทั้งหมด"
+    }
+  }
+}

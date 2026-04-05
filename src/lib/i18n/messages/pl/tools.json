@@ -1,0 +1,64 @@
+{
+  "tools": {
+    "fov-simulator": {
+      "name": "Symulator pola widzenia",
+      "description": "Porównaj pole widzenia dla różnych ogniskowych i rozmiarów matrycy"
+    },
+    "color-scheme-generator": {
+      "name": "Generator schematów kolorów",
+      "description": "Twórz palety kolorów do sesji fotograficznych"
+    },
+    "exposure-simulator": {
+      "name": "Symulator trójkąta ekspozycji",
+      "description": "Zobacz, jak przysłona, czas naświetlania i ISO na siebie oddziałują"
+    },
+    "dof-simulator": {
+      "name": "Symulator głębi ostrości",
+      "description": "Zwizualizuj, jak przysłona, ogniskowa i odległość wpływają na rozmycie tła"
+    },
+    "focus-stacking-calculator": {
+      "name": "Kalkulator focus stackingu",
+      "description": "Oblicz optymalne odległości ogniskowania dla ostrości od przodu do tyłu"
+    },
+    "equivalent-settings-calculator": {
+      "name": "Kalkulator ekwiwalentnych ustawień",
+      "description": "Znajdź ekwiwalentną przysłonę i ogniskową dla różnych formatów matrycy"
+    },
+    "hyperfocal-simulator": {
+      "name": "Symulator odległości hiperfokalnej",
+      "description": "Dowiedz się, gdzie ustawić ostrość, aby uzyskać maksymalną ostrość od pierwszego planu do nieskończoności"
+    },
+    "shutter-speed-visualizer": {
+      "name": "Wizualizator czasu migawki",
+      "description": "Znajdź minimalny bezpieczny czas migawki dla ostrych zdjęć z ręki"
+    },
+    "nd-filter-calculator": {
+      "name": "Kalkulator filtra ND",
+      "description": "Oblicz czas naświetlania z dowolnym filtrem ND"
+    },
+    "star-trail-calculator": {
+      "name": "Kalkulator śladów gwiazd",
+      "description": "Oblicz maksymalną ekspozycję dla ostrych gwiazd lub zaplanuj zdjęcia ze śladami gwiazd"
+    },
+    "perspective-compression-simulator": {
+      "name": "Symulator kompresji perspektywy",
+      "description": "Zobacz, jak ogniskowa wpływa na kompresję tła"
+    },
+    "white-balance-visualizer": {
+      "name": "Wizualizator balansu bieli",
+      "description": "Zobacz, jak temperatura barwowa wpływa na Twoje zdjęcia"
+    },
+    "sensor-size-comparison": {
+      "name": "Porównanie rozmiarów matrycy",
+      "description": "Porównaj wizualnie rozmiary matryc aparatów"
+    },
+    "frame-studio": {
+      "name": "Frame Studio",
+      "description": "Kadruj, ramkuj i komponuj zdjęcia z nakładkami siatki"
+    },
+    "exif-viewer": {
+      "name": "Przeglądarka EXIF",
+      "description": "Wyświetl metadane EXIF i histogram dowolnego zdjęcia — 100% po stronie klienta"
+    }
+  }
+}

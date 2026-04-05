@@ -1,0 +1,43 @@
+{
+  "toolUI": {
+    "exposure-simulator": {
+      "lock": "Kunci:",
+      "lockAperture": "Apertur",
+      "lockShutter": "Rana",
+      "lockISO": "ISO",
+      "lockApertureLabel": "Kunci Apertur",
+      "lockShutterLabel": "Kunci Rana",
+      "lockISOLabel": "Kunci ISO",
+      "aperture": "Apertur:",
+      "shutterSpeed": "Kecepatan Rana:",
+      "iso": "ISO:",
+      "locked": "(terkunci)",
+      "exposureValue": "Nilai Eksposur (EV)",
+      "depthOfField": "Kedalaman Bidang",
+      "motion": "Gerakan",
+      "noise": "Noise",
+      "dofVeryShallow": "Sangat Dangkal",
+      "dofShallow": "Dangkal",
+      "dofModerate": "Sedang",
+      "dofDeep": "Dalam",
+      "dofVeryDeep": "Sangat Dalam",
+      "motionFrozen": "Beku",
+      "motionSharp": "Tajam",
+      "motionModerate": "Sedang",
+      "motionSlightBlur": "Sedikit Blur",
+      "motionBlurred": "Blur",
+      "noiseClean": "Bersih",
+      "noiseLow": "Noise Rendah",
+      "noiseModerate": "Noise Sedang",
+      "noiseNoisy": "Berisik",
+      "noiseVeryNoisy": "Sangat Berisik",
+      "scene": "Adegan:",
+      "sceneStreet": "Jalan",
+      "sceneLandscape": "Lanskap",
+      "scenePortrait": "Potret",
+      "sceneLowLight": "Cahaya Rendah",
+      "imageEffectsUnavailable": "Pratinjau efek gambar tidak tersedia.",
+      "loadingScene": "Memuat adegan..."
+    }
+  }
+}

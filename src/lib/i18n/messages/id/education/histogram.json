@@ -1,0 +1,120 @@
+{
+  "education": {
+    "histogram": {
+      "beginner": "Histogram adalah grafik yang menunjukkan seberapa terang atau gelap piksel dalam foto Anda. Sisi kiri mewakili bayangan (area gelap), tengah mewakili midtone, dan sisi kanan mewakili highlight (area terang). Jika grafik menumpuk di satu sisi, foto Anda mungkin undereksposur atau overeksposur.",
+      "deeper": "Histogram memplot jumlah piksel (sumbu vertikal) terhadap tingkat kecerahan (sumbu horizontal, 0-255 untuk gambar 8-bit). Dalam mode luminansi, kecerahan setiap piksel dihitung sebagai rata-rata tertimbang dari kanal merah, hijau, dan biru (biasanya 0,299R + 0,587G + 0,114B, sesuai persepsi manusia). Mode RGB menunjukkan tiga distribusi terpisah, mengungkapkan kanal warna mana yang mungkin terpotong secara independen — kanal merah yang terdorong ke 255 sementara biru baik-baik saja menunjukkan clipping highlight dalam nada hangat, seperti langit matahari terbenam. \"Clipping\" terjadi ketika nilai piksel mencapai batas 0 atau 255, artinya detail bayangan atau highlight telah hilang secara tidak dapat dipulihkan. Black clipping (piksel pada 0) kehilangan detail bayangan; white clipping (piksel pada 255) kehilangan detail highlight. Memotret RAW memberikan sekitar 2-3 stop ekstra headroom highlight yang dapat dipulihkan melampaui apa yang ditunjukkan histogram JPEG, itulah mengapa banyak fotografer \"expose to the right\" (ETTR) — mendorong eksposur seterang mungkin tanpa memotong data RAW.",
+      "keyFactors": {
+        "0": {
+          "label": "Distribusi Tonal",
+          "description": "Bentuk keseluruhan memberitahu Anda apakah gambar gelap (berat ke kiri), terang (berat ke kanan), atau seimbang (tersebar di seluruh rentang)."
+        },
+        "1": {
+          "label": "Clipping",
+          "description": "Lonjakan di tepi paling kiri atau kanan menunjukkan detail yang hilang di bayangan atau highlight."
+        },
+        "2": {
+          "label": "Pemisahan Kanal",
+          "description": "Mode RGB mengungkapkan perilaku kanal warna individual — berguna untuk mendeteksi clipping spesifik warna dalam adegan yang jenuh."
+        },
+        "3": {
+          "label": "Rentang Dinamis",
+          "description": "Histogram yang mencakup lebar penuh tanpa clipping menunjukkan penggunaan rentang dinamis yang tersedia dengan baik."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Tidak ada bentuk histogram yang \"sempurna\". Foto kucing hitam di sofa gelap seharusnya berat ke kiri. Nilai histogram terhadap tujuan kreatif Anda, bukan kurva ideal."
+        },
+        "1": {
+          "text": "Periksa mode overlay RGB untuk foto matahari terbenam dan lampu neon. Kanal merah sering terpotong jauh sebelum biru, menyebabkan kehilangan detail di highlight hangat bahkan ketika histogram luminansi terlihat baik."
+        },
+        "2": {
+          "text": "Jika Anda melihat peringatan clipping di kedua ujung secara bersamaan, adegan kemungkinan melebihi rentang dinamis kamera Anda. Pertimbangkan bracketing untuk HDR atau menggunakan filter ND graduated."
+        }
+      },
+      "tooltips": {
+        "View Mode": {
+          "term": "Mode Tampilan",
+          "definition": "Luminansi menunjukkan kecerahan keseluruhan. RGB Overlay menunjukkan ketiga kanal warna ditumpangkan. All Channels menunjukkan RGB plus luminansi bersama."
+        },
+        "Shadows": {
+          "term": "Bayangan",
+          "definition": "Wilayah paling kiri histogram (kira-kira 0-85), mewakili nada tergelap dalam gambar."
+        },
+        "Midtones": {
+          "term": "Midtone",
+          "definition": "Wilayah tengah (kira-kira 86-170), mewakili kecerahan sedang — nada kulit dan sebagian besar tekstur alami jatuh di sini."
+        },
+        "Highlights": {
+          "term": "Highlight",
+          "definition": "Wilayah paling kanan (kira-kira 171-255), mewakili nada tercerah: langit, pantulan, dan sumber cahaya."
+        },
+        "Black Clipping": {
+          "term": "Black Clipping",
+          "definition": "Persentase piksel pada kecerahan 0 (hitam murni). Nilai tinggi berarti detail bayangan telah hilang dan tidak dapat dipulihkan."
+        },
+        "White Clipping": {
+          "term": "White Clipping",
+          "definition": "Persentase piksel pada kecerahan 255 (putih murni). Nilai tinggi berarti detail highlight telah terbakar habis."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Anda mengunggah foto dan histogram terdorong kuat ke kiri dengan hampir tidak ada di sisi kanan. Apa yang ini beritahu tentang gambar?",
+          "hint": "Kiri = gelap, kanan = terang.",
+          "successMessage": "Benar! Histogram yang berat ke kiri berarti gambar sebagian besar nada gelap — mungkin undereksposur, atau bisa jadi gambar gelap/low-key yang disengaja.",
+          "failureMessage": "Histogram yang menumpuk ke kiri menunjukkan gambar didominasi nada gelap. Ini sering berarti undereksposur.",
+          "options": {
+            "0": { "label": "Gambar undereksposur atau sangat gelap" },
+            "1": { "label": "Gambar overeksposur atau sangat terang" },
+            "2": { "label": "Gambar memiliki eksposur sempurna" }
+          }
+        },
+        "1": {
+          "scenario": "Mode tampilan mana yang harus Anda gunakan untuk melihat distribusi kecerahan keseluruhan foto Anda dalam satu grafik?",
+          "hint": "Satu mode menggabungkan semua informasi warna menjadi satu kurva kecerahan.",
+          "successMessage": "Tepat! Mode luminansi menunjukkan satu kurva yang mewakili kecerahan keseluruhan yang dirasakan.",
+          "failureMessage": "Mode luminansi adalah tampilan paling sederhana — menggabungkan R, G, B menjadi satu kurva kecerahan.",
+          "options": {
+            "0": { "label": "Luminansi" },
+            "1": { "label": "RGB Overlay" },
+            "2": { "label": "All Channels" }
+          }
+        },
+        "2": {
+          "scenario": "Anda memotret matahari terbenam yang cerah dan histogram luminansi terlihat baik, tetapi ketika Anda beralih ke RGB Overlay, Anda melihat kanal merah melonjak di ujung kanan. Apa yang terjadi?",
+          "hint": "Kanal warna individual bisa terpotong bahkan ketika luminansi keseluruhan tidak.",
+          "successMessage": "Tepat! Kanal merah terpotong — highlight matahari terbenam telah kehilangan detail di nada merah meskipun kecerahan keseluruhan terlihat dapat diterima. Anda kehilangan nuansa warna hangat.",
+          "failureMessage": "Kanal merah terpotong secara independen. Highlight hangat yang jenuh (matahari terbenam, api) sering mendorong merah ke 255 sementara hijau dan biru baik-baik saja, kehilangan detail warna di nada tersebut.",
+          "options": {
+            "0": { "label": "Kanal merah terpotong — detail highlight hangat hilang" },
+            "1": { "label": "Gambar overeksposur secara keseluruhan" },
+            "2": { "label": "White balance salah" }
+          }
+        },
+        "3": {
+          "scenario": "Alat melaporkan 2,3% black clipping dan 0,1% white clipping. Haruskah Anda menyesuaikan eksposur?",
+          "hint": "Jumlah clipping kecil itu normal — bayangan hitam murni dan highlight spekular diharapkan.",
+          "successMessage": "Penilaian bagus! Black clipping 2,3% cukup sederhana dan sering hanya bayangan dalam atau tepi gelap. White clipping 0,1% kemungkinan highlight spekular (pantulan matahari). Eksposur ini baik untuk sebagian besar kegunaan.",
+          "failureMessage": "Persentase clipping ini cukup kecil. Sedikit black clipping di bayangan dalam dan white clipping kecil dari highlight spekular itu normal dan diharapkan. Tidak perlu penyesuaian.",
+          "options": {
+            "0": { "label": "Naikkan eksposur untuk mengurangi black clipping" },
+            "1": { "label": "Ini baik — clipping kecil di bayangan dan highlight spekular itu normal" },
+            "2": { "label": "Turunkan eksposur untuk menghilangkan white clipping" }
+          }
+        },
+        "4": {
+          "scenario": "Anda memotret adegan kontras tinggi: pengantin dalam gaun putih berdiri di katedral gelap. Histogram menunjukkan puncak kuat di kedua ujung dengan celah di midtone. Bagaimana Anda harus menangani ini?",
+          "hint": "Ketika rentang dinamis adegan melebihi rentang sensor kamera, Anda memerlukan teknik multi-eksposur.",
+          "successMessage": "Sempurna! Histogram bimodal ini menunjukkan adegan melebihi rentang dinamis sensor Anda. Bracketing eksposur (HDR) menangkap detail interior gelap dan gaun putih cerah. Alternatifnya, gunakan fill flash untuk mengangkat bayangan.",
+          "failureMessage": "Histogram bimodal (puncak di kedua ujung, tengah kosong) berarti adegan memiliki rentang dinamis lebih dari yang dapat ditangkap sensor Anda dalam satu foto. Bracket eksposur untuk HDR, atau gunakan fill flash untuk mengurangi rasio kontras.",
+          "options": {
+            "0": { "label": "Bracket eksposur untuk HDR atau gunakan fill flash" },
+            "1": { "label": "Ekspos untuk midtone dan berharap yang terbaik" },
+            "2": { "label": "Ganti ke hitam putih untuk menyembunyikan masalah" }
+          }
+        }
+      }
+    }
+  }
+}

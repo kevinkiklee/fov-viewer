@@ -1,0 +1,126 @@
+{
+  "education": {
+    "exif-viewer": {
+      "beginner": "Dane EXIF to ukryte informacje osadzone w każdym zdjęciu robionym aparatem. Rejestrują, jakiego aparatu i obiektywu użyłeś, dokładne ustawienia (przysłona, czas naświetlania, ISO), datę i godzinę, a czasem nawet współrzędne GPS. To narzędzie odczytuje te dane bez przesyłania zdjęcia gdziekolwiek — wszystko dzieje się w Twojej przeglądarce.",
+      "deeper": "EXIF (Exchangeable Image File Format) to standard zdefiniowany przez JEITA/CIPA, który przechowuje metadane w plikach JPEG, TIFF i niektórych RAW. Dane są zapisywane w określonych segmentach nagłówka pliku jako otagowane pary klucz-wartość przy użyciu struktury IFD (Image File Directory) opartej na TIFF. Istnieje kilka sekcji IFD: IFD0 dla podstawowych informacji o obrazie, pod-IFD EXIF dla ustawień aparatu, IFD GPS dla geolokalizacji oraz IFD Interop dla danych kompatybilności. Producenci aparatów zapisują również zastrzeżone dane «MakerNote» zawierające korekcje obiektywu, punkty AF, liczbę migawek i inne dane specyficzne dla modelu. Platformy mediów społecznościowych często usuwają dane EXIF przy przesyłaniu ze względu na prywatność, ale oryginalny plik na karcie pamięci zawsze je zachowuje. Zrozumienie EXIF pomaga uczyć się z własnych wzorców fotografowania i odtwarzać ustawienia użyte w podziwianych zdjęciach.",
+      "keyFactors": {
+        "0": {
+          "label": "Aparat i obiektyw",
+          "description": "Producent, model, nazwa obiektywu i producent obiektywu — przydatne do identyfikacji sprzętu na zdjęciach znalezionych w internecie."
+        },
+        "1": {
+          "label": "Ustawienia ekspozycji",
+          "description": "Przysłona, czas naświetlania, ISO i ogniskowa — podstawowe parametry nagrywane dla każdej klatki."
+        },
+        "2": {
+          "label": "Data i GPS",
+          "description": "Kiedy i gdzie zdjęcie zostało zrobione. Pamiętaj, że dane GPS ujawniają Twoją lokalizację podczas udostępniania plików."
+        },
+        "3": {
+          "label": "Oprogramowanie",
+          "description": "Pokazuje, jaki program do edycji ostatnio zapisał plik. Przydatne do sprawdzenia, czy obraz był obrobiony."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Sprawdź ogniskową i ekwiwalent 35 mm, aby zrozumieć, czy fotograf użył szerokokątnej, normalnej czy teleobiektywowej perspektywy — to uczy kompozycji bardziej niż jakakolwiek zasada trójpodziału."
+        },
+        "1": {
+          "text": "Jeśli podziwiane zdjęcie zostało wykonane przy wysokim ISO z szeroką przysłoną, mówi to, że była to sytuacja słabego oświetlenia. Użyj EXIF, aby zrozumieć ograniczenia, z jakimi mierzył się fotograf."
+        },
+        "2": {
+          "text": "Przed udostępnieniem zdjęć online pamiętaj, że EXIF może zawierać Twoją lokalizację GPS. Usuń metadane za pomocą ustawień eksportu programu do edycji, jeśli prywatność jest ważna."
+        }
+      },
+      "tooltips": {
+        "Make": {
+          "term": "Producent",
+          "definition": "Nazwa producenta aparatu (np. Canon, Nikon, Sony) przechowywana w nagłówku EXIF."
+        },
+        "Model": {
+          "term": "Model",
+          "definition": "Konkretny model aparatu (np. «EOS R5», «Z 9»), który wykonał zdjęcie."
+        },
+        "Aperture": {
+          "term": "Przysłona",
+          "definition": "Numer f, na który był ustawiony obiektyw. Niższe numery oznaczają szerszą przysłonę i więcej światła."
+        },
+        "Shutter Speed": {
+          "term": "Czas migawki",
+          "definition": "Jak długo matryca była naświetlana. Wyrażany jako ułamek (np. 1/250 s) lub pełne sekundy przy długich ekspozycjach."
+        },
+        "ISO": {
+          "term": "ISO",
+          "definition": "Ustawienie czułości matrycy. Wyższe ISO rozjaśnia obraz, ale dodaje szum."
+        },
+        "Focal Length": {
+          "term": "Ogniskowa",
+          "definition": "Rzeczywista ogniskowa obiektywu w milimetrach."
+        },
+        "Focal Length (35mm equiv)": {
+          "term": "Ogniskowa (ekwiwalent 35 mm)",
+          "definition": "Ekwiwalentna ogniskowa, jakby zdjęcie było wykonane pełnoklatkową matrycą 35 mm. Przydatna do porównywania pola widzenia między różnymi rozmiarami matryc."
+        },
+        "GPS": {
+          "term": "GPS",
+          "definition": "Współrzędne geograficzne osadzone przez aparaty z modułami GPS. Ujawniają, gdzie zdjęcie zostało wykonane."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Znalazłeś oszałamiające zdjęcie w internecie i chcesz wiedzieć, jaki obiektyw został użyty. Która sekcja EXIF powie Ci to?",
+          "hint": "Informacje o aparacie i obiektywie znajdują się w różnych sekcjach.",
+          "successMessage": "Prawidłowo! Sekcja Obiektyw pokazuje model i producenta obiektywu.",
+          "failureMessage": "Sekcja Obiektyw zawiera model obiektywu — sprawdź ją, aby zidentyfikować użyte szkło.",
+          "options": {
+            "0": { "label": "Aparat" },
+            "1": { "label": "Obiektyw" },
+            "2": { "label": "Ustawienia" }
+          }
+        },
+        "1": {
+          "scenario": "Przesłałeś zdjęcie i widzisz Przysłona: f/1.8, Czas migawki: 1/4000 s, ISO: 100. Czy to prawdopodobnie było zrobione w jasnym czy słabym świetle?",
+          "hint": "Bardzo szybki czas migawki przy niskim ISO sugeruje dużo dostępnego światła.",
+          "successMessage": "Zgadza się! Szybki czas migawki (1/4000 s) przy bazowym ISO (100) mówi Ci, że było dużo światła — prawdopodobnie jasne warunki na zewnątrz.",
+          "failureMessage": "Czas migawki 1/4000 s przy ISO 100 oznacza, że aparat potrzebował bardzo mało czułości i bardzo krótkiej ekspozycji. To jasna scena plenerowa.",
+          "options": {
+            "0": { "label": "Jasne światło — szybki czas przy niskim ISO" },
+            "1": { "label": "Słabe światło — szeroka przysłona kompensuje" }
+          }
+        },
+        "2": {
+          "scenario": "Zdjęcie pokazuje Ogniskowa: 50 mm i Ogniskowa (ekw. 35 mm): 75 mm. Jakiej matrycy używał aparat?",
+          "hint": "Ekwiwalent 35 mm to ogniskowa pomnożona przez współczynnik kadrowania.",
+          "successMessage": "Prawidłowo! 75 / 50 = współczynnik kadrowania 1,5x, czyli matryca APS-C (wariant Nikon/Sony).",
+          "failureMessage": "Podziel ekwiwalent 35 mm przez rzeczywistą ogniskową: 75 / 50 = 1,5x. Ten współczynnik kadrowania odpowiada APS-C (Nikon/Sony).",
+          "options": {
+            "0": { "label": "Pełna klatka (kadrowanie 1,0x)" },
+            "1": { "label": "APS-C (kadrowanie 1,5x)" },
+            "2": { "label": "Micro Four Thirds (kadrowanie 2,0x)" }
+          }
+        },
+        "3": {
+          "scenario": "Widzisz dwa zdjęcia tej samej sceny. Zdjęcie A: f/2.8, 1/60 s, ISO 3200. Zdjęcie B: f/2.8, 1/60 s, ISO 200. Które zdjęcie zostało zrobione w jaśniejszym świetle?",
+          "hint": "Wyższe ISO kompensuje mniej światła.",
+          "successMessage": "Dokładnie! Zdjęcie B przy ISO 200 miało znacznie więcej światła otoczenia. Zdjęcie A potrzebowało ISO 3200 (4 stopnie więcej czułości) aby uzyskać tę samą ekspozycję, co oznacza, że scena była znacznie ciemniejsza.",
+          "failureMessage": "Zdjęcie B było w jaśniejszym świetle. Ta sama przysłona i czas migawki, ale ISO 200 vs 3200 oznacza, że zdjęcie A było w znacznie ciemniejszym otoczeniu i potrzebowało 4 stopni więcej czułości matrycy.",
+          "options": {
+            "0": { "label": "Zdjęcie A (ISO 3200)" },
+            "1": { "label": "Zdjęcie B (ISO 200)" }
+          }
+        },
+        "4": {
+          "scenario": "Analizujesz zdjęcie dzikiej przyrody: 400 mm, f/5.6, 1/2000 s, ISO 1600. EXIF pokazuje, że pole oprogramowania to «Adobe Lightroom Classic 13.1». Co możesz wywnioskować o fotografie i warunkach fotografowania?",
+          "hint": "Weź pod uwagę długą ogniskową, szeroką przysłonę, szybki czas i podwyższone ISO razem.",
+          "successMessage": "Świetna analiza! 400 mm przy f/5.6 (prawdopodobnie na pełnym otwarciu tego obiektywu) z szybkim czasem 1/2000 s sugeruje szybko poruszający się obiekt (ptaki lub dzikie zwierzęta w akcji). ISO 1600 wskazuje, że nie było jasnego słońca — prawdopodobnie pochmurno lub w cieniu. Pole Lightroom potwierdza, że wykonano obróbkę.",
+          "failureMessage": "Ustawienia mówią wiele: 400 mm f/5.6 to typowy teleobiektyw do dzikiej przyrody na pełnym otwarciu, 1/2000 s zamraża szybki ruch zwierząt, a ISO 1600 oznacza ograniczone światło (nie jasne słońce). Wpis Lightroom potwierdza, że plik był obrobiony.",
+          "options": {
+            "0": { "label": "Szybki obiekt w umiarkowanym świetle, obrobiony w Lightroom" },
+            "1": { "label": "Wolny obiekt w jasnym świetle, prosto z aparatu" },
+            "2": { "label": "Krajobraz z rozmyciem ruchu, mocno edytowany" }
+          }
+        }
+      }
+    }
+  }
+}

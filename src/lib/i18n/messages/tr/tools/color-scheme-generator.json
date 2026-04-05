@@ -1,0 +1,57 @@
+{
+  "toolUI": {
+    "color-scheme-generator": {
+      "colorScheme": "Renk Şeması",
+      "complementary": "Tamamlayıcı",
+      "analogous": "Analog",
+      "triadic": "Triadik",
+      "splitComplementary": "Bölünmüş Tamamlayıcı",
+      "tetradic": "Tetradik",
+      "keyColor": "Anahtar Renk",
+      "hue": "Ton:",
+      "saturation": "Doygunluk:",
+      "lightness": "Açıklık:",
+      "splitAngle": "Bölünme açısı:",
+      "spread": "Yayılım:",
+      "rectangleWidth": "Dikdörtgen genişliği:",
+      "square": "(kare)",
+      "pickFromPhoto": "Fotoğraftan Seç",
+      "dropPhotoPrompt": "Bir fotoğraf sürükleyin veya göz atmak için tıklayın",
+      "keyColorLabel": "Anahtar renk — hex kopyalamak için tıklayın",
+      "clickToCopyHex": "Hex kopyalamak için tıklayın",
+      "copiedExcl": "Kopyalandı!",
+      "copyColors": "Renkleri kopyala",
+      "hexFormat": "Hex",
+      "cssFormat": "CSS",
+      "rgbFormat": "RGB",
+      "copyHexCodes": "Hex kodlarını kopyala",
+      "copyCssVariables": "CSS değişkenlerini kopyala",
+      "copyRgbValues": "RGB değerlerini kopyala",
+      "pickColorFromPhoto": "Fotoğraftan renk seç",
+      "close": "Kapat",
+      "dropPhotoOrBrowse": "Bir fotoğraf sürükleyin veya göz atmak için tıklayın",
+      "tapToChoose": "Fotoğraf seçmek için dokunun",
+      "tapToSample": "O rengi örneklemek için fotoğrafta herhangi bir yere dokunun",
+      "changePhoto": "Fotoğrafı değiştir",
+      "privacyNote": "Fotoğrafınız tarayıcınızda kalır — hiçbir şey yüklenmez",
+      "suggestions": {
+        "complementary": {
+          "warm": "Harika: soğuk gölge kontrastlı sıcak gün batımı portreleri",
+          "cool": "Harika: sıcak aksan aydınlatmalı atmosferik mavi saat çekimleri",
+          "default": "Harika: güçlü görsel gerilimli yüksek kontrastlı kompozisyonlar"
+        },
+        "analogous": {
+          "warm": "Harika: birleşik sıcak tonlu altın saat manzaraları",
+          "cool": "Harika: huzurlu su sahneleri ve alacakaranlık fotoğrafçılığı",
+          "default": "Harika: pürüzsüz renk geçişli uyumlu doğa çekimleri"
+        },
+        "triadic": "Kullanım: canlı editöryal çalışma ve cesur yaratıcı portreler",
+        "splitComplementary": {
+          "warm": "Kullanım: doğal arka plan karşısında kontrast kıyafet",
+          "default": "Kullanım: görsel çeşitlilikli dengeli ürün fotoğrafçılığı"
+        },
+        "tetradic": "Kullanım: zengin editöryal düzenler ve karmaşık çoklu konu kompozisyonları"
+      }
+    }
+  }
+}

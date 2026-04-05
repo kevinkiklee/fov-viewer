@@ -1,0 +1,133 @@
+{
+  "education": {
+    "frame-studio": {
+      "beginner": "Frame Studio giúp bạn cắt, đóng khung và bố cục ảnh ngay trong trình duyệt. Sử dụng các lưới bố cục để cải thiện khung hình, cắt theo tỷ lệ phổ biến và thêm viền chuyên nghiệp — tất cả mà không mất chất lượng ảnh.",
+      "deeper": {
+        "0": {
+          "heading": "Lưới bố cục",
+          "text": "Quy tắc một phần ba chia khung hình thành lưới 3×3 — đặt chủ thể dọc theo các đường hoặc tại giao điểm tạo ra cân bằng thị giác tự nhiên. Tỷ lệ vàng (khoảng 1.618:1) cung cấp phân chia hài hòa về mặt toán học được sử dụng trong nghệ thuật và kiến trúc hàng thế kỷ. Xoắn ốc vàng dẫn mắt theo đường cong logarit từ dãy Fibonacci, hữu ích để dẫn dắt người xem qua ảnh."
+        },
+        "1": {
+          "heading": "Tỷ lệ khung hình",
+          "text": "Các tỷ lệ khung hình khác nhau phục vụ mục đích khác nhau. 1:1 (vuông) hoạt động tốt cho mạng xã hội và bố cục đối xứng. 3:2 là tỷ lệ phim 35mm kinh điển. 4:3 phổ biến trong micro four-thirds và máy ảnh kỹ thuật số cũ. 16:9 là tỷ lệ màn hình rộng tiêu chuẩn cho video và bố cục điện ảnh. 5:4 truyền thống cho in 8×10."
+        },
+        "2": {
+          "heading": "Đóng khung và viền",
+          "text": "Thêm viền quanh ảnh mô phỏng hiệu ứng khung mat và khung vật lý. Mat trắng cung cấp không gian thở thị giác và hướng tiêu điểm vào trong. Chiều rộng viền so với ảnh ảnh hưởng đến \"trọng lượng\" cảm nhận của ảnh. Trưng bày phòng triển lãm thường sử dụng mat rộng hơn. Bóng đổ tinh tế tạo chiều sâu, mô phỏng cách ảnh in đóng khung treo trên tường."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Lưới bố cục",
+          "description": "Các hướng dẫn chồng lên giúp bạn đánh giá và cải thiện vị trí chủ thể trong khung hình."
+        },
+        "1": {
+          "label": "Tỷ lệ khung hình",
+          "description": "Tỷ lệ chiều rộng-chiều cao ảnh hưởng đến cảm nhận ảnh — tỷ lệ rộng hơn cảm thấy điện ảnh, vuông cảm thấy cân bằng."
+        },
+        "2": {
+          "label": "Chiều rộng viền",
+          "description": "Viền rộng hơn thêm sự trang trọng và tập trung; viền hẹp cảm thấy hiện đại và tối giản."
+        },
+        "3": {
+          "label": "Màu mat",
+          "description": "Mat trắng kinh điển cho nhiếp ảnh nghệ thuật. Mat tối nhấn mạnh ảnh sáng. Mat màu có thể bổ sung hoặc tương phản."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Cho bài đăng Instagram, cắt theo 4:5 (portrait) để chiếm tối đa không gian màn hình trong feed."
+        },
+        "1": {
+          "text": "Khi thêm viền để in, sử dụng chiều rộng mat ít nhất 10% cạnh ngắn hơn của ảnh cho diện mạo chuyên nghiệp."
+        },
+        "2": {
+          "text": "Xoắn ốc vàng hiệu quả nhất cho ảnh có dòng chảy tự nhiên — nước, đường, hoặc kiến trúc cong."
+        }
+      },
+      "tooltips": {
+        "Aspect Ratio": {
+          "term": "Tỷ lệ khung hình",
+          "definition": "Mối quan hệ tỷ lệ giữa chiều rộng và chiều cao. Tỷ lệ phổ biến gồm 3:2 (35mm), 4:3 (M43) và 16:9 (màn hình rộng)."
+        },
+        "Rule of Thirds": {
+          "term": "Quy tắc một phần ba",
+          "definition": "Hướng dẫn bố cục chia khung hình thành 9 phần bằng nhau. Đặt chủ thể tại giao điểm tạo ra sự hấp dẫn thị giác."
+        },
+        "Golden Ratio": {
+          "term": "Tỷ lệ vàng",
+          "definition": "Tỷ lệ toán học (~1.618:1) được tìm thấy trong tự nhiên và nghệ thuật. Tạo ra sự phân chia không gian dễ chịu về mặt thẩm mỹ."
+        },
+        "Border Width": {
+          "term": "Chiều rộng viền",
+          "definition": "Độ dày viền khung tính bằng pixel. Nằm bên ngoài ảnh, tăng kích thước tổng thể mà không cắt."
+        },
+        "Inner Mat": {
+          "term": "Mat trong",
+          "definition": "Viền thứ hai mỏng hơn giữa khung ngoài và ảnh — mô phỏng mat vát trong của khung ảnh vật l��."
+        },
+        "Corner Radius": {
+          "term": "Bán kính góc",
+          "definition": "Làm tròn góc viền khung. Giá trị không cho góc sắc, giá trị cao cho diện mạo mềm, tròn."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Bạn muốn đăng ảnh chân dung lên Instagram để chiếm tối đa feed. Tỷ lệ khung hình nào bạn nên dùng?",
+          "hint": "Bài đăng portrait Instagram sử dụng tỷ lệ cao hơn rộng.",
+          "successMessage": "Chính xác! 4:5 cho bạn không gian dọc tối đa trong feed Instagram.",
+          "failureMessage": "Bài đăng portrait Instagram sử dụng 4:5 (lật 5:4 sang hướng portrait) cho diện tích feed tối đa.",
+          "options": {
+            "0": { "label": "1:1 (Vuông)" },
+            "1": { "label": "4:5 (Portrait)" },
+            "2": { "label": "16:9 (Màn hình rộng)" }
+          }
+        },
+        "1": {
+          "scenario": "Lưới bố cục nào được dạy rộng rãi nhất cho người mới bắt đầu?",
+          "hint": "Nó chia khung hình thành 9 phần bằng nhau.",
+          "successMessage": "Đúng! Quy tắc một phần ba là hướng dẫn bố cục nền tảng.",
+          "failureMessage": "Quy tắc một phần ba (lưới 3×3) là điểm xuất phát phổ biến nhất cho học bố cục.",
+          "options": {
+            "0": { "label": "Quy tắc một phần ba" },
+            "1": { "label": "Xoắn ốc vàng" },
+            "2": { "label": "Đường chéo" }
+          }
+        },
+        "2": {
+          "scenario": "Bạn đang chuẩn bị ảnh để in phòng triển lãm trên giấy 8×10. Tỷ lệ khung hình nào phù hợp kích thước in này?",
+          "hint": "8×10 đơn giản hóa thành tỷ lệ quen thuộc.",
+          "successMessage": "Chính xác! 5:4 phù hợp kích thước in 8×10 hoàn hảo.",
+          "failureMessage": "8×10 đơn giản hóa thành 4:5, là phiên bản portrait của 5:4.",
+          "options": {
+            "0": { "label": "3:2" },
+            "1": { "label": "5:4" },
+            "2": { "label": "4:3" }
+          }
+        },
+        "3": {
+          "scenario": "Ảnh phong cảnh có con sông uốn lượn từ tiền cảnh đến núi hậu cảnh. Lưới chồng nào phù hợp nhất với dòng chảy tự nhiên này?",
+          "hint": "Một loại lưới theo đường cong tự nhiên.",
+          "successMessage": "Lựa chọn tuyệt vời! Xoắn ốc vàng theo các đường cong và đường dẫn hoàn hảo.",
+          "failureMessage": "Xoắn ốc vàng lý tưởng cho ảnh có các yếu tố cong tự nhiên như sông, đường hoặc bờ biển.",
+          "options": {
+            "0": { "label": "Chữ thập trung tâm" },
+            "1": { "label": "Xoắn ốc vàng" },
+            "2": { "label": "Lưới vuông" }
+          }
+        },
+        "4": {
+          "scenario": "Bạn muốn viền trắng sạch để trình bày ảnh trên mạng xã hội. Preset khung nào bạn nên dùng?",
+          "hint": "Nghĩ xem preset nào cho viền trắng đơn giản.",
+          "successMessage": "Chính xác! Preset Trắng thêm viền trắng 100px quanh ảnh.",
+          "failureMessage": "Preset Trắng được thiết kế cho trình bày viền trắng sạch, đơn giản.",
+          "options": {
+            "0": { "label": "Không" },
+            "1": { "label": "Trắng" },
+            "2": { "label": "Đen" }
+          }
+        }
+      }
+    }
+  }
+}

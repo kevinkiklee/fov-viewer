@@ -1,0 +1,13 @@
+{
+  "toolUI": {
+    "perspective-compression-simulator": {
+      "cameraSettings": "Ustawienia aparatu",
+      "focalLength": "Ogniskowa",
+      "equivalent35mm": "Ekwiwalent (35 mm)",
+      "perspectiveDistance": "Perspektywa i odległość",
+      "subjectDistance": "Odległość od obiektu",
+      "maintainSubjectSize": "Utrzymaj rozmiar obiektu",
+      "resetAll": "Resetuj wszystko"
+    }
+  }
+}

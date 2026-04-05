@@ -1,0 +1,43 @@
+{
+  "toolUI": {
+    "exposure-simulator": {
+      "lock": "Zablokuj:",
+      "lockAperture": "Przysłona",
+      "lockShutter": "Migawka",
+      "lockISO": "ISO",
+      "lockApertureLabel": "Zablokuj przysłonę",
+      "lockShutterLabel": "Zablokuj migawkę",
+      "lockISOLabel": "Zablokuj ISO",
+      "aperture": "Przysłona:",
+      "shutterSpeed": "Czas naświetlania:",
+      "iso": "ISO:",
+      "locked": "(zablokowane)",
+      "exposureValue": "Wartość ekspozycji (EV)",
+      "depthOfField": "Głębia ostrości",
+      "motion": "Ruch",
+      "noise": "Szum",
+      "dofVeryShallow": "Bardzo płytka",
+      "dofShallow": "Płytka",
+      "dofModerate": "Umiarkowana",
+      "dofDeep": "Głęboka",
+      "dofVeryDeep": "Bardzo głęboka",
+      "motionFrozen": "Zamrożony",
+      "motionSharp": "Ostry",
+      "motionModerate": "Umiarkowany",
+      "motionSlightBlur": "Lekkie rozmycie",
+      "motionBlurred": "Rozmyty",
+      "noiseClean": "Czysty",
+      "noiseLow": "Niski szum",
+      "noiseModerate": "Umiarkowany szum",
+      "noiseNoisy": "Szumowy",
+      "noiseVeryNoisy": "Bardzo szumowy",
+      "scene": "Scena:",
+      "sceneStreet": "Ulica",
+      "sceneLandscape": "Krajobraz",
+      "scenePortrait": "Portret",
+      "sceneLowLight": "Słabe światło",
+      "imageEffectsUnavailable": "Podgląd efektów obrazu jest niedostępny.",
+      "loadingScene": "Ładowanie sceny..."
+    }
+  }
+}

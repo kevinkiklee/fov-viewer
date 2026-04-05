@@ -1,0 +1,150 @@
+{
+  "education": {
+    "star-trail-calculator": {
+      "beginner": "Các ngôi sao dường như di chuyển qua bầu trời vì Trái Đất quay. Nếu màn trập mở đủ lâu, sao sẽ tạo thành vệt sáng trong ảnh. Máy tính vệt sao giúp bạn tìm thời gian phơi sáng tối đa cho sao điểm sáng, hoặc lên kế hoạch phơi sáng dài để tạo vòng cung vệt sao đẹp.",
+      "deeper": {
+        "0": {
+          "heading": "Cách sao di chuyển",
+          "text": "Trái Đất quay 360° trong khoảng 23 giờ 56 phút (một ngày thiên văn), nên sao di chuyển khoảng 15 giây cung mỗi giây ở xích đạo thiên cầu. Sao gần cực (Sao Bắc Cực ở bắc bán cầu) vẽ vòng tròn nhỏ hơn và dường như di chuyển chậm hơn."
+        },
+        "1": {
+          "heading": "Quy tắc 500 vs. Quy tắc NPF",
+          "text": "\"Quy tắc 500\" kinh điển chia 500 cho tiêu cự hiệu dụng để ước tính phơi sáng tối đa trước khi vệt sáng rõ — nhưng nó được thiết kế cho cảm biến độ phân giải thấp hơn. Quy tắc NPF tính đến bước điểm ảnh, tiêu cự, khẩu độ và xích vĩ, cho kết quả ngắn hơn và chính xác hơn cho máy ảnh độ phân giải cao hiện đại."
+        },
+        "2": {
+          "heading": "Chồng cho vệt sao",
+          "text": "Cho vệt sao có chủ đích, nhiếp ảnh gia chụp nhiều phơi sáng ngắn (thường 30s mỗi ảnh) và chồng chúng trong phần mềm. Điều này tránh tích tụ nhiễu, cho phép vệt liền mạch, và một khung hình hỏng không phá hỏng toàn bộ bức ảnh."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Tiêu cự",
+          "description": "Tiêu cự dài hơn phóng đại chuyển động sao, đòi hỏi phơi sáng ngắn hơn cho sao điểm sáng. Ống 14mm có thể phơi sáng dài gấp 5-10 lần ống 200mm."
+        },
+        "1": {
+          "label": "Độ phân giải cảm biến",
+          "description": "Cảm biến độ phân giải cao tiết lộ vệt sao ở thời gian phơi sáng ngắn hơn. Quy tắc 500 quá hào phóng cho máy 40MP+ hiện đại."
+        },
+        "2": {
+          "label": "Vĩ độ & Xích vĩ",
+          "description": "Sao gần cực thiên cầu di chuyển ít mỗi giây. Hướng về Sao Bắc Cực cho phép phơi sáng dài hơn trước khi vệt xuất hiện."
+        },
+        "3": {
+          "label": "Chồng vs Phơi sáng đơn",
+          "description": "Cho vệt sao, chồng nhiều phơi sáng ngắn cho kết quả sạch hơn một phơi sáng cực dài, và cho phép phục hồi từ gián đoạn."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Sử dụng Quy tắc NPF thay vì Quy tắc 500 cho máy ảnh hiện đại. Nó tính đến độ phân giải cảm biến và cho thời gian phơi sáng tối đa chính xác hơn, đặc biệt với thân máy megapixel cao."
+        },
+        "1": {
+          "text": "Cho chồng vệt sao, giữ khoảng trống giữa khung dưới 2-3 giây bằng remote có dây hoặc intervalometer. Khoảng trống dài hơn tạo vệt chấm chấm thay vì mượt."
+        },
+        "2": {
+          "text": "Bao gồm Sao Bắc Cực (hoặc Cực Nam Thiên Cầu) trong bố cục để có vệt vòng tròn đồng tâm ấn tượng. Sao gần cực vẽ vòng cung chặt hơn."
+        }
+      },
+      "tooltips": {
+        "mode": {
+          "term": "Chế độ",
+          "definition": "Chọn \"Sao sắc nét\" để tính thời gian phơi sáng tối đa cho sao điểm sáng, hoặc \"Vệt sao\" để lên kế hoạch chuỗi phơi sáng cho hiệu ứng vệt có chủ đích."
+        },
+        "focalLength": {
+          "term": "Tiêu cự",
+          "definition": "Tiêu cự ống kính tính bằng millimet. Tiêu cự dài hơn phóng đại chuyển động biểu kiến của sao, đòi hỏi phơi sáng riêng lẻ ngắn hơn."
+        },
+        "sensor": {
+          "term": "Kích thước cảm biến",
+          "definition": "Kích thước cảm biến vật lý. Kết hợp với độ phân giải, xác định bước điểm ảnh, ảnh hưởng tốc độ vệt sao trở nên rõ."
+        },
+        "resolution": {
+          "term": "Độ phân giải",
+          "definition": "Độ phân giải cảm biến tính bằng megapixel. Máy độ phân giải cao tiết lộ vệt sao sớm hơn vì mỗi pixel bao phủ diện tích góc bầu trời nhỏ hơn."
+        },
+        "aperture": {
+          "term": "Khẩu độ",
+          "definition": "Lỗ mở ống kính. Cho chụp thiên văn, sử dụng khẩu độ rộng nhất (số f thấp nhất) để thu nhiều ánh sáng sao nhất mỗi khung."
+        },
+        "latitude": {
+          "term": "Vĩ độ",
+          "definition": "Vĩ độ địa lý của bạn. Ảnh hưởng tốc độ chuyển động biểu kiến của sao — ở vĩ độ cao hơn, sao gần cực di chuyển chậm hơn qua khung."
+        },
+        "exposurePerFrame": {
+          "term": "Phơi sáng mỗi khung",
+          "definition": "Tốc độ màn trập cho mỗi khung riêng lẻ trong chuỗi vệt sao. Thường 15-30 giây để thu đủ ánh sáng trong khi tránh nhiễu quá mức."
+        },
+        "numberOfFrames": {
+          "term": "Số khung hình",
+          "definition": "Bao nhiêu phơi sáng riêng lẻ cần chụp. Nhiều khung hơn nghĩa là vệt sao dài hơn, ấn tượng hơn. 120 khung ở 30 giây mỗi khung tạo 1 giờ vệt."
+        },
+        "gapBetweenFrames": {
+          "term": "Khoảng trống giữa khung",
+          "definition": "Thời gian giữa các phơi sáng để máy ảnh lưu tệp. Giữ ngắn nhất có thể (1-3 giây) để tránh vệt chấm chấm."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Bạn đang chụp Dải Ngân Hà với ống 24mm trên máy full-frame 24MP. Sử dụng Quy tắc 500, bạn có thể phơi sáng khoảng bao lâu trước khi sao bắt đầu tạo vệt?",
+          "hint": "Quy tắc 500: số giây tối đa = 500 / tiêu cự.",
+          "successMessage": "Đúng! 500 / 24 = khoảng 20 giây. Đây là điểm xuất phát tốt, dù Quy tắc NPF có thể gợi ý thời gian ngắn hơn một chút cho độ nét tới hạn.",
+          "failureMessage": "Áp dụng Quy tắc 500: chia 500 cho tiêu cự (24mm). Cho bạn khoảng 20 giây.",
+          "options": {
+            "0": { "label": "5 giây" },
+            "1": { "label": "10 giây" },
+            "2": { "label": "20 giây" },
+            "3": { "label": "60 giây" }
+          }
+        },
+        "1": {
+          "scenario": "Bạn muốn chụp Tinh vân Orion với ống 200mm trên máy cảm biến crop (hệ số crop 1.5x). Phơi sáng tối đa xấp xỉ dùng Quy tắc 500?",
+          "hint": "Với cảm biến crop, nhân tiêu cự với hệ số crop trước, rồi áp dụng quy tắc.",
+          "successMessage": "Chính xác! Tiêu cự hiệu dụng 200mm x 1.5 = 300mm. 500 / 300 = ~1.7 giây. Ở tiêu cự tele trên cảm biến crop, bạn có rất ít thời gian trước khi vệt xuất hiện.",
+          "failureMessage": "Nhớ tính hệ số crop: 200mm x 1.5 = 300mm hiệu dụng. Rồi 500 / 300 cho khoảng 1.7 giây.",
+          "options": {
+            "0": { "label": "~1.7 giây" },
+            "1": { "label": "~2.5 giây" },
+            "2": { "label": "~5 giây" },
+            "3": { "label": "~10 giây" }
+          }
+        },
+        "2": {
+          "scenario": "Bạn muốn tạo ảnh vệt sao 2 giờ. Bạn lên kế hoạch chụp phơi sáng 30 giây với khoảng trống 2 giây. Bạn cần bao nhiêu khung?",
+          "hint": "Tính bao nhiêu khoảng 32 giây (30s phơi sáng + 2s trống) vừa trong 2 giờ (7200 giây).",
+          "successMessage": "Chính xác! 7200 giây / 32 giây mỗi khung = 225 khung. Bạn sẽ có vệt mượt, liên tục qua 2 giờ quay Trái Đất.",
+          "failureMessage": "Hai giờ = 7200 giây. Mỗi chu kỳ khung là 30s + 2s = 32s. Chia 7200 cho 32 để có số khung cần.",
+          "options": {
+            "0": { "label": "120 khung" },
+            "1": { "label": "180 khung" },
+            "2": { "label": "225 khung" },
+            "3": { "label": "240 khung" }
+          }
+        },
+        "3": {
+          "scenario": "Bạn bè dùng máy full-frame 50MP và theo Quy tắc 500 với ống 20mm, phơi sáng 25 giây. Họ phàn nàn sao trông như vệt ngắn khi zoom vào. Tại sao?",
+          "hint": "Quy tắc 500 được thiết kế cho cảm biến cũ, độ phân giải thấp hơn.",
+          "successMessage": "Chính xác! Quy tắc 500 quá hào phóng cho cảm biến độ phân giải cao. Cảm biến full-frame 50MP có bước điểm ảnh khoảng 4.4 micromet, và Quy tắc NPF sẽ khuyến nghị khoảng 10-12 giây cho sao thực sự sắc nét.",
+          "failureMessage": "Quy tắc 500 được tạo khi cảm biến có ít megapixel hơn nhiều. Với 50MP, mỗi pixel bao phủ lát bầu trời nhỏ hơn nhiều, tiết lộ chuyển động sao không nhìn thấy trên máy cũ.",
+          "options": {
+            "0": { "label": "Ống kính bị lệch nét" },
+            "1": { "label": "Quy tắc 500 quá hào phóng cho cảm biến độ phân giải cao" },
+            "2": { "label": "Máy ảnh bị rung trong gió" },
+            "3": { "label": "20mm quá rộng cho chụp thiên văn" }
+          }
+        },
+        "4": {
+          "scenario": "Bạn muốn ảnh vệt sao 1 giờ. Tại sao nhiếp ảnh gia thiên văn có kinh nghiệm chồng nhiều phơi sáng ngắn (ví dụ: 240 x 15s) thay vì chụp một phơi sáng 1 giờ duy nhất?",
+          "hint": "Nghĩ về điều gì xảy ra với nhiễu cảm biến, pin, và khả năng phục hồi trong phơi sáng đơn cực dài.",
+          "successMessage": "Chính xác! Một phơi sáng dài một giờ tích tụ nhiễu nhiệt lớn, hết pin, và nếu có gì sai (rung, sương, đèn pha) toàn bộ ảnh hỏng. Chồng khung ngắn giữ nhiễu thấp, cho phép loại bỏ khung hỏng, và dễ tha thứ hơn nhiều.",
+          "failureMessage": "Phơi sáng đơn dài tích tụ nhiễu nhiệt nghiêm trọng và có nguy cơ mất hoàn toàn từ bất kỳ gián đoạn nào. Chồng khung ngắn giữ nhiễu quản lý được, cho phép loại bỏ khung hỏng, và tạo kết quả sạch hơn.",
+          "options": {
+            "0": { "label": "Chồng tạo vệt dài hơn phơi sáng đơn" },
+            "1": { "label": "Phơi sáng đơn không thể ghi lại chuyển động sao" },
+            "2": { "label": "Chồng giảm nhiễu, cho phép phục hồi từ gián đoạn, và tiết kiệm pin" },
+            "3": { "label": "Không có khác biệt thực tế — hoàn toàn sở thích cá nhân" }
+          }
+        }
+      }
+    }
+  }
+}

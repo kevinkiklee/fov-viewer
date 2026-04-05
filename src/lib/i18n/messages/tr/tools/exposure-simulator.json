@@ -1,0 +1,43 @@
+{
+  "toolUI": {
+    "exposure-simulator": {
+      "lock": "Kilitle:",
+      "lockAperture": "Diyafram",
+      "lockShutter": "Enstantane",
+      "lockISO": "ISO",
+      "lockApertureLabel": "Diyaframı Kilitle",
+      "lockShutterLabel": "Enstantaneyi Kilitle",
+      "lockISOLabel": "ISO'yu Kilitle",
+      "aperture": "Diyafram:",
+      "shutterSpeed": "Enstantane Hızı:",
+      "iso": "ISO:",
+      "locked": "(kilitli)",
+      "exposureValue": "Pozlama Değeri (EV)",
+      "depthOfField": "Alan Derinliği",
+      "motion": "Hareket",
+      "noise": "Gürültü",
+      "dofVeryShallow": "Çok Sığ",
+      "dofShallow": "Sığ",
+      "dofModerate": "Orta",
+      "dofDeep": "Derin",
+      "dofVeryDeep": "Çok Derin",
+      "motionFrozen": "Donmuş",
+      "motionSharp": "Net",
+      "motionModerate": "Orta",
+      "motionSlightBlur": "Hafif Bulanık",
+      "motionBlurred": "Bulanık",
+      "noiseClean": "Temiz",
+      "noiseLow": "Düşük Gürültü",
+      "noiseModerate": "Orta Gürültü",
+      "noiseNoisy": "Gürültülü",
+      "noiseVeryNoisy": "Çok Gürültülü",
+      "scene": "Sahne:",
+      "sceneStreet": "Sokak",
+      "sceneLandscape": "Manzara",
+      "scenePortrait": "Portre",
+      "sceneLowLight": "Düşük Işık",
+      "imageEffectsUnavailable": "Görüntü efektleri önizlemesi kullanılamıyor.",
+      "loadingScene": "Sahne yükleniyor..."
+    }
+  }
+}

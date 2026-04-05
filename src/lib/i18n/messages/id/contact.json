@@ -1,0 +1,25 @@
+{
+  "contact": {
+    "title": "Hubungi Kami",
+    "description": "Punya pertanyaan, menemukan bug, atau ingin menyarankan alat baru? Kami ingin mendengar dari Anda.",
+    "form": {
+      "nameLabel": "Nama",
+      "namePlaceholder": "Nama Anda",
+      "emailLabel": "Email",
+      "emailPlaceholder": "email@anda.com",
+      "subjectLabel": "Subjek",
+      "subjectPlaceholder": "Tentang apa ini?",
+      "messageLabel": "Pesan",
+      "messagePlaceholder": "Pesan Anda...",
+      "submit": "Kirim Pesan",
+      "sending": "Mengirim...",
+      "honeypotLabel": "Website",
+      "successToast": "Pesan terkirim! Kami akan segera menghubungi Anda.",
+      "errorToast": "Terjadi kesalahan. Silakan coba lagi.",
+      "networkErrorToast": "Kesalahan jaringan. Silakan periksa koneksi Anda dan coba lagi.",
+      "sentTitle": "Terima kasih telah menghubungi kami!",
+      "sentMessage": "Kami akan membalas sesegera mungkin.",
+      "sendAnother": "Kirim pesan lain"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "toolUI": {
+    "equivalent-settings-calculator": {
+      "settings": "Ustawienia",
+      "sourceCamera": "Twój aparat",
+      "sourceSensor": "Matryca",
+      "sourceFocalLength": "Ogniskowa",
+      "sourceAperture": "Przysłona",
+      "sourceISO": "ISO",
+      "sourceDistance": "Odległość od obiektu",
+      "targetSensors": "Porównaj z",
+      "addSensor": "+ Dodaj matrycę",
+      "removeSensor": "Usuń",
+      "equivalenceCard": "Ekwiwalentne ustawienia",
+      "equivalentFL": "Ekwiwalentna ogniskowa",
+      "equivalentAperture": "Ekwiwalentna przysłona",
+      "equivalentISO": "Ekwiwalentne ISO",
+      "equivalentDistance": "Ekwiwalentna odległość",
+      "equivalentDoF": "Ekwiwalentna GoO",
+      "cropFactor": "Współczynnik kadrowania",
+      "fieldOfView": "Pole widzenia",
+      "warningUnrealisticAperture": "Ta ekwiwalentna przysłona ({value}) jest jaśniejsza niż jakikolwiek rzeczywisty obiektyw. Matryca docelowa nie może odtworzyć źródłowej głębi ostrości.",
+      "warningUnrealisticFL": "Ta ekwiwalentna ogniskowa ({value} mm) jest nietypowa. Możesz nie znaleźć rzeczywistego obiektywu o tej długości.",
+      "warningClosestReal": "Najbliższy rzeczywisty obiektyw: {value} mm f/{aperture}",
+      "diagramTitle": "Porównanie matryc i FOV",
+      "diagramSource": "Źródło",
+      "diagramTarget": "Cel",
+      "diagramFovAngle": "FOV: {angle}°",
+      "diagramCropFactor": "kadrowanie {factor}×",
+      "matchDoF": "Dopasuj głębię ostrości",
+      "matchFoV": "Dopasuj pole widzenia",
+      "matchExposure": "Dopasuj ekspozycję",
+      "sameFOV": "To samo pole widzenia",
+      "sameDoF": "Ta sama głębia ostrości",
+      "sameExposure": "Ta sama jasność ekspozycji"
+    }
+  }
+}

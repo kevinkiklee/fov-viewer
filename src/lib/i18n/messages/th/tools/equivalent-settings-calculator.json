@@ -1,0 +1,38 @@
+{
+  "toolUI": {
+    "equivalent-settings-calculator": {
+      "settings": "การตั้งค่า",
+      "sourceCamera": "กล้องของคุณ",
+      "sourceSensor": "เซ็นเซอร์",
+      "sourceFocalLength": "ทางยาวโฟกัส",
+      "sourceAperture": "รูรับแสง",
+      "sourceISO": "ISO",
+      "sourceDistance": "ระยะทางซับเจกต์",
+      "targetSensors": "เปรียบเทียบกับ",
+      "addSensor": "+ เพิ่มเซ็นเซอร์",
+      "removeSensor": "ลบ",
+      "equivalenceCard": "การตั้งค่าเทียบเท่า",
+      "equivalentFL": "ทางยาวโฟกัสเทียบเท่า",
+      "equivalentAperture": "รูรับแสงเทียบเท่า",
+      "equivalentISO": "ISO เทียบเท่า",
+      "equivalentDistance": "ระยะทางเทียบเท่า",
+      "equivalentDoF": "DoF เทียบเท่า",
+      "cropFactor": "ครอปแฟกเตอร์",
+      "fieldOfView": "มุมรับภาพ",
+      "warningUnrealisticAperture": "รูรับแสงเทียบเท่านี้ ({value}) เร็วกว่าเลนส์จริงใดๆ เซ็นเซอร์เป้าหมายไม่สามารถทำให้ระยะชัดลึกตรงกับต้นทางได้",
+      "warningUnrealisticFL": "ทางยาวโฟกัสเทียบเท่านี้ ({value}mm) ไม่ค่อยพบ คุณอาจหาเลนส์จริงที่ความยาวนี้ไม่ได้",
+      "warningClosestReal": "เลนส์จริงที่ใกล้เคียง: {value}mm f/{aperture}",
+      "diagramTitle": "เปรียบเทียบเซ็นเซอร์ & FOV",
+      "diagramSource": "ต้นทาง",
+      "diagramTarget": "เป้าหมาย",
+      "diagramFovAngle": "FOV: {angle}°",
+      "diagramCropFactor": "ครอป {factor}×",
+      "matchDoF": "ให้ตรงกับระยะชัดลึก",
+      "matchFoV": "ให้ตรงกับมุมรับภาพ",
+      "matchExposure": "ให้ตรงกับค่าการรับแสง",
+      "sameFOV": "มุมรับภาพเดียวกัน",
+      "sameDoF": "ระยะชัดลึกเดียวกัน",
+      "sameExposure": "ความสว่างค่าการรับแสงเดียวกัน"
+    }
+  }
+}

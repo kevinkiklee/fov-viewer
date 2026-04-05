@@ -1,0 +1,64 @@
+{
+  "tools": {
+    "fov-simulator": {
+      "name": "Simulator FOV",
+      "description": "Bandingkan bidang pandang pada berbagai panjang fokus dan ukuran sensor"
+    },
+    "color-scheme-generator": {
+      "name": "Generator Skema Warna",
+      "description": "Buat palet warna untuk sesi pemotretan"
+    },
+    "exposure-simulator": {
+      "name": "Simulator Segitiga Eksposur",
+      "description": "Lihat bagaimana apertur, kecepatan rana, dan ISO berinteraksi"
+    },
+    "dof-simulator": {
+      "name": "Simulator Depth-of-Field",
+      "description": "Visualisasikan bagaimana apertur, panjang fokus, dan jarak memengaruhi blur latar belakang"
+    },
+    "focus-stacking-calculator": {
+      "name": "Kalkulator Focus Stacking",
+      "description": "Hitung jarak fokus optimal untuk ketajaman depan-belakang"
+    },
+    "equivalent-settings-calculator": {
+      "name": "Kalkulator Pengaturan Ekuivalen",
+      "description": "Temukan apertur dan panjang fokus ekuivalen antar format sensor"
+    },
+    "hyperfocal-simulator": {
+      "name": "Simulator Jarak Hiperfocal",
+      "description": "Pelajari di mana harus fokus untuk ketajaman maksimal dari latar depan hingga tak terhingga"
+    },
+    "shutter-speed-visualizer": {
+      "name": "Visualisator Kecepatan Rana",
+      "description": "Temukan kecepatan rana minimum yang aman untuk foto genggam yang tajam"
+    },
+    "nd-filter-calculator": {
+      "name": "Kalkulator Filter ND",
+      "description": "Hitung waktu eksposur dengan filter ND apa pun"
+    },
+    "star-trail-calculator": {
+      "name": "Kalkulator Jejak Bintang",
+      "description": "Hitung eksposur maksimal untuk bintang tajam atau rencanakan pemotretan jejak bintang"
+    },
+    "perspective-compression-simulator": {
+      "name": "Simulator Kompresi Perspektif",
+      "description": "Lihat bagaimana panjang fokus memengaruhi kompresi latar belakang"
+    },
+    "white-balance-visualizer": {
+      "name": "Visualisator White Balance",
+      "description": "Lihat bagaimana suhu warna memengaruhi foto Anda"
+    },
+    "sensor-size-comparison": {
+      "name": "Perbandingan Ukuran Sensor",
+      "description": "Bandingkan ukuran sensor kamera secara visual"
+    },
+    "frame-studio": {
+      "name": "Frame Studio",
+      "description": "Potong, bingkai, dan komposisikan foto dengan overlay grid"
+    },
+    "exif-viewer": {
+      "name": "EXIF Viewer",
+      "description": "Lihat metadata EXIF dan histogram untuk foto apa pun — 100% di sisi klien"
+    }
+  }
+}

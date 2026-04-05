@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "star-trail-calculator": {
+      "rule500": "500 法则",
+      "ruleNPF": "NPF 法则",
+      "recommendation": "建议",
+      "recommendationText": "使用 NPF 法则（{npf}s）获得像素级锐度。500 法则（{r500}s）是快速估算但在高分辨率传感器上可能出现拖尾。",
+      "shootingTime": "拍摄时间",
+      "exposure": "曝光",
+      "displayMode": "显示模式",
+      "modeStarTrails": "星轨",
+      "modeSingleShot": "单次拍摄",
+      "stacking": "堆叠",
+      "exposurePerFrame": "每帧曝光（秒）",
+      "exposurePerFrameDesc": "每张照片的快门速度",
+      "frames": "帧数",
+      "framesDesc": "要堆叠的照片总数",
+      "gapSec": "间隔（秒）",
+      "gapDesc": "帧间延迟用于缓冲写入",
+      "camera": "相机",
+      "sensor": "传感器",
+      "resolutionMP": "分辨率（MP）",
+      "apertureLabel": "光圈",
+      "latitude": "纬度",
+      "position": "位置",
+      "useMyLocation": "使用我的位置",
+      "latitudeLabel": "纬度：",
+      "equator": "赤道 0°",
+      "mid45": "中纬度 45°",
+      "arctic70": "北极圈 70°"
+    }
+  }
+}

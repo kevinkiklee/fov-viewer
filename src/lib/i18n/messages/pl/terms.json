@@ -1,0 +1,51 @@
+{
+  "terms": {
+    "title": "Regulamin",
+    "effectiveDate": "Data wejścia w życie: 3 kwietnia 2026",
+    "sections": {
+      "acceptance": {
+        "title": "Akceptacja warunków",
+        "body": "Uzyskując dostęp do strony www.phototools.io («PhotoTools» lub «Strona») lub korzystając z niej, zgadzasz się na niniejszy Regulamin. Jeśli nie zgadzasz się z tymi warunkami, prosimy o niekorzystanie ze Strony. Niniejsze warunki dotyczą wszystkich odwiedzających i użytkowników PhotoTools. W przypadku rozbieżności między tłumaczeniami, angielska wersja niniejszego regulaminu jest wiążąca."
+      },
+      "descriptionOfService": {
+        "title": "Opis usługi",
+        "body": "PhotoTools udostępnia bezpłatne edukacyjne narzędzia fotograficzne, w tym interaktywne kalkulatory, symulatory i materiały referencyjne. Strona jest przeznaczona wyłącznie do celów informacyjnych i edukacyjnych. Wszystkie narzędzia są udostępniane użytkownikom bezpłatnie i mają na celu pomóc fotografom w nauce i zrozumieniu pojęć fotograficznych."
+      },
+      "noWarranty": {
+        "title": "Brak gwarancji",
+        "body": "PhotoTools jest udostępniane «tak jak jest», bez jakiejkolwiek gwarancji, wyraźnej lub dorozumianej. Nie gwarantujemy, że narzędzia, kalkulatory lub informacje na tej stronie są dokładne, kompletne lub odpowiednie do jakiegokolwiek konkretnego celu. Wyniki naszych narzędzi są przybliżeniami i nie należy na nich polegać przy podejmowaniu krytycznych decyzji, pracy profesjonalnej lub w sytuacjach wymagających precyzji. Zawsze weryfikuj ważne obliczenia u wykwalifikowanych specjalistów lub w autorytatywnych źródłach."
+      },
+      "intellectualProperty": {
+        "title": "Własność intelektualna",
+        "body": "Wszystkie treści na PhotoTools — w tym teksty, grafiki, projekty narzędzi, kod i materiały edukacyjne — są własnością PhotoTools, chyba że zaznaczono inaczej. Możesz korzystać z narzędzi i materiałów referencyjnych do celów osobistych i edukacyjnych. Kopiowanie, redystrybucja lub komercyjne wykorzystanie treści strony bez uprzedniej pisemnej zgody jest zabronione."
+      },
+      "acceptableUse": {
+        "title": "Dozwolone użytkowanie",
+        "intro": "Korzystając z PhotoTools, zgadzasz się nie:",
+        "items": {
+          "laws": "Naruszać obowiązujących przepisów lokalnych, krajowych lub międzynarodowych",
+          "disrupt": "Zakłócać ani ingerować w działanie strony, serwerów lub sieci",
+          "scrape": "Skrobać, indeksować ani systematycznie wyodrębniać danych ze strony bez uprzedniej pisemnej zgody",
+          "misrepresent": "Podszywać się pod inną osobę lub fałszywie przedstawiać swoją przynależność w komunikacji z PhotoTools",
+          "commercial": "Wykorzystywać strony do celów komercyjnych wykraczających poza osobiste korzystanie bez pozwolenia"
+        }
+      },
+      "thirdPartyContent": {
+        "title": "Treści stron trzecich",
+        "body": "PhotoTools wyświetla reklamy stron trzecich i może zawierać linki do zewnętrznych stron internetowych. Nie ponosimy odpowiedzialności za treści, dokładność ani praktyki zewnętrznych reklamodawców lub powiązanych stron. Umieszczenie jakiejkolwiek reklamy lub zewnętrznego linku nie stanowi rekomendacji ze strony PhotoTools. Twoje interakcje z usługami stron trzecich podlegają ich własnym regulaminom i politykom prywatności."
+      },
+      "limitationOfLiability": {
+        "title": "Ograniczenie odpowiedzialności",
+        "body": "W najszerszym zakresie dozwolonym przez prawo, PhotoTools i jego operatorzy nie ponoszą odpowiedzialności za jakiekolwiek szkody bezpośrednie, pośrednie, przypadkowe, szczególne lub wynikowe wynikające z korzystania — lub niemożności korzystania — ze Strony lub jej narzędzi. Obejmuje to, bez ograniczeń, szkody wynikające z polegania na informacjach lub obliczeniach dostarczonych przez PhotoTools. Korzystanie ze Strony odbywa się wyłącznie na Twoje ryzyko."
+      },
+      "changesToTerms": {
+        "title": "Zmiany w regulaminie",
+        "body": "Możemy zmienić niniejszy Regulamin w dowolnym momencie. Zaktualizowane warunki zostaną opublikowane na tej stronie ze zmienioną datą wejścia w życie. Dalsze korzystanie z PhotoTools po opublikowaniu zmian oznacza akceptację zmienionych warunków. Zachęcamy do okresowego przeglądania niniejszego regulaminu."
+      },
+      "contact": {
+        "title": "Kontakt",
+        "body": "Jeśli masz pytania dotyczące niniejszego Regulaminu, skontaktuj się z nami za pośrednictwem <contactLink>strony kontaktowej</contactLink>."
+      }
+    }
+  }
+}

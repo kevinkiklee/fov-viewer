@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "site": {
+      "defaultTitle": "PhotoTools — Công cụ nhiếp ảnh",
+      "titleTemplate": "%s | PhotoTools",
+      "description": "Công cụ nhiếp ảnh miễn phí: Mô phỏng góc nhìn, Tạo phối màu, Xem EXIF, Cắt và đóng khung ảnh, và nhiều hơn nữa.",
+      "ogTitle": "PhotoTools — Công cụ nhiếp ảnh miễn phí"
+    },
+    "fov-simulator": {
+      "title": "Mô phỏng góc nhìn — So sánh tiêu cự",
+      "description": "So sánh góc nhìn giữa các tiêu cự và kích thước cảm biến khác nhau. Miễn phí, tương tác, có thể chia sẻ."
+    },
+    "dof-simulator": {
+      "title": "Mô phỏng chiều sâu trường ảnh | PhotoTools",
+      "description": "Trực quan hóa cách khẩu độ, tiêu cự và khoảng cách ảnh hưởng đến hiệu ứng xóa phông với mô phỏng WebGL thời gian thực"
+    },
+    "focus-stacking-calculator": {
+      "title": "Máy tính chồng lấy nét | PhotoTools",
+      "description": "Tính toán khoảng cách lấy nét tối ưu để đạt độ nét từ trước ra sau trong chụp macro và phong cảnh"
+    },
+    "equivalent-settings-calculator": {
+      "title": "Máy tính cài đặt tương đương | PhotoTools",
+      "description": "Tìm khẩu độ và tiêu cự tương đương giữa các định dạng cảm biến để phù hợp chiều sâu trường ảnh"
+    },
+    "exposure-simulator": {
+      "title": "Mô phỏng tam giác phơi sáng",
+      "description": "Trình mô phỏng tam giác phơi sáng tương tác — xem cách khẩu độ, tốc độ màn trập và ISO ảnh hưởng đến ảnh của bạn theo thời gian thực với xem trước trực tiếp."
+    },
+    "star-trail-calculator": {
+      "title": "Máy tính vệt sao",
+      "description": "Tính thời gian phơi sáng tối đa cho sao điểm sáng sử dụng quy tắc 500, NPF và các quy tắc khác. Lên kế hoạch chụp chồng vệt sao cho mọi địa điểm."
+    },
+    "white-balance-visualizer": {
+      "title": "Trực quan hóa cân bằng trắng",
+      "description": "Xem cách cân bằng trắng và nhiệt độ màu ảnh hưởng đến ảnh của bạn. Trực quan hóa thay đổi từ 2000K đến 10000K với xem trước thời gian thực."
+    },
+    "sensor-size-comparison": {
+      "title": "So sánh kích thước cảm biến",
+      "description": "So sánh kích thước cảm biến máy ảnh từ medium format đến smartphone. Xem chồng lớp, cạnh nhau và mật độ điểm ảnh với các mẫu máy ảnh thực tế."
+    },
+    "color-scheme-generator": {
+      "title": "Tạo phối màu",
+      "description": "Tạo bảng màu cho nhiếp ảnh sử dụng hài hòa màu bổ sung, tương tự, tam giác và tứ giác. Vòng tròn màu tương tác với công cụ chọn màu từ ảnh."
+    },
+    "frame-studio": {
+      "title": "Frame Studio",
+      "description": "Cắt, đóng khung và bố cục ảnh với các lưới hỗ trợ. 100% phía máy khách — ảnh của bạn không bao giờ rời khỏi thiết bị."
+    },
+    "exif-viewer": {
+      "title": "Trình xem EXIF",
+      "description": "Xem metadata EXIF, biểu đồ histogram và xem trước ảnh cho bất kỳ ảnh nào. 100% phía máy khách — ảnh của bạn không bao giờ rời khỏi thiết bị."
+    },
+    "hyperfocal-simulator": {
+      "title": "Mô phỏng khoảng cách siêu tiêu cự",
+      "description": "Trực quan hóa khoảng cách siêu tiêu cự cho mọi ống kính và cảm biến. Xem chính xác nơi cần lấy nét để đạt độ nét tối đa từ tiền cảnh đến vô cực."
+    },
+    "shutter-speed-visualizer": {
+      "title": "Trực quan hóa tốc độ màn trập",
+      "description": "Tìm tốc độ màn trập tối thiểu để chụp ảnh cầm tay sắc nét. Tính đến tiêu cự, kích thước cảm biến và chống rung."
+    },
+    "nd-filter-calculator": {
+      "title": "Máy tính bộ lọc ND",
+      "description": "Tính tốc độ màn trập chính xác khi sử dụng bộ lọc ND. Hỗ trợ mọi cường độ bộ lọc từ ND2 đến ND1000000 với bảng tra cứu nhanh."
+    },
+    "perspective-compression-simulator": {
+      "title": "Mô phỏng nén phối cảnh",
+      "description": "Trình mô phỏng 3D tương tác cho thấy cách tiêu cự và khoảng cách ảnh hưởng đến nén phối cảnh. Xem sự thay đổi nén hậu cảnh theo thời gian thực."
+    },
+    "about": {
+      "title": "Giới thiệu",
+      "description": "PhotoTools là bộ sưu tập miễn phí các công cụ tính toán, mô phỏng và tra cứu nhiếp ảnh chạy trên trình duyệt dành cho nhiếp ảnh gia ở mọi trình độ."
+    },
+    "contact": {
+      "title": "Liên hệ | PhotoTools",
+      "description": "Liên hệ với đội ngũ PhotoTools — câu hỏi, phản hồi hoặc đề xuất về các công cụ nhiếp ảnh của chúng tôi."
+    },
+    "privacy": {
+      "title": "Chính sách bảo mật | PhotoTools",
+      "description": "Tìm hiểu cách PhotoTools xử lý dữ liệu của bạn, bao gồm phân tích, cookie và gửi biểu mẫu liên hệ tại www.phototools.io."
+    },
+    "terms": {
+      "title": "Điều khoản dịch vụ | PhotoTools",
+      "description": "Điều khoản dịch vụ cho PhotoTools — tìm hiểu về sử dụng chấp nhận được, sở hữu trí tuệ, tuyên bố miễn trừ và giới hạn trách nhiệm cho www.phototools.io."
+    },
+    "glossary": {
+      "title": "Thuật ngữ nhiếp ảnh",
+      "description": "Bảng thuật ngữ nhiếp ảnh có thể tìm kiếm với hơn 50 thuật ngữ kèm định nghĩa và liên kết đến các công cụ tương tác."
+    }
+  }
+}

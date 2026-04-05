@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "sensor-size-comparison": {
+      "displayMode": "โหมดแสดงผล",
+      "modeOverlay": "ซ้อนทับ",
+      "modeSideBySide": "วางเคียงข้าง",
+      "modePixelDensity": "ความหนาแน่นพิกเซล",
+      "pixelDensityDescription": "แสดงจำนวนเมกะพิกเซลทั่วไปสำหรับแต่ละเซ็นเซอร์ พิกเซลใหญ่กว่า (เซลล์ใหญ่กว่า) เก็บแสงมากกว่า",
+      "sensors": "เซ็นเซอร์",
+      "customSensors": "เซ็นเซอร์กำหนดเอง",
+      "placeholderName": "ชื่อ",
+      "placeholderW": "กว้าง (mm)",
+      "placeholderH": "สูง (mm)",
+      "placeholderMP": "เมกะพิกเซล (ไม่บังคับ)",
+      "placeholderMPShort": "MP",
+      "maxDimensionWarning": "ขนาดเซ็นเซอร์สูงสุดคือ 99 mm",
+      "addSensor": "เพิ่มเซ็นเซอร์",
+      "save": "บันทึก",
+      "cancelEdit": "ยกเลิก",
+      "edit": "แก้ไข",
+      "remove": "ลบ",
+      "deleteAllCustom": "ลบเซ็นเซอร์กำหนดเองทั้งหมด",
+      "tableSensor": "เซ็นเซอร์",
+      "tableWidth": "กว้าง (mm)",
+      "tableHeight": "สูง (mm)",
+      "tableAspectRatio": "อัตราส่วนภาพ",
+      "tableArea": "พื้นที่ (mm²)",
+      "tableCropFactor": "ครอปแฟกเตอร์",
+      "tableAspectCrop": "ครอปอัตราส่วน",
+      "canvasAriaLabel": "เปรียบเทียบขนาดเซ็นเซอร์ในโหมด {mode}"
+    }
+  }
+}

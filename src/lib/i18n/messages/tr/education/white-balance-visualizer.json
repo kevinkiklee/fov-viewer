@@ -1,0 +1,129 @@
+{
+  "education": {
+    "white-balance-visualizer": {
+      "beginner": "Beyaz dengesi, fotoğrafınızdaki renkleri her aydınlatma altında beyaz nesnelerin gerçekten beyaz görünmesi için ayarlar. Farklı ışık kaynaklarının farklı renk sıcaklıkları vardır — bir mum sıcak ve turuncu, gölge ise soğuk ve mavidir. Kameranızın beyaz dengesi ayarı bu farklılıkları telafi ederek renklerin doğal görünmesini sağlar.",
+      "deeper": {
+        "0": {
+          "heading": "Renk Sıcaklığı",
+          "text": "Renk sıcaklığı Kelvin (K) cinsinden ölçülür ve o sıcaklığa ısıtılmış ideal bir \"kara cisim\"den yayılan ışığın rengine karşılık gelir. Düşük değerler (2000–3500K) sıcak, kırmızımsı turuncu ışık (akkor lambalar, mumlar) üretirken, yüksek değerler (6500–10000K) soğuk, mavimsi ışık (gölge, bulutlu gökyüzü) üretir."
+        },
+        "1": {
+          "heading": "Beyaz Dengesi Nasıl Çalışır",
+          "text": "Kameranın beyaz dengesi sistemi, ortam renk sapmasını nötralize etmek için ters renk kaymasını uygular. Beyaz dengesini \"Tungsten\" (~3200K) olarak ayarladığınızda, kamera akkor lambalardan gelen turuncu sapmayı karşılamak için mavi ekler. Dijital fotoğrafçılıkta beyaz dengesi, kırmızı ve mavi kanallara yeşile göre çarpan olarak uygulanır."
+        },
+        "2": {
+          "heading": "RAW Avantajı",
+          "text": "RAW formatında çekim yapmak tüm renk verilerini korur ve son işlemede sıfır kalite kaybıyla beyaz dengesini özgürce değiştirmenize olanak tanır — dönüştürme sırasında uygulanan basit bir meta veri etiketidir."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Renk Sıcaklığı (Kelvin)",
+          "description": "Işık renginin sayısal ölçüsü. Düşük Kelvin = sıcak/turuncu ışık. Yüksek Kelvin = soğuk/mavi ışık. Gün ışığı yaklaşık 5500K'dir."
+        },
+        "1": {
+          "label": "Işık Kaynağı",
+          "description": "Farklı kaynaklar farklı renk sıcaklıkları yayar: mumlar (~1800K), tungsten lambalar (~2800K), floresan tüpler (~4000K), öğle güneşi (~5500K), bulutlu gökyüzü (~6500K), gölge (~7500K)."
+        },
+        "2": {
+          "label": "RAW ve JPEG",
+          "description": "RAW çekim, son işlemede kalite kaybı olmadan beyaz dengesini değiştirmenize olanak tanır. JPEG beyaz dengesini kalıcı olarak sabitler, bu yüzden kamerada doğru ayarlamak daha önemlidir."
+        },
+        "3": {
+          "label": "Karışık Aydınlatma",
+          "description": "Farklı sıcaklıklarda birden fazla ışık kaynağına sahip sahneler (ör. pencereden gün ışığı + tungsten lambalar) tüm renkleri aynı anda mükemmel nötralize etmeyi imkansız kılar."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Beyaz dengesini daha sonra ayarlama esnekliği istiyorsanız her zaman RAW çekim yapın. RAW dosyalar işlenmemiş sensör verisini saklar, bu yüzden beyaz dengesi değişiklikleri kayıpsızdır."
+        },
+        "1": {
+          "text": "Yaratıcı etki için kasıtlı olarak beyaz dengesini \"yanlış eşleştirmeyi\" deneyin. Altın saat sırasında gün ışığı beyaz dengesi ayarlamak gün batımlarını daha da sıcak yapar, tungsten beyaz dengesi açık havada ise dramatik soğuk mavi bir görünüm yaratır."
+        },
+        "2": {
+          "text": "Karışık aydınlatma durumlarında (ör. hem pencere ışığı hem de tungsten lambalarla aydınlatılan bir oda), özel beyaz dengesi ayarlamak için bir gri kart kullanın veya flaşınıza ortam ışık kaynağıyla eşleşen jel takın."
+        }
+      },
+      "tooltips": {
+        "colorTemperature": {
+          "term": "Renk Sıcaklığı",
+          "definition": "Kelvin (K) cinsinden ışık rengi ölçümü. Teorik olarak ısıtılmış kara cismin rengine dayalıdır. Düşük değerler daha sıcak (turuncu/kırmızı), yüksek değerler daha soğuktur (mavi)."
+        },
+        "preset": {
+          "term": "Beyaz Dengesi Ön Ayarı",
+          "definition": "Yaygın bir ışık kaynağı için kalibre edilmiş önceden tanımlanmış beyaz dengesi ayarı. Ön ayarlar Tungsten (~3200K), Floresan (~4000K), Gün Işığı (~5500K), Bulutlu (~6500K) ve Gölge (~7500K) içerir."
+        },
+        "rgbValues": {
+          "term": "RGB Değerleri",
+          "definition": "Seçilen sıcaklıktaki ışığın rengini temsil eden kırmızı, yeşil ve mavi kanal değerleri (her biri 0-255). Işık kaynağının sahneyi nasıl renklendirdiğini görselleştirmek için kullanılır."
+        },
+        "hexCode": {
+          "term": "Hex Kodu",
+          "definition": "Rengin altı karakterli onaltılık gösterimi (ör. #FF8C00). Tasarım yazılımında veya web geliştirmede tam rengi referans almak için kullanışlıdır."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Normal ev ampulleri altında çekilen iç mekan fotoğraflarınız çok turuncu/sarı görünüyor. Bunu düzeltmek için hangi beyaz dengesi ön ayarını kullanmalısınız?",
+          "hint": "Ev akkor ampülleri 2800-3200K civarında sıcak, turuncu tonlu ışık yayar.",
+          "successMessage": "Doğru! Tungsten ön ayarı, akkor ampüllerin turuncu sapmasını karşılamak için mavi ekleyerek renkleri nötre döndürür.",
+          "failureMessage": "Akkor/tungsten ampüller sıcak turuncu ışık yayar. Tungsten beyaz dengesi ön ayarı bu sapmayı mavi ekleyerek nötralize etmek için özel olarak tasarlanmıştır.",
+          "options": {
+            "0": { "label": "Gün Işığı" },
+            "1": { "label": "Tungsten" },
+            "2": { "label": "Gölge" },
+            "3": { "label": "Floresan" }
+          }
+        },
+        "1": {
+          "scenario": "Altın saatte portre çekiyorsunuz ve gün batımının güzel sıcak parıltısını korumak istiyorsunuz. Hangi beyaz dengesi ayarını kullanmalısınız?",
+          "hint": "Altın saat için \"doğru\" beyaz dengesini ayarlarsanız, korumak istediğiniz sıcak tonları nötralize eder.",
+          "successMessage": "Doğru! Altın saatte Gün Işığı ön ayarını (veya Bulutlu/Gölge) kullanmak sıcak tonları nötralize etmek yerine korur ve güçlendirir.",
+          "failureMessage": "Altın saatin sıcak parıltısını korumak için sıcak ışığı telafi etmeyen bir beyaz dengesi kullanın. Gün Işığı veya daha yüksek ön ayarlar sıcaklığı korur (ve hatta güçlendirir).",
+          "options": {
+            "0": { "label": "Otomatik Beyaz Dengesi" },
+            "1": { "label": "Tungsten (sıcaklığı nötralize etmek için)" },
+            "2": { "label": "Gün Işığı (sıcaklığı korumak için)" },
+            "3": { "label": "Flaş" }
+          }
+        },
+        "2": {
+          "scenario": "Kelvin cinsinden beyaz dengesini manuel ayarlıyorsunuz. Fotoğrafınız çok mavi/soğuk görünüyor. Isıtmak için Kelvin değerini artırmalı mı yoksa azaltmalı mısınız?",
+          "hint": "Kelvin beyaz dengesi ayarı kameraya ışık kaynağının renk sıcaklığını söyler. Daha yüksek Kelvin değeri ayarlamak kameranın daha fazla sıcaklık eklemesini sağlar.",
+          "successMessage": "Doğru! Kelvin değerini artırmak kameraya ışığın gerçekte olduğundan daha soğuk olduğunu söyler, bu yüzden kamera sıcaklık ekleyerek telafi eder. Soğuk görünen bir görüntüyü ısıtmak için daha yüksek K ayarlayın.",
+          "failureMessage": "Kelvin değerini artırdığınızda kamera telafi etmek için daha fazla sıcaklık ekler. Soğuk/mavi bir görüntüyü düzeltmek için Kelvin sayısını yükseltin.",
+          "options": {
+            "0": { "label": "Kelvin'i artır (ör. 5500K'den 7500K'ye)" },
+            "1": { "label": "Kelvin'i azalt (ör. 5500K'den 3200K'ye)" },
+            "2": { "label": "Kelvin yönü sıcaklığı etkilemez" }
+          }
+        },
+        "3": {
+          "scenario": "Tepede sıcak tungsten sarkıt lambalar ve büyük pencerelerden giren soğuk mavi gün ışığı olan bir restoran iç mekanı fotoğraflıyorsunuz. Pencerelere yakın insanlar mavi, lambaların altındaki insanlar turuncu görünüyor. En iyi yaklaşım nedir?",
+          "hint": "Tek bir beyaz dengesi ayarı iki çok farklı renk sıcaklığını aynı anda düzeltemez.",
+          "successMessage": "Kesinlikle! Flaşı veya ek ışıkları bir baskın kaynakla eşleştirmek için jelleme veya uzlaşma beyaz dengesi seçip son işlemede seçici olarak düzeltmek, karışık aydınlatma için en iyi yaklaşımlardır.",
+          "failureMessage": "Karışık aydınlatma en zor beyaz dengesi zorluklarından biridir. Tek bir beyaz dengesi her iki kaynağı aynı anda düzeltemez. Ya kaynakları jellerle eşleştirmeniz ya da son işlemede seçici olarak düzeltmeniz gerekir.",
+          "options": {
+            "0": { "label": "Beyaz dengesini Tungsten'e ayarla — her şeyi düzeltir" },
+            "1": { "label": "Beyaz dengesini Gün Işığına ayarla — pencereler daha önemli" },
+            "2": { "label": "Otomatik beyaz dengesi kullan ve RAW çek, sonra son işlemede her bölgeyi düzelt" },
+            "3": { "label": "Renkleri daha doğru yapmak için ISO'yu yükselt" }
+          }
+        },
+        "4": {
+          "scenario": "Bir şehirde atmosferik, sinematik bir gece sahnesi çekiyorsunuz ve kasıtlı soğuk mavi ton istiyorsunuz. Sokak lambaları sodyum buhar (~2200K). En güçlü mavi kaymayı hangi Kelvin beyaz dengesi ayarı verir?",
+          "hint": "Beyaz dengesini gerçek ışık kaynağı sıcaklığından çok daha düşüğe ayarlamak görüntüyü maviye kaydırır.",
+          "successMessage": "Doğru! Beyaz dengesini 7500K'ye (Gölge ön ayarı) ayarlamak kameraya ışık kaynağının çok soğuk/mavi olduğunu söyler — bu yüzden ağır sıcaklık düzeltmesi ekleyerek telafi eder. Ama gerçek sodyum ışıkları sadece 2200K (çok sıcak) olduğundan, bu aşırı düzeltme nötrü geçerek güçlü mavi sapmaya dönüşür. Beyaz dengesi Kelvinini gerçek ışık sıcaklığının ne kadar üstüne ayarlarsanız, mavi kayma o kadar güçlü olur.",
+          "failureMessage": "Beyaz dengesi Kelvin değerini gerçek ışık kaynağı sıcaklığından çok daha yüksek ayarlamak kameranın maviye doğru aşırı düzeltme yapmasını sağlar. 2200K sodyum ışıklarla beyaz dengesini 7500K+'ya ayarlamak en güçlü soğuk mavi görünümü yaratır.",
+          "options": {
+            "0": { "label": "2200K (sodyum ışıklarla eşleşen)" },
+            "1": { "label": "3200K (Tungsten ön ayarı)" },
+            "2": { "label": "7500K veya daha yüksek (Gölge ön ayarı)" },
+            "3": { "label": "5500K (Gün Işığı ön ayarı)" }
+          }
+        }
+      }
+    }
+  }
+}

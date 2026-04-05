@@ -1,0 +1,28 @@
+{
+  "about": {
+    "title": "Giới thiệu PhotoTools",
+    "subtitle": "Giáo dục nhiếp ảnh miễn phí, ngay trong trình duyệt của bạn.",
+    "sections": {
+      "whatIs": {
+        "title": "PhotoTools là gì?",
+        "body": "PhotoTools là bộ sưu tập miễn phí các công cụ tính toán, mô phỏng và tra cứu nhiếp ảnh tương tác. Dù bạn đang tìm hiểu tam giác phơi sáng lần đầu tiên hay tính khoảng cách siêu tiêu cự cho buổi chụp phong cảnh, PhotoTools cung cấp các công cụ trực quan giúp bạn hiểu sâu hơn về nhiếp ảnh."
+      },
+      "whoIsItFor": {
+        "title": "Dành cho ai?",
+        "body": "Nhiếp ảnh gia ở mọi trình độ — từ người mới bắt đầu tìm hiểu cách khẩu độ ảnh hưởng đến chiều sâu trường ảnh cho đến các nhiếp ảnh gia giàu kinh nghiệm đang lên kế hoạch chụp vệt sao. Mỗi công cụ đều có bảng học tập với giải thích, yếu tố chính, mẹo chuyên nghiệp và các thử thách tương tác để kiểm tra kiến thức của bạn."
+      },
+      "privacyFirst": {
+        "title": "Quyền riêng tư là ưu tiên hàng đầu",
+        "body": "Tất cả tính toán và mô phỏng chạy hoàn toàn trong trình duyệt của bạn. Ảnh của bạn không bao giờ rời khỏi thiết bị — ví dụ, Trình xem EXIF xử lý ảnh 100% phía máy khách. Không cần đăng ký và không thu thập dữ liệu cá nhân ngoài phân tích ẩn danh."
+      },
+      "builtBy": {
+        "title": "Được xây dựng bởi nhiếp ảnh gia",
+        "body": "PhotoTools được xây dựng và duy trì bởi một nhiếp ảnh gia kiêm kỹ sư phần mềm muốn có các công cụ trực quan tốt hơn để hiểu khía cạnh kỹ thuật của nhiếp ảnh. Các công cụ dựa trên quang học và vật lý thực tế — không phải phép gần đúng — để bạn có thể tin tưởng kết quả khi tác nghiệp thực tế."
+      },
+      "getInTouch": {
+        "title": "Liên hệ",
+        "body": "Có gợi ý, báo cáo lỗi hoặc ý tưởng công cụ? Hãy liên hệ qua <contactLink>trang liên hệ</contactLink>."
+      }
+    }
+  }
+}

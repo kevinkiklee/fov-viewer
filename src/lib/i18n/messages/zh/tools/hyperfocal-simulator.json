@@ -1,0 +1,21 @@
+{
+  "toolUI": {
+    "hyperfocal-simulator": {
+      "settings": "设置",
+      "focalLength": "焦距",
+      "aperture": "光圈",
+      "focusDistance": "对焦距离：",
+      "sensor": "传感器",
+      "scene": "场景：",
+      "sceneLandscape": "风光",
+      "sceneStreet": "街景",
+      "hyperfocalDistance": "超焦距",
+      "nearLimit": "近限",
+      "farLimit": "远限",
+      "focusDistanceResult": "对焦距离",
+      "hyperfocalReference": "超焦距参考",
+      "sharpToInfinity": "清晰至无穷远",
+      "nearLimitBadge": "近限："
+    }
+  }
+}

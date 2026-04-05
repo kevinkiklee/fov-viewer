@@ -1,0 +1,12 @@
+{
+  "toolUI": {
+    "nd-filter-calculator": {
+      "baseShutterSpeed": "Bazowy czas naświetlania",
+      "ndFilter": "Filtr ND",
+      "resultingShutterSpeed": "Wynikowy czas naświetlania",
+      "stopsAdded": "Dodane stopnie",
+      "quickReference": "Szybka tabela",
+      "tableBase": "Bazowy"
+    }
+  }
+}

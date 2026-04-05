@@ -1,0 +1,129 @@
+{
+  "education": {
+    "white-balance-visualizer": {
+      "beginner": "Balans bieli dostosowuje kolory na zdjęciu tak, aby białe obiekty rzeczywiście wyglądały na białe przy dowolnym oświetleniu. Różne źródła światła mają różne temperatury barwowe — świeca jest ciepła i pomarańczowa, a cień jest chłodny i niebieski. Ustawienie balansu bieli w aparacie kompensuje te różnice, aby kolory wyglądały naturalnie.",
+      "deeper": {
+        "0": {
+          "heading": "Temperatura barwowa",
+          "text": "Temperatura barwowa jest mierzona w kelwinach (K) i odpowiada kolorowi światła emitowanego przez idealne «ciało doskonale czarne» ogrzane do tej temperatury. Niższe wartości (2000–3500K) dają ciepłe, czerwono-pomarańczowe światło (żarówki, świece), natomiast wyższe wartości (6500–10000K) dają chłodne, niebieskawe światło (cień, zachmurzone niebo)."
+        },
+        "1": {
+          "heading": "Jak działa balans bieli",
+          "text": "System balansu bieli aparatu stosuje odwrotne przesunięcie koloru, aby zneutralizować dominantę barwną otoczenia. Gdy ustawisz balans bieli na «Tungsten» (~3200K), aparat dodaje niebieski, aby zrównoważyć pomarańczową dominantę od żarówek. W fotografii cyfrowej balans bieli jest stosowany jako mnożnik kanałów czerwonego i niebieskiego względem zielonego."
+        },
+        "2": {
+          "heading": "Zaleta RAW",
+          "text": "Fotografowanie w formacie RAW zachowuje wszystkie dane kolorów i pozwala swobodnie zmieniać balans bieli w obróbce bez jakiejkolwiek utraty jakości — to po prostu tag metadanych stosowany podczas konwersji."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Temperatura barwowa (kelwiny)",
+          "description": "Liczbowa miara koloru światła. Niskie kelwiny = ciepłe/pomarańczowe światło. Wysokie kelwiny = chłodne/niebieskie światło. Światło dzienne to około 5500K."
+        },
+        "1": {
+          "label": "Źródło światła",
+          "description": "Różne źródła emitują różne temperatury barwowe: świece (~1800K), żarówki wolframowe (~2800K), świetlówki (~4000K), słońce w południe (~5500K), zachmurzone niebo (~6500K), cień (~7500K)."
+        },
+        "2": {
+          "label": "RAW vs JPEG",
+          "description": "Fotografowanie w RAW pozwala zmienić balans bieli w obróbce bez utraty jakości. JPEG utrwala balans bieli na stałe, więc prawidłowe ustawienie w aparacie jest ważniejsze."
+        },
+        "3": {
+          "label": "Mieszane oświetlenie",
+          "description": "Sceny z wieloma źródłami światła o różnych temperaturach (np. światło dzienne z okna + lampy wolframowe) uniemożliwiają idealne zneutralizowanie wszystkich kolorów jednocześnie."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Zawsze fotografuj w RAW, jeśli chcesz pełnej elastyczności regulacji balansu bieli później. Pliki RAW przechowują nieprzetworzone dane matrycy, więc zmiany balansu bieli są bezstratne."
+        },
+        "1": {
+          "text": "Dla efektu twórczego spróbuj celowo «rozstroić» balans bieli. Ustawienie dziennego WB podczas złotej godziny sprawia, że zachody są jeszcze cieplejsze, a wolframowy WB na zewnątrz tworzy dramatyczny zimny niebieski wygląd."
+        },
+        "2": {
+          "text": "W sytuacjach mieszanego oświetlenia (np. pokój oświetlony zarówno światłem okiennym, jak i lampami wolframowymi) użyj szarej karty do ustawienia niestandardowego balansu bieli lub nałóż żelowy filtr na lampę, aby dopasować do źródła światła otoczenia."
+        }
+      },
+      "tooltips": {
+        "colorTemperature": {
+          "term": "Temperatura barwowa",
+          "definition": "Miara koloru światła w kelwinach (K). Oparta na teoretycznym kolorze podgrzanego ciała doskonale czarnego. Niższe wartości są cieplejsze (pomarańczowy/czerwony), wyższe wartości są chłodniejsze (niebieski)."
+        },
+        "preset": {
+          "term": "Preset balansu bieli",
+          "definition": "Predefiniowane ustawienie balansu bieli skalibrowane dla typowego źródła światła. Presety obejmują: Tungsten (~3200K), Świetlówka (~4000K), Dzienne (~5500K), Pochmurne (~6500K) i Cień (~7500K)."
+        },
+        "rgbValues": {
+          "term": "Wartości RGB",
+          "definition": "Wartości kanałów czerwonego, zielonego i niebieskiego (0-255 każdy) reprezentujące kolor światła przy wybranej temperaturze. Używane do wizualizacji, jak źródło światła zabarwia scenę."
+        },
+        "hexCode": {
+          "term": "Kod hex",
+          "definition": "Sześcioznakowa szesnastkowa reprezentacja koloru (np. #FF8C00). Przydatna do odwoływania się do dokładnego koloru w oprogramowaniu graficznym lub web developmencie."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Twoje zdjęcia wewnątrz pod zwykłymi żarówkami domowymi wyglądają bardzo pomarańczowo/żółto. Jakiego presetu balansu bieli powinieneś użyć, aby to naprawić?",
+          "hint": "Domowe żarówki żarowe emitują ciepłe, pomarańczowe światło około 2800-3200K.",
+          "successMessage": "Prawidłowo! Preset Tungsten dodaje niebieski, aby zrównoważyć pomarańczową dominantę żarówek, przywracając kolory do neutralności.",
+          "failureMessage": "Żarówki żarowe/wolframowe emitują ciepłe pomarańczowe światło. Preset balansu bieli Tungsten jest specjalnie zaprojektowany, aby zneutralizować tę dominantę przez dodanie niebieskiego.",
+          "options": {
+            "0": { "label": "Dzienne" },
+            "1": { "label": "Tungsten" },
+            "2": { "label": "Cień" },
+            "3": { "label": "Świetlówka" }
+          }
+        },
+        "1": {
+          "scenario": "Robisz portrety podczas złotej godziny i chcesz zachować piękne ciepłe światło zachodu. Jakiego ustawienia balansu bieli powinieneś użyć?",
+          "hint": "Jeśli ustawisz «prawidłowy» WB na złotą godzinę, zneutralizuje to ciepłe tony, które chcesz zachować.",
+          "successMessage": "Prawidłowo! Użycie presetu Dzienne (lub nawet Pochmurne/Cień) podczas złotej godziny zachowuje i wzmacnia ciepłe tony zamiast je neutralizować.",
+          "failureMessage": "Aby zachować ciepły blask złotej godziny, użyj WB, który nie kompensuje ciepłego światła. Presety Dzienne lub wyższe zachowają (a nawet wzmocnią) ciepło.",
+          "options": {
+            "0": { "label": "Automatyczny balans bieli" },
+            "1": { "label": "Tungsten (aby zneutralizować ciepło)" },
+            "2": { "label": "Dzienne (aby zachować ciepło)" },
+            "3": { "label": "Lampa błyskowa" }
+          }
+        },
+        "2": {
+          "scenario": "Ręcznie regulujesz balans bieli w kelwinach. Twoje zdjęcie wygląda zbyt niebiesko/zimno. Czy powinieneś zwiększyć czy zmniejszyć wartość kelwinów, aby je ocieplić?",
+          "hint": "Ustawienie WB w kelwinach mówi aparatowi, jaką temperaturę barwową ma źródło światła. Ustawienie wyższej wartości kelwinów sprawia, że aparat dodaje więcej ciepła.",
+          "successMessage": "Zgadza się! Zwiększenie wartości kelwinów mówi aparatowi, że światło jest chłodniejsze niż w rzeczywistości, więc aparat kompensuje dodając ciepło. Ustaw wyższą wartość K, aby ocieplić zimno wyglądający obraz.",
+          "failureMessage": "Gdy zwiększasz wartość kelwinów, aparat dodaje więcej ciepła do kompensacji. Więc aby naprawić zimny/niebieski obraz, podnieś wartość kelwinów.",
+          "options": {
+            "0": { "label": "Zwiększ kelwiny (np. z 5500K na 7500K)" },
+            "1": { "label": "Zmniejsz kelwiny (np. z 5500K na 3200K)" },
+            "2": { "label": "Kierunek kelwinów nie wpływa na ciepło" }
+          }
+        },
+        "3": {
+          "scenario": "Fotografujesz wnętrze restauracji, która ma ciepłe wolframowe lampy wiszące nad głową i chłodne niebieskie światło dzienne wpadające przez duże okna. Ludzie przy oknach wyglądają na niebiesko, a ludzie pod lampami na pomarańczowo. Jakie jest najlepsze podejście?",
+          "hint": "Żadne pojedyncze ustawienie balansu bieli nie może jednocześnie skorygować dwóch bardzo różnych temperatur barwowych.",
+          "successMessage": "Dokładnie! Użycie filtrów żelowych na lampie lub dodatkowym oświetleniu, aby dopasować do jednego dominującego źródła, lub wybranie kompromisowego WB i selektywna korekta w obróbce, to najlepsze podejścia do mieszanego oświetlenia.",
+          "failureMessage": "Mieszane oświetlenie to jedno z najtrudniejszych wyzwań WB. Jeden balans bieli nie może jednocześnie skorygować obu źródeł. Musisz albo dopasować źródła filtrami żelowymi, albo naprawić to selektywnie w obróbce.",
+          "options": {
+            "0": { "label": "Ustaw WB na Tungsten — naprawi wszystko" },
+            "1": { "label": "Ustaw WB na Dzienne — okna są ważniejsze" },
+            "2": { "label": "Użyj Auto WB i fotografuj w RAW, potem skoryguj każdą strefę w obróbce" },
+            "3": { "label": "Podnieś ISO, aby kolory były dokładniejsze" }
+          }
+        },
+        "4": {
+          "scenario": "Fotografujesz nastrojową, filmową nocną scenę w mieście i chcesz celowo zimny niebieski ton. Latarnie uliczne to lampy sodowe (~2200K). Jakie ustawienie balansu bieli w kelwinach da Ci najsilniejsze przesunięcie w stronę niebieskiego?",
+          "hint": "Ustawienie WB znacznie niżej niż rzeczywista temperatura źródła światła przesunie obraz w stronę niebieskiego.",
+          "successMessage": "Prawidłowo! Ustawienie WB na 7500K (preset Cień) mówi aparatowi, że źródło światła jest bardzo chłodne/niebieskie — więc kompensuje dodając silną korekcję ciepła. Ale ponieważ rzeczywiste lampy sodowe mają tylko 2200K (bardzo ciepłe), ta nadmierna korekcja przechodzi przez neutralność w stronę silnej niebieskiej dominanty. Im wyżej ustawisz WB w kelwinach ponad rzeczywistą temperaturę światła, tym silniejsze przesunięcie w niebieski.",
+          "failureMessage": "Ustawienie wartości WB w kelwinach znacznie wyżej niż rzeczywista temperatura źródła światła sprawia, że aparat nadmiernie koryguje w stronę niebieskiego. Przy lampach sodowych 2200K ustawienie WB na 7500K+ tworzy najsilniejszy zimny niebieski wygląd.",
+          "options": {
+            "0": { "label": "2200K (dopasowanie do lamp sodowych)" },
+            "1": { "label": "3200K (preset Tungsten)" },
+            "2": { "label": "7500K lub wyżej (preset Cień)" },
+            "3": { "label": "5500K (preset Dzienne)" }
+          }
+        }
+      }
+    }
+  }
+}

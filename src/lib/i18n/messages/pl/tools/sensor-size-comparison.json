@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "sensor-size-comparison": {
+      "displayMode": "Tryb wyświetlania",
+      "modeOverlay": "Nakładka",
+      "modeSideBySide": "Obok siebie",
+      "modePixelDensity": "Gęstość pikseli",
+      "pixelDensityDescription": "Pokazuje typowe liczby megapikseli dla każdej matrycy. Większe piksele (większe komórki) zbierają więcej światła.",
+      "sensors": "Matryce",
+      "customSensors": "Niestandardowe matryce",
+      "placeholderName": "Nazwa",
+      "placeholderW": "Szer. (mm)",
+      "placeholderH": "Wys. (mm)",
+      "placeholderMP": "Megapiksele (opcjonalnie)",
+      "placeholderMPShort": "MP",
+      "maxDimensionWarning": "Maksymalny wymiar matrycy to 99 mm",
+      "addSensor": "Dodaj matrycę",
+      "save": "Zapisz",
+      "cancelEdit": "Anuluj",
+      "edit": "Edytuj",
+      "remove": "Usuń",
+      "deleteAllCustom": "Usuń wszystkie niestandardowe matryce",
+      "tableSensor": "Matryca",
+      "tableWidth": "Szerokość (mm)",
+      "tableHeight": "Wysokość (mm)",
+      "tableAspectRatio": "Proporcje",
+      "tableArea": "Powierzchnia (mm²)",
+      "tableCropFactor": "Wsp. kadrowania",
+      "tableAspectCrop": "Kadrowanie proporcji",
+      "canvasAriaLabel": "Porównanie rozmiarów matryc w trybie {mode}"
+    }
+  }
+}

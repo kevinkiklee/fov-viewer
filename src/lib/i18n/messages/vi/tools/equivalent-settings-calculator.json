@@ -1,0 +1,38 @@
+{
+  "toolUI": {
+    "equivalent-settings-calculator": {
+      "settings": "Cài đặt",
+      "sourceCamera": "Máy ảnh của bạn",
+      "sourceSensor": "Cảm biến",
+      "sourceFocalLength": "Tiêu cự",
+      "sourceAperture": "Khẩu độ",
+      "sourceISO": "ISO",
+      "sourceDistance": "Khoảng cách chủ thể",
+      "targetSensors": "So sánh với",
+      "addSensor": "+ Thêm cảm biến",
+      "removeSensor": "Xóa",
+      "equivalenceCard": "Cài đặt tương đương",
+      "equivalentFL": "Tiêu cự tương đương",
+      "equivalentAperture": "Khẩu độ tương đương",
+      "equivalentISO": "ISO tương đương",
+      "equivalentDistance": "Khoảng cách tương đương",
+      "equivalentDoF": "DoF tương đương",
+      "cropFactor": "Hệ số crop",
+      "fieldOfView": "Góc nhìn",
+      "warningUnrealisticAperture": "Khẩu độ tương đương này ({value}) nhanh hơn bất kỳ ống kính thực nào. Cảm biến mục tiêu không thể phù hợp chiều sâu trường ảnh nguồn.",
+      "warningUnrealisticFL": "Tiêu cự tương đương này ({value}mm) không phổ biến. Bạn có thể không tìm thấy ống kính thực ở tiêu cự này.",
+      "warningClosestReal": "Ống kính thực gần nhất: {value}mm f/{aperture}",
+      "diagramTitle": "So sánh cảm biến & FOV",
+      "diagramSource": "Nguồn",
+      "diagramTarget": "Mục tiêu",
+      "diagramFovAngle": "FOV: {angle}°",
+      "diagramCropFactor": "crop {factor}×",
+      "matchDoF": "Phù hợp chiều sâu trường ảnh",
+      "matchFoV": "Phù hợp góc nhìn",
+      "matchExposure": "Phù hợp phơi sáng",
+      "sameFOV": "Cùng góc nhìn",
+      "sameDoF": "Cùng chiều sâu trường ảnh",
+      "sameExposure": "Cùng độ sáng phơi sáng"
+    }
+  }
+}

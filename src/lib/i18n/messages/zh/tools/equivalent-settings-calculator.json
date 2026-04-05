@@ -1,0 +1,38 @@
+{
+  "toolUI": {
+    "equivalent-settings-calculator": {
+      "settings": "设置",
+      "sourceCamera": "您的相机",
+      "sourceSensor": "传感器",
+      "sourceFocalLength": "焦距",
+      "sourceAperture": "光圈",
+      "sourceISO": "ISO",
+      "sourceDistance": "被摄距离",
+      "targetSensors": "对比对象",
+      "addSensor": "+ 添加传感器",
+      "removeSensor": "移除",
+      "equivalenceCard": "等效参数",
+      "equivalentFL": "等效焦距",
+      "equivalentAperture": "等效光圈",
+      "equivalentISO": "等效 ISO",
+      "equivalentDistance": "等效距离",
+      "equivalentDoF": "等效景深",
+      "cropFactor": "裁切系数",
+      "fieldOfView": "视场角",
+      "warningUnrealisticAperture": "此等效光圈（{value}）比任何真实镜头都更快。目标传感器无法匹配源景深。",
+      "warningUnrealisticFL": "此等效焦距（{value}mm）不常见。您可能找不到此焦段的真实镜头。",
+      "warningClosestReal": "最接近的真实镜头：{value}mm f/{aperture}",
+      "diagramTitle": "传感器与视场角对比",
+      "diagramSource": "源",
+      "diagramTarget": "目标",
+      "diagramFovAngle": "视场角：{angle}°",
+      "diagramCropFactor": "{factor}× 裁切",
+      "matchDoF": "匹配景深",
+      "matchFoV": "匹配视场角",
+      "matchExposure": "匹配曝光",
+      "sameFOV": "相同视场角",
+      "sameDoF": "相同景深",
+      "sameExposure": "相同曝光亮度"
+    }
+  }
+}

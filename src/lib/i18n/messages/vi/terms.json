@@ -1,0 +1,51 @@
+{
+  "terms": {
+    "title": "Điều khoản dịch vụ",
+    "effectiveDate": "Ngày hiệu lực: 3 tháng 4, 2026",
+    "sections": {
+      "acceptance": {
+        "title": "Chấp nhận điều khoản",
+        "body": "Bằng việc truy cập hoặc sử dụng www.phototools.io (\"PhotoTools\" hoặc \"Trang web\"), bạn đồng ý chịu ràng buộc bởi các Điều khoản dịch vụ này. Nếu bạn không đồng ý với các điều khoản này, vui lòng không sử dụng Trang web. Các điều khoản này áp dụng cho tất cả khách truy cập và người dùng của PhotoTools. Phiên bản tiếng Anh của các điều khoản này là phiên bản có giá trị pháp lý."
+      },
+      "descriptionOfService": {
+        "title": "Mô tả dịch vụ",
+        "body": "PhotoTools cung cấp các công cụ nhiếp ảnh giáo dục miễn phí, bao gồm máy tính tương tác, trình mô phỏng và tài liệu tra cứu. Trang web chỉ nhằm mục đích thông tin và giáo dục. Tất cả công cụ được cung cấp miễn phí cho người dùng và được thiết kế để giúp nhiếp ảnh gia học hỏi và hiểu các khái niệm nhiếp ảnh."
+      },
+      "noWarranty": {
+        "title": "Không bảo đảm",
+        "body": "PhotoTools được cung cấp \"nguyên trạng\" không có bất kỳ bảo đảm nào, dù rõ ràng hay ngụ ý. Chúng tôi không đảm bảo rằng các công cụ, máy tính hoặc thông tin trên trang web này là chính xác, đầy đủ hoặc phù hợp cho bất kỳ mục đích cụ thể nào. Kết quả từ các công cụ của chúng tôi là ước tính và không nên được dựa vào cho các quyết định quan trọng, công việc chuyên nghiệp hoặc các tình huống cần độ chính xác cao. Luôn xác minh các tính toán quan trọng với chuyên gia đủ điều kiện hoặc nguồn có thẩm quyền."
+      },
+      "intellectualProperty": {
+        "title": "Sở hữu trí tuệ",
+        "body": "Tất cả nội dung trên PhotoTools — bao gồm văn bản, đồ họa, thiết kế công cụ, mã nguồn và tài liệu giáo dục — là tài sản của PhotoTools trừ khi có ghi chú khác. Bạn được phép sử dụng các công cụ và tài liệu tra cứu cho mục đích cá nhân và giáo dục. Việc sao chép, phân phối lại hoặc sử dụng thương mại nội dung trang web mà không có sự cho phép bằng văn bản trước là bị cấm."
+      },
+      "acceptableUse": {
+        "title": "Sử dụng chấp nhận được",
+        "intro": "Khi sử dụng PhotoTools, bạn đồng ý không:",
+        "items": {
+          "laws": "Vi phạm bất kỳ luật hoặc quy định địa phương, quốc gia hoặc quốc tế nào",
+          "disrupt": "Gây gián đoạn hoặc can thiệp vào hoạt động, máy chủ hoặc mạng của trang web",
+          "scrape": "Thu thập dữ liệu, quét hoặc trích xuất dữ liệu một cách có hệ thống từ trang web mà không có sự cho phép bằng văn bản trước",
+          "misrepresent": "Giả mạo danh tính hoặc liên kết của bạn trong giao tiếp với PhotoTools",
+          "commercial": "Sử dụng trang web cho bất kỳ mục đích thương mại nào ngoài tham khảo cá nhân mà không được phép"
+        }
+      },
+      "thirdPartyContent": {
+        "title": "Nội dung bên thứ ba",
+        "body": "PhotoTools hiển thị quảng cáo bên thứ ba và có thể bao gồm liên kết đến các trang web bên ngoài. Chúng tôi không chịu trách nhiệm về nội dung, độ chính xác hoặc thông lệ của các nhà quảng cáo bên thứ ba hoặc các trang web được liên kết. Việc đưa bất kỳ quảng cáo hoặc liên kết bên ngoài nào không cấu thành sự xác nhận của PhotoTools. Các tương tác của bạn với dịch vụ bên thứ ba được điều chỉnh bởi các điều khoản và chính sách bảo mật riêng của họ."
+      },
+      "limitationOfLiability": {
+        "title": "Giới hạn trách nhiệm",
+        "body": "Trong phạm vi tối đa được pháp luật cho phép, PhotoTools và các nhà điều hành của nó không chịu trách nhiệm về bất kỳ thiệt hại trực tiếp, gián tiếp, ngẫu nhiên, đặc biệt hoặc hậu quả nào phát sinh từ việc bạn sử dụng — hoặc không thể sử dụng — Trang web hoặc các công cụ của nó. Điều này bao gồm, không giới hạn, thiệt hại do dựa vào thông tin hoặc tính toán được cung cấp bởi PhotoTools. Việc bạn sử dụng Trang web hoàn toàn là rủi ro của riêng bạn."
+      },
+      "changesToTerms": {
+        "title": "Thay đổi điều khoản",
+        "body": "Chúng tôi có thể sửa đổi các Điều khoản dịch vụ này bất cứ lúc nào. Các điều khoản cập nhật sẽ được đăng trên trang này với ngày hiệu lực đã sửa đổi. Việc tiếp tục sử dụng PhotoTools sau khi các thay đổi được đăng cấu thành sự chấp nhận các điều khoản đã sửa đổi của bạn. Chúng tôi khuyến khích bạn xem lại các điều khoản này định kỳ."
+      },
+      "contact": {
+        "title": "Liên hệ",
+        "body": "Nếu bạn có câu hỏi về các Điều khoản dịch vụ này, vui lòng liên hệ qua <contactLink>trang liên hệ</contactLink> của chúng tôi."
+      }
+    }
+  }
+}

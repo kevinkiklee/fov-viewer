@@ -1,0 +1,12 @@
+{
+  "toolUI": {
+    "nd-filter-calculator": {
+      "baseShutterSpeed": "Kecepatan Rana Dasar",
+      "ndFilter": "Filter ND",
+      "resultingShutterSpeed": "Kecepatan Rana Hasil",
+      "stopsAdded": "Stop Ditambahkan",
+      "quickReference": "Referensi Cepat",
+      "tableBase": "Dasar"
+    }
+  }
+}

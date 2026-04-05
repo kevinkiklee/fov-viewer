@@ -1,0 +1,57 @@
+{
+  "toolUI": {
+    "color-scheme-generator": {
+      "colorScheme": "Phối màu",
+      "complementary": "Bổ sung",
+      "analogous": "Tương tự",
+      "triadic": "Tam giác",
+      "splitComplementary": "Bổ sung tách",
+      "tetradic": "Tứ giác",
+      "keyColor": "Màu chính",
+      "hue": "Sắc độ:",
+      "saturation": "Độ bão hòa:",
+      "lightness": "Độ sáng:",
+      "splitAngle": "Góc tách:",
+      "spread": "Độ rộng:",
+      "rectangleWidth": "Chiều rộng hình chữ nhật:",
+      "square": "(vuông)",
+      "pickFromPhoto": "Chọn từ ảnh",
+      "dropPhotoPrompt": "Thả ảnh vào đây hoặc nhấn để duyệt",
+      "keyColorLabel": "Màu chính — nhấn để sao chép mã hex",
+      "clickToCopyHex": "Nhấn để sao chép mã hex",
+      "copiedExcl": "Đã sao chép!",
+      "copyColors": "Sao chép màu",
+      "hexFormat": "Hex",
+      "cssFormat": "CSS",
+      "rgbFormat": "RGB",
+      "copyHexCodes": "Sao chép mã hex",
+      "copyCssVariables": "Sao chép biến CSS",
+      "copyRgbValues": "Sao chép giá trị RGB",
+      "pickColorFromPhoto": "Chọn màu từ ảnh",
+      "close": "Đóng",
+      "dropPhotoOrBrowse": "Thả ảnh vào đây hoặc nhấn để duyệt",
+      "tapToChoose": "Nhấn để chọn ảnh",
+      "tapToSample": "Nhấn vào bất kỳ đâu trên ảnh để lấy mẫu màu đó",
+      "changePhoto": "Đổi ảnh",
+      "privacyNote": "Ảnh của bạn ở lại trình duyệt — không tải lên đâu cả",
+      "suggestions": {
+        "complementary": {
+          "warm": "Tuyệt vời cho: chân dung hoàng hôn ấm với tương phản bóng mát",
+          "cool": "Tuyệt vời cho: ảnh giờ xanh u ám với ánh sáng điểm nhấn ấm",
+          "default": "Tuyệt vời cho: bố cục tương phản cao với căng thẳng thị giác mạnh"
+        },
+        "analogous": {
+          "warm": "Tuyệt vời cho: phong cảnh giờ vàng với tông ấm thống nhất",
+          "cool": "Tuyệt vời cho: cảnh nước yên bình và nhiếp ảnh chạng vạng",
+          "default": "Tuyệt vời cho: ảnh thiên nhiên hài hòa với chuyển tiếp màu mượt"
+        },
+        "triadic": "Dùng cho: công việc biên tập sống động và chân dung sáng tạo đậm",
+        "splitComplementary": {
+          "warm": "Dùng cho: trang phục tương phản trên nền thiên nhiên",
+          "default": "Dùng cho: nhiếp ảnh sản phẩm cân bằng với đa dạng thị giác"
+        },
+        "tetradic": "Dùng cho: bố cục biên tập phong phú và bố cục đa chủ thể phức tạp"
+      }
+    }
+  }
+}

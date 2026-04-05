@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "star-trail-calculator": {
+      "rule500": "กฎ 500",
+      "ruleNPF": "กฎ NPF",
+      "recommendation": "คำแนะนำ",
+      "recommendationText": "ใช้กฎ NPF ({npf}s) สำหรับความคมระดับพิกเซล กฎ 500 ({r500}s) เป็นค่าประมาณเร็วแต่อาจแสดงรอยบนเซ็นเซอร์ความละเอียดสูง",
+      "shootingTime": "เวลาถ่ายภาพ",
+      "exposure": "การรับแสง",
+      "displayMode": "โหมดแสดงผล",
+      "modeStarTrails": "รอยดาว",
+      "modeSingleShot": "ช็อตเดียว",
+      "stacking": "การสแตก",
+      "exposurePerFrame": "เปิดรับแสง / เฟรม (วินาที)",
+      "exposurePerFrameDesc": "ความเร็วชัตเตอร์สำหรับแต่ละเฟรม",
+      "frames": "เฟรม",
+      "framesDesc": "จำนวนภาพทั้งหมดที่จะสแตก",
+      "gapSec": "ช่องว่าง (วินาที)",
+      "gapDesc": "หน่วงเวลาระหว่างเฟรมสำหรับเขียนบัฟเฟอร์",
+      "camera": "กล้อง",
+      "sensor": "เซ็นเซอร์",
+      "resolutionMP": "ความละเอียด (MP)",
+      "apertureLabel": "รูรับแสง",
+      "latitude": "ละติจูด",
+      "position": "ตำแหน่ง",
+      "useMyLocation": "ใช้ตำแหน่งของฉัน",
+      "latitudeLabel": "ละติจูด:",
+      "equator": "เส้นศูนย์สูตร 0°",
+      "mid45": "กลาง 45°",
+      "arctic70": "อาร์กติก 70°"
+    }
+  }
+}

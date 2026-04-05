@@ -1,0 +1,12 @@
+{
+  "toolUI": {
+    "nd-filter-calculator": {
+      "baseShutterSpeed": "基础快门速度",
+      "ndFilter": "ND滤镜",
+      "resultingShutterSpeed": "结果快门速度",
+      "stopsAdded": "添加的档数",
+      "quickReference": "快速参考",
+      "tableBase": "基础"
+    }
+  }
+}

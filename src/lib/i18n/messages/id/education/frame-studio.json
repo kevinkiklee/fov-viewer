@@ -1,0 +1,133 @@
+{
+  "education": {
+    "frame-studio": {
+      "beginner": "Frame Studio membantu Anda memotong, membingkai, dan mengomposisi foto langsung di browser. Gunakan grid komposisi untuk meningkatkan framing Anda, potong ke rasio aspek populer, dan tambahkan border yang terlihat profesional — semua tanpa kehilangan kualitas gambar.",
+      "deeper": {
+        "0": {
+          "heading": "Grid Komposisi",
+          "text": "Rule of Thirds membagi bingkai menjadi grid 3×3 — menempatkan subjek di sepanjang garis atau di persimpangan menciptakan keseimbangan visual alami. Golden Ratio (sekitar 1,618:1) memberikan pembagian yang harmonis secara matematis yang digunakan dalam seni dan arsitektur selama berabad-abad. Golden Spiral memandu mata sepanjang kurva logaritmik yang diturunkan dari deret Fibonacci, berguna untuk menuntun pemirsa melalui gambar."
+        },
+        "1": {
+          "heading": "Rasio Aspek",
+          "text": "Rasio aspek yang berbeda melayani tujuan yang berbeda. 1:1 (persegi) cocok untuk media sosial dan komposisi simetris. 3:2 adalah rasio film 35mm klasik. 4:3 umum di micro four-thirds dan kamera digital lama. 16:9 adalah rasio layar lebar standar untuk video dan komposisi sinematik. 5:4 tradisional untuk cetakan 8×10."
+        },
+        "2": {
+          "heading": "Framing dan Border",
+          "text": "Menambahkan border di sekitar foto meniru efek mat dan bingkai fisik. Mat putih memberikan ruang bernapas visual dan mengarahkan fokus ke dalam. Lebar border relatif terhadap gambar memengaruhi \"bobot\" yang dirasakan dari foto. Presentasi gaya galeri biasanya menggunakan mat yang lebih lebar. Bayangan halus menciptakan kedalaman, mensimulasikan bagaimana cetakan berbingkai duduk di dinding."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Grid Komposisi",
+          "description": "Panduan overlay membantu Anda mengevaluasi dan meningkatkan penempatan subjek di dalam bingkai."
+        },
+        "1": {
+          "label": "Rasio Aspek",
+          "description": "Proporsi lebar-ke-tinggi memengaruhi bagaimana gambar terasa — rasio lebih lebar terasa sinematik, persegi terasa seimbang."
+        },
+        "2": {
+          "label": "Lebar Border",
+          "description": "Border lebih lebar menambah keagungan dan fokus; border sempit terasa modern dan minimal."
+        },
+        "3": {
+          "label": "Warna Mat",
+          "description": "Mat putih klasik untuk fotografi seni. Mat gelap menekankan gambar yang lebih terang. Mat berwarna dapat melengkapi atau mengontraskan."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Untuk postingan Instagram, potong ke 4:5 (potret) untuk mengambil ruang layar maksimum di feed."
+        },
+        "1": {
+          "text": "Saat menambahkan border untuk cetakan, gunakan lebar mat setidaknya 10% dari dimensi terpendek gambar untuk tampilan profesional."
+        },
+        "2": {
+          "text": "Golden Spiral paling efektif untuk gambar dengan aliran alami — air, jalan, atau arsitektur melengkung."
+        }
+      },
+      "tooltips": {
+        "Aspect Ratio": {
+          "term": "Rasio Aspek",
+          "definition": "Hubungan proporsional antara lebar dan tinggi. Rasio umum termasuk 3:2 (35mm), 4:3 (M43), dan 16:9 (layar lebar)."
+        },
+        "Rule of Thirds": {
+          "term": "Rule of Thirds",
+          "definition": "Pedoman komposisi yang membagi bingkai menjadi 9 bagian sama. Menempatkan subjek di titik persimpangan menciptakan ketertarikan visual."
+        },
+        "Golden Ratio": {
+          "term": "Golden Ratio",
+          "definition": "Proporsi matematis (~1,618:1) yang ditemukan di alam dan seni. Menciptakan pembagian ruang yang estetis."
+        },
+        "Border Width": {
+          "term": "Lebar Border",
+          "definition": "Ketebalan border bingkai dalam piksel. Ditambahkan di luar gambar, meningkatkan dimensi total tanpa memotong."
+        },
+        "Inner Mat": {
+          "term": "Mat Dalam",
+          "definition": "Border kedua yang lebih tipis antara bingkai luar dan gambar — meniru mat dalam bevel dari bingkai foto fisik."
+        },
+        "Corner Radius": {
+          "term": "Radius Sudut",
+          "definition": "Membulatkan sudut border bingkai. Nol memberikan sudut tajam, nilai lebih tinggi memberikan tampilan yang lebih lembut dan bulat."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Anda ingin memposting foto potret di Instagram untuk kehadiran feed maksimal. Rasio aspek mana yang harus Anda gunakan?",
+          "hint": "Postingan potret Instagram menggunakan rasio yang lebih tinggi dari lebar.",
+          "successMessage": "Benar! 4:5 memberi Anda ruang vertikal maksimum di feed Instagram.",
+          "failureMessage": "Postingan potret Instagram menggunakan 4:5 (balik 5:4 ke orientasi potret) untuk real estate feed maksimum.",
+          "options": {
+            "0": { "label": "1:1 (Persegi)" },
+            "1": { "label": "4:5 (Potret)" },
+            "2": { "label": "16:9 (Layar Lebar)" }
+          }
+        },
+        "1": {
+          "scenario": "Grid komposisi mana yang paling banyak diajarkan sebagai titik awal untuk pemula?",
+          "hint": "Ini membagi bingkai menjadi 9 bagian yang sama.",
+          "successMessage": "Tepat! Rule of Thirds adalah panduan komposisi dasar.",
+          "failureMessage": "Rule of Thirds (grid 3×3) adalah titik awal paling umum untuk belajar komposisi.",
+          "options": {
+            "0": { "label": "Rule of Thirds" },
+            "1": { "label": "Golden Spiral" },
+            "2": { "label": "Garis Diagonal" }
+          }
+        },
+        "2": {
+          "scenario": "Anda mempersiapkan foto untuk dicetak di galeri pada kertas 8×10. Rasio aspek mana yang cocok dengan ukuran cetak ini?",
+          "hint": "8×10 disederhanakan menjadi rasio yang terkenal.",
+          "successMessage": "Benar! 5:4 cocok dengan dimensi cetak 8×10 dengan sempurna.",
+          "failureMessage": "8×10 disederhanakan menjadi 4:5, yang merupakan versi potret dari 5:4.",
+          "options": {
+            "0": { "label": "3:2" },
+            "1": { "label": "5:4" },
+            "2": { "label": "4:3" }
+          }
+        },
+        "3": {
+          "scenario": "Foto lanskap menampilkan sungai berkelok dari latar depan ke pegunungan di latar belakang. Overlay grid mana yang paling cocok dengan aliran alami ini?",
+          "hint": "Satu jenis grid mengikuti jalur melengkung alami.",
+          "successMessage": "Pilihan bagus! Golden Spiral mengikuti kurva dan garis penuntun dengan sempurna.",
+          "failureMessage": "Golden Spiral ideal untuk gambar dengan elemen melengkung alami seperti sungai, jalan, atau garis pantai.",
+          "options": {
+            "0": { "label": "Center Cross" },
+            "1": { "label": "Golden Spiral" },
+            "2": { "label": "Grid Persegi" }
+          }
+        },
+        "4": {
+          "scenario": "Anda menginginkan border putih bersih untuk menyajikan foto Anda di media sosial. Preset bingkai mana yang harus Anda gunakan?",
+          "hint": "Pikirkan preset mana yang memberi Anda border putih sederhana.",
+          "successMessage": "Benar! Preset White menambahkan border putih 100px di sekitar foto Anda.",
+          "failureMessage": "Preset White dirancang untuk presentasi border putih yang bersih dan sederhana.",
+          "options": {
+            "0": { "label": "None" },
+            "1": { "label": "White" },
+            "2": { "label": "Black" }
+          }
+        }
+      }
+    }
+  }
+}

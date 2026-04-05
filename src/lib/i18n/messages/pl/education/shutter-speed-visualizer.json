@@ -1,0 +1,121 @@
+{
+  "education": {
+    "shutter-speed-visualizer": {
+      "beginner": "Przewodnik po czasie migawki pomaga znaleźć najwolniejszy czas migawki, jakiego możesz użyć, nadal uzyskując ostre zdjęcie z ręki. Jeśli czas migawki jest zbyt wolny, drgania aparatu od Twoich rąk rozmyją obraz. Minimalny bezpieczny czas zależy od ogniskowej, tego czy masz stabilizację obrazu, i jak pewne są Twoje ręce.",
+      "deeper": "Klasyczna «reguła odwrotności» mówi, że dla ostrych zdjęć z ręki czas migawki powinien wynosić co najmniej 1/(ogniskowa) sekund — więc obiektyw 200 mm potrzebuje co najmniej 1/200 s. Na aparatach z matrycą crop należy użyć ekwiwalentnej ogniskowej (np. 200 mm na APS-C 1,5x = 1/300 s). Nowoczesna stabilizacja w korpusie (IBIS) i optyczna stabilizacja (OIS) mogą dać 3-7 dodatkowych stopni swobody przy fotografowaniu z ręki, co oznacza, że stabilizowany obiektyw 200 mm może być ostry przy 1/15 s lub nawet wolniej. Jednak stabilizacja kompensuje tylko drgania aparatu, nie ruch obiektu. Osoba idąca w Twoją stronę przy 1/15 s nadal będzie rozmyta, niezależnie od stabilizacji. Dla poruszających się obiektów musisz dobierać czas migawki na podstawie szybkości i odległości obiektu, a nie tylko ogniskowej.",
+      "keyFactors": {
+        "0": {
+          "label": "Ogniskowa",
+          "description": "Dłuższe ogniskowe powiększają drgania aparatu. Reguła odwrotności (1/ogniskowa) to punkt wyjścia do określania minimalnego czasu migawki."
+        },
+        "1": {
+          "label": "Stabilizacja obrazu",
+          "description": "OIS (w obiektywie) zazwyczaj zapewnia 2-4 stopnie korzyści. IBIS (w korpusie) 3-5 stopni. Połączenie OIS+IBIS może osiągnąć 5-7 stopni w niektórych systemach."
+        },
+        "2": {
+          "label": "Ruch obiektu",
+          "description": "Nieruchome obiekty wymagają jedynie wystarczającego czasu do zwalczenia drgań aparatu. Poruszające się obiekty potrzebują szybszych czasów niezależnie od stabilizacji: chód (~1/125 s), bieg (~1/500 s), pojazdy (~1/1000 s+)."
+        },
+        "3": {
+          "label": "Rozmiar matrycy (współczynnik kadrowania)",
+          "description": "Aparaty z matrycą crop efektywnie mnożą ogniskową dla reguły odwrotności. Obiektyw 50 mm na APS-C 1,5x zachowuje się jak 75 mm, więc potrzebujesz co najmniej 1/75 s."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Oprzyj się o ścianę, przyciśnij łokcie do ciała i powoli wydychaj przed naciśnięciem migawki. Dobra technika może dać 1-2 dodatkowe stopnie stabilności ponad regułę odwrotności."
+        },
+        "1": {
+          "text": "Fotografując ludzi, ruch obiektu zazwyczaj dyktuje minimalny czas, nie ogniskowa. Nawet z obiektywem szerokokątnym i stabilizacją, biegnące dziecko wymaga co najmniej 1/500 s."
+        },
+        "2": {
+          "text": "Jeśli regularnie fotografujesz przy słabym oświetleniu, zainwestuj w korpus z IBIS. Możliwość fotografowania z ręki przy 1/2 s z obiektywem szerokokątnym otwiera możliwości, których żadna wydajność przy wysokim ISO nie dorówna."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Ogniskowa",
+          "definition": "Ogniskowa obiektywu w milimetrach. Bezpośrednio wpływa na minimalny bezpieczny czas migawki poprzez regułę odwrotności: 1/(ogniskowa) dla pełnej klatki, dostosowana współczynnikiem kadrowania dla mniejszych matryc."
+        },
+        "sensor": {
+          "term": "Rozmiar matrycy",
+          "definition": "Rozmiar matrycy aparatu, który określa współczynnik kadrowania. APS-C (1,5x) i Micro Four Thirds (2x) mnożą efektywną ogniskową, wymagając szybszych czasów migawki dla tego samego obiektywu."
+        },
+        "stabilization": {
+          "term": "Stabilizacja obrazu",
+          "definition": "Technologia kompensująca drgania aparatu. OIS (optyczna stabilizacja obrazu) jest w obiektywie, IBIS (stabilizacja w korpusie) jest w aparacie. Mogą współpracować dla maksymalnej korzyści."
+        },
+        "subjectMotion": {
+          "term": "Ruch obiektu",
+          "definition": "Jak szybko porusza się Twój obiekt. Nieruchome obiekty wymagają jedynie czasu wystarczającego do zwalczenia drgań aparatu. Poruszające się obiekty potrzebują szybszych czasów bazujących na ich prędkości i kierunku względem aparatu."
+        },
+        "recommendedShutterSpeed": {
+          "term": "Zalecany czas migawki",
+          "definition": "Minimalny czas migawki obliczony dla Twojej konkretnej kombinacji ogniskowej, stabilizacji, matrycy i ruchu obiektu. Fotografowanie z tym czasem lub szybszym powinno dać ostre rezultaty."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Fotografujesz obiektywem 100 mm na pełnoklatkowym aparacie bez stabilizacji obrazu. Twój obiekt stoi nieruchomo. Jaki jest minimalny zalecany czas migawki?",
+          "hint": "Reguła odwrotności: minimalny czas migawki = 1 / ogniskowa.",
+          "successMessage": "Prawidłowo! Reguła odwrotności mówi 1/100 s dla obiektywu 100 mm na pełnej klatce. To klasyczny punkt wyjścia dla ostrości z ręki.",
+          "failureMessage": "Dla obiektywu 100 mm na pełnej klatce bez stabilizacji reguła odwrotności daje 1/100 s jako minimalny bezpieczny czas migawki dla statycznych obiektów.",
+          "options": {
+            "0": { "label": "1/50 s" },
+            "1": { "label": "1/100 s" },
+            "2": { "label": "1/200 s" },
+            "3": { "label": "1/500 s" }
+          }
+        },
+        "1": {
+          "scenario": "Używasz obiektywu 50 mm na aparacie APS-C (współczynnik kadrowania 1,5x) bez stabilizacji. Jaki minimalny czas migawki powinieneś użyć dla nieruchomego obiektu?",
+          "hint": "Pomnóż ogniskową przez współczynnik kadrowania przed zastosowaniem reguły odwrotności.",
+          "successMessage": "Zgadza się! 50 mm × 1,5 = ekwiwalent 75 mm, więc potrzebujesz co najmniej 1/75 s. W praktyce zaokrąglenie w górę do 1/80 s to bezpieczny wybór.",
+          "failureMessage": "Na APS-C współczynnik kadrowania (1,5x) oznacza, że obiektyw 50 mm zachowuje się jak 75 mm. Reguła odwrotności daje 1/75 s jako minimalny czas.",
+          "options": {
+            "0": { "label": "1/50 s" },
+            "1": { "label": "1/75 s (zaokrąglij do 1/80 s)" },
+            "2": { "label": "1/100 s" },
+            "3": { "label": "1/125 s" }
+          }
+        },
+        "2": {
+          "scenario": "Masz obiektyw 200 mm z OIS (4 stopnie stabilizacji) na pełnoklatkowym korpusie z IBIS (5 stopni). Razem zapewniają około 6 stopni połączonej stabilizacji. Dla nieruchomego obiektu, jaki jest przybliżony minimalny czas migawki?",
+          "hint": "Zacznij od reguły odwrotności (1/200 s) i zastosuj 6 stopni korzyści ze stabilizacji.",
+          "successMessage": "Prawidłowo! Zaczynając od 1/200 s i zyskując 6 stopni: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3 s. Około 1/3 sekundy z ręki z obiektywem 200 mm — imponujące, ale osiągalne z nowoczesną stabilizacją!",
+          "failureMessage": "Od 1/200 s każdy stopień stabilizacji podwaja użyteczny czas: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3 s. Sześć stopni stabilizacji z obiektywem 200 mm daje około 1/3 s.",
+          "options": {
+            "0": { "label": "1/30 s" },
+            "1": { "label": "1/8 s" },
+            "2": { "label": "~1/3 s" },
+            "3": { "label": "1 sekunda" }
+          }
+        },
+        "3": {
+          "scenario": "Fotografujesz joggującego przyjaciela w parku obiektywem 35 mm na pełnoklatkowym aparacie z IBIS. Twój IBIS daje 5 stopni stabilizacji, więc sama reguła odwrotności pozwoliłaby na około 1 sekundę. Czy powinieneś użyć 1 sekundy?",
+          "hint": "Stabilizacja kompensuje drgania aparatu, nie ruch obiektu.",
+          "successMessage": "Prawidłowo! Stabilizacja tylko zwalcza drgania aparatu. Joggująca osoba potrzebuje co najmniej 1/250 s, aby zamrozić ruch, niezależnie od tego, jak dobra jest Twoja stabilizacja.",
+          "failureMessage": "Stabilizacja nie może zamrozić poruszającego się obiektu. Dla joggującej osoby potrzebujesz co najmniej 1/250 s, aby zapobiec rozmyciu ruchu, nawet jeśli aparat mógłby utrzymać stabilność przy 1 sekundzie.",
+          "options": {
+            "0": { "label": "Tak — IBIS obsłuży cały ruch" },
+            "1": { "label": "Nie — użyj co najmniej 1/250 s, aby zamrozić joggera" },
+            "2": { "label": "Nie — użyj 1/60 s jako kompromis" },
+            "3": { "label": "To zależy od ustawienia ISO" }
+          }
+        },
+        "4": {
+          "scenario": "Chcesz zrobić zdjęcie z panningiem rowerzysty — rowerzysta powinien być ostry, a tło powinno pokazywać smugi rozmycia ruchu. Używasz obiektywu 70 mm na pełnej klatce. Jaki zakres czasów migawki powinieneś wypróbować?",
+          "hint": "Panning celowo używa wolnego czasu migawki podczas śledzenia obiektu. Zbyt szybki zamraża wszystko; zbyt wolny rozmywa nawet obiekt.",
+          "successMessage": "Prawidłowo! Do panningu rowerzysty 1/30 s do 1/60 s to optymalny zakres. Jest wystarczająco wolny, aby rozmyć tło w smugi, podczas gdy Twoje śledzenie utrzymuje rowerzystę w miarę ostro. Wymaga to praktyki — fotografuj seriami i oczekuj wielu odrzutów.",
+          "failureMessage": "Panning wymaga czasu migawki wystarczająco wolnego, aby rozmyć tło, ale wystarczająco szybkiego, aby śledzenie utrzymało obiekt ostry. Dla rowerzysty 1/30 s do 1/60 s to typowy zakres.",
+          "options": {
+            "0": { "label": "1/1000 s do 1/2000 s" },
+            "1": { "label": "1/250 s do 1/500 s" },
+            "2": { "label": "1/30 s do 1/60 s" },
+            "3": { "label": "1 s do 2 s" }
+          }
+        }
+      }
+    }
+  }
+}

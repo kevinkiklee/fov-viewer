@@ -1,0 +1,112 @@
+{
+  "education": {
+    "nd-filter-calculator": {
+      "beginner": "Filter ND (neutral density) seperti kacamata hitam untuk lensa kamera Anda. Filter ini mengurangi jumlah cahaya yang masuk ke lensa tanpa mengubah warna, memungkinkan Anda menggunakan kecepatan rana lebih lambat atau apertur lebih lebar dalam kondisi terang. Ini adalah cara fotografer menciptakan air terjun yang halus seperti sutra, lautan yang tenang, atau awan yang kabur di siang hari.",
+      "deeper": "Filter ND dinilai berdasarkan berapa stop cahaya yang diblokir. Filter ND2 (1 stop) membagi dua cahaya, ND8 (3 stop) menguranginya menjadi 1/8, dan ND1000 (10 stop) mengurangi cahaya dengan faktor 1024. Konvensi penamaan bisa membingungkan: \"ND8\" berarti faktor filter adalah 8 (3 stop), sementara \"ND 0.9\" menggunakan notasi densitas optik (setiap 0,3 = 1 stop, jadi 0,9 = 3 stop). Kecepatan rana yang dihasilkan hanyalah kecepatan dasar dikalikan faktor filter. Misalnya, jika eksposur tanpa filter Anda adalah 1/125 detik dan Anda menambahkan ND 10 stop (ND1000), kecepatan rana baru adalah 1/125 x 1024 = sekitar 8 detik. Menumpuk beberapa filter ND menambahkan nilai stop mereka bersama tetapi dapat menyebabkan vignetting dan color cast, terutama dengan lensa wide-angle.",
+      "keyFactors": {
+        "0": {
+          "label": "Kecepatan Rana Dasar",
+          "description": "Waktu eksposur yang tepat tanpa filter. Ukur adegan terlebih dahulu, kemudian hitung eksposur yang difilter dari titik awal ini."
+        },
+        "1": {
+          "label": "Kekuatan Filter",
+          "description": "Diukur dalam stop. Setiap stop menggandakan waktu eksposur. Kekuatan umum: 3 stop (ND8), 6 stop (ND64), dan 10 stop (ND1000)."
+        },
+        "2": {
+          "label": "Menumpuk Filter",
+          "description": "Anda dapat menggabungkan filter dengan menambahkan nilai stop mereka. Tumpukan 3 stop + 6 stop memberikan 9 stop pengurangan. Waspadai vignetting pada lensa wide-angle."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Komposisikan dan fokuskan sebelum memasang filter ND yang kuat. Dengan pengurangan cahaya 10 stop, viewfinder dan autofokus Anda akan kesulitan dalam gelap."
+        },
+        "1": {
+          "text": "Untuk seascape, eksposur 1-2 detik menghaluskan riak kecil menjadi tekstur sambil mempertahankan struktur ombak. Eksposur 30 detik atau lebih menciptakan air yang sepenuhnya datar dan berkabut."
+        },
+        "2": {
+          "text": "Filter ND murah sering menambahkan color cast (biasanya magenta atau cokelat). Investasi dalam kaca berkualitas dari merek terkemuka, atau belajar mengoreksi cast di pasca-pemrosesan menggunakan referensi kartu abu-abu."
+        }
+      },
+      "tooltips": {
+        "baseShutterSpeed": {
+          "term": "Kecepatan Rana Dasar",
+          "definition": "Kecepatan rana untuk eksposur yang tepat tanpa filter ND terpasang. Ini adalah titik awal Anda — kalkulator mengalikannya dengan faktor filter."
+        },
+        "ndFilter": {
+          "term": "Filter ND",
+          "definition": "Filter neutral density yang secara seragam mengurangi transmisi cahaya. Dinilai berdasarkan faktor filter (ND2, ND4, ND8...) atau stop pengurangan cahaya. ND2 = 1 stop, ND4 = 2 stop, ND8 = 3 stop, dan seterusnya."
+        },
+        "resultingShutterSpeed": {
+          "term": "Kecepatan Rana Hasil",
+          "definition": "Kecepatan rana baru setelah memperhitungkan filter ND. Dihitung dengan mengalikan kecepatan rana dasar dengan faktor filter (misalnya 1/125 detik x 1024 untuk ND 10 stop)."
+        },
+        "stopsAdded": {
+          "term": "Stop Ditambahkan",
+          "definition": "Jumlah stop pengurangan cahaya yang diberikan filter ND. Setiap stop menggandakan waktu eksposur yang diperlukan. 10 stop berarti eksposur 1024 kali lebih panjang."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Anda di air terjun dan kamera Anda mengukur eksposur yang tepat pada 1/125 detik tanpa filter. Anda memasang filter ND 3 stop (ND8). Berapa kecepatan rana baru?",
+          "hint": "Setiap stop menggandakan waktu eksposur. 3 stop berarti 2 x 2 x 2 = 8 kali lebih panjang.",
+          "successMessage": "Benar! 1/125 detik x 8 = 1/15 detik. Ini adalah awal yang baik untuk motion blur di air, meskipun Anda mungkin ingin filter yang lebih kuat untuk hasil yang halus seperti sutra.",
+          "failureMessage": "Filter ND 3 stop mengalikan waktu eksposur dengan 8 (2^3 = 8). Jadi 1/125 detik menjadi 1/15 detik.",
+          "options": {
+            "0": { "label": "1/60 detik" },
+            "1": { "label": "1/30 detik" },
+            "2": { "label": "1/15 detik" },
+            "3": { "label": "1/8 detik" }
+          }
+        },
+        "1": {
+          "scenario": "Anda ingin membuat eksposur 30 detik dari awan yang bergerak di langit. Tanpa filter, eksposur yang tepat adalah 1/30 detik. Berapa stop filtrasi ND yang Anda butuhkan?",
+          "hint": "Anda perlu dari 1/30 detik ke 30 detik — itu 1/30 x faktor = 30, jadi faktor = 900. Temukan pangkat 2 terdekat.",
+          "successMessage": "Benar! Dari 1/30 detik ke 30 detik adalah peningkatan sekitar 1000x, yaitu sekitar 10 stop. Filter ND1000 (10 stop) membawa Anda ke sekitar 33 detik.",
+          "failureMessage": "Rasionya adalah 30 / (1/30) = 900. Pangkat 2 terdekat adalah 1024 (2^10), jadi Anda memerlukan filter ND 10 stop.",
+          "options": {
+            "0": { "label": "6 stop (ND64)" },
+            "1": { "label": "8 stop (ND256)" },
+            "2": { "label": "10 stop (ND1000)" },
+            "3": { "label": "15 stop (ND32768)" }
+          }
+        },
+        "2": {
+          "scenario": "Anda memotret seascape saat matahari terbenam. Cahaya memudar dan eksposur dasar (tanpa filter) sekarang 1/4 detik pada f/11, ISO 100. Anda ingin eksposur 2 menit untuk air yang sangat halus. Kekuatan filter ND apa yang Anda butuhkan?",
+          "hint": "Dari 1/4 detik ke 120 detik adalah faktor 480. Temukan nilai stop terdekat.",
+          "successMessage": "Filter ND 9 stop akan memberikan Anda 1/4 x 512 = 128 detik, atau sedikit lebih dari 2 menit. Sempurna untuk tampilan seascape yang berkabut dan eteris saat matahari terbenam.",
+          "failureMessage": "Dari 0,25 detik ke 120 detik adalah peningkatan sekitar 480x. 2^9 = 512, yang dekat dengan 480, jadi filter 9 stop membawa Anda ke sekitar 128 detik.",
+          "options": {
+            "0": { "label": "6 stop" },
+            "1": { "label": "9 stop" },
+            "2": { "label": "10 stop" },
+            "3": { "label": "13 stop" }
+          }
+        },
+        "3": {
+          "scenario": "Anda ingin memotret potret pada f/1.4 di bawah sinar matahari cerah (eksposur dasar: f/1.4, 1/8000 detik, ISO 100). Kecepatan rana maksimum kamera Anda adalah 1/8000 detik. Bisakah Anda memotret pada f/1.4 tanpa filter ND?",
+          "hint": "Periksa apakah 1/8000 detik pada f/1.4 dan ISO 100 bisa dicapai, atau apakah adegan masih overeksposur.",
+          "successMessage": "Benar! Pada hari yang sangat cerah (EV 15+), f/1.4 pada ISO 100 sering memerlukan kecepatan rana lebih cepat dari 1/8000 detik, yang tidak dapat dicapai kebanyakan kamera. Filter ND 2-3 stop memungkinkan Anda memotret dengan apertur terbuka lebar tanpa overeksposur.",
+          "failureMessage": "Di bawah sinar matahari cerah, f/1.4 pada ISO 100 mungkin memerlukan kecepatan rana melebihi batas 1/8000 detik kamera. Filter ND sangat penting untuk pemotretan apertur lebar dalam kondisi terang.",
+          "options": {
+            "0": { "label": "Ya — 1/8000 detik cukup cepat" },
+            "1": { "label": "Tidak — Anda kemungkinan memerlukan filter ND 2-3 stop" },
+            "2": { "label": "Cukup naikkan ISO untuk mengkompensasi" }
+          }
+        },
+        "4": {
+          "scenario": "Anda memiliki filter ND 6 stop dan 3 stop. Anda menumpuknya pada lensa dengan eksposur dasar 1/250 detik. Berapa kecepatan rana yang dihasilkan, dan apa yang harus Anda waspadai dengan setup ini?",
+          "hint": "Jumlahkan nilai stop, kemudian hitung eksposur baru. Pikirkan tentang efek samping optik dari menumpuk.",
+          "successMessage": "Benar! 6 + 3 = 9 stop. 1/250 x 512 = sekitar 2 detik. Waspadai vignetting (sudut gelap) pada lensa wide-angle dan potensi color cast dari kaca murah.",
+          "failureMessage": "Menumpuk menambahkan nilai stop: 6 + 3 = 9 stop total. 2^9 = 512, jadi 1/250 x 512 = ~2 detik. Menumpuk juga dapat menyebabkan vignetting dan color cast.",
+          "options": {
+            "0": { "label": "~0,5 detik, waspadai lens flare" },
+            "1": { "label": "~2 detik, waspadai vignetting dan color cast" },
+            "2": { "label": "~4 detik, waspadai sensor overheating" },
+            "3": { "label": "~8 detik, tidak ada masalah dengan menumpuk" }
+          }
+        }
+      }
+    }
+  }
+}

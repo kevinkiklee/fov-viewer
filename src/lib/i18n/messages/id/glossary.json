@@ -1,0 +1,240 @@
+{
+  "glossary": {
+    "title": "Glosarium Fotografi",
+    "subtitle": "Referensi istilah fotografi yang dapat dicari. Klik istilah mana pun untuk melihat definisinya.",
+    "searchPlaceholder": "Cari istilah...",
+    "searchAriaLabel": "Cari istilah glosarium",
+    "noResults": "Tidak ada istilah yang cocok dengan pencarian Anda.",
+    "tryTool": "Coba {toolName}",
+    "entries": {
+      "aperture": {
+        "term": "Apertur",
+        "definition": "Bukaan pada lensa yang dilalui cahaya. Apertur lebih lebar (angka f lebih rendah) memasukkan lebih banyak cahaya dan menciptakan kedalaman bidang yang lebih dangkal."
+      },
+      "aspect-ratio": {
+        "term": "Rasio Aspek",
+        "definition": "Hubungan proporsional antara lebar dan tinggi gambar. Rasio umum termasuk 3:2 (DSLR standar), 4:3 (Micro Four Thirds), dan 16:9 (layar lebar)."
+      },
+      "autofocus": {
+        "term": "Autofokus",
+        "definition": "Sistem kamera yang secara otomatis menyesuaikan lensa untuk membuat subjek menjadi fokus tajam. Sistem modern menggunakan metode deteksi fase atau deteksi kontras."
+      },
+      "bokeh": {
+        "term": "Bokeh",
+        "definition": "Kualitas estetika area yang tidak fokus dalam gambar, terutama highlight. Bokeh yang halus dan melingkar umumnya lebih disukai dan dipengaruhi oleh desain lensa dan bentuk apertur."
+      },
+      "bracketing": {
+        "term": "Bracketing",
+        "definition": "Mengambil beberapa foto dari adegan yang sama pada pengaturan eksposur yang berbeda. Digunakan untuk fotografi HDR atau untuk memastikan setidaknya satu frame dengan eksposur yang tepat."
+      },
+      "bulb-mode": {
+        "term": "Mode Bulb",
+        "definition": "Pengaturan rana di mana rana tetap terbuka selama tombol rana ditekan. Digunakan untuk eksposur yang sangat panjang melampaui pengaturan waktu kamera."
+      },
+      "burst-mode": {
+        "term": "Mode Burst",
+        "definition": "Mode pemotretan di mana kamera mengambil beberapa frame per detik secara berturutan dengan cepat. Berguna untuk menangkap aksi cepat atau memilih momen terbaik."
+      },
+      "chromatic-aberration": {
+        "term": "Aberasi Kromatik",
+        "definition": "Cacat lensa di mana panjang gelombang cahaya yang berbeda fokus pada titik yang sedikit berbeda, menyebabkan fringing warna di sepanjang tepi kontras tinggi. Lebih umum pada lensa murah dan pada apertur lebar."
+      },
+      "circle-of-confusion": {
+        "term": "Circle of Confusion",
+        "definition": "Lingkaran blur terbesar yang masih tampak sebagai titik bagi mata manusia. Ini menentukan batas ketajaman yang dapat diterima dan digunakan dalam perhitungan kedalaman bidang."
+      },
+      "color-temperature": {
+        "term": "Suhu Warna",
+        "definition": "Pengukuran dalam Kelvin yang menggambarkan kehangatan atau kedinginan sumber cahaya. Nilai lebih rendah (2700K) tampak hangat/oranye; nilai lebih tinggi (6500K+) tampak dingin/biru."
+      },
+      "crop-factor": {
+        "term": "Crop Factor",
+        "definition": "Rasio diagonal sensor kamera terhadap diagonal sensor full frame 35mm. Ini memengaruhi panjang fokus efektif dan bidang pandang."
+      },
+      "depth-of-field": {
+        "term": "Kedalaman Bidang",
+        "definition": "Rentang jarak dalam sebuah adegan yang tampak tajam secara dapat diterima. Dikendalikan oleh apertur, panjang fokus, dan jarak subjek."
+      },
+      "diffraction": {
+        "term": "Difraksi",
+        "definition": "Pembengkokan cahaya saat melewati apertur kecil, yang melunakkan gambar. Ini menetapkan batas praktis seberapa jauh Anda dapat mengecilkan apertur lensa."
+      },
+      "dynamic-range": {
+        "term": "Rentang Dinamis",
+        "definition": "Rentang antara bayangan tergelap dan highlight tercerah yang dapat ditangkap kamera dalam satu eksposur. Diukur dalam stop (EV)."
+      },
+      "ev": {
+        "term": "EV (Nilai Eksposur)",
+        "definition": "Angka yang mewakili kombinasi kecepatan rana dan apertur yang menghasilkan eksposur yang sama. Setiap kenaikan 1 EV menggandakan atau membagi dua cahaya."
+      },
+      "exposure-compensation": {
+        "term": "Kompensasi Eksposur",
+        "definition": "Kontrol kamera yang mengganti eksposur yang terukur, biasanya dalam peningkatan 1/3 stop. Nilai positif mencerahkan gambar; nilai negatif menggelapkannya."
+      },
+      "exposure-triangle": {
+        "term": "Segitiga Eksposur",
+        "definition": "Hubungan antara apertur, kecepatan rana, dan ISO. Mengubah satu memerlukan penyesuaian yang lain untuk mempertahankan eksposur yang sama."
+      },
+      "f-stop": {
+        "term": "F-Stop",
+        "definition": "Satuan pengukuran untuk apertur lensa. Setiap full stop (f/1.4, f/2, f/2.8, f/4...) membagi dua jumlah cahaya yang melewati lensa."
+      },
+      "focal-length": {
+        "term": "Panjang Fokus",
+        "definition": "Jarak dalam milimeter dari pusat optik lensa ke sensor saat difokuskan pada tak terhingga. Ini menentukan sudut pandang dan pembesaran."
+      },
+      "focus-stacking": {
+        "term": "Focus Stacking",
+        "definition": "Teknik di mana beberapa gambar yang difokuskan pada jarak berbeda digabungkan dalam pasca-pemrosesan untuk mencapai kedalaman bidang yang lebih besar daripada yang dimungkinkan oleh satu eksposur."
+      },
+      "full-frame": {
+        "term": "Full Frame",
+        "definition": "Ukuran sensor yang setara dengan film 35mm (36 x 24mm). Ini adalah standar referensi untuk perhitungan panjang fokus dan crop factor."
+      },
+      "golden-hour": {
+        "term": "Golden Hour",
+        "definition": "Periode sesaat setelah matahari terbit atau sebelum matahari terbenam ketika sinar matahari hangat, lembut, dan terarah. Sangat dihargai untuk fotografi lanskap dan potret."
+      },
+      "histogram": {
+        "term": "Histogram",
+        "definition": "Grafik yang menunjukkan distribusi nilai kecerahan dalam gambar. Sisi kiri mewakili bayangan, sisi kanan mewakili highlight."
+      },
+      "hyperfocal-distance": {
+        "term": "Jarak Hiperfocal",
+        "definition": "Jarak fokus terdekat di mana segala sesuatu dari setengah jarak tersebut hingga tak terhingga tampak tajam secara dapat diterima. Memaksimalkan kedalaman bidang untuk apertur tertentu."
+      },
+      "image-stabilization": {
+        "term": "Stabilisasi Gambar",
+        "definition": "Sistem yang mengurangi blur akibat goyangan kamera, baik di lensa (OIS) maupun di bodi kamera (IBIS). Biasanya memberikan keuntungan 3-7 stop untuk pemotretan genggam."
+      },
+      "iso": {
+        "term": "ISO",
+        "definition": "Ukuran sensitivitas sensor kamera terhadap cahaya. Nilai ISO yang lebih tinggi mencerahkan gambar tetapi menimbulkan lebih banyak noise."
+      },
+      "jpeg": {
+        "term": "JPEG",
+        "definition": "Format file gambar terkompresi yang menerapkan kompresi lossy. Ukuran file lebih kecil tetapi fleksibilitas pengeditan lebih sedikit dibandingkan RAW."
+      },
+      "kelvin": {
+        "term": "Kelvin",
+        "definition": "Satuan yang digunakan untuk mengukur suhu warna cahaya. Fotografer menggunakan nilai Kelvin untuk mengatur white balance dan mencocokkan warna pencahayaan ambient."
+      },
+      "lens-compression": {
+        "term": "Kompresi Lensa",
+        "definition": "Efek visual dari lensa telefoto yang membuat objek jauh tampak lebih dekat ke subjek latar depan. Ini disebabkan oleh jarak pemotretan yang jauh, bukan lensa itu sendiri."
+      },
+      "light-meter": {
+        "term": "Light Meter",
+        "definition": "Perangkat atau sistem kamera yang mengukur intensitas cahaya untuk menentukan pengaturan eksposur yang tepat. Kamera menggunakan pengukuran cahaya pantul; meter genggam dapat mengukur cahaya insiden."
+      },
+      "long-exposure": {
+        "term": "Eksposur Panjang",
+        "definition": "Foto yang diambil dengan kecepatan rana lambat, biasanya detik atau menit. Digunakan untuk jejak cahaya, air halus, jejak bintang, dan adegan cahaya rendah."
+      },
+      "macro": {
+        "term": "Makro",
+        "definition": "Fotografi yang mereproduksi subjek pada atau mendekati pembesaran ukuran asli (rasio 1:1). Memerlukan lensa makro khusus atau tabung ekstensi."
+      },
+      "medium-format": {
+        "term": "Medium Format",
+        "definition": "Ukuran sensor yang lebih besar dari full frame, biasanya sekitar 44 x 33mm atau 54 x 40mm. Menawarkan resolusi lebih tinggi, kedalaman bidang lebih dangkal, dan rentang dinamis yang lebih besar."
+      },
+      "megapixel": {
+        "term": "Megapiksel",
+        "definition": "Satu juta piksel. Jumlah megapiksel sensor menentukan resolusi maksimum gambar yang dapat ditangkapnya."
+      },
+      "micro-four-thirds": {
+        "term": "Micro Four Thirds",
+        "definition": "Sistem kamera mirrorless dengan sensor berukuran 17,3 x 13mm, memberikan crop factor 2x. Menawarkan bodi dan lensa yang ringkas dengan kualitas gambar yang baik."
+      },
+      "mirror-lock-up": {
+        "term": "Mirror Lock-Up",
+        "definition": "Fitur DSLR yang membalik cermin ke atas sebelum rana terbuka, mengurangi getaran. Digunakan untuk foto tajam yang dipasang di tripod, terutama pada kecepatan rana lambat."
+      },
+      "nd-filter": {
+        "term": "Filter ND",
+        "definition": "Filter neutral density yang mengurangi jumlah cahaya yang masuk ke lensa tanpa memengaruhi warna. Memungkinkan eksposur lebih panjang atau apertur lebih lebar dalam kondisi terang."
+      },
+      "noise": {
+        "term": "Noise",
+        "definition": "Variasi acak dalam kecerahan dan warna pada gambar digital, paling terlihat di area bayangan dan pada pengaturan ISO tinggi. Dapat dikurangi dengan perangkat lunak pengurangan noise."
+      },
+      "overexposure": {
+        "term": "Overeksposur",
+        "definition": "Ketika gambar menerima terlalu banyak cahaya, menyebabkan highlight terpotong menjadi putih murni dan kehilangan detail. Kebalikan dari undereksposur."
+      },
+      "panorama": {
+        "term": "Panorama",
+        "definition": "Gambar sudut lebar yang dibuat dengan menyatukan beberapa foto yang saling tumpang tindih. Dapat mencakup hingga 360 derajat dari sebuah adegan."
+      },
+      "pixel-pitch": {
+        "term": "Pixel Pitch",
+        "definition": "Jarak dalam mikrometer antara pusat piksel yang berdekatan pada sensor. Pixel pitch yang lebih besar umumnya berarti kinerja cahaya rendah yang lebih baik."
+      },
+      "polarizer": {
+        "term": "Polarizer",
+        "definition": "Filter yang mengurangi pantulan dan silau dari permukaan non-logam dan dapat memperdalam langit biru. Bekerja dengan memblokir gelombang cahaya yang berosilasi dalam arah tertentu."
+      },
+      "prime-lens": {
+        "term": "Lensa Prime",
+        "definition": "Lensa dengan panjang fokus tetap (tanpa zoom). Lensa prime biasanya lebih tajam, lebih cepat (apertur lebih lebar), dan lebih ringan daripada lensa zoom yang sebanding."
+      },
+      "raw": {
+        "term": "RAW",
+        "definition": "Format file yang tidak dikompresi atau dikompresi secara lossless yang menyimpan semua data sensor. Menawarkan fleksibilitas maksimum dalam pasca-pemrosesan dengan biaya ukuran file yang lebih besar."
+      },
+      "reciprocal-rule": {
+        "term": "Aturan Timbal Balik",
+        "definition": "Pedoman yang menyatakan bahwa kecepatan rana minimum genggam harus 1/(panjang fokus) untuk menghindari goyangan kamera. Untuk lensa 200mm, gunakan setidaknya 1/200 detik."
+      },
+      "rule-of-thirds": {
+        "term": "Rule of Thirds",
+        "definition": "Pedoman komposisi yang membagi bingkai menjadi grid 3x3. Menempatkan subjek di sepanjang garis atau di persimpangannya sering kali menciptakan gambar yang lebih seimbang."
+      },
+      "sensor-size": {
+        "term": "Ukuran Sensor",
+        "definition": "Dimensi fisik sensor gambar kamera. Sensor yang lebih besar menangkap lebih banyak cahaya, menawarkan kedalaman bidang yang lebih dangkal, dan umumnya menghasilkan lebih sedikit noise."
+      },
+      "shutter-speed": {
+        "term": "Kecepatan Rana",
+        "definition": "Lamanya rana kamera terbuka selama eksposur. Kecepatan lebih tinggi membekukan gerakan; kecepatan lebih lambat memungkinkan blur gerakan."
+      },
+      "star-trails": {
+        "term": "Jejak Bintang",
+        "definition": "Goresan cahaya yang diciptakan oleh gerakan nyata bintang selama eksposur panjang. Dapat ditangkap dalam satu eksposur yang sangat panjang atau dengan menumpuk beberapa frame yang lebih pendek."
+      },
+      "stop": {
+        "term": "Stop",
+        "definition": "Satuan perubahan eksposur yang mewakili penggandaan atau pembagian dua cahaya. Berlaku untuk apertur, kecepatan rana, dan ISO secara setara."
+      },
+      "telephoto": {
+        "term": "Telefoto",
+        "definition": "Lensa dengan panjang fokus lebih dari sekitar 70mm (ekuivalen full frame). Lensa telefoto memperbesar subjek yang jauh dan mengompres perspektif."
+      },
+      "tilt-shift": {
+        "term": "Tilt-Shift",
+        "definition": "Lensa yang dapat memiringkan bidang fokus dan menggeser lingkaran gambar relatif terhadap sensor. Digunakan untuk fotografi arsitektur dan efek fokus selektif."
+      },
+      "underexposure": {
+        "term": "Undereksposur",
+        "definition": "Ketika gambar menerima terlalu sedikit cahaya, menyebabkan area bayangan kehilangan detail dan tampak noisy. Kebalikan dari overeksposur."
+      },
+      "vignetting": {
+        "term": "Vignetting",
+        "definition": "Penggelapan sudut dan tepi gambar relatif terhadap pusat. Dapat disebabkan oleh desain lensa, filter, atau lens hood, dan terkadang ditambahkan secara sengaja dalam pasca-pemrosesan."
+      },
+      "white-balance": {
+        "term": "White Balance",
+        "definition": "Pengaturan kamera yang menyesuaikan warna agar objek putih tampak netral di bawah kondisi pencahayaan yang berbeda. Dapat diatur secara otomatis atau manual menggunakan nilai Kelvin."
+      },
+      "wide-angle": {
+        "term": "Wide-Angle",
+        "definition": "Lensa dengan panjang fokus pendek (biasanya di bawah 35mm pada full frame) yang menangkap bidang pandang yang lebih luas. Sering digunakan untuk lanskap, arsitektur, dan interior."
+      },
+      "zoom-lens": {
+        "term": "Lensa Zoom",
+        "definition": "Lensa dengan rentang panjang fokus yang bervariasi, memungkinkan fotografer mengubah framing tanpa berpindah posisi. Menawarkan keserbagunaan dengan biaya ukuran, berat, dan terkadang ketajaman."
+      }
+    }
+  }
+}

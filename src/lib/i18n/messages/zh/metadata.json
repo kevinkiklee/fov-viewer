@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "site": {
+      "defaultTitle": "PhotoTools — 摄影工具",
+      "titleTemplate": "%s | PhotoTools",
+      "description": "免费摄影工具：视场角模拟器、配色方案生成器、EXIF 查看器、裁剪与加框等。",
+      "ogTitle": "PhotoTools — 免费摄影工具"
+    },
+    "fov-simulator": {
+      "title": "视场角模拟器 — 比较焦距",
+      "description": "比较不同焦距和传感器尺寸下的视场角。免费、交互式、可分享。"
+    },
+    "dof-simulator": {
+      "title": "景深模拟器 | PhotoTools",
+      "description": "通过实时 WebGL 模拟可视化光圈、焦距和距离如何影响背景虚化"
+    },
+    "focus-stacking-calculator": {
+      "title": "焦点堆叠计算器 | PhotoTools",
+      "description": "为微距和风光摄影计算实现前后清晰的最佳对焦距离"
+    },
+    "equivalent-settings-calculator": {
+      "title": "等效参数计算器 | PhotoTools",
+      "description": "查找不同传感器画幅之间的等效光圈和焦距以匹配景深"
+    },
+    "exposure-simulator": {
+      "title": "曝光三角模拟器",
+      "description": "交互式曝光三角模拟器 — 通过实时预览查看光圈、快门速度和 ISO 如何影响您的图像。"
+    },
+    "star-trail-calculator": {
+      "title": "星轨计算器",
+      "description": "使用 500 法则、NPF 法则等计算拍摄清晰星点的最长曝光时间。为任何位置规划星轨堆叠拍摄。"
+    },
+    "white-balance-visualizer": {
+      "title": "白平衡可视化",
+      "description": "查看白平衡和色温如何影响您的照片。通过实时预览可视化 2000K 到 10000K 的变化。"
+    },
+    "sensor-size-comparison": {
+      "title": "传感器尺寸对比",
+      "description": "比较从中画幅到智能手机的相机传感器尺寸。查看叠加、并排和像素密度视图以及真实相机型号。"
+    },
+    "color-scheme-generator": {
+      "title": "配色方案生成器",
+      "description": "使用互补色、类比色、三色和四色配色生成摄影调色板。交互式色轮搭配照片取色器。"
+    },
+    "frame-studio": {
+      "title": "构图工作室",
+      "description": "使用网格叠加裁剪、加框和构图照片。100% 本地处理 — 您的照片不会离开设备。"
+    },
+    "exif-viewer": {
+      "title": "EXIF 查看器",
+      "description": "查看任何照片的 EXIF 元数据、直方图和图像预览。100% 本地处理 — 您的照片不会离开设备。"
+    },
+    "hyperfocal-simulator": {
+      "title": "超焦距模拟器",
+      "description": "可视化任何镜头和传感器的超焦距。精确了解在哪里对焦才能获得从前景到无穷远的最大清晰度。"
+    },
+    "shutter-speed-visualizer": {
+      "title": "快门速度可视化",
+      "description": "找到手持拍摄清晰照片的最低快门速度。考虑焦距、传感器尺寸和图像稳定功能。"
+    },
+    "nd-filter-calculator": {
+      "title": "ND滤镜计算器",
+      "description": "计算使用 ND 滤镜时的正确快门速度。支持从 ND2 到 ND1000000 的任何滤镜强度，附带快速参考表。"
+    },
+    "perspective-compression-simulator": {
+      "title": "透视压缩模拟器",
+      "description": "交互式 3D 模拟器展示焦距和距离如何影响透视压缩。实时查看背景压缩变化。"
+    },
+    "about": {
+      "title": "关于",
+      "description": "PhotoTools 是一系列免费的基于浏览器的摄影计算器、模拟器和参考资料，适合各水平的摄影爱好者。"
+    },
+    "contact": {
+      "title": "联系我们 | PhotoTools",
+      "description": "联系 PhotoTools 团队 — 关于我们摄影工具的问题、反馈或建议。"
+    },
+    "privacy": {
+      "title": "隐私政策 | PhotoTools",
+      "description": "了解 PhotoTools 如何处理您的数据，包括分析、Cookie 和 www.phototools.io 的联系表单提交。"
+    },
+    "terms": {
+      "title": "服务条款 | PhotoTools",
+      "description": "PhotoTools 服务条款 — 了解 www.phototools.io 的可接受使用、知识产权、免责声明和责任限制。"
+    },
+    "glossary": {
+      "title": "摄影术语表",
+      "description": "可搜索的 50+ 摄影术语表，包含定义和交互式工具链接。"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "toolUI": {
+    "nd-filter-calculator": {
+      "baseShutterSpeed": "Tốc độ màn trập cơ bản",
+      "ndFilter": "Bộ lọc ND",
+      "resultingShutterSpeed": "Tốc độ màn trập kết quả",
+      "stopsAdded": "Số stop thêm",
+      "quickReference": "Tra cứu nhanh",
+      "tableBase": "Cơ bản"
+    }
+  }
+}

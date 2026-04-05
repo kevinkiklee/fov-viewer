@@ -1,0 +1,126 @@
+{
+  "education": {
+    "exif-viewer": {
+      "beginner": "EXIF verisi, kameranızın çektiği her fotoğrafa gömülü gizli bilgilerdir. Hangi kamera ve objektifi kullandığınızı, tam ayarları (diyafram, enstantane hızı, ISO), tarih ve saati ve bazen GPS koordinatlarını bile kaydeder. Bu araç, fotoğrafınızı hiçbir yere yüklemeden bu veriyi okur — her şey tarayıcınızda gerçekleşir.",
+      "deeper": "EXIF (Exchangeable Image File Format), JEITA/CIPA tarafından tanımlanan ve JPEG, TIFF ve bazı RAW dosyalarında meta veri saklayan bir standarttır. Veri, TIFF tabanlı IFD (Image File Directory) yapısı kullanılarak dosya başlığının belirli segmentlerine etiketli anahtar-değer çiftleri olarak yazılır. Birkaç IFD bölümü vardır: temel görüntü bilgisi için IFD0, kamera ayarları için EXIF alt-IFD'si, coğrafi konum için GPS IFD ve uyumluluk verisi için Interop IFD. Kamera üreticileri ayrıca objektif düzeltmeleri, odak noktaları, deklanşör sayısı ve modele özgü diğer detayları içeren özel \"MakerNote\" verileri yazar. Sosyal medya platformları genellikle gizlilik için yükleme sırasında EXIF verisini siler, ancak hafıza kartınızdaki orijinal dosya her zaman korur. EXIF'i anlamak, kendi çekim kalıplarınızdan öğrenmenize ve beğendiğiniz fotoğrafların arkasındaki ayarları çözmenize yardımcı olur.",
+      "keyFactors": {
+        "0": {
+          "label": "Kamera ve Objektif",
+          "description": "Marka, model, objektif adı ve objektif üreticisi — çevrimiçi bulduğunuz fotoğraflardaki ekipmanı belirlemek için kullanışlıdır."
+        },
+        "1": {
+          "label": "Pozlama Ayarları",
+          "description": "Diyafram, enstantane hızı, ISO ve odak uzaklığı — her kare için kaydedilen temel çekim parametreleri."
+        },
+        "2": {
+          "label": "Tarih ve GPS",
+          "description": "Fotoğrafın ne zaman ve nerede çekildiği. Dosyaları paylaşırken GPS verisinin konumunuzu açığa çıkardığını unutmayın."
+        },
+        "3": {
+          "label": "Yazılım",
+          "description": "Dosyayı en son hangi düzenleme yazılımının kaydettiğini gösterir. Bir görüntünün işlenip işlenmediğini kontrol etmek için kullanışlıdır."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Fotoğrafçının geniş açı mı, normal mi yoksa telefoto perspektif mi kullandığını anlamak için odak uzaklığını ve 35mm eşdeğerini kontrol edin — bu, herhangi bir üçte bir kuralından daha çok kompozisyon öğretir."
+        },
+        "1": {
+          "text": "Beğendiğiniz bir fotoğraf yüksek ISO ve geniş diyaframla çekilmişse, düşük ışıklı bir ortam olduğunu anlatır. Fotoğrafçının karşılaştığı kısıtlamaları anlamak için EXIF kullanın."
+        },
+        "2": {
+          "text": "Fotoğrafları çevrimiçi paylaşmadan önce, EXIF'in GPS konumunuzu içerebileceğinin farkında olun. Gizlilik endişeniz varsa, düzenleme yazılımınızın dışa aktarma ayarlarını kullanarak meta verileri temizleyin."
+        }
+      },
+      "tooltips": {
+        "Make": {
+          "term": "Marka",
+          "definition": "EXIF başlığında saklanan kamera üreticisi adı (ör. Canon, Nikon, Sony)."
+        },
+        "Model": {
+          "term": "Model",
+          "definition": "Görüntüyü yakalayan belirli kamera modeli (ör. \"EOS R5\", \"Z 9\")."
+        },
+        "Aperture": {
+          "term": "Diyafram",
+          "definition": "Objektifin ayarlandığı f-sayısı. Düşük sayılar daha geniş diyafram ve daha fazla ışık anlamına gelir."
+        },
+        "Shutter Speed": {
+          "term": "Enstantane Hızı",
+          "definition": "Sensörün ne kadar süre pozlandığı. Kesir olarak (ör. 1/250s) veya uzun pozlamalar için tam saniye olarak ifade edilir."
+        },
+        "ISO": {
+          "term": "ISO",
+          "definition": "Sensör duyarlılık ayarı. Daha yüksek ISO görüntüyü aydınlatır ancak gürültü ekler."
+        },
+        "Focal Length": {
+          "term": "Odak Uzaklığı",
+          "definition": "Objektifin milimetre cinsinden gerçek odak uzaklığı."
+        },
+        "Focal Length (35mm equiv)": {
+          "term": "Odak Uzaklığı (35mm eşd.)",
+          "definition": "Tam kare 35mm sensörde çekilmiş gibi eşdeğer odak uzaklığı. Sensör boyutları arasında görüş alanını karşılaştırmak için kullanışlıdır."
+        },
+        "GPS": {
+          "term": "GPS",
+          "definition": "GPS modüllü kameralar tarafından gömülen enlem ve boylam koordinatları. Fotoğrafın nerede çekildiğini ortaya koyar."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Çevrimiçi çarpıcı bir fotoğraf buldunuz ve hangi objektifin kullanıldığını bilmek istiyorsunuz. Hangi EXIF bölümü size söyler?",
+          "hint": "Kamera ve objektif bilgileri farklı bölümlerdedir.",
+          "successMessage": "Doğru! Objektif bölümü, objektif modelini ve üreticisini gösterir.",
+          "failureMessage": "Objektif bölümü objektif modelini içerir — kullanılan camı belirlemek için oraya bakın.",
+          "options": {
+            "0": { "label": "Kamera" },
+            "1": { "label": "Objektif" },
+            "2": { "label": "Ayarlar" }
+          }
+        },
+        "1": {
+          "scenario": "Bir fotoğraf yüklediniz ve Diyafram: f/1,8, Enstantane Hızı: 1/4000s, ISO: 100 görüyorsunuz. Bu muhtemelen parlak mı yoksa loş ışıkta mı çekildi?",
+          "hint": "Düşük ISO'da çok hızlı enstantane, bol miktarda mevcut ışık olduğunu gösterir.",
+          "successMessage": "Doğru! Temel ISO'da (100) hızlı enstantane (1/4000s), bol ışık olduğunu söyler — muhtemelen parlak açık hava.",
+          "failureMessage": "ISO 100'de 1/4000s enstantane, kameranın çok az duyarlılığa ve çok kısa pozlamaya ihtiyaç duyduğu anlamına gelir. Bu parlak bir açık hava sahnesidir.",
+          "options": {
+            "0": { "label": "Parlak ışık — düşük ISO'da hızlı enstantane" },
+            "1": { "label": "Loş ışık — geniş diyafram telafi ediyor" }
+          }
+        },
+        "2": {
+          "scenario": "Bir fotoğrafta Odak Uzaklığı: 50mm ve Odak Uzaklığı (35mm eşd.): 75mm görülüyor. Kamera hangi sensörü kullanıyordu?",
+          "hint": "35mm eşdeğeri, odak uzaklığının kırpma faktörüyle çarpılmasıdır.",
+          "successMessage": "Doğru! 75 / 50 = 1,5x kırpma faktörü, bu bir APS-C sensördür (Nikon/Sony varyantı).",
+          "failureMessage": "35mm eşdeğerini gerçek odak uzaklığına bölün: 75 / 50 = 1,5x. Bu kırpma faktörü APS-C'ye (Nikon/Sony) karşılık gelir.",
+          "options": {
+            "0": { "label": "Tam Kare (1,0x kırpma)" },
+            "1": { "label": "APS-C (1,5x kırpma)" },
+            "2": { "label": "Mikro Dört Üçlü (2,0x kırpma)" }
+          }
+        },
+        "3": {
+          "scenario": "Aynı sahnenin iki fotoğrafını görüyorsunuz. Fotoğraf A: f/2,8, 1/60s, ISO 3200. Fotoğraf B: f/2,8, 1/60s, ISO 200. Hangi fotoğraf daha parlak ışıkta çekildi?",
+          "hint": "Daha yüksek ISO, daha az ışığı telafi eder.",
+          "successMessage": "Kesinlikle! ISO 200'deki Fotoğraf B çok daha fazla ortam ışığına sahipti. Fotoğraf A aynı pozlamaya ulaşmak için ISO 3200'e (4 adım daha fazla duyarlılık) ihtiyaç duydu, yani sahne çok daha karanlıktı.",
+          "failureMessage": "Fotoğraf B daha parlak ışıktaydı. Aynı diyafram ve enstantane, ama ISO 200 vs 3200, Fotoğraf A'nın çok daha karanlık bir ortamda olduğu ve 4 adım daha fazla sensör duyarlılığına ihtiyaç duyduğu anlamına gelir.",
+          "options": {
+            "0": { "label": "Fotoğraf A (ISO 3200)" },
+            "1": { "label": "Fotoğraf B (ISO 200)" }
+          }
+        },
+        "4": {
+          "scenario": "Bir yaban hayatı fotoğrafını analiz ediyorsunuz: 400mm, f/5,6, 1/2000s, ISO 1600. EXIF yazılım alanında \"Adobe Lightroom Classic 13.1\" gösteriyor. Fotoğrafçı ve çekim koşulları hakkında ne çıkarabilirsiniz?",
+          "hint": "Uzun odak uzaklığı, tam açık diyafram, hızlı enstantane ve yüksek ISO'yu birlikte değerlendirin.",
+          "successMessage": "Harika analiz! f/5,6'daki 400mm (muhtemelen o objektif için tam açık) ve 1/2000s hızlı enstantane, hızlı hareket eden bir konu (kuşlar veya hareket halindeki yaban hayatı) olduğunu gösteriyor. ISO 1600, parlak güneş olmadığını gösteriyor — muhtemelen bulutlu veya gölgede. Lightroom alanı son işleme yapıldığını doğruluyor.",
+          "failureMessage": "Ayarlar çok şey ortaya koyuyor: 400mm f/5,6 tam açık tipik bir yaban hayatı telefoto, 1/2000s hızlı hayvan hareketini dondurur ve ISO 1600 ışığın sınırlı olduğu anlamına gelir (parlak güneş değil). Lightroom kaydı dosyanın işlendiğini doğrular.",
+          "options": {
+            "0": { "label": "Orta ışıkta hızlı konu, Lightroom'da son işleme yapılmış" },
+            "1": { "label": "Parlak ışıkta yavaş konu, doğrudan kameradan" },
+            "2": { "label": "Hareket bulanıklıklı manzara çekimi, yoğun düzenleme yapılmış" }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "sensor-size-comparison": {
+      "displayMode": "显示模式",
+      "modeOverlay": "叠加",
+      "modeSideBySide": "并排",
+      "modePixelDensity": "像素密度",
+      "pixelDensityDescription": "显示每种传感器的常见百万像素数。更大的像素（更大的单元格）能捕捉更多光线。",
+      "sensors": "传感器",
+      "customSensors": "自定义传感器",
+      "placeholderName": "名称",
+      "placeholderW": "宽（mm）",
+      "placeholderH": "高（mm）",
+      "placeholderMP": "百万像素（可选）",
+      "placeholderMPShort": "MP",
+      "maxDimensionWarning": "最大传感器尺寸为 99 mm",
+      "addSensor": "添加传感器",
+      "save": "保存",
+      "cancelEdit": "取消",
+      "edit": "编辑",
+      "remove": "移除",
+      "deleteAllCustom": "删除所有自定义传感器",
+      "tableSensor": "传感器",
+      "tableWidth": "宽度（mm）",
+      "tableHeight": "高度（mm）",
+      "tableAspectRatio": "宽高比",
+      "tableArea": "面积（mm²）",
+      "tableCropFactor": "裁切系数",
+      "tableAspectCrop": "宽高比裁切",
+      "canvasAriaLabel": "传感器尺寸{mode}模式对比"
+    }
+  }
+}

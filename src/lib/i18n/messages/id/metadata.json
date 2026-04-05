@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "site": {
+      "defaultTitle": "PhotoTools — Alat Fotografi",
+      "titleTemplate": "%s | PhotoTools",
+      "description": "Alat fotografi gratis: simulator FOV, Generator skema warna, EXIF viewer, Potong dan bingkai foto, dan lainnya.",
+      "ogTitle": "PhotoTools — Alat Fotografi Gratis"
+    },
+    "fov-simulator": {
+      "title": "Simulator FOV — Bandingkan Panjang Fokus",
+      "description": "Bandingkan bidang pandang pada berbagai panjang fokus dan ukuran sensor. Gratis, interaktif, dapat dibagikan."
+    },
+    "dof-simulator": {
+      "title": "Simulator Depth-of-Field | PhotoTools",
+      "description": "Visualisasikan bagaimana apertur, panjang fokus, dan jarak memengaruhi blur latar belakang dengan simulasi WebGL real-time"
+    },
+    "focus-stacking-calculator": {
+      "title": "Kalkulator Focus Stacking | PhotoTools",
+      "description": "Hitung jarak fokus optimal untuk ketajaman depan-belakang dalam fotografi makro dan lanskap"
+    },
+    "equivalent-settings-calculator": {
+      "title": "Kalkulator Pengaturan Ekuivalen | PhotoTools",
+      "description": "Temukan apertur dan panjang fokus ekuivalen antar format sensor untuk mencocokkan kedalaman bidang"
+    },
+    "exposure-simulator": {
+      "title": "Simulator Segitiga Eksposur",
+      "description": "Simulator segitiga eksposur interaktif — lihat bagaimana apertur, kecepatan rana, dan ISO memengaruhi gambar Anda secara real-time dengan pratinjau langsung."
+    },
+    "star-trail-calculator": {
+      "title": "Kalkulator Jejak Bintang",
+      "description": "Hitung waktu eksposur maksimum untuk bintang yang tajam menggunakan aturan 500, NPF, dan aturan lainnya. Rencanakan pemotretan stacking jejak bintang untuk lokasi mana pun."
+    },
+    "white-balance-visualizer": {
+      "title": "Visualisator White Balance",
+      "description": "Lihat bagaimana white balance dan suhu warna memengaruhi foto Anda. Visualisasikan perubahan dari 2000K hingga 10000K dengan pratinjau real-time."
+    },
+    "sensor-size-comparison": {
+      "title": "Perbandingan Ukuran Sensor",
+      "description": "Bandingkan ukuran sensor kamera dari medium format hingga smartphone. Lihat tampilan overlay, berdampingan, dan kepadatan piksel dengan model kamera nyata."
+    },
+    "color-scheme-generator": {
+      "title": "Generator Skema Warna",
+      "description": "Buat palet warna untuk fotografi menggunakan harmoni warna komplementer, analogus, triadik, dan tetradik. Roda warna interaktif dengan pemilih warna dari foto."
+    },
+    "frame-studio": {
+      "title": "Frame Studio",
+      "description": "Potong, bingkai, dan komposisikan foto dengan overlay grid. 100% di sisi klien — foto Anda tidak pernah meninggalkan perangkat."
+    },
+    "exif-viewer": {
+      "title": "EXIF Viewer",
+      "description": "Lihat metadata EXIF, histogram, dan pratinjau gambar untuk foto apa pun. 100% di sisi klien — foto Anda tidak pernah meninggalkan perangkat."
+    },
+    "hyperfocal-simulator": {
+      "title": "Simulator Jarak Hiperfocal",
+      "description": "Visualisasikan jarak hiperfocal untuk lensa dan sensor apa pun. Lihat dengan tepat di mana harus fokus untuk ketajaman maksimal dari latar depan hingga tak terhingga."
+    },
+    "shutter-speed-visualizer": {
+      "title": "Visualisator Kecepatan Rana",
+      "description": "Temukan kecepatan rana minimum untuk foto genggam yang tajam. Memperhitungkan panjang fokus, ukuran sensor, dan stabilisasi gambar."
+    },
+    "nd-filter-calculator": {
+      "title": "Kalkulator Filter ND",
+      "description": "Hitung kecepatan rana yang tepat saat menggunakan filter ND. Mendukung kekuatan filter dari ND2 hingga ND1000000 dengan tabel referensi cepat."
+    },
+    "perspective-compression-simulator": {
+      "title": "Simulator Kompresi Perspektif",
+      "description": "Simulator 3D interaktif yang menunjukkan bagaimana panjang fokus dan jarak memengaruhi kompresi perspektif. Lihat perubahan kompresi latar belakang secara real-time."
+    },
+    "about": {
+      "title": "Tentang",
+      "description": "PhotoTools adalah kumpulan kalkulator, simulator, dan referensi fotografi berbasis browser yang gratis untuk fotografer dari semua tingkat keahlian."
+    },
+    "contact": {
+      "title": "Kontak | PhotoTools",
+      "description": "Hubungi tim PhotoTools — pertanyaan, masukan, atau saran tentang alat fotografi kami."
+    },
+    "privacy": {
+      "title": "Kebijakan Privasi | PhotoTools",
+      "description": "Pelajari bagaimana PhotoTools menangani data Anda, termasuk analitik, cookie, dan pengiriman formulir kontak di www.phototools.io."
+    },
+    "terms": {
+      "title": "Ketentuan Layanan | PhotoTools",
+      "description": "Ketentuan Layanan untuk PhotoTools — pelajari tentang penggunaan yang dapat diterima, kekayaan intelektual, penyangkalan, dan batasan tanggung jawab untuk www.phototools.io."
+    },
+    "glossary": {
+      "title": "Glosarium Fotografi",
+      "description": "Glosarium 50+ istilah fotografi yang dapat dicari dengan definisi dan tautan ke alat interaktif."
+    }
+  }
+}

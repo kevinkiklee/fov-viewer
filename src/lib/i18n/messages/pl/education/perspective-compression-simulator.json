@@ -1,0 +1,60 @@
+{
+  "education": {
+    "perspective-compression-simulator": {
+      "beginner": "Kompresja perspektywy to efekt optyczny, w którym obiekty w różnych odległościach wydają się bliżej siebie, niż są w rzeczywistości. Najczęściej obserwuje się go przy użyciu długich teleobiektywów (jak 200 mm lub 400 mm) z dużej odległości. Wbrew powszechnemu przekonaniu, nie sam obiektyw powoduje kompresję, ale odległość między aparatem a sceną.",
+      "deeper": "Kompresja zachodzi, ponieważ na dużych odległościach względna różnica w odległości między obiektem na pierwszym planie a obiektami w tle staje się mała. Na przykład, jeśli jesteś 30 metrów od obiektu, a tło jest kolejne 6 metrów za nim, tło jest tylko 20% dalej niż obiekt. Z 1,5 metra ta sama 6-metrowa luka sprawia, że tło jest 500% dalej. Oddalając się i używając teleobiektywu do «wypełnienia kadru» obiektem, zmniejszasz względną głębokość, sprawiając, że tło wydaje się większe i «skompresowane» przy obiekcie.",
+      "keyFactors": {
+        "0": {
+          "label": "Odległość fotografowania",
+          "description": "Główna przyczyna kompresji. Im dalej jesteś od obiektu, tym bardziej skompresowane wydaje się tło względem obiektu."
+        },
+        "1": {
+          "label": "Ogniskowa",
+          "description": "Teleobiektywy powiększają obraz, pozwalając wypełnić kadr obiektem z odległości, na której kompresja jest widoczna. Obiektywy szerokokątne wymagają bliskości, co rozszerza postrzeganą głębokość."
+        },
+        "2": {
+          "label": "Względna głębokość",
+          "description": "Kompresja jest najbardziej widoczna, gdy odległość między obiektem a tłem jest mała w porównaniu z odległością między aparatem a obiektem."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Aby góry wyglądały ogromnie za obiektem, oddal się jak najdalej i użyj najdłuższego teleobiektywu. To «przyciąga» tło bliżej pierwszego planu."
+        },
+        "1": {
+          "text": "W fotografii portretowej często preferuje się obiektyw 85 mm lub 135 mm, ponieważ lekka kompresja daje bardziej pochlebne odwzorowanie rysów twarzy w porównaniu z obiektywami szerokokątnymi."
+        },
+        "2": {
+          "text": "Użyj ekspansji perspektywy (szeroki kąt z bliska), aby podkreślić linie prowadzące pierwszego planu i sprawić, by przestrzeń wydawała się bardziej rozległa i otwarta."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Ogniskowa",
+          "definition": "Siła powiększenia obiektywu. Dłuższe ogniskowe (teleobiektyw) pozwalają fotografować z dalszej odległości, co faktycznie powoduje kompresję perspektywy."
+        },
+        "distance": {
+          "term": "Odległość od obiektu",
+          "definition": "Odległość między aparatem a głównym obiektem. Zwiększanie tej odległości jest fizyczną przyczyną kompresji perspektywy."
+        },
+        "maintainSize": {
+          "term": "Utrzymaj rozmiar obiektu",
+          "definition": "Automatycznie dostosowuje odległość aparatu przy zmianie ogniskowej, aby utrzymać ten sam rozmiar obiektu w kadrze. Demonstruje to efekt «Dolly Zoom»."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Chcesz zrobić zdjęcie przyjaciela przed górą i chcesz, aby góra wyglądała jak największa za nim. Co powinieneś zrobić?",
+          "hint": "Kompresja jest powodowana odległością, a teleobiektywy pozwalają wypełnić kadr z daleka.",
+          "successMessage": "Dokładnie! Oddalając się i używając teleobiektywu, kompresujesz odległość między przyjacielem a górą, sprawiając, że góra wydaje się znacznie większa.",
+          "failureMessage": "Nie do końca. Podejście bliżej z obiektywem szerokokątnym sprawiłoby, że góra wyglądałaby mniejsza i bardziej odległa. Oddal się i przybliż!",
+          "options": {
+            "0": { "label": "Oddal się i użyj obiektywu 200 mm" },
+            "1": { "label": "Podejdź bliżej i użyj obiektywu 24 mm" },
+            "2": { "label": "Zostań na miejscu i użyj obiektywu 50 mm" }
+          }
+        }
+      }
+    }
+  }
+}

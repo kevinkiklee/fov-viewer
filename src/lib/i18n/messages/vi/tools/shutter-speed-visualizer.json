@@ -1,0 +1,27 @@
+{
+  "toolUI": {
+    "shutter-speed-visualizer": {
+      "description": "Xem cách tốc độ màn trập ảnh hưởng đến nhòe chuyển động cho các chủ thể khác nhau.",
+      "shutterSpeed": "Tốc độ màn trập",
+      "shutterSpeedAriaLabel": "Tốc độ màn trập",
+      "sliderSlow": "Chậm (2s)",
+      "sliderFast": "Nhanh (1/4000)",
+      "selectedSpeed": "Tốc độ đã chọn",
+      "motionBlurAriaLabel": "Trực quan hóa nhòe chuyển động cho các chủ thể khác nhau",
+      "verdictFrozen": "Đóng băng",
+      "verdictMostlySharp": "Gần sắc nét",
+      "verdictSlightBlur": "Nhòe nhẹ",
+      "verdictMotionBlur": "Nhòe chuyển động",
+      "standingPerson": "Người đứng yên",
+      "slowWalk": "Đi bộ chậm",
+      "jogging": "Chạy bộ",
+      "running": "Chạy",
+      "cyclist": "Người đạp xe",
+      "birdsInFlight": "Chim bay",
+      "carCity": "Ô tô (thành phố)",
+      "f1Car": "Xe F1",
+      "airplaneLanding": "Máy bay (hạ cánh)",
+      "stationary": "đứng yên"
+    }
+  }
+}

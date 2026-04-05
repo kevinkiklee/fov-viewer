@@ -1,0 +1,13 @@
+{
+  "home": {
+    "heroTitle": "PhotoTools — Ücretsiz Fotoğrafçılık Araçları",
+    "heroDesc": "Ücretsiz fotoğrafçılık hesaplayıcıları, simülatörleri ve referansları. Kayıt gerekmez — fotoğraflarınız tarayıcınızdan asla ayrılmaz.",
+    "comingSoon": "Yakında",
+    "categories": {
+      "visualizer": "Görselleştiriciler",
+      "calculator": "Hesaplayıcılar",
+      "reference": "Referans",
+      "file-tool": "Dosya Araçları"
+    }
+  }
+}

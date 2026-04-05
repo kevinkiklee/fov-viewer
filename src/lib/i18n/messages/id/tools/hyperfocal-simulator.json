@@ -1,0 +1,21 @@
+{
+  "toolUI": {
+    "hyperfocal-simulator": {
+      "settings": "Pengaturan",
+      "focalLength": "Panjang Fokus",
+      "aperture": "Apertur",
+      "focusDistance": "Jarak Fokus:",
+      "sensor": "Sensor",
+      "scene": "Adegan:",
+      "sceneLandscape": "Lanskap",
+      "sceneStreet": "Jalan",
+      "hyperfocalDistance": "Jarak Hiperfocal",
+      "nearLimit": "Batas Dekat",
+      "farLimit": "Batas Jauh",
+      "focusDistanceResult": "Jarak Fokus",
+      "hyperfocalReference": "Referensi Hiperfocal",
+      "sharpToInfinity": "Tajam hingga tak terhingga",
+      "nearLimitBadge": "Batas dekat:"
+    }
+  }
+}

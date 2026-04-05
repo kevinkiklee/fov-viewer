@@ -1,0 +1,27 @@
+{
+  "toolUI": {
+    "shutter-speed-visualizer": {
+      "description": "Lihat bagaimana kecepatan rana memengaruhi motion blur untuk berbagai subjek.",
+      "shutterSpeed": "Kecepatan Rana",
+      "shutterSpeedAriaLabel": "Kecepatan rana",
+      "sliderSlow": "Lambat (2 dtk)",
+      "sliderFast": "Cepat (1/4000)",
+      "selectedSpeed": "Kecepatan Terpilih",
+      "motionBlurAriaLabel": "Visualisasi motion blur untuk berbagai subjek",
+      "verdictFrozen": "Beku",
+      "verdictMostlySharp": "Sebagian besar tajam",
+      "verdictSlightBlur": "Sedikit blur",
+      "verdictMotionBlur": "Motion blur",
+      "standingPerson": "Orang berdiri",
+      "slowWalk": "Jalan pelan",
+      "jogging": "Jogging",
+      "running": "Berlari",
+      "cyclist": "Pesepeda",
+      "birdsInFlight": "Burung terbang",
+      "carCity": "Mobil (kota)",
+      "f1Car": "Mobil F1",
+      "airplaneLanding": "Pesawat (mendarat)",
+      "stationary": "diam"
+    }
+  }
+}
