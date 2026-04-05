@@ -23,6 +23,7 @@ export function LensPanel({
   label, color, config, isActive, collapsed, onChange, onFocus, onRemove,
 }: LensPanelProps) {
   const t = useTranslations('toolUI.fov-simulator')
+  const sensorsT = useTranslations('common.sensors')
   const sensor = getSensor(config.sensorId)
   const isCrop = sensor.cropFactor > 1
   const minFocal = isCrop ? FOCAL_MIN : 14
@@ -63,7 +64,7 @@ export function LensPanel({
           >
             {SENSORS.map((s) => (
               <option key={s.id} value={s.id}>
-                {s.name} ({s.cropFactor}×)
+                {sensorsT.has(s.id) ? sensorsT(s.id) : s.name} ({s.cropFactor}×)
               </option>
             ))}
           </select>

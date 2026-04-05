@@ -108,6 +108,17 @@
     },
     "relatedTools": {
       "title": "Strumenti correlati"
+    },
+    "sensors": {
+      "mf_645": "Medio formato (54x40)",
+      "mf": "Medio formato (44x33)",
+      "mf_leica": "Medio formato (45x30)",
+      "ff": "Full Frame",
+      "apsc_n": "APS-C (1.5x)",
+      "apsc_c": "APS-C (Canon)",
+      "m43": "Micro Four Thirds",
+      "1in": "Sensore 1\"",
+      "phone": "Smartphone Flagship (1/1.3\")"
     }
   }
 }

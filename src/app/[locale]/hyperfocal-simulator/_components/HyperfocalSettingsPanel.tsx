@@ -21,6 +21,7 @@ export function HyperfocalSettingsPanel({
   onSliderChange: (v: number) => void; onSensorChange: (v: string) => void
 }) {
   const t = useTranslations('toolUI.hyperfocal-simulator')
+  const sensorsT = useTranslations('common.sensors')
   return (
     <div className={s.panel}>
       <h3 className={s.panelTitle}>{t('settings')}</h3>
@@ -57,7 +58,7 @@ export function HyperfocalSettingsPanel({
         <label className={s.fieldLabel}>{t('sensor')}</label>
         <select className={s.select} value={sensorId} onChange={(e) => onSensorChange(e.target.value)}>
           {SENSORS.map((sen) => (
-            <option key={sen.id} value={sen.id}>{sen.name}</option>
+            <option key={sen.id} value={sen.id}>{sensorsT.has(sen.id) ? sensorsT(sen.id) : sen.name}</option>
           ))}
         </select>
       </div>

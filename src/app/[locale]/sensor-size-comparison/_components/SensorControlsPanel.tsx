@@ -15,6 +15,7 @@ export function SensorControlsPanel({
   onToggleSensor, onModeChange, onAddCustom, onRemoveCustom, onRemoveAllCustom, onEditCustom,
 }: ControlsPanelProps) {
   const t = useTranslations('toolUI.sensor-size-comparison')
+  const sensorsT = useTranslations('common.sensors')
   const [editingId, setEditingId] = useState<string | null>(null)
   return (
     <>
@@ -47,7 +48,7 @@ export function SensorControlsPanel({
                 onChange={() => onToggleSensor(s.id)}
               />
               <span className={ss.checkDot} style={{ backgroundColor: s.color }} />
-              <span className={ss.checkName}>{s.name}</span>
+              <span className={ss.checkName}>{sensorsT.has(s.id) ? sensorsT(s.id) : s.name}</span>
               {models && models.length > 0 && (
                 <span className={ss.modelTooltip} data-models={models.join(' · ')}>?</span>
               )}

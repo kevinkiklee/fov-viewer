@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { SENSORS } from '@/lib/data/sensors'
+
 import { FOCAL_LENGTHS } from '@/lib/data/focalLengths'
 import { APERTURES } from '@/lib/data/camera'
 import { formatDistance } from './dof-helpers'
@@ -24,6 +25,7 @@ export function DoFSettingsPanel({
   onFocalLengthChange, onApertureChange, onSliderChange, onSensorChange,
 }: SettingsPanelProps) {
   const t = useTranslations('toolUI.dof-calculator')
+  const sensorsT = useTranslations('common.sensors')
   return (
     <div className={s.panel}>
       <h3 className={s.panelTitle}>{t('settings')}</h3>
@@ -60,7 +62,7 @@ export function DoFSettingsPanel({
         <label className={s.fieldLabel}>{t('sensor')}</label>
         <select className={s.select} value={sensorId} onChange={(e) => onSensorChange(e.target.value)}>
           {SENSORS.map((sensor) => (
-            <option key={sensor.id} value={sensor.id}>{sensor.name}</option>
+            <option key={sensor.id} value={sensor.id}>{sensorsT.has(sensor.id) ? sensorsT(sensor.id) : sensor.name}</option>
           ))}
         </select>
       </div>

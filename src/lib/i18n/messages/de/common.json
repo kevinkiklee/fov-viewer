@@ -108,6 +108,17 @@
     },
     "relatedTools": {
       "title": "Verwandte Werkzeuge"
+    },
+    "sensors": {
+      "mf_645": "Mittelformat (54x40)",
+      "mf": "Mittelformat (44x33)",
+      "mf_leica": "Mittelformat (45x30)",
+      "ff": "Vollformat",
+      "apsc_n": "APS-C (1.5x)",
+      "apsc_c": "APS-C (Canon)",
+      "m43": "Micro Four Thirds",
+      "1in": "1\"-Sensor",
+      "phone": "Smartphone Flagship (1/1.3\")"
     }
   }
 }

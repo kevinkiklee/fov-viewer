@@ -20,6 +20,7 @@ interface ControlsProps {
 
 export function CompressionControls({ state, dispatch }: ControlsProps) {
   const t = useTranslations('toolUI.perspective-compression-simulator')
+  const sensorsT = useTranslations('common.sensors')
   const et = useTranslations('education.perspective-compression-simulator')
   const skel = getSkeletonBySlug('perspective-compression-simulator')
   const tooltips = skel
@@ -121,7 +122,7 @@ export function CompressionControls({ state, dispatch }: ControlsProps) {
           >
             {SENSORS.map((s) => (
               <option key={s.id} value={s.id}>
-                {s.name} ({s.cropFactor}x)
+                {sensorsT.has(s.id) ? sensorsT(s.id) : s.name} ({s.cropFactor}x)
               </option>
             ))}
           </select>

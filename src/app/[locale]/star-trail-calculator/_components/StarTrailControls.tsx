@@ -52,6 +52,7 @@ export function StarTrailControls({
   onGapChange: (v: number) => void
 }) {
   const t = useTranslations('toolUI.star-trail-calculator')
+  const sensorsT = useTranslations('common.sensors')
   return (
     <>
       {mode === 'sharp' ? (
@@ -128,7 +129,7 @@ export function StarTrailControls({
           >
             {SENSORS.map((s) => (
               <option key={s.id} value={s.id}>
-                {s.name}
+                {sensorsT.has(s.id) ? sensorsT(s.id) : s.name}
               </option>
             ))}
           </select>
