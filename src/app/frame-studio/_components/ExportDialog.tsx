@@ -3,7 +3,7 @@
 import { useState, useCallback } from 'react'
 import { computeExportDimensions, drawSolidBorder, drawGradientBorder, drawTextureBorder, drawInnerMat, drawShadow } from '@/lib/math/frame'
 import {
-  drawRuleOfThirds, drawGoldenRatio, drawGoldenSpiral,
+  drawRuleOfThirds, drawGoldenRatio, drawGoldenSpiral, drawGoldenDiagonal,
   drawDiagonalLines, drawCenterCross, drawSquareGrid, drawTriangles,
 } from '@/lib/math/grid'
 import type { FrameConfig, CropState, GridType, GridOptions } from './types'
@@ -25,6 +25,7 @@ const GRID_DRAW_MAP: Record<GridType, (ctx: CanvasRenderingContext2D, w: number,
   'rule-of-thirds': (ctx, w, h) => drawRuleOfThirds(ctx, w, h),
   'golden-ratio': (ctx, w, h) => drawGoldenRatio(ctx, w, h),
   'golden-spiral': (ctx, w, h, opts) => drawGoldenSpiral(ctx, w, h, opts.spiralRotation),
+  'golden-diagonal': (ctx, w, h, opts) => drawGoldenDiagonal(ctx, w, h, opts.spiralRotation),
   'diagonal-lines': (ctx, w, h) => drawDiagonalLines(ctx, w, h),
   'center-cross': (ctx, w, h) => drawCenterCross(ctx, w, h),
   'square-grid': (ctx, w, h, opts) => drawSquareGrid(ctx, w, h, opts.gridDensity),
@@ -96,7 +97,7 @@ export function ExportDialog({
         ctx.restore()
       }
 
-      const quality = (originalMimeType === 'image/png') ? undefined : 1.0
+      const quality = (originalMimeType === 'image/png') ? undefined : 0.92
       const blob = await new Promise<Blob>((resolve) => {
         canvas.toBlob(
           (b) => resolve(b!),

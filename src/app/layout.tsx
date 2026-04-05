@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { ViewTransition } from 'react'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 import { ThemeProvider } from '@/components/layout/ThemeProvider'
 import { JsonLd } from '@/components/shared/JsonLd'
@@ -44,6 +45,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Consent-first ad loading: these scripts MUST be in <head> and load BEFORE
+            AdSense (in <body> via AdScripts). Order matters:
+            1. gtag consent defaults — deny all storage types until user consents
+            2. CookieYes — renders consent banner, fires gtag('consent','update',...)
+               when user accepts, which unlocks ad_storage/analytics_storage
+            Both env vars required — see isAdsEnabled() in lib/ads.ts */}
         {process.env.NEXT_PUBLIC_COOKIEYES_ID && process.env.NEXT_PUBLIC_ADSENSE_CLIENT && (
           <>
             <script
@@ -72,6 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </ViewTransition>
         </ThemeProvider>
         <Analytics />
+        <SpeedInsights />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-B0QND42GRG"
           strategy="afterInteractive"

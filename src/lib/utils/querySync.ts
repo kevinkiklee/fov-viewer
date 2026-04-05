@@ -65,12 +65,10 @@ export function useToolQuerySync<S extends Record<string, unknown>>(state: S, sc
  * Returns true once hydration is complete.
  * Call this ONCE in each tool component, passing a map of param key → setter.
  */
-export function useQueryInit(
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  schema: Record<string, ParamDef<any>>,
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  setters: Record<string, (val: any) => void>,
-): boolean {
+// Schema types and React setState types (Dispatch<SetStateAction<T>>) can't be
+// unified generically — schema infers T while setState accepts T | (prev => T).
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function useQueryInit(schema: Record<string, ParamDef<any>>, setters: Record<string, (val: any) => void>): boolean {
   const [hydrated, setHydrated] = useState(false)
   useEffect(() => {
     if (hydrated) return

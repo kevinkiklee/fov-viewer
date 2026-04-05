@@ -11,13 +11,20 @@
  * @returns RGB values, each 0-255
  */
 export function kelvinToRgb(kelvin: number): { r: number; g: number; b: number } {
+  // Divide by 100 so threshold checks use "temp 66" = 6600K, the inflection
+  // point where the CIE color response curve changes shape for each channel.
   const temp = Math.max(1000, Math.min(40000, kelvin)) / 100
 
   let r: number
   let g: number
   let b: number
 
-  // Red
+  // Each channel uses different curve-fitted polynomials above/below 6600K
+  // because R/G/B respond differently to blackbody radiation at that boundary.
+  // Coefficients (329.69…, 99.47…, etc.) are from Helland's polynomial fit
+  // to the CIE 1964 10° standard observer color matching functions.
+
+  // Red: saturated below 6600K, power-law decay above
   if (temp <= 66) {
     r = 255
   } else {
@@ -26,7 +33,7 @@ export function kelvinToRgb(kelvin: number): { r: number; g: number; b: number }
     r = Math.max(0, Math.min(255, r))
   }
 
-  // Green
+  // Green: logarithmic rise below 6600K, power-law decay above
   if (temp <= 66) {
     g = temp
     g = 99.4708025861 * Math.log(g) - 161.1195681661
@@ -37,7 +44,7 @@ export function kelvinToRgb(kelvin: number): { r: number; g: number; b: number }
     g = Math.max(0, Math.min(255, g))
   }
 
-  // Blue
+  // Blue: saturated above 6600K, zero below 1900K, logarithmic rise between
   if (temp >= 66) {
     b = 255
   } else if (temp <= 19) {
@@ -197,10 +204,13 @@ export function tetradic(hue: number, offset: number = 60): number[] {
 }
 
 /**
- * Monochromatic harmony — same hue, varying saturation and lightness.
- * Returns 5 HSL triplets: the base plus lighter/darker and desaturated variants.
+ * Monochromatic harmony — same hue, varying saturation.
+ * Returns 3 HSL triplets: outer (more saturated), base, inner (desaturated).
  * Unlike other harmony functions that return hue arrays, this returns
  * full HSL values since the hue stays constant.
+ *
+ * Default offsets (-30/+20) are tuned for visual interest: the desaturated
+ * variant shifts more than the saturated one to avoid clipping at 100%.
  */
 export function monochromatic(
   hue: number,

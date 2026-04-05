@@ -176,7 +176,7 @@
 
 .presetActive {
   background: var(--panel-color, var(--accent));
-  color: #000;
+  color: var(--text-on-accent);
 }
 
 /* Select dropdown */

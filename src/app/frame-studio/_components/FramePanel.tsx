@@ -12,10 +12,8 @@ interface FramePanelProps {
 
 const PRESET_LIST: { id: FramePresetId; label: string }[] = [
   { id: 'none', label: 'None' },
-  { id: 'clean-white', label: 'Clean White' },
-  { id: 'gallery', label: 'Gallery' },
-  { id: 'film', label: 'Film' },
-  { id: 'polaroid', label: 'Polaroid' },
+  { id: 'white', label: 'White' },
+  { id: 'black', label: 'Black' },
   { id: 'custom', label: 'Custom' },
 ]
 
@@ -79,7 +77,10 @@ export function FramePanel({ config, onChange }: FramePanelProps) {
         <>
           <div className={styles.section}>
             <span className={styles.label}>Border Width: {config.borderWidth}px</span>
-            <input type="range" min={0} max={200} value={config.borderWidth} onChange={(e) => update('borderWidth', parseInt(e.target.value))} className={styles.slider} />
+            <input type="range" min={0} max={400} step={25} list="border-ticks" value={config.borderWidth} onChange={(e) => update('borderWidth', parseInt(e.target.value))} className={styles.slider} />
+            <datalist id="border-ticks">
+              {Array.from({ length: 17 }, (_, i) => <option key={i} value={i * 25} />)}
+            </datalist>
           </div>
 
           <div className={styles.section}>
@@ -133,48 +134,6 @@ export function FramePanel({ config, onChange }: FramePanelProps) {
           <div className={styles.section}>
             <span className={styles.label}>Corner Radius: {config.cornerRadius}px</span>
             <input type="range" min={0} max={60} value={config.cornerRadius} onChange={(e) => update('cornerRadius', parseInt(e.target.value))} className={styles.slider} />
-          </div>
-
-          <div className={styles.section}>
-            <label className={styles.toggle}>
-              <input type="checkbox" checked={config.innerMatEnabled} onChange={(e) => update('innerMatEnabled', e.target.checked)} />
-              <span>Inner Mat</span>
-            </label>
-            {config.innerMatEnabled && (
-              <div className={styles.subControls}>
-                <div className={styles.subRow}>
-                  <span className={styles.subLabel}>Width: {config.innerMatWidth}px</span>
-                  <input type="range" min={1} max={30} value={config.innerMatWidth} onChange={(e) => update('innerMatWidth', parseInt(e.target.value))} className={styles.slider} />
-                </div>
-                <div className={styles.subRow}>
-                  <span className={styles.subLabel}>Color</span>
-                  <input type="color" value={config.innerMatColor} onChange={(e) => update('innerMatColor', e.target.value)} className={styles.colorPicker} />
-                </div>
-              </div>
-            )}
-          </div>
-
-          <div className={styles.section}>
-            <label className={styles.toggle}>
-              <input type="checkbox" checked={config.shadowEnabled} onChange={(e) => update('shadowEnabled', e.target.checked)} />
-              <span>Shadow</span>
-            </label>
-            {config.shadowEnabled && (
-              <div className={styles.subControls}>
-                <div className={styles.subRow}>
-                  <span className={styles.subLabel}>Color</span>
-                  <input type="color" value={config.shadowColor} onChange={(e) => update('shadowColor', e.target.value)} className={styles.colorPicker} />
-                </div>
-                <div className={styles.subRow}>
-                  <span className={styles.subLabel}>Blur: {config.shadowBlur}px</span>
-                  <input type="range" min={0} max={60} value={config.shadowBlur} onChange={(e) => update('shadowBlur', parseInt(e.target.value))} className={styles.slider} />
-                </div>
-                <div className={styles.subRow}>
-                  <span className={styles.subLabel}>Offset Y: {config.shadowOffsetY}px</span>
-                  <input type="range" min={-20} max={20} value={config.shadowOffsetY} onChange={(e) => update('shadowOffsetY', parseInt(e.target.value))} className={styles.slider} />
-                </div>
-              </div>
-            )}
           </div>
         </>
       )}

@@ -2,15 +2,14 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 12px;
-  background: var(--surface-2);
-  border-radius: 8px;
 }
 
 .heading {
-  font-size: 0.8125rem;
+  font-size: 0.6875rem;
   font-weight: 600;
-  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
 }
 
 .section { display: flex; flex-direction: column; gap: 4px; }
@@ -23,7 +22,8 @@
   color: var(--text-secondary);
 }
 
-.presets, .fillTypes, .dirBtns, .textures { display: flex; flex-wrap: wrap; gap: 4px; }
+.presets, .fillTypes, .dirBtns, .textures { display: flex; flex-wrap: nowrap; gap: 4px; }
+.presets > *, .fillTypes > * { flex: 1; }
 
 .presetBtn, .fillBtn, .dirBtn, .textureBtn {
   padding: 4px 10px;

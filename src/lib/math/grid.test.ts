@@ -3,6 +3,7 @@ import {
   drawRuleOfThirds,
   drawGoldenRatio,
   drawGoldenSpiral,
+  drawGoldenDiagonal,
   drawDiagonalLines,
   drawCenterCross,
   drawSquareGrid,
@@ -16,6 +17,8 @@ function mockCtx() {
     moveTo: vi.fn(),
     lineTo: vi.fn(),
     arc: vi.fn(),
+    rect: vi.fn(),
+    clip: vi.fn(),
     stroke: vi.fn(),
     save: vi.fn(),
     restore: vi.fn(),
@@ -146,6 +149,33 @@ describe('drawTriangles', () => {
     drawTriangles(ctx, 400, 300)
     expect(ctx.moveTo).toHaveBeenCalled()
     expect(ctx.lineTo).toHaveBeenCalled()
+  })
+})
+
+describe('drawGoldenDiagonal', () => {
+  it('draws main diagonal and two perpendiculars', () => {
+    const ctx = mockCtx()
+    drawGoldenDiagonal(ctx, 400, 300, 0)
+    // 3 moveTo (main diagonal + 2 perpendiculars) and 3 lineTo
+    expect(ctx.moveTo).toHaveBeenCalledTimes(3)
+    expect(ctx.lineTo).toHaveBeenCalledTimes(3)
+  })
+
+  it('calls save/restore for rotation context', () => {
+    const ctx = mockCtx()
+    drawGoldenDiagonal(ctx, 400, 300, 90)
+    expect(ctx.save).toHaveBeenCalled()
+    expect(ctx.restore).toHaveBeenCalled()
+    expect(ctx.rotate).toHaveBeenCalled()
+  })
+
+  it('main diagonal goes from (0,0) to (w,h) at rotation 0', () => {
+    const ctx = mockCtx()
+    drawGoldenDiagonal(ctx, 400, 300, 0)
+    const moveCalls = vi.mocked(ctx.moveTo).mock.calls
+    const lineCalls = vi.mocked(ctx.lineTo).mock.calls
+    expect(moveCalls[0]).toEqual([0, 0])
+    expect(lineCalls[0]).toEqual([400, 300])
   })
 })
 

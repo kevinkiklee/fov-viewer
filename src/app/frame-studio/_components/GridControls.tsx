@@ -15,6 +15,7 @@ const GRID_TYPES: { id: GridType; label: string }[] = [
   { id: 'rule-of-thirds', label: 'Rule of Thirds' },
   { id: 'golden-ratio', label: 'Golden Ratio' },
   { id: 'golden-spiral', label: 'Golden Spiral' },
+  { id: 'golden-diagonal', label: 'Golden Diagonal' },
   { id: 'diagonal-lines', label: 'Diagonal' },
   { id: 'center-cross', label: 'Center Cross' },
   { id: 'square-grid', label: 'Square Grid' },
@@ -49,50 +50,25 @@ export function GridControls({
 
       <div className={styles.section}>
         <span className={styles.label}>Type</span>
-        <div className={styles.gridTypes}>
-          <label className={styles.gridBtn}>
-            <input
-              type="radio"
-              name="grid-type"
-              checked={activeGrids.length === 0}
-              onChange={() => onActiveGridsChange([])}
-            />
-            <span
-              className={styles.gridDot}
-              style={{
-                backgroundColor: 'transparent',
-                border: '1.5px solid var(--text-secondary)',
-                opacity: activeGrids.length === 0 ? 1 : 0.4
-              }}
-            />
-            <span className={styles.gridName}>None</span>
-            <span className={styles.gridOutline} />
-          </label>
-          {GRID_TYPES.map((g) => {
-            const isChecked = activeGrids.includes(g.id)
-            return (
-              <label key={g.id} className={styles.gridBtn}>
-                <input
-                  type="radio"
-                  name="grid-type"
-                  checked={isChecked}
-                  onChange={() => selectGrid(g.id)}
-                />
-                <span
-                  className={styles.gridDot}
-                  style={{ backgroundColor: options.color, opacity: isChecked ? options.opacity : 0.2 }}
-                />
-                <span className={styles.gridName}>{g.label}</span>
-                <span className={styles.gridOutline} />
-              </label>
-            )
-          })}
-        </div>
+        <select
+          className={styles.gridSelect}
+          value={activeGrids[0] ?? ''}
+          onChange={(e) => {
+            const val = e.target.value
+            if (val === '') onActiveGridsChange([])
+            else selectGrid(val as GridType)
+          }}
+        >
+          <option value="">None</option>
+          {GRID_TYPES.map((g) => (
+            <option key={g.id} value={g.id}>{g.label}</option>
+          ))}
+        </select>
       </div>
 
-      {activeGrids.includes('golden-spiral') && (
+      {(activeGrids.includes('golden-spiral') || activeGrids.includes('golden-diagonal')) && (
         <div className={styles.section}>
-          <span className={styles.label}>Spiral Rotation</span>
+          <span className={styles.label}>Rotation</span>
           <div className={styles.rotationBtns}>
             {([0, 90, 180, 270] as const).map((r) => (
               <button

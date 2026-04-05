@@ -1,3 +1,8 @@
+// Sticky bottom ad banner shown only on mobile viewports.
+// Slides up after a 3s delay to avoid layout shift on initial load.
+// Dismissible via close button — persisted in sessionStorage so it
+// stays hidden for the rest of the browser session but returns on next visit.
+
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -17,7 +22,7 @@ export function MobileAdBanner() {
       setDismissed(true)
       return
     }
-    const timer = setTimeout(() => setVisible(true), 3000)
+    const timer = setTimeout(() => setVisible(true), 3000) // delay to avoid CLS
     return () => clearTimeout(timer)
   }, [])
 

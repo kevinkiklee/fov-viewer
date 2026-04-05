@@ -170,7 +170,7 @@
 .radioBtnActive {
   background: var(--accent);
   border-color: var(--accent);
-  color: #000;
+  color: var(--text-on-accent);
   font-weight: 600;
 }
 

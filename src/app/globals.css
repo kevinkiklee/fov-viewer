@@ -22,6 +22,7 @@ input[type='number'] {
   --text-muted: #666666;
   --accent: #f59e0b;
   --accent-hover: #fbbf24;
+  --text-on-accent: #000;
   --accent-secondary: #38bdf8;
   --accent-secondary-hover: #7dd3fc;
   --border: #262626;
@@ -72,6 +73,7 @@ input[type='number'] {
   --text-muted: #737373;
   --accent: #d97706;
   --accent-hover: #b45309;
+  --text-on-accent: #fff;
   --accent-secondary: #0284c7;
   --accent-secondary-hover: #0369a1;
   --border: #e5e5e5;

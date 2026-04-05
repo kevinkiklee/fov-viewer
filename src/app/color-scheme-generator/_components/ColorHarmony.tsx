@@ -133,7 +133,7 @@ export function ColorHarmony() {
       const hex = rgbToHex(rgb.r, rgb.g, rgb.b)
       return { hue: h, rgb, hex }
     })
-  }, [harmony, harmonyHues, hue, saturation, lightness])
+  }, [harmonyHues, saturation, lightness])
 
   const suggestion = useMemo(() => getSuggestion(hue, harmony), [hue, harmony])
 
@@ -289,7 +289,7 @@ export function ColorHarmony() {
 
       px += pillW + pillGap
     }
-  }, [swatches, harmony, baseHex, baseIndex])
+  }, [swatches, harmony, baseIndex])
 
   return (
     <div className={styles.wrapper}>

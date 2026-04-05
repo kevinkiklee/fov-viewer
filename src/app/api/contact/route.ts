@@ -47,12 +47,16 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Invalid request body' }, { status: 400 })
   }
 
+  // Honeypot field — bots fill all fields; real users never see this.
+  // Return success (not error) to avoid confirming the trap to spammers.
   if (body.website) {
+    console.info('[contact] honeypot triggered', { ip: getRateLimitKey(request) })
     return NextResponse.json({ success: true })
   }
 
   const ip = getRateLimitKey(request)
   if (isRateLimited(ip)) {
+    console.warn('[contact] rate limited', { ip })
     return NextResponse.json(
       { error: 'Too many requests. Please try again later.' },
       { status: 429 }
@@ -91,8 +95,10 @@ export async function POST(request: NextRequest) {
       replyTo: email,
     })
 
+    console.info('[contact] sent', { ip, subject: subject.slice(0, 50) })
     return NextResponse.json({ success: true })
-  } catch {
+  } catch (err) {
+    console.error('[contact] send failed', { ip, error: err instanceof Error ? err.message : 'unknown' })
     return NextResponse.json(
       { error: 'Failed to send message. Please try again later.' },
       { status: 500 }

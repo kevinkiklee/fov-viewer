@@ -7,9 +7,10 @@ import styles from './LearnPanel.module.css'
 
 interface LearnPanelProps {
   slug: string
+  closable?: boolean
 }
 
-export function LearnPanel({ slug }: LearnPanelProps) {
+export function LearnPanel({ slug, closable = false }: LearnPanelProps) {
   const edu = getEducationBySlug(slug)
   const [collapsed, setCollapsed] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
@@ -37,8 +38,9 @@ export function LearnPanel({ slug }: LearnPanelProps) {
 
   const challenge = edu.challenges[challengeIndex]
 
-  // On mobile, allow collapse/expand
-  if (isMobile && collapsed) {
+  const showCloseBtn = isMobile || closable
+
+  if (showCloseBtn && collapsed) {
     return (
       <div className={styles.collapsed}>
         <button className={styles.reopenBtn} onClick={() => setCollapsed(false)} aria-label="Open learn panel">
@@ -53,7 +55,7 @@ export function LearnPanel({ slug }: LearnPanelProps) {
       <header className={styles.header}>
         <h2 className={styles.headerTitle}>Learn</h2>
         <span className={styles.spacer} />
-        {isMobile && (
+        {showCloseBtn && (
           <button className={styles.closeBtn} onClick={() => setCollapsed(true)} aria-label="Collapse learn panel">
             &times;
           </button>
@@ -175,7 +177,7 @@ function ChallengeCard({ challenge, onAdvance, onComplete, children }: { challen
       setCompleted(true)
       onComplete?.(challenge.id)
     }
-  }, [selected, challenge])
+  }, [selected, challenge, onComplete])
 
   return (
     <div className={styles.challenge}>

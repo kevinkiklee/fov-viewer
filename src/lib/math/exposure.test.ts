@@ -199,4 +199,33 @@ describe('calcNoiseAmplitude', () => {
     const amp = calcNoiseAmplitude(25600)
     expect(amp).toBeCloseTo(0.5, 1)
   })
+
+  it('returns 0 for ISO below baseline (ISO 50)', () => {
+    expect(calcNoiseAmplitude(50)).toBe(0)
+  })
+})
+
+describe('calcMotionBlurAmount edge cases', () => {
+  it('returns 0 for zero shutter speed', () => {
+    // Zero shutter gets clamped to minShutter (1/8000), so result should be ~0
+    expect(calcMotionBlurAmount(0)).toBeLessThan(0.5)
+  })
+})
+
+describe('calcCircleOfConfusion edge cases', () => {
+  it('returns 0 blur when depth equals focus distance', () => {
+    expect(calcCircleOfConfusion(0.5, 0.5, 2.8)).toBe(0)
+    expect(calcCircleOfConfusion(0.0, 0.0, 1.4)).toBe(0)
+    expect(calcCircleOfConfusion(1.0, 1.0, 5.6)).toBe(0)
+  })
+})
+
+describe('formatShutterSpeed edge cases', () => {
+  it('formats exactly 60s as minutes (1m)', () => {
+    expect(formatShutterSpeed(60)).toBe('1m')
+  })
+
+  it('formats 3600s (1 hour) as 60m', () => {
+    expect(formatShutterSpeed(3600)).toBe('60m')
+  })
 })

@@ -21,10 +21,6 @@ export async function copyCanvasToClipboard(canvas: HTMLCanvasElement, filename 
     const paddingY = Math.max(12, Math.floor(canvas.height * 0.015))
     const fontSize = Math.max(14, Math.floor(canvas.width * 0.015)) // Responsive font size
     ctx.font = `600 ${fontSize}px "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif`
-    if ('letterSpacing' in ctx) {
-      (ctx as unknown as Record<string, string>).letterSpacing = '0.5px'
-    }
-    
     const text = 'phototools.io'
     const textMetrics = ctx.measureText(text)
     const textWidth = textMetrics.width

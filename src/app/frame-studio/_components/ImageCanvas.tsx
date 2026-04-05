@@ -93,9 +93,14 @@ export function ImageCanvas({ image, crop, frameConfig, onDimensionsChange }: Im
 
   useEffect(() => {
     draw()
-    const handleResize = () => draw()
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
+
+    const container = containerRef.current
+    if (!container) return
+
+    const ro = new ResizeObserver(() => draw())
+    ro.observe(container)
+
+    return () => ro.disconnect()
   }, [draw])
 
   return (

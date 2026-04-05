@@ -6,7 +6,6 @@ import { ModeToggle } from '@/components/shared/ModeToggle'
 import { ToolActions } from '@/components/shared/ToolActions'
 import ss from './SensorSize.module.css'
 import { pixelPitch } from '@/lib/math/diffraction'
-// strParam and intParam kept for reference but query sync is manual
 import { SENSORS, POPULAR_MODELS, COMMON_MP, calcCropFactor, calcAspectCropFactor, type MpEntry } from '@/lib/data/sensors'
 import type { SensorPreset } from '@/lib/types'
 
@@ -33,7 +32,7 @@ function formatAspectRatio(w: number, h: number): string {
   return `${rw}:${rh}`
 }
 
-const ALL_SENSOR_IDS = SENSORS.map((s) => s.id) as unknown as string[]
+const ALL_SENSOR_IDS = SENSORS.map((s) => s.id)
 const ALL_SENSOR_ID_SET = new Set(ALL_SENSOR_IDS)
 const DEFAULT_VISIBLE_IDS = ['mf', 'ff', 'apsc_n', 'm43', 'phone']
 const DEFAULT_VISIBLE = DEFAULT_VISIBLE_IDS.join('+')

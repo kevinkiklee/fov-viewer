@@ -28,15 +28,19 @@ export function AdUnit({ slot, format, className, channel, testId }: AdUnitProps
   useEffect(() => {
     if (!isAdsEnabled()) return
 
+    // Tell AdSense to fill this <ins> slot. The push({}) call matches the
+    // next unfilled <ins class="adsbygoogle"> element on the page.
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({})
     } catch {
-      // AdSense not loaded yet
+      // AdSense library not loaded yet (e.g. blocked by adblocker)
     }
 
     const ins = insRef.current
     if (!ins) return
 
+    // Watch for AdSense injecting an iframe (= ad loaded successfully).
+    // Swap skeleton placeholder for the real ad once detected.
     const observer = new MutationObserver(() => {
       if (ins.querySelector('iframe')) {
         setLoaded(true)
@@ -45,6 +49,8 @@ export function AdUnit({ slot, format, className, channel, testId }: AdUnitProps
     })
     observer.observe(ins, { childList: true, subtree: true })
 
+    // If no ad fills within 5s (adblocker, no inventory, consent denied),
+    // collapse the container to avoid an empty gap in the layout.
     const timeout = setTimeout(() => {
       if (!ins.querySelector('iframe')) {
         setCollapsed(true)

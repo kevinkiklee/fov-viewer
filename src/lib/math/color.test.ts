@@ -49,6 +49,39 @@ describe('kelvinToRgb', () => {
     const cool = kelvinToRgb(8000)
     expect(cool.b).toBeGreaterThan(warm.b)
   })
+
+  it('1000K (minimum boundary) produces valid warm RGB', () => {
+    const { r, g, b } = kelvinToRgb(1000)
+    expect(r).toBe(255)
+    expect(b).toBe(0) // temp/100 = 10, which is <= 19 so blue = 0
+    expect(g).toBeGreaterThanOrEqual(0)
+    expect(g).toBeLessThanOrEqual(255)
+  })
+
+  it('40000K (maximum boundary) produces valid cool RGB', () => {
+    const { r, g, b } = kelvinToRgb(40000)
+    expect(b).toBe(255) // temp >= 66 so blue is saturated
+    expect(r).toBeGreaterThanOrEqual(0)
+    expect(r).toBeLessThanOrEqual(255)
+    expect(g).toBeGreaterThanOrEqual(0)
+    expect(g).toBeLessThanOrEqual(255)
+  })
+
+  it('500K (below minimum) clamps to 1000K', () => {
+    const clamped = kelvinToRgb(500)
+    const atMin = kelvinToRgb(1000)
+    expect(clamped.r).toBe(atMin.r)
+    expect(clamped.g).toBe(atMin.g)
+    expect(clamped.b).toBe(atMin.b)
+  })
+
+  it('50000K (above maximum) clamps to 40000K', () => {
+    const clamped = kelvinToRgb(50000)
+    const atMax = kelvinToRgb(40000)
+    expect(clamped.r).toBe(atMax.r)
+    expect(clamped.g).toBe(atMax.g)
+    expect(clamped.b).toBe(atMax.b)
+  })
 })
 
 describe('hslToRgb', () => {
@@ -196,5 +229,25 @@ describe('color harmonies', () => {
         expect(h).toBeLessThan(360)
       }
     }
+  })
+
+  it('complementary wraps correctly near 360° (hue=350 → complement near 170)', () => {
+    const hues = complementary(350)
+    expect(hues[0]).toBe(350)
+    expect(hues[1]).toBe(170)
+  })
+
+  it('analogous wraps correctly near 360° (hue=350)', () => {
+    const hues = analogous(350)
+    expect(hues[0]).toBe(320) // 350 - 30
+    expect(hues[1]).toBe(350)
+    expect(hues[2]).toBe(20)  // (350 + 30) % 360
+  })
+
+  it('triadic wraps correctly near 360° (hue=350)', () => {
+    const hues = triadic(350)
+    expect(hues[0]).toBe(350)
+    expect(hues[1]).toBe(110) // (350 + 120) % 360
+    expect(hues[2]).toBe(230) // (350 + 240) % 360
   })
 })

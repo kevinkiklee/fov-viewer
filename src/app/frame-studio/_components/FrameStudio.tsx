@@ -196,7 +196,7 @@ export function FrameStudio() {
 
           {/* Desktop: LearnPanel as right sidebar */}
           <div className={styles.desktopOnly}>
-            <LearnPanel slug={SLUG} />
+            <LearnPanel slug={SLUG} closable />
           </div>
         </div>
 
@@ -214,7 +214,7 @@ export function FrameStudio() {
 
         {/* Mobile: LearnPanel below controls */}
         <div className={styles.mobileOnly}>
-          <LearnPanel slug={SLUG} />
+          <LearnPanel slug={SLUG} closable />
         </div>
       </div>
 

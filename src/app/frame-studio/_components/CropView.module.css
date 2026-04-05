@@ -21,3 +21,11 @@
 .cropper :global(.advanced-cropper__background) {
   background: transparent !important;
 }
+
+/* Color the crop stencil lines to match grid color */
+.wrapper :global(.advanced-cropper__line) {
+  border-color: var(--crop-color, #fff) !important;
+}
+.wrapper :global(.advanced-cropper__handler) {
+  background: var(--crop-color, #fff) !important;
+}

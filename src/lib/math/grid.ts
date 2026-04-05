@@ -47,60 +47,100 @@ export function drawGoldenSpiral(
   rotation: 0 | 90 | 180 | 270,
 ): void {
   ctx.save()
+
+  // Clip to image bounds so arcs never extend beyond the photo
+  ctx.beginPath()
+  ctx.rect(0, 0, w, h)
+  ctx.clip()
+
   ctx.translate(w / 2, h / 2)
   ctx.rotate((rotation * Math.PI) / 180)
   ctx.translate(-w / 2, -h / 2)
 
-  ctx.beginPath()
-
-  let x = 0
-  let y = 0
-  let rw = w
-  let rh = h
-
-  for (let i = 0; i < 8; i++) {
-    const r = i % 2 === 0 ? rh : rw
-    const corner = i % 4
-
-    let cx: number, cy: number
-    let startAngle: number
-
-    switch (corner) {
-      case 0:
-        cx = x + rw
-        cy = y + rh
-        startAngle = Math.PI
-        break
-      case 1:
-        cx = x
-        cy = y + rh
-        startAngle = -Math.PI / 2
-        break
-      case 2:
-        cx = x
-        cy = y
-        startAngle = 0
-        break
-      default:
-        cx = x + rw
-        cy = y
-        startAngle = Math.PI / 2
-        break
-    }
-
-    ctx.arc(cx, cy, r, startAngle, startAngle + Math.PI / 2)
-
-    if (i % 2 === 0) {
-      const newH = rh / GOLDEN_RATIO
-      if (corner === 0) y += rh - newH
-      rh = newH
-    } else {
-      const newW = rw / GOLDEN_RATIO
-      if (corner === 3) x += rw - newW
-      rw = newW
-    }
+  // Largest golden rectangle that fits within the image.
+  // Golden rectangles self-replicate on subdivision, so all arcs connect perfectly.
+  let gw: number, gh: number
+  if (w / h >= GOLDEN_RATIO) {
+    // Image wider than golden ratio — fit to height
+    gh = h
+    gw = h * GOLDEN_RATIO
+  } else {
+    // Image taller than golden ratio — fit to width
+    gw = w
+    gh = w / GOLDEN_RATIO
   }
 
+  ctx.beginPath()
+
+  let x = (w - gw) / 2
+  let y = (h - gh) / 2
+  let rw = gw
+  let rh = gh
+
+  for (let i = 0; i < 9; i++) {
+    const phase = i % 4
+    const side = Math.min(rw, rh)
+    let cx: number, cy: number, startAngle: number
+
+    switch (phase) {
+      case 0: // Cut from right
+        cx = x + rw - side
+        cy = y
+        startAngle = 0
+        rw -= side
+        break
+      case 1: // Cut from bottom
+        cx = x + rw
+        cy = y + rh - side
+        startAngle = Math.PI / 2
+        rh -= side
+        break
+      case 2: // Cut from left
+        cx = x + side
+        cy = y + rh
+        startAngle = Math.PI
+        x += side
+        rw -= side
+        break
+      default: // Cut from top
+        cx = x
+        cy = y + side
+        startAngle = 3 * Math.PI / 2
+        y += side
+        rh -= side
+        break
+    }
+
+    ctx.arc(cx, cy, side, startAngle, startAngle + Math.PI / 2)
+  }
+
+  ctx.stroke()
+  ctx.restore()
+}
+
+export function drawGoldenDiagonal(
+  ctx: CanvasRenderingContext2D,
+  w: number,
+  h: number,
+  rotation: 0 | 90 | 180 | 270,
+): void {
+  ctx.save()
+  ctx.translate(w / 2, h / 2)
+  ctx.rotate((rotation * Math.PI) / 180)
+  ctx.translate(-w / 2, -h / 2)
+
+  const d = w * w + h * h
+
+  ctx.beginPath()
+  // Main diagonal
+  ctx.moveTo(0, 0)
+  ctx.lineTo(w, h)
+  // Perpendicular from bottom-left to main diagonal
+  ctx.moveTo(0, h)
+  ctx.lineTo((w * h * h) / d, (h * h * h) / d)
+  // Perpendicular from top-right to main diagonal
+  ctx.moveTo(w, 0)
+  ctx.lineTo((w * w * w) / d, (w * w * h) / d)
   ctx.stroke()
   ctx.restore()
 }

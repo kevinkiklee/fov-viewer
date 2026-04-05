@@ -328,7 +328,7 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef, cleanCanvas
 
     // Signal CropStrip that the clean canvas has fresh content
     cleanCanvas?.dispatchEvent(new Event('draw'))
-  }, [canvasRef, computeRects, showGuides, activeLens, distance, fovs, orientation, lenses])
+  }, [canvasRef, cleanCanvasRef, computeRects, showGuides, activeLens, distance, fovs, orientation, lenses])
 
   // Load image
   useEffect(() => {
@@ -339,7 +339,7 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef, cleanCanvas
       draw()
     }
     img.src = (imageIndex === -1 && customImageSrc) ? customImageSrc : SCENES[imageIndex]?.src ?? SCENES[0].src
-  }, [imageIndex, customImageSrc, draw])
+  }, [imageIndex, customImageSrc, draw, sourceImageRef])
 
   // Redraw on parameter changes
   useEffect(() => {
@@ -378,14 +378,17 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef, cleanCanvas
       draw()
     })
 
-    observer.observe(canvas.parentElement!)
+    const parent = canvas.parentElement
+    if (!parent) return
+    observer.observe(parent)
     return () => observer.disconnect()
   }, [canvasRef, draw, orientation])
 
   // Reset offset only for the lens that changed, preserve others
   const prevLensKeysRef = useRef<string[]>([])
-  const lensKeys = lenses.map((l) => `${l.focalLength}-${l.sensorId}`)
+  const lensKeysJoined = lenses.map((l) => `${l.focalLength}-${l.sensorId}`).join('|')
   useEffect(() => {
+    const lensKeys = lensKeysJoined.split('|')
     const prev = prevLensKeysRef.current
     if (prev.length !== lensKeys.length) {
       // Lens count changed (added/removed) — reset all
@@ -405,7 +408,7 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef, cleanCanvas
       }
     }
     prevLensKeysRef.current = lensKeys
-  }, [lensKeys.join('|')])
+  }, [lensKeysJoined, onOffsetsChange])
 
   // Listen for center-overlays event
   useEffect(() => {
@@ -414,7 +417,7 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef, cleanCanvas
     const handler = () => onOffsetsChange({})
     canvas.addEventListener('center-overlays', handler)
     return () => canvas.removeEventListener('center-overlays', handler)
-  }, [canvasRef])
+  }, [canvasRef, onOffsetsChange])
 
   // Shared coordinate helper for mouse and touch
   const getCanvasCoords = useCallback((clientX: number, clientY: number): { cx: number; cy: number } => {
@@ -484,7 +487,7 @@ export function Canvas({ lenses, imageIndex, orientation, canvasRef, cleanCanvas
     const newDx = Math.max(-maxDx, Math.min(maxDx, rawDx))
     const newDy = Math.max(-maxDy, Math.min(maxDy, rawDy))
     onOffsetsChange((prev) => ({ ...prev, [drag.index]: { dx: newDx, dy: newDy } }))
-  }, [canvasRef, getCanvasCoords, fovs, orientation])
+  }, [canvasRef, getCanvasCoords, fovs, orientation, onOffsetsChange])
 
   const handleMouseMove = useCallback((e: React.MouseEvent) => {
     const canvas = canvasRef.current

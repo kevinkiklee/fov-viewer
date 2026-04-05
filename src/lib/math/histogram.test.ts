@@ -116,4 +116,36 @@ describe('detectClipping', () => {
     const result = detectClipping(hist)
     expect(result.hasWhiteClip).toBe(false)
   })
+
+  it('exactly 1% black clip does not trigger hasBlackClip', () => {
+    const data = new Uint8ClampedArray(100 * 4)
+    for (let i = 0; i < 99; i++) {
+      data[i * 4] = 128; data[i * 4 + 1] = 128; data[i * 4 + 2] = 128; data[i * 4 + 3] = 255
+    }
+    data[99 * 4] = 0; data[99 * 4 + 1] = 0; data[99 * 4 + 2] = 0; data[99 * 4 + 3] = 255
+
+    const hist = computeHistogram(data, 100, 1)
+    const result = detectClipping(hist)
+    expect(result.hasBlackClip).toBe(false)
+  })
+})
+
+describe('computeHistogram edge cases', () => {
+  it('handles single pixel image (1x1)', () => {
+    const data = makePixels(1, 1, 42, 100, 200)
+    const hist = computeHistogram(data, 1, 1)
+
+    expect(hist.r[42]).toBe(1)
+    expect(hist.g[100]).toBe(1)
+    expect(hist.b[200]).toBe(1)
+
+    const totalR = hist.r.reduce((s, v) => s + v, 0)
+    const totalG = hist.g.reduce((s, v) => s + v, 0)
+    const totalB = hist.b.reduce((s, v) => s + v, 0)
+    const totalLuma = hist.luma.reduce((s, v) => s + v, 0)
+    expect(totalR).toBe(1)
+    expect(totalG).toBe(1)
+    expect(totalB).toBe(1)
+    expect(totalLuma).toBe(1)
+  })
 })

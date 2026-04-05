@@ -65,7 +65,10 @@ export function CropPanel({ selectedRatio, onRatioChange, onApply }: CropPanelPr
         </div>
         <button className={styles.flipBtn} onClick={handleFlip} title="Flip orientation">
           <svg viewBox="0 0 16 16" width={14} height={14} fill="none" stroke="currentColor" strokeWidth={1.5}>
-            <path d="M4 2v12M12 2v12M1 8h14" />
+            {flipped
+              ? <rect x="4" y="1" width="8" height="14" rx="1" />
+              : <rect x="1" y="4" width="14" height="8" rx="1" />
+            }
           </svg>
           {flipped ? 'Portrait' : 'Landscape'}
         </button>

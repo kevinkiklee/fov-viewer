@@ -4,6 +4,7 @@ export type GridType =
   | 'rule-of-thirds'
   | 'golden-ratio'
   | 'golden-spiral'
+  | 'golden-diagonal'
   | 'diagonal-lines'
   | 'center-cross'
   | 'square-grid'
@@ -50,7 +51,7 @@ export interface FrameConfig {
   shadowOffsetY: number
 }
 
-export type FramePresetId = 'none' | 'clean-white' | 'gallery' | 'film' | 'polaroid' | 'custom'
+export type FramePresetId = 'none' | 'white' | 'black' | 'custom'
 
 export interface CropState {
   x: number
@@ -80,7 +81,7 @@ export const ASPECT_RATIOS: AspectRatioPreset[] = [
 ]
 
 export const DEFAULT_GRID_OPTIONS: GridOptions = {
-  color: '#00ffff',
+  color: '#ffffff',
   opacity: 0.8,
   thickness: 'medium',
   spiralRotation: 0,
@@ -88,8 +89,8 @@ export const DEFAULT_GRID_OPTIONS: GridOptions = {
 }
 
 export const DEFAULT_FRAME_CONFIG: FrameConfig = {
-  preset: 'none',
-  borderWidth: 40,
+  preset: 'custom',
+  borderWidth: 100,
   fillType: 'solid',
   solidColor: '#ffffff',
   gradientColor1: '#ffffff',
@@ -109,14 +110,8 @@ export const DEFAULT_FRAME_CONFIG: FrameConfig = {
 
 export const FRAME_PRESETS: Record<FramePresetId, Partial<FrameConfig>> = {
   none: { borderWidth: 0 },
-  'clean-white': { borderWidth: 40, fillType: 'solid', solidColor: '#ffffff', cornerRadius: 0 },
-  gallery: {
-    borderWidth: 60, fillType: 'solid', solidColor: '#ffffff', cornerRadius: 0,
-    innerMatEnabled: true, innerMatWidth: 4, innerMatColor: '#e0e0e0',
-    shadowEnabled: true, shadowColor: '#00000040', shadowBlur: 24, shadowOffsetX: 0, shadowOffsetY: 6,
-  },
-  film: { borderWidth: 30, fillType: 'solid', solidColor: '#111111', cornerRadius: 6 },
-  polaroid: { borderWidth: 20, fillType: 'solid', solidColor: '#fafafa', cornerRadius: 2 },
+  white: { borderWidth: 100, fillType: 'solid', solidColor: '#ffffff', cornerRadius: 0 },
+  black: { borderWidth: 100, fillType: 'solid', solidColor: '#000000', cornerRadius: 0 },
   custom: {},
 }
 

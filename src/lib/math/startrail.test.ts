@@ -81,4 +81,30 @@ describe('formatDuration', () => {
   it('formats 7200s as "2h"', () => {
     expect(formatDuration(7200)).toBe('2h')
   })
+
+  it('formats 0s as "0m"', () => {
+    expect(formatDuration(0)).toBe('0m')
+  })
+})
+
+describe('rule500 edge cases', () => {
+  it('zero focal length returns Infinity (division by zero)', () => {
+    expect(rule500(0, 1)).toBe(Infinity)
+  })
+})
+
+describe('ruleNPF edge cases', () => {
+  it('very small focal length returns a very large max exposure', () => {
+    // 1mm focal length should produce a very long max exposure
+    const result = ruleNPF(2.8, 1, 6.0)
+    // (35*2.8 + 30*6) / 1 = 98 + 180 = 278
+    expect(result).toBeCloseTo(278, 0)
+    expect(result).toBeGreaterThan(100)
+  })
+})
+
+describe('stackingTime edge cases', () => {
+  it('all zeros returns 0', () => {
+    expect(stackingTime(0, 0, 0)).toBe(0)
+  })
 })

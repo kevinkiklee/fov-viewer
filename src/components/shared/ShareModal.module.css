@@ -86,7 +86,7 @@
 
 .row button {
   background: var(--accent);
-  color: #000;
+  color: var(--text-on-accent);
   border: none;
   border-radius: 6px;
   padding: 6px 12px;

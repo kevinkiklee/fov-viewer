@@ -35,8 +35,9 @@ export function CropView({ image, aspectRatio, onCropChange, activeGrids, option
     : aspectRatio
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} style={{ '--crop-color': options.color } as React.CSSProperties}>
       <Cropper
+        key={String(numericRatio)}
         ref={cropperRef}
         src={image.src}
         defaultSize={({ imageSize }) => ({
@@ -47,11 +48,7 @@ export function CropView({ image, aspectRatio, onCropChange, activeGrids, option
         stencilProps={{
           aspectRatio: numericRatio ?? undefined,
           activeGrids,
-          options: {
-            ...options,
-            // Override grid color to match standard cropping overlay line color
-            color: 'rgba(255, 255, 255, 0.8)'
-          }
+          options,
         }}
         onChange={handleChange}
         className={styles.cropper}

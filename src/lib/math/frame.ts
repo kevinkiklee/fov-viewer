@@ -78,7 +78,7 @@ export function drawGradientBorder(
 
   gradient.addColorStop(0, color1)
   gradient.addColorStop(1, color2)
-  ctx.fillStyle = gradient as unknown as string
+  ctx.fillStyle = gradient
 
   if (cornerRadius > 0) {
     ctx.beginPath()

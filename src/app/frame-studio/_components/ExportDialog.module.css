@@ -9,7 +9,7 @@
 }
 
 .dialog {
-  background: var(--surface-2);
+  background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 24px;

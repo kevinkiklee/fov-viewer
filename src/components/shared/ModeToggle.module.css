@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  gap: 8px;
 }
 
 .sticky {
@@ -13,10 +13,10 @@
 }
 
 .title {
-  font-size: 10px;
-  font-weight: 700;
+  font-size: 0.6875rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
   color: var(--accent);
 }
 
@@ -52,7 +52,7 @@
 
 .btnActive {
   background: var(--accent);
-  color: #000;
+  color: var(--text-on-accent);
 }
 
 .btnActive:hover {

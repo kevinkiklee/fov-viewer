@@ -57,4 +57,16 @@ describe('calcCameraDistance', () => {
       expect(d).toBeGreaterThan(0)
     }
   })
+
+  it('same focal length returns the same distance', () => {
+    expect(calcCameraDistance(85, 85, 7)).toBeCloseTo(7, 5)
+    expect(calcCameraDistance(24, 24, 3.5)).toBeCloseTo(3.5, 5)
+  })
+
+  it('very large focal length ratio produces proportionally large distance', () => {
+    // 800mm vs 24mm ref at 5m — extreme telephoto compression
+    const distance = calcCameraDistance(800, 24, 5)
+    expect(distance).toBeCloseTo(5 * (800 / 24), 5)
+    expect(distance).toBeGreaterThan(100)
+  })
 })

@@ -1,3 +1,8 @@
+// Loads the Google AdSense library globally. Rendered in layout.tsx <body>.
+// The library auto-discovers <ins class="adsbygoogle"> elements on the page
+// and fills them after each AdUnit pushes to window.adsbygoogle.
+// Uses "afterInteractive" so it doesn't block page hydration.
+
 import Script from 'next/script'
 import { getAdsenseClient } from '@/lib/ads'
 
