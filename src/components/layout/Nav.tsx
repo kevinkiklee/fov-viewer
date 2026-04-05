@@ -162,9 +162,9 @@ export function Nav({ theme, onThemeChange }: NavProps) {
           </AnimatePresence>
         </div>
         <Link href="/learn/glossary" className={styles.navLink}>{t('glossary')}</Link>
+        <div className={styles.spacer} />
         <span className={styles.desktopThemeToggle}><ThemeToggle theme={theme} onChange={onThemeChange} /></span>
         <LanguageSwitcher />
-        <div className={styles.spacer} />
       </div>
     </nav>
   )
