@@ -10,6 +10,7 @@ export function Footer() {
         <Link href="/contact" className={styles.link}>Contact</Link>
         <Link href="/privacy" className={styles.link}>Privacy Policy</Link>
         <Link href="/terms" className={styles.link}>Terms of Service</Link>
+        <button type="button" className={`cky-banner-element ${styles.cookieButton}`}>Cookie Settings</button>
         <span className={styles.separator} />
         <p>&copy; {new Date().getFullYear()} PhotoTools</p>
       </div>
