@@ -1,0 +1,51 @@
+{
+  "terms": {
+    "title": "Gebruiksvoorwaarden",
+    "effectiveDate": "Ingangsdatum: 3 april 2026",
+    "sections": {
+      "acceptance": {
+        "title": "Aanvaarding van voorwaarden",
+        "body": "Door www.phototools.io (\"PhotoTools\" of \"de Site\") te bezoeken of te gebruiken, ga je akkoord met deze gebruiksvoorwaarden. Als je niet akkoord gaat met deze voorwaarden, gebruik de site dan niet. Deze voorwaarden gelden voor alle bezoekers en gebruikers van PhotoTools. Opmerking: deze Nederlandse vertaling is informatief. De Engelse versie is bindend."
+      },
+      "descriptionOfService": {
+        "title": "Beschrijving van de dienst",
+        "body": "PhotoTools biedt gratis educatieve fotografiegereedschappen, waaronder interactieve rekenhulpen, simulatoren en naslagmateriaal. De site is uitsluitend bedoeld voor informatieve en educatieve doeleinden. Alle tools worden gratis aangeboden en zijn ontworpen om fotografen te helpen fotografische concepten te leren en te begrijpen."
+      },
+      "noWarranty": {
+        "title": "Geen garantie",
+        "body": "PhotoTools wordt geleverd \"zoals het is\" zonder enige garantie van welke aard dan ook, expliciet of impliciet. Wij garanderen niet dat de tools, rekenhulpen of informatie op deze site nauwkeurig, volledig of geschikt zijn voor een bepaald doel. Resultaten van onze tools zijn benaderingen en mogen niet worden gebruikt voor kritieke beslissingen, professioneel werk of situaties waarin precisie essentieel is. Verifieer belangrijke berekeningen altijd bij gekwalificeerde professionals of gezaghebbende bronnen."
+      },
+      "intellectualProperty": {
+        "title": "Intellectueel eigendom",
+        "body": "Alle inhoud op PhotoTools — inclusief tekst, afbeeldingen, tool-ontwerpen, code en educatief materiaal — is eigendom van PhotoTools, tenzij anders vermeld. Je bent welkom om de tools en het naslagmateriaal te gebruiken voor persoonlijke en educatieve doeleinden. Reproductie, herdistributie of commercieel gebruik van site-inhoud zonder voorafgaande schriftelijke toestemming is verboden."
+      },
+      "acceptableUse": {
+        "title": "Aanvaardbaar gebruik",
+        "intro": "Bij het gebruik van PhotoTools ga je ermee akkoord om niet:",
+        "items": {
+          "laws": "Toepasselijke lokale, nationale of internationale wetten of regelgeving te overtreden",
+          "disrupt": "De werking van de site, servers of netwerken te verstoren of te hinderen",
+          "scrape": "Gegevens van de site te scrapen, crawlen of systematisch te extraheren zonder voorafgaande schriftelijke toestemming",
+          "misrepresent": "Je identiteit of affiliatie te vervalsen in communicatie met PhotoTools",
+          "commercial": "De site te gebruiken voor commerciële doeleinden buiten persoonlijk gebruik zonder toestemming"
+        }
+      },
+      "thirdPartyContent": {
+        "title": "Inhoud van derden",
+        "body": "PhotoTools toont advertenties van derden en kan links naar externe websites bevatten. Wij zijn niet verantwoordelijk voor de inhoud, nauwkeurigheid of praktijken van adverteerders of gelinkte sites van derden. Het opnemen van enige advertentie of externe link vormt geen goedkeuring door PhotoTools. Je interacties met diensten van derden worden beheerst door hun eigen voorwaarden en privacybeleid."
+      },
+      "limitationOfLiability": {
+        "title": "Beperking van aansprakelijkheid",
+        "body": "Voor zover wettelijk toegestaan zijn PhotoTools en zijn beheerders niet aansprakelijk voor enige directe, indirecte, incidentele, speciale of gevolgschade voortvloeiend uit je gebruik van — of het niet kunnen gebruiken van — de site of zijn tools. Dit omvat, zonder beperking, schade als gevolg van het vertrouwen op informatie of berekeningen die door PhotoTools worden verstrekt. Je gebruik van de site is geheel op eigen risico."
+      },
+      "changesToTerms": {
+        "title": "Wijzigingen in de voorwaarden",
+        "body": "Wij kunnen deze gebruiksvoorwaarden op elk moment wijzigen. Bijgewerkte voorwaarden worden op deze pagina geplaatst met een herziene ingangsdatum. Voortgezet gebruik van PhotoTools na het plaatsen van wijzigingen houdt in dat je de herziene voorwaarden accepteert. We raden je aan deze voorwaarden periodiek te bekijken."
+      },
+      "contact": {
+        "title": "Contact",
+        "body": "Als je vragen hebt over deze gebruiksvoorwaarden, neem dan contact op via onze <contactLink>contactpagina</contactLink>."
+      }
+    }
+  }
+}

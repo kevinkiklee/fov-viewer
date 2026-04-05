@@ -1,0 +1,12 @@
+{
+  "toolUI": {
+    "nd-filter-calculator": {
+      "baseShutterSpeed": "Basissluitertijd",
+      "ndFilter": "ND-filter",
+      "resultingShutterSpeed": "Resulterende sluitertijd",
+      "stopsAdded": "Toegevoegde stops",
+      "quickReference": "Snelle referentie",
+      "tableBase": "Basis"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "education": {
+    "perspective-compression-simulator": {
+      "beginner": "Perspectivische compressie is een optisch effect waarbij objecten op verschillende afstanden dichter bij elkaar lijken te staan dan ze werkelijk zijn. Het is het vaakst te zien bij gebruik van lange telelenzen (zoals 200mm of 400mm) vanaf een grote afstand. In tegenstelling tot wat vaak wordt gedacht, wordt het niet door de lens zelf veroorzaakt, maar door de afstand tussen de camera en de scène.",
+      "deeper": "Compressie ontstaat doordat op grote afstanden het relatieve verschil in afstand tussen het voorgrondonderwerp en de achtergrond klein wordt. Als je bijvoorbeeld 30 meter van je onderwerp staat en de achtergrond nog eens 6 meter verderop is, is de achtergrond slechts 20% verder weg dan het onderwerp. Vanaf 1,5 meter afstand maakt diezelfde 6 meter het verschil dat de achtergrond 500% verder weg is. Door ver weg te gaan staan en een telelens te gebruiken om het kader te \"vullen\" met het onderwerp, verklein je de relatieve diepte, waardoor de achtergrond groter lijkt en \"gecomprimeerd\" wordt tegen het onderwerp.",
+      "keyFactors": {
+        "0": {
+          "label": "Opnameafstand",
+          "description": "De primaire oorzaak van compressie. Hoe verder je van het onderwerp staat, hoe meer de achtergrond wordt gecomprimeerd ten opzichte van het onderwerp."
+        },
+        "1": {
+          "label": "Brandpuntsafstand",
+          "description": "Telelenzen vergroten het beeld, waardoor je het kader kunt vullen met je onderwerp vanaf een afstand waar compressie zichtbaar is. Groothoeklenzen vereisen dat je dichtbij staat, wat de waargenomen diepte vergroot."
+        },
+        "2": {
+          "label": "Relatieve diepte",
+          "description": "Compressie is het meest zichtbaar wanneer de afstand tussen het onderwerp en de achtergrond klein is vergeleken met de afstand tussen de camera en het onderwerp."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Om bergen er massief uit te laten zien achter een onderwerp, ga zo ver mogelijk naar achteren en gebruik je langste telelens. Dit \"trekt\" de achtergrond dichter naar de voorgrond."
+        },
+        "1": {
+          "text": "Bij portretfotografie wordt vaak een 85mm- of 135mm-lens gekozen omdat de lichte compressie een vleiender weergave van gelaatstrekken oplevert vergeleken met groothoeklenzen."
+        },
+        "2": {
+          "text": "Gebruik perspectief-expansie (groothoek van dichtbij) om de leidende lijnen van een voorgrond te benadrukken en een ruimte wijdser en opener te laten aanvoelen."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Brandpuntsafstand",
+          "definition": "De vergrotingskracht van de lens. Langere brandpuntsafstanden (tele) stellen je in staat van verder weg te fotograferen, wat de werkelijke oorzaak is van perspectivische compressie."
+        },
+        "distance": {
+          "term": "Afstand tot onderwerp",
+          "definition": "De afstand tussen de camera en het hoofdonderwerp. Het vergroten van deze afstand is de fysieke oorzaak van perspectivische compressie."
+        },
+        "maintainSize": {
+          "term": "Onderwerpgrootte behouden",
+          "definition": "Past automatisch de camera-afstand aan bij het wijzigen van de brandpuntsafstand om het hoofdonderwerp dezelfde grootte in het kader te houden. Dit demonstreert het \"Dolly Zoom\"-effect."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Je wilt een foto maken van een vriend voor een berg, en je wilt dat de berg zo groot mogelijk achter hen verschijnt. Wat moet je doen?",
+          "hint": "Compressie wordt veroorzaakt door afstand, en telelenzen laten je het kader vullen van ver weg.",
+          "successMessage": "Precies! Door ver weg te gaan en een telelens te gebruiken, comprimeer je de afstand tussen je vriend en de berg, waardoor de berg veel groter lijkt.",
+          "failureMessage": "Niet helemaal. Dichterbij gaan met een groothoeklens zou de berg kleiner en verder weg doen lijken. Ga naar achteren en zoom in!",
+          "options": {
+            "0": { "label": "Naar achteren gaan en een 200mm-lens gebruiken" },
+            "1": { "label": "Dichterbij gaan en een 24mm-lens gebruiken" },
+            "2": { "label": "Blijven staan en een 50mm-lens gebruiken" }
+          }
+        }
+      }
+    }
+  }
+}

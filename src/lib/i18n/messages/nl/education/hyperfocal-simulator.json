@@ -1,0 +1,98 @@
+{
+  "education": {
+    "hyperfocal-simulator": {
+      "beginner": "De hyperfocale afstand is het dichtstbijzijnde punt waarop je kunt scherpstellen terwijl alles op oneindig nog aanvaardbaar scherp blijft. Wanneer je scherpstelt op de hyperfocale afstand, strekt je scherptediepte zich uit van de helft van die afstand tot oneindig. Landschapsfotografen gebruiken deze techniek om de scherpte van voorgrond tot horizon te maximaliseren.",
+      "deeper": "De hyperfocale afstand wordt afgeleid uit de dunne-lensvergelijking en het concept van de verstrooiingscirkel (CoC). Deze is gelijk aan het kwadraat van de brandpuntsafstand gedeeld door het product van het f-getal en de CoC-diameter: H = f² / (N × c). Alles van H/2 tot oneindig valt binnen aanvaardbare scherpte. De CoC hangt af van het sensorformaat — kleinere sensoren hebben een kleinere aanvaardbare CoC, waardoor de hyperfocale afstand verder weg wordt geduwd voor dezelfde brandpuntsafstand en hetzelfde diafragma. Dit is waarom cropsensorcamera's meer scherptediepte lijken te hebben: de CoC-standaard is strakker ten opzichte van het beeldoppervlak. In de praktijk betekent diffractieverzachting bij zeer kleine diafragma's (f/16 en verder op de meeste sensoren) dat er een afweging is tussen het maximaliseren van scherptediepte en het behouden van scherpte per pixel.",
+      "keyFactors": {
+        "0": {
+          "label": "Brandpuntsafstand",
+          "description": "Langere brandpuntsafstanden vergroten de hyperfocale afstand dramatisch — deze schaalt met het kwadraat van de brandpuntsafstand."
+        },
+        "1": {
+          "label": "Diafragma",
+          "description": "Kleinere diafragma's (hogere f-getallen) verkleinen de hyperfocale afstand en vergroten de scherptediepte."
+        },
+        "2": {
+          "label": "Sensorformaat",
+          "description": "Kleinere sensoren gebruiken een kleinere verstrooiingscirkel, waardoor de hyperfocale afstand toeneemt bij equivalente kadrering."
+        },
+        "3": {
+          "label": "Verstrooiingscirkel",
+          "description": "De maximale diameter van een vervagingsvlek die als \"aanvaardbaar scherp\" wordt beschouwd — doorgaans 0,03mm voor fullframe."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Stel voor snel landschapswerk ongeveer één derde in de scène scherp — dit benadert het hyperfocale punt voor de meeste groothoekopstellingen."
+        },
+        "1": {
+          "text": "Vermijd afdiafragmeren voorbij f/16 op fullframe of f/11 op APS-C. Diffractie zal de scherptedieptewinst die je najaagt tenietdoen."
+        },
+        "2": {
+          "text": "Gebruik liveview-vergroting om precies op de hyperfocale afstand scherp te stellen in plaats van te vertrouwen op de afstandsschaal van de lens, die vaak onnauwkeurig is op moderne autofocuslenzen."
+        }
+      },
+      "tooltips": {
+        "Sensor": {
+          "term": "Sensor",
+          "definition": "Het camerasensorformaat. Kleinere sensoren hebben een strakkere verstrooiingscirkelstandaard, waardoor alle hyperfocale afstanden verder weg verschuiven."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Je fotografeert een landschap met een 24mm-lens op een fullframe-camera. Welk sensorformaat moet je selecteren om fullframe hyperfocale afstanden te zien?",
+          "hint": "Fullframe is het standaard 35mm-sensorformaat.",
+          "successMessage": "Correct! Fullframe is de juiste keuze voor een standaard 35mm-sensor.",
+          "failureMessage": "Niet helemaal — selecteer de Fullframe-sensor voor een standaard 35mm-camerahuis.",
+          "options": {
+            "0": { "label": "Fullframe" },
+            "1": { "label": "APS-C (Nikon/Sony)" },
+            "2": { "label": "Micro Four Thirds" }
+          }
+        },
+        "1": {
+          "scenario": "Bekijk de tabel voor fullframe: welke heeft een kortere hyperfocale afstand: 24mm bij f/8 of 50mm bij f/8?",
+          "hint": "De hyperfocale afstand neemt toe met het kwadraat van de brandpuntsafstand.",
+          "successMessage": "Juist! De 24mm-lens heeft een veel kortere hyperfocale afstand vanwege de kwadratische relatie met de brandpuntsafstand.",
+          "failureMessage": "Kortere brandpuntsafstanden leveren altijd kortere hyperfocale afstanden op. De 24mm wint hier.",
+          "options": {
+            "0": { "label": "24mm bij f/8" },
+            "1": { "label": "50mm bij f/8" }
+          }
+        },
+        "2": {
+          "scenario": "Je wandelt met een APS-C-camera en een 35mm-lens. Je wilt alles van ongeveer 3 meter tot oneindig scherp. Bij welk diafragmabereik moet je in de tabel kijken om een hyperfocale afstand rond 6 meter te vinden (zodat de helft daarvan — 3m — je nabije scherptegrens is)?",
+          "hint": "Onthoud: nabije scherpte = hyperfocaal / 2. Zoek een diafragma dat een hyperfocale afstand van ongeveer 6m oplevert.",
+          "successMessage": "Goed gedacht! Je hebt correct vastgesteld dat je een hyperfocale afstand van ongeveer 6m nodig hebt, en het juiste diafragmabereik gevonden.",
+          "failureMessage": "Onthoud, de nabije scherptegrens is de helft van de hyperfocale afstand. Je hebt een hyperfocale afstand van ongeveer 6m nodig voor een nabije scherptegrens van 3m.",
+          "options": {
+            "0": { "label": "f/2.8 — f/4" },
+            "1": { "label": "f/5.6 — f/8" },
+            "2": { "label": "f/16 — f/22" }
+          }
+        },
+        "3": {
+          "scenario": "Een vriend stapt over van een fullframe-camera naar Micro Four Thirds maar blijft dezelfde brandpuntsafstanden gebruiken. Hij klaagt dat de hyperfocale afstanden anders lijken. Waarom?",
+          "hint": "De verstrooiingscirkel wordt berekend op basis van het sensorformaat.",
+          "successMessage": "Precies! De kleinere M43-sensor gebruikt een kleinere CoC (ongeveer 0,015mm versus 0,03mm), waardoor de hyperfocale afstanden toenemen voor dezelfde brandpuntsafstand en hetzelfde diafragma.",
+          "failureMessage": "De sleutelfactor is de verstrooiingscirkel. Kleinere sensoren vereisen een strakkere CoC-standaard, waardoor hyperfocale afstanden verder weg worden geduwd.",
+          "options": {
+            "0": { "label": "De brandpuntsafstand van de lens verandert op cropsensoren" },
+            "1": { "label": "Kleinere sensoren gebruiken een kleinere verstrooiingscirkel" },
+            "2": { "label": "Micro Four Thirds-camera's hebben minder nauwkeurige autofocus" }
+          }
+        },
+        "4": {
+          "scenario": "Je fotografeert architectuur met 14mm f/11 op fullframe. De tabel toont een zeer korte hyperfocale afstand. Moet je verder afdiafragmeren naar f/22 voor nog meer scherptediepte, of is f/11 de betere keuze?",
+          "hint": "Bedenk wat er met de beeldscherpte gebeurt bij zeer kleine diafragma's.",
+          "successMessage": "Uitstekend! Bij f/11 is diffractie minimaal op fullframe, en de hyperfocale afstand bij 14mm is al heel kort. Afdiafragmeren naar f/22 zou het beeld zachter maken door diffractie zonder noemenswaardig voordeel voor de scherptediepte.",
+          "failureMessage": "Hoewel f/22 op papier een kortere hyperfocale afstand geeft, vermindert diffractieverzachting bij f/22 op fullframe juist de algehele beeldscherpte. Bij 14mm f/11 is de hyperfocale afstand al zo kort dat de extra scherptediepte de diffractieboete niet waard is.",
+          "options": {
+            "0": { "label": "Afdiafragmeren naar f/22 voor maximale scherptediepte" },
+            "1": { "label": "Bij f/11 blijven — diffractie bij f/22 vermindert de scherpte" }
+          }
+        }
+      }
+    }
+  }
+}

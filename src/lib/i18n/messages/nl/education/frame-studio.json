@@ -1,0 +1,133 @@
+{
+  "education": {
+    "frame-studio": {
+      "beginner": "Frame Studio helpt je foto's bij te snijden, om te lijsten en te componeren, rechtstreeks in de browser. Gebruik compositierasters om je kadrering te verbeteren, snij bij naar populaire beeldverhoudingen en voeg professioneel ogende randen toe — allemaal zonder verlies van beeldkwaliteit.",
+      "deeper": {
+        "0": {
+          "heading": "Compositierasters",
+          "text": "De regel van derden verdeelt het kader in een 3×3-raster — het plaatsen van onderwerpen langs lijnen of op kruispunten creëert natuurlijk visueel evenwicht. De gulden snede (ongeveer 1,618:1) biedt een wiskundig harmonieuze verdeling die al eeuwen wordt gebruikt in kunst en architectuur. De gulden spiraal leidt het oog langs een logaritmische curve afgeleid van de Fibonacci-reeks, nuttig om de kijker door het beeld te leiden."
+        },
+        "1": {
+          "heading": "Beeldverhoudingen",
+          "text": "Verschillende beeldverhoudingen dienen verschillende doelen. 1:1 (vierkant) werkt goed voor sociale media en symmetrische composities. 3:2 is de klassieke 35mm-filmverhouding. 4:3 is gebruikelijk bij Micro Four Thirds en oudere digitale camera's. 16:9 is de standaard breedbeeldverhouding voor video en filmische composities. 5:4 is traditioneel voor 8×10-afdrukken."
+        },
+        "2": {
+          "heading": "Omlijsting en randen",
+          "text": "Het toevoegen van een rand rond een foto bootst het effect van een fysieke passe-partout en lijst na. Een witte passe-partout biedt visuele ademruimte en richt de aandacht naar binnen. De breedte van de rand ten opzichte van het beeld beïnvloedt het waargenomen \"gewicht\" van de foto. Galeriepresentaties gebruiken doorgaans bredere passe-partouts. Een subtiele schaduw creëert diepte, waardoor het lijkt alsof een ingelijste afdruk aan de muur hangt."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Compositieraster",
+          "description": "Overlayhulplijnen helpen je de plaatsing van het onderwerp binnen het kader te evalueren en verbeteren."
+        },
+        "1": {
+          "label": "Beeldverhouding",
+          "description": "De breedte-hoogteverhouding beïnvloedt hoe het beeld aanvoelt — bredere verhoudingen voelen filmisch aan, vierkant voelt evenwichtig."
+        },
+        "2": {
+          "label": "Randbreedte",
+          "description": "Bredere randen voegen gewicht en focus toe; smalle randen voelen modern en minimalistisch."
+        },
+        "3": {
+          "label": "Passe-partoutkleur",
+          "description": "Witte passe-partouts zijn klassiek voor kunstfotografie. Donkere passe-partouts benadrukken lichtere beelden. Gekleurde passe-partouts kunnen complementeren of contrasteren."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Snij voor Instagram-berichten bij naar 4:5 (portret) om maximale schermruimte in de feed in te nemen."
+        },
+        "1": {
+          "text": "Gebruik bij het toevoegen van een rand voor afdrukken een passe-partoutbreedte van minimaal 10% van de kortere zijde van het beeld voor een professionele uitstraling."
+        },
+        "2": {
+          "text": "De gulden spiraal is het meest effectief voor beelden met een natuurlijke stroming — water, wegen of gebogen architectuur."
+        }
+      },
+      "tooltips": {
+        "Aspect Ratio": {
+          "term": "Beeldverhouding",
+          "definition": "De proportionele relatie tussen breedte en hoogte. Veelvoorkomende verhoudingen zijn 3:2 (35mm), 4:3 (M43) en 16:9 (breedbeeld)."
+        },
+        "Rule of Thirds": {
+          "term": "Regel van derden",
+          "definition": "Een compositierichtlijn die het kader in 9 gelijke delen verdeelt. Het plaatsen van onderwerpen op kruispunten creëert visuele interesse."
+        },
+        "Golden Ratio": {
+          "term": "Gulden snede",
+          "definition": "Een wiskundige verhouding (~1,618:1) die in de natuur en kunst voorkomt. Creëert esthetisch aangename ruimteverdelingen."
+        },
+        "Border Width": {
+          "term": "Randbreedte",
+          "definition": "De dikte van de kaderrand in pixels. Wordt buiten het beeld toegevoegd, waardoor de totale afmetingen toenemen zonder bij te snijden."
+        },
+        "Inner Mat": {
+          "term": "Binnenste passe-partout",
+          "definition": "Een tweede, dunnere rand tussen de buitenlijst en het beeld — bootst de afgeschuinde binnenpasse-partout van een fysieke fotolijst na."
+        },
+        "Corner Radius": {
+          "term": "Hoekradius",
+          "definition": "Rondt de hoeken van de kaderrand af. Nul geeft scherpe hoeken, hogere waarden geven een zachter, afgerond uiterlijk."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Je wilt een portretfoto op Instagram plaatsen voor maximale zichtbaarheid in de feed. Welke beeldverhouding moet je gebruiken?",
+          "hint": "Instagram-portretberichten gebruiken een verhouding die hoger is dan breed.",
+          "successMessage": "Correct! 4:5 geeft je de maximale verticale ruimte in de Instagram-feed.",
+          "failureMessage": "Instagram-portretberichten gebruiken 4:5 (draai 5:4 naar portretoriëntatie) voor maximale feedruimte.",
+          "options": {
+            "0": { "label": "1:1 (Vierkant)" },
+            "1": { "label": "4:5 (Portret)" },
+            "2": { "label": "16:9 (Breedbeeld)" }
+          }
+        },
+        "1": {
+          "scenario": "Welk compositieraster wordt het meest onderwezen als startpunt voor beginners?",
+          "hint": "Het verdeelt het kader in 9 gelijke secties.",
+          "successMessage": "Juist! De regel van derden is de fundamentele compositiegids.",
+          "failureMessage": "De regel van derden (3×3-raster) is het meest gebruikelijke startpunt voor het leren van compositie.",
+          "options": {
+            "0": { "label": "Regel van derden" },
+            "1": { "label": "Gulden spiraal" },
+            "2": { "label": "Diagonale lijnen" }
+          }
+        },
+        "2": {
+          "scenario": "Je bereidt een foto voor op galerij-afdruk op 8×10-papier. Welke beeldverhouding past bij dit afdrukformaat?",
+          "hint": "8×10 vereenvoudigt tot een bekende verhouding.",
+          "successMessage": "Correct! 5:4 past precies bij 8×10-afdrukafmetingen.",
+          "failureMessage": "8×10 vereenvoudigt tot 4:5, wat de portretversie is van 5:4.",
+          "options": {
+            "0": { "label": "3:2" },
+            "1": { "label": "5:4" },
+            "2": { "label": "4:3" }
+          }
+        },
+        "3": {
+          "scenario": "Een landschapsfoto toont een kronkelende rivier die van de voorgrond naar bergen op de achtergrond leidt. Welke rasteroverlay past het best bij deze natuurlijke stroming?",
+          "hint": "Eén rastertype volgt een natuurlijk gebogen pad.",
+          "successMessage": "Goede keuze! De gulden spiraal volgt curves en leidende lijnen perfect.",
+          "failureMessage": "De gulden spiraal is ideaal voor beelden met natuurlijke gebogen elementen zoals rivieren, wegen of kustlijnen.",
+          "options": {
+            "0": { "label": "Middenkruis" },
+            "1": { "label": "Gulden spiraal" },
+            "2": { "label": "Vierkant raster" }
+          }
+        },
+        "4": {
+          "scenario": "Je wilt een schone witte rand om je foto te presenteren op sociale media. Welke kadervoorinstelling moet je gebruiken?",
+          "hint": "Denk na over welke voorinstelling je een eenvoudige witte rand geeft.",
+          "successMessage": "Correct! De Wit-voorinstelling voegt een 100px witte rand toe rond je foto.",
+          "failureMessage": "De Wit-voorinstelling is ontworpen voor een schone, eenvoudige witte randpresentatie.",
+          "options": {
+            "0": { "label": "Geen" },
+            "1": { "label": "Wit" },
+            "2": { "label": "Zwart" }
+          }
+        }
+      }
+    }
+  }
+}

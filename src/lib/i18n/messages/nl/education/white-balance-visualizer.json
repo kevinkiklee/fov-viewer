@@ -1,0 +1,129 @@
+{
+  "education": {
+    "white-balance-visualizer": {
+      "beginner": "Witbalans past de kleuren in je foto aan zodat witte objecten er ook daadwerkelijk wit uitzien onder elke verlichting. Verschillende lichtbronnen hebben verschillende kleurtemperaturen — een kaars is warm en oranje, terwijl schaduw koel en blauw is. De witbalansinstelling van je camera compenseert voor deze verschillen zodat kleuren er natuurlijk uitzien.",
+      "deeper": {
+        "0": {
+          "heading": "Kleurtemperatuur",
+          "text": "Kleurtemperatuur wordt gemeten in Kelvin (K) en correspondeert met de kleur van licht dat wordt uitgezonden door een ideaal \"zwart lichaam\" dat tot die temperatuur wordt verhit. Lagere waarden (2000–3500K) produceren warm, roodachtig-oranje licht (gloeilampen, kaarsen), terwijl hogere waarden (6500–10000K) koel, blauwachtig licht produceren (schaduw, bewolkte hemel)."
+        },
+        "1": {
+          "heading": "Hoe witbalans werkt",
+          "text": "Het witbalanssysteem van de camera past de omgekeerde kleurverschuiving toe om de omgevingskleurzweem te neutraliseren. Wanneer je de witbalans instelt op \"Kunstlicht\" (~3200K), voegt de camera blauw toe om de oranje zweem van gloeilampen te compenseren. Bij digitale fotografie wordt witbalans toegepast als een vermenigvuldiger op de rode en blauwe kanalen ten opzichte van groen."
+        },
+        "2": {
+          "heading": "RAW-voordeel",
+          "text": "Fotograferen in RAW-formaat bewaart alle kleurgegevens en stelt je in staat de witbalans vrij te wijzigen in nabewerking zonder kwaliteitsverlies — het is eenvoudigweg een metadata-tag die wordt toegepast tijdens de conversie."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Kleurtemperatuur (Kelvin)",
+          "description": "De numerieke maat van lichtkleur. Lage Kelvin = warm/oranje licht. Hoge Kelvin = koel/blauw licht. Daglicht is ongeveer 5500K."
+        },
+        "1": {
+          "label": "Lichtbron",
+          "description": "Verschillende bronnen zenden verschillende kleurtemperaturen uit: kaarsen (~1800K), gloeilampen (~2800K), tl-buizen (~4000K), middagzon (~5500K), bewolkte hemel (~6500K), schaduw (~7500K)."
+        },
+        "2": {
+          "label": "RAW versus JPEG",
+          "description": "RAW fotograferen laat je witbalans in nabewerking wijzigen zonder kwaliteitsverlies. JPEG bakt de witbalans permanent in, dus het correct instellen in de camera is dan belangrijker."
+        },
+        "3": {
+          "label": "Gemengde verlichting",
+          "description": "Scènes met meerdere lichtbronnen op verschillende temperaturen (bijv. daglicht door ramen + gloeilampen) maken het onmogelijk om alle kleuren tegelijk perfect te neutraliseren."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Fotografeer altijd in RAW als je volledige flexibiliteit wilt om de witbalans later aan te passen. RAW-bestanden slaan de onverwerkte sensorgegevens op, waardoor witbalanswijzigingen verliesvrij zijn."
+        },
+        "1": {
+          "text": "Probeer voor een creatief effect opzettelijk de witbalans \"verkeerd\" in te stellen. Een daglicht-witbalans tijdens het gouden uur maakt zonsondergangen nog warmer, terwijl een kunstlicht-witbalans buiten een dramatisch koud blauw effect geeft."
+        },
+        "2": {
+          "text": "Gebruik bij gemengde verlichting (bijv. een kamer verlicht door zowel raamlicht als gloeilampen) een grijskaart om een aangepaste witbalans in te stellen, of voorzie je flitser van een gel die overeenkomt met de omgevingslichtbron."
+        }
+      },
+      "tooltips": {
+        "colorTemperature": {
+          "term": "Kleurtemperatuur",
+          "definition": "Een maat voor lichtkleur in Kelvin (K). Gebaseerd op de theoretische kleur van een verhit zwart lichaam. Lagere waarden zijn warmer (oranje/rood), hogere waarden zijn koeler (blauw)."
+        },
+        "preset": {
+          "term": "Witbalansvoorinstelling",
+          "definition": "Een vooraf gedefinieerde witbalansinstelling gekalibreerd voor een veelvoorkomende lichtbron. Voorinstellingen omvatten Kunstlicht (~3200K), TL-licht (~4000K), Daglicht (~5500K), Bewolkt (~6500K) en Schaduw (~7500K)."
+        },
+        "rgbValues": {
+          "term": "RGB-waarden",
+          "definition": "De rode, groene en blauwe kanaalwaarden (elk 0-255) die de kleur van het licht bij de geselecteerde temperatuur vertegenwoordigen. Gebruikt om te visualiseren hoe de lichtbron de scène kleurt."
+        },
+        "hexCode": {
+          "term": "Hexcode",
+          "definition": "Een hexadecimale representatie van de kleur met zes tekens (bijv. #FF8C00). Handig om de exacte kleur te refereren in ontwerpsoftware of webontwikkeling."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Je binnenfoto's onder gewone huishoudelijke gloeilampen zien er heel oranje/geel uit. Welke witbalansvoorinstelling moet je gebruiken om dit te corrigeren?",
+          "hint": "Huishoudelijke gloeilampen zenden warm, oranjegetint licht uit rond 2800-3200K.",
+          "successMessage": "Correct! De Kunstlicht-voorinstelling voegt blauw toe om de oranje zweem van gloeilampen te compenseren, waardoor kleuren weer neutraal worden.",
+          "failureMessage": "Gloeilampen/kunstlicht zenden warm oranje licht uit. De Kunstlicht-witbalansvoorinstelling is specifiek ontworpen om deze zweem te neutraliseren door blauw toe te voegen.",
+          "options": {
+            "0": { "label": "Daglicht" },
+            "1": { "label": "Kunstlicht" },
+            "2": { "label": "Schaduw" },
+            "3": { "label": "TL-licht" }
+          }
+        },
+        "1": {
+          "scenario": "Je maakt portretten tijdens het gouden uur en wilt de prachtige warme gloed van de zonsondergang behouden. Welke witbalansinstelling moet je gebruiken?",
+          "hint": "Als je de \"correcte\" witbalans voor het gouden uur instelt, zou deze de warme tinten die je wilt behouden neutraliseren.",
+          "successMessage": "Correct! De Daglicht-voorinstelling gebruiken (of zelfs Bewolkt/Schaduw) tijdens het gouden uur behoudt en versterkt de warme tinten in plaats van ze te neutraliseren.",
+          "failureMessage": "Om de warme gloed van het gouden uur te behouden, gebruik je een witbalans die niet compenseert voor warm licht. Daglicht of hogere voorinstellingen bewaren (en versterken zelfs) de warmte.",
+          "options": {
+            "0": { "label": "Automatische witbalans" },
+            "1": { "label": "Kunstlicht (om de warmte te neutraliseren)" },
+            "2": { "label": "Daglicht (om de warmte te behouden)" },
+            "3": { "label": "Flitser" }
+          }
+        },
+        "2": {
+          "scenario": "Je past de witbalans handmatig aan in Kelvin. Je foto ziet er te blauw/koud uit. Moet je de Kelvin-waarde verhogen of verlagen om het beeld warmer te maken?",
+          "hint": "De Kelvin-witbalansinstelling vertelt de camera welke kleurtemperatuur de lichtbron heeft. Een hogere Kelvin-waarde instellen zorgt ervoor dat de camera meer warmte toevoegt.",
+          "successMessage": "Juist! De Kelvin-waarde verhogen vertelt de camera dat het licht koeler is dan het werkelijk is, dus de camera compenseert door warmte toe te voegen. Stel een hogere K in om een koud ogende afbeelding op te warmen.",
+          "failureMessage": "Wanneer je de Kelvin-waarde verhoogt, voegt de camera meer warmte toe ter compensatie. Dus om een koud/blauw beeld te corrigeren, verhoog je het Kelvin-getal.",
+          "options": {
+            "0": { "label": "Kelvin verhogen (bijv. 5500K naar 7500K)" },
+            "1": { "label": "Kelvin verlagen (bijv. 5500K naar 3200K)" },
+            "2": { "label": "De Kelvin-richting heeft geen invloed op warmte" }
+          }
+        },
+        "3": {
+          "scenario": "Je fotografeert een restaurantinterieur met warme kunstlicht-hanglampen aan het plafond en koel blauw daglicht dat door grote ramen naar binnen stroomt. Mensen bij de ramen zien er blauw uit, en mensen onder de lampen zien er oranje uit. Wat is de beste aanpak?",
+          "hint": "Geen enkele witbalansinstelling kan twee zeer verschillende kleurtemperaturen tegelijk corrigeren.",
+          "successMessage": "Precies! De flitser of extra verlichting voorzien van gels die overeenkomen met één dominante bron, of een compromis-witbalans kiezen en selectief corrigeren in nabewerking, zijn de beste aanpakken voor gemengde verlichting.",
+          "failureMessage": "Gemengde verlichting is een van de moeilijkste witbalansuitdagingen. Eén witbalans kan niet beide bronnen tegelijk corrigeren. Je moet ofwel de bronnen op elkaar afstemmen met gels, ofwel het selectief oplossen in nabewerking.",
+          "options": {
+            "0": { "label": "Witbalans op Kunstlicht zetten — dat lost alles op" },
+            "1": { "label": "Witbalans op Daglicht zetten — ramen zijn belangrijker" },
+            "2": { "label": "Automatische witbalans gebruiken en RAW fotograferen, dan elke zone corrigeren in nabewerking" },
+            "3": { "label": "ISO verhogen om kleuren nauwkeuriger te maken" }
+          }
+        },
+        "4": {
+          "scenario": "Je fotografeert een sfeervolle, filmische nachtscène in een stad en wilt een opzettelijke koude blauwe toon. De straatverlichting is natriumdamp (~2200K). Welke Kelvin-witbalansinstelling zou je de sterkste blauwverschuiving geven?",
+          "hint": "Als je de witbalans veel lager instelt dan de werkelijke lichtbrontemperatuur, verschuift het beeld naar blauw.",
+          "successMessage": "Correct! De witbalans instellen op 7500K (Schaduw-voorinstelling) vertelt de camera dat de lichtbron heel koel/blauw is — dus compenseert deze door zware warmtecorrectie toe te voegen. Maar aangezien de werkelijke natriumlampen slechts 2200K zijn (heel warm), schiet deze overcorrectie voorbij neutraal naar een sterke blauwe zweem. Hoe hoger je de witbalans-Kelvin boven de werkelijke lichttemperatuur instelt, hoe sterker de blauwverschuiving.",
+          "failureMessage": "Een witbalans-Kelvinwaarde instellen die veel hoger is dan de werkelijke lichtbrontemperatuur zorgt ervoor dat de camera overcorrigeert richting blauw. Met 2200K natriumlampen creëert het instellen van de witbalans op 7500K+ de sterkste koude blauwe look.",
+          "options": {
+            "0": { "label": "2200K (overeenkomend met de natriumlampen)" },
+            "1": { "label": "3200K (Kunstlicht-voorinstelling)" },
+            "2": { "label": "7500K of hoger (Schaduw-voorinstelling)" },
+            "3": { "label": "5500K (Daglicht-voorinstelling)" }
+          }
+        }
+      }
+    }
+  }
+}

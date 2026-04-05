@@ -1,0 +1,101 @@
+{
+  "common": {
+    "nav": {
+      "tools": "Gereedschappen",
+      "glossary": "Woordenlijst",
+      "closeMenu": "Menu sluiten",
+      "comingSoon": "Binnenkort",
+      "categories": {
+        "visualizer": "Visualisaties",
+        "calculator": "Rekenhulpen",
+        "reference": "Naslagwerk",
+        "file-tool": "Bestandstools"
+      }
+    },
+    "footer": {
+      "glossary": "Woordenlijst",
+      "about": "Over ons",
+      "contact": "Contact",
+      "privacy": "Privacybeleid",
+      "terms": "Gebruiksvoorwaarden",
+      "cookieSettings": "Cookie-instellingen"
+    },
+    "theme": {
+      "switchToLight": "Schakel naar lichte modus",
+      "switchToDark": "Schakel naar donkere modus"
+    },
+    "actions": {
+      "copyImage": "Afbeelding kopiëren",
+      "reset": "Resetten",
+      "copyLink": "Link kopiëren",
+      "share": "Delen",
+      "embed": "Insluiten"
+    },
+    "toast": {
+      "linkCopied": "Link gekopieerd!",
+      "imageCopied": "Afbeelding gekopieerd!",
+      "failedToCopy": "Kopiëren mislukt",
+      "copied": "Gekopieerd!"
+    },
+    "learn": {
+      "title": "Leren",
+      "openPanel": "Leerpaneel openen",
+      "collapsePanel": "Leerpaneel inklappen",
+      "whatIsThis": "Wat is dit?",
+      "howItWorks": "Hoe werkt het",
+      "keyFactors": "Belangrijkste factoren",
+      "proTip": "Professionele tip",
+      "challenge": "Uitdaging",
+      "hint": "Hint: {hint}",
+      "completed": "Voltooid",
+      "checkAnswer": "Antwoord controleren",
+      "nextChallenge": "Volgende uitdaging",
+      "tryAgain": "Opnieuw proberen",
+      "resetAll": "Alles resetten",
+      "resetAllChallenges": "Alle uitdagingen resetten",
+      "challengeNumber": "Uitdaging {number}"
+    },
+    "share": {
+      "title": "Delen & insluiten",
+      "closeModal": "Deelvenster sluiten",
+      "directLink": "Directe link",
+      "markdown": "Markdown (Reddit, GitHub)",
+      "bbcode": "BBCode (Forums)",
+      "htmlEmbed": "HTML-insluiting",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd"
+    },
+    "draft": {
+      "banner": "Voorbeeld — Dit gereedschap is nog niet openbaar"
+    },
+    "fileUpload": {
+      "dropPrompt": "Sleep een afbeelding hierheen of klik om te bladeren",
+      "tapPrompt": "Tik om een foto te kiezen",
+      "privacy": "Je foto's verlaten nooit je apparaat",
+      "selectedFile": "Geselecteerd bestand: {fileName}. Klik om een andere afbeelding te kiezen",
+      "defaultLabel": "Jouw foto"
+    },
+    "scene": {
+      "label": "Scène:",
+      "yourPhoto": "Jouw foto",
+      "removePhoto": "Foto verwijderen",
+      "uploadPhoto": "Foto uploaden"
+    },
+    "controls": {
+      "focalLength": "Brandpuntsafstand",
+      "clickToEnterValue": "Klik om een waarde in te voeren",
+      "decrease": "Verlagen",
+      "increase": "Verhogen"
+    },
+    "dof": {
+      "depthOfField": "Scherptediepte: {totalDoF} van {nearFocus} tot {farFocus}",
+      "infinity": "Oneindig"
+    },
+    "ad": {
+      "closeAd": "Advertentie sluiten"
+    },
+    "tooltip": {
+      "infoLabel": "Info: {term}"
+    }
+  }
+}

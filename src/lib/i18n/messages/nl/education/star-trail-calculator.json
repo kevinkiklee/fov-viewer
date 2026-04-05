@@ -1,0 +1,150 @@
+{
+  "education": {
+    "star-trail-calculator": {
+      "beginner": "Sterren lijken over de hemel te bewegen omdat de aarde draait. Als je sluiter lang genoeg open staat, worden sterren strepen in je foto. De sterrensporencalculator helpt je de maximale belichtingstijd te vinden voor puntvormige sterren, of lange belichtingen te plannen om prachtige cirkelvormige sterrensporen te maken.",
+      "deeper": {
+        "0": {
+          "heading": "Hoe sterren bewegen",
+          "text": "De aarde draait 360° in ongeveer 23 uur en 56 minuten (een siderische dag), dus sterren bewegen met ongeveer 15 boogseconden per seconde op de hemelequator. Sterren nabij de polen (Polaris in het noorden) beschrijven kleinere cirkels en lijken langzamer te bewegen."
+        },
+        "1": {
+          "heading": "De 500-regel versus de NPF-regel",
+          "text": "De klassieke \"500-regel\" deelt 500 door je effectieve brandpuntsafstand om de maximale belichtingstijd te schatten voordat sterstrepen zichtbaar worden — maar deze was ontworpen voor sensoren met lagere resolutie. De NPF-regel houdt rekening met pixelpitch, brandpuntsafstand, diafragma en declinatie, en levert kortere maar nauwkeurigere limieten op voor moderne camera's met hoge resolutie."
+        },
+        "2": {
+          "heading": "Stapelen voor sterrensporen",
+          "text": "Voor opzettelijke sterrensporen maken fotografen veel kortere belichtingen (doorgaans 30s per stuk) en stapelen deze in software. Dit voorkomt ruisopbouw, zorgt voor gapvrije sporen en betekent dat één slecht beeld niet de hele opname verpest."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Brandpuntsafstand",
+          "description": "Langere brandpuntsafstanden vergroten de sterrenbeweging, waardoor kortere belichtingen nodig zijn voor puntvormige sterren. Een 14mm-lens kan 5-10 keer langer belichten dan een 200mm-lens."
+        },
+        "1": {
+          "label": "Sensorresolutie",
+          "description": "Hogere-resolutiesensoren onthullen sterstrepen bij kortere belichtingstijden. De 500-regel is te ruim voor moderne 40MP+ camera's."
+        },
+        "2": {
+          "label": "Breedtegraad & declinatie",
+          "description": "Sterren nabij de hemelpolen bewegen minder per seconde. Richting Polaris wijzen maakt langere belichtingen mogelijk voordat strepen verschijnen."
+        },
+        "3": {
+          "label": "Stapelen versus enkele belichting",
+          "description": "Voor sterrensporen levert het stapelen van veel korte belichtingen schonere resultaten op dan één extreem lange belichting, en biedt het herstel bij onderbrekingen."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Gebruik de NPF-regel in plaats van de 500-regel voor moderne camera's. Deze houdt rekening met sensorresolutie en levert nauwkeurigere maximale belichtingstijden, vooral bij camera's met veel megapixels."
+        },
+        "1": {
+          "text": "Houd bij het stapelen van sterrensporen de pauzes tussen opnames onder 2-3 seconden met een draadafstandsbediening of intervalometer. Langere pauzes creëren gestippelde in plaats van vloeiende sporen."
+        },
+        "2": {
+          "text": "Neem Polaris (of de Zuidelijke Hemelpool) op in je compositie voor dramatische concentrische cirkelsporen. Sterren dichter bij de pool beschrijven strakkere bogen."
+        }
+      },
+      "tooltips": {
+        "mode": {
+          "term": "Modus",
+          "definition": "Kies \"Scherpe sterren\" om de maximale belichtingstijd voor puntvormige sterren te berekenen, of \"Sterrensporen\" om belichtingsreeksen te plannen voor opzettelijke spooreffecten."
+        },
+        "focalLength": {
+          "term": "Brandpuntsafstand",
+          "definition": "De brandpuntsafstand van de lens in millimeters. Langere brandpuntsafstanden vergroten de schijnbare sterrenbeweging, waardoor kortere individuele belichtingen nodig zijn."
+        },
+        "sensor": {
+          "term": "Sensorformaat",
+          "definition": "De fysieke sensorafmetingen. Gecombineerd met de resolutie bepaalt dit de pixelpitch, die beïnvloedt hoe snel sterstrepen zichtbaar worden."
+        },
+        "resolution": {
+          "term": "Resolutie",
+          "definition": "De sensorresolutie in megapixels. Camera's met hogere resolutie onthullen eerder sterstrepen omdat elke pixel een kleiner hoekgebied van de hemel bestrijkt."
+        },
+        "aperture": {
+          "term": "Diafragma",
+          "definition": "De lensopening. Gebruik voor astrofotografie het grootst beschikbare diafragma (laagste f-getal) om het meeste sterrenlicht per opname vast te leggen."
+        },
+        "latitude": {
+          "term": "Breedtegraad",
+          "definition": "Je geografische breedtegraad. Beïnvloedt de schijnbare bewegingssnelheid van sterren — op hogere breedtegraden bewegen sterren nabij de pool langzamer door het beeld."
+        },
+        "exposurePerFrame": {
+          "term": "Belichting per opname",
+          "definition": "De sluitertijd voor elke individuele opname in een sterrenspoorenreeks. Doorgaans 15-30 seconden om voldoende licht op te vangen terwijl overmatige ruis wordt vermeden."
+        },
+        "numberOfFrames": {
+          "term": "Aantal opnames",
+          "definition": "Hoeveel individuele belichtingen je maakt. Meer opnames betekenen langere, dramatischere sterrensporen. 120 opnames van 30 seconden levert één uur aan sporen op."
+        },
+        "gapBetweenFrames": {
+          "term": "Pauze tussen opnames",
+          "definition": "De tijd tussen belichtingen waarin de camera het bestand opslaat. Houd dit zo kort mogelijk (1-3 seconden) om gestippelde sporen te voorkomen."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Je fotografeert de Melkweg met een 24mm-lens op een fullframe 24MP-camera. Hoe lang kun je volgens de 500-regel belichten voordat sterren beginnen te strepen?",
+          "hint": "De 500-regel: maximaal aantal seconden = 500 / brandpuntsafstand.",
+          "successMessage": "Juist! 500 / 24 = ongeveer 20 seconden. Dit is een goed uitgangspunt, hoewel de NPF-regel een iets kortere tijd kan voorstellen voor kritische scherpte.",
+          "failureMessage": "Pas de 500-regel toe: deel 500 door je brandpuntsafstand (24mm). Dat geeft je ongeveer 20 seconden.",
+          "options": {
+            "0": { "label": "5 seconden" },
+            "1": { "label": "10 seconden" },
+            "2": { "label": "20 seconden" },
+            "3": { "label": "60 seconden" }
+          }
+        },
+        "1": {
+          "scenario": "Je wilt de Orionnevel fotograferen met een 200mm-lens op een cropsensorcamera (1,5× cropfactor). Wat is de geschatte maximale belichting volgens de 500-regel?",
+          "hint": "Bij een cropsensor vermenigvuldig je eerst de brandpuntsafstand met de cropfactor, pas dan de regel toe.",
+          "successMessage": "Correct! De effectieve brandpuntsafstand is 200mm × 1,5 = 300mm. 500 / 300 = ~1,7 seconden. Bij telebrandpuntsafstanden op cropsensoren heb je heel weinig tijd voordat strepen verschijnen.",
+          "failureMessage": "Vergeet niet de cropfactor mee te rekenen: 200mm × 1,5 = 300mm effectief. Dan geeft 500 / 300 ongeveer 1,7 seconden.",
+          "options": {
+            "0": { "label": "~1,7 seconden" },
+            "1": { "label": "~2,5 seconden" },
+            "2": { "label": "~5 seconden" },
+            "3": { "label": "~10 seconden" }
+          }
+        },
+        "2": {
+          "scenario": "Je wilt een sterrenspoorenfoto van 2 uur maken. Je bent van plan 30 seconden per opname te belichten met 2 seconden pauze. Hoeveel opnames heb je nodig?",
+          "hint": "Bereken hoeveel intervallen van 32 seconden (30s belichting + 2s pauze) in 2 uur (7200 seconden) passen.",
+          "successMessage": "Correct! 7200 seconden / 32 seconden per opname = 225 opnames. Je krijgt vloeiende, doorlopende sporen over 2 uur aardrotatie.",
+          "failureMessage": "Twee uur = 7200 seconden. Elke opnamecyclus is 30s + 2s = 32s. Deel 7200 door 32 om het aantal benodigde opnames te krijgen.",
+          "options": {
+            "0": { "label": "120 opnames" },
+            "1": { "label": "180 opnames" },
+            "2": { "label": "225 opnames" },
+            "3": { "label": "240 opnames" }
+          }
+        },
+        "3": {
+          "scenario": "Je vriend gebruikt een 50MP fullframe-camera en volgde de 500-regel met een 20mm-lens, wat een belichting van 25 seconden opleverde. Hij klaagt dat sterren eruitzien als korte streepjes wanneer je inzoomt. Waarom?",
+          "hint": "De 500-regel was ontworpen voor oudere sensoren met lagere resolutie.",
+          "successMessage": "Precies! De 500-regel is te ruim voor hoge-resolutiesensoren. Een 50MP fullframe-sensor heeft een pixelpitch van ongeveer 4,4 micrometer, en de NPF-regel zou ongeveer 10-12 seconden aanbevelen voor echt scherpe sterren.",
+          "failureMessage": "De 500-regel werd gemaakt toen sensoren veel minder megapixels hadden. Met 50MP bestrijkt elke pixel een veel kleiner stukje hemel, waardoor sterrenbeweging zichtbaar wordt die op oudere camera's onzichtbaar was.",
+          "options": {
+            "0": { "label": "De lens was niet scherpgesteld" },
+            "1": { "label": "De 500-regel is te ruim voor hoge-resolutiesensoren" },
+            "2": { "label": "De camera schudde in de wind" },
+            "3": { "label": "20mm is te breed voor astrofotografie" }
+          }
+        },
+        "4": {
+          "scenario": "Je wilt een sterrenspoorenfoto van 1 uur. Waarom stapelen ervaren astrofotografen veel korte belichtingen (bijv. 240 × 15s) in plaats van één belichting van 1 uur?",
+          "hint": "Denk na over wat er gebeurt met sensorruis, batterijduur en herstelbaarheid tijdens een extreem lange enkele belichting.",
+          "successMessage": "Correct! Een enkele belichting van een uur bouwt enorme thermische ruis op, leegt de batterij, en als er iets misgaat (trillingen, dauw, koplampen) is de hele opname verpest. Het stapelen van korte opnames houdt de ruis laag, laat je slechte opnames verwijderen, en is veel vergevingsgezinder.",
+          "failureMessage": "Lange enkele belichtingen bouwen ernstige thermische ruis op en riskeren totaal verlies door elke onderbreking. Het stapelen van korte opnames houdt de ruis beheersbaar, laat je verpeste opnames weggooien, en produceert schonere resultaten.",
+          "options": {
+            "0": { "label": "Stapelen produceert langere sporen dan een enkele belichting" },
+            "1": { "label": "Enkele belichtingen kunnen sterrenbeweging niet vastleggen" },
+            "2": { "label": "Stapelen vermindert ruis, maakt herstel bij onderbrekingen mogelijk, en spaart de batterij" },
+            "3": { "label": "Er is geen praktisch verschil — het is puur persoonlijke voorkeur" }
+          }
+        }
+      }
+    }
+  }
+}

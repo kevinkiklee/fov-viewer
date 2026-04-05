@@ -1,0 +1,240 @@
+{
+  "glossary": {
+    "title": "Fotografiewoordenlijst",
+    "subtitle": "Doorzoekbaar naslagwerk van fotografietermen. Klik op een term om de definitie te bekijken.",
+    "searchPlaceholder": "Zoek termen...",
+    "searchAriaLabel": "Zoek in de woordenlijst",
+    "noResults": "Geen termen komen overeen met je zoekopdracht.",
+    "tryTool": "Probeer de {toolName}",
+    "entries": {
+      "aperture": {
+        "term": "Diafragma",
+        "definition": "De opening in een lens waardoor licht passeert. Een groter diafragma (lager f-getal) laat meer licht binnen en creëert een kleinere scherptediepte."
+      },
+      "aspect-ratio": {
+        "term": "Beeldverhouding",
+        "definition": "De proportionele verhouding tussen de breedte en hoogte van een afbeelding. Veelvoorkomende verhoudingen zijn 3:2 (standaard DSLR), 4:3 (Micro Four Thirds) en 16:9 (breedbeeld)."
+      },
+      "autofocus": {
+        "term": "Autofocus",
+        "definition": "Een camerasysteem dat automatisch de lens aanpast om een onderwerp scherp in beeld te brengen. Moderne systemen gebruiken fasedetectie of contrastdetectie."
+      },
+      "bokeh": {
+        "term": "Bokeh",
+        "definition": "De esthetische kwaliteit van onscherpe gebieden in een afbeelding, vooral bij lichtpunten. Gladde, ronde bokeh wordt over het algemeen geprefereerd en wordt beïnvloed door het lensontwerp en de diafragmavorm."
+      },
+      "bracketing": {
+        "term": "Bracketing",
+        "definition": "Het nemen van meerdere foto's van dezelfde scène met verschillende belichtingsinstellingen. Gebruikt voor HDR-fotografie of om ten minste één correct belicht beeld te garanderen."
+      },
+      "bulb-mode": {
+        "term": "Bulb-modus",
+        "definition": "Een sluiterinstelling waarbij de sluiter open blijft zolang de ontspanknop wordt ingedrukt. Gebruikt voor zeer lange belichtingen die de getimede instellingen van de camera overschrijden."
+      },
+      "burst-mode": {
+        "term": "Burstmodus",
+        "definition": "Een opnamemodus waarbij de camera meerdere beelden per seconde maakt in snelle opeenvolging. Handig voor het vastleggen van snelle actie of het selecteren van het beste moment."
+      },
+      "chromatic-aberration": {
+        "term": "Chromatische aberratie",
+        "definition": "Een lensfout waarbij verschillende golflengten van licht op iets verschillende punten scherpstellen, waardoor kleurfranje ontstaat langs randen met hoog contrast. Komt vaker voor bij goedkopere lenzen en bij grote diafragma's."
+      },
+      "circle-of-confusion": {
+        "term": "Verstrooiingscirkel",
+        "definition": "De grootste vervagingscirkel die voor het menselijk oog nog als een punt verschijnt. Deze bepaalt de grenzen van aanvaardbare scherpte en wordt gebruikt bij scherptediepteberekeningen."
+      },
+      "color-temperature": {
+        "term": "Kleurtemperatuur",
+        "definition": "Een meting in Kelvin die de warmte of koelheid van een lichtbron beschrijft. Lagere waarden (2700K) verschijnen warm/oranje; hogere waarden (6500K+) verschijnen koel/blauw."
+      },
+      "crop-factor": {
+        "term": "Cropfactor",
+        "definition": "De verhouding van de diagonaal van een camerasensor tot die van een 35mm fullframe-sensor. Dit beïnvloedt de effectieve brandpuntsafstand en beeldhoek."
+      },
+      "depth-of-field": {
+        "term": "Scherptediepte",
+        "definition": "Het afstandsbereik in een scène dat aanvaardbaar scherp verschijnt. Wordt bepaald door diafragma, brandpuntsafstand en afstand tot het onderwerp."
+      },
+      "diffraction": {
+        "term": "Diffractie",
+        "definition": "De buiging van licht bij het passeren van een klein diafragma, waardoor het beeld zachter wordt. Dit stelt een praktische grens aan hoe ver je een lens kunt afdiafragmeren."
+      },
+      "dynamic-range": {
+        "term": "Dynamisch bereik",
+        "definition": "Het bereik tussen de donkerste schaduwen en helderste lichtpunten dat een camera kan vastleggen in één belichting. Gemeten in stops (EV)."
+      },
+      "ev": {
+        "term": "EV (belichtingswaarde)",
+        "definition": "Een getal dat een combinatie van sluitertijd en diafragma vertegenwoordigt die dezelfde belichting produceert. Elke toename van 1 EV verdubbelt of halveert het licht."
+      },
+      "exposure-compensation": {
+        "term": "Belichtingscompensatie",
+        "definition": "Een camerabediening die de gemeten belichting overschrijft, meestal in stappen van 1/3 stop. Positieve waarden maken het beeld lichter; negatieve waarden maken het donkerder."
+      },
+      "exposure-triangle": {
+        "term": "Belichtingsdriehoek",
+        "definition": "De relatie tussen diafragma, sluitertijd en ISO. Het veranderen van één instelling vereist aanpassing van de andere om dezelfde belichting te behouden."
+      },
+      "f-stop": {
+        "term": "F-stop",
+        "definition": "Een meeteenheid voor lensdiafragma. Elke volledige stop (f/1.4, f/2, f/2.8, f/4...) halveert de hoeveelheid licht die door de lens valt."
+      },
+      "focal-length": {
+        "term": "Brandpuntsafstand",
+        "definition": "De afstand in millimeters van het optische midden van een lens tot de sensor wanneer scherpgesteld op oneindig. Dit bepaalt de beeldhoek en vergroting."
+      },
+      "focus-stacking": {
+        "term": "Focusstacking",
+        "definition": "Een techniek waarbij meerdere beelden, scherpgesteld op verschillende afstanden, worden gecombineerd in nabewerking om een grotere scherptediepte te bereiken dan met een enkele belichting mogelijk is."
+      },
+      "full-frame": {
+        "term": "Fullframe",
+        "definition": "Een sensorformaat gelijk aan 35mm-film (36 × 24mm). Dit is de referentiestandaard voor brandpuntsafstand- en cropfactorberekeningen."
+      },
+      "golden-hour": {
+        "term": "Gouden uur",
+        "definition": "De periode kort na zonsopgang of voor zonsondergang wanneer het zonlicht warm, zacht en gericht is. Zeer gewaardeerd voor landschaps- en portretfotografie."
+      },
+      "histogram": {
+        "term": "Histogram",
+        "definition": "Een grafiek die de verdeling van helderheidswaarden in een afbeelding toont. De linkerkant vertegenwoordigt schaduwen, de rechterkant lichtpunten."
+      },
+      "hyperfocal-distance": {
+        "term": "Hyperfocale afstand",
+        "definition": "De dichtstbijzijnde scherpstelafstand waarbij alles van de helft van die afstand tot oneindig aanvaardbaar scherp is. Maximaliseert de scherptediepte voor een gegeven diafragma."
+      },
+      "image-stabilization": {
+        "term": "Beeldstabilisatie",
+        "definition": "Een systeem dat camerabewegingsonscherpte vermindert, hetzij in de lens (OIS) of in het camerahuis (IBIS). Biedt doorgaans 3-7 stops voordeel bij fotograferen uit de hand."
+      },
+      "iso": {
+        "term": "ISO",
+        "definition": "Een maat voor de gevoeligheid van de camerasensor voor licht. Hogere ISO-waarden maken het beeld lichter maar introduceren meer ruis."
+      },
+      "jpeg": {
+        "term": "JPEG",
+        "definition": "Een gecomprimeerd afbeeldingsbestandsformaat dat lossycompressie toepast. Kleinere bestandsgrootten maar minder bewerkingsflexibiliteit vergeleken met RAW."
+      },
+      "kelvin": {
+        "term": "Kelvin",
+        "definition": "De eenheid die wordt gebruikt om de kleurtemperatuur van licht te meten. Fotografen gebruiken Kelvin-waarden om de witbalans in te stellen en af te stemmen op de kleur van het omgevingslicht."
+      },
+      "lens-compression": {
+        "term": "Lenscompressie",
+        "definition": "Het visuele effect van een telelens waardoor verre objecten dichter bij voorgrondonderwerpen lijken. Dit wordt veroorzaakt door de grote opnameafstand, niet door de lens zelf."
+      },
+      "light-meter": {
+        "term": "Lichtmeter",
+        "definition": "Een apparaat of camerasysteem dat de lichtintensiteit meet om de juiste belichtingsinstellingen te bepalen. Camera's gebruiken gereflecteerd-lichtmeting; handmeters kunnen invallend licht meten."
+      },
+      "long-exposure": {
+        "term": "Lange belichting",
+        "definition": "Een foto genomen met een langzame sluitertijd, doorgaans seconden of minuten. Gebruikt voor lichtsporen, glad water, sterrensporen en scènes met weinig licht."
+      },
+      "macro": {
+        "term": "Macro",
+        "definition": "Fotografie die onderwerpen op of nabij levensgrootte vergroting (1:1 verhouding) weergeeft. Vereist gespecialiseerde macrolenzen of tussenringen."
+      },
+      "medium-format": {
+        "term": "Middenformaat",
+        "definition": "Een sensorformaat groter dan fullframe, doorgaans ongeveer 44 × 33mm of 54 × 40mm. Biedt hogere resolutie, ondiepere scherptediepte en groter dynamisch bereik."
+      },
+      "megapixel": {
+        "term": "Megapixel",
+        "definition": "Eén miljoen pixels. Het megapixelaantal van een sensor bepaalt de maximale resolutie van de beelden die deze kan vastleggen."
+      },
+      "micro-four-thirds": {
+        "term": "Micro Four Thirds",
+        "definition": "Een spiegelloos camerasysteem met een sensor van 17,3 × 13mm, met een cropfactor van 2×. Biedt compacte behuizingen en lenzen met goede beeldkwaliteit."
+      },
+      "mirror-lock-up": {
+        "term": "Spiegelvergrendeling",
+        "definition": "Een DSLR-functie die de spiegel omhoog klapt voordat de sluiter wordt geopend, waardoor trillingen worden verminderd. Gebruikt voor scherpe opnames op statief, vooral bij langzame sluitertijden."
+      },
+      "nd-filter": {
+        "term": "ND-filter",
+        "definition": "Een grijsfilter dat de hoeveelheid licht die de lens binnenvalt vermindert zonder de kleuren te beïnvloeden. Maakt langere belichtingen of grotere diafragma's mogelijk bij heldere omstandigheden."
+      },
+      "noise": {
+        "term": "Ruis",
+        "definition": "Willekeurige variatie in helderheid en kleur in digitale beelden, het meest zichtbaar in schaduwgebieden en bij hoge ISO-instellingen. Kan worden verminderd met ruisonderdrukkingssoftware."
+      },
+      "overexposure": {
+        "term": "Overbelichting",
+        "definition": "Wanneer een beeld te veel licht ontvangt, waardoor lichtpunten worden afgekapt tot puur wit en detail verloren gaat. Het tegenovergestelde van onderbelichting."
+      },
+      "panorama": {
+        "term": "Panorama",
+        "definition": "Een breedhoekafbeelding gemaakt door meerdere overlappende foto's samen te voegen. Kan tot 360 graden van een scène bestrijken."
+      },
+      "pixel-pitch": {
+        "term": "Pixelpitch",
+        "definition": "De afstand in micrometers tussen de centra van aangrenzende pixels op een sensor. Een grotere pixelpitch betekent over het algemeen betere prestaties bij weinig licht."
+      },
+      "polarizer": {
+        "term": "Polarisatiefilter",
+        "definition": "Een filter dat reflecties en schittering van niet-metalen oppervlakken vermindert en blauwe luchten kan verdiepen. Het werkt door lichgolven te blokkeren die in een specifieke richting oscilleren."
+      },
+      "prime-lens": {
+        "term": "Primelens",
+        "definition": "Een lens met een vaste brandpuntsafstand (geen zoom). Primelenzen zijn doorgaans scherper, sneller (groter diafragma) en lichter dan vergelijkbare zoomlenzen."
+      },
+      "raw": {
+        "term": "RAW",
+        "definition": "Een ongecomprimeerd of verliesvrij gecomprimeerd bestandsformaat dat alle sensorgegevens bewaart. Biedt maximale flexibiliteit bij nabewerking ten koste van grotere bestandsgrootten."
+      },
+      "reciprocal-rule": {
+        "term": "Reciprocalregel",
+        "definition": "Een vuistregel die stelt dat de minimale sluitertijd uit de hand 1/(brandpuntsafstand) moet zijn om camerabewegingsonscherpte te voorkomen. Voor een 200mm-lens gebruik je minimaal 1/200s."
+      },
+      "rule-of-thirds": {
+        "term": "Regel van derden",
+        "definition": "Een compositierichtlijn die het beeld verdeelt in een raster van 3×3. Het plaatsen van onderwerpen langs de lijnen of op hun kruispunten creëert vaak een evenwichtiger beeld."
+      },
+      "sensor-size": {
+        "term": "Sensorformaat",
+        "definition": "De fysieke afmetingen van de beeldsensor van een camera. Grotere sensoren vangen meer licht op, bieden een ondiepere scherptediepte en produceren over het algemeen minder ruis."
+      },
+      "shutter-speed": {
+        "term": "Sluitertijd",
+        "definition": "De tijdsduur dat de sluiter van de camera open is tijdens een belichting. Snellere sluitertijden bevriezen beweging; langzamere sluitertijden geven bewegingsonscherpte."
+      },
+      "star-trails": {
+        "term": "Sterrensporen",
+        "definition": "Lichtstrepen die ontstaan door de schijnbare beweging van sterren tijdens een lange belichting. Kunnen worden vastgelegd in één zeer lange belichting of door meerdere kortere opnames te stapelen."
+      },
+      "stop": {
+        "term": "Stop",
+        "definition": "Een eenheid van belichtingsverandering die een verdubbeling of halvering van licht vertegenwoordigt. Geldt gelijkelijk voor diafragma, sluitertijd en ISO."
+      },
+      "telephoto": {
+        "term": "Telelens",
+        "definition": "Een lens met een brandpuntsafstand langer dan ongeveer 70mm (fullframe-equivalent). Telelenzen vergroten verre onderwerpen en comprimeren het perspectief."
+      },
+      "tilt-shift": {
+        "term": "Tilt-shift",
+        "definition": "Een lens die het scherpstelvlak kan kantelen en de beeldcirkel kan verschuiven ten opzichte van de sensor. Wordt gebruikt voor architectuurfotografie en selectieve scherpte-effecten."
+      },
+      "underexposure": {
+        "term": "Onderbelichting",
+        "definition": "Wanneer een beeld te weinig licht ontvangt, waardoor schaduwgebieden detail verliezen en er ruizig uitzien. Het tegenovergestelde van overbelichting."
+      },
+      "vignetting": {
+        "term": "Vignettering",
+        "definition": "Een verdonkering van de hoeken en randen van een afbeelding ten opzichte van het midden. Kan worden veroorzaakt door het lensontwerp, filters of zonnekappen, en wordt soms opzettelijk toegevoegd in nabewerking."
+      },
+      "white-balance": {
+        "term": "Witbalans",
+        "definition": "Een camera-instelling die kleuren aanpast zodat witte objecten er neutraal uitzien onder verschillende lichtomstandigheden. Kan automatisch of handmatig worden ingesteld met Kelvin-waarden."
+      },
+      "wide-angle": {
+        "term": "Groothoek",
+        "definition": "Een lens met een korte brandpuntsafstand (doorgaans minder dan 35mm op fullframe) die een bredere beeldhoek vastlegt. Vaak gebruikt voor landschappen, architectuur en interieurs."
+      },
+      "zoom-lens": {
+        "term": "Zoomlens",
+        "definition": "Een lens met een variabel brandpuntsafstandbereik, waardoor de fotograaf de kadrering kan veranderen zonder te bewegen. Biedt veelzijdigheid ten koste van formaat, gewicht en soms scherpte."
+      }
+    }
+  }
+}

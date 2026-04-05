@@ -1,0 +1,25 @@
+{
+  "contact": {
+    "title": "Neem contact op",
+    "description": "Heb je een vraag, een fout gevonden, of wil je een nieuw gereedschap voorstellen? We horen graag van je.",
+    "form": {
+      "nameLabel": "Naam",
+      "namePlaceholder": "Je naam",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "jouw@email.nl",
+      "subjectLabel": "Onderwerp",
+      "subjectPlaceholder": "Waar gaat het over?",
+      "messageLabel": "Bericht",
+      "messagePlaceholder": "Je bericht...",
+      "submit": "Bericht versturen",
+      "sending": "Versturen...",
+      "honeypotLabel": "Website",
+      "successToast": "Bericht verzonden! We nemen zo snel mogelijk contact met je op.",
+      "errorToast": "Er is iets misgegaan. Probeer het opnieuw.",
+      "networkErrorToast": "Netwerkfout. Controleer je verbinding en probeer het opnieuw.",
+      "sentTitle": "Bedankt voor je bericht!",
+      "sentMessage": "We nemen zo snel mogelijk contact met je op.",
+      "sendAnother": "Nog een bericht versturen"
+    }
+  }
+}

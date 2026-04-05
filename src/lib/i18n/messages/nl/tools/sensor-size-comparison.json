@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "sensor-size-comparison": {
+      "displayMode": "Weergavemodus",
+      "modeOverlay": "Overlay",
+      "modeSideBySide": "Zij aan zij",
+      "modePixelDensity": "Pixeldichtheid",
+      "pixelDensityDescription": "Veelvoorkomende megapixelaantallen voor elke sensor worden getoond. Grotere pixels (grotere cellen) vangen meer licht op.",
+      "sensors": "Sensoren",
+      "customSensors": "Aangepaste sensoren",
+      "placeholderName": "Naam",
+      "placeholderW": "B (mm)",
+      "placeholderH": "H (mm)",
+      "placeholderMP": "Megapixels (optioneel)",
+      "placeholderMPShort": "MP",
+      "maxDimensionWarning": "Maximale sensorafmeting is 99 mm",
+      "addSensor": "Sensor toevoegen",
+      "save": "Opslaan",
+      "cancelEdit": "Annuleren",
+      "edit": "Bewerken",
+      "remove": "Verwijderen",
+      "deleteAllCustom": "Alle aangepaste sensoren verwijderen",
+      "tableSensor": "Sensor",
+      "tableWidth": "Breedte (mm)",
+      "tableHeight": "Hoogte (mm)",
+      "tableAspectRatio": "Beeldverhouding",
+      "tableArea": "Oppervlak (mm²)",
+      "tableCropFactor": "Cropfactor",
+      "tableAspectCrop": "Beeldverhouding-crop",
+      "canvasAriaLabel": "Sensorformaatvergelijking in {mode}-modus"
+    }
+  }
+}

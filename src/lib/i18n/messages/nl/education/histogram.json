@@ -1,0 +1,120 @@
+{
+  "education": {
+    "histogram": {
+      "beginner": "Een histogram is een grafiek die laat zien hoe helder of donker de pixels in je foto zijn. De linkerkant vertegenwoordigt schaduwen (donkere gebieden), het midden vertegenwoordigt middentonen, en de rechterkant vertegenwoordigt hooglichten (heldere gebieden). Als de grafiek aan één kant opgehoopt is, kan je foto onderbelicht of overbelicht zijn.",
+      "deeper": "Een histogram plot het aantal pixels (verticale as) tegen het helderheidsniveau (horizontale as, 0-255 voor 8-bits beelden). In luminantiemodus wordt de helderheid van elke pixel berekend als een gewogen gemiddelde van rode, groene en blauwe kanalen (doorgaans 0,299R + 0,587G + 0,114B, overeenkomend met menselijke waarneming). De RGB-modus toont drie afzonderlijke verdelingen, waardoor je kunt zien welke kleurkanalen onafhankelijk worden afgekapt — een rood kanaal dat naar 255 wordt geduwd terwijl blauw in orde is, wijst op afkapping van hooglichten in warme tinten, zoals een zonsonderganghemel. \"Afkapping\" (clipping) treedt op wanneer pixelwaarden de 0- of 255-grens bereiken, wat betekent dat schaduw- of hooglichtdetail onherstelbaar verloren is gegaan. Zwartafkapping (pixels op 0) verliest schaduwdetail; witafkapping (pixels op 255) verliest hooglichtdetail. RAW fotograferen geeft ruwweg 2-3 extra stops herstelbaar hooglichtbereik bovenop wat het JPEG-histogram toont, daarom \"belichten naar rechts\" (ETTR) veel fotografen doen — de belichting zo helder mogelijk duwen zonder de RAW-gegevens af te kappen.",
+      "keyFactors": {
+        "0": {
+          "label": "Toonverdeling",
+          "description": "De algehele vorm vertelt je of het beeld donker (links-zwaar), helder (rechts-zwaar) of evenwichtig (verspreid over het bereik) is."
+        },
+        "1": {
+          "label": "Afkapping",
+          "description": "Pieken aan de uiterste linker- of rechterrand wijzen op verloren detail in schaduwen of hooglichten."
+        },
+        "2": {
+          "label": "Kanaalscheiding",
+          "description": "De RGB-modus onthult het gedrag van individuele kleurkanalen — handig voor het detecteren van kleurspecifieke afkapping in verzadigde scènes."
+        },
+        "3": {
+          "label": "Dynamisch bereik",
+          "description": "Een histogram dat de volledige breedte bestrijkt zonder afkapping wijst op goed gebruik van het beschikbare dynamische bereik."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Er is geen \"perfect\" histogramvorm. Een foto van een zwarte kat op een donkere bank hoort links-zwaar te zijn. Beoordeel het histogram aan de hand van je creatieve intentie, niet een ideale curve."
+        },
+        "1": {
+          "text": "Bekijk de RGB-overlaymodus voor zonsondergang- en neonlichtfoto's. Het rode kanaal wordt vaak veel eerder afgekapt dan blauw, waardoor detail verloren gaat in warme hooglichten, zelfs wanneer het luminantiehistogram er goed uitziet."
+        },
+        "2": {
+          "text": "Als je afkappingswaarschuwingen aan beide uiteinden tegelijk ziet, overschrijdt de scène waarschijnlijk het dynamische bereik van je camera. Overweeg bracketing voor HDR of het gebruik van graduele ND-filters."
+        }
+      },
+      "tooltips": {
+        "View Mode": {
+          "term": "Weergavemodus",
+          "definition": "Luminantie toont de algehele helderheid. RGB-overlay toont alle drie de kleurkanalen over elkaar. Alle kanalen toont RGB plus luminantie samen."
+        },
+        "Shadows": {
+          "term": "Schaduwen",
+          "definition": "Het meest linkse gebied van het histogram (ruwweg 0-85), dat de donkerste tonen in het beeld vertegenwoordigt."
+        },
+        "Midtones": {
+          "term": "Middentonen",
+          "definition": "Het middengebied (ruwweg 86-170), dat gemiddelde helderheid vertegenwoordigt — huidtinten en de meeste natuurlijke texturen vallen hier."
+        },
+        "Highlights": {
+          "term": "Hooglichten",
+          "definition": "Het meest rechtse gebied (ruwweg 171-255), dat de helderste tonen vertegenwoordigt: luchten, reflecties en lichtbronnen."
+        },
+        "Black Clipping": {
+          "term": "Zwartafkapping",
+          "definition": "Het percentage pixels op helderheid 0 (puur zwart). Hoge waarden betekenen dat schaduwdetail verloren is gegaan en niet kan worden hersteld."
+        },
+        "White Clipping": {
+          "term": "Witafkapping",
+          "definition": "Het percentage pixels op helderheid 255 (puur wit). Hoge waarden betekenen dat hooglichtdetail is uitgeblazen."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Je uploadt een foto en het histogram is sterk naar links geduwd met bijna niets aan de rechterkant. Wat vertelt dit je over het beeld?",
+          "hint": "Links = donker, rechts = helder.",
+          "successMessage": "Correct! Een links-zwaar histogram betekent dat het beeld vooral donkere tonen bevat — het kan onderbelicht zijn, of het is een opzettelijk donker/low-key beeld.",
+          "failureMessage": "Een histogram dat aan de linkerkant opgehoopt is, geeft aan dat het beeld overwegend donker is. Dit betekent vaak onderbelichting.",
+          "options": {
+            "0": { "label": "Het beeld is onderbelicht of zeer donker" },
+            "1": { "label": "Het beeld is overbelicht of zeer helder" },
+            "2": { "label": "Het beeld heeft een perfecte belichting" }
+          }
+        },
+        "1": {
+          "scenario": "Welke weergavemodus moet je gebruiken om de algehele helderheidsverdeling van je foto in één grafiek te zien?",
+          "hint": "Eén modus combineert alle kleurinformatie in één helderheidscurve.",
+          "successMessage": "Juist! De luminantiemodus toont één curve die de algehele waargenomen helderheid weergeeft.",
+          "failureMessage": "De luminantiemodus is de eenvoudigste weergave — het combineert R, G, B in één helderheidscurve.",
+          "options": {
+            "0": { "label": "Luminantie" },
+            "1": { "label": "RGB-overlay" },
+            "2": { "label": "Alle kanalen" }
+          }
+        },
+        "2": {
+          "scenario": "Je hebt een levendige zonsondergang gefotografeerd en het luminantiehistogram ziet er goed uit, maar wanneer je overschakelt naar RGB-overlay zie je dat het rode kanaal een piek heeft aan de uiterste rechterkant. Wat is er aan de hand?",
+          "hint": "Individuele kleurkanalen kunnen worden afgekapt terwijl de algehele luminantie dat niet doet.",
+          "successMessage": "Precies! Het rode kanaal wordt afgekapt — de zonsonderganghooglichten hebben detail verloren in de rode tonen, ook al ziet de algehele helderheid er acceptabel uit. Je verliest warme kleurnuances.",
+          "failureMessage": "Het rode kanaal wordt onafhankelijk afgekapt. Verzadigde warme hooglichten (zonsondergangen, vuur) duwen rood vaak naar 255 terwijl groen en blauw in orde zijn, waardoor kleurdetail in die tonen verloren gaat.",
+          "options": {
+            "0": { "label": "Afkapping van het rode kanaal — warm hooglichtdetail verloren" },
+            "1": { "label": "Het beeld is in zijn geheel overbelicht" },
+            "2": { "label": "De witbalans is verkeerd" }
+          }
+        },
+        "3": {
+          "scenario": "Het gereedschap rapporteert 2,3% zwartafkapping en 0,1% witafkapping. Moet je de belichting aanpassen?",
+          "hint": "Kleine hoeveelheden afkapping zijn normaal — puur zwarte schaduwen en spiegelende hooglichten zijn te verwachten.",
+          "successMessage": "Goed beoordeeld! 2,3% zwartafkapping is bescheiden en vaak gewoon diepe schaduwen of donkere randen. 0,1% witafkapping zijn waarschijnlijk spiegelende hooglichten (zonreflecties). Deze belichting is prima voor de meeste doeleinden.",
+          "failureMessage": "Deze afkappingspercentages zijn vrij klein. Een beetje zwartafkapping in diepe schaduwen en minimale witafkapping door spiegelende hooglichten is normaal en te verwachten. Geen aanpassing nodig.",
+          "options": {
+            "0": { "label": "Belichting verhogen om zwartafkapping te verminderen" },
+            "1": { "label": "Dit is in orde — kleine afkapping in schaduwen en spiegelende hooglichten is normaal" },
+            "2": { "label": "Belichting verlagen om witafkapping te elimineren" }
+          }
+        },
+        "4": {
+          "scenario": "Je fotografeert een scène met hoog contrast: een bruid in een witte jurk in een donkere kathedraal. Het histogram toont sterke pieken aan beide uiteinden met een gat in de middentonen. Hoe ga je hiermee om?",
+          "hint": "Wanneer het dynamische bereik van de scène het bereik van de camerasensor overschrijdt, heb je een meervoudige-belichtingstechniek nodig.",
+          "successMessage": "Perfect! Dit bimodale histogram geeft aan dat de scène het dynamische bereik van je sensor overschrijdt. Belichtingsbracketing (HDR) legt zowel het donkere interieur als het detail van de heldere jurk vast. Als alternatief kun je invulflits gebruiken om de schaduwen op te lichten.",
+          "failureMessage": "Een bimodaal histogram (pieken aan beide uiteinden, leeg midden) betekent dat de scène meer dynamisch bereik heeft dan je sensor in één opname kan vastleggen. Bracket belichtingen voor HDR, of gebruik invulflits om de contrastverhouding te verminderen.",
+          "options": {
+            "0": { "label": "Belichtingsbracketing voor HDR of invulflits gebruiken" },
+            "1": { "label": "Belichten op de middentonen en hopen op het beste" },
+            "2": { "label": "Overschakelen naar zwart-wit om het probleem te verbergen" }
+          }
+        }
+      }
+    }
+  }
+}

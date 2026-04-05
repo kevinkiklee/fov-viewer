@@ -1,0 +1,13 @@
+{
+  "home": {
+    "heroTitle": "PhotoTools — Gratis fotografiegereedschappen",
+    "heroDesc": "Gratis fotografie-rekenhulpen, simulatoren en naslagwerk. Geen registratie nodig — je foto's verlaten nooit je browser.",
+    "comingSoon": "Binnenkort beschikbaar",
+    "categories": {
+      "visualizer": "Visualisaties",
+      "calculator": "Rekenhulpen",
+      "reference": "Naslagwerk",
+      "file-tool": "Bestandstools"
+    }
+  }
+}

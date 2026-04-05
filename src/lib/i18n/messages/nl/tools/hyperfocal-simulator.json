@@ -1,0 +1,21 @@
+{
+  "toolUI": {
+    "hyperfocal-simulator": {
+      "settings": "Instellingen",
+      "focalLength": "Brandpuntsafstand",
+      "aperture": "Diafragma",
+      "focusDistance": "Scherpstelafstand:",
+      "sensor": "Sensor",
+      "scene": "Scène:",
+      "sceneLandscape": "Landschap",
+      "sceneStreet": "Straat",
+      "hyperfocalDistance": "Hyperfocale afstand",
+      "nearLimit": "Nabije grens",
+      "farLimit": "Verre grens",
+      "focusDistanceResult": "Scherpstelafstand",
+      "hyperfocalReference": "Hyperfocale referentie",
+      "sharpToInfinity": "Scherp tot oneindig",
+      "nearLimitBadge": "Nabije grens:"
+    }
+  }
+}

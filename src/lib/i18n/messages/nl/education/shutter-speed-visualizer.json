@@ -1,0 +1,121 @@
+{
+  "education": {
+    "shutter-speed-visualizer": {
+      "beginner": "De sluitertijdgids helpt je de langzaamste sluitertijd te vinden die je kunt gebruiken terwijl je nog steeds een scherpe foto uit de hand krijgt. Als je sluitertijd te langzaam is, zal camerabeweging van je handen het beeld vervagen. De minimale veilige sluitertijd hangt af van je brandpuntsafstand, of je beeldstabilisatie hebt, en hoe stabiel je handen zijn.",
+      "deeper": "De klassieke \"reciprocalregel\" stelt dat voor scherpe foto's uit de hand je sluitertijd minimaal 1/(brandpuntsafstand) seconden moet zijn — dus een 200mm-lens heeft minimaal 1/200s nodig. Op cropsensorcamera's moet je de equivalente brandpuntsafstand gebruiken (bijv. 200mm op een 1,5× crop = 1/300s). Moderne beeldstabilisatie in het camerahuis (IBIS) en optische stabilisatie (OIS) kunnen je 3-7 extra stops voordeel geven bij fotograferen uit de hand, wat betekent dat die gestabiliseerde 200mm-lens scherp zou kunnen zijn bij 1/15s of zelfs langzamer. Stabilisatie compenseert echter alleen camerabeweging, niet beweging van het onderwerp. Een persoon die naar je toe loopt bij 1/15s zal nog steeds onscherp zijn, ongeacht stabilisatie. Voor bewegende onderwerpen moet je een sluitertijd kiezen op basis van de snelheid en afstand van het onderwerp, niet alleen de brandpuntsafstand.",
+      "keyFactors": {
+        "0": {
+          "label": "Brandpuntsafstand",
+          "description": "Langere brandpuntsafstanden vergroten camerabeweging. De reciprocalregel (1/brandpuntsafstand) is het uitgangspunt voor het bepalen van de minimale sluitertijd."
+        },
+        "1": {
+          "label": "Beeldstabilisatie",
+          "description": "OIS (lensgebaseerd) biedt doorgaans 2-4 stops voordeel. IBIS (in camerahuis) biedt 3-5 stops. Gecombineerd OIS+IBIS kan 5-7 stops bereiken op sommige systemen."
+        },
+        "2": {
+          "label": "Beweging van het onderwerp",
+          "description": "Stilstaande onderwerpen vereisen alleen voldoende snelheid om camerabeweging tegen te gaan. Bewegende onderwerpen hebben snellere sluitertijden nodig ongeacht stabilisatie: wandelen (~1/125s), rennen (~1/500s), voertuigen (~1/1000s+)."
+        },
+        "3": {
+          "label": "Sensorformaat (cropfactor)",
+          "description": "Cropsensorcamera's vermenigvuldigen effectief de brandpuntsafstand voor de reciprocalregel. Een 50mm-lens op een 1,5× crop gedraagt zich als 75mm, dus heb je minimaal 1/75s nodig."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Steun tegen een muur, houd je ellebogen ingetrokken en adem langzaam uit voordat je de ontspanknop indrukt. Een goede techniek kan je 1-2 extra stops stabiliteit geven bovenop de reciprocalregel."
+        },
+        "1": {
+          "text": "Bij het fotograferen van mensen dicteert de beweging van het onderwerp meestal je minimale snelheid, niet je brandpuntsafstand. Zelfs met een groothoeklens en stabilisatie heeft een rennend kind minimaal 1/500s nodig."
+        },
+        "2": {
+          "text": "Als je regelmatig fotografeert bij weinig licht, investeer dan in een camerahuis met IBIS. De mogelijkheid om uit de hand te fotograferen bij 1/2s met een groothoeklens opent mogelijkheden die geen enkele hoge ISO-prestatie kan evenaren."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Brandpuntsafstand",
+          "definition": "De brandpuntsafstand van de lens in millimeters. Beïnvloedt direct de minimale veilige sluitertijd via de reciprocalregel: 1/(brandpuntsafstand) voor fullframe, aangepast met cropfactor voor kleinere sensoren."
+        },
+        "sensor": {
+          "term": "Sensorformaat",
+          "definition": "Het camerasensorformaat, dat de cropfactor bepaalt. APS-C (1,5×) en Micro Four Thirds (2×) vermenigvuldigen de effectieve brandpuntsafstand, waardoor snellere sluitertijden nodig zijn voor dezelfde lens."
+        },
+        "stabilization": {
+          "term": "Beeldstabilisatie",
+          "definition": "Technologie die camerabeweging compenseert. OIS (Optical Image Stabilization) zit in de lens, IBIS (In-Body Image Stabilization) zit in het camerahuis. Ze kunnen samenwerken voor maximaal voordeel."
+        },
+        "subjectMotion": {
+          "term": "Beweging van het onderwerp",
+          "definition": "Hoe snel je onderwerp beweegt. Stilstaande onderwerpen hebben alleen voldoende sluitertijd nodig om camerabeweging tegen te gaan. Bewegende onderwerpen hebben snellere sluitertijden nodig op basis van hun snelheid en richting ten opzichte van de camera."
+        },
+        "recommendedShutterSpeed": {
+          "term": "Aanbevolen sluitertijd",
+          "definition": "De minimale sluitertijd berekend voor jouw specifieke combinatie van brandpuntsafstand, stabilisatie, sensor en beweging van het onderwerp. Fotograferen op deze snelheid of sneller zou scherpe resultaten moeten opleveren."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Je fotografeert met een 100mm-lens op een fullframe-camera zonder beeldstabilisatie. Je onderwerp staat stil. Wat is de minimaal aanbevolen sluitertijd?",
+          "hint": "De reciprocalregel: minimale sluitertijd = 1 / brandpuntsafstand.",
+          "successMessage": "Correct! De reciprocalregel zegt 1/100s voor een 100mm-lens op fullframe. Dit is het klassieke uitgangspunt voor scherpte uit de hand.",
+          "failureMessage": "Voor een 100mm-lens op fullframe zonder stabilisatie geeft de reciprocalregel 1/100s als de minimale veilige sluitertijd voor statische onderwerpen.",
+          "options": {
+            "0": { "label": "1/50s" },
+            "1": { "label": "1/100s" },
+            "2": { "label": "1/200s" },
+            "3": { "label": "1/500s" }
+          }
+        },
+        "1": {
+          "scenario": "Je gebruikt een 50mm-lens op een APS-C-camera (1,5× cropfactor) zonder stabilisatie. Welke minimale sluitertijd moet je gebruiken voor een stilstaand onderwerp?",
+          "hint": "Vermenigvuldig de brandpuntsafstand met de cropfactor voordat je de reciprocalregel toepast.",
+          "successMessage": "Juist! 50mm × 1,5 = 75mm equivalent, dus je hebt minimaal 1/75s nodig. In de praktijk is afronden naar 1/80s de veilige keuze.",
+          "failureMessage": "Op APS-C betekent de cropfactor (1,5×) dat een 50mm-lens zich gedraagt als een 75mm-lens. De reciprocalregel geeft 1/75s als minimale snelheid.",
+          "options": {
+            "0": { "label": "1/50s" },
+            "1": { "label": "1/75s (afronden naar 1/80s)" },
+            "2": { "label": "1/100s" },
+            "3": { "label": "1/125s" }
+          }
+        },
+        "2": {
+          "scenario": "Je hebt een 200mm-lens met OIS (4 stops stabilisatie) op een fullframe-huis met IBIS (5 stops). Samen bieden ze ongeveer 6 stops gecombineerde stabilisatie. Voor een stilstaand onderwerp, wat is de geschatte minimale sluitertijd?",
+          "hint": "Begin met de reciprocalregel (1/200s) en pas dan 6 stops stabilisatievoordeel toe.",
+          "successMessage": "Correct! Startend bij 1/200s en 6 stops winst: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3s. Ongeveer 1/3 seconde uit de hand met een 200mm-lens — indrukwekkend maar haalbaar met moderne stabilisatie!",
+          "failureMessage": "Vanuit 1/200s verdubbelt elke stop stabilisatie de bruikbare tijd: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3s. Zes stops stabilisatie met een 200mm-lens geeft ongeveer 1/3s.",
+          "options": {
+            "0": { "label": "1/30s" },
+            "1": { "label": "1/8s" },
+            "2": { "label": "~1/3s" },
+            "3": { "label": "1 seconde" }
+          }
+        },
+        "3": {
+          "scenario": "Je fotografeert een vriend die in het park aan het joggen is met een 35mm-lens op een fullframe-camera met IBIS. Je IBIS geeft 5 stops stabilisatie, dus de reciprocalregel alleen zou je tot ongeveer 1 seconde laten fotograferen. Moet je 1 seconde gebruiken?",
+          "hint": "Stabilisatie compenseert camerabeweging, niet beweging van het onderwerp.",
+          "successMessage": "Correct! Stabilisatie compenseert alleen camerabeweging. Een joggende persoon heeft minimaal 1/250s nodig om de beweging te bevriezen, ongeacht hoe goed je stabilisatie is.",
+          "failureMessage": "Stabilisatie kan een bewegend onderwerp niet bevriezen. Voor een joggende persoon heb je minimaal 1/250s nodig om bewegingsonscherpte te voorkomen, zelfs als je camera stabiel genoeg is voor 1 seconde.",
+          "options": {
+            "0": { "label": "Ja — IBIS vangt alle beweging op" },
+            "1": { "label": "Nee — gebruik minimaal 1/250s om de jogger te bevriezen" },
+            "2": { "label": "Nee — gebruik 1/60s als compromis" },
+            "3": { "label": "Dat hangt af van de ISO-instelling" }
+          }
+        },
+        "4": {
+          "scenario": "Je wilt een meebeweeg-opname (panning shot) maken van een fietser — de fietser moet scherp zijn terwijl de achtergrond bewegingsonscherpte-strepen toont. Je gebruikt een 70mm-lens op fullframe. Welk sluitertijdbereik moet je proberen?",
+          "hint": "Panning maakt opzettelijk gebruik van een langzame sluitertijd terwijl je het onderwerp volgt. Te snel bevriest alles; te langzaam vervaagt zelfs het onderwerp.",
+          "successMessage": "Correct! Voor het meebewegen met een fietser is 1/30s tot 1/60s de ideale zone. Dit is langzaam genoeg om de achtergrond te laten vervagen tot strepen terwijl je meebeweging het onderwerp relatief scherp houdt. Het vergt oefening — fotografeer in burstmodus en verwacht veel mislukkingen.",
+          "failureMessage": "Panning vereist een sluitertijd die langzaam genoeg is om de achtergrond te vervagen maar snel genoeg dat je meebeweging het onderwerp scherp houdt. Voor een fietser is 1/30s tot 1/60s het gebruikelijke bereik.",
+          "options": {
+            "0": { "label": "1/1000s tot 1/2000s" },
+            "1": { "label": "1/250s tot 1/500s" },
+            "2": { "label": "1/30s tot 1/60s" },
+            "3": { "label": "1s tot 2s" }
+          }
+        }
+      }
+    }
+  }
+}

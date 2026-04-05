@@ -1,0 +1,126 @@
+{
+  "education": {
+    "exif-viewer": {
+      "beginner": "EXIF-data is verborgen informatie die in elke foto is opgeslagen die je camera maakt. Het registreert welke camera en lens je gebruikte, de exacte instellingen (diafragma, sluitertijd, ISO), de datum en tijd, en soms zelfs GPS-coördinaten. Dit gereedschap leest die gegevens zonder je foto ergens te uploaden — alles gebeurt in je browser.",
+      "deeper": "EXIF (Exchangeable Image File Format) is een standaard gedefinieerd door JEITA/CIPA die metadata opslaat in JPEG-, TIFF- en sommige RAW-bestanden. De gegevens worden als getagde sleutel-waardeparen in specifieke segmenten van de bestandsheader geschreven met behulp van een op TIFF gebaseerde IFD-structuur (Image File Directory). Er zijn verschillende IFD-secties: IFD0 voor basisbeeldinformatie, de EXIF-sub-IFD voor camera-instellingen, de GPS-IFD voor geolocatie, en de Interop-IFD voor compatibiliteitsgegevens. Camerafabrikanten schrijven ook eigen \"MakerNote\"-gegevens met lenscorrecties, scherpstelpunten, sluiteraantal en andere modelspecifieke details. Sociale-mediaplatforms verwijderen vaak EXIF-gegevens bij het uploaden omwille van privacy, maar het originele bestand op je geheugenkaart behoudt ze altijd. Het begrijpen van EXIF helpt je leren van je eigen opnamepatronen en de instellingen achter foto's die je bewondert te achterhalen.",
+      "keyFactors": {
+        "0": {
+          "label": "Camera & lens",
+          "description": "Merk, model, lensnaam en lensfabrikant — handig om uitrusting te identificeren in foto's die je online vindt."
+        },
+        "1": {
+          "label": "Belichtingsinstellingen",
+          "description": "Diafragma, sluitertijd, ISO en brandpuntsafstand — de kernopnameparameters die voor elk beeld worden vastgelegd."
+        },
+        "2": {
+          "label": "Datum & GPS",
+          "description": "Wanneer en waar de foto is gemaakt. Wees je ervan bewust dat GPS-gegevens je locatie onthullen bij het delen van bestanden."
+        },
+        "3": {
+          "label": "Software",
+          "description": "Toont welke bewerkingssoftware het bestand als laatste heeft opgeslagen. Handig om te controleren of een afbeelding is bewerkt."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Controleer de brandpuntsafstand en het 35mm-equivalent om te begrijpen of de fotograaf een groothoek-, normaal- of teleperspectief gebruikte — dit leert meer over compositie dan welke regel van derden dan ook."
+        },
+        "1": {
+          "text": "Als een foto die je bewondert is gemaakt bij hoge ISO met een groot diafragma, weet je dat het een situatie met weinig licht was. Gebruik EXIF om de beperkingen te begrijpen waarmee de fotograaf te maken had."
+        },
+        "2": {
+          "text": "Wees je ervan bewust dat EXIF je GPS-locatie kan bevatten voordat je foto's online deelt. Verwijder metadata via de exportinstellingen van je bewerkingssoftware als privacy een zorg is."
+        }
+      },
+      "tooltips": {
+        "Make": {
+          "term": "Merk",
+          "definition": "De naam van de camerafabrikant (bijv. Canon, Nikon, Sony) opgeslagen in de EXIF-header."
+        },
+        "Model": {
+          "term": "Model",
+          "definition": "Het specifieke cameramodel (bijv. \"EOS R5\", \"Z 9\") dat het beeld heeft vastgelegd."
+        },
+        "Aperture": {
+          "term": "Diafragma",
+          "definition": "Het f-getal waarop de lens was ingesteld. Lagere getallen betekenen een groter diafragma en meer licht."
+        },
+        "Shutter Speed": {
+          "term": "Sluitertijd",
+          "definition": "Hoe lang de sensor werd belicht. Uitgedrukt als een breuk (bijv. 1/250s) of hele seconden voor lange belichtingen."
+        },
+        "ISO": {
+          "term": "ISO",
+          "definition": "De sensorgevoeligheidsinstelling. Hogere ISO maakt het beeld lichter maar voegt ruis toe."
+        },
+        "Focal Length": {
+          "term": "Brandpuntsafstand",
+          "definition": "De werkelijke brandpuntsafstand van de lens in millimeters."
+        },
+        "Focal Length (35mm equiv)": {
+          "term": "Brandpuntsafstand (35mm equiv.)",
+          "definition": "De equivalente brandpuntsafstand alsof de foto op een fullframe 35mm-sensor is gemaakt. Handig voor het vergelijken van beeldhoeken over verschillende sensorformaten."
+        },
+        "GPS": {
+          "term": "GPS",
+          "definition": "Breedtegraad- en lengtegraadcoördinaten ingesloten door camera's met GPS-modules. Onthult waar de foto is gemaakt."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Je hebt een prachtige foto online gevonden en wilt weten welke lens is gebruikt. Welke EXIF-sectie vertelt je dat?",
+          "hint": "Camera- en lensinformatie staan in verschillende secties.",
+          "successMessage": "Correct! De Lens-sectie toont het lensmodel en de fabrikant.",
+          "failureMessage": "De Lens-sectie bevat het lensmodel — kijk daar om het gebruikte glas te identificeren.",
+          "options": {
+            "0": { "label": "Camera" },
+            "1": { "label": "Lens" },
+            "2": { "label": "Instellingen" }
+          }
+        },
+        "1": {
+          "scenario": "Je hebt een foto geüpload en ziet Diafragma: f/1.8, Sluitertijd: 1/4000s, ISO: 100. Is dit waarschijnlijk genomen bij helder of zwak licht?",
+          "hint": "Een zeer snelle sluitertijd bij lage ISO wijst op veel beschikbaar licht.",
+          "successMessage": "Juist! De snelle sluitertijd (1/4000s) bij basis-ISO (100) vertelt je dat er volop licht was — waarschijnlijk helder buiten.",
+          "failureMessage": "Een sluitertijd van 1/4000s bij ISO 100 betekent dat de camera zeer weinig gevoeligheid en zeer korte belichting nodig had. Dat is een helder buitenscène.",
+          "options": {
+            "0": { "label": "Helder licht — snelle sluitertijd bij lage ISO" },
+            "1": { "label": "Zwak licht — het grote diafragma compenseert" }
+          }
+        },
+        "2": {
+          "scenario": "Een foto toont Brandpuntsafstand: 50mm en Brandpuntsafstand (35mm equiv.): 75mm. Welke sensor had de camera?",
+          "hint": "Het 35mm-equivalent is de brandpuntsafstand vermenigvuldigd met de cropfactor.",
+          "successMessage": "Correct! 75 / 50 = 1,5× cropfactor, wat een APS-C-sensor is (Nikon/Sony-variant).",
+          "failureMessage": "Deel het 35mm-equivalent door de werkelijke brandpuntsafstand: 75 / 50 = 1,5×. Die cropfactor past bij APS-C (Nikon/Sony).",
+          "options": {
+            "0": { "label": "Fullframe (1,0× crop)" },
+            "1": { "label": "APS-C (1,5× crop)" },
+            "2": { "label": "Micro Four Thirds (2,0× crop)" }
+          }
+        },
+        "3": {
+          "scenario": "Je ziet twee foto's van dezelfde scène. Foto A: f/2.8, 1/60s, ISO 3200. Foto B: f/2.8, 1/60s, ISO 200. Welke foto is gemaakt bij helderder licht?",
+          "hint": "Hogere ISO compenseert voor minder licht.",
+          "successMessage": "Precies! Foto B bij ISO 200 had veel meer omgevingslicht. Foto A had ISO 3200 nodig (4 stops meer gevoeligheid) om dezelfde belichting te bereiken, wat betekent dat de scène veel donkerder was.",
+          "failureMessage": "Foto B was bij helderder licht. Zelfde diafragma en sluitertijd, maar ISO 200 versus 3200 betekent dat Foto A in een veel donkerdere omgeving was en 4 stops meer sensorgevoeligheid nodig had.",
+          "options": {
+            "0": { "label": "Foto A (ISO 3200)" },
+            "1": { "label": "Foto B (ISO 200)" }
+          }
+        },
+        "4": {
+          "scenario": "Je analyseert een natuurfoto: 400mm, f/5.6, 1/2000s, ISO 1600. De EXIF toont in het softwareveld \"Adobe Lightroom Classic 13.1\". Wat kun je afleiden over de fotograaf en de opname-omstandigheden?",
+          "hint": "Bekijk de lange brandpuntsafstand, het volledig geopende diafragma, de snelle sluitertijd en de verhoogde ISO samen.",
+          "successMessage": "Goede analyse! De 400mm bij f/5.6 (waarschijnlijk maximaal open voor die lens) met een snelle sluitertijd van 1/2000s wijst op een snel bewegend onderwerp (vogels of wild in actie). ISO 1600 geeft aan dat het geen fel zonlicht was — waarschijnlijk bewolkt of in de schaduw. Het Lightroom-veld bevestigt dat nabewerking is uitgevoerd.",
+          "failureMessage": "De instellingen onthullen veel: 400mm f/5.6 is een typische natuurfoto-telelens maximaal open, 1/2000s bevriest snelle dierenbewegingen, en ISO 1600 betekent beperkt licht (geen felle zon). De Lightroom-vermelding bevestigt dat het bestand is nabewerkt.",
+          "options": {
+            "0": { "label": "Snel onderwerp bij matig licht, nabewerkt in Lightroom" },
+            "1": { "label": "Langzaam onderwerp bij fel licht, recht uit de camera" },
+            "2": { "label": "Landschapsfoto met bewegingsonscherpte, zwaar bewerkt" }
+          }
+        }
+      }
+    }
+  }
+}

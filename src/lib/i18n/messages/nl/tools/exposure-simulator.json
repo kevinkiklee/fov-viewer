@@ -1,0 +1,43 @@
+{
+  "toolUI": {
+    "exposure-simulator": {
+      "lock": "Vergrendel:",
+      "lockAperture": "Diafragma",
+      "lockShutter": "Sluiter",
+      "lockISO": "ISO",
+      "lockApertureLabel": "Diafragma vergrendelen",
+      "lockShutterLabel": "Sluiter vergrendelen",
+      "lockISOLabel": "ISO vergrendelen",
+      "aperture": "Diafragma:",
+      "shutterSpeed": "Sluitertijd:",
+      "iso": "ISO:",
+      "locked": "(vergrendeld)",
+      "exposureValue": "Belichtingswaarde (EV)",
+      "depthOfField": "Scherptediepte",
+      "motion": "Beweging",
+      "noise": "Ruis",
+      "dofVeryShallow": "Zeer ondiep",
+      "dofShallow": "Ondiep",
+      "dofModerate": "Matig",
+      "dofDeep": "Diep",
+      "dofVeryDeep": "Zeer diep",
+      "motionFrozen": "Bevroren",
+      "motionSharp": "Scherp",
+      "motionModerate": "Matig",
+      "motionSlightBlur": "Lichte onscherpte",
+      "motionBlurred": "Onscherp",
+      "noiseClean": "Schoon",
+      "noiseLow": "Weinig ruis",
+      "noiseModerate": "Matige ruis",
+      "noiseNoisy": "Ruizig",
+      "noiseVeryNoisy": "Zeer ruizig",
+      "scene": "Scène:",
+      "sceneStreet": "Straat",
+      "sceneLandscape": "Landschap",
+      "scenePortrait": "Portret",
+      "sceneLowLight": "Weinig licht",
+      "imageEffectsUnavailable": "Voorbeeld van beeldeffecten is niet beschikbaar.",
+      "loadingScene": "Scène laden..."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "toolUI": {
+    "shutter-speed-visualizer": {
+      "description": "Bekijk hoe sluitertijd de bewegingsonscherpte beïnvloedt voor verschillende onderwerpen.",
+      "shutterSpeed": "Sluitertijd",
+      "shutterSpeedAriaLabel": "Sluitertijd",
+      "sliderSlow": "Langzaam (2s)",
+      "sliderFast": "Snel (1/4000)",
+      "selectedSpeed": "Geselecteerde snelheid",
+      "motionBlurAriaLabel": "Bewegingsonscherpte-visualisatie voor verschillende onderwerpen",
+      "verdictFrozen": "Bevroren",
+      "verdictMostlySharp": "Grotendeels scherp",
+      "verdictSlightBlur": "Lichte onscherpte",
+      "verdictMotionBlur": "Bewegingsonscherpte",
+      "standingPerson": "Staand persoon",
+      "slowWalk": "Langzaam wandelen",
+      "jogging": "Joggen",
+      "running": "Rennen",
+      "cyclist": "Fietser",
+      "birdsInFlight": "Vogels in vlucht",
+      "carCity": "Auto (stad)",
+      "f1Car": "F1-auto",
+      "airplaneLanding": "Vliegtuig (landing)",
+      "stationary": "stilstaand"
+    }
+  }
+}

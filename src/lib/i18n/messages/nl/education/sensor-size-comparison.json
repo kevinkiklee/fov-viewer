@@ -1,0 +1,125 @@
+{
+  "education": {
+    "sensor-size-comparison": {
+      "beginner": "Camerasensoren zijn er in veel verschillende fysieke formaten, van de grote middenformaat-chips in studiocamera's tot de kleine sensoren in smartphones. Een grotere sensor vangt meer licht op, produceert minder ruis en maakt het makkelijker om achtergronden te vervagen. Sensorformaat is een van de grootste factoren die cameracategorieën van elkaar onderscheiden.",
+      "deeper": {
+        "0": {
+          "heading": "Hoe het werkt",
+          "text": "Sensorformaat beïnvloedt fotografie op meerdere onderling verbonden manieren. Een grotere sensor heeft een groter oppervlak om fotonen op te vangen, wat de signaal-ruisverhouding en het dynamisch bereik verbetert. Sensorformaat is een van de belangrijkste verschillen tussen cameracategorieën — van middenformaat studiocamera's tot smartphonesensoren."
+        },
+        "1": {
+          "heading": "Cropfactor",
+          "text": "De \"cropfactor\" beschrijft hoe een sensor zich verhoudt tot de 35mm fullframe-standaard. Een APS-C-sensor met een cropfactor van 1,5× geeft met een 35mm-lens dezelfde beeldhoek als een fullframe-camera met een 52,5mm-lens. Deze cropfactor vermenigvuldigt ook de effectieve scherptediepte — een kleinere sensor lijkt meer scherptediepte te geven bij dezelfde kadrering omdat je een bredere (kortere) lens nodig hebt om dezelfde beeldhoek te krijgen."
+        },
+        "2": {
+          "heading": "Pixeldichtheid",
+          "text": "Pixeldichtheid (pixelpitch) meet hoe dicht pixels op de sensor zijn gepakt. Meer megapixels op een kleinere sensor persen verkleint elke fotosite, wat de lichtopvang per pixel vermindert. Een 24MP fullframe-sensor heeft ~6µm pixels terwijl een 24MP APS-C-sensor ~4µm pixels heeft, wat verklaart waarom de fullframe-sensor doorgaans beter presteert bij hoge ISO."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Fysieke afmetingen",
+          "description": "Breedte en hoogte in millimeters bepalen het totale lichtopvangend oppervlak en de beeldhoek voor een gegeven lens."
+        },
+        "1": {
+          "label": "Cropfactor",
+          "description": "De verhouding van de fullframe-diagonaal tot de sensordiagonaal. Vermenigvuldigd met de brandpuntsafstand geeft dit de \"equivalente\" brandpuntsafstand."
+        },
+        "2": {
+          "label": "Pixeldichtheid",
+          "description": "Hoe dicht pixels zijn gepakt. Kleinere pixelpitch betekent meer detail maar minder licht per pixel, wat de ruisprestaties beïnvloedt."
+        },
+        "3": {
+          "label": "Sensoroppervlak",
+          "description": "Totaal oppervlak in mm². Een 44×33mm middenformaatsensor (Fujifilm GFX, Hasselblad X) heeft ruwweg 1,7× het oppervlak van fullframe, terwijl een grotere 54×40mm middenformaat-chip ongeveer 2,5× is. Fullframe is ruwweg 13× het oppervlak van een vlaggenschip-smartphonesensor."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Gebruik de overlay-modus om precies te zien hoeveel groter de ene sensor is dan de andere — het oppervlakverschil is vaak dramatischer dan de getallen suggereren."
+        },
+        "1": {
+          "text": "Schakel over naar pixeldichtheidsmodus en voer je cameraresolutie in om pixelpitch te vergelijken. Als je camera een zeer hoge pixeldichtheid heeft, kun je bij bredere diafragma's dan verwacht op diffractielimieten stuiten."
+        },
+        "2": {
+          "text": "Bij het vergelijken van camera's is het sensoroppervlak belangrijker dan het megapixelaantal voor ruisprestaties. Een 20MP fullframe-sensor presteert doorgaans beter dan een 40MP APS-C-sensor bij hoge ISO."
+        }
+      },
+      "tooltips": {
+        "Sensor": {
+          "term": "Sensor",
+          "definition": "Schakel individuele sensorformaten aan of uit om ze op te nemen in de visuele vergelijking en gegevenstabel."
+        },
+        "Display Mode": {
+          "term": "Weergavemodus",
+          "definition": "Overlay toont alle sensoren gecentreerd op hetzelfde punt. Zij aan zij plaatst ze naast elkaar op dezelfde schaal. Pixeldichtheid visualiseert hoe dicht pixels zijn gepakt."
+        },
+        "Resolution": {
+          "term": "Resolutie",
+          "definition": "Het totale megapixelaantal dat wordt gebruikt om de pixelpitch te berekenen in de pixeldichtheidsmodus. Meer megapixels op hetzelfde sensorformaat betekent kleinere individuele pixels."
+        },
+        "Crop Factor": {
+          "term": "Cropfactor",
+          "definition": "De verhouding van de 35mm fullframe-diagonaal tot de diagonaal van deze sensor. Een cropfactor van 1,5× betekent dat een 50mm-lens kadreert als een 75mm-lens op fullframe."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Een fullframe-sensor meet 36×24mm. Een APS-C-sensor heeft een cropfactor van 1,5×. Wat is de geschatte breedte van een APS-C-sensor?",
+          "hint": "Deel de fullframe-breedte door de cropfactor.",
+          "successMessage": "Correct! 36mm ÷ 1,5 ≈ 24mm. De APS-C-sensor is ongeveer 24×16mm, wat ruwweg 44% van het fullframe-oppervlak is.",
+          "failureMessage": "Deel de fullframe-breedte (36mm) door de cropfactor (1,5×): 36 ÷ 1,5 = 24mm.",
+          "options": {
+            "0": { "label": "24mm" },
+            "1": { "label": "30mm" },
+            "2": { "label": "18mm" }
+          }
+        },
+        "1": {
+          "scenario": "Je monteert een 50mm-lens op een camera met een sensor met cropfactor 2,0×. Welke fullframe-equivalente brandpuntsafstand krijg je?",
+          "hint": "Vermenigvuldig de brandpuntsafstand met de cropfactor.",
+          "successMessage": "Juist! 50mm × 2,0 = 100mm equivalent. Dit is waarom Micro Four Thirds-camera's populair zijn voor telefotowerk — je krijgt extra bereik van elke lens.",
+          "failureMessage": "Vermenigvuldig de brandpuntsafstand van de lens met de cropfactor: 50mm × 2,0 = 100mm equivalent.",
+          "options": {
+            "0": { "label": "25mm" },
+            "1": { "label": "75mm" },
+            "2": { "label": "100mm" }
+          }
+        },
+        "2": {
+          "scenario": "Twee camera's hebben beide 24 megapixels — één fullframe (36×24mm) en één APS-C (24×16mm). Welke heeft betere ruisprestaties bij hoge ISO, en waarom?",
+          "hint": "Bedenk hoe hetzelfde aantal pixels verdeeld over verschillende sensoroppervlakken de individuele pixelgrootte beïnvloedt.",
+          "successMessage": "Precies! De fullframe-sensor verspreidt 24MP over een groter oppervlak, waardoor elke pixel fysiek groter is (~6µm versus ~4µm pitch) en meer fotonen opvangt, wat minder ruis oplevert.",
+          "failureMessage": "De fullframe-sensor wint — hetzelfde megapixelaantal op een groter oppervlak betekent grotere pixels die meer licht opvangen, wat minder ruis bij hoge ISO oplevert.",
+          "options": {
+            "0": { "label": "Fullframe — grotere pixels vangen meer licht op" },
+            "1": { "label": "APS-C — kleinere sensoren zijn efficiënter" },
+            "2": { "label": "Dezelfde ruis — het megapixelaantal is wat telt" }
+          }
+        },
+        "3": {
+          "scenario": "Welk sensorformaat in de vergelijkingstabel heeft een cropfactor die het dichtst bij 2,0× ligt?",
+          "hint": "De cropfactor is de fullframe-diagonaal gedeeld door de sensordiagonaal.",
+          "successMessage": "Correct! Micro Four Thirds heeft een cropfactor van 2,0×, daarom kadreert een 25mm M43-lens als een 50mm op fullframe.",
+          "failureMessage": "Micro Four Thirds heeft een cropfactor van 2,0×. Bekijk de tabel — de diagonaal is precies de helft van de fullframe-diagonaal.",
+          "options": {
+            "0": { "label": "APS-C (Canon)" },
+            "1": { "label": "Micro Four Thirds" },
+            "2": { "label": "1\"-sensor" }
+          }
+        },
+        "4": {
+          "scenario": "Je vergelijkt een 50MP middenformaatcamera met een 50MP fullframe-camera in de pixeldichtheidsmodus. Beide hebben hetzelfde megapixelaantal. Welke camera heeft de grotere pixelpitch, en welk praktisch voordeel geeft dat?",
+          "hint": "Pixelpitch hangt af van de sensorbreedte gedeeld door het aantal horizontale pixels.",
+          "successMessage": "Juist! De middenformaatsensor is fysiek groter, dus bij 50MP zijn de pixels groter (hogere pitch). Dit geeft ongeveer 1/3 stop betere lichtopvang per pixel, plus iets later optredende diffractie.",
+          "failureMessage": "De middenformaatsensor is groter, dus bij dezelfde resolutie is elke pixel fysiek groter. Grotere pixels vangen meer fotonen op, wat beter dynamisch bereik en iets latere diffractielimieten geeft.",
+          "options": {
+            "0": { "label": "Middenformaat — betere lichtopvang per pixel en dynamisch bereik" },
+            "1": { "label": "Fullframe — kleinere pixels zijn efficiënter" },
+            "2": { "label": "Beide zijn identiek aangezien ze hetzelfde megapixelaantal hebben" }
+          }
+        }
+      }
+    }
+  }
+}

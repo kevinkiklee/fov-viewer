@@ -1,0 +1,68 @@
+{
+  "privacy": {
+    "title": "Privacybeleid",
+    "effectiveDate": "Ingangsdatum: 3 april 2026",
+    "sections": {
+      "overview": {
+        "title": "Overzicht",
+        "body": "PhotoTools beheert www.phototools.io, een gratis educatieve fotografiebron met interactieve rekenhulpen, simulatoren en naslagwerk. Dit privacybeleid beschrijft hoe wij informatie verzamelen, gebruiken en verwerken wanneer je onze site bezoekt of gebruikt. Door PhotoTools te gebruiken, ga je akkoord met de praktijken beschreven in dit beleid. Opmerking: deze Nederlandse vertaling is informatief. De Engelse versie is bindend."
+      },
+      "informationWeCollect": {
+        "title": "Informatie die wij verzamelen",
+        "intro": "Wij verzamelen minimale informatie om de site te beheren en te verbeteren:",
+        "analytics": "<strong>Analytics:</strong> Wij gebruiken Google Analytics om te begrijpen hoe bezoekers de site gebruiken (bijv. bezochte pagina's, tijd op pagina, apparaattype). Analytische gegevens zijn geanonimiseerd — wij verzamelen geen persoonlijk identificeerbare informatie via analytics. IP-adressen worden geanonimiseerd vóór opslag.",
+        "contactForm": "<strong>Contactformulier:</strong> Als je het contactformulier invult, verzamelen wij je naam, e-mailadres, onderwerp en bericht. Deze informatie wordt uitsluitend gebruikt om op je vraag te reageren en wordt niet opgeslagen na e-mailbezorging — het wordt niet in een database bewaard of langdurig opgeslagen.",
+        "noAccounts": "<strong>Geen accounts:</strong> PhotoTools vereist geen gebruikersregistratie of accounts. Wij verzamelen geen wachtwoorden of betalingsgegevens."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "intro": "PhotoTools gebruikt cookies voor analytics- en advertentiefunctionaliteit. Specifiek:",
+        "analyticsCookies": "<strong>Google Analytics-cookies</strong> volgen sitegebruik in geaggregeerde en geanonimiseerde vorm. Deze cookies helpen ons te begrijpen welke tools het meest worden gebruikt en hoe we de site kunnen verbeteren.",
+        "adCookies": "<strong>Advertentiecookies van derden</strong> kunnen worden geplaatst door onze advertentienetwerkpartners om relevante advertenties te tonen en advertentieprestaties te meten.",
+        "control": "Je kunt cookies beheren of uitschakelen via je browserinstellingen. Het uitschakelen van cookies kan de functionaliteit van sommige functies beïnvloeden."
+      },
+      "thirdPartyAdvertising": {
+        "title": "Advertenties van derden",
+        "body": "PhotoTools toont advertenties die worden aangeboden door advertentienetwerken van derden. Deze netwerken kunnen cookies en vergelijkbare trackingtechnologieën gebruiken om advertenties te tonen op basis van je browsegeschiedenis en interesses (op interesses gebaseerde advertenties). Wij hebben geen controle over de gegevenspraktijken van deze advertentienetwerken van derden. Voor meer informatie kun je het privacybeleid van die netwerken raadplegen of de <naiLink>opt-out-pagina van het Network Advertising Initiative</naiLink> bezoeken."
+      },
+      "googleAdSense": {
+        "title": "Google AdSense",
+        "body1": "PhotoTools gebruikt Google AdSense om advertenties weer te geven. Google AdSense kan cookies en webbakens gebruiken om advertenties te tonen op basis van je eerdere bezoeken aan deze site of andere websites. Het gebruik van advertentiecookies door Google stelt Google en zijn partners in staat om advertenties te tonen op basis van je browsepatronen.",
+        "body2": "Je kunt je afmelden voor gepersonaliseerde advertenties door <adsSettingsLink>Google Ads-instellingen</adsSettingsLink> te bezoeken. Voor meer informatie over hoe Google gegevens gebruikt, zie <partnerSitesLink>Hoe Google gegevens gebruikt wanneer je sites van onze partners bezoekt</partnerSitesLink>."
+      },
+      "cookieConsent": {
+        "title": "Cookietoestemming",
+        "body1": "Wanneer je PhotoTools voor het eerst bezoekt, wordt een cookietoestemmingsbanner weergegeven waarmee je niet-essentiële cookies kunt accepteren of weigeren. Deze banner wordt aangestuurd door CookieYes, een door Google gecertificeerd Consent Management Platform dat het IAB Transparency and Consent Framework (TCF) v2.3 ondersteunt.",
+        "body2": "Je kunt je toestemmingsvoorkeuren op elk moment wijzigen door op de link voor cookie-instellingen in de voettekst te klikken. Als je advertentiecookies weigert, zie je nog steeds advertenties, maar deze worden niet gepersonaliseerd op basis van je browsegeschiedenis."
+      },
+      "ccpa": {
+        "title": "Inwoners van Californië (CCPA)",
+        "body": "Onder de California Consumer Privacy Act (CCPA) hebben inwoners van Californië het recht om te weten welke persoonlijke informatie wordt verzameld, om verwijdering ervan te verzoeken en om zich af te melden voor de verkoop ervan. PhotoTools verkoopt geen persoonlijke informatie. Advertentiecookies die door onze advertentiepartners worden gebruikt, kunnen worden beschouwd als een \"verkoop\" onder de CCPA — je kunt je afmelden via de cookietoestemmingsbanner of door contact met ons op te nemen via onze <contactLink>contactpagina</contactLink>."
+      },
+      "dataSharing": {
+        "title": "Gegevens delen",
+        "intro": "Wij verkopen, verhandelen of verhuren je persoonlijke informatie niet aan derden. Wij delen gegevens alleen in de volgende beperkte omstandigheden:",
+        "analytics": "Met <strong>Google Analytics</strong> om siteverkeer en gebruikspatronen te analyseren, onderworpen aan het privacybeleid van Google.",
+        "advertising": "Met <strong>advertentiepartners</strong> zoals hierboven beschreven onder Advertenties van derden.",
+        "contactForm": "Wij delen contactformulierinzendingen met geen enkele derde partij."
+      },
+      "childrensPrivacy": {
+        "title": "Privacy van kinderen",
+        "body": "PhotoTools is niet gericht op kinderen jonger dan 13 jaar. Wij verzamelen niet bewust persoonlijke informatie van kinderen jonger dan 13 jaar. Als je denkt dat een kind jonger dan 13 jaar ons persoonlijke informatie heeft verstrekt, neem dan contact met ons op zodat wij deze kunnen verwijderen."
+      },
+      "yourRights": {
+        "title": "Jouw rechten",
+        "body1": "Afhankelijk van je locatie heb je mogelijk rechten onder wetten zoals de AVG (Europese Unie) of CCPA (Californië) met betrekking tot je persoonsgegevens.",
+        "body2": "Omdat PhotoTools minimale persoonsgegevens verzamelt — en contactformulierinzendingen niet langdurig opslaat — kunnen de meeste verzoeken eenvoudig worden afgehandeld. Je kunt cookies op elk moment wissen via je browserinstellingen. Om gegevensrechten uit te oefenen of een privacyverzoek in te dienen, gebruik je onze <contactLink>contactpagina</contactLink>."
+      },
+      "changesToPolicy": {
+        "title": "Wijzigingen in dit beleid",
+        "body": "Wij kunnen dit privacybeleid van tijd tot tijd bijwerken. Wanneer we dat doen, wordt het bijgewerkte beleid op deze pagina geplaatst met een herziene ingangsdatum. We raden je aan dit beleid periodiek te bekijken. Voortgezet gebruik van PhotoTools na eventuele wijzigingen houdt in dat je het bijgewerkte beleid accepteert."
+      },
+      "contact": {
+        "title": "Contact",
+        "body": "Als je vragen hebt over dit privacybeleid of hoe wij met je gegevens omgaan, neem dan contact op via onze <contactLink>contactpagina</contactLink>."
+      }
+    }
+  }
+}

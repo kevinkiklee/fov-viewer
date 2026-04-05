@@ -1,0 +1,13 @@
+{
+  "toolUI": {
+    "perspective-compression-simulator": {
+      "cameraSettings": "Camera-instellingen",
+      "focalLength": "Brandpuntsafstand",
+      "equivalent35mm": "Equivalent (35mm)",
+      "perspectiveDistance": "Perspectief & afstand",
+      "subjectDistance": "Afstand tot onderwerp",
+      "maintainSubjectSize": "Onderwerpgrootte behouden",
+      "resetAll": "Alles resetten"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "toolUI": {
+    "color-scheme-generator": {
+      "colorScheme": "Kleurenschema",
+      "complementary": "Complementair",
+      "analogous": "Analoog",
+      "triadic": "Triadisch",
+      "splitComplementary": "Gesplitst complementair",
+      "tetradic": "Tetradisch",
+      "keyColor": "Hoofdkleur",
+      "hue": "Tint:",
+      "saturation": "Verzadiging:",
+      "lightness": "Lichtheid:",
+      "splitAngle": "Splithoek:",
+      "spread": "Spreiding:",
+      "rectangleWidth": "Rechthoekbreedte:",
+      "square": "(vierkant)",
+      "pickFromPhoto": "Kies uit foto",
+      "dropPhotoPrompt": "Sleep een foto hierheen of klik om te bladeren",
+      "keyColorLabel": "Hoofdkleur — klik om hex te kopiëren",
+      "clickToCopyHex": "Klik om hex te kopiëren",
+      "copiedExcl": "Gekopieerd!",
+      "copyColors": "Kleuren kopiëren",
+      "hexFormat": "Hex",
+      "cssFormat": "CSS",
+      "rgbFormat": "RGB",
+      "copyHexCodes": "Hexcodes kopiëren",
+      "copyCssVariables": "CSS-variabelen kopiëren",
+      "copyRgbValues": "RGB-waarden kopiëren",
+      "pickColorFromPhoto": "Kleur kiezen uit foto",
+      "close": "Sluiten",
+      "dropPhotoOrBrowse": "Sleep een foto hierheen of klik om te bladeren",
+      "tapToChoose": "Tik om een foto te kiezen",
+      "tapToSample": "Tik ergens op de foto om die kleur te bemonsteren",
+      "changePhoto": "Foto wijzigen",
+      "privacyNote": "Je foto blijft in je browser — er wordt niets geüpload",
+      "suggestions": {
+        "complementary": {
+          "warm": "Geschikt voor: warme zonsondergangportretten met koel schaduwcontrast",
+          "cool": "Geschikt voor: sfeervolle blauwe-uur-opnames met warme accentverlichting",
+          "default": "Geschikt voor: composities met hoog contrast en sterke visuele spanning"
+        },
+        "analogous": {
+          "warm": "Geschikt voor: gouden-uurlandschappen met samenhangende warme tinten",
+          "cool": "Geschikt voor: serene waterscènes en schemerfotografie",
+          "default": "Geschikt voor: harmonieuze natuurfoto's met vloeiende kleurovergangen"
+        },
+        "triadic": "Gebruik voor: levendige redactionele fotografie en gedurfde creatieve portretten",
+        "splitComplementary": {
+          "warm": "Gebruik voor: contrasterende garderobe tegen een natuurlijk decor",
+          "default": "Gebruik voor: uitgebalanceerde productfotografie met visuele variatie"
+        },
+        "tetradic": "Gebruik voor: rijke redactionele lay-outs en complexe composities met meerdere onderwerpen"
+      }
+    }
+  }
+}

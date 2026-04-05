@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "star-trail-calculator": {
+      "rule500": "500-regel",
+      "ruleNPF": "NPF-regel",
+      "recommendation": "Aanbeveling",
+      "recommendationText": "Gebruik de NPF-regel ({npf}s) voor pixelniveau-scherpte. De 500-regel ({r500}s) is een snelle schatting maar kan strepen tonen op hoge-resolutiesensoren.",
+      "shootingTime": "Opnametijd",
+      "exposure": "Belichting",
+      "displayMode": "Weergavemodus",
+      "modeStarTrails": "Sterrensporen",
+      "modeSingleShot": "Enkele opname",
+      "stacking": "Stapelen",
+      "exposurePerFrame": "Belichting / opname (sec)",
+      "exposurePerFrameDesc": "Sluitertijd voor elke individuele opname",
+      "frames": "Opnames",
+      "framesDesc": "Totaal aantal foto's om te stapelen",
+      "gapSec": "Pauze (sec)",
+      "gapDesc": "Vertraging tussen opnames voor bufferopslag",
+      "camera": "Camera",
+      "sensor": "Sensor",
+      "resolutionMP": "Resolutie (MP)",
+      "apertureLabel": "Diafragma",
+      "latitude": "Breedtegraad",
+      "position": "Positie",
+      "useMyLocation": "Gebruik mijn locatie",
+      "latitudeLabel": "Breedtegraad:",
+      "equator": "Evenaar 0°",
+      "mid45": "Midden 45°",
+      "arctic70": "Arctisch 70°"
+    }
+  }
+}

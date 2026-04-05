@@ -1,0 +1,112 @@
+{
+  "education": {
+    "nd-filter-calculator": {
+      "beginner": "Een ND-filter (grijsfilter) is als een zonnebril voor je cameralens. Het vermindert de hoeveelheid licht die de lens binnenvalt zonder de kleuren te beïnvloeden, waardoor je langere sluitertijden of grotere diafragma's kunt gebruiken bij heldere omstandigheden. Zo maken fotografen overdag zijdeachtige watervallen, glad water of vervaagde wolken.",
+      "deeper": "ND-filters worden beoordeeld op het aantal stops licht dat ze blokkeren. Een ND2-filter (1 stop) halveert het licht, een ND8 (3 stops) reduceert het tot 1/8ste, en een ND1000 (10 stops) reduceert het licht met een factor 1024. De naamgevingsconventies kunnen verwarrend zijn: \"ND8\" betekent dat de filterfactor 8 is (3 stops), terwijl \"ND 0.9\" de optische dichtheidsnotatie gebruikt (elke 0,3 = 1 stop, dus 0,9 = 3 stops). De resulterende sluitertijd is simpelweg de basissnelheid vermenigvuldigd met de filterfactor. Als je ongetfilterde belichting bijvoorbeeld 1/125s is en je een 10-stops ND (ND1000) toevoegt, wordt de nieuwe sluitertijd 1/125 × 1024 = ongeveer 8 seconden. Het stapelen van meerdere ND-filters telt hun stopwaarden bij elkaar op, maar kan vignettering en kleurzweem introduceren, vooral bij groothoeklenzen.",
+      "keyFactors": {
+        "0": {
+          "label": "Basissluitertijd",
+          "description": "De correcte belichtingstijd zonder enig filter. Meet de scène eerst, bereken dan de gefilterde belichting vanuit dit uitgangspunt."
+        },
+        "1": {
+          "label": "Filtersterkte",
+          "description": "Gemeten in stops. Elke stop verdubbelt de belichtingstijd. Veelvoorkomende sterktes: 3 stops (ND8), 6 stops (ND64) en 10 stops (ND1000)."
+        },
+        "2": {
+          "label": "Filters stapelen",
+          "description": "Je kunt filters combineren door hun stopwaarden op te tellen. Een 3-stops + 6-stops combinatie geeft 9 stops reductie. Let op vignettering bij groothoeklenzen."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Componeer en stel scherp voordat je een sterk ND-filter bevestigt. Met 10 stops lichtreductie zullen je zoeker en autofocus het moeilijk hebben in het donker."
+        },
+        "1": {
+          "text": "Gebruik voor zeelandschappen belichtingen van 1-2 seconden om kleine rimpelingen glad te strijken tot textuur terwijl de golfstructuur behouden blijft. Belichtingen van 30 seconden of meer creëren volledig glad, mistig water."
+        },
+        "2": {
+          "text": "Goedkope ND-filters voegen vaak een kleurzweem toe (meestal magenta of bruin). Investeer in kwaliteitsglas van gerenommeerde merken, of leer de zweem in nabewerking te corrigeren met een grijskaart als referentie."
+        }
+      },
+      "tooltips": {
+        "baseShutterSpeed": {
+          "term": "Basissluitertijd",
+          "definition": "De sluitertijd voor een correcte belichting zonder ND-filter. Dit is je uitgangspunt — de calculator vermenigvuldigt het met de filterfactor."
+        },
+        "ndFilter": {
+          "term": "ND-filter",
+          "definition": "Een grijsfilter dat de lichttransmissie gelijkmatig vermindert. Beoordeeld op filterfactor (ND2, ND4, ND8...) of stops lichtreductie. ND2 = 1 stop, ND4 = 2 stops, ND8 = 3 stops, enzovoort."
+        },
+        "resultingShutterSpeed": {
+          "term": "Resulterende sluitertijd",
+          "definition": "De nieuwe sluitertijd na het meenemen van het ND-filter. Berekend door de basissluitertijd te vermenigvuldigen met de filterfactor (bijv. 1/125s × 1024 voor een 10-stops ND)."
+        },
+        "stopsAdded": {
+          "term": "Toegevoegde stops",
+          "definition": "Het aantal stops lichtreductie dat het ND-filter biedt. Elke stop verdubbelt de vereiste belichtingstijd. 10 stops betekent dat de belichting 1024 keer langer is."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Je staat bij een waterval en je camera meet een correcte belichting van 1/125s zonder filter. Je bevestigt een 3-stops ND-filter (ND8). Wat is de nieuwe sluitertijd?",
+          "hint": "Elke stop verdubbelt de belichtingstijd. 3 stops betekent 2 × 2 × 2 = 8 keer langer.",
+          "successMessage": "Correct! 1/125s × 8 = 1/15s. Dit is een goed begin voor bewegingsonscherpte in het water, hoewel je misschien een nog sterker filter nodig hebt voor een zijdeachtig glad resultaat.",
+          "failureMessage": "Een 3-stops ND-filter vermenigvuldigt de belichtingstijd met 8 (2^3 = 8). Dus 1/125s wordt 1/15s.",
+          "options": {
+            "0": { "label": "1/60s" },
+            "1": { "label": "1/30s" },
+            "2": { "label": "1/15s" },
+            "3": { "label": "1/8s" }
+          }
+        },
+        "1": {
+          "scenario": "Je wilt een belichting van 30 seconden maken van wolken die over de hemel trekken. Zonder filter is de correcte belichting 1/30s. Hoeveel stops ND-filtratie heb je nodig?",
+          "hint": "Je moet van 1/30s naar 30s — dat is 1/30 × factor = 30, dus factor = 900. Zoek de dichtstbijzijnde macht van 2.",
+          "successMessage": "Correct! Van 1/30s naar 30s is ruwweg een toename van 1000×, wat ongeveer 10 stops is. Een ND1000 (10-stops) filter brengt je naar ongeveer 33 seconden.",
+          "failureMessage": "De verhouding is 30 / (1/30) = 900. De dichtstbijzijnde macht van 2 is 1024 (2^10), dus je hebt een 10-stops ND-filter nodig.",
+          "options": {
+            "0": { "label": "6 stops (ND64)" },
+            "1": { "label": "8 stops (ND256)" },
+            "2": { "label": "10 stops (ND1000)" },
+            "3": { "label": "15 stops (ND32768)" }
+          }
+        },
+        "2": {
+          "scenario": "Je fotografeert een zeelandschap bij zonsondergang. Het licht neemt af en je basisbelichting (zonder filter) is nu 1/4s bij f/11, ISO 100. Je wilt belichtingen van 2 minuten voor ultraglad water. Welke ND-filtersterkte heb je nodig?",
+          "hint": "Van 1/4s naar 120s is een factor van 480. Zoek de dichtstbijzijnde stopwaarde.",
+          "successMessage": "Een 9-stops ND zou je 1/4 × 512 = 128 seconden geven, of iets meer dan 2 minuten. Perfect voor die mistige, etherische zeelandschapslook bij zonsondergang.",
+          "failureMessage": "Van 0,25s naar 120s is een toename van ongeveer 480×. 2^9 = 512, wat dichtbij 480 ligt, dus een 9-stops filter brengt je naar ongeveer 128 seconden.",
+          "options": {
+            "0": { "label": "6 stops" },
+            "1": { "label": "9 stops" },
+            "2": { "label": "10 stops" },
+            "3": { "label": "13 stops" }
+          }
+        },
+        "3": {
+          "scenario": "Je wilt een portret fotograferen bij f/1.4 in fel zonlicht (basisbelichting: f/1.4, 1/8000s, ISO 100). De maximale sluitertijd van je camera is 1/8000s. Kun je bij f/1.4 fotograferen zonder ND-filter?",
+          "hint": "Controleer of 1/8000s bij f/1.4 en ISO 100 haalbaar is, of dat de scène nog steeds overbelicht is.",
+          "successMessage": "Correct! Op een zeer heldere dag (EV 15+) heeft f/1.4 bij ISO 100 vaak sluitertijden nodig die sneller zijn dan 1/8000s, wat de meeste camera's niet aankunnen. Een 2-3 stops ND-filter laat je groothoek fotograferen zonder overbelichting.",
+          "failureMessage": "In fel zonlicht kan f/1.4 bij ISO 100 sluitertijden vereisen die voorbij de 1/8000s-limiet van de camera gaan. Een ND-filter is essentieel voor fotograferen met groot diafragma bij heldere omstandigheden.",
+          "options": {
+            "0": { "label": "Ja — 1/8000s is snel genoeg" },
+            "1": { "label": "Nee — je hebt waarschijnlijk een 2-3 stops ND-filter nodig" },
+            "2": { "label": "Verhoog gewoon de ISO ter compensatie" }
+          }
+        },
+        "4": {
+          "scenario": "Je hebt een 6-stops en een 3-stops ND-filter. Je stapelt ze op je lens met een basisbelichting van 1/250s. Wat is de resulterende sluitertijd, en waar moet je op letten bij deze opstelling?",
+          "hint": "Tel de stopwaarden bij elkaar op en bereken dan de nieuwe belichting. Denk aan optische neveneffecten van stapelen.",
+          "successMessage": "Correct! 6 + 3 = 9 stops. 1/250 × 512 = ongeveer 2 seconden. Let op vignettering (donkere hoeken) bij groothoeklenzen en mogelijke kleurzweem van goedkoop glas.",
+          "failureMessage": "Stapelen telt de stopwaarden op: 6 + 3 = 9 stops totaal. 2^9 = 512, dus 1/250 × 512 = ~2 seconden. Stapelen kan ook vignettering en kleurzweem veroorzaken.",
+          "options": {
+            "0": { "label": "~0,5s, let op lensflare" },
+            "1": { "label": "~2s, let op vignettering en kleurzweem" },
+            "2": { "label": "~4s, let op oververhitting van de sensor" },
+            "3": { "label": "~8s, geen zorgen bij stapelen" }
+          }
+        }
+      }
+    }
+  }
+}

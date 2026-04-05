@@ -1,0 +1,117 @@
+{
+  "education": {
+    "exposure-simulator": {
+      "beginner": "De belichtingsdriehoek beschrijft hoe drie camera-instellingen — diafragma, sluitertijd en ISO — samenwerken om te bepalen hoe helder je foto wordt. Het veranderen van één instelling vereist aanpassing van ten minste één van de andere om dezelfde helderheid te behouden. Elke instelling heeft ook een eigen creatief neveneffect: diafragma bepaalt achtergrondvervaging, sluitertijd bepaalt bewegingsonscherpte en ISO bepaalt beeldruis.",
+      "deeper": "Belichting wordt gemeten in belichtingswaarde (EV), waarbij elke hele EV-stap een verdubbeling of halvering van licht vertegenwoordigt. Een toename van 1 EV (één \"stop\") betekent dat er twee keer zoveel licht de sensor bereikt. Het diafragma volgt een meetkundige reeks (f/1.4, f/2, f/2.8, f/4...) waarbij elke volledige stop het licht dat door de lens valt halveert, omdat het oppervlak van de opening omgekeerd evenredig is met het kwadraat van het f-getal. Sluitertijd is intuïtiever: het verdubbelen van de tijd verdubbelt het licht. ISO versterkt het signaal van de sensor — een verdubbeling van de ISO verdubbelt de effectieve helderheid maar versterkt ook de ruis. In de praktijk stel je doorgaans eerst de parameter in die het belangrijkst is voor je creatieve intentie (diafragma voor scherptediepte, sluitertijd voor beweging), en balanceer je dan de andere. Moderne camera's meten in stappen van 1/3 stop voor fijnere controle.",
+      "keyFactors": {
+        "0": {
+          "label": "Diafragma",
+          "description": "Bepaalt de grootte van de lensopening. Elke volledige stop (bijv. f/2.8 naar f/4) halveert het licht. Beïnvloedt ook de scherptediepte — grotere diafragma's vervagen de achtergrond meer."
+        },
+        "1": {
+          "label": "Sluitertijd",
+          "description": "Bepaalt hoe lang de sensor wordt blootgesteld aan licht. Snellere sluitertijden bevriezen beweging; langzamere sluitertijden introduceren bewegingsonscherpte. Het verdubbelen van de tijd verdubbelt het licht."
+        },
+        "2": {
+          "label": "ISO",
+          "description": "Bepaalt de gevoeligheid van de sensor voor licht. Hogere ISO maakt het beeld lichter maar voegt korrel/ruis toe. Gebruik altijd de laagste ISO die je de gewenste belichting geeft."
+        },
+        "3": {
+          "label": "Belichtingswaarde (EV)",
+          "description": "Eén getal dat de algehele helderheid vertegenwoordigt. EV 0 komt overeen met een belichting van 1 seconde bij f/1.0. Elke +1 EV halveert het licht."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Begin met diafragmavoorkeuze: stel het diafragma in voor je gewenste scherptediepte en laat de camera de sluitertijd kiezen. Verhoog de ISO alleen wanneer de sluitertijd te laag wordt voor scherpe foto's uit de hand."
+        },
+        "1": {
+          "text": "Schakel voor sport en actie over naar sluitertijdvoorkeuze: kies een snelle sluitertijd (1/500s of sneller) en laat de camera diafragma en ISO aanpassen."
+        },
+        "2": {
+          "text": "De \"Sunny 16\"-regel is een snelle vuistregel: op een heldere zonnige dag, stel het diafragma in op f/16, sluitertijd op 1/ISO (bijv. 1/100s bij ISO 100), en je krijgt een goed belicht beeld zonder lichtmeting."
+        }
+      },
+      "tooltips": {
+        "aperture": {
+          "term": "Diafragma",
+          "definition": "De grootte van de lensopening uitgedrukt als een f-getal. Lagere getallen (f/1.4) laten meer licht door en vervagen de achtergrond. Hogere getallen (f/16) laten minder licht door maar houden meer van de scène scherp."
+        },
+        "shutterSpeed": {
+          "term": "Sluitertijd",
+          "definition": "De duur dat de sensor wordt blootgesteld aan licht, doorgaans gemeten in fracties van een seconde (1/250s) of hele seconden (2s). Snellere sluitertijden bevriezen beweging; langzamere sluitertijden creëren bewegingsonscherpte."
+        },
+        "iso": {
+          "term": "ISO",
+          "definition": "Een maat voor sensorgevoeligheid. ISO 100 is de basis (schoonste beeld). Elke verdubbeling (200, 400, 800...) maakt het beeld één stop lichter maar voegt geleidelijk meer ruis toe."
+        },
+        "ev": {
+          "term": "Belichtingswaarde (EV)",
+          "definition": "Eén getal dat de algehele belichting samenvat. Hogere EV betekent helderdere omstandigheden of meer licht opgevangen. Elke +1 EV is een verdubbeling van het licht."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Je fotografeert je hond die in het park rondrent op een zonnige dag. Het beeld blijft onscherp. Welke instelling moet je prioriteit geven om de beweging te bevriezen?",
+          "hint": "Bewegingsonscherpte wordt veroorzaakt doordat het onderwerp beweegt tijdens de belichting.",
+          "successMessage": "Correct! Een snelle sluitertijd zoals 1/1000s bevriest je hond midden in een sprint. Op een zonnige dag heb je genoeg licht om dit te ondersteunen.",
+          "failureMessage": "Die instelling bevriest niet direct de beweging. Om een bewegend onderwerp stil te zetten, heb je een snelle sluitertijd nodig — hoe korter de belichting, hoe minder tijd het onderwerp heeft om te vervagen.",
+          "options": {
+            "0": { "label": "Diafragma vergroten naar f/2.8" },
+            "1": { "label": "Snelle sluitertijd gebruiken (1/1000s)" },
+            "2": { "label": "ISO verhogen naar 3200" },
+            "3": { "label": "Langere brandpuntsafstand gebruiken" }
+          }
+        },
+        "1": {
+          "scenario": "Je maakt foto's op een binnenfeestje. Je beelden zijn te donker bij f/3.5, 1/60s, ISO 400. Je kunt geen flitser gebruiken. Wat is de beste volgende stap?",
+          "hint": "Je hebt meer licht op de sensor nodig of meer versterking van het signaal.",
+          "successMessage": "Goed gedacht! De ISO verhogen naar 1600 geeft je twee extra stops helderheid terwijl je sluitertijd snel genoeg blijft voor foto's uit de hand.",
+          "failureMessage": "Die verandering kan andere problemen veroorzaken. Aangezien het diafragma al bijna maximaal open is en je een sluitertijd nodig hebt die snel genoeg is voor gebruik uit de hand, is het verhogen van de ISO de meest praktische aanpassing.",
+          "options": {
+            "0": { "label": "ISO verhogen naar 1600" },
+            "1": { "label": "Sluitertijd vertragen naar 1/4s" },
+            "2": { "label": "Diafragma sluiten naar f/8" },
+            "3": { "label": "Overschakelen naar een camera met kleinere sensor" }
+          }
+        },
+        "2": {
+          "scenario": "Je wilt een waterval vastleggen met een zijdeachtig glad watereffect op een heldere dag. Je huidige instellingen zijn f/8, 1/250s, ISO 100. Wat moet je veranderen om het zijdeachtige effect te krijgen?",
+          "hint": "Zijdeachtig water vereist een lange belichting, maar het is heel licht buiten.",
+          "successMessage": "Precies! Een langzame sluitertijd (1/2s of langer) gebruiken en compenseren door het diafragma te verkleinen naar f/22 (en mogelijk een ND-filter toevoegen) geeft je dat zijdeachtige watereffect.",
+          "failureMessage": "Om zijdeachtig water te krijgen, heb je een langzame sluitertijd nodig — rond 1/2s tot meerdere seconden. Op een heldere dag moet je ook de hoeveelheid licht die de lens binnenvalt verminderen om overbelichting te voorkomen.",
+          "options": {
+            "0": { "label": "1/2s sluitertijd gebruiken en verkleinen naar f/22" },
+            "1": { "label": "1/1000s sluitertijd gebruiken bij f/2.8" },
+            "2": { "label": "ISO verhogen naar 6400" },
+            "3": { "label": "1/250s behouden maar openen naar f/1.4" }
+          }
+        },
+        "3": {
+          "scenario": "Je correct belichte foto staat op f/5.6, 1/125s, ISO 200. Je wilt overschakelen naar f/2.8 voor meer achtergrondvervaging. Hoe pas je de andere instellingen aan om dezelfde belichting te behouden?",
+          "hint": "Van f/5.6 naar f/2.8 is 2 stops meer licht. Je moet ergens anders 2 stops verwijderen.",
+          "successMessage": "Perfect! Van f/5.6 naar f/2.8 openen voegt 2 stops licht toe. De sluitertijd veranderen van 1/125s naar 1/500s verwijdert precies 2 stops, waardoor de belichting identiek blijft.",
+          "failureMessage": "De berekening moet in balans zijn. f/5.6 naar f/2.8 is +2 stops. Je moet compenseren door precies 2 stops te verwijderen via een snellere sluitertijd, lagere ISO, of een combinatie.",
+          "options": {
+            "0": { "label": "1/500s bij ISO 200" },
+            "1": { "label": "1/250s bij ISO 200" },
+            "2": { "label": "1/125s bij ISO 100" },
+            "3": { "label": "1/60s bij ISO 100" }
+          }
+        },
+        "4": {
+          "scenario": "Je fotografeert een concert in een donkere zaal. De artiesten bewegen snel onder gekleurde podiumverlichting. Je hebt minimaal 1/250s nodig om beweging te bevriezen. Je snelste lens is f/2.8. Welke ISO heb je waarschijnlijk nodig als de scène EV 6 meet?",
+          "hint": "Bij EV 6, f/2.8, bereken de ISO die nodig is om 1/250s te bereiken. Elke volledige stop ISO verdubbelt de helderheid.",
+          "successMessage": "Correct! Bij EV 6 met f/2.8 en 1/250s heb je ISO 3200 nodig. Concertfotografie vereist vaak hoge ISO — het kennen van de bruikbare ISO-limiet van je camera is cruciaal voor deze situaties.",
+          "failureMessage": "Bij EV 6 vereist de combinatie van f/2.8 en 1/250s ISO 3200 om een goede belichting te bereiken. De belichtingsformule balanceert diafragma, sluitertijd en ISO tegen het beschikbare licht.",
+          "options": {
+            "0": { "label": "ISO 400" },
+            "1": { "label": "ISO 800" },
+            "2": { "label": "ISO 3200" },
+            "3": { "label": "ISO 12800" }
+          }
+        }
+      }
+    }
+  }
+}

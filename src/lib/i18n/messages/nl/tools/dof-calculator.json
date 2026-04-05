@@ -1,0 +1,21 @@
+{
+  "toolUI": {
+    "dof-calculator": {
+      "settings": "Instellingen",
+      "focalLength": "Brandpuntsafstand",
+      "aperture": "Diafragma",
+      "subjectDistance": "Afstand tot onderwerp",
+      "sensor": "Sensor",
+      "results": "Resultaten",
+      "nearFocus": "Nabije scherpte",
+      "farFocus": "Verre scherpte",
+      "totalDoF": "Totale scherptediepte",
+      "hyperfocal": "Hyperfocaal",
+      "scene": "Scène:",
+      "scenePortrait": "Portret",
+      "sceneLandscape": "Landschap",
+      "sceneStreet": "Straat",
+      "sceneMacro": "Macro"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "tools": {
+    "fov-simulator": {
+      "name": "Beeldhoeksimulator",
+      "description": "Vergelijk de beeldhoek bij verschillende brandpuntsafstanden en sensorformaten"
+    },
+    "color-scheme-generator": {
+      "name": "Kleurenschemagenerator",
+      "description": "Stel kleurenpaletten samen voor fotoshoots"
+    },
+    "exposure-simulator": {
+      "name": "Belichtingsdriehoeksimulator",
+      "description": "Bekijk hoe diafragma, sluitertijd en ISO samenwerken"
+    },
+    "dof-calculator": {
+      "name": "Scherptedieptecalculator",
+      "description": "Bereken nabijscherpte, verscherpte en totale scherptediepte"
+    },
+    "hyperfocal-simulator": {
+      "name": "Hyperfocale-afstandsimulator",
+      "description": "Leer waar je moet scherpstellen voor maximale scherpte van voorgrond tot oneindig"
+    },
+    "shutter-speed-visualizer": {
+      "name": "Sluitertijdvisualisatie",
+      "description": "Bepaal de minimale veilige sluitertijd voor scherpe foto's uit de hand"
+    },
+    "nd-filter-calculator": {
+      "name": "ND-filtercalculator",
+      "description": "Bereken de belichtingstijd met elk ND-filter"
+    },
+    "star-trail-calculator": {
+      "name": "Sterrensporencalculator",
+      "description": "Bereken de maximale belichting voor scherpe sterren of plan sterrenspooropnames"
+    },
+    "perspective-compression-simulator": {
+      "name": "Perspectivische-compressiesimulator",
+      "description": "Bekijk hoe brandpuntsafstand de achtergrondcompressie beïnvloedt"
+    },
+    "white-balance-visualizer": {
+      "name": "Witbalansvisualisatie",
+      "description": "Bekijk hoe kleurtemperatuur je foto's beïnvloedt"
+    },
+    "sensor-size-comparison": {
+      "name": "Sensorformaatvergelijking",
+      "description": "Vergelijk camerasensorformaten visueel"
+    },
+    "frame-studio": {
+      "name": "Frame Studio",
+      "description": "Bijsnijden, omlijsten en componeren van foto's met rasteroverlays"
+    },
+    "exif-viewer": {
+      "name": "EXIF-viewer",
+      "description": "Bekijk EXIF-metadata en histogram van elke foto — 100% aan clientzijde"
+    }
+  }
+}

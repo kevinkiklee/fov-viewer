@@ -1,0 +1,28 @@
+{
+  "about": {
+    "title": "Over PhotoTools",
+    "subtitle": "Gratis fotografie-educatie, rechtstreeks in je browser.",
+    "sections": {
+      "whatIs": {
+        "title": "Wat is PhotoTools?",
+        "body": "PhotoTools is een gratis verzameling interactieve fotografie-rekenhulpen, simulatoren en naslagwerk. Of je nu voor het eerst de belichtingsdriehoek leert of de hyperfocale afstand berekent voor een landschapsfoto, PhotoTools geeft je visuele tools om je kennis van fotografie te verdiepen."
+      },
+      "whoIsItFor": {
+        "title": "Voor wie is het?",
+        "body": "Fotografen van elk niveau — van beginners die ontdekken hoe diafragma de scherptediepte beïnvloedt tot ervaren fotografen die een sterrenspoor-sessie plannen. Elk gereedschap bevat een leerpaneel met uitleg, kernfactoren, professionele tips en interactieve uitdagingen om je kennis te testen."
+      },
+      "privacyFirst": {
+        "title": "Privacy voorop",
+        "body": "Alle berekeningen en simulaties draaien volledig in je browser. Je foto's verlaten nooit je apparaat — de EXIF-viewer verwerkt afbeeldingen bijvoorbeeld 100% aan clientzijde. Er is geen registratie nodig en er worden geen persoonsgegevens verzameld buiten anonieme analytics."
+      },
+      "builtBy": {
+        "title": "Gemaakt door fotografen",
+        "body": "PhotoTools is gebouwd en onderhouden door een fotograaf en software-engineer die betere visuele tools wilde voor het begrijpen van de technische kant van fotografie. De tools zijn gebaseerd op echte optica en natuurkunde — geen benaderingen — zodat je de resultaten in het veld kunt vertrouwen."
+      },
+      "getInTouch": {
+        "title": "Neem contact op",
+        "body": "Heb je een suggestie, foutmelding of idee voor een tool? Neem contact op via de <contactLink>contactpagina</contactLink>."
+      }
+    }
+  }
+}

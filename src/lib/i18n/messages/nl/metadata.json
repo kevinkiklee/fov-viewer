@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "site": {
+      "defaultTitle": "PhotoTools — Fotografiegereedschappen",
+      "titleTemplate": "%s | PhotoTools",
+      "description": "Gratis fotografiegereedschappen: beeldhoeksimulator, kleurenschemagenerator, EXIF-viewer, foto's bijsnijden en omlijsten, en meer.",
+      "ogTitle": "PhotoTools — Gratis fotografiegereedschappen"
+    },
+    "fov-simulator": {
+      "title": "Beeldhoeksimulator — Vergelijk brandpuntsafstanden",
+      "description": "Vergelijk de beeldhoek bij verschillende brandpuntsafstanden en sensorformaten. Gratis, interactief en deelbaar."
+    },
+    "dof-calculator": {
+      "title": "Scherptedieptecalculator",
+      "description": "Bereken de scherptediepte voor elke lens, elk diafragma en elk sensorformaat. Bekijk nabij-/verre scherptelimieten, hyperfocale afstand en achtergrondvervaging — gratis en interactief."
+    },
+    "exposure-simulator": {
+      "title": "Belichtingsdriehoeksimulator",
+      "description": "Interactieve belichtingsdriehoeksimulator — bekijk hoe diafragma, sluitertijd en ISO je beeld beïnvloeden in realtime met live-preview."
+    },
+    "star-trail-calculator": {
+      "title": "Sterrensporencalculator",
+      "description": "Bereken de maximale belichtingstijd voor puntvormige sterren met de 500-regel, NPF-regel en meer. Plan sterrenspoorstapeling voor elke locatie."
+    },
+    "white-balance-visualizer": {
+      "title": "Witbalansvisualisatie",
+      "description": "Bekijk hoe witbalans en kleurtemperatuur je foto's beïnvloeden. Visualiseer veranderingen van 2000K tot 10000K met realtime-preview."
+    },
+    "sensor-size-comparison": {
+      "title": "Sensorformaatvergelijking",
+      "description": "Vergelijk camerasensorformaten van middenformaat tot smartphone. Bekijk overlay-, zij-aan-zij- en pixeldichtheidweergaven met echte cameramodellen."
+    },
+    "color-scheme-generator": {
+      "title": "Kleurenschemagenerator",
+      "description": "Genereer kleurenpaletten voor fotografie met complementaire, analoge, triadische en tetradische kleurharmonieën. Interactief kleurenwiel met fotokiezer."
+    },
+    "frame-studio": {
+      "title": "Frame Studio",
+      "description": "Bijsnijden, omlijsten en componeren van foto's met rasteroverlays. 100% aan clientzijde — je foto's verlaten nooit je apparaat."
+    },
+    "exif-viewer": {
+      "title": "EXIF-viewer",
+      "description": "Bekijk EXIF-metadata, histogram en afbeeldingsvoorbeeld van elke foto. 100% aan clientzijde — je foto's verlaten nooit je apparaat."
+    },
+    "hyperfocal-simulator": {
+      "title": "Hyperfocale-afstandsimulator",
+      "description": "Visualiseer de hyperfocale afstand voor elke lens en sensor. Zie precies waar je moet scherpstellen voor maximale scherpte van voorgrond tot oneindig."
+    },
+    "shutter-speed-visualizer": {
+      "title": "Sluitertijdvisualisatie",
+      "description": "Bepaal de minimale sluitertijd voor scherpe foto's uit de hand. Houdt rekening met brandpuntsafstand, sensorformaat en beeldstabilisatie."
+    },
+    "nd-filter-calculator": {
+      "title": "ND-filtercalculator",
+      "description": "Bereken de juiste sluitertijd bij gebruik van ND-filters. Ondersteunt elke filtersterkte van ND2 tot ND1000000 met een snelle referentietabel."
+    },
+    "perspective-compression-simulator": {
+      "title": "Perspectivische-compressiesimulator",
+      "description": "Interactieve 3D-simulator die laat zien hoe brandpuntsafstand en afstand de perspectivische compressie beïnvloeden. Bekijk achtergrondcompressie in realtime."
+    },
+    "about": {
+      "title": "Over ons",
+      "description": "PhotoTools is een gratis verzameling browsergebaseerde fotografie-rekenhulpen, simulatoren en naslagwerk voor fotografen van elk niveau."
+    },
+    "contact": {
+      "title": "Contact | PhotoTools",
+      "description": "Neem contact op met het PhotoTools-team — vragen, feedback of suggesties over onze fotografiegereedschappen."
+    },
+    "privacy": {
+      "title": "Privacybeleid | PhotoTools",
+      "description": "Lees hoe PhotoTools omgaat met je gegevens, waaronder analytics, cookies en contactformulierinzendingen op www.phototools.io."
+    },
+    "terms": {
+      "title": "Gebruiksvoorwaarden | PhotoTools",
+      "description": "Gebruiksvoorwaarden voor PhotoTools — lees over aanvaardbaar gebruik, intellectueel eigendom, disclaimers en aansprakelijkheidsbeperkingen voor www.phototools.io."
+    },
+    "glossary": {
+      "title": "Fotografiewoordenlijst",
+      "description": "Doorzoekbare woordenlijst met meer dan 50 fotografietermen met definities en links naar interactieve tools."
+    }
+  }
+}

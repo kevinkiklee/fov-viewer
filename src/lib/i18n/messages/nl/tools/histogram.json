@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "histogram": {
+      "luminance": "Luminantie",
+      "rgbOverlay": "RGB-overlay",
+      "allChannels": "Alle kanalen",
+      "shadows": "Schaduwen",
+      "midtones": "Middentonen",
+      "highlights": "Hooglichten",
+      "blackClipping": "Zwartafkapping",
+      "whiteClipping": "Witafkapping",
+      "pureBlack": "puur zwart",
+      "pureWhite": "puur wit",
+      "uploadPrompt": "Upload een afbeelding om EXIF-gegevens en histogram te bekijken",
+      "uploadedPhoto": "Geüploade foto",
+      "noExifData": "Geen EXIF-gegevens gevonden in deze afbeelding.",
+      "sectionCamera": "Camera",
+      "sectionLens": "Lens",
+      "sectionSettings": "Instellingen",
+      "sectionImage": "Afbeelding",
+      "sectionDate": "Datum",
+      "sectionGPS": "GPS",
+      "sectionSoftware": "Software",
+      "make": "Merk",
+      "model": "Model",
+      "lensModel": "Lensmodel",
+      "lensMake": "Lensfabrikant",
+      "apertureLabel": "Diafragma",
+      "shutterSpeed": "Sluitertijd",
+      "isoLabel": "ISO",
+      "focalLengthLabel": "Brandpuntsafstand",
+      "focalLength35mm": "Brandpuntsafstand (35mm equiv.)",
+      "width": "Breedte",
+      "height": "Hoogte",
+      "orientationLabel": "Oriëntatie",
+      "dateTaken": "Opnamedatum",
+      "latitudeLabel": "Breedtegraad",
+      "longitudeLabel": "Lengtegraad",
+      "softwareLabel": "Software"
+    }
+  }
+}

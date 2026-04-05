@@ -1,0 +1,34 @@
+{
+  "toolUI": {
+    "fov-simulator": {
+      "rotate": "Draaien",
+      "center": "Centreren",
+      "switchToPortrait": "Schakel naar portret",
+      "switchToLandscape": "Schakel naar landschap",
+      "centerOverlays": "Overlays centreren",
+      "addLens": "+ Lens toevoegen",
+      "fovSimulator": "Beeldhoeksimulator",
+      "sensor": "Sensor",
+      "copyImage": "Afbeelding kopiëren",
+      "copyLink": "Link kopiëren",
+      "embed": "Insluiten",
+      "reset": "Resetten",
+      "frameInfo": "Kaderinfo",
+      "distance": "Afstand",
+      "showFramingGuides": "Kadreerhulplijnen tonen",
+      "wide": "breed",
+      "embedTitle": "Insluiten",
+      "closeEmbedModal": "Insluitvenster sluiten",
+      "markdownLabel": "Markdown (Reddit, GitHub)",
+      "bbcodeLabel": "BBCode (Forums)",
+      "htmlEmbedLabel": "HTML-insluiting",
+      "copied": "Gekopieerd",
+      "copy": "Kopiëren",
+      "cropView": "Uitsnede:",
+      "collapse": "Inklappen",
+      "expand": "Uitklappen",
+      "fovComparison": "Beeldhoek vergelijking",
+      "loadingScene": "Scène laden..."
+    }
+  }
+}
