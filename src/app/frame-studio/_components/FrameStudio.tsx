@@ -1,8 +1,7 @@
 'use client'
 
 import { useState, useCallback, useEffect } from 'react'
-import { PhotoUploadPanel } from '@/components/shared/PhotoUploadPanel'
-import { LearnPanel } from '@/components/shared/LearnPanel'
+import { FileDropZone } from '@/components/shared/FileDropZone'
 import { DraftBanner } from '@/components/shared/DraftBanner'
 import { ToolActions } from '@/components/shared/ToolActions'
 import { ModeToggle } from '@/components/shared/ModeToggle'
@@ -92,6 +91,11 @@ export function FrameStudio() {
 
   const sidebarControls = (
     <>
+      <div className={styles.photoSection}>
+        <span className={styles.heading}>Photo</span>
+        <FileDropZone onFile={handleFile} prompt="Drop a photo or click to browse" />
+      </div>
+
       <ModeToggle options={MODE_OPTIONS} value={mode} onChange={setMode} title="Mode" />
 
       {mode === 'crop' && (
@@ -148,13 +152,7 @@ export function FrameStudio() {
           {/* Canvas area */}
           <main className={styles.canvasArea}>
             <section className={styles.canvasMain}>
-              {!originalImage ? (
-                <PhotoUploadPanel
-                  onFile={handleFile}
-                  label="Your Photo"
-                  prompt="Drop a photo here or click to browse"
-                />
-              ) : (
+              {originalImage ? (
                 <div className={styles.canvasWrap}>
                   {mode === 'crop' ? (
                     <CropView
@@ -190,14 +188,12 @@ export function FrameStudio() {
                     </>
                   )}
                 </div>
+              ) : (
+                <span className={styles.emptyPrompt}>Upload a photo to get started</span>
               )}
             </section>
           </main>
 
-          {/* Desktop: LearnPanel as right sidebar */}
-          <div className={styles.desktopOnly}>
-            <LearnPanel slug={SLUG} closable />
-          </div>
         </div>
 
         {/* Mobile controls below canvas */}
@@ -210,11 +206,6 @@ export function FrameStudio() {
           />
           <div className={styles.mobileDivider} />
           {sidebarControls}
-        </div>
-
-        {/* Mobile: LearnPanel below controls */}
-        <div className={styles.mobileOnly}>
-          <LearnPanel slug={SLUG} closable />
         </div>
       </div>
 

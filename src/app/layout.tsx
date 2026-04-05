@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { ViewTransition } from 'react'
 import Script from 'next/script'
-import { Analytics } from '@vercel/analytics/next'
+
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 import { ThemeProvider } from '@/components/layout/ThemeProvider'
@@ -78,7 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </ViewTransition>
         </ThemeProvider>
-        <Analytics />
+
         <SpeedInsights />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-B0QND42GRG"

@@ -14,8 +14,8 @@
   overflow: visible !important;
 }
 
-/* Force inner background elements to be transparent */
-.cropper :global(.vue-advanced-cropper__background) {
+/* Force inner background elements to be transparent so canvasMain bg shows through */
+.cropper :global(.advanced-cropper) {
   background: transparent !important;
 }
 .cropper :global(.advanced-cropper__background) {

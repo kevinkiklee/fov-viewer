@@ -58,6 +58,33 @@
   height: 100%;
 }
 
+/* Photo upload section */
+.photoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.photoSection [role="button"] {
+  padding: 16px;
+  min-height: 0;
+  gap: 4px;
+}
+
+.heading {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+/* Empty canvas prompt */
+.emptyPrompt {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
 /* Action Buttons */
 .actionGroup {
   display: flex;
@@ -118,12 +145,6 @@
   opacity: 0.9;
 }
 
-/* Desktop/mobile visibility helpers */
-.desktopOnly {
-  display: flex;
-}
-.mobileOnly { display: none; }
-
 /* Mobile toolbar + controls: hidden on desktop */
 .mobileControls {
   display: none;
@@ -135,7 +156,7 @@
 }
 
 /* Mobile layout */
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
   .app {
     height: auto;
     overflow: visible;
@@ -157,15 +178,8 @@
   .canvasMain {
     padding: 0;
     flex: none;
-    min-height: 50vh;
-  }
-
-  .desktopOnly {
-    display: none;
-  }
-
-  .mobileOnly {
-    display: block;
+    height: 70vw;
+    max-height: 70vh;
   }
 
   .mobileControls {

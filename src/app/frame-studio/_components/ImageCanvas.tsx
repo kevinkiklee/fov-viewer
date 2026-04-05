@@ -37,7 +37,7 @@ export function ImageCanvas({ image, crop, frameConfig, onDimensionsChange }: Im
 
     const maxW = container.clientWidth
     const maxH = container.clientHeight
-    const scale = Math.min(1, maxW / exportW, maxH / exportH)
+    const scale = Math.min(maxW / exportW, maxH / exportH)
     const displayW = Math.round(exportW * scale)
     const displayH = Math.round(exportH * scale)
 
