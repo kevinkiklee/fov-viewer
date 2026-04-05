@@ -28,8 +28,8 @@ Every tool features a `LearnPanel` (right sidebar) defined in `content.ts` and `
 - **Interactive Challenges**: 3-5 multiple-choice questions with persistence to `localStorage`.
 - **Tooltips**: Use `InfoTooltip` on control labels for quick definitions.
 
-### 4. Layout Shell (`src/components/shared/ToolPageShell.tsx`)
-Standard three-column layout (Controls | Main Visualizer | LearnPanel). Provides consistent header actions (Share, Export, Info).
+### 4. Layout
+Each tool manages its own layout (Controls | Main Visualizer | LearnPanel). Consistent header actions (Share, Export, Info) via `ToolActions` component.
 
 ## Engineering Standards
 

@@ -48,7 +48,7 @@ phototools.io/
 │       └── glossary/page.tsx       # Photography glossary
 ├── components/
 │   ├── layout/                     # Nav (mega-menu), Footer, ThemeProvider, ThemeToggle
-│   ├── shared/                     # ToolPageShell, LearnPanel, InfoTooltip, ShareModal, ToolActions, FileDropZone, DraftBanner, Toast
+│   ├── shared/                     # LearnPanel, InfoTooltip, ShareModal, ToolActions, FileDropZone, DraftBanner
 │   └── tools/                      # One directory per tool + shared/
 │       ├── fov-simulator/
 │       ├── dof-calculator/
@@ -93,7 +93,7 @@ Calculation logic lives in `lib/math/` as pure functions with no React dependenc
 ### Components
 
 - `components/layout/` — site-wide layout (Nav, Footer, theme)
-- `components/shared/` — reusable across tools (ToolPageShell wraps every tool page)
+- `components/shared/` — reusable across tools (LearnPanel, ControlPanel, ToolActions, etc.)
 - `components/tools/` — tool-specific UI, one directory per tool
 
 ### Styling
@@ -104,7 +104,7 @@ CSS Modules for component scoping. Design tokens (colors, spacing, typography) d
 
 1. **Math module** (if needed): create `lib/math/yourtool.ts` with pure calculation functions and `lib/math/yourtool.test.ts` with tests.
 2. **Component**: create `components/tools/your-tool/YourTool.tsx` (with `'use client'` if interactive) and `YourTool.module.css`.
-3. **Route**: create `app/tools/your-tool/page.tsx` that wraps the component in `ToolPageShell`.
+3. **Route**: create `app/your-tool/page.tsx` with a co-located `_components/` directory for tool-specific UI.
 4. **Registry**: add the tool to the `TOOLS` array in `lib/data/tools.ts` with `status: 'draft'`. Change to `'live'` when ready.
 5. **Test**: run `npm test` to verify. Run `npm run build` to confirm the build passes.
 

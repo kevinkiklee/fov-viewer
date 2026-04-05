@@ -28,7 +28,7 @@ Dev server runs at `http://localhost:3000`.
 app/                    Routes (homepage, tool pages, learn/glossary)
 components/
   layout/               Nav (mega-menu), Footer, ThemeProvider, ThemeToggle
-  shared/               ToolPageShell, LearnPanel, InfoTooltip, ShareModal, ToolActions, FileDropZone, DraftBanner, Toast
+  shared/               LearnPanel, InfoTooltip, ShareModal, ToolActions, FileDropZone, DraftBanner
   tools/                One directory per tool + shared/
 lib/
   math/                 Pure calculation modules with co-located tests
@@ -43,13 +43,13 @@ public/                 Static assets (images, icons, manifest)
 
 1. **Math module** (if the tool needs calculations): create `lib/math/yourtool.ts` with pure functions and `lib/math/yourtool.test.ts` with tests.
 2. **Component**: create `components/tools/your-tool/YourTool.tsx` (add `'use client'` at the top if it uses state, effects, or event handlers) and `YourTool.module.css` for styles.
-3. **Route**: create `app/tools/your-tool/page.tsx`. Import and render the component inside `ToolPageShell`.
+3. **Route**: create `app/your-tool/page.tsx` with a co-located `_components/` directory for tool-specific UI.
 4. **Registry**: add an entry to the `TOOLS` array in `lib/data/tools.ts`:
    ```ts
    { slug: 'your-tool', name: 'Your Tool', description: '...', status: 'draft', category: 'calculator' }
    ```
    Set `status: 'live'` when the tool is ready for production. In development, all tools are visible regardless of status.
-5. **Education content**: add a `ToolEducation` entry in `lib/data/education/` with beginner/deeper explanations, tips, tooltips, and challenges. The `LearnPanel` renders automatically via `ToolPageShell`.
+5. **Education content**: add a `ToolEducation` entry in `lib/data/education/` with beginner/deeper explanations, tips, tooltips, and challenges. Include `LearnPanel` in the tool's layout.
 6. **Verify**: run `npm test && npm run build`.
 
 ## Adding a Glossary Term
