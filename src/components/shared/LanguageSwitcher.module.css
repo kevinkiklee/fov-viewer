@@ -33,7 +33,7 @@
   list-style: none;
   margin: 0;
   padding: 4px 0;
-  background: var(--surface-elevated);
+  background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -55,7 +55,7 @@
 }
 
 .option:hover {
-  background: var(--surface-hover);
+  background: var(--bg-secondary);
   color: var(--text-primary);
 }
 
