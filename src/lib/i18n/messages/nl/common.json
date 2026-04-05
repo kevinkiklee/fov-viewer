@@ -83,6 +83,8 @@
     },
     "controls": {
       "focalLength": "Brandpuntsafstand",
+      "aperture": "Aperture",
+      "distance": "Distance",
       "clickToEnterValue": "Klik om een waarde in te voeren",
       "decrease": "Verlagen",
       "increase": "Verhogen"

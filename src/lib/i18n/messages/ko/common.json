@@ -83,6 +83,8 @@
     },
     "controls": {
       "focalLength": "초점 거리",
+      "aperture": "Aperture",
+      "distance": "Distance",
       "clickToEnterValue": "클릭하여 값 입력",
       "decrease": "감소",
       "increase": "증가"

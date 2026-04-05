@@ -83,6 +83,8 @@
     },
     "controls": {
       "focalLength": "Lunghezza focale",
+      "aperture": "Aperture",
+      "distance": "Distance",
       "clickToEnterValue": "Clicca per inserire un valore",
       "decrease": "Diminuisci",
       "increase": "Aumenta"

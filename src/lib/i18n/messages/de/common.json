@@ -83,6 +83,8 @@
     },
     "controls": {
       "focalLength": "Brennweite",
+      "aperture": "Aperture",
+      "distance": "Distance",
       "clickToEnterValue": "Klicken, um einen Wert einzugeben",
       "decrease": "Verringern",
       "increase": "Erhöhen"
