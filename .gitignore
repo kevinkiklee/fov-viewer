@@ -27,6 +27,7 @@ build
 # Playwright
 playwright-report/
 test-results/
+.playwright-mcp/
 
 
 # Source examples (not published)
