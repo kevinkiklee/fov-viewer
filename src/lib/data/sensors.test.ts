@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { SENSORS, getSensor, POPULAR_MODELS, COMMON_MP } from './sensors'
 
 describe('SENSORS', () => {
-  it('contains 9 sensors', () => { expect(SENSORS).toHaveLength(9) })
+  it('contains 10 sensors', () => { expect(SENSORS).toHaveLength(10) })
   it('all have valid crop factors > 0', () => {
     for (const s of SENSORS) {
       expect(s.cropFactor).toBeGreaterThan(0)

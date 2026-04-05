@@ -35,6 +35,7 @@ export const SENSORS: SensorPreset[] = [
   { id: 'mf', name: 'Medium Format (44x33)', cropFactor: 0.79, w: 43.8, h: 32.9, color: '#8b5cf6' },
   { id: 'mf_leica', name: 'Medium Format (45x30)', cropFactor: 0.80, w: 45.0, h: 30.0, color: '#d946ef' },
   { id: 'ff', name: 'Full Frame', cropFactor: 1.0, w: 36, h: 24, color: '#3b82f6' },
+  { id: 'apsh', name: 'APS-H', cropFactor: 1.26, w: 28.5, h: 19, color: '#06b6d4' },
   { id: 'apsc_n', name: 'APS-C (1.5x)', cropFactor: 1.53, w: 23.5, h: 15.6, color: '#10b981' },
   { id: 'apsc_c', name: 'APS-C (Canon)', cropFactor: 1.61, w: 22.3, h: 14.9, color: '#f59e0b' },
   { id: 'm43', name: 'Micro Four Thirds', cropFactor: 2.0, w: 17.3, h: 13, color: '#ef4444' },
@@ -51,6 +52,7 @@ export const POPULAR_MODELS: Record<string, string[]> = {
   mf: ['Hasselblad X2D', 'Fujifilm GFX 100S II'],
   mf_leica: ['Leica S3'],
   ff: ['Sony A7 IV', 'Nikon Z8', 'Canon R5', 'Leica Q3'],
+  apsh: ['Canon EOS-1D Mark IV', 'Canon EOS-1D Mark III'],
   apsc_n: ['Sony A6700', 'Fujifilm X-T5', 'Nikon Z50II', 'Leica CL'],
   apsc_c: ['Canon R7', 'Canon R10'],
   m43: ['OM System OM-1', 'Panasonic GH6'],
@@ -78,6 +80,10 @@ export const COMMON_MP: Record<string, MpEntry[]> = {
     { mp: 33, models: 'Sony A7 IV' },
     { mp: 45, models: 'Canon R5 / Nikon Z9' },
     { mp: 61, models: 'Sony A7R V / Sigma fp L' },
+  ],
+  apsh: [
+    { mp: 10, models: 'Canon EOS-1D Mark III' },
+    { mp: 16, models: 'Canon EOS-1D Mark IV' },
   ],
   apsc_n: [
     { mp: 20, models: 'Nikon Z50 / Z50II' },
