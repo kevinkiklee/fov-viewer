@@ -1,0 +1,25 @@
+{
+  "contact": {
+    "title": "Fale Conosco",
+    "description": "Tem uma pergunta, encontrou um bug ou quer sugerir uma nova ferramenta? Adoraríamos ouvir você.",
+    "form": {
+      "nameLabel": "Nome",
+      "namePlaceholder": "Seu nome",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "seu@email.com",
+      "subjectLabel": "Assunto",
+      "subjectPlaceholder": "Sobre o que se trata?",
+      "messageLabel": "Mensagem",
+      "messagePlaceholder": "Sua mensagem...",
+      "submit": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "honeypotLabel": "Website",
+      "successToast": "Mensagem enviada! Responderemos em breve.",
+      "errorToast": "Algo deu errado. Por favor, tente novamente.",
+      "networkErrorToast": "Erro de rede. Por favor, verifique sua conexão e tente novamente.",
+      "sentTitle": "Obrigado por entrar em contato!",
+      "sentMessage": "Responderemos o mais breve possível.",
+      "sendAnother": "Enviar outra mensagem"
+    }
+  }
+}

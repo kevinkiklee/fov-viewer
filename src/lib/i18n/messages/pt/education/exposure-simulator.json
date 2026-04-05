@@ -1,0 +1,117 @@
+{
+  "education": {
+    "exposure-simulator": {
+      "beginner": "O triângulo de exposição descreve como três configurações da câmera — abertura, velocidade do obturador e ISO — trabalham juntas para controlar o quão brilhante sua foto fica. Alterar uma configuração exige ajustar pelo menos uma das outras para manter o mesmo brilho. Cada configuração também tem seu próprio efeito colateral criativo: abertura controla o desfoque do fundo, velocidade do obturador controla o desfoque de movimento, e ISO controla o ruído da imagem.",
+      "deeper": "A exposição é medida em Valor de Exposição (EV), onde cada passo inteiro de EV representa uma duplicação ou redução pela metade da luz. Um aumento de 1 EV (um \"stop\") significa o dobro de luz chegando ao sensor. A abertura segue uma progressão geométrica (f/1.4, f/2, f/2.8, f/4...) onde cada stop completo divide pela metade a luz que entra na lente porque a área da abertura é inversamente proporcional ao quadrado do número f. A velocidade do obturador é mais intuitiva: dobrar o tempo dobra a luz. O ISO amplifica o sinal do sensor — dobrar o ISO dobra o brilho efetivo, mas também amplifica o ruído. Na prática, você tipicamente define primeiro o parâmetro que mais importa para sua intenção criativa (abertura para controle de PdC, obturador para movimento), depois equilibra os outros. Câmeras modernas medem em incrementos de 1/3 de stop para controle mais fino.",
+      "keyFactors": {
+        "0": {
+          "label": "Abertura",
+          "description": "Controla o tamanho da abertura da lente. Cada stop completo (ex.: f/2.8 para f/4) divide pela metade a luz. Também afeta a profundidade de campo — aberturas mais amplas desfocam mais o fundo."
+        },
+        "1": {
+          "label": "Velocidade do Obturador",
+          "description": "Controla quanto tempo o sensor é exposto à luz. Velocidades mais rápidas congelam o movimento; velocidades mais lentas introduzem desfoque de movimento. Dobrar o tempo dobra a luz."
+        },
+        "2": {
+          "label": "ISO",
+          "description": "Controla a sensibilidade do sensor à luz. ISO mais alto clareia a imagem, mas adiciona granulação/ruído. Sempre use o ISO mais baixo que forneça a exposição necessária."
+        },
+        "3": {
+          "label": "Valor de Exposição (EV)",
+          "description": "Um número único que representa o brilho geral. EV 0 corresponde a uma exposição de 1 segundo em f/1.0. Cada +1 EV divide pela metade a luz."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Comece com o modo Prioridade de Abertura: defina a abertura para sua profundidade de campo desejada e deixe a câmera escolher a velocidade do obturador. Só aumente o ISO quando a velocidade do obturador cair muito para fotos nítidas à mão."
+        },
+        "1": {
+          "text": "Para esportes e ação, mude para Prioridade de Obturador: escolha uma velocidade rápida (1/500s ou mais) e deixe a câmera ajustar abertura e ISO para corresponder."
+        },
+        "2": {
+          "text": "A regra do \"Sunny 16\" é um atalho mental rápido: em um dia ensolarado, defina a abertura para f/16, velocidade do obturador para 1/ISO (ex.: 1/100s em ISO 100), e você obterá uma imagem bem exposta sem medição."
+        }
+      },
+      "tooltips": {
+        "aperture": {
+          "term": "Abertura",
+          "definition": "O tamanho da abertura da lente expresso como número f. Números menores (f/1.4) permitem mais luz e desfocam o fundo. Números maiores (f/16) permitem menos luz, mas mantêm mais da cena nítida."
+        },
+        "shutterSpeed": {
+          "term": "Velocidade do Obturador",
+          "definition": "A duração em que o sensor é exposto à luz, tipicamente medida em frações de segundo (1/250s) ou segundos inteiros (2s). Velocidades mais rápidas congelam o movimento; mais lentas criam desfoque de movimento."
+        },
+        "iso": {
+          "term": "ISO",
+          "definition": "Uma medida de sensibilidade do sensor. ISO 100 é a base (imagem mais limpa). Cada duplicação (200, 400, 800...) clareia a imagem em um stop, mas progressivamente adiciona ruído."
+        },
+        "ev": {
+          "term": "Valor de Exposição (EV)",
+          "definition": "Um número único resumindo a exposição geral. EV maior significa condições mais claras ou mais luz capturada. Cada +1 EV é o dobro de luz."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Você está fotografando seu cachorro correndo no parque em um dia ensolarado. A imagem continua saindo borrada. Qual configuração você deve priorizar para congelar o movimento?",
+          "hint": "Desfoque de movimento é causado pelo assunto se movendo durante a exposição.",
+          "successMessage": "Correto! Uma velocidade rápida como 1/1000s congelará seu cachorro no meio da passada. Em um dia ensolarado, você tem bastante luz para suportar isso.",
+          "failureMessage": "Essa configuração não congelará o movimento diretamente. Para parar um assunto em movimento, você precisa de uma velocidade rápida do obturador — quanto mais curta a exposição, menos tempo o assunto tem para desfocar.",
+          "options": {
+            "0": { "label": "Abrir a abertura para f/2.8" },
+            "1": { "label": "Usar velocidade rápida do obturador (1/1000s)" },
+            "2": { "label": "Aumentar ISO para 3200" },
+            "3": { "label": "Usar distância focal mais longa" }
+          }
+        },
+        "1": {
+          "scenario": "Você está tirando fotos em uma festa de aniversário em ambiente interno. Suas imagens estão muito escuras em f/3.5, 1/60s, ISO 400. Você não pode usar flash. Qual é o melhor próximo passo?",
+          "hint": "Você precisa de mais luz chegando ao sensor ou mais amplificação do sinal.",
+          "successMessage": "Boa ideia! Aumentar o ISO para 1600 dá dois stops extras de brilho enquanto mantém a velocidade do obturador rápida o suficiente para fotos à mão.",
+          "failureMessage": "Essa mudança pode causar outros problemas. Como a abertura já está perto do máximo e você precisa de velocidade do obturador rápida o suficiente para uso à mão, aumentar o ISO é o ajuste mais prático.",
+          "options": {
+            "0": { "label": "Aumentar ISO para 1600" },
+            "1": { "label": "Diminuir velocidade para 1/4s" },
+            "2": { "label": "Fechar abertura para f/8" },
+            "3": { "label": "Trocar para uma câmera com sensor menor" }
+          }
+        },
+        "2": {
+          "scenario": "Você quer capturar uma cachoeira com efeito de água sedosa em um dia claro. Suas configurações atuais são f/8, 1/250s, ISO 100. O que você deve mudar para obter o visual sedoso?",
+          "hint": "Água sedosa requer uma exposição longa, mas está muito claro lá fora.",
+          "successMessage": "Exatamente! Usar velocidade lenta (1/2s ou mais) e compensar fechando a abertura para f/22 (e possivelmente adicionando um filtro ND) dará o efeito de água sedosa.",
+          "failureMessage": "Para obter água sedosa, você precisa de velocidade lenta — cerca de 1/2s a vários segundos. Em um dia claro, você também precisará reduzir a luz que entra na lente para evitar superexposição.",
+          "options": {
+            "0": { "label": "Usar 1/2s e fechar para f/22" },
+            "1": { "label": "Usar 1/1000s em f/2.8" },
+            "2": { "label": "Aumentar ISO para 6400" },
+            "3": { "label": "Manter 1/250s mas abrir para f/1.4" }
+          }
+        },
+        "3": {
+          "scenario": "Sua foto corretamente exposta está em f/5.6, 1/125s, ISO 200. Você quer mudar para f/2.8 para mais desfoque de fundo. Como você deve ajustar as outras configurações para manter a mesma exposição?",
+          "hint": "Ir de f/5.6 para f/2.8 é 2 stops a mais de luz. Você precisa remover 2 stops em outro lugar.",
+          "successMessage": "Perfeito! Abrir de f/5.6 para f/2.8 adiciona 2 stops de luz. Mudar a velocidade do obturador de 1/125s para 1/500s remove exatamente 2 stops, mantendo a exposição idêntica.",
+          "failureMessage": "A matemática precisa equilibrar. f/5.6 para f/2.8 é +2 stops. Você precisa compensar removendo exatamente 2 stops através de velocidade mais rápida, ISO menor, ou uma combinação.",
+          "options": {
+            "0": { "label": "1/500s em ISO 200" },
+            "1": { "label": "1/250s em ISO 200" },
+            "2": { "label": "1/125s em ISO 100" },
+            "3": { "label": "1/60s em ISO 100" }
+          }
+        },
+        "4": {
+          "scenario": "Você está fotografando um show em um local escuro. Os artistas estão se movendo rapidamente sob luzes coloridas do palco. Você precisa de pelo menos 1/250s para congelar o movimento. Sua lente mais rápida é f/2.8. Que ISO você provavelmente precisa se a cena mede EV 6?",
+          "hint": "Em EV 6, f/2.8, calcule o ISO necessário para alcançar 1/250s. Cada stop completo de ISO dobra o brilho.",
+          "successMessage": "Correto! Em EV 6 com f/2.8 e 1/250s, você precisa de ISO 3200. Fotografia de shows frequentemente exige ISO alto — conhecer o limite de ISO utilizável da sua câmera é crítico para essas situações.",
+          "failureMessage": "Em EV 6, a combinação de f/2.8 e 1/250s requer ISO 3200 para alcançar exposição adequada. A fórmula de exposição equilibra abertura, velocidade do obturador e ISO contra a luz disponível.",
+          "options": {
+            "0": { "label": "ISO 400" },
+            "1": { "label": "ISO 800" },
+            "2": { "label": "ISO 3200" },
+            "3": { "label": "ISO 12800" }
+          }
+        }
+      }
+    }
+  }
+}

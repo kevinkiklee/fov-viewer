@@ -1,0 +1,120 @@
+{
+  "education": {
+    "histogram": {
+      "beginner": "Um histograma é um gráfico que mostra quão claros ou escuros são os pixels na sua foto. O lado esquerdo representa sombras (áreas escuras), o meio representa meios-tons, e o lado direito representa altas luzes (áreas claras). Se o gráfico está aglomerado de um lado, sua foto pode estar subexposta ou superexposta.",
+      "deeper": "Um histograma plota a contagem de pixels (eixo vertical) contra o nível de brilho (eixo horizontal, 0-255 para imagens de 8 bits). No modo luminância, o brilho de cada pixel é calculado como uma média ponderada dos canais vermelho, verde e azul (tipicamente 0.299R + 0.587G + 0.114B, correspondendo à percepção humana). O modo RGB mostra três distribuições separadas, revelando quais canais de cor podem estar cortando independentemente — um canal vermelho empurrado para 255 enquanto o azul está normal indica corte de altas luzes em tons quentes, como um céu de pôr do sol. \"Corte\" ocorre quando valores de pixels atingem o limite 0 ou 255, significando que detalhes de sombras ou altas luzes foram irrecuperavelmente perdidos. Corte de pretos (pixels em 0) perde detalhes de sombra; corte de brancos (pixels em 255) perde detalhes de altas luzes. Fotografar em RAW dá aproximadamente 2-3 stops extras de margem recuperável de altas luzes além do que o histograma JPEG mostra, por isso muitos fotógrafos \"expõem à direita\" (ETTR) — empurrando a exposição o mais clara possível sem cortar os dados RAW.",
+      "keyFactors": {
+        "0": {
+          "label": "Distribuição Tonal",
+          "description": "A forma geral indica se a imagem é escura (pesada à esquerda), clara (pesada à direita) ou equilibrada (espalhada por toda a faixa)."
+        },
+        "1": {
+          "label": "Corte",
+          "description": "Picos nas extremidades esquerda ou direita indicam perda de detalhes em sombras ou altas luzes."
+        },
+        "2": {
+          "label": "Separação de Canais",
+          "description": "O modo RGB revela o comportamento individual de cada canal de cor — útil para detectar corte específico de cor em cenas saturadas."
+        },
+        "3": {
+          "label": "Faixa Dinâmica",
+          "description": "Um histograma que abrange toda a largura sem corte indica bom uso da faixa dinâmica disponível."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Não existe formato \"perfeito\" de histograma. Uma foto de um gato preto em um sofá escuro deve ser pesada à esquerda. Julgue o histograma contra sua intenção criativa, não uma curva ideal."
+        },
+        "1": {
+          "text": "Confira o modo de sobreposição RGB para fotos de pôr do sol e luzes neon. O canal vermelho frequentemente corta muito antes do azul, causando perda de detalhes em altas luzes quentes mesmo quando o histograma de luminância parece normal."
+        },
+        "2": {
+          "text": "Se você vê avisos de corte em ambas as extremidades simultaneamente, a cena provavelmente excede a faixa dinâmica da sua câmera. Considere bracketing para HDR ou uso de filtros ND graduados."
+        }
+      },
+      "tooltips": {
+        "View Mode": {
+          "term": "Modo de Visualização",
+          "definition": "Luminância mostra o brilho geral. Sobreposição RGB mostra todos os três canais de cor sobrepostos. Todos os Canais mostra RGB mais luminância juntos."
+        },
+        "Shadows": {
+          "term": "Sombras",
+          "definition": "A região mais à esquerda do histograma (aproximadamente 0-85), representando os tons mais escuros na imagem."
+        },
+        "Midtones": {
+          "term": "Meios-tons",
+          "definition": "A região central (aproximadamente 86-170), representando brilho médio — tons de pele e a maioria das texturas naturais se encontram aqui."
+        },
+        "Highlights": {
+          "term": "Altas Luzes",
+          "definition": "A região mais à direita (aproximadamente 171-255), representando os tons mais claros: céus, reflexos e fontes de luz."
+        },
+        "Black Clipping": {
+          "term": "Corte de Pretos",
+          "definition": "A porcentagem de pixels no brilho 0 (preto puro). Valores altos significam que detalhes de sombra foram perdidos e não podem ser recuperados."
+        },
+        "White Clipping": {
+          "term": "Corte de Brancos",
+          "definition": "A porcentagem de pixels no brilho 255 (branco puro). Valores altos significam que detalhes de altas luzes foram estourados."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Você envia uma foto e o histograma está empurrado fortemente para a esquerda com quase nada no lado direito. O que isso diz sobre a imagem?",
+          "hint": "Esquerda = escuro, direita = claro.",
+          "successMessage": "Correto! Um histograma pesado à esquerda significa que a imagem é majoritariamente tons escuros — pode estar subexposta, ou pode ser uma imagem intencionalmente escura/low-key.",
+          "failureMessage": "Um histograma aglomerado à esquerda indica que a imagem é predominantemente escura. Isso frequentemente significa subexposição.",
+          "options": {
+            "0": { "label": "A imagem está subexposta ou muito escura" },
+            "1": { "label": "A imagem está superexposta ou muito clara" },
+            "2": { "label": "A imagem tem exposição perfeita" }
+          }
+        },
+        "1": {
+          "scenario": "Qual modo de visualização você deve usar para ver a distribuição geral de brilho da sua foto em um único gráfico?",
+          "hint": "Um modo combina todas as informações de cor em uma única curva de brilho.",
+          "successMessage": "Certo! O modo Luminância mostra uma única curva representando o brilho geral percebido.",
+          "failureMessage": "O modo Luminância é a visualização mais simples — combina R, G, B em uma curva de brilho.",
+          "options": {
+            "0": { "label": "Luminância" },
+            "1": { "label": "Sobreposição RGB" },
+            "2": { "label": "Todos os Canais" }
+          }
+        },
+        "2": {
+          "scenario": "Você fotografou um pôr do sol vívido e o histograma de luminância parece normal, mas quando você muda para Sobreposição RGB vê o canal vermelho fazendo pico na extremidade direita. O que está acontecendo?",
+          "hint": "Canais de cor individuais podem cortar mesmo quando a luminância geral não corta.",
+          "successMessage": "Exatamente! O canal vermelho está cortando — as altas luzes do pôr do sol perderam detalhes nos tons vermelhos mesmo que o brilho geral pareça aceitável. Você está perdendo nuances de cores quentes.",
+          "failureMessage": "O canal vermelho está cortando independentemente. Altas luzes saturadas quentes (pôr do sol, fogo) frequentemente empurram o vermelho para 255 enquanto verde e azul estão normais, perdendo detalhes de cor nesses tons.",
+          "options": {
+            "0": { "label": "Corte do canal vermelho — detalhes de altas luzes quentes perdidos" },
+            "1": { "label": "A imagem está superexposta no geral" },
+            "2": { "label": "O balanço de branco está errado" }
+          }
+        },
+        "3": {
+          "scenario": "A ferramenta reporta 2.3% de corte de pretos e 0.1% de corte de brancos. Você deve ajustar sua exposição?",
+          "hint": "Pequenas quantidades de corte são normais — sombras em preto puro e altas luzes especulares são esperadas.",
+          "successMessage": "Bom julgamento! 2.3% de corte de pretos é modesto e frequentemente são apenas sombras profundas ou bordas escuras. 0.1% de corte de brancos provavelmente são altas luzes especulares (reflexos do sol). Esta exposição está boa para a maioria dos propósitos.",
+          "failureMessage": "Essas porcentagens de corte são bem pequenas. Um pouco de corte de pretos em sombras profundas e pequeno corte de brancos de altas luzes especulares é normal e esperado. Nenhum ajuste necessário.",
+          "options": {
+            "0": { "label": "Aumentar exposição para reduzir corte de pretos" },
+            "1": { "label": "Está bom — pequeno corte em sombras e altas luzes especulares é normal" },
+            "2": { "label": "Diminuir exposição para eliminar corte de brancos" }
+          }
+        },
+        "4": {
+          "scenario": "Você está fotografando uma cena de alto contraste: uma noiva de vestido branco em uma catedral escura. O histograma mostra picos fortes em ambas as extremidades com uma lacuna nos meios-tons. Como você deve lidar com isso?",
+          "hint": "Quando a faixa dinâmica da cena excede a do sensor da câmera, você precisa de técnica de múltiplas exposições.",
+          "successMessage": "Perfeito! Este histograma bimodal indica que a cena excede a faixa dinâmica do seu sensor. Bracketing de exposição (HDR) captura tanto o interior escuro quanto os detalhes do vestido branco. Alternativamente, use flash de preenchimento para elevar as sombras.",
+          "failureMessage": "Um histograma bimodal (picos em ambas as extremidades, meio vazio) significa que a cena tem mais faixa dinâmica do que seu sensor pode capturar em uma foto. Faça bracketing para HDR, ou use flash de preenchimento para reduzir a proporção de contraste.",
+          "options": {
+            "0": { "label": "Bracketing de exposição para HDR ou usar flash de preenchimento" },
+            "1": { "label": "Expor para meios-tons e torcer pelo melhor" },
+            "2": { "label": "Converter para preto e branco para esconder o problema" }
+          }
+        }
+      }
+    }
+  }
+}

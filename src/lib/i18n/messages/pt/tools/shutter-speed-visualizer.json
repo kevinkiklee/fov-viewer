@@ -1,0 +1,27 @@
+{
+  "toolUI": {
+    "shutter-speed-visualizer": {
+      "description": "Veja como a velocidade do obturador afeta o desfoque de movimento para diferentes assuntos.",
+      "shutterSpeed": "Velocidade do Obturador",
+      "shutterSpeedAriaLabel": "Velocidade do obturador",
+      "sliderSlow": "Lento (2s)",
+      "sliderFast": "Rápido (1/4000)",
+      "selectedSpeed": "Velocidade Selecionada",
+      "motionBlurAriaLabel": "Visualização de desfoque de movimento para diferentes assuntos",
+      "verdictFrozen": "Congelado",
+      "verdictMostlySharp": "Quase nítido",
+      "verdictSlightBlur": "Leve desfoque",
+      "verdictMotionBlur": "Desfoque de movimento",
+      "standingPerson": "Pessoa parada",
+      "slowWalk": "Caminhada lenta",
+      "jogging": "Cooper",
+      "running": "Corrida",
+      "cyclist": "Ciclista",
+      "birdsInFlight": "Pássaros em voo",
+      "carCity": "Carro (cidade)",
+      "f1Car": "Carro de F1",
+      "airplaneLanding": "Avião (pouso)",
+      "stationary": "parado"
+    }
+  }
+}

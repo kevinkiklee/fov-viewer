@@ -1,0 +1,101 @@
+{
+  "common": {
+    "nav": {
+      "tools": "टूल्स",
+      "glossary": "शब्दावली",
+      "closeMenu": "मेनू बंद करें",
+      "comingSoon": "जल्द",
+      "categories": {
+        "visualizer": "विज़ुअलाइज़र",
+        "calculator": "कैलकुलेटर",
+        "reference": "संदर्भ",
+        "file-tool": "फ़ाइल टूल्स"
+      }
+    },
+    "footer": {
+      "glossary": "शब्दावली",
+      "about": "हमारे बारे में",
+      "contact": "संपर्क",
+      "privacy": "गोपनीयता नीति",
+      "terms": "सेवा की शर्तें",
+      "cookieSettings": "कुकी सेटिंग्स"
+    },
+    "theme": {
+      "switchToLight": "लाइट मोड में बदलें",
+      "switchToDark": "डार्क मोड में बदलें"
+    },
+    "actions": {
+      "copyImage": "इमेज कॉपी करें",
+      "reset": "रीसेट",
+      "copyLink": "लिंक कॉपी करें",
+      "share": "शेयर करें",
+      "embed": "एम्बेड"
+    },
+    "toast": {
+      "linkCopied": "लिंक कॉपी हो गया!",
+      "imageCopied": "इमेज कॉपी हो गई!",
+      "failedToCopy": "कॉपी नहीं हो सका",
+      "copied": "कॉपी हो गया!"
+    },
+    "learn": {
+      "title": "सीखें",
+      "openPanel": "लर्न पैनल खोलें",
+      "collapsePanel": "लर्न पैनल बंद करें",
+      "whatIsThis": "यह क्या है?",
+      "howItWorks": "यह कैसे काम करता है",
+      "keyFactors": "मुख्य कारक",
+      "proTip": "प्रो टिप",
+      "challenge": "चुनौती",
+      "hint": "संकेत: {hint}",
+      "completed": "पूर्ण",
+      "checkAnswer": "जवाब जाँचें",
+      "nextChallenge": "अगली चुनौती",
+      "tryAgain": "फिर से कोशिश करें",
+      "resetAll": "सब रीसेट करें",
+      "resetAllChallenges": "सभी चुनौतियाँ रीसेट करें",
+      "challengeNumber": "चुनौती {number}"
+    },
+    "share": {
+      "title": "शेयर और एम्बेड",
+      "closeModal": "शेयर मोडल बंद करें",
+      "directLink": "डायरेक्ट लिंक",
+      "markdown": "Markdown (Reddit, GitHub)",
+      "bbcode": "BBCode (फ़ोरम)",
+      "htmlEmbed": "HTML एम्बेड",
+      "copy": "कॉपी",
+      "copied": "कॉपी हो गया"
+    },
+    "draft": {
+      "banner": "प्रीव्यू — यह टूल अभी सार्वजनिक नहीं है"
+    },
+    "fileUpload": {
+      "dropPrompt": "यहाँ इमेज ड्रॉप करें या ब्राउज़ करने के लिए क्लिक करें",
+      "tapPrompt": "फ़ोटो चुनने के लिए टैप करें",
+      "privacy": "आपकी फ़ोटो आपके डिवाइस से बाहर नहीं जाती",
+      "selectedFile": "चयनित फ़ाइल: {fileName}। दूसरी इमेज चुनने के लिए क्लिक करें",
+      "defaultLabel": "आपकी फ़ोटो"
+    },
+    "scene": {
+      "label": "दृश्य:",
+      "yourPhoto": "आपकी फ़ोटो",
+      "removePhoto": "फ़ोटो हटाएँ",
+      "uploadPhoto": "फ़ोटो अपलोड करें"
+    },
+    "controls": {
+      "focalLength": "फ़ोकल लेंथ",
+      "clickToEnterValue": "वैल्यू दर्ज करने के लिए क्लिक करें",
+      "decrease": "घटाएँ",
+      "increase": "बढ़ाएँ"
+    },
+    "dof": {
+      "depthOfField": "डेप्थ ऑफ़ फ़ील्ड: {totalDoF}, {nearFocus} से {farFocus} तक",
+      "infinity": "अनंत"
+    },
+    "ad": {
+      "closeAd": "विज्ञापन बंद करें"
+    },
+    "tooltip": {
+      "infoLabel": "जानकारी: {term}"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "toolUI": {
+    "white-balance-visualizer": {
+      "colorTemperature": "색온도:",
+      "warm": "따뜻함",
+      "neutral": "중립",
+      "cool": "차가움",
+      "presets": "프리셋",
+      "red": "빨강",
+      "green": "녹색",
+      "blue": "파랑",
+      "hex": "Hex",
+      "loadingScene": "장면 로딩 중..."
+    }
+  }
+}

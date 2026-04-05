@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "histogram": {
+      "luminance": "휘도",
+      "rgbOverlay": "RGB 오버레이",
+      "allChannels": "전체 채널",
+      "shadows": "그림자",
+      "midtones": "중간 톤",
+      "highlights": "하이라이트",
+      "blackClipping": "블랙 클리핑",
+      "whiteClipping": "화이트 클리핑",
+      "pureBlack": "순수 검정",
+      "pureWhite": "순수 흰색",
+      "uploadPrompt": "이미지를 업로드하여 EXIF 데이터와 히스토그램을 확인하세요",
+      "uploadedPhoto": "업로드된 사진",
+      "noExifData": "이 이미지에서 EXIF 데이터를 찾을 수 없습니다.",
+      "sectionCamera": "카메라",
+      "sectionLens": "렌즈",
+      "sectionSettings": "설정",
+      "sectionImage": "이미지",
+      "sectionDate": "날짜",
+      "sectionGPS": "GPS",
+      "sectionSoftware": "소프트웨어",
+      "make": "제조사",
+      "model": "모델",
+      "lensModel": "렌즈 모델",
+      "lensMake": "렌즈 제조사",
+      "apertureLabel": "조리개",
+      "shutterSpeed": "셔터 스피드",
+      "isoLabel": "ISO",
+      "focalLengthLabel": "초점 거리",
+      "focalLength35mm": "초점 거리 (35mm 등가)",
+      "width": "폭",
+      "height": "높이",
+      "orientationLabel": "방향",
+      "dateTaken": "촬영일",
+      "latitudeLabel": "위도",
+      "longitudeLabel": "경도",
+      "softwareLabel": "소프트웨어"
+    }
+  }
+}

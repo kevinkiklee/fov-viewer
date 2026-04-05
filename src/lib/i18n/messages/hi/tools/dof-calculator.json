@@ -1,0 +1,21 @@
+{
+  "toolUI": {
+    "dof-calculator": {
+      "settings": "सेटिंग्स",
+      "focalLength": "फ़ोकल लेंथ",
+      "aperture": "अपर्चर",
+      "subjectDistance": "सब्जेक्ट दूरी",
+      "sensor": "सेंसर",
+      "results": "परिणाम",
+      "nearFocus": "नियर फ़ोकस",
+      "farFocus": "फ़ार फ़ोकस",
+      "totalDoF": "कुल DoF",
+      "hyperfocal": "हाइपरफ़ोकल",
+      "scene": "दृश्य:",
+      "scenePortrait": "पोर्ट्रेट",
+      "sceneLandscape": "लैंडस्केप",
+      "sceneStreet": "स्ट्रीट",
+      "sceneMacro": "मैक्रो"
+    }
+  }
+}

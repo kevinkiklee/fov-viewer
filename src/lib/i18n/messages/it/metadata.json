@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "site": {
+      "defaultTitle": "PhotoTools — Strumenti fotografici",
+      "titleTemplate": "%s | PhotoTools",
+      "description": "Strumenti fotografici gratuiti: simulatore di campo visivo, generatore di schemi colore, visualizzatore EXIF, ritaglia e incornicia foto e molto altro.",
+      "ogTitle": "PhotoTools — Strumenti fotografici gratuiti"
+    },
+    "fov-simulator": {
+      "title": "Simulatore di campo visivo — Confronta le lunghezze focali",
+      "description": "Confronta il campo visivo tra diverse lunghezze focali e dimensioni del sensore. Gratuito, interattivo, condivisibile."
+    },
+    "dof-calculator": {
+      "title": "Calcolatore della profondità di campo",
+      "description": "Calcola la profondità di campo per qualsiasi obiettivo, apertura e dimensione del sensore. Visualizza i limiti di messa a fuoco vicino/lontano, la distanza iperfocale e la sfocatura dello sfondo — gratuito e interattivo."
+    },
+    "exposure-simulator": {
+      "title": "Simulatore del triangolo dell'esposizione",
+      "description": "Simulatore interattivo del triangolo dell'esposizione — scopri come apertura, tempo di posa e ISO influenzano la tua immagine in tempo reale con anteprima dal vivo."
+    },
+    "star-trail-calculator": {
+      "title": "Calcolatore scie stellari",
+      "description": "Calcola il tempo di esposizione massimo per stelle puntiformi usando le regole del 500, NPF e altre. Pianifica scatti con sovrapposizione di scie stellari per qualsiasi posizione."
+    },
+    "white-balance-visualizer": {
+      "title": "Visualizzatore del bilanciamento del bianco",
+      "description": "Scopri come il bilanciamento del bianco e la temperatura colore influenzano le tue foto. Visualizza le variazioni da 2000K a 10000K con anteprima in tempo reale."
+    },
+    "sensor-size-comparison": {
+      "title": "Confronto dimensioni sensore",
+      "description": "Confronta le dimensioni dei sensori dal medio formato allo smartphone. Visualizzazioni in sovrapposizione, affiancamento e densità pixel con modelli di fotocamere reali."
+    },
+    "color-scheme-generator": {
+      "title": "Generatore di schemi colore",
+      "description": "Genera palette di colori per la fotografia usando armonie complementari, analoghe, triadiche e tetradiche. Ruota cromatica interattiva con selettore da foto."
+    },
+    "frame-studio": {
+      "title": "Frame Studio",
+      "description": "Ritaglia, incornicia e componi le foto con griglie di composizione. 100% lato client — le tue foto non lasciano mai il tuo dispositivo."
+    },
+    "exif-viewer": {
+      "title": "Visualizzatore EXIF",
+      "description": "Visualizza metadati EXIF, istogramma e anteprima dell'immagine per qualsiasi foto. 100% lato client — le tue foto non lasciano mai il tuo dispositivo."
+    },
+    "hyperfocal-simulator": {
+      "title": "Simulatore della distanza iperfocale",
+      "description": "Visualizza la distanza iperfocale per qualsiasi obiettivo e sensore. Scopri esattamente dove mettere a fuoco per la massima nitidezza dal primo piano all'infinito."
+    },
+    "shutter-speed-visualizer": {
+      "title": "Visualizzatore del tempo di posa",
+      "description": "Trova il tempo di posa minimo per foto nitide a mano libera. Tiene conto della lunghezza focale, delle dimensioni del sensore e della stabilizzazione dell'immagine."
+    },
+    "nd-filter-calculator": {
+      "title": "Calcolatore filtro ND",
+      "description": "Calcola il tempo di posa corretto quando usi filtri ND. Supporta qualsiasi intensità di filtro da ND2 a ND1000000 con tabella di riferimento rapido."
+    },
+    "perspective-compression-simulator": {
+      "title": "Simulatore di compressione prospettica",
+      "description": "Simulatore 3D interattivo che mostra come lunghezza focale e distanza influenzano la compressione prospettica. Osserva la compressione dello sfondo cambiare in tempo reale."
+    },
+    "about": {
+      "title": "Chi siamo",
+      "description": "PhotoTools è una raccolta gratuita di calcolatori fotografici, simulatori e riferimenti basati su browser per fotografi di tutti i livelli."
+    },
+    "contact": {
+      "title": "Contatti | PhotoTools",
+      "description": "Contatta il team di PhotoTools — domande, feedback o suggerimenti sui nostri strumenti fotografici."
+    },
+    "privacy": {
+      "title": "Informativa sulla privacy | PhotoTools",
+      "description": "Scopri come PhotoTools gestisce i tuoi dati, inclusi analisi, cookie e invii del modulo di contatto su www.phototools.io."
+    },
+    "terms": {
+      "title": "Termini di servizio | PhotoTools",
+      "description": "Termini di servizio di PhotoTools — informazioni su uso accettabile, proprietà intellettuale, esclusioni di responsabilità e limitazioni di responsabilità per www.phototools.io."
+    },
+    "glossary": {
+      "title": "Glossario fotografico",
+      "description": "Glossario consultabile di oltre 50 termini fotografici con definizioni e link a strumenti interattivi."
+    }
+  }
+}

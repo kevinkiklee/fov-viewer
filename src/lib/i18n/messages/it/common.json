@@ -1,0 +1,101 @@
+{
+  "common": {
+    "nav": {
+      "tools": "Strumenti",
+      "glossary": "Glossario",
+      "closeMenu": "Chiudi menu",
+      "comingSoon": "Presto",
+      "categories": {
+        "visualizer": "Visualizzatori",
+        "calculator": "Calcolatori",
+        "reference": "Riferimento",
+        "file-tool": "Strumenti File"
+      }
+    },
+    "footer": {
+      "glossary": "Glossario",
+      "about": "Chi siamo",
+      "contact": "Contatti",
+      "privacy": "Informativa sulla privacy",
+      "terms": "Termini di servizio",
+      "cookieSettings": "Impostazioni cookie"
+    },
+    "theme": {
+      "switchToLight": "Passa alla modalità chiara",
+      "switchToDark": "Passa alla modalità scura"
+    },
+    "actions": {
+      "copyImage": "Copia immagine",
+      "reset": "Ripristina",
+      "copyLink": "Copia link",
+      "share": "Condividi",
+      "embed": "Incorpora"
+    },
+    "toast": {
+      "linkCopied": "Link copiato!",
+      "imageCopied": "Immagine copiata!",
+      "failedToCopy": "Copia non riuscita",
+      "copied": "Copiato!"
+    },
+    "learn": {
+      "title": "Impara",
+      "openPanel": "Apri pannello didattico",
+      "collapsePanel": "Chiudi pannello didattico",
+      "whatIsThis": "Cos'è?",
+      "howItWorks": "Come funziona",
+      "keyFactors": "Fattori chiave",
+      "proTip": "Consiglio Pro",
+      "challenge": "Sfida",
+      "hint": "Suggerimento: {hint}",
+      "completed": "Completato",
+      "checkAnswer": "Verifica risposta",
+      "nextChallenge": "Sfida successiva",
+      "tryAgain": "Riprova",
+      "resetAll": "Ripristina tutto",
+      "resetAllChallenges": "Ripristina tutte le sfide",
+      "challengeNumber": "Sfida {number}"
+    },
+    "share": {
+      "title": "Condividi e Incorpora",
+      "closeModal": "Chiudi finestra di condivisione",
+      "directLink": "Link diretto",
+      "markdown": "Markdown (Reddit, GitHub)",
+      "bbcode": "BBCode (Forum)",
+      "htmlEmbed": "Incorpora HTML",
+      "copy": "Copia",
+      "copied": "Copiato"
+    },
+    "draft": {
+      "banner": "Anteprima — Questo strumento non è ancora pubblico"
+    },
+    "fileUpload": {
+      "dropPrompt": "Trascina un'immagine qui o clicca per sfogliare",
+      "tapPrompt": "Tocca per scegliere una foto",
+      "privacy": "Le tue foto non lasciano mai il tuo dispositivo",
+      "selectedFile": "File selezionato: {fileName}. Clicca per scegliere un'immagine diversa",
+      "defaultLabel": "La tua foto"
+    },
+    "scene": {
+      "label": "Scena:",
+      "yourPhoto": "La tua foto",
+      "removePhoto": "Rimuovi foto",
+      "uploadPhoto": "Carica foto"
+    },
+    "controls": {
+      "focalLength": "Lunghezza focale",
+      "clickToEnterValue": "Clicca per inserire un valore",
+      "decrease": "Diminuisci",
+      "increase": "Aumenta"
+    },
+    "dof": {
+      "depthOfField": "Profondità di campo: {totalDoF} da {nearFocus} a {farFocus}",
+      "infinity": "Infinito"
+    },
+    "ad": {
+      "closeAd": "Chiudi pubblicità"
+    },
+    "tooltip": {
+      "infoLabel": "Info: {term}"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "star-trail-calculator": {
+      "rule500": "Regra dos 500",
+      "ruleNPF": "Regra NPF",
+      "recommendation": "Recomendação",
+      "recommendationText": "Use a regra NPF ({npf}s) para nitidez ao nível de pixel. A regra dos 500 ({r500}s) é uma estimativa rápida mas pode mostrar trilhas em sensores de alta resolução.",
+      "shootingTime": "Tempo de Disparo",
+      "exposure": "Exposição",
+      "displayMode": "Modo de Exibição",
+      "modeStarTrails": "Trilhas de Estrelas",
+      "modeSingleShot": "Foto Única",
+      "stacking": "Empilhamento",
+      "exposurePerFrame": "Exposição / quadro (seg)",
+      "exposurePerFrameDesc": "Velocidade do obturador para cada quadro individual",
+      "frames": "Quadros",
+      "framesDesc": "Número total de fotos para empilhar",
+      "gapSec": "Intervalo (seg)",
+      "gapDesc": "Atraso entre quadros para gravação do buffer",
+      "camera": "Câmera",
+      "sensor": "Sensor",
+      "resolutionMP": "Resolução (MP)",
+      "apertureLabel": "Abertura",
+      "latitude": "Latitude",
+      "position": "Posição",
+      "useMyLocation": "Usar Minha Localização",
+      "latitudeLabel": "Latitude:",
+      "equator": "Equador 0°",
+      "mid45": "Média 45°",
+      "arctic70": "Ártico 70°"
+    }
+  }
+}

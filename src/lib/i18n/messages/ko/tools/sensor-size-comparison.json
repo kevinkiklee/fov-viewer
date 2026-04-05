@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "sensor-size-comparison": {
+      "displayMode": "표시 모드",
+      "modeOverlay": "오버레이",
+      "modeSideBySide": "나란히 보기",
+      "modePixelDensity": "픽셀 밀도",
+      "pixelDensityDescription": "각 센서의 일반적인 메가픽셀 수를 보여줍니다. 더 큰 픽셀(큰 셀)이 더 많은 빛을 캡처합니다.",
+      "sensors": "센서",
+      "customSensors": "커스텀 센서",
+      "placeholderName": "이름",
+      "placeholderW": "폭 (mm)",
+      "placeholderH": "높이 (mm)",
+      "placeholderMP": "메가픽셀 (선택)",
+      "placeholderMPShort": "MP",
+      "maxDimensionWarning": "최대 센서 크기는 99mm입니다",
+      "addSensor": "센서 추가",
+      "save": "저장",
+      "cancelEdit": "취소",
+      "edit": "편집",
+      "remove": "제거",
+      "deleteAllCustom": "모든 커스텀 센서 삭제",
+      "tableSensor": "센서",
+      "tableWidth": "폭 (mm)",
+      "tableHeight": "높이 (mm)",
+      "tableAspectRatio": "종횡비",
+      "tableArea": "면적 (mm²)",
+      "tableCropFactor": "크롭 팩터",
+      "tableAspectCrop": "종횡비 크롭",
+      "canvasAriaLabel": "{mode} 모드의 센서 크기 비교"
+    }
+  }
+}

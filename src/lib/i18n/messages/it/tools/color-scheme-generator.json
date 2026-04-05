@@ -1,0 +1,57 @@
+{
+  "toolUI": {
+    "color-scheme-generator": {
+      "colorScheme": "Schema colore",
+      "complementary": "Complementare",
+      "analogous": "Analogo",
+      "triadic": "Triadico",
+      "splitComplementary": "Complementare diviso",
+      "tetradic": "Tetradico",
+      "keyColor": "Colore chiave",
+      "hue": "Tonalità:",
+      "saturation": "Saturazione:",
+      "lightness": "Luminosità:",
+      "splitAngle": "Angolo di divisione:",
+      "spread": "Ampiezza:",
+      "rectangleWidth": "Larghezza rettangolo:",
+      "square": "(quadrato)",
+      "pickFromPhoto": "Preleva da foto",
+      "dropPhotoPrompt": "Trascina una foto qui o clicca per sfogliare",
+      "keyColorLabel": "Colore chiave — clicca per copiare l'hex",
+      "clickToCopyHex": "Clicca per copiare l'hex",
+      "copiedExcl": "Copiato!",
+      "copyColors": "Copia colori",
+      "hexFormat": "Hex",
+      "cssFormat": "CSS",
+      "rgbFormat": "RGB",
+      "copyHexCodes": "Copia codici hex",
+      "copyCssVariables": "Copia variabili CSS",
+      "copyRgbValues": "Copia valori RGB",
+      "pickColorFromPhoto": "Preleva colore da foto",
+      "close": "Chiudi",
+      "dropPhotoOrBrowse": "Trascina una foto qui o clicca per sfogliare",
+      "tapToChoose": "Tocca per scegliere una foto",
+      "tapToSample": "Tocca un punto qualsiasi della foto per campionare quel colore",
+      "changePhoto": "Cambia foto",
+      "privacyNote": "La tua foto resta nel tuo browser — nulla viene caricato",
+      "suggestions": {
+        "complementary": {
+          "warm": "Ideale per: ritratti al tramonto con contrasto di ombre fredde",
+          "cool": "Ideale per: scatti notturni all'ora blu con luci d'accento calde",
+          "default": "Ideale per: composizioni ad alto contrasto con forte tensione visiva"
+        },
+        "analogous": {
+          "warm": "Ideale per: paesaggi nella golden hour con toni caldi uniformi",
+          "cool": "Ideale per: scene acquatiche serene e fotografia al crepuscolo",
+          "default": "Ideale per: scatti naturalistici armoniosi con transizioni cromatiche morbide"
+        },
+        "triadic": "Usare per: lavori editoriali vivaci e ritratti creativi audaci",
+        "splitComplementary": {
+          "warm": "Usare per: abbigliamento contrastante su sfondo naturale",
+          "default": "Usare per: fotografia di prodotto bilanciata con varietà visiva"
+        },
+        "tetradic": "Usare per: layout editoriali ricchi e composizioni complesse con più soggetti"
+      }
+    }
+  }
+}

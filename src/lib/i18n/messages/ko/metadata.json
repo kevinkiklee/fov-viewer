@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "site": {
+      "defaultTitle": "PhotoTools — 사진 도구",
+      "titleTemplate": "%s | PhotoTools",
+      "description": "무료 사진 도구: 화각 시뮬레이터, 배색 생성기, EXIF 뷰어, 사진 자르기 및 프레이밍 등.",
+      "ogTitle": "PhotoTools — 무료 사진 도구"
+    },
+    "fov-simulator": {
+      "title": "화각 시뮬레이터 — 초점 거리 비교",
+      "description": "다양한 초점 거리와 센서 크기에 따른 화각을 비교합니다. 무료, 인터랙티브, 공유 가능."
+    },
+    "dof-calculator": {
+      "title": "피사계 심도 계산기",
+      "description": "모든 렌즈, 조리개, 센서 크기에 대한 피사계 심도를 계산합니다. 근접/원거리 초점 한계, 과초점 거리, 배경 흐림을 확인하세요 — 무료 인터랙티브 도구."
+    },
+    "exposure-simulator": {
+      "title": "노출 삼각형 시뮬레이터",
+      "description": "인터랙티브 노출 삼각형 시뮬레이터 — 조리개, 셔터 스피드, ISO가 이미지에 미치는 영향을 실시간 미리 보기로 확인하세요."
+    },
+    "star-trail-calculator": {
+      "title": "별 궤적 계산기",
+      "description": "500 규칙, NPF 규칙 등을 사용하여 선명한 별을 위한 최대 노출 시간을 계산합니다. 모든 위치에서의 별 궤적 합성 촬영을 계획하세요."
+    },
+    "white-balance-visualizer": {
+      "title": "화이트 밸런스 시각화 도구",
+      "description": "화이트 밸런스와 색온도가 사진에 미치는 영향을 확인합니다. 2000K에서 10000K까지 실시간 미리 보기로 변화를 시각화하세요."
+    },
+    "sensor-size-comparison": {
+      "title": "센서 크기 비교",
+      "description": "중형 포맷부터 스마트폰까지 카메라 센서 크기를 비교합니다. 실제 카메라 모델과 함께 오버레이, 나란히 보기, 픽셀 밀도 뷰를 확인하세요."
+    },
+    "color-scheme-generator": {
+      "title": "배색 생성기",
+      "description": "보색, 유사색, 삼색 조화, 사색 조화 등의 배색 이론을 활용하여 사진을 위한 색상 팔레트를 생성합니다. 사진 색상 추출이 가능한 인터랙티브 색상 휠."
+    },
+    "frame-studio": {
+      "title": "프레임 스튜디오",
+      "description": "사진을 자르고, 프레임을 추가하고, 그리드 오버레이로 구도를 잡습니다. 100% 클라이언트 처리 — 사진은 기기 밖으로 전송되지 않습니다."
+    },
+    "exif-viewer": {
+      "title": "EXIF 뷰어",
+      "description": "모든 사진의 EXIF 메타데이터, 히스토그램, 이미지 미리 보기를 확인합니다. 100% 클라이언트 처리 — 사진은 기기 밖으로 전송되지 않습니다."
+    },
+    "hyperfocal-simulator": {
+      "title": "과초점 거리 시뮬레이터",
+      "description": "모든 렌즈와 센서에 대한 과초점 거리를 시각화합니다. 전경부터 무한대까지 최대 선명도를 위한 정확한 초점 위치를 확인하세요."
+    },
+    "shutter-speed-visualizer": {
+      "title": "셔터 스피드 시각화 도구",
+      "description": "핸드헬드에서 선명한 사진을 위한 최소 셔터 스피드를 찾습니다. 초점 거리, 센서 크기, 손떨림 보정을 고려합니다."
+    },
+    "nd-filter-calculator": {
+      "title": "ND 필터 계산기",
+      "description": "ND 필터 사용 시 올바른 셔터 스피드를 계산합니다. ND2부터 ND1000000까지 모든 필터 강도를 지원하며 빠른 참조표를 제공합니다."
+    },
+    "perspective-compression-simulator": {
+      "title": "원근 압축 시뮬레이터",
+      "description": "초점 거리와 거리가 원근 압축에 미치는 영향을 보여주는 인터랙티브 3D 시뮬레이터. 배경 압축 변화를 실시간으로 확인하세요."
+    },
+    "about": {
+      "title": "소개",
+      "description": "PhotoTools는 모든 수준의 사진가를 위한 브라우저 기반 무료 사진 계산기, 시뮬레이터, 레퍼런스 모음입니다."
+    },
+    "contact": {
+      "title": "문의 | PhotoTools",
+      "description": "PhotoTools 팀에 연락하세요 — 사진 도구에 대한 질문, 피드백, 제안을 보내주세요."
+    },
+    "privacy": {
+      "title": "개인정보 처리방침 | PhotoTools",
+      "description": "www.phototools.io에서 분석, 쿠키, 문의 양식 제출을 포함한 데이터 처리 방법을 알아보세요."
+    },
+    "terms": {
+      "title": "이용약관 | PhotoTools",
+      "description": "PhotoTools 이용약관 — www.phototools.io의 허용되는 사용, 지적 재산권, 면책 사항, 책임 제한에 대해 알아보세요."
+    },
+    "glossary": {
+      "title": "사진 용어 사전",
+      "description": "인터랙티브 도구 링크가 포함된 50개 이상의 사진 용어 정의를 검색할 수 있는 용어 사전."
+    }
+  }
+}

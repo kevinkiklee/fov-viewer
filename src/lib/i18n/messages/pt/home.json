@@ -1,0 +1,13 @@
+{
+  "home": {
+    "heroTitle": "PhotoTools — Ferramentas Gratuitas de Fotografia",
+    "heroDesc": "Calculadoras, simuladores e referências de fotografia gratuitos. Sem necessidade de cadastro — suas fotos nunca saem do seu navegador.",
+    "comingSoon": "Em Breve",
+    "categories": {
+      "visualizer": "Visualizadores",
+      "calculator": "Calculadoras",
+      "reference": "Referência",
+      "file-tool": "Ferramentas de Arquivo"
+    }
+  }
+}

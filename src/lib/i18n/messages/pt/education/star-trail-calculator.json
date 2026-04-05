@@ -1,0 +1,150 @@
+{
+  "education": {
+    "star-trail-calculator": {
+      "beginner": "As estrelas parecem se mover pelo céu porque a Terra gira. Se o obturador ficar aberto tempo suficiente, as estrelas formarão trilhas na sua foto. A calculadora de trilhas de estrelas ajuda você a encontrar o tempo máximo de exposição para estrelas pontuais, ou planejar exposições longas para criar belos arcos circulares de trilhas de estrelas.",
+      "deeper": {
+        "0": {
+          "heading": "Como as Estrelas se Movem",
+          "text": "A Terra gira 360° em aproximadamente 23 horas e 56 minutos (um dia sideral), então as estrelas se movem a cerca de 15 segundos de arco por segundo no equador celeste. Estrelas próximas aos polos (Polaris no norte) traçam círculos menores e parecem se mover mais lentamente."
+        },
+        "1": {
+          "heading": "Regra dos 500 vs. Regra NPF",
+          "text": "A clássica \"Regra dos 500\" divide 500 pela sua distância focal efetiva para estimar a exposição máxima antes de trilhas ficarem visíveis — mas foi projetada para sensores de menor resolução. A Regra NPF leva em conta pixel pitch, distância focal, abertura e declinação, produzindo limites mais curtos e precisos para câmeras modernas de alta resolução."
+        },
+        "2": {
+          "heading": "Empilhamento para Trilhas de Estrelas",
+          "text": "Para trilhas de estrelas intencionais, fotógrafos disparam muitas exposições mais curtas (tipicamente 30s cada) e as empilham em software. Isso evita acúmulo de ruído, permite trilhas sem interrupções, e significa que um único quadro ruim não arruina a foto inteira."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Distância Focal",
+          "description": "Distâncias focais mais longas ampliam o movimento das estrelas, exigindo exposições mais curtas para estrelas pontuais. Uma lente 14mm pode expor 5-10 vezes mais que uma lente 200mm."
+        },
+        "1": {
+          "label": "Resolução do Sensor",
+          "description": "Sensores de maior resolução revelam trilhas em tempos de exposição mais curtos. A Regra dos 500 é muito generosa para câmeras modernas de 40MP+."
+        },
+        "2": {
+          "label": "Latitude e Declinação",
+          "description": "Estrelas próximas aos polos celestes se movem menos por segundo. Apontar para Polaris permite exposições mais longas antes de trilhas aparecerem."
+        },
+        "3": {
+          "label": "Empilhamento vs Exposição Única",
+          "description": "Para trilhas de estrelas, empilhar muitas exposições curtas produz resultados mais limpos que uma exposição extremamente longa, e permite recuperação de interrupções."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Use a Regra NPF em vez da Regra dos 500 para câmeras modernas. Ela leva em conta a resolução do sensor e produz tempos máximos de exposição mais precisos, especialmente com câmeras de alta megapixelagem."
+        },
+        "1": {
+          "text": "Para empilhamento de trilhas de estrelas, mantenha intervalos entre quadros abaixo de 2-3 segundos usando um controle remoto ou intervalômetro. Intervalos mais longos criam trilhas pontilhadas em vez de suaves."
+        },
+        "2": {
+          "text": "Inclua Polaris (ou o Polo Sul Celeste) na sua composição para trilhas circulares concêntricas dramáticas. Estrelas mais próximas ao polo traçam arcos mais fechados."
+        }
+      },
+      "tooltips": {
+        "mode": {
+          "term": "Modo",
+          "definition": "Escolha \"Estrelas Nítidas\" para calcular o tempo máximo de exposição para estrelas pontuais, ou \"Trilhas de Estrelas\" para planejar sequências de exposição para efeitos de trilhas intencionais."
+        },
+        "focalLength": {
+          "term": "Distância Focal",
+          "definition": "A distância focal da lente em milímetros. Distâncias focais mais longas ampliam o movimento aparente das estrelas, exigindo exposições individuais mais curtas."
+        },
+        "sensor": {
+          "term": "Tamanho do Sensor",
+          "definition": "As dimensões físicas do sensor. Combinado com a resolução, determina o pixel pitch, que afeta a rapidez com que trilhas se tornam visíveis."
+        },
+        "resolution": {
+          "term": "Resolução",
+          "definition": "A resolução do sensor em megapixels. Câmeras de maior resolução revelam trilhas mais cedo porque cada pixel cobre uma área angular menor do céu."
+        },
+        "aperture": {
+          "term": "Abertura",
+          "definition": "A abertura da lente. Para astrofotografia, use a abertura mais ampla disponível (menor número f) para capturar o máximo de luz estelar em cada quadro."
+        },
+        "latitude": {
+          "term": "Latitude",
+          "definition": "Sua latitude geográfica. Afeta a taxa de movimento aparente das estrelas — em latitudes mais altas, estrelas próximas ao polo se movem mais lentamente pelo quadro."
+        },
+        "exposurePerFrame": {
+          "term": "Exposição por Quadro",
+          "definition": "A velocidade do obturador para cada quadro individual em uma sequência de trilhas de estrelas. Tipicamente 15-30 segundos para capturar luz suficiente enquanto evita ruído excessivo."
+        },
+        "numberOfFrames": {
+          "term": "Número de Quadros",
+          "definition": "Quantas exposições individuais tirar. Mais quadros significam trilhas mais longas e dramáticas. 120 quadros de 30 segundos cada produzem uma hora de trilhas."
+        },
+        "gapBetweenFrames": {
+          "term": "Intervalo entre Quadros",
+          "definition": "O tempo entre exposições para a câmera salvar o arquivo. Mantenha o mais curto possível (1-3 segundos) para evitar trilhas pontilhadas."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Você está fotografando a Via Láctea com uma lente 24mm em uma câmera full frame de 24MP. Usando a Regra dos 500, aproximadamente quanto tempo você pode expor antes das estrelas começarem a trilhar?",
+          "hint": "Regra dos 500: segundos máximos = 500 / distância focal.",
+          "successMessage": "Certo! 500 / 24 = aproximadamente 20 segundos. Este é um bom ponto de partida, embora a Regra NPF possa sugerir um tempo ligeiramente mais curto para nitidez crítica.",
+          "failureMessage": "Aplique a Regra dos 500: divida 500 pela sua distância focal (24mm). Isso dá aproximadamente 20 segundos.",
+          "options": {
+            "0": { "label": "5 segundos" },
+            "1": { "label": "10 segundos" },
+            "2": { "label": "20 segundos" },
+            "3": { "label": "60 segundos" }
+          }
+        },
+        "1": {
+          "scenario": "Você quer fotografar a Nebulosa de Órion com uma lente 200mm em uma câmera com sensor crop (fator de corte 1.5x). Qual é a exposição máxima aproximada usando a Regra dos 500?",
+          "hint": "Com sensor crop, multiplique a distância focal pelo fator de corte primeiro, depois aplique a regra.",
+          "successMessage": "Correto! A distância focal efetiva é 200mm x 1.5 = 300mm. 500 / 300 = ~1.7 segundos. Em distâncias focais de teleobjetiva em sensores crop, você tem muito pouco tempo antes de trilhas aparecerem.",
+          "failureMessage": "Lembre-se de considerar o fator de corte: 200mm x 1.5 = 300mm efetivos. Então 500 / 300 dá cerca de 1.7 segundos.",
+          "options": {
+            "0": { "label": "~1.7 segundos" },
+            "1": { "label": "~2.5 segundos" },
+            "2": { "label": "~5 segundos" },
+            "3": { "label": "~10 segundos" }
+          }
+        },
+        "2": {
+          "scenario": "Você quer criar uma foto de trilha de estrelas de 2 horas. Planeja disparar exposições de 30 segundos com intervalos de 2 segundos. Quantos quadros você precisará?",
+          "hint": "Calcule quantos intervalos de 32 segundos (30s de exposição + 2s de intervalo) cabem em 2 horas (7200 segundos).",
+          "successMessage": "Correto! 7200 segundos / 32 segundos por quadro = 225 quadros. Você obterá trilhas suaves e contínuas ao longo de 2 horas de rotação da Terra.",
+          "failureMessage": "Duas horas = 7200 segundos. Cada ciclo de quadro é 30s + 2s = 32s. Divida 7200 por 32 para obter o número de quadros necessários.",
+          "options": {
+            "0": { "label": "120 quadros" },
+            "1": { "label": "180 quadros" },
+            "2": { "label": "225 quadros" },
+            "3": { "label": "240 quadros" }
+          }
+        },
+        "3": {
+          "scenario": "Seu amigo usa uma câmera full frame de 50MP e seguiu a Regra dos 500 com uma lente 20mm, obtendo uma exposição de 25 segundos. Ele reclama que as estrelas parecem pequenos riscos quando ampliadas. Por quê?",
+          "hint": "A Regra dos 500 foi projetada para sensores mais antigos e de menor resolução.",
+          "successMessage": "Exatamente! A Regra dos 500 é muito generosa para sensores de alta resolução. Um sensor full frame de 50MP tem pixel pitch de cerca de 4.4 micrômetros, e a Regra NPF recomendaria aproximadamente 10-12 segundos para estrelas verdadeiramente nítidas.",
+          "failureMessage": "A Regra dos 500 foi criada quando sensores tinham muito menos megapixels. Com 50MP, cada pixel cobre uma fatia muito menor do céu, revelando movimento estelar que era invisível em câmeras mais antigas.",
+          "options": {
+            "0": { "label": "A lente estava fora de foco" },
+            "1": { "label": "A Regra dos 500 é muito generosa para sensores de alta resolução" },
+            "2": { "label": "A câmera estava tremendo com o vento" },
+            "3": { "label": "20mm é muito angular para astrofotografia" }
+          }
+        },
+        "4": {
+          "scenario": "Você quer uma imagem de trilha de estrelas de 1 hora. Por que astrofotógrafos experientes empilham muitas exposições curtas (ex.: 240 x 15s) em vez de tirar uma única exposição de 1 hora?",
+          "hint": "Pense no que acontece com o ruído do sensor, vida da bateria e recuperação durante uma exposição única extremamente longa.",
+          "successMessage": "Correto! Uma única exposição de uma hora acumula ruído térmico massivo, drena a bateria, e se algo der errado (vibração, orvalho, farol de carro) a foto inteira é arruinada. Empilhar quadros curtos mantém o ruído baixo, permite remover quadros ruins, e é muito mais tolerante.",
+          "failureMessage": "Exposições únicas longas acumulam ruído térmico severo e arriscam perda total de qualquer interrupção. Empilhar quadros curtos mantém o ruído gerenciável, permite descartar quadros arruinados, e produz resultados mais limpos.",
+          "options": {
+            "0": { "label": "Empilhamento produz trilhas mais longas que exposição única" },
+            "1": { "label": "Exposições únicas não conseguem registrar movimento estelar" },
+            "2": { "label": "Empilhamento reduz ruído, permite recuperação de interrupções e economiza bateria" },
+            "3": { "label": "Não há diferença prática — é puramente preferência pessoal" }
+          }
+        }
+      }
+    }
+  }
+}

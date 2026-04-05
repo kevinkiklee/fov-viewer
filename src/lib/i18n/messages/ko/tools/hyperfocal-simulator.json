@@ -1,0 +1,21 @@
+{
+  "toolUI": {
+    "hyperfocal-simulator": {
+      "settings": "설정",
+      "focalLength": "초점 거리",
+      "aperture": "조리개",
+      "focusDistance": "초점 거리:",
+      "sensor": "센서",
+      "scene": "장면:",
+      "sceneLandscape": "풍경",
+      "sceneStreet": "스트리트",
+      "hyperfocalDistance": "과초점 거리",
+      "nearLimit": "근접 한계",
+      "farLimit": "원거리 한계",
+      "focusDistanceResult": "초점 거리",
+      "hyperfocalReference": "과초점 참조표",
+      "sharpToInfinity": "무한대까지 선명",
+      "nearLimitBadge": "근접 한계:"
+    }
+  }
+}

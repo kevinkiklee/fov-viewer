@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "star-trail-calculator": {
+      "rule500": "500 नियम",
+      "ruleNPF": "NPF नियम",
+      "recommendation": "अनुशंसा",
+      "recommendationText": "पिक्सेल-लेवल शार्पनेस के लिए NPF नियम ({npf}s) उपयोग करें। 500 नियम ({r500}s) त्वरित अनुमान है लेकिन हाई-रेज़ोल्यूशन सेंसर पर ट्रेलिंग दिखा सकता है।",
+      "shootingTime": "शूटिंग समय",
+      "exposure": "एक्सपोज़र",
+      "displayMode": "डिस्प्ले मोड",
+      "modeStarTrails": "स्टार ट्रेल्स",
+      "modeSingleShot": "सिंगल शॉट",
+      "stacking": "स्टैकिंग",
+      "exposurePerFrame": "एक्सपोज़र / फ़्रेम (सेकंड)",
+      "exposurePerFrameDesc": "प्रत्येक व्यक्तिगत फ़्रेम की शटर स्पीड",
+      "frames": "फ़्रेम",
+      "framesDesc": "स्टैक करने के लिए कुल फ़ोटो संख्या",
+      "gapSec": "गैप (सेकंड)",
+      "gapDesc": "बफ़र राइट के लिए फ़्रेम के बीच विलंब",
+      "camera": "कैमरा",
+      "sensor": "सेंसर",
+      "resolutionMP": "रेज़ोल्यूशन (MP)",
+      "apertureLabel": "अपर्चर",
+      "latitude": "अक्षांश",
+      "position": "स्थिति",
+      "useMyLocation": "मेरी लोकेशन उपयोग करें",
+      "latitudeLabel": "अक्षांश:",
+      "equator": "भूमध्य 0°",
+      "mid45": "मध्य 45°",
+      "arctic70": "आर्कटिक 70°"
+    }
+  }
+}

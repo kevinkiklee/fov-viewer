@@ -1,0 +1,25 @@
+{
+  "contact": {
+    "title": "문의하기",
+    "description": "질문이 있거나, 버그를 발견했거나, 새로운 도구를 제안하고 싶으신가요? 여러분의 의견을 듣고 싶습니다.",
+    "form": {
+      "nameLabel": "이름",
+      "namePlaceholder": "이름을 입력하세요",
+      "emailLabel": "이메일",
+      "emailPlaceholder": "your@email.com",
+      "subjectLabel": "제목",
+      "subjectPlaceholder": "문의 내용을 입력하세요",
+      "messageLabel": "메시지",
+      "messagePlaceholder": "메시지를 입력하세요...",
+      "submit": "메시지 보내기",
+      "sending": "보내는 중...",
+      "honeypotLabel": "웹사이트",
+      "successToast": "메시지가 전송되었습니다! 빠른 시일 내에 답변드리겠습니다.",
+      "errorToast": "오류가 발생했습니다. 다시 시도해 주세요.",
+      "networkErrorToast": "네트워크 오류입니다. 연결을 확인하고 다시 시도해 주세요.",
+      "sentTitle": "문의해 주셔서 감사합니다!",
+      "sentMessage": "가능한 빨리 답변드리겠습니다.",
+      "sendAnother": "다른 메시지 보내기"
+    }
+  }
+}

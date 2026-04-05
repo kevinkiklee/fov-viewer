@@ -1,0 +1,150 @@
+{
+  "education": {
+    "star-trail-calculator": {
+      "beginner": "Le stelle sembrano muoversi nel cielo perché la Terra ruota. Se l'otturatore resta aperto abbastanza a lungo, le stelle lasceranno scie nella tua foto. Il calcolatore di scie stellari ti aiuta a trovare il tempo di esposizione massimo per stelle puntiformi, o a pianificare lunghe esposizioni per creare bellissimi archi di scie stellari circolari.",
+      "deeper": {
+        "0": {
+          "heading": "Come si muovono le stelle",
+          "text": "La Terra ruota di 360° in circa 23 ore e 56 minuti (un giorno siderale), quindi le stelle si muovono a circa 15 secondi d'arco al secondo all'equatore celeste. Le stelle vicine ai poli (Polaris nel nord) tracciano cerchi più piccoli e sembrano muoversi più lentamente."
+        },
+        "1": {
+          "heading": "La regola del 500 vs. la regola NPF",
+          "text": "La classica \"regola del 500\" divide 500 per la lunghezza focale effettiva per stimare l'esposizione massima prima che le scie siano visibili — ma è stata progettata per sensori a risoluzione più bassa. La regola NPF tiene conto del passo dei pixel, della lunghezza focale, dell'apertura e della declinazione, producendo limiti più brevi e accurati per le moderne fotocamere ad alta risoluzione."
+        },
+        "2": {
+          "heading": "Stacking per scie stellari",
+          "text": "Per le scie stellari intenzionali, i fotografi scattano molte esposizioni più brevi (tipicamente 30s ciascuna) e le sovrappongono con un software. Questo evita l'accumulo di rumore, permette scie senza interruzioni, e significa che un singolo fotogramma rovinato non compromette l'intero scatto."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Lunghezza focale",
+          "description": "Lunghezze focali maggiori ingrandiscono il movimento stellare, richiedendo esposizioni più brevi per stelle puntiformi. Un obiettivo 14mm può esporre 5-10 volte più a lungo di un 200mm."
+        },
+        "1": {
+          "label": "Risoluzione del sensore",
+          "description": "Sensori a risoluzione più alta rivelano le scie stellari con tempi di esposizione più brevi. La regola del 500 è troppo generosa per le moderne fotocamere da 40MP+."
+        },
+        "2": {
+          "label": "Latitudine e declinazione",
+          "description": "Le stelle vicine ai poli celesti si muovono meno al secondo. Puntare verso la Stella Polare consente esposizioni più lunghe prima che le scie appaiano."
+        },
+        "3": {
+          "label": "Stacking vs esposizione singola",
+          "description": "Per le scie stellari, sovrapporre molte esposizioni brevi produce risultati più puliti di un'unica esposizione estremamente lunga, e consente il recupero da interruzioni."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Usa la regola NPF invece della regola del 500 per le fotocamere moderne. Tiene conto della risoluzione del sensore e produce tempi di esposizione massimi più accurati, specialmente con corpi ad alto numero di megapixel."
+        },
+        "1": {
+          "text": "Per lo stacking di scie stellari, mantieni le pause tra i fotogrammi sotto i 2-3 secondi usando un telecomando con filo o un intervallometro. Pause più lunghe creano scie punteggiate anziché continue."
+        },
+        "2": {
+          "text": "Includi la Stella Polare (o il Polo Celeste Sud) nella tua composizione per scie concentriche suggestive. Le stelle più vicine al polo tracciano archi più stretti."
+        }
+      },
+      "tooltips": {
+        "mode": {
+          "term": "Modalità",
+          "definition": "Scegli \"Stelle nitide\" per calcolare il tempo di esposizione massimo per stelle puntiformi, o \"Scie stellari\" per pianificare sequenze di esposizione per effetti di scia intenzionali."
+        },
+        "focalLength": {
+          "term": "Lunghezza focale",
+          "definition": "La lunghezza focale dell'obiettivo in millimetri. Lunghezze focali maggiori ingrandiscono il movimento apparente delle stelle, richiedendo esposizioni individuali più brevi."
+        },
+        "sensor": {
+          "term": "Dimensione del sensore",
+          "definition": "Le dimensioni fisiche del sensore. Combinate con la risoluzione, determinano il passo dei pixel, che influisce su quanto velocemente le scie stellari diventano visibili."
+        },
+        "resolution": {
+          "term": "Risoluzione",
+          "definition": "La risoluzione del sensore in megapixel. Fotocamere a risoluzione più alta rivelano le scie stellari prima perché ogni pixel copre un'area angolare di cielo più piccola."
+        },
+        "aperture": {
+          "term": "Apertura",
+          "definition": "L'apertura dell'obiettivo. Per l'astrofotografia, usa l'apertura più ampia disponibile (numero f più basso) per catturare più luce stellare in ogni fotogramma."
+        },
+        "latitude": {
+          "term": "Latitudine",
+          "definition": "La tua latitudine geografica. Influisce sulla velocità apparente di movimento delle stelle — a latitudini più alte, le stelle vicine al polo si muovono più lentamente nell'inquadratura."
+        },
+        "exposurePerFrame": {
+          "term": "Esposizione per fotogramma",
+          "definition": "Il tempo di posa per ogni singolo fotogramma in una sequenza di scie stellari. Tipicamente 15-30 secondi per catturare abbastanza luce evitando rumore eccessivo."
+        },
+        "numberOfFrames": {
+          "term": "Numero di fotogrammi",
+          "definition": "Quante singole esposizioni scattare. Più fotogrammi significano scie stellari più lunghe e suggestive. 120 fotogrammi da 30 secondi ciascuno producono un'ora di scie."
+        },
+        "gapBetweenFrames": {
+          "term": "Pausa tra i fotogrammi",
+          "definition": "Il tempo tra le esposizioni per consentire alla fotocamera di salvare il file. Mantienilo il più breve possibile (1-3 secondi) per evitare scie punteggiate."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Stai fotografando la Via Lattea con un obiettivo 24mm su una fotocamera full-frame da 24MP. Usando la regola del 500, approssimativamente quanto puoi esporre prima che le stelle inizino a lasciare scie?",
+          "hint": "La regola del 500: secondi massimi = 500 / lunghezza focale.",
+          "successMessage": "Giusto! 500 / 24 = circa 20 secondi. Questo è un buon punto di partenza, anche se la regola NPF potrebbe suggerire un tempo leggermente più breve per la massima nitidezza.",
+          "failureMessage": "Applica la regola del 500: dividi 500 per la tua lunghezza focale (24mm). Questo ti dà circa 20 secondi.",
+          "options": {
+            "0": { "label": "5 secondi" },
+            "1": { "label": "10 secondi" },
+            "2": { "label": "20 secondi" },
+            "3": { "label": "60 secondi" }
+          }
+        },
+        "1": {
+          "scenario": "Vuoi fotografare la Nebulosa di Orione con un obiettivo 200mm su una fotocamera con sensore crop (fattore di crop 1,5x). Qual è l'esposizione massima approssimativa usando la regola del 500?",
+          "hint": "Con un sensore crop, moltiplica prima la lunghezza focale per il fattore di crop, poi applica la regola.",
+          "successMessage": "Corretto! La lunghezza focale effettiva è 200mm x 1,5 = 300mm. 500 / 300 = ~1,7 secondi. Con lunghezze focali teleobiettivo su sensori crop, hai pochissimo tempo prima che le scie appaiano.",
+          "failureMessage": "Ricorda di tenere conto del fattore di crop: 200mm x 1,5 = 300mm effettivi. Poi 500 / 300 dà circa 1,7 secondi.",
+          "options": {
+            "0": { "label": "~1,7 secondi" },
+            "1": { "label": "~2,5 secondi" },
+            "2": { "label": "~5 secondi" },
+            "3": { "label": "~10 secondi" }
+          }
+        },
+        "2": {
+          "scenario": "Vuoi creare una foto di scie stellari di 2 ore. Pianifichi di scattare esposizioni da 30 secondi con pause di 2 secondi. Quanti fotogrammi ti serviranno?",
+          "hint": "Calcola quanti intervalli di 32 secondi (30s di esposizione + 2s di pausa) entrano in 2 ore (7200 secondi).",
+          "successMessage": "Corretto! 7200 secondi / 32 secondi per fotogramma = 225 fotogrammi. Otterrai scie continue e uniformi per 2 ore di rotazione terrestre.",
+          "failureMessage": "Due ore = 7200 secondi. Ogni ciclo di fotogramma è 30s + 2s = 32s. Dividi 7200 per 32 per ottenere il numero di fotogrammi necessari.",
+          "options": {
+            "0": { "label": "120 fotogrammi" },
+            "1": { "label": "180 fotogrammi" },
+            "2": { "label": "225 fotogrammi" },
+            "3": { "label": "240 fotogrammi" }
+          }
+        },
+        "3": {
+          "scenario": "Il tuo amico usa una fotocamera full-frame da 50MP e ha seguito la regola del 500 con un obiettivo 20mm, ottenendo un'esposizione di 25 secondi. Si lamenta che le stelle sembrano brevi strisce quando si ingrandisce. Perché?",
+          "hint": "La regola del 500 è stata progettata per sensori più vecchi, a risoluzione più bassa.",
+          "successMessage": "Esatto! La regola del 500 è troppo generosa per sensori ad alta risoluzione. Un sensore full-frame da 50MP ha un passo dei pixel di circa 4,4 micrometri, e la regola NPF raccomanderebbe circa 10-12 secondi per stelle veramente nitide.",
+          "failureMessage": "La regola del 500 è stata creata quando i sensori avevano molti meno megapixel. Con 50MP, ogni pixel copre una porzione di cielo molto più piccola, rivelando il movimento stellare che era invisibile sulle fotocamere più vecchie.",
+          "options": {
+            "0": { "label": "L'obiettivo era fuori fuoco" },
+            "1": { "label": "La regola del 500 è troppo generosa per sensori ad alta risoluzione" },
+            "2": { "label": "La fotocamera si muoveva per il vento" },
+            "3": { "label": "Il 20mm è troppo grandangolare per l'astrofotografia" }
+          }
+        },
+        "4": {
+          "scenario": "Vuoi un'immagine di scie stellari di 1 ora. Perché gli astrofotografi esperti sovrappongono molte esposizioni brevi (es. 240 x 15s) invece di scattare una singola esposizione di 1 ora?",
+          "hint": "Pensa a cosa succede al rumore del sensore, alla durata della batteria e alla possibilità di recupero durante un'esposizione singola estremamente lunga.",
+          "successMessage": "Corretto! Una singola esposizione di un'ora accumula un enorme rumore termico, scarica la batteria, e se qualcosa va storto (vibrazioni, condensa, un faro di auto) l'intero scatto è rovinato. Sovrapporre fotogrammi brevi mantiene basso il rumore, permette di rimuovere fotogrammi rovinati, ed è molto più tollerante.",
+          "failureMessage": "Le lunghe esposizioni singole accumulano un grave rumore termico e rischiano la perdita totale per qualsiasi interruzione. Sovrapporre fotogrammi brevi mantiene il rumore gestibile, permette di scartare fotogrammi rovinati e produce risultati più puliti.",
+          "options": {
+            "0": { "label": "Lo stacking produce scie più lunghe di una singola esposizione" },
+            "1": { "label": "Le esposizioni singole non possono registrare il movimento stellare" },
+            "2": { "label": "Lo stacking riduce il rumore, consente il recupero da interruzioni e risparmia la batteria" },
+            "3": { "label": "Non c'è alcuna differenza pratica — è puramente una preferenza personale" }
+          }
+        }
+      }
+    }
+  }
+}

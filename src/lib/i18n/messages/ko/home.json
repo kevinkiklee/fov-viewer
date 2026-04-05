@@ -1,0 +1,13 @@
+{
+  "home": {
+    "heroTitle": "PhotoTools — 무료 사진 도구",
+    "heroDesc": "무료 사진 계산기, 시뮬레이터, 레퍼런스 도구. 회원 가입 불필요 — 사진은 브라우저 밖으로 전송되지 않습니다.",
+    "comingSoon": "곧 출시",
+    "categories": {
+      "visualizer": "시각화 도구",
+      "calculator": "계산기",
+      "reference": "레퍼런스",
+      "file-tool": "파일 도구"
+    }
+  }
+}

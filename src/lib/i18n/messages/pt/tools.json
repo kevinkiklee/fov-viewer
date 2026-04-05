@@ -1,0 +1,56 @@
+{
+  "tools": {
+    "fov-simulator": {
+      "name": "Simulador de Campo de Visão",
+      "description": "Compare o campo de visão entre diferentes distâncias focais e tamanhos de sensor"
+    },
+    "color-scheme-generator": {
+      "name": "Gerador de Esquema de Cores",
+      "description": "Crie paletas de cores para sessões fotográficas"
+    },
+    "exposure-simulator": {
+      "name": "Simulador do Triângulo de Exposição",
+      "description": "Veja como abertura, velocidade do obturador e ISO interagem"
+    },
+    "dof-calculator": {
+      "name": "Calculadora de Profundidade de Campo",
+      "description": "Calcule foco próximo, foco distante e profundidade de campo total"
+    },
+    "hyperfocal-simulator": {
+      "name": "Simulador de Distância Hiperfocal",
+      "description": "Aprenda onde focar para máxima nitidez do primeiro plano ao infinito"
+    },
+    "shutter-speed-visualizer": {
+      "name": "Visualizador de Velocidade do Obturador",
+      "description": "Encontre a velocidade mínima segura do obturador para fotos nítidas à mão"
+    },
+    "nd-filter-calculator": {
+      "name": "Calculadora de Filtro ND",
+      "description": "Calcule o tempo de exposição com qualquer filtro ND"
+    },
+    "star-trail-calculator": {
+      "name": "Calculadora de Trilhas de Estrelas",
+      "description": "Calcule a exposição máxima para estrelas nítidas ou planeje fotos de trilhas de estrelas"
+    },
+    "perspective-compression-simulator": {
+      "name": "Simulador de Compressão de Perspectiva",
+      "description": "Veja como a distância focal afeta a compressão do fundo"
+    },
+    "white-balance-visualizer": {
+      "name": "Visualizador de Balanço de Branco",
+      "description": "Veja como a temperatura de cor afeta suas fotos"
+    },
+    "sensor-size-comparison": {
+      "name": "Comparação de Tamanho de Sensor",
+      "description": "Compare visualmente os tamanhos de sensor de câmeras"
+    },
+    "frame-studio": {
+      "name": "Frame Studio",
+      "description": "Corte, emoldure e componha fotos com grades de composição"
+    },
+    "exif-viewer": {
+      "name": "Visualizador EXIF",
+      "description": "Veja metadados EXIF e histograma de qualquer foto — 100% no navegador"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "toolUI": {
+    "exposure-simulator": {
+      "lock": "잠금:",
+      "lockAperture": "조리개",
+      "lockShutter": "셔터",
+      "lockISO": "ISO",
+      "lockApertureLabel": "조리개 잠금",
+      "lockShutterLabel": "셔터 잠금",
+      "lockISOLabel": "ISO 잠금",
+      "aperture": "조리개:",
+      "shutterSpeed": "셔터 스피드:",
+      "iso": "ISO:",
+      "locked": "(잠금됨)",
+      "exposureValue": "노출 값 (EV)",
+      "depthOfField": "피사계 심도",
+      "motion": "모션",
+      "noise": "노이즈",
+      "dofVeryShallow": "매우 얕음",
+      "dofShallow": "얕음",
+      "dofModerate": "보통",
+      "dofDeep": "깊음",
+      "dofVeryDeep": "매우 깊음",
+      "motionFrozen": "정지",
+      "motionSharp": "선명",
+      "motionModerate": "보통",
+      "motionSlightBlur": "약간 흐림",
+      "motionBlurred": "흐림",
+      "noiseClean": "깨끗",
+      "noiseLow": "적은 노이즈",
+      "noiseModerate": "보통 노이즈",
+      "noiseNoisy": "노이즈 있음",
+      "noiseVeryNoisy": "노이즈 많음",
+      "scene": "장면:",
+      "sceneStreet": "스트리트",
+      "sceneLandscape": "풍경",
+      "scenePortrait": "인물",
+      "sceneLowLight": "저조도",
+      "imageEffectsUnavailable": "이미지 효과 미리 보기를 사용할 수 없습니다.",
+      "loadingScene": "장면 로딩 중..."
+    }
+  }
+}

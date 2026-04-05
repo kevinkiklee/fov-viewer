@@ -1,0 +1,120 @@
+{
+  "education": {
+    "histogram": {
+      "beginner": "Un istogramma è un grafico che mostra quanto sono luminosi o scuri i pixel nella tua foto. Il lato sinistro rappresenta le ombre (aree scure), il centro rappresenta i mezzitoni, e il lato destro rappresenta le alte luci (aree luminose). Se il grafico è ammassato da un lato, la tua foto potrebbe essere sottoesposta o sovraesposta.",
+      "deeper": "Un istogramma traccia il conteggio dei pixel (asse verticale) rispetto al livello di luminosità (asse orizzontale, 0-255 per immagini a 8 bit). In modalità luminanza, la luminosità di ogni pixel è calcolata come media ponderata dei canali rosso, verde e blu (tipicamente 0,299R + 0,587G + 0,114B, corrispondente alla percezione umana). La modalità RGB mostra tre distribuzioni separate, rivelando quali canali colore potrebbero essere in clipping indipendentemente — un canale rosso a 255 mentre il blu è normale indica clipping delle alte luci nei toni caldi, come un cielo al tramonto. Il \"clipping\" si verifica quando i valori dei pixel raggiungono il limite 0 o 255, il che significa che il dettaglio nelle ombre o nelle alte luci è stato irrecuperabilmente perso. Il clipping nero (pixel a 0) perde dettaglio nelle ombre; il clipping bianco (pixel a 255) perde dettaglio nelle alte luci. Scattare in RAW offre circa 2-3 stop extra di recupero nelle alte luci oltre a quanto mostra l'istogramma JPEG, motivo per cui molti fotografi \"espongono a destra\" (ETTR) — spingendo l'esposizione il più luminosa possibile senza mandare in clipping i dati RAW.",
+      "keyFactors": {
+        "0": {
+          "label": "Distribuzione tonale",
+          "description": "La forma complessiva ti dice se l'immagine è scura (pesante a sinistra), luminosa (pesante a destra) o bilanciata (distribuita su tutta la gamma)."
+        },
+        "1": {
+          "label": "Clipping",
+          "description": "Picchi all'estrema sinistra o destra indicano perdita di dettaglio nelle ombre o nelle alte luci."
+        },
+        "2": {
+          "label": "Separazione dei canali",
+          "description": "La modalità RGB rivela il comportamento individuale dei canali colore — utile per rilevare il clipping specifico di un colore in scene sature."
+        },
+        "3": {
+          "label": "Gamma dinamica",
+          "description": "Un istogramma che copre tutta la larghezza senza clipping indica un buon utilizzo della gamma dinamica disponibile."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Non esiste una forma \"perfetta\" dell'istogramma. Una foto di un gatto nero su un divano scuro dovrebbe essere pesante a sinistra. Valuta l'istogramma in base al tuo intento creativo, non a una curva ideale."
+        },
+        "1": {
+          "text": "Controlla la modalità di sovrapposizione RGB per foto di tramonti e luci al neon. Il canale rosso spesso va in clipping molto prima del blu, causando perdita di dettaglio nelle alte luci calde anche quando l'istogramma di luminanza sembra a posto."
+        },
+        "2": {
+          "text": "Se vedi avvisi di clipping su entrambi gli estremi simultaneamente, la scena probabilmente supera la gamma dinamica della tua fotocamera. Considera il bracketing per l'HDR o l'uso di filtri ND graduati."
+        }
+      },
+      "tooltips": {
+        "View Mode": {
+          "term": "Modalità di visualizzazione",
+          "definition": "Luminanza mostra la luminosità complessiva. Sovrapposizione RGB mostra tutti e tre i canali colore sovrapposti. Tutti i canali mostra RGB più la luminanza insieme."
+        },
+        "Shadows": {
+          "term": "Ombre",
+          "definition": "La regione più a sinistra dell'istogramma (circa 0-85), che rappresenta i toni più scuri dell'immagine."
+        },
+        "Midtones": {
+          "term": "Mezzitoni",
+          "definition": "La regione centrale (circa 86-170), che rappresenta la luminosità media — i toni della pelle e la maggior parte delle texture naturali si trovano qui."
+        },
+        "Highlights": {
+          "term": "Alte luci",
+          "definition": "La regione più a destra (circa 171-255), che rappresenta i toni più luminosi: cieli, riflessi e sorgenti luminose."
+        },
+        "Black Clipping": {
+          "term": "Clipping nero",
+          "definition": "La percentuale di pixel a luminosità 0 (nero puro). Valori alti significano che il dettaglio nelle ombre è stato perso e non può essere recuperato."
+        },
+        "White Clipping": {
+          "term": "Clipping bianco",
+          "definition": "La percentuale di pixel a luminosità 255 (bianco puro). Valori alti significano che il dettaglio nelle alte luci è stato bruciato."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Carichi una foto e l'istogramma è spinto pesantemente a sinistra con quasi niente sul lato destro. Cosa ti dice questo dell'immagine?",
+          "hint": "Sinistra = scuro, destra = luminoso.",
+          "successMessage": "Corretto! Un istogramma pesante a sinistra significa che l'immagine è prevalentemente di toni scuri — potrebbe essere sottoesposta, o potrebbe essere un'immagine intenzionalmente scura/low-key.",
+          "failureMessage": "Un istogramma ammassato a sinistra indica che l'immagine è prevalentemente scura. Questo spesso significa sottoesposizione.",
+          "options": {
+            "0": { "label": "L'immagine è sottoesposta o molto scura" },
+            "1": { "label": "L'immagine è sovraesposta o molto luminosa" },
+            "2": { "label": "L'immagine ha un'esposizione perfetta" }
+          }
+        },
+        "1": {
+          "scenario": "Quale modalità di visualizzazione dovresti usare per vedere la distribuzione di luminosità complessiva della tua foto in un singolo grafico?",
+          "hint": "Una modalità combina tutte le informazioni sul colore in una singola curva di luminosità.",
+          "successMessage": "Giusto! La modalità Luminanza mostra una singola curva che rappresenta la luminosità percepita complessiva.",
+          "failureMessage": "La modalità Luminanza è la vista più semplice — combina R, G, B in una singola curva di luminosità.",
+          "options": {
+            "0": { "label": "Luminanza" },
+            "1": { "label": "Sovrapposizione RGB" },
+            "2": { "label": "Tutti i canali" }
+          }
+        },
+        "2": {
+          "scenario": "Hai scattato un vivido tramonto e l'istogramma di luminanza sembra a posto, ma quando passi alla Sovrapposizione RGB vedi il canale rosso che picca all'estrema destra. Cosa sta succedendo?",
+          "hint": "I singoli canali colore possono andare in clipping anche quando la luminanza complessiva non lo fa.",
+          "successMessage": "Esatto! Il canale rosso è in clipping — le alte luci del tramonto hanno perso dettaglio nei toni rossi anche se la luminosità complessiva sembra accettabile. Stai perdendo sfumature di colore caldo.",
+          "failureMessage": "Il canale rosso sta facendo clipping indipendentemente. Le alte luci calde e sature (tramonti, fuoco) spesso spingono il rosso a 255 mentre verde e blu sono a posto, perdendo dettaglio cromatico in quei toni.",
+          "options": {
+            "0": { "label": "Clipping del canale rosso — dettaglio delle alte luci calde perso" },
+            "1": { "label": "L'immagine è sovraesposta nel complesso" },
+            "2": { "label": "Il bilanciamento del bianco è sbagliato" }
+          }
+        },
+        "3": {
+          "scenario": "Lo strumento riporta 2,3% di clipping nero e 0,1% di clipping bianco. Dovresti regolare la tua esposizione?",
+          "hint": "Piccole quantità di clipping sono normali — ombre nere pure e alte luci speculari sono attese.",
+          "successMessage": "Buon giudizio! Il 2,3% di clipping nero è modesto e spesso sono solo ombre profonde o bordi scuri. Lo 0,1% di clipping bianco è probabilmente alte luci speculari (riflessi del sole). Questa esposizione va bene per la maggior parte degli scopi.",
+          "failureMessage": "Queste percentuali di clipping sono piuttosto basse. Un po' di clipping nero nelle ombre profonde e un minuscolo clipping bianco dalle alte luci speculari è normale e atteso. Nessuna regolazione necessaria.",
+          "options": {
+            "0": { "label": "Aumenta l'esposizione per ridurre il clipping nero" },
+            "1": { "label": "Va bene così — un leggero clipping nelle ombre e nelle alte luci speculari è normale" },
+            "2": { "label": "Diminuisci l'esposizione per eliminare il clipping bianco" }
+          }
+        },
+        "4": {
+          "scenario": "Stai fotografando una scena ad alto contrasto: una sposa in abito bianco in una cattedrale scura. L'istogramma mostra forti picchi a entrambi gli estremi con una lacuna nei mezzitoni. Come dovresti gestire questa situazione?",
+          "hint": "Quando la gamma dinamica della scena supera la capacità del sensore, hai bisogno di una tecnica a esposizioni multiple.",
+          "successMessage": "Perfetto! Questo istogramma bimodale indica che la scena supera la gamma dinamica del tuo sensore. Il bracketing dell'esposizione (HDR) cattura sia l'interno scuro che il dettaglio dell'abito luminoso. In alternativa, usa il flash di riempimento per sollevare le ombre.",
+          "failureMessage": "Un istogramma bimodale (picchi a entrambi gli estremi, centro vuoto) significa che la scena ha più gamma dinamica di quella che il tuo sensore può catturare in un solo scatto. Fai il bracketing delle esposizioni per l'HDR, o usa il flash di riempimento per ridurre il rapporto di contrasto.",
+          "options": {
+            "0": { "label": "Bracketing delle esposizioni per HDR o flash di riempimento" },
+            "1": { "label": "Esponi per i mezzitoni e spera per il meglio" },
+            "2": { "label": "Passa al bianco e nero per nascondere il problema" }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "star-trail-calculator": {
+      "rule500": "500 규칙",
+      "ruleNPF": "NPF 규칙",
+      "recommendation": "추천",
+      "recommendationText": "픽셀 수준의 선명함을 위해 NPF 규칙({npf}초)을 사용하세요. 500 규칙({r500}초)은 빠른 추정이지만 고해상도 센서에서는 궤적이 보일 수 있습니다.",
+      "shootingTime": "촬영 시간",
+      "exposure": "노출",
+      "displayMode": "표시 모드",
+      "modeStarTrails": "별 궤적",
+      "modeSingleShot": "단일 촬영",
+      "stacking": "스태킹",
+      "exposurePerFrame": "프레임당 노출 (초)",
+      "exposurePerFrameDesc": "각 개별 프레임의 셔터 스피드",
+      "frames": "프레임",
+      "framesDesc": "스태킹할 총 사진 수",
+      "gapSec": "간격 (초)",
+      "gapDesc": "버퍼 기록을 위한 프레임 간 지연",
+      "camera": "카메라",
+      "sensor": "센서",
+      "resolutionMP": "해상도 (MP)",
+      "apertureLabel": "조리개",
+      "latitude": "위도",
+      "position": "위치",
+      "useMyLocation": "내 위치 사용",
+      "latitudeLabel": "위도:",
+      "equator": "적도 0°",
+      "mid45": "중위도 45°",
+      "arctic70": "극지 70°"
+    }
+  }
+}

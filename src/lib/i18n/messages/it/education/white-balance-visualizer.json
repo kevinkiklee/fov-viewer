@@ -1,0 +1,129 @@
+{
+  "education": {
+    "white-balance-visualizer": {
+      "beginner": "Il bilanciamento del bianco regola i colori nella tua foto in modo che gli oggetti bianchi appaiano effettivamente bianchi sotto qualsiasi illuminazione. Diverse fonti luminose hanno diverse temperature colore — una candela è calda e arancione, mentre l'ombra è fredda e blu. L'impostazione del bilanciamento del bianco della fotocamera compensa queste differenze affinché i colori appaiano naturali.",
+      "deeper": {
+        "0": {
+          "heading": "Temperatura colore",
+          "text": "La temperatura colore è misurata in Kelvin (K) e corrisponde al colore della luce emessa da un \"corpo nero\" ideale riscaldato a quella temperatura. Valori più bassi (2000–3500K) producono luce calda, rosso-arancione (lampadine a incandescenza, candele), mentre valori più alti (6500–10000K) producono luce fredda e bluastra (ombra, cielo coperto)."
+        },
+        "1": {
+          "heading": "Come funziona il bilanciamento del bianco",
+          "text": "Il sistema di bilanciamento del bianco della fotocamera applica lo spostamento cromatico inverso per neutralizzare la dominante di colore ambientale. Quando imposti il bilanciamento del bianco su \"Tungsteno\" (~3200K), la fotocamera aggiunge blu per contrastare la dominante arancione delle luci a incandescenza. Nella fotografia digitale, il bilanciamento del bianco viene applicato come moltiplicatore ai canali rosso e blu rispetto al verde."
+        },
+        "2": {
+          "heading": "Vantaggio del RAW",
+          "text": "Scattare in formato RAW preserva tutti i dati cromatici e ti permette di cambiare il bilanciamento del bianco liberamente in post-produzione senza alcuna perdita di qualità — è semplicemente un tag di metadati applicato durante la conversione."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Temperatura colore (Kelvin)",
+          "description": "La misura numerica del colore della luce. Kelvin basso = luce calda/arancione. Kelvin alto = luce fredda/blu. La luce diurna è circa 5500K."
+        },
+        "1": {
+          "label": "Fonte luminosa",
+          "description": "Diverse fonti emettono diverse temperature colore: candele (~1800K), lampadine a tungsteno (~2800K), tubi fluorescenti (~4000K), sole a mezzogiorno (~5500K), cielo nuvoloso (~6500K), ombra (~7500K)."
+        },
+        "2": {
+          "label": "RAW vs JPEG",
+          "description": "Scattare in RAW ti permette di cambiare il bilanciamento del bianco in post senza perdita di qualità. Il JPEG incorpora il bilanciamento del bianco in modo permanente, quindi impostarlo correttamente in fotocamera è più importante."
+        },
+        "3": {
+          "label": "Illuminazione mista",
+          "description": "Scene con più fonti luminose a diverse temperature (es. luce diurna dalla finestra + lampade a tungsteno) rendono impossibile neutralizzare perfettamente tutti i colori simultaneamente."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Scatta sempre in RAW se vuoi la massima flessibilità per regolare il bilanciamento del bianco successivamente. I file RAW memorizzano i dati grezzi del sensore, quindi le modifiche al bilanciamento del bianco sono senza perdita."
+        },
+        "1": {
+          "text": "Per un effetto creativo, prova a \"disallineare\" intenzionalmente il bilanciamento del bianco. Impostare un WB diurno durante la golden hour rende i tramonti ancora più caldi, mentre un WB tungsteno all'aperto crea un drammatico look freddo e blu."
+        },
+        "2": {
+          "text": "In situazioni di illuminazione mista (es. una stanza illuminata sia dalla luce della finestra che da lampade a tungsteno), usa un cartoncino grigio per impostare un bilanciamento del bianco personalizzato, o aggiungi una gelatina al flash per adattarlo alla fonte di luce ambientale."
+        }
+      },
+      "tooltips": {
+        "colorTemperature": {
+          "term": "Temperatura colore",
+          "definition": "Una misura del colore della luce in Kelvin (K). Basata sul colore teorico di un corpo nero riscaldato. Valori più bassi sono più caldi (arancione/rosso), valori più alti sono più freddi (blu)."
+        },
+        "preset": {
+          "term": "Preset bilanciamento del bianco",
+          "definition": "Un'impostazione predefinita del bilanciamento del bianco calibrata per una fonte luminosa comune. I preset includono Tungsteno (~3200K), Fluorescente (~4000K), Diurno (~5500K), Nuvoloso (~6500K) e Ombra (~7500K)."
+        },
+        "rgbValues": {
+          "term": "Valori RGB",
+          "definition": "I valori dei canali rosso, verde e blu (0-255 ciascuno) che rappresentano il colore della luce alla temperatura selezionata. Usati per visualizzare come la fonte luminosa tinge la scena."
+        },
+        "hexCode": {
+          "term": "Codice esadecimale",
+          "definition": "Una rappresentazione esadecimale di sei caratteri del colore (es. #FF8C00). Utile per referenziare il colore esatto in software di design o sviluppo web."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Le tue foto in interni sotto normali lampadine domestiche risultano molto arancioni/gialle. Quale preset di bilanciamento del bianco dovresti usare per correggere questo?",
+          "hint": "Le lampadine a incandescenza domestiche emettono luce calda e arancione attorno ai 2800-3200K.",
+          "successMessage": "Corretto! Il preset Tungsteno aggiunge blu per contrastare la dominante arancione delle lampadine a incandescenza, riportando i colori al neutro.",
+          "failureMessage": "Le lampadine a incandescenza/tungsteno emettono luce arancione calda. Il preset Tungsteno del bilanciamento del bianco è specificamente progettato per neutralizzare questa dominante aggiungendo blu.",
+          "options": {
+            "0": { "label": "Diurno" },
+            "1": { "label": "Tungsteno" },
+            "2": { "label": "Ombra" },
+            "3": { "label": "Fluorescente" }
+          }
+        },
+        "1": {
+          "scenario": "Stai scattando ritratti durante la golden hour e vuoi mantenere il bel calore del tramonto. Quale impostazione del bilanciamento del bianco dovresti usare?",
+          "hint": "Se impostassi il WB \"corretto\" per la golden hour, neutralizzerebbe i toni caldi che vuoi mantenere.",
+          "successMessage": "Corretto! Usare il preset Diurno (o anche Nuvoloso/Ombra) durante la golden hour preserva e accentua i toni caldi invece di neutralizzarli.",
+          "failureMessage": "Per preservare il calore della golden hour, usa un WB che non compensi la luce calda. Il preset Diurno o superiori manterranno (e persino accentueranno) il calore.",
+          "options": {
+            "0": { "label": "Bilanciamento del bianco automatico" },
+            "1": { "label": "Tungsteno (per neutralizzare il calore)" },
+            "2": { "label": "Diurno (per preservare il calore)" },
+            "3": { "label": "Flash" }
+          }
+        },
+        "2": {
+          "scenario": "Stai regolando manualmente il bilanciamento del bianco in Kelvin. La tua foto appare troppo blu/fredda. Dovresti aumentare o diminuire il valore Kelvin per scaldarla?",
+          "hint": "L'impostazione Kelvin del WB dice alla fotocamera quale temperatura colore ha la fonte luminosa. Impostare un valore Kelvin più alto fa sì che la fotocamera aggiunga più calore.",
+          "successMessage": "Giusto! Aumentare il valore Kelvin dice alla fotocamera che la luce è più fredda di quanto sia in realtà, quindi la fotocamera compensa aggiungendo calore. Imposta un K più alto per scaldare un'immagine dall'aspetto freddo.",
+          "failureMessage": "Quando aumenti il valore Kelvin, la fotocamera aggiunge più calore per compensare. Quindi per correggere un'immagine fredda/blu, alza il numero Kelvin.",
+          "options": {
+            "0": { "label": "Aumentare i Kelvin (es. da 5500K a 7500K)" },
+            "1": { "label": "Diminuire i Kelvin (es. da 5500K a 3200K)" },
+            "2": { "label": "La direzione dei Kelvin non influisce sul calore" }
+          }
+        },
+        "3": {
+          "scenario": "Stai fotografando l'interno di un ristorante che ha lampade a sospensione calde a tungsteno e luce diurna fredda e blu che entra da grandi finestre. Le persone vicino alle finestre appaiono blu, e quelle sotto le lampade appaiono arancioni. Qual è l'approccio migliore?",
+          "hint": "Nessuna singola impostazione di bilanciamento del bianco può correggere due temperature colore molto diverse simultaneamente.",
+          "successMessage": "Esatto! Aggiungere gelatine al flash o alle luci aggiuntive per adattarle a una fonte dominante, o scegliere un WB di compromesso e correggere selettivamente in post, sono gli approcci migliori per l'illuminazione mista.",
+          "failureMessage": "L'illuminazione mista è una delle sfide WB più difficili. Un singolo WB non può correggere entrambe le fonti simultaneamente. Devi o adattare le fonti con gelatine o correggerlo selettivamente in post.",
+          "options": {
+            "0": { "label": "Imposta il WB su Tungsteno — risolverà tutto" },
+            "1": { "label": "Imposta il WB su Diurno — le finestre sono più importanti" },
+            "2": { "label": "Usa il WB automatico e scatta in RAW, poi correggi ogni zona in post" },
+            "3": { "label": "Alza l'ISO per rendere i colori più accurati" }
+          }
+        },
+        "4": {
+          "scenario": "Stai scattando una scena notturna urbana dal mood cinematografico e vuoi un tono freddo e blu intenzionale. I lampioni sono al sodio (~2200K). Quale impostazione Kelvin del bilanciamento del bianco ti darebbe lo spostamento blu più forte?",
+          "hint": "Impostare il WB molto più basso della temperatura effettiva della fonte luminosa sposterà l'immagine verso il blu.",
+          "successMessage": "Corretto! Impostare il WB a 7500K (preset Ombra) dice alla fotocamera che la fonte luminosa è molto fredda/blu — quindi compensa aggiungendo una forte correzione di calore. Ma poiché le luci al sodio effettive sono solo a 2200K (molto calde), questa sovracorrezione supera il neutro e produce una forte dominante blu. Più alzi il WB Kelvin sopra la temperatura effettiva della luce, più forte è lo spostamento blu.",
+          "failureMessage": "Impostare un valore Kelvin del WB molto più alto della temperatura effettiva della fonte luminosa fa sì che la fotocamera sovracorregga verso il blu. Con luci al sodio a 2200K, impostare il WB a 7500K+ crea il look freddo e blu più forte.",
+          "options": {
+            "0": { "label": "2200K (corrispondente alle luci al sodio)" },
+            "1": { "label": "3200K (preset Tungsteno)" },
+            "2": { "label": "7500K o superiore (preset Ombra)" },
+            "3": { "label": "5500K (preset Diurno)" }
+          }
+        }
+      }
+    }
+  }
+}

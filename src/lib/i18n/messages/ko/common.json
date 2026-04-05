@@ -1,0 +1,101 @@
+{
+  "common": {
+    "nav": {
+      "tools": "도구",
+      "glossary": "용어 사전",
+      "closeMenu": "메뉴 닫기",
+      "comingSoon": "곧 출시",
+      "categories": {
+        "visualizer": "시각화 도구",
+        "calculator": "계산기",
+        "reference": "레퍼런스",
+        "file-tool": "파일 도구"
+      }
+    },
+    "footer": {
+      "glossary": "용어 사전",
+      "about": "소개",
+      "contact": "문의",
+      "privacy": "개인정보 처리방침",
+      "terms": "이용약관",
+      "cookieSettings": "쿠키 설정"
+    },
+    "theme": {
+      "switchToLight": "라이트 모드로 전환",
+      "switchToDark": "다크 모드로 전환"
+    },
+    "actions": {
+      "copyImage": "이미지 복사",
+      "reset": "초기화",
+      "copyLink": "링크 복사",
+      "share": "공유",
+      "embed": "임베드"
+    },
+    "toast": {
+      "linkCopied": "링크가 복사되었습니다!",
+      "imageCopied": "이미지가 복사되었습니다!",
+      "failedToCopy": "복사에 실패했습니다",
+      "copied": "복사 완료!"
+    },
+    "learn": {
+      "title": "학습",
+      "openPanel": "학습 패널 열기",
+      "collapsePanel": "학습 패널 접기",
+      "whatIsThis": "이것은 무엇인가요?",
+      "howItWorks": "작동 원리",
+      "keyFactors": "핵심 요소",
+      "proTip": "프로 팁",
+      "challenge": "도전 문제",
+      "hint": "힌트: {hint}",
+      "completed": "완료",
+      "checkAnswer": "정답 확인",
+      "nextChallenge": "다음 문제",
+      "tryAgain": "다시 시도",
+      "resetAll": "전체 초기화",
+      "resetAllChallenges": "모든 문제 초기화",
+      "challengeNumber": "문제 {number}"
+    },
+    "share": {
+      "title": "공유 및 임베드",
+      "closeModal": "공유 모달 닫기",
+      "directLink": "직접 링크",
+      "markdown": "마크다운 (Reddit, GitHub)",
+      "bbcode": "BBCode (포럼)",
+      "htmlEmbed": "HTML 임베드",
+      "copy": "복사",
+      "copied": "복사됨"
+    },
+    "draft": {
+      "banner": "미리 보기 — 이 도구는 아직 공개되지 않았습니다"
+    },
+    "fileUpload": {
+      "dropPrompt": "이미지를 여기에 놓거나 클릭하여 찾아보기",
+      "tapPrompt": "탭하여 사진 선택",
+      "privacy": "사진은 기기 밖으로 전송되지 않습니다",
+      "selectedFile": "선택한 파일: {fileName}. 클릭하여 다른 이미지 선택",
+      "defaultLabel": "내 사진"
+    },
+    "scene": {
+      "label": "장면:",
+      "yourPhoto": "내 사진",
+      "removePhoto": "사진 제거",
+      "uploadPhoto": "사진 업로드"
+    },
+    "controls": {
+      "focalLength": "초점 거리",
+      "clickToEnterValue": "클릭하여 값 입력",
+      "decrease": "감소",
+      "increase": "증가"
+    },
+    "dof": {
+      "depthOfField": "피사계 심도: {totalDoF} — {nearFocus}에서 {farFocus}까지",
+      "infinity": "무한대"
+    },
+    "ad": {
+      "closeAd": "광고 닫기"
+    },
+    "tooltip": {
+      "infoLabel": "정보: {term}"
+    }
+  }
+}

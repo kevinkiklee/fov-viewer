@@ -1,0 +1,133 @@
+{
+  "education": {
+    "frame-studio": {
+      "beginner": "Frame Studio ti aiuta a ritagliare, incorniciare e comporre le tue foto direttamente nel browser. Usa le griglie di composizione per migliorare la tua inquadratura, ritaglia con rapporti d'aspetto popolari e aggiungi bordi dall'aspetto professionale — tutto senza perdere qualità dell'immagine.",
+      "deeper": {
+        "0": {
+          "heading": "Griglie di composizione",
+          "text": "La Regola dei Terzi divide l'inquadratura in una griglia 3×3 — posizionare i soggetti lungo le linee o alle intersezioni crea un equilibrio visivo naturale. Il Rapporto Aureo (circa 1,618:1) fornisce una divisione matematicamente armoniosa usata nell'arte e nell'architettura da secoli. La Spirale Aurea guida l'occhio lungo una curva logaritmica derivata dalla sequenza di Fibonacci, utile per condurre lo sguardo dell'osservatore attraverso l'immagine."
+        },
+        "1": {
+          "heading": "Rapporti d'aspetto",
+          "text": "Diversi rapporti d'aspetto servono a scopi diversi. 1:1 (quadrato) funziona bene per i social media e le composizioni simmetriche. 3:2 è il classico rapporto della pellicola 35mm. 4:3 è comune nel micro quattro terzi e nelle fotocamere digitali più vecchie. 16:9 è il rapporto widescreen standard per video e composizioni cinematografiche. 5:4 è tradizionale per le stampe 8×10."
+        },
+        "2": {
+          "heading": "Cornici e bordi",
+          "text": "Aggiungere un bordo attorno a una fotografia imita l'effetto di un passepartout e cornice fisici. Un passepartout bianco fornisce spazio visivo e dirige l'attenzione verso l'interno. La larghezza del bordo rispetto all'immagine influisce sul \"peso\" percepito della fotografia. Le presentazioni in stile galleria tipicamente usano passepartout più ampi. Un'ombra sottile crea profondità, simulando come una stampa incorniciata sta su una parete."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Griglia di composizione",
+          "description": "Le guide sovrapposte ti aiutano a valutare e migliorare il posizionamento del soggetto nell'inquadratura."
+        },
+        "1": {
+          "label": "Rapporto d'aspetto",
+          "description": "La proporzione larghezza-altezza influisce sulla percezione dell'immagine — rapporti più larghi danno una sensazione cinematografica, il quadrato dà equilibrio."
+        },
+        "2": {
+          "label": "Larghezza del bordo",
+          "description": "Bordi più ampi aggiungono solennità e concentrazione; bordi stretti risultano moderni e minimali."
+        },
+        "3": {
+          "label": "Colore del passepartout",
+          "description": "I passepartout bianchi sono classici per la fotografia artistica. I passepartout scuri enfatizzano le immagini più chiare. I passepartout colorati possono complementare o contrastare."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Per i post di Instagram, ritaglia a 4:5 (verticale) per occupare il massimo spazio sullo schermo nel feed."
+        },
+        "1": {
+          "text": "Quando aggiungi un bordo per la stampa, usa una larghezza del passepartout di almeno il 10% della dimensione più corta dell'immagine per un aspetto professionale."
+        },
+        "2": {
+          "text": "La Spirale Aurea è più efficace per immagini con un flusso naturale — acqua, strade o architettura curva."
+        }
+      },
+      "tooltips": {
+        "Aspect Ratio": {
+          "term": "Rapporto d'aspetto",
+          "definition": "La relazione proporzionale tra larghezza e altezza. Rapporti comuni includono 3:2 (35mm), 4:3 (M43) e 16:9 (widescreen)."
+        },
+        "Rule of Thirds": {
+          "term": "Regola dei terzi",
+          "definition": "Una linea guida di composizione che divide l'inquadratura in 9 parti uguali. Posizionare i soggetti ai punti di intersezione crea interesse visivo."
+        },
+        "Golden Ratio": {
+          "term": "Rapporto aureo",
+          "definition": "Una proporzione matematica (~1,618:1) presente in natura e nell'arte. Crea divisioni dello spazio esteticamente piacevoli."
+        },
+        "Border Width": {
+          "term": "Larghezza del bordo",
+          "definition": "Lo spessore del bordo della cornice in pixel. Va all'esterno dell'immagine, aumentando le dimensioni totali senza ritagliare."
+        },
+        "Inner Mat": {
+          "term": "Passepartout interno",
+          "definition": "Un secondo bordo più sottile tra la cornice esterna e l'immagine — imita il passepartout interno smussato di una cornice fisica."
+        },
+        "Corner Radius": {
+          "term": "Raggio degli angoli",
+          "definition": "Arrotonda gli angoli del bordo della cornice. Zero dà angoli netti, valori più alti danno un aspetto più morbido e arrotondato."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Vuoi pubblicare una foto verticale su Instagram per la massima presenza nel feed. Quale rapporto d'aspetto dovresti usare?",
+          "hint": "I post verticali di Instagram usano un rapporto più alto che largo.",
+          "successMessage": "Corretto! 4:5 ti dà il massimo spazio verticale nel feed di Instagram.",
+          "failureMessage": "I post verticali di Instagram usano 4:5 (ruota 5:4 in orientamento verticale) per il massimo spazio nel feed.",
+          "options": {
+            "0": { "label": "1:1 (Quadrato)" },
+            "1": { "label": "4:5 (Verticale)" },
+            "2": { "label": "16:9 (Widescreen)" }
+          }
+        },
+        "1": {
+          "scenario": "Quale griglia di composizione è il punto di partenza più insegnato per i principianti?",
+          "hint": "Divide l'inquadratura in 9 sezioni uguali.",
+          "successMessage": "Giusto! La Regola dei Terzi è la guida fondamentale di composizione.",
+          "failureMessage": "La Regola dei Terzi (griglia 3×3) è il punto di partenza più comune per imparare la composizione.",
+          "options": {
+            "0": { "label": "Regola dei terzi" },
+            "1": { "label": "Spirale aurea" },
+            "2": { "label": "Linee diagonali" }
+          }
+        },
+        "2": {
+          "scenario": "Stai preparando una foto per la stampa in galleria su carta 8×10. Quale rapporto d'aspetto corrisponde a questa dimensione di stampa?",
+          "hint": "8×10 si semplifica in un rapporto ben noto.",
+          "successMessage": "Corretto! 5:4 corrisponde perfettamente alle dimensioni di stampa 8×10.",
+          "failureMessage": "8×10 si semplifica a 4:5, che è la versione verticale di 5:4.",
+          "options": {
+            "0": { "label": "3:2" },
+            "1": { "label": "5:4" },
+            "2": { "label": "4:3" }
+          }
+        },
+        "3": {
+          "scenario": "Una foto paesaggistica presenta un fiume sinuoso che conduce dal primo piano alle montagne sullo sfondo. Quale griglia di sovrapposizione si adatta meglio a questo flusso naturale?",
+          "hint": "Un tipo di griglia segue un percorso naturale curvo.",
+          "successMessage": "Ottima scelta! La Spirale Aurea segue perfettamente curve e linee guida.",
+          "failureMessage": "La Spirale Aurea è ideale per immagini con elementi curvi naturali come fiumi, strade o coste.",
+          "options": {
+            "0": { "label": "Croce centrale" },
+            "1": { "label": "Spirale aurea" },
+            "2": { "label": "Griglia quadrata" }
+          }
+        },
+        "4": {
+          "scenario": "Vuoi un bordo bianco pulito per presentare la tua foto sui social media. Quale preset di cornice dovresti usare?",
+          "hint": "Pensa a quale preset ti dà un semplice bordo bianco.",
+          "successMessage": "Corretto! Il preset Bianco aggiunge un bordo bianco di 100px attorno alla tua foto.",
+          "failureMessage": "Il preset Bianco è progettato per una presentazione con bordo bianco pulito e semplice.",
+          "options": {
+            "0": { "label": "Nessuno" },
+            "1": { "label": "Bianco" },
+            "2": { "label": "Nero" }
+          }
+        }
+      }
+    }
+  }
+}

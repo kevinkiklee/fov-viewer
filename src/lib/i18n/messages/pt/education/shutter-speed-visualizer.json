@@ -1,0 +1,121 @@
+{
+  "education": {
+    "shutter-speed-visualizer": {
+      "beginner": "O guia de velocidade do obturador ajuda você a encontrar a velocidade mais lenta que pode usar e ainda obter uma foto nítida à mão. Se a velocidade do obturador for muito lenta, a trepidação da câmera pelas suas mãos borrará a imagem. A velocidade mínima segura depende da sua distância focal, se você tem estabilização de imagem e quão firmes são suas mãos.",
+      "deeper": "A clássica \"regra da reciprocidade\" afirma que para fotos nítidas à mão, sua velocidade do obturador deve ser pelo menos 1/(distância focal) segundos — então uma lente 200mm precisa de pelo menos 1/200s. Em câmeras com sensor crop, você deve usar a distância focal equivalente (ex.: 200mm em corte 1.5x = 1/300s). A estabilização moderna no corpo (IBIS) e estabilização óptica (OIS) podem dar 3-7 stops extras de vantagem à mão, significando que uma lente estabilizada de 200mm pode ficar nítida em 1/15s ou até mais lenta. No entanto, estabilização só compensa trepidação da câmera, não movimento do assunto. Uma pessoa caminhando em sua direção em 1/15s ainda ficará borrada independentemente da estabilização. Para assuntos em movimento, você deve selecionar velocidade do obturador baseada na velocidade e distância do assunto, não apenas na distância focal.",
+      "keyFactors": {
+        "0": {
+          "label": "Distância Focal",
+          "description": "Distâncias focais mais longas ampliam a trepidação da câmera. A regra da reciprocidade (1/distância focal) é o ponto de partida para determinar a velocidade mínima do obturador."
+        },
+        "1": {
+          "label": "Estabilização de Imagem",
+          "description": "OIS (na lente) tipicamente fornece 2-4 stops de benefício. IBIS (no corpo) fornece 3-5 stops. OIS+IBIS combinados podem alcançar 5-7 stops em alguns sistemas."
+        },
+        "2": {
+          "label": "Movimento do Assunto",
+          "description": "Assuntos estáticos requerem apenas velocidade suficiente para contrapor a trepidação. Assuntos em movimento precisam de velocidades mais rápidas independente da estabilização: caminhando (~1/125s), correndo (~1/500s), veículos (~1/1000s+)."
+        },
+        "3": {
+          "label": "Tamanho do Sensor (Fator de Corte)",
+          "description": "Câmeras com sensor crop efetivamente multiplicam a distância focal para a regra da reciprocidade. Uma lente 50mm em corte 1.5x se comporta como 75mm, então você precisa de pelo menos 1/75s."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Apoie-se em uma parede, mantenha os cotovelos junto ao corpo e expire lentamente antes de pressionar o obturador. Boa técnica pode dar 1-2 stops extras de firmeza além da regra da reciprocidade."
+        },
+        "1": {
+          "text": "Ao fotografar pessoas, o movimento do assunto geralmente determina sua velocidade mínima, não sua distância focal. Mesmo com uma lente grande angular e estabilização, uma criança correndo requer pelo menos 1/500s."
+        },
+        "2": {
+          "text": "Se você fotografa consistentemente em pouca luz, invista em um corpo de câmera com IBIS. A capacidade de fotografar à mão em 1/2s com uma lente grande angular abre possibilidades que nenhum desempenho de ISO alto pode igualar."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Distância Focal",
+          "definition": "A distância focal da lente em milímetros. Afeta diretamente a velocidade mínima segura do obturador através da regra da reciprocidade: 1/(distância focal) para full frame, ajustada pelo fator de corte para sensores menores."
+        },
+        "sensor": {
+          "term": "Tamanho do Sensor",
+          "definition": "O tamanho do sensor da câmera, que determina o fator de corte. APS-C (1.5x) e Micro Quatro Terços (2x) multiplicam a distância focal efetiva, exigindo velocidades mais rápidas para a mesma lente."
+        },
+        "stabilization": {
+          "term": "Estabilização de Imagem",
+          "definition": "Tecnologia que compensa a trepidação da câmera. OIS (Estabilização Óptica de Imagem) está na lente, IBIS (Estabilização de Imagem no Corpo) está no corpo da câmera. Podem trabalhar juntas para máximo benefício."
+        },
+        "subjectMotion": {
+          "term": "Movimento do Assunto",
+          "definition": "Quão rápido seu assunto está se movendo. Assuntos estáticos precisam apenas de velocidade suficiente para contrapor a trepidação. Assuntos em movimento precisam de velocidades mais rápidas baseadas em sua velocidade e direção em relação à câmera."
+        },
+        "recommendedShutterSpeed": {
+          "term": "Velocidade Recomendada do Obturador",
+          "definition": "A velocidade mínima do obturador calculada para sua combinação específica de distância focal, estabilização, sensor e movimento do assunto. Fotografar nesta velocidade ou mais rápido deve produzir resultados nítidos."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Você está fotografando com uma lente 100mm em uma câmera full frame sem estabilização de imagem. Seu assunto está parado. Qual é a velocidade mínima recomendada do obturador?",
+          "hint": "A regra da reciprocidade: velocidade mínima do obturador = 1 / distância focal.",
+          "successMessage": "Correto! A regra da reciprocidade diz 1/100s para uma lente 100mm em full frame. Este é o ponto de partida clássico para nitidez à mão.",
+          "failureMessage": "Para uma lente 100mm em full frame sem estabilização, a regra da reciprocidade dá 1/100s como velocidade mínima segura para assuntos estáticos.",
+          "options": {
+            "0": { "label": "1/50s" },
+            "1": { "label": "1/100s" },
+            "2": { "label": "1/200s" },
+            "3": { "label": "1/500s" }
+          }
+        },
+        "1": {
+          "scenario": "Você está usando uma lente 50mm em uma câmera APS-C (fator de corte 1.5x) sem estabilização. Qual velocidade mínima do obturador você deve usar para um assunto estático?",
+          "hint": "Multiplique a distância focal pelo fator de corte antes de aplicar a regra da reciprocidade.",
+          "successMessage": "Certo! 50mm x 1.5 = 75mm equivalente, então você precisa de pelo menos 1/75s. Na prática, arredondar para 1/80s é a escolha segura.",
+          "failureMessage": "Em APS-C, o fator de corte (1.5x) significa que uma lente 50mm se comporta como uma lente 75mm. A regra da reciprocidade dá 1/75s como velocidade mínima.",
+          "options": {
+            "0": { "label": "1/50s" },
+            "1": { "label": "1/75s (arredondar para 1/80s)" },
+            "2": { "label": "1/100s" },
+            "3": { "label": "1/125s" }
+          }
+        },
+        "2": {
+          "scenario": "Você tem uma lente 200mm com OIS (4 stops de estabilização) em um corpo full frame com IBIS (5 stops). Juntos fornecem cerca de 6 stops de estabilização combinada. Para um assunto estático, qual é a velocidade mínima aproximada do obturador?",
+          "hint": "Comece com a regra da reciprocidade (1/200s) e depois aplique 6 stops de benefício de estabilização.",
+          "successMessage": "Correto! Começando em 1/200s e ganhando 6 stops: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3s. Cerca de 1/3 de segundo à mão com uma lente 200mm — impressionante mas alcançável com estabilização moderna!",
+          "failureMessage": "De 1/200s, cada stop de estabilização dobra o tempo utilizável: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3s. Seis stops de estabilização com lente 200mm dá aproximadamente 1/3s.",
+          "options": {
+            "0": { "label": "1/30s" },
+            "1": { "label": "1/8s" },
+            "2": { "label": "~1/3s" },
+            "3": { "label": "1 segundo" }
+          }
+        },
+        "3": {
+          "scenario": "Você está fotografando um amigo fazendo cooper em um parque usando uma lente 35mm em uma câmera full frame com IBIS. Seu IBIS dá 5 stops de estabilização, então a regra da reciprocidade sozinha permitiria fotografar em cerca de 1 segundo. Você deveria usar 1 segundo?",
+          "hint": "Estabilização compensa trepidação da câmera, não movimento do assunto.",
+          "successMessage": "Correto! Estabilização só contrabalança trepidação da câmera. Uma pessoa fazendo cooper precisa de pelo menos 1/250s para congelar o movimento, independente de quão boa é sua estabilização.",
+          "failureMessage": "Estabilização não pode congelar um assunto em movimento. Para uma pessoa fazendo cooper, você precisa de pelo menos 1/250s para evitar desfoque de movimento, mesmo que sua câmera consiga ficar firme em 1 segundo.",
+          "options": {
+            "0": { "label": "Sim — IBIS cuida de todo o movimento" },
+            "1": { "label": "Não — use pelo menos 1/250s para congelar o corredor" },
+            "2": { "label": "Não — use 1/60s como compromisso" },
+            "3": { "label": "Depende da configuração de ISO" }
+          }
+        },
+        "4": {
+          "scenario": "Você quer criar uma foto panorâmica (panning) de um ciclista — o ciclista deve ficar nítido enquanto o fundo mostra rastros de desfoque de movimento. Você está usando uma lente 70mm em full frame. Qual faixa de velocidade do obturador você deveria tentar?",
+          "hint": "Panning intencionalmente usa uma velocidade lenta do obturador enquanto acompanha o assunto. Muito rápido congela tudo; muito lento desfoca até o assunto.",
+          "successMessage": "Correto! Para panning de um ciclista, 1/30s a 1/60s é o ponto ideal. É lento o suficiente para desfocar o fundo em rastros enquanto seu acompanhamento mantém o ciclista relativamente nítido. Requer prática — fotografe em modo contínuo e espere muitas rejeições.",
+          "failureMessage": "Panning requer velocidade lenta o suficiente para desfocar o fundo mas rápida o suficiente para que seu acompanhamento mantenha o assunto nítido. Para um ciclista, 1/30s a 1/60s é a faixa típica.",
+          "options": {
+            "0": { "label": "1/1000s a 1/2000s" },
+            "1": { "label": "1/250s a 1/500s" },
+            "2": { "label": "1/30s a 1/60s" },
+            "3": { "label": "1s a 2s" }
+          }
+        }
+      }
+    }
+  }
+}

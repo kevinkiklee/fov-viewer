@@ -1,0 +1,43 @@
+{
+  "toolUI": {
+    "exposure-simulator": {
+      "lock": "Travar:",
+      "lockAperture": "Abertura",
+      "lockShutter": "Obturador",
+      "lockISO": "ISO",
+      "lockApertureLabel": "Travar Abertura",
+      "lockShutterLabel": "Travar Obturador",
+      "lockISOLabel": "Travar ISO",
+      "aperture": "Abertura:",
+      "shutterSpeed": "Velocidade do Obturador:",
+      "iso": "ISO:",
+      "locked": "(travado)",
+      "exposureValue": "Valor de Exposição (EV)",
+      "depthOfField": "Profundidade de Campo",
+      "motion": "Movimento",
+      "noise": "Ruído",
+      "dofVeryShallow": "Muito Rasa",
+      "dofShallow": "Rasa",
+      "dofModerate": "Moderada",
+      "dofDeep": "Profunda",
+      "dofVeryDeep": "Muito Profunda",
+      "motionFrozen": "Congelado",
+      "motionSharp": "Nítido",
+      "motionModerate": "Moderado",
+      "motionSlightBlur": "Leve Desfoque",
+      "motionBlurred": "Desfocado",
+      "noiseClean": "Limpo",
+      "noiseLow": "Baixo Ruído",
+      "noiseModerate": "Ruído Moderado",
+      "noiseNoisy": "Ruidoso",
+      "noiseVeryNoisy": "Muito Ruidoso",
+      "scene": "Cena:",
+      "sceneStreet": "Rua",
+      "sceneLandscape": "Paisagem",
+      "scenePortrait": "Retrato",
+      "sceneLowLight": "Pouca Luz",
+      "imageEffectsUnavailable": "A pré-visualização de efeitos de imagem não está disponível.",
+      "loadingScene": "Carregando cena..."
+    }
+  }
+}

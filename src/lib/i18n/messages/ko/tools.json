@@ -1,0 +1,56 @@
+{
+  "tools": {
+    "fov-simulator": {
+      "name": "화각 시뮬레이터",
+      "description": "다양한 초점 거리와 센서 크기에 따른 화각을 비교합니다"
+    },
+    "color-scheme-generator": {
+      "name": "배색 생성기",
+      "description": "사진 촬영을 위한 색상 팔레트를 만듭니다"
+    },
+    "exposure-simulator": {
+      "name": "노출 삼각형 시뮬레이터",
+      "description": "조리개, 셔터 스피드, ISO가 어떻게 상호작용하는지 확인합니다"
+    },
+    "dof-calculator": {
+      "name": "피사계 심도 계산기",
+      "description": "근접 초점, 원거리 초점, 총 피사계 심도를 계산합니다"
+    },
+    "hyperfocal-simulator": {
+      "name": "과초점 거리 시뮬레이터",
+      "description": "전경부터 무한대까지 최대 선명도를 위한 초점 위치를 알아봅니다"
+    },
+    "shutter-speed-visualizer": {
+      "name": "셔터 스피드 시각화 도구",
+      "description": "핸드헬드 촬영에서 선명한 사진을 위한 최소 안전 셔터 스피드를 찾습니다"
+    },
+    "nd-filter-calculator": {
+      "name": "ND 필터 계산기",
+      "description": "ND 필터 사용 시 노출 시간을 계산합니다"
+    },
+    "star-trail-calculator": {
+      "name": "별 궤적 계산기",
+      "description": "선명한 별을 위한 최대 노출 시간 또는 별 궤적 촬영을 계획합니다"
+    },
+    "perspective-compression-simulator": {
+      "name": "원근 압축 시뮬레이터",
+      "description": "초점 거리가 배경 압축에 미치는 영향을 확인합니다"
+    },
+    "white-balance-visualizer": {
+      "name": "화이트 밸런스 시각화 도구",
+      "description": "색온도가 사진에 미치는 영향을 확인합니다"
+    },
+    "sensor-size-comparison": {
+      "name": "센서 크기 비교",
+      "description": "카메라 센서 크기를 시각적으로 비교합니다"
+    },
+    "frame-studio": {
+      "name": "프레임 스튜디오",
+      "description": "사진을 자르고, 프레임을 추가하고, 그리드 오버레이로 구도를 잡습니다"
+    },
+    "exif-viewer": {
+      "name": "EXIF 뷰어",
+      "description": "모든 사진의 EXIF 메타데이터와 히스토그램을 확인합니다 — 100% 클라이언트 처리"
+    }
+  }
+}

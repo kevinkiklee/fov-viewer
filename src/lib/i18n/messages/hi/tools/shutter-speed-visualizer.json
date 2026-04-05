@@ -1,0 +1,27 @@
+{
+  "toolUI": {
+    "shutter-speed-visualizer": {
+      "description": "देखें कि शटर स्पीड विभिन्न सब्जेक्ट के लिए मोशन ब्लर कैसे प्रभावित करती है।",
+      "shutterSpeed": "शटर स्पीड",
+      "shutterSpeedAriaLabel": "शटर स्पीड",
+      "sliderSlow": "धीमी (2s)",
+      "sliderFast": "तेज़ (1/4000)",
+      "selectedSpeed": "चयनित स्पीड",
+      "motionBlurAriaLabel": "विभिन्न सब्जेक्ट के लिए मोशन ब्लर विज़ुअलाइज़ेशन",
+      "verdictFrozen": "फ़्रोज़ेन",
+      "verdictMostlySharp": "लगभग शार्प",
+      "verdictSlightBlur": "हल्का ब्लर",
+      "verdictMotionBlur": "मोशन ब्लर",
+      "standingPerson": "खड़ा व्यक्ति",
+      "slowWalk": "धीमी चाल",
+      "jogging": "जॉगिंग",
+      "running": "दौड़ना",
+      "cyclist": "साइकिलिस्ट",
+      "birdsInFlight": "उड़ते पक्षी",
+      "carCity": "कार (शहर)",
+      "f1Car": "F1 कार",
+      "airplaneLanding": "हवाई जहाज़ (लैंडिंग)",
+      "stationary": "स्थिर"
+    }
+  }
+}

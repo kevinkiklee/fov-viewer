@@ -1,0 +1,25 @@
+{
+  "contact": {
+    "title": "संपर्क करें",
+    "description": "कोई सवाल है, बग मिला, या नए टूल का सुझाव देना है? हम आपसे सुनना चाहेंगे।",
+    "form": {
+      "nameLabel": "नाम",
+      "namePlaceholder": "आपका नाम",
+      "emailLabel": "ईमेल",
+      "emailPlaceholder": "your@email.com",
+      "subjectLabel": "विषय",
+      "subjectPlaceholder": "यह किस बारे में है?",
+      "messageLabel": "संदेश",
+      "messagePlaceholder": "आपका संदेश...",
+      "submit": "संदेश भेजें",
+      "sending": "भेजा जा रहा है...",
+      "honeypotLabel": "वेबसाइट",
+      "successToast": "संदेश भेज दिया गया! हम जल्द ही आपसे संपर्क करेंगे।",
+      "errorToast": "कुछ गलत हो गया। कृपया फिर से कोशिश करें।",
+      "networkErrorToast": "नेटवर्क त्रुटि। कृपया अपना कनेक्शन जाँचें और फिर से कोशिश करें।",
+      "sentTitle": "संपर्क करने के लिए धन्यवाद!",
+      "sentMessage": "हम जल्द से जल्द आपसे संपर्क करेंगे।",
+      "sendAnother": "एक और संदेश भेजें"
+    }
+  }
+}

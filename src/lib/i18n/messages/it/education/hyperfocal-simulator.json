@@ -1,0 +1,98 @@
+{
+  "education": {
+    "hyperfocal-simulator": {
+      "beginner": "La distanza iperfocale è il punto più vicino su cui puoi mettere a fuoco mantenendo tutto all'infinito accettabilmente nitido. Quando metti a fuoco alla distanza iperfocale, la tua profondità di campo si estende da metà di quella distanza fino all'infinito. I fotografi paesaggisti usano questa tecnica per massimizzare la nitidezza dal primo piano all'orizzonte.",
+      "deeper": "La distanza iperfocale è derivata dall'equazione delle lenti sottili e dal concetto del circolo di confusione (CdC). È uguale alla lunghezza focale al quadrato divisa per il prodotto del numero f e il diametro del CdC: H = f² / (N × c). Tutto da H/2 all'infinito rientra nella nitidezza accettabile. Il CdC dipende dalla dimensione del sensore — sensori più piccoli hanno un CdC accettabile più piccolo, che spinge la distanza iperfocale più lontano per la stessa lunghezza focale e apertura. Ecco perché le fotocamere con sensore crop sembrano avere una maggiore profondità di campo: lo standard CdC è più stretto rispetto all'area dell'immagine. In pratica, l'ammorbidimento da diffrazione ad aperture molto piccole (f/16 e oltre sulla maggior parte dei sensori) significa che c'è un compromesso tra massimizzare la profondità di campo e mantenere la nitidezza pixel per pixel.",
+      "keyFactors": {
+        "0": {
+          "label": "Lunghezza focale",
+          "description": "Lunghezze focali maggiori aumentano drasticamente la distanza iperfocale — cresce con il quadrato della lunghezza focale."
+        },
+        "1": {
+          "label": "Apertura",
+          "description": "Aperture più piccole (numeri f più alti) riducono la distanza iperfocale, estendendo la profondità di campo."
+        },
+        "2": {
+          "label": "Dimensione del sensore",
+          "description": "Sensori più piccoli usano un circolo di confusione più piccolo, che aumenta la distanza iperfocale per un'inquadratura equivalente."
+        },
+        "3": {
+          "label": "Circolo di confusione",
+          "description": "Il diametro massimo della macchia di sfocatura considerata \"accettabilmente nitida\" — tipicamente 0,03mm per il full frame."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Per un lavoro paesaggistico rapido, metti a fuoco circa a un terzo nella scena — approssima il punto iperfocale per la maggior parte delle configurazioni grandangolari."
+        },
+        "1": {
+          "text": "Evita di chiudere oltre f/16 su full-frame o f/11 su APS-C. La diffrazione annullerà i guadagni di profondità di campo che stai cercando."
+        },
+        "2": {
+          "text": "Usa l'ingrandimento del live view per mettere a fuoco con precisione alla distanza iperfocale piuttosto che affidarti alla scala delle distanze sull'obiettivo, che è spesso imprecisa sugli obiettivi autofocus moderni."
+        }
+      },
+      "tooltips": {
+        "Sensor": {
+          "term": "Sensore",
+          "definition": "Il formato del sensore della fotocamera. Sensori più piccoli hanno uno standard di circolo di confusione più stretto, che sposta tutte le distanze iperfocali più lontano."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Stai scattando un paesaggio con un obiettivo 24mm su una fotocamera full-frame. Quale formato del sensore dovresti selezionare per vedere le distanze iperfocali full-frame?",
+          "hint": "Il Full Frame è la dimensione standard del sensore 35mm.",
+          "successMessage": "Corretto! Full Frame è la scelta giusta per un sensore 35mm standard.",
+          "failureMessage": "Non proprio — seleziona il sensore Full Frame per corrispondere a un corpo macchina 35mm standard.",
+          "options": {
+            "0": { "label": "Full Frame" },
+            "1": { "label": "APS-C (Nikon/Sony)" },
+            "2": { "label": "Micro Quattro Terzi" }
+          }
+        },
+        "1": {
+          "scenario": "Guardando la tabella per il full frame, quale ha una distanza iperfocale più breve: 24mm a f/8, o 50mm a f/8?",
+          "hint": "La distanza iperfocale aumenta con il quadrato della lunghezza focale.",
+          "successMessage": "Giusto! Il 24mm ha una distanza iperfocale molto più breve perché la lunghezza focale ha una relazione quadratica.",
+          "failureMessage": "In realtà, lunghezze focali più corte danno sempre distanze iperfocali più brevi. Il 24mm vince qui.",
+          "options": {
+            "0": { "label": "24mm a f/8" },
+            "1": { "label": "50mm a f/8" }
+          }
+        },
+        "2": {
+          "scenario": "Stai facendo un'escursione con una fotocamera APS-C e un obiettivo 35mm. Vuoi che tutto da circa 3 metri all'infinito sia nitido. Quale intervallo di aperture dovresti cercare nella tabella per trovare una distanza iperfocale vicina a 6 metri (così che la metà — 3m — sia il tuo limite di messa a fuoco vicino)?",
+          "hint": "Ricorda: messa a fuoco vicina = iperfocale / 2. Cerca un'apertura che dia un'iperfocale di circa 6m.",
+          "successMessage": "Ottimo ragionamento! Hai correttamente identificato che ti serve una distanza iperfocale di circa 6m e hai trovato l'intervallo di apertura giusto.",
+          "failureMessage": "Ricorda, la messa a fuoco vicina è uguale alla metà della distanza iperfocale. Ti serve che l'iperfocale sia circa 6m per avere un limite di messa a fuoco vicino di 3m.",
+          "options": {
+            "0": { "label": "f/2.8 — f/4" },
+            "1": { "label": "f/5.6 — f/8" },
+            "2": { "label": "f/16 — f/22" }
+          }
+        },
+        "3": {
+          "scenario": "Un amico passa da una fotocamera full-frame a una Micro Quattro Terzi ma continua a usare le stesse lunghezze focali. Si lamenta che le distanze iperfocali sembrano diverse. Perché?",
+          "hint": "Il circolo di confusione è calcolato in base alla dimensione del sensore.",
+          "successMessage": "Esatto! Il sensore M43 più piccolo usa un CdC più piccolo (circa 0,015mm vs 0,03mm), che aumenta le distanze iperfocali per la stessa lunghezza focale e apertura.",
+          "failureMessage": "Il fattore chiave è il circolo di confusione. Sensori più piccoli richiedono uno standard CdC più stretto, che spinge le distanze iperfocali più lontano.",
+          "options": {
+            "0": { "label": "La lunghezza focale dell'obiettivo cambia sui sensori crop" },
+            "1": { "label": "Sensori più piccoli usano un circolo di confusione più piccolo" },
+            "2": { "label": "Le fotocamere Micro Quattro Terzi hanno un autofocus meno preciso" }
+          }
+        },
+        "4": {
+          "scenario": "Stai scattando architettura a 14mm f/11 su full frame. La tabella mostra una distanza iperfocale molto breve. Dovresti chiudere ulteriormente a f/22 per ancora più profondità di campo, o f/11 è la scelta migliore?",
+          "hint": "Considera cosa succede alla nitidezza dell'immagine ad aperture molto piccole.",
+          "successMessage": "Eccellente! A f/11, la diffrazione è minima su full frame, e la distanza iperfocale a 14mm è già molto breve. Chiudere a f/22 ammorbidirebbe l'immagine a causa della diffrazione senza benefici significativi di PdC.",
+          "failureMessage": "Sebbene f/22 dia una distanza iperfocale più breve sulla carta, l'ammorbidimento da diffrazione a f/22 su full frame riduce effettivamente la nitidezza complessiva dell'immagine. A 14mm f/11, la distanza iperfocale è già così breve che la PdC extra non vale la penalità della diffrazione.",
+          "options": {
+            "0": { "label": "Chiudi a f/22 per la massima profondità di campo" },
+            "1": { "label": "Resta a f/11 — la diffrazione a f/22 ridurrà la nitidezza" }
+          }
+        }
+      }
+    }
+  }
+}

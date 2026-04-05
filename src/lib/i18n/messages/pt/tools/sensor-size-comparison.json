@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "sensor-size-comparison": {
+      "displayMode": "Modo de Exibição",
+      "modeOverlay": "Sobreposição",
+      "modeSideBySide": "Lado a Lado",
+      "modePixelDensity": "Densidade de Pixels",
+      "pixelDensityDescription": "Mostrando contagens comuns de megapixels para cada sensor. Pixels maiores (células maiores) capturam mais luz.",
+      "sensors": "Sensores",
+      "customSensors": "Sensores Personalizados",
+      "placeholderName": "Nome",
+      "placeholderW": "L (mm)",
+      "placeholderH": "A (mm)",
+      "placeholderMP": "Megapixels (opcional)",
+      "placeholderMPShort": "MP",
+      "maxDimensionWarning": "Dimensão máxima do sensor é 99 mm",
+      "addSensor": "Adicionar Sensor",
+      "save": "Salvar",
+      "cancelEdit": "Cancelar",
+      "edit": "Editar",
+      "remove": "Remover",
+      "deleteAllCustom": "Excluir Todos os Sensores Personalizados",
+      "tableSensor": "Sensor",
+      "tableWidth": "Largura (mm)",
+      "tableHeight": "Altura (mm)",
+      "tableAspectRatio": "Proporção de Aspecto",
+      "tableArea": "Área (mm²)",
+      "tableCropFactor": "Fator de Corte",
+      "tableAspectCrop": "Corte de Aspecto",
+      "canvasAriaLabel": "Comparação de tamanho de sensor no modo {mode}"
+    }
+  }
+}

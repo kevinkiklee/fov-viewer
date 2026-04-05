@@ -1,0 +1,112 @@
+{
+  "education": {
+    "nd-filter-calculator": {
+      "beginner": "Un filtro ND (densità neutra) è come gli occhiali da sole per il tuo obiettivo. Riduce la quantità di luce che entra nell'obiettivo senza alterare i colori, permettendoti di usare tempi di posa più lenti o aperture più ampie in condizioni di forte luminosità. Ecco come i fotografi creano cascate setose, oceani lisci o nuvole sfumate durante il giorno.",
+      "deeper": "I filtri ND sono classificati in base al numero di stop di luce che bloccano. Un filtro ND2 (1 stop) dimezza la luce, un ND8 (3 stop) la riduce a 1/8, e un ND1000 (10 stop) riduce la luce di un fattore 1024. Le convenzioni di denominazione possono confondere: \"ND8\" significa che il fattore del filtro è 8 (3 stop), mentre \"ND 0.9\" usa la notazione di densità ottica (ogni 0,3 = 1 stop, quindi 0,9 = 3 stop). Il tempo di posa risultante è semplicemente la velocità base moltiplicata per il fattore del filtro. Per esempio, se la tua esposizione senza filtro è 1/125s e aggiungi un ND da 10 stop (ND1000), il nuovo tempo di posa è 1/125 x 1024 = circa 8 secondi. Sovrapporre più filtri ND somma i loro valori in stop ma può introdurre vignettatura e dominanti cromatiche, specialmente con obiettivi grandangolari.",
+      "keyFactors": {
+        "0": {
+          "label": "Tempo di posa base",
+          "description": "Il tempo di esposizione corretto senza alcun filtro. Misura la scena prima, poi calcola l'esposizione con il filtro da questo punto di partenza."
+        },
+        "1": {
+          "label": "Intensità del filtro",
+          "description": "Misurata in stop. Ogni stop raddoppia il tempo di esposizione. Intensità comuni: 3 stop (ND8), 6 stop (ND64) e 10 stop (ND1000)."
+        },
+        "2": {
+          "label": "Sovrapposizione dei filtri",
+          "description": "Puoi combinare filtri sommando i loro valori in stop. Uno stack di 3 stop + 6 stop dà 9 stop di riduzione. Fai attenzione alla vignettatura con obiettivi grandangolari."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Componi e metti a fuoco prima di attaccare un filtro ND forte. Con 10 stop di riduzione della luce, il mirino e l'autofocus avranno difficoltà nel buio."
+        },
+        "1": {
+          "text": "Per le foto di paesaggio marino, esposizioni di 1-2 secondi ammorbidiscono le piccole increspature mantenendo la struttura delle onde. Esposizioni di 30 secondi o più creano acqua completamente piatta e nebbiosa."
+        },
+        "2": {
+          "text": "I filtri ND economici spesso aggiungono una dominante cromatica (di solito magenta o marrone). Investi in vetri di qualità di marchi rinomati, o impara a correggere la dominante in post-produzione usando un riferimento con cartoncino grigio."
+        }
+      },
+      "tooltips": {
+        "baseShutterSpeed": {
+          "term": "Tempo di posa base",
+          "definition": "Il tempo di posa per un'esposizione corretta senza alcun filtro ND attaccato. Questo è il tuo punto di partenza — il calcolatore lo moltiplica per il fattore del filtro."
+        },
+        "ndFilter": {
+          "term": "Filtro ND",
+          "definition": "Un filtro a densità neutra che riduce uniformemente la trasmissione della luce. Classificato per fattore di filtro (ND2, ND4, ND8...) o stop di riduzione della luce. ND2 = 1 stop, ND4 = 2 stop, ND8 = 3 stop, e così via."
+        },
+        "resultingShutterSpeed": {
+          "term": "Tempo di posa risultante",
+          "definition": "Il nuovo tempo di posa dopo aver tenuto conto del filtro ND. Calcolato moltiplicando il tempo di posa base per il fattore del filtro (es. 1/125s x 1024 per un ND da 10 stop)."
+        },
+        "stopsAdded": {
+          "term": "Stop aggiunti",
+          "definition": "Il numero di stop di riduzione della luce forniti dal filtro ND. Ogni stop raddoppia il tempo di esposizione richiesto. 10 stop significano che l'esposizione è 1024 volte più lunga."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Sei a una cascata e la tua fotocamera misura un'esposizione corretta a 1/125s senza alcun filtro. Attacchi un filtro ND da 3 stop (ND8). Qual è il nuovo tempo di posa?",
+          "hint": "Ogni stop raddoppia il tempo di esposizione. 3 stop significano 2 x 2 x 2 = 8 volte più lungo.",
+          "successMessage": "Corretto! 1/125s x 8 = 1/15s. Questo è un buon inizio per il mosso nell'acqua, anche se potresti volere un filtro ancora più forte per risultati setosi.",
+          "failureMessage": "Un filtro ND da 3 stop moltiplica il tempo di esposizione per 8 (2^3 = 8). Quindi 1/125s diventa 1/15s.",
+          "options": {
+            "0": { "label": "1/60s" },
+            "1": { "label": "1/30s" },
+            "2": { "label": "1/15s" },
+            "3": { "label": "1/8s" }
+          }
+        },
+        "1": {
+          "scenario": "Vuoi creare un'esposizione di 30 secondi di nuvole che si muovono nel cielo. Senza filtro, l'esposizione corretta è 1/30s. Quanti stop di filtrazione ND ti servono?",
+          "hint": "Devi passare da 1/30s a 30s — cioè 1/30 x fattore = 30, quindi fattore = 900. Trova la potenza di 2 più vicina.",
+          "successMessage": "Corretto! Passare da 1/30s a 30s è circa un aumento di 1000x, che è circa 10 stop. Un filtro ND1000 (10 stop) ti porta a circa 33 secondi.",
+          "failureMessage": "Il rapporto è 30 / (1/30) = 900. La potenza di 2 più vicina è 1024 (2^10), quindi ti serve un filtro ND da 10 stop.",
+          "options": {
+            "0": { "label": "6 stop (ND64)" },
+            "1": { "label": "8 stop (ND256)" },
+            "2": { "label": "10 stop (ND1000)" },
+            "3": { "label": "15 stop (ND32768)" }
+          }
+        },
+        "2": {
+          "scenario": "Stai scattando un paesaggio marino al tramonto. La luce sta calando e la tua esposizione base (senza filtro) è ora 1/4s a f/11, ISO 100. Vuoi esposizioni di 2 minuti per acqua ultra-liscia. Quale intensità di filtro ND ti serve?",
+          "hint": "Da 1/4s a 120s è un fattore di 480. Trova il valore in stop più vicino.",
+          "successMessage": "Un ND da 9 stop ti darebbe 1/4 x 512 = 128 secondi, ovvero poco più di 2 minuti. Perfetto per quel look di paesaggio marino etero e nebuloso al tramonto.",
+          "failureMessage": "Da 0,25s a 120s è circa un aumento di 480x. 2^9 = 512, che è vicino a 480, quindi un filtro da 9 stop ti porta a circa 128 secondi.",
+          "options": {
+            "0": { "label": "6 stop" },
+            "1": { "label": "9 stop" },
+            "2": { "label": "10 stop" },
+            "3": { "label": "13 stop" }
+          }
+        },
+        "3": {
+          "scenario": "Vuoi scattare un ritratto a f/1.4 in piena luce solare (esposizione base: f/1.4, 1/8000s, ISO 100). Il tempo di posa massimo della tua fotocamera è 1/8000s. Puoi scattare a f/1.4 senza un filtro ND?",
+          "hint": "Verifica se 1/8000s a f/1.4 e ISO 100 è raggiungibile, o se la scena è ancora sovraesposta.",
+          "successMessage": "Corretto! In una giornata molto luminosa (EV 15+), f/1.4 a ISO 100 spesso richiede tempi di posa più veloci di 1/8000s, che la maggior parte delle fotocamere non può raggiungere. Un filtro ND da 2-3 stop ti permette di scattare a diaframma aperto senza sovraesposizione.",
+          "failureMessage": "In piena luce solare, f/1.4 a ISO 100 potrebbe richiedere tempi di posa oltre il limite di 1/8000s della fotocamera. Un filtro ND è essenziale per scattare ad apertura ampia in condizioni di forte luminosità.",
+          "options": {
+            "0": { "label": "Sì — 1/8000s è abbastanza veloce" },
+            "1": { "label": "No — probabilmente ti serve un filtro ND da 2-3 stop" },
+            "2": { "label": "Basta alzare l'ISO per compensare" }
+          }
+        },
+        "4": {
+          "scenario": "Possiedi un filtro ND da 6 stop e uno da 3 stop. Li sovrapponi sull'obiettivo con un'esposizione base di 1/250s. Qual è il tempo di posa risultante, e a cosa dovresti fare attenzione con questa configurazione?",
+          "hint": "Somma i valori in stop, poi calcola la nuova esposizione. Pensa agli effetti ottici collaterali della sovrapposizione.",
+          "successMessage": "Corretto! 6 + 3 = 9 stop. 1/250 x 512 = circa 2 secondi. Fai attenzione alla vignettatura (angoli scuri) con obiettivi grandangolari e potenziali dominanti cromatiche da vetri economici.",
+          "failureMessage": "La sovrapposizione somma i valori in stop: 6 + 3 = 9 stop totali. 2^9 = 512, quindi 1/250 x 512 = ~2 secondi. La sovrapposizione può anche causare vignettatura e dominanti cromatiche.",
+          "options": {
+            "0": { "label": "~0,5s, attenzione ai riflessi dell'obiettivo" },
+            "1": { "label": "~2s, attenzione alla vignettatura e alle dominanti cromatiche" },
+            "2": { "label": "~4s, attenzione al surriscaldamento del sensore" },
+            "3": { "label": "~8s, nessun problema con la sovrapposizione" }
+          }
+        }
+      }
+    }
+  }
+}

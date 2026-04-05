@@ -1,0 +1,101 @@
+{
+  "common": {
+    "nav": {
+      "tools": "Ferramentas",
+      "glossary": "Glossário",
+      "closeMenu": "Fechar menu",
+      "comingSoon": "Em breve",
+      "categories": {
+        "visualizer": "Visualizadores",
+        "calculator": "Calculadoras",
+        "reference": "Referência",
+        "file-tool": "Ferramentas de Arquivo"
+      }
+    },
+    "footer": {
+      "glossary": "Glossário",
+      "about": "Sobre",
+      "contact": "Contato",
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Serviço",
+      "cookieSettings": "Configurações de Cookies"
+    },
+    "theme": {
+      "switchToLight": "Mudar para modo claro",
+      "switchToDark": "Mudar para modo escuro"
+    },
+    "actions": {
+      "copyImage": "Copiar imagem",
+      "reset": "Redefinir",
+      "copyLink": "Copiar link",
+      "share": "Compartilhar",
+      "embed": "Incorporar"
+    },
+    "toast": {
+      "linkCopied": "Link copiado!",
+      "imageCopied": "Imagem copiada!",
+      "failedToCopy": "Falha ao copiar",
+      "copied": "Copiado!"
+    },
+    "learn": {
+      "title": "Aprender",
+      "openPanel": "Abrir painel de aprendizado",
+      "collapsePanel": "Recolher painel de aprendizado",
+      "whatIsThis": "O que é isso?",
+      "howItWorks": "Como funciona",
+      "keyFactors": "Fatores-chave",
+      "proTip": "Dica Pro",
+      "challenge": "Desafio",
+      "hint": "Dica: {hint}",
+      "completed": "Concluído",
+      "checkAnswer": "Verificar Resposta",
+      "nextChallenge": "Próximo Desafio",
+      "tryAgain": "Tentar Novamente",
+      "resetAll": "Redefinir tudo",
+      "resetAllChallenges": "Redefinir todos os desafios",
+      "challengeNumber": "Desafio {number}"
+    },
+    "share": {
+      "title": "Compartilhar e Incorporar",
+      "closeModal": "Fechar modal de compartilhamento",
+      "directLink": "Link Direto",
+      "markdown": "Markdown (Reddit, GitHub)",
+      "bbcode": "BBCode (Fóruns)",
+      "htmlEmbed": "Incorporação HTML",
+      "copy": "Copiar",
+      "copied": "Copiado"
+    },
+    "draft": {
+      "banner": "Prévia — Esta ferramenta ainda não é pública"
+    },
+    "fileUpload": {
+      "dropPrompt": "Arraste uma imagem aqui ou clique para procurar",
+      "tapPrompt": "Toque para escolher uma foto",
+      "privacy": "Suas fotos nunca saem do seu dispositivo",
+      "selectedFile": "Arquivo selecionado: {fileName}. Clique para escolher outra imagem",
+      "defaultLabel": "Sua Foto"
+    },
+    "scene": {
+      "label": "Cena:",
+      "yourPhoto": "Sua foto",
+      "removePhoto": "Remover foto",
+      "uploadPhoto": "Enviar foto"
+    },
+    "controls": {
+      "focalLength": "Distância focal",
+      "clickToEnterValue": "Clique para inserir um valor",
+      "decrease": "Diminuir",
+      "increase": "Aumentar"
+    },
+    "dof": {
+      "depthOfField": "Profundidade de campo: {totalDoF} de {nearFocus} até {farFocus}",
+      "infinity": "Infinito"
+    },
+    "ad": {
+      "closeAd": "Fechar anúncio"
+    },
+    "tooltip": {
+      "infoLabel": "Info: {term}"
+    }
+  }
+}

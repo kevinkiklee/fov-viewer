@@ -1,0 +1,129 @@
+{
+  "education": {
+    "white-balance-visualizer": {
+      "beginner": "O balanço de branco ajusta as cores na sua foto para que objetos brancos realmente apareçam brancos sob qualquer iluminação. Diferentes fontes de luz têm diferentes temperaturas de cor — uma vela é quente e alaranjada, enquanto a sombra é fria e azulada. A configuração de balanço de branco da sua câmera compensa essas diferenças para que as cores pareçam naturais.",
+      "deeper": {
+        "0": {
+          "heading": "Temperatura de cor",
+          "text": "A temperatura de cor é medida em Kelvin (K) e corresponde à cor da luz emitida por um \"corpo negro\" ideal aquecido a essa temperatura. Valores mais baixos (2000–3500K) produzem luz quente, avermelhada-alaranjada (lâmpadas incandescentes, velas), enquanto valores mais altos (6500–10000K) produzem luz fria, azulada (sombra, céu nublado)."
+        },
+        "1": {
+          "heading": "Como funciona o balanço de branco",
+          "text": "O sistema de balanço de branco da câmera aplica a mudança de cor inversa para neutralizar a dominância de cor ambiente. Quando você define o balanço de branco para \"Tungstênio\" (~3200K), a câmera adiciona azul para contrabalançar a dominância alaranjada das lâmpadas incandescentes. Na fotografia digital, o balanço de branco é aplicado como um multiplicador nos canais vermelho e azul em relação ao verde."
+        },
+        "2": {
+          "heading": "Vantagem do RAW",
+          "text": "Fotografar em formato RAW preserva todos os dados de cor e permite que você mude o balanço de branco livremente no pós-processamento sem perda de qualidade — é simplesmente uma tag de metadados aplicada durante a conversão."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Temperatura de Cor (Kelvin)",
+          "description": "A medida numérica da cor da luz. Kelvin baixo = luz quente/alaranjada. Kelvin alto = luz fria/azulada. A luz do dia é aproximadamente 5500K."
+        },
+        "1": {
+          "label": "Fonte de Luz",
+          "description": "Diferentes fontes emitem diferentes temperaturas de cor: velas (~1800K), lâmpadas de tungstênio (~2800K), tubos fluorescentes (~4000K), sol do meio-dia (~5500K), céu nublado (~6500K), sombra (~7500K)."
+        },
+        "2": {
+          "label": "RAW vs JPEG",
+          "description": "Fotografar em RAW permite mudar o balanço de branco no pós-processamento sem perda de qualidade. JPEG fixa o balanço de branco permanentemente, então acertar na câmera importa mais."
+        },
+        "3": {
+          "label": "Iluminação Mista",
+          "description": "Cenas com múltiplas fontes de luz em diferentes temperaturas (ex.: luz do dia pela janela + lâmpadas de tungstênio) tornam impossível neutralizar perfeitamente todas as cores simultaneamente."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Sempre fotografe em RAW se quiser total flexibilidade para ajustar o balanço de branco depois. Arquivos RAW armazenam os dados não processados do sensor, então mudanças de balanço de branco são sem perdas."
+        },
+        "1": {
+          "text": "Para efeito criativo, tente intencionalmente \"descasar\" o balanço de branco. Definir BB de luz do dia durante a hora dourada torna o pôr do sol ainda mais quente, enquanto BB de tungstênio ao ar livre cria um visual frio e azulado dramático."
+        },
+        "2": {
+          "text": "Em situações de iluminação mista (ex.: sala iluminada tanto por luz da janela quanto por lâmpadas de tungstênio), use um cartão cinza para definir um balanço de branco personalizado, ou coloque gelatina no flash para corresponder à fonte de luz ambiente."
+        }
+      },
+      "tooltips": {
+        "colorTemperature": {
+          "term": "Temperatura de Cor",
+          "definition": "Uma medida da cor da luz em Kelvin (K). Baseada na cor teórica de um corpo negro aquecido. Valores mais baixos são mais quentes (alaranjado/vermelho), valores mais altos são mais frios (azul)."
+        },
+        "preset": {
+          "term": "Predefinição de Balanço de Branco",
+          "definition": "Uma configuração de balanço de branco pré-definida calibrada para uma fonte de luz comum. Predefinições incluem Tungstênio (~3200K), Fluorescente (~4000K), Luz do Dia (~5500K), Nublado (~6500K) e Sombra (~7500K)."
+        },
+        "rgbValues": {
+          "term": "Valores RGB",
+          "definition": "Os valores dos canais vermelho, verde e azul (0-255 cada) que representam a cor da luz na temperatura selecionada. Usados para visualizar como a fonte de luz tinge a cena."
+        },
+        "hexCode": {
+          "term": "Código Hex",
+          "definition": "Uma representação hexadecimal de seis caracteres da cor (ex.: #FF8C00). Útil para referenciar a cor exata em software de design ou desenvolvimento web."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Suas fotos em ambientes internos sob lâmpadas domésticas comuns parecem muito alaranjadas/amareladas. Qual predefinição de balanço de branco você deve usar para corrigir isso?",
+          "hint": "Lâmpadas incandescentes domésticas emitem luz quente alaranjada em torno de 2800-3200K.",
+          "successMessage": "Correto! A predefinição Tungstênio adiciona azul para contrabalançar a dominância alaranjada das lâmpadas incandescentes, trazendo as cores de volta ao neutro.",
+          "failureMessage": "Lâmpadas incandescentes/tungstênio emitem luz alaranjada quente. A predefinição Tungstênio de balanço de branco é especificamente projetada para neutralizar essa dominância adicionando azul.",
+          "options": {
+            "0": { "label": "Luz do Dia" },
+            "1": { "label": "Tungstênio" },
+            "2": { "label": "Sombra" },
+            "3": { "label": "Fluorescente" }
+          }
+        },
+        "1": {
+          "scenario": "Você está fotografando retratos durante a hora dourada e quer manter o lindo brilho quente do pôr do sol. Qual configuração de balanço de branco você deve usar?",
+          "hint": "Se você definir o BB \"correto\" para a hora dourada, ele neutralizaria os tons quentes que você quer manter.",
+          "successMessage": "Correto! Usar a predefinição Luz do Dia (ou até Nublado/Sombra) durante a hora dourada preserva e intensifica os tons quentes em vez de neutralizá-los.",
+          "failureMessage": "Para preservar o brilho quente da hora dourada, use um BB que não compense a luz quente. Luz do Dia ou predefinições mais altas manterão (e até intensificarão) o calor.",
+          "options": {
+            "0": { "label": "Balanço de Branco Automático" },
+            "1": { "label": "Tungstênio (para neutralizar o calor)" },
+            "2": { "label": "Luz do Dia (para preservar o calor)" },
+            "3": { "label": "Flash" }
+          }
+        },
+        "2": {
+          "scenario": "Você está ajustando manualmente o balanço de branco em Kelvin. Sua foto parece muito azulada/fria. Você deve aumentar ou diminuir o valor em Kelvin para aquecê-la?",
+          "hint": "A configuração de BB em Kelvin diz à câmera qual é a temperatura de cor da fonte de luz. Definir um valor Kelvin mais alto faz a câmera adicionar mais calor.",
+          "successMessage": "Certo! Aumentar o valor Kelvin diz à câmera que a luz é mais fria do que realmente é, então a câmera compensa adicionando calor. Defina um K mais alto para aquecer uma imagem fria.",
+          "failureMessage": "Quando você aumenta o valor Kelvin, a câmera adiciona mais calor para compensar. Então, para corrigir uma imagem fria/azulada, aumente o número Kelvin.",
+          "options": {
+            "0": { "label": "Aumentar Kelvin (ex.: 5500K para 7500K)" },
+            "1": { "label": "Diminuir Kelvin (ex.: 5500K para 3200K)" },
+            "2": { "label": "A direção do Kelvin não afeta o calor" }
+          }
+        },
+        "3": {
+          "scenario": "Você está fotografando o interior de um restaurante que tem luminárias pendentes quentes de tungstênio no teto e luz azulada fria do dia entrando por grandes janelas. Pessoas perto das janelas parecem azuladas, e pessoas sob as luminárias parecem alaranjadas. Qual é a melhor abordagem?",
+          "hint": "Nenhuma configuração única de balanço de branco pode corrigir duas temperaturas de cor muito diferentes simultaneamente.",
+          "successMessage": "Exatamente! Colocar gelatina no flash ou luzes adicionais para corresponder a uma fonte dominante, ou escolher um BB de compromisso e corrigir seletivamente no pós, são as melhores abordagens para iluminação mista.",
+          "failureMessage": "Iluminação mista é um dos desafios mais difíceis de BB. Um único BB não pode corrigir ambas as fontes simultaneamente. Você precisa ou igualar as fontes com gelatinas ou corrigir seletivamente no pós.",
+          "options": {
+            "0": { "label": "Definir BB para Tungstênio — corrigirá tudo" },
+            "1": { "label": "Definir BB para Luz do Dia — janelas são mais importantes" },
+            "2": { "label": "Usar BB Automático e fotografar em RAW, depois corrigir cada zona no pós" },
+            "3": { "label": "Aumentar ISO para tornar as cores mais precisas" }
+          }
+        },
+        "4": {
+          "scenario": "Você está fotografando uma cena noturna cinematográfica em uma cidade e quer um tom frio azulado intencional. As luzes da rua são de vapor de sódio (~2200K). Qual configuração de balanço de branco em Kelvin daria a mudança azulada mais forte?",
+          "hint": "Definir o BB muito abaixo da temperatura real da fonte de luz mudará a imagem para azul.",
+          "successMessage": "Correto! Definir BB para 7500K (predefinição Sombra) diz à câmera que a fonte de luz é muito fria/azul — então ela compensa adicionando forte correção de calor. Mas como as luzes de sódio reais são apenas 2200K (muito quentes), essa supercorreção ultrapassa o neutro para uma forte dominância azul. Quanto mais alto você definir o BB Kelvin acima da temperatura real da luz, mais forte a mudança azulada.",
+          "failureMessage": "Definir um valor de BB Kelvin muito acima da temperatura real da fonte de luz faz a câmera supercorrigir para azul. Com luzes de sódio de 2200K, definir BB para 7500K+ cria o visual frio e azulado mais forte.",
+          "options": {
+            "0": { "label": "2200K (correspondendo às luzes de sódio)" },
+            "1": { "label": "3200K (predefinição Tungstênio)" },
+            "2": { "label": "7500K ou mais (predefinição Sombra)" },
+            "3": { "label": "5500K (predefinição Luz do Dia)" }
+          }
+        }
+      }
+    }
+  }
+}

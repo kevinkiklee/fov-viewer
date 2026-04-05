@@ -1,0 +1,133 @@
+{
+  "education": {
+    "frame-studio": {
+      "beginner": "O Frame Studio ajuda você a cortar, emoldurar e compor suas fotos direto no navegador. Use grades de composição para melhorar seu enquadramento, corte em proporções populares e adicione bordas de aparência profissional — tudo sem perder qualidade de imagem.",
+      "deeper": {
+        "0": {
+          "heading": "Grades de Composição",
+          "text": "A Regra dos Terços divide o quadro em uma grade 3×3 — posicionar assuntos ao longo das linhas ou nas interseções cria equilíbrio visual natural. A Proporção Áurea (aproximadamente 1.618:1) fornece uma divisão matematicamente harmoniosa usada em arte e arquitetura por séculos. A Espiral Áurea guia o olhar ao longo de uma curva logarítmica derivada da sequência de Fibonacci, útil para conduzir o espectador pela imagem."
+        },
+        "1": {
+          "heading": "Proporções de Aspecto",
+          "text": "Diferentes proporções de aspecto servem diferentes propósitos. 1:1 (quadrado) funciona bem para mídias sociais e composições simétricas. 3:2 é a proporção clássica do filme 35mm. 4:3 é comum em micro quatro terços e câmeras digitais mais antigas. 16:9 é a proporção padrão widescreen para vídeo e composições cinematográficas. 5:4 é tradicional para impressões 8×10."
+        },
+        "2": {
+          "heading": "Molduras e Bordas",
+          "text": "Adicionar uma borda ao redor de uma fotografia imita o efeito de um passe-partout e moldura física. Um passe-partout branco fornece espaço visual para respirar e direciona o foco para dentro. A largura da borda em relação à imagem afeta o \"peso\" percebido da fotografia. Apresentações em estilo galeria tipicamente usam passe-partout mais largos. Uma sombra sutil cria profundidade, simulando como uma impressão emoldurada fica na parede."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Grade de Composição",
+          "description": "Guias sobrepostos ajudam a avaliar e melhorar o posicionamento do assunto dentro do quadro."
+        },
+        "1": {
+          "label": "Proporção de Aspecto",
+          "description": "A proporção largura-altura afeta como a imagem é sentida — proporções mais largas parecem cinematográficas, quadrado parece equilibrado."
+        },
+        "2": {
+          "label": "Largura da Borda",
+          "description": "Bordas mais largas adicionam gravidade e foco; bordas estreitas parecem modernas e minimalistas."
+        },
+        "3": {
+          "label": "Cor do Passe-partout",
+          "description": "Passe-partout brancos são clássicos para fotografia artística. Escuros enfatizam imagens mais claras. Coloridos podem complementar ou contrastar."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Para postagens no Instagram, corte em 4:5 (retrato) para ocupar máximo espaço na tela do feed."
+        },
+        "1": {
+          "text": "Ao adicionar borda para impressão, use uma largura de passe-partout de pelo menos 10% da dimensão menor da imagem para um visual profissional."
+        },
+        "2": {
+          "text": "A Espiral Áurea é mais eficaz para imagens com fluxo natural — água, estradas ou arquitetura curva."
+        }
+      },
+      "tooltips": {
+        "Aspect Ratio": {
+          "term": "Proporção de Aspecto",
+          "definition": "A relação proporcional entre largura e altura. Proporções comuns incluem 3:2 (35mm), 4:3 (M43) e 16:9 (widescreen)."
+        },
+        "Rule of Thirds": {
+          "term": "Regra dos Terços",
+          "definition": "Uma diretriz de composição que divide o quadro em 9 partes iguais. Posicionar assuntos nos pontos de interseção cria interesse visual."
+        },
+        "Golden Ratio": {
+          "term": "Proporção Áurea",
+          "definition": "Uma proporção matemática (~1.618:1) encontrada na natureza e na arte. Cria divisões esteticamente agradáveis do espaço."
+        },
+        "Border Width": {
+          "term": "Largura da Borda",
+          "definition": "A espessura da borda da moldura em pixels. Fica fora da imagem, aumentando as dimensões totais sem cortar."
+        },
+        "Inner Mat": {
+          "term": "Passe-partout Interno",
+          "definition": "Uma segunda borda mais fina entre a moldura externa e a imagem — imita o passe-partout biselado interno de uma moldura física."
+        },
+        "Corner Radius": {
+          "term": "Raio do Canto",
+          "definition": "Arredonda os cantos da borda da moldura. Zero dá cantos vivos, valores maiores dão um visual mais suave e arredondado."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Você quer postar uma foto retrato no Instagram para máxima presença no feed. Qual proporção de aspecto você deve usar?",
+          "hint": "Postagens de retrato no Instagram usam uma proporção mais alta que larga.",
+          "successMessage": "Correto! 4:5 dá o máximo espaço vertical no feed do Instagram.",
+          "failureMessage": "Postagens de retrato no Instagram usam 4:5 (inverta 5:4 para orientação retrato) para máxima ocupação no feed.",
+          "options": {
+            "0": { "label": "1:1 (Quadrado)" },
+            "1": { "label": "4:5 (Retrato)" },
+            "2": { "label": "16:9 (Widescreen)" }
+          }
+        },
+        "1": {
+          "scenario": "Qual grade de composição é o ponto de partida mais amplamente ensinado para iniciantes?",
+          "hint": "Ela divide o quadro em 9 seções iguais.",
+          "successMessage": "Certo! A Regra dos Terços é o guia fundamental de composição.",
+          "failureMessage": "A Regra dos Terços (grade 3×3) é o ponto de partida mais comum para aprender composição.",
+          "options": {
+            "0": { "label": "Regra dos Terços" },
+            "1": { "label": "Espiral Áurea" },
+            "2": { "label": "Linhas Diagonais" }
+          }
+        },
+        "2": {
+          "scenario": "Você está preparando uma foto para impressão em galeria em papel 8×10. Qual proporção de aspecto corresponde a esse tamanho de impressão?",
+          "hint": "8÷10 simplifica para uma proporção conhecida.",
+          "successMessage": "Correto! 5:4 corresponde perfeitamente às dimensões de impressão 8×10.",
+          "failureMessage": "8×10 simplifica para 4:5, que é a versão retrato de 5:4.",
+          "options": {
+            "0": { "label": "3:2" },
+            "1": { "label": "5:4" },
+            "2": { "label": "4:3" }
+          }
+        },
+        "3": {
+          "scenario": "Uma foto de paisagem apresenta um rio sinuoso conduzindo do primeiro plano até montanhas ao fundo. Qual sobreposição de grade melhor corresponde a esse fluxo natural?",
+          "hint": "Um tipo de grade segue um caminho curvo natural.",
+          "successMessage": "Ótima escolha! A Espiral Áurea acompanha curvas e linhas de condução perfeitamente.",
+          "failureMessage": "A Espiral Áurea é ideal para imagens com elementos curvos naturais como rios, estradas ou linhas costeiras.",
+          "options": {
+            "0": { "label": "Cruz Central" },
+            "1": { "label": "Espiral Áurea" },
+            "2": { "label": "Grade Quadrada" }
+          }
+        },
+        "4": {
+          "scenario": "Voc�� quer uma borda branca limpa para apresentar sua foto nas redes sociais. Qual predefinição de moldura você deve usar?",
+          "hint": "Pense em qual predefinição dá uma borda branca simples.",
+          "successMessage": "Correto! A predefinição Branco adiciona uma borda branca de 100px ao redor da sua foto.",
+          "failureMessage": "A predefinição Branco é projetada para uma apresentação com borda branca limpa e simples.",
+          "options": {
+            "0": { "label": "Nenhum" },
+            "1": { "label": "Branco" },
+            "2": { "label": "Preto" }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "toolUI": {
+    "nd-filter-calculator": {
+      "baseShutterSpeed": "Tempo di posa base",
+      "ndFilter": "Filtro ND",
+      "resultingShutterSpeed": "Tempo di posa risultante",
+      "stopsAdded": "Stop aggiunti",
+      "quickReference": "Riferimento rapido",
+      "tableBase": "Base"
+    }
+  }
+}

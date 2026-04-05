@@ -1,0 +1,56 @@
+{
+  "tools": {
+    "fov-simulator": {
+      "name": "Simulatore di campo visivo",
+      "description": "Confronta il campo visivo tra diverse lunghezze focali e dimensioni del sensore"
+    },
+    "color-scheme-generator": {
+      "name": "Generatore di schemi colore",
+      "description": "Crea palette di colori per sessioni fotografiche"
+    },
+    "exposure-simulator": {
+      "name": "Simulatore del triangolo dell'esposizione",
+      "description": "Scopri come interagiscono apertura, tempo di posa e ISO"
+    },
+    "dof-calculator": {
+      "name": "Calcolatore della profondità di campo",
+      "description": "Calcola il limite di messa a fuoco vicino, lontano e la profondità di campo totale"
+    },
+    "hyperfocal-simulator": {
+      "name": "Simulatore della distanza iperfocale",
+      "description": "Scopri dove mettere a fuoco per la massima nitidezza dal primo piano all'infinito"
+    },
+    "shutter-speed-visualizer": {
+      "name": "Visualizzatore del tempo di posa",
+      "description": "Trova il tempo di posa minimo sicuro per foto nitide a mano libera"
+    },
+    "nd-filter-calculator": {
+      "name": "Calcolatore filtro ND",
+      "description": "Calcola il tempo di esposizione con qualsiasi filtro ND"
+    },
+    "star-trail-calculator": {
+      "name": "Calcolatore scie stellari",
+      "description": "Calcola l'esposizione massima per stelle puntiformi o pianifica scatti con scie stellari"
+    },
+    "perspective-compression-simulator": {
+      "name": "Simulatore di compressione prospettica",
+      "description": "Scopri come la lunghezza focale influenza la compressione dello sfondo"
+    },
+    "white-balance-visualizer": {
+      "name": "Visualizzatore del bilanciamento del bianco",
+      "description": "Scopri come la temperatura colore influenza le tue foto"
+    },
+    "sensor-size-comparison": {
+      "name": "Confronto dimensioni sensore",
+      "description": "Confronta visivamente le dimensioni dei sensori delle fotocamere"
+    },
+    "frame-studio": {
+      "name": "Frame Studio",
+      "description": "Ritaglia, incornicia e componi le foto con griglie di composizione"
+    },
+    "exif-viewer": {
+      "name": "Visualizzatore EXIF",
+      "description": "Visualizza i metadati EXIF e l'istogramma di qualsiasi foto — 100% lato client"
+    }
+  }
+}

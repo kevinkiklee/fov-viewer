@@ -1,0 +1,34 @@
+{
+  "toolUI": {
+    "fov-simulator": {
+      "rotate": "घुमाएँ",
+      "center": "केंद्र",
+      "switchToPortrait": "पोर्ट्रेट में बदलें",
+      "switchToLandscape": "लैंडस्केप में बदलें",
+      "centerOverlays": "ओवरले केंद्रित करें",
+      "addLens": "+ लेंस जोड़ें",
+      "fovSimulator": "FOV सिम्युलेटर",
+      "sensor": "सेंसर",
+      "copyImage": "इमेज कॉपी करें",
+      "copyLink": "लिंक कॉपी करें",
+      "embed": "एम्बेड",
+      "reset": "रीसेट",
+      "frameInfo": "फ़्रेम जानकारी",
+      "distance": "दूरी",
+      "showFramingGuides": "फ़्रेमिंग गाइड दिखाएँ",
+      "wide": "वाइड",
+      "embedTitle": "एम्बेड",
+      "closeEmbedModal": "एम्बेड मोडल बंद करें",
+      "markdownLabel": "Markdown (Reddit, GitHub)",
+      "bbcodeLabel": "BBCode (फ़ोरम)",
+      "htmlEmbedLabel": "HTML एम्बेड",
+      "copied": "कॉपी हो गया",
+      "copy": "कॉपी",
+      "cropView": "क्रॉप व्यू:",
+      "collapse": "छोटा करें",
+      "expand": "बड़ा करें",
+      "fovComparison": "FOV तुलना",
+      "loadingScene": "दृश्य लोड हो रहा है..."
+    }
+  }
+}

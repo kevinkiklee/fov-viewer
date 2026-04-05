@@ -1,0 +1,27 @@
+{
+  "toolUI": {
+    "shutter-speed-visualizer": {
+      "description": "셔터 스피드가 다양한 피사체의 모션 블러에 미치는 영향을 확인하세요.",
+      "shutterSpeed": "셔터 스피드",
+      "shutterSpeedAriaLabel": "셔터 스피드",
+      "sliderSlow": "느림 (2초)",
+      "sliderFast": "빠름 (1/4000)",
+      "selectedSpeed": "선택한 속도",
+      "motionBlurAriaLabel": "다양한 피사체에 대한 모션 블러 시각화",
+      "verdictFrozen": "정지",
+      "verdictMostlySharp": "거의 선명",
+      "verdictSlightBlur": "약간 흐림",
+      "verdictMotionBlur": "모션 블러",
+      "standingPerson": "서 있는 사람",
+      "slowWalk": "천천히 걷기",
+      "jogging": "조깅",
+      "running": "달리기",
+      "cyclist": "자전거",
+      "birdsInFlight": "비행 중인 새",
+      "carCity": "자동차 (시내)",
+      "f1Car": "F1 자동차",
+      "airplaneLanding": "비행기 (착륙)",
+      "stationary": "정지"
+    }
+  }
+}

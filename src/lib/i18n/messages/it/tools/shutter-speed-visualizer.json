@@ -1,0 +1,27 @@
+{
+  "toolUI": {
+    "shutter-speed-visualizer": {
+      "description": "Scopri come il tempo di posa influenza il mosso per diversi soggetti.",
+      "shutterSpeed": "Tempo di posa",
+      "shutterSpeedAriaLabel": "Tempo di posa",
+      "sliderSlow": "Lento (2s)",
+      "sliderFast": "Veloce (1/4000)",
+      "selectedSpeed": "Velocità selezionata",
+      "motionBlurAriaLabel": "Visualizzazione del mosso per diversi soggetti",
+      "verdictFrozen": "Congelato",
+      "verdictMostlySharp": "Quasi nitido",
+      "verdictSlightBlur": "Leggero mosso",
+      "verdictMotionBlur": "Mosso",
+      "standingPerson": "Persona ferma",
+      "slowWalk": "Camminata lenta",
+      "jogging": "Jogging",
+      "running": "Corsa",
+      "cyclist": "Ciclista",
+      "birdsInFlight": "Uccelli in volo",
+      "carCity": "Auto (città)",
+      "f1Car": "Auto F1",
+      "airplaneLanding": "Aereo (atterraggio)",
+      "stationary": "fermo"
+    }
+  }
+}

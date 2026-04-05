@@ -1,0 +1,60 @@
+{
+  "education": {
+    "perspective-compression-simulator": {
+      "beginner": "La compressione prospettica è un effetto ottico in cui gli oggetti a diverse distanze appaiono più vicini tra loro di quanto lo siano in realtà. Si nota più comunemente quando si usano lunghi teleobiettivi (come 200mm o 400mm) da grande distanza. Contrariamente a quanto si crede comunemente, non è l'obiettivo stesso a causare la compressione, ma piuttosto la distanza tra la fotocamera e la scena.",
+      "deeper": "La compressione avviene perché a grandi distanze, la differenza relativa di distanza tra il soggetto in primo piano e gli oggetti sullo sfondo diventa piccola. Per esempio, se sei a 30 metri dal tuo soggetto e lo sfondo è altri 6 metri dietro, lo sfondo è solo il 20% più lontano del soggetto. Da 1,5 metri di distanza, quella stessa distanza di 6 metri rende lo sfondo il 500% più lontano. Allontanandoti e usando un teleobiettivo per \"riempire l'inquadratura\" con il soggetto, riduci la profondità relativa, facendo apparire lo sfondo più grande e \"compresso\" contro il soggetto.",
+      "keyFactors": {
+        "0": {
+          "label": "Distanza di ripresa",
+          "description": "La causa principale della compressione. Più sei lontano dal soggetto, più lo sfondo apparirà compresso rispetto al soggetto."
+        },
+        "1": {
+          "label": "Lunghezza focale",
+          "description": "I teleobiettivi ingrandiscono l'immagine, permettendoti di riempire l'inquadratura con il soggetto da una distanza dove la compressione è visibile. I grandangolari richiedono di essere vicini, il che espande la profondità percepita."
+        },
+        "2": {
+          "label": "Profondità relativa",
+          "description": "La compressione è più evidente quando la distanza tra soggetto e sfondo è piccola rispetto alla distanza tra fotocamera e soggetto."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Per far sembrare le montagne imponenti dietro un soggetto, allontanati il più possibile e usa il tuo teleobiettivo più lungo. Questo \"avvicina\" lo sfondo al primo piano."
+        },
+        "1": {
+          "text": "Nella ritrattistica, un obiettivo da 85mm o 135mm è spesso preferito perché la leggera compressione produce una rappresentazione più lusinghiera dei tratti del viso rispetto agli obiettivi grandangolari."
+        },
+        "2": {
+          "text": "Usa l'espansione prospettica (grandangolo da vicino) per enfatizzare le linee guida del primo piano e far sembrare uno spazio più vasto e aperto."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Lunghezza focale",
+          "definition": "Il potere di ingrandimento dell'obiettivo. Lunghezze focali maggiori (teleobiettivi) ti permettono di scattare da più lontano, che è ciò che effettivamente causa la compressione prospettica."
+        },
+        "distance": {
+          "term": "Distanza del soggetto",
+          "definition": "La distanza tra la fotocamera e il soggetto principale. Aumentare questa distanza è la causa fisica della compressione prospettica."
+        },
+        "maintainSize": {
+          "term": "Mantieni dimensione soggetto",
+          "definition": "Regola automaticamente la distanza della fotocamera quando cambi lunghezza focale per mantenere il soggetto principale della stessa dimensione nell'inquadratura. Questo dimostra l'effetto \"Dolly Zoom\"."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Vuoi scattare una foto di un amico davanti a una montagna, e vuoi che la montagna appaia il più grande possibile dietro di lui. Cosa dovresti fare?",
+          "hint": "La compressione è causata dalla distanza, e i teleobiettivi ti permettono di riempire l'inquadratura da lontano.",
+          "successMessage": "Esatto! Allontanandoti e usando un teleobiettivo, comprimi la distanza tra il tuo amico e la montagna, facendo apparire la montagna molto più grande.",
+          "failureMessage": "Non proprio. Avvicinarti con un grandangolo farebbe sembrare la montagna più piccola e più lontana. Allontanati e zooma!",
+          "options": {
+            "0": { "label": "Allontanati e usa un obiettivo 200mm" },
+            "1": { "label": "Avvicinati e usa un obiettivo 24mm" },
+            "2": { "label": "Resta dove sei e usa un obiettivo 50mm" }
+          }
+        }
+      }
+    }
+  }
+}

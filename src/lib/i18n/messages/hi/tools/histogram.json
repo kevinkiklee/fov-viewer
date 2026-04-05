@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "histogram": {
+      "luminance": "ल्यूमिनेंस",
+      "rgbOverlay": "RGB ओवरले",
+      "allChannels": "सभी चैनल",
+      "shadows": "शैडो",
+      "midtones": "मिडटोन",
+      "highlights": "हाइलाइट्स",
+      "blackClipping": "ब्लैक क्लिपिंग",
+      "whiteClipping": "व्हाइट क्लिपिंग",
+      "pureBlack": "शुद्ध काला",
+      "pureWhite": "शुद्ध सफ़ेद",
+      "uploadPrompt": "EXIF डेटा और हिस्टोग्राम देखने के लिए इमेज अपलोड करें",
+      "uploadedPhoto": "अपलोड की गई फ़ोटो",
+      "noExifData": "इस इमेज में कोई EXIF डेटा नहीं मिला।",
+      "sectionCamera": "कैमरा",
+      "sectionLens": "लेंस",
+      "sectionSettings": "सेटिंग्स",
+      "sectionImage": "इमेज",
+      "sectionDate": "तारीख़",
+      "sectionGPS": "GPS",
+      "sectionSoftware": "सॉफ़्टवेयर",
+      "make": "मेक",
+      "model": "मॉडल",
+      "lensModel": "लेंस मॉडल",
+      "lensMake": "लेंस मेक",
+      "apertureLabel": "अपर्चर",
+      "shutterSpeed": "शटर स्पीड",
+      "isoLabel": "ISO",
+      "focalLengthLabel": "फ़ोकल लेंथ",
+      "focalLength35mm": "फ़ोकल लेंथ (35mm इक्विव.)",
+      "width": "चौड़ाई",
+      "height": "ऊँचाई",
+      "orientationLabel": "ओरिएंटेशन",
+      "dateTaken": "तारीख़",
+      "latitudeLabel": "अक्षांश",
+      "longitudeLabel": "देशांतर",
+      "softwareLabel": "सॉफ़्टवेयर"
+    }
+  }
+}

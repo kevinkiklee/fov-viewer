@@ -1,0 +1,16 @@
+{
+  "toolUI": {
+    "white-balance-visualizer": {
+      "colorTemperature": "Temperatura de Cor:",
+      "warm": "Quente",
+      "neutral": "Neutro",
+      "cool": "Frio",
+      "presets": "Predefinições",
+      "red": "Vermelho",
+      "green": "Verde",
+      "blue": "Azul",
+      "hex": "Hex",
+      "loadingScene": "Carregando cena..."
+    }
+  }
+}

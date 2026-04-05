@@ -1,0 +1,21 @@
+{
+  "toolUI": {
+    "hyperfocal-simulator": {
+      "settings": "सेटिंग्स",
+      "focalLength": "फ़ोकल लेंथ",
+      "aperture": "अपर्चर",
+      "focusDistance": "फ़ोकस दूरी:",
+      "sensor": "सेंसर",
+      "scene": "दृश्य:",
+      "sceneLandscape": "लैंडस्केप",
+      "sceneStreet": "स्ट्रीट",
+      "hyperfocalDistance": "हाइपरफ़ोकल दूरी",
+      "nearLimit": "नियर लिमिट",
+      "farLimit": "फ़ार लिमिट",
+      "focusDistanceResult": "फ़ोकस दूरी",
+      "hyperfocalReference": "हाइपरफ़ोकल रेफ़रेंस",
+      "sharpToInfinity": "अनंत तक शार्प",
+      "nearLimitBadge": "नियर लिमिट:"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "toolUI": {
+    "perspective-compression-simulator": {
+      "cameraSettings": "Impostazioni fotocamera",
+      "focalLength": "Lunghezza focale",
+      "equivalent35mm": "Equivalente (35mm)",
+      "perspectiveDistance": "Prospettiva e distanza",
+      "subjectDistance": "Distanza del soggetto",
+      "maintainSubjectSize": "Mantieni dimensione soggetto",
+      "resetAll": "Ripristina tutto"
+    }
+  }
+}

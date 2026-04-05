@@ -1,0 +1,60 @@
+{
+  "education": {
+    "perspective-compression-simulator": {
+      "beginner": "A compressão de perspectiva é um efeito óptico em que objetos em diferentes distâncias parecem mais próximos uns dos outros do que realmente estão. É mais comumente vista ao usar lentes teleobjetivas longas (como 200mm ou 400mm) de uma distância grande. Ao contrário da crença popular, não é a lente em si que causa a compressão, mas sim a distância entre a câmera e a cena.",
+      "deeper": "A compressão acontece porque em grandes distâncias, a diferença relativa de distância entre o assunto em primeiro plano e os objetos do fundo se torna pequena. Por exemplo, se você está a 30 metros do seu assunto e o fundo está mais 6 metros atrás, o fundo está apenas 20% mais longe que o assunto. De 1.5 metros de distância, essa mesma diferença de 6 metros faz o fundo estar 500% mais longe. Ao se afastar e usar uma teleobjetiva para \"preencher o quadro\" com o assunto, você reduz a profundidade relativa, fazendo o fundo parecer maior e \"comprimido\" contra o assunto.",
+      "keyFactors": {
+        "0": {
+          "label": "Distância de Disparo",
+          "description": "A principal causa da compressão. Quanto mais longe você está do assunto, mais comprimido o fundo aparecerá em relação ao assunto."
+        },
+        "1": {
+          "label": "Distância Focal",
+          "description": "Lentes teleobjetivas ampliam a imagem, permitindo que você preencha o quadro com seu assunto de uma distância onde a compressão é visível. Lentes grande angular exigem que você esteja perto, o que expande a profundidade percebida."
+        },
+        "2": {
+          "label": "Profundidade Relativa",
+          "description": "A compressão é mais aparente quando a distância entre o assunto e o fundo é pequena comparada à distância entre a câmera e o assunto."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Para fazer montanhas parecerem enormes atrás de um assunto, afaste-se o máximo possível e use sua teleobjetiva mais longa. Isso \"puxa\" o fundo para mais perto do primeiro plano."
+        },
+        "1": {
+          "text": "Em fotografia de retrato, uma lente 85mm ou 135mm é frequentemente preferida porque a leve compressão produz uma representação mais lisonjeira das feições faciais comparada a lentes grande angular."
+        },
+        "2": {
+          "text": "Use expansão de perspectiva (grande angular de perto) para enfatizar as linhas de condução do primeiro plano e fazer um espaço parecer mais vasto e aberto."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Distância Focal",
+          "definition": "O poder de ampliação da lente. Distâncias focais mais longas (teleobjetiva) permitem fotografar de mais longe, o que é o que realmente causa a compressão de perspectiva."
+        },
+        "distance": {
+          "term": "Distância do Assunto",
+          "definition": "A distância entre a câmera e o assunto principal. Aumentar essa distância é a causa física da compressão de perspectiva."
+        },
+        "maintainSize": {
+          "term": "Manter Tamanho do Assunto",
+          "definition": "Ajusta automaticamente a distância da câmera ao mudar a distância focal para manter o assunto principal do mesmo tamanho no quadro. Isso demonstra o efeito \"Dolly Zoom\"."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Você quer tirar uma foto de um amigo na frente de uma montanha, e quer que a montanha pareça o maior possível atrás dele. O que você deve fazer?",
+          "hint": "A compressão é causada pela distância, e lentes teleobjetivas permitem preencher o quadro de longe.",
+          "successMessage": "Exatamente! Ao se afastar e usar uma teleobjetiva, você comprime a distância entre seu amigo e a montanha, fazendo a montanha parecer muito maior.",
+          "failureMessage": "Não exatamente. Aproximar-se com uma grande angular faria a montanha parecer menor e mais distante. Afaste-se e use zoom!",
+          "options": {
+            "0": { "label": "Afastar-se e usar uma lente 200mm" },
+            "1": { "label": "Aproximar-se e usar uma lente 24mm" },
+            "2": { "label": "Ficar no lugar e usar uma lente 50mm" }
+          }
+        }
+      }
+    }
+  }
+}

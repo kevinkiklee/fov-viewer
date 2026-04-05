@@ -1,0 +1,13 @@
+{
+  "toolUI": {
+    "perspective-compression-simulator": {
+      "cameraSettings": "카메라 설정",
+      "focalLength": "초점 거리",
+      "equivalent35mm": "등가 (35mm)",
+      "perspectiveDistance": "원근 및 거리",
+      "subjectDistance": "피사체 거리",
+      "maintainSubjectSize": "피사체 크기 유지",
+      "resetAll": "전체 초기화"
+    }
+  }
+}

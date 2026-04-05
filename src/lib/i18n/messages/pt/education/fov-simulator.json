@@ -1,0 +1,125 @@
+{
+  "education": {
+    "fov-simulator": {
+      "beginner": "Campo de visão (CdV) é o quanto de uma cena sua câmera captura. Uma lente grande angular (como 24mm) vê uma visão ampla, enquanto uma teleobjetiva (como 200mm) se estreita em uma pequena fatia. Este simulador permite comparar até quatro lentes em diferentes sensores, sobrepostas em cenas do mundo real, para que você visualize exatamente o que cada combinação captura.",
+      "deeper": {
+        "0": {
+          "heading": "A Fórmula do CdV",
+          "text": "O campo de visão é determinado por dois fatores: distância focal e tamanho do sensor. O ângulo horizontal do CdV é calculado como 2 × arctan(larguraSensor / (2 × distânciaFocal)). Uma distância focal mais curta ou sensor maior produz um ângulo de visão mais amplo."
+        },
+        "1": {
+          "heading": "Fator de Corte e Distância Focal Equivalente",
+          "text": "Ao trocar sensores, o conceito de \"distância focal equivalente\" se aplica: uma lente 50mm em um sensor APS-C (corte de 1.5×) enquadra o mesmo que uma 75mm em full frame. O sensor menor captura uma porção central mais estreita do círculo de imagem, efetivamente cortando a imagem."
+        },
+        "2": {
+          "heading": "Perspectiva vs. Distância Focal",
+          "text": "Perspectiva — a relação espacial entre objetos próximos e distantes — depende apenas da posição da câmera, não da distância focal. Uma lente 50mm e uma 200mm disparadas do mesmo ponto mostram perspectiva idêntica, apenas cortes diferentes. Aproximar-se com uma grande angular exagera a profundidade; afastar-se com uma teleobjetiva a comprime."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Distância Focal",
+          "description": "O controle principal sobre o campo de visão. Distâncias focais mais curtas veem mais da cena; mais longas veem menos, mas ampliam assuntos distantes."
+        },
+        "1": {
+          "label": "Tamanho do Sensor",
+          "description": "Um sensor menor corta para o centro do círculo de imagem, estreitando o campo de visão (efeito do fator de corte)."
+        },
+        "2": {
+          "label": "Orientação",
+          "description": "Orientação retrato (vertical) mostra uma fatia mais alta e estreita. Paisagem (horizontal) mostra a visão mais ampla e tradicional."
+        },
+        "3": {
+          "label": "Contexto da Cena",
+          "description": "Diferentes cenas (paisagens urbanas, interiores, natureza) ajudam você a entender como as mudanças de CdV são sentidas em vários contextos do mundo real."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Adicione duas lentes e alterne entre um sensor crop e full frame em uma delas para ver instantaneamente o efeito do fator de corte. Uma 35mm em APS-C enquadra quase identicamente a uma 50mm em full frame."
+        },
+        "1": {
+          "text": "Use o seletor de cena para verificar a cobertura para situações específicas de disparo — uma cena de paisagem urbana mostra se sua grande angular é ampla o suficiente para capturar um prédio do outro lado da rua."
+        },
+        "2": {
+          "text": "Ao planejar a compra de uma lente, adicione sua lente atual como Lente A e a lente que você está considerando como Lente B. A sobreposição mostra exatamente quanto mais ou menos você veria."
+        }
+      },
+      "tooltips": {
+        "Focal Length": {
+          "term": "Distância Focal",
+          "definition": "A distância (em mm) do centro óptico da lente até o sensor quando focado no infinito. Menor = campo de visão mais amplo."
+        },
+        "Sensor": {
+          "term": "Sensor",
+          "definition": "O formato do sensor da câmera para esta lente. Diferentes tamanhos de sensor cortam o círculo de imagem de formas diferentes, alterando o campo de visão efetivo."
+        },
+        "Scene": {
+          "term": "Cena",
+          "definition": "A imagem de referência de fundo. Escolha uma cena que corresponda ao tipo de fotografia que você está planejando para julgar melhor a cobertura da lente."
+        },
+        "Orientation": {
+          "term": "Orientação",
+          "definition": "Alterne entre orientação paisagem (horizontal) e retrato (vertical) da câmera. O retângulo do CdV gira de acordo."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Você quer capturar uma vista ampla de um horizonte urbano. Qual distância focal oferece um campo de visão mais amplo?",
+          "hint": "Números menores de distância focal significam uma visão mais ampla.",
+          "successMessage": "Correto! Uma lente 24mm vê muito mais da cena que uma 70mm. Lentes grande angular têm distâncias focais curtas.",
+          "failureMessage": "Distâncias focais mais curtas oferecem campos de visão mais amplos. 24mm é uma lente grande angular que captura muito mais do horizonte que 70mm.",
+          "options": {
+            "0": { "label": "24mm" },
+            "1": { "label": "70mm" },
+            "2": { "label": "200mm" }
+          }
+        },
+        "1": {
+          "scenario": "Configure a Lente A como 50mm em Full Frame. Que tipo de campo de visão essa \"cinquentinha\" oferece?",
+          "hint": "A 50mm em full frame é chamada de lente \"normal\" porque se aproxima da visão humana.",
+          "successMessage": "Certo! Uma 50mm em full frame é a clássica lente \"normal\" — seu campo de visão de ~46 graus se aproxima do que o olho humano naturalmente foca.",
+          "failureMessage": "Uma 50mm em full frame é considerada uma lente \"normal\" porque seu campo de visão (~46 graus) se aproxima da percepção humana confortável.",
+          "options": {
+            "0": { "label": "Ultra grande angular" },
+            "1": { "label": "Normal / padrão" },
+            "2": { "label": "Teleobjetiva" }
+          }
+        },
+        "2": {
+          "scenario": "Adicione duas lentes: Lente A é 35mm em APS-C (Nikon/Sony), e Lente B é 50mm em Full Frame. Compare as duas sobreposições de CdV. O que você nota?",
+          "hint": "35mm multiplicado pelo fator de corte APS-C de 1.5 é igual a...",
+          "successMessage": "Exatamente! 35mm em APS-C (corte 1.5x) oferece um campo de visão equivalente a 52.5mm em full frame — quase idêntico a 50mm FF. As sobreposições são quase do mesmo tamanho.",
+          "failureMessage": "35mm x fator de corte 1.5 = 52.5mm equivalente. Isso é quase idêntico a 50mm em full frame, por isso as sobreposições são quase do mesmo tamanho.",
+          "options": {
+            "0": { "label": "Elas têm campos de visão quase idênticos" },
+            "1": { "label": "A lente APS-C mostra uma visão muito mais ampla" },
+            "2": { "label": "A lente Full Frame mostra uma visão muito mais ampla" }
+          }
+        },
+        "3": {
+          "scenario": "Você está fotografando o interior de um cômodo pequeno. Você tem uma lente 24mm. Verá mais do cômodo em Full Frame ou APS-C?",
+          "hint": "Um sensor menor captura uma porção central mais estreita do círculo de imagem da lente.",
+          "successMessage": "Correto! Full Frame vê mais porque o sensor maior captura uma porção mais ampla do círculo de imagem da lente 24mm. Em APS-C, a mesma lente 24mm enquadra como ~36mm.",
+          "failureMessage": "Full Frame captura mais da cena. O sensor maior usa mais do círculo de imagem da lente, oferecendo um campo de visão efetivo mais amplo.",
+          "options": {
+            "0": { "label": "Full Frame — sensor maior vê mais" },
+            "1": { "label": "APS-C — sensor crop vê mais" },
+            "2": { "label": "Ambos veem o mesmo — a distância focal é o que importa" }
+          }
+        },
+        "4": {
+          "scenario": "Um fotógrafo de vida selvagem fotografa com uma lente 200mm em Micro Quatro Terços. Qual distância focal equivalente em full frame isso produz, e qual é a troca comparado a realmente usar uma lente 400mm em full frame?",
+          "hint": "M43 tem fator de corte de 2x. Pense em profundidade de campo e diferenças de tamanho de sensor.",
+          "successMessage": "Excelente! 200mm em M43 (corte 2x) oferece um campo de visão equivalente a 400mm. A troca: enquanto o enquadramento corresponde a 400mm FF, a profundidade de campo corresponde à lente 200mm (PdC mais profunda), e o sensor menor captura menos luz total, resultando em pior desempenho de ruído em ISO alto. A vantagem é uma lente muito menor, mais leve e mais barata.",
+          "failureMessage": "200mm x corte 2.0 = CdV equivalente a 400mm. Mas não é idêntico a 400mm em FF: você obtém mais profundidade de campo (baseada na distância focal real de 200mm), menos captação de luz (sensor menor), e mais ruído em ISO alto. O benefício é equipamento significativamente menor e mais leve.",
+          "options": {
+            "0": { "label": "Equivalente 400mm — mesmo CdV mas PdC mais profunda, mais ruído, equipamento menor/mais leve" },
+            "1": { "label": "Equivalente 400mm — idêntico em todos os aspectos a 400mm em full frame" },
+            "2": { "label": "Equivalente 200mm — fator de corte não afeta o CdV" }
+          }
+        }
+      }
+    }
+  }
+}

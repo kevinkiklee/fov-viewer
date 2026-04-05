@@ -1,0 +1,126 @@
+{
+  "education": {
+    "exif-viewer": {
+      "beginner": "Dados EXIF são informações ocultas incorporadas em cada foto que sua câmera tira. Registram qual câmera e lente você usou, as configurações exatas (abertura, velocidade do obturador, ISO), a data e hora, e às vezes até coordenadas GPS. Esta ferramenta lê esses dados sem enviar sua foto para lugar nenhum — tudo acontece no seu navegador.",
+      "deeper": "EXIF (Exchangeable Image File Format) é um padrão definido pela JEITA/CIPA que armazena metadados em arquivos JPEG, TIFF e alguns arquivos RAW. Os dados são escritos em segmentos específicos do cabeçalho do arquivo como pares de chave-valor rotulados usando uma estrutura IFD (Image File Directory) baseada em TIFF. Existem várias seções IFD: IFD0 para informações básicas da imagem, o sub-IFD EXIF para configurações da câmera, o IFD GPS para geolocalização, e o IFD Interop para dados de compatibilidade. Fabricantes de câmeras também escrevem dados proprietários \"MakerNote\" contendo correções de lente, pontos de foco, contagem de disparos e outros detalhes específicos do modelo. Plataformas de mídia social frequentemente removem dados EXIF no upload por privacidade, mas o arquivo original no cartão de memória sempre os retém. Entender EXIF ajuda você a aprender com seus próprios padrões de disparo e fazer engenharia reversa das configurações por trás de fotos que admira.",
+      "keyFactors": {
+        "0": {
+          "label": "Câmera e Lente",
+          "description": "Marca, modelo, nome da lente e fabricante da lente — útil para identificar equipamento em fotos que você encontra online."
+        },
+        "1": {
+          "label": "Configurações de Exposição",
+          "description": "Abertura, velocidade do obturador, ISO e distância focal — os parâmetros centrais de disparo registrados para cada quadro."
+        },
+        "2": {
+          "label": "Data e GPS",
+          "description": "Quando e onde a foto foi tirada. Esteja atento que dados GPS revelam sua localização ao compartilhar arquivos."
+        },
+        "3": {
+          "label": "Software",
+          "description": "Mostra qual software de edição salvou o arquivo por último. Útil para verificar se uma imagem foi processada."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Verifique a distância focal e o equivalente em 35mm para entender se o fotógrafo usou uma perspectiva grande angular, normal ou teleobjetiva — isso ensina mais sobre composição do que qualquer regra dos terços."
+        },
+        "1": {
+          "text": "Se uma foto que você admira foi tirada em ISO alto com abertura ampla, isso indica uma situação de pouca luz. Use EXIF para entender as restrições que o fotógrafo enfrentou."
+        },
+        "2": {
+          "text": "Antes de compartilhar fotos online, esteja ciente de que EXIF pode conter sua localização GPS. Remova metadados usando as configurações de exportação do seu software de edição se privacidade for uma preocupação."
+        }
+      },
+      "tooltips": {
+        "Make": {
+          "term": "Marca",
+          "definition": "O nome do fabricante da câmera (ex.: Canon, Nikon, Sony) armazenado no cabeçalho EXIF."
+        },
+        "Model": {
+          "term": "Modelo",
+          "definition": "O modelo específico da câmera (ex.: \"EOS R5\", \"Z 9\") que capturou a imagem."
+        },
+        "Aperture": {
+          "term": "Abertura",
+          "definition": "O número f em que a lente estava configurada. Números menores significam abertura mais ampla e mais luz."
+        },
+        "Shutter Speed": {
+          "term": "Velocidade do Obturador",
+          "definition": "Quanto tempo o sensor ficou exposto. Expresso como fração (ex.: 1/250s) ou segundos inteiros para exposições longas."
+        },
+        "ISO": {
+          "term": "ISO",
+          "definition": "A configuração de sensibilidade do sensor. ISO mais alto clareia a imagem mas adiciona ruído."
+        },
+        "Focal Length": {
+          "term": "Distância Focal",
+          "definition": "A distância focal real da lente em milímetros."
+        },
+        "Focal Length (35mm equiv)": {
+          "term": "Distância Focal (equiv. 35mm)",
+          "definition": "A distância focal equivalente como se fotografada em um sensor full frame de 35mm. Útil para comparar campo de visão entre diferentes tamanhos de sensor."
+        },
+        "GPS": {
+          "term": "GPS",
+          "definition": "Coordenadas de latitude e longitude incorporadas por câmeras com módulos GPS. Revelam onde a foto foi tirada."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Você encontrou uma foto impressionante online e quer saber qual lente foi usada. Qual seção EXIF diria isso?",
+          "hint": "Informações da câmera e da lente estão em seções diferentes.",
+          "successMessage": "Correto! A seção Lente mostra o modelo e fabricante da lente.",
+          "failureMessage": "A seção Lente contém o modelo da lente — confira lá para identificar o vidro usado.",
+          "options": {
+            "0": { "label": "Câmera" },
+            "1": { "label": "Lente" },
+            "2": { "label": "Configurações" }
+          }
+        },
+        "1": {
+          "scenario": "Você enviou uma foto e vê Abertura: f/1.8, Velocidade do Obturador: 1/4000s, ISO: 100. Provavelmente foi tirada em luz forte ou fraca?",
+          "hint": "Uma velocidade muito rápida em ISO baixo sugere muita luz disponível.",
+          "successMessage": "Certo! A velocidade rápida (1/4000s) em ISO base (100) indica que havia muita luz — provavelmente ao ar livre com sol.",
+          "failureMessage": "Uma velocidade de 1/4000s em ISO 100 significa que a câmera precisou de muito pouca sensibilidade e exposição muito curta. É uma cena ao ar livre com muita luz.",
+          "options": {
+            "0": { "label": "Luz forte — velocidade rápida em ISO baixo" },
+            "1": { "label": "Luz fraca — a abertura ampla compensa" }
+          }
+        },
+        "2": {
+          "scenario": "Uma foto mostra Distância Focal: 50mm e Distância Focal (equiv. 35mm): 75mm. Qual sensor a câmera estava usando?",
+          "hint": "O equivalente em 35mm é a distância focal multiplicada pelo fator de corte.",
+          "successMessage": "Correto! 75 / 50 = fator de corte 1.5x, que é um sensor APS-C (variante Nikon/Sony).",
+          "failureMessage": "Divida o equivalente em 35mm pela distância focal real: 75 / 50 = 1.5x. Esse fator de corte corresponde ao APS-C (Nikon/Sony).",
+          "options": {
+            "0": { "label": "Full Frame (corte 1.0x)" },
+            "1": { "label": "APS-C (corte 1.5x)" },
+            "2": { "label": "Micro Quatro Terços (corte 2.0x)" }
+          }
+        },
+        "3": {
+          "scenario": "Você vê duas fotos da mesma cena. Foto A: f/2.8, 1/60s, ISO 3200. Foto B: f/2.8, 1/60s, ISO 200. Qual foto foi tirada em luz mais forte?",
+          "hint": "ISO mais alto compensa menos luz.",
+          "successMessage": "Exatamente! A Foto B em ISO 200 tinha muito mais luz ambiente. A Foto A precisou de ISO 3200 (4 stops a mais de sensibilidade) para alcançar a mesma exposição, significando que a cena era muito mais escura.",
+          "failureMessage": "A Foto B estava em luz mais forte. Mesma abertura e velocidade do obturador, mas ISO 200 vs 3200 significa que a Foto A estava em um ambiente muito mais escuro e precisou de 4 stops a mais de sensibilidade do sensor.",
+          "options": {
+            "0": { "label": "Foto A (ISO 3200)" },
+            "1": { "label": "Foto B (ISO 200)" }
+          }
+        },
+        "4": {
+          "scenario": "Você está analisando uma foto de vida selvagem: 400mm, f/5.6, 1/2000s, ISO 1600. O EXIF mostra que o campo de software é \"Adobe Lightroom Classic 13.1\". O que você pode inferir sobre o fotógrafo e as condições de disparo?",
+          "hint": "Considere a distância focal longa, abertura totalmente aberta, velocidade rápida e ISO elevado juntos.",
+          "successMessage": "Ótima análise! A 400mm em f/5.6 (provavelmente totalmente aberta para essa lente) com velocidade rápida de 1/2000s sugere um assunto rápido (pássaros ou vida selvagem em ação). ISO 1600 indica que não era sol forte — provavelmente nublado ou na sombra. O campo do Lightroom confirma que pós-processamento foi feito.",
+          "failureMessage": "As configurações revelam muito: 400mm f/5.6 é uma teleobjetiva típica de vida selvagem totalmente aberta, 1/2000s congela movimento rápido de animais, e ISO 1600 significa que a luz era limitada (não sol forte). A entrada do Lightroom confirma que o arquivo foi processado.",
+          "options": {
+            "0": { "label": "Assunto rápido em luz moderada, pós-processado no Lightroom" },
+            "1": { "label": "Assunto lento em luz forte, direto da câmera" },
+            "2": { "label": "Foto de paisagem com desfoque de movimento, muito editada" }
+          }
+        }
+      }
+    }
+  }
+}

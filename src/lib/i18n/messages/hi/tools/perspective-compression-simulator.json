@@ -1,0 +1,13 @@
+{
+  "toolUI": {
+    "perspective-compression-simulator": {
+      "cameraSettings": "कैमरा सेटिंग्स",
+      "focalLength": "फ़ोकल लेंथ",
+      "equivalent35mm": "इक्विवेलेंट (35mm)",
+      "perspectiveDistance": "पर्स्पेक्टिव और दूरी",
+      "subjectDistance": "सब्जेक्ट दूरी",
+      "maintainSubjectSize": "सब्जेक्ट साइज़ बनाए रखें",
+      "resetAll": "सब रीसेट करें"
+    }
+  }
+}

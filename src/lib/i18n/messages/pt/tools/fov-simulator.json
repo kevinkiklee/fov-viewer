@@ -1,0 +1,34 @@
+{
+  "toolUI": {
+    "fov-simulator": {
+      "rotate": "Girar",
+      "center": "Centralizar",
+      "switchToPortrait": "Mudar para retrato",
+      "switchToLandscape": "Mudar para paisagem",
+      "centerOverlays": "Centralizar sobreposições",
+      "addLens": "+ Adicionar lente",
+      "fovSimulator": "Simulador de CdV",
+      "sensor": "Sensor",
+      "copyImage": "Copiar imagem",
+      "copyLink": "Copiar link",
+      "embed": "Incorporar",
+      "reset": "Redefinir",
+      "frameInfo": "Info do Quadro",
+      "distance": "Distância",
+      "showFramingGuides": "Mostrar guias de enquadramento",
+      "wide": "angular",
+      "embedTitle": "Incorporar",
+      "closeEmbedModal": "Fechar modal de incorporação",
+      "markdownLabel": "Markdown (Reddit, GitHub)",
+      "bbcodeLabel": "BBCode (Fóruns)",
+      "htmlEmbedLabel": "Incorporação HTML",
+      "copied": "Copiado",
+      "copy": "Copiar",
+      "cropView": "Vista de corte:",
+      "collapse": "Recolher",
+      "expand": "Expandir",
+      "fovComparison": "Comparação de CdV",
+      "loadingScene": "Carregando cena..."
+    }
+  }
+}

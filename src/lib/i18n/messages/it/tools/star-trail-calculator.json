@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "star-trail-calculator": {
+      "rule500": "Regola del 500",
+      "ruleNPF": "Regola NPF",
+      "recommendation": "Raccomandazione",
+      "recommendationText": "Usa la regola NPF ({npf}s) per la nitidezza a livello di pixel. La regola del 500 ({r500}s) è una stima rapida ma potrebbe mostrare scie su sensori ad alta risoluzione.",
+      "shootingTime": "Tempo di ripresa",
+      "exposure": "Esposizione",
+      "displayMode": "Modalità di visualizzazione",
+      "modeStarTrails": "Scie stellari",
+      "modeSingleShot": "Scatto singolo",
+      "stacking": "Stacking",
+      "exposurePerFrame": "Esposizione / fotogramma (sec)",
+      "exposurePerFrameDesc": "Tempo di posa per ogni singolo fotogramma",
+      "frames": "Fotogrammi",
+      "framesDesc": "Numero totale di foto da sovrapporre",
+      "gapSec": "Pausa (sec)",
+      "gapDesc": "Ritardo tra i fotogrammi per la scrittura del buffer",
+      "camera": "Fotocamera",
+      "sensor": "Sensore",
+      "resolutionMP": "Risoluzione (MP)",
+      "apertureLabel": "Apertura",
+      "latitude": "Latitudine",
+      "position": "Posizione",
+      "useMyLocation": "Usa la mia posizione",
+      "latitudeLabel": "Latitudine:",
+      "equator": "Equatore 0°",
+      "mid45": "Medio 45°",
+      "arctic70": "Artico 70°"
+    }
+  }
+}

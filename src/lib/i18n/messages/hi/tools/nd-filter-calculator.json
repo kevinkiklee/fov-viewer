@@ -1,0 +1,12 @@
+{
+  "toolUI": {
+    "nd-filter-calculator": {
+      "baseShutterSpeed": "बेस शटर स्पीड",
+      "ndFilter": "ND फ़िल्टर",
+      "resultingShutterSpeed": "परिणामी शटर स्पीड",
+      "stopsAdded": "जोड़े गए स्टॉप",
+      "quickReference": "क्विक रेफ़रेंस",
+      "tableBase": "बेस"
+    }
+  }
+}

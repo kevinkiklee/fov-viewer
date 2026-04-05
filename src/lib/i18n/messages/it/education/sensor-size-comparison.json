@@ -1,0 +1,125 @@
+{
+  "education": {
+    "sensor-size-comparison": {
+      "beginner": "I sensori delle fotocamere sono disponibili in molte dimensioni fisiche diverse, dai grandi chip medio formato usati nelle fotocamere da studio fino ai piccoli sensori degli smartphone. Un sensore più grande cattura più luce, produce meno rumore e rende più facile sfocare gli sfondi. La dimensione del sensore è uno dei fattori più importanti che separano le categorie di fotocamere.",
+      "deeper": {
+        "0": {
+          "heading": "Come funziona",
+          "text": "La dimensione del sensore influisce sulla fotografia in diversi modi interconnessi. Un sensore più grande ha un'area maggiore per raccogliere fotoni, migliorando il rapporto segnale-rumore e la gamma dinamica. La dimensione del sensore è una delle differenze più importanti tra le categorie di fotocamere — dalle fotocamere medio formato da studio ai sensori degli smartphone."
+        },
+        "1": {
+          "heading": "Fattore di crop",
+          "text": "Il \"fattore di crop\" descrive come un sensore si confronta con lo standard full-frame 35mm. Un sensore APS-C con un fattore di crop 1,5x offre lo stesso campo visivo con un obiettivo 35mm di quello che una fotocamera full-frame offrirebbe con un 52,5mm. Questo fattore di crop moltiplica anche la profondità di campo effettiva — un sensore più piccolo sembra dare più profondità di campo alla stessa inquadratura perché serve un obiettivo più grandangolare (più corto) per corrispondere al campo visivo."
+        },
+        "2": {
+          "heading": "Densità pixel",
+          "text": "La densità pixel (passo dei pixel) misura quanto sono impacchettati strettamente i pixel sul sensore. Inserire più megapixel su un sensore più piccolo riduce ogni fotorecettore, diminuendo la raccolta di luce per pixel. Un sensore full-frame da 24MP ha pixel di ~6µm mentre un sensore APS-C da 24MP ha pixel di ~4µm, motivo per cui il sensore full-frame tipicamente performa meglio ad alti ISO."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Dimensioni fisiche",
+          "description": "Larghezza e altezza in millimetri determinano l'area totale di raccolta luce e il campo visivo per un dato obiettivo."
+        },
+        "1": {
+          "label": "Fattore di crop",
+          "description": "Il rapporto tra la diagonale full-frame e la diagonale del sensore. Moltiplicato per la lunghezza focale, dà la lunghezza focale \"equivalente\"."
+        },
+        "2": {
+          "label": "Densità pixel",
+          "description": "Quanto sono impacchettati strettamente i pixel. Un passo dei pixel più piccolo significa più dettaglio ma meno luce per pixel, influenzando le prestazioni di rumore."
+        },
+        "3": {
+          "label": "Area del sensore",
+          "description": "Area totale in mm². Un sensore medio formato 44x33mm (Fujifilm GFX, Hasselblad X) ha circa 1,7 volte l'area del full frame, mentre un chip medio formato più grande da 54x40mm è circa 2,5 volte. Il full frame è circa 13 volte l'area di un sensore smartphone di punta."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Usa la modalità di sovrapposizione per vedere esattamente quanto un sensore è più grande di un altro — la differenza di area è spesso più drammatica di quanto i numeri suggeriscano."
+        },
+        "1": {
+          "text": "Passa alla modalità densità pixel e inserisci la risoluzione della tua fotocamera per confrontare il passo dei pixel. Se la tua fotocamera ha una densità pixel molto alta, potresti raggiungere i limiti di diffrazione ad aperture più ampie del previsto."
+        },
+        "2": {
+          "text": "Quando confronti fotocamere, l'area del sensore conta più del numero di megapixel per le prestazioni di rumore. Un sensore full-frame da 20MP tipicamente supererà un sensore APS-C da 40MP ad alti ISO."
+        }
+      },
+      "tooltips": {
+        "Sensor": {
+          "term": "Sensore",
+          "definition": "Attiva o disattiva i singoli formati sensore per includerli nel confronto visivo e nella tabella dati."
+        },
+        "Display Mode": {
+          "term": "Modalità di visualizzazione",
+          "definition": "Sovrapposizione mostra tutti i sensori centrati sullo stesso punto. Affiancamento li posiziona uno accanto all'altro alla stessa scala. Densità pixel visualizza quanto sono impacchettati strettamente i pixel."
+        },
+        "Resolution": {
+          "term": "Risoluzione",
+          "definition": "Il conteggio totale dei megapixel usato per calcolare il passo dei pixel nella modalità densità pixel. Più megapixel sullo stesso sensore significano pixel individuali più piccoli."
+        },
+        "Crop Factor": {
+          "term": "Fattore di crop",
+          "definition": "Il rapporto tra la diagonale full-frame 35mm e la diagonale di questo sensore. Un fattore di crop 1,5x significa che un obiettivo 50mm inquadra come un 75mm su full frame."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Un sensore full-frame misura 36×24mm. Un sensore APS-C ha un fattore di crop 1,5x. Qual è la larghezza approssimativa di un sensore APS-C?",
+          "hint": "Dividi la larghezza full-frame per il fattore di crop.",
+          "successMessage": "Corretto! 36mm ÷ 1,5 ≈ 24mm. Il sensore APS-C è circa 24×16mm, dandogli circa il 44% dell'area del full-frame.",
+          "failureMessage": "Dividi la larghezza full-frame (36mm) per il fattore di crop (1,5x): 36 ÷ 1,5 = 24mm.",
+          "options": {
+            "0": { "label": "24mm" },
+            "1": { "label": "30mm" },
+            "2": { "label": "18mm" }
+          }
+        },
+        "1": {
+          "scenario": "Monti un obiettivo 50mm su una fotocamera con sensore a fattore di crop 2.0x. Quale lunghezza focale equivalente full-frame ottieni?",
+          "hint": "Moltiplica la lunghezza focale per il fattore di crop.",
+          "successMessage": "Giusto! 50mm × 2.0 = equivalente 100mm. Ecco perché le fotocamere Micro Quattro Terzi sono popolari per il lavoro con teleobiettivi — ottieni portata extra da ogni obiettivo.",
+          "failureMessage": "Moltiplica la lunghezza focale dell'obiettivo per il fattore di crop: 50mm × 2.0 = equivalente 100mm.",
+          "options": {
+            "0": { "label": "25mm" },
+            "1": { "label": "75mm" },
+            "2": { "label": "100mm" }
+          }
+        },
+        "2": {
+          "scenario": "Due fotocamere hanno entrambe 24 megapixel — una full-frame (36×24mm) e una APS-C (24×16mm). Quale ha migliori prestazioni di rumore ad alti ISO, e perché?",
+          "hint": "Pensa a come lo stesso numero di pixel distribuito su diverse aree del sensore influisce sulla dimensione individuale dei pixel.",
+          "successMessage": "Esatto! Il sensore full-frame distribuisce 24MP su un'area maggiore, quindi ogni pixel è fisicamente più grande (~6µm vs ~4µm di passo) e cattura più fotoni, risultando in meno rumore.",
+          "failureMessage": "Il sensore full-frame vince — lo stesso numero di megapixel su un'area maggiore significa pixel più grandi che raccolgono più luce, producendo meno rumore ad alti ISO.",
+          "options": {
+            "0": { "label": "Full frame — pixel più grandi raccolgono più luce" },
+            "1": { "label": "APS-C — sensori più piccoli sono più efficienti" },
+            "2": { "label": "Stesso rumore — è il conteggio dei megapixel che conta" }
+          }
+        },
+        "3": {
+          "scenario": "Guardando la tabella di confronto, quale formato sensore ha un fattore di crop più vicino a 2.0x?",
+          "hint": "Il fattore di crop è la diagonale full-frame divisa per la diagonale del sensore.",
+          "successMessage": "Corretto! Il Micro Quattro Terzi ha un fattore di crop di 2.0x, motivo per cui un obiettivo M43 da 25mm inquadra come un 50mm su full frame.",
+          "failureMessage": "Il Micro Quattro Terzi ha un fattore di crop 2.0x. Controlla la tabella — la sua diagonale è esattamente la metà della diagonale full-frame.",
+          "options": {
+            "0": { "label": "APS-C (Canon)" },
+            "1": { "label": "Micro Quattro Terzi" },
+            "2": { "label": "Sensore 1\"" }
+          }
+        },
+        "4": {
+          "scenario": "Stai confrontando una fotocamera medio formato da 50MP con una full-frame da 50MP usando la modalità densità pixel. Entrambe hanno lo stesso conteggio di megapixel. Quale fotocamera ha il passo dei pixel maggiore, e quale vantaggio pratico offre?",
+          "hint": "Il passo dei pixel dipende dalla larghezza del sensore divisa per il numero di pixel orizzontali.",
+          "successMessage": "Giusto! Il sensore medio formato è fisicamente più grande, quindi a 50MP i suoi pixel sono più grandi (passo maggiore). Questo gli dà circa 1/3 di stop di migliore raccolta luce per pixel, più un inizio leggermente più tardivo della diffrazione.",
+          "failureMessage": "Il sensore medio formato è più grande, quindi alla stessa risoluzione ogni pixel è fisicamente più grande. Pixel più grandi raccolgono più fotoni, offrendo migliore gamma dinamica e limiti di diffrazione leggermente più tardivi.",
+          "options": {
+            "0": { "label": "Medio formato — migliore raccolta luce per pixel e gamma dinamica" },
+            "1": { "label": "Full Frame — pixel più piccoli sono più efficienti" },
+            "2": { "label": "Entrambi sono identici dato che hanno lo stesso conteggio di megapixel" }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "education": {
+    "fov-simulator": {
+      "beginner": "Il campo visivo (FOV) indica quanta parte di una scena la tua fotocamera cattura. Un obiettivo grandangolare (come il 24mm) vede un'ampia panoramica, mentre un teleobiettivo (come il 200mm) si restringe su una piccola porzione. Questo simulatore ti permette di confrontare fino a quattro obiettivi su diversi sensori, sovrapposti a scene reali, così puoi visualizzare esattamente cosa cattura ogni combinazione.",
+      "deeper": {
+        "0": {
+          "heading": "La formula del campo visivo",
+          "text": "Il campo visivo è determinato da due fattori: lunghezza focale e dimensione del sensore. L'angolo di campo orizzontale è calcolato come 2 × arctan(larghezzaSensore / (2 × lunghezzaFocale)). Una lunghezza focale più corta o un sensore più grande produce un angolo di campo più ampio."
+        },
+        "1": {
+          "heading": "Fattore di crop e lunghezza focale equivalente",
+          "text": "Quando si cambiano i sensori, si applica il concetto di \"lunghezza focale equivalente\": un obiettivo 50mm su un sensore APS-C (crop 1,5×) inquadra come un 75mm su full frame. Il sensore più piccolo cattura una porzione centrale più stretta del cerchio d'immagine, ritagliando effettivamente l'immagine."
+        },
+        "2": {
+          "heading": "Prospettiva vs. lunghezza focale",
+          "text": "La prospettiva — la relazione spaziale tra oggetti vicini e lontani — dipende solo dalla posizione della fotocamera, non dalla lunghezza focale. Un 50mm e un 200mm scattati dallo stesso punto mostrano una prospettiva identica, solo ritagli diversi. Avvicinarsi con un grandangolo esagera la profondità; allontanarsi con un teleobiettivo la comprime."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Lunghezza focale",
+          "description": "Il controllo principale sul campo visivo. Lunghezze focali più corte vedono più scena; quelle più lunghe vedono meno ma ingrandiscono i soggetti distanti."
+        },
+        "1": {
+          "label": "Dimensione del sensore",
+          "description": "Un sensore più piccolo ritaglia il centro del cerchio d'immagine, restringendo il campo visivo (l'effetto del fattore di crop)."
+        },
+        "2": {
+          "label": "Orientamento",
+          "description": "L'orientamento verticale (ritratto) mostra una porzione più alta e stretta. L'orientamento orizzontale (paesaggio) mostra la vista più ampia e tradizionale."
+        },
+        "3": {
+          "label": "Contesto della scena",
+          "description": "Scene diverse (paesaggi urbani, interni, natura) ti aiutano a capire come i cambiamenti del campo visivo si percepiscono in vari contesti reali."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Aggiungi due obiettivi e alterna tra un sensore crop e full frame su uno di essi per vedere istantaneamente l'effetto del fattore di crop. Un 35mm su APS-C inquadra quasi identicamente a un 50mm su full frame."
+        },
+        "1": {
+          "text": "Usa il selettore di scena per verificare la copertura per situazioni di scatto specifiche — una scena urbana mostra se il tuo grandangolo è sufficientemente ampio per catturare un edificio dall'altra parte della strada."
+        },
+        "2": {
+          "text": "Quando pianifichi l'acquisto di un obiettivo, aggiungi il tuo obiettivo attuale come Obiettivo A e quello che stai considerando come Obiettivo B. La sovrapposizione mostra esattamente quanto di più o di meno vedresti."
+        }
+      },
+      "tooltips": {
+        "Focal Length": {
+          "term": "Lunghezza focale",
+          "definition": "La distanza (in mm) dal centro ottico dell'obiettivo al sensore quando è messo a fuoco all'infinito. Più corta = campo visivo più ampio."
+        },
+        "Sensor": {
+          "term": "Sensore",
+          "definition": "Il formato del sensore della fotocamera per questo obiettivo. Sensori di diverse dimensioni ritagliano il cerchio d'immagine in modo diverso, modificando il campo visivo effettivo."
+        },
+        "Scene": {
+          "term": "Scena",
+          "definition": "L'immagine di riferimento di sfondo. Scegli una scena che corrisponda al tipo di fotografia che stai pianificando per valutare meglio la copertura dell'obiettivo."
+        },
+        "Orientation": {
+          "term": "Orientamento",
+          "definition": "Alterna tra orientamento orizzontale (paesaggio) e verticale (ritratto) della fotocamera. Il rettangolo del campo visivo ruota di conseguenza."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Vuoi catturare un'ampia vista dello skyline di una città. Quale lunghezza focale offre un campo visivo più ampio?",
+          "hint": "Numeri di lunghezza focale più bassi significano una vista più ampia.",
+          "successMessage": "Corretto! Un obiettivo 24mm vede molta più scena di un 70mm. Gli obiettivi grandangolari hanno lunghezze focali corte.",
+          "failureMessage": "Lunghezze focali più corte danno campi visivi più ampi. Il 24mm è un obiettivo grandangolare che cattura molto più skyline del 70mm.",
+          "options": {
+            "0": { "label": "24mm" },
+            "1": { "label": "70mm" },
+            "2": { "label": "200mm" }
+          }
+        },
+        "1": {
+          "scenario": "Imposta l'Obiettivo A come 50mm su Full Frame. Che tipo di campo visivo offre questo \"nifty fifty\"?",
+          "hint": "Il 50mm su full frame è chiamato obiettivo \"normale\" perché approssima la visione umana.",
+          "successMessage": "Giusto! Il 50mm su full frame è il classico obiettivo \"normale\" — il suo campo visivo di ~46 gradi approssima ciò su cui l'occhio umano si concentra naturalmente.",
+          "failureMessage": "Il 50mm su full frame è considerato un obiettivo \"normale\" perché il suo campo visivo (~46 gradi) corrisponde strettamente alla percezione umana confortevole.",
+          "options": {
+            "0": { "label": "Ultra grandangolare" },
+            "1": { "label": "Normale / standard" },
+            "2": { "label": "Teleobiettivo" }
+          }
+        },
+        "2": {
+          "scenario": "Aggiungi due obiettivi: l'Obiettivo A è 35mm su APS-C (Nikon/Sony), e l'Obiettivo B è 50mm su Full Frame. Confronta le due sovrapposizioni del campo visivo. Cosa noti?",
+          "hint": "35mm moltiplicato per il fattore di crop APS-C di 1,5 fa...",
+          "successMessage": "Esatto! 35mm su APS-C (crop 1,5x) dà un campo visivo equivalente a 52,5mm su full frame — quasi identico al 50mm FF. Le sovrapposizioni sono quasi della stessa dimensione.",
+          "failureMessage": "35mm x fattore di crop 1,5 = equivalente 52,5mm. Questo è quasi identico al 50mm su full frame, motivo per cui le sovrapposizioni sono quasi della stessa dimensione.",
+          "options": {
+            "0": { "label": "Hanno campi visivi quasi identici" },
+            "1": { "label": "L'obiettivo APS-C mostra una vista molto più ampia" },
+            "2": { "label": "L'obiettivo Full Frame mostra una vista molto più ampia" }
+          }
+        },
+        "3": {
+          "scenario": "Stai fotografando l'interno di una stanza piccola. Hai un obiettivo 24mm. Vedrai più stanza su Full Frame o APS-C?",
+          "hint": "Un sensore più piccolo cattura una porzione centrale più stretta del cerchio d'immagine dell'obiettivo.",
+          "successMessage": "Corretto! Il Full Frame vede di più perché il sensore più grande cattura una porzione più ampia del cerchio d'immagine dell'obiettivo 24mm. Su APS-C, lo stesso obiettivo 24mm inquadra come un ~36mm.",
+          "failureMessage": "Il Full Frame cattura più scena. Il sensore più grande utilizza più cerchio d'immagine dell'obiettivo, offrendo un campo visivo effettivo più ampio.",
+          "options": {
+            "0": { "label": "Full Frame — il sensore più grande vede di più" },
+            "1": { "label": "APS-C — il sensore crop vede di più" },
+            "2": { "label": "Entrambi vedono lo stesso — è la lunghezza focale che conta" }
+          }
+        },
+        "4": {
+          "scenario": "Un fotografo naturalista scatta con un obiettivo 200mm su Micro Quattro Terzi. Quale lunghezza focale equivalente full-frame produce, e qual è il compromesso rispetto all'uso effettivo di un 400mm su full frame?",
+          "hint": "Il M43 ha un fattore di crop 2x. Pensa alla profondità di campo e alle differenze di dimensione del sensore.",
+          "successMessage": "Eccellente! 200mm su M43 (crop 2x) dà un campo visivo equivalente a 400mm. Il compromesso: mentre l'inquadratura corrisponde a un 400mm FF, la profondità di campo corrisponde all'obiettivo 200mm (PdC più ampia), e il sensore più piccolo raccoglie meno luce totale, il che significa peggiori prestazioni di rumore ad alti ISO. Il vantaggio è un obiettivo molto più piccolo, leggero e economico.",
+          "failureMessage": "200mm x crop 2.0 = FOV equivalente 400mm. Ma non è identico a un 400mm su FF: ottieni più profondità di campo (basata sulla lunghezza focale effettiva di 200mm), meno raccolta di luce (sensore più piccolo) e più rumore ad alti ISO. Il vantaggio è un'attrezzatura significativamente più piccola e leggera.",
+          "options": {
+            "0": { "label": "Equivalente 400mm — stesso FOV ma PdC più ampia, più rumore, attrezzatura più piccola/leggera" },
+            "1": { "label": "Equivalente 400mm — identico in ogni aspetto al 400mm su full frame" },
+            "2": { "label": "Equivalente 200mm — il fattore di crop non influisce sul FOV" }
+          }
+        }
+      }
+    }
+  }
+}

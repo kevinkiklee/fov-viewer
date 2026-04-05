@@ -1,0 +1,16 @@
+{
+  "toolUI": {
+    "white-balance-visualizer": {
+      "colorTemperature": "कलर टेम्परेचर:",
+      "warm": "गर्म",
+      "neutral": "न्यूट्रल",
+      "cool": "ठंडा",
+      "presets": "प्रीसेट",
+      "red": "रेड",
+      "green": "ग्रीन",
+      "blue": "ब्लू",
+      "hex": "हेक्स",
+      "loadingScene": "दृश्य लोड हो रहा है..."
+    }
+  }
+}

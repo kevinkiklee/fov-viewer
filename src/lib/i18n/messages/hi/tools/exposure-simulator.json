@@ -1,0 +1,43 @@
+{
+  "toolUI": {
+    "exposure-simulator": {
+      "lock": "लॉक:",
+      "lockAperture": "अपर्चर",
+      "lockShutter": "शटर",
+      "lockISO": "ISO",
+      "lockApertureLabel": "अपर्चर लॉक करें",
+      "lockShutterLabel": "शटर लॉक करें",
+      "lockISOLabel": "ISO लॉक करें",
+      "aperture": "अपर्चर:",
+      "shutterSpeed": "शटर स्पीड:",
+      "iso": "ISO:",
+      "locked": "(लॉक्ड)",
+      "exposureValue": "एक्सपोज़र वैल्यू (EV)",
+      "depthOfField": "डेप्थ ऑफ़ फ़ील्ड",
+      "motion": "मोशन",
+      "noise": "नॉइज़",
+      "dofVeryShallow": "बहुत कम",
+      "dofShallow": "कम",
+      "dofModerate": "मध्यम",
+      "dofDeep": "गहरी",
+      "dofVeryDeep": "बहुत गहरी",
+      "motionFrozen": "फ़्रोज़ेन",
+      "motionSharp": "शार्प",
+      "motionModerate": "मध्यम",
+      "motionSlightBlur": "हल्का ब्लर",
+      "motionBlurred": "ब्लर्ड",
+      "noiseClean": "क्लीन",
+      "noiseLow": "कम नॉइज़",
+      "noiseModerate": "मध्यम नॉइज़",
+      "noiseNoisy": "नॉइज़ी",
+      "noiseVeryNoisy": "बहुत नॉइज़ी",
+      "scene": "दृश्य:",
+      "sceneStreet": "स्ट्रीट",
+      "sceneLandscape": "लैंडस्केप",
+      "scenePortrait": "पोर्ट्रेट",
+      "sceneLowLight": "कम रोशनी",
+      "imageEffectsUnavailable": "इमेज इफ़ेक्ट प्रीव्यू उपलब्ध नहीं है।",
+      "loadingScene": "दृश्य लोड हो रहा है..."
+    }
+  }
+}

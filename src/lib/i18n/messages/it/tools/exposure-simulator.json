@@ -1,0 +1,43 @@
+{
+  "toolUI": {
+    "exposure-simulator": {
+      "lock": "Blocca:",
+      "lockAperture": "Apertura",
+      "lockShutter": "Otturatore",
+      "lockISO": "ISO",
+      "lockApertureLabel": "Blocca apertura",
+      "lockShutterLabel": "Blocca otturatore",
+      "lockISOLabel": "Blocca ISO",
+      "aperture": "Apertura:",
+      "shutterSpeed": "Tempo di posa:",
+      "iso": "ISO:",
+      "locked": "(bloccato)",
+      "exposureValue": "Valore di esposizione (EV)",
+      "depthOfField": "Profondità di campo",
+      "motion": "Movimento",
+      "noise": "Rumore",
+      "dofVeryShallow": "Molto ridotta",
+      "dofShallow": "Ridotta",
+      "dofModerate": "Moderata",
+      "dofDeep": "Ampia",
+      "dofVeryDeep": "Molto ampia",
+      "motionFrozen": "Congelato",
+      "motionSharp": "Nitido",
+      "motionModerate": "Moderato",
+      "motionSlightBlur": "Leggero mosso",
+      "motionBlurred": "Mosso",
+      "noiseClean": "Pulito",
+      "noiseLow": "Rumore basso",
+      "noiseModerate": "Rumore moderato",
+      "noiseNoisy": "Rumoroso",
+      "noiseVeryNoisy": "Molto rumoroso",
+      "scene": "Scena:",
+      "sceneStreet": "Street",
+      "sceneLandscape": "Paesaggio",
+      "scenePortrait": "Ritratto",
+      "sceneLowLight": "Scarsa luce",
+      "imageEffectsUnavailable": "L'anteprima degli effetti immagine non è disponibile.",
+      "loadingScene": "Caricamento scena..."
+    }
+  }
+}

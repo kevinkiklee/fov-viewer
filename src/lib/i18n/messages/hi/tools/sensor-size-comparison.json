@@ -1,0 +1,33 @@
+{
+  "toolUI": {
+    "sensor-size-comparison": {
+      "displayMode": "डिस्प्ले मोड",
+      "modeOverlay": "ओवरले",
+      "modeSideBySide": "साइड बाई साइड",
+      "modePixelDensity": "पिक्सेल डेंसिटी",
+      "pixelDensityDescription": "प्रत्येक सेंसर के लिए सामान्य मेगापिक्सेल काउंट दिखा रहा है। बड़े पिक्सेल (बड़ी सेल) अधिक प्रकाश कैप्चर करते हैं।",
+      "sensors": "सेंसर",
+      "customSensors": "कस्टम सेंसर",
+      "placeholderName": "नाम",
+      "placeholderW": "W (mm)",
+      "placeholderH": "H (mm)",
+      "placeholderMP": "मेगापिक्सेल (वैकल्पिक)",
+      "placeholderMPShort": "MP",
+      "maxDimensionWarning": "अधिकतम सेंसर डायमेंशन 99 mm है",
+      "addSensor": "सेंसर जोड़ें",
+      "save": "सेव",
+      "cancelEdit": "रद्द करें",
+      "edit": "एडिट",
+      "remove": "हटाएँ",
+      "deleteAllCustom": "सभी कस्टम सेंसर हटाएँ",
+      "tableSensor": "सेंसर",
+      "tableWidth": "चौड़ाई (mm)",
+      "tableHeight": "ऊँचाई (mm)",
+      "tableAspectRatio": "आस्पेक्ट रेशियो",
+      "tableArea": "क्षेत्रफल (mm²)",
+      "tableCropFactor": "क्रॉप फ़ैक्टर",
+      "tableAspectCrop": "आस्पेक्ट क्रॉप",
+      "canvasAriaLabel": "{mode} मोड में सेंसर साइज़ तुलना"
+    }
+  }
+}

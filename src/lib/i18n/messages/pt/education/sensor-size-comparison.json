@@ -1,0 +1,125 @@
+{
+  "education": {
+    "sensor-size-comparison": {
+      "beginner": "Sensores de câmera vêm em muitos tamanhos físicos diferentes, desde os grandes chips de formato médio usados em câmeras de estúdio até os minúsculos sensores em smartphones. Um sensor maior captura mais luz, produz menos ruído e facilita o desfoque de fundos. O tamanho do sensor é um dos maiores fatores que separam categorias de câmeras.",
+      "deeper": {
+        "0": {
+          "heading": "Como funciona",
+          "text": "O tamanho do sensor afeta a fotografia de várias formas interconectadas. Um sensor maior tem uma área maior para coletar fótons, melhorando a relação sinal-ruído e a faixa dinâmica. O tamanho do sensor é uma das diferenças mais importantes entre categorias de câmeras — de câmeras de estúdio de formato médio a sensores de smartphones."
+        },
+        "1": {
+          "heading": "Fator de corte",
+          "text": "O \"fator de corte\" descreve como um sensor se compara ao padrão full frame de 35mm. Um sensor APS-C com fator de corte de 1.5x oferece o mesmo campo de visão com uma lente 35mm que uma câmera full frame com uma lente 52.5mm. Esse fator de corte também multiplica a profundidade de campo efetiva — um sensor menor parece dar mais profundidade de campo no mesmo enquadramento porque você precisa de uma lente mais angular (mais curta) para corresponder ao campo de visão."
+        },
+        "2": {
+          "heading": "Densidade de pixels",
+          "text": "A densidade de pixels (pixel pitch) mede quão densamente os pixels são empacotados no sensor. Colocar mais megapixels em um sensor menor encolhe cada fotosite, reduzindo a captação de luz por pixel. Um sensor full frame de 24MP tem pixels de ~6µm enquanto um sensor APS-C de 24MP tem pixels de ~4µm, por isso o sensor full frame tipicamente performa melhor em ISO alto."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Dimensões Físicas",
+          "description": "Largura e altura em milímetros determinam a área total de captação de luz e o campo de visão para uma dada lente."
+        },
+        "1": {
+          "label": "Fator de Corte",
+          "description": "A proporção da diagonal full frame para a diagonal do sensor. Multiplicada pela distância focal, dá a distância focal \"equivalente\"."
+        },
+        "2": {
+          "label": "Densidade de Pixels",
+          "description": "Quão densamente os pixels são empacotados. Pixel pitch menor significa mais detalhes mas menos luz por pixel, afetando o desempenho de ruído."
+        },
+        "3": {
+          "label": "Área do Sensor",
+          "description": "Área total em mm². Um sensor de formato médio 44x33mm (Fujifilm GFX, Hasselblad X) tem aproximadamente 1.7x a área do full frame, enquanto um chip de formato médio maior 54x40mm é cerca de 2.5x. Full frame é aproximadamente 13x a área de um sensor de smartphone topo de linha."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Use o modo de sobreposição para ver exatamente quanto maior um sensor é que outro — a diferença de área frequentemente é mais dramática do que os números sugerem."
+        },
+        "1": {
+          "text": "Mude para o modo de densidade de pixels e insira a resolução da sua câmera para comparar o pixel pitch. Se sua câmera tem densidade de pixels muito alta, você pode atingir limites de difração em aberturas mais amplas do que o esperado."
+        },
+        "2": {
+          "text": "Ao comparar câmeras, a área do sensor importa mais que a contagem de megapixels para desempenho de ruído. Um sensor full frame de 20MP tipicamente superará um sensor APS-C de 40MP em ISO alto."
+        }
+      },
+      "tooltips": {
+        "Sensor": {
+          "term": "Sensor",
+          "definition": "Ative ou desative formatos de sensor individuais para incluí-los na comparação visual e tabela de dados."
+        },
+        "Display Mode": {
+          "term": "Modo de Exibição",
+          "definition": "Sobreposição mostra todos os sensores centrados no mesmo ponto. Lado a Lado os coloca um ao lado do outro na mesma escala. Densidade de Pixels visualiza quão densamente os pixels são empacotados."
+        },
+        "Resolution": {
+          "term": "Resolução",
+          "definition": "A contagem total de megapixels usada para calcular o pixel pitch no modo de densidade de pixels. Mais megapixels no mesmo tamanho de sensor significa pixels individuais menores."
+        },
+        "Crop Factor": {
+          "term": "Fator de Corte",
+          "definition": "A proporção da diagonal full frame de 35mm para a diagonal deste sensor. Um fator de corte de 1.5x significa que uma lente 50mm enquadra como uma lente 75mm em full frame."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Um sensor full frame mede 36×24mm. Um sensor APS-C tem fator de corte de 1.5x. Qual é a largura aproximada de um sensor APS-C?",
+          "hint": "Divida a largura do full frame pelo fator de corte.",
+          "successMessage": "Correto! 36mm ÷ 1.5 ≈ 24mm. O sensor APS-C é cerca de 24×16mm, tendo aproximadamente 44% da área do full frame.",
+          "failureMessage": "Divida a largura do full frame (36mm) pelo fator de corte (1.5x): 36 ÷ 1.5 = 24mm.",
+          "options": {
+            "0": { "label": "24mm" },
+            "1": { "label": "30mm" },
+            "2": { "label": "18mm" }
+          }
+        },
+        "1": {
+          "scenario": "Você monta uma lente 50mm em uma câmera com sensor de fator de corte 2.0x. Qual distância focal equivalente em full frame você obtém?",
+          "hint": "Multiplique a distância focal pelo fator de corte.",
+          "successMessage": "Certo! 50mm × 2.0 = 100mm equivalente. É por isso que câmeras Micro Quatro Terços são populares para trabalho com teleobjetiva — você obtém alcance extra de cada lente.",
+          "failureMessage": "Multiplique a distância focal da lente pelo fator de corte: 50mm × 2.0 = 100mm equivalente.",
+          "options": {
+            "0": { "label": "25mm" },
+            "1": { "label": "75mm" },
+            "2": { "label": "100mm" }
+          }
+        },
+        "2": {
+          "scenario": "Duas câmeras têm 24 megapixels — uma full frame (36×24mm) e uma APS-C (24×16mm). Qual tem melhor desempenho de ruído em ISO alto, e por quê?",
+          "hint": "Pense em como o mesmo número de pixels espalhados em diferentes áreas de sensor afeta o tamanho individual dos pixels.",
+          "successMessage": "Exatamente! O sensor full frame espalha 24MP em uma área maior, então cada pixel é fisicamente maior (~6µm vs ~4µm de pitch) e captura mais fótons, resultando em menos ruído.",
+          "failureMessage": "O sensor full frame vence — mesma contagem de megapixels em uma área maior significa pixels maiores que captam mais luz, produzindo menos ruído em ISO alto.",
+          "options": {
+            "0": { "label": "Full frame — pixels maiores captam mais luz" },
+            "1": { "label": "APS-C — sensores menores são mais eficientes" },
+            "2": { "label": "Mesmo ruído — contagem de megapixels é o que importa" }
+          }
+        },
+        "3": {
+          "scenario": "Olhando a tabela de comparação, qual formato de sensor tem fator de corte mais próximo de 2.0x?",
+          "hint": "O fator de corte é a diagonal do full frame dividida pela diagonal do sensor.",
+          "successMessage": "Correto! Micro Quatro Terços tem fator de corte de 2.0x, por isso uma lente M43 de 25mm enquadra como uma 50mm em full frame.",
+          "failureMessage": "Micro Quatro Terços tem fator de corte de 2.0x. Confira a tabela — sua diagonal é exatamente metade da diagonal do full frame.",
+          "options": {
+            "0": { "label": "APS-C (Canon)" },
+            "1": { "label": "Micro Quatro Terços" },
+            "2": { "label": "Sensor de 1\"" }
+          }
+        },
+        "4": {
+          "scenario": "Você está comparando uma câmera de formato médio de 50MP com uma câmera full frame de 50MP usando o modo de densidade de pixels. Ambas têm a mesma contagem de megapixels. Qual câmera tem maior pixel pitch, e qual vantagem prática isso dá?",
+          "hint": "Pixel pitch depende da largura do sensor dividida pelo número de pixels horizontais.",
+          "successMessage": "Certo! O sensor de formato médio é fisicamente maior, então em 50MP seus pixels são maiores (pitch maior). Isso dá cerca de 1/3 de stop melhor captação de luz por pixel, além de início de difração ligeiramente mais tardio.",
+          "failureMessage": "O sensor de formato médio é maior, então na mesma resolução cada pixel é fisicamente maior. Pixels maiores coletam mais fótons, proporcionando melhor faixa dinâmica e limites de difração ligeiramente mais tardios.",
+          "options": {
+            "0": { "label": "Formato Médio — melhor captação de luz e faixa dinâmica por pixel" },
+            "1": { "label": "Full Frame — pixels menores são mais eficientes" },
+            "2": { "label": "Ambos são idênticos já que têm a mesma contagem de megapixels" }
+          }
+        }
+      }
+    }
+  }
+}

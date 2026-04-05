@@ -1,0 +1,121 @@
+{
+  "education": {
+    "shutter-speed-visualizer": {
+      "beginner": "La guida al tempo di posa ti aiuta a trovare il tempo di posa più lento che puoi usare ottenendo comunque una foto nitida a mano libera. Se il tempo di posa è troppo lento, il tremolio delle mani causerà sfocatura nell'immagine. Il tempo minimo sicuro dipende dalla lunghezza focale, dalla presenza di stabilizzazione dell'immagine e dalla fermezza delle tue mani.",
+      "deeper": "La classica \"regola del reciproco\" stabilisce che per foto nitide a mano libera, il tempo di posa dovrebbe essere almeno 1/(lunghezza focale) secondi — quindi un obiettivo da 200mm necessita almeno di 1/200s. Su fotocamere con sensore crop, dovresti usare la lunghezza focale equivalente (es. 200mm su un crop 1,5x = 1/300s). La stabilizzazione moderna nel corpo (IBIS) e quella ottica (OIS) possono offrirti 3-7 stop extra di tolleranza a mano libera, il che significa che un obiettivo stabilizzato da 200mm potrebbe essere nitido a 1/15s o anche più lento. Tuttavia, la stabilizzazione compensa solo il tremolio della fotocamera, non il movimento del soggetto. Una persona che cammina verso di te a 1/15s risulterà comunque sfocata indipendentemente dalla stabilizzazione. Per soggetti in movimento, devi selezionare un tempo di posa basato sulla velocità e distanza del soggetto, non solo sulla lunghezza focale.",
+      "keyFactors": {
+        "0": {
+          "label": "Lunghezza focale",
+          "description": "Lunghezze focali maggiori amplificano il tremolio della fotocamera. La regola del reciproco (1/lunghezza focale) è il punto di partenza per determinare il tempo di posa minimo."
+        },
+        "1": {
+          "label": "Stabilizzazione dell'immagine",
+          "description": "L'OIS (basata sull'obiettivo) fornisce tipicamente 2-4 stop di beneficio. L'IBIS (basata sul corpo) fornisce 3-5 stop. L'OIS+IBIS combinata può raggiungere 5-7 stop su alcuni sistemi."
+        },
+        "2": {
+          "label": "Movimento del soggetto",
+          "description": "Soggetti fermi richiedono solo una velocità sufficiente a contrastare il tremolio della fotocamera. Soggetti in movimento necessitano di tempi più veloci indipendentemente dalla stabilizzazione: camminata (~1/125s), corsa (~1/500s), veicoli (~1/1000s+)."
+        },
+        "3": {
+          "label": "Dimensione del sensore (fattore di crop)",
+          "description": "Le fotocamere con sensore crop moltiplicano effettivamente la lunghezza focale per la regola del reciproco. Un obiettivo 50mm su un crop 1,5x si comporta come un 75mm, quindi hai bisogno di almeno 1/75s."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Appoggiati a un muro, tieni i gomiti stretti e espira lentamente prima di premere il pulsante di scatto. Una buona tecnica può darti 1-2 stop extra di stabilità oltre la regola del reciproco."
+        },
+        "1": {
+          "text": "Quando fotografi persone, il movimento del soggetto di solito determina il tempo minimo, non la tua lunghezza focale. Anche con un obiettivo grandangolare e la stabilizzazione, un bambino che corre richiede almeno 1/500s."
+        },
+        "2": {
+          "text": "Se scatti costantemente in condizioni di scarsa illuminazione, investi in un corpo macchina con IBIS. La capacità di scattare a mano libera a 1/2s con un obiettivo grandangolare apre possibilità che nessun livello di prestazioni ad alti ISO può eguagliare."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Lunghezza focale",
+          "definition": "La lunghezza focale dell'obiettivo in millimetri. Influisce direttamente sul tempo di posa sicuro minimo attraverso la regola del reciproco: 1/(lunghezza focale) per full-frame, regolato dal fattore di crop per sensori più piccoli."
+        },
+        "sensor": {
+          "term": "Dimensione del sensore",
+          "definition": "La dimensione del sensore della fotocamera, che determina il fattore di crop. APS-C (1,5x) e Micro Quattro Terzi (2x) moltiplicano la lunghezza focale effettiva, richiedendo tempi di posa più veloci per lo stesso obiettivo."
+        },
+        "stabilization": {
+          "term": "Stabilizzazione dell'immagine",
+          "definition": "Tecnologia che compensa il tremolio della fotocamera. L'OIS (Stabilizzazione Ottica dell'Immagine) è nell'obiettivo, l'IBIS (Stabilizzazione dell'Immagine nel Corpo) è nel corpo macchina. Possono lavorare insieme per il massimo beneficio."
+        },
+        "subjectMotion": {
+          "term": "Movimento del soggetto",
+          "definition": "Quanto velocemente si muove il tuo soggetto. Soggetti fermi necessitano solo di un tempo di posa sufficiente a contrastare il tremolio della fotocamera. Soggetti in movimento necessitano di tempi più veloci basati sulla loro velocità e direzione rispetto alla fotocamera."
+        },
+        "recommendedShutterSpeed": {
+          "term": "Tempo di posa raccomandato",
+          "definition": "Il tempo di posa minimo calcolato per la tua specifica combinazione di lunghezza focale, stabilizzazione, sensore e movimento del soggetto. Scattare a questo tempo o più veloce dovrebbe produrre risultati nitidi."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Stai scattando con un obiettivo 100mm su una fotocamera full-frame senza stabilizzazione dell'immagine. Il tuo soggetto è fermo. Qual è il tempo di posa minimo raccomandato?",
+          "hint": "La regola del reciproco: tempo di posa minimo = 1 / lunghezza focale.",
+          "successMessage": "Corretto! La regola del reciproco dice 1/100s per un obiettivo 100mm su full frame. Questo è il classico punto di partenza per la nitidezza a mano libera.",
+          "failureMessage": "Per un obiettivo 100mm su full frame senza stabilizzazione, la regola del reciproco ti dà 1/100s come tempo di posa sicuro minimo per soggetti statici.",
+          "options": {
+            "0": { "label": "1/50s" },
+            "1": { "label": "1/100s" },
+            "2": { "label": "1/200s" },
+            "3": { "label": "1/500s" }
+          }
+        },
+        "1": {
+          "scenario": "Stai usando un obiettivo 50mm su una fotocamera APS-C (fattore di crop 1,5x) senza stabilizzazione. Quale tempo di posa minimo dovresti usare per un soggetto fermo?",
+          "hint": "Moltiplica la lunghezza focale per il fattore di crop prima di applicare la regola del reciproco.",
+          "successMessage": "Giusto! 50mm x 1,5 = equivalente 75mm, quindi hai bisogno di almeno 1/75s. In pratica, arrotondare a 1/80s è la scelta sicura.",
+          "failureMessage": "Su APS-C, il fattore di crop (1,5x) significa che un obiettivo 50mm si comporta come un 75mm. La regola del reciproco dà 1/75s come tempo minimo.",
+          "options": {
+            "0": { "label": "1/50s" },
+            "1": { "label": "1/75s (arrotondare a 1/80s)" },
+            "2": { "label": "1/100s" },
+            "3": { "label": "1/125s" }
+          }
+        },
+        "2": {
+          "scenario": "Hai un obiettivo 200mm con OIS (4 stop di stabilizzazione) su un corpo full-frame con IBIS (5 stop). Insieme forniscono circa 6 stop di stabilizzazione combinata. Per un soggetto fermo, qual è il tempo di posa minimo approssimativo?",
+          "hint": "Parti dalla regola del reciproco (1/200s) e poi applica 6 stop di beneficio della stabilizzazione.",
+          "successMessage": "Corretto! Partendo da 1/200s e guadagnando 6 stop: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3s. Circa 1/3 di secondo a mano libera con un obiettivo 200mm — impressionante ma raggiungibile con la stabilizzazione moderna!",
+          "failureMessage": "Da 1/200s, ogni stop di stabilizzazione raddoppia il tempo utilizzabile: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3s. Sei stop di stabilizzazione con un obiettivo 200mm danno circa 1/3s.",
+          "options": {
+            "0": { "label": "1/30s" },
+            "1": { "label": "1/8s" },
+            "2": { "label": "~1/3s" },
+            "3": { "label": "1 secondo" }
+          }
+        },
+        "3": {
+          "scenario": "Stai fotografando un amico che fa jogging in un parco usando un obiettivo 35mm su una fotocamera full-frame con IBIS. Il tuo IBIS ti dà 5 stop di stabilizzazione, quindi la regola del reciproco da sola ti permetterebbe di scattare a circa 1 secondo. Dovresti usare 1 secondo?",
+          "hint": "La stabilizzazione compensa il tremolio della fotocamera, non il movimento del soggetto.",
+          "successMessage": "Corretto! La stabilizzazione contrasta solo il tremolio della fotocamera. Una persona che fa jogging ha bisogno di almeno 1/250s per congelare il movimento, indipendentemente da quanto buona sia la tua stabilizzazione.",
+          "failureMessage": "La stabilizzazione non può congelare un soggetto in movimento. Per una persona che fa jogging, hai bisogno di almeno 1/250s per prevenire il mosso, anche se la tua fotocamera potrebbe restare stabile a 1 secondo.",
+          "options": {
+            "0": { "label": "Sì — l'IBIS gestisce tutto il movimento" },
+            "1": { "label": "No — usa almeno 1/250s per congelare il jogger" },
+            "2": { "label": "No — usa 1/60s come compromesso" },
+            "3": { "label": "Dipende dall'impostazione ISO" }
+          }
+        },
+        "4": {
+          "scenario": "Vuoi creare uno scatto in panning di un ciclista — il ciclista dovrebbe essere nitido mentre lo sfondo mostra strisce di mosso. Stai usando un obiettivo 70mm su full frame. Quale intervallo di tempi di posa dovresti provare?",
+          "hint": "Il panning usa intenzionalmente un tempo di posa lento mentre segui il soggetto. Troppo veloce congela tutto; troppo lento sfoca anche il soggetto.",
+          "successMessage": "Corretto! Per il panning di un ciclista, 1/30s a 1/60s è il punto ottimale. Questo è abbastanza lento da sfocare lo sfondo in strisce mentre il tuo inseguimento mantiene il ciclista relativamente nitido. Ci vuole pratica — scatta in raffica e aspettati molti scarti.",
+          "failureMessage": "Il panning richiede un tempo di posa abbastanza lento da sfocare lo sfondo ma abbastanza veloce che il tuo inseguimento mantenga il soggetto nitido. Per un ciclista, 1/30s a 1/60s è l'intervallo tipico.",
+          "options": {
+            "0": { "label": "da 1/1000s a 1/2000s" },
+            "1": { "label": "da 1/250s a 1/500s" },
+            "2": { "label": "da 1/30s a 1/60s" },
+            "3": { "label": "da 1s a 2s" }
+          }
+        }
+      }
+    }
+  }
+}
