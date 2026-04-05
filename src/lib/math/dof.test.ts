@@ -1,5 +1,14 @@
 import { describe, it, expect } from 'vitest'
-import { calcHyperfocal, calcDoF } from './dof'
+import {
+  calcHyperfocal,
+  calcDoF,
+  calcBackgroundBlur,
+  calcAiryDisk,
+  calcOptimalAperture,
+  calcIsolationScore,
+  calcStackingSequence,
+  calcEquivalentSettings,
+} from './dof'
 
 describe('calcHyperfocal', () => {
   it('calculates hyperfocal for 50mm f/2.8 FF (coc=0.03)', () => {
@@ -115,5 +124,294 @@ describe('calcDoF', () => {
     expect(result.totalDoF).toBe(Infinity)
     // Near focus should be approximately half the hyperfocal distance
     expect(result.nearFocus).toBeCloseTo(H / 2, 0)
+  })
+})
+
+describe('calcBackgroundBlur', () => {
+  it('85mm f/1.4, subject 3m, background 10m → ~1.24mm', () => {
+    const blur = calcBackgroundBlur({
+      focalLength: 85,
+      aperture: 1.4,
+      subjectDistance: 3,
+      targetDistance: 10,
+    })
+    expect(blur).toBeCloseTo(1.24, 1)
+  })
+
+  it('farther background produces more blur', () => {
+    const blur10m = calcBackgroundBlur({
+      focalLength: 85,
+      aperture: 1.4,
+      subjectDistance: 3,
+      targetDistance: 10,
+    })
+    const blur50m = calcBackgroundBlur({
+      focalLength: 85,
+      aperture: 1.4,
+      subjectDistance: 3,
+      targetDistance: 50,
+    })
+    expect(blur50m).toBeGreaterThan(blur10m)
+  })
+
+  it('returns zero blur when target equals subject distance', () => {
+    const blur = calcBackgroundBlur({
+      focalLength: 85,
+      aperture: 1.4,
+      subjectDistance: 3,
+      targetDistance: 3,
+    })
+    expect(blur).toBe(0)
+  })
+
+  it('wider aperture produces more blur', () => {
+    const blurWide = calcBackgroundBlur({
+      focalLength: 85,
+      aperture: 1.4,
+      subjectDistance: 3,
+      targetDistance: 10,
+    })
+    const blurNarrow = calcBackgroundBlur({
+      focalLength: 85,
+      aperture: 5.6,
+      subjectDistance: 3,
+      targetDistance: 10,
+    })
+    expect(blurWide).toBeGreaterThan(blurNarrow)
+  })
+})
+
+describe('calcAiryDisk', () => {
+  it('f/8 → ~0.01074mm', () => {
+    const airy = calcAiryDisk(8)
+    expect(airy).toBeCloseTo(0.01074, 4)
+  })
+
+  it('scales linearly with f-number (f/16 = 2× f/8)', () => {
+    const airy8 = calcAiryDisk(8)
+    const airy16 = calcAiryDisk(16)
+    expect(airy16).toBeCloseTo(airy8 * 2, 6)
+  })
+
+  it('small value for fast apertures', () => {
+    const airy = calcAiryDisk(1.4)
+    expect(airy).toBeLessThan(0.002)
+    expect(airy).toBeGreaterThan(0)
+  })
+})
+
+describe('calcOptimalAperture', () => {
+  it('at optimal aperture, Airy disk ≈ geometric blur', () => {
+    const focalLength = 85
+    const subjectDistance = 3
+    const targetDistance = 10
+
+    const optimalN = calcOptimalAperture(focalLength, subjectDistance, targetDistance)
+
+    // At the optimal aperture, the Airy disk should approximately equal
+    // the geometric blur disc
+    const airyDisk = calcAiryDisk(optimalN)
+    const geometricBlur = calcBackgroundBlur({
+      focalLength,
+      aperture: optimalN,
+      subjectDistance,
+      targetDistance,
+    })
+
+    expect(airyDisk).toBeCloseTo(geometricBlur, 3)
+  })
+
+  it('returns a reasonable f-number', () => {
+    const optimalN = calcOptimalAperture(50, 2, 10)
+    expect(optimalN).toBeGreaterThan(1)
+    expect(optimalN).toBeLessThan(64)
+  })
+})
+
+describe('calcIsolationScore', () => {
+  it('returns 100 for 1.5mm blur', () => {
+    // sqrt(1.5/0.5) * 100 = sqrt(3) * 100 ≈ 173 → clamped to 100
+    const score = calcIsolationScore(1.5, 0.03)
+    expect(score).toBe(100)
+  })
+
+  it('returns 0 for zero blur', () => {
+    const score = calcIsolationScore(0, 0.03)
+    expect(score).toBe(0)
+  })
+
+  it('returns intermediate score for 0.15mm blur', () => {
+    // sqrt(0.15/0.5) * 100 = sqrt(0.3) * 100 ≈ 54.77
+    const score = calcIsolationScore(0.15, 0.03)
+    expect(score).toBeGreaterThan(0)
+    expect(score).toBeLessThan(100)
+    expect(score).toBeCloseTo(54.77, 0)
+  })
+
+  it('wider aperture yields higher isolation score', () => {
+    const blurWide = calcBackgroundBlur({
+      focalLength: 85,
+      aperture: 1.4,
+      subjectDistance: 3,
+      targetDistance: 10,
+    })
+    const blurNarrow = calcBackgroundBlur({
+      focalLength: 85,
+      aperture: 8,
+      subjectDistance: 3,
+      targetDistance: 10,
+    })
+    const scoreWide = calcIsolationScore(blurWide, 0.03)
+    const scoreNarrow = calcIsolationScore(blurNarrow, 0.03)
+    expect(scoreWide).toBeGreaterThan(scoreNarrow)
+  })
+})
+
+describe('calcStackingSequence', () => {
+  it('produces multiple shots for a wide depth range', () => {
+    const result = calcStackingSequence({
+      focalLength: 100,
+      aperture: 8,
+      coc: 0.03,
+      nearLimit: 1,
+      farLimit: 5,
+      overlapPct: 0.3,
+    })
+    expect(result.shots.length).toBeGreaterThan(1)
+    expect(result.totalDepth).toBeCloseTo(4, 5)
+  })
+
+  it('first shot covers the near limit', () => {
+    const result = calcStackingSequence({
+      focalLength: 100,
+      aperture: 8,
+      coc: 0.03,
+      nearLimit: 1,
+      farLimit: 5,
+      overlapPct: 0.3,
+    })
+    expect(result.shots[0].nearFocus).toBeLessThanOrEqual(1)
+  })
+
+  it('last shot covers the far limit', () => {
+    const result = calcStackingSequence({
+      focalLength: 100,
+      aperture: 8,
+      coc: 0.03,
+      nearLimit: 1,
+      farLimit: 5,
+      overlapPct: 0.3,
+    })
+    const lastShot = result.shots[result.shots.length - 1]
+    expect(lastShot.farFocus).toBeGreaterThanOrEqual(5)
+  })
+
+  it('adjacent shots overlap', () => {
+    const result = calcStackingSequence({
+      focalLength: 100,
+      aperture: 8,
+      coc: 0.03,
+      nearLimit: 1,
+      farLimit: 5,
+      overlapPct: 0.3,
+    })
+    for (let i = 1; i < result.shots.length; i++) {
+      // Each shot's near focus should be before the previous shot's far focus
+      expect(result.shots[i].nearFocus).toBeLessThan(result.shots[i - 1].farFocus)
+    }
+  })
+
+  it('returns single shot when DoF covers the entire range', () => {
+    // 24mm f/16 at 3m with FF CoC — massive DoF
+    const result = calcStackingSequence({
+      focalLength: 24,
+      aperture: 16,
+      coc: 0.03,
+      nearLimit: 2,
+      farLimit: 5,
+      overlapPct: 0.3,
+    })
+    expect(result.shots.length).toBe(1)
+  })
+
+  it('caps at 100 shots', () => {
+    // Extreme case: very narrow DoF over a huge range
+    const result = calcStackingSequence({
+      focalLength: 200,
+      aperture: 2.8,
+      coc: 0.005,
+      nearLimit: 1,
+      farLimit: 1000,
+      overlapPct: 0.5,
+    })
+    expect(result.shots.length).toBeLessThanOrEqual(100)
+  })
+})
+
+describe('calcEquivalentSettings', () => {
+  it('FF 85/1.4 → APS-C ≈ 56.67mm f/0.93 (unrealistic aperture)', () => {
+    // FF (crop 1.0) → APS-C (crop 1.5)
+    // ratio = 1.0 / 1.5 = 0.6667
+    // equivFL = 85 × 0.6667 ≈ 56.67
+    // equivAperture = 1.4 × 0.6667 ≈ 0.933
+    const result = calcEquivalentSettings({
+      focalLength: 85,
+      aperture: 1.4,
+      distance: 3,
+      sourceCrop: 1.0,
+      targetCrop: 1.5,
+    })
+    expect(result.equivalentFL).toBeCloseTo(56.67, 1)
+    expect(result.equivalentAperture).toBeCloseTo(0.933, 2)
+    expect(result.equivalentDistance).toBe(3)
+    expect(result.isApertureRealistic).toBe(false) // < 0.95
+    expect(result.isFLRealistic).toBe(true)
+  })
+
+  it('APS-C 35/2 → FF ≈ 52.5mm f/3', () => {
+    // APS-C (crop 1.5) → FF (crop 1.0)
+    // ratio = 1.5 / 1.0 = 1.5
+    // equivFL = 35 × 1.5 = 52.5
+    // equivAperture = 2 × 1.5 = 3
+    const result = calcEquivalentSettings({
+      focalLength: 35,
+      aperture: 2,
+      distance: 5,
+      sourceCrop: 1.5,
+      targetCrop: 1.0,
+    })
+    expect(result.equivalentFL).toBeCloseTo(52.5, 1)
+    expect(result.equivalentAperture).toBeCloseTo(3, 1)
+    expect(result.equivalentDistance).toBe(5)
+    expect(result.isApertureRealistic).toBe(true)
+    expect(result.isFLRealistic).toBe(true)
+  })
+
+  it('same sensor → identical values', () => {
+    const result = calcEquivalentSettings({
+      focalLength: 50,
+      aperture: 2.8,
+      distance: 3,
+      sourceCrop: 1.0,
+      targetCrop: 1.0,
+    })
+    expect(result.equivalentFL).toBeCloseTo(50, 5)
+    expect(result.equivalentAperture).toBeCloseTo(2.8, 5)
+    expect(result.equivalentDistance).toBe(3)
+    expect(result.isApertureRealistic).toBe(true)
+    expect(result.isFLRealistic).toBe(true)
+  })
+
+  it('flags unrealistic focal length', () => {
+    // Very small sensor → very short equivalent FL
+    const result = calcEquivalentSettings({
+      focalLength: 10,
+      aperture: 2,
+      distance: 1,
+      sourceCrop: 1.0,
+      targetCrop: 5.6, // small sensor like 1/2.3"
+    })
+    // equivFL = 10 × (1.0 / 5.6) ≈ 1.79mm
+    expect(result.isFLRealistic).toBe(false)
   })
 })
