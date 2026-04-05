@@ -1,0 +1,40 @@
+{
+  "toolUI": {
+    "focus-stacking-calculator": {
+      "settings": "Settings",
+      "camera": "Camera & Lens",
+      "focalLength": "Focal Length",
+      "aperture": "Aperture",
+      "sensor": "Sensor",
+      "depthRange": "Depth Range",
+      "nearLimit": "Near Limit",
+      "farLimit": "Far Limit",
+      "overlap": "Overlap",
+      "overlapDescription": "Percentage of DoF overlap between adjacent shots to ensure seamless blending",
+      "results": "Results",
+      "shotCount": "Shots Required",
+      "totalDepth": "Total Depth",
+      "overlapMargin": "Overlap Margin",
+      "perShotDoF": "Per-Shot DoF",
+      "focusStep": "Focus Step",
+      "exportPlan": "Export Plan",
+      "exportCSV": "Export as CSV",
+      "exportJSON": "Export as JSON",
+      "diagram": "Focus Stack Diagram",
+      "diagramNear": "Near",
+      "diagramFar": "Far",
+      "diagramShot": "Shot {number}",
+      "diagramOverlap": "Overlap zone",
+      "diagramSharpZone": "Sharp zone",
+      "diagramSubject": "Subject",
+      "diagramSensor": "Sensor",
+      "infinity": "∞",
+      "distanceUnit": "m",
+      "warning": "Warning",
+      "tooFewShots": "Depth range is within a single shot — no stacking needed",
+      "tooManyShots": "This plan requires many shots. Consider a narrower aperture to reduce the count.",
+      "macroMode": "Macro",
+      "landscapeMode": "Landscape"
+    }
+  }
+}

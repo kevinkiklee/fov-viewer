@@ -10,9 +10,17 @@
       "title": "FOV सिम्युलेटर — फ़ोकल लेंथ की तुलना करें",
       "description": "विभिन्न फ़ोकल लेंथ और सेंसर साइज़ में दृश्य क्षेत्र की तुलना करें। मुफ़्त, इंटरैक्टिव, शेयर करने योग्य।"
     },
-    "dof-calculator": {
-      "title": "डेप्थ ऑफ़ फ़ील्ड कैलकुलेटर",
-      "description": "किसी भी लेंस, अपर्चर और सेंसर साइज़ के लिए डेप्थ ऑफ़ फ़ील्ड की गणना करें। नियर/फ़ार फ़ोकस, हाइपरफ़ोकल दूरी और बैकग्राउंड ब्लर देखें — मुफ़्त और इंटरैक्टिव।"
+    "dof-simulator": {
+      "title": "Depth-of-Field Simulator | PhotoTools",
+      "description": "Visualize how aperture, focal length, and distance affect background blur with real-time WebGL simulation"
+    },
+    "focus-stacking-calculator": {
+      "title": "Focus Stacking Calculator | PhotoTools",
+      "description": "Calculate optimal focus distances for front-to-back sharpness in macro and landscape photography"
+    },
+    "equivalent-settings-calculator": {
+      "title": "Equivalent Settings Calculator | PhotoTools",
+      "description": "Find equivalent aperture and focal length across sensor formats to match depth of field"
     },
     "exposure-simulator": {
       "title": "एक्सपोज़र ट्रायंगल सिम्युलेटर",

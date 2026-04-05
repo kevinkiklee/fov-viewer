@@ -1,0 +1,207 @@
+{
+  "education": {
+    "dof-simulator": {
+      "beginner": "피사계 심도(DoF)는 사진에서 허용 가능한 수준으로 선명하게 보이는 거리 범위입니다. 얕은 피사계 심도는 피사체 뒤의 배경을 흐리게 만들고, 깊은 피사계 심도는 전경부터 지평선까지 모든 것을 선명하게 유지합니다. 피사계 심도 제어는 사진에서 가장 강력한 창작 도구 중 하나입니다.",
+      "deeper": {
+        "0": {
+          "heading": "How DoF Works",
+          "text": "Depth of field is governed by the circle of confusion (CoC) — the largest blur spot on the sensor that still looks sharp to the human eye. Three physical factors determine DoF: focal length, aperture, and subject distance. A wider aperture (lower f-number) produces a shallower DoF because the lens converges light at steeper angles, causing out-of-focus points to spread into larger circles on the sensor."
+        },
+        "1": {
+          "heading": "Focal Length & Distance",
+          "text": "Longer focal lengths magnify the image, which also magnifies the blur circles, narrowing the DoF. Moving closer to your subject reduces DoF for the same reason — the relative difference in distance between the subject and background becomes greater. The hyperfocal distance is the focus distance at which DoF extends from half that distance to infinity, maximizing sharpness across the entire scene."
+        },
+        "2": {
+          "heading": "Bokeh & Diffraction",
+          "text": "Bokeh refers to the quality of the out-of-focus areas. The number and shape of aperture blades affect bokeh character — more rounded blades produce smoother, more circular highlights. At very small apertures (f/16+), diffraction causes light to spread as it passes the aperture edges, softening the entire image even within the DoF zone. There is always a sweet spot — typically around f/5.6-f/8 on full-frame — where sharpness and depth of field are optimally balanced."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "조리개",
+          "description": "넓은 조리개(f/1.4~f/2.8)는 크리미한 보케와 함께 얕은 피사계 심도를 만듭니다. 좁은 조리개(f/8~f/16)는 장면 전체의 선명도를 높입니다."
+        },
+        "1": {
+          "label": "초점 거리",
+          "description": "더 긴 렌즈는 같은 조리개와 프레이밍에서 원근을 압축하고 피사계 심도를 좁힙니다. 200mm 렌즈의 f/4는 35mm 렌즈의 f/4보다 피사계 심도가 훨씬 얕습니다."
+        },
+        "2": {
+          "label": "피사체 거리",
+          "description": "초점을 가까이 맞출수록 피사계 심도가 얕아집니다. 매크로 촬영가는 종종 밀리미터 단위의 피사계 심도로 작업합니다."
+        },
+        "3": {
+          "label": "센서 크기",
+          "description": "큰 센서는 같은 프레이밍을 위해 더 긴 초점 거리를 필요로 하므로 간접적으로 피사계 심도가 좁아집니다. 풀프레임 카메라는 동일한 프레이밍에서 마이크로 포서드 카메라보다 더 얕은 피사계 심도를 만듭니다."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "단체 인물 사진에서는 f/5.6 이상으로 조이고 모든 사람이 같은 초점면에 서도록 하세요. 넓은 조리개에서는 한 사람이 반 걸음만 앞으로 나와도 초점이 맞지 않을 수 있습니다."
+        },
+        "1": {
+          "text": "풍경 촬영 시에는 무한대가 아닌 과초점 거리에 초점을 맞추세요. 이렇게 하면 가까운 전경부터 먼 배경까지 선명 영역이 최대화됩니다."
+        },
+        "2": {
+          "text": "인물 사진에서 배경 흐림을 최대화하려면 초점 거리를 늘리고 프레이밍이 허용하는 한 피사체에 가까이 다가가세요 — 두 변화가 겹쳐 피사계 심도를 극적으로 줄입니다."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "초점 거리",
+          "definition": "무한대에 초점을 맞췄을 때 렌즈의 광학 중심에서 센서까지의 밀리미터 단위 거리입니다. 긴 초점 거리는 이미지를 확대하고 피사계 심도를 좁힙니다."
+        },
+        "aperture": {
+          "term": "조리개",
+          "definition": "렌즈 개구부의 크기로, f값(예: f/2.8)으로 표현됩니다. 낮은 f값은 더 넓은 개구부를 의미하여 더 많은 빛이 들어오고 더 얕은 피사계 심도를 만듭니다."
+        },
+        "subjectDistance": {
+          "term": "피사체 거리",
+          "definition": "카메라 센서에서 초점이 맞는 지점까지의 거리입니다. 더 가까운 초점 거리는 더 얕은 피사계 심도를 만듭니다."
+        },
+        "sensor": {
+          "term": "센서 크기",
+          "definition": "카메라 센서의 물리적 크기입니다. 큰 센서(풀프레임, 중형 포맷)는 작은 센서(APS-C, 마이크로 포서드)에 비해 동일한 프레이밍에서 더 얕은 피사계 심도를 만듭니다."
+        },
+        "orientation": {
+          "term": "Orientation",
+          "definition": "Toggle between landscape (horizontal) and portrait (vertical) shooting orientation. This affects the framing reference for subject distance calculations."
+        },
+        "nearFocus": {
+          "term": "근접 초점 한계",
+          "definition": "카메라에서 허용 가능한 수준으로 선명하게 보이는 가장 가까운 거리입니다. 이보다 가까운 모든 것은 흐려 보입니다."
+        },
+        "farFocus": {
+          "term": "원거리 초점 한계",
+          "definition": "카메라에서 허용 가능한 수준으로 선명하게 보이는 가장 먼 거리입니다. 이것이 무한대에 도달하면 근접 한계 너머의 모든 것에 초점이 맞습니다."
+        },
+        "totalDoF": {
+          "term": "총 피사계 심도",
+          "definition": "근접 초점 한계와 원거리 초점 한계 사이의 전체 거리 — 이미지에서 선명하게 보이는 전체 영역입니다."
+        },
+        "hyperfocal": {
+          "term": "과초점 거리",
+          "definition": "피사계 심도를 최대화하는 초점 거리입니다. 이 거리에 초점을 맞추면 과초점 거리의 절반부터 무한대까지 선명하게 보입니다."
+        },
+        "backgroundBlur": {
+          "term": "Background Blur",
+          "definition": "A measure of how blurred the background appears behind your subject. Higher values mean stronger blur and more subject isolation."
+        },
+        "coc": {
+          "term": "Circle of Confusion",
+          "definition": "The maximum diameter of a blur spot on the sensor that still appears as a point to the human eye. Determines the boundary of acceptable sharpness for depth-of-field calculations."
+        },
+        "isolationScore": {
+          "term": "Isolation Score",
+          "definition": "A composite rating (0-100) indicating how well the subject is separated from the background, based on the amount of background blur relative to the subject size."
+        },
+        "bokehShape": {
+          "term": "Bokeh Shape",
+          "definition": "The shape of out-of-focus highlights, determined by the number and curvature of aperture blades. More blades produce rounder, smoother bokeh."
+        },
+        "diffractionWarning": {
+          "term": "Diffraction",
+          "definition": "At very small apertures, light bends around the aperture edges, softening the image. On full-frame sensors, this typically becomes noticeable beyond f/16."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "인물 사진을 촬영 중이며 아름답게 흐린 배경을 원합니다. 어떤 조리개를 선택해야 할까요?",
+          "hint": "낮은 f값은 더 넓은 렌즈 개구부와 더 많은 배경 흐림을 의미합니다.",
+          "successMessage": "정답입니다! f/1.8이나 f/2.8 같은 넓은 조리개는 얕은 피사계 심도를 만들어 보기 좋은 보케로 피사체를 배경에서 분리합니다.",
+          "failureMessage": "아쉽습니다. f/11이나 f/16 같은 좁은 조리개는 장면의 더 많은 부분을 선명하게 유지합니다. 배경 흐림을 원한다면 넓은 조리개(낮은 f값)를 선택하세요.",
+          "options": {
+            "0": {
+              "label": "f/1.8"
+            },
+            "1": {
+              "label": "f/5.6"
+            },
+            "2": {
+              "label": "f/11"
+            },
+            "3": {
+              "label": "f/16"
+            }
+          }
+        },
+        "1": {
+          "scenario": "결혼식에서 두 줄로 배열된 8명의 단체 사진을 촬영하고 있습니다. 모든 사람에게 초점이 맞도록 하려면 어떤 조리개가 좋을까요?",
+          "hint": "약간 다른 거리에 있는 사람들이 있으므로 두 줄 모두를 커버할 충분한 피사계 심도가 필요합니다.",
+          "successMessage": "좋은 선택입니다! f/5.6은 적절한 셔터 스피드를 유지하면서 두 줄 모두를 선명하게 유지할 만큼의 피사계 심도를 제공합니다.",
+          "failureMessage": "그 조리개는 뒷줄 초점이 맞지 않거나 불필요하게 좁을 수 있습니다. 두 줄의 사람에게는 f/5.6이 안정적인 출발점입니다.",
+          "options": {
+            "0": {
+              "label": "f/1.4"
+            },
+            "1": {
+              "label": "f/2.8"
+            },
+            "2": {
+              "label": "f/5.6"
+            },
+            "3": {
+              "label": "f/22"
+            }
+          }
+        },
+        "2": {
+          "scenario": "2미터 앞의 야생화와 배경의 산이 있는 풍경을 촬영하고 있습니다. 풀프레임 카메라에 24mm 렌즈를 사용합니다. 전면부터 후면까지 선명도를 최대화하는 기법은 무엇일까요?",
+          "hint": "전경부터 무한대까지 선명 영역을 최대화하기 위해 초점을 맞출 수 있는 특정 거리가 있습니다.",
+          "successMessage": "맞습니다! f/11에서 과초점 거리에 초점을 맞추면 약 1미터부터 무한대까지 허용 가능한 수준으로 선명해집니다 — 이 장면에 완벽합니다.",
+          "failureMessage": "무한대에 초점을 맞추면 전경의 꽃이 흐릿해집니다. 과초점 거리를 사용하면 가까운 전경부터 무한대까지 선명도를 확장할 수 있습니다.",
+          "options": {
+            "0": {
+              "label": "꽃에 초점 (2m)"
+            },
+            "1": {
+              "label": "산에 초점 (무한대)"
+            },
+            "2": {
+              "label": "과초점 거리에 초점"
+            },
+            "3": {
+              "label": "꽃과 산 사이 중간에 초점"
+            }
+          }
+        },
+        "3": {
+          "scenario": "꽃의 매크로 사진을 촬영 중인데 앞쪽 꽃잎만 선명하고 나머지는 흐려집니다. 현재 f/5.6입니다. 꽃의 더 많은 부분에 초점을 맞추려면 어떻게 해야 할까요?",
+          "hint": "근접 촬영 거리에서는 피사계 심도가 극히 얇아집니다. 조리개를 고려해 보세요.",
+          "successMessage": "맞습니다! f/11이나 f/16으로 조이면 매크로 촬영에서 극히 얇은 피사계 심도가 늘어납니다. 매우 작은 조리개에서의 회절 연화에 주의하세요.",
+          "failureMessage": "조리개를 더 넓히면 피사계 심도가 더 얇아집니다. 매크로 촬영에서는 조리개를 조이는 것(높은 f값)이 더 깊은 심도를 얻는 주요 방법입니다.",
+          "options": {
+            "0": {
+              "label": "f/2.8로 개방하여 빛을 더 받기"
+            },
+            "1": {
+              "label": "f/11로 조이기"
+            },
+            "2": {
+              "label": "더 넓은 렌즈로 교체"
+            },
+            "3": {
+              "label": "꽃에서 더 멀리 이동"
+            }
+          }
+        },
+        "4": {
+          "scenario": "인물 작업을 위해 두 카메라를 비교하고 있습니다: 85mm f/1.8 렌즈가 달린 풀프레임 카메라와 42.5mm f/1.8 렌즈가 달린 마이크로 포서드 카메라. 둘 다 동일한 프레이밍을 만듭니다. 어떤 카메라가 더 얕은 피사계 심도를 만들까요?",
+          "hint": "등가 초점 거리와 동일한 f값에서 센서 크기가 피사계 심도 계산에 어떤 영향을 미치는지 생각해 보세요.",
+          "successMessage": "정답입니다! 풀프레임 카메라가 약 2스톱 더 얕은 피사계 심도를 만듭니다. 마이크로 포서드 렌즈의 f값은 같지만, 실제 초점 거리가 더 짧기 때문에(42.5mm vs 85mm) 동일한 프레이밍에서 더 깊은 피사계 심도를 만듭니다.",
+          "failureMessage": "두 렌즈 모두 f/1.8이지만, 풀프레임 카메라는 같은 프레이밍을 위해 더 긴 실제 초점 거리를 사용하므로 상당히 더 얕은 피사계 심도를 만듭니다.",
+          "options": {
+            "0": {
+              "label": "85mm f/1.8의 풀프레임"
+            },
+            "1": {
+              "label": "42.5mm f/1.8의 마이크로 포서드"
+            },
+            "2": {
+              "label": "둘 다 동일한 피사계 심도"
+            }
+          }
+        }
+      }
+    }
+  }
+}

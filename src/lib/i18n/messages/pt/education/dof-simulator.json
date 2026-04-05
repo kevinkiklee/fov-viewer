@@ -1,0 +1,207 @@
+{
+  "education": {
+    "dof-simulator": {
+      "beginner": "Profundidade de campo (PdC) é a faixa de distância na sua foto que aparece aceitavelmente nítida. Uma PdC rasa desfoca o fundo atrás do seu assunto, enquanto uma PdC profunda mantém tudo, do primeiro plano ao horizonte, em foco. Controlar a PdC é uma das ferramentas criativas mais poderosas na fotografia.",
+      "deeper": {
+        "0": {
+          "heading": "How DoF Works",
+          "text": "Depth of field is governed by the circle of confusion (CoC) — the largest blur spot on the sensor that still looks sharp to the human eye. Three physical factors determine DoF: focal length, aperture, and subject distance. A wider aperture (lower f-number) produces a shallower DoF because the lens converges light at steeper angles, causing out-of-focus points to spread into larger circles on the sensor."
+        },
+        "1": {
+          "heading": "Focal Length & Distance",
+          "text": "Longer focal lengths magnify the image, which also magnifies the blur circles, narrowing the DoF. Moving closer to your subject reduces DoF for the same reason — the relative difference in distance between the subject and background becomes greater. The hyperfocal distance is the focus distance at which DoF extends from half that distance to infinity, maximizing sharpness across the entire scene."
+        },
+        "2": {
+          "heading": "Bokeh & Diffraction",
+          "text": "Bokeh refers to the quality of the out-of-focus areas. The number and shape of aperture blades affect bokeh character — more rounded blades produce smoother, more circular highlights. At very small apertures (f/16+), diffraction causes light to spread as it passes the aperture edges, softening the entire image even within the DoF zone. There is always a sweet spot — typically around f/5.6-f/8 on full-frame — where sharpness and depth of field are optimally balanced."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Abertura",
+          "description": "Aberturas mais amplas (f/1.4-f/2.8) criam PdC rasa com bokeh cremoso. Aberturas mais fechadas (f/8-f/16) aumentam a nitidez em toda a cena."
+        },
+        "1": {
+          "label": "Distância Focal",
+          "description": "Lentes mais longas comprimem a perspectiva e estreitam a PdC na mesma abertura e enquadramento. Uma lente 200mm em f/4 tem muito menos PdC que uma lente 35mm em f/4."
+        },
+        "2": {
+          "label": "Distância do Assunto",
+          "description": "Quanto mais perto você foca, mais rasa a PdC. Fotógrafos macro frequentemente trabalham com PdC medida em milímetros."
+        },
+        "3": {
+          "label": "Tamanho do Sensor",
+          "description": "Sensores maiores exigem distâncias focais mais longas para o mesmo enquadramento, o que indiretamente estreita a PdC. Uma câmera full frame produz PdC mais rasa que uma câmera Micro Quatro Terços em enquadramento equivalente."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Para retratos em grupo, use f/5.6 ou mais fechado e posicione todos no mesmo plano focal. Mesmo uma pessoa meio passo à frente pode ficar fora de foco em aberturas amplas."
+        },
+        "1": {
+          "text": "Ao fotografar paisagens, foque na distância hiperfocal em vez de no infinito. Isso maximiza a zona de nitidez do primeiro plano próximo até o fundo distante."
+        },
+        "2": {
+          "text": "Se você quer o máximo desfoque de fundo para um retrato, aumente sua distância focal e aproxime-se o máximo possível do assunto — ambas as mudanças se somam para reduzir a PdC dramaticamente."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Distância Focal",
+          "definition": "A distância em milímetros do centro óptico da lente até o sensor quando focado no infinito. Distâncias focais mais longas ampliam a imagem e estreitam a profundidade de campo."
+        },
+        "aperture": {
+          "term": "Abertura",
+          "definition": "O tamanho da abertura da lente, expresso como número f (ex.: f/2.8). Números f menores significam abertura mais ampla, permitindo mais luz e produzindo profundidade de campo mais rasa."
+        },
+        "subjectDistance": {
+          "term": "Distância do Assunto",
+          "definition": "A distância do sensor da câmera até o ponto de foco. Distâncias de foco mais próximas resultam em profundidade de campo mais rasa."
+        },
+        "sensor": {
+          "term": "Tamanho do Sensor",
+          "definition": "As dimensões físicas do sensor da câmera. Sensores maiores (full frame, formato médio) produzem profundidade de campo mais rasa em enquadramento equivalente comparados a sensores menores (APS-C, Micro Quatro Terços)."
+        },
+        "orientation": {
+          "term": "Orientation",
+          "definition": "Toggle between landscape (horizontal) and portrait (vertical) shooting orientation. This affects the framing reference for subject distance calculations."
+        },
+        "nearFocus": {
+          "term": "Limite de Foco Próximo",
+          "definition": "A distância mais próxima da câmera que aparece aceitavelmente nítida. Tudo mais perto que isso aparecerá desfocado."
+        },
+        "farFocus": {
+          "term": "Limite de Foco Distante",
+          "definition": "A distância mais distante da câmera que aparece aceitavelmente nítida. Quando atinge o infinito, tudo além do limite próximo está em foco."
+        },
+        "totalDoF": {
+          "term": "Profundidade de Campo Total",
+          "definition": "A distância completa entre os limites de foco próximo e distante — toda a zona que aparece nítida na imagem."
+        },
+        "hyperfocal": {
+          "term": "Distância Hiperfocal",
+          "definition": "A distância de foco que maximiza a profundidade de campo. Quando você foca nessa distância, tudo da metade da distância hiperfocal até o infinito aparece nítido."
+        },
+        "backgroundBlur": {
+          "term": "Background Blur",
+          "definition": "A measure of how blurred the background appears behind your subject. Higher values mean stronger blur and more subject isolation."
+        },
+        "coc": {
+          "term": "Circle of Confusion",
+          "definition": "The maximum diameter of a blur spot on the sensor that still appears as a point to the human eye. Determines the boundary of acceptable sharpness for depth-of-field calculations."
+        },
+        "isolationScore": {
+          "term": "Isolation Score",
+          "definition": "A composite rating (0-100) indicating how well the subject is separated from the background, based on the amount of background blur relative to the subject size."
+        },
+        "bokehShape": {
+          "term": "Bokeh Shape",
+          "definition": "The shape of out-of-focus highlights, determined by the number and curvature of aperture blades. More blades produce rounder, smoother bokeh."
+        },
+        "diffractionWarning": {
+          "term": "Diffraction",
+          "definition": "At very small apertures, light bends around the aperture edges, softening the image. On full-frame sensors, this typically becomes noticeable beyond f/16."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Você está fotografando um retrato e quer um fundo lindamente desfocado. Qual abertura você deve escolher?",
+          "hint": "Números f menores significam uma abertura mais ampla da lente e mais desfoque do fundo.",
+          "successMessage": "Correto! Uma abertura ampla como f/1.8 ou f/2.8 cria uma profundidade de campo rasa, separando seu assunto do fundo com um bokeh agradável.",
+          "failureMessage": "Não exatamente. Aberturas fechadas como f/11 ou f/16 mantêm mais da cena em foco. Para desfoque de fundo, escolha uma abertura ampla (número f baixo).",
+          "options": {
+            "0": {
+              "label": "f/1.8"
+            },
+            "1": {
+              "label": "f/5.6"
+            },
+            "2": {
+              "label": "f/11"
+            },
+            "3": {
+              "label": "f/16"
+            }
+          }
+        },
+        "1": {
+          "scenario": "Você está fotografando um grupo de 8 pessoas organizadas em duas fileiras em um casamento. Qual abertura ajudará a garantir que todos fiquem em foco?",
+          "hint": "Com pessoas em distâncias ligeiramente diferentes, você precisa de profundidade de campo suficiente para cobrir ambas as fileiras.",
+          "successMessage": "Ótima escolha! f/5.6 fornece profundidade de campo suficiente para manter ambas as fileiras nítidas enquanto mantém velocidades de obturador decentes em ambientes internos.",
+          "failureMessage": "Essa abertura pode deixar a fileira de trás fora de foco ou ser desnecessariamente fechada. Para duas fileiras de pessoas, f/5.6 é um ponto de partida confiável.",
+          "options": {
+            "0": {
+              "label": "f/1.4"
+            },
+            "1": {
+              "label": "f/2.8"
+            },
+            "2": {
+              "label": "f/5.6"
+            },
+            "3": {
+              "label": "f/22"
+            }
+          }
+        },
+        "2": {
+          "scenario": "Você está fotografando uma paisagem com flores silvestres a 2 metros de distância e montanhas ao fundo. Você está usando uma lente 24mm em uma câmera full frame. Que técnica maximizará a nitidez da frente para trás?",
+          "hint": "Existe uma distância específica em que você pode focar que maximiza a zona nítida do primeiro plano ao infinito.",
+          "successMessage": "Exatamente! Focar na distância hiperfocal em f/11 garante que tudo de cerca de 1 metro até o infinito fique aceitavelmente nítido — perfeito para esta cena.",
+          "failureMessage": "Focar no infinito deixaria as flores do primeiro plano borradas. Use a distância hiperfocal para estender a nitidez do primeiro plano próximo até o infinito.",
+          "options": {
+            "0": {
+              "label": "Focar nas flores (2m)"
+            },
+            "1": {
+              "label": "Focar nas montanhas (infinito)"
+            },
+            "2": {
+              "label": "Focar na distância hiperfocal"
+            },
+            "3": {
+              "label": "Focar no meio do caminho entre flores e montanhas"
+            }
+          }
+        },
+        "3": {
+          "scenario": "Você está fazendo fotografia macro de uma flor e nota que apenas as pétalas da frente estão nítidas. O restante da flor se dissolve em desfoque. Você está em f/5.6. O que você deve fazer para obter mais da flor em foco?",
+          "hint": "Em distâncias de foco próximas, a PdC se torna extremamente fina. Considere sua abertura.",
+          "successMessage": "Certo! Fechar para f/11 ou f/16 aumenta sua PdC extremamente fina em fotografia macro. Apenas tenha cuidado com a suavização por difração em aberturas muito pequenas.",
+          "failureMessage": "Abrir mais a abertura tornaria a PdC ainda mais fina. Em fotografia macro, fechar a abertura (número f maior) é a principal forma de ganhar mais profundidade.",
+          "options": {
+            "0": {
+              "label": "Abrir para f/2.8 para mais luz"
+            },
+            "1": {
+              "label": "Fechar para f/11"
+            },
+            "2": {
+              "label": "Trocar para uma lente mais angular"
+            },
+            "3": {
+              "label": "Afastar-se da flor"
+            }
+          }
+        },
+        "4": {
+          "scenario": "Você está comparando duas câmeras para retratos: uma câmera full frame com lente 85mm f/1.8 e uma câmera Micro Quatro Terços com lente 42.5mm f/1.8. Ambas produzem enquadramento equivalente. Qual câmera produz profundidade de campo mais rasa?",
+          "hint": "Pense em distâncias focais equivalentes e como o tamanho do sensor afeta o cálculo de PdC no mesmo número f.",
+          "successMessage": "Correto! A câmera full frame produz PdC aproximadamente 2 stops mais rasa. Embora a lente MFT tenha o mesmo número f, a distância focal real mais curta (42.5mm vs 85mm) resulta em profundidade de campo mais profunda em enquadramento equivalente.",
+          "failureMessage": "Embora ambas as lentes sejam f/1.8, a câmera full frame usa uma distância focal real mais longa para o mesmo enquadramento, produzindo PdC significativamente mais rasa.",
+          "options": {
+            "0": {
+              "label": "Full frame com 85mm f/1.8"
+            },
+            "1": {
+              "label": "Micro Quatro Terços com 42.5mm f/1.8"
+            },
+            "2": {
+              "label": "Ambas produzem PdC idêntica"
+            }
+          }
+        }
+      }
+    }
+  }
+}

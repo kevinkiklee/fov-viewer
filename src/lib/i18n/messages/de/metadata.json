@@ -10,9 +10,17 @@
       "title": "Bildwinkel-Simulator — Brennweiten vergleichen",
       "description": "Vergleiche den Bildwinkel bei verschiedenen Brennweiten und Sensorgrößen. Kostenlos, interaktiv und teilbar."
     },
-    "dof-calculator": {
-      "title": "Schärfentieferechner",
-      "description": "Berechne die Schärfentiefe für jedes Objektiv, jede Blende und Sensorgröße. Nah-/Ferngrenze, Hyperfokaldistanz und Hintergrundunschärfe — kostenlos und interaktiv."
+    "dof-simulator": {
+      "title": "Depth-of-Field Simulator | PhotoTools",
+      "description": "Visualize how aperture, focal length, and distance affect background blur with real-time WebGL simulation"
+    },
+    "focus-stacking-calculator": {
+      "title": "Focus Stacking Calculator | PhotoTools",
+      "description": "Calculate optimal focus distances for front-to-back sharpness in macro and landscape photography"
+    },
+    "equivalent-settings-calculator": {
+      "title": "Equivalent Settings Calculator | PhotoTools",
+      "description": "Find equivalent aperture and focal length across sensor formats to match depth of field"
     },
     "exposure-simulator": {
       "title": "Belichtungsdreieck-Simulator",

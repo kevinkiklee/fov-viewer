@@ -10,9 +10,17 @@
       "title": "Beeldhoeksimulator — Vergelijk brandpuntsafstanden",
       "description": "Vergelijk de beeldhoek bij verschillende brandpuntsafstanden en sensorformaten. Gratis, interactief en deelbaar."
     },
-    "dof-calculator": {
-      "title": "Scherptedieptecalculator",
-      "description": "Bereken de scherptediepte voor elke lens, elk diafragma en elk sensorformaat. Bekijk nabij-/verre scherptelimieten, hyperfocale afstand en achtergrondvervaging — gratis en interactief."
+    "dof-simulator": {
+      "title": "Depth-of-Field Simulator | PhotoTools",
+      "description": "Visualize how aperture, focal length, and distance affect background blur with real-time WebGL simulation"
+    },
+    "focus-stacking-calculator": {
+      "title": "Focus Stacking Calculator | PhotoTools",
+      "description": "Calculate optimal focus distances for front-to-back sharpness in macro and landscape photography"
+    },
+    "equivalent-settings-calculator": {
+      "title": "Equivalent Settings Calculator | PhotoTools",
+      "description": "Find equivalent aperture and focal length across sensor formats to match depth of field"
     },
     "exposure-simulator": {
       "title": "Belichtingsdriehoeksimulator",

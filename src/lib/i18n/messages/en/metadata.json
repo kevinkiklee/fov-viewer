@@ -10,9 +10,17 @@
       "title": "FOV Simulator — Compare Focal Lengths",
       "description": "Compare field of view across different focal lengths and sensor sizes. Free, interactive, shareable."
     },
-    "dof-calculator": {
-      "title": "Depth of Field Calculator",
-      "description": "Calculate depth of field for any lens, aperture, and sensor size. See near/far focus limits, hyperfocal distance, and background blur — free and interactive."
+    "dof-simulator": {
+      "title": "Depth-of-Field Simulator | PhotoTools",
+      "description": "Visualize how aperture, focal length, and distance affect background blur with real-time WebGL simulation"
+    },
+    "focus-stacking-calculator": {
+      "title": "Focus Stacking Calculator | PhotoTools",
+      "description": "Calculate optimal focus distances for front-to-back sharpness in macro and landscape photography"
+    },
+    "equivalent-settings-calculator": {
+      "title": "Equivalent Settings Calculator | PhotoTools",
+      "description": "Find equivalent aperture and focal length across sensor formats to match depth of field"
     },
     "exposure-simulator": {
       "title": "Exposure Triangle Simulator",

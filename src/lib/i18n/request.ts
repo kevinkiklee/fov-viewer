@@ -19,7 +19,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     terms,
     metadata,
     // Education files
-    eduDofCalculator,
+    eduDofSimulator,
     eduFovSimulator,
     eduExposureSimulator,
     eduStarTrailCalculator,
@@ -33,8 +33,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
     eduExifViewer,
     eduHistogram,
     eduFrameStudio,
+    eduFocusStacking,
+    eduEquivalentSettings,
     // Tool UI files
-    toolDofCalculator,
+    toolDofSimulator,
     toolFovSimulator,
     toolExposureSimulator,
     toolFrameStudio,
@@ -48,6 +50,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
     toolExifViewer,
     toolNdFilterCalculator,
     toolHistogram,
+    toolFocusStacking,
+    toolEquivalentSettings,
   ] = await Promise.all([
     import(`./messages/${locale}/common.json`),
     import(`./messages/${locale}/home.json`),
@@ -59,7 +63,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     import(`./messages/${locale}/terms.json`),
     import(`./messages/${locale}/metadata.json`),
     // Education files
-    import(`./messages/${locale}/education/dof-calculator.json`),
+    import(`./messages/${locale}/education/dof-simulator.json`),
     import(`./messages/${locale}/education/fov-simulator.json`),
     import(`./messages/${locale}/education/exposure-simulator.json`),
     import(`./messages/${locale}/education/star-trail-calculator.json`),
@@ -73,8 +77,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
     import(`./messages/${locale}/education/exif-viewer.json`),
     import(`./messages/${locale}/education/histogram.json`),
     import(`./messages/${locale}/education/frame-studio.json`),
+    import(`./messages/${locale}/education/focus-stacking-calculator.json`),
+    import(`./messages/${locale}/education/equivalent-settings-calculator.json`),
     // Tool UI files
-    import(`./messages/${locale}/tools/dof-calculator.json`),
+    import(`./messages/${locale}/tools/dof-simulator.json`),
     import(`./messages/${locale}/tools/fov-simulator.json`),
     import(`./messages/${locale}/tools/exposure-simulator.json`),
     import(`./messages/${locale}/tools/frame-studio.json`),
@@ -88,15 +94,17 @@ export default getRequestConfig(async ({ requestLocale }) => {
     import(`./messages/${locale}/tools/exif-viewer.json`),
     import(`./messages/${locale}/tools/nd-filter-calculator.json`),
     import(`./messages/${locale}/tools/histogram.json`),
+    import(`./messages/${locale}/tools/focus-stacking-calculator.json`),
+    import(`./messages/${locale}/tools/equivalent-settings-calculator.json`),
   ])
 
   // Merge all tool UI messages into a single toolUI namespace
   const toolUIMessages = [
-    toolDofCalculator, toolFovSimulator, toolExposureSimulator, toolFrameStudio,
+    toolDofSimulator, toolFovSimulator, toolExposureSimulator, toolFrameStudio,
     toolStarTrailCalculator, toolWhiteBalanceVisualizer, toolHyperfocalSimulator,
     toolShutterSpeedVisualizer, toolSensorSizeComparison, toolColorSchemeGenerator,
     toolPerspectiveCompressionSimulator, toolExifViewer, toolNdFilterCalculator,
-    toolHistogram,
+    toolHistogram, toolFocusStacking, toolEquivalentSettings,
   ].reduce((acc, mod) => {
     const data = mod.default
     if (data.toolUI) {
@@ -107,10 +115,11 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   // Merge all education messages into a single education namespace
   const educationMessages = [
-    eduDofCalculator, eduFovSimulator, eduExposureSimulator, eduStarTrailCalculator,
+    eduDofSimulator, eduFovSimulator, eduExposureSimulator, eduStarTrailCalculator,
     eduWhiteBalanceVisualizer, eduHyperfocalSimulator, eduShutterSpeedVisualizer,
     eduSensorSizeComparison, eduNdFilterCalculator, eduPerspectiveCompressionSimulator,
     eduColorSchemeGenerator, eduExifViewer, eduHistogram, eduFrameStudio,
+    eduFocusStacking, eduEquivalentSettings,
   ].reduce((acc, mod) => {
     const data = mod.default
     if (data.education) {

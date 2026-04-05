@@ -1,0 +1,135 @@
+{
+  "education": {
+    "focus-stacking-calculator": {
+      "beginner": "Focus stacking is a technique where you take multiple photos at different focus distances and merge them in software to create an image with front-to-back sharpness. It is essential for macro photography, where depth of field is razor-thin, and useful in landscape photography when you need both near foreground and distant background in sharp focus.",
+      "deeper": {
+        "0": {
+          "heading": "Why Stacking Is Necessary",
+          "text": "At macro magnifications, even f/16 may yield only a few millimeters of depth of field. Stopping down further introduces diffraction softening that degrades the image. Focus stacking lets you shoot at the lens's sharpest aperture (typically f/5.6-f/8) and combine the sharp slices. Each frame shifts focus slightly forward, covering a new slice of the subject."
+        },
+        "1": {
+          "heading": "Planning the Stack",
+          "text": "The key to a successful stack is ensuring each shot's depth of field overlaps the next by 20-30%. Too little overlap creates gaps where nothing is sharp; too much wastes frames without benefit. The calculator determines the per-shot DoF using the circle of confusion formula, subtracts the overlap margin, and divides the total depth range by the effective step to compute the number of shots."
+        },
+        "2": {
+          "heading": "Merging & Alignment",
+          "text": "Software like Photoshop, Helicon Focus, or Zerene Stacker aligns the frames (slight magnification shifts occur as focus changes), then selects the sharpest pixels from each layer. Shooting on a sturdy tripod with consistent lighting and using a focus rail for precise increments produces the cleanest results."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Aperture",
+          "description": "Determines per-shot depth of field. A moderate aperture (f/5.6-f/8) balances sharpness and DoF per frame. Avoid very small apertures — diffraction reduces the sharpness you are stacking for."
+        },
+        "1": {
+          "label": "Depth Range",
+          "description": "The distance from the nearest to farthest point you want sharp. Wider ranges require more shots. In macro work this may be just centimeters; in landscapes it can span meters to infinity."
+        },
+        "2": {
+          "label": "Overlap",
+          "description": "The percentage of each shot's DoF that overlaps the adjacent shots. 20-30% is standard. Less risks gaps; more wastes frames."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Use a focus rail instead of the lens's focus ring for macro stacking. A rail moves the entire camera forward in precise increments, avoiding the slight magnification changes that occur when refocusing the lens."
+        },
+        "1": {
+          "text": "Keep your aperture at the lens's sweet spot (typically f/5.6-f/8). The point of stacking is to avoid stopping down to f/16+, so use the sharpest aperture and let the stack handle depth."
+        },
+        "2": {
+          "text": "For landscape stacks, shoot front-to-back: focus on the nearest element first, then step focus toward infinity. This makes alignment easier since the foreground (with the most parallax) is captured first."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Focal Length",
+          "definition": "The lens focal length in millimeters. Longer focal lengths reduce per-shot depth of field, requiring more frames to cover the same depth range."
+        },
+        "aperture": {
+          "term": "Aperture",
+          "definition": "The lens opening (f-number). For stacking, use the lens's sharpest aperture rather than stopping down — the stack provides the depth."
+        },
+        "sensor": {
+          "term": "Sensor Size",
+          "definition": "Larger sensors have a shallower per-shot depth of field at equivalent framing, which may increase the number of required stack frames."
+        },
+        "nearLimit": {
+          "term": "Near Limit",
+          "definition": "The closest point in the scene that you want sharp. This is where the first shot in the stack will be focused."
+        },
+        "farLimit": {
+          "term": "Far Limit",
+          "definition": "The farthest point in the scene that you want sharp. The last shot in the stack will cover this distance."
+        },
+        "overlap": {
+          "term": "Overlap",
+          "definition": "The percentage of depth-of-field overlap between consecutive shots. 20-30% ensures no gaps after software alignment and merging."
+        },
+        "shotCount": {
+          "term": "Shot Count",
+          "definition": "The total number of frames needed to cover the depth range with the specified overlap. More shots = more processing but smoother results."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "You are photographing a small flower that is 3cm deep from front petal to back stem. Your macro lens at f/8 gives about 4mm of DoF per shot. Roughly how many frames do you need with 25% overlap?",
+          "hint": "Each shot covers 4mm, but 25% overlap means the effective step is 3mm per frame. Divide 30mm by 3mm.",
+          "successMessage": "Correct! With 4mm DoF and 25% overlap, each step advances 3mm. 30mm / 3mm = 10 shots to cover the entire flower.",
+          "failureMessage": "With 25% overlap, each frame's effective step is 75% of the DoF: 4mm × 0.75 = 3mm. You need 30mm / 3mm = 10 shots.",
+          "options": {
+            "0": {
+              "label": "5 shots"
+            },
+            "1": {
+              "label": "10 shots"
+            },
+            "2": {
+              "label": "20 shots"
+            },
+            "3": {
+              "label": "30 shots"
+            }
+          }
+        },
+        "1": {
+          "scenario": "You want the sharpest possible result from your focus stack. Should you shoot each frame at f/2.8, f/8, or f/22?",
+          "hint": "Consider the lens's sharpest aperture and how diffraction affects small apertures.",
+          "successMessage": "Right! f/8 is typically the sharpest aperture for most lenses. f/2.8 has too little DoF per shot (wasting frames) and f/22 suffers from diffraction softening.",
+          "failureMessage": "f/8 is the best choice. f/2.8 gives very thin per-shot DoF (requiring many more frames), and f/22 introduces diffraction softening that defeats the purpose of stacking for sharpness.",
+          "options": {
+            "0": {
+              "label": "f/2.8 — widest for fastest shutter"
+            },
+            "1": {
+              "label": "f/8 — lens sweet spot"
+            },
+            "2": {
+              "label": "f/22 — maximum per-shot DoF"
+            }
+          }
+        },
+        "2": {
+          "scenario": "After merging your focus stack, you notice a soft band across the middle of the image where nothing is sharp. What most likely went wrong?",
+          "hint": "Think about what connects one frame's sharp zone to the next.",
+          "successMessage": "Exactly! Insufficient overlap between adjacent frames creates a gap where neither shot is sharp. Increase overlap to 25-30% and reshoot.",
+          "failureMessage": "A soft band usually means the gap between focus steps was too large — the DoF of adjacent frames did not overlap enough. Increase the overlap percentage.",
+          "options": {
+            "0": {
+              "label": "The aperture was too wide"
+            },
+            "1": {
+              "label": "Insufficient overlap between focus steps"
+            },
+            "2": {
+              "label": "The tripod moved during the sequence"
+            },
+            "3": {
+              "label": "The ISO was too high"
+            }
+          }
+        }
+      }
+    }
+  }
+}

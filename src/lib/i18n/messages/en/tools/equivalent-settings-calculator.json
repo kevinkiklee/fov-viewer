@@ -1,0 +1,38 @@
+{
+  "toolUI": {
+    "equivalent-settings-calculator": {
+      "settings": "Settings",
+      "sourceCamera": "Your Camera",
+      "sourceSensor": "Sensor",
+      "sourceFocalLength": "Focal Length",
+      "sourceAperture": "Aperture",
+      "sourceISO": "ISO",
+      "sourceDistance": "Subject Distance",
+      "targetSensors": "Compare With",
+      "addSensor": "+ Add Sensor",
+      "removeSensor": "Remove",
+      "equivalenceCard": "Equivalent Settings",
+      "equivalentFL": "Equivalent Focal Length",
+      "equivalentAperture": "Equivalent Aperture",
+      "equivalentISO": "Equivalent ISO",
+      "equivalentDistance": "Equivalent Distance",
+      "equivalentDoF": "Equivalent DoF",
+      "cropFactor": "Crop Factor",
+      "fieldOfView": "Field of View",
+      "warningUnrealisticAperture": "This equivalent aperture ({value}) is faster than any real lens. The target sensor cannot match the source depth of field.",
+      "warningUnrealisticFL": "This equivalent focal length ({value}mm) is uncommon. You may not find a real lens at this length.",
+      "warningClosestReal": "Closest real lens: {value}mm f/{aperture}",
+      "diagramTitle": "Sensor & FOV Comparison",
+      "diagramSource": "Source",
+      "diagramTarget": "Target",
+      "diagramFovAngle": "FOV: {angle}°",
+      "diagramCropFactor": "{factor}× crop",
+      "matchDoF": "Match Depth of Field",
+      "matchFoV": "Match Field of View",
+      "matchExposure": "Match Exposure",
+      "sameFOV": "Same field of view",
+      "sameDoF": "Same depth of field",
+      "sameExposure": "Same exposure brightness"
+    }
+  }
+}

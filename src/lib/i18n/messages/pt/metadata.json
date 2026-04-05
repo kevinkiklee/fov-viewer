@@ -10,9 +10,17 @@
       "title": "Simulador de Campo de Visão — Compare Distâncias Focais",
       "description": "Compare o campo de visão entre diferentes distâncias focais e tamanhos de sensor. Gratuito, interativo e compartilhável."
     },
-    "dof-calculator": {
-      "title": "Calculadora de Profundidade de Campo",
-      "description": "Calcule a profundidade de campo para qualquer lente, abertura e tamanho de sensor. Veja limites de foco próximo/distante, distância hiperfocal e desfoque do fundo — gratuito e interativo."
+    "dof-simulator": {
+      "title": "Depth-of-Field Simulator | PhotoTools",
+      "description": "Visualize how aperture, focal length, and distance affect background blur with real-time WebGL simulation"
+    },
+    "focus-stacking-calculator": {
+      "title": "Focus Stacking Calculator | PhotoTools",
+      "description": "Calculate optimal focus distances for front-to-back sharpness in macro and landscape photography"
+    },
+    "equivalent-settings-calculator": {
+      "title": "Equivalent Settings Calculator | PhotoTools",
+      "description": "Find equivalent aperture and focal length across sensor formats to match depth of field"
     },
     "exposure-simulator": {
       "title": "Simulador do Triângulo de Exposição",

@@ -10,9 +10,17 @@
       "title": "화각 시뮬레이터 — 초점 거리 비교",
       "description": "다양한 초점 거리와 센서 크기에 따른 화각을 비교합니다. 무료, 인터랙티브, 공유 가능."
     },
-    "dof-calculator": {
-      "title": "피사계 심도 계산기",
-      "description": "모든 렌즈, 조리개, 센서 크기에 대한 피사계 심도를 계산합니다. 근접/원거리 초점 한계, 과초점 거리, 배경 흐림을 확인하세요 — 무료 인터랙티브 도구."
+    "dof-simulator": {
+      "title": "Depth-of-Field Simulator | PhotoTools",
+      "description": "Visualize how aperture, focal length, and distance affect background blur with real-time WebGL simulation"
+    },
+    "focus-stacking-calculator": {
+      "title": "Focus Stacking Calculator | PhotoTools",
+      "description": "Calculate optimal focus distances for front-to-back sharpness in macro and landscape photography"
+    },
+    "equivalent-settings-calculator": {
+      "title": "Equivalent Settings Calculator | PhotoTools",
+      "description": "Find equivalent aperture and focal length across sensor formats to match depth of field"
     },
     "exposure-simulator": {
       "title": "노출 삼각형 시뮬레이터",
