@@ -38,6 +38,7 @@ function useCanHover() {
 
 export function Nav({ theme, onThemeChange }: NavProps) {
   const t = useTranslations('common.nav')
+  const toolsT = useTranslations('tools')
   const CATEGORY_LABELS = useCategoryLabels()
   const [toolsOpen, setToolsOpen] = useState(false)
   const toolsRef = useRef<HTMLDivElement>(null)
@@ -138,9 +139,9 @@ export function Nav({ theme, onThemeChange }: NavProps) {
                           >
                             <span className={styles.megaItemHeader}>
                               <ToolIcon slug={tool.slug} width={16} height={16} className={styles.megaItemIcon} />
-                              <span className={styles.megaItemName}>{tool.name}</span>
+                              <span className={styles.megaItemName}>{toolsT(`${tool.slug}.name`)}</span>
                             </span>
-                            <span className={styles.megaItemDesc}>{tool.description}</span>
+                            <span className={styles.megaItemDesc}>{toolsT(`${tool.slug}.description`)}</span>
                           </Link>
                         )
                       }
@@ -148,10 +149,10 @@ export function Nav({ theme, onThemeChange }: NavProps) {
                         <div key={tool.slug} className={`${styles.megaItem} ${styles.megaItemDisabled}`}>
                           <span className={styles.megaItemHeader}>
                             <ToolIcon slug={tool.slug} width={16} height={16} className={styles.megaItemIcon} />
-                            <span className={styles.megaItemName}>{tool.name}</span>
+                            <span className={styles.megaItemName}>{toolsT(`${tool.slug}.name`)}</span>
                             <span className={styles.megaItemBadge}>{t('comingSoon')}</span>
                           </span>
-                          <span className={styles.megaItemDesc}>{tool.description}</span>
+                          <span className={styles.megaItemDesc}>{toolsT(`${tool.slug}.description`)}</span>
                         </div>
                       )
                     })}

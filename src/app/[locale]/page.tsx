@@ -11,6 +11,7 @@ const CATEGORY_KEYS: ToolCategory[] = ['visualizer', 'calculator', 'reference', 
 
 export default async function HomePage() {
   const t = await getTranslations('home')
+  const toolsT = await getTranslations('tools')
   const tools = getVisibleTools()
 
   const grouped = CATEGORY_KEYS
@@ -53,9 +54,9 @@ export default async function HomePage() {
                     >
                       <div className={styles.cardHeader}>
                         <ToolIcon slug={tool.slug} className={styles.cardIcon} />
-                        <h3 className={styles.cardName}>{tool.name}</h3>
+                        <h3 className={styles.cardName}>{toolsT(`${tool.slug}.name`)}</h3>
                       </div>
-                      <span className={styles.cardDesc}>{tool.description}</span>
+                      <span className={styles.cardDesc}>{toolsT(`${tool.slug}.description`)}</span>
                     </Link>
                   </AnimatedItem>
                 )
