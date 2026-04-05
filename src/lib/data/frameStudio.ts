@@ -31,7 +31,7 @@ export const ASPECT_RATIOS: AspectRatioPreset[] = [
 
 export const DEFAULT_GRID_OPTIONS: GridOptions = {
   color: '#ffffff',
-  opacity: 0.8,
+  opacity: 0.7,
   thickness: 'medium',
   spiralRotation: 0,
   gridDensity: 4,

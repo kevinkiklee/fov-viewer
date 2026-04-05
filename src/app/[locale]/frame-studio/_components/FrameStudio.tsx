@@ -26,7 +26,7 @@ export function FrameStudio() {
   const [originalImage, setOriginalImage] = useState<HTMLImageElement | null>(null)
   const [originalMimeType, setOriginalMimeType] = useState('image/png')
   const [cropState, setCropState] = useState<CropState | null>(null)
-  const [activeGrids, setActiveGrids] = useState<GridType[]>([])
+  const [activeGrids, setActiveGrids] = useState<GridType[]>(['rule-of-thirds'])
   const [gridOffset, setGridOffset] = useState({ x: 0, y: 0 })
   const [gridOptions, setGridOptions] = useState<GridOptions>(DEFAULT_GRID_OPTIONS)
   const [frameConfig, setFrameConfig] = useState<FrameConfig>(DEFAULT_FRAME_CONFIG)
