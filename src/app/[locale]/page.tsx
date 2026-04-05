@@ -7,7 +7,7 @@ import type { ToolCategory } from '@/lib/types'
 import { AdUnit } from '@/components/shared/AdUnit'
 import styles from './page.module.css'
 
-const CATEGORY_KEYS: ToolCategory[] = ['visualizer', 'calculator', 'reference', 'file-tool']
+const CATEGORY_KEYS: ToolCategory[] = ['file-tool', 'visualizer', 'calculator', 'reference']
 
 export default async function HomePage() {
   const t = await getTranslations('home')
