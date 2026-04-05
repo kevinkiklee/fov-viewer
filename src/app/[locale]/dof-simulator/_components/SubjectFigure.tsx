@@ -4,211 +4,167 @@ import { useMemo } from 'react'
 import { FIGURE_DEPTH_ZONES } from '@/lib/data/dofSimulator'
 
 interface SubjectFigureProps {
-  subjectDistance: number   // meters
-  focalLength: number       // mm
-  sensorHeight: number      // mm
-  viewportHeight: number    // px
+  subjectDistance: number
+  focalLength: number
+  sensorHeight: number
+  viewportHeight: number
   focalResult: { nearFocus: number; farFocus: number }
 }
 
-/** Color constants for depth zone rendering */
-const COLOR_SHARP = '#22c55e'   // green — in focus
-const COLOR_FRONT = '#06b6d4'   // cyan — in front of focus
-const COLOR_BEHIND = '#f59e0b'  // amber — behind focus
-
-/** Full body height in mm for figure scaling */
+const COLOR_SHARP = '#22c55e'
+const COLOR_FRONT = '#38bdf8'
+const COLOR_BEHIND = '#f59e0b'
 const FULL_BODY_MM = 1700
 
-/**
- * Determine zone color and opacity based on DOF range.
- * Zones within nearFocus..farFocus are sharp (green).
- * Zones in front get cyan tint; zones behind get amber tint.
- * Opacity scales with how far the zone is from the DOF boundary.
- */
 function getZoneStyle(
   offsetMm: number,
   subjectDistance: number,
   nearFocus: number,
   farFocus: number,
-): { fill: string; opacity: number } {
-  const zoneDistanceM = subjectDistance + offsetMm / 1000
-  const dofRange = farFocus - nearFocus
+): { color: string; blur: number } {
+  const zoneDist = subjectDistance + offsetMm / 1000
+  const dofRange = Math.max(farFocus - nearFocus, 0.001)
 
-  if (zoneDistanceM >= nearFocus && zoneDistanceM <= farFocus) {
-    return { fill: COLOR_SHARP, opacity: 0.7 }
+  if (zoneDist >= nearFocus && zoneDist <= farFocus) {
+    return { color: COLOR_SHARP, blur: 0 }
   }
-
-  if (zoneDistanceM < nearFocus) {
-    // In front of focus plane
-    const overshoot = nearFocus - zoneDistanceM
-    const ratio = dofRange > 0 ? Math.min(overshoot / dofRange, 1) : 1
-    return { fill: COLOR_FRONT, opacity: 0.3 + ratio * 0.5 }
+  if (zoneDist < nearFocus) {
+    const overshoot = (nearFocus - zoneDist) / dofRange
+    return { color: COLOR_FRONT, blur: Math.min(overshoot * 8, 6) }
   }
-
-  // Behind focus plane
-  const overshoot = zoneDistanceM - farFocus
-  const ratio = dofRange > 0 ? Math.min(overshoot / dofRange, 1) : 1
-  return { fill: COLOR_BEHIND, opacity: 0.3 + ratio * 0.5 }
+  const overshoot = (zoneDist - farFocus) / dofRange
+  return { color: COLOR_BEHIND, blur: Math.min(overshoot * 8, 6) }
 }
 
 /**
- * SVG overlay showing a depth-layered human figure.
- * Positioned absolutely over the viewport to illustrate
- * which body parts fall within the depth of field.
+ * Organic human silhouette SVG overlay with depth-zone coloring.
+ * Each body region gets a glow/blur effect based on whether it's in the DOF range.
  */
 export function SubjectFigure({
-  subjectDistance,
-  focalLength,
-  sensorHeight,
-  viewportHeight,
-  focalResult,
+  subjectDistance, focalLength, sensorHeight, viewportHeight, focalResult,
 }: SubjectFigureProps) {
   const figureHeightPx = useMemo(() => {
-    const fovHeightMm = subjectDistance * (sensorHeight / focalLength) * 1000
-    if (fovHeightMm <= 0) return 0
-    return viewportHeight * (FULL_BODY_MM / fovHeightMm)
+    const fovMm = subjectDistance * (sensorHeight / focalLength) * 1000
+    if (fovMm <= 0) return 0
+    return viewportHeight * (FULL_BODY_MM / fovMm)
   }, [subjectDistance, sensorHeight, focalLength, viewportHeight])
 
-  const zones = useMemo(() => {
-    return FIGURE_DEPTH_ZONES.map((zone) => ({
-      ...zone,
-      style: getZoneStyle(zone.offsetMm, subjectDistance, focalResult.nearFocus, focalResult.farFocus),
-    }))
-  }, [subjectDistance, focalResult.nearFocus, focalResult.farFocus])
+  const zones = useMemo(() =>
+    FIGURE_DEPTH_ZONES.map((z) => ({
+      ...z,
+      ...getZoneStyle(z.offsetMm, subjectDistance, focalResult.nearFocus, focalResult.farFocus),
+    })),
+    [subjectDistance, focalResult.nearFocus, focalResult.farFocus],
+  )
 
   if (figureHeightPx <= 0) return null
+  const h = Math.min(Math.max(figureHeightPx, 60), viewportHeight * 1.1)
+  const w = h * 0.35
 
-  // Clamp figure size to reasonable bounds
-  const clampedHeight = Math.min(Math.max(figureHeightPx, 40), viewportHeight * 1.2)
-  const svgWidth = clampedHeight * 0.4
-  const svgHeight = clampedHeight
+  // Zone lookups
+  const nose = zones.find((z) => z.key === 'nose')!
+  const face = zones.find((z) => z.key === 'face')!
+  const eyes = zones.find((z) => z.key === 'eyes')!
+  const ears = zones.find((z) => z.key === 'ears')!
+  const body = zones.find((z) => z.key === 'body')!
 
-  // Body proportions (fractions of total height, from top)
-  const headY = 0
-  const headH = 0.13
-  const neckY = headH
-  const neckH = 0.03
-  const torsoY = neckY + neckH
-  const torsoH = 0.32
-  const legY = torsoY + torsoH
-  const legH = 1 - legY
-
-  // Zone-to-body-part mapping
-  const zoneMap: Record<string, { y: number; h: number; width: number }> = {
-    nose:  { y: headY,   h: headH * 0.4, width: 0.25 },
-    face:  { y: headY,   h: headH * 0.7, width: 0.35 },
-    eyes:  { y: headY,   h: headH,       width: 0.4  },
-    ears:  { y: headY + headH * 0.2, h: headH * 0.5, width: 0.5  },
-    body:  { y: torsoY,  h: torsoH + legH, width: 0.55 },
-  }
+  // Scale factor for the SVG viewBox (design at 100x280)
+  const vbW = 100
+  const vbH = 280
 
   return (
     <svg
-      width={svgWidth}
-      height={svgHeight}
-      viewBox={`0 0 ${svgWidth} ${svgHeight}`}
+      width={w} height={h}
+      viewBox={`0 0 ${vbW} ${vbH}`}
       style={{
-        position: 'absolute',
-        left: '50%',
-        top: '50%',
-        transform: 'translate(-50%, -50%)',
-        pointerEvents: 'none',
+        position: 'absolute', left: '50%', bottom: '10%',
+        transform: 'translateX(-50%)',
+        pointerEvents: 'none', opacity: 0.85,
       }}
     >
-      {/* Base silhouette outline */}
-      <ellipse
-        cx={svgWidth / 2}
-        cy={svgHeight * (headY + headH / 2)}
-        rx={svgWidth * 0.18}
-        ry={svgHeight * headH * 0.5}
-        fill="none"
-        stroke="rgba(255,255,255,0.2)"
-        strokeWidth={1}
-      />
-      <line
-        x1={svgWidth / 2} y1={svgHeight * neckY}
-        x2={svgWidth / 2} y2={svgHeight * (neckY + neckH)}
-        stroke="rgba(255,255,255,0.2)"
-        strokeWidth={1}
-      />
-      <rect
-        x={svgWidth * 0.22}
-        y={svgHeight * torsoY}
-        width={svgWidth * 0.56}
-        height={svgHeight * torsoH}
-        rx={svgWidth * 0.08}
-        fill="none"
-        stroke="rgba(255,255,255,0.2)"
-        strokeWidth={1}
-      />
-      <rect
-        x={svgWidth * 0.28}
-        y={svgHeight * legY}
-        width={svgWidth * 0.18}
-        height={svgHeight * legH}
-        rx={svgWidth * 0.04}
-        fill="none"
-        stroke="rgba(255,255,255,0.2)"
-        strokeWidth={1}
-      />
-      <rect
-        x={svgWidth * 0.54}
-        y={svgHeight * legY}
-        width={svgWidth * 0.18}
-        height={svgHeight * legH}
-        rx={svgWidth * 0.04}
-        fill="none"
-        stroke="rgba(255,255,255,0.2)"
-        strokeWidth={1}
-      />
+      <defs>
+        {/* Blur filters for out-of-focus zones */}
+        {zones.filter((z) => z.blur > 0).map((z) => (
+          <filter key={z.key} id={`blur-${z.key}`} x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation={z.blur} />
+          </filter>
+        ))}
+        {/* Subtle outer glow for the whole figure */}
+        <filter id="figure-glow" x="-20%" y="-10%" width="140%" height="120%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+          <feFlood floodColor="#000" floodOpacity="0.4" result="color" />
+          <feComposite in="color" in2="blur" operator="in" result="shadow" />
+          <feMerge>
+            <feMergeNode in="shadow" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
 
-      {/* Depth zone overlays */}
-      {zones.map((zone) => {
-        const mapping = zoneMap[zone.key]
-        if (!mapping) return null
-        const zw = svgWidth * mapping.width
-        const zh = svgHeight * mapping.h
-        const zx = (svgWidth - zw) / 2
-        const zy = svgHeight * mapping.y
+      <g filter="url(#figure-glow)">
+        {/* Body + Legs (behind focus zone) */}
+        <g filter={body.blur > 0 ? `url(#blur-body)` : undefined}>
+          {/* Torso */}
+          <path
+            d="M35 95 C30 95 22 100 22 108 L24 170 C24 174 28 178 34 178 L66 178 C72 178 76 174 76 170 L78 108 C78 100 70 95 65 95 Z"
+            fill={body.color} opacity={0.4}
+          />
+          {/* Left leg */}
+          <path
+            d="M34 176 L32 250 C32 256 36 260 40 260 L44 260 C48 260 50 256 50 250 L50 176"
+            fill={body.color} opacity={0.35}
+          />
+          {/* Right leg */}
+          <path
+            d="M50 176 L50 250 C50 256 52 260 56 260 L60 260 C64 260 68 256 68 250 L66 176"
+            fill={body.color} opacity={0.35}
+          />
+          {/* Left arm */}
+          <path
+            d="M24 105 C18 108 14 120 16 145 C17 150 20 150 22 148 L26 115"
+            fill={body.color} opacity={0.3}
+          />
+          {/* Right arm */}
+          <path
+            d="M76 105 C82 108 86 120 84 145 C83 150 80 150 78 148 L74 115"
+            fill={body.color} opacity={0.3}
+          />
+        </g>
 
-        return (
-          <g key={zone.key}>
-            {zone.key === 'eyes' || zone.key === 'face' || zone.key === 'nose' || zone.key === 'ears' ? (
-              <ellipse
-                cx={svgWidth / 2}
-                cy={zy + zh / 2}
-                rx={zw / 2}
-                ry={zh / 2}
-                fill={zone.style.fill}
-                opacity={zone.style.opacity}
-              />
-            ) : (
-              <rect
-                x={zx}
-                y={zy}
-                width={zw}
-                height={zh}
-                rx={4}
-                fill={zone.style.fill}
-                opacity={zone.style.opacity}
-              />
-            )}
-            <text
-              x={svgWidth / 2}
-              y={zy + zh / 2}
-              textAnchor="middle"
-              dominantBaseline="central"
-              fill="#fff"
-              fontSize={Math.max(9, Math.min(12, svgHeight * 0.02))}
-              fontFamily="var(--font-mono)"
-              opacity={0.9}
-              style={{ pointerEvents: 'none' }}
-            >
-              {zone.label}
-            </text>
-          </g>
-        )
-      })}
+        {/* Ears zone (behind focus) */}
+        <g filter={ears.blur > 0 ? `url(#blur-ears)` : undefined}>
+          <ellipse cx="22" cy="55" rx="6" ry="10" fill={ears.color} opacity={0.4} />
+          <ellipse cx="78" cy="55" rx="6" ry="10" fill={ears.color} opacity={0.4} />
+        </g>
+
+        {/* Head/face (may be slightly in front) */}
+        <g filter={face.blur > 0 ? `url(#blur-face)` : undefined}>
+          <ellipse cx="50" cy="50" rx="22" ry="28" fill={face.color} opacity={0.35} />
+        </g>
+
+        {/* Eyes zone — at focus plane, always sharpest */}
+        <g filter={eyes.blur > 0 ? `url(#blur-eyes)` : undefined}>
+          <ellipse cx="50" cy="46" rx="18" ry="12" fill={eyes.color} opacity={0.45} />
+          {/* Eye dots */}
+          <circle cx="40" cy="45" r="2.5" fill={eyes.color} opacity={0.7} />
+          <circle cx="60" cy="45" r="2.5" fill={eyes.color} opacity={0.7} />
+        </g>
+
+        {/* Nose zone (in front, closest to camera) */}
+        <g filter={nose.blur > 0 ? `url(#blur-nose)` : undefined}>
+          <ellipse cx="50" cy="58" rx="5" ry="6" fill={nose.color} opacity={0.5} />
+        </g>
+
+        {/* Neck */}
+        <rect x="43" y="76" width="14" height="20" rx="5" fill={body.color} opacity={0.3} />
+
+        {/* Subtle silhouette outline */}
+        <ellipse cx="50" cy="50" rx="24" ry="30" fill="none" stroke="rgba(255,255,255,0.12)" strokeWidth="0.8" />
+        <path
+          d="M35 93 C28 93 20 99 20 108 L22 172 C22 176 27 180 34 180 L66 180 C73 180 78 176 78 172 L80 108 C80 99 72 93 65 93"
+          fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="0.5"
+        />
+      </g>
     </svg>
   )
 }
