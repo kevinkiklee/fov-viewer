@@ -1,98 +1,250 @@
 'use client'
 
-import { useState, useMemo, useCallback } from 'react'
-import { useTranslations } from 'next-intl'
-import { calcDoF } from '@/lib/math/dof'
+import { useState, useMemo } from 'react'
+import {
+  calcDoF, calcBackgroundBlur, calcAiryDisk,
+  calcOptimalAperture, calcIsolationScore,
+} from '@/lib/math/dof'
 import { SENSORS } from '@/lib/data/sensors'
-import { useQueryInit, useToolQuerySync, intParam, numParam, strParam, sensorParam } from '@/lib/utils/querySync'
-import { LearnPanel } from '@/components/shared/LearnPanel'
-import { ToolActions } from '@/components/shared/ToolActions'
-import { DoFDiagram } from '@/components/shared/DoFDiagram'
-import { DoFCanvas } from '@/components/shared/DoFCanvas'
-import type { SceneKey } from '@/components/shared/DoFCanvas'
-import { distanceToSlider, sliderToDistance } from './dof-helpers'
-import { DOF_SCENE_PRESETS } from '@/lib/data/dofSimulator'
+import {
+  getDofScene,
+  type SubjectMode, type ABMode, type BokehShape,
+} from '@/lib/data/dofSimulator'
+import { useQueryInit, useToolQuerySync } from '@/lib/utils/querySync'
+import { PARAM_SCHEMA } from './querySync'
 import { DofSettingsPanel } from './DofSettingsPanel'
 import { DofResultsPanel } from './DofResultsPanel'
+import { FramingPanel } from './FramingPanel'
+import { BokehPanel } from './BokehPanel'
+import { DofToolbar } from './DofToolbar'
+import { DofViewport } from './DofViewport'
+import { DofDiagramBar } from './DofDiagramBar'
+import { BlurProfileGraph } from './BlurProfileGraph'
+import { ABComparison } from './ABComparison'
+import { SubjectFigure } from './SubjectFigure'
+import { FocusTarget } from './FocusTarget'
+import { LearnPanel } from '@/components/shared/LearnPanel'
+import { ToolActions } from '@/components/shared/ToolActions'
+import { ModeToggle } from '@/components/shared/ModeToggle'
 import s from './DofSimulator.module.css'
 
-const PARAM_SCHEMA = {
-  fl: intParam(50, 8, 800),
-  f: numParam(2.8, 1.4, 22),
-  d: numParam(3, 0.3, 100),
-  s: sensorParam('ff'),
-  scene: strParam<SceneKey>('portrait', ['portrait', 'landscape', 'street', 'macro']),
-}
-
 export function DofSimulator() {
-  const t = useTranslations('toolUI.dof-simulator')
-  const [focalLength, setFocalLength] = useState(50)
+  // ── Camera settings (A set) ──
+  const [focalLength, setFocalLength] = useState(85)
   const [aperture, setAperture] = useState(2.8)
-  const [sliderVal, setSliderVal] = useState(distanceToSlider(3))
+  const [subjectDistance, setSubjectDistance] = useState(3)
   const [sensorId, setSensorId] = useState('ff')
-  const [scene, setScene] = useState<SceneKey>('portrait')
-  useQueryInit(PARAM_SCHEMA, { fl: setFocalLength, f: setAperture, d: (v: number) => setSliderVal(distanceToSlider(v)), s: setSensorId, scene: setScene })
+  const [orientation, setOrientation] = useState<'landscape' | 'portrait'>('landscape')
 
-  const distance = sliderToDistance(sliderVal)
-  useToolQuerySync({ fl: focalLength, f: aperture, d: distance, s: sensorId, scene }, PARAM_SCHEMA)
+  // ── Scene & modes ──
+  const [sceneKey, setSceneKey] = useState('park-portrait')
+  const [subjectMode, setSubjectMode] = useState<SubjectMode>('figure')
+  const [abMode, setAbMode] = useState<ABMode>('off')
+  const [bokehShape, setBokehShape] = useState<BokehShape>('disc')
+  const [useDiffraction, setUseDiffraction] = useState(false)
 
-  const sensor = SENSORS.find((sen) => sen.id === sensorId) ?? SENSORS[1]
+  // ── A/B settings (B set) ──
+  const [bFocalLength, setBFocalLength] = useState(50)
+  const [bAperture, setBAperture] = useState(5.6)
+  const [bSubjectDistance, setBSubjectDistance] = useState(3)
+  const [bSensorId, setBSensorId] = useState('ff')
+
+  // ── A/B state ──
+  const [activeSet, setActiveSet] = useState<'a' | 'b'>('a')
+  const [dividerPos, setDividerPos] = useState(0.5)
+
+  // ── Framing ──
+  const [activeFramingPreset, setActiveFramingPreset] = useState<string | null>(null)
+  const [framingLockMode, setFramingLockMode] = useState<'constantFL' | 'constantDistance'>('constantFL')
+
+  // ── Query sync ──
+  useQueryInit(PARAM_SCHEMA, {
+    fl: setFocalLength, f: setAperture, d: setSubjectDistance,
+    s: setSensorId, scene: setSceneKey, mode: setSubjectMode,
+    orient: setOrientation, bokeh: setBokehShape, ab: setAbMode,
+    b_fl: setBFocalLength, b_f: setBAperture,
+    b_d: setBSubjectDistance, b_s: setBSensorId,
+  })
+  useToolQuerySync({
+    fl: focalLength, f: aperture, d: subjectDistance,
+    s: sensorId, scene: sceneKey, mode: subjectMode,
+    orient: orientation, bokeh: bokehShape, ab: abMode,
+    b_fl: bFocalLength, b_f: bAperture,
+    b_d: bSubjectDistance, b_s: bSensorId,
+  }, PARAM_SCHEMA)
+
+  // ── Computed: sensor A ──
+  const sensor = SENSORS.find((sen) => sen.id === sensorId) ?? SENSORS[3]
+  const sensorWidth = orientation === 'landscape' ? sensor.w : sensor.h
+  const sensorHeight = orientation === 'landscape' ? sensor.h : sensor.w
   const coc = 0.03 / sensor.cropFactor
+  const scene = getDofScene(sceneKey)
 
-  const result = useMemo(
-    () => calcDoF({ focalLength, aperture, distance, coc }),
-    [focalLength, aperture, distance, coc],
+  // ── Computed: sensor B ──
+  const bSensor = SENSORS.find((sen) => sen.id === bSensorId) ?? SENSORS[3]
+  const bSensorWidth = orientation === 'landscape' ? bSensor.w : bSensor.h
+
+  // ── Computed: DoF results (A) ──
+  const dofResult = useMemo(
+    () => calcDoF({ focalLength, aperture, distance: subjectDistance, coc }),
+    [focalLength, aperture, subjectDistance, coc],
   )
 
-  const focusNormalized = distanceToSlider(distance)
+  const backgroundBlurMm = useMemo(
+    () => calcBackgroundBlur({ focalLength, aperture, subjectDistance, targetDistance: scene.farDistance }),
+    [focalLength, aperture, subjectDistance, scene.farDistance],
+  )
 
-  const handleDiagramDistanceChange = useCallback((meters: number) => {
-    setSliderVal(distanceToSlider(meters))
-  }, [])
+  const backgroundBlurPct = (backgroundBlurMm / sensorWidth) * 100
 
+  const isolationScore = useMemo(
+    () => calcIsolationScore(backgroundBlurMm, coc),
+    [backgroundBlurMm, coc],
+  )
+
+  const sweetSpot = useMemo(
+    () => calcOptimalAperture(focalLength, subjectDistance, scene.farDistance),
+    [focalLength, subjectDistance, scene.farDistance],
+  )
+
+  const isDiffractionLimited = calcAiryDisk(aperture) > backgroundBlurMm
+
+  // ── Prop bundles ──
   const settingsProps = {
-    focalLength, aperture, sliderVal, sensorId, distance,
+    focalLength, aperture, subjectDistance, sensorId,
+    orientation, sweetSpot,
     onFocalLengthChange: setFocalLength, onApertureChange: setAperture,
-    onSliderChange: setSliderVal, onSensorChange: setSensorId,
+    onDistanceChange: setSubjectDistance, onSensorChange: setSensorId,
+    onOrientationChange: setOrientation,
   }
 
   const resultsProps = {
-    nearFocus: result.nearFocus, farFocus: result.farFocus,
-    totalDoF: result.totalDoF, hyperfocal: result.hyperfocal,
+    nearFocus: dofResult.nearFocus, farFocus: dofResult.farFocus,
+    totalDoF: dofResult.totalDoF, hyperfocal: dofResult.hyperfocal,
+    backgroundBlurMm, backgroundBlurPct, coc,
+    isolationScore, isDiffractionLimited,
   }
+
+  const abSetOptions = [
+    { value: 'a' as const, label: 'A' },
+    { value: 'b' as const, label: 'B' },
+  ]
+
+  const isInFocus = subjectDistance >= dofResult.nearFocus && subjectDistance <= dofResult.farFocus
 
   return (
     <div className={s.app}>
       <div className={s.appBody}>
+        {/* ── Sidebar ── */}
         <div className={s.sidebar}>
           <ToolActions toolSlug="dof-simulator" />
-          <DofSettingsPanel {...settingsProps} />
+
+          {abMode !== 'off' && (
+            <ModeToggle options={abSetOptions} value={activeSet} onChange={setActiveSet} />
+          )}
+
+          {activeSet === 'a' || abMode === 'off' ? (
+            <DofSettingsPanel {...settingsProps} />
+          ) : (
+            <DofSettingsPanel
+              focalLength={bFocalLength} aperture={bAperture}
+              subjectDistance={bSubjectDistance} sensorId={bSensorId}
+              orientation={orientation} sweetSpot={null}
+              onFocalLengthChange={setBFocalLength} onApertureChange={setBAperture}
+              onDistanceChange={setBSubjectDistance} onSensorChange={setBSensorId}
+              onOrientationChange={setOrientation}
+            />
+          )}
+
+          <FramingPanel
+            activePreset={activeFramingPreset}
+            lockMode={framingLockMode}
+            onPresetClick={setActiveFramingPreset}
+            onLockModeChange={setFramingLockMode}
+          />
+
+          <BokehPanel
+            bokehShape={bokehShape}
+            useDiffraction={useDiffraction}
+            onBokehShapeChange={setBokehShape}
+            onDiffractionChange={setUseDiffraction}
+          />
+
           <DofResultsPanel {...resultsProps} />
         </div>
 
+        {/* ── Center ── */}
         <div className={s.canvasArea}>
-          <div className={s.canvasTopbar}>
-            <span className={s.presetLabel}>{t('scene')}</span>
-            {DOF_SCENE_PRESETS.map((preset) => (
-              <button key={preset.key}
-                className={`${s.presetBtn} ${scene === preset.key ? s.presetBtnActive : ''}`}
-                onClick={() => setScene(preset.key)} aria-pressed={scene === preset.key}>
-                {t(preset.labelKey)}
-              </button>
-            ))}
-          </div>
+          <DofToolbar
+            sceneKey={sceneKey}
+            onSceneChange={setSceneKey}
+            subjectMode={subjectMode}
+            onSubjectModeChange={setSubjectMode}
+            abMode={abMode}
+            onABModeChange={setAbMode}
+            blurPct={backgroundBlurPct}
+          />
+
           <div className={s.canvasMain}>
-            <DoFCanvas focusDistance={focusNormalized} aperture={aperture} scene={scene} className={s.canvas} />
+            <ABComparison
+              mode={abMode}
+              dividerPosition={dividerPos}
+              onDividerChange={setDividerPos}
+              settingsLabelA={`A: f/${aperture} \u00b7 ${focalLength}mm`}
+              settingsLabelB={`B: f/${bAperture} \u00b7 ${bFocalLength}mm`}
+              viewportA={
+                <DofViewport
+                  scene={scene} focalLength={focalLength} aperture={aperture}
+                  subjectDistance={subjectDistance} sensorWidth={sensorWidth}
+                  useDiffraction={useDiffraction}
+                />
+              }
+              viewportB={
+                <DofViewport
+                  scene={scene} focalLength={bFocalLength} aperture={bAperture}
+                  subjectDistance={bSubjectDistance} sensorWidth={bSensorWidth}
+                  useDiffraction={useDiffraction}
+                />
+              }
+            />
+
+            {subjectMode === 'figure' && (
+              <SubjectFigure
+                subjectDistance={subjectDistance}
+                focalLength={focalLength}
+                sensorHeight={sensorHeight}
+                viewportHeight={400}
+                focalResult={{ nearFocus: dofResult.nearFocus, farFocus: dofResult.farFocus }}
+              />
+            )}
+            {subjectMode === 'target' && (
+              <FocusTarget isInFocus={isInFocus} distance={subjectDistance} />
+            )}
           </div>
-          <div className={s.depthBar}>
-            <DoFDiagram result={result} distance={distance} onDistanceChange={handleDiagramDistanceChange} />
-          </div>
+
+          <DofDiagramBar
+            distance={subjectDistance}
+            nearFocus={dofResult.nearFocus}
+            farFocus={dofResult.farFocus}
+            onDistanceChange={setSubjectDistance}
+          />
+
+          <BlurProfileGraph
+            focalLength={focalLength}
+            aperture={aperture}
+            subjectDistance={subjectDistance}
+            coc={coc}
+            sensorWidth={sensorWidth}
+          />
         </div>
+
+        {/* ── LearnPanel (desktop) ── */}
         <div className={s.desktopOnly}>
           <LearnPanel slug="dof-simulator" />
         </div>
       </div>
 
+      {/* ── Mobile controls ── */}
       <div className={s.mobileControls}>
         <DofSettingsPanel {...settingsProps} />
         <DofResultsPanel {...resultsProps} />
