@@ -69,6 +69,7 @@
       "quality": "품질:",
       "qualityMaximum": "최대",
       "includeGridOverlay": "그리드 오버레이 포함",
+      "downscaleNotice": "Your image ({from}) exceeds the browser's maximum canvas size and will be exported at {to}.",
       "cancel": "취소",
       "exporting": "내보내는 중...",
       "download": "다운로드"

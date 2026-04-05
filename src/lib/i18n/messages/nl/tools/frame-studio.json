@@ -69,6 +69,7 @@
       "quality": "Kwaliteit:",
       "qualityMaximum": "Maximaal",
       "includeGridOverlay": "Rasteroverlay opnemen",
+      "downscaleNotice": "Your image ({from}) exceeds the browser's maximum canvas size and will be exported at {to}.",
       "cancel": "Annuleren",
       "exporting": "Exporteren...",
       "download": "Downloaden"

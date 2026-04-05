@@ -75,14 +75,14 @@ export function DofSimulator() {
 
   // ── Computed: sensor A ──
   const sensor = SENSORS.find((sen) => sen.id === sensorId) ?? SENSORS[3]
-  const sensorWidth = orientation === 'landscape' ? sensor.w : sensor.h
-  const sensorHeight = orientation === 'landscape' ? sensor.h : sensor.w
+  const sensorWidth = (orientation === 'landscape' ? sensor.w : sensor.h) ?? 36
+  const sensorHeight = (orientation === 'landscape' ? sensor.h : sensor.w) ?? 24
   const coc = 0.03 / sensor.cropFactor
   const scene = getDofScene(sceneKey)
 
   // ── Computed: sensor B ──
   const bSensor = SENSORS.find((sen) => sen.id === bSensorId) ?? SENSORS[3]
-  const bSensorWidth = orientation === 'landscape' ? bSensor.w : bSensor.h
+  const bSensorWidth = (orientation === 'landscape' ? bSensor.w : bSensor.h) ?? 36
 
   // ── Computed: DoF results (A) ──
   const dofResult = useMemo(

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useMemo } from 'react'
 import { useTranslations } from 'next-intl'
 import { computeExportDimensions, drawSolidBorder, drawGradientBorder, drawTextureBorder, drawInnerMat, drawShadow } from '@/lib/math/frame'
 import { transferExif } from '@/lib/utils/exif'
@@ -110,6 +110,18 @@ export function ExportDialog({
   const [includeGrid, setIncludeGrid] = useState(false)
   const [exporting, setExporting] = useState(false)
   const [closing, setClosing] = useState(false)
+
+  const MAX_CANVAS_PIXELS = 16_000_000
+  const downscaleInfo = useMemo(() => {
+    const sw = crop?.width ?? image.naturalWidth
+    const sh = crop?.height ?? image.naturalHeight
+    const bw = frameConfig.borderWidth
+    const matW = frameConfig.innerMatEnabled ? frameConfig.innerMatWidth : 0
+    const { width: ew, height: eh } = computeExportDimensions(sw, sh, bw, matW)
+    if (ew * eh <= MAX_CANVAS_PIXELS) return null
+    const scale = Math.sqrt(MAX_CANVAS_PIXELS / (ew * eh))
+    return { from: `${sw}×${sh}`, to: `${Math.floor(sw * scale)}×${Math.floor(sh * scale)}` }
+  }, [crop, image, frameConfig])
 
   const handleClose = useCallback(() => {
     setClosing(true)
@@ -246,6 +258,12 @@ export function ExportDialog({
           <span>{t('format')} {originalMimeType.split('/')[1]?.toUpperCase() ?? 'PNG'}</span>
           <span>{t('quality')} {t('qualityMaximum')}</span>
         </div>
+
+        {downscaleInfo && (
+          <div className={styles.notice}>
+            {t('downscaleNotice', { from: downscaleInfo.from, to: downscaleInfo.to })}
+          </div>
+        )}
 
         {activeGrids.length > 0 && (
           <label className={styles.toggle}>

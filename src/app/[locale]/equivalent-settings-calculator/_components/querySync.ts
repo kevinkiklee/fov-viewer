@@ -1,5 +1,4 @@
 import { intParam, numParam, sensorParam } from '@/lib/utils/querySync'
-import type { ParamSchema } from '@/lib/utils/querySync'
 import { SENSORS } from '@/lib/data/sensors'
 
 const sensorIds = SENSORS.map((s) => s.id)
@@ -17,4 +16,4 @@ export const PARAM_SCHEMA = {
     },
     serialize: (val: string) => val,
   },
-} satisfies ParamSchema
+}

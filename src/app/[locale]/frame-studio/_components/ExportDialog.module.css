@@ -55,6 +55,16 @@
 
 .toggle input { accent-color: var(--accent); }
 
+.notice {
+  font-size: 0.75rem;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  border-radius: 6px;
+  padding: 8px 10px;
+  line-height: 1.4;
+}
+
 .actions {
   display: flex;
   justify-content: flex-end;
