@@ -10,7 +10,7 @@ import { SENSORS } from '@/lib/data/sensors'
 import { FOCAL_LENGTHS } from '@/lib/data/focalLengths'
 import { TOOLS, getToolBySlug, getLiveTools } from '@/lib/data/tools'
 import { GLOSSARY } from '@/lib/data/glossary'
-import { getAllEducation } from '@/lib/data/education'
+import { getAllSkeletons } from '@/lib/data/education'
 
 describe('FOV calculations with real sensor data', () => {
   it('all sensors produce valid FOV at all focal lengths', () => {
@@ -201,7 +201,7 @@ describe('Education and tool registry alignment', () => {
   it('every education entry has a matching tool or known sub-feature', () => {
     const toolSlugs = new Set(TOOLS.map((t) => t.slug))
     const knownSubFeatures = new Set(['histogram'])
-    for (const edu of getAllEducation()) {
+    for (const edu of getAllSkeletons()) {
       expect(toolSlugs.has(edu.slug) || knownSubFeatures.has(edu.slug)).toBe(true)
     }
   })
@@ -209,7 +209,7 @@ describe('Education and tool registry alignment', () => {
   it('every live tool has education content', () => {
     const liveTools = getLiveTools()
     for (const tool of liveTools) {
-      const edu = getAllEducation().find((e) => e.slug === tool.slug)
+      const edu = getAllSkeletons().find((e) => e.slug === tool.slug)
       expect(edu).toBeDefined()
     }
   })

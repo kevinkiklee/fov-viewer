@@ -24,6 +24,10 @@ build
 # Build artifacts
 *.tsbuildinfo
 
+# Playwright
+playwright-report/
+test-results/
+
 
 # Source examples (not published)
 examples/
