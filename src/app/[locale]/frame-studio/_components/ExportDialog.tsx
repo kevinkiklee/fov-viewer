@@ -127,15 +127,26 @@ export function ExportDialog({
 
       const bw = frameConfig.borderWidth
       const matW = frameConfig.innerMatEnabled ? frameConfig.innerMatWidth : 0
-      const { width: canvasW, height: canvasH } = computeExportDimensions(sw, sh, bw, matW)
+      const { width: exportW, height: exportH } = computeExportDimensions(sw, sh, bw, matW)
+
+      // iOS Safari limits canvas to ~16M pixels; scale down for large images
+      const MAX_CANVAS_PIXELS = 16_000_000
+      let exportScale = 1
+      if (exportW * exportH > MAX_CANVAS_PIXELS) {
+        exportScale = Math.sqrt(MAX_CANVAS_PIXELS / (exportW * exportH))
+      }
 
       const canvas = document.createElement('canvas')
-      canvas.width = canvasW
-      canvas.height = canvasH
+      canvas.width = Math.floor(exportW * exportScale)
+      canvas.height = Math.floor(exportH * exportScale)
       const ctx = canvas.getContext('2d')!
+      if (exportScale < 1) ctx.scale(exportScale, exportScale)
+
+      // All drawing below uses original (exportW × exportH) coordinates;
+      // ctx.scale handles the physical pixel reduction automatically.
 
       if (frameConfig.shadowEnabled && bw > 0) {
-        drawShadow(ctx, canvasW, canvasH, bw, frameConfig.cornerRadius, {
+        drawShadow(ctx, exportW, exportH, bw, frameConfig.cornerRadius, {
           color: frameConfig.shadowColor,
           blur: frameConfig.shadowBlur,
           offsetX: frameConfig.shadowOffsetX,
@@ -145,16 +156,16 @@ export function ExportDialog({
 
       if (bw > 0) {
         if (frameConfig.fillType === 'solid') {
-          drawSolidBorder(ctx, canvasW, canvasH, frameConfig.solidColor, frameConfig.cornerRadius)
+          drawSolidBorder(ctx, exportW, exportH, frameConfig.solidColor, frameConfig.cornerRadius)
         } else if (frameConfig.fillType === 'gradient') {
-          drawGradientBorder(ctx, canvasW, canvasH, frameConfig.gradientColor1, frameConfig.gradientColor2, frameConfig.gradientDirection, frameConfig.cornerRadius)
+          drawGradientBorder(ctx, exportW, exportH, frameConfig.gradientColor1, frameConfig.gradientColor2, frameConfig.gradientDirection, frameConfig.cornerRadius)
         } else {
-          drawTextureBorder(ctx, canvasW, canvasH, frameConfig.texture, frameConfig.cornerRadius)
+          drawTextureBorder(ctx, exportW, exportH, frameConfig.texture, frameConfig.cornerRadius)
         }
       }
 
       if (frameConfig.innerMatEnabled && matW > 0) {
-        drawInnerMat(ctx, canvasW, canvasH, bw, frameConfig.cornerRadius, matW, frameConfig.innerMatColor)
+        drawInnerMat(ctx, exportW, exportH, bw, frameConfig.cornerRadius, matW, frameConfig.innerMatColor)
       }
 
       const imgX = bw + matW
@@ -181,13 +192,13 @@ export function ExportDialog({
       }
 
       const quality = (originalMimeType === 'image/png') ? undefined : 1
-      let blob = await new Promise<Blob>((resolve) => {
-        canvas.toBlob(
-          (b) => resolve(b!),
-          originalMimeType,
-          quality,
-        )
+      let blob = await new Promise<Blob | null>((resolve) => {
+        canvas.toBlob(resolve, originalMimeType, quality)
       })
+      if (!blob) {
+        console.error('Export failed: canvas.toBlob returned null (image may be too large)')
+        return
+      }
 
       const originalBuffer = await originalFile.arrayBuffer()
       blob = await transferExif(originalBuffer, blob, originalMimeType)
