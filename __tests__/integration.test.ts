@@ -4,13 +4,18 @@ import { calcDoF } from '@/lib/math/dof'
 import { calcEV, shutterWithNd, reciprocalRule } from '@/lib/math/exposure'
 import { rule500, ruleNPF } from '@/lib/math/startrail'
 import { pixelPitch, diffractionLimitedAperture } from '@/lib/math/diffraction'
-import { kelvinToRgb, complementary } from '@/lib/math/color'
+import { kelvinToRgb, complementary, analogous, triadic, splitComplementary, tetradic } from '@/lib/math/color'
 import { calcCameraDistance } from '@/lib/math/compression'
 import { SENSORS } from '@/lib/data/sensors'
 import { FOCAL_LENGTHS } from '@/lib/data/focalLengths'
 import { TOOLS, getToolBySlug, getLiveTools } from '@/lib/data/tools'
 import { GLOSSARY } from '@/lib/data/glossary'
 import { getAllSkeletons } from '@/lib/data/education'
+import { EXPOSURE_SCENES } from '@/lib/data/exposureScenes'
+import { FRAME_PRESETS, ASPECT_RATIOS, TEXTURES } from '@/lib/data/frameStudio'
+import { TEXTURE_PRESETS } from '@/lib/math/frame-texture'
+import { WB_PRESETS } from '@/lib/data/whiteBalance'
+import { HARMONY_KEYS } from '@/lib/data/colorSchemeGenerator'
 
 describe('FOV calculations with real sensor data', () => {
   it('all sensors produce valid FOV at all focal lengths', () => {
@@ -212,5 +217,73 @@ describe('Education and tool registry alignment', () => {
       const edu = getAllSkeletons().find((e) => e.slug === tool.slug)
       expect(edu).toBeDefined()
     }
+  })
+})
+
+describe('Exposure scene assets reference valid paths', () => {
+  it('all scene asset filenames include the scene ID', () => {
+    for (const scene of EXPOSURE_SCENES) {
+      expect(scene.assets.photo).toContain(scene.id)
+      expect(scene.assets.depthMap).toContain(scene.id)
+      expect(scene.assets.motionMask).toContain(scene.id)
+    }
+  })
+})
+
+describe('Frame studio textures align with math module', () => {
+  it('every texture ID in data has a matching texture preset in math', () => {
+    for (const t of TEXTURES) {
+      expect(TEXTURE_PRESETS[t.id as keyof typeof TEXTURE_PRESETS]).toBeDefined()
+    }
+  })
+})
+
+describe('White balance presets produce valid colors', () => {
+  it('all preset kelvin values produce RGB in 0-255 range', () => {
+    for (const preset of WB_PRESETS) {
+      const { r, g, b } = kelvinToRgb(preset.kelvin)
+      expect(r).toBeGreaterThanOrEqual(0)
+      expect(r).toBeLessThanOrEqual(255)
+      expect(g).toBeGreaterThanOrEqual(0)
+      expect(g).toBeLessThanOrEqual(255)
+      expect(b).toBeGreaterThanOrEqual(0)
+      expect(b).toBeLessThanOrEqual(255)
+    }
+  })
+
+  it('warmer presets have higher red component', () => {
+    const warm = kelvinToRgb(WB_PRESETS[0].kelvin)  // Candle 1900K
+    const cool = kelvinToRgb(WB_PRESETS[WB_PRESETS.length - 1].kelvin)  // Blue Sky 10000K
+    expect(warm.r).toBeGreaterThan(cool.r)
+  })
+})
+
+describe('Color harmony functions match HARMONY_KEYS', () => {
+  const harmonyFns: Record<string, (hue: number) => number[]> = {
+    complementary, analogous, triadic, 'split-complementary': splitComplementary, tetradic,
+  }
+
+  it('every harmony key has a matching function that returns valid hues', () => {
+    for (const hk of HARMONY_KEYS) {
+      const fn = harmonyFns[hk.value]
+      expect(fn).toBeDefined()
+      const hues = fn(180)
+      expect(hues.length).toBeGreaterThanOrEqual(2)
+      for (const h of hues) {
+        expect(h).toBeGreaterThanOrEqual(0)
+        expect(h).toBeLessThan(360)
+      }
+    }
+  })
+})
+
+describe('Aspect ratio consistency', () => {
+  it('original and free entries have w:0, h:0', () => {
+    const original = ASPECT_RATIOS.find(a => a.value === 'original')
+    const free = ASPECT_RATIOS.find(a => a.value === null)
+    expect(original?.w).toBe(0)
+    expect(original?.h).toBe(0)
+    expect(free?.w).toBe(0)
+    expect(free?.h).toBe(0)
   })
 })
