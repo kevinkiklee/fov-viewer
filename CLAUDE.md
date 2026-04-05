@@ -10,7 +10,7 @@ PhotoTools is an educational photography application — free calculators, simul
 
 - Next.js 16 (App Router, Turbopack dev)
 - React 19 + TypeScript 6
-- next-intl 4.x (i18n — single-locale English, ready for multi-locale)
+- next-intl 4.x (i18n — 5 locales: en, es, ja, de, fr)
 - Vitest + jsdom + @testing-library/react + @testing-library/jest-dom
 - ESLint with typescript-eslint
 - CSS Modules + CSS custom properties (design tokens)
@@ -33,9 +33,10 @@ PhotoTools is an educational photography application — free calculators, simul
 
 All source code lives under `src/`, with `@/` aliased to `src/` in tsconfig.json and vitest.config.ts.
 
-- **App Router**: all routes under `src/app/`. Homepage (`src/app/page.tsx`) is the tool hub. Each tool lives at `src/app/[slug]/page.tsx` with co-located `_components/` for tool-specific UI. Glossary at `src/app/learn/glossary/page.tsx`. Additional pages: `/about`, `/contact`, `/privacy`, `/terms`. API route: `src/app/api/contact/route.ts`.
-- **Tool Co-location**: Each tool's components live in `src/app/[slug]/_components/` alongside its `page.tsx`. The `_` prefix makes it a private folder (not a route segment). Page files import from `./_components/...` using relative paths.
-- **Shared Components**: `src/components/` contains only shared/reusable code: `layout/` (Nav, Footer, ThemeProvider, ThemeToggle) and `shared/` (LearnPanel, ChallengeCard, ControlPanel, FocalLengthField, ToolIcon, InfoTooltip, ShareModal, ToolActions, FileDropZone, PhotoUploadPanel, ScenePicker, DraftBanner, JsonLd, DoFDiagram, DoFCanvas, AnimatedGrid, ModeToggle, AdUnit, AdScripts, MobileAdBanner).
+- **App Router**: All routes under `src/app/[locale]/`. Root layout (`src/app/layout.tsx`) imports globals.css and provides `<html>`/`<body>`. Locale layout (`src/app/[locale]/layout.tsx`) validates the locale, calls `setRequestLocale()`, wraps children in `NextIntlClientProvider`, and renders providers. Homepage at `src/app/[locale]/page.tsx`. Each tool at `src/app/[locale]/[slug]/page.tsx`. Glossary at `src/app/[locale]/learn/glossary/page.tsx`. Additional pages: `/[locale]/about`, `/[locale]/contact`, `/[locale]/privacy`, `/[locale]/terms`. API route (not locale-prefixed): `src/app/api/contact/route.ts`.
+- **Locale Routing**: Middleware (`src/middleware.ts`) handles locale detection (URL prefix → `NEXT_LOCALE` cookie → `Accept-Language` header → fallback `en`). All pages are locale-prefixed: `/en/fov-simulator`, `/es/fov-simulator`, etc. Tool slugs stay in English across all locales.
+- **Tool Co-location**: Each tool's components live in `src/app/[locale]/[slug]/_components/` alongside its `page.tsx`. The `_` prefix makes it a private folder (not a route segment). Page files import from `./_components/...` using relative paths. When importing types from tool `_components/` in `src/lib/`, use `@/app/[locale]/...` path.
+- **Shared Components**: `src/components/` contains only shared/reusable code: `layout/` (Nav, Footer, ThemeProvider, ThemeToggle) and `shared/` (LearnPanel, ChallengeCard, ControlPanel, FocalLengthField, ToolIcon, InfoTooltip, ShareModal, ToolActions, FileDropZone, PhotoUploadPanel, ScenePicker, DraftBanner, JsonLd, DoFDiagram, DoFCanvas, AnimatedGrid, ModeToggle, AdUnit, AdScripts, MobileAdBanner, LanguageSwitcher, HtmlLang).
 - **Tool Registry**: `src/lib/data/tools.ts` defines all tools with slug, name, description, `dev`/`prod` status fields (`'live'`/`'draft'`/`'disabled'`), and category. `getLiveTools()` returns live tools. `getVisibleTools()` returns live + draft. `getToolBySlug()` looks up by slug. `getAllTools()` returns all tools regardless of status.
 - **Education System**: `src/lib/data/education/` contains per-tool education skeletons (non-translatable data: IDs, difficulty levels, correct answers, option values). All translatable education text lives in `src/lib/i18n/messages/en/education/*.json`. `LearnPanel` and `ChallengeCard` render by combining skeleton data with translations.
 - **Pure Math Modules**: `src/lib/math/` contains pure functions for FOV, DOF, exposure (including shader math for CoC, motion blur, noise), diffraction, star trails, color, histogram, compression, frame, and grid calculations. Each has co-located `.test.ts` files. TDD approach — math is tested independently from UI.
@@ -45,36 +46,65 @@ All source code lives under `src/`, with `@/` aliased to `src/` in tsconfig.json
 
 ```
 src/
-  app/                    Routes (homepage, tools, learn/glossary, info pages)
-    [slug]/               Each tool at top-level URL (e.g. /fov-simulator)
-      page.tsx            Route entry point
-      _components/        Tool-specific UI components (co-located)
-    api/contact/          Contact form API route
+  app/
+    layout.tsx            Root layout — imports globals.css, provides <html>/<body>
+    globals.css           Global styles and CSS custom properties (design tokens)
+    sitemap.ts            Multi-locale sitemap with hreflang alternates
+    robots.ts             Robots.txt
+    opengraph-image.tsx   Root OG image
+    api/contact/          Contact form API route (not locale-prefixed)
+    [locale]/             All locale-prefixed routes
+      layout.tsx          Locale layout — validates locale, NextIntlClientProvider
+      page.tsx            Homepage
+      [slug]/             Each tool (e.g. /en/fov-simulator)
+        page.tsx          Route entry point
+        _components/      Tool-specific UI components (co-located)
+      learn/glossary/     Photography glossary
+      about/, contact/, privacy/, terms/  Info pages
   components/
     layout/               Nav (mega-menu), Footer, ThemeProvider, ThemeToggle
-    shared/               LearnPanel, ChallengeCard, ControlPanel, FocalLengthField, AdUnit, MobileAdBanner, etc.
-    i18n/
-      request.ts          Message loader — merges all JSON files at request time
-      messages/en/        i18n translation files (next-intl)
+    shared/               LearnPanel, ChallengeCard, ControlPanel, LanguageSwitcher, HtmlLang, etc.
   lib/
-    math/                 Pure calculation modules (fov, dof, exposure, compression, frame, grid, color, etc.)
-    data/                 All pure data: shared (tools, sensors, glossary, camera, etc.) + per-tool (fovSimulator, frameStudio, etc.)
+    i18n/
+      routing.ts          Locale list, defineRouting config, locale metadata
+      navigation.ts       Locale-aware Link, usePathname, useRouter, redirect
+      request.ts          Message loader — merges all JSON files per locale
+      redirects.ts        Centralized redirect rules (consumed by next.config.ts)
+      metadata.ts         getAlternates() helper for hreflang in page metadata
+      messages/en/        English translations (source of truth, 37 files)
+      messages/es/        Spanish translations (37 files)
+      messages/ja/        Japanese translations (37 files)
+      messages/de/        German translations (37 files)
+      messages/fr/        French translations (37 files)
+    math/                 Pure calculation modules
+    data/                 All pure data: shared + per-tool
     data/education/       Per-tool education skeletons, types, barrel export
     ads.ts                Ad configuration and feature flags
     utils/                Query sync, export helpers
     types.ts              Shared TypeScript types
     og.tsx + og-layout.tsx  OpenGraph image generation
+  middleware.ts           next-intl locale detection and routing
   e2e/                    Playwright e2e test specs
-public/                   Images, icons, manifest, sitemap, robots.txt
+scripts/
+  check-translations.mjs  Verify all locales have complete key coverage
+public/                   Images, icons, manifest
 ```
 
 ## Internationalization (i18n)
 
-Uses **next-intl** with a single-locale (English) setup, ready for multi-locale expansion.
+Uses **next-intl** with 5 locales: English (en), Spanish (es), Japanese (ja), German (de), French (fr).
 
 ### How it works
 
-All translatable strings live in JSON files under `src/lib/i18n/messages/en/`. The message loader (`src/lib/i18n/request.ts`) imports every JSON file and merges them into namespaces. The root layout's `NextIntlClientProvider` makes the merged messages available to all components.
+**Routing:** All routes are locale-prefixed (`/en/fov-simulator`, `/es/fov-simulator`, etc.). Middleware (`src/middleware.ts`) detects locale from URL → cookie → Accept-Language → fallback `en`. Config lives in `src/lib/i18n/routing.ts` (locale list, `defineRouting`). Navigation uses locale-aware wrappers from `src/lib/i18n/navigation.ts` — always import `Link`, `usePathname`, `useRouter`, `redirect` from `@/lib/i18n/navigation`, NOT from `next/link` or `next/navigation`.
+
+**Layouts:** Root layout (`src/app/layout.tsx`) provides `<html>`, `<body>`, and imports `globals.css`. It does NOT use any next-intl APIs. Locale layout (`src/app/[locale]/layout.tsx`) calls `setRequestLocale(locale)`, wraps children in `NextIntlClientProvider`. Any client component using next-intl hooks (like `usePathname` from navigation, `useLocale`, `useTranslations`) MUST be rendered inside the `NextIntlClientProvider`.
+
+**Messages:** Translatable strings live in JSON files under `src/lib/i18n/messages/{locale}/` (37 files per locale, 185 total). The message loader (`src/lib/i18n/request.ts`) dynamically imports all files for the request's locale and merges them into namespaces. English is the source of truth — other locales mirror the exact same key structure.
+
+**Tool names/descriptions** are translated via the `tools` namespace (`tools.{slug}.name`, `tools.{slug}.description`). The homepage and nav read from translations, not from the hardcoded `tool.name`/`tool.description` in the tool registry. Tool slugs in URLs stay in English across all locales.
+
+**Translation coverage:** Run `node scripts/check-translations.mjs` to verify all locales have complete key coverage vs English.
 
 **Namespaces** (top-level key in each JSON file → how components access strings):
 
@@ -93,26 +123,38 @@ Education files are merged into a single `education` namespace; tool UI files ar
 
 ### Adding new strings
 
-**To an existing tool** — add keys to the tool's JSON file and use them in the component:
+**To an existing tool** — add keys to the tool's JSON file in ALL locales:
 1. Add key to `src/lib/i18n/messages/en/tools/<tool-slug>.json` under the `toolUI.<tool-slug>` object
-2. In component: `const t = useTranslations('toolUI.<tool-slug>')` → `t('newKey')`
+2. Add the same key with translated values to `es/`, `ja/`, `de/`, `fr/` versions
+3. In component: `const t = useTranslations('toolUI.<tool-slug>')` → `t('newKey')`
 
-**To a new tool** — 3 files must be created and registered:
-1. Create `src/lib/i18n/messages/en/tools/<tool-slug>.json` with `{ "toolUI": { "<tool-slug>": { ... } } }`
-2. Create `src/lib/i18n/messages/en/education/<tool-slug>.json` with `{ "education": { "<tool-slug>": { ... } } }`
+**To a new tool** — files must be created in ALL locales and registered:
+1. Create `src/lib/i18n/messages/{en,es,ja,de,fr}/tools/<tool-slug>.json` with `{ "toolUI": { "<tool-slug>": { ... } } }`
+2. Create `src/lib/i18n/messages/{en,es,ja,de,fr}/education/<tool-slug>.json` with `{ "education": { "<tool-slug>": { ... } } }`
 3. **Register both files in `src/lib/i18n/request.ts`**: add an import to the `Promise.all` array, add the variable to the `toolUIMessages` and/or `educationMessages` reducer array. **If you skip this step, the strings will not load and you'll get `MISSING_MESSAGE` errors at runtime.**
+4. Add the tool's name/description to `messages/{en,es,ja,de,fr}/tools.json` under the `tools` namespace
+5. Run `node scripts/check-translations.mjs` to verify coverage
 
-**To shared UI** (nav, footer, actions, etc.) — add keys to `messages/en/common.json` under the appropriate sub-object.
+**To shared UI** (nav, footer, actions, etc.) — add keys to `messages/{locale}/common.json` under the appropriate sub-object in ALL locales.
 
 **Server components / metadata** — use `const t = await getTranslations('namespace')` (async).
 
 **Rich text** — `t.rich('key', { link: (chunks) => <a href="...">{chunks}</a> })` for inline markup.
 
+### Redirects
+
+All redirect rules are centralized in `src/lib/i18n/redirects.ts`. Static redirects (legacy paths, old domain) are consumed by `next.config.ts`. Dynamic locale redirects are handled by middleware. Never add redirect logic outside this file.
+
 ### What NOT to put in i18n
 
-- **Canvas/WebGL data** — sensors, scenes, focal lengths, ND filters, WB presets keep English text directly in `src/lib/data/` files because `useTranslations` isn't available in draw functions. When adding locales, pass resolved names into drawing functions.
+- **Canvas/WebGL data** — sensors, scenes, focal lengths, ND filters, WB presets keep English text directly in `src/lib/data/` files because `useTranslations` isn't available in draw functions.
 - **Education skeletons** (`src/lib/data/education/`) store only non-translatable data (IDs, difficulty, correctOption, optionValues). All text is in the education JSON files.
-- **Glossary** (`src/lib/data/glossary.ts`) stores entry IDs and optional relatedTool slugs. Terms and definitions are in `messages/en/glossary.json`.
+- **Glossary** (`src/lib/data/glossary.ts`) stores entry IDs and optional relatedTool slugs. Terms and definitions are in `messages/{locale}/glossary.json`.
+- **Tool slugs** — URL slugs stay in English across all locales. Never translate slugs.
+
+### Japanese Font
+
+Noto Sans JP is loaded conditionally for the `ja` locale only (via `next/font` in `[locale]/layout.tsx`). A `[lang="ja"]` CSS rule in `globals.css` applies the font. Non-Japanese locales use the default font stack.
 
 ## Data Management
 
@@ -168,7 +210,7 @@ GoogleAdSense integration managed via `src/lib/ads.ts` (configuration and featur
 
 ## Conventions
 
-- **CSS Modules** for component styles (e.g. `Component.module.css`), design tokens via CSS custom properties
+- **CSS Modules** for component styles (e.g. `Component.module.css`), design tokens via CSS custom properties defined in `src/app/globals.css`. Always check `globals.css` for available variables before using them — don't invent new variable names.
 - **`'use client'`** directive on interactive components; server components by default
 - **TDD for math**: all `lib/math/` modules have thorough unit tests
 - **Named exports** for all components
@@ -177,6 +219,7 @@ GoogleAdSense integration managed via `src/lib/ads.ts` (configuration and featur
 - **200-line file limit**: Keep all `.ts`/`.tsx` files under 200 lines (test files exempt). If a file grows beyond this, break it into smaller focused modules (e.g. extract hooks, sub-components, helpers, constants, or types into separate files).
 - **Test files** co-located next to source files (`*.test.ts`)
 - **34 test files, 420 tests** covering math, data, education, ads, and component integration
+- **After file changes in `src/app/`**, clear `.next` cache (`rm -rf .next`) and restart dev server to avoid stale MIME type and 404 errors
 - **Privacy Sandbox is deprecated** — do not discuss, recommend, or implement any Privacy Sandbox APIs (Topics, Attribution Reporting, Protected Audience, etc.)
 
 ## E2E Testing (Playwright)
