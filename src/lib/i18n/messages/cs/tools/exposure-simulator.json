@@ -1,0 +1,43 @@
+{
+  "toolUI": {
+    "exposure-simulator": {
+      "lock": "Lock:",
+      "lockAperture": "Aperture",
+      "lockShutter": "Shutter",
+      "lockISO": "ISO",
+      "lockApertureLabel": "Lock Aperture",
+      "lockShutterLabel": "Lock Shutter",
+      "lockISOLabel": "Lock ISO",
+      "aperture": "Aperture:",
+      "shutterSpeed": "Shutter Speed:",
+      "iso": "ISO:",
+      "locked": "(locked)",
+      "exposureValue": "Exposure Value (EV)",
+      "depthOfField": "Depth of Field",
+      "motion": "Motion",
+      "noise": "Noise",
+      "dofVeryShallow": "Very Shallow",
+      "dofShallow": "Shallow",
+      "dofModerate": "Moderate",
+      "dofDeep": "Deep",
+      "dofVeryDeep": "Very Deep",
+      "motionFrozen": "Frozen",
+      "motionSharp": "Sharp",
+      "motionModerate": "Moderate",
+      "motionSlightBlur": "Slight Blur",
+      "motionBlurred": "Blurred",
+      "noiseClean": "Clean",
+      "noiseLow": "Low Noise",
+      "noiseModerate": "Moderate Noise",
+      "noiseNoisy": "Noisy",
+      "noiseVeryNoisy": "Very Noisy",
+      "scene": "Scene:",
+      "sceneStreet": "Street",
+      "sceneLandscape": "Landscape",
+      "scenePortrait": "Portrait",
+      "sceneLowLight": "Low Light",
+      "imageEffectsUnavailable": "Image effects preview is unavailable.",
+      "loadingScene": "Loading scene..."
+    }
+  }
+}

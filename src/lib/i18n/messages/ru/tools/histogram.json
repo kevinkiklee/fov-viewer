@@ -1,0 +1,42 @@
+{
+  "toolUI": {
+    "histogram": {
+      "luminance": "Luminance",
+      "rgbOverlay": "RGB Overlay",
+      "allChannels": "All Channels",
+      "shadows": "Shadows",
+      "midtones": "Midtones",
+      "highlights": "Highlights",
+      "blackClipping": "Black clipping",
+      "whiteClipping": "White clipping",
+      "pureBlack": "pure black",
+      "pureWhite": "pure white",
+      "uploadPrompt": "Upload an image to view EXIF data and histogram",
+      "uploadedPhoto": "Uploaded photo",
+      "noExifData": "No EXIF data found in this image.",
+      "sectionCamera": "Camera",
+      "sectionLens": "Lens",
+      "sectionSettings": "Settings",
+      "sectionImage": "Image",
+      "sectionDate": "Date",
+      "sectionGPS": "GPS",
+      "sectionSoftware": "Software",
+      "make": "Make",
+      "model": "Model",
+      "lensModel": "Lens Model",
+      "lensMake": "Lens Make",
+      "apertureLabel": "Aperture",
+      "shutterSpeed": "Shutter Speed",
+      "isoLabel": "ISO",
+      "focalLengthLabel": "Focal Length",
+      "focalLength35mm": "Focal Length (35mm equiv.)",
+      "width": "Width",
+      "height": "Height",
+      "orientationLabel": "Orientation",
+      "dateTaken": "Date Taken",
+      "latitudeLabel": "Latitude",
+      "longitudeLabel": "Longitude",
+      "softwareLabel": "Software"
+    }
+  }
+}

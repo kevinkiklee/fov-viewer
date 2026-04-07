@@ -1,0 +1,120 @@
+{
+  "education": {
+    "histogram": {
+      "beginner": "A histogram is a graph that shows how bright or dark the pixels in your photo are. The left side represents shadows (dark areas), the middle represents midtones, and the right side represents highlights (bright areas). If the graph is bunched up on one side, your photo may be underexposed or overexposed.",
+      "deeper": "A histogram plots pixel count (vertical axis) against brightness level (horizontal axis, 0-255 for 8-bit images). In luminance mode, each pixel brightness is calculated as a weighted average of red, green, and blue channels (typically 0.299R + 0.587G + 0.114B, matching human perception). RGB mode shows three separate distributions, revealing which color channels may be clipping independently — a red channel pushed to 255 while blue is fine indicates highlight clipping in warm tones, such as a sunset sky. \"Clipping\" occurs when pixel values hit the 0 or 255 boundary, meaning shadow or highlight detail has been irrecoverably lost. Black clipping (pixels at 0) loses shadow detail; white clipping (pixels at 255) loses highlight detail. Shooting RAW gives roughly 2-3 extra stops of recoverable highlight headroom beyond what the JPEG histogram shows, which is why many photographers \"expose to the right\" (ETTR) — pushing exposure as bright as possible without clipping the RAW data.",
+      "keyFactors": {
+        "0": {
+          "label": "Tonal Distribution",
+          "description": "The overall shape tells you whether the image is dark (left-heavy), bright (right-heavy), or balanced (spread across the range)."
+        },
+        "1": {
+          "label": "Clipping",
+          "description": "Spikes at the far left or right edges indicate lost detail in shadows or highlights."
+        },
+        "2": {
+          "label": "Channel Separation",
+          "description": "RGB mode reveals individual color channel behavior — useful for detecting color-specific clipping in saturated scenes."
+        },
+        "3": {
+          "label": "Dynamic Range",
+          "description": "A histogram that spans the full width without clipping indicates good use of the available dynamic range."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "There is no \"perfect\" histogram shape. A photo of a black cat on a dark couch should be left-heavy. Judge the histogram against your creative intent, not an ideal curve."
+        },
+        "1": {
+          "text": "Check the RGB overlay mode for sunset and neon-light photos. The red channel often clips long before blue does, causing loss of detail in warm highlights even when the luminance histogram looks fine."
+        },
+        "2": {
+          "text": "If you see clipping warnings on both ends simultaneously, the scene likely exceeds your camera dynamic range. Consider bracketing for HDR or using graduated ND filters."
+        }
+      },
+      "tooltips": {
+        "View Mode": {
+          "term": "View Mode",
+          "definition": "Luminance shows overall brightness. RGB Overlay shows all three color channels overlaid. All Channels shows RGB plus luminance together."
+        },
+        "Shadows": {
+          "term": "Shadows",
+          "definition": "The leftmost region of the histogram (roughly 0-85), representing the darkest tones in the image."
+        },
+        "Midtones": {
+          "term": "Midtones",
+          "definition": "The center region (roughly 86-170), representing medium brightness — skin tones and most natural textures fall here."
+        },
+        "Highlights": {
+          "term": "Highlights",
+          "definition": "The rightmost region (roughly 171-255), representing the brightest tones: skies, reflections, and light sources."
+        },
+        "Black Clipping": {
+          "term": "Black Clipping",
+          "definition": "The percentage of pixels at brightness 0 (pure black). High values mean shadow detail has been lost and cannot be recovered."
+        },
+        "White Clipping": {
+          "term": "White Clipping",
+          "definition": "The percentage of pixels at brightness 255 (pure white). High values mean highlight detail has been blown out."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "You upload a photo and the histogram is pushed heavily to the left with almost nothing on the right side. What does this tell you about the image?",
+          "hint": "Left = dark, right = bright.",
+          "successMessage": "Correct! A left-heavy histogram means the image is mostly dark tones — it may be underexposed, or it could be an intentionally dark/low-key image.",
+          "failureMessage": "A histogram bunched to the left indicates the image is predominantly dark. This often means underexposure.",
+          "options": {
+            "0": { "label": "The image is underexposed or very dark" },
+            "1": { "label": "The image is overexposed or very bright" },
+            "2": { "label": "The image has perfect exposure" }
+          }
+        },
+        "1": {
+          "scenario": "Which view mode should you use to see the overall brightness distribution of your photo in a single graph?",
+          "hint": "One mode combines all color information into a single brightness curve.",
+          "successMessage": "Right! Luminance mode shows a single curve representing overall perceived brightness.",
+          "failureMessage": "Luminance mode is the simplest view — it combines R, G, B into one brightness curve.",
+          "options": {
+            "0": { "label": "Luminance" },
+            "1": { "label": "RGB Overlay" },
+            "2": { "label": "All Channels" }
+          }
+        },
+        "2": {
+          "scenario": "You shot a vivid sunset and the luminance histogram looks fine, but when you switch to RGB Overlay you see the red channel spiking at the far right. What is happening?",
+          "hint": "Individual color channels can clip even when the overall luminance does not.",
+          "successMessage": "Exactly! The red channel is clipping — the sunset highlights have lost detail in the red tones even though overall brightness looks acceptable. You are losing warm color nuances.",
+          "failureMessage": "The red channel is clipping independently. Saturated warm highlights (sunsets, fire) often push red to 255 while green and blue are fine, losing color detail in those tones.",
+          "options": {
+            "0": { "label": "Red channel clipping — warm highlight detail lost" },
+            "1": { "label": "The image is overexposed overall" },
+            "2": { "label": "The white balance is wrong" }
+          }
+        },
+        "3": {
+          "scenario": "The tool reports 2.3% black clipping and 0.1% white clipping. Should you adjust your exposure?",
+          "hint": "Small amounts of clipping are normal — pure black shadows and specular highlights are expected.",
+          "successMessage": "Good judgment! 2.3% black clipping is modest and often just deep shadows or dark edges. 0.1% white clipping is likely specular highlights (sun reflections). This exposure is fine for most purposes.",
+          "failureMessage": "These clipping percentages are quite small. A little black clipping in deep shadows and tiny white clipping from specular highlights is normal and expected. No adjustment needed.",
+          "options": {
+            "0": { "label": "Increase exposure to reduce black clipping" },
+            "1": { "label": "This is fine — small clipping in shadows and specular highlights is normal" },
+            "2": { "label": "Decrease exposure to eliminate white clipping" }
+          }
+        },
+        "4": {
+          "scenario": "You are shooting a high-contrast scene: a bride in a white dress standing in a dark cathedral. The histogram shows strong peaks at both extremes with a gap in the midtones. How should you handle this?",
+          "hint": "When the scene dynamic range exceeds the camera sensor range, you need a multi-exposure technique.",
+          "successMessage": "Perfect! This bimodal histogram indicates the scene exceeds your sensor dynamic range. Exposure bracketing (HDR) captures both the dark interior and bright dress detail. Alternatively, use fill flash to lift the shadows.",
+          "failureMessage": "A bimodal histogram (peaks at both extremes, empty middle) means the scene has more dynamic range than your sensor can capture in one shot. Bracket exposures for HDR, or use fill flash to reduce the contrast ratio.",
+          "options": {
+            "0": { "label": "Bracket exposures for HDR or use fill flash" },
+            "1": { "label": "Expose for the midtones and hope for the best" },
+            "2": { "label": "Switch to black and white to hide the problem" }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "education": {
+    "perspective-compression-simulator": {
+      "beginner": "Perspective compression is an optical effect where objects at different distances appear closer to each other than they actually are. It is most commonly seen when using long telephoto lenses (like 200mm or 400mm) from a far distance. Contrary to popular belief, it is not the lens itself that causes compression, but rather the distance between the camera and the scene.",
+      "deeper": "Compression happens because at large distances, the relative difference in distance between the foreground subject and the background objects becomes small. For example, if you are 100 feet from your subject and the background is another 20 feet behind them, the background is only 20% farther away than the subject. From 5 feet away, that same 20-foot gap makes the background 500% farther away. By moving far away and using a telephoto lens to \"fill the frame\" with the subject, you reduce the relative depth, making the background appear larger and \"compressed\" against the subject.",
+      "keyFactors": {
+        "0": {
+          "label": "Shooting Distance",
+          "description": "The primary cause of compression. The farther you are from the subject, the more compressed the background will appear relative to the subject."
+        },
+        "1": {
+          "label": "Focal Length",
+          "description": "Telephoto lenses magnify the image, allowing you to fill the frame with your subject from a distance where compression is visible. Wide-angle lenses require you to be close, which expands perceived depth."
+        },
+        "2": {
+          "label": "Relative Depth",
+          "description": "Compression is most apparent when the distance between the subject and the background is small compared to the distance between the camera and the subject."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "To make mountains look massive behind a subject, move as far back as possible and use your longest telephoto lens. This \"pulls\" the background closer to the foreground."
+        },
+        "1": {
+          "text": "In portrait photography, an 85mm or 135mm lens is often preferred because the slight compression produces a more flattering representation of facial features compared to wide-angle lenses."
+        },
+        "2": {
+          "text": "Use perspective expansion (wide-angle close up) to emphasize the lead-in lines of a foreground and make a space feel more vast and open."
+        }
+      },
+      "tooltips": {
+        "focalLength": {
+          "term": "Focal Length",
+          "definition": "The magnification power of the lens. Longer focal lengths (telephoto) allow you to shoot from farther away, which is what actually causes perspective compression."
+        },
+        "distance": {
+          "term": "Subject Distance",
+          "definition": "The distance between the camera and the main subject. Increasing this distance is the physical cause of perspective compression."
+        },
+        "maintainSize": {
+          "term": "Maintain Subject Size",
+          "definition": "Automatically adjusts the camera distance when changing focal length to keep the main subject the same size in the frame. This demonstrates the \"Dolly Zoom\" effect."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "You want to take a photo of a friend in front of a mountain, and you want the mountain to look as large as possible behind them. What should you do?",
+          "hint": "Compression is caused by distance, and telephoto lenses let you fill the frame from far away.",
+          "successMessage": "Exactly! By moving far away and using a telephoto lens, you compress the distance between your friend and the mountain, making the mountain appear much larger.",
+          "failureMessage": "Not quite. Getting closer with a wide-angle lens would make the mountain look smaller and farther away. Move back and zoom in!",
+          "options": {
+            "0": { "label": "Move back and use a 200mm lens" },
+            "1": { "label": "Move closer and use a 24mm lens" },
+            "2": { "label": "Stay put and use a 50mm lens" }
+          }
+        }
+      }
+    }
+  }
+}

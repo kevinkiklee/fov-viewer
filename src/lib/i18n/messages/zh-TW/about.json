@@ -1,0 +1,28 @@
+{
+  "about": {
+    "title": "About PhotoTools",
+    "subtitle": "Free photography education, right in your browser.",
+    "sections": {
+      "whatIs": {
+        "title": "What is PhotoTools?",
+        "body": "PhotoTools is a free collection of interactive photography calculators, simulators, and reference tools. Whether you're learning the exposure triangle for the first time or calculating hyperfocal distance for a landscape shoot, PhotoTools gives you hands-on visual tools to deepen your understanding of photography."
+      },
+      "whoIsItFor": {
+        "title": "Who is it for?",
+        "body": "Photographers of all skill levels — from beginners exploring how aperture affects depth of field to experienced shooters planning a star trail session. Every tool includes a learning panel with explanations, key factors, pro tips, and interactive challenges to test your knowledge."
+      },
+      "privacyFirst": {
+        "title": "Privacy first",
+        "body": "All calculations and simulations run entirely in your browser. Your photos never leave your device — the EXIF Viewer, for example, processes images 100% client-side. No sign-up is required, and no personal data is collected beyond anonymous analytics."
+      },
+      "builtBy": {
+        "title": "Built by photographers",
+        "body": "PhotoTools is built and maintained by a photographer and software engineer who wanted better visual tools for understanding the technical side of photography. The tools are grounded in real optics and physics — not approximations — so you can trust the results in the field."
+      },
+      "getInTouch": {
+        "title": "Get in touch",
+        "body": "Have a suggestion, bug report, or tool idea? Reach out via the <contactLink>contact page</contactLink>."
+      }
+    }
+  }
+}

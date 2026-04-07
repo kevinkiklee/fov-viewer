@@ -1,0 +1,48 @@
+{
+  "toolUI": {
+    "fov-simulator": {
+      "rotate": "Rotate",
+      "center": "Center",
+      "switchToPortrait": "Switch to portrait",
+      "switchToLandscape": "Switch to landscape",
+      "centerOverlays": "Center overlays",
+      "addLens": "+ Add lens",
+      "fovSimulator": "FOV Simulator",
+      "sensor": "Sensor",
+      "copyImage": "Copy image",
+      "copyLink": "Copy link",
+      "embed": "Embed",
+      "reset": "Reset",
+      "frameInfo": "Frame Info",
+      "distance": "Distance",
+      "showFramingGuides": "Show framing guides",
+      "wide": "wide",
+      "embedTitle": "Embed",
+      "closeEmbedModal": "Close embed modal",
+      "markdownLabel": "Markdown (Reddit, GitHub)",
+      "bbcodeLabel": "BBCode (Forums)",
+      "htmlEmbedLabel": "HTML Embed",
+      "copied": "Copied",
+      "copy": "Copy",
+      "cropView": "Crop view:",
+      "collapse": "Collapse",
+      "expand": "Expand",
+      "fovComparison": "FOV Comparison",
+      "loadingScene": "Loading scene...",
+      "faq": {
+        "what-is-fov": {
+          "question": "What is field of view in photography?",
+          "answer": "Field of view (FOV) is the angular extent of the scene visible through your lens and camera sensor. It determines how much of a scene is captured in a photo and is affected by focal length and sensor size."
+        },
+        "how-crop-factor-affects-fov": {
+          "question": "How does crop factor affect field of view?",
+          "answer": "A smaller sensor (higher crop factor) captures a narrower field of view than a full-frame sensor at the same focal length. For example, APS-C sensors with a 1.5x crop factor make a 50mm lens behave like a 75mm lens in terms of field of view."
+        },
+        "fov-vs-focal-length": {
+          "question": "What is the relationship between FOV and focal length?",
+          "answer": "Field of view and focal length are inversely related. Shorter focal lengths (wide-angle) give a wider field of view, while longer focal lengths (telephoto) give a narrower field of view. The exact FOV also depends on the sensor size."
+        }
+      }
+    }
+  }
+}

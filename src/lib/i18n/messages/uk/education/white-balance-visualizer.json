@@ -1,0 +1,129 @@
+{
+  "education": {
+    "white-balance-visualizer": {
+      "beginner": "White balance adjusts the colors in your photo so that white objects actually appear white under any lighting. Different light sources have different color temperatures — a candle is warm and orange, while shade is cool and blue. Your camera's white balance setting compensates for these differences so colors look natural.",
+      "deeper": {
+        "0": {
+          "heading": "Color temperature",
+          "text": "Color temperature is measured in Kelvin (K) and corresponds to the color of light emitted by an ideal \"black body\" heated to that temperature. Lower values (2000\u20133500K) produce warm, reddish-orange light (incandescent bulbs, candles), while higher values (6500\u201310000K) produce cool, bluish light (shade, overcast sky)."
+        },
+        "1": {
+          "heading": "How white balance works",
+          "text": "The camera's white balance system applies the inverse color shift to neutralize the ambient color cast. When you set white balance to \"Tungsten\" (~3200K), the camera adds blue to counteract the orange cast from incandescent lights. In digital photography, white balance is applied as a multiplier to the red and blue channels relative to green."
+        },
+        "2": {
+          "heading": "RAW advantage",
+          "text": "Shooting in RAW format preserves all color data and allows you to change white balance freely in post-processing with zero quality loss — it is simply a metadata tag applied during conversion."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Color Temperature (Kelvin)",
+          "description": "The numerical measure of light color. Low Kelvin = warm/orange light. High Kelvin = cool/blue light. Daylight is approximately 5500K."
+        },
+        "1": {
+          "label": "Light Source",
+          "description": "Different sources emit different color temperatures: candles (~1800K), tungsten bulbs (~2800K), fluorescent tubes (~4000K), midday sun (~5500K), cloudy sky (~6500K), shade (~7500K)."
+        },
+        "2": {
+          "label": "RAW vs JPEG",
+          "description": "Shooting RAW lets you change white balance in post with no quality loss. JPEG bakes in the white balance permanently, so getting it right in-camera matters more."
+        },
+        "3": {
+          "label": "Mixed Lighting",
+          "description": "Scenes with multiple light sources at different temperatures (e.g., window daylight + tungsten lamps) make it impossible to perfectly neutralize all colors simultaneously."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Always shoot RAW if you want full flexibility to adjust white balance later. RAW files store the unprocessed sensor data, so white balance changes are lossless."
+        },
+        "1": {
+          "text": "For creative effect, try intentionally \"mismatching\" white balance. Setting a daylight WB during golden hour makes sunsets even warmer, while a tungsten WB outdoors creates a dramatic cold blue look."
+        },
+        "2": {
+          "text": "In mixed lighting situations (e.g., a room lit by both window light and tungsten lamps), use a gray card to set a custom white balance, or gel your flash to match the ambient light source."
+        }
+      },
+      "tooltips": {
+        "colorTemperature": {
+          "term": "Color Temperature",
+          "definition": "A measure of light color in Kelvin (K). Based on the theoretical color of a heated black body. Lower values are warmer (orange/red), higher values are cooler (blue)."
+        },
+        "preset": {
+          "term": "White Balance Preset",
+          "definition": "A predefined white balance setting calibrated for a common light source. Presets include Tungsten (~3200K), Fluorescent (~4000K), Daylight (~5500K), Cloudy (~6500K), and Shade (~7500K)."
+        },
+        "rgbValues": {
+          "term": "RGB Values",
+          "definition": "The red, green, and blue channel values (0-255 each) that represent the color of light at the selected temperature. Used to visualize how the light source tints the scene."
+        },
+        "hexCode": {
+          "term": "Hex Code",
+          "definition": "A six-character hexadecimal representation of the color (e.g., #FF8C00). Useful for referencing the exact color in design software or web development."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "Your indoor photos under regular household light bulbs look very orange/yellow. Which white balance preset should you use to fix this?",
+          "hint": "Household incandescent bulbs emit warm, orange-toned light around 2800-3200K.",
+          "successMessage": "Correct! The Tungsten preset adds blue to counteract the orange cast of incandescent bulbs, bringing colors back to neutral.",
+          "failureMessage": "Incandescent/tungsten bulbs emit warm orange light. The Tungsten white balance preset is specifically designed to neutralize this cast by adding blue.",
+          "options": {
+            "0": { "label": "Daylight" },
+            "1": { "label": "Tungsten" },
+            "2": { "label": "Shade" },
+            "3": { "label": "Fluorescent" }
+          }
+        },
+        "1": {
+          "scenario": "You are shooting portraits during golden hour and want to keep the beautiful warm glow of the sunset. Which white balance setting should you use?",
+          "hint": "If you set the \"correct\" WB for golden hour, it would neutralize the warm tones you want to keep.",
+          "successMessage": "Correct! Using the Daylight preset (or even Cloudy/Shade) during golden hour preserves and enhances the warm tones instead of neutralizing them.",
+          "failureMessage": "To preserve the warm glow of golden hour, use a WB that does not compensate for warm light. Daylight or higher presets will keep (and even enhance) the warmth.",
+          "options": {
+            "0": { "label": "Auto White Balance" },
+            "1": { "label": "Tungsten (to neutralize the warmth)" },
+            "2": { "label": "Daylight (to preserve the warmth)" },
+            "3": { "label": "Flash" }
+          }
+        },
+        "2": {
+          "scenario": "You are manually adjusting white balance in Kelvin. Your photo looks too blue/cold. Should you increase or decrease the Kelvin value to warm it up?",
+          "hint": "The Kelvin WB setting tells the camera what color temperature the light source is. Setting a higher Kelvin value makes the camera add more warmth.",
+          "successMessage": "Right! Increasing the Kelvin value tells the camera the light is cooler than it actually is, so the camera compensates by adding warmth. Set a higher K to warm up a cold-looking image.",
+          "failureMessage": "When you increase the Kelvin value, the camera adds more warmth to compensate. So to fix a cold/blue image, raise the Kelvin number.",
+          "options": {
+            "0": { "label": "Increase Kelvin (e.g., 5500K to 7500K)" },
+            "1": { "label": "Decrease Kelvin (e.g., 5500K to 3200K)" },
+            "2": { "label": "Kelvin direction does not affect warmth" }
+          }
+        },
+        "3": {
+          "scenario": "You are photographing a restaurant interior that has warm tungsten pendant lights overhead and cool blue daylight streaming through large windows. People near the windows look blue, and people under the lamps look orange. What is the best approach?",
+          "hint": "No single white balance setting can correct two very different color temperatures simultaneously.",
+          "successMessage": "Exactly! Gelling the flash or additional lights to match one dominant source, or choosing a compromise WB and correcting selectively in post, are the best approaches for mixed lighting.",
+          "failureMessage": "Mixed lighting is one of the hardest WB challenges. A single WB cannot correct both sources simultaneously. You need to either match the sources with gels or fix it selectively in post.",
+          "options": {
+            "0": { "label": "Set WB to Tungsten — it will fix everything" },
+            "1": { "label": "Set WB to Daylight — windows are more important" },
+            "2": { "label": "Use Auto WB and shoot RAW, then correct each zone in post" },
+            "3": { "label": "Raise ISO to make colors more accurate" }
+          }
+        },
+        "4": {
+          "scenario": "You are shooting a moody, cinematic night scene in a city and want an intentional cold blue tone. The streetlights are sodium vapor (~2200K). What Kelvin white balance setting would give you the strongest blue shift?",
+          "hint": "Setting WB much lower than the actual light source temperature will shift the image toward blue.",
+          "successMessage": "Correct! Setting WB to 7500K (Shade preset) tells the camera the light source is very cool/blue — so it compensates by adding heavy warmth-correction. But since the actual sodium lights are only 2200K (very warm), this overcorrection swings past neutral into a strong blue cast. The higher you set the WB Kelvin above the actual light temperature, the stronger the blue shift.",
+          "failureMessage": "Setting a WB Kelvin value much higher than the actual light source temperature makes the camera overcorrect toward blue. With 2200K sodium lights, setting WB to 7500K+ creates the strongest cold blue look.",
+          "options": {
+            "0": { "label": "2200K (matching the sodium lights)" },
+            "1": { "label": "3200K (Tungsten preset)" },
+            "2": { "label": "7500K or higher (Shade preset)" },
+            "3": { "label": "5500K (Daylight preset)" }
+          }
+        }
+      }
+    }
+  }
+}

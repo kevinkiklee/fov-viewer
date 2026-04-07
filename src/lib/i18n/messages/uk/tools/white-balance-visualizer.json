@@ -1,0 +1,30 @@
+{
+  "toolUI": {
+    "white-balance-visualizer": {
+      "colorTemperature": "Color Temperature:",
+      "warm": "Warm",
+      "neutral": "Neutral",
+      "cool": "Cool",
+      "presets": "Presets",
+      "red": "Red",
+      "green": "Green",
+      "blue": "Blue",
+      "hex": "Hex",
+      "loadingScene": "Loading scene...",
+      "faq": {
+        "what-is-white-balance": {
+          "question": "What is white balance in photography?",
+          "answer": "White balance adjusts colors in your photo so that objects that appear white in person also appear white in the image. Different light sources emit different color temperatures, and white balance compensates for these variations."
+        },
+        "kelvin-vs-presets": {
+          "question": "Should I use Kelvin values or white balance presets?",
+          "answer": "Presets (Daylight, Cloudy, Tungsten) are convenient starting points, but setting a specific Kelvin value gives more precise control. Shoot in RAW format to adjust white balance non-destructively in post-processing."
+        },
+        "when-to-use-manual-white-balance": {
+          "question": "When should I use manual white balance?",
+          "answer": "Use manual white balance for mixed lighting (combining natural and artificial), studio setups requiring exact color accuracy, product photography, and any time auto white balance produces inconsistent results across a series of shots."
+        }
+      }
+    }
+  }
+}

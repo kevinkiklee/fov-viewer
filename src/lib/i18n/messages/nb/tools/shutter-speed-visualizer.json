@@ -1,0 +1,27 @@
+{
+  "toolUI": {
+    "shutter-speed-visualizer": {
+      "description": "See how shutter speed affects motion blur for different subjects.",
+      "shutterSpeed": "Shutter Speed",
+      "shutterSpeedAriaLabel": "Shutter speed",
+      "sliderSlow": "Slow (2s)",
+      "sliderFast": "Fast (1/4000)",
+      "selectedSpeed": "Selected Speed",
+      "motionBlurAriaLabel": "Motion blur visualization for different subjects",
+      "verdictFrozen": "Frozen",
+      "verdictMostlySharp": "Mostly sharp",
+      "verdictSlightBlur": "Slight blur",
+      "verdictMotionBlur": "Motion blur",
+      "standingPerson": "Standing person",
+      "slowWalk": "Slow walk",
+      "jogging": "Jogging",
+      "running": "Running",
+      "cyclist": "Cyclist",
+      "birdsInFlight": "Birds in flight",
+      "carCity": "Car (city)",
+      "f1Car": "F1 car",
+      "airplaneLanding": "Airplane (landing)",
+      "stationary": "stationary"
+    }
+  }
+}

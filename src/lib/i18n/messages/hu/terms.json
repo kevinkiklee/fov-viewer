@@ -1,0 +1,51 @@
+{
+  "terms": {
+    "title": "Terms of Service",
+    "effectiveDate": "Effective date: April 3, 2026",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "body": "By accessing or using www.phototools.io (\"PhotoTools\" or \"the Site\"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the Site. These terms apply to all visitors and users of PhotoTools."
+      },
+      "descriptionOfService": {
+        "title": "Description of Service",
+        "body": "PhotoTools provides free educational photography tools, including interactive calculators, simulators, and reference materials. The Site is intended for informational and educational purposes only. All tools are provided at no cost to users and are designed to help photographers learn and understand photographic concepts."
+      },
+      "noWarranty": {
+        "title": "No Warranty",
+        "body": "PhotoTools is provided \"as is\" without any warranty of any kind, express or implied. We make no guarantee that the tools, calculators, or information on this site are accurate, complete, or suitable for any particular purpose. Results from our tools are approximations and should not be relied upon for critical decisions, professional work, or situations where precision is essential. Always verify important calculations with qualified professionals or authoritative sources."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property",
+        "body": "All content on PhotoTools — including text, graphics, tool designs, code, and educational materials — is the property of PhotoTools unless otherwise noted. You are welcome to use the tools and reference materials for personal and educational purposes. Reproduction, redistribution, or commercial use of site content without prior written permission is prohibited."
+      },
+      "acceptableUse": {
+        "title": "Acceptable Use",
+        "intro": "When using PhotoTools, you agree not to:",
+        "items": {
+          "laws": "Violate any applicable local, national, or international laws or regulations",
+          "disrupt": "Disrupt or interfere with the site's operation, servers, or networks",
+          "scrape": "Scrape, crawl, or systematically extract data from the site without prior written permission",
+          "misrepresent": "Misrepresent your identity or affiliation in communications with PhotoTools",
+          "commercial": "Use the site for any commercial purpose beyond personal reference without permission"
+        }
+      },
+      "thirdPartyContent": {
+        "title": "Third-Party Content",
+        "body": "PhotoTools displays third-party advertisements and may include links to external websites. We are not responsible for the content, accuracy, or practices of third-party advertisers or linked sites. The inclusion of any advertisement or external link does not constitute an endorsement by PhotoTools. Your interactions with third-party services are governed by their own terms and privacy policies."
+      },
+      "limitationOfLiability": {
+        "title": "Limitation of Liability",
+        "body": "To the fullest extent permitted by law, PhotoTools and its operators shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from your use of — or inability to use — the Site or its tools. This includes, without limitation, damages resulting from reliance on information or calculations provided by PhotoTools. Your use of the Site is entirely at your own risk."
+      },
+      "changesToTerms": {
+        "title": "Changes to Terms",
+        "body": "We may modify these Terms of Service at any time. Updated terms will be posted on this page with a revised effective date. Continued use of PhotoTools after changes are posted constitutes your acceptance of the revised terms. We encourage you to review these terms periodically."
+      },
+      "contact": {
+        "title": "Contact",
+        "body": "If you have questions about these Terms of Service, please reach out via our <contactLink>contact page</contactLink>."
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "toolUI": {
+    "star-trail-calculator": {
+      "rule500": "500 Rule",
+      "ruleNPF": "NPF Rule",
+      "recommendation": "Recommendation",
+      "recommendationText": "Use the NPF rule ({npf}s) for pixel-level sharpness. The 500 rule ({r500}s) is a quick estimate but may show trailing on high-resolution sensors.",
+      "shootingTime": "Shooting Time",
+      "exposure": "Exposure",
+      "displayMode": "Display Mode",
+      "modeStarTrails": "Star Trails",
+      "modeSingleShot": "Single Shot",
+      "stacking": "Stacking",
+      "exposurePerFrame": "Exposure / frame (sec)",
+      "exposurePerFrameDesc": "Shutter speed for each individual frame",
+      "frames": "Frames",
+      "framesDesc": "Total number of photos to stack",
+      "gapSec": "Gap (sec)",
+      "gapDesc": "Delay between frames for buffer write",
+      "camera": "Camera",
+      "sensor": "Sensor",
+      "resolutionMP": "Resolution (MP)",
+      "apertureLabel": "Aperture",
+      "latitude": "Latitude",
+      "position": "Position",
+      "useMyLocation": "Use My Location",
+      "latitudeLabel": "Latitude:",
+      "equator": "Equator 0\u00b0",
+      "mid45": "Mid 45\u00b0",
+      "arctic70": "Arctic 70\u00b0",
+      "faq": {
+        "what-is-500-rule": {
+          "question": "What is the 500 rule in astrophotography?",
+          "answer": "The 500 rule estimates the longest exposure time before stars appear as trails instead of points. Divide 500 by your effective focal length (focal length \u00d7 crop factor) to get the maximum shutter speed in seconds for sharp stars."
+        },
+        "star-trails-vs-points": {
+          "question": "How do I choose between star trails and sharp star points?",
+          "answer": "For sharp star points (Milky Way, constellations), use short exposures following the 500 rule. For creative star trails showing Earth's rotation, use very long exposures (minutes to hours) or stack multiple shorter exposures."
+        },
+        "best-settings-milky-way": {
+          "question": "What are the best camera settings for Milky Way photography?",
+          "answer": "Start with the widest aperture available (f/1.4\u2013f/2.8), ISO 1600\u20136400, and the longest shutter speed the 500 rule allows for your lens. Use a sturdy tripod and manual focus set to infinity. Shoot during new moon in a dark sky location."
+        }
+      }
+    }
+  }
+}

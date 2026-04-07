@@ -1,0 +1,240 @@
+{
+  "glossary": {
+    "title": "Photography Glossary",
+    "subtitle": "Searchable reference of photography terms. Click any term to see its definition.",
+    "searchPlaceholder": "Search terms...",
+    "searchAriaLabel": "Search glossary terms",
+    "noResults": "No terms match your search.",
+    "tryTool": "Try the {toolName}",
+    "entries": {
+      "aperture": {
+        "term": "Aperture",
+        "definition": "The opening in a lens through which light passes. A wider aperture (lower f-number) lets in more light and creates a shallower depth of field."
+      },
+      "aspect-ratio": {
+        "term": "Aspect Ratio",
+        "definition": "The proportional relationship between an image's width and height. Common ratios include 3:2 (standard DSLR), 4:3 (Micro Four Thirds), and 16:9 (widescreen)."
+      },
+      "autofocus": {
+        "term": "Autofocus",
+        "definition": "A camera system that automatically adjusts the lens to bring a subject into sharp focus. Modern systems use phase-detection or contrast-detection methods."
+      },
+      "bokeh": {
+        "term": "Bokeh",
+        "definition": "The aesthetic quality of out-of-focus areas in an image, especially highlights. Smooth, circular bokeh is generally preferred and is influenced by lens design and aperture shape."
+      },
+      "bracketing": {
+        "term": "Bracketing",
+        "definition": "Taking multiple shots of the same scene at different exposure settings. Used for HDR photography or to ensure at least one correctly exposed frame."
+      },
+      "bulb-mode": {
+        "term": "Bulb Mode",
+        "definition": "A shutter setting where the shutter stays open for as long as the shutter button is held down. Used for very long exposures beyond the camera's timed settings."
+      },
+      "burst-mode": {
+        "term": "Burst Mode",
+        "definition": "A shooting mode where the camera takes multiple frames per second in rapid succession. Useful for capturing fast action or selecting the best moment."
+      },
+      "chromatic-aberration": {
+        "term": "Chromatic Aberration",
+        "definition": "A lens defect where different wavelengths of light focus at slightly different points, causing color fringing along high-contrast edges. More common in cheaper lenses and at wide apertures."
+      },
+      "circle-of-confusion": {
+        "term": "Circle of Confusion",
+        "definition": "The largest blur circle that still appears as a point to the human eye. It determines the boundaries of acceptable sharpness and is used in depth of field calculations."
+      },
+      "color-temperature": {
+        "term": "Color Temperature",
+        "definition": "A measurement in Kelvin that describes the warmth or coolness of a light source. Lower values (2700K) appear warm/orange; higher values (6500K+) appear cool/blue."
+      },
+      "crop-factor": {
+        "term": "Crop Factor",
+        "definition": "The ratio of a camera sensor's diagonal to that of a 35mm full-frame sensor. It affects the effective focal length and field of view."
+      },
+      "depth-of-field": {
+        "term": "Depth of Field",
+        "definition": "The range of distance in a scene that appears acceptably sharp. Controlled by aperture, focal length, and subject distance."
+      },
+      "diffraction": {
+        "term": "Diffraction",
+        "definition": "The bending of light as it passes through a small aperture, which softens the image. It sets a practical limit on how far you can stop down a lens."
+      },
+      "dynamic-range": {
+        "term": "Dynamic Range",
+        "definition": "The range between the darkest shadows and brightest highlights a camera can capture in a single exposure. Measured in stops (EV)."
+      },
+      "ev": {
+        "term": "EV (Exposure Value)",
+        "definition": "A number representing a combination of shutter speed and aperture that produces the same exposure. Each increment of 1 EV doubles or halves the light."
+      },
+      "exposure-compensation": {
+        "term": "Exposure Compensation",
+        "definition": "A camera control that overrides the metered exposure, typically in 1/3-stop increments. Positive values brighten the image; negative values darken it."
+      },
+      "exposure-triangle": {
+        "term": "Exposure Triangle",
+        "definition": "The relationship between aperture, shutter speed, and ISO. Changing one requires adjusting the others to maintain the same exposure."
+      },
+      "f-stop": {
+        "term": "F-Stop",
+        "definition": "A unit of measurement for lens aperture. Each full stop (f/1.4, f/2, f/2.8, f/4...) halves the amount of light passing through the lens."
+      },
+      "focal-length": {
+        "term": "Focal Length",
+        "definition": "The distance in millimeters from the optical center of a lens to the sensor when focused at infinity. It determines the angle of view and magnification."
+      },
+      "focus-stacking": {
+        "term": "Focus Stacking",
+        "definition": "A technique where multiple images focused at different distances are combined in post-processing to achieve greater depth of field than a single exposure allows."
+      },
+      "full-frame": {
+        "term": "Full Frame",
+        "definition": "A sensor size equivalent to 35mm film (36 x 24mm). It is the reference standard for focal length and crop factor calculations."
+      },
+      "golden-hour": {
+        "term": "Golden Hour",
+        "definition": "The period shortly after sunrise or before sunset when sunlight is warm, soft, and directional. Highly prized for landscape and portrait photography."
+      },
+      "histogram": {
+        "term": "Histogram",
+        "definition": "A graph showing the distribution of brightness values in an image. The left side represents shadows, the right side highlights."
+      },
+      "hyperfocal-distance": {
+        "term": "Hyperfocal Distance",
+        "definition": "The closest focusing distance at which everything from half that distance to infinity is acceptably sharp. Maximizes depth of field for a given aperture."
+      },
+      "image-stabilization": {
+        "term": "Image Stabilization",
+        "definition": "A system that reduces camera shake blur, either in the lens (OIS) or the camera body (IBIS). Typically provides 3-7 stops of handheld shooting advantage."
+      },
+      "iso": {
+        "term": "ISO",
+        "definition": "A measure of the camera sensor's sensitivity to light. Higher ISO values brighten the image but introduce more noise."
+      },
+      "jpeg": {
+        "term": "JPEG",
+        "definition": "A compressed image file format that applies lossy compression. Smaller file sizes but less editing flexibility compared to RAW."
+      },
+      "kelvin": {
+        "term": "Kelvin",
+        "definition": "The unit used to measure color temperature of light. Photographers use Kelvin values to set white balance and match the color of ambient lighting."
+      },
+      "lens-compression": {
+        "term": "Lens Compression",
+        "definition": "The visual effect of a telephoto lens making distant objects appear closer to foreground subjects. It is caused by the long shooting distance, not the lens itself."
+      },
+      "light-meter": {
+        "term": "Light Meter",
+        "definition": "A device or camera system that measures the intensity of light to determine proper exposure settings. Cameras use reflected light metering; handheld meters can measure incident light."
+      },
+      "long-exposure": {
+        "term": "Long Exposure",
+        "definition": "A photograph taken with a slow shutter speed, typically seconds or minutes. Used for light trails, smooth water, star trails, and low-light scenes."
+      },
+      "macro": {
+        "term": "Macro",
+        "definition": "Photography that reproduces subjects at or near life-size magnification (1:1 ratio). Requires specialized macro lenses or extension tubes."
+      },
+      "medium-format": {
+        "term": "Medium Format",
+        "definition": "A sensor size larger than full frame, typically around 44 x 33mm or 54 x 40mm. Offers higher resolution, shallower depth of field, and greater dynamic range."
+      },
+      "megapixel": {
+        "term": "Megapixel",
+        "definition": "One million pixels. The megapixel count of a sensor determines the maximum resolution of images it can capture."
+      },
+      "micro-four-thirds": {
+        "term": "Micro Four Thirds",
+        "definition": "A mirrorless camera system with a sensor measuring 17.3 x 13mm, giving a 2x crop factor. Offers compact bodies and lenses with good image quality."
+      },
+      "mirror-lock-up": {
+        "term": "Mirror Lock-Up",
+        "definition": "A DSLR feature that flips the mirror up before the shutter fires, reducing vibration. Used for sharp tripod-mounted shots, especially at slow shutter speeds."
+      },
+      "nd-filter": {
+        "term": "ND Filter",
+        "definition": "A neutral density filter that reduces the amount of light entering the lens without affecting color. Allows longer exposures or wider apertures in bright conditions."
+      },
+      "noise": {
+        "term": "Noise",
+        "definition": "Random variation in brightness and color in digital images, most visible in shadow areas and at high ISO settings. Can be reduced with noise reduction software."
+      },
+      "overexposure": {
+        "term": "Overexposure",
+        "definition": "When an image receives too much light, causing highlights to clip to pure white and lose detail. The opposite of underexposure."
+      },
+      "panorama": {
+        "term": "Panorama",
+        "definition": "A wide-angle image created by stitching multiple overlapping photographs together. Can cover up to 360 degrees of a scene."
+      },
+      "pixel-pitch": {
+        "term": "Pixel Pitch",
+        "definition": "The distance in micrometers between the centers of adjacent pixels on a sensor. Larger pixel pitch generally means better low-light performance."
+      },
+      "polarizer": {
+        "term": "Polarizer",
+        "definition": "A filter that reduces reflections and glare from non-metallic surfaces and can deepen blue skies. It works by blocking light waves oscillating in a specific direction."
+      },
+      "prime-lens": {
+        "term": "Prime Lens",
+        "definition": "A lens with a fixed focal length (no zoom). Primes are typically sharper, faster (wider aperture), and lighter than comparable zoom lenses."
+      },
+      "raw": {
+        "term": "RAW",
+        "definition": "An uncompressed or losslessly compressed file format that preserves all sensor data. Offers maximum flexibility in post-processing at the cost of larger file sizes."
+      },
+      "reciprocal-rule": {
+        "term": "Reciprocal Rule",
+        "definition": "A guideline stating that the minimum handheld shutter speed should be 1/(focal length) to avoid camera shake. For a 200mm lens, use at least 1/200s."
+      },
+      "rule-of-thirds": {
+        "term": "Rule of Thirds",
+        "definition": "A composition guideline that divides the frame into a 3x3 grid. Placing subjects along the lines or at their intersections often creates a more balanced image."
+      },
+      "sensor-size": {
+        "term": "Sensor Size",
+        "definition": "The physical dimensions of a camera's image sensor. Larger sensors capture more light, offer shallower depth of field, and generally produce less noise."
+      },
+      "shutter-speed": {
+        "term": "Shutter Speed",
+        "definition": "The length of time the camera's shutter is open during an exposure. Faster speeds freeze motion; slower speeds allow motion blur."
+      },
+      "star-trails": {
+        "term": "Star Trails",
+        "definition": "Streaks of light created by the apparent motion of stars during a long exposure. Can be captured in a single very long exposure or by stacking multiple shorter frames."
+      },
+      "stop": {
+        "term": "Stop",
+        "definition": "A unit of exposure change representing a doubling or halving of light. Applies to aperture, shutter speed, and ISO equally."
+      },
+      "telephoto": {
+        "term": "Telephoto",
+        "definition": "A lens with a focal length longer than about 70mm (full frame equivalent). Telephoto lenses magnify distant subjects and compress perspective."
+      },
+      "tilt-shift": {
+        "term": "Tilt-Shift",
+        "definition": "A lens that can tilt the plane of focus and shift the image circle relative to the sensor. Used for architecture photography and selective focus effects."
+      },
+      "underexposure": {
+        "term": "Underexposure",
+        "definition": "When an image receives too little light, causing shadow areas to lose detail and appear noisy. The opposite of overexposure."
+      },
+      "vignetting": {
+        "term": "Vignetting",
+        "definition": "A darkening of the corners and edges of an image relative to the center. Can be caused by lens design, filters, or lens hoods, and is sometimes added intentionally in post."
+      },
+      "white-balance": {
+        "term": "White Balance",
+        "definition": "A camera setting that adjusts colors so that white objects appear neutral under different lighting conditions. Can be set automatically or manually using Kelvin values."
+      },
+      "wide-angle": {
+        "term": "Wide-Angle",
+        "definition": "A lens with a short focal length (typically below 35mm on full frame) that captures a broader field of view. Often used for landscapes, architecture, and interiors."
+      },
+      "zoom-lens": {
+        "term": "Zoom Lens",
+        "definition": "A lens with a variable focal length range, allowing the photographer to change framing without moving. Offers versatility at the cost of size, weight, and sometimes sharpness."
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "toolUI": {
+    "sensor-size-comparison": {
+      "displayMode": "Display Mode",
+      "modeOverlay": "Overlay",
+      "modeSideBySide": "Side by Side",
+      "modePixelDensity": "Pixel Density",
+      "pixelDensityDescription": "Showing common megapixel counts for each sensor. Larger pixels (bigger cells) capture more light.",
+      "sensors": "Sensors",
+      "customSensors": "Custom Sensors",
+      "placeholderName": "Name",
+      "placeholderW": "W (mm)",
+      "placeholderH": "H (mm)",
+      "placeholderMP": "Megapixels (optional)",
+      "placeholderMPShort": "MP",
+      "maxDimensionWarning": "Max sensor dimension is 99 mm",
+      "addSensor": "Add Sensor",
+      "save": "Save",
+      "cancelEdit": "Cancel",
+      "edit": "Edit",
+      "remove": "Remove",
+      "deleteAllCustom": "Delete All Custom Sensors",
+      "tableSensor": "Sensor",
+      "tableWidth": "Width (mm)",
+      "tableHeight": "Height (mm)",
+      "tableAspectRatio": "Aspect Ratio",
+      "tableArea": "Area (mm\u00b2)",
+      "tableCropFactor": "Crop Factor",
+      "tableAspectCrop": "Aspect Crop",
+      "canvasAriaLabel": "Sensor size comparison in {mode} mode",
+      "faq": {
+        "what-is-crop-factor": {
+          "question": "What is crop factor and why does it matter?",
+          "answer": "Crop factor describes the size difference between a camera's sensor and a full-frame (35mm) sensor. It affects the effective focal length, depth of field, and low-light performance. A 1.5x crop factor means the sensor is 1.5 times smaller than full frame."
+        },
+        "full-frame-vs-aps-c": {
+          "question": "What are the advantages of full frame vs APS-C sensors?",
+          "answer": "Full-frame sensors offer better low-light performance, shallower depth of field, and wider field of view at any given focal length. APS-C sensors are more affordable, lighter, and give extra reach for wildlife and sports photography."
+        },
+        "sensor-size-and-depth-of-field": {
+          "question": "How does sensor size affect depth of field?",
+          "answer": "Larger sensors produce shallower depth of field at equivalent framing. To get the same framing with a smaller sensor, you either use a shorter focal length (deeper DOF) or move farther away (deeper DOF), both reducing background blur."
+        }
+      }
+    }
+  }
+}

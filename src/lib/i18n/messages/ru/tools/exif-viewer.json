@@ -1,0 +1,73 @@
+{
+  "toolUI": {
+    "exif-viewer": {
+      "loadExamplePhoto": "Load example photo",
+      "couldNotReadExif": "Could not read EXIF data from this image.",
+      "failedToReadFile": "Failed to read the file.",
+      "uploadedPhoto": "Uploaded photo",
+      "analysis": "Analysis",
+      "exposureValue": "Exposure Value",
+      "sectionCamera": "Camera",
+      "sectionLens": "Lens",
+      "sectionExposure": "Exposure",
+      "sectionImage": "Image",
+      "sectionDate": "Date",
+      "sectionGPS": "GPS",
+      "sectionSoftware": "Software",
+      "make": "Make",
+      "model": "Model",
+      "lensModel": "Lens Model",
+      "lensMake": "Lens Make",
+      "apertureLabel": "Aperture",
+      "shutterSpeed": "Shutter Speed",
+      "isoLabel": "ISO",
+      "focalLengthLabel": "Focal Length",
+      "equiv35mm": "35mm Equiv.",
+      "program": "Program",
+      "metering": "Metering",
+      "flash": "Flash",
+      "whiteBalance": "White Balance",
+      "focusDistanceLabel": "Focus Distance",
+      "dimensions": "Dimensions",
+      "megapixels": "Megapixels",
+      "aspectRatio": "Aspect Ratio",
+      "colorSpace": "Color Space",
+      "orientation": "Orientation",
+      "fileSize": "File Size",
+      "dateTaken": "Date Taken",
+      "latitudeLabel": "Latitude",
+      "longitudeLabel": "Longitude",
+      "softwareLabel": "Software",
+      "gpsWarning": "This photo contains location data. Be careful when sharing the original file.",
+      "luminance": "Luminance",
+      "red": "Red",
+      "green": "Green",
+      "blueLabel": "Blue",
+      "shadows": "Shadows",
+      "highlights": "Highlights",
+      "evBrightSunlight": "Bright sunlight",
+      "evOvercast": "Overcast / hazy sun",
+      "evOpenShade": "Open shade",
+      "evBrightIndoor": "Bright indoor",
+      "evIndoor": "Indoor",
+      "evDimIndoor": "Dim indoor",
+      "evNightStreet": "Night street",
+      "evDimNight": "Dim night",
+      "evVeryDark": "Very dark",
+      "faq": {
+        "what-is-exif-data": {
+          "question": "What is EXIF data in a photo?",
+          "answer": "EXIF (Exchangeable Image File Format) data is metadata embedded in your photo by the camera. It includes camera settings (aperture, shutter speed, ISO), the camera and lens model, date and time, and sometimes GPS location."
+        },
+        "how-to-read-histogram": {
+          "question": "How do I read a photo histogram?",
+          "answer": "A histogram shows the distribution of brightness in your image from shadows (left) to highlights (right). A well-exposed photo typically has data spread across the range without clipping at either end, though the ideal shape depends on the scene."
+        },
+        "does-exif-contain-location": {
+          "question": "Does EXIF data contain my location?",
+          "answer": "If your camera or phone has GPS enabled, EXIF data can include precise GPS coordinates where the photo was taken. Be aware of this when sharing photos online — many social platforms strip EXIF data, but not all do."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "education": {
+    "sensor-size-comparison": {
+      "beginner": "Camera sensors come in many different physical sizes, from the large medium-format chips used in studio cameras down to the tiny sensors in smartphones. A larger sensor captures more light, produces less noise, and makes it easier to blur backgrounds. Sensor size is one of the biggest factors separating camera categories.",
+      "deeper": {
+        "0": {
+          "heading": "How it works",
+          "text": "Sensor size affects photography in several interconnected ways. A larger sensor has a bigger area to collect photons, improving signal-to-noise ratio and dynamic range. Sensor size is one of the most important differences between camera categories — from medium format studio cameras to smartphone sensors."
+        },
+        "1": {
+          "heading": "Crop factor",
+          "text": "The \"crop factor\" describes how a sensor compares to the 35mm full-frame standard. An APS-C sensor with a 1.5x crop factor gives the same field of view with a 35mm lens as a full-frame camera would with a 52.5mm lens. This crop factor also multiplies the effective depth of field — a smaller sensor appears to give more depth of field at the same framing because you need a wider (shorter) lens to match the field of view."
+        },
+        "2": {
+          "heading": "Pixel density",
+          "text": "Pixel density (pixel pitch) measures how tightly pixels are packed on the sensor. Packing more megapixels onto a smaller sensor shrinks each photosite, reducing per-pixel light gathering. A 24MP full-frame sensor has ~6\u00b5m pixels while a 24MP APS-C sensor has ~4\u00b5m pixels, which is why the full-frame sensor typically performs better at high ISO."
+        }
+      },
+      "keyFactors": {
+        "0": {
+          "label": "Physical Dimensions",
+          "description": "Width and height in millimeters determine the total light-gathering area and the field of view for a given lens."
+        },
+        "1": {
+          "label": "Crop Factor",
+          "description": "The ratio of the full-frame diagonal to the sensor diagonal. Multiplied by focal length, it gives the \"equivalent\" focal length."
+        },
+        "2": {
+          "label": "Pixel Density",
+          "description": "How tightly pixels are packed. Smaller pixel pitch means more detail but less light per pixel, affecting noise performance."
+        },
+        "3": {
+          "label": "Sensor Area",
+          "description": "Total area in mm\u00b2. A 44x33mm medium format sensor (Fujifilm GFX, Hasselblad X) has roughly 1.7x the area of full frame, while a larger 54x40mm medium format chip is about 2.5x. Full frame is roughly 13x the area of a flagship smartphone sensor."
+        }
+      },
+      "tips": {
+        "0": {
+          "text": "Use the overlay mode to see exactly how much bigger one sensor is than another — the area difference is often more dramatic than the numbers suggest."
+        },
+        "1": {
+          "text": "Switch to pixel density mode and enter your camera resolution to compare pixel pitch. If your camera has very high pixel density, you may hit diffraction limits at wider apertures than expected."
+        },
+        "2": {
+          "text": "When comparing cameras, sensor area matters more than megapixel count for noise performance. A 20MP full-frame sensor will typically outperform a 40MP APS-C sensor at high ISO."
+        }
+      },
+      "tooltips": {
+        "Sensor": {
+          "term": "Sensor",
+          "definition": "Toggle individual sensor formats on or off to include them in the visual comparison and data table."
+        },
+        "Display Mode": {
+          "term": "Display Mode",
+          "definition": "Overlay shows all sensors centered on the same point. Side by Side places them next to each other at the same scale. Pixel Density visualizes how tightly pixels are packed."
+        },
+        "Resolution": {
+          "term": "Resolution",
+          "definition": "The total megapixel count used to calculate pixel pitch in pixel density mode. Higher megapixels on the same sensor size means smaller individual pixels."
+        },
+        "Crop Factor": {
+          "term": "Crop Factor",
+          "definition": "The ratio of the 35mm full-frame diagonal to this sensor diagonal. A 1.5x crop factor means a 50mm lens frames like a 75mm lens on full frame."
+        }
+      },
+      "challenges": {
+        "0": {
+          "scenario": "A full-frame sensor measures 36\u00d724mm. An APS-C sensor has a 1.5x crop factor. What is the approximate width of an APS-C sensor?",
+          "hint": "Divide the full-frame width by the crop factor.",
+          "successMessage": "Correct! 36mm \u00f7 1.5 \u2248 24mm. The APS-C sensor is about 24\u00d716mm, giving it roughly 44% of the full-frame area.",
+          "failureMessage": "Divide the full-frame width (36mm) by the crop factor (1.5x): 36 \u00f7 1.5 = 24mm.",
+          "options": {
+            "0": { "label": "24mm" },
+            "1": { "label": "30mm" },
+            "2": { "label": "18mm" }
+          }
+        },
+        "1": {
+          "scenario": "You mount a 50mm lens on a camera with a 2.0x crop factor sensor. What full-frame equivalent focal length do you get?",
+          "hint": "Multiply the focal length by the crop factor.",
+          "successMessage": "Right! 50mm \u00d7 2.0 = 100mm equivalent. This is why Micro Four Thirds cameras are popular for telephoto work — you get extra reach from every lens.",
+          "failureMessage": "Multiply the lens focal length by the crop factor: 50mm \u00d7 2.0 = 100mm equivalent.",
+          "options": {
+            "0": { "label": "25mm" },
+            "1": { "label": "75mm" },
+            "2": { "label": "100mm" }
+          }
+        },
+        "2": {
+          "scenario": "Two cameras both have 24 megapixels — one full-frame (36\u00d724mm) and one APS-C (24\u00d716mm). Which has better high-ISO noise performance, and why?",
+          "hint": "Think about how the same number of pixels spread across different sensor areas affects individual pixel size.",
+          "successMessage": "Exactly! The full-frame sensor spreads 24MP over a larger area, so each pixel is physically bigger (~6\u00b5m vs ~4\u00b5m pitch) and captures more photons, resulting in less noise.",
+          "failureMessage": "The full-frame sensor wins — same megapixel count on a larger area means bigger pixels that gather more light, producing less noise at high ISO.",
+          "options": {
+            "0": { "label": "Full frame — larger pixels gather more light" },
+            "1": { "label": "APS-C — smaller sensors are more efficient" },
+            "2": { "label": "Same noise — megapixel count is what matters" }
+          }
+        },
+        "3": {
+          "scenario": "Looking at the comparison table, which sensor format has a crop factor closest to 2.0x?",
+          "hint": "Crop factor is the full-frame diagonal divided by the sensor diagonal.",
+          "successMessage": "Correct! Micro Four Thirds has a crop factor of 2.0x, which is why a 25mm M43 lens frames like a 50mm on full frame.",
+          "failureMessage": "Micro Four Thirds has a 2.0x crop factor. Check the table — its diagonal is exactly half the full-frame diagonal.",
+          "options": {
+            "0": { "label": "APS-C (Canon)" },
+            "1": { "label": "Micro Four Thirds" },
+            "2": { "label": "1\" Sensor" }
+          }
+        },
+        "4": {
+          "scenario": "You are comparing a 50MP medium format camera to a 50MP full-frame camera using pixel density mode. Both have the same megapixel count. Which camera has the larger pixel pitch, and what practical advantage does that give?",
+          "hint": "Pixel pitch depends on sensor width divided by the number of horizontal pixels.",
+          "successMessage": "Right! The medium format sensor is physically larger, so at 50MP its pixels are bigger (higher pitch). This gives it about 1/3 stop better light gathering per pixel, plus slightly later diffraction onset.",
+          "failureMessage": "The medium format sensor is larger, so at the same resolution each pixel is physically bigger. Larger pixels collect more photons, giving better dynamic range and slightly later diffraction limits.",
+          "options": {
+            "0": { "label": "Medium Format — better per-pixel light gathering and dynamic range" },
+            "1": { "label": "Full Frame — smaller pixels are more efficient" },
+            "2": { "label": "Both are identical since they have the same megapixel count" }
+          }
+        }
+      }
+    }
+  }
+}
