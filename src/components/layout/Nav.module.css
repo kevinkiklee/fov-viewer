@@ -19,11 +19,18 @@
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-weight: 700;
   font-size: var(--text-md);
   color: var(--text-primary);
   text-decoration: none;
   letter-spacing: 0.02em;
+}
+
+.logoIcon {
+  flex-shrink: 0;
 }
 
 .logoAccent {

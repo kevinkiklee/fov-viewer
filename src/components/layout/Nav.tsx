@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl'
 import { getVisibleTools, getToolStatus } from '@/lib/data/tools'
 import type { ToolCategory } from '@/lib/types'
 import { ToolIcon } from '@/components/shared/ToolIcon'
+import { ApertureLogo } from '@/components/shared/ApertureLogo'
 import { ThemeToggle } from './ThemeToggle'
 import { LanguageSwitcher } from '@/components/shared/LanguageSwitcher'
 import { trackNavClick, trackMobileMenuToggle } from '@/lib/analytics'
@@ -93,7 +94,10 @@ export function Nav({ theme, onThemeChange }: NavProps) {
   return (
     <nav className={styles.nav}>
       <div className={styles.navInner}>
-        <Link href="/" className={styles.logo}>Photo<span className={styles.logoAccent}>Tools</span></Link>
+        <Link href="/" className={styles.logo}>
+          <ApertureLogo size={15} className={styles.logoIcon} />
+          <span>Photo<span className={styles.logoAccent}>Tools</span></span>
+        </Link>
         <div
           className={styles.dropdownWrapper}
           ref={toolsRef}
