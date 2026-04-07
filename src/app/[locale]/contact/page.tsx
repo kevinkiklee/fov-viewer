@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 import { setRequestLocale, getTranslations } from 'next-intl/server'
 import { getAlternates } from '@/lib/i18n/metadata'
+import { Link } from '@/lib/i18n/navigation'
 import { ContactForm } from './_components/ContactForm'
+import styles from './ContactPage.module.css'
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('metadata.contact')
@@ -25,16 +27,39 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
   }
 
   return (
-    <div style={{ padding: 'var(--space-xl) var(--space-md)', maxWidth: 800, margin: '0 auto', overflowY: 'auto' }}>
+    <div className={styles.container}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 'var(--space-sm)' }}>{t('title')}</h1>
-      <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--space-xl)' }}>
-        {t('description')}
-      </p>
-      <ContactForm />
+      <div className={styles.grid}>
+        <div className={styles.main}>
+          <h1>{t('title')}</h1>
+          <p className={styles.description}>{t('description')}</p>
+          <ContactForm />
+        </div>
+        <aside className={styles.sidebar}>
+          <div className={styles.sidebarSection}>
+            <h3>{t('sidebar.responseTimeTitle')}</h3>
+            <p className={styles.sidebarText}>{t('sidebar.responseTimeText')}</p>
+          </div>
+          <div className={styles.sidebarSection}>
+            <h3>{t('sidebar.helpfulLinksTitle')}</h3>
+            <ul className={styles.sidebarLinks}>
+              <li>
+                <Link href="/learn/glossary" className={styles.sidebarLink}>
+                  {t('sidebar.glossaryLink')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className={styles.sidebarLink}>
+                  {t('sidebar.aboutLink')}
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
     </div>
   )
 }
