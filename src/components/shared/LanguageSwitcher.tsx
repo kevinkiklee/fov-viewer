@@ -60,7 +60,7 @@ export function LanguageSwitcher() {
           className={styles.dropdown}
           role="listbox"
           aria-label="Select language"
-          style={{ gridTemplateRows: `repeat(${rowsPerColumn}, auto)` }}
+          style={{ gridTemplateRows: `repeat(${rowsPerColumn}, 36px)` }}
         >
           {sortedLocales.map((l) => (
             <li key={l} role="option" aria-selected={l === locale}>

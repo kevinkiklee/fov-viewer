@@ -51,16 +51,22 @@
   }
 }
 
+.dropdown li {
+  display: flex;
+}
+
 .option {
   display: flex;
   align-items: center;
   gap: 8px;
   width: 100%;
-  padding: 6px 12px;
+  height: 100%;
+  padding: 0 12px;
   background: none;
   border: none;
   color: var(--text-secondary);
   font-size: 13px;
+  line-height: 1;
   text-align: left;
   cursor: pointer;
   transition: background 0.1s, color 0.1s;
