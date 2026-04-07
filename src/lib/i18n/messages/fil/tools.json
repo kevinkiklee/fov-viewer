@@ -1,7 +1,7 @@
 {
   "tools": {
     "fov-simulator": {
-      "name": "Simulator ng FOV",
+      "name": "Simulator ng Field-of-View",
       "description": "Ikumpara ang field of view sa iba't ibang focal length at sensor size"
     },
     "color-scheme-generator": {

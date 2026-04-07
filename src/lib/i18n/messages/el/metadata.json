@@ -3,7 +3,7 @@
     "site": {
       "defaultTitle": "PhotoTools — Εργαλεία φωτογραφίας",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Δωρεάν εργαλεία φωτογραφίας: FOV simulator, δημιουργία χρωματικών παλετών, EXIF viewer, κόψιμο και πλαισίωση φωτογραφιών, και πολλά άλλα.",
+      "description": "Δωρεάν εργαλεία φωτογραφίας: οπτικό πεδίο simulator, δημιουργία χρωματικών παλετών, EXIF viewer, κόψιμο και πλαισίωση φωτογραφιών, και πολλά άλλα.",
       "ogTitle": "PhotoTools — Δωρεάν εργαλεία φωτογραφίας"
     },
     "fov-simulator": {

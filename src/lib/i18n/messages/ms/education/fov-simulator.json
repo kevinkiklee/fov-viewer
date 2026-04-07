@@ -1,11 +1,11 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Medan pandangan (FOV) ialah sejauh mana kamera anda menangkap adegan. Lensa sudut lebar (seperti 24mm) melihat pemandangan yang luas, manakala lensa telefoto (seperti 200mm) menyempit kepada hirisan kecil. Simulator ini membolehkan anda membandingkan sehingga empat lensa pada sensor berbeza, ditindih pada adegan dunia sebenar, supaya anda dapat memvisualkan dengan tepat apa yang ditangkap oleh setiap gabungan.",
+      "beginner": "Medan pandangan ialah sejauh mana kamera anda menangkap adegan. Lensa sudut lebar (seperti 24mm) melihat pemandangan yang luas, manakala lensa telefoto (seperti 200mm) menyempit kepada hirisan kecil. Simulator ini membolehkan anda membandingkan sehingga empat lensa pada sensor berbeza, ditindih pada adegan dunia sebenar, supaya anda dapat memvisualkan dengan tepat apa yang ditangkap oleh setiap gabungan.",
       "deeper": {
         "0": {
-          "heading": "Formula FOV",
-          "text": "Medan pandangan ditentukan oleh dua faktor: panjang fokus dan saiz sensor. Sudut FOV mendatar dikira sebagai 2 × arctan(sensorWidth / (2 × focalLength)). Panjang fokus yang lebih pendek atau sensor yang lebih besar menghasilkan sudut pandangan yang lebih luas."
+          "heading": "Formula medan pandangan",
+          "text": "Medan pandangan ditentukan oleh dua faktor: panjang fokus dan saiz sensor. Sudut medan pandangan mendatar dikira sebagai 2 × arctan(sensorWidth / (2 × focalLength)). Panjang fokus yang lebih pendek atau sensor yang lebih besar menghasilkan sudut pandangan yang lebih luas."
         },
         "1": {
           "heading": "Faktor Crop & Panjang Fokus Setara",
@@ -31,7 +31,7 @@
         },
         "3": {
           "label": "Konteks Adegan",
-          "description": "Adegan yang berbeza (bandar, pedalaman, alam semula jadi) membantu anda memahami bagaimana perubahan FOV dirasakan dalam pelbagai konteks dunia sebenar."
+          "description": "Adegan yang berbeza (bandar, pedalaman, alam semula jadi) membantu anda memahami bagaimana perubahan medan pandangan dirasakan dalam pelbagai konteks dunia sebenar."
         }
       },
       "tips": {
@@ -60,7 +60,7 @@
         },
         "Orientation": {
           "term": "Orientasi",
-          "definition": "Togol antara orientasi kamera landskap (mendatar) dan potret (menegak). Segi empat tepat FOV berputar dengan sewajarnya."
+          "definition": "Togol antara orientasi kamera landskap (mendatar) dan potret (menegak). Segi empat tepat medan pandangan berputar dengan sewajarnya."
         }
       },
       "challenges": {
@@ -70,9 +70,15 @@
           "successMessage": "Betul! Lensa 24mm melihat lebih banyak adegan daripada 70mm. Lensa sudut lebar mempunyai panjang fokus yang pendek.",
           "failureMessage": "Panjang fokus lebih pendek memberikan medan pandangan lebih luas. 24mm ialah lensa sudut lebar yang menangkap lebih banyak kaki langit daripada 70mm.",
           "options": {
-            "0": { "label": "24mm" },
-            "1": { "label": "70mm" },
-            "2": { "label": "200mm" }
+            "0": {
+              "label": "24mm"
+            },
+            "1": {
+              "label": "70mm"
+            },
+            "2": {
+              "label": "200mm"
+            }
           }
         },
         "1": {
@@ -81,20 +87,32 @@
           "successMessage": "Betul! 50mm pada full frame ialah lensa \"normal\" klasik — medan pandangannya ~46 darjah menganggarkan apa yang mata manusia secara semula jadi fokus.",
           "failureMessage": "50mm pada full frame dianggap lensa \"normal\" kerana medan pandangannya (~46 darjah) sangat hampir dengan persepsi manusia yang selesa.",
           "options": {
-            "0": { "label": "Sudut ultra lebar" },
-            "1": { "label": "Normal / standard" },
-            "2": { "label": "Telefoto" }
+            "0": {
+              "label": "Sudut ultra lebar"
+            },
+            "1": {
+              "label": "Normal / standard"
+            },
+            "2": {
+              "label": "Telefoto"
+            }
           }
         },
         "2": {
-          "scenario": "Tambah dua lensa: Lens A ialah 35mm pada APS-C (Nikon/Sony), dan Lens B ialah 50mm pada Full Frame. Bandingkan kedua-dua tindihan FOV. Apa yang anda perasan?",
+          "scenario": "Tambah dua lensa: Lens A ialah 35mm pada APS-C (Nikon/Sony), dan Lens B ialah 50mm pada Full Frame. Bandingkan kedua-dua tindihan medan pandangan. Apa yang anda perasan?",
           "hint": "35mm didarab dengan faktor crop APS-C 1.5 sama dengan...",
           "successMessage": "Tepat sekali! 35mm pada APS-C (crop 1.5x) memberikan medan pandangan setara dengan 52.5mm pada full frame — hampir sama dengan 50mm FF. Tindihan itu hampir saiz yang sama.",
           "failureMessage": "35mm x 1.5 faktor crop = 52.5mm setara. Ini hampir sama dengan 50mm pada full frame, itulah sebabnya tindihan itu hampir sama.",
           "options": {
-            "0": { "label": "Mereka mempunyai medan pandangan yang hampir sama" },
-            "1": { "label": "Lensa APS-C menunjukkan pandangan yang jauh lebih luas" },
-            "2": { "label": "Lensa Full Frame menunjukkan pandangan yang jauh lebih luas" }
+            "0": {
+              "label": "Mereka mempunyai medan pandangan yang hampir sama"
+            },
+            "1": {
+              "label": "Lensa APS-C menunjukkan pandangan yang jauh lebih luas"
+            },
+            "2": {
+              "label": "Lensa Full Frame menunjukkan pandangan yang jauh lebih luas"
+            }
           }
         },
         "3": {
@@ -103,20 +121,32 @@
           "successMessage": "Betul! Full Frame melihat lebih banyak kerana sensor yang lebih besar menangkap bahagian yang lebih luas bagi bulatan imej lensa 24mm. Pada APS-C, lensa 24mm yang sama membingkaikan seperti ~36mm.",
           "failureMessage": "Full Frame menangkap lebih banyak adegan. Sensor yang lebih besar menggunakan lebih banyak bulatan imej lensa, memberikan medan pandangan berkesan yang lebih luas.",
           "options": {
-            "0": { "label": "Full Frame — sensor lebih besar melihat lebih banyak" },
-            "1": { "label": "APS-C — sensor crop melihat lebih banyak" },
-            "2": { "label": "Kedua-duanya melihat yang sama — panjang fokus yang penting" }
+            "0": {
+              "label": "Full Frame — sensor lebih besar melihat lebih banyak"
+            },
+            "1": {
+              "label": "APS-C — sensor crop melihat lebih banyak"
+            },
+            "2": {
+              "label": "Kedua-duanya melihat yang sama — panjang fokus yang penting"
+            }
           }
         },
         "4": {
           "scenario": "Seorang jurugambar hidupan liar menggunakan lensa 200mm pada Micro Four Thirds. Apakah panjang fokus setara full-frame yang ini hasilkan, dan apa pertukarannya berbanding menggunakan lensa 400mm sebenar pada full frame?",
           "hint": "M43 mempunyai faktor crop 2x. Fikirkan tentang kedalaman medan dan perbezaan saiz sensor.",
-          "successMessage": "Sangat bagus! 200mm pada M43 (crop 2x) memberikan medan pandangan setara 400mm. Pertukarannya: walaupun bingkai padan dengan 400mm FF, kedalaman medan sepadan dengan lensa 200mm (DoF lebih dalam), dan sensor yang lebih kecil mengumpul kurang jumlah cahaya, bermakna prestasi noise lebih buruk pada ISO tinggi. Kelebihannya ialah lensa yang jauh lebih kecil, lebih ringan dan lebih murah.",
-          "failureMessage": "200mm x 2.0 crop = 400mm FOV setara. Tetapi ia tidak sama dengan 400mm pada FF: anda mendapat kedalaman medan lebih (berdasarkan panjang fokus sebenar 200mm), pengumpulan cahaya lebih sedikit (sensor lebih kecil), dan lebih banyak noise pada ISO tinggi. Faedahnya ialah peralatan yang jauh lebih kecil dan ringan.",
+          "successMessage": "Sangat bagus! 200mm pada M43 (crop 2x) memberikan medan pandangan setara 400mm. Pertukarannya: walaupun bingkai padan dengan 400mm FF, kedalaman medan sepadan dengan lensa 200mm (kedalaman medan lebih dalam), dan sensor yang lebih kecil mengumpul kurang jumlah cahaya, bermakna prestasi noise lebih buruk pada ISO tinggi. Kelebihannya ialah lensa yang jauh lebih kecil, lebih ringan dan lebih murah.",
+          "failureMessage": "200mm x 2.0 crop = 400mm medan pandangan setara. Tetapi ia tidak sama dengan 400mm pada FF: anda mendapat kedalaman medan lebih (berdasarkan panjang fokus sebenar 200mm), pengumpulan cahaya lebih sedikit (sensor lebih kecil), dan lebih banyak noise pada ISO tinggi. Faedahnya ialah peralatan yang jauh lebih kecil dan ringan.",
           "options": {
-            "0": { "label": "Setara 400mm — FOV sama tetapi DoF lebih dalam, lebih banyak noise, peralatan lebih kecil/ringan" },
-            "1": { "label": "Setara 400mm — sama dalam setiap aspek dengan 400mm pada full frame" },
-            "2": { "label": "Setara 200mm — faktor crop tidak mempengaruhi FOV" }
+            "0": {
+              "label": "Setara 400mm — medan pandangan sama tetapi kedalaman medan lebih dalam, lebih banyak noise, peralatan lebih kecil/ringan"
+            },
+            "1": {
+              "label": "Setara 400mm — sama dalam setiap aspek dengan 400mm pada full frame"
+            },
+            "2": {
+              "label": "Setara 200mm — faktor crop tidak mempengaruhi medan pandangan"
+            }
           }
         }
       }

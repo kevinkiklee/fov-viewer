@@ -8,8 +8,8 @@
           "text": "Setiap sensor memiliki crop factor relatif terhadap standar full frame 35mm. Sensor APS-C memiliki faktor sekitar 1,5×, Micro Four Thirds 2×, dan medium format sekitar 0,79×. Mengalikan panjang fokus aktual dengan crop factor memberikan bidang pandang ekuivalen full frame. Lensa 35mm pada APS-C membingkai seperti 52,5mm pada full frame."
         },
         "1": {
-          "heading": "Apertur Ekuivalen & DoF",
-          "text": "Untuk mencocokkan kedalaman bidang lintas format, kalikan angka f dengan crop factor yang sama. Lensa f/1.4 pada Micro Four Thirds menghasilkan DoF ekuivalen dengan f/2.8 pada full frame (1,4 × 2 = 2,8). Inilah mengapa kamera full frame dihargai untuk DoF dangkal — Anda dapat menggunakan lensa yang secara fisik lebih cepat pada apertur aktual yang lebih lebar untuk mencapai blur yang tidak dapat direplikasi oleh sensor yang lebih kecil."
+          "heading": "Apertur Ekuivalen & kedalaman bidang",
+          "text": "Untuk mencocokkan kedalaman bidang lintas format, kalikan angka f dengan crop factor yang sama. Lensa f/1.4 pada Micro Four Thirds menghasilkan kedalaman bidang ekuivalen dengan f/2.8 pada full frame (1,4 × 2 = 2,8). Inilah mengapa kamera full frame dihargai untuk kedalaman bidang dangkal — Anda dapat menggunakan lensa yang secara fisik lebih cepat pada apertur aktual yang lebih lebar untuk mencapai blur yang tidak dapat direplikasi oleh sensor yang lebih kecil."
         },
         "2": {
           "heading": "ISO Ekuivalen & Total Cahaya",
@@ -23,7 +23,7 @@
         },
         "1": {
           "label": "Ukuran Sensor",
-          "description": "Sensor yang secara fisik lebih besar menangkap lebih banyak cahaya dan menghasilkan DoF lebih dangkal pada framing ekuivalen. Kalkulator ekuivalensi mengungkapkan seberapa besar perbedaan yang dibuat setiap format."
+          "description": "Sensor yang secara fisik lebih besar menangkap lebih banyak cahaya dan menghasilkan kedalaman bidang lebih dangkal pada framing ekuivalen. Kalkulator ekuivalensi mengungkapkan seberapa besar perbedaan yang dibuat setiap format."
         },
         "2": {
           "label": "Lensa yang Tersedia",
@@ -60,7 +60,7 @@
         },
         "cropFactor": {
           "term": "Crop Factor",
-          "definition": "Rasio antara diagonal sensor full frame 35mm dan sensor target. Kalikan panjang fokus dengan crop factor untuk FOV ekuivalen; kalikan apertur dengan crop factor untuk DoF ekuivalen."
+          "definition": "Rasio antara diagonal sensor full frame 35mm dan sensor target. Kalikan panjang fokus dengan crop factor untuk bidang pandang ekuivalen; kalikan apertur dengan crop factor untuk kedalaman bidang ekuivalen."
         },
         "equivalentFL": {
           "term": "Panjang Fokus Ekuivalen",
@@ -78,32 +78,52 @@
           "successMessage": "Benar! 85mm / 2 = 42,5mm. Teman Anda memerlukan lensa 42,5mm pada Micro Four Thirds untuk mendapatkan framing yang sama seperti 85mm Anda pada full frame.",
           "failureMessage": "Untuk mencocokkan bidang pandang, bagi dengan crop factor: 85mm / 2 = 42,5mm. Itulah panjang fokus aktual yang dibutuhkan pada bodi MFT.",
           "options": {
-            "0": { "label": "42,5mm" },
-            "1": { "label": "85mm" },
-            "2": { "label": "170mm" },
-            "3": { "label": "56mm" }
+            "0": {
+              "label": "42,5mm"
+            },
+            "1": {
+              "label": "85mm"
+            },
+            "2": {
+              "label": "170mm"
+            },
+            "3": {
+              "label": "56mm"
+            }
           }
         },
         "1": {
           "scenario": "Teman Anda menemukan lensa 42,5mm f/1.8 untuk kamera MFT mereka. Apakah blur latar belakangnya akan cocok dengan 85mm f/1.8 Anda pada full frame?",
-          "hint": "Terapkan crop factor ke apertur juga untuk menemukan DoF ekuivalen.",
-          "successMessage": "Tepat! 42,5mm f/1.8 pada MFT memberikan DoF ekuivalen dengan 85mm f/3.6 pada full frame (1,8 × 2 = 3,6). Foto full frame f/1.8 Anda menghasilkan blur yang jauh lebih banyak.",
-          "failureMessage": "Tidak — MFT f/1.8 memberikan DoF ekuivalen dengan f/3.6 pada full frame (1,8 × crop 2× = 3,6). Untuk mencocokkan blur f/1.8 full frame Anda, teman Anda memerlukan f/0.9 pada MFT, yang tidak ada.",
+          "hint": "Terapkan crop factor ke apertur juga untuk menemukan kedalaman bidang ekuivalen.",
+          "successMessage": "Tepat! 42,5mm f/1.8 pada MFT memberikan kedalaman bidang ekuivalen dengan 85mm f/3.6 pada full frame (1,8 × 2 = 3,6). Foto full frame f/1.8 Anda menghasilkan blur yang jauh lebih banyak.",
+          "failureMessage": "Tidak — MFT f/1.8 memberikan kedalaman bidang ekuivalen dengan f/3.6 pada full frame (1,8 × crop 2× = 3,6). Untuk mencocokkan blur f/1.8 full frame Anda, teman Anda memerlukan f/0.9 pada MFT, yang tidak ada.",
           "options": {
-            "0": { "label": "Ya — f/1.8 yang sama berarti blur yang sama" },
-            "1": { "label": "Tidak — MFT f/1.8 sama dengan kedalaman bidang f/3.6 full frame" },
-            "2": { "label": "Tidak — MFT menghasilkan lebih banyak blur karena sensornya lebih kecil" }
+            "0": {
+              "label": "Ya — f/1.8 yang sama berarti blur yang sama"
+            },
+            "1": {
+              "label": "Tidak — MFT f/1.8 sama dengan kedalaman bidang f/3.6 full frame"
+            },
+            "2": {
+              "label": "Tidak — MFT menghasilkan lebih banyak blur karena sensornya lebih kecil"
+            }
           }
         },
         "2": {
           "scenario": "Seorang fotografer beralih dari full frame ke APS-C (crop 1,5×) ingin mencocokkan tampilan 50mm f/1.4 pada full frame. Lensa dan apertur ekuivalen apa yang mereka butuhkan pada APS-C?",
-          "hint": "Bagi panjang fokus dengan crop factor untuk FOV ekuivalen. Bagi apertur dengan crop factor untuk DoF ekuivalen.",
-          "successMessage": "Tepat! 50 / 1,5 = 33mm untuk bidang pandang, dan f/1.4 / 1,5 = f/0.93 untuk DoF yang cocok. Karena tidak ada lensa f/0.93, kamera APS-C tidak dapat sepenuhnya mereplikasi tampilan full frame.",
+          "hint": "Bagi panjang fokus dengan crop factor untuk bidang pandang ekuivalen. Bagi apertur dengan crop factor untuk kedalaman bidang ekuivalen.",
+          "successMessage": "Tepat! 50 / 1,5 = 33mm untuk bidang pandang, dan f/1.4 / 1,5 = f/0.93 untuk kedalaman bidang yang cocok. Karena tidak ada lensa f/0.93, kamera APS-C tidak dapat sepenuhnya mereplikasi tampilan full frame.",
           "failureMessage": "Jawaban yang benar adalah ~33mm f/0.93. Karena 50 / 1,5 = 33,3mm dan 1,4 / 1,5 = 0,93. Tidak ada lensa f/0.93, jadi tampilan full frame tidak dapat sepenuhnya dicocokkan pada APS-C.",
           "options": {
-            "0": { "label": "35mm f/1.4 — cukup dekat" },
-            "1": { "label": "33mm f/0.93 — cocok tepat, tetapi lensa seperti itu tidak ada" },
-            "2": { "label": "75mm f/2.1 — kalikan dengan crop factor" }
+            "0": {
+              "label": "35mm f/1.4 — cukup dekat"
+            },
+            "1": {
+              "label": "33mm f/0.93 — cocok tepat, tetapi lensa seperti itu tidak ada"
+            },
+            "2": {
+              "label": "75mm f/2.1 — kalikan dengan crop factor"
+            }
           }
         }
       }

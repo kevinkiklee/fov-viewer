@@ -1,7 +1,7 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Kuvakulma (FOV) kertoo, kuinka paljon näkymästä kamera tallentaa. Laajakulmaobjektiivi (kuten 24 mm) näkee laajan alueen, kun taas teleobjektiivi (kuten 200 mm) rajaa kapean viipaleen. Tällä simulaattorilla voit vertailla jopa neljää objektiivia eri kennoilla oikeiden näkymien päällä ja nähdä tarkalleen, mitä kukin yhdistelmä tallentaa.",
+      "beginner": "Kuvakulma kertoo, kuinka paljon näkymästä kamera tallentaa. Laajakulmaobjektiivi (kuten 24 mm) näkee laajan alueen, kun taas teleobjektiivi (kuten 200 mm) rajaa kapean viipaleen. Tällä simulaattorilla voit vertailla jopa neljää objektiivia eri kennoilla oikeiden näkymien päällä ja nähdä tarkalleen, mitä kukin yhdistelmä tallentaa.",
       "deeper": {
         "0": {
           "heading": "Kuvakulman kaava",
@@ -70,9 +70,15 @@
           "successMessage": "Oikein! 24 mm:n objektiivi näkee paljon enemmän näkymästä kuin 70 mm. Laajakulmaobjektiiveilla on lyhyet polttovälit.",
           "failureMessage": "Lyhyempi polttoväli antaa laajemman kuvakulman. 24 mm on laajakulmaobjektiivi ja tallentaa siluetista paljon enemmän kuin 70 mm.",
           "options": {
-            "0": { "label": "24 mm" },
-            "1": { "label": "70 mm" },
-            "2": { "label": "200 mm" }
+            "0": {
+              "label": "24 mm"
+            },
+            "1": {
+              "label": "70 mm"
+            },
+            "2": {
+              "label": "200 mm"
+            }
           }
         },
         "1": {
@@ -81,9 +87,15 @@
           "successMessage": "Aivan! 50 mm täyskennolla on klassinen normaaliobjektiivi — sen noin 46 asteen kuvakulma vastaa aluetta, johon ihmissilmä luontaisesti tarkentaa.",
           "failureMessage": "50 mm täyskennolla on niin sanottu normaaliobjektiivi, koska sen kuvakulma (noin 46 astetta) vastaa ihmisen luonnollista näkökenttää.",
           "options": {
-            "0": { "label": "Ultralaajakulma" },
-            "1": { "label": "Normaali / standardi" },
-            "2": { "label": "Tele" }
+            "0": {
+              "label": "Ultralaajakulma"
+            },
+            "1": {
+              "label": "Normaali / standardi"
+            },
+            "2": {
+              "label": "Tele"
+            }
           }
         },
         "2": {
@@ -92,9 +104,15 @@
           "successMessage": "Juuri niin! 35 mm APS-C:llä (kerroin 1,5×) vastaa kuvakulmaltaan 52,5 mm:ä täyskennolla — eli käytännössä samaa kuin 50 mm FF:llä. Päällekkäiset alueet ovat lähes samankokoisia.",
           "failureMessage": "35 mm × 1,5 kerroin = 52,5 mm ekvivalentti. Tämä vastaa lähes 50 mm:ä täyskennolla, minkä vuoksi päällekkäiset alueet ovat lähes samat.",
           "options": {
-            "0": { "label": "Kuvakulmat ovat lähes samat" },
-            "1": { "label": "APS-C-objektiivi näyttää paljon laajemman näkymän" },
-            "2": { "label": "Täyskenno-objektiivi näyttää paljon laajemman näkymän" }
+            "0": {
+              "label": "Kuvakulmat ovat lähes samat"
+            },
+            "1": {
+              "label": "APS-C-objektiivi näyttää paljon laajemman näkymän"
+            },
+            "2": {
+              "label": "Täyskenno-objektiivi näyttää paljon laajemman näkymän"
+            }
           }
         },
         "3": {
@@ -103,9 +121,15 @@
           "successMessage": "Oikein! Täyskenno näkee enemmän, koska suurempi kenno hyödyntää laajemman osan 24 mm:n objektiivin kuvapiiristä. APS-C:llä sama 24 mm rajaa kuin noin 36 mm.",
           "failureMessage": "Täyskenno näkee enemmän. Suurempi kenno käyttää objektiivin kuvapiiristä isomman osan, jolloin tehollinen kuvakulma on laajempi.",
           "options": {
-            "0": { "label": "Täyskenno — isompi kenno näkee enemmän" },
-            "1": { "label": "APS-C — rajaava kenno näkee enemmän" },
-            "2": { "label": "Molemmat näkevät saman — vain polttoväli ratkaisee" }
+            "0": {
+              "label": "Täyskenno — isompi kenno näkee enemmän"
+            },
+            "1": {
+              "label": "APS-C — rajaava kenno näkee enemmän"
+            },
+            "2": {
+              "label": "Molemmat näkevät saman — vain polttoväli ratkaisee"
+            }
           }
         },
         "4": {
@@ -114,9 +138,15 @@
           "successMessage": "Erinomaista! 200 mm M43:lla (kerroin 2×) vastaa kuvakulmaltaan 400 mm:ä täyskennolla. Kompromissi: vaikka rajaus vastaa 400 mm:ä, syväterävyys on edelleen sama kuin 200 mm:llä (eli syvempi), ja pienempi kenno kerää vähemmän valoa, mikä näkyy heikompana kohinankäyttäytymisenä korkealla ISO:lla. Etuna on selvästi pienempi, kevyempi ja edullisempi kalusto.",
           "failureMessage": "200 mm × 2,0 = 400 mm ekvivalentti kuvakulma. Se ei kuitenkaan vastaa täysin 400 mm:ä täyskennolla: syväterävyys on suurempi (kuten 200 mm:llä), kenno kerää vähemmän valoa ja kohinaa tulee enemmän korkealla ISO:lla. Etuna on huomattavasti pienempi ja kevyempi kalusto.",
           "options": {
-            "0": { "label": "400 mm -ekvivalentti — sama kuvakulma, mutta syvempi syväterävyys, enemmän kohinaa ja pienempi/kevyempi kalusto" },
-            "1": { "label": "400 mm -ekvivalentti — täysin sama kuin 400 mm täyskennolla" },
-            "2": { "label": "200 mm -ekvivalentti — kerroin ei vaikuta kuvakulmaan" }
+            "0": {
+              "label": "400 mm -ekvivalentti — sama kuvakulma, mutta syvempi syväterävyys, enemmän kohinaa ja pienempi/kevyempi kalusto"
+            },
+            "1": {
+              "label": "400 mm -ekvivalentti — täysin sama kuin 400 mm täyskennolla"
+            },
+            "2": {
+              "label": "200 mm -ekvivalentti — kerroin ei vaikuta kuvakulmaan"
+            }
           }
         }
       }

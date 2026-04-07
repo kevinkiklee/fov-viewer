@@ -39,7 +39,7 @@
         },
         "sensor-size-and-depth-of-field": {
           "question": "Sensör boyutu alan derinliğini nasıl etkiler?",
-          "answer": "Büyük sensörler, eşdeğer kadrajda daha sığ alan derinliği üretir. Daha küçük bir sensörle aynı kadrajı elde etmek için daha kısa odak uzaklığı (daha derin DOF) veya daha uzak mesafe (daha derin DOF) kullanırsınız; her ikisi de arka plan bulanıklığını azaltır."
+          "answer": "Büyük sensörler, eşdeğer kadrajda daha sığ alan derinliği üretir. Daha küçük bir sensörle aynı kadrajı elde etmek için daha kısa odak uzaklığı (daha derin alan derinliği) veya daha uzak mesafe (daha derin alan derinliği) kullanırsınız; her ikisi de arka plan bulanıklığını azaltır."
         }
       }
     }

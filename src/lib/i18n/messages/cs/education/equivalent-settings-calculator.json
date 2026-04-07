@@ -60,7 +60,7 @@
         },
         "cropFactor": {
           "term": "Crop faktor",
-          "definition": "Poměr mezi úhlopříčkou 35mm full frame snímače a cílového snímače. Vynásob ohnisko crop faktorem pro ekvivalentní FOV; vynásob clonu crop faktorem pro ekvivalentní hloubku ostrosti."
+          "definition": "Poměr mezi úhlopříčkou 35mm full frame snímače a cílového snímače. Vynásob ohnisko crop faktorem pro ekvivalentní zorné pole; vynásob clonu crop faktorem pro ekvivalentní hloubku ostrosti."
         },
         "equivalentFL": {
           "term": "Ekvivalentní ohnisko",
@@ -78,10 +78,18 @@
           "successMessage": "Správně! 85 mm / 2 = 42,5 mm. Kamarád potřebuje na Micro Four Thirds 42,5mm objektiv, aby dosáhl stejného výřezu jako ty s 85mm na full frame.",
           "failureMessage": "Pro dorovnání zorného úhlu vyděl crop faktorem: 85 mm / 2 = 42,5 mm. Tohle je skutečná ohnisková vzdálenost, kterou na MFT potřebuje.",
           "options": {
-            "0": { "label": "42,5 mm" },
-            "1": { "label": "85 mm" },
-            "2": { "label": "170 mm" },
-            "3": { "label": "56 mm" }
+            "0": {
+              "label": "42,5 mm"
+            },
+            "1": {
+              "label": "85 mm"
+            },
+            "2": {
+              "label": "170 mm"
+            },
+            "3": {
+              "label": "56 mm"
+            }
           }
         },
         "1": {
@@ -90,20 +98,32 @@
           "successMessage": "Správně! 42,5mm f/1.8 na MFT dává hloubku ostrosti ekvivalentní 85mm f/3.6 na full frame (1,8 × 2 = 3,6). Tvůj full frame snímek při f/1.8 dává výrazně víc rozmazání.",
           "failureMessage": "Ne — MFT f/1.8 dává hloubku ostrosti ekvivalentní f/3.6 na full frame (1,8 × 2× crop = 3,6). Abys dorovnal rozmazání tvého full frame f/1.8, kamarád by potřeboval na MFT f/0.9, což neexistuje.",
           "options": {
-            "0": { "label": "Ano — stejné f/1.8 znamená stejné rozmazání" },
-            "1": { "label": "Ne — MFT f/1.8 odpovídá full frame f/3.6 pro hloubku ostrosti" },
-            "2": { "label": "Ne — MFT dává víc rozmazání, protože má menší snímač" }
+            "0": {
+              "label": "Ano — stejné f/1.8 znamená stejné rozmazání"
+            },
+            "1": {
+              "label": "Ne — MFT f/1.8 odpovídá full frame f/3.6 pro hloubku ostrosti"
+            },
+            "2": {
+              "label": "Ne — MFT dává víc rozmazání, protože má menší snímač"
+            }
           }
         },
         "2": {
           "scenario": "Fotograf přecházející z full frame na APS-C (1,5× crop) chce dorovnat vzhled 50mm f/1.4 z full frame. Jaký ekvivalentní objektiv a clonu potřebuje na APS-C?",
-          "hint": "Ohnisko vyděl crop faktorem pro ekvivalentní FOV. Clonu vyděl crop faktorem pro ekvivalentní hloubku ostrosti.",
+          "hint": "Ohnisko vyděl crop faktorem pro ekvivalentní zorné pole. Clonu vyděl crop faktorem pro ekvivalentní hloubku ostrosti.",
           "successMessage": "Přesně! 50 / 1,5 = 33 mm pro zorný úhel a f/1.4 / 1,5 = f/0.93 pro odpovídající hloubku ostrosti. Protože objektiv f/0.93 neexistuje, APS-C nemůže full frame vzhled plně napodobit.",
           "failureMessage": "Správná odpověď je asi 33mm f/0.93. Protože 50 / 1,5 = 33,3 mm a 1,4 / 1,5 = 0,93. Objektiv f/0.93 neexistuje, takže vzhled full frame se na APS-C plně dorovnat nedá.",
           "options": {
-            "0": { "label": "35mm f/1.4 — stačí to" },
-            "1": { "label": "33mm f/0.93 — přesný ekvivalent, ale takový objektiv neexistuje" },
-            "2": { "label": "75mm f/2.1 — vynásob crop faktorem" }
+            "0": {
+              "label": "35mm f/1.4 — stačí to"
+            },
+            "1": {
+              "label": "33mm f/0.93 — přesný ekvivalent, ale takový objektiv neexistuje"
+            },
+            "2": {
+              "label": "75mm f/2.1 — vynásob crop faktorem"
+            }
           }
         }
       }

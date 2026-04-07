@@ -1,11 +1,11 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "El campo de visión (FOV) es cuánto de una escena captura tu cámara. Un objetivo gran angular (como 24 mm) ve una vista amplia, mientras que un teleobjetivo (como 200 mm) captura un ángulo más estrecho. Este simulador te permite comparar hasta cuatro objetivos en diferentes sensores, superpuestos sobre escenas del mundo real, para que visualices exactamente lo que captura cada combinación.",
+      "beginner": "El campo de visión es cuánto de una escena captura tu cámara. Un objetivo gran angular (como 24 mm) ve una vista amplia, mientras que un teleobjetivo (como 200 mm) captura un ángulo más estrecho. Este simulador te permite comparar hasta cuatro objetivos en diferentes sensores, superpuestos sobre escenas del mundo real, para que visualices exactamente lo que captura cada combinación.",
       "deeper": {
         "0": {
-          "heading": "La fórmula del FOV",
-          "text": "El campo de visión está determinado por dos factores: la distancia focal y el tamaño del sensor. El ángulo de FOV horizontal se calcula como 2 × arctan(anchoDelSensor / (2 × distanciaFocal)). Una distancia focal más corta o un sensor más grande produce un ángulo de visión más amplio."
+          "heading": "La fórmula del campo de visión",
+          "text": "El campo de visión está determinado por dos factores: la distancia focal y el tamaño del sensor. El ángulo de campo de visión horizontal se calcula como 2 × arctan(anchoDelSensor / (2 × distanciaFocal)). Una distancia focal más corta o un sensor más grande produce un ángulo de visión más amplio."
         },
         "1": {
           "heading": "Factor de recorte y distancia focal equivalente",
@@ -31,7 +31,7 @@
         },
         "3": {
           "label": "Contexto de la escena",
-          "description": "Diferentes escenas (paisajes urbanos, interiores, naturaleza) te ayudan a entender cómo se sienten los cambios de FOV en diversos contextos del mundo real."
+          "description": "Diferentes escenas (paisajes urbanos, interiores, naturaleza) te ayudan a entender cómo se sienten los cambios de campo de visión en diversos contextos del mundo real."
         }
       },
       "tips": {
@@ -60,7 +60,7 @@
         },
         "Orientation": {
           "term": "Orientación",
-          "definition": "Alterna entre orientación horizontal (paisaje) y vertical (retrato) de la cámara. El rectángulo del FOV gira correspondientemente."
+          "definition": "Alterna entre orientación horizontal (paisaje) y vertical (retrato) de la cámara. El rectángulo del campo de visión gira correspondientemente."
         }
       },
       "challenges": {
@@ -70,9 +70,15 @@
           "successMessage": "¡Correcto! Un objetivo de 24 mm ve mucho más de la escena que uno de 70 mm. Los objetivos gran angular tienen distancias focales cortas.",
           "failureMessage": "Distancias focales más cortas dan campos de visión más amplios. 24 mm es un objetivo gran angular que captura mucho más del horizonte que 70 mm.",
           "options": {
-            "0": { "label": "24 mm" },
-            "1": { "label": "70 mm" },
-            "2": { "label": "200 mm" }
+            "0": {
+              "label": "24 mm"
+            },
+            "1": {
+              "label": "70 mm"
+            },
+            "2": {
+              "label": "200 mm"
+            }
           }
         },
         "1": {
@@ -81,20 +87,32 @@
           "successMessage": "¡Correcto! Un 50 mm en formato completo es el clásico objetivo \"normal\" — su campo de visión de ~46 grados se aproxima a lo que el ojo humano enfoca naturalmente.",
           "failureMessage": "Un 50 mm en formato completo se considera un objetivo \"normal\" porque su campo de visión (~46 grados) se acerca a la percepción humana cómoda.",
           "options": {
-            "0": { "label": "Ultra gran angular" },
-            "1": { "label": "Normal / estándar" },
-            "2": { "label": "Teleobjetivo" }
+            "0": {
+              "label": "Ultra gran angular"
+            },
+            "1": {
+              "label": "Normal / estándar"
+            },
+            "2": {
+              "label": "Teleobjetivo"
+            }
           }
         },
         "2": {
-          "scenario": "Añade dos objetivos: Objetivo A es 35 mm en APS-C (Nikon/Sony), y Objetivo B es 50 mm en Formato Completo. Compara las dos superposiciones de FOV. ¿Qué observas?",
+          "scenario": "Añade dos objetivos: Objetivo A es 35 mm en APS-C (Nikon/Sony), y Objetivo B es 50 mm en Formato Completo. Compara las dos superposiciones de campo de visión. ¿Qué observas?",
           "hint": "35 mm multiplicado por el factor de recorte APS-C de 1.5 es igual a...",
           "successMessage": "¡Exacto! 35 mm en APS-C (recorte 1.5x) da un campo de visión equivalente a 52.5 mm en formato completo — casi idéntico a 50 mm FF. Las superposiciones son casi del mismo tamaño.",
           "failureMessage": "35 mm x factor de recorte 1.5 = 52.5 mm equivalente. Esto es casi idéntico a 50 mm en formato completo, por eso las superposiciones son casi iguales.",
           "options": {
-            "0": { "label": "Tienen campos de visión casi idénticos" },
-            "1": { "label": "El objetivo APS-C muestra una vista mucho más amplia" },
-            "2": { "label": "El objetivo de formato completo muestra una vista mucho más amplia" }
+            "0": {
+              "label": "Tienen campos de visión casi idénticos"
+            },
+            "1": {
+              "label": "El objetivo APS-C muestra una vista mucho más amplia"
+            },
+            "2": {
+              "label": "El objetivo de formato completo muestra una vista mucho más amplia"
+            }
           }
         },
         "3": {
@@ -103,20 +121,32 @@
           "successMessage": "¡Correcto! El formato completo ve más porque el sensor más grande captura una porción más amplia del círculo de imagen del objetivo de 24 mm. En APS-C, el mismo objetivo de 24 mm encuadra como ~36 mm.",
           "failureMessage": "El formato completo captura más de la escena. El sensor más grande usa más del círculo de imagen del objetivo, dando un campo de visión efectivo más amplio.",
           "options": {
-            "0": { "label": "Formato completo — el sensor más grande ve más" },
-            "1": { "label": "APS-C — el sensor de recorte ve más" },
-            "2": { "label": "Ambos ven lo mismo — lo que importa es la distancia focal" }
+            "0": {
+              "label": "Formato completo — el sensor más grande ve más"
+            },
+            "1": {
+              "label": "APS-C — el sensor de recorte ve más"
+            },
+            "2": {
+              "label": "Ambos ven lo mismo — lo que importa es la distancia focal"
+            }
           }
         },
         "4": {
           "scenario": "Un fotógrafo de vida silvestre dispara con un objetivo de 200 mm en Micro Cuatro Tercios. ¿Qué distancia focal equivalente en formato completo produce esto, y cuál es la desventaja comparado con usar un objetivo de 400 mm en formato completo?",
           "hint": "M43 tiene un factor de recorte de 2x. Piensa en la profundidad de campo y las diferencias de tamaño de sensor.",
           "successMessage": "¡Excelente! 200 mm en M43 (recorte 2x) da un campo de visión equivalente a 400 mm. La desventaja: aunque el encuadre coincide con un 400 mm FF, la profundidad de campo corresponde al objetivo de 200 mm (PdC más profunda), y el sensor más pequeño captura menos luz total, lo que significa peor rendimiento de ruido a ISO alto. La ventaja es un objetivo mucho más pequeño, ligero y económico.",
-          "failureMessage": "200 mm x recorte 2.0 = FOV equivalente a 400 mm. Pero no es idéntico a un 400 mm en FF: obtienes más profundidad de campo (basada en la distancia focal real de 200 mm), menos captación de luz (sensor más pequeño) y más ruido a ISO alto. El beneficio es un equipo significativamente más pequeño y ligero.",
+          "failureMessage": "200 mm x recorte 2.0 = campo de visión equivalente a 400 mm. Pero no es idéntico a un 400 mm en FF: obtienes más profundidad de campo (basada en la distancia focal real de 200 mm), menos captación de luz (sensor más pequeño) y más ruido a ISO alto. El beneficio es un equipo significativamente más pequeño y ligero.",
           "options": {
-            "0": { "label": "Equivalente a 400 mm — mismo FOV pero mayor PdC, más ruido, equipo más pequeño/ligero" },
-            "1": { "label": "Equivalente a 400 mm — idéntico en todo a 400 mm en formato completo" },
-            "2": { "label": "Equivalente a 200 mm — el factor de recorte no afecta el FOV" }
+            "0": {
+              "label": "Equivalente a 400 mm — mismo campo de visión pero mayor PdC, más ruido, equipo más pequeño/ligero"
+            },
+            "1": {
+              "label": "Equivalente a 400 mm — idéntico en todo a 400 mm en formato completo"
+            },
+            "2": {
+              "label": "Equivalente a 200 mm — el factor de recorte no afecta el campo de visión"
+            }
           }
         }
       }

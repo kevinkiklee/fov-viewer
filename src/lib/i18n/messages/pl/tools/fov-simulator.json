@@ -27,12 +27,12 @@
       "cropView": "Widok kadru:",
       "collapse": "Zwiń",
       "expand": "Rozwiń",
-      "fovComparison": "Porównanie FOV",
+      "fovComparison": "Porównanie pole widzenia",
       "loadingScene": "Ładowanie sceny...",
       "faq": {
         "what-is-fov": {
           "question": "Czym jest pole widzenia w fotografii?",
-          "answer": "Pole widzenia (FOV) to zakres kątowy sceny widocznej przez obiektyw i matrycę aparatu. Określa, jaka część sceny zostanie uchwycona na zdjęciu i zależy od ogniskowej oraz rozmiaru matrycy."
+          "answer": "Pole widzenia to zakres kątowy sceny widocznej przez obiektyw i matrycę aparatu. Określa, jaka część sceny zostanie uchwycona na zdjęciu i zależy od ogniskowej oraz rozmiaru matrycy."
         },
         "how-crop-factor-affects-fov": {
           "question": "Jak współczynnik kadrowania wpływa na pole widzenia?",

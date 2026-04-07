@@ -3,7 +3,7 @@
     "site": {
       "defaultTitle": "PhotoTools — Alat Fotografi",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Alat fotografi percuma: simulator FOV, penjana skema warna, pembaca EXIF, potong dan bingkai foto, dan banyak lagi.",
+      "description": "Alat fotografi percuma: simulator medan pandangan, penjana skema warna, pembaca EXIF, potong dan bingkai foto, dan banyak lagi.",
       "ogTitle": "PhotoTools — Alat Fotografi Percuma"
     },
     "fov-simulator": {

@@ -4,7 +4,7 @@ import type { ToolDef, ToolStatus } from '@/lib/types'
 // These inline strings are kept for backward compatibility during migration.
 // Consumer components will be updated to use useTranslations('tools') instead.
 export const TOOLS: ToolDef[] = [
-  { slug: 'fov-simulator', name: 'FOV Simulator', description: 'Compare field of view across focal lengths and sensor sizes', dev: 'live', prod: 'live', category: 'visualizer' },
+  { slug: 'fov-simulator', name: 'Field-of-View Simulator', description: 'Compare field of view across focal lengths and sensor sizes', dev: 'live', prod: 'live', category: 'visualizer' },
   { slug: 'color-scheme-generator', name: 'Color Scheme Generator', description: 'Build color palettes for photography shoots', dev: 'live', prod: 'live', category: 'visualizer' },
   { slug: 'exposure-simulator', name: 'Exposure Triangle Simulator', description: 'See how aperture, shutter speed, and ISO interact', dev: 'live', prod: 'disabled', category: 'visualizer' },
   { slug: 'dof-simulator', name: 'Depth-of-Field Simulator', description: 'Visualize how aperture, focal length, and distance affect background blur', dev: 'live', prod: 'disabled', category: 'visualizer' },

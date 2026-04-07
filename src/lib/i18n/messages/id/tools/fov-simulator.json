@@ -7,7 +7,7 @@
       "switchToLandscape": "Beralih ke lanskap",
       "centerOverlays": "Tengahkan overlay",
       "addLens": "+ Tambah lensa",
-      "fovSimulator": "Simulator FOV",
+      "fovSimulator": "Simulator bidang pandang",
       "sensor": "Sensor",
       "copyImage": "Salin gambar",
       "copyLink": "Salin tautan",
@@ -27,20 +27,20 @@
       "cropView": "Tampilan crop:",
       "collapse": "Tutup",
       "expand": "Buka",
-      "fovComparison": "Perbandingan FOV",
+      "fovComparison": "Perbandingan bidang pandang",
       "loadingScene": "Memuat adegan...",
       "faq": {
         "what-is-fov": {
           "question": "Apa itu field of view dalam fotografi?",
-          "answer": "Field of view (FOV) adalah jangkauan sudut pandang yang terlihat melalui lensa dan sensor kamera Anda. FOV menentukan seberapa banyak pemandangan yang tertangkap dalam foto dan dipengaruhi oleh panjang fokus serta ukuran sensor."
+          "answer": "Field of view adalah jangkauan sudut pandang yang terlihat melalui lensa dan sensor kamera Anda. bidang pandang menentukan seberapa banyak pemandangan yang tertangkap dalam foto dan dipengaruhi oleh panjang fokus serta ukuran sensor."
         },
         "how-crop-factor-affects-fov": {
           "question": "Bagaimana crop factor mempengaruhi field of view?",
           "answer": "Sensor yang lebih kecil (crop factor lebih tinggi) menangkap field of view yang lebih sempit dibandingkan sensor full-frame pada panjang fokus yang sama. Misalnya, sensor APS-C dengan crop factor 1,5x membuat lensa 50mm berperilaku seperti lensa 75mm dalam hal field of view."
         },
         "fov-vs-focal-length": {
-          "question": "Apa hubungan antara FOV dan panjang fokus?",
-          "answer": "Field of view dan panjang fokus berbanding terbalik. Panjang fokus pendek (wide-angle) menghasilkan field of view yang lebih luas, sedangkan panjang fokus panjang (telephoto) menghasilkan field of view yang lebih sempit. FOV yang tepat juga bergantung pada ukuran sensor."
+          "question": "Apa hubungan antara bidang pandang dan panjang fokus?",
+          "answer": "Field of view dan panjang fokus berbanding terbalik. Panjang fokus pendek (wide-angle) menghasilkan field of view yang lebih luas, sedangkan panjang fokus panjang (telephoto) menghasilkan field of view yang lebih sempit. bidang pandang yang tepat juga bergantung pada ukuran sensor."
         }
       }
     }

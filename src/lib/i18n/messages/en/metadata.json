@@ -3,11 +3,11 @@
     "site": {
       "defaultTitle": "PhotoTools — Photography Tools",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Free photography tools: FOV simulator, Color scheme generator, EXIF viewer, Crop and frame photos, and more.",
+      "description": "Free photography tools: Field-of-view simulator, Color scheme generator, EXIF viewer, Crop and frame photos, and more.",
       "ogTitle": "PhotoTools — Free Photography Tools"
     },
     "fov-simulator": {
-      "title": "FOV Simulator — Compare Focal Lengths",
+      "title": "Field-of-View Simulator — Compare Focal Lengths",
       "description": "Compare field of view across different focal lengths and sensor sizes. Free, interactive, shareable."
     },
     "dof-simulator": {

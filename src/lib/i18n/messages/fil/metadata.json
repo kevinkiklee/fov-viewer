@@ -3,19 +3,19 @@
     "site": {
       "defaultTitle": "PhotoTools — Mga Photography Tools",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Libreng photography tools: FOV simulator, color scheme generator, EXIF viewer, photo crop at frame, at marami pang iba.",
+      "description": "Libreng photography tools: field of view simulator, color scheme generator, EXIF viewer, photo crop at frame, at marami pang iba.",
       "ogTitle": "PhotoTools — Libreng Photography Tools"
     },
     "fov-simulator": {
-      "title": "Simulator ng FOV — Ikumpara ang Focal Lengths",
+      "title": "Simulator ng field of view — Ikumpara ang Focal Lengths",
       "description": "Ikumpara ang field of view sa iba't ibang focal length at sensor size. Libre, interactive, at shareable."
     },
     "dof-simulator": {
-      "title": "Simulator ng Depth-of-Field — DoF Calculator | PhotoTools",
+      "title": "Simulator ng Depth-of-Field — depth of field Calculator | PhotoTools",
       "description": "I-visualize kung paano apektado ng aperture, focal length, at distance ang background blur gamit ang real-time WebGL simulation."
     },
     "focus-stacking-calculator": {
-      "title": "Kalkulador ng Focus Stacking — Kalkulador ng DoF | PhotoTools",
+      "title": "Kalkulador ng Focus Stacking — Kalkulador ng depth of field | PhotoTools",
       "description": "Kalkulahin ang tamang focus distances para sa front-to-back sharpness sa macro at landscape photography."
     },
     "equivalent-settings-calculator": {

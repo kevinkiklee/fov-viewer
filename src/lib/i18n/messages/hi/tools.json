@@ -1,7 +1,7 @@
 {
   "tools": {
     "fov-simulator": {
-      "name": "FOV सिम्युलेटर",
+      "name": "दृश्य क्षेत्र सिम्युलेटर",
       "description": "विभिन्न फ़ोकल लेंथ और सेंसर साइज़ में दृश्य क्षेत्र की तुलना करें"
     },
     "color-scheme-generator": {

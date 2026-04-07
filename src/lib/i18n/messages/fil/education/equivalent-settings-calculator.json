@@ -8,8 +8,8 @@
           "text": "Ang bawat sensor ay may crop factor relative sa 35mm full-frame standard. Ang APS-C sensors ay may factor na mga 1.5×, Micro Four Thirds ay 2×, at medium format ay mga 0.79×. Ang pag-multiply ng aktwal na focal length sa crop factor ay nagbibigay ng full-frame equivalent na field of view. Ang 35mm lens sa APS-C ay parang 52.5mm sa full frame."
         },
         "1": {
-          "heading": "Equivalent Aperture at DoF",
-          "text": "Para matugma ang depth of field sa iba't ibang format, i-multiply ang f-number sa parehong crop factor. Ang f/1.4 na lens sa Micro Four Thirds ay gumagawa ng DoF na katumbas ng f/2.8 sa full frame (1.4 × 2 = 2.8). Ito ang dahilan kung bakit ang mga full-frame camera ay minamahal para sa mababaw na DoF — pwede kang gumamit ng pisikal na mas mabilis na lens sa mas malawak na aktwal na aperture para makamit ang blur na hindi kayang tularan ng mas maliliit na sensor."
+          "heading": "Equivalent Aperture at depth of field",
+          "text": "Para matugma ang depth of field sa iba't ibang format, i-multiply ang f-number sa parehong crop factor. Ang f/1.4 na lens sa Micro Four Thirds ay gumagawa ng depth of field na katumbas ng f/2.8 sa full frame (1.4 × 2 = 2.8). Ito ang dahilan kung bakit ang mga full-frame camera ay minamahal para sa mababaw na depth of field — pwede kang gumamit ng pisikal na mas mabilis na lens sa mas malawak na aktwal na aperture para makamit ang blur na hindi kayang tularan ng mas maliliit na sensor."
         },
         "2": {
           "heading": "Equivalent ISO at Total Light",
@@ -23,7 +23,7 @@
         },
         "1": {
           "label": "Sensor Size",
-          "description": "Ang mas malalaking sensor ay kumukuha ng mas maraming liwanag at gumagawa ng mas mababaw na DoF sa equivalent framing. Ipinapakita ng equivalence calculator kung gaano eksaktong pagkakaiba ang ibinibigay ng bawat format."
+          "description": "Ang mas malalaking sensor ay kumukuha ng mas maraming liwanag at gumagawa ng mas mababaw na depth of field sa equivalent framing. Ipinapakita ng equivalence calculator kung gaano eksaktong pagkakaiba ang ibinibigay ng bawat format."
         },
         "2": {
           "label": "Mga Available na Lens",
@@ -60,7 +60,7 @@
         },
         "cropFactor": {
           "term": "Crop Factor",
-          "definition": "Ang ratio sa pagitan ng diagonal ng 35mm full-frame sensor at ng target sensor. I-multiply ang focal length sa crop factor para sa equivalent FOV; i-multiply ang aperture sa crop factor para sa equivalent DoF."
+          "definition": "Ang ratio sa pagitan ng diagonal ng 35mm full-frame sensor at ng target sensor. I-multiply ang focal length sa crop factor para sa equivalent field of view; i-multiply ang aperture sa crop factor para sa equivalent depth of field."
         },
         "equivalentFL": {
           "term": "Equivalent Focal Length",
@@ -78,32 +78,52 @@
           "successMessage": "Tama! 85mm / 2 = 42.5mm. Kailangan ng kaibigan mo ng 42.5mm lens sa Micro Four Thirds para makuha ang parehong framing gaya ng 85mm mo sa full frame.",
           "failureMessage": "Para matugma ang field of view, hatiin sa crop factor: 85mm / 2 = 42.5mm. Iyan ang aktwal na focal length na kailangan sa MFT body.",
           "options": {
-            "0": { "label": "42.5mm" },
-            "1": { "label": "85mm" },
-            "2": { "label": "170mm" },
-            "3": { "label": "56mm" }
+            "0": {
+              "label": "42.5mm"
+            },
+            "1": {
+              "label": "85mm"
+            },
+            "2": {
+              "label": "170mm"
+            },
+            "3": {
+              "label": "56mm"
+            }
           }
         },
         "1": {
           "scenario": "Nakakita ang kaibigan mo ng 42.5mm f/1.8 lens para sa kanyang MFT camera. Matutugma ba ang background blur sa 85mm f/1.8 mo sa full frame?",
-          "hint": "I-apply din ang crop factor sa aperture para mahanap ang equivalent DoF.",
-          "successMessage": "Tama! Ang 42.5mm f/1.8 sa MFT ay nagbibigay ng equivalent DoF sa 85mm f/3.6 sa full frame (1.8 × 2 = 3.6). Ang f/1.8 full-frame shot mo ay gumagawa ng mas maraming blur.",
-          "failureMessage": "Hindi — ang MFT f/1.8 ay nagbibigay ng DoF na katumbas ng f/3.6 sa full frame (1.8 × 2× crop = 3.6). Para matugma ang f/1.8 blur mo sa full frame, kakailanganin ng kaibigan mo ang f/0.9 sa MFT, na hindi umiiral.",
+          "hint": "I-apply din ang crop factor sa aperture para mahanap ang equivalent depth of field.",
+          "successMessage": "Tama! Ang 42.5mm f/1.8 sa MFT ay nagbibigay ng equivalent depth of field sa 85mm f/3.6 sa full frame (1.8 × 2 = 3.6). Ang f/1.8 full-frame shot mo ay gumagawa ng mas maraming blur.",
+          "failureMessage": "Hindi — ang MFT f/1.8 ay nagbibigay ng depth of field na katumbas ng f/3.6 sa full frame (1.8 × 2× crop = 3.6). Para matugma ang f/1.8 blur mo sa full frame, kakailanganin ng kaibigan mo ang f/0.9 sa MFT, na hindi umiiral.",
           "options": {
-            "0": { "label": "Oo — parehong f/1.8 ay parehong blur" },
-            "1": { "label": "Hindi — ang MFT f/1.8 ay katumbas ng full-frame f/3.6 depth of field" },
-            "2": { "label": "Hindi — gumagawa ang MFT ng mas maraming blur dahil mas maliit ang sensor" }
+            "0": {
+              "label": "Oo — parehong f/1.8 ay parehong blur"
+            },
+            "1": {
+              "label": "Hindi — ang MFT f/1.8 ay katumbas ng full-frame f/3.6 depth of field"
+            },
+            "2": {
+              "label": "Hindi — gumagawa ang MFT ng mas maraming blur dahil mas maliit ang sensor"
+            }
           }
         },
         "2": {
           "scenario": "Isang photographer na lumilipat mula full frame papuntang APS-C (1.5× crop) ay gustong matugma ang itsura ng 50mm f/1.4 sa full frame. Anong equivalent lens at aperture ang kailangan nila sa APS-C?",
-          "hint": "Hatiin ang focal length sa crop factor para sa equivalent FOV. Hatiin ang aperture sa crop factor para sa equivalent DoF.",
-          "successMessage": "Eksakto! 50 / 1.5 = 33mm para sa field of view, at f/1.4 / 1.5 = f/0.93 para sa tumutugmang DoF. Dahil walang f/0.93 lens, hindi lubusang matutularan ng APS-C camera ang itsura ng full-frame.",
+          "hint": "Hatiin ang focal length sa crop factor para sa equivalent field of view. Hatiin ang aperture sa crop factor para sa equivalent depth of field.",
+          "successMessage": "Eksakto! 50 / 1.5 = 33mm para sa field of view, at f/1.4 / 1.5 = f/0.93 para sa tumutugmang depth of field. Dahil walang f/0.93 lens, hindi lubusang matutularan ng APS-C camera ang itsura ng full-frame.",
           "failureMessage": "Ang tamang sagot ay ~33mm f/0.93. Dahil 50 / 1.5 = 33.3mm at 1.4 / 1.5 = 0.93. Walang f/0.93 lens, kaya hindi lubusang matutugma sa APS-C ang itsura ng full-frame.",
           "options": {
-            "0": { "label": "35mm f/1.4 — malapit na" },
-            "1": { "label": "33mm f/0.93 — eksaktong tugma, pero walang ganoong lens" },
-            "2": { "label": "75mm f/2.1 — i-multiply sa crop factor" }
+            "0": {
+              "label": "35mm f/1.4 — malapit na"
+            },
+            "1": {
+              "label": "33mm f/0.93 — eksaktong tugma, pero walang ganoong lens"
+            },
+            "2": {
+              "label": "75mm f/2.1 — i-multiply sa crop factor"
+            }
           }
         }
       }

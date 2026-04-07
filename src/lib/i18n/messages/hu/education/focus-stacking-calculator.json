@@ -9,7 +9,7 @@
         },
         "1": {
           "heading": "A stack tervezése",
-          "text": "A sikeres stack kulcsa, hogy minden kép mélységélessége 20–30%-ban átfedje a következőt. Túl kevés átfedésnél rések maradnak, ahol semmi sem éles; túl sok esetén feleslegesen sok kockát használsz el. A kalkulátor a szóráskör képletéből számolja a kockánkénti DoF-et, levonja az átfedést, aztán a teljes mélységet elosztja az effektív lépéssel, és megkapja a szükséges kockaszámot."
+          "text": "A sikeres stack kulcsa, hogy minden kép mélységélessége 20–30%-ban átfedje a következőt. Túl kevés átfedésnél rések maradnak, ahol semmi sem éles; túl sok esetén feleslegesen sok kockát használsz el. A kalkulátor a szóráskör képletéből számolja a kockánkénti mélységélesség-et, levonja az átfedést, aztán a teljes mélységet elosztja az effektív lépéssel, és megkapja a szükséges kockaszámot."
         },
         "2": {
           "heading": "Egyesítés és igazítás",
@@ -19,7 +19,7 @@
       "keyFactors": {
         "0": {
           "label": "Rekesz",
-          "description": "Meghatározza a kockánkénti mélységélességet. A közepes rekesz (f/5.6–f/8) egyensúlyozza az élességet és a DoF-et. Kerüld a nagyon szűk rekeszt — a diffrakció lerontja az élességet, amiért stackelsz."
+          "description": "Meghatározza a kockánkénti mélységélességet. A közepes rekesz (f/5.6–f/8) egyensúlyozza az élességet és a mélységélesség-et. Kerüld a nagyon szűk rekeszt — a diffrakció lerontja az élességet, amiért stackelsz."
         },
         "1": {
           "label": "Mélységtartomány",
@@ -27,7 +27,7 @@
         },
         "2": {
           "label": "Átfedés",
-          "description": "A szomszédos képek DoF-ének átfedési aránya. A 20-30% a szokásos. Kevesebb réseket kockáztat, több feleslegesen használja el a kockákat."
+          "description": "A szomszédos képek mélységélesség-ének átfedési aránya. A 20-30% a szokásos. Kevesebb réseket kockáztat, több feleslegesen használja el a kockákat."
         }
       },
       "tips": {
@@ -73,38 +73,60 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Egy kis virágot fotózol, ami 3 cm mély a legelülső szirmától a hátsó szárig. A makróobjektíved f/8-on kb. 4 mm DoF-et ad kockánként. Durván hány kocka kell 25%-os átfedéssel?",
+          "scenario": "Egy kis virágot fotózol, ami 3 cm mély a legelülső szirmától a hátsó szárig. A makróobjektíved f/8-on kb. 4 mm mélységélesség-et ad kockánként. Durván hány kocka kell 25%-os átfedéssel?",
           "hint": "Minden kocka 4 mm-t fed le, de 25% átfedéssel az effektív lépés 3 mm kockánként. Oszd el a 30 mm-t 3 mm-rel.",
-          "successMessage": "Jó! 4 mm DoF és 25% átfedés esetén minden lépés 3 mm-t halad. 30 mm / 3 mm = 10 kocka a teljes virág lefedéséhez.",
-          "failureMessage": "25%-os átfedéssel a kockánkénti effektív lépés a DoF 75%-a: 4 mm × 0,75 = 3 mm. 30 mm / 3 mm = 10 kocka kell.",
+          "successMessage": "Jó! 4 mm mélységélesség és 25% átfedés esetén minden lépés 3 mm-t halad. 30 mm / 3 mm = 10 kocka a teljes virág lefedéséhez.",
+          "failureMessage": "25%-os átfedéssel a kockánkénti effektív lépés a mélységélesség 75%-a: 4 mm × 0,75 = 3 mm. 30 mm / 3 mm = 10 kocka kell.",
           "options": {
-            "0": { "label": "5 kocka" },
-            "1": { "label": "10 kocka" },
-            "2": { "label": "20 kocka" },
-            "3": { "label": "30 kocka" }
+            "0": {
+              "label": "5 kocka"
+            },
+            "1": {
+              "label": "10 kocka"
+            },
+            "2": {
+              "label": "20 kocka"
+            },
+            "3": {
+              "label": "30 kocka"
+            }
           }
         },
         "1": {
           "scenario": "A legélesebb lehető eredményt akarod a stackből. Kockánként f/2.8-on, f/8-on vagy f/22-n fotózz?",
           "hint": "Gondold át az objektív legélesebb rekeszét, és hogyan hat a diffrakció a kis rekeszre.",
-          "successMessage": "Jó! Az f/8 a legtöbb objektív legélesebb rekesze. Az f/2.8 túl kevés DoF-et ad kockánként (feleslegesen sok kocka), az f/22 pedig a diffrakció miatt lágyít.",
-          "failureMessage": "Az f/8 a jó választás. Az f/2.8 nagyon vékony kockánkénti DoF-et ad (sokkal több kocka kellene), az f/22 pedig diffrakciós lágyítást hoz, ami pont az ellenkezőjét éri el, mint amiért stackelsz.",
+          "successMessage": "Jó! Az f/8 a legtöbb objektív legélesebb rekesze. Az f/2.8 túl kevés mélységélesség-et ad kockánként (feleslegesen sok kocka), az f/22 pedig a diffrakció miatt lágyít.",
+          "failureMessage": "Az f/8 a jó választás. Az f/2.8 nagyon vékony kockánkénti mélységélesség-et ad (sokkal több kocka kellene), az f/22 pedig diffrakciós lágyítást hoz, ami pont az ellenkezőjét éri el, mint amiért stackelsz.",
           "options": {
-            "0": { "label": "f/2.8 — legtágabb a leggyorsabb záridőhöz" },
-            "1": { "label": "f/8 — az objektív legjobb rekesze" },
-            "2": { "label": "f/22 — maximális kockánkénti DoF" }
+            "0": {
+              "label": "f/2.8 — legtágabb a leggyorsabb záridőhöz"
+            },
+            "1": {
+              "label": "f/8 — az objektív legjobb rekesze"
+            },
+            "2": {
+              "label": "f/22 — maximális kockánkénti mélységélesség"
+            }
           }
         },
         "2": {
           "scenario": "A stack egyesítése után egy lágy sávot látsz a kép közepén, ahol semmi sem éles. Mi mehetett félre?",
           "hint": "Gondolj arra, mi köti össze az egyik kocka éles zónáját a következővel.",
           "successMessage": "Pontosan! A szomszédos kockák közötti túl kevés átfedés miatt keletkezik egy rés, ahol egyik kép sem éles. Növeld az átfedést 25-30%-ra, és fotózd újra.",
-          "failureMessage": "A lágy sáv általában azt jelenti, hogy a fókuszlépések közötti rés túl nagy volt — a szomszédos kockák DoF-je nem fedte át egymást eléggé. Növeld az átfedés százalékát.",
+          "failureMessage": "A lágy sáv általában azt jelenti, hogy a fókuszlépések közötti rés túl nagy volt — a szomszédos kockák mélységélesség-je nem fedte át egymást eléggé. Növeld az átfedés százalékát.",
           "options": {
-            "0": { "label": "A rekesz túl tág volt" },
-            "1": { "label": "Túl kevés átfedés a fókuszlépések között" },
-            "2": { "label": "Az állvány elmozdult a sorozat közben" },
-            "3": { "label": "Az ISO túl magas volt" }
+            "0": {
+              "label": "A rekesz túl tág volt"
+            },
+            "1": {
+              "label": "Túl kevés átfedés a fókuszlépések között"
+            },
+            "2": {
+              "label": "Az állvány elmozdult a sorozat közben"
+            },
+            "3": {
+              "label": "Az ISO túl magas volt"
+            }
           }
         }
       }

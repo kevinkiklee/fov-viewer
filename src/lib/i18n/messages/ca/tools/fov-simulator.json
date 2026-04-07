@@ -32,7 +32,7 @@
       "faq": {
         "what-is-fov": {
           "question": "Què és l'angle de visió en fotografia?",
-          "answer": "L'angle de visió (FOV) és l'abast angular de l'escena visible a través del teu objectiu i sensor. Determina quanta escena es captura a la foto i depèn de la distància focal i de la mida del sensor."
+          "answer": "L'angle de visió és l'abast angular de l'escena visible a través del teu objectiu i sensor. Determina quanta escena es captura a la foto i depèn de la distància focal i de la mida del sensor."
         },
         "how-crop-factor-affects-fov": {
           "question": "Com afecta el factor de retall l'angle de visió?",

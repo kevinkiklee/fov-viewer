@@ -8,8 +8,8 @@
           "text": "Every sensor has a crop factor relative to the 35mm full-frame standard. APS-C sensors have a factor around 1.5×, Micro Four Thirds 2×, and medium format around 0.79×. Multiplying the actual focal length by the crop factor gives the full-frame equivalent field of view. A 35mm lens on APS-C frames like a 52.5mm on full frame."
         },
         "1": {
-          "heading": "Equivalent Aperture & DoF",
-          "text": "To match depth of field across formats, multiply the f-number by the same crop factor. An f/1.4 lens on Micro Four Thirds produces DoF equivalent to f/2.8 on full frame (1.4 × 2 = 2.8). This is why full-frame cameras are prized for shallow DoF — you can use physically faster lenses at wider actual apertures to achieve blur that smaller sensors cannot replicate."
+          "heading": "Equivalent Aperture & Depth-of-Field",
+          "text": "To match depth of field across formats, multiply the f-number by the same crop factor. An f/1.4 lens on Micro Four Thirds produces depth of field equivalent to f/2.8 on full frame (1.4 × 2 = 2.8). This is why full-frame cameras are prized for shallow depth of field — you can use physically faster lenses at wider actual apertures to achieve blur that smaller sensors cannot replicate."
         },
         "2": {
           "heading": "Equivalent ISO & Total Light",
@@ -23,7 +23,7 @@
         },
         "1": {
           "label": "Sensor Size",
-          "description": "Physically larger sensors capture more light and produce shallower DoF at equivalent framing. The equivalence calculator reveals exactly how much difference each format makes."
+          "description": "Physically larger sensors capture more light and produce shallower depth of field at equivalent framing. The equivalence calculator reveals exactly how much difference each format makes."
         },
         "2": {
           "label": "Available Lenses",
@@ -60,7 +60,7 @@
         },
         "cropFactor": {
           "term": "Crop Factor",
-          "definition": "The ratio between the diagonal of a 35mm full-frame sensor and the target sensor. Multiply focal length by crop factor for equivalent FOV; multiply aperture by crop factor for equivalent DoF."
+          "definition": "The ratio between the diagonal of a 35mm full-frame sensor and the target sensor. Multiply focal length by crop factor for equivalent field of view; multiply aperture by crop factor for equivalent depth of field."
         },
         "equivalentFL": {
           "term": "Equivalent Focal Length",
@@ -78,32 +78,52 @@
           "successMessage": "Correct! 85mm / 2 = 42.5mm. Your friend needs a 42.5mm lens on Micro Four Thirds to get the same framing as your 85mm on full frame.",
           "failureMessage": "To match the field of view, divide by the crop factor: 85mm / 2 = 42.5mm. That is the actual focal length needed on the MFT body.",
           "options": {
-            "0": { "label": "42.5mm" },
-            "1": { "label": "85mm" },
-            "2": { "label": "170mm" },
-            "3": { "label": "56mm" }
+            "0": {
+              "label": "42.5mm"
+            },
+            "1": {
+              "label": "85mm"
+            },
+            "2": {
+              "label": "170mm"
+            },
+            "3": {
+              "label": "56mm"
+            }
           }
         },
         "1": {
           "scenario": "Your friend found a 42.5mm f/1.8 lens for their MFT camera. Will the background blur match your 85mm f/1.8 on full frame?",
-          "hint": "Apply the crop factor to the aperture as well to find the equivalent DoF.",
-          "successMessage": "Right! The 42.5mm f/1.8 on MFT gives equivalent DoF to 85mm f/3.6 on full frame (1.8 × 2 = 3.6). Your f/1.8 full-frame shot produces significantly more blur.",
-          "failureMessage": "No — the MFT f/1.8 gives DoF equivalent to f/3.6 on full frame (1.8 × 2× crop = 3.6). To match your full-frame f/1.8 blur, your friend would need f/0.9 on MFT, which does not exist.",
+          "hint": "Apply the crop factor to the aperture as well to find the equivalent depth of field.",
+          "successMessage": "Right! The 42.5mm f/1.8 on MFT gives equivalent depth of field to 85mm f/3.6 on full frame (1.8 × 2 = 3.6). Your f/1.8 full-frame shot produces significantly more blur.",
+          "failureMessage": "No — the MFT f/1.8 gives depth of field equivalent to f/3.6 on full frame (1.8 × 2× crop = 3.6). To match your full-frame f/1.8 blur, your friend would need f/0.9 on MFT, which does not exist.",
           "options": {
-            "0": { "label": "Yes — same f/1.8 means same blur" },
-            "1": { "label": "No — MFT f/1.8 equals full-frame f/3.6 depth of field" },
-            "2": { "label": "No — MFT produces more blur because the sensor is smaller" }
+            "0": {
+              "label": "Yes — same f/1.8 means same blur"
+            },
+            "1": {
+              "label": "No — MFT f/1.8 equals full-frame f/3.6 depth of field"
+            },
+            "2": {
+              "label": "No — MFT produces more blur because the sensor is smaller"
+            }
           }
         },
         "2": {
           "scenario": "A photographer switching from full frame to APS-C (1.5× crop) wants to match the look of a 50mm f/1.4 on full frame. What equivalent lens and aperture do they need on APS-C?",
-          "hint": "Divide focal length by the crop factor for equivalent FOV. Divide aperture by the crop factor for equivalent DoF.",
-          "successMessage": "Exactly! 50 / 1.5 = 33mm for field of view, and f/1.4 / 1.5 = f/0.93 for matching DoF. Since no f/0.93 lens exists, the APS-C camera cannot fully replicate the full-frame look.",
+          "hint": "Divide focal length by the crop factor for equivalent field of view. Divide aperture by the crop factor for equivalent depth of field.",
+          "successMessage": "Exactly! 50 / 1.5 = 33mm for field of view, and f/1.4 / 1.5 = f/0.93 for matching depth of field. Since no f/0.93 lens exists, the APS-C camera cannot fully replicate the full-frame look.",
           "failureMessage": "The correct answer is ~33mm f/0.93. Since 50 / 1.5 = 33.3mm and 1.4 / 1.5 = 0.93. No f/0.93 lens exists, so the full-frame look cannot be fully matched on APS-C.",
           "options": {
-            "0": { "label": "35mm f/1.4 — close enough" },
-            "1": { "label": "33mm f/0.93 — exact match, but no such lens exists" },
-            "2": { "label": "75mm f/2.1 — multiply by crop factor" }
+            "0": {
+              "label": "35mm f/1.4 — close enough"
+            },
+            "1": {
+              "label": "33mm f/0.93 — exact match, but no such lens exists"
+            },
+            "2": {
+              "label": "75mm f/2.1 — multiply by crop factor"
+            }
           }
         }
       }

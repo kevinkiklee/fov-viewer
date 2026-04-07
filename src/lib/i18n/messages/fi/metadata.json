@@ -3,7 +3,7 @@
     "site": {
       "defaultTitle": "PhotoTools — valokuvaustyökalut",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Ilmaisia valokuvaustyökaluja: FOV-simulaattori, värimallien generaattori, EXIF-lukija, kuvien rajaus ja kehystys sekä paljon muuta.",
+      "description": "Ilmaisia valokuvaustyökaluja: kuvakulma-simulaattori, värimallien generaattori, EXIF-lukija, kuvien rajaus ja kehystys sekä paljon muuta.",
       "ogTitle": "PhotoTools — ilmaiset valokuvaustyökalut"
     },
     "fov-simulator": {

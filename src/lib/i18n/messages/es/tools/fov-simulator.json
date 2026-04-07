@@ -7,7 +7,7 @@
       "switchToLandscape": "Cambiar a paisaje",
       "centerOverlays": "Centrar superposiciones",
       "addLens": "+ Añadir objetivo",
-      "fovSimulator": "Simulador FOV",
+      "fovSimulator": "Simulador campo de visión",
       "sensor": "Sensor",
       "copyImage": "Copiar imagen",
       "copyLink": "Copiar enlace",
@@ -27,20 +27,20 @@
       "cropView": "Vista de recorte:",
       "collapse": "Contraer",
       "expand": "Expandir",
-      "fovComparison": "Comparación de FOV",
+      "fovComparison": "Comparación de campo de visión",
       "loadingScene": "Cargando escena...",
       "faq": {
         "what-is-fov": {
-          "question": "\u00bfQu\u00e9 es el campo de visi\u00f3n en fotograf\u00eda?",
-          "answer": "El campo de visi\u00f3n (FOV) es la extensi\u00f3n angular de la escena visible a trav\u00e9s de tu objetivo y sensor. Determina cu\u00e1nto de una escena se captura en una foto y se ve afectado por la distancia focal y el tama\u00f1o del sensor."
+          "question": "¿Qué es el campo de visión en fotografía?",
+          "answer": "El campo de visión es la extensión angular de la escena visible a través de tu objetivo y sensor. Determina cuánto de una escena se captura en una foto y se ve afectado por la distancia focal y el tamaño del sensor."
         },
         "how-crop-factor-affects-fov": {
-          "question": "\u00bfC\u00f3mo afecta el factor de recorte al campo de visi\u00f3n?",
-          "answer": "Un sensor m\u00e1s peque\u00f1o (mayor factor de recorte) captura un campo de visi\u00f3n m\u00e1s estrecho que un sensor de formato completo a la misma distancia focal. Por ejemplo, en un sensor APS-C con un factor de recorte de 1.5x, un objetivo de 50 mm encuadra como uno de 75 mm en formato completo."
+          "question": "¿Cómo afecta el factor de recorte al campo de visión?",
+          "answer": "Un sensor más pequeño (mayor factor de recorte) captura un campo de visión más estrecho que un sensor de formato completo a la misma distancia focal. Por ejemplo, en un sensor APS-C con un factor de recorte de 1.5x, un objetivo de 50 mm encuadra como uno de 75 mm en formato completo."
         },
         "fov-vs-focal-length": {
-          "question": "\u00bfCu\u00e1l es la relaci\u00f3n entre el FOV y la distancia focal?",
-          "answer": "El campo de visi\u00f3n y la distancia focal tienen una relaci\u00f3n inversa. Distancias focales m\u00e1s cortas (gran angular) proporcionan un campo de visi\u00f3n m\u00e1s amplio, mientras que distancias focales m\u00e1s largas (teleobjetivo) proporcionan un campo de visi\u00f3n m\u00e1s estrecho. El FOV exacto tambi\u00e9n depende del tama\u00f1o del sensor."
+          "question": "¿Cuál es la relación entre el campo de visión y la distancia focal?",
+          "answer": "El campo de visión y la distancia focal tienen una relación inversa. Distancias focales más cortas (gran angular) proporcionan un campo de visión más amplio, mientras que distancias focales más largas (teleobjetivo) proporcionan un campo de visión más estrecho. El campo de visión exacto también depende del tamaño del sensor."
         }
       }
     }

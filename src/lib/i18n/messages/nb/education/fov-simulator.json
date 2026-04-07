@@ -1,11 +1,11 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Synsfelt (FOV) handler om hvor mye av motivet kameraet fanger. Et vidvinkelobjektiv (for eksempel 24 mm) ser bredt, mens et teleobjektiv (for eksempel 200 mm) trekker ut et lite utsnitt. Med denne simulatoren kan du sammenligne opptil fire objektiver på ulike sensorer, lagt over ekte scener, så du ser nøyaktig hva hver kombinasjon fanger.",
+      "beginner": "Synsfelt handler om hvor mye av motivet kameraet fanger. Et vidvinkelobjektiv (for eksempel 24 mm) ser bredt, mens et teleobjektiv (for eksempel 200 mm) trekker ut et lite utsnitt. Med denne simulatoren kan du sammenligne opptil fire objektiver på ulike sensorer, lagt over ekte scener, så du ser nøyaktig hva hver kombinasjon fanger.",
       "deeper": {
         "0": {
           "heading": "Formelen for synsfelt",
-          "text": "Synsfeltet avhenger av to ting: brennvidde og sensorstørrelse. Den horisontale FOV-vinkelen regnes ut som 2 × arctan(sensorbredde / (2 × brennvidde)). Kortere brennvidde eller større sensor gir bredere synsvinkel."
+          "text": "Synsfeltet avhenger av to ting: brennvidde og sensorstørrelse. Den horisontale synsfelt-vinkelen regnes ut som 2 × arctan(sensorbredde / (2 × brennvidde)). Kortere brennvidde eller større sensor gir bredere synsvinkel."
         },
         "1": {
           "heading": "Cropfaktor og ekvivalent brennvidde",
@@ -60,7 +60,7 @@
         },
         "Orientation": {
           "term": "Retning",
-          "definition": "Veksle mellom liggende (landskap) og stående (portrett). FOV-rektangelet roteres tilsvarende."
+          "definition": "Veksle mellom liggende (landskap) og stående (portrett). synsfelt-rektangelet roteres tilsvarende."
         }
       },
       "challenges": {
@@ -70,9 +70,15 @@
           "successMessage": "Riktig! Et 24 mm-objektiv fanger mye mer av motivet enn et 70 mm. Vidvinkelobjektiver har korte brennvidder.",
           "failureMessage": "Kortere brennvidder gir bredere synsfelt. 24 mm er et vidvinkelobjektiv som fanger mye mer av siluetten enn et 70 mm.",
           "options": {
-            "0": { "label": "24mm" },
-            "1": { "label": "70mm" },
-            "2": { "label": "200mm" }
+            "0": {
+              "label": "24mm"
+            },
+            "1": {
+              "label": "70mm"
+            },
+            "2": {
+              "label": "200mm"
+            }
           }
         },
         "1": {
@@ -81,20 +87,32 @@
           "successMessage": "Riktig! 50 mm på fullformat er det klassiske «normalobjektivet» — synsfeltet på rundt 46 grader ligner det øyet naturlig fokuserer på.",
           "failureMessage": "50 mm på fullformat regnes som «normal» fordi synsfeltet (~46 grader) ligger nær det vi opplever som naturlig syn.",
           "options": {
-            "0": { "label": "Ultravidvinkel" },
-            "1": { "label": "Normal / standard" },
-            "2": { "label": "Tele" }
+            "0": {
+              "label": "Ultravidvinkel"
+            },
+            "1": {
+              "label": "Normal / standard"
+            },
+            "2": {
+              "label": "Tele"
+            }
           }
         },
         "2": {
-          "scenario": "Legg til to objektiver: Objektiv A er 35 mm på APS-C (Nikon/Sony), og Objektiv B er 50 mm på fullformat. Sammenlign de to FOV-overleggene. Hva legger du merke til?",
+          "scenario": "Legg til to objektiver: Objektiv A er 35 mm på APS-C (Nikon/Sony), og Objektiv B er 50 mm på fullformat. Sammenlign de to synsfelt-overleggene. Hva legger du merke til?",
           "hint": "35 mm ganget med APS-C-cropfaktoren 1,5 blir …",
           "successMessage": "Nettopp! 35 mm på APS-C (1,5x crop) gir samme ekvivalente synsfelt som 52,5 mm på fullformat — nesten identisk med 50 mm FF. Overleggene blir nesten like store.",
           "failureMessage": "35 mm × 1,5 cropfaktor = 52,5 mm ekvivalent. Det er nesten likt som 50 mm på fullformat, så overleggene blir nesten identiske.",
           "options": {
-            "0": { "label": "De har nesten identisk synsfelt" },
-            "1": { "label": "APS-C-objektivet viser mye bredere" },
-            "2": { "label": "Fullformat-objektivet viser mye bredere" }
+            "0": {
+              "label": "De har nesten identisk synsfelt"
+            },
+            "1": {
+              "label": "APS-C-objektivet viser mye bredere"
+            },
+            "2": {
+              "label": "Fullformat-objektivet viser mye bredere"
+            }
           }
         },
         "3": {
@@ -103,20 +121,32 @@
           "successMessage": "Riktig! Fullformat fanger mer fordi den større sensoren bruker en bredere del av bildekretsen til 24 mm-objektivet. På APS-C rammer samme objektiv inn som rundt 36 mm.",
           "failureMessage": "Fullformat fanger mer av motivet. Den større sensoren bruker mer av objektivets bildekrets og gir et bredere effektivt synsfelt.",
           "options": {
-            "0": { "label": "Fullformat — større sensor ser mer" },
-            "1": { "label": "APS-C — cropsensoren ser mer" },
-            "2": { "label": "Begge ser det samme — brennvidden er det som teller" }
+            "0": {
+              "label": "Fullformat — større sensor ser mer"
+            },
+            "1": {
+              "label": "APS-C — cropsensoren ser mer"
+            },
+            "2": {
+              "label": "Begge ser det samme — brennvidden er det som teller"
+            }
           }
         },
         "4": {
           "scenario": "En viltfotograf bruker et 200 mm-objektiv på Micro Four Thirds. Hvilken fullformat-ekvivalent brennvidde gir dette, og hva er kompromisset sammenlignet med et 400 mm på fullformat?",
           "hint": "M43 har cropfaktor 2x. Tenk på dybdeskarphet og forskjell i sensorstørrelse.",
-          "successMessage": "Helt riktig! 200 mm på M43 (2x crop) gir 400 mm ekvivalent synsfelt. Kompromisset: utsnittet matcher 400 mm FF, men dybdeskarpheten følger det faktiske 200 mm-objektivet (dypere DoF), og den mindre sensoren samler mindre lys totalt, noe som gir dårligere støyytelse på høy ISO. Gevinsten er mye mindre, lettere og rimeligere utstyr.",
-          "failureMessage": "200 mm × 2,0 crop = 400 mm ekvivalent FOV. Men det er ikke helt det samme som 400 mm på FF: du får mer dybdeskarphet (fordi brennvidden faktisk er 200 mm), mindre lysinnsamling (mindre sensor) og mer støy på høy ISO. Til gjengjeld er utstyret mye mindre og lettere.",
+          "successMessage": "Helt riktig! 200 mm på M43 (2x crop) gir 400 mm ekvivalent synsfelt. Kompromisset: utsnittet matcher 400 mm FF, men dybdeskarpheten følger det faktiske 200 mm-objektivet (dypere dybdeskarphet), og den mindre sensoren samler mindre lys totalt, noe som gir dårligere støyytelse på høy ISO. Gevinsten er mye mindre, lettere og rimeligere utstyr.",
+          "failureMessage": "200 mm × 2,0 crop = 400 mm ekvivalent synsfelt. Men det er ikke helt det samme som 400 mm på FF: du får mer dybdeskarphet (fordi brennvidden faktisk er 200 mm), mindre lysinnsamling (mindre sensor) og mer støy på høy ISO. Til gjengjeld er utstyret mye mindre og lettere.",
           "options": {
-            "0": { "label": "400 mm ekvivalent — samme FOV, men dypere DoF, mer støy, mindre/lettere utstyr" },
-            "1": { "label": "400 mm ekvivalent — helt identisk med 400 mm på fullformat" },
-            "2": { "label": "200 mm ekvivalent — cropfaktoren påvirker ikke FOV" }
+            "0": {
+              "label": "400 mm ekvivalent — samme synsfelt, men dypere dybdeskarphet, mer støy, mindre/lettere utstyr"
+            },
+            "1": {
+              "label": "400 mm ekvivalent — helt identisk med 400 mm på fullformat"
+            },
+            "2": {
+              "label": "200 mm ekvivalent — cropfaktoren påvirker ikke synsfelt"
+            }
           }
         }
       }

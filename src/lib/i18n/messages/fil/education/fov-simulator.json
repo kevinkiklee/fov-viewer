@@ -1,11 +1,11 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Ang field of view (FOV) ay kung gaano karami sa scene ang kinukuha ng camera mo. Ang wide-angle lens (gaya ng 24mm) ay nakakakuha ng malawak na tanawin, habang ang telephoto lens (gaya ng 200mm) ay nagpapakipot sa isang maliit na slice. Sa simulator na ito, pwede mong ikumpara hanggang apat na lens sa iba't ibang sensor, naka-overlay sa real-world scenes, para makita mo nang eksakto kung ano ang nakukuha ng bawat kombinasyon.",
+      "beginner": "Ang field of view ay kung gaano karami sa scene ang kinukuha ng camera mo. Ang wide-angle lens (gaya ng 24mm) ay nakakakuha ng malawak na tanawin, habang ang telephoto lens (gaya ng 200mm) ay nagpapakipot sa isang maliit na slice. Sa simulator na ito, pwede mong ikumpara hanggang apat na lens sa iba't ibang sensor, naka-overlay sa real-world scenes, para makita mo nang eksakto kung ano ang nakukuha ng bawat kombinasyon.",
       "deeper": {
         "0": {
-          "heading": "Ang FOV Formula",
-          "text": "Dalawang factors ang tumutukoy sa field of view: focal length at sensor size. Kinakalkula ang horizontal FOV angle bilang 2 × arctan(sensorWidth / (2 × focalLength)). Mas maikli ang focal length o mas malaki ang sensor, mas malawak ang angle of view."
+          "heading": "Ang field of view Formula",
+          "text": "Dalawang factors ang tumutukoy sa field of view: focal length at sensor size. Kinakalkula ang horizontal field of view angle bilang 2 × arctan(sensorWidth / (2 × focalLength)). Mas maikli ang focal length o mas malaki ang sensor, mas malawak ang angle of view."
         },
         "1": {
           "heading": "Crop Factor at Equivalent Focal Length",
@@ -31,7 +31,7 @@
         },
         "3": {
           "label": "Scene Context",
-          "description": "Ang iba't ibang scenes (cityscapes, interiors, nature) ay tumutulong sa iyong maintindihan kung paano nararamdaman ang FOV changes sa iba't ibang real-world settings."
+          "description": "Ang iba't ibang scenes (cityscapes, interiors, nature) ay tumutulong sa iyong maintindihan kung paano nararamdaman ang field of view changes sa iba't ibang real-world settings."
         }
       },
       "tips": {
@@ -60,7 +60,7 @@
         },
         "Orientation": {
           "term": "Orientation",
-          "definition": "I-toggle sa pagitan ng landscape (horizontal) at portrait (vertical) na camera orientation. Ang FOV rectangle ay umiikot ayon dito."
+          "definition": "I-toggle sa pagitan ng landscape (horizontal) at portrait (vertical) na camera orientation. Ang field of view rectangle ay umiikot ayon dito."
         }
       },
       "challenges": {
@@ -70,9 +70,15 @@
           "successMessage": "Tama! Ang 24mm lens ay nakakakita ng mas marami sa eksena kaysa sa 70mm. Ang mga wide-angle lens ay may maiikling focal length.",
           "failureMessage": "Ang mas maikling focal length ay nagbibigay ng mas malawak na field of view. Ang 24mm ay isang wide-angle lens na kumukuha ng mas marami sa skyline kaysa 70mm.",
           "options": {
-            "0": { "label": "24mm" },
-            "1": { "label": "70mm" },
-            "2": { "label": "200mm" }
+            "0": {
+              "label": "24mm"
+            },
+            "1": {
+              "label": "70mm"
+            },
+            "2": {
+              "label": "200mm"
+            }
           }
         },
         "1": {
@@ -81,20 +87,32 @@
           "successMessage": "Tama! Ang 50mm sa full frame ay ang klasikong \"normal\" na lens — ang ~46 degrees na field of view nito ay nila-approximate kung ano ang natural na pinag-fo-focus ng mata ng tao.",
           "failureMessage": "Ang 50mm sa full frame ay itinuturing na \"normal\" na lens dahil ang field of view nito (~46 degrees) ay halos tumutugma sa kumportableng paningin ng tao.",
           "options": {
-            "0": { "label": "Ultra-wide angle" },
-            "1": { "label": "Normal / standard" },
-            "2": { "label": "Telephoto" }
+            "0": {
+              "label": "Ultra-wide angle"
+            },
+            "1": {
+              "label": "Normal / standard"
+            },
+            "2": {
+              "label": "Telephoto"
+            }
           }
         },
         "2": {
-          "scenario": "Magdagdag ng dalawang lens: ang Lens A ay 35mm sa APS-C (Nikon/Sony), at ang Lens B ay 50mm sa Full Frame. Ikumpara ang dalawang FOV overlay. Ano ang napapansin mo?",
+          "scenario": "Magdagdag ng dalawang lens: ang Lens A ay 35mm sa APS-C (Nikon/Sony), at ang Lens B ay 50mm sa Full Frame. Ikumpara ang dalawang field of view overlay. Ano ang napapansin mo?",
           "hint": "Ang 35mm na na-multiply sa APS-C crop factor na 1.5 ay katumbas ng...",
           "successMessage": "Eksakto! Ang 35mm sa APS-C (1.5x crop) ay nagbibigay ng equivalent field of view sa 52.5mm sa full frame — halos magkapareho sa 50mm FF. Ang mga overlay ay halos pareho ng sukat.",
           "failureMessage": "35mm x 1.5 crop factor = 52.5mm equivalent. Halos magkapareho ito sa 50mm sa full frame, kaya ang mga overlay ay halos pareho.",
           "options": {
-            "0": { "label": "May halos magkaparehong field of view sila" },
-            "1": { "label": "Ang APS-C lens ay nagpapakita ng mas malawak na tanawin" },
-            "2": { "label": "Ang Full Frame lens ay nagpapakita ng mas malawak na tanawin" }
+            "0": {
+              "label": "May halos magkaparehong field of view sila"
+            },
+            "1": {
+              "label": "Ang APS-C lens ay nagpapakita ng mas malawak na tanawin"
+            },
+            "2": {
+              "label": "Ang Full Frame lens ay nagpapakita ng mas malawak na tanawin"
+            }
           }
         },
         "3": {
@@ -103,20 +121,32 @@
           "successMessage": "Tama! Ang Full Frame ay nakakakita ng mas marami dahil ang mas malaking sensor ay kumukuha ng mas malawak na bahagi ng image circle ng 24mm lens. Sa APS-C, ang parehong 24mm lens ay parang ~36mm ang framing.",
           "failureMessage": "Ang Full Frame ay kumukuha ng mas marami sa eksena. Ang mas malaking sensor ay gumagamit ng mas marami sa lens image circle, nagbibigay ng mas malawak na effective field of view.",
           "options": {
-            "0": { "label": "Full Frame — mas malaking sensor ay nakakakita ng mas marami" },
-            "1": { "label": "APS-C — crop sensor ay nakakakita ng mas marami" },
-            "2": { "label": "Parehong nakakakita ng pareho — focal length ang mahalaga" }
+            "0": {
+              "label": "Full Frame — mas malaking sensor ay nakakakita ng mas marami"
+            },
+            "1": {
+              "label": "APS-C — crop sensor ay nakakakita ng mas marami"
+            },
+            "2": {
+              "label": "Parehong nakakakita ng pareho — focal length ang mahalaga"
+            }
           }
         },
         "4": {
           "scenario": "Isang wildlife photographer ay kumukuha gamit ang 200mm lens sa Micro Four Thirds. Anong full-frame equivalent focal length ang nagagawa nito, at ano ang trade-off kumpara sa aktwal na paggamit ng 400mm lens sa full frame?",
           "hint": "Ang M43 ay may 2x crop factor. Isipin ang mga pagkakaiba sa depth of field at sensor size.",
-          "successMessage": "Magaling! Ang 200mm sa M43 (2x crop) ay nagbibigay ng 400mm-equivalent na field of view. Ang trade-off: habang ang framing ay tumutugma sa 400mm FF, ang depth of field ay tumutugma sa 200mm lens (mas malalim na DoF), at ang mas maliit na sensor ay kumokolekta ng mas kaunting kabuuang liwanag, na nangangahulugang mas masahol na noise performance sa mataas na ISO. Ang bentahe ay ang mas maliit, mas magaan, at mas murang lens.",
-          "failureMessage": "200mm x 2.0 crop = 400mm equivalent FOV. Pero hindi ito magkapareho sa 400mm sa FF: makakakuha ka ng mas maraming depth of field (batay sa aktwal na 200mm FL), mas kaunting light gathering (mas maliit na sensor), at mas maraming noise sa mataas na ISO. Ang bentahe ay mas maliit at mas magaan na gear.",
+          "successMessage": "Magaling! Ang 200mm sa M43 (2x crop) ay nagbibigay ng 400mm-equivalent na field of view. Ang trade-off: habang ang framing ay tumutugma sa 400mm FF, ang depth of field ay tumutugma sa 200mm lens (mas malalim na depth of field), at ang mas maliit na sensor ay kumokolekta ng mas kaunting kabuuang liwanag, na nangangahulugang mas masahol na noise performance sa mataas na ISO. Ang bentahe ay ang mas maliit, mas magaan, at mas murang lens.",
+          "failureMessage": "200mm x 2.0 crop = 400mm equivalent field of view. Pero hindi ito magkapareho sa 400mm sa FF: makakakuha ka ng mas maraming depth of field (batay sa aktwal na 200mm FL), mas kaunting light gathering (mas maliit na sensor), at mas maraming noise sa mataas na ISO. Ang bentahe ay mas maliit at mas magaan na gear.",
           "options": {
-            "0": { "label": "400mm equivalent — parehong FOV pero mas malalim na DoF, mas maraming noise, mas maliit/magaan na gear" },
-            "1": { "label": "400mm equivalent — magkapareho sa lahat ng aspeto sa 400mm sa full frame" },
-            "2": { "label": "200mm equivalent — hindi nakakaapekto ang crop factor sa FOV" }
+            "0": {
+              "label": "400mm equivalent — parehong field of view pero mas malalim na depth of field, mas maraming noise, mas maliit/magaan na gear"
+            },
+            "1": {
+              "label": "400mm equivalent — magkapareho sa lahat ng aspeto sa 400mm sa full frame"
+            },
+            "2": {
+              "label": "200mm equivalent — hindi nakakaapekto ang crop factor sa field of view"
+            }
           }
         }
       }

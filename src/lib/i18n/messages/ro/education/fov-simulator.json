@@ -1,11 +1,11 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Unghiul de vizualizare (FOV) înseamnă cât din scenă captează aparatul tău foto. Un obiectiv larg (de exemplu 24mm) vede o zonă mare, în timp ce un teleobiectiv (de exemplu 200mm) se concentrează pe o felie mică. Simulatorul îți permite să compari până la patru obiective pe senzori diferiți, suprapuse peste scene reale, ca să vizualizezi exact ce prinde fiecare combinație.",
+      "beginner": "Unghiul de vizualizare înseamnă cât din scenă captează aparatul tău foto. Un obiectiv larg (de exemplu 24mm) vede o zonă mare, în timp ce un teleobiectiv (de exemplu 200mm) se concentrează pe o felie mică. Simulatorul îți permite să compari până la patru obiective pe senzori diferiți, suprapuse peste scene reale, ca să vizualizezi exact ce prinde fiecare combinație.",
       "deeper": {
         "0": {
-          "heading": "Formula FOV",
-          "text": "Unghiul de vizualizare e determinat de doi factori: distanța focală și dimensiunea senzorului. FOV-ul orizontal se calculează ca 2 × arctan(lățimea senzorului / (2 × distanța focală)). O distanță focală mai scurtă sau un senzor mai mare dau un unghi mai larg."
+          "heading": "Formula câmp vizual",
+          "text": "Unghiul de vizualizare e determinat de doi factori: distanța focală și dimensiunea senzorului. câmp vizual-ul orizontal se calculează ca 2 × arctan(lățimea senzorului / (2 × distanța focală)). O distanță focală mai scurtă sau un senzor mai mare dau un unghi mai larg."
         },
         "1": {
           "heading": "Factor de crop și distanță focală echivalentă",
@@ -31,7 +31,7 @@
         },
         "3": {
           "label": "Contextul scenei",
-          "description": "Scenele diferite (peisaje urbane, interioare, natură) te ajută să înțelegi cum se simt schimbările de FOV în diverse situații reale."
+          "description": "Scenele diferite (peisaje urbane, interioare, natură) te ajută să înțelegi cum se simt schimbările de câmp vizual în diverse situații reale."
         }
       },
       "tips": {
@@ -60,7 +60,7 @@
         },
         "Orientation": {
           "term": "Orientare",
-          "definition": "Comută între orientarea orizontală (landscape) și cea verticală (portrait) a aparatului. Dreptunghiul FOV se rotește corespunzător."
+          "definition": "Comută între orientarea orizontală (landscape) și cea verticală (portrait) a aparatului. Dreptunghiul câmp vizual se rotește corespunzător."
         }
       },
       "challenges": {
@@ -70,9 +70,15 @@
           "successMessage": "Corect! Un 24mm vede mult mai mult din scenă decât un 70mm. Obiectivele largi au distanțe focale scurte.",
           "failureMessage": "Distanțele focale mai scurte oferă unghiuri de vizualizare mai largi. 24mm este un obiectiv larg care captează mult mai mult din panorama urbană decât 70mm.",
           "options": {
-            "0": { "label": "24mm" },
-            "1": { "label": "70mm" },
-            "2": { "label": "200mm" }
+            "0": {
+              "label": "24mm"
+            },
+            "1": {
+              "label": "70mm"
+            },
+            "2": {
+              "label": "200mm"
+            }
           }
         },
         "1": {
@@ -81,20 +87,32 @@
           "successMessage": "Exact! Un 50mm pe full frame este clasicul obiectiv „normal” — unghiul său de ~46° se apropie de ce focalizează natural ochiul uman.",
           "failureMessage": "Un 50mm pe full frame este considerat obiectiv „normal” pentru că unghiul său (~46°) se apropie foarte mult de câmpul vizual uman confortabil.",
           "options": {
-            "0": { "label": "Ultra-larg" },
-            "1": { "label": "Normal / standard" },
-            "2": { "label": "Teleobiectiv" }
+            "0": {
+              "label": "Ultra-larg"
+            },
+            "1": {
+              "label": "Normal / standard"
+            },
+            "2": {
+              "label": "Teleobiectiv"
+            }
           }
         },
         "2": {
-          "scenario": "Adaugă două obiective: Obiectivul A este 35mm pe APS-C (Nikon/Sony), iar Obiectivul B este 50mm pe Full Frame. Compară cele două suprapuneri FOV. Ce observi?",
+          "scenario": "Adaugă două obiective: Obiectivul A este 35mm pe APS-C (Nikon/Sony), iar Obiectivul B este 50mm pe Full Frame. Compară cele două suprapuneri câmp vizual. Ce observi?",
           "hint": "35mm înmulțit cu factorul de crop APS-C de 1.5 dă...",
           "successMessage": "Exact! 35mm pe APS-C (crop 1.5x) dă un unghi de vizualizare echivalent cu 52,5mm pe full frame — aproape identic cu 50mm FF. Suprapunerile au aproape aceeași mărime.",
           "failureMessage": "35mm × factor de crop 1.5 = 52,5mm echivalent. E aproape identic cu 50mm pe full frame, motiv pentru care suprapunerile arată aproape la fel.",
           "options": {
-            "0": { "label": "Au unghiuri de vizualizare aproape identice" },
-            "1": { "label": "Obiectivul APS-C arată o vedere mult mai largă" },
-            "2": { "label": "Obiectivul Full Frame arată o vedere mult mai largă" }
+            "0": {
+              "label": "Au unghiuri de vizualizare aproape identice"
+            },
+            "1": {
+              "label": "Obiectivul APS-C arată o vedere mult mai largă"
+            },
+            "2": {
+              "label": "Obiectivul Full Frame arată o vedere mult mai largă"
+            }
           }
         },
         "3": {
@@ -103,20 +121,32 @@
           "successMessage": "Corect! Full Frame vede mai mult, pentru că senzorul mai mare prinde o porțiune mai mare din cercul de imagine al obiectivului de 24mm. Pe APS-C, același 24mm încadrează ca un ~36mm.",
           "failureMessage": "Full Frame captează mai mult din scenă. Senzorul mai mare folosește o porțiune mai mare din cercul de imagine al obiectivului, rezultând un unghi efectiv mai larg.",
           "options": {
-            "0": { "label": "Full Frame — senzorul mai mare vede mai mult" },
-            "1": { "label": "APS-C — senzorul crop vede mai mult" },
-            "2": { "label": "Amândouă văd la fel — distanța focală este cea care contează" }
+            "0": {
+              "label": "Full Frame — senzorul mai mare vede mai mult"
+            },
+            "1": {
+              "label": "APS-C — senzorul crop vede mai mult"
+            },
+            "2": {
+              "label": "Amândouă văd la fel — distanța focală este cea care contează"
+            }
           }
         },
         "4": {
           "scenario": "Un fotograf de natură sălbatică fotografiază cu un 200mm pe Micro Four Thirds. Ce distanță focală echivalentă full-frame produce asta și care este compromisul față de un 400mm pe full frame?",
           "hint": "M43 are un crop de 2x. Gândește-te la adâncimea câmpului și la diferențele de senzor.",
-          "successMessage": "Excelent! 200mm pe M43 (crop 2x) dă un unghi de vizualizare echivalent cu 400mm. Compromisul: chiar dacă încadrarea corespunde unui 400mm FF, adâncimea câmpului rămâne a obiectivului real de 200mm (DoF mai mare), iar senzorul mai mic colectează mai puțină lumină totală, ceea ce înseamnă mai mult zgomot la ISO mari. Avantajul: un obiectiv mult mai mic, mai ușor și mai ieftin.",
-          "failureMessage": "200mm × crop 2.0 = 400mm FOV echivalent. Dar nu e identic cu un 400mm pe FF: obții mai multă adâncime a câmpului (cea a distanței focale reale de 200mm), se colectează mai puțină lumină (senzor mai mic) și apare mai mult zgomot la ISO mari. Beneficiul: echipament mult mai mic și mai ușor.",
+          "successMessage": "Excelent! 200mm pe M43 (crop 2x) dă un unghi de vizualizare echivalent cu 400mm. Compromisul: chiar dacă încadrarea corespunde unui 400mm FF, adâncimea câmpului rămâne a obiectivului real de 200mm (profunzime de câmp mai mare), iar senzorul mai mic colectează mai puțină lumină totală, ceea ce înseamnă mai mult zgomot la ISO mari. Avantajul: un obiectiv mult mai mic, mai ușor și mai ieftin.",
+          "failureMessage": "200mm × crop 2.0 = 400mm câmp vizual echivalent. Dar nu e identic cu un 400mm pe FF: obții mai multă adâncime a câmpului (cea a distanței focale reale de 200mm), se colectează mai puțină lumină (senzor mai mic) și apare mai mult zgomot la ISO mari. Beneficiul: echipament mult mai mic și mai ușor.",
           "options": {
-            "0": { "label": "Echivalent 400mm — același FOV, dar DoF mai mare, mai mult zgomot, echipament mai ușor" },
-            "1": { "label": "Echivalent 400mm — identic în toate privințele cu 400mm pe full frame" },
-            "2": { "label": "Echivalent 200mm — factorul de crop nu afectează FOV" }
+            "0": {
+              "label": "Echivalent 400mm — același câmp vizual, dar profunzime de câmp mai mare, mai mult zgomot, echipament mai ușor"
+            },
+            "1": {
+              "label": "Echivalent 400mm — identic în toate privințele cu 400mm pe full frame"
+            },
+            "2": {
+              "label": "Echivalent 200mm — factorul de crop nu afectează câmp vizual"
+            }
           }
         }
       }

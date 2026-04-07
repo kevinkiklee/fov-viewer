@@ -1,7 +1,7 @@
 {
   "tools": {
     "fov-simulator": {
-      "name": "FOV Simulator",
+      "name": "Field-of-View Simulator",
       "description": "Compare field of view across focal lengths and sensor sizes"
     },
     "color-scheme-generator": {

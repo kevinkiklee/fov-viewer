@@ -3,7 +3,7 @@
     "site": {
       "defaultTitle": "PhotoTools — Fotoverktyg",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Gratis fotoverktyg: FOV-simulator, färgschemagenerator, EXIF-läsare, beskärning, inramning och mycket mer.",
+      "description": "Gratis fotoverktyg: bildvinkel-simulator, färgschemagenerator, EXIF-läsare, beskärning, inramning och mycket mer.",
       "ogTitle": "PhotoTools — Gratis fotoverktyg"
     },
     "fov-simulator": {

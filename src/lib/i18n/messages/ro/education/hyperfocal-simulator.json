@@ -45,9 +45,15 @@
           "successMessage": "Corect! Full Frame este alegerea potrivită pentru un senzor standard de 35mm.",
           "failureMessage": "Nu chiar — selectează senzorul Full Frame ca să potrivești un corp standard de 35mm.",
           "options": {
-            "0": { "label": "Full Frame" },
-            "1": { "label": "APS-C (Nikon/Sony)" },
-            "2": { "label": "Micro Four Thirds" }
+            "0": {
+              "label": "Full Frame"
+            },
+            "1": {
+              "label": "APS-C (Nikon/Sony)"
+            },
+            "2": {
+              "label": "Micro Four Thirds"
+            }
           }
         },
         "1": {
@@ -56,8 +62,12 @@
           "successMessage": "Exact! Obiectivul de 24mm are o distanță hiperfocală mult mai scurtă pentru că distanța focală are o relație la pătrat.",
           "failureMessage": "De fapt, distanțele focale mai scurte dau întotdeauna distanțe hiperfocale mai scurte. 24mm câștigă aici.",
           "options": {
-            "0": { "label": "24mm la f/8" },
-            "1": { "label": "50mm la f/8" }
+            "0": {
+              "label": "24mm la f/8"
+            },
+            "1": {
+              "label": "50mm la f/8"
+            }
           }
         },
         "2": {
@@ -66,9 +76,15 @@
           "successMessage": "Gândire excelentă! Ai identificat corect că ai nevoie de o distanță hiperfocală de aproximativ 6m și ai găsit intervalul de diafragmă potrivit.",
           "failureMessage": "Ține minte: focalizarea apropiată e egală cu jumătate din distanța hiperfocală. Ai nevoie ca hiperfocala să fie în jur de 6m ca să obții o limită apropiată de 3m.",
           "options": {
-            "0": { "label": "f/2.8 — f/4" },
-            "1": { "label": "f/5.6 — f/8" },
-            "2": { "label": "f/16 — f/22" }
+            "0": {
+              "label": "f/2.8 — f/4"
+            },
+            "1": {
+              "label": "f/5.6 — f/8"
+            },
+            "2": {
+              "label": "f/16 — f/22"
+            }
           }
         },
         "3": {
@@ -77,19 +93,29 @@
           "successMessage": "Exact! Senzorul mai mic de pe M43 folosește un CoC mai mic (aproximativ 0,015mm față de 0,03mm), ceea ce crește distanțele hiperfocale pentru aceeași distanță focală și diafragmă.",
           "failureMessage": "Factorul-cheie este cercul de confuzie. Senzorii mai mici cer un standard CoC mai strict, ceea ce împinge distanțele hiperfocale mai departe.",
           "options": {
-            "0": { "label": "Distanța focală a obiectivului se schimbă pe senzorii crop" },
-            "1": { "label": "Senzorii mai mici folosesc un cerc de confuzie mai mic" },
-            "2": { "label": "Aparatele Micro Four Thirds au autofocus mai puțin precis" }
+            "0": {
+              "label": "Distanța focală a obiectivului se schimbă pe senzorii crop"
+            },
+            "1": {
+              "label": "Senzorii mai mici folosesc un cerc de confuzie mai mic"
+            },
+            "2": {
+              "label": "Aparatele Micro Four Thirds au autofocus mai puțin precis"
+            }
           }
         },
         "4": {
           "scenario": "Fotografiezi arhitectură la 14mm f/11 pe full frame. Tabelul arată o distanță hiperfocală foarte scurtă. Ar trebui să închizi mai mult, la f/22, pentru și mai multă adâncime a câmpului, sau f/11 e alegerea mai bună?",
           "hint": "Gândește-te la ce se întâmplă cu claritatea imaginii la diafragme foarte închise.",
-          "successMessage": "Excelent! La f/11, difracția e minimă pe full frame, iar distanța hiperfocală la 14mm e deja foarte scurtă. Dacă închizi la f/22, imaginea se înmoaie din cauza difracției, fără un beneficiu semnificativ de DoF.",
-          "failureMessage": "Deși f/22 îți dă pe hârtie o distanță hiperfocală mai scurtă, înmuierea prin difracție la f/22 pe full frame reduce, de fapt, claritatea generală. La 14mm f/11, distanța hiperfocală este deja atât de scurtă încât DoF-ul suplimentar nu merită penalizarea de difracție.",
+          "successMessage": "Excelent! La f/11, difracția e minimă pe full frame, iar distanța hiperfocală la 14mm e deja foarte scurtă. Dacă închizi la f/22, imaginea se înmoaie din cauza difracției, fără un beneficiu semnificativ de profunzime de câmp.",
+          "failureMessage": "Deși f/22 îți dă pe hârtie o distanță hiperfocală mai scurtă, înmuierea prin difracție la f/22 pe full frame reduce, de fapt, claritatea generală. La 14mm f/11, distanța hiperfocală este deja atât de scurtă încât profunzime de câmp-ul suplimentar nu merită penalizarea de difracție.",
           "options": {
-            "0": { "label": "Închide la f/22 pentru adâncime maximă a câmpului" },
-            "1": { "label": "Rămâi la f/11 — difracția la f/22 va reduce claritatea" }
+            "0": {
+              "label": "Închide la f/22 pentru adâncime maximă a câmpului"
+            },
+            "1": {
+              "label": "Rămâi la f/11 — difracția la f/22 va reduce claritatea"
+            }
           }
         }
       }

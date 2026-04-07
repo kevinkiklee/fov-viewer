@@ -39,7 +39,7 @@
         },
         "sensor-size-and-depth-of-field": {
           "question": "Jak rozmiar matrycy wpływa na głębię ostrości?",
-          "answer": "Większe matrycze dają płytszą głębię ostrości przy równoważnym kadrowaniu. Aby uzyskać ten sam kadr z mniejszą matrycą, używasz krótszej ogniskowej (głębsza DOF) lub odsuwasz się dalej (głębsza DOF), co w obu przypadkach zmniejsza rozmycie tła."
+          "answer": "Większe matrycze dają płytszą głębię ostrości przy równoważnym kadrowaniu. Aby uzyskać ten sam kadr z mniejszą matrycą, używasz krótszej ogniskowej (głębsza głębia ostrości) lub odsuwasz się dalej (głębsza głębia ostrości), co w obu przypadkach zmniejsza rozmycie tła."
         }
       }
     }

@@ -27,20 +27,20 @@
       "cropView": "Cắt xem:",
       "collapse": "Thu gọn",
       "expand": "Mở rộng",
-      "fovComparison": "So sánh FOV",
+      "fovComparison": "So sánh góc nhìn",
       "loadingScene": "Đang tải cảnh...",
       "faq": {
         "what-is-fov": {
-          "question": "Góc nhìn (FOV) trong nhiếp ảnh là gì?",
-          "answer": "Góc nhìn (FOV) là phạm vi góc của cảnh có thể nhìn thấy qua ống kính và cảm biến máy ảnh. Nó xác định bao nhiêu cảnh được chụp trong một bức ảnh và bị ảnh hưởng bởi tiêu cự và kích thước cảm biến."
+          "question": "Góc nhìn trong nhiếp ảnh là gì?",
+          "answer": "Góc nhìn là phạm vi góc của cảnh có thể nhìn thấy qua ống kính và cảm biến máy ảnh. Nó xác định bao nhiêu cảnh được chụp trong một bức ảnh và bị ảnh hưởng bởi tiêu cự và kích thước cảm biến."
         },
         "how-crop-factor-affects-fov": {
           "question": "Hệ số crop ảnh hưởng đến góc nhìn như thế nào?",
           "answer": "Cảm biến nhỏ hơn (hệ số crop cao hơn) thu được góc nhìn hẹp hơn so với cảm biến full-frame ở cùng tiêu cự. Ví dụ, cảm biến APS-C với hệ số crop 1,5x khiến ống kính 50mm hoạt động như ống kính 75mm về mặt góc nhìn."
         },
         "fov-vs-focal-length": {
-          "question": "Mối quan hệ giữa FOV và tiêu cự là gì?",
-          "answer": "Góc nhìn và tiêu cự tỷ lệ nghịch với nhau. Tiêu cự ngắn hơn (góc rộng) cho góc nhìn rộng hơn, trong khi tiêu cự dài hơn (tele) cho góc nhìn hẹp hơn. FOV chính xác còn phụ thuộc vào kích thước cảm biến."
+          "question": "Mối quan hệ giữa góc nhìn và tiêu cự là gì?",
+          "answer": "Góc nhìn và tiêu cự tỷ lệ nghịch với nhau. Tiêu cự ngắn hơn (góc rộng) cho góc nhìn rộng hơn, trong khi tiêu cự dài hơn (tele) cho góc nhìn hẹp hơn. góc nhìn chính xác còn phụ thuộc vào kích thước cảm biến."
         }
       }
     }

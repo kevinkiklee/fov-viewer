@@ -28,7 +28,7 @@
       "results": "ফলাফল",
       "nearFocus": "নিকট ফোকাস",
       "farFocus": "দূর ফোকাস",
-      "totalDoF": "মোট DoF",
+      "totalDoF": "মোট ক্ষেত্রের গভীরতা",
       "hyperfocal": "হাইপারফোকাল",
       "backgroundBlur": "ব্যাকগ্রাউন্ড ব্লার",
       "coc": "সার্কেল অফ কনফিউশন",

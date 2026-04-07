@@ -24,7 +24,7 @@ describe('TOOLS registry', () => {
 
   it('getToolBySlug returns correct tool', () => {
     const tool = getToolBySlug('fov-simulator')
-    expect(tool?.name).toBe('FOV Simulator')
+    expect(tool?.name).toBe('Field-of-View Simulator')
   })
 
   it('getToolBySlug returns undefined for unknown slug', () => {

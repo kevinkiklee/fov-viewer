@@ -3,11 +3,11 @@
     "site": {
       "defaultTitle": "PhotoTools — Fotoverktøy",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Gratis fotoverktøy: FOV-simulator, fargepalett-generator, EXIF-leser, beskjæring, rammer og mye mer.",
+      "description": "Gratis fotoverktøy: synsfelt-simulator, fargepalett-generator, EXIF-leser, beskjæring, rammer og mye mer.",
       "ogTitle": "PhotoTools — Gratis fotoverktøy"
     },
     "fov-simulator": {
-      "title": "FOV-simulator — sammenlign brennvidder",
+      "title": "synsfelt-simulator — sammenlign brennvidder",
       "description": "Sammenlign synsfelt på tvers av brennvidder og sensorstørrelser. Gratis, interaktivt og delbart."
     },
     "dof-simulator": {

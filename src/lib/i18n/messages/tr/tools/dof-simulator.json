@@ -28,7 +28,7 @@
       "results": "Sonuçlar",
       "nearFocus": "Yakın Odak",
       "farFocus": "Uzak Odak",
-      "totalDoF": "Toplam DoF",
+      "totalDoF": "Toplam alan derinliği",
       "hyperfocal": "Hiperfocal",
       "backgroundBlur": "Arka Plan Bulanıklığı",
       "coc": "Bulanıklık Çemberi",

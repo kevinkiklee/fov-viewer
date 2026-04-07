@@ -1,7 +1,7 @@
 {
   "education": {
     "dof-simulator": {
-      "beginner": "La profunditat de camp (DoF) és el rang de distàncies de la teva foto que apareix acceptablement nítid. Una profunditat de camp reduïda desenfoca el fons darrere del subjecte, mentre que una profunditat de camp gran manté tot nítid, del primer pla a l'horitzó. Controlar la profunditat de camp és una de les eines creatives més potents de la fotografia.",
+      "beginner": "La profunditat de camp és el rang de distàncies de la teva foto que apareix acceptablement nítid. Una profunditat de camp reduïda desenfoca el fons darrere del subjecte, mentre que una profunditat de camp gran manté tot nítid, del primer pla a l'horitzó. Controlar la profunditat de camp és una de les eines creatives més potents de la fotografia.",
       "deeper": {
         "0": {
           "heading": "Com funciona la profunditat de camp",
@@ -110,10 +110,18 @@
           "successMessage": "Correcte! Un diafragma obert com f/1.8 o f/2.8 crea una profunditat de camp reduïda, separant el subjecte del fons amb un bokeh agradable.",
           "failureMessage": "No del tot. Els diafragmes tancats com f/11 o f/16 mantenen més parts de l'escena enfocades. Per al desenfocament del fons, tria un diafragma obert (f-stop baix).",
           "options": {
-            "0": { "label": "f/1.8" },
-            "1": { "label": "f/5.6" },
-            "2": { "label": "f/11" },
-            "3": { "label": "f/16" }
+            "0": {
+              "label": "f/1.8"
+            },
+            "1": {
+              "label": "f/5.6"
+            },
+            "2": {
+              "label": "f/11"
+            },
+            "3": {
+              "label": "f/16"
+            }
           }
         },
         "1": {
@@ -122,10 +130,18 @@
           "successMessage": "Bona tria! f/5.6 ofereix prou profunditat de camp per mantenir les dues files nítides mentre manté velocitats d'obturació raonables a interior.",
           "failureMessage": "Aquest diafragma pot deixar la fila de darrere fora d'enfocament o ser innecessàriament tancat. Per a dues files, f/5.6 és un punt de partida fiable.",
           "options": {
-            "0": { "label": "f/1.4" },
-            "1": { "label": "f/2.8" },
-            "2": { "label": "f/5.6" },
-            "3": { "label": "f/22" }
+            "0": {
+              "label": "f/1.4"
+            },
+            "1": {
+              "label": "f/2.8"
+            },
+            "2": {
+              "label": "f/5.6"
+            },
+            "3": {
+              "label": "f/22"
+            }
           }
         },
         "2": {
@@ -134,10 +150,18 @@
           "successMessage": "Exacte! Enfocar a la distància hiperfocal amb f/11 assegura que tot, des d'aproximadament 1 metre fins a l'infinit, sigui acceptablement nítid — perfecte per a aquesta escena.",
           "failureMessage": "Enfocar a l'infinit deixaria les flors del primer pla suaus. Fes servir la distància hiperfocal per estendre la nitidesa des del primer pla fins a l'infinit.",
           "options": {
-            "0": { "label": "Enfocar a les flors (2m)" },
-            "1": { "label": "Enfocar a les muntanyes (infinit)" },
-            "2": { "label": "Enfocar a la distància hiperfocal" },
-            "3": { "label": "Enfocar a mig camí entre flors i muntanyes" }
+            "0": {
+              "label": "Enfocar a les flors (2m)"
+            },
+            "1": {
+              "label": "Enfocar a les muntanyes (infinit)"
+            },
+            "2": {
+              "label": "Enfocar a la distància hiperfocal"
+            },
+            "3": {
+              "label": "Enfocar a mig camí entre flors i muntanyes"
+            }
           }
         },
         "3": {
@@ -146,10 +170,18 @@
           "successMessage": "Correcte! Tancar el diafragma a f/11 o f/16 augmenta aquesta profunditat de camp primíssima del treball macro. Vigila la difracció als diafragmes molt tancats.",
           "failureMessage": "Obrir més el diafragma reduiria encara més la profunditat de camp. En macro, tancar el diafragma (f-stop més alt) és la manera principal de guanyar profunditat.",
           "options": {
-            "0": { "label": "Obrir a f/2.8 per tenir més llum" },
-            "1": { "label": "Tancar a f/11" },
-            "2": { "label": "Canviar a un objectiu més ample" },
-            "3": { "label": "Allunyar-te més de la flor" }
+            "0": {
+              "label": "Obrir a f/2.8 per tenir més llum"
+            },
+            "1": {
+              "label": "Tancar a f/11"
+            },
+            "2": {
+              "label": "Canviar a un objectiu més ample"
+            },
+            "3": {
+              "label": "Allunyar-te més de la flor"
+            }
           }
         },
         "4": {
@@ -158,9 +190,15 @@
           "successMessage": "Correcte! La full frame produeix aproximadament 2 passos menys de profunditat de camp. Tot i que l'objectiu MFT té el mateix f-stop, la distància focal real més curta (42.5mm vs 85mm) dona més profunditat de camp amb enquadrament equivalent.",
           "failureMessage": "Tot i que els dos objectius són f/1.8, la full frame fa servir una distància focal real més llarga per al mateix enquadrament, produint una profunditat de camp significativament més reduïda.",
           "options": {
-            "0": { "label": "Full frame amb 85mm f/1.8" },
-            "1": { "label": "Micro Quatre Terços amb 42.5mm f/1.8" },
-            "2": { "label": "Les dues produeixen la mateixa profunditat de camp" }
+            "0": {
+              "label": "Full frame amb 85mm f/1.8"
+            },
+            "1": {
+              "label": "Micro Quatre Terços amb 42.5mm f/1.8"
+            },
+            "2": {
+              "label": "Les dues produeixen la mateixa profunditat de camp"
+            }
           }
         }
       }

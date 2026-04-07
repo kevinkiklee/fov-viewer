@@ -45,9 +45,15 @@
           "successMessage": "Rigtigt! Fuldformat er det rigtige valg til en standard 35mm-sensor.",
           "failureMessage": "Ikke helt — vælg fuldformat-sensoren for at matche et standard 35mm-kamera.",
           "options": {
-            "0": { "label": "Fuldformat" },
-            "1": { "label": "APS-C (Nikon/Sony)" },
-            "2": { "label": "Micro Four Thirds" }
+            "0": {
+              "label": "Fuldformat"
+            },
+            "1": {
+              "label": "APS-C (Nikon/Sony)"
+            },
+            "2": {
+              "label": "Micro Four Thirds"
+            }
           }
         },
         "1": {
@@ -56,8 +62,12 @@
           "successMessage": "Ja! 24mm-linsen har en meget kortere hyperfokal afstand, fordi brændvidden indgår i anden.",
           "failureMessage": "Faktisk: kortere brændvidder giver altid kortere hyperfokal afstande. 24mm vinder her.",
           "options": {
-            "0": { "label": "24mm ved f/8" },
-            "1": { "label": "50mm ved f/8" }
+            "0": {
+              "label": "24mm ved f/8"
+            },
+            "1": {
+              "label": "50mm ved f/8"
+            }
           }
         },
         "2": {
@@ -66,9 +76,15 @@
           "successMessage": "Flot! Du regnede rigtigt ud, at du skal bruge en hyperfokal afstand på ca. 6 m, og du fandt det rigtige blændeområde.",
           "failureMessage": "Husk: nær fokus er halvdelen af hyperfokal afstanden. Du skal have hyperfokal omkring 6 m for at få en nær fokusgrænse på 3 m.",
           "options": {
-            "0": { "label": "f/2.8 — f/4" },
-            "1": { "label": "f/5.6 — f/8" },
-            "2": { "label": "f/16 — f/22" }
+            "0": {
+              "label": "f/2.8 — f/4"
+            },
+            "1": {
+              "label": "f/5.6 — f/8"
+            },
+            "2": {
+              "label": "f/16 — f/22"
+            }
           }
         },
         "3": {
@@ -77,19 +93,29 @@
           "successMessage": "Præcis! Den mindre M43-sensor bruger en mindre CoC (omkring 0,015 mm mod 0,03 mm), og det øger hyperfokal afstanden for samme brændvidde og blænde.",
           "failureMessage": "Nøglefaktoren er uskarphedscirklen. Mindre sensorer kræver en strammere CoC-standard, og det skubber hyperfokal afstande længere væk.",
           "options": {
-            "0": { "label": "Linsens brændvidde ændres på crop-sensorer" },
-            "1": { "label": "Mindre sensorer bruger en mindre uskarphedscirkel" },
-            "2": { "label": "Micro Four Thirds-kameraer har mindre præcis autofokus" }
+            "0": {
+              "label": "Linsens brændvidde ændres på crop-sensorer"
+            },
+            "1": {
+              "label": "Mindre sensorer bruger en mindre uskarphedscirkel"
+            },
+            "2": {
+              "label": "Micro Four Thirds-kameraer har mindre præcis autofokus"
+            }
           }
         },
         "4": {
           "scenario": "Du fotograferer arkitektur ved 14mm f/11 på fuldformat. Tabellen viser en meget kort hyperfokal afstand. Skal du lukke mere ned til f/22 for endnu mere dybdeskarphed, eller er f/11 det bedre valg?",
           "hint": "Tænk på, hvad der sker med billedets skarphed ved meget små blænder.",
-          "successMessage": "Flot! Ved f/11 er diffraktionen minimal på fuldformat, og hyperfokal afstanden ved 14mm er allerede meget kort. At lukke ned til f/22 ville blødgøre billedet på grund af diffraktion uden nogen reel DoF-gevinst.",
-          "failureMessage": "Selvom f/22 på papiret giver en kortere hyperfokal afstand, reducerer diffraktionen ved f/22 på fuldformat den samlede skarphed. Ved 14mm f/11 er hyperfokal afstanden allerede så kort, at den ekstra DoF ikke er diffraktionsstraffen værd.",
+          "successMessage": "Flot! Ved f/11 er diffraktionen minimal på fuldformat, og hyperfokal afstanden ved 14mm er allerede meget kort. At lukke ned til f/22 ville blødgøre billedet på grund af diffraktion uden nogen reel dybdeskarphed-gevinst.",
+          "failureMessage": "Selvom f/22 på papiret giver en kortere hyperfokal afstand, reducerer diffraktionen ved f/22 på fuldformat den samlede skarphed. Ved 14mm f/11 er hyperfokal afstanden allerede så kort, at den ekstra dybdeskarphed ikke er diffraktionsstraffen værd.",
           "options": {
-            "0": { "label": "Luk ned til f/22 for maksimal dybdeskarphed" },
-            "1": { "label": "Bliv ved f/11 — diffraktion ved f/22 reducerer skarpheden" }
+            "0": {
+              "label": "Luk ned til f/22 for maksimal dybdeskarphed"
+            },
+            "1": {
+              "label": "Bliv ved f/11 — diffraktion ved f/22 reducerer skarpheden"
+            }
           }
         }
       }

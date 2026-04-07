@@ -27,12 +27,12 @@
       "cropView": "Beskärningsvy:",
       "collapse": "Fäll ihop",
       "expand": "Fäll ut",
-      "fovComparison": "FOV-jämförelse",
+      "fovComparison": "bildvinkel-jämförelse",
       "loadingScene": "Laddar scen ...",
       "faq": {
         "what-is-fov": {
           "question": "Vad är bildvinkel i fotografi?",
-          "answer": "Bildvinkeln (FOV) är det vinkelområde av scenen som syns genom objektiv och sensor. Den avgör hur mycket av en scen som fångas i fotot och styrs av brännvidd och sensorstorlek."
+          "answer": "Bildvinkeln är det vinkelområde av scenen som syns genom objektiv och sensor. Den avgör hur mycket av en scen som fångas i fotot och styrs av brännvidd och sensorstorlek."
         },
         "how-crop-factor-affects-fov": {
           "question": "Hur påverkar cropfaktorn bildvinkeln?",

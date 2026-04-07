@@ -2,7 +2,7 @@
   "education": {
     "exposure-simulator": {
       "beginner": "Pozlama üçgeni, üç kamera ayarının — diyafram, enstantane hızı ve ISO — fotoğrafınızın ne kadar parlak olduğunu kontrol etmek için nasıl birlikte çalıştığını tanımlar. Bir ayarı değiştirmek, aynı parlaklığı korumak için diğerlerinden en az birini ayarlamayı gerektirir. Her ayarın kendi yaratıcı yan etkisi de vardır: diyafram arka plan bulanıklığını, enstantane hızı hareket bulanıklığını ve ISO görüntü gürültüsünü kontrol eder.",
-      "deeper": "Pozlama, Pozlama Değeri (EV) cinsinden ölçülür; burada her tam EV adımı ışığın iki katına çıkmasını veya yarıya inmesini temsil eder. 1 EV'lik (bir \"adım\") bir artış, sensöre ulaşan ışığın iki katı anlamına gelir. Diyafram geometrik bir ilerleme izler (f/1,4, f/2, f/2,8, f/4...) burada her tam adım objektife giren ışığı yarıya indirir çünkü açıklığın alanı f-sayısının karesiyle ters orantılıdır. Enstantane hızı daha sezgiseldir: süreyi iki katına çıkarmak ışığı iki katına çıkarır. ISO sensörden gelen sinyali yükseltir — ISO'yu iki katına çıkarmak etkili parlaklığı iki katına çıkarır ancak aynı zamanda gürültüyü de artırır. Pratikte, genellikle yaratıcı amacınız için en önemli parametreyi önce ayarlarsınız (DoF kontrolü için diyafram, hareket için enstantane), sonra diğerlerini dengelersiniz. Modern kameralar daha ince kontrol için 1/3 adım artışlarla ölçüm yapar.",
+      "deeper": "Pozlama, Pozlama Değeri (EV) cinsinden ölçülür; burada her tam EV adımı ışığın iki katına çıkmasını veya yarıya inmesini temsil eder. 1 EV'lik (bir \"adım\") bir artış, sensöre ulaşan ışığın iki katı anlamına gelir. Diyafram geometrik bir ilerleme izler (f/1,4, f/2, f/2,8, f/4...) burada her tam adım objektife giren ışığı yarıya indirir çünkü açıklığın alanı f-sayısının karesiyle ters orantılıdır. Enstantane hızı daha sezgiseldir: süreyi iki katına çıkarmak ışığı iki katına çıkarır. ISO sensörden gelen sinyali yükseltir — ISO'yu iki katına çıkarmak etkili parlaklığı iki katına çıkarır ancak aynı zamanda gürültüyü de artırır. Pratikte, genellikle yaratıcı amacınız için en önemli parametreyi önce ayarlarsınız (alan derinliği kontrolü için diyafram, hareket için enstantane), sonra diğerlerini dengelersiniz. Modern kameralar daha ince kontrol için 1/3 adım artışlarla ölçüm yapar.",
       "keyFactors": {
         "0": {
           "label": "Diyafram",
@@ -57,10 +57,18 @@
           "successMessage": "Doğru! 1/1000s gibi hızlı bir enstantane, köpeğinizi koşu ortasında dondurur. Güneşli bir günde bunu destekleyecek bol ışığınız var.",
           "failureMessage": "Bu ayar doğrudan hareketi dondurmaz. Hareketli bir konuyu durdurmak için hızlı bir enstantane hızı gerekir — pozlama ne kadar kısa olursa konu bulanıklaşmaya o kadar az zaman bulur.",
           "options": {
-            "0": { "label": "Diyaframı f/2,8'e aç" },
-            "1": { "label": "Hızlı enstantane kullan (1/1000s)" },
-            "2": { "label": "ISO'yu 3200'e yükselt" },
-            "3": { "label": "Daha uzun odak uzaklığı kullan" }
+            "0": {
+              "label": "Diyaframı f/2,8'e aç"
+            },
+            "1": {
+              "label": "Hızlı enstantane kullan (1/1000s)"
+            },
+            "2": {
+              "label": "ISO'yu 3200'e yükselt"
+            },
+            "3": {
+              "label": "Daha uzun odak uzaklığı kullan"
+            }
           }
         },
         "1": {
@@ -69,10 +77,18 @@
           "successMessage": "İyi düşündünüz! ISO'yu 1600'e yükseltmek, elde çekim için enstantane hızınızı yeterince hızlı tutarken iki ekstra adım parlaklık verir.",
           "failureMessage": "Bu değişiklik başka sorunlara yol açabilir. Diyafram zaten en geniş değerine yakın olduğundan ve elde kullanım için yeterli enstantane hızına ihtiyacınız olduğundan, ISO'yu yükseltmek en pratik ayarlamadır.",
           "options": {
-            "0": { "label": "ISO'yu 1600'e yükselt" },
-            "1": { "label": "Enstantaneyi 1/4s'ye yavaşlat" },
-            "2": { "label": "Diyaframı f/8'e kıs" },
-            "3": { "label": "Daha küçük sensörlü kameraya geç" }
+            "0": {
+              "label": "ISO'yu 1600'e yükselt"
+            },
+            "1": {
+              "label": "Enstantaneyi 1/4s'ye yavaşlat"
+            },
+            "2": {
+              "label": "Diyaframı f/8'e kıs"
+            },
+            "3": {
+              "label": "Daha küçük sensörlü kameraya geç"
+            }
           }
         },
         "2": {
@@ -81,10 +97,18 @@
           "successMessage": "Kesinlikle! Yavaş enstantane (1/2s veya daha uzun) kullanmak ve diyaframı f/22'ye kısarak (ve muhtemelen bir ND filtre ekleyerek) telafi etmek size o ipeksi su efektini verir.",
           "failureMessage": "İpeksi su elde etmek için yavaş enstantane gerekir — yaklaşık 1/2s ile birkaç saniye arası. Parlak bir günde aşırı pozlamayı önlemek için objektife giren ışığı da azaltmanız gerekecek.",
           "options": {
-            "0": { "label": "1/2s enstantane kullan ve f/22'ye kıs" },
-            "1": { "label": "f/2,8'de 1/1000s enstantane kullan" },
-            "2": { "label": "ISO'yu 6400'e yükselt" },
-            "3": { "label": "1/250s'yi koru ama f/1,4'e aç" }
+            "0": {
+              "label": "1/2s enstantane kullan ve f/22'ye kıs"
+            },
+            "1": {
+              "label": "f/2,8'de 1/1000s enstantane kullan"
+            },
+            "2": {
+              "label": "ISO'yu 6400'e yükselt"
+            },
+            "3": {
+              "label": "1/250s'yi koru ama f/1,4'e aç"
+            }
           }
         },
         "3": {
@@ -93,10 +117,18 @@
           "successMessage": "Mükemmel! f/5,6'dan f/2,8'e açmak 2 adım ışık ekler. Enstantane hızını 1/125s'den 1/500s'ye değiştirmek tam 2 adım çıkarır ve pozlamayı aynı tutar.",
           "failureMessage": "Matematiğin dengelenmesi gerekiyor. f/5,6'dan f/2,8'e +2 adımdır. Daha hızlı enstantane, daha düşük ISO veya bir kombinasyon aracılığıyla tam 2 adımı telafi etmeniz gerekir.",
           "options": {
-            "0": { "label": "ISO 200'de 1/500s" },
-            "1": { "label": "ISO 200'de 1/250s" },
-            "2": { "label": "ISO 100'de 1/125s" },
-            "3": { "label": "ISO 100'de 1/60s" }
+            "0": {
+              "label": "ISO 200'de 1/500s"
+            },
+            "1": {
+              "label": "ISO 200'de 1/250s"
+            },
+            "2": {
+              "label": "ISO 100'de 1/125s"
+            },
+            "3": {
+              "label": "ISO 100'de 1/60s"
+            }
           }
         },
         "4": {
@@ -105,10 +137,18 @@
           "successMessage": "Doğru! EV 6'da f/2,8 ve 1/250s ile ISO 3200'e ihtiyacınız var. Konser fotoğrafçılığı genellikle yüksek ISO gerektirir — kameranızın kullanılabilir ISO limitini bilmek bu durumlar için çok önemlidir.",
           "failureMessage": "EV 6'da, f/2,8 ve 1/250s kombinasyonu uygun pozlama için ISO 3200 gerektirir. Pozlama formülü diyafram, enstantane hızı ve ISO'yu mevcut ışığa karşı dengeler.",
           "options": {
-            "0": { "label": "ISO 400" },
-            "1": { "label": "ISO 800" },
-            "2": { "label": "ISO 3200" },
-            "3": { "label": "ISO 12800" }
+            "0": {
+              "label": "ISO 400"
+            },
+            "1": {
+              "label": "ISO 800"
+            },
+            "2": {
+              "label": "ISO 3200"
+            },
+            "3": {
+              "label": "ISO 12800"
+            }
           }
         }
       }

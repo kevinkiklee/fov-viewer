@@ -27,12 +27,12 @@
       "cropView": "Crop nézet:",
       "collapse": "Összecsukás",
       "expand": "Kibontás",
-      "fovComparison": "FOV összehasonlítás",
+      "fovComparison": "látószög összehasonlítás",
       "loadingScene": "Jelenet betöltése...",
       "faq": {
         "what-is-fov": {
           "question": "Mi a látószög a fotózásban?",
-          "answer": "A látószög (FOV) az a szögtartomány a jelenetből, amit az objektív és az érzékelő együtt lát. Meghatározza, hogy mennyit örökít meg a kép a jelenetből, és a gyújtótávolság, valamint az érzékelőméret együtt alakítja."
+          "answer": "A látószög az a szögtartomány a jelenetből, amit az objektív és az érzékelő együtt lát. Meghatározza, hogy mennyit örökít meg a kép a jelenetből, és a gyújtótávolság, valamint az érzékelőméret együtt alakítja."
         },
         "how-crop-factor-affects-fov": {
           "question": "Hogyan hat a crop faktor a látószögre?",

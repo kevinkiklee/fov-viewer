@@ -1,7 +1,7 @@
 {
   "tools": {
     "fov-simulator": {
-      "name": "Simulator FOV",
+      "name": "Simulator Bidang Pandang",
       "description": "Bandingkan bidang pandang pada berbagai panjang fokus dan ukuran sensor"
     },
     "color-scheme-generator": {
@@ -13,7 +13,7 @@
       "description": "Lihat bagaimana apertur, kecepatan rana, dan ISO berinteraksi"
     },
     "dof-simulator": {
-      "name": "Simulator Depth-of-Field",
+      "name": "Simulator Kedalaman Bidang",
       "description": "Visualisasikan bagaimana apertur, panjang fokus, dan jarak memengaruhi blur latar belakang"
     },
     "focus-stacking-calculator": {

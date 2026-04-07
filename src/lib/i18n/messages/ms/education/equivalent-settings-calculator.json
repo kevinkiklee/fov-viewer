@@ -8,8 +8,8 @@
           "text": "Setiap sensor mempunyai faktor crop berbanding standard full-frame 35mm. Sensor APS-C mempunyai faktor sekitar 1.5×, Micro Four Thirds 2×, dan format sederhana sekitar 0.79×. Mendarab panjang fokus sebenar dengan faktor crop memberikan medan pandangan setara full-frame. Lensa 35mm pada APS-C membingkaikan seperti 52.5mm pada full frame."
         },
         "1": {
-          "heading": "Aperture Setara & DoF",
-          "text": "Untuk memadankan kedalaman medan merentasi format, darabkan nombor-f dengan faktor crop yang sama. Lensa f/1.4 pada Micro Four Thirds menghasilkan DoF setara dengan f/2.8 pada full frame (1.4 × 2 = 2.8). Inilah sebabnya kamera full-frame dihargai untuk DoF cetek — anda boleh menggunakan lensa yang secara fizikal lebih pantas pada aperture sebenar lebih luas untuk mencapai kekaburan yang tidak dapat ditiru oleh sensor lebih kecil."
+          "heading": "Aperture Setara & kedalaman medan",
+          "text": "Untuk memadankan kedalaman medan merentasi format, darabkan nombor-f dengan faktor crop yang sama. Lensa f/1.4 pada Micro Four Thirds menghasilkan kedalaman medan setara dengan f/2.8 pada full frame (1.4 × 2 = 2.8). Inilah sebabnya kamera full-frame dihargai untuk kedalaman medan cetek — anda boleh menggunakan lensa yang secara fizikal lebih pantas pada aperture sebenar lebih luas untuk mencapai kekaburan yang tidak dapat ditiru oleh sensor lebih kecil."
         },
         "2": {
           "heading": "ISO Setara & Jumlah Cahaya",
@@ -23,7 +23,7 @@
         },
         "1": {
           "label": "Saiz Sensor",
-          "description": "Sensor yang secara fizikal lebih besar menangkap lebih banyak cahaya dan menghasilkan DoF yang lebih cetek pada bingkai setara. Kalkulator kesetaraan mendedahkan dengan tepat berapa banyak perbezaan yang dibuat oleh setiap format."
+          "description": "Sensor yang secara fizikal lebih besar menangkap lebih banyak cahaya dan menghasilkan kedalaman medan yang lebih cetek pada bingkai setara. Kalkulator kesetaraan mendedahkan dengan tepat berapa banyak perbezaan yang dibuat oleh setiap format."
         },
         "2": {
           "label": "Lensa Tersedia",
@@ -60,7 +60,7 @@
         },
         "cropFactor": {
           "term": "Faktor Crop",
-          "definition": "Nisbah antara pepenjuru sensor full-frame 35mm dan sensor sasaran. Darabkan panjang fokus dengan faktor crop untuk FOV setara; darabkan aperture dengan faktor crop untuk DoF setara."
+          "definition": "Nisbah antara pepenjuru sensor full-frame 35mm dan sensor sasaran. Darabkan panjang fokus dengan faktor crop untuk medan pandangan setara; darabkan aperture dengan faktor crop untuk kedalaman medan setara."
         },
         "equivalentFL": {
           "term": "Panjang Fokus Setara",
@@ -78,32 +78,52 @@
           "successMessage": "Betul! 85mm / 2 = 42.5mm. Kawan anda memerlukan lensa 42.5mm pada Micro Four Thirds untuk mendapatkan bingkai yang sama seperti 85mm anda pada full frame.",
           "failureMessage": "Untuk memadankan medan pandangan, bahagikan dengan faktor crop: 85mm / 2 = 42.5mm. Itulah panjang fokus sebenar yang diperlukan pada badan MFT.",
           "options": {
-            "0": { "label": "42.5mm" },
-            "1": { "label": "85mm" },
-            "2": { "label": "170mm" },
-            "3": { "label": "56mm" }
+            "0": {
+              "label": "42.5mm"
+            },
+            "1": {
+              "label": "85mm"
+            },
+            "2": {
+              "label": "170mm"
+            },
+            "3": {
+              "label": "56mm"
+            }
           }
         },
         "1": {
           "scenario": "Kawan anda menjumpai lensa 42.5mm f/1.8 untuk kamera MFT mereka. Adakah kekaburan latar belakang akan padan dengan 85mm f/1.8 anda pada full frame?",
-          "hint": "Gunakan faktor crop pada aperture juga untuk mencari DoF setara.",
-          "successMessage": "Betul! 42.5mm f/1.8 pada MFT memberi DoF setara kepada 85mm f/3.6 pada full frame (1.8 × 2 = 3.6). Tangkapan full-frame f/1.8 anda menghasilkan kekaburan yang jauh lebih banyak.",
-          "failureMessage": "Tidak — MFT f/1.8 memberi DoF setara dengan f/3.6 pada full frame (1.8 × 2× crop = 3.6). Untuk memadankan kekaburan full-frame f/1.8 anda, kawan anda memerlukan f/0.9 pada MFT, yang tidak wujud.",
+          "hint": "Gunakan faktor crop pada aperture juga untuk mencari kedalaman medan setara.",
+          "successMessage": "Betul! 42.5mm f/1.8 pada MFT memberi kedalaman medan setara kepada 85mm f/3.6 pada full frame (1.8 × 2 = 3.6). Tangkapan full-frame f/1.8 anda menghasilkan kekaburan yang jauh lebih banyak.",
+          "failureMessage": "Tidak — MFT f/1.8 memberi kedalaman medan setara dengan f/3.6 pada full frame (1.8 × 2× crop = 3.6). Untuk memadankan kekaburan full-frame f/1.8 anda, kawan anda memerlukan f/0.9 pada MFT, yang tidak wujud.",
           "options": {
-            "0": { "label": "Ya — f/1.8 yang sama bermakna kekaburan yang sama" },
-            "1": { "label": "Tidak — MFT f/1.8 setara dengan kedalaman medan full-frame f/3.6" },
-            "2": { "label": "Tidak — MFT menghasilkan lebih banyak kekaburan kerana sensor lebih kecil" }
+            "0": {
+              "label": "Ya — f/1.8 yang sama bermakna kekaburan yang sama"
+            },
+            "1": {
+              "label": "Tidak — MFT f/1.8 setara dengan kedalaman medan full-frame f/3.6"
+            },
+            "2": {
+              "label": "Tidak — MFT menghasilkan lebih banyak kekaburan kerana sensor lebih kecil"
+            }
           }
         },
         "2": {
           "scenario": "Seorang jurugambar yang bertukar dari full frame ke APS-C (crop 1.5×) mahu memadankan rupa 50mm f/1.4 pada full frame. Apakah lensa dan aperture setara yang mereka perlukan pada APS-C?",
-          "hint": "Bahagikan panjang fokus dengan faktor crop untuk FOV setara. Bahagikan aperture dengan faktor crop untuk DoF setara.",
-          "successMessage": "Tepat sekali! 50 / 1.5 = 33mm untuk medan pandangan, dan f/1.4 / 1.5 = f/0.93 untuk memadankan DoF. Memandangkan tiada lensa f/0.93 wujud, kamera APS-C tidak dapat meniru sepenuhnya rupa full-frame.",
+          "hint": "Bahagikan panjang fokus dengan faktor crop untuk medan pandangan setara. Bahagikan aperture dengan faktor crop untuk kedalaman medan setara.",
+          "successMessage": "Tepat sekali! 50 / 1.5 = 33mm untuk medan pandangan, dan f/1.4 / 1.5 = f/0.93 untuk memadankan kedalaman medan. Memandangkan tiada lensa f/0.93 wujud, kamera APS-C tidak dapat meniru sepenuhnya rupa full-frame.",
           "failureMessage": "Jawapan betul ialah ~33mm f/0.93. Memandangkan 50 / 1.5 = 33.3mm dan 1.4 / 1.5 = 0.93. Tiada lensa f/0.93 wujud, jadi rupa full-frame tidak dapat dipadankan sepenuhnya pada APS-C.",
           "options": {
-            "0": { "label": "35mm f/1.4 — cukup dekat" },
-            "1": { "label": "33mm f/0.93 — padanan tepat, tetapi tiada lensa sebegini wujud" },
-            "2": { "label": "75mm f/2.1 — darab dengan faktor crop" }
+            "0": {
+              "label": "35mm f/1.4 — cukup dekat"
+            },
+            "1": {
+              "label": "33mm f/0.93 — padanan tepat, tetapi tiada lensa sebegini wujud"
+            },
+            "2": {
+              "label": "75mm f/2.1 — darab dengan faktor crop"
+            }
           }
         }
       }

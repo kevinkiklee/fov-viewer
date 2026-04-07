@@ -1,7 +1,7 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Bildvinkel (FOV) är hur mycket av en scen som kameran fångar. Ett vidvinkelobjektiv (som 24 mm) ser en bred vy, medan ett teleobjektiv (som 200 mm) zoomar in på en smal skiva. Den här simulatorn låter dig jämföra upp till fyra objektiv på olika sensorer, överlagrade på verkliga scener, så att du ser exakt vad varje kombination fångar.",
+      "beginner": "Bildvinkel är hur mycket av en scen som kameran fångar. Ett vidvinkelobjektiv (som 24 mm) ser en bred vy, medan ett teleobjektiv (som 200 mm) zoomar in på en smal skiva. Den här simulatorn låter dig jämföra upp till fyra objektiv på olika sensorer, överlagrade på verkliga scener, så att du ser exakt vad varje kombination fångar.",
       "deeper": {
         "0": {
           "heading": "Formeln för bildvinkeln",
@@ -60,7 +60,7 @@
         },
         "Orientation": {
           "term": "Orientering",
-          "definition": "Växla mellan liggande (horisontell) och stående (vertikal) kameraorientering. FOV-rektangeln roterar med."
+          "definition": "Växla mellan liggande (horisontell) och stående (vertikal) kameraorientering. bildvinkel-rektangeln roterar med."
         }
       },
       "challenges": {
@@ -70,9 +70,15 @@
           "successMessage": "Rätt! Ett 24 mm ser mycket mer av scenen än ett 70 mm. Vidvinkelobjektiv har korta brännvidder.",
           "failureMessage": "Kortare brännvidder ger bredare bildvinklar. 24 mm är en vidvinkel som fångar mycket mer av stadssilhuetten än 70 mm.",
           "options": {
-            "0": { "label": "24 mm" },
-            "1": { "label": "70 mm" },
-            "2": { "label": "200 mm" }
+            "0": {
+              "label": "24 mm"
+            },
+            "1": {
+              "label": "70 mm"
+            },
+            "2": {
+              "label": "200 mm"
+            }
           }
         },
         "1": {
@@ -81,20 +87,32 @@
           "successMessage": "Rätt! Ett 50 mm på fullformat är det klassiska normal-objektivet — dess bildvinkel på ~46 grader motsvarar ungefär vad det mänskliga ögat naturligt fokuserar på.",
           "failureMessage": "Ett 50 mm på fullformat räknas som \"normal\" eftersom dess bildvinkel (~46 grader) matchar en bekväm mänsklig perception.",
           "options": {
-            "0": { "label": "Ultravid" },
-            "1": { "label": "Normal / standard" },
-            "2": { "label": "Tele" }
+            "0": {
+              "label": "Ultravid"
+            },
+            "1": {
+              "label": "Normal / standard"
+            },
+            "2": {
+              "label": "Tele"
+            }
           }
         },
         "2": {
-          "scenario": "Lägg till två objektiv: Lens A är 35 mm på APS-C (Nikon/Sony) och Lens B är 50 mm på fullformat. Jämför de två FOV-överläggen. Vad lägger du märke till?",
+          "scenario": "Lägg till två objektiv: Lens A är 35 mm på APS-C (Nikon/Sony) och Lens B är 50 mm på fullformat. Jämför de två bildvinkel-överläggen. Vad lägger du märke till?",
           "hint": "35 mm multiplicerat med APS-C-cropfaktorn 1,5 blir ...",
           "successMessage": "Precis! 35 mm på APS-C (1,5× crop) ger en bildvinkel ekvivalent med 52,5 mm på fullformat — nästan identisk med 50 mm FF. Överläggen är nästan exakt lika stora.",
           "failureMessage": "35 mm × 1,5 cropfaktor = 52,5 mm ekvivalent. Det är nästan identiskt med 50 mm på fullformat, och det är därför överläggen är nästan lika.",
           "options": {
-            "0": { "label": "De har nästan identiska bildvinklar" },
-            "1": { "label": "APS-C-objektivet visar mycket bredare vy" },
-            "2": { "label": "Fullformatsobjektivet visar mycket bredare vy" }
+            "0": {
+              "label": "De har nästan identiska bildvinklar"
+            },
+            "1": {
+              "label": "APS-C-objektivet visar mycket bredare vy"
+            },
+            "2": {
+              "label": "Fullformatsobjektivet visar mycket bredare vy"
+            }
           }
         },
         "3": {
@@ -103,9 +121,15 @@
           "successMessage": "Rätt! Fullformat ser mer eftersom den större sensorn fångar en bredare del av 24 mm-objektivets bildcirkel. På APS-C ger samma 24 mm ett utsnitt som ~36 mm.",
           "failureMessage": "Fullformat fångar mer av scenen. Den större sensorn använder mer av linsens bildcirkel, vilket ger en bredare effektiv bildvinkel.",
           "options": {
-            "0": { "label": "Fullformat — större sensor ser mer" },
-            "1": { "label": "APS-C — cropsensor ser mer" },
-            "2": { "label": "Båda ser lika mycket — det är brännvidden som räknas" }
+            "0": {
+              "label": "Fullformat — större sensor ser mer"
+            },
+            "1": {
+              "label": "APS-C — cropsensor ser mer"
+            },
+            "2": {
+              "label": "Båda ser lika mycket — det är brännvidden som räknas"
+            }
           }
         },
         "4": {
@@ -114,9 +138,15 @@
           "successMessage": "Utmärkt! 200 mm på MFT (2× crop) ger en bildvinkel motsvarande 400 mm. Kompromissen: bildutsnittet matchar ett 400 mm FF, men skärpedjupet matchar 200 mm-objektivet (större skärpedjup), och den mindre sensorn samlar mindre totalt ljus — vilket betyder sämre brus vid höga ISO. Fördelen är mycket mindre, lättare och billigare utrustning.",
           "failureMessage": "200 mm × 2,0 crop = 400 mm ekvivalent bildvinkel. Men det är inte identiskt med ett 400 mm på FF: du får större skärpedjup (baserat på den faktiska brännvidden 200 mm), mindre ljusinsamling (mindre sensor) och mer brus vid hög ISO. Fördelen är betydligt mindre och lättare utrustning.",
           "options": {
-            "0": { "label": "400 mm-ekvivalent — samma bildvinkel men större skärpedjup, mer brus, mindre/lättare" },
-            "1": { "label": "400 mm-ekvivalent — identiskt på alla sätt med 400 mm på fullformat" },
-            "2": { "label": "200 mm-ekvivalent — cropfaktorn påverkar inte bildvinkeln" }
+            "0": {
+              "label": "400 mm-ekvivalent — samma bildvinkel men större skärpedjup, mer brus, mindre/lättare"
+            },
+            "1": {
+              "label": "400 mm-ekvivalent — identiskt på alla sätt med 400 mm på fullformat"
+            },
+            "2": {
+              "label": "200 mm-ekvivalent — cropfaktorn påverkar inte bildvinkeln"
+            }
           }
         }
       }

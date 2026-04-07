@@ -1,37 +1,37 @@
 {
   "education": {
     "dof-simulator": {
-      "beginner": "Dybdeskarphed (DoF) er det afstandsområde i dit billede, der fremstår acceptabelt skarpt. Med lille dybdeskarphed sløres baggrunden bag motivet, mens stor dybdeskarphed holder alt fra forgrund til horisont skarpt. Kontrollen med dybdeskarpheden er et af fotografiets stærkeste kreative værktøjer.",
+      "beginner": "Dybdeskarphed er det afstandsområde i dit billede, der fremstår acceptabelt skarpt. Med lille dybdeskarphed sløres baggrunden bag motivet, mens stor dybdeskarphed holder alt fra forgrund til horisont skarpt. Kontrollen med dybdeskarpheden er et af fotografiets stærkeste kreative værktøjer.",
       "deeper": {
         "0": {
           "heading": "Sådan virker dybdeskarphed",
-          "text": "Dybdeskarphed bestemmes af uskarphedscirklen (CoC) — den største uskarphedsplet på sensoren, som det menneskelige øje stadig opfatter som skarp. Tre fysiske faktorer styrer DoF: brændvidde, blænde og motivafstand. En større blænde (lavere f-tal) giver mindre DoF, fordi linsen samler lyset i stejlere vinkler, og uskarpe punkter spredes til større cirkler på sensoren."
+          "text": "Dybdeskarphed bestemmes af uskarphedscirklen (CoC) — den største uskarphedsplet på sensoren, som det menneskelige øje stadig opfatter som skarp. Tre fysiske faktorer styrer dybdeskarphed: brændvidde, blænde og motivafstand. En større blænde (lavere f-tal) giver mindre dybdeskarphed, fordi linsen samler lyset i stejlere vinkler, og uskarpe punkter spredes til større cirkler på sensoren."
         },
         "1": {
           "heading": "Brændvidde og afstand",
-          "text": "Længere brændvidder forstørrer billedet, og dermed forstørres uskarphedscirklerne også, så DoF bliver smallere. At gå tættere på motivet reducerer DoF af samme årsag — den relative afstandsforskel mellem motiv og baggrund bliver større. Den hyperfokale afstand er den fokusafstand, hvor DoF strækker sig fra halvdelen af afstanden og helt ud til uendelig, så skarpheden i hele billedet maksimeres."
+          "text": "Længere brændvidder forstørrer billedet, og dermed forstørres uskarphedscirklerne også, så dybdeskarphed bliver smallere. At gå tættere på motivet reducerer dybdeskarphed af samme årsag — den relative afstandsforskel mellem motiv og baggrund bliver større. Den hyperfokale afstand er den fokusafstand, hvor dybdeskarphed strækker sig fra halvdelen af afstanden og helt ud til uendelig, så skarpheden i hele billedet maksimeres."
         },
         "2": {
           "heading": "Bokeh og diffraktion",
-          "text": "Bokeh handler om kvaliteten af de uskarpe områder. Antallet og formen på blændelamellerne påvirker bokeh-karakteren — mere afrundede lameller giver blødere, mere cirkulære højlys. Ved meget små blænder (f/16 og opefter) bøjes lyset omkring kanterne af blænden (diffraktion), og hele billedet bliver blødere — også inden for DoF-zonen. Der er altid et sweet spot — typisk omkring f/5.6–f/8 på fuldformat — hvor skarphed og dybdeskarphed er bedst balanceret."
+          "text": "Bokeh handler om kvaliteten af de uskarpe områder. Antallet og formen på blændelamellerne påvirker bokeh-karakteren — mere afrundede lameller giver blødere, mere cirkulære højlys. Ved meget små blænder (f/16 og opefter) bøjes lyset omkring kanterne af blænden (diffraktion), og hele billedet bliver blødere — også inden for dybdeskarphed-zonen. Der er altid et sweet spot — typisk omkring f/5.6–f/8 på fuldformat — hvor skarphed og dybdeskarphed er bedst balanceret."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Blænde",
-          "description": "Store blænder (f/1.4–f/2.8) giver lille DoF med cremet bokeh. Små blænder (f/8–f/16) øger skarpheden i hele billedet."
+          "description": "Store blænder (f/1.4–f/2.8) giver lille dybdeskarphed med cremet bokeh. Små blænder (f/8–f/16) øger skarpheden i hele billedet."
         },
         "1": {
           "label": "Brændvidde",
-          "description": "Længere linser komprimerer perspektivet og reducerer DoF ved samme blænde og udsnit. Et 200mm ved f/4 har langt mindre DoF end et 35mm ved f/4."
+          "description": "Længere linser komprimerer perspektivet og reducerer dybdeskarphed ved samme blænde og udsnit. Et 200mm ved f/4 har langt mindre dybdeskarphed end et 35mm ved f/4."
         },
         "2": {
           "label": "Motivafstand",
-          "description": "Jo tættere du stiller skarpt, jo mindre bliver DoF. Makrofotografer arbejder ofte med DoF målt i millimeter."
+          "description": "Jo tættere du stiller skarpt, jo mindre bliver dybdeskarphed. Makrofotografer arbejder ofte med dybdeskarphed målt i millimeter."
         },
         "3": {
           "label": "Sensorstørrelse",
-          "description": "Større sensorer kræver længere brændvidder for samme udsnit, og det reducerer DoF indirekte. Et fuldformat giver mindre DoF end et Micro Four Thirds ved samme udsnit."
+          "description": "Større sensorer kræver længere brændvidder for samme udsnit, og det reducerer dybdeskarphed indirekte. Et fuldformat giver mindre dybdeskarphed end et Micro Four Thirds ved samme udsnit."
         }
       },
       "tips": {
@@ -42,7 +42,7 @@
           "text": "Når du fotograferer landskaber, så stil skarpt på hyperfokal afstand i stedet for uendelig. Det giver dig maksimal skarphedszone fra den nære forgrund og ud til den fjerne baggrund."
         },
         "2": {
-          "text": "Vil du have maksimal baggrundsuskarphed på et portræt, så brug en længere brændvidde, og gå så tæt på motivet, som udsnittet tillader — begge dele trækker i samme retning og reducerer DoF markant."
+          "text": "Vil du have maksimal baggrundsuskarphed på et portræt, så brug en længere brændvidde, og gå så tæt på motivet, som udsnittet tillader — begge dele trækker i samme retning og reducerer dybdeskarphed markant."
         }
       },
       "tooltips": {
@@ -110,10 +110,18 @@
           "successMessage": "Rigtigt! En stor blænde som f/1.8 eller f/2.8 giver lille dybdeskarphed og løfter motivet fri af baggrunden med smuk bokeh.",
           "failureMessage": "Ikke helt. Små blænder som f/11 eller f/16 holder mere af billedet skarpt. Vil du have baggrundsuskarphed, så vælg en stor blænde (lavt f-tal).",
           "options": {
-            "0": { "label": "f/1.8" },
-            "1": { "label": "f/5.6" },
-            "2": { "label": "f/11" },
-            "3": { "label": "f/16" }
+            "0": {
+              "label": "f/1.8"
+            },
+            "1": {
+              "label": "f/5.6"
+            },
+            "2": {
+              "label": "f/11"
+            },
+            "3": {
+              "label": "f/16"
+            }
           }
         },
         "1": {
@@ -122,10 +130,18 @@
           "successMessage": "Godt valg! f/5.6 giver nok dybdeskarphed til at holde begge rækker skarpe og samtidig en brugbar lukkertid indendørs.",
           "failureMessage": "Den blænde risikerer at gøre bageste række sløret — eller den er unødigt lille. Til to rækker personer er f/5.6 et sikkert udgangspunkt.",
           "options": {
-            "0": { "label": "f/1.4" },
-            "1": { "label": "f/2.8" },
-            "2": { "label": "f/5.6" },
-            "3": { "label": "f/22" }
+            "0": {
+              "label": "f/1.4"
+            },
+            "1": {
+              "label": "f/2.8"
+            },
+            "2": {
+              "label": "f/5.6"
+            },
+            "3": {
+              "label": "f/22"
+            }
           }
         },
         "2": {
@@ -134,33 +150,55 @@
           "successMessage": "Præcis! Stiller du skarpt på hyperfokal afstand med f/11, er alt fra ca. 1 meter til uendelig acceptabelt skarpt — perfekt til dette motiv.",
           "failureMessage": "Stiller du skarpt på uendelig, bliver blomsterne i forgrunden bløde. Brug hyperfokal afstand for at trække skarpheden helt ned i den nære forgrund.",
           "options": {
-            "0": { "label": "Stil skarpt på blomsterne (2 m)" },
-            "1": { "label": "Stil skarpt på bjergene (uendelig)" },
-            "2": { "label": "Stil skarpt på hyperfokal afstand" },
-            "3": { "label": "Stil skarpt halvvejs mellem blomster og bjerge" }
+            "0": {
+              "label": "Stil skarpt på blomsterne (2 m)"
+            },
+            "1": {
+              "label": "Stil skarpt på bjergene (uendelig)"
+            },
+            "2": {
+              "label": "Stil skarpt på hyperfokal afstand"
+            },
+            "3": {
+              "label": "Stil skarpt halvvejs mellem blomster og bjerge"
+            }
           }
         },
         "3": {
           "scenario": "Du laver et makrofoto af en blomst og opdager, at kun de forreste blade er skarpe — resten af blomsten er sløret. Du er på f/5.6. Hvad skal du gøre for at få mere af blomsten i fokus?",
-          "hint": "Ved tætte fokusafstande bliver DoF ekstremt tynd. Tænk på blænden.",
-          "successMessage": "Ja! At lukke ned til f/11 eller f/16 øger den knivtynde DoF, du har i makro. Pas bare på diffraktion ved meget små blænder.",
-          "failureMessage": "Åbner du blænden mere, bliver DoF endnu tyndere. I makro er det at lukke ned (højere f-tal) den primære måde at få mere dybde på.",
+          "hint": "Ved tætte fokusafstande bliver dybdeskarphed ekstremt tynd. Tænk på blænden.",
+          "successMessage": "Ja! At lukke ned til f/11 eller f/16 øger den knivtynde dybdeskarphed, du har i makro. Pas bare på diffraktion ved meget små blænder.",
+          "failureMessage": "Åbner du blænden mere, bliver dybdeskarphed endnu tyndere. I makro er det at lukke ned (højere f-tal) den primære måde at få mere dybde på.",
           "options": {
-            "0": { "label": "Åbn til f/2.8 for mere lys" },
-            "1": { "label": "Luk ned til f/11" },
-            "2": { "label": "Skift til en bredere linse" },
-            "3": { "label": "Gå længere væk fra blomsten" }
+            "0": {
+              "label": "Åbn til f/2.8 for mere lys"
+            },
+            "1": {
+              "label": "Luk ned til f/11"
+            },
+            "2": {
+              "label": "Skift til en bredere linse"
+            },
+            "3": {
+              "label": "Gå længere væk fra blomsten"
+            }
           }
         },
         "4": {
           "scenario": "Du sammenligner to kameraer til portrætarbejde: et fuldformat med et 85mm f/1.8 og et Micro Four Thirds med et 42,5mm f/1.8. Begge giver samme udsnit. Hvilket kamera giver mindst dybdeskarphed?",
-          "hint": "Tænk på ækvivalente brændvidder, og hvordan sensorstørrelsen påvirker DoF ved samme f-tal.",
-          "successMessage": "Rigtigt! Fuldformatet giver ca. 2 stops mindre DoF. Selvom MFT-linsen har samme f-tal, giver dens kortere faktiske brændvidde (42,5mm mod 85mm) større dybdeskarphed ved samme udsnit.",
-          "failureMessage": "Selvom begge linser er f/1.8, bruger fuldformatet en længere faktisk brændvidde for samme udsnit og giver markant mindre DoF.",
+          "hint": "Tænk på ækvivalente brændvidder, og hvordan sensorstørrelsen påvirker dybdeskarphed ved samme f-tal.",
+          "successMessage": "Rigtigt! Fuldformatet giver ca. 2 stops mindre dybdeskarphed. Selvom MFT-linsen har samme f-tal, giver dens kortere faktiske brændvidde (42,5mm mod 85mm) større dybdeskarphed ved samme udsnit.",
+          "failureMessage": "Selvom begge linser er f/1.8, bruger fuldformatet en længere faktisk brændvidde for samme udsnit og giver markant mindre dybdeskarphed.",
           "options": {
-            "0": { "label": "Fuldformat med 85mm f/1.8" },
-            "1": { "label": "Micro Four Thirds med 42,5mm f/1.8" },
-            "2": { "label": "De giver identisk DoF" }
+            "0": {
+              "label": "Fuldformat med 85mm f/1.8"
+            },
+            "1": {
+              "label": "Micro Four Thirds med 42,5mm f/1.8"
+            },
+            "2": {
+              "label": "De giver identisk dybdeskarphed"
+            }
           }
         }
       }

@@ -7,7 +7,7 @@
       "switchToLandscape": "Lumipat sa landscape",
       "centerOverlays": "I-center ang mga overlay",
       "addLens": "+ Magdagdag ng lens",
-      "fovSimulator": "Simulator ng FOV",
+      "fovSimulator": "Simulator ng field of view",
       "sensor": "Sensor",
       "copyImage": "Kopyahin ang litrato",
       "copyLink": "Kopyahin ang link",
@@ -27,20 +27,20 @@
       "cropView": "Crop view:",
       "collapse": "Isara",
       "expand": "Buksan",
-      "fovComparison": "FOV Comparison",
+      "fovComparison": "field of view Comparison",
       "loadingScene": "Nilo-load ang scene...",
       "faq": {
         "what-is-fov": {
           "question": "Ano ang field of view sa photography?",
-          "answer": "Ang field of view (FOV) ay ang angular na lawak ng scene na nakikita ng lens at camera sensor mo. Ito ang nagde-determine kung gaano karami sa scene ang makukuha sa isang shot, at apektado ito ng focal length at sensor size."
+          "answer": "Ang field of view ay ang angular na lawak ng scene na nakikita ng lens at camera sensor mo. Ito ang nagde-determine kung gaano karami sa scene ang makukuha sa isang shot, at apektado ito ng focal length at sensor size."
         },
         "how-crop-factor-affects-fov": {
           "question": "Paano apektado ng crop factor ang field of view?",
           "answer": "Mas maliit ang sensor (mas mataas ang crop factor), mas makitid ang field of view kumpara sa full-frame sensor sa parehong focal length. Halimbawa, sa APS-C sensor na may 1.5x crop factor, ang 50mm lens ay umuugali na parang 75mm lens pagdating sa field of view."
         },
         "fov-vs-focal-length": {
-          "question": "Ano ang relasyon ng FOV at focal length?",
-          "answer": "Inversely related ang field of view at focal length. Mas maikli ang focal length (wide-angle), mas malawak ang field of view; mas mahaba ang focal length (telephoto), mas makitid ang field of view. Depende rin sa sensor size ang exact FOV."
+          "question": "Ano ang relasyon ng field of view at focal length?",
+          "answer": "Inversely related ang field of view at focal length. Mas maikli ang focal length (wide-angle), mas malawak ang field of view; mas mahaba ang focal length (telephoto), mas makitid ang field of view. Depende rin sa sensor size ang exact field of view."
         }
       }
     }

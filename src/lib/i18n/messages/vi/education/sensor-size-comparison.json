@@ -9,7 +9,7 @@
         },
         "1": {
           "heading": "Hệ số crop",
-          "text": "\"Hệ số crop\" mô tả cách cảm biến so sánh với tiêu chuẩn full-frame 35mm. Cảm biến APS-C với hệ số crop 1.5x cho cùng góc nhìn với ống 35mm như máy full-frame với ống 52.5mm. Hệ số crop này cũng nhân chiều sâu trường ảnh hiệu dụng — cảm biến nhỏ hơn dường như cho nhiều DoF hơn ở cùng khung hình vì bạn cần ống rộng hơn (ngắn hơn) để phù hợp góc nhìn."
+          "text": "\"Hệ số crop\" mô tả cách cảm biến so sánh với tiêu chuẩn full-frame 35mm. Cảm biến APS-C với hệ số crop 1.5x cho cùng góc nhìn với ống 35mm như máy full-frame với ống 52.5mm. Hệ số crop này cũng nhân chiều sâu trường ảnh hiệu dụng — cảm biến nhỏ hơn dường như cho nhiều chiều sâu trường ảnh hơn ở cùng khung hình vì bạn cần ống rộng hơn (ngắn hơn) để phù hợp góc nhìn."
         },
         "2": {
           "heading": "Mật độ điểm ảnh",
@@ -70,9 +70,15 @@
           "successMessage": "Chính xác! 36mm ÷ 1.5 ≈ 24mm. Cảm biến APS-C khoảng 24×16mm, cho diện tích khoảng 44% full-frame.",
           "failureMessage": "Chia chiều rộng full-frame (36mm) cho hệ số crop (1.5x): 36 ÷ 1.5 = 24mm.",
           "options": {
-            "0": { "label": "24mm" },
-            "1": { "label": "30mm" },
-            "2": { "label": "18mm" }
+            "0": {
+              "label": "24mm"
+            },
+            "1": {
+              "label": "30mm"
+            },
+            "2": {
+              "label": "18mm"
+            }
           }
         },
         "1": {
@@ -81,9 +87,15 @@
           "successMessage": "Đúng! 50mm × 2.0 = tương đương 100mm. Đây là lý do máy Micro Four Thirds phổ biến cho chụp tele — bạn được thêm tầm với từ mọi ống kính.",
           "failureMessage": "Nhân tiêu cự ống kính với hệ số crop: 50mm × 2.0 = tương đương 100mm.",
           "options": {
-            "0": { "label": "25mm" },
-            "1": { "label": "75mm" },
-            "2": { "label": "100mm" }
+            "0": {
+              "label": "25mm"
+            },
+            "1": {
+              "label": "75mm"
+            },
+            "2": {
+              "label": "100mm"
+            }
           }
         },
         "2": {
@@ -92,9 +104,15 @@
           "successMessage": "Chính xác! Cảm biến full-frame trải 24MP trên diện tích lớn hơn, nên mỗi pixel lớn hơn vật lý (~6µm so với ~4µm bước) và thu nhiều photon hơn, tạo ít nhiễu hơn.",
           "failureMessage": "Cảm biến full-frame thắng — cùng số megapixel trên diện tích lớn hơn nghĩa là pixel lớn hơn thu nhiều ánh sáng hơn, tạo ít nhiễu ở ISO cao.",
           "options": {
-            "0": { "label": "Full frame — pixel lớn hơn thu nhiều ánh sáng hơn" },
-            "1": { "label": "APS-C — cảm biến nhỏ hơn hiệu quả hơn" },
-            "2": { "label": "Cùng nhiễu — số megapixel là quan trọng" }
+            "0": {
+              "label": "Full frame — pixel lớn hơn thu nhiều ánh sáng hơn"
+            },
+            "1": {
+              "label": "APS-C — cảm biến nhỏ hơn hiệu quả hơn"
+            },
+            "2": {
+              "label": "Cùng nhiễu — số megapixel là quan trọng"
+            }
           }
         },
         "3": {
@@ -103,9 +121,15 @@
           "successMessage": "Chính xác! Micro Four Thirds có hệ số crop 2.0x, đó là lý do ống 25mm M43 cho khung hình giống 50mm trên full frame.",
           "failureMessage": "Micro Four Thirds có hệ số crop 2.0x. Kiểm tra bảng — đường chéo của nó đúng bằng nửa đường chéo full-frame.",
           "options": {
-            "0": { "label": "APS-C (Canon)" },
-            "1": { "label": "Micro Four Thirds" },
-            "2": { "label": "Cảm biến 1\"" }
+            "0": {
+              "label": "APS-C (Canon)"
+            },
+            "1": {
+              "label": "Micro Four Thirds"
+            },
+            "2": {
+              "label": "Cảm biến 1\""
+            }
           }
         },
         "4": {
@@ -114,9 +138,15 @@
           "successMessage": "Đúng! Cảm biến medium format lớn hơn vật lý, nên ở 50MP pixel lớn hơn (bước cao hơn). Điều này cho khoảng 1/3 stop thu sáng tốt hơn mỗi pixel, cộng khởi đầu nhiễu xạ muộn hơn một chút.",
           "failureMessage": "Cảm biến medium format lớn hơn, nên ở cùng độ phân giải mỗi pixel lớn hơn vật lý. Pixel lớn hơn thu nhiều photon hơn, cho dải động tốt hơn và giới hạn nhiễu xạ muộn hơn một chút.",
           "options": {
-            "0": { "label": "Medium Format — thu sáng và dải động mỗi pixel tốt hơn" },
-            "1": { "label": "Full Frame — pixel nhỏ hơn hiệu quả hơn" },
-            "2": { "label": "Cả hai giống hệt vì cùng số megapixel" }
+            "0": {
+              "label": "Medium Format — thu sáng và dải động mỗi pixel tốt hơn"
+            },
+            "1": {
+              "label": "Full Frame — pixel nhỏ hơn hiệu quả hơn"
+            },
+            "2": {
+              "label": "Cả hai giống hệt vì cùng số megapixel"
+            }
           }
         }
       }

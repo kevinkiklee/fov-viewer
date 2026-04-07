@@ -45,9 +45,15 @@
           "successMessage": "Riktig! Fullformat er riktig valg for et standard 35 mm-kamerahus.",
           "failureMessage": "Ikke helt — velg Fullformat for å matche et standard 35 mm-kamerahus.",
           "options": {
-            "0": { "label": "Fullformat" },
-            "1": { "label": "APS-C (Nikon/Sony)" },
-            "2": { "label": "Micro Four Thirds" }
+            "0": {
+              "label": "Fullformat"
+            },
+            "1": {
+              "label": "APS-C (Nikon/Sony)"
+            },
+            "2": {
+              "label": "Micro Four Thirds"
+            }
           }
         },
         "1": {
@@ -56,8 +62,12 @@
           "successMessage": "Riktig! 24 mm gir mye kortere hyperfokal avstand fordi brennvidden inngår i annen.",
           "failureMessage": "Kortere brennvidder gir alltid kortere hyperfokal avstand. 24 mm vinner her.",
           "options": {
-            "0": { "label": "24 mm på f/8" },
-            "1": { "label": "50 mm på f/8" }
+            "0": {
+              "label": "24 mm på f/8"
+            },
+            "1": {
+              "label": "50 mm på f/8"
+            }
           }
         },
         "2": {
@@ -66,9 +76,15 @@
           "successMessage": "Godt tenkt! Du fant riktig at du trenger en hyperfokal avstand på rundt 6 m, og valgte riktig blenderområde.",
           "failureMessage": "Husk at nærgrensen er halvparten av hyperfokal avstand. Du trenger hyperfokal rundt 6 m for å få en nærgrense på 3 m.",
           "options": {
-            "0": { "label": "f/2.8 — f/4" },
-            "1": { "label": "f/5.6 — f/8" },
-            "2": { "label": "f/16 — f/22" }
+            "0": {
+              "label": "f/2.8 — f/4"
+            },
+            "1": {
+              "label": "f/5.6 — f/8"
+            },
+            "2": {
+              "label": "f/16 — f/22"
+            }
           }
         },
         "3": {
@@ -77,19 +93,29 @@
           "successMessage": "Nettopp! Den mindre M43-sensoren bruker en mindre CoC (omtrent 0,015 mm mot 0,03 mm), og det øker hyperfokal avstand ved samme brennvidde og blender.",
           "failureMessage": "Nøkkelen er uskarphetssirkelen. Mindre sensorer krever en tettere CoC-standard, og det skyver hyperfokal avstand lenger unna.",
           "options": {
-            "0": { "label": "Objektivets brennvidde endres på cropsensor" },
-            "1": { "label": "Mindre sensorer bruker en mindre uskarphetssirkel" },
-            "2": { "label": "Micro Four Thirds har mindre presis autofokus" }
+            "0": {
+              "label": "Objektivets brennvidde endres på cropsensor"
+            },
+            "1": {
+              "label": "Mindre sensorer bruker en mindre uskarphetssirkel"
+            },
+            "2": {
+              "label": "Micro Four Thirds har mindre presis autofokus"
+            }
           }
         },
         "4": {
           "scenario": "Du fotograferer arkitektur på 14 mm f/11 på fullformat. Tabellen viser svært kort hyperfokal avstand. Bør du blende ned videre til f/22 for enda mer dybdeskarphet, eller er f/11 det beste valget?",
           "hint": "Tenk på hva som skjer med skarpheten ved svært små blenderåpninger.",
-          "successMessage": "Utmerket! På f/11 er diffraksjonen minimal på fullformat, og hyperfokal avstand på 14 mm er allerede veldig kort. Å blende ned til f/22 ville gjort bildet mykere uten reell DoF-gevinst.",
+          "successMessage": "Utmerket! På f/11 er diffraksjonen minimal på fullformat, og hyperfokal avstand på 14 mm er allerede veldig kort. Å blende ned til f/22 ville gjort bildet mykere uten reell dybdeskarphet-gevinst.",
           "failureMessage": "Selv om f/22 gir kortere hyperfokal avstand på papiret, reduserer diffraksjonen på f/22 den totale skarpheten på fullformat. På 14 mm f/11 er hyperfokal avstand allerede så kort at den ekstra dybden ikke er verdt diffraksjonstapet.",
           "options": {
-            "0": { "label": "Blend ned til f/22 for maks dybdeskarphet" },
-            "1": { "label": "Bli på f/11 — diffraksjon på f/22 reduserer skarpheten" }
+            "0": {
+              "label": "Blend ned til f/22 for maks dybdeskarphet"
+            },
+            "1": {
+              "label": "Bli på f/11 — diffraksjon på f/22 reduserer skarpheten"
+            }
           }
         }
       }

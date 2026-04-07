@@ -1,11 +1,11 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Zorný úhel (FOV) říká, kolik ze scény tvůj fotoaparát zachytí. Širokoúhlý objektiv (například 24 mm) vidí široký záběr, zatímco teleobjektiv (například 200 mm) zabírá jen úzký výřez. Tento simulátor ti umožní porovnat až čtyři objektivy na různých snímačích na reálných scénách, abys přesně viděl, co která kombinace zachytí.",
+      "beginner": "Zorný úhel říká, kolik ze scény tvůj fotoaparát zachytí. Širokoúhlý objektiv (například 24 mm) vidí široký záběr, zatímco teleobjektiv (například 200 mm) zabírá jen úzký výřez. Tento simulátor ti umožní porovnat až čtyři objektivy na různých snímačích na reálných scénách, abys přesně viděl, co která kombinace zachytí.",
       "deeper": {
         "0": {
           "heading": "Vzorec pro zorný úhel",
-          "text": "Zorný úhel určují dva faktory: ohnisková vzdálenost a velikost snímače. Vodorovný úhel FOV se spočítá jako 2 × arctan(šířka snímače / (2 × ohnisková vzdálenost)). Kratší ohnisko nebo větší snímač dává širší zorný úhel."
+          "text": "Zorný úhel určují dva faktory: ohnisková vzdálenost a velikost snímače. Vodorovný úhel zorné pole se spočítá jako 2 × arctan(šířka snímače / (2 × ohnisková vzdálenost)). Kratší ohnisko nebo větší snímač dává širší zorný úhel."
         },
         "1": {
           "heading": "Crop faktor a ekvivalentní ohnisko",
@@ -31,7 +31,7 @@
         },
         "3": {
           "label": "Kontext scény",
-          "description": "Různé scény (městská krajina, interiéry, příroda) ti pomohou pochopit, jak změny FOV působí v konkrétních reálných situacích."
+          "description": "Různé scény (městská krajina, interiéry, příroda) ti pomohou pochopit, jak změny zorné pole působí v konkrétních reálných situacích."
         }
       },
       "tips": {
@@ -60,7 +60,7 @@
         },
         "Orientation": {
           "term": "Orientace",
-          "definition": "Přepínej mezi orientací na šířku (horizontálně) a na výšku (vertikálně). Obdélník FOV se podle toho otočí."
+          "definition": "Přepínej mezi orientací na šířku (horizontálně) a na výšku (vertikálně). Obdélník zorné pole se podle toho otočí."
         }
       },
       "challenges": {
@@ -70,9 +70,15 @@
           "successMessage": "Správně! 24mm objektiv vidí mnohem víc ze scény než 70mm. Širokoúhlé objektivy mají krátkou ohniskovou vzdálenost.",
           "failureMessage": "Kratší ohniska dávají širší zorný úhel. 24 mm je širokoúhlý objektiv, který zachytí z panoramatu mnohem víc než 70 mm.",
           "options": {
-            "0": { "label": "24 mm" },
-            "1": { "label": "70 mm" },
-            "2": { "label": "200 mm" }
+            "0": {
+              "label": "24 mm"
+            },
+            "1": {
+              "label": "70 mm"
+            },
+            "2": {
+              "label": "200 mm"
+            }
           }
         },
         "1": {
@@ -81,20 +87,32 @@
           "successMessage": "Správně! 50 mm na full frame je klasický „normální\" objektiv — jeho zorný úhel kolem 46 stupňů se blíží tomu, na co lidské oko přirozeně zaostřuje.",
           "failureMessage": "50 mm na full frame se považuje za „normální\" objektiv, protože jeho zorný úhel (~46 stupňů) odpovídá pohodlnému lidskému vnímání.",
           "options": {
-            "0": { "label": "Ultra-širokoúhlý" },
-            "1": { "label": "Normální / standardní" },
-            "2": { "label": "Teleobjektiv" }
+            "0": {
+              "label": "Ultra-širokoúhlý"
+            },
+            "1": {
+              "label": "Normální / standardní"
+            },
+            "2": {
+              "label": "Teleobjektiv"
+            }
           }
         },
         "2": {
-          "scenario": "Přidej dva objektivy: objektiv A je 35 mm na APS-C (Nikon/Sony) a objektiv B je 50 mm na full frame. Porovnej překryvy FOV. Čeho si všimneš?",
+          "scenario": "Přidej dva objektivy: objektiv A je 35 mm na APS-C (Nikon/Sony) a objektiv B je 50 mm na full frame. Porovnej překryvy zorné pole. Čeho si všimneš?",
           "hint": "35 mm vynásobené APS-C crop faktorem 1,5 se rovná...",
           "successMessage": "Přesně! 35 mm na APS-C (1,5× crop) dává zorný úhel ekvivalentní 52,5 mm na full frame — téměř identický s 50 mm FF. Překryvy jsou skoro stejně velké.",
           "failureMessage": "35 mm × 1,5 crop faktor = ekvivalent 52,5 mm. To je téměř identické s 50 mm na full frame, proto jsou překryvy skoro stejné.",
           "options": {
-            "0": { "label": "Mají téměř stejný zorný úhel" },
-            "1": { "label": "APS-C objektiv ukazuje mnohem širší záběr" },
-            "2": { "label": "Full frame objektiv ukazuje mnohem širší záběr" }
+            "0": {
+              "label": "Mají téměř stejný zorný úhel"
+            },
+            "1": {
+              "label": "APS-C objektiv ukazuje mnohem širší záběr"
+            },
+            "2": {
+              "label": "Full frame objektiv ukazuje mnohem širší záběr"
+            }
           }
         },
         "3": {
@@ -103,20 +121,32 @@
           "successMessage": "Správně! Full frame uvidí víc, protože větší snímač zachytí širší část obrazového kruhu 24mm objektivu. Na APS-C se stejný 24mm chová jako asi 36 mm.",
           "failureMessage": "Full frame zachytí víc ze scény. Větší snímač využije víc obrazového kruhu a dává širší efektivní zorný úhel.",
           "options": {
-            "0": { "label": "Full frame — větší snímač uvidí víc" },
-            "1": { "label": "APS-C — crop snímač uvidí víc" },
-            "2": { "label": "Oba vidí stejně — rozhoduje jen ohnisko" }
+            "0": {
+              "label": "Full frame — větší snímač uvidí víc"
+            },
+            "1": {
+              "label": "APS-C — crop snímač uvidí víc"
+            },
+            "2": {
+              "label": "Oba vidí stejně — rozhoduje jen ohnisko"
+            }
           }
         },
         "4": {
           "scenario": "Wildlife fotograf fotí s 200mm objektivem na Micro Four Thirds. Jaký full frame ekvivalent ohniska to dává a v čem je to jiné oproti skutečnému 400mm objektivu na full frame?",
           "hint": "M43 má 2× crop faktor. Přemýšlej o rozdílech v hloubce ostrosti a velikosti snímače.",
-          "successMessage": "Výborně! 200 mm na M43 (2× crop) dává ekvivalent 400 mm z hlediska zorného úhlu. Rozdíl: i když výřez odpovídá 400 mm FF, hloubka ostrosti odpovídá skutečnému 200mm ohnisku (větší DoF) a menší snímač sbírá méně celkového světla, takže má horší výkon šumu při vysokém ISO. Výhodou je mnohem menší, lehčí a levnější objektiv.",
-          "failureMessage": "200 mm × 2,0 crop = ekvivalent 400 mm FOV. Ale není to totéž jako 400 mm na FF: dostáváš větší hloubku ostrosti (na základě skutečného 200mm ohniska), menší sběr světla (menší snímač) a víc šumu při vysokém ISO. Přínosem je výrazně menší a lehčí výbava.",
+          "successMessage": "Výborně! 200 mm na M43 (2× crop) dává ekvivalent 400 mm z hlediska zorného úhlu. Rozdíl: i když výřez odpovídá 400 mm FF, hloubka ostrosti odpovídá skutečnému 200mm ohnisku (větší hloubka ostrosti) a menší snímač sbírá méně celkového světla, takže má horší výkon šumu při vysokém ISO. Výhodou je mnohem menší, lehčí a levnější objektiv.",
+          "failureMessage": "200 mm × 2,0 crop = ekvivalent 400 mm zorné pole. Ale není to totéž jako 400 mm na FF: dostáváš větší hloubku ostrosti (na základě skutečného 200mm ohniska), menší sběr světla (menší snímač) a víc šumu při vysokém ISO. Přínosem je výrazně menší a lehčí výbava.",
           "options": {
-            "0": { "label": "Ekvivalent 400 mm — stejný FOV, ale větší DoF, víc šumu, menší/lehčí výbava" },
-            "1": { "label": "Ekvivalent 400 mm — ve všem identické se 400 mm na full frame" },
-            "2": { "label": "Ekvivalent 200 mm — crop faktor neovlivňuje FOV" }
+            "0": {
+              "label": "Ekvivalent 400 mm — stejný zorné pole, ale větší hloubka ostrosti, víc šumu, menší/lehčí výbava"
+            },
+            "1": {
+              "label": "Ekvivalent 400 mm — ve všem identické se 400 mm na full frame"
+            },
+            "2": {
+              "label": "Ekvivalent 200 mm — crop faktor neovlivňuje zorné pole"
+            }
           }
         }
       }

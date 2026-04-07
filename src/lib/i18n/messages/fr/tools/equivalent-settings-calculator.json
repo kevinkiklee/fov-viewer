@@ -25,7 +25,7 @@
       "diagramTitle": "Comparaison capteur et champ de vision",
       "diagramSource": "Source",
       "diagramTarget": "Cible",
-      "diagramFovAngle": "FOV : {angle}°",
+      "diagramFovAngle": "champ de vision : {angle}°",
       "diagramCropFactor": "Recadrage {factor}×",
       "matchDoF": "Même profondeur de champ",
       "matchFoV": "Même champ de vision",

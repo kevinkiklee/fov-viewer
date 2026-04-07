@@ -1,37 +1,37 @@
 {
   "education": {
     "dof-simulator": {
-      "beginner": "Alan derinliği (DoF), fotoğrafınızda kabul edilebilir derecede net görünen mesafe aralığıdır. Sığ bir DoF, konunuzun arkasındaki arka planı bulanıklaştırırken, derin bir DoF ön plandan ufka kadar her şeyi net tutar. DoF'u kontrol etmek, fotoğrafçılıktaki en güçlü yaratıcı araçlardan biridir.",
+      "beginner": "Alan derinliği, fotoğrafınızda kabul edilebilir derecede net görünen mesafe aralığıdır. Sığ bir alan derinliği, konunuzun arkasındaki arka planı bulanıklaştırırken, derin bir alan derinliği ön plandan ufka kadar her şeyi net tutar. alan derinliği'u kontrol etmek, fotoğrafçılıktaki en güçlü yaratıcı araçlardan biridir.",
       "deeper": {
         "0": {
-          "heading": "DoF Nasıl Çalışır",
-          "text": "Alan derinliği, bulanıklık çemberi (CoC) tarafından yönetilir — sensörde insan gözüne hâlâ net görünen en büyük bulanıklık noktası. Üç fiziksel faktör DoF'u belirler: odak uzaklığı, diyafram ve konu mesafesi. Daha geniş bir diyafram (düşük f-sayısı), objektif ışığı daha dik açılarda yakınsadığı için daha sığ bir DoF üretir ve odak dışı noktaların sensörde daha büyük dairelere yayılmasına neden olur."
+          "heading": "alan derinliği Nasıl Çalışır",
+          "text": "Alan derinliği, bulanıklık çemberi (CoC) tarafından yönetilir — sensörde insan gözüne hâlâ net görünen en büyük bulanıklık noktası. Üç fiziksel faktör alan derinliği'u belirler: odak uzaklığı, diyafram ve konu mesafesi. Daha geniş bir diyafram (düşük f-sayısı), objektif ışığı daha dik açılarda yakınsadığı için daha sığ bir alan derinliği üretir ve odak dışı noktaların sensörde daha büyük dairelere yayılmasına neden olur."
         },
         "1": {
           "heading": "Odak Uzaklığı ve Mesafe",
-          "text": "Daha uzun odak uzaklıkları görüntüyü büyütür, bu da bulanıklık dairelerini büyüterek DoF'u daraltır. Konunuza yaklaşmak da aynı nedenle DoF'u azaltır — konu ile arka plan arasındaki göreceli mesafe farkı büyür. Hiperfocal mesafe, DoF'un o mesafenin yarısından sonsuza kadar uzandığı odak mesafesidir ve tüm sahnede netliği maksimize eder."
+          "text": "Daha uzun odak uzaklıkları görüntüyü büyütür, bu da bulanıklık dairelerini büyüterek alan derinliği'u daraltır. Konunuza yaklaşmak da aynı nedenle alan derinliği'u azaltır — konu ile arka plan arasındaki göreceli mesafe farkı büyür. Hiperfocal mesafe, alan derinliği'un o mesafenin yarısından sonsuza kadar uzandığı odak mesafesidir ve tüm sahnede netliği maksimize eder."
         },
         "2": {
           "heading": "Bokeh ve Kırınım",
-          "text": "Bokeh, odak dışı alanların kalitesini ifade eder. Diyafram kanatçıklarının sayısı ve şekli bokeh karakterini etkiler — daha yuvarlak kanatçıklar daha pürüzsüz, daha dairesel parlak noktalar üretir. Çok küçük diyaframlarda (f/16+), kırınım ışığın diyafram kenarlarından geçerken yayılmasına neden olarak DoF bölgesi içinde bile tüm görüntüyü yumuşatır. Her zaman bir optimum nokta vardır — tam karede genellikle f/5,6-f/8 civarı — netlik ve alan derinliğinin optimal olarak dengelendiği yer."
+          "text": "Bokeh, odak dışı alanların kalitesini ifade eder. Diyafram kanatçıklarının sayısı ve şekli bokeh karakterini etkiler — daha yuvarlak kanatçıklar daha pürüzsüz, daha dairesel parlak noktalar üretir. Çok küçük diyaframlarda (f/16+), kırınım ışığın diyafram kenarlarından geçerken yayılmasına neden olarak alan derinliği bölgesi içinde bile tüm görüntüyü yumuşatır. Her zaman bir optimum nokta vardır — tam karede genellikle f/5,6-f/8 civarı — netlik ve alan derinliğinin optimal olarak dengelendiği yer."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Diyafram",
-          "description": "Geniş diyaframlar (f/1,4-f/2,8) kremsi bokeh ile sığ DoF oluşturur. Dar diyaframlar (f/8-f/16) sahne genelinde netliği artırır."
+          "description": "Geniş diyaframlar (f/1,4-f/2,8) kremsi bokeh ile sığ alan derinliği oluşturur. Dar diyaframlar (f/8-f/16) sahne genelinde netliği artırır."
         },
         "1": {
           "label": "Odak Uzaklığı",
-          "description": "Daha uzun objektifler perspektifi sıkıştırır ve aynı diyafram ve kadrajda DoF'u daraltır. 200mm f/4'teki bir objektif, 35mm f/4'e göre çok daha az DoF'a sahiptir."
+          "description": "Daha uzun objektifler perspektifi sıkıştırır ve aynı diyafram ve kadrajda alan derinliği'u daraltır. 200mm f/4'teki bir objektif, 35mm f/4'e göre çok daha az alan derinliği'a sahiptir."
         },
         "2": {
           "label": "Konu Mesafesi",
-          "description": "Ne kadar yakından odaklarsanız DoF o kadar sığ olur. Makro fotoğrafçıları genellikle milimetre cinsinden ölçülen DoF ile çalışır."
+          "description": "Ne kadar yakından odaklarsanız alan derinliği o kadar sığ olur. Makro fotoğrafçıları genellikle milimetre cinsinden ölçülen alan derinliği ile çalışır."
         },
         "3": {
           "label": "Sensör Boyutu",
-          "description": "Daha büyük sensörler aynı kadrajlama için daha uzun odak uzaklıkları gerektirir, bu da dolaylı olarak DoF'u daraltır. Tam kare bir kamera, eşdeğer kadrajda Mikro Dört Üçlü kameradan daha sığ DoF üretir."
+          "description": "Daha büyük sensörler aynı kadrajlama için daha uzun odak uzaklıkları gerektirir, bu da dolaylı olarak alan derinliği'u daraltır. Tam kare bir kamera, eşdeğer kadrajda Mikro Dört Üçlü kameradan daha sığ alan derinliği üretir."
         }
       },
       "tips": {
@@ -42,7 +42,7 @@
           "text": "Manzara çekerken sonsuzluğa değil hiperfocal mesafeye odaklayın. Bu, yakın ön plandan uzak arka plana kadar netlik bölgesini maksimize eder."
         },
         "2": {
-          "text": "Bir portre için maksimum arka plan bulanıklığı istiyorsanız, odak uzaklığınızı artırın ve kadrajın izin verdiği kadar konunuza yaklaşın — her iki değişiklik de DoF'u dramatik şekilde azaltmak için birleşir."
+          "text": "Bir portre için maksimum arka plan bulanıklığı istiyorsanız, odak uzaklığınızı artırın ve kadrajın izin verdiği kadar konunuza yaklaşın — her iki değişiklik de alan derinliği'u dramatik şekilde azaltmak için birleşir."
         }
       },
       "tooltips": {
@@ -110,10 +110,18 @@
           "successMessage": "Doğru! f/1,8 veya f/2,8 gibi geniş bir diyafram, sığ bir alan derinliği oluşturarak konunuzu hoş bokeh ile arka plandan ayırır.",
           "failureMessage": "Tam değil. f/11 veya f/16 gibi dar diyaframlar sahnenin daha fazlasını net tutar. Arka plan bulanıklığı için geniş bir diyafram (düşük f-sayısı) seçin.",
           "options": {
-            "0": { "label": "f/1,8" },
-            "1": { "label": "f/5,6" },
-            "2": { "label": "f/11" },
-            "3": { "label": "f/16" }
+            "0": {
+              "label": "f/1,8"
+            },
+            "1": {
+              "label": "f/5,6"
+            },
+            "2": {
+              "label": "f/11"
+            },
+            "3": {
+              "label": "f/16"
+            }
           }
         },
         "1": {
@@ -122,10 +130,18 @@
           "successMessage": "Harika seçim! f/5,6, iç mekanda makul enstantane hızlarını korurken her iki sırayı net tutmak için yeterli alan derinliği sağlar.",
           "failureMessage": "Bu diyafram arka sırayı odak dışı bırakabilir veya gereksiz yere dar olabilir. İki sıra insan için f/5,6 güvenilir bir başlangıç noktasıdır.",
           "options": {
-            "0": { "label": "f/1,4" },
-            "1": { "label": "f/2,8" },
-            "2": { "label": "f/5,6" },
-            "3": { "label": "f/22" }
+            "0": {
+              "label": "f/1,4"
+            },
+            "1": {
+              "label": "f/2,8"
+            },
+            "2": {
+              "label": "f/5,6"
+            },
+            "3": {
+              "label": "f/22"
+            }
           }
         },
         "2": {
@@ -134,33 +150,55 @@
           "successMessage": "Kesinlikle! f/11'de hiperfocal mesafeye odaklamak, yaklaşık 1 metreden sonsuza kadar her şeyin kabul edilebilir derecede net olmasını sağlar — bu sahne için mükemmel.",
           "failureMessage": "Sonsuzluğa odaklamak ön plandaki çiçekleri yumuşak bırakır. Yakın ön plandan sonsuza kadar netliği genişletmek için hiperfocal mesafeyi kullanın.",
           "options": {
-            "0": { "label": "Çiçeklere odakla (2m)" },
-            "1": { "label": "Dağlara odakla (sonsuz)" },
-            "2": { "label": "Hiperfocal mesafeye odakla" },
-            "3": { "label": "Çiçekler ve dağlar arasının ortasına odakla" }
+            "0": {
+              "label": "Çiçeklere odakla (2m)"
+            },
+            "1": {
+              "label": "Dağlara odakla (sonsuz)"
+            },
+            "2": {
+              "label": "Hiperfocal mesafeye odakla"
+            },
+            "3": {
+              "label": "Çiçekler ve dağlar arasının ortasına odakla"
+            }
           }
         },
         "3": {
           "scenario": "Bir çiçeğin makro fotoğrafını çekiyorsunuz ve sadece ön yaprakların net olduğunu fark ediyorsunuz. Çiçeğin geri kalanı bulanıklaşıyor. f/5,6'dasınız. Çiçeğin daha fazlasını net yapmak için ne yapmalısınız?",
-          "hint": "Yakın odak mesafelerinde DoF son derece ince olur. Diyaframınızı düşünün.",
-          "successMessage": "Doğru! f/11 veya f/16'ya kısmak makro çalışmada çok ince olan DoF'unuzu artırır. Çok küçük diyaframlarda kırınım yumuşamasına dikkat edin.",
-          "failureMessage": "Diyaframı daha da açmak DoF'u daha da inceltir. Makro fotoğrafçılığında kısmak (daha yüksek f-sayısı) daha fazla derinlik kazanmanın birincil yoludur.",
+          "hint": "Yakın odak mesafelerinde alan derinliği son derece ince olur. Diyaframınızı düşünün.",
+          "successMessage": "Doğru! f/11 veya f/16'ya kısmak makro çalışmada çok ince olan alan derinliği'unuzu artırır. Çok küçük diyaframlarda kırınım yumuşamasına dikkat edin.",
+          "failureMessage": "Diyaframı daha da açmak alan derinliği'u daha da inceltir. Makro fotoğrafçılığında kısmak (daha yüksek f-sayısı) daha fazla derinlik kazanmanın birincil yoludur.",
           "options": {
-            "0": { "label": "Daha fazla ışık için f/2,8'e aç" },
-            "1": { "label": "f/11'e kıs" },
-            "2": { "label": "Daha geniş bir objektife geç" },
-            "3": { "label": "Çiçekten uzaklaş" }
+            "0": {
+              "label": "Daha fazla ışık için f/2,8'e aç"
+            },
+            "1": {
+              "label": "f/11'e kıs"
+            },
+            "2": {
+              "label": "Daha geniş bir objektife geç"
+            },
+            "3": {
+              "label": "Çiçekten uzaklaş"
+            }
           }
         },
         "4": {
           "scenario": "Portre çalışması için iki kamerayı karşılaştırıyorsunuz: 85mm f/1,8 objektifli tam kare kamera ve 42,5mm f/1,8 objektifli Mikro Dört Üçlü kamera. Her ikisi de eşdeğer kadrajlama üretir. Hangisi daha sığ alan derinliği üretir?",
-          "hint": "Eşdeğer odak uzaklıklarını ve sensör boyutunun aynı f-sayısında DoF hesaplamasını nasıl etkilediğini düşünün.",
-          "successMessage": "Doğru! Tam kare kamera yaklaşık 2 adım daha sığ DoF üretir. MFT objektifi aynı f-sayısına sahip olsa da, daha kısa gerçek odak uzaklığı (42,5mm vs 85mm) eşdeğer kadrajda daha derin alan derinliği ile sonuçlanır.",
-          "failureMessage": "Her iki objektif de f/1,8 olsa da, tam kare kamera aynı kadrajlama için daha uzun gerçek odak uzaklığı kullanır ve önemli ölçüde daha sığ DoF üretir.",
+          "hint": "Eşdeğer odak uzaklıklarını ve sensör boyutunun aynı f-sayısında alan derinliği hesaplamasını nasıl etkilediğini düşünün.",
+          "successMessage": "Doğru! Tam kare kamera yaklaşık 2 adım daha sığ alan derinliği üretir. MFT objektifi aynı f-sayısına sahip olsa da, daha kısa gerçek odak uzaklığı (42,5mm vs 85mm) eşdeğer kadrajda daha derin alan derinliği ile sonuçlanır.",
+          "failureMessage": "Her iki objektif de f/1,8 olsa da, tam kare kamera aynı kadrajlama için daha uzun gerçek odak uzaklığı kullanır ve önemli ölçüde daha sığ alan derinliği üretir.",
           "options": {
-            "0": { "label": "85mm f/1,8 ile Tam Kare" },
-            "1": { "label": "42,5mm f/1,8 ile Mikro Dört Üçlü" },
-            "2": { "label": "Her ikisi de aynı DoF üretir" }
+            "0": {
+              "label": "85mm f/1,8 ile Tam Kare"
+            },
+            "1": {
+              "label": "42,5mm f/1,8 ile Mikro Dört Üçlü"
+            },
+            "2": {
+              "label": "Her ikisi de aynı alan derinliği üretir"
+            }
           }
         }
       }

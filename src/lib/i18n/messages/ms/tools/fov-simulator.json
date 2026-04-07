@@ -27,20 +27,20 @@
       "cropView": "Paparan crop:",
       "collapse": "Runtuhkan",
       "expand": "Kembangkan",
-      "fovComparison": "Perbandingan FOV",
+      "fovComparison": "Perbandingan medan pandangan",
       "loadingScene": "Memuatkan adegan...",
       "faq": {
         "what-is-fov": {
           "question": "Apa itu medan pandangan dalam fotografi?",
-          "answer": "Medan pandangan (FOV) ialah luas sudut adegan yang boleh dilihat melalui lensa dan sensor kamera anda. Ia menentukan berapa banyak sesebuah adegan ditangkap dalam foto dan dipengaruhi oleh panjang fokus dan saiz sensor."
+          "answer": "Medan pandangan ialah luas sudut adegan yang boleh dilihat melalui lensa dan sensor kamera anda. Ia menentukan berapa banyak sesebuah adegan ditangkap dalam foto dan dipengaruhi oleh panjang fokus dan saiz sensor."
         },
         "how-crop-factor-affects-fov": {
           "question": "Bagaimanakah faktor crop mempengaruhi medan pandangan?",
           "answer": "Sensor yang lebih kecil (faktor crop lebih tinggi) menangkap medan pandangan yang lebih sempit daripada sensor full-frame pada panjang fokus yang sama. Contohnya, sensor APS-C dengan faktor crop 1.5x menjadikan lensa 50mm berkelakuan seperti lensa 75mm dari segi medan pandangan."
         },
         "fov-vs-focal-length": {
-          "question": "Apakah hubungan antara FOV dan panjang fokus?",
-          "answer": "Medan pandangan dan panjang fokus berkadar songsang. Panjang fokus lebih pendek (sudut lebar) memberikan medan pandangan lebih luas, manakala panjang fokus lebih panjang (telefoto) memberikan medan pandangan lebih sempit. FOV tepat juga bergantung kepada saiz sensor."
+          "question": "Apakah hubungan antara medan pandangan dan panjang fokus?",
+          "answer": "Medan pandangan dan panjang fokus berkadar songsang. Panjang fokus lebih pendek (sudut lebar) memberikan medan pandangan lebih luas, manakala panjang fokus lebih panjang (telefoto) memberikan medan pandangan lebih sempit. medan pandangan tepat juga bergantung kepada saiz sensor."
         }
       }
     }

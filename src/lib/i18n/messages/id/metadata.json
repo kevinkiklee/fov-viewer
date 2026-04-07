@@ -3,11 +3,11 @@
     "site": {
       "defaultTitle": "PhotoTools — Alat Fotografi",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Alat fotografi gratis: simulator FOV, Generator skema warna, EXIF viewer, Potong dan bingkai foto, dan lainnya.",
+      "description": "Alat fotografi gratis: simulator bidang pandang, Generator skema warna, EXIF viewer, Potong dan bingkai foto, dan lainnya.",
       "ogTitle": "PhotoTools — Alat Fotografi Gratis"
     },
     "fov-simulator": {
-      "title": "Simulator FOV — Bandingkan Panjang Fokus",
+      "title": "Simulator bidang pandang — Bandingkan Panjang Fokus",
       "description": "Bandingkan bidang pandang pada berbagai panjang fokus dan ukuran sensor. Gratis, interaktif, dapat dibagikan."
     },
     "dof-simulator": {

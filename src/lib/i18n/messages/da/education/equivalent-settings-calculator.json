@@ -8,8 +8,8 @@
           "text": "Hver sensor har en cropfaktor i forhold til 35mm fuldformat-standarden. APS-C-sensorer har en faktor omkring 1,5×, Micro Four Thirds 2×, og mellemformat omkring 0,79×. Ganger du den faktiske brændvidde med cropfaktoren, får du den fuldformat-ækvivalente billedvinkel. En 35mm linse på APS-C framer som en 52,5mm på fuldformat."
         },
         "1": {
-          "heading": "Ækvivalent blænde og DoF",
-          "text": "For at matche dybdeskarphed på tværs af formater ganger du f-tallet med den samme cropfaktor. En f/1.4 linse på Micro Four Thirds giver DoF svarende til f/2.8 på fuldformat (1,4 × 2 = 2,8). Derfor er fuldformat eftertragtet til lille dybdeskarphed — du kan bruge fysisk lysstærkere linser ved bredere faktiske blænder og få en sløring, som mindre sensorer ikke kan genskabe."
+          "heading": "Ækvivalent blænde og dybdeskarphed",
+          "text": "For at matche dybdeskarphed på tværs af formater ganger du f-tallet med den samme cropfaktor. En f/1.4 linse på Micro Four Thirds giver dybdeskarphed svarende til f/2.8 på fuldformat (1,4 × 2 = 2,8). Derfor er fuldformat eftertragtet til lille dybdeskarphed — du kan bruge fysisk lysstærkere linser ved bredere faktiske blænder og få en sløring, som mindre sensorer ikke kan genskabe."
         },
         "2": {
           "heading": "Ækvivalent ISO og samlet lysmængde",
@@ -23,7 +23,7 @@
         },
         "1": {
           "label": "Sensorstørrelse",
-          "description": "Fysisk større sensorer samler mere lys og giver mindre DoF ved samme udsnit. Ækvivalensberegneren viser præcis, hvor stor forskel hvert format gør."
+          "description": "Fysisk større sensorer samler mere lys og giver mindre dybdeskarphed ved samme udsnit. Ækvivalensberegneren viser præcis, hvor stor forskel hvert format gør."
         },
         "2": {
           "label": "Tilgængelige linser",
@@ -60,7 +60,7 @@
         },
         "cropFactor": {
           "term": "Cropfaktor",
-          "definition": "Forholdet mellem en 35mm fuldformat-sensors diagonal og målsensorens diagonal. Gang brændvidden med cropfaktoren for ækvivalent billedvinkel, og gang blænden med cropfaktoren for ækvivalent DoF."
+          "definition": "Forholdet mellem en 35mm fuldformat-sensors diagonal og målsensorens diagonal. Gang brændvidden med cropfaktoren for ækvivalent billedvinkel, og gang blænden med cropfaktoren for ækvivalent dybdeskarphed."
         },
         "equivalentFL": {
           "term": "Ækvivalent brændvidde",
@@ -78,32 +78,52 @@
           "successMessage": "Rigtigt! 85mm / 2 = 42,5mm. Din ven skal bruge et 42,5mm på Micro Four Thirds for at få samme udsnit som dit 85mm på fuldformat.",
           "failureMessage": "For at matche billedvinklen divideres med cropfaktoren: 85mm / 2 = 42,5mm. Det er den faktiske brændvidde på MFT-huset.",
           "options": {
-            "0": { "label": "42,5mm" },
-            "1": { "label": "85mm" },
-            "2": { "label": "170mm" },
-            "3": { "label": "56mm" }
+            "0": {
+              "label": "42,5mm"
+            },
+            "1": {
+              "label": "85mm"
+            },
+            "2": {
+              "label": "170mm"
+            },
+            "3": {
+              "label": "56mm"
+            }
           }
         },
         "1": {
           "scenario": "Din ven har fundet et 42,5mm f/1.8 til sit MFT-kamera. Vil baggrundsuskarpheden matche dit 85mm f/1.8 på fuldformat?",
-          "hint": "Anvend også cropfaktoren på blænden for at finde den ækvivalente DoF.",
-          "successMessage": "Korrekt! 42,5mm f/1.8 på MFT giver en DoF, der svarer til 85mm f/3.6 på fuldformat (1,8 × 2 = 3,6). Dit f/1.8 fuldformatbillede giver markant mere sløring.",
-          "failureMessage": "Nej — MFT f/1.8 svarer til f/3.6 DoF på fuldformat (1,8 × 2× crop = 3,6). For at matche din fuldformats f/1.8-sløring skulle din ven bruge f/0.9 på MFT, og det findes ikke.",
+          "hint": "Anvend også cropfaktoren på blænden for at finde den ækvivalente dybdeskarphed.",
+          "successMessage": "Korrekt! 42,5mm f/1.8 på MFT giver en dybdeskarphed, der svarer til 85mm f/3.6 på fuldformat (1,8 × 2 = 3,6). Dit f/1.8 fuldformatbillede giver markant mere sløring.",
+          "failureMessage": "Nej — MFT f/1.8 svarer til f/3.6 dybdeskarphed på fuldformat (1,8 × 2× crop = 3,6). For at matche din fuldformats f/1.8-sløring skulle din ven bruge f/0.9 på MFT, og det findes ikke.",
           "options": {
-            "0": { "label": "Ja — samme f/1.8 betyder samme sløring" },
-            "1": { "label": "Nej — MFT f/1.8 svarer til fuldformat f/3.6 DoF" },
-            "2": { "label": "Nej — MFT giver mere sløring, fordi sensoren er mindre" }
+            "0": {
+              "label": "Ja — samme f/1.8 betyder samme sløring"
+            },
+            "1": {
+              "label": "Nej — MFT f/1.8 svarer til fuldformat f/3.6 dybdeskarphed"
+            },
+            "2": {
+              "label": "Nej — MFT giver mere sløring, fordi sensoren er mindre"
+            }
           }
         },
         "2": {
           "scenario": "En fotograf, der skifter fra fuldformat til APS-C (1,5× crop), vil matche udtrykket af et 50mm f/1.4 på fuldformat. Hvilken ækvivalent linse og blænde skal han bruge på APS-C?",
-          "hint": "Divider brændvidden med cropfaktoren for at få ækvivalent billedvinkel. Divider blænden med cropfaktoren for at få ækvivalent DoF.",
-          "successMessage": "Præcis! 50 / 1,5 = 33mm til billedvinkel, og f/1.4 / 1,5 = f/0.93 til matchende DoF. Da ingen f/0.93-linse findes, kan APS-C-kameraet ikke helt genskabe fuldformat-looket.",
+          "hint": "Divider brændvidden med cropfaktoren for at få ækvivalent billedvinkel. Divider blænden med cropfaktoren for at få ækvivalent dybdeskarphed.",
+          "successMessage": "Præcis! 50 / 1,5 = 33mm til billedvinkel, og f/1.4 / 1,5 = f/0.93 til matchende dybdeskarphed. Da ingen f/0.93-linse findes, kan APS-C-kameraet ikke helt genskabe fuldformat-looket.",
           "failureMessage": "Det rigtige svar er ~33mm f/0.93, fordi 50 / 1,5 = 33,3mm og 1,4 / 1,5 = 0,93. Ingen f/0.93-linse findes, så fuldformat-looket kan ikke matches fuldt ud på APS-C.",
           "options": {
-            "0": { "label": "35mm f/1.4 — tæt nok på" },
-            "1": { "label": "33mm f/0.93 — eksakt match, men linsen findes ikke" },
-            "2": { "label": "75mm f/2.1 — gange med cropfaktoren" }
+            "0": {
+              "label": "35mm f/1.4 — tæt nok på"
+            },
+            "1": {
+              "label": "33mm f/0.93 — eksakt match, men linsen findes ikke"
+            },
+            "2": {
+              "label": "75mm f/2.1 — gange med cropfaktoren"
+            }
           }
         }
       }

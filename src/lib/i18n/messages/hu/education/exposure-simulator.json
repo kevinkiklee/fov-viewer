@@ -2,7 +2,7 @@
   "education": {
     "exposure-simulator": {
       "beginner": "Az expozíciós háromszög azt írja le, hogyan dolgozik együtt három kamerabeállítás — a rekesz, a záridő és az ISO — a fotód fényességének szabályozásában. Ha az egyiket megváltoztatod, legalább az egyik másikon is igazítanod kell, hogy a fényesség ne változzon. Mindháromnak saját kreatív mellékhatása van: a rekesz a háttérelmosódást, a záridő a bemozdulást, az ISO pedig a zajt szabályozza.",
-      "deeper": "Az expozíciót fényértékben (EV) mérjük, ahol minden egész EV-lépés a fény megduplázását vagy felezését jelenti. 1 EV növekedés (egy „stop”) azt jelenti, hogy kétszer annyi fény éri az érzékelőt. A rekesz mértani haladványt követ (f/1.4, f/2, f/2.8, f/4…), ahol minden teljes stop felezi az objektíven bejutó fényt, mert a nyílás területe az f-szám négyzetével fordítottan arányos. A záridő intuitívabb: az idő megduplázása megduplázza a fényt. Az ISO az érzékelő jelét erősíti — az ISO duplázása duplázza az effektív fényességet, de a zajt is. A gyakorlatban először azt a paramétert állítod be, amelyik a kreatív szándékod szempontjából a legfontosabb (rekesz a DoF-hez, záridő a mozgáshoz), és a többit ehhez igazítod. A modern kamerák 1/3 stopos lépésekkel dolgoznak a finomabb beállításhoz.",
+      "deeper": "Az expozíciót fényértékben (EV) mérjük, ahol minden egész EV-lépés a fény megduplázását vagy felezését jelenti. 1 EV növekedés (egy „stop”) azt jelenti, hogy kétszer annyi fény éri az érzékelőt. A rekesz mértani haladványt követ (f/1.4, f/2, f/2.8, f/4…), ahol minden teljes stop felezi az objektíven bejutó fényt, mert a nyílás területe az f-szám négyzetével fordítottan arányos. A záridő intuitívabb: az idő megduplázása megduplázza a fényt. Az ISO az érzékelő jelét erősíti — az ISO duplázása duplázza az effektív fényességet, de a zajt is. A gyakorlatban először azt a paramétert állítod be, amelyik a kreatív szándékod szempontjából a legfontosabb (rekesz a mélységélesség-hez, záridő a mozgáshoz), és a többit ehhez igazítod. A modern kamerák 1/3 stopos lépésekkel dolgoznak a finomabb beállításhoz.",
       "keyFactors": {
         "0": {
           "label": "Rekesz",
@@ -57,10 +57,18 @@
           "successMessage": "Így van! Egy gyors záridő (pl. 1/1000s) lefagyasztja a kutyát ugrás közben. Napsütésben ehhez bőven van fény.",
           "failureMessage": "Ez a beállítás nem közvetlenül fagyasztja le a mozgást. A mozgó téma megállításához gyors záridő kell — minél rövidebb az expozíció, annál kevesebb ideje van bemozdulni.",
           "options": {
-            "0": { "label": "Rekesz tágítása f/2.8-ra" },
-            "1": { "label": "Gyors záridő (1/1000s)" },
-            "2": { "label": "ISO emelése 3200-ra" },
-            "3": { "label": "Hosszabb gyújtótávolság" }
+            "0": {
+              "label": "Rekesz tágítása f/2.8-ra"
+            },
+            "1": {
+              "label": "Gyors záridő (1/1000s)"
+            },
+            "2": {
+              "label": "ISO emelése 3200-ra"
+            },
+            "3": {
+              "label": "Hosszabb gyújtótávolság"
+            }
           }
         },
         "1": {
@@ -69,10 +77,18 @@
           "successMessage": "Jó gondolkodás! Az ISO 1600-ra emelése két stopnyi plusz fényességet ad, és a záridő még elég gyors marad a kézi fotózáshoz.",
           "failureMessage": "Ez a változtatás más problémákat okozhat. Mivel a rekesz már majdnem teljesen nyitva van, és a kézi fotózáshoz elég gyors záridő kell, az ISO emelése a legpraktikusabb lépés.",
           "options": {
-            "0": { "label": "ISO-t 1600-ra emelni" },
-            "1": { "label": "Záridőt lassítani 1/4s-ra" },
-            "2": { "label": "Rekeszt zárni f/8-ra" },
-            "3": { "label": "Áttérni kisebb érzékelőjű kamerára" }
+            "0": {
+              "label": "ISO-t 1600-ra emelni"
+            },
+            "1": {
+              "label": "Záridőt lassítani 1/4s-ra"
+            },
+            "2": {
+              "label": "Rekeszt zárni f/8-ra"
+            },
+            "3": {
+              "label": "Áttérni kisebb érzékelőjű kamerára"
+            }
           }
         },
         "2": {
@@ -81,10 +97,18 @@
           "successMessage": "Pontosan! A lassú záridő (1/2s vagy hosszabb) és az f/22-re szűkített rekesz (esetleg egy ND szűrő) megadja a selymes vízhatást.",
           "failureMessage": "A selymes vízhez lassú záridő kell — fél másodperctől több másodpercig. Napsütésben csökkentened kell az objektívbe jutó fényt, hogy ne exponálj túl.",
           "options": {
-            "0": { "label": "1/2s záridő és rekesz f/22-re szűkítve" },
-            "1": { "label": "1/1000s záridő f/2.8-on" },
-            "2": { "label": "ISO-t 6400-ra emelni" },
-            "3": { "label": "Maradni 1/250s-on, de nyitni f/1.4-re" }
+            "0": {
+              "label": "1/2s záridő és rekesz f/22-re szűkítve"
+            },
+            "1": {
+              "label": "1/1000s záridő f/2.8-on"
+            },
+            "2": {
+              "label": "ISO-t 6400-ra emelni"
+            },
+            "3": {
+              "label": "Maradni 1/250s-on, de nyitni f/1.4-re"
+            }
           }
         },
         "3": {
@@ -93,10 +117,18 @@
           "successMessage": "Tökéletes! f/5.6-ról f/2.8-ra 2 stop plusz fény. Ha a záridőt 1/125s-ről 1/500s-ra viszed, az pontosan 2 stopot vesz el, és az expozíció ugyanaz marad.",
           "failureMessage": "A számításnak ki kell egyenlítődnie. f/5.6-ról f/2.8-ra +2 stop. Pontosan 2 stopot kell kompenzálnod: gyorsabb záridővel, alacsonyabb ISO-val vagy a kettő kombinációjával.",
           "options": {
-            "0": { "label": "1/500s ISO 200-on" },
-            "1": { "label": "1/250s ISO 200-on" },
-            "2": { "label": "1/125s ISO 100-on" },
-            "3": { "label": "1/60s ISO 100-on" }
+            "0": {
+              "label": "1/500s ISO 200-on"
+            },
+            "1": {
+              "label": "1/250s ISO 200-on"
+            },
+            "2": {
+              "label": "1/125s ISO 100-on"
+            },
+            "3": {
+              "label": "1/60s ISO 100-on"
+            }
           }
         },
         "4": {
@@ -105,10 +137,18 @@
           "successMessage": "Így van! EV 6-on f/2.8 és 1/250s mellett ISO 3200 kell. A koncertfotózás gyakran magas ISO-t igényel — érdemes tudnod, meddig használható a kamerád ISO-ja.",
           "failureMessage": "EV 6-on az f/2.8 és az 1/250s kombinációjához ISO 3200 kell a helyes expozícióhoz. Az expozíciós képlet a rekeszt, a záridőt és az ISO-t egyensúlyozza ki a rendelkezésre álló fénnyel.",
           "options": {
-            "0": { "label": "ISO 400" },
-            "1": { "label": "ISO 800" },
-            "2": { "label": "ISO 3200" },
-            "3": { "label": "ISO 12800" }
+            "0": {
+              "label": "ISO 400"
+            },
+            "1": {
+              "label": "ISO 800"
+            },
+            "2": {
+              "label": "ISO 3200"
+            },
+            "3": {
+              "label": "ISO 12800"
+            }
           }
         }
       }

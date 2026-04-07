@@ -45,9 +45,15 @@
           "successMessage": "Chính xác! Full Frame là lựa chọn đúng cho cảm biến 35mm tiêu chuẩn.",
           "failureMessage": "Chưa đúng — chọn cảm biến Full Frame để phù hợp với thân máy 35mm tiêu chuẩn.",
           "options": {
-            "0": { "label": "Full Frame" },
-            "1": { "label": "APS-C (Nikon/Sony)" },
-            "2": { "label": "Micro Four Thirds" }
+            "0": {
+              "label": "Full Frame"
+            },
+            "1": {
+              "label": "APS-C (Nikon/Sony)"
+            },
+            "2": {
+              "label": "Micro Four Thirds"
+            }
           }
         },
         "1": {
@@ -56,8 +62,12 @@
           "successMessage": "Đúng! Ống 24mm có khoảng cách siêu tiêu cự ngắn hơn nhiều vì tiêu cự có quan hệ bình phương.",
           "failureMessage": "Thực tế, tiêu cự ngắn hơn luôn cho khoảng cách siêu tiêu cự ngắn hơn. 24mm thắng ở đây.",
           "options": {
-            "0": { "label": "24mm ở f/8" },
-            "1": { "label": "50mm ở f/8" }
+            "0": {
+              "label": "24mm ở f/8"
+            },
+            "1": {
+              "label": "50mm ở f/8"
+            }
           }
         },
         "2": {
@@ -66,9 +76,15 @@
           "successMessage": "Suy nghĩ tuyệt vời! Bạn đã xác định đúng cần khoảng cách siêu tiêu cự khoảng 6m, và tìm đúng phạm vi khẩu độ.",
           "failureMessage": "Nhớ, nét gần bằng nửa khoảng cách siêu tiêu cự. Bạn cần siêu tiêu cự khoảng 6m để có giới hạn nét gần 3m.",
           "options": {
-            "0": { "label": "f/2.8 — f/4" },
-            "1": { "label": "f/5.6 — f/8" },
-            "2": { "label": "f/16 — f/22" }
+            "0": {
+              "label": "f/2.8 — f/4"
+            },
+            "1": {
+              "label": "f/5.6 — f/8"
+            },
+            "2": {
+              "label": "f/16 — f/22"
+            }
           }
         },
         "3": {
@@ -77,19 +93,29 @@
           "successMessage": "Chính xác! Cảm biến M43 nhỏ hơn sử dụng CoC nhỏ hơn (khoảng 0.015mm so với 0.03mm), tăng khoảng cách siêu tiêu cự cho cùng tiêu cự và khẩu độ.",
           "failureMessage": "Yếu tố then chốt là vòng tròn nhòe. Cảm biến nhỏ hơn đòi hỏi tiêu chuẩn CoC chặt hơn, đẩy khoảng cách siêu tiêu cự xa hơn.",
           "options": {
-            "0": { "label": "Tiêu cự ống kính thay đổi trên cảm biến crop" },
-            "1": { "label": "Cảm biến nhỏ hơn sử dụng vòng tròn nhòe nhỏ hơn" },
-            "2": { "label": "Máy Micro Four Thirds có lấy nét tự động kém chính xác hơn" }
+            "0": {
+              "label": "Tiêu cự ống kính thay đổi trên cảm biến crop"
+            },
+            "1": {
+              "label": "Cảm biến nhỏ hơn sử dụng vòng tròn nhòe nhỏ hơn"
+            },
+            "2": {
+              "label": "Máy Micro Four Thirds có lấy nét tự động kém chính xác hơn"
+            }
           }
         },
         "4": {
           "scenario": "Bạn đang chụp kiến trúc ở 14mm f/11 trên full frame. Bảng hiển thị khoảng cách siêu tiêu cự rất ngắn. Bạn nên thu hẹp thêm xuống f/22 để có chiều sâu trường ảnh nhiều hơn, hay f/11 là lựa chọn tốt hơn?",
           "hint": "Xem xét điều gì xảy ra với độ nét ảnh ở các khẩu độ rất nhỏ.",
-          "successMessage": "Xuất sắc! Ở f/11, nhiễu xạ tối thiểu trên full frame, và khoảng cách siêu tiêu cự ở 14mm đã rất ngắn. Thu hẹp xuống f/22 sẽ làm mềm ảnh do nhiễu xạ mà không có lợi ích DoF đáng kể.",
-          "failureMessage": "Mặc dù f/22 cho khoảng cách siêu tiêu cự ngắn hơn trên giấy, nhiễu xạ làm mềm ở f/22 trên full frame thực tế giảm độ nét tổng thể. Ở 14mm f/11, khoảng cách siêu tiêu cự đã rất ngắn nên DoF thêm không đáng hình phạt nhiễu xạ.",
+          "successMessage": "Xuất sắc! Ở f/11, nhiễu xạ tối thiểu trên full frame, và khoảng cách siêu tiêu cự ở 14mm đã rất ngắn. Thu hẹp xuống f/22 sẽ làm mềm ảnh do nhiễu xạ mà không có lợi ích chiều sâu trường ảnh đáng kể.",
+          "failureMessage": "Mặc dù f/22 cho khoảng cách siêu tiêu cự ngắn hơn trên giấy, nhiễu xạ làm mềm ở f/22 trên full frame thực tế giảm độ nét tổng thể. Ở 14mm f/11, khoảng cách siêu tiêu cự đã rất ngắn nên chiều sâu trường ảnh thêm không đáng hình phạt nhiễu xạ.",
           "options": {
-            "0": { "label": "Thu hẹp xuống f/22 để chiều sâu trường ảnh tối đa" },
-            "1": { "label": "Giữ f/11 — nhiễu xạ ở f/22 sẽ giảm độ nét" }
+            "0": {
+              "label": "Thu hẹp xuống f/22 để chiều sâu trường ảnh tối đa"
+            },
+            "1": {
+              "label": "Giữ f/11 — nhiễu xạ ở f/22 sẽ giảm độ nét"
+            }
           }
         }
       }

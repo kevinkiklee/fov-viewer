@@ -3,7 +3,7 @@
     "site": {
       "defaultTitle": "PhotoTools — Unelte de fotografie",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Unelte gratuite de fotografie: simulator FOV, generator de palete, vizualizator EXIF, decupare și încadrare foto și altele.",
+      "description": "Unelte gratuite de fotografie: simulator câmp vizual, generator de palete, vizualizator EXIF, decupare și încadrare foto și altele.",
       "ogTitle": "PhotoTools — Unelte gratuite pentru fotografie"
     },
     "fov-simulator": {

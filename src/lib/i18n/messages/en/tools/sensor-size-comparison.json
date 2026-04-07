@@ -39,7 +39,7 @@
         },
         "sensor-size-and-depth-of-field": {
           "question": "How does sensor size affect depth of field?",
-          "answer": "Larger sensors produce shallower depth of field at equivalent framing. To get the same framing with a smaller sensor, you either use a shorter focal length (deeper DOF) or move farther away (deeper DOF), both reducing background blur."
+          "answer": "Larger sensors produce shallower depth of field at equivalent framing. To get the same framing with a smaller sensor, you either use a shorter focal length (deeper depth of field) or move farther away (deeper depth of field), both reducing background blur."
         }
       }
     }

@@ -1,7 +1,7 @@
 {
   "education": {
     "dof-simulator": {
-      "beginner": "Hloubka ostrosti (DoF) je rozsah vzdáleností na fotce, který vypadá přijatelně ostře. Malá hloubka ostrosti rozmaže pozadí za subjektem, zatímco velká udrží ostré všechno od popředí po horizont. Ovládnutí hloubky ostrosti je jeden z nejsilnějších kreativních nástrojů ve fotografii.",
+      "beginner": "Hloubka ostrosti je rozsah vzdáleností na fotce, který vypadá přijatelně ostře. Malá hloubka ostrosti rozmaže pozadí za subjektem, zatímco velká udrží ostré všechno od popředí po horizont. Ovládnutí hloubky ostrosti je jeden z nejsilnějších kreativních nástrojů ve fotografii.",
       "deeper": {
         "0": {
           "heading": "Jak hloubka ostrosti funguje",
@@ -110,10 +110,18 @@
           "successMessage": "Správně! Široká clona jako f/1.8 nebo f/2.8 vytvoří malou hloubku ostrosti a oddělí subjekt od pozadí s příjemným bokehem.",
           "failureMessage": "Ne úplně. Úzké clony jako f/11 nebo f/16 udrží ostrou větší část scény. Pro rozmazané pozadí zvol širokou clonu (nízké clonové číslo).",
           "options": {
-            "0": { "label": "f/1.8" },
-            "1": { "label": "f/5.6" },
-            "2": { "label": "f/11" },
-            "3": { "label": "f/16" }
+            "0": {
+              "label": "f/1.8"
+            },
+            "1": {
+              "label": "f/5.6"
+            },
+            "2": {
+              "label": "f/11"
+            },
+            "3": {
+              "label": "f/16"
+            }
           }
         },
         "1": {
@@ -122,10 +130,18 @@
           "successMessage": "Dobrá volba! f/5.6 poskytuje dost hloubky ostrosti, aby obě řady byly ostré, a zároveň v interiéru udrží slušný expoziční čas.",
           "failureMessage": "Ta clona může nechat zadní řadu mimo zaostření nebo být zbytečně úzká. Pro dvě řady lidí je f/5.6 spolehlivý výchozí bod.",
           "options": {
-            "0": { "label": "f/1.4" },
-            "1": { "label": "f/2.8" },
-            "2": { "label": "f/5.6" },
-            "3": { "label": "f/22" }
+            "0": {
+              "label": "f/1.4"
+            },
+            "1": {
+              "label": "f/2.8"
+            },
+            "2": {
+              "label": "f/5.6"
+            },
+            "3": {
+              "label": "f/22"
+            }
           }
         },
         "2": {
@@ -134,10 +150,18 @@
           "successMessage": "Přesně tak! Zaostření na hyperfokální vzdálenost při f/11 ti zajistí přijatelnou ostrost od zhruba 1 metru do nekonečna — ideální pro tuto scénu.",
           "failureMessage": "Zaostření na nekonečno by nechalo květy v popředí měkké. Pro prodloužení ostrosti od blízkého popředí po nekonečno použij hyperfokální vzdálenost.",
           "options": {
-            "0": { "label": "Zaostřit na květy (2 m)" },
-            "1": { "label": "Zaostřit na hory (nekonečno)" },
-            "2": { "label": "Zaostřit na hyperfokální vzdálenost" },
-            "3": { "label": "Zaostřit na půlku mezi květy a horami" }
+            "0": {
+              "label": "Zaostřit na květy (2 m)"
+            },
+            "1": {
+              "label": "Zaostřit na hory (nekonečno)"
+            },
+            "2": {
+              "label": "Zaostřit na hyperfokální vzdálenost"
+            },
+            "3": {
+              "label": "Zaostřit na půlku mezi květy a horami"
+            }
           }
         },
         "3": {
@@ -146,10 +170,18 @@
           "successMessage": "Správně! Přiclonění na f/11 nebo f/16 ti v makru rozšíří ultratenkou hloubku ostrosti. Dávej si ale pozor na difrakci při velmi malých clonách.",
           "failureMessage": "Širší clona by hloubku ostrosti ještě zmenšila. V makrofotografii je cesta k větší hloubce přiclonění (vyšší clonové číslo).",
           "options": {
-            "0": { "label": "Otevřít na f/2.8 pro víc světla" },
-            "1": { "label": "Přiclonit na f/11" },
-            "2": { "label": "Přejít na širší objektiv" },
-            "3": { "label": "Odstoupit od květu" }
+            "0": {
+              "label": "Otevřít na f/2.8 pro víc světla"
+            },
+            "1": {
+              "label": "Přiclonit na f/11"
+            },
+            "2": {
+              "label": "Přejít na širší objektiv"
+            },
+            "3": {
+              "label": "Odstoupit od květu"
+            }
           }
         },
         "4": {
@@ -158,9 +190,15 @@
           "successMessage": "Správně! Full frame má hloubku ostrosti menší zhruba o 2 clony. Objektiv na MFT má sice stejné clonové číslo, ale kratší skutečná ohnisková vzdálenost (42,5 mm vs. 85 mm) dává při stejném výřezu větší hloubku ostrosti.",
           "failureMessage": "I když jsou oba objektivy f/1.8, full frame používá pro stejný výřez delší skutečné ohnisko, a tak dává výrazně menší hloubku ostrosti.",
           "options": {
-            "0": { "label": "Full frame s 85mm f/1.8" },
-            "1": { "label": "Micro Four Thirds s 42,5mm f/1.8" },
-            "2": { "label": "Oba mají stejnou hloubku ostrosti" }
+            "0": {
+              "label": "Full frame s 85mm f/1.8"
+            },
+            "1": {
+              "label": "Micro Four Thirds s 42,5mm f/1.8"
+            },
+            "2": {
+              "label": "Oba mají stejnou hloubku ostrosti"
+            }
           }
         }
       }

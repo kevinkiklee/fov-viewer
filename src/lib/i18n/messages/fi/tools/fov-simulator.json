@@ -32,7 +32,7 @@
       "faq": {
         "what-is-fov": {
           "question": "Mikä kuvakulma on valokuvauksessa?",
-          "answer": "Kuvakulma (FOV) kertoo, kuinka laajan osan näkymästä objektiivi ja kenno tallentavat. Se määrittää, kuinka paljon näkymää kuvaan mahtuu, ja riippuu polttovälistä ja kennokoosta."
+          "answer": "Kuvakulma kertoo, kuinka laajan osan näkymästä objektiivi ja kenno tallentavat. Se määrittää, kuinka paljon näkymää kuvaan mahtuu, ja riippuu polttovälistä ja kennokoosta."
         },
         "how-crop-factor-affects-fov": {
           "question": "Miten kerroin vaikuttaa kuvakulmaan?",

@@ -39,7 +39,7 @@
         },
         "sensor-size-and-depth-of-field": {
           "question": "Bagaimana ukuran sensor mempengaruhi depth of field?",
-          "answer": "Sensor yang lebih besar menghasilkan depth of field yang lebih dangkal pada framing yang setara. Untuk mendapatkan framing yang sama dengan sensor yang lebih kecil, Anda menggunakan panjang fokus lebih pendek (DOF lebih dalam) atau mundur lebih jauh (DOF lebih dalam), keduanya mengurangi blur latar belakang."
+          "answer": "Sensor yang lebih besar menghasilkan depth of field yang lebih dangkal pada framing yang setara. Untuk mendapatkan framing yang sama dengan sensor yang lebih kecil, Anda menggunakan panjang fokus lebih pendek (kedalaman bidang lebih dalam) atau mundur lebih jauh (kedalaman bidang lebih dalam), keduanya mengurangi blur latar belakang."
         }
       }
     }

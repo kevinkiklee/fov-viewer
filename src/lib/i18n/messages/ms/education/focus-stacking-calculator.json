@@ -9,7 +9,7 @@
         },
         "1": {
           "heading": "Merancang Stack",
-          "text": "Kunci kepada stack yang berjaya ialah memastikan kedalaman medan setiap tangkapan bertindih dengan yang seterusnya sebanyak 20-30%. Terlalu sedikit tindihan mencipta jurang di mana tiada apa yang tajam; terlalu banyak membazir bingkai tanpa faedah. Kalkulator menentukan DoF per-tangkapan menggunakan formula bulatan kekeliruan, menolak margin tindihan, dan membahagikan jumlah julat kedalaman dengan langkah berkesan untuk mengira bilangan tangkapan."
+          "text": "Kunci kepada stack yang berjaya ialah memastikan kedalaman medan setiap tangkapan bertindih dengan yang seterusnya sebanyak 20-30%. Terlalu sedikit tindihan mencipta jurang di mana tiada apa yang tajam; terlalu banyak membazir bingkai tanpa faedah. Kalkulator menentukan kedalaman medan per-tangkapan menggunakan formula bulatan kekeliruan, menolak margin tindihan, dan membahagikan jumlah julat kedalaman dengan langkah berkesan untuk mengira bilangan tangkapan."
         },
         "2": {
           "heading": "Menggabung & Penjajaran",
@@ -19,7 +19,7 @@
       "keyFactors": {
         "0": {
           "label": "Aperture",
-          "description": "Menentukan kedalaman medan per-tangkapan. Aperture sederhana (f/5.6-f/8) mengimbangi ketajaman dan DoF per bingkai. Elakkan aperture yang sangat kecil — pembelauan mengurangkan ketajaman yang anda sedang kumpulkan."
+          "description": "Menentukan kedalaman medan per-tangkapan. Aperture sederhana (f/5.6-f/8) mengimbangi ketajaman dan kedalaman medan per bingkai. Elakkan aperture yang sangat kecil — pembelauan mengurangkan ketajaman yang anda sedang kumpulkan."
         },
         "1": {
           "label": "Julat Kedalaman",
@@ -27,7 +27,7 @@
         },
         "2": {
           "label": "Tindihan",
-          "description": "Peratus DoF setiap tangkapan yang bertindih dengan tangkapan bersebelahan. 20-30% ialah standard. Kurang berisiko menghasilkan jurang; lebih membazir bingkai."
+          "description": "Peratus kedalaman medan setiap tangkapan yang bertindih dengan tangkapan bersebelahan. 20-30% ialah standard. Kurang berisiko menghasilkan jurang; lebih membazir bingkai."
         }
       },
       "tips": {
@@ -73,38 +73,60 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Anda sedang mengambil gambar bunga kecil yang dalamnya 3cm dari kelopak depan hingga batang belakang. Lensa makro anda pada f/8 memberikan kira-kira 4mm DoF per tangkapan. Kira-kira berapa bingkai yang anda perlukan dengan tindihan 25%?",
+          "scenario": "Anda sedang mengambil gambar bunga kecil yang dalamnya 3cm dari kelopak depan hingga batang belakang. Lensa makro anda pada f/8 memberikan kira-kira 4mm kedalaman medan per tangkapan. Kira-kira berapa bingkai yang anda perlukan dengan tindihan 25%?",
           "hint": "Setiap tangkapan meliputi 4mm, tetapi tindihan 25% bermakna langkah berkesan ialah 3mm per bingkai. Bahagikan 30mm dengan 3mm.",
-          "successMessage": "Betul! Dengan DoF 4mm dan tindihan 25%, setiap langkah bergerak 3mm. 30mm / 3mm = 10 tangkapan untuk meliputi keseluruhan bunga.",
-          "failureMessage": "Dengan tindihan 25%, langkah berkesan setiap bingkai ialah 75% daripada DoF: 4mm × 0.75 = 3mm. Anda memerlukan 30mm / 3mm = 10 tangkapan.",
+          "successMessage": "Betul! Dengan kedalaman medan 4mm dan tindihan 25%, setiap langkah bergerak 3mm. 30mm / 3mm = 10 tangkapan untuk meliputi keseluruhan bunga.",
+          "failureMessage": "Dengan tindihan 25%, langkah berkesan setiap bingkai ialah 75% daripada kedalaman medan: 4mm × 0.75 = 3mm. Anda memerlukan 30mm / 3mm = 10 tangkapan.",
           "options": {
-            "0": { "label": "5 tangkapan" },
-            "1": { "label": "10 tangkapan" },
-            "2": { "label": "20 tangkapan" },
-            "3": { "label": "30 tangkapan" }
+            "0": {
+              "label": "5 tangkapan"
+            },
+            "1": {
+              "label": "10 tangkapan"
+            },
+            "2": {
+              "label": "20 tangkapan"
+            },
+            "3": {
+              "label": "30 tangkapan"
+            }
           }
         },
         "1": {
           "scenario": "Anda mahukan hasil paling tajam yang mungkin dari focus stack anda. Patutkah anda menangkap setiap bingkai pada f/2.8, f/8, atau f/22?",
           "hint": "Pertimbangkan aperture paling tajam lensa dan bagaimana pembelauan mempengaruhi aperture kecil.",
-          "successMessage": "Betul! f/8 biasanya ialah aperture paling tajam untuk kebanyakan lensa. f/2.8 mempunyai terlalu sedikit DoF per tangkapan (membazir bingkai) dan f/22 mengalami pelembutan pembelauan.",
-          "failureMessage": "f/8 adalah pilihan terbaik. f/2.8 memberikan DoF per-tangkapan yang sangat nipis (memerlukan lebih banyak bingkai), dan f/22 memperkenalkan pelembutan pembelauan yang menghapuskan tujuan stacking untuk ketajaman.",
+          "successMessage": "Betul! f/8 biasanya ialah aperture paling tajam untuk kebanyakan lensa. f/2.8 mempunyai terlalu sedikit kedalaman medan per tangkapan (membazir bingkai) dan f/22 mengalami pelembutan pembelauan.",
+          "failureMessage": "f/8 adalah pilihan terbaik. f/2.8 memberikan kedalaman medan per-tangkapan yang sangat nipis (memerlukan lebih banyak bingkai), dan f/22 memperkenalkan pelembutan pembelauan yang menghapuskan tujuan stacking untuk ketajaman.",
           "options": {
-            "0": { "label": "f/2.8 — paling luas untuk pengatup paling pantas" },
-            "1": { "label": "f/8 — sweet spot lensa" },
-            "2": { "label": "f/22 — DoF per tangkapan maksimum" }
+            "0": {
+              "label": "f/2.8 — paling luas untuk pengatup paling pantas"
+            },
+            "1": {
+              "label": "f/8 — sweet spot lensa"
+            },
+            "2": {
+              "label": "f/22 — kedalaman medan per tangkapan maksimum"
+            }
           }
         },
         "2": {
           "scenario": "Selepas menggabungkan focus stack anda, anda perasan jalur lembut melintasi tengah imej di mana tiada apa yang tajam. Apa yang paling mungkin berlaku salah?",
           "hint": "Fikirkan tentang apa yang menyambungkan zon tajam satu bingkai kepada yang seterusnya.",
           "successMessage": "Tepat sekali! Tindihan yang tidak mencukupi antara bingkai bersebelahan mencipta jurang di mana tiada tangkapan yang tajam. Tingkatkan tindihan ke 25-30% dan tangkap semula.",
-          "failureMessage": "Jalur lembut biasanya bermakna jurang antara langkah fokus terlalu besar — DoF bingkai bersebelahan tidak bertindih dengan mencukupi. Tingkatkan peratus tindihan.",
+          "failureMessage": "Jalur lembut biasanya bermakna jurang antara langkah fokus terlalu besar — kedalaman medan bingkai bersebelahan tidak bertindih dengan mencukupi. Tingkatkan peratus tindihan.",
           "options": {
-            "0": { "label": "Aperture terlalu luas" },
-            "1": { "label": "Tindihan tidak mencukupi antara langkah fokus" },
-            "2": { "label": "Tripod bergerak semasa urutan" },
-            "3": { "label": "ISO terlalu tinggi" }
+            "0": {
+              "label": "Aperture terlalu luas"
+            },
+            "1": {
+              "label": "Tindihan tidak mencukupi antara langkah fokus"
+            },
+            "2": {
+              "label": "Tripod bergerak semasa urutan"
+            },
+            "3": {
+              "label": "ISO terlalu tinggi"
+            }
           }
         }
       }

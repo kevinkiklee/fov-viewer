@@ -28,11 +28,11 @@
       "collapse": "Réduire",
       "expand": "Développer",
       "fovComparison": "Comparaison de champ de vision",
-      "loadingScene": "Chargement de la sc\u00e8ne...",
+      "loadingScene": "Chargement de la scène...",
       "faq": {
         "what-is-fov": {
           "question": "Qu'est-ce que le champ de vision en photographie ?",
-          "answer": "Le champ de vision (FOV) est l'étendue angulaire de la scène que ton objectif et ton capteur voient. Il détermine la portion de scène capturée dans la photo et dépend de la focale et de la taille du capteur."
+          "answer": "Le champ de vision est l'étendue angulaire de la scène que ton objectif et ton capteur voient. Il détermine la portion de scène capturée dans la photo et dépend de la focale et de la taille du capteur."
         },
         "how-crop-factor-affects-fov": {
           "question": "Comment le facteur de recadrage affecte-t-il le champ de vision ?",
@@ -40,7 +40,7 @@
         },
         "fov-vs-focal-length": {
           "question": "Quel est le lien entre le champ de vision et la focale ?",
-          "answer": "Le champ de vision et la focale varient en sens inverse. Les focales courtes (grand-angle) donnent un champ de vision large, les focales longues (téléobjectif) un champ étroit. Le FOV exact dépend aussi de la taille du capteur."
+          "answer": "Le champ de vision et la focale varient en sens inverse. Les focales courtes (grand-angle) donnent un champ de vision large, les focales longues (téléobjectif) un champ étroit. Le champ de vision exact dépend aussi de la taille du capteur."
         }
       }
     }

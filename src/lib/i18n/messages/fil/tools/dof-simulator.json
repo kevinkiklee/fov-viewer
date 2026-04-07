@@ -28,7 +28,7 @@
       "results": "Results",
       "nearFocus": "Near Focus",
       "farFocus": "Far Focus",
-      "totalDoF": "Total DoF",
+      "totalDoF": "Total depth of field",
       "hyperfocal": "Hyperfocal",
       "backgroundBlur": "Background Blur",
       "coc": "Circle of Confusion",

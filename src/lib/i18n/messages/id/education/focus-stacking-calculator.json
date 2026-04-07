@@ -9,7 +9,7 @@
         },
         "1": {
           "heading": "Merencanakan Stack",
-          "text": "Kunci stack yang berhasil adalah memastikan kedalaman bidang setiap foto tumpang tindih dengan foto berikutnya sebesar 20-30%. Tumpang tindih yang terlalu sedikit menciptakan celah di mana tidak ada yang tajam; terlalu banyak membuang frame tanpa manfaat. Kalkulator menentukan DoF per-foto menggunakan rumus circle of confusion, mengurangi margin tumpang tindih, dan membagi total rentang kedalaman dengan langkah efektif untuk menghitung jumlah foto."
+          "text": "Kunci stack yang berhasil adalah memastikan kedalaman bidang setiap foto tumpang tindih dengan foto berikutnya sebesar 20-30%. Tumpang tindih yang terlalu sedikit menciptakan celah di mana tidak ada yang tajam; terlalu banyak membuang frame tanpa manfaat. Kalkulator menentukan kedalaman bidang per-foto menggunakan rumus circle of confusion, mengurangi margin tumpang tindih, dan membagi total rentang kedalaman dengan langkah efektif untuk menghitung jumlah foto."
         },
         "2": {
           "heading": "Penggabungan & Penyelarasan",
@@ -19,7 +19,7 @@
       "keyFactors": {
         "0": {
           "label": "Apertur",
-          "description": "Menentukan kedalaman bidang per-foto. Apertur moderat (f/5.6-f/8) menyeimbangkan ketajaman dan DoF per frame. Hindari apertur sangat kecil — difraksi mengurangi ketajaman yang Anda cari dari stacking."
+          "description": "Menentukan kedalaman bidang per-foto. Apertur moderat (f/5.6-f/8) menyeimbangkan ketajaman dan kedalaman bidang per frame. Hindari apertur sangat kecil — difraksi mengurangi ketajaman yang Anda cari dari stacking."
         },
         "1": {
           "label": "Rentang Kedalaman",
@@ -27,7 +27,7 @@
         },
         "2": {
           "label": "Tumpang Tindih",
-          "description": "Persentase DoF setiap foto yang tumpang tindih dengan foto yang berdekatan. 20-30% adalah standar. Kurang berisiko celah; lebih membuang frame."
+          "description": "Persentase kedalaman bidang setiap foto yang tumpang tindih dengan foto yang berdekatan. 20-30% adalah standar. Kurang berisiko celah; lebih membuang frame."
         }
       },
       "tips": {
@@ -73,38 +73,60 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Anda memotret bunga kecil yang kedalamannya 3cm dari kelopak depan ke batang belakang. Lensa makro Anda pada f/8 memberikan sekitar 4mm DoF per foto. Kira-kira berapa frame yang Anda butuhkan dengan tumpang tindih 25%?",
+          "scenario": "Anda memotret bunga kecil yang kedalamannya 3cm dari kelopak depan ke batang belakang. Lensa makro Anda pada f/8 memberikan sekitar 4mm kedalaman bidang per foto. Kira-kira berapa frame yang Anda butuhkan dengan tumpang tindih 25%?",
           "hint": "Setiap foto menutupi 4mm, tetapi tumpang tindih 25% berarti langkah efektif adalah 3mm per frame. Bagi 30mm dengan 3mm.",
-          "successMessage": "Benar! Dengan 4mm DoF dan tumpang tindih 25%, setiap langkah maju 3mm. 30mm / 3mm = 10 foto untuk menutupi seluruh bunga.",
-          "failureMessage": "Dengan tumpang tindih 25%, langkah efektif setiap frame adalah 75% dari DoF: 4mm × 0,75 = 3mm. Anda memerlukan 30mm / 3mm = 10 foto.",
+          "successMessage": "Benar! Dengan 4mm kedalaman bidang dan tumpang tindih 25%, setiap langkah maju 3mm. 30mm / 3mm = 10 foto untuk menutupi seluruh bunga.",
+          "failureMessage": "Dengan tumpang tindih 25%, langkah efektif setiap frame adalah 75% dari kedalaman bidang: 4mm × 0,75 = 3mm. Anda memerlukan 30mm / 3mm = 10 foto.",
           "options": {
-            "0": { "label": "5 foto" },
-            "1": { "label": "10 foto" },
-            "2": { "label": "20 foto" },
-            "3": { "label": "30 foto" }
+            "0": {
+              "label": "5 foto"
+            },
+            "1": {
+              "label": "10 foto"
+            },
+            "2": {
+              "label": "20 foto"
+            },
+            "3": {
+              "label": "30 foto"
+            }
           }
         },
         "1": {
           "scenario": "Anda ingin hasil setajam mungkin dari focus stack Anda. Haruskah Anda memotret setiap frame pada f/2.8, f/8, atau f/22?",
           "hint": "Pertimbangkan apertur tertajam lensa dan bagaimana difraksi memengaruhi apertur kecil.",
-          "successMessage": "Tepat! f/8 biasanya adalah apertur tertajam untuk kebanyakan lensa. f/2.8 memiliki DoF per-foto yang terlalu sedikit (membuang frame) dan f/22 mengalami pelunakan difraksi.",
-          "failureMessage": "f/8 adalah pilihan terbaik. f/2.8 memberikan DoF per-foto yang sangat tipis (memerlukan lebih banyak frame), dan f/22 memperkenalkan pelunakan difraksi yang mengalahkan tujuan stacking untuk ketajaman.",
+          "successMessage": "Tepat! f/8 biasanya adalah apertur tertajam untuk kebanyakan lensa. f/2.8 memiliki kedalaman bidang per-foto yang terlalu sedikit (membuang frame) dan f/22 mengalami pelunakan difraksi.",
+          "failureMessage": "f/8 adalah pilihan terbaik. f/2.8 memberikan kedalaman bidang per-foto yang sangat tipis (memerlukan lebih banyak frame), dan f/22 memperkenalkan pelunakan difraksi yang mengalahkan tujuan stacking untuk ketajaman.",
           "options": {
-            "0": { "label": "f/2.8 — terlebar untuk rana tercepat" },
-            "1": { "label": "f/8 — sweet spot lensa" },
-            "2": { "label": "f/22 — DoF per-foto maksimum" }
+            "0": {
+              "label": "f/2.8 — terlebar untuk rana tercepat"
+            },
+            "1": {
+              "label": "f/8 — sweet spot lensa"
+            },
+            "2": {
+              "label": "f/22 — kedalaman bidang per-foto maksimum"
+            }
           }
         },
         "2": {
           "scenario": "Setelah menggabungkan focus stack Anda, Anda melihat pita lembut di tengah gambar di mana tidak ada yang tajam. Apa yang kemungkinan besar salah?",
           "hint": "Pikirkan tentang apa yang menghubungkan zona tajam satu frame ke frame berikutnya.",
           "successMessage": "Tepat! Tumpang tindih yang tidak cukup antara frame yang berdekatan menciptakan celah di mana tidak ada foto yang tajam. Tingkatkan tumpang tindih ke 25-30% dan potret ulang.",
-          "failureMessage": "Pita lembut biasanya berarti celah antara langkah fokus terlalu besar — DoF frame yang berdekatan tidak cukup tumpang tindih. Tingkatkan persentase tumpang tindih.",
+          "failureMessage": "Pita lembut biasanya berarti celah antara langkah fokus terlalu besar — kedalaman bidang frame yang berdekatan tidak cukup tumpang tindih. Tingkatkan persentase tumpang tindih.",
           "options": {
-            "0": { "label": "Apertur terlalu lebar" },
-            "1": { "label": "Tumpang tindih tidak cukup antara langkah fokus" },
-            "2": { "label": "Tripod bergerak selama urutan" },
-            "3": { "label": "ISO terlalu tinggi" }
+            "0": {
+              "label": "Apertur terlalu lebar"
+            },
+            "1": {
+              "label": "Tumpang tindih tidak cukup antara langkah fokus"
+            },
+            "2": {
+              "label": "Tripod bergerak selama urutan"
+            },
+            "3": {
+              "label": "ISO terlalu tinggi"
+            }
           }
         }
       }

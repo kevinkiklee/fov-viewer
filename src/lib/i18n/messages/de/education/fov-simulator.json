@@ -1,7 +1,7 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Der Bildwinkel (FOV) beschreibt, wie viel einer Szene deine Kamera erfasst. Ein Weitwinkelobjektiv (wie 24 mm) sieht einen breiten Bereich, während ein Teleobjektiv (wie 200 mm) nur einen schmalen Ausschnitt erfasst. Dieser Simulator ermöglicht es dir, bis zu vier Objektive auf verschiedenen Sensoren zu vergleichen, überlagert auf realen Szenen, damit du genau visualisieren kannst, was jede Kombination erfasst.",
+      "beginner": "Der Bildwinkel beschreibt, wie viel einer Szene deine Kamera erfasst. Ein Weitwinkelobjektiv (wie 24 mm) sieht einen breiten Bereich, während ein Teleobjektiv (wie 200 mm) nur einen schmalen Ausschnitt erfasst. Dieser Simulator ermöglicht es dir, bis zu vier Objektive auf verschiedenen Sensoren zu vergleichen, überlagert auf realen Szenen, damit du genau visualisieren kannst, was jede Kombination erfasst.",
       "deeper": {
         "0": {
           "heading": "Die Bildwinkel-Formel",
@@ -60,7 +60,7 @@
         },
         "Orientation": {
           "term": "Ausrichtung",
-          "definition": "Wechsle zwischen Querformat (horizontal) und Hochformat (vertikal). Das FOV-Rechteck dreht sich entsprechend."
+          "definition": "Wechsle zwischen Querformat (horizontal) und Hochformat (vertikal). Das Bildwinkel-Rechteck dreht sich entsprechend."
         }
       },
       "challenges": {
@@ -70,9 +70,15 @@
           "successMessage": "Richtig! Ein 24-mm-Objektiv sieht viel mehr von der Szene als ein 70 mm. Weitwinkelobjektive haben kurze Brennweiten.",
           "failureMessage": "Kürzere Brennweiten geben breitere Bildwinkel. 24 mm ist ein Weitwinkelobjektiv, das viel mehr von der Skyline erfasst als 70 mm.",
           "options": {
-            "0": { "label": "24 mm" },
-            "1": { "label": "70 mm" },
-            "2": { "label": "200 mm" }
+            "0": {
+              "label": "24 mm"
+            },
+            "1": {
+              "label": "70 mm"
+            },
+            "2": {
+              "label": "200 mm"
+            }
           }
         },
         "1": {
@@ -81,20 +87,32 @@
           "successMessage": "Richtig! Ein 50 mm an Vollformat ist das klassische \"Normal\"-Objektiv — sein ca. 46-Grad-Bildwinkel entspricht ungefähr dem, worauf das menschliche Auge natürlich fokussiert.",
           "failureMessage": "Ein 50 mm an Vollformat gilt als \"Normal\"-Objektiv, weil sein Bildwinkel (~46 Grad) der komfortablen menschlichen Wahrnehmung nahekommt.",
           "options": {
-            "0": { "label": "Ultra-Weitwinkel" },
-            "1": { "label": "Normal / Standard" },
-            "2": { "label": "Tele" }
+            "0": {
+              "label": "Ultra-Weitwinkel"
+            },
+            "1": {
+              "label": "Normal / Standard"
+            },
+            "2": {
+              "label": "Tele"
+            }
           }
         },
         "2": {
-          "scenario": "Füge zwei Objektive hinzu: Objektiv A ist 35 mm an APS-C (Nikon/Sony), und Objektiv B ist 50 mm an Vollformat. Vergleiche die beiden FOV-Überlagerungen. Was fällt dir auf?",
+          "scenario": "Füge zwei Objektive hinzu: Objektiv A ist 35 mm an APS-C (Nikon/Sony), und Objektiv B ist 50 mm an Vollformat. Vergleiche die beiden Bildwinkel-Überlagerungen. Was fällt dir auf?",
           "hint": "35 mm multipliziert mit dem APS-C-Crop-Faktor von 1,5 ergibt...",
           "successMessage": "Genau! 35 mm an APS-C (1,5× Crop) ergibt einen äquivalenten Bildwinkel zu 52,5 mm an Vollformat — nahezu identisch mit 50 mm Vollformat. Die Überlagerungen sind fast gleich groß.",
           "failureMessage": "35 mm × 1,5 Crop-Faktor = 52,5 mm äquivalent. Das ist nahezu identisch mit 50 mm an Vollformat, weshalb die Überlagerungen fast gleich sind.",
           "options": {
-            "0": { "label": "Sie haben nahezu identische Bildwinkel" },
-            "1": { "label": "Das APS-C-Objektiv zeigt einen viel breiteren Bildwinkel" },
-            "2": { "label": "Das Vollformat-Objektiv zeigt einen viel breiteren Bildwinkel" }
+            "0": {
+              "label": "Sie haben nahezu identische Bildwinkel"
+            },
+            "1": {
+              "label": "Das APS-C-Objektiv zeigt einen viel breiteren Bildwinkel"
+            },
+            "2": {
+              "label": "Das Vollformat-Objektiv zeigt einen viel breiteren Bildwinkel"
+            }
           }
         },
         "3": {
@@ -103,9 +121,15 @@
           "successMessage": "Richtig! Vollformat sieht mehr, weil der größere Sensor einen breiteren Teil des 24-mm-Bildkreises erfasst. An APS-C wirkt das gleiche 24-mm-Objektiv wie ca. 36 mm.",
           "failureMessage": "Vollformat erfasst mehr von der Szene. Der größere Sensor nutzt mehr vom Bildkreis des Objektivs und ergibt einen effektiv breiteren Bildwinkel.",
           "options": {
-            "0": { "label": "Vollformat — größerer Sensor sieht mehr" },
-            "1": { "label": "APS-C — Crop-Sensor sieht mehr" },
-            "2": { "label": "Beide sehen gleich viel — die Brennweite ist entscheidend" }
+            "0": {
+              "label": "Vollformat — größerer Sensor sieht mehr"
+            },
+            "1": {
+              "label": "APS-C — Crop-Sensor sieht mehr"
+            },
+            "2": {
+              "label": "Beide sehen gleich viel — die Brennweite ist entscheidend"
+            }
           }
         },
         "4": {
@@ -114,9 +138,15 @@
           "successMessage": "Ausgezeichnet! 200 mm an M43 (2× Crop) ergibt einen 400-mm-äquivalenten Bildwinkel. Der Kompromiss: Während der Bildausschnitt einem 400 mm Vollformat entspricht, entspricht die Schärfentiefe dem 200-mm-Objektiv (größere Schärfentiefe), und der kleinere Sensor sammelt weniger Gesamtlicht, was schlechtere Rauschleistung bei hohem ISO bedeutet. Der Vorteil ist ein viel kleineres, leichteres und günstigeres Objektiv.",
           "failureMessage": "200 mm × 2,0 Crop = 400 mm äquivalenter Bildwinkel. Aber es ist nicht identisch mit 400 mm an Vollformat: Du bekommst mehr Schärfentiefe (basierend auf der tatsächlichen 200-mm-Brennweite), weniger Lichtsammlung (kleinerer Sensor) und mehr Rauschen bei hohem ISO. Der Vorteil ist deutlich kleinere und leichtere Ausrüstung.",
           "options": {
-            "0": { "label": "400 mm äquivalent — gleicher Bildwinkel, aber mehr Schärfentiefe, mehr Rauschen, kleinere/leichtere Ausrüstung" },
-            "1": { "label": "400 mm äquivalent — in jeder Hinsicht identisch mit 400 mm an Vollformat" },
-            "2": { "label": "200 mm äquivalent — Crop-Faktor beeinflusst den Bildwinkel nicht" }
+            "0": {
+              "label": "400 mm äquivalent — gleicher Bildwinkel, aber mehr Schärfentiefe, mehr Rauschen, kleinere/leichtere Ausrüstung"
+            },
+            "1": {
+              "label": "400 mm äquivalent — in jeder Hinsicht identisch mit 400 mm an Vollformat"
+            },
+            "2": {
+              "label": "200 mm äquivalent — Crop-Faktor beeinflusst den Bildwinkel nicht"
+            }
           }
         }
       }

@@ -1,7 +1,7 @@
 {
   "education": {
     "dof-simulator": {
-      "beginner": "Syväterävyys (DoF) tarkoittaa kuvassa sitä etäisyysaluetta, joka näkyy hyväksyttävän terävänä. Matala syväterävyys sumentaa kohteen takana olevan taustan, ja syvä syväterävyys pitää kaiken etualasta horisonttiin terävänä. Syväterävyyden hallinta on yksi valokuvauksen tehokkaimmista luovista keinoista.",
+      "beginner": "Syväterävyys tarkoittaa kuvassa sitä etäisyysaluetta, joka näkyy hyväksyttävän terävänä. Matala syväterävyys sumentaa kohteen takana olevan taustan, ja syvä syväterävyys pitää kaiken etualasta horisonttiin terävänä. Syväterävyyden hallinta on yksi valokuvauksen tehokkaimmista luovista keinoista.",
       "deeper": {
         "0": {
           "heading": "Miten syväterävyys toimii",
@@ -110,10 +110,18 @@
           "successMessage": "Oikein! Suuri aukko, kuten f/1.8 tai f/2.8, luo matalan syväterävyyden ja erottaa kohteen taustasta miellyttävällä bokehilla.",
           "failureMessage": "Ei aivan. Pienet aukot, kuten f/11 tai f/16, pitävät suuremman osan näkymästä tarkkana. Taustan sumennukseen tarvitaan suuri aukko (pieni f-luku).",
           "options": {
-            "0": { "label": "f/1.8" },
-            "1": { "label": "f/5.6" },
-            "2": { "label": "f/11" },
-            "3": { "label": "f/16" }
+            "0": {
+              "label": "f/1.8"
+            },
+            "1": {
+              "label": "f/5.6"
+            },
+            "2": {
+              "label": "f/11"
+            },
+            "3": {
+              "label": "f/16"
+            }
           }
         },
         "1": {
@@ -122,10 +130,18 @@
           "successMessage": "Hyvä valinta! f/5.6 antaa riittävästi syväterävyyttä molempien rivien pitämiseen terävinä ja pitää silti suljinajan järkevänä sisätiloissa.",
           "failureMessage": "Tuo aukko saattaa jättää takarivin tarkennuksen ulkopuolelle tai olla tarpeettoman pieni. Kahden ihmisrivin kuvaamiseen f/5.6 on luotettava lähtökohta.",
           "options": {
-            "0": { "label": "f/1.4" },
-            "1": { "label": "f/2.8" },
-            "2": { "label": "f/5.6" },
-            "3": { "label": "f/22" }
+            "0": {
+              "label": "f/1.4"
+            },
+            "1": {
+              "label": "f/2.8"
+            },
+            "2": {
+              "label": "f/5.6"
+            },
+            "3": {
+              "label": "f/22"
+            }
           }
         },
         "2": {
@@ -134,10 +150,18 @@
           "successMessage": "Juuri niin! Hyperfokaalietäisyyteen tarkentaminen f/11:llä pitää kaiken noin metristä äärettömään hyväksyttävän terävänä — juuri tähän näkymään sopivasti.",
           "failureMessage": "Äärettömään tarkentaminen jättäisi etualan kukat pehmeiksi. Käytä hyperfokaalietäisyyttä, niin saat terävän alueen venymään lähietualasta äärettömään.",
           "options": {
-            "0": { "label": "Tarkenna kukkiin (2 m)" },
-            "1": { "label": "Tarkenna vuoriin (ääretön)" },
-            "2": { "label": "Tarkenna hyperfokaalietäisyyteen" },
-            "3": { "label": "Tarkenna kukkien ja vuorten puoliväliin" }
+            "0": {
+              "label": "Tarkenna kukkiin (2 m)"
+            },
+            "1": {
+              "label": "Tarkenna vuoriin (ääretön)"
+            },
+            "2": {
+              "label": "Tarkenna hyperfokaalietäisyyteen"
+            },
+            "3": {
+              "label": "Tarkenna kukkien ja vuorten puoliväliin"
+            }
           }
         },
         "3": {
@@ -146,10 +170,18 @@
           "successMessage": "Oikein! Pienemmällä aukolla (f/11 tai f/16) saat makrokuvissa enemmän syväterävyyttä. Varo kuitenkin, ettet mene liian pieneksi, sillä diffraktio alkaa pehmentää kuvaa.",
           "failureMessage": "Aukon suurentaminen tekisi syväterävyydestä vielä ohuemman. Makrokuvauksessa pienentäminen (suurempi f-luku) on tärkein keino saada lisää syvyyttä.",
           "options": {
-            "0": { "label": "Avaa aukko arvoon f/2.8 lisävaloa varten" },
-            "1": { "label": "Pienennä aukko arvoon f/11" },
-            "2": { "label": "Vaihda laajempaan objektiiviin" },
-            "3": { "label": "Siirry kauemmas kukasta" }
+            "0": {
+              "label": "Avaa aukko arvoon f/2.8 lisävaloa varten"
+            },
+            "1": {
+              "label": "Pienennä aukko arvoon f/11"
+            },
+            "2": {
+              "label": "Vaihda laajempaan objektiiviin"
+            },
+            "3": {
+              "label": "Siirry kauemmas kukasta"
+            }
           }
         },
         "4": {
@@ -158,9 +190,15 @@
           "successMessage": "Oikein! Täyskenno tuottaa noin 2 aukkoa matalamman syväterävyyden. Vaikka MFT-objektiivilla on sama f-luku, lyhyempi todellinen polttoväli (42,5 mm vs. 85 mm) johtaa syvempään syväterävyyteen samassa rajauksessa.",
           "failureMessage": "Vaikka molemmat objektiivit ovat f/1.8, täyskenno tarvitsee samaan rajaukseen pidemmän todellisen polttovälin ja tuottaa siksi selvästi matalamman syväterävyyden.",
           "options": {
-            "0": { "label": "Täyskenno 85 mm f/1.8:lla" },
-            "1": { "label": "Micro Four Thirds 42,5 mm f/1.8:lla" },
-            "2": { "label": "Molemmat tuottavat saman syväterävyyden" }
+            "0": {
+              "label": "Täyskenno 85 mm f/1.8:lla"
+            },
+            "1": {
+              "label": "Micro Four Thirds 42,5 mm f/1.8:lla"
+            },
+            "2": {
+              "label": "Molemmat tuottavat saman syväterävyyden"
+            }
           }
         }
       }

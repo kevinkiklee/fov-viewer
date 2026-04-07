@@ -7,7 +7,7 @@
       "switchToLandscape": "Bytt til landskap",
       "centerOverlays": "Sentrer overlegg",
       "addLens": "+ Legg til objektiv",
-      "fovSimulator": "FOV-simulator",
+      "fovSimulator": "synsfelt-simulator",
       "sensor": "Sensor",
       "copyImage": "Kopier bilde",
       "copyLink": "Kopier lenke",
@@ -32,7 +32,7 @@
       "faq": {
         "what-is-fov": {
           "question": "Hva er synsfelt i fotografi?",
-          "answer": "Synsfelt (FOV) er den delen av motivet du ser gjennom objektivet og sensoren. Det bestemmer hvor mye av en scene som kommer med i bildet, og avhenger av brennvidde og sensorstørrelse."
+          "answer": "Synsfelt er den delen av motivet du ser gjennom objektivet og sensoren. Det bestemmer hvor mye av en scene som kommer med i bildet, og avhenger av brennvidde og sensorstørrelse."
         },
         "how-crop-factor-affects-fov": {
           "question": "Hvordan påvirker cropfaktoren synsfeltet?",

@@ -1,11 +1,11 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Pole widzenia (FOV) to ilość sceny, którą uchwytuje aparat. Obiektyw szerokokątny (jak 24 mm) widzi szeroki widok, a teleobiektyw (jak 200 mm) zawęża się na małym wycinku. Ten symulator pozwala porównać do czterech obiektywów na różnych matrycach, nałożonych na rzeczywiste sceny, abyś mógł zwizualizować, co dokładnie uchwytuje każda kombinacja.",
+      "beginner": "Pole widzenia to ilość sceny, którą uchwytuje aparat. Obiektyw szerokokątny (jak 24 mm) widzi szeroki widok, a teleobiektyw (jak 200 mm) zawęża się na małym wycinku. Ten symulator pozwala porównać do czterech obiektywów na różnych matrycach, nałożonych na rzeczywiste sceny, abyś mógł zwizualizować, co dokładnie uchwytuje każda kombinacja.",
       "deeper": {
         "0": {
-          "heading": "Formuła FOV",
-          "text": "Pole widzenia jest determinowane przez dwa czynniki: ogniskową i rozmiar matrycy. Poziomy kąt FOV oblicza się jako 2 × arctan(szerokość matrycy / (2 × ogniskowa)). Krótsza ogniskowa lub większa matryca daje szerszy kąt widzenia."
+          "heading": "Formuła pole widzenia",
+          "text": "Pole widzenia jest determinowane przez dwa czynniki: ogniskową i rozmiar matrycy. Poziomy kąt pole widzenia oblicza się jako 2 × arctan(szerokość matrycy / (2 × ogniskowa)). Krótsza ogniskowa lub większa matryca daje szerszy kąt widzenia."
         },
         "1": {
           "heading": "Współczynnik kadrowania i ekwiwalentna ogniskowa",
@@ -31,7 +31,7 @@
         },
         "3": {
           "label": "Kontekst sceny",
-          "description": "Różne sceny (pejzaże miejskie, wnętrza, natura) pomagają zrozumieć, jak zmiany FOV odczuwane są w różnych rzeczywistych kontekstach."
+          "description": "Różne sceny (pejzaże miejskie, wnętrza, natura) pomagają zrozumieć, jak zmiany pole widzenia odczuwane są w różnych rzeczywistych kontekstach."
         }
       },
       "tips": {
@@ -60,7 +60,7 @@
         },
         "Orientation": {
           "term": "Orientacja",
-          "definition": "Przełączanie między poziomą (krajobraz) a pionową (portret) orientacją aparatu. Prostokąt FOV obraca się odpowiednio."
+          "definition": "Przełączanie między poziomą (krajobraz) a pionową (portret) orientacją aparatu. Prostokąt pole widzenia obraca się odpowiednio."
         }
       },
       "challenges": {
@@ -70,9 +70,15 @@
           "successMessage": "Prawidłowo! Obiektyw 24 mm widzi znacznie więcej sceny niż 70 mm. Obiektywy szerokokątne mają krótkie ogniskowe.",
           "failureMessage": "Krótsze ogniskowe dają szersze pola widzenia. 24 mm to obiektyw szerokokątny, który uchwytuje znacznie więcej panoramy niż 70 mm.",
           "options": {
-            "0": { "label": "24 mm" },
-            "1": { "label": "70 mm" },
-            "2": { "label": "200 mm" }
+            "0": {
+              "label": "24 mm"
+            },
+            "1": {
+              "label": "70 mm"
+            },
+            "2": {
+              "label": "200 mm"
+            }
           }
         },
         "1": {
@@ -81,20 +87,32 @@
           "successMessage": "Zgadza się! 50 mm na pełnej klatce to klasyczny obiektyw «normalny» — jego ~46-stopniowe pole widzenia przybliża to, na czym ludzkie oko naturalnie się skupia.",
           "failureMessage": "50 mm na pełnej klatce uważa się za obiektyw «normalny», ponieważ jego pole widzenia (~46 stopni) ściśle odpowiada komfortowemu ludzkiemu postrzeganiu.",
           "options": {
-            "0": { "label": "Ultra szerokokątny" },
-            "1": { "label": "Normalny / standardowy" },
-            "2": { "label": "Teleobiektyw" }
+            "0": {
+              "label": "Ultra szerokokątny"
+            },
+            "1": {
+              "label": "Normalny / standardowy"
+            },
+            "2": {
+              "label": "Teleobiektyw"
+            }
           }
         },
         "2": {
-          "scenario": "Dodaj dwa obiektywy: Obiektyw A to 35 mm na APS-C (Nikon/Sony), a Obiektyw B to 50 mm na Pełnej Klatce. Porównaj dwie nakładki FOV. Co zauważasz?",
+          "scenario": "Dodaj dwa obiektywy: Obiektyw A to 35 mm na APS-C (Nikon/Sony), a Obiektyw B to 50 mm na Pełnej Klatce. Porównaj dwie nakładki pole widzenia. Co zauważasz?",
           "hint": "35 mm pomnożone przez współczynnik kadrowania APS-C 1,5 daje...",
           "successMessage": "Dokładnie! 35 mm na APS-C (kadrowanie 1,5x) daje ekwiwalentne pole widzenia 52,5 mm na pełnej klatce — prawie identyczne z 50 mm FF. Nakładki mają prawie ten sam rozmiar.",
           "failureMessage": "35 mm x 1,5 współczynnik kadrowania = 52,5 mm ekwiwalentu. To prawie identyczne z 50 mm na pełnej klatce, dlatego nakładki są prawie takie same.",
           "options": {
-            "0": { "label": "Mają prawie identyczne pola widzenia" },
-            "1": { "label": "Obiektyw APS-C pokazuje znacznie szerszy widok" },
-            "2": { "label": "Obiektyw Pełna Klatka pokazuje znacznie szerszy widok" }
+            "0": {
+              "label": "Mają prawie identyczne pola widzenia"
+            },
+            "1": {
+              "label": "Obiektyw APS-C pokazuje znacznie szerszy widok"
+            },
+            "2": {
+              "label": "Obiektyw Pełna Klatka pokazuje znacznie szerszy widok"
+            }
           }
         },
         "3": {
@@ -103,20 +121,32 @@
           "successMessage": "Prawidłowo! Pełna Klatka widzi więcej, ponieważ większa matryca uchwytuje szerszą część koła obrazu 24 mm. Na APS-C ten sam obiektyw 24 mm kadruje jak ~36 mm.",
           "failureMessage": "Pełna Klatka uchwytuje więcej sceny. Większa matryca wykorzystuje więcej koła obrazu obiektywu, dając szersze efektywne pole widzenia.",
           "options": {
-            "0": { "label": "Pełna Klatka — większa matryca widzi więcej" },
-            "1": { "label": "APS-C — matryca crop widzi więcej" },
-            "2": { "label": "Oba widzą to samo — liczy się ogniskowa" }
+            "0": {
+              "label": "Pełna Klatka — większa matryca widzi więcej"
+            },
+            "1": {
+              "label": "APS-C — matryca crop widzi więcej"
+            },
+            "2": {
+              "label": "Oba widzą to samo — liczy się ogniskowa"
+            }
           }
         },
         "4": {
           "scenario": "Fotograf przyrody fotografuje obiektywem 200 mm na Micro Four Thirds. Jakiej pełnoklatkowej ekwiwalentnej ogniskowej to odpowiada i jaki jest kompromis w porównaniu z rzeczywistym użyciem obiektywu 400 mm na pełnej klatce?",
           "hint": "M43 ma współczynnik kadrowania 2x. Pomyśl o głębi ostrości i różnicach w rozmiarze matrycy.",
           "successMessage": "Doskonale! 200 mm na M43 (kadrowanie 2x) daje ekwiwalent pola widzenia 400 mm. Kompromis: chociaż kadrowanie odpowiada 400 mm FF, głębia ostrości odpowiada obiektywowi 200 mm (głębsza GoO), a mniejsza matryca zbiera mniej całkowitego światła, co oznacza gorszą wydajność szumową przy wysokim ISO. Zaletą jest znacznie mniejszy, lżejszy i tańszy obiektyw.",
-          "failureMessage": "200 mm x 2,0 kadrowanie = ekwiwalent FOV 400 mm. Ale to nie jest identyczne z 400 mm na FF: masz większą głębię ostrości (bazującą na rzeczywistej ogniskowej 200 mm), mniej zbieranego światła (mniejsza matryca) i więcej szumu przy wysokim ISO. Korzyścią jest znacznie mniejszy i lżejszy sprzęt.",
+          "failureMessage": "200 mm x 2,0 kadrowanie = ekwiwalent pole widzenia 400 mm. Ale to nie jest identyczne z 400 mm na FF: masz większą głębię ostrości (bazującą na rzeczywistej ogniskowej 200 mm), mniej zbieranego światła (mniejsza matryca) i więcej szumu przy wysokim ISO. Korzyścią jest znacznie mniejszy i lżejszy sprzęt.",
           "options": {
-            "0": { "label": "Ekwiwalent 400 mm — to samo FOV, ale głębsza GoO, więcej szumu, mniejszy/lżejszy sprzęt" },
-            "1": { "label": "Ekwiwalent 400 mm — identyczne pod każdym względem z 400 mm na pełnej klatce" },
-            "2": { "label": "Ekwiwalent 200 mm — współczynnik kadrowania nie wpływa na FOV" }
+            "0": {
+              "label": "Ekwiwalent 400 mm — to samo pole widzenia, ale głębsza GoO, więcej szumu, mniejszy/lżejszy sprzęt"
+            },
+            "1": {
+              "label": "Ekwiwalent 400 mm — identyczne pod każdym względem z 400 mm na pełnej klatce"
+            },
+            "2": {
+              "label": "Ekwiwalent 200 mm — współczynnik kadrowania nie wpływa na pole widzenia"
+            }
           }
         }
       }

@@ -9,7 +9,7 @@
         },
         "1": {
           "heading": "Planlegging av stacken",
-          "text": "Nøkkelen til en vellykket stack er at dybdeskarpheten i hvert bilde overlapper det neste med 20–30 %. For lite overlapp gir hull der ingenting er skarpt; for mye sløser med bilder uten gevinst. Kalkulatoren finner DoF per bilde med uskarphetssirkelformelen, trekker fra overlappsmarginen, og deler det totale dybdeområdet på effektivt steg for å regne ut antall bilder."
+          "text": "Nøkkelen til en vellykket stack er at dybdeskarpheten i hvert bilde overlapper det neste med 20–30 %. For lite overlapp gir hull der ingenting er skarpt; for mye sløser med bilder uten gevinst. Kalkulatoren finner dybdeskarphet per bilde med uskarphetssirkelformelen, trekker fra overlappsmarginen, og deler det totale dybdeområdet på effektivt steg for å regne ut antall bilder."
         },
         "2": {
           "heading": "Sammenføyning og justering",
@@ -19,7 +19,7 @@
       "keyFactors": {
         "0": {
           "label": "Blender",
-          "description": "Bestemmer dybdeskarpheten i hvert bilde. En moderat blender (f/5.6–f/8) balanserer skarphet og DoF per bilde. Unngå svært små blenderåpninger — diffraksjonen ødelegger nettopp den skarpheten du stacker for."
+          "description": "Bestemmer dybdeskarpheten i hvert bilde. En moderat blender (f/5.6–f/8) balanserer skarphet og dybdeskarphet per bilde. Unngå svært små blenderåpninger — diffraksjonen ødelegger nettopp den skarpheten du stacker for."
         },
         "1": {
           "label": "Dybdeområde",
@@ -27,7 +27,7 @@
         },
         "2": {
           "label": "Overlapp",
-          "description": "Hvor stor del av DoF-en i hvert bilde som overlapper nabobildet. 20–30 % er standard. Mindre gir hull, mer sløser med bilder."
+          "description": "Hvor stor del av dybdeskarphet-en i hvert bilde som overlapper nabobildet. 20–30 % er standard. Mindre gir hull, mer sløser med bilder."
         }
       },
       "tips": {
@@ -52,7 +52,7 @@
         },
         "sensor": {
           "term": "Sensorstørrelse",
-          "definition": "Større sensorer gir grunnere DoF per bilde ved samme utsnitt, og det kan øke antallet bilder du trenger."
+          "definition": "Større sensorer gir grunnere dybdeskarphet per bilde ved samme utsnitt, og det kan øke antallet bilder du trenger."
         },
         "nearLimit": {
           "term": "Nærgrense",
@@ -64,7 +64,7 @@
         },
         "overlap": {
           "term": "Overlapp",
-          "definition": "Prosent DoF-overlapp mellom påfølgende bilder. 20–30 % sikrer at det ikke blir hull ved sammenføyning."
+          "definition": "Prosent dybdeskarphet-overlapp mellom påfølgende bilder. 20–30 % sikrer at det ikke blir hull ved sammenføyning."
         },
         "shotCount": {
           "term": "Antall bilder",
@@ -73,38 +73,60 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Du fotograferer en liten blomst som er 3 cm dyp fra front til bak. Makroobjektivet ditt på f/8 gir cirka 4 mm DoF per bilde. Omtrent hvor mange bilder trenger du med 25 % overlapp?",
+          "scenario": "Du fotograferer en liten blomst som er 3 cm dyp fra front til bak. Makroobjektivet ditt på f/8 gir cirka 4 mm dybdeskarphet per bilde. Omtrent hvor mange bilder trenger du med 25 % overlapp?",
           "hint": "Hvert bilde dekker 4 mm, men 25 % overlapp betyr effektivt steg på 3 mm per bilde. Del 30 mm på 3 mm.",
-          "successMessage": "Riktig! Med 4 mm DoF og 25 % overlapp flytter du 3 mm per steg. 30 mm / 3 mm = 10 bilder for å dekke hele blomsten.",
-          "failureMessage": "Med 25 % overlapp er effektivt steg 75 % av DoF: 4 mm × 0,75 = 3 mm. Du trenger 30 mm / 3 mm = 10 bilder.",
+          "successMessage": "Riktig! Med 4 mm dybdeskarphet og 25 % overlapp flytter du 3 mm per steg. 30 mm / 3 mm = 10 bilder for å dekke hele blomsten.",
+          "failureMessage": "Med 25 % overlapp er effektivt steg 75 % av dybdeskarphet: 4 mm × 0,75 = 3 mm. Du trenger 30 mm / 3 mm = 10 bilder.",
           "options": {
-            "0": { "label": "5 bilder" },
-            "1": { "label": "10 bilder" },
-            "2": { "label": "20 bilder" },
-            "3": { "label": "30 bilder" }
+            "0": {
+              "label": "5 bilder"
+            },
+            "1": {
+              "label": "10 bilder"
+            },
+            "2": {
+              "label": "20 bilder"
+            },
+            "3": {
+              "label": "30 bilder"
+            }
           }
         },
         "1": {
           "scenario": "Du vil ha best mulig skarphet ut av focus stacken. Bør du ta hvert bilde på f/2.8, f/8 eller f/22?",
           "hint": "Tenk på objektivets skarpeste blender og hvordan diffraksjon påvirker små blenderåpninger.",
-          "successMessage": "Riktig! f/8 er typisk skarpeste blender for de fleste objektiver. f/2.8 gir for lite DoF per bilde (sløser med bilder), og f/22 blir mykt av diffraksjon.",
-          "failureMessage": "f/8 er det beste valget. f/2.8 gir veldig tynn DoF per bilde (krever mange flere bilder), og f/22 gir diffraksjon som motarbeider hele poenget med stacking.",
+          "successMessage": "Riktig! f/8 er typisk skarpeste blender for de fleste objektiver. f/2.8 gir for lite dybdeskarphet per bilde (sløser med bilder), og f/22 blir mykt av diffraksjon.",
+          "failureMessage": "f/8 er det beste valget. f/2.8 gir veldig tynn dybdeskarphet per bilde (krever mange flere bilder), og f/22 gir diffraksjon som motarbeider hele poenget med stacking.",
           "options": {
-            "0": { "label": "f/2.8 — vidåpent for raskest lukker" },
-            "1": { "label": "f/8 — objektivets sweet spot" },
-            "2": { "label": "f/22 — mest DoF per bilde" }
+            "0": {
+              "label": "f/2.8 — vidåpent for raskest lukker"
+            },
+            "1": {
+              "label": "f/8 — objektivets sweet spot"
+            },
+            "2": {
+              "label": "f/22 — mest dybdeskarphet per bilde"
+            }
           }
         },
         "2": {
           "scenario": "Når du har slått sammen focus stacken, ser du et mykt bånd midt i bildet der ingenting er skarpt. Hva gikk sannsynligvis galt?",
           "hint": "Tenk på hva som binder den skarpe sonen i ett bilde sammen med det neste.",
           "successMessage": "Nettopp! For lite overlapp mellom nabobilder lager et hull der ingen av bildene er skarpe. Øk overlappet til 25–30 % og ta bildene på nytt.",
-          "failureMessage": "Et mykt bånd betyr vanligvis at avstanden mellom fokusstegene var for stor — DoF-en i nabobildene overlappet ikke nok. Øk overlappsprosenten.",
+          "failureMessage": "Et mykt bånd betyr vanligvis at avstanden mellom fokusstegene var for stor — dybdeskarphet-en i nabobildene overlappet ikke nok. Øk overlappsprosenten.",
           "options": {
-            "0": { "label": "Blenderen var for stor" },
-            "1": { "label": "For lite overlapp mellom fokussteg" },
-            "2": { "label": "Stativet flyttet seg under sekvensen" },
-            "3": { "label": "ISO var for høy" }
+            "0": {
+              "label": "Blenderen var for stor"
+            },
+            "1": {
+              "label": "For lite overlapp mellom fokussteg"
+            },
+            "2": {
+              "label": "Stativet flyttet seg under sekvensen"
+            },
+            "3": {
+              "label": "ISO var for høy"
+            }
           }
         }
       }

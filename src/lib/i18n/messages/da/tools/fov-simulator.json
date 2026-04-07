@@ -27,12 +27,12 @@
       "cropView": "Crop-visning:",
       "collapse": "Luk",
       "expand": "Åbn",
-      "fovComparison": "FOV-sammenligning",
+      "fovComparison": "billedvinkel-sammenligning",
       "loadingScene": "Indlæser motiv...",
       "faq": {
         "what-is-fov": {
           "question": "Hvad er billedvinkel i fotografi?",
-          "answer": "Billedvinkel (FOV) er, hvor meget af motivet linsen og sensoren kan se. Den afgør, hvor meget der kommer med på billedet, og den bestemmes af brændvidden og sensorstørrelsen."
+          "answer": "Billedvinkel er, hvor meget af motivet linsen og sensoren kan se. Den afgør, hvor meget der kommer med på billedet, og den bestemmes af brændvidden og sensorstørrelsen."
         },
         "how-crop-factor-affects-fov": {
           "question": "Hvordan påvirker cropfaktor billedvinklen?",
@@ -40,7 +40,7 @@
         },
         "fov-vs-focal-length": {
           "question": "Hvordan hænger billedvinkel og brændvidde sammen?",
-          "answer": "Billedvinkel og brændvidde er omvendt proportionale. Korte brændvidder (vidvinkel) giver bred billedvinkel, mens lange brændvidder (tele) giver smal billedvinkel. Den præcise FOV afhænger også af sensorstørrelsen."
+          "answer": "Billedvinkel og brændvidde er omvendt proportionale. Korte brændvidder (vidvinkel) giver bred billedvinkel, mens lange brændvidder (tele) giver smal billedvinkel. Den præcise billedvinkel afhænger også af sensorstørrelsen."
         }
       }
     }

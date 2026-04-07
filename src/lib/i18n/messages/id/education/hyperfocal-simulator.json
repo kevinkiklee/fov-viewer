@@ -45,9 +45,15 @@
           "successMessage": "Benar! Full Frame adalah pilihan yang tepat untuk sensor standar 35mm.",
           "failureMessage": "Kurang tepat — pilih sensor Full Frame untuk mencocokkan bodi kamera standar 35mm.",
           "options": {
-            "0": { "label": "Full Frame" },
-            "1": { "label": "APS-C (Nikon/Sony)" },
-            "2": { "label": "Micro Four Thirds" }
+            "0": {
+              "label": "Full Frame"
+            },
+            "1": {
+              "label": "APS-C (Nikon/Sony)"
+            },
+            "2": {
+              "label": "Micro Four Thirds"
+            }
           }
         },
         "1": {
@@ -56,8 +62,12 @@
           "successMessage": "Tepat! Lensa 24mm memiliki jarak hiperfocal yang jauh lebih pendek karena panjang fokus memiliki hubungan kuadrat.",
           "failureMessage": "Sebenarnya, panjang fokus yang lebih pendek selalu menghasilkan jarak hiperfocal yang lebih pendek. 24mm menang di sini.",
           "options": {
-            "0": { "label": "24mm pada f/8" },
-            "1": { "label": "50mm pada f/8" }
+            "0": {
+              "label": "24mm pada f/8"
+            },
+            "1": {
+              "label": "50mm pada f/8"
+            }
           }
         },
         "2": {
@@ -66,9 +76,15 @@
           "successMessage": "Pemikiran bagus! Anda dengan tepat mengidentifikasi bahwa Anda memerlukan jarak hiperfocal sekitar 6m, dan menemukan rentang apertur yang tepat.",
           "failureMessage": "Ingat, fokus dekat sama dengan setengah jarak hiperfocal. Anda memerlukan hiperfocal sekitar 6m untuk mendapatkan batas fokus dekat 3m.",
           "options": {
-            "0": { "label": "f/2.8 — f/4" },
-            "1": { "label": "f/5.6 — f/8" },
-            "2": { "label": "f/16 — f/22" }
+            "0": {
+              "label": "f/2.8 — f/4"
+            },
+            "1": {
+              "label": "f/5.6 — f/8"
+            },
+            "2": {
+              "label": "f/16 — f/22"
+            }
           }
         },
         "3": {
@@ -77,19 +93,29 @@
           "successMessage": "Tepat! Sensor M43 yang lebih kecil menggunakan CoC yang lebih kecil (sekitar 0,015mm vs 0,03mm), yang meningkatkan jarak hiperfocal untuk panjang fokus dan apertur yang sama.",
           "failureMessage": "Faktor kuncinya adalah circle of confusion. Sensor yang lebih kecil memerlukan standar CoC yang lebih ketat, yang mendorong jarak hiperfocal lebih jauh.",
           "options": {
-            "0": { "label": "Panjang fokus lensa berubah pada sensor crop" },
-            "1": { "label": "Sensor yang lebih kecil menggunakan circle of confusion yang lebih kecil" },
-            "2": { "label": "Kamera Micro Four Thirds memiliki autofokus yang kurang akurat" }
+            "0": {
+              "label": "Panjang fokus lensa berubah pada sensor crop"
+            },
+            "1": {
+              "label": "Sensor yang lebih kecil menggunakan circle of confusion yang lebih kecil"
+            },
+            "2": {
+              "label": "Kamera Micro Four Thirds memiliki autofokus yang kurang akurat"
+            }
           }
         },
         "4": {
           "scenario": "Anda memotret arsitektur pada 14mm f/11 di full frame. Tabel menunjukkan jarak hiperfocal yang sangat pendek. Haruskah Anda mengecilkan lebih jauh ke f/22 untuk lebih banyak kedalaman bidang, atau apakah f/11 pilihan yang lebih baik?",
           "hint": "Pertimbangkan apa yang terjadi pada ketajaman gambar pada apertur yang sangat kecil.",
-          "successMessage": "Sangat baik! Pada f/11, difraksi minimal di full frame, dan jarak hiperfocal pada 14mm sudah sangat pendek. Mengecilkan ke f/22 akan melunakkan gambar karena difraksi tanpa manfaat DoF yang berarti.",
-          "failureMessage": "Meskipun f/22 memberikan jarak hiperfocal yang lebih pendek di atas kertas, pelunakan difraksi pada f/22 di full frame sebenarnya mengurangi ketajaman gambar keseluruhan. Pada 14mm f/11, jarak hiperfocal sudah sangat pendek sehingga DoF ekstra tidak sepadan dengan penalti difraksi.",
+          "successMessage": "Sangat baik! Pada f/11, difraksi minimal di full frame, dan jarak hiperfocal pada 14mm sudah sangat pendek. Mengecilkan ke f/22 akan melunakkan gambar karena difraksi tanpa manfaat kedalaman bidang yang berarti.",
+          "failureMessage": "Meskipun f/22 memberikan jarak hiperfocal yang lebih pendek di atas kertas, pelunakan difraksi pada f/22 di full frame sebenarnya mengurangi ketajaman gambar keseluruhan. Pada 14mm f/11, jarak hiperfocal sudah sangat pendek sehingga kedalaman bidang ekstra tidak sepadan dengan penalti difraksi.",
           "options": {
-            "0": { "label": "Kecilkan ke f/22 untuk kedalaman bidang maksimum" },
-            "1": { "label": "Tetap di f/11 — difraksi pada f/22 akan mengurangi ketajaman" }
+            "0": {
+              "label": "Kecilkan ke f/22 untuk kedalaman bidang maksimum"
+            },
+            "1": {
+              "label": "Tetap di f/11 — difraksi pada f/22 akan mengurangi ketajaman"
+            }
           }
         }
       }

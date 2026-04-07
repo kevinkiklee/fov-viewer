@@ -31,7 +31,7 @@
       "loadingScene": "正在載入場景...",
       "faq": {
         "what-is-fov": {
-          "question": "攝影中的視角（FOV）是什麼？",
+          "question": "攝影中的視角（視角）是什麼？",
           "answer": "視角（Field of View）指的是透過鏡頭與相機感光元件所能看到的場景角度範圍，決定了一張照片能捕捉多廣的場景，主要受焦距與感光元件尺寸影響。"
         },
         "how-crop-factor-affects-fov": {

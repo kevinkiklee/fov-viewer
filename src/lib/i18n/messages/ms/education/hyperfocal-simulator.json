@@ -45,9 +45,15 @@
           "successMessage": "Betul! Full Frame ialah pilihan yang tepat untuk sensor 35mm standard.",
           "failureMessage": "Tidak begitu — pilih sensor Full Frame untuk memadankan badan kamera 35mm standard.",
           "options": {
-            "0": { "label": "Full Frame" },
-            "1": { "label": "APS-C (Nikon/Sony)" },
-            "2": { "label": "Micro Four Thirds" }
+            "0": {
+              "label": "Full Frame"
+            },
+            "1": {
+              "label": "APS-C (Nikon/Sony)"
+            },
+            "2": {
+              "label": "Micro Four Thirds"
+            }
           }
         },
         "1": {
@@ -56,8 +62,12 @@
           "successMessage": "Betul! Lensa 24mm mempunyai jarak hiperfokal yang jauh lebih pendek kerana panjang fokus mempunyai hubungan kuasa dua.",
           "failureMessage": "Sebenarnya, panjang fokus lebih pendek sentiasa menghasilkan jarak hiperfokal lebih pendek. 24mm menang di sini.",
           "options": {
-            "0": { "label": "24mm pada f/8" },
-            "1": { "label": "50mm pada f/8" }
+            "0": {
+              "label": "24mm pada f/8"
+            },
+            "1": {
+              "label": "50mm pada f/8"
+            }
           }
         },
         "2": {
@@ -66,9 +76,15 @@
           "successMessage": "Pemikiran hebat! Anda betul mengenal pasti bahawa anda memerlukan jarak hiperfokal kira-kira 6m, dan menjumpai julat aperture yang betul.",
           "failureMessage": "Ingat, fokus dekat sama dengan separuh jarak hiperfokal. Anda perlukan hiperfokal sekitar 6m untuk mendapatkan had fokus dekat 3m.",
           "options": {
-            "0": { "label": "f/2.8 — f/4" },
-            "1": { "label": "f/5.6 — f/8" },
-            "2": { "label": "f/16 — f/22" }
+            "0": {
+              "label": "f/2.8 — f/4"
+            },
+            "1": {
+              "label": "f/5.6 — f/8"
+            },
+            "2": {
+              "label": "f/16 — f/22"
+            }
           }
         },
         "3": {
@@ -77,19 +93,29 @@
           "successMessage": "Tepat sekali! Sensor M43 yang lebih kecil menggunakan CoC yang lebih kecil (kira-kira 0.015mm lawan 0.03mm), yang meningkatkan jarak hiperfokal untuk panjang fokus dan aperture yang sama.",
           "failureMessage": "Faktor utama ialah bulatan kekeliruan. Sensor lebih kecil memerlukan standard CoC yang lebih ketat, yang menolak jarak hiperfokal lebih jauh.",
           "options": {
-            "0": { "label": "Panjang fokus lensa berubah pada sensor crop" },
-            "1": { "label": "Sensor lebih kecil menggunakan bulatan kekeliruan yang lebih kecil" },
-            "2": { "label": "Kamera Micro Four Thirds mempunyai autofokus kurang tepat" }
+            "0": {
+              "label": "Panjang fokus lensa berubah pada sensor crop"
+            },
+            "1": {
+              "label": "Sensor lebih kecil menggunakan bulatan kekeliruan yang lebih kecil"
+            },
+            "2": {
+              "label": "Kamera Micro Four Thirds mempunyai autofokus kurang tepat"
+            }
           }
         },
         "4": {
           "scenario": "Anda sedang menangkap seni bina pada 14mm f/11 pada full frame. Jadual menunjukkan jarak hiperfokal yang sangat pendek. Patutkah anda mengecilkan lagi ke f/22 untuk lebih banyak kedalaman medan, atau f/11 pilihan yang lebih baik?",
           "hint": "Pertimbangkan apa yang berlaku kepada ketajaman imej pada aperture yang sangat kecil.",
-          "successMessage": "Sangat bagus! Pada f/11, pembelauan adalah minimum pada full frame, dan jarak hiperfokal pada 14mm sudah sangat pendek. Mengecilkan ke f/22 akan melembutkan imej disebabkan pembelauan tanpa faedah DoF yang bermakna.",
-          "failureMessage": "Walaupun f/22 memberikan jarak hiperfokal yang lebih pendek di atas kertas, pelembutan pembelauan pada f/22 pada full frame sebenarnya mengurangkan ketajaman imej keseluruhan. Pada 14mm f/11, jarak hiperfokal sudah begitu pendek sehingga DoF tambahan tidak berbaloi dengan penalti pembelauan.",
+          "successMessage": "Sangat bagus! Pada f/11, pembelauan adalah minimum pada full frame, dan jarak hiperfokal pada 14mm sudah sangat pendek. Mengecilkan ke f/22 akan melembutkan imej disebabkan pembelauan tanpa faedah kedalaman medan yang bermakna.",
+          "failureMessage": "Walaupun f/22 memberikan jarak hiperfokal yang lebih pendek di atas kertas, pelembutan pembelauan pada f/22 pada full frame sebenarnya mengurangkan ketajaman imej keseluruhan. Pada 14mm f/11, jarak hiperfokal sudah begitu pendek sehingga kedalaman medan tambahan tidak berbaloi dengan penalti pembelauan.",
           "options": {
-            "0": { "label": "Kecilkan ke f/22 untuk kedalaman medan maksimum" },
-            "1": { "label": "Kekal pada f/11 — pembelauan pada f/22 akan mengurangkan ketajaman" }
+            "0": {
+              "label": "Kecilkan ke f/22 untuk kedalaman medan maksimum"
+            },
+            "1": {
+              "label": "Kekal pada f/11 — pembelauan pada f/22 akan mengurangkan ketajaman"
+            }
           }
         }
       }

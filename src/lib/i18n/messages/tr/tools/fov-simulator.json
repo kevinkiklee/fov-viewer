@@ -27,20 +27,20 @@
       "cropView": "Kırpma görünümü:",
       "collapse": "Daralt",
       "expand": "Genişlet",
-      "fovComparison": "FOV Karşılaştırması",
+      "fovComparison": "görüş alanı Karşılaştırması",
       "loadingScene": "Sahne yükleniyor...",
       "faq": {
         "what-is-fov": {
           "question": "Fotoğrafçılıkta görüş alanı nedir?",
-          "answer": "Görüş alanı (FOV), objektifiniz ve kamera sensörünüz aracılığıyla görülebilen sahnenin açısal kapsamıdır. Bir fotoğrafta sahnenin ne kadarının yakalanacağını belirler ve odak uzaklığı ile sensör boyutundan etkilenir."
+          "answer": "Görüş alanı, objektifiniz ve kamera sensörünüz aracılığıyla görülebilen sahnenin açısal kapsamıdır. Bir fotoğrafta sahnenin ne kadarının yakalanacağını belirler ve odak uzaklığı ile sensör boyutundan etkilenir."
         },
         "how-crop-factor-affects-fov": {
           "question": "Kırpma faktörü görüş alanını nasıl etkiler?",
           "answer": "Daha küçük bir sensör (daha yüksek kırpma faktörü), aynı odak uzaklığında tam kare sensöre göre daha dar bir görüş alanı yakalar. Örneğin, 1,5x kırpma faktörüne sahip APS-C sensörler, görüş alanı açısından 50mm objektifi 75mm objektif gibi davrandırır."
         },
         "fov-vs-focal-length": {
-          "question": "FOV ile odak uzaklığı arasındaki ilişki nedir?",
-          "answer": "Görüş alanı ve odak uzaklığı ters orantılıdır. Daha kısa odak uzaklıkları (geniş açı) daha geniş görüş alanı verirken, daha uzun odak uzaklıkları (telefoto) daha dar görüş alanı verir. Kesin FOV ayrıca sensör boyutuna da bağlıdır."
+          "question": "görüş alanı ile odak uzaklığı arasındaki ilişki nedir?",
+          "answer": "Görüş alanı ve odak uzaklığı ters orantılıdır. Daha kısa odak uzaklıkları (geniş açı) daha geniş görüş alanı verirken, daha uzun odak uzaklıkları (telefoto) daha dar görüş alanı verir. Kesin görüş alanı ayrıca sensör boyutuna da bağlıdır."
         }
       }
     }

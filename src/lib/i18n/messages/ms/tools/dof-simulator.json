@@ -28,7 +28,7 @@
       "results": "Keputusan",
       "nearFocus": "Fokus Dekat",
       "farFocus": "Fokus Jauh",
-      "totalDoF": "Jumlah DoF",
+      "totalDoF": "Jumlah kedalaman medan",
       "hyperfocal": "Hiperfokal",
       "backgroundBlur": "Kekaburan Latar Belakang",
       "coc": "Bulatan Kekeliruan",

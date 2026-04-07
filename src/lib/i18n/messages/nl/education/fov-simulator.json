@@ -1,7 +1,7 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Beeldhoek (FOV) is hoeveel van een scène je camera vastlegt. Een groothoeklens (zoals 24mm) ziet een breed beeld, terwijl een telelens (zoals 200mm) inzoomt op een klein stuk. Met deze simulator kun je tot vier lenzen op verschillende sensoren vergelijken, geprojecteerd op echte scènes, zodat je precies kunt zien wat elke combinatie vastlegt.",
+      "beginner": "Beeldhoek is hoeveel van een scène je camera vastlegt. Een groothoeklens (zoals 24mm) ziet een breed beeld, terwijl een telelens (zoals 200mm) inzoomt op een klein stuk. Met deze simulator kun je tot vier lenzen op verschillende sensoren vergelijken, geprojecteerd op echte scènes, zodat je precies kunt zien wat elke combinatie vastlegt.",
       "deeper": {
         "0": {
           "heading": "De beeldhoekformule",
@@ -60,7 +60,7 @@
         },
         "Orientation": {
           "term": "Oriëntatie",
-          "definition": "Schakel tussen landschaps- (horizontale) en portret- (verticale) camera-oriëntatie. Het FOV-rechthoek draait mee."
+          "definition": "Schakel tussen landschaps- (horizontale) en portret- (verticale) camera-oriëntatie. Het beeldhoek-rechthoek draait mee."
         }
       },
       "challenges": {
@@ -70,9 +70,15 @@
           "successMessage": "Correct! Een 24mm-lens ziet veel meer van de scène dan een 70mm. Groothoeklenzen hebben korte brandpuntsafstanden.",
           "failureMessage": "Kortere brandpuntsafstanden geven bredere beeldhoeken. 24mm is een groothoeklens die veel meer van de skyline vastlegt dan 70mm.",
           "options": {
-            "0": { "label": "24mm" },
-            "1": { "label": "70mm" },
-            "2": { "label": "200mm" }
+            "0": {
+              "label": "24mm"
+            },
+            "1": {
+              "label": "70mm"
+            },
+            "2": {
+              "label": "200mm"
+            }
           }
         },
         "1": {
@@ -81,20 +87,32 @@
           "successMessage": "Juist! Een 50mm op fullframe is de klassieke \"normale\" lens — de beeldhoek van ~46 graden benadert wat het menselijk oog van nature waarneemt.",
           "failureMessage": "Een 50mm op fullframe wordt beschouwd als een \"normale\" lens omdat de beeldhoek (~46 graden) nauw aansluit bij comfortabele menselijke waarneming.",
           "options": {
-            "0": { "label": "Ultragroothoek" },
-            "1": { "label": "Normaal / standaard" },
-            "2": { "label": "Tele" }
+            "0": {
+              "label": "Ultragroothoek"
+            },
+            "1": {
+              "label": "Normaal / standaard"
+            },
+            "2": {
+              "label": "Tele"
+            }
           }
         },
         "2": {
-          "scenario": "Voeg twee lenzen toe: Lens A is 35mm op APS-C (Nikon/Sony), en Lens B is 50mm op fullframe. Vergelijk de twee FOV-overlays. Wat valt je op?",
+          "scenario": "Voeg twee lenzen toe: Lens A is 35mm op APS-C (Nikon/Sony), en Lens B is 50mm op fullframe. Vergelijk de twee beeldhoek-overlays. Wat valt je op?",
           "hint": "35mm vermenigvuldigd met de APS-C-cropfactor van 1,5 is gelijk aan...",
           "successMessage": "Precies! 35mm op APS-C (1,5× crop) geeft een equivalente beeldhoek van 52,5mm op fullframe — bijna identiek aan 50mm FF. De overlays zijn vrijwel even groot.",
           "failureMessage": "35mm × 1,5 cropfactor = 52,5mm equivalent. Dit is bijna identiek aan 50mm op fullframe, daarom zijn de overlays bijna gelijk.",
           "options": {
-            "0": { "label": "Ze hebben bijna identieke beeldhoeken" },
-            "1": { "label": "De APS-C-lens toont een veel breder beeld" },
-            "2": { "label": "De fullframe-lens toont een veel breder beeld" }
+            "0": {
+              "label": "Ze hebben bijna identieke beeldhoeken"
+            },
+            "1": {
+              "label": "De APS-C-lens toont een veel breder beeld"
+            },
+            "2": {
+              "label": "De fullframe-lens toont een veel breder beeld"
+            }
           }
         },
         "3": {
@@ -103,9 +121,15 @@
           "successMessage": "Correct! Fullframe ziet meer omdat de grotere sensor een breder deel van de beeldcirkel van de 24mm-lens vastlegt. Op APS-C kadreert dezelfde 24mm-lens als ~36mm.",
           "failureMessage": "Fullframe legt meer van de scène vast. De grotere sensor gebruikt meer van de beeldcirkel van de lens, wat een bredere effectieve beeldhoek geeft.",
           "options": {
-            "0": { "label": "Fullframe — grotere sensor ziet meer" },
-            "1": { "label": "APS-C — cropsensor ziet meer" },
-            "2": { "label": "Beide zien hetzelfde — brandpuntsafstand is wat telt" }
+            "0": {
+              "label": "Fullframe — grotere sensor ziet meer"
+            },
+            "1": {
+              "label": "APS-C — cropsensor ziet meer"
+            },
+            "2": {
+              "label": "Beide zien hetzelfde — brandpuntsafstand is wat telt"
+            }
           }
         },
         "4": {
@@ -114,9 +138,15 @@
           "successMessage": "Uitstekend! 200mm op M43 (2× crop) geeft een 400mm-equivalente beeldhoek. Het nadeel: hoewel de kadrering overeenkomt met 400mm FF, komt de scherptediepte overeen met de 200mm-lens (grotere scherptediepte), en de kleinere sensor vangt minder licht op, wat meer ruis betekent bij hoge ISO. Het voordeel is een veel kleinere, lichtere en goedkopere lens.",
           "failureMessage": "200mm × 2,0 crop = 400mm equivalente beeldhoek. Maar het is niet identiek aan een 400mm op FF: je krijgt meer scherptediepte (gebaseerd op de werkelijke 200mm brandpuntsafstand), minder lichtopvang (kleinere sensor) en meer ruis bij hoge ISO. Het voordeel is aanzienlijk kleiner en lichter materiaal.",
           "options": {
-            "0": { "label": "400mm equivalent — zelfde beeldhoek maar grotere scherptediepte, meer ruis, kleiner/lichter materiaal" },
-            "1": { "label": "400mm equivalent — in elk opzicht identiek aan 400mm op fullframe" },
-            "2": { "label": "200mm equivalent — cropfactor beïnvloedt de beeldhoek niet" }
+            "0": {
+              "label": "400mm equivalent — zelfde beeldhoek maar grotere scherptediepte, meer ruis, kleiner/lichter materiaal"
+            },
+            "1": {
+              "label": "400mm equivalent — in elk opzicht identiek aan 400mm op fullframe"
+            },
+            "2": {
+              "label": "200mm equivalent — cropfactor beïnvloedt de beeldhoek niet"
+            }
           }
         }
       }

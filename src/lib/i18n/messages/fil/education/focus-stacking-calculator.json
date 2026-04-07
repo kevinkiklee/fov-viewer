@@ -9,7 +9,7 @@
         },
         "1": {
           "heading": "Pagpaplano ng Stack",
-          "text": "Ang susi sa matagumpay na stack ay tiyaking ang depth of field ng bawat shot ay nag-o-overlap sa susunod ng 20-30%. Masyadong maliit na overlap ay lumilikha ng mga gap kung saan walang matalas; masyadong malaki ay nag-aaksaya ng mga frame nang walang benepisyo. Tinutukoy ng calculator ang per-shot DoF gamit ang circle of confusion formula, ibinabawas ang overlap margin, at hinahati ang kabuuang depth range sa effective step para ma-compute ang bilang ng shot."
+          "text": "Ang susi sa matagumpay na stack ay tiyaking ang depth of field ng bawat shot ay nag-o-overlap sa susunod ng 20-30%. Masyadong maliit na overlap ay lumilikha ng mga gap kung saan walang matalas; masyadong malaki ay nag-aaksaya ng mga frame nang walang benepisyo. Tinutukoy ng calculator ang per-shot depth of field gamit ang circle of confusion formula, ibinabawas ang overlap margin, at hinahati ang kabuuang depth range sa effective step para ma-compute ang bilang ng shot."
         },
         "2": {
           "heading": "Pagsasama at Alignment",
@@ -19,7 +19,7 @@
       "keyFactors": {
         "0": {
           "label": "Aperture",
-          "description": "Tinutukoy ang per-shot depth of field. Ang katamtamang aperture (f/5.6-f/8) ay nagba-balance ng sharpness at DoF bawat frame. Iwasan ang napakaliit na aperture — ang diffraction ay nagpapabawas sa katalasan na hinahabol mo."
+          "description": "Tinutukoy ang per-shot depth of field. Ang katamtamang aperture (f/5.6-f/8) ay nagba-balance ng sharpness at depth of field bawat frame. Iwasan ang napakaliit na aperture — ang diffraction ay nagpapabawas sa katalasan na hinahabol mo."
         },
         "1": {
           "label": "Depth Range",
@@ -27,7 +27,7 @@
         },
         "2": {
           "label": "Overlap",
-          "description": "Ang porsyento ng DoF ng bawat shot na nag-o-overlap sa mga katabing shot. Ang 20-30% ay standard. Mas kaunti ay may panganib ng gaps; mas marami ay nag-aaksaya ng frames."
+          "description": "Ang porsyento ng depth of field ng bawat shot na nag-o-overlap sa mga katabing shot. Ang 20-30% ay standard. Mas kaunti ay may panganib ng gaps; mas marami ay nag-aaksaya ng frames."
         }
       },
       "tips": {
@@ -73,38 +73,60 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Kinukunan mo ang isang maliit na bulaklak na may 3cm na lalim mula front petal hanggang back stem. Ang macro lens mo sa f/8 ay nagbibigay ng mga 4mm ng DoF per shot. Mga ilang frame ang kailangan mo sa 25% overlap?",
+          "scenario": "Kinukunan mo ang isang maliit na bulaklak na may 3cm na lalim mula front petal hanggang back stem. Ang macro lens mo sa f/8 ay nagbibigay ng mga 4mm ng depth of field per shot. Mga ilang frame ang kailangan mo sa 25% overlap?",
           "hint": "Bawat shot ay sumasakop ng 4mm, pero ang 25% overlap ay nangangahulugang ang effective step ay 3mm bawat frame. Hatiin ang 30mm sa 3mm.",
-          "successMessage": "Tama! Sa 4mm DoF at 25% overlap, bawat hakbang ay 3mm ang sulong. 30mm / 3mm = 10 shots para masakop ang buong bulaklak.",
-          "failureMessage": "Sa 25% overlap, ang effective step ng bawat frame ay 75% ng DoF: 4mm × 0.75 = 3mm. Kailangan mo ng 30mm / 3mm = 10 shots.",
+          "successMessage": "Tama! Sa 4mm depth of field at 25% overlap, bawat hakbang ay 3mm ang sulong. 30mm / 3mm = 10 shots para masakop ang buong bulaklak.",
+          "failureMessage": "Sa 25% overlap, ang effective step ng bawat frame ay 75% ng depth of field: 4mm × 0.75 = 3mm. Kailangan mo ng 30mm / 3mm = 10 shots.",
           "options": {
-            "0": { "label": "5 shots" },
-            "1": { "label": "10 shots" },
-            "2": { "label": "20 shots" },
-            "3": { "label": "30 shots" }
+            "0": {
+              "label": "5 shots"
+            },
+            "1": {
+              "label": "10 shots"
+            },
+            "2": {
+              "label": "20 shots"
+            },
+            "3": {
+              "label": "30 shots"
+            }
           }
         },
         "1": {
           "scenario": "Gusto mo ng pinakamatalas na resulta mula sa focus stack mo. Dapat ba kumuha ka ng bawat frame sa f/2.8, f/8, o f/22?",
           "hint": "Isaalang-alang ang pinakamatalas na aperture ng lens at kung paano nakakaapekto ang diffraction sa maliliit na aperture.",
-          "successMessage": "Tama! Ang f/8 ay karaniwang ang pinakamatalas na aperture para sa karamihan ng lens. Ang f/2.8 ay may masyadong kaunting DoF per shot (nag-aaksaya ng frames) at ang f/22 ay may diffraction softening.",
-          "failureMessage": "Ang f/8 ang pinakamagandang pagpipilian. Ang f/2.8 ay nagbibigay ng napakakipot na per-shot DoF (nangangailangan ng mas maraming frame), at ang f/22 ay nag-iintroduce ng diffraction softening na sumisira sa layunin ng stacking para sa sharpness.",
+          "successMessage": "Tama! Ang f/8 ay karaniwang ang pinakamatalas na aperture para sa karamihan ng lens. Ang f/2.8 ay may masyadong kaunting depth of field per shot (nag-aaksaya ng frames) at ang f/22 ay may diffraction softening.",
+          "failureMessage": "Ang f/8 ang pinakamagandang pagpipilian. Ang f/2.8 ay nagbibigay ng napakakipot na per-shot depth of field (nangangailangan ng mas maraming frame), at ang f/22 ay nag-iintroduce ng diffraction softening na sumisira sa layunin ng stacking para sa sharpness.",
           "options": {
-            "0": { "label": "f/2.8 — pinakamalawak para sa pinakamabilis na shutter" },
-            "1": { "label": "f/8 — sweet spot ng lens" },
-            "2": { "label": "f/22 — pinakamalaking DoF bawat shot" }
+            "0": {
+              "label": "f/2.8 — pinakamalawak para sa pinakamabilis na shutter"
+            },
+            "1": {
+              "label": "f/8 — sweet spot ng lens"
+            },
+            "2": {
+              "label": "f/22 — pinakamalaking depth of field bawat shot"
+            }
           }
         },
         "2": {
           "scenario": "Pagkatapos pagsamahin ang focus stack mo, napansin mo ang isang soft band sa gitna ng imahe kung saan walang matalas. Ano ang malamang na nangyari?",
           "hint": "Isipin kung ano ang nag-uugnay sa sharp zone ng isang frame sa susunod.",
           "successMessage": "Eksakto! Ang kulang na overlap sa pagitan ng magkasunod na frame ay lumilikha ng gap kung saan walang shot ang matalas. Dagdagan ang overlap sa 25-30% at kumuha muli.",
-          "failureMessage": "Ang soft band ay kadalasang nangangahulugang masyadong malaki ang gap sa pagitan ng focus steps — ang DoF ng magkasunod na frame ay hindi sapat na nag-overlap. Dagdagan ang overlap percentage.",
+          "failureMessage": "Ang soft band ay kadalasang nangangahulugang masyadong malaki ang gap sa pagitan ng focus steps — ang depth of field ng magkasunod na frame ay hindi sapat na nag-overlap. Dagdagan ang overlap percentage.",
           "options": {
-            "0": { "label": "Masyadong malawak ang aperture" },
-            "1": { "label": "Kulang na overlap sa pagitan ng focus steps" },
-            "2": { "label": "Gumalaw ang tripod habang kinukunan" },
-            "3": { "label": "Masyadong mataas ang ISO" }
+            "0": {
+              "label": "Masyadong malawak ang aperture"
+            },
+            "1": {
+              "label": "Kulang na overlap sa pagitan ng focus steps"
+            },
+            "2": {
+              "label": "Gumalaw ang tripod habang kinukunan"
+            },
+            "3": {
+              "label": "Masyadong mataas ang ISO"
+            }
           }
         }
       }

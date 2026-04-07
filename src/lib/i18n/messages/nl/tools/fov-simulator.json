@@ -32,7 +32,7 @@
       "faq": {
         "what-is-fov": {
           "question": "Wat is beeldhoek in fotografie?",
-          "answer": "Beeldhoek (FOV) is de hoekgrootte van de scène die zichtbaar is door je lens en camerasensor. Het bepaalt hoeveel van een scène wordt vastgelegd in een foto en wordt beïnvloed door brandpuntsafstand en sensorformaat."
+          "answer": "Beeldhoek is de hoekgrootte van de scène die zichtbaar is door je lens en camerasensor. Het bepaalt hoeveel van een scène wordt vastgelegd in een foto en wordt beïnvloed door brandpuntsafstand en sensorformaat."
         },
         "how-crop-factor-affects-fov": {
           "question": "Hoe beïnvloedt de cropfactor de beeldhoek?",

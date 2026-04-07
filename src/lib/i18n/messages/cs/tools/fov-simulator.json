@@ -32,15 +32,15 @@
       "faq": {
         "what-is-fov": {
           "question": "Co je zorný úhel ve fotografii?",
-          "answer": "Zorný úhel (FOV) je úhlový rozsah scény, který je vidět skrz objektiv a snímač fotoaparátu. Určuje, kolik ze scény se do snímku vejde, a závisí na ohniskové vzdálenosti a velikosti snímače."
+          "answer": "Zorný úhel je úhlový rozsah scény, který je vidět skrz objektiv a snímač fotoaparátu. Určuje, kolik ze scény se do snímku vejde, a závisí na ohniskové vzdálenosti a velikosti snímače."
         },
         "how-crop-factor-affects-fov": {
           "question": "Jak crop faktor ovlivňuje zorný úhel?",
           "answer": "Menší snímač (vyšší crop faktor) zachytí při stejné ohniskové vzdálenosti užší zorný úhel než full frame. Například APS-C s crop faktorem 1,5× způsobí, že se 50mm objektiv chová jako 75mm z hlediska zorného úhlu."
         },
         "fov-vs-focal-length": {
-          "question": "Jaký je vztah mezi FOV a ohniskovou vzdáleností?",
-          "answer": "Zorný úhel a ohnisková vzdálenost jsou nepřímo úměrné. Kratší ohniska (širokoúhlé) nabízejí širší zorný úhel, delší ohniska (teleobjektivy) užší. Přesná hodnota FOV navíc závisí na velikosti snímače."
+          "question": "Jaký je vztah mezi zorné pole a ohniskovou vzdáleností?",
+          "answer": "Zorný úhel a ohnisková vzdálenost jsou nepřímo úměrné. Kratší ohniska (širokoúhlé) nabízejí širší zorný úhel, delší ohniska (teleobjektivy) užší. Přesná hodnota zorné pole navíc závisí na velikosti snímače."
         }
       }
     }

@@ -1,7 +1,7 @@
 {
   "education": {
     "dof-simulator": {
-      "beginner": "Die Schärfentiefe (DoF) ist der Entfernungsbereich in deinem Foto, der akzeptabel scharf erscheint. Eine geringe Schärfentiefe verwischt den Hintergrund hinter deinem Motiv, während eine große Schärfentiefe alles vom Vordergrund bis zum Horizont scharf hält. Die Kontrolle der Schärfentiefe ist eines der mächtigsten kreativen Werkzeuge in der Fotografie.",
+      "beginner": "Die Schärfentiefe ist der Entfernungsbereich in deinem Foto, der akzeptabel scharf erscheint. Eine geringe Schärfentiefe verwischt den Hintergrund hinter deinem Motiv, während eine große Schärfentiefe alles vom Vordergrund bis zum Horizont scharf hält. Die Kontrolle der Schärfentiefe ist eines der mächtigsten kreativen Werkzeuge in der Fotografie.",
       "deeper": {
         "0": {
           "heading": "So funktioniert die Schärfentiefe",

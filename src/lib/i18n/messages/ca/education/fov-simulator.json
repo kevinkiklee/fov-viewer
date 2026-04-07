@@ -1,7 +1,7 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "L'angle de visió (FOV) és la quantitat d'escena que captura la teva càmera. Un gran angular (com un 24mm) veu una àmplia porció, mentre que un teleobjectiu (com un 200mm) se centra en una petita part. Aquest simulador et permet comparar fins a quatre objectius en sensors diferents, superposats sobre escenes reals, perquè puguis visualitzar exactament què captura cada combinació.",
+      "beginner": "L'angle de visió és la quantitat d'escena que captura la teva càmera. Un gran angular (com un 24mm) veu una àmplia porció, mentre que un teleobjectiu (com un 200mm) se centra en una petita part. Aquest simulador et permet comparar fins a quatre objectius en sensors diferents, superposats sobre escenes reals, perquè puguis visualitzar exactament què captura cada combinació.",
       "deeper": {
         "0": {
           "heading": "La fórmula de l'angle de visió",
@@ -70,9 +70,15 @@
           "successMessage": "Correcte! Un objectiu de 24mm veu molta més escena que un 70mm. Els gran angulars tenen distàncies focals curtes.",
           "failureMessage": "Les distàncies focals més curtes donen angles de visió més amplis. 24mm és un gran angular que captura molta més part del perfil urbà que un 70mm.",
           "options": {
-            "0": { "label": "24mm" },
-            "1": { "label": "70mm" },
-            "2": { "label": "200mm" }
+            "0": {
+              "label": "24mm"
+            },
+            "1": {
+              "label": "70mm"
+            },
+            "2": {
+              "label": "200mm"
+            }
           }
         },
         "1": {
@@ -81,9 +87,15 @@
           "successMessage": "Exacte! Un 50mm en full frame és el clàssic objectiu \"normal\" — el seu angle de visió d'uns 46 graus s'aproxima al que l'ull humà enfoca de manera natural.",
           "failureMessage": "Un 50mm en full frame es considera un objectiu \"normal\" perquè el seu angle de visió (~46 graus) coincideix de prop amb la percepció humana còmoda.",
           "options": {
-            "0": { "label": "Ultra gran angular" },
-            "1": { "label": "Normal / estàndard" },
-            "2": { "label": "Teleobjectiu" }
+            "0": {
+              "label": "Ultra gran angular"
+            },
+            "1": {
+              "label": "Normal / estàndard"
+            },
+            "2": {
+              "label": "Teleobjectiu"
+            }
           }
         },
         "2": {
@@ -92,9 +104,15 @@
           "successMessage": "Exacte! 35mm en APS-C (retall 1,5x) dona un angle de visió equivalent a 52,5mm en full frame — gairebé idèntic al 50mm FF. Les superposicions tenen pràcticament la mateixa mida.",
           "failureMessage": "35mm x 1,5 de retall = 52,5mm equivalent. Això és gairebé idèntic a 50mm en full frame, raó per la qual les superposicions són gairebé iguals.",
           "options": {
-            "0": { "label": "Tenen angles de visió gairebé idèntics" },
-            "1": { "label": "L'objectiu APS-C mostra una vista molt més ampla" },
-            "2": { "label": "L'objectiu Full Frame mostra una vista molt més ampla" }
+            "0": {
+              "label": "Tenen angles de visió gairebé idèntics"
+            },
+            "1": {
+              "label": "L'objectiu APS-C mostra una vista molt més ampla"
+            },
+            "2": {
+              "label": "L'objectiu Full Frame mostra una vista molt més ampla"
+            }
           }
         },
         "3": {
@@ -103,9 +121,15 @@
           "successMessage": "Correcte! Full Frame en veu més perquè el sensor més gran captura una porció més ampla del cercle d'imatge del 24mm. En APS-C, el mateix 24mm enquadra com ~36mm.",
           "failureMessage": "Full Frame captura més part de l'escena. El sensor més gran fa servir més part del cercle d'imatge de l'objectiu, donant un angle de visió efectiu més ampli.",
           "options": {
-            "0": { "label": "Full Frame — el sensor més gran veu més" },
-            "1": { "label": "APS-C — el sensor retallat veu més" },
-            "2": { "label": "Els dos veuen el mateix — el que importa és la distància focal" }
+            "0": {
+              "label": "Full Frame — el sensor més gran veu més"
+            },
+            "1": {
+              "label": "APS-C — el sensor retallat veu més"
+            },
+            "2": {
+              "label": "Els dos veuen el mateix — el que importa és la distància focal"
+            }
           }
         },
         "4": {
@@ -114,9 +138,15 @@
           "successMessage": "Excel·lent! 200mm en M43 (retall 2x) dona un angle de visió equivalent a 400mm. El compromís: tot i que l'enquadrament coincideix amb un 400mm FF, la profunditat de camp coincideix amb el 200mm (més profunda), i el sensor més petit recull menys llum total, cosa que vol dir un pitjor comportament de soroll a ISO alt. L'avantatge és un objectiu molt més petit, lleuger i barat.",
           "failureMessage": "200mm x 2,0 de retall = 400mm d'angle de visió equivalent. Però no és idèntic a un 400mm en FF: obtens més profunditat de camp (basat en el 200mm real), menys captació de llum (sensor més petit) i més soroll a ISO alt. El benefici és un equipament significativament més petit i lleuger.",
           "options": {
-            "0": { "label": "Equivalent a 400mm — mateix angle de visió però més profunditat de camp, més soroll, equipament més petit/lleuger" },
-            "1": { "label": "Equivalent a 400mm — idèntic en tot a un 400mm en full frame" },
-            "2": { "label": "Equivalent a 200mm — el factor de retall no afecta l'angle de visió" }
+            "0": {
+              "label": "Equivalent a 400mm — mateix angle de visió però més profunditat de camp, més soroll, equipament més petit/lleuger"
+            },
+            "1": {
+              "label": "Equivalent a 400mm — idèntic en tot a un 400mm en full frame"
+            },
+            "2": {
+              "label": "Equivalent a 200mm — el factor de retall no afecta l'angle de visió"
+            }
           }
         }
       }

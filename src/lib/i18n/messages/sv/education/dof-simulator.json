@@ -1,7 +1,7 @@
 {
   "education": {
     "dof-simulator": {
-      "beginner": "Skärpedjupet (DoF) är det avståndsområde i bilden som ser acceptabelt skarpt ut. Ett grunt skärpedjup suddar bakgrunden bakom motivet, medan ett stort skärpedjup håller allt från förgrund till horisont skarpt. Att kontrollera skärpedjupet är ett av fotografins starkaste kreativa verktyg.",
+      "beginner": "Skärpedjupet är det avståndsområde i bilden som ser acceptabelt skarpt ut. Ett grunt skärpedjup suddar bakgrunden bakom motivet, medan ett stort skärpedjup håller allt från förgrund till horisont skarpt. Att kontrollera skärpedjupet är ett av fotografins starkaste kreativa verktyg.",
       "deeper": {
         "0": {
           "heading": "Så fungerar skärpedjup",
@@ -110,10 +110,18 @@
           "successMessage": "Rätt! En stor bländare som f/1.8 eller f/2.8 ger grunt skärpedjup och separerar motivet från bakgrunden med fin bokeh.",
           "failureMessage": "Inte riktigt. Små bländare som f/11 eller f/16 håller mer av scenen i fokus. För bakgrundsoskärpa väljer du en stor bländare (lågt f-tal).",
           "options": {
-            "0": { "label": "f/1.8" },
-            "1": { "label": "f/5.6" },
-            "2": { "label": "f/11" },
-            "3": { "label": "f/16" }
+            "0": {
+              "label": "f/1.8"
+            },
+            "1": {
+              "label": "f/5.6"
+            },
+            "2": {
+              "label": "f/11"
+            },
+            "3": {
+              "label": "f/16"
+            }
           }
         },
         "1": {
@@ -122,10 +130,18 @@
           "successMessage": "Bra val! f/5.6 ger tillräckligt skärpedjup för att hålla båda raderna skarpa och samtidigt rimlig slutartid inomhus.",
           "failureMessage": "Den bländaren kan antingen lämna den bakre raden utanför fokus eller vara onödigt liten. För två rader av personer är f/5.6 en pålitlig utgångspunkt.",
           "options": {
-            "0": { "label": "f/1.4" },
-            "1": { "label": "f/2.8" },
-            "2": { "label": "f/5.6" },
-            "3": { "label": "f/22" }
+            "0": {
+              "label": "f/1.4"
+            },
+            "1": {
+              "label": "f/2.8"
+            },
+            "2": {
+              "label": "f/5.6"
+            },
+            "3": {
+              "label": "f/22"
+            }
           }
         },
         "2": {
@@ -134,10 +150,18 @@
           "successMessage": "Precis! Att fokusera på hyperfokalavståndet vid f/11 gör att allt från cirka 1 meter till oändligheten blir acceptabelt skarpt — perfekt för den här scenen.",
           "failureMessage": "Fokuserar du på oändligheten blir blommorna mjuka. Använd hyperfokalavståndet för att sträcka skärpan från nära förgrund till oändlighet.",
           "options": {
-            "0": { "label": "Fokusera på blommorna (2 m)" },
-            "1": { "label": "Fokusera på bergen (oändligheten)" },
-            "2": { "label": "Fokusera på hyperfokalavståndet" },
-            "3": { "label": "Fokusera halvvägs mellan blommor och berg" }
+            "0": {
+              "label": "Fokusera på blommorna (2 m)"
+            },
+            "1": {
+              "label": "Fokusera på bergen (oändligheten)"
+            },
+            "2": {
+              "label": "Fokusera på hyperfokalavståndet"
+            },
+            "3": {
+              "label": "Fokusera halvvägs mellan blommor och berg"
+            }
           }
         },
         "3": {
@@ -146,10 +170,18 @@
           "successMessage": "Rätt! Att blända ned till f/11 eller f/16 drar ut det hårfina skärpedjupet i makrofoto. Håll bara ett öga på diffraktionen — bilden kan bli mjukare vid mycket små bländare.",
           "failureMessage": "Att öppna bländaren mer skulle bara göra skärpedjupet ännu tunnare. I makrofoto är det just att blända ned (högre f-tal) som ger mer djup.",
           "options": {
-            "0": { "label": "Öppna till f/2.8 för mer ljus" },
-            "1": { "label": "Blända ned till f/11" },
-            "2": { "label": "Byt till ett vidvinkelobjektiv" },
-            "3": { "label": "Flytta dig längre från blomman" }
+            "0": {
+              "label": "Öppna till f/2.8 för mer ljus"
+            },
+            "1": {
+              "label": "Blända ned till f/11"
+            },
+            "2": {
+              "label": "Byt till ett vidvinkelobjektiv"
+            },
+            "3": {
+              "label": "Flytta dig längre från blomman"
+            }
           }
         },
         "4": {
@@ -158,9 +190,15 @@
           "successMessage": "Rätt! Fullformatskameran ger ungefär 2 steg grundare skärpedjup. MFT-objektivet har visserligen samma f-tal, men den kortare faktiska brännvidden (42,5 mm mot 85 mm) ger större skärpedjup vid ekvivalent bildutsnitt.",
           "failureMessage": "Även om båda objektiven är f/1.8 använder fullformatskameran en längre faktisk brännvidd för samma bildutsnitt, vilket ger betydligt grundare skärpedjup.",
           "options": {
-            "0": { "label": "Fullformat med 85 mm f/1.8" },
-            "1": { "label": "Micro Four Thirds med 42,5 mm f/1.8" },
-            "2": { "label": "Båda ger identiskt skärpedjup" }
+            "0": {
+              "label": "Fullformat med 85 mm f/1.8"
+            },
+            "1": {
+              "label": "Micro Four Thirds med 42,5 mm f/1.8"
+            },
+            "2": {
+              "label": "Båda ger identiskt skärpedjup"
+            }
           }
         }
       }

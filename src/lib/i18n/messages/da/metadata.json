@@ -3,7 +3,7 @@
     "site": {
       "defaultTitle": "PhotoTools — værktøjer til fotografer",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Gratis værktøjer til fotografer: FOV-simulator, farvepaletgenerator, EXIF-viewer, beskær og indram billeder og meget mere.",
+      "description": "Gratis værktøjer til fotografer: billedvinkel-simulator, farvepaletgenerator, EXIF-viewer, beskær og indram billeder og meget mere.",
       "ogTitle": "PhotoTools — gratis værktøjer til fotografer"
     },
     "fov-simulator": {

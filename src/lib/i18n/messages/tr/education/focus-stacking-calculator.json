@@ -9,7 +9,7 @@
         },
         "1": {
           "heading": "İstiflemeyi Planlama",
-          "text": "Başarılı bir istifin anahtarı, her çekimin alan derinliğinin bir sonrakiyle %20-30 örtüşmesini sağlamaktır. Çok az örtüşme hiçbir şeyin net olmadığı boşluklar yaratır; çok fazla örtüşme fayda sağlamadan kare israfıdır. Hesaplayıcı, bulanıklık çemberi formülünü kullanarak çekim başına DoF'u belirler, örtüşme payını çıkarır ve toplam derinlik aralığını etkili adıma bölerek çekim sayısını hesaplar."
+          "text": "Başarılı bir istifin anahtarı, her çekimin alan derinliğinin bir sonrakiyle %20-30 örtüşmesini sağlamaktır. Çok az örtüşme hiçbir şeyin net olmadığı boşluklar yaratır; çok fazla örtüşme fayda sağlamadan kare israfıdır. Hesaplayıcı, bulanıklık çemberi formülünü kullanarak çekim başına alan derinliği'u belirler, örtüşme payını çıkarır ve toplam derinlik aralığını etkili adıma bölerek çekim sayısını hesaplar."
         },
         "2": {
           "heading": "Birleştirme ve Hizalama",
@@ -19,7 +19,7 @@
       "keyFactors": {
         "0": {
           "label": "Diyafram",
-          "description": "Çekim başına alan derinliğini belirler. Orta bir diyafram (f/5,6-f/8) kare başına netlik ve DoF'u dengeler. Çok küçük diyaframlardan kaçının — kırınım, istifleme yaptığınız netliği azaltır."
+          "description": "Çekim başına alan derinliğini belirler. Orta bir diyafram (f/5,6-f/8) kare başına netlik ve alan derinliği'u dengeler. Çok küçük diyaframlardan kaçının — kırınım, istifleme yaptığınız netliği azaltır."
         },
         "1": {
           "label": "Derinlik Aralığı",
@@ -27,7 +27,7 @@
         },
         "2": {
           "label": "Örtüşme",
-          "description": "Her çekimin DoF'unun komşu çekimlerle örtüşme yüzdesi. %20-30 standarttır. Daha az boşluk riski taşır; daha fazla kare israfıdır."
+          "description": "Her çekimin alan derinliği'unun komşu çekimlerle örtüşme yüzdesi. %20-30 standarttır. Daha az boşluk riski taşır; daha fazla kare israfıdır."
         }
       },
       "tips": {
@@ -73,38 +73,60 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Ön yapraktan arka gövdeye 3cm derinliğinde küçük bir çiçeği fotoğraflıyorsunuz. f/8'deki makro objektifiniz çekim başına yaklaşık 4mm DoF veriyor. %25 örtüşme ile yaklaşık kaç kareye ihtiyacınız var?",
+          "scenario": "Ön yapraktan arka gövdeye 3cm derinliğinde küçük bir çiçeği fotoğraflıyorsunuz. f/8'deki makro objektifiniz çekim başına yaklaşık 4mm alan derinliği veriyor. %25 örtüşme ile yaklaşık kaç kareye ihtiyacınız var?",
           "hint": "Her çekim 4mm kapsıyor, ama %25 örtüşme etkili adımın kare başına 3mm olduğu anlamına gelir. 30mm'yi 3mm'ye bölün.",
-          "successMessage": "Doğru! 4mm DoF ve %25 örtüşme ile her adım 3mm ilerler. 30mm / 3mm = tüm çiçeği kapsamak için 10 çekim.",
-          "failureMessage": "%25 örtüşme ile her karenin etkili adımı DoF'un %75'idir: 4mm × 0,75 = 3mm. 30mm / 3mm = 10 çekim gerekir.",
+          "successMessage": "Doğru! 4mm alan derinliği ve %25 örtüşme ile her adım 3mm ilerler. 30mm / 3mm = tüm çiçeği kapsamak için 10 çekim.",
+          "failureMessage": "%25 örtüşme ile her karenin etkili adımı alan derinliği'un %75'idir: 4mm × 0,75 = 3mm. 30mm / 3mm = 10 çekim gerekir.",
           "options": {
-            "0": { "label": "5 çekim" },
-            "1": { "label": "10 çekim" },
-            "2": { "label": "20 çekim" },
-            "3": { "label": "30 çekim" }
+            "0": {
+              "label": "5 çekim"
+            },
+            "1": {
+              "label": "10 çekim"
+            },
+            "2": {
+              "label": "20 çekim"
+            },
+            "3": {
+              "label": "30 çekim"
+            }
           }
         },
         "1": {
           "scenario": "Odak istiflemeden mümkün olan en keskin sonucu istiyorsunuz. Her kareyi f/2,8, f/8 mi yoksa f/22'de mi çekmelisiniz?",
           "hint": "Objektifin en keskin diyaframını ve kırınımın küçük diyaframları nasıl etkilediğini düşünün.",
-          "successMessage": "Doğru! f/8 çoğu objektif için genellikle en keskin diyaframdır. f/2,8 çekim başına çok az DoF verir (kare israfı) ve f/22 kırınım yumuşamasından muzdariptir.",
-          "failureMessage": "f/8 en iyi seçimdir. f/2,8 çekim başına çok ince DoF verir (çok daha fazla kare gerektirir) ve f/22 netlik için istifleme amacını ortadan kaldıran kırınım yumuşamasına neden olur.",
+          "successMessage": "Doğru! f/8 çoğu objektif için genellikle en keskin diyaframdır. f/2,8 çekim başına çok az alan derinliği verir (kare israfı) ve f/22 kırınım yumuşamasından muzdariptir.",
+          "failureMessage": "f/8 en iyi seçimdir. f/2,8 çekim başına çok ince alan derinliği verir (çok daha fazla kare gerektirir) ve f/22 netlik için istifleme amacını ortadan kaldıran kırınım yumuşamasına neden olur.",
           "options": {
-            "0": { "label": "f/2,8 — en hızlı enstantane için en geniş" },
-            "1": { "label": "f/8 — objektifin en keskin noktası" },
-            "2": { "label": "f/22 — çekim başına maksimum DoF" }
+            "0": {
+              "label": "f/2,8 — en hızlı enstantane için en geniş"
+            },
+            "1": {
+              "label": "f/8 — objektifin en keskin noktası"
+            },
+            "2": {
+              "label": "f/22 — çekim başına maksimum alan derinliği"
+            }
           }
         },
         "2": {
           "scenario": "Odak istiflemenizi birleştirdikten sonra görüntünün ortasında hiçbir şeyin net olmadığı yumuşak bir bant fark ediyorsunuz. Büyük olasılıkla ne yanlış gitti?",
           "hint": "Bir karenin net bölgesini bir sonrakine bağlayan şeyi düşünün.",
           "successMessage": "Kesinlikle! Komşu kareler arasında yetersiz örtüşme, hiçbir çekimin net olmadığı bir boşluk yaratır. Örtüşmeyi %25-30'a yükseltin ve yeniden çekin.",
-          "failureMessage": "Yumuşak bir bant genellikle odak adımları arasındaki boşluğun çok büyük olduğu anlamına gelir — komşu karelerin DoF'u yeterince örtüşmemiştir. Örtüşme yüzdesini artırın.",
+          "failureMessage": "Yumuşak bir bant genellikle odak adımları arasındaki boşluğun çok büyük olduğu anlamına gelir — komşu karelerin alan derinliği'u yeterince örtüşmemiştir. Örtüşme yüzdesini artırın.",
           "options": {
-            "0": { "label": "Diyafram çok genişti" },
-            "1": { "label": "Odak adımları arasında yetersiz örtüşme" },
-            "2": { "label": "Çekim sırasında tripod hareket etti" },
-            "3": { "label": "ISO çok yüksekti" }
+            "0": {
+              "label": "Diyafram çok genişti"
+            },
+            "1": {
+              "label": "Odak adımları arasında yetersiz örtüşme"
+            },
+            "2": {
+              "label": "Çekim sırasında tripod hareket etti"
+            },
+            "3": {
+              "label": "ISO çok yüksekti"
+            }
           }
         }
       }

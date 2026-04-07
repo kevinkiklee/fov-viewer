@@ -1,7 +1,7 @@
 {
   "education": {
     "dof-simulator": {
-      "beginner": "Dybdeskarphet (DoF) er det området i bildet som fremstår akseptabelt skarpt. Grunn dybdeskarphet gjør bakgrunnen bak motivet uskarp, mens dyp dybdeskarphet holder alt fra forgrunn til horisont i fokus. Å styre dybdeskarpheten er ett av de mest kraftfulle kreative virkemidlene vi har.",
+      "beginner": "Dybdeskarphet er det området i bildet som fremstår akseptabelt skarpt. Grunn dybdeskarphet gjør bakgrunnen bak motivet uskarp, mens dyp dybdeskarphet holder alt fra forgrunn til horisont i fokus. Å styre dybdeskarpheten er ett av de mest kraftfulle kreative virkemidlene vi har.",
       "deeper": {
         "0": {
           "heading": "Slik fungerer dybdeskarphet",
@@ -13,25 +13,25 @@
         },
         "2": {
           "heading": "Bokeh og diffraksjon",
-          "text": "Bokeh beskriver kvaliteten på de uskarpe områdene. Antall blenderblader og formen på dem påvirker bokehkarakteren — mer avrundede blader gir mykere og mer sirkulære høylys. Ved svært små blenderåpninger (f/16 og mindre) sprer lyset seg rundt blenderkantene, og hele bildet blir mykere — også innenfor DoF-sonen. Det finnes alltid et midtpunkt — typisk f/5.6–f/8 på fullformat — der skarphet og dybdeskarphet er best balansert."
+          "text": "Bokeh beskriver kvaliteten på de uskarpe områdene. Antall blenderblader og formen på dem påvirker bokehkarakteren — mer avrundede blader gir mykere og mer sirkulære høylys. Ved svært små blenderåpninger (f/16 og mindre) sprer lyset seg rundt blenderkantene, og hele bildet blir mykere — også innenfor dybdeskarphet-sonen. Det finnes alltid et midtpunkt — typisk f/5.6–f/8 på fullformat — der skarphet og dybdeskarphet er best balansert."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Blender",
-          "description": "Store blenderåpninger (f/1.4–f/2.8) gir grunn DoF med kremete bokeh. Små blenderåpninger (f/8–f/16) øker skarpheten i hele scenen."
+          "description": "Store blenderåpninger (f/1.4–f/2.8) gir grunn dybdeskarphet med kremete bokeh. Små blenderåpninger (f/8–f/16) øker skarpheten i hele scenen."
         },
         "1": {
           "label": "Brennvidde",
-          "description": "Lange objektiver komprimerer perspektivet og smaler inn dybdeskarpheten ved samme blender og utsnitt. Et 200 mm f/4 har langt mindre DoF enn et 35 mm f/4."
+          "description": "Lange objektiver komprimerer perspektivet og smaler inn dybdeskarpheten ved samme blender og utsnitt. Et 200 mm f/4 har langt mindre dybdeskarphet enn et 35 mm f/4."
         },
         "2": {
           "label": "Motivavstand",
-          "description": "Jo nærmere du fokuserer, desto grunnere blir dybdeskarpheten. Makrofotografer jobber ofte med DoF målt i millimeter."
+          "description": "Jo nærmere du fokuserer, desto grunnere blir dybdeskarpheten. Makrofotografer jobber ofte med dybdeskarphet målt i millimeter."
         },
         "3": {
           "label": "Sensorstørrelse",
-          "description": "Større sensorer krever lengre brennvidder for samme utsnitt, og det smaler indirekte inn dybdeskarpheten. Et fullformatkamera gir grunnere DoF enn et Micro Four Thirds ved samme utsnitt."
+          "description": "Større sensorer krever lengre brennvidder for samme utsnitt, og det smaler indirekte inn dybdeskarpheten. Et fullformatkamera gir grunnere dybdeskarphet enn et Micro Four Thirds ved samme utsnitt."
         }
       },
       "tips": {
@@ -110,10 +110,18 @@
           "successMessage": "Riktig! En stor blenderåpning som f/1.8 eller f/2.8 gir grunn dybdeskarphet og skiller motivet fra bakgrunnen med fin bokeh.",
           "failureMessage": "Ikke helt. Små blenderåpninger som f/11 eller f/16 holder mer av scenen i fokus. Vil du ha bakgrunnsuskarphet, velger du en stor blenderåpning (lavt f-tall).",
           "options": {
-            "0": { "label": "f/1.8" },
-            "1": { "label": "f/5.6" },
-            "2": { "label": "f/11" },
-            "3": { "label": "f/16" }
+            "0": {
+              "label": "f/1.8"
+            },
+            "1": {
+              "label": "f/5.6"
+            },
+            "2": {
+              "label": "f/11"
+            },
+            "3": {
+              "label": "f/16"
+            }
           }
         },
         "1": {
@@ -122,10 +130,18 @@
           "successMessage": "Godt valg! f/5.6 gir nok dybdeskarphet til å holde begge rekkene skarpe, og du beholder brukbare lukkertider innendørs.",
           "failureMessage": "Den blenderen kan gjøre bakre rekke uskarp, eller være unødvendig liten. For to rekker med folk er f/5.6 et trygt utgangspunkt.",
           "options": {
-            "0": { "label": "f/1.4" },
-            "1": { "label": "f/2.8" },
-            "2": { "label": "f/5.6" },
-            "3": { "label": "f/22" }
+            "0": {
+              "label": "f/1.4"
+            },
+            "1": {
+              "label": "f/2.8"
+            },
+            "2": {
+              "label": "f/5.6"
+            },
+            "3": {
+              "label": "f/22"
+            }
           }
         },
         "2": {
@@ -134,10 +150,18 @@
           "successMessage": "Akkurat! Ved å fokusere på hyperfokal avstand på f/11 får du alt fra cirka 1 meter og ut til uendelig akseptabelt skarpt — perfekt for denne scenen.",
           "failureMessage": "Å fokusere på uendelig ville gjort blomstene i forgrunnen myke. Bruk hyperfokal avstand for å strekke skarpheten fra nær forgrunn til uendelig.",
           "options": {
-            "0": { "label": "Fokuser på blomstene (2 m)" },
-            "1": { "label": "Fokuser på fjellene (uendelig)" },
-            "2": { "label": "Fokuser på hyperfokal avstand" },
-            "3": { "label": "Fokuser halvveis mellom blomster og fjell" }
+            "0": {
+              "label": "Fokuser på blomstene (2 m)"
+            },
+            "1": {
+              "label": "Fokuser på fjellene (uendelig)"
+            },
+            "2": {
+              "label": "Fokuser på hyperfokal avstand"
+            },
+            "3": {
+              "label": "Fokuser halvveis mellom blomster og fjell"
+            }
           }
         },
         "3": {
@@ -146,21 +170,35 @@
           "successMessage": "Riktig! Å blende ned til f/11 eller f/16 øker den hårtynne dybdeskarpheten i makro. Pass bare på diffraksjon ved veldig små blenderåpninger.",
           "failureMessage": "Å åpne blenderen mer ville gjort dybdeskarpheten enda tynnere. I makrofotografi er det å blende ned (høyere f-tall) den vanligste måten å øke dybden på.",
           "options": {
-            "0": { "label": "Åpne til f/2.8 for mer lys" },
-            "1": { "label": "Blend ned til f/11" },
-            "2": { "label": "Bytt til et bredere objektiv" },
-            "3": { "label": "Gå lenger fra blomsten" }
+            "0": {
+              "label": "Åpne til f/2.8 for mer lys"
+            },
+            "1": {
+              "label": "Blend ned til f/11"
+            },
+            "2": {
+              "label": "Bytt til et bredere objektiv"
+            },
+            "3": {
+              "label": "Gå lenger fra blomsten"
+            }
           }
         },
         "4": {
           "scenario": "Du sammenligner to kameraer til portrettarbeid: et fullformat med 85 mm f/1.8, og et Micro Four Thirds med 42,5 mm f/1.8. Begge gir samme utsnitt. Hvilket kamera gir grunnere dybdeskarphet?",
-          "hint": "Tenk på ekvivalent brennvidde og hvordan sensorstørrelsen påvirker DoF ved samme f-tall.",
-          "successMessage": "Riktig! Fullformatkameraet gir rundt 2 trinn grunnere DoF. MFT-objektivet har samme f-tall, men den kortere faktiske brennvidden (42,5 mm mot 85 mm) gir dypere dybdeskarphet ved samme utsnitt.",
-          "failureMessage": "Begge objektivene er f/1.8, men fullformat bruker en lengre faktisk brennvidde for samme utsnitt, og det gir betydelig grunnere DoF.",
+          "hint": "Tenk på ekvivalent brennvidde og hvordan sensorstørrelsen påvirker dybdeskarphet ved samme f-tall.",
+          "successMessage": "Riktig! Fullformatkameraet gir rundt 2 trinn grunnere dybdeskarphet. MFT-objektivet har samme f-tall, men den kortere faktiske brennvidden (42,5 mm mot 85 mm) gir dypere dybdeskarphet ved samme utsnitt.",
+          "failureMessage": "Begge objektivene er f/1.8, men fullformat bruker en lengre faktisk brennvidde for samme utsnitt, og det gir betydelig grunnere dybdeskarphet.",
           "options": {
-            "0": { "label": "Fullformat med 85 mm f/1.8" },
-            "1": { "label": "Micro Four Thirds med 42,5 mm f/1.8" },
-            "2": { "label": "Begge gir identisk DoF" }
+            "0": {
+              "label": "Fullformat med 85 mm f/1.8"
+            },
+            "1": {
+              "label": "Micro Four Thirds med 42,5 mm f/1.8"
+            },
+            "2": {
+              "label": "Begge gir identisk dybdeskarphet"
+            }
           }
         }
       }

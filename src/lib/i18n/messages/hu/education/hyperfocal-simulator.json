@@ -45,9 +45,15 @@
           "successMessage": "Jó! A Full Frame a helyes választás egy szabványos 35mm-es kameravázhoz.",
           "failureMessage": "Nem egészen — válaszd a Full Frame érzékelőt, hogy egy szabványos 35mm-es kameravázhoz igazodj.",
           "options": {
-            "0": { "label": "Full Frame" },
-            "1": { "label": "APS-C (Nikon/Sony)" },
-            "2": { "label": "Micro Four Thirds" }
+            "0": {
+              "label": "Full Frame"
+            },
+            "1": {
+              "label": "APS-C (Nikon/Sony)"
+            },
+            "2": {
+              "label": "Micro Four Thirds"
+            }
           }
         },
         "1": {
@@ -56,8 +62,12 @@
           "successMessage": "Jó! A 24mm-es objektív sokkal rövidebb hiperfokális távolságot ad, mert a gyújtótávolságnak négyzetes hatása van.",
           "failureMessage": "Valójában a rövidebb gyújtótávolság mindig rövidebb hiperfokális távolságot ad. Itt a 24mm nyer.",
           "options": {
-            "0": { "label": "24mm f/8-on" },
-            "1": { "label": "50mm f/8-on" }
+            "0": {
+              "label": "24mm f/8-on"
+            },
+            "1": {
+              "label": "50mm f/8-on"
+            }
           }
         },
         "2": {
@@ -66,9 +76,15 @@
           "successMessage": "Jól gondoltad! Helyesen ismerted fel, hogy kb. 6m hiperfokális távolság kell, és megtaláltad a megfelelő rekesztartományt.",
           "failureMessage": "Ne feledd, a közeli éles határ a hiperfokális távolság fele. A hiperfokálisnak kb. 6m-nek kell lennie, hogy a közeli határ 3m legyen.",
           "options": {
-            "0": { "label": "f/2.8 — f/4" },
-            "1": { "label": "f/5.6 — f/8" },
-            "2": { "label": "f/16 — f/22" }
+            "0": {
+              "label": "f/2.8 — f/4"
+            },
+            "1": {
+              "label": "f/5.6 — f/8"
+            },
+            "2": {
+              "label": "f/16 — f/22"
+            }
           }
         },
         "3": {
@@ -77,19 +93,29 @@
           "successMessage": "Pontosan! A kisebb MFT érzékelő kisebb CoC-t használ (kb. 0,015 mm vs. 0,03 mm), ami növeli a hiperfokális távolságot ugyanazon gyújtótávolságnál és rekesznél.",
           "failureMessage": "A kulcstényező a szóráskör. A kisebb érzékelők szigorúbb CoC-szabványt igényelnek, ami távolabbra tolja a hiperfokális távolságokat.",
           "options": {
-            "0": { "label": "Az objektív gyújtótávolsága megváltozik crop érzékelőn" },
-            "1": { "label": "A kisebb érzékelők kisebb szóráskört használnak" },
-            "2": { "label": "A Micro Four Thirds kameráknak pontatlanabb az autofókusza" }
+            "0": {
+              "label": "Az objektív gyújtótávolsága megváltozik crop érzékelőn"
+            },
+            "1": {
+              "label": "A kisebb érzékelők kisebb szóráskört használnak"
+            },
+            "2": {
+              "label": "A Micro Four Thirds kameráknak pontatlanabb az autofókusza"
+            }
           }
         },
         "4": {
           "scenario": "Építészetet fotózol 14mm f/11-en Full Frame-en. A táblázat nagyon rövid hiperfokális távolságot mutat. Szűkíts tovább f/22-re még nagyobb mélységélességért, vagy f/11 a jobb választás?",
           "hint": "Gondolkodj el arról, mi történik a kép élességével nagyon kicsi rekesznél.",
-          "successMessage": "Kiváló! f/11-en a diffrakció minimális Full Frame-en, és a 14mm hiperfokális távolsága már nagyon rövid. f/22-re szűkítés lágyítaná a képet a diffrakció miatt, érdemi DoF-haszon nélkül.",
-          "failureMessage": "Bár f/22 papíron rövidebb hiperfokális távolságot ad, a diffrakciós lágyítás f/22-n Full Frame-en csökkenti a kép élességét. 14mm f/11-en a hiperfokális távolság már olyan rövid, hogy az extra DoF nem éri meg a diffrakció büntetést.",
+          "successMessage": "Kiváló! f/11-en a diffrakció minimális Full Frame-en, és a 14mm hiperfokális távolsága már nagyon rövid. f/22-re szűkítés lágyítaná a képet a diffrakció miatt, érdemi mélységélesség-haszon nélkül.",
+          "failureMessage": "Bár f/22 papíron rövidebb hiperfokális távolságot ad, a diffrakciós lágyítás f/22-n Full Frame-en csökkenti a kép élességét. 14mm f/11-en a hiperfokális távolság már olyan rövid, hogy az extra mélységélesség nem éri meg a diffrakció büntetést.",
           "options": {
-            "0": { "label": "Szűkíts f/22-re a maximális mélységélességért" },
-            "1": { "label": "Maradj f/11-en — a diffrakció f/22-n csökkenti az élességet" }
+            "0": {
+              "label": "Szűkíts f/22-re a maximális mélységélességért"
+            },
+            "1": {
+              "label": "Maradj f/11-en — a diffrakció f/22-n csökkenti az élességet"
+            }
           }
         }
       }

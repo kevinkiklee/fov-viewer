@@ -1,11 +1,11 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Góc nhìn (FOV) là phạm vi cảnh mà máy ảnh của bạn thu được. Ống kính góc rộng (như 24mm) thấy cảnh rộng, trong khi ống tele (như 200mm) thu hẹp vào một lát nhỏ. Trình mô phỏng này cho phép bạn so sánh đến bốn ống kính trên các cảm biến khác nhau, chồng lên cảnh thực tế, để bạn hình dung chính xác mỗi tổ hợp thu được gì.",
+      "beginner": "Góc nhìn là phạm vi cảnh mà máy ảnh của bạn thu được. Ống kính góc rộng (như 24mm) thấy cảnh rộng, trong khi ống tele (như 200mm) thu hẹp vào một lát nhỏ. Trình mô phỏng này cho phép bạn so sánh đến bốn ống kính trên các cảm biến khác nhau, chồng lên cảnh thực tế, để bạn hình dung chính xác mỗi tổ hợp thu được gì.",
       "deeper": {
         "0": {
-          "heading": "Công thức FOV",
-          "text": "Góc nhìn được xác định bởi hai yếu tố: tiêu cự và kích thước cảm biến. Góc FOV ngang được tính bằng 2 × arctan(chiều rộng cảm biến / (2 × tiêu cự)). Tiêu cự ngắn hơn hoặc cảm biến lớn hơn tạo ra góc nhìn rộng hơn."
+          "heading": "Công thức góc nhìn",
+          "text": "Góc nhìn được xác định bởi hai yếu tố: tiêu cự và kích thước cảm biến. Góc góc nhìn ngang được tính bằng 2 × arctan(chiều rộng cảm biến / (2 × tiêu cự)). Tiêu cự ngắn hơn hoặc cảm biến lớn hơn tạo ra góc nhìn rộng hơn."
         },
         "1": {
           "heading": "Hệ số crop & Tiêu cự tương đương",
@@ -31,7 +31,7 @@
         },
         "3": {
           "label": "Bối cảnh cảnh",
-          "description": "Các cảnh khác nhau (thành phố, nội thất, thiên nhiên) giúp bạn hiểu cách thay đổi FOV cảm nhận trong các bối cảnh thực tế."
+          "description": "Các cảnh khác nhau (thành phố, nội thất, thiên nhiên) giúp bạn hiểu cách thay đổi góc nhìn cảm nhận trong các bối cảnh thực tế."
         }
       },
       "tips": {
@@ -60,7 +60,7 @@
         },
         "Orientation": {
           "term": "Hướng",
-          "definition": "Chuyển đổi giữa hướng ngang (landscape) và dọc (portrait) máy ảnh. Hình chữ nhật FOV xoay tương ứng."
+          "definition": "Chuyển đổi giữa hướng ngang (landscape) và dọc (portrait) máy ảnh. Hình chữ nhật góc nhìn xoay tương ứng."
         }
       },
       "challenges": {
@@ -70,9 +70,15 @@
           "successMessage": "Chính xác! Ống 24mm thấy nhiều cảnh hơn 70mm. Ống góc rộng có tiêu cự ngắn.",
           "failureMessage": "Tiêu cự ngắn hơn cho góc nhìn rộng hơn. 24mm là ống góc rộng thu được nhiều đường chân trời hơn 70mm.",
           "options": {
-            "0": { "label": "24mm" },
-            "1": { "label": "70mm" },
-            "2": { "label": "200mm" }
+            "0": {
+              "label": "24mm"
+            },
+            "1": {
+              "label": "70mm"
+            },
+            "2": {
+              "label": "200mm"
+            }
           }
         },
         "1": {
@@ -81,20 +87,32 @@
           "successMessage": "Đúng! 50mm trên full frame là ống \"bình thường\" kinh điển — góc nhìn ~46 độ gần với nhận thức tự nhiên thoải mái của mắt người.",
           "failureMessage": "50mm trên full frame được coi là ống \"bình thường\" vì góc nhìn (~46 độ) phù hợp gần với nhận thức thoải mái của con người.",
           "options": {
-            "0": { "label": "Siêu rộng" },
-            "1": { "label": "Bình thường / tiêu chuẩn" },
-            "2": { "label": "Tele" }
+            "0": {
+              "label": "Siêu rộng"
+            },
+            "1": {
+              "label": "Bình thường / tiêu chuẩn"
+            },
+            "2": {
+              "label": "Tele"
+            }
           }
         },
         "2": {
-          "scenario": "Thêm hai ống kính: Ống A là 35mm trên APS-C (Nikon/Sony), và Ống B là 50mm trên Full Frame. So sánh hai lớp phủ FOV. Bạn nhận thấy gì?",
+          "scenario": "Thêm hai ống kính: Ống A là 35mm trên APS-C (Nikon/Sony), và Ống B là 50mm trên Full Frame. So sánh hai lớp phủ góc nhìn. Bạn nhận thấy gì?",
           "hint": "35mm nhân với hệ số crop APS-C 1.5 bằng...",
           "successMessage": "Chính xác! 35mm trên APS-C (crop 1.5x) cho góc nhìn tương đương 52.5mm trên full frame — gần giống 50mm FF. Các lớp phủ gần như cùng kích thước.",
           "failureMessage": "35mm x hệ số crop 1.5 = tương đương 52.5mm. Gần giống 50mm trên full frame, đó là lý do các lớp phủ gần như giống nhau.",
           "options": {
-            "0": { "label": "Chúng có góc nhìn gần giống nhau" },
-            "1": { "label": "Ống APS-C cho cảnh rộng hơn nhiều" },
-            "2": { "label": "Ống Full Frame cho cảnh rộng hơn nhiều" }
+            "0": {
+              "label": "Chúng có góc nhìn gần giống nhau"
+            },
+            "1": {
+              "label": "Ống APS-C cho cảnh rộng hơn nhiều"
+            },
+            "2": {
+              "label": "Ống Full Frame cho cảnh rộng hơn nhiều"
+            }
           }
         },
         "3": {
@@ -103,20 +121,32 @@
           "successMessage": "Chính xác! Full Frame thấy nhiều hơn vì cảm biến lớn hơn thu phần rộng hơn vòng tròn ảnh 24mm. Trên APS-C, cùng ống 24mm cho khung hình giống ~36mm.",
           "failureMessage": "Full Frame thu được nhiều cảnh hơn. Cảm biến lớn hơn sử dụng nhiều vòng tròn ảnh ống kính hơn, cho góc nhìn hiệu dụng rộng hơn.",
           "options": {
-            "0": { "label": "Full Frame — cảm biến lớn hơn thấy nhiều hơn" },
-            "1": { "label": "APS-C — cảm biến crop thấy nhiều hơn" },
-            "2": { "label": "Cả hai thấy như nhau — tiêu cự là quan trọng" }
+            "0": {
+              "label": "Full Frame — cảm biến lớn hơn thấy nhiều hơn"
+            },
+            "1": {
+              "label": "APS-C — cảm biến crop thấy nhiều hơn"
+            },
+            "2": {
+              "label": "Cả hai thấy như nhau — tiêu cự là quan trọng"
+            }
           }
         },
         "4": {
           "scenario": "Nhiếp ảnh gia động vật hoang dã chụp với ống 200mm trên Micro Four Thirds. Tiêu cự tương đương full-frame là bao nhiêu, và đánh đổi so với thực sự dùng ống 400mm trên full frame là gì?",
           "hint": "M43 có hệ số crop 2x. Nghĩ về chiều sâu trường ảnh và khác biệt kích thước cảm biến.",
-          "successMessage": "Xuất sắc! 200mm trên M43 (crop 2x) cho góc nhìn tương đương 400mm. Đánh đổi: mặc dù khung hình giống 400mm FF, chiều sâu trường ảnh tương ứng với ống 200mm (DoF sâu hơn), và cảm biến nhỏ hơn thu ít tổng ánh sáng hơn, nghĩa là hiệu suất nhiễu kém hơn ở ISO cao. Ưu điểm là ống kính nhỏ hơn, nhẹ hơn và rẻ hơn nhiều.",
-          "failureMessage": "200mm x crop 2.0 = FOV tương đương 400mm. Nhưng không giống hệt 400mm trên FF: bạn có DoF sâu hơn (dựa trên tiêu cự thực 200mm), ít thu sáng (cảm biến nhỏ hơn), và nhiều nhiễu ở ISO cao. Lợi ích là thiết bị nhỏ và nhẹ hơn đáng kể.",
+          "successMessage": "Xuất sắc! 200mm trên M43 (crop 2x) cho góc nhìn tương đương 400mm. Đánh đổi: mặc dù khung hình giống 400mm FF, chiều sâu trường ảnh tương ứng với ống 200mm (chiều sâu trường ảnh sâu hơn), và cảm biến nhỏ hơn thu ít tổng ánh sáng hơn, nghĩa là hiệu suất nhiễu kém hơn ở ISO cao. Ưu điểm là ống kính nhỏ hơn, nhẹ hơn và rẻ hơn nhiều.",
+          "failureMessage": "200mm x crop 2.0 = góc nhìn tương đương 400mm. Nhưng không giống hệt 400mm trên FF: bạn có chiều sâu trường ảnh sâu hơn (dựa trên tiêu cự thực 200mm), ít thu sáng (cảm biến nhỏ hơn), và nhiều nhiễu ở ISO cao. Lợi ích là thiết bị nhỏ và nhẹ hơn đáng kể.",
           "options": {
-            "0": { "label": "Tương đương 400mm — cùng FOV nhưng DoF sâu hơn, nhiều nhiễu hơn, thiết bị nhỏ/nhẹ hơn" },
-            "1": { "label": "Tương đương 400mm — giống hệt mọi mặt với 400mm trên full frame" },
-            "2": { "label": "Tương đương 200mm — hệ số crop không ảnh hưởng FOV" }
+            "0": {
+              "label": "Tương đương 400mm — cùng góc nhìn nhưng chiều sâu trường ảnh sâu hơn, nhiều nhiễu hơn, thiết bị nhỏ/nhẹ hơn"
+            },
+            "1": {
+              "label": "Tương đương 400mm — giống hệt mọi mặt với 400mm trên full frame"
+            },
+            "2": {
+              "label": "Tương đương 200mm — hệ số crop không ảnh hưởng góc nhìn"
+            }
           }
         }
       }

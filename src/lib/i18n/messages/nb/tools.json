@@ -1,7 +1,7 @@
 {
   "tools": {
     "fov-simulator": {
-      "name": "FOV-simulator",
+      "name": "Synsfelt-simulator",
       "description": "Sammenlign synsfelt på tvers av brennvidder og sensorstørrelser"
     },
     "color-scheme-generator": {

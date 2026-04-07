@@ -1,11 +1,11 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Bidang pandang (FOV) adalah seberapa banyak adegan yang ditangkap kamera Anda. Lensa wide-angle (seperti 24mm) melihat pandangan yang luas, sementara lensa telefoto (seperti 200mm) mempersempit ke irisan kecil. Simulator ini memungkinkan Anda membandingkan hingga empat lensa pada sensor yang berbeda, ditumpangkan pada adegan dunia nyata, sehingga Anda dapat memvisualisasikan dengan tepat apa yang ditangkap setiap kombinasi.",
+      "beginner": "Bidang pandang adalah seberapa banyak adegan yang ditangkap kamera Anda. Lensa wide-angle (seperti 24mm) melihat pandangan yang luas, sementara lensa telefoto (seperti 200mm) mempersempit ke irisan kecil. Simulator ini memungkinkan Anda membandingkan hingga empat lensa pada sensor yang berbeda, ditumpangkan pada adegan dunia nyata, sehingga Anda dapat memvisualisasikan dengan tepat apa yang ditangkap setiap kombinasi.",
       "deeper": {
         "0": {
-          "heading": "Rumus FOV",
-          "text": "Bidang pandang ditentukan oleh dua faktor: panjang fokus dan ukuran sensor. Sudut FOV horizontal dihitung sebagai 2 × arctan(lebarSensor / (2 × panjangFokus)). Panjang fokus yang lebih pendek atau sensor yang lebih besar menghasilkan sudut pandang yang lebih lebar."
+          "heading": "Rumus bidang pandang",
+          "text": "Bidang pandang ditentukan oleh dua faktor: panjang fokus dan ukuran sensor. Sudut bidang pandang horizontal dihitung sebagai 2 × arctan(lebarSensor / (2 × panjangFokus)). Panjang fokus yang lebih pendek atau sensor yang lebih besar menghasilkan sudut pandang yang lebih lebar."
         },
         "1": {
           "heading": "Crop Factor & Panjang Fokus Ekuivalen",
@@ -31,7 +31,7 @@
         },
         "3": {
           "label": "Konteks Adegan",
-          "description": "Adegan yang berbeda (pemandangan kota, interior, alam) membantu Anda memahami bagaimana perubahan FOV terasa dalam berbagai konteks dunia nyata."
+          "description": "Adegan yang berbeda (pemandangan kota, interior, alam) membantu Anda memahami bagaimana perubahan bidang pandang terasa dalam berbagai konteks dunia nyata."
         }
       },
       "tips": {
@@ -60,7 +60,7 @@
         },
         "Orientation": {
           "term": "Orientasi",
-          "definition": "Beralih antara orientasi kamera lanskap (horizontal) dan potret (vertikal). Persegi panjang FOV berputar sesuai."
+          "definition": "Beralih antara orientasi kamera lanskap (horizontal) dan potret (vertikal). Persegi panjang bidang pandang berputar sesuai."
         }
       },
       "challenges": {
@@ -70,9 +70,15 @@
           "successMessage": "Benar! Lensa 24mm melihat jauh lebih banyak adegan daripada 70mm. Lensa wide-angle memiliki panjang fokus pendek.",
           "failureMessage": "Panjang fokus yang lebih pendek memberikan bidang pandang yang lebih lebar. 24mm adalah lensa wide-angle yang menangkap jauh lebih banyak skyline daripada 70mm.",
           "options": {
-            "0": { "label": "24mm" },
-            "1": { "label": "70mm" },
-            "2": { "label": "200mm" }
+            "0": {
+              "label": "24mm"
+            },
+            "1": {
+              "label": "70mm"
+            },
+            "2": {
+              "label": "200mm"
+            }
           }
         },
         "1": {
@@ -81,20 +87,32 @@
           "successMessage": "Tepat! 50mm pada full frame adalah lensa \"normal\" klasik — bidang pandangnya ~46 derajat mendekati apa yang secara alami difokuskan mata manusia.",
           "failureMessage": "50mm pada full frame dianggap lensa \"normal\" karena bidang pandangnya (~46 derajat) sangat cocok dengan persepsi manusia yang nyaman.",
           "options": {
-            "0": { "label": "Ultra-wide angle" },
-            "1": { "label": "Normal / standar" },
-            "2": { "label": "Telefoto" }
+            "0": {
+              "label": "Ultra-wide angle"
+            },
+            "1": {
+              "label": "Normal / standar"
+            },
+            "2": {
+              "label": "Telefoto"
+            }
           }
         },
         "2": {
-          "scenario": "Tambahkan dua lensa: Lensa A adalah 35mm pada APS-C (Nikon/Sony), dan Lensa B adalah 50mm pada Full Frame. Bandingkan dua overlay FOV. Apa yang Anda perhatikan?",
+          "scenario": "Tambahkan dua lensa: Lensa A adalah 35mm pada APS-C (Nikon/Sony), dan Lensa B adalah 50mm pada Full Frame. Bandingkan dua overlay bidang pandang. Apa yang Anda perhatikan?",
           "hint": "35mm dikalikan crop factor APS-C 1,5 sama dengan...",
           "successMessage": "Tepat! 35mm pada APS-C (crop 1,5x) memberikan bidang pandang ekuivalen dengan 52,5mm pada full frame — hampir identik dengan 50mm FF. Overlay-nya hampir sama ukurannya.",
           "failureMessage": "35mm x crop factor 1,5 = ekuivalen 52,5mm. Ini hampir identik dengan 50mm pada full frame, itulah mengapa overlay-nya hampir sama.",
           "options": {
-            "0": { "label": "Mereka memiliki bidang pandang yang hampir identik" },
-            "1": { "label": "Lensa APS-C menunjukkan pandangan yang jauh lebih lebar" },
-            "2": { "label": "Lensa Full Frame menunjukkan pandangan yang jauh lebih lebar" }
+            "0": {
+              "label": "Mereka memiliki bidang pandang yang hampir identik"
+            },
+            "1": {
+              "label": "Lensa APS-C menunjukkan pandangan yang jauh lebih lebar"
+            },
+            "2": {
+              "label": "Lensa Full Frame menunjukkan pandangan yang jauh lebih lebar"
+            }
           }
         },
         "3": {
@@ -103,20 +121,32 @@
           "successMessage": "Benar! Full Frame melihat lebih banyak karena sensor yang lebih besar menangkap bagian yang lebih luas dari lingkaran gambar lensa 24mm. Pada APS-C, lensa 24mm yang sama membingkai seperti ~36mm.",
           "failureMessage": "Full Frame menangkap lebih banyak adegan. Sensor yang lebih besar menggunakan lebih banyak lingkaran gambar lensa, memberikan bidang pandang efektif yang lebih lebar.",
           "options": {
-            "0": { "label": "Full Frame — sensor lebih besar melihat lebih banyak" },
-            "1": { "label": "APS-C — sensor crop melihat lebih banyak" },
-            "2": { "label": "Keduanya melihat hal yang sama — panjang fokus yang menentukan" }
+            "0": {
+              "label": "Full Frame — sensor lebih besar melihat lebih banyak"
+            },
+            "1": {
+              "label": "APS-C — sensor crop melihat lebih banyak"
+            },
+            "2": {
+              "label": "Keduanya melihat hal yang sama — panjang fokus yang menentukan"
+            }
           }
         },
         "4": {
           "scenario": "Seorang fotografer satwa liar memotret dengan lensa 200mm pada Micro Four Thirds. Panjang fokus ekuivalen full frame apa yang dihasilkan, dan apa trade-off-nya dibandingkan dengan benar-benar menggunakan lensa 400mm pada full frame?",
           "hint": "M43 memiliki crop factor 2x. Pikirkan tentang kedalaman bidang dan perbedaan ukuran sensor.",
-          "successMessage": "Sangat baik! 200mm pada M43 (crop 2x) memberikan bidang pandang ekuivalen 400mm. Trade-off-nya: meskipun framing cocok dengan 400mm FF, kedalaman bidang cocok dengan lensa 200mm (DoF lebih dalam), dan sensor yang lebih kecil mengumpulkan lebih sedikit total cahaya, yang berarti kinerja noise yang lebih buruk pada ISO tinggi. Keuntungannya adalah lensa yang jauh lebih kecil, ringan, dan murah.",
-          "failureMessage": "200mm x crop 2,0 = FOV ekuivalen 400mm. Tetapi tidak identik dengan 400mm pada FF: Anda mendapatkan lebih banyak kedalaman bidang (berdasarkan FL aktual 200mm), pengumpulan cahaya lebih sedikit (sensor lebih kecil), dan lebih banyak noise pada ISO tinggi. Keuntungannya adalah peralatan yang jauh lebih kecil dan ringan.",
+          "successMessage": "Sangat baik! 200mm pada M43 (crop 2x) memberikan bidang pandang ekuivalen 400mm. Trade-off-nya: meskipun framing cocok dengan 400mm FF, kedalaman bidang cocok dengan lensa 200mm (kedalaman bidang lebih dalam), dan sensor yang lebih kecil mengumpulkan lebih sedikit total cahaya, yang berarti kinerja noise yang lebih buruk pada ISO tinggi. Keuntungannya adalah lensa yang jauh lebih kecil, ringan, dan murah.",
+          "failureMessage": "200mm x crop 2,0 = bidang pandang ekuivalen 400mm. Tetapi tidak identik dengan 400mm pada FF: Anda mendapatkan lebih banyak kedalaman bidang (berdasarkan FL aktual 200mm), pengumpulan cahaya lebih sedikit (sensor lebih kecil), dan lebih banyak noise pada ISO tinggi. Keuntungannya adalah peralatan yang jauh lebih kecil dan ringan.",
           "options": {
-            "0": { "label": "Ekuivalen 400mm — FOV sama tetapi DoF lebih dalam, noise lebih banyak, peralatan lebih kecil/ringan" },
-            "1": { "label": "Ekuivalen 400mm — identik dalam segala hal dengan 400mm pada full frame" },
-            "2": { "label": "Ekuivalen 200mm — crop factor tidak memengaruhi FOV" }
+            "0": {
+              "label": "Ekuivalen 400mm — bidang pandang sama tetapi kedalaman bidang lebih dalam, noise lebih banyak, peralatan lebih kecil/ringan"
+            },
+            "1": {
+              "label": "Ekuivalen 400mm — identik dalam segala hal dengan 400mm pada full frame"
+            },
+            "2": {
+              "label": "Ekuivalen 200mm — crop factor tidak memengaruhi bidang pandang"
+            }
           }
         }
       }

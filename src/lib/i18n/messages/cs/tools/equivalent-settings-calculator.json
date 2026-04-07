@@ -25,7 +25,7 @@
       "diagramTitle": "Porovnání snímače a zorného úhlu",
       "diagramSource": "Zdroj",
       "diagramTarget": "Cíl",
-      "diagramFovAngle": "FOV: {angle}°",
+      "diagramFovAngle": "zorné pole: {angle}°",
       "diagramCropFactor": "{factor}× crop",
       "matchDoF": "Dorovnat hloubku ostrosti",
       "matchFoV": "Dorovnat zorný úhel",

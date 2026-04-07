@@ -9,7 +9,7 @@
         },
         "1": {
           "heading": "Planificarea stack-ului",
-          "text": "Cheia unui stack reușit este ca adâncimea câmpului din fiecare cadru să se suprapună 20-30% cu cea a cadrului următor. Prea puțină suprapunere creează goluri în care nimic nu e clar, iar prea multă risipește cadre fără beneficiu. Calculatorul determină DoF-ul per cadru folosind formula cercului de confuzie, scade marja de suprapunere și împarte intervalul total de adâncime la pasul efectiv ca să calculeze numărul de cadre."
+          "text": "Cheia unui stack reușit este ca adâncimea câmpului din fiecare cadru să se suprapună 20-30% cu cea a cadrului următor. Prea puțină suprapunere creează goluri în care nimic nu e clar, iar prea multă risipește cadre fără beneficiu. Calculatorul determină profunzime de câmp-ul per cadru folosind formula cercului de confuzie, scade marja de suprapunere și împarte intervalul total de adâncime la pasul efectiv ca să calculeze numărul de cadre."
         },
         "2": {
           "heading": "Îmbinare și aliniere",
@@ -19,7 +19,7 @@
       "keyFactors": {
         "0": {
           "label": "Diafragmă",
-          "description": "Determină adâncimea câmpului per cadru. O diafragmă moderată (f/5.6-f/8) echilibrează claritatea și DoF-ul per cadru. Evită diafragmele foarte închise — difracția ia exact claritatea pentru care faci stacking-ul."
+          "description": "Determină adâncimea câmpului per cadru. O diafragmă moderată (f/5.6-f/8) echilibrează claritatea și profunzime de câmp-ul per cadru. Evită diafragmele foarte închise — difracția ia exact claritatea pentru care faci stacking-ul."
         },
         "1": {
           "label": "Interval de adâncime",
@@ -27,7 +27,7 @@
         },
         "2": {
           "label": "Suprapunere",
-          "description": "Procentul din DoF-ul fiecărui cadru care se suprapune cu cele vecine. 20-30% este standardul. Mai puțin de atât riști goluri, iar mai mult înseamnă cadre risipite."
+          "description": "Procentul din profunzime de câmp-ul fiecărui cadru care se suprapune cu cele vecine. 20-30% este standardul. Mai puțin de atât riști goluri, iar mai mult înseamnă cadre risipite."
         }
       },
       "tips": {
@@ -44,7 +44,7 @@
       "tooltips": {
         "focalLength": {
           "term": "Distanță focală",
-          "definition": "Distanța focală a obiectivului, în milimetri. Distanțele mai lungi reduc DoF-ul per cadru, cerând mai multe cadre pentru a acoperi același interval de adâncime."
+          "definition": "Distanța focală a obiectivului, în milimetri. Distanțele mai lungi reduc profunzime de câmp-ul per cadru, cerând mai multe cadre pentru a acoperi același interval de adâncime."
         },
         "aperture": {
           "term": "Diafragmă",
@@ -52,7 +52,7 @@
         },
         "sensor": {
           "term": "Dimensiunea senzorului",
-          "definition": "Senzorii mai mari au un DoF per cadru mai mic la încadrare echivalentă, ceea ce poate crește numărul de cadre necesare."
+          "definition": "Senzorii mai mari au un profunzime de câmp per cadru mai mic la încadrare echivalentă, ceea ce poate crește numărul de cadre necesare."
         },
         "nearLimit": {
           "term": "Limita apropiată",
@@ -73,38 +73,60 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Fotografiezi o floare mică, cu 3 cm adâncime de la petala din față la tulpină. Obiectivul tău macro la f/8 îți dă aproximativ 4 mm de DoF per cadru. De câte cadre ai nevoie, aproximativ, cu 25% suprapunere?",
+          "scenario": "Fotografiezi o floare mică, cu 3 cm adâncime de la petala din față la tulpină. Obiectivul tău macro la f/8 îți dă aproximativ 4 mm de profunzime de câmp per cadru. De câte cadre ai nevoie, aproximativ, cu 25% suprapunere?",
           "hint": "Fiecare cadru acoperă 4 mm, dar cu 25% suprapunere pasul efectiv este de 3 mm. Împarte 30 mm la 3 mm.",
-          "successMessage": "Corect! Cu 4 mm DoF și 25% suprapunere, fiecare pas avansează 3 mm. 30 mm / 3 mm = 10 cadre pentru a acoperi toată floarea.",
-          "failureMessage": "Cu 25% suprapunere, pasul efectiv al fiecărui cadru este 75% din DoF: 4 mm × 0,75 = 3 mm. Ai nevoie de 30 mm / 3 mm = 10 cadre.",
+          "successMessage": "Corect! Cu 4 mm profunzime de câmp și 25% suprapunere, fiecare pas avansează 3 mm. 30 mm / 3 mm = 10 cadre pentru a acoperi toată floarea.",
+          "failureMessage": "Cu 25% suprapunere, pasul efectiv al fiecărui cadru este 75% din profunzime de câmp: 4 mm × 0,75 = 3 mm. Ai nevoie de 30 mm / 3 mm = 10 cadre.",
           "options": {
-            "0": { "label": "5 cadre" },
-            "1": { "label": "10 cadre" },
-            "2": { "label": "20 cadre" },
-            "3": { "label": "30 cadre" }
+            "0": {
+              "label": "5 cadre"
+            },
+            "1": {
+              "label": "10 cadre"
+            },
+            "2": {
+              "label": "20 cadre"
+            },
+            "3": {
+              "label": "30 cadre"
+            }
           }
         },
         "1": {
           "scenario": "Vrei cel mai clar rezultat posibil din focus stack-ul tău. Ar trebui să fotografiezi fiecare cadru la f/2.8, f/8 sau f/22?",
           "hint": "Ia în calcul cea mai clară diafragmă a obiectivului și cum afectează difracția diafragmele mici.",
-          "successMessage": "Exact! f/8 este de obicei cea mai clară diafragmă pentru majoritatea obiectivelor. f/2.8 dă prea puțin DoF per cadru (risipești cadre), iar f/22 suferă de înmuiere prin difracție.",
-          "failureMessage": "f/8 este cea mai bună alegere. f/2.8 dă un DoF per cadru foarte subțire (cere multe cadre în plus), iar f/22 introduce înmuiere prin difracție, care anulează tocmai rostul stacking-ului pentru claritate.",
+          "successMessage": "Exact! f/8 este de obicei cea mai clară diafragmă pentru majoritatea obiectivelor. f/2.8 dă prea puțin profunzime de câmp per cadru (risipești cadre), iar f/22 suferă de înmuiere prin difracție.",
+          "failureMessage": "f/8 este cea mai bună alegere. f/2.8 dă un profunzime de câmp per cadru foarte subțire (cere multe cadre în plus), iar f/22 introduce înmuiere prin difracție, care anulează tocmai rostul stacking-ului pentru claritate.",
           "options": {
-            "0": { "label": "f/2.8 — cea mai largă, pentru timp rapid" },
-            "1": { "label": "f/8 — punctul optim al obiectivului" },
-            "2": { "label": "f/22 — DoF maxim per cadru" }
+            "0": {
+              "label": "f/2.8 — cea mai largă, pentru timp rapid"
+            },
+            "1": {
+              "label": "f/8 — punctul optim al obiectivului"
+            },
+            "2": {
+              "label": "f/22 — profunzime de câmp maxim per cadru"
+            }
           }
         },
         "2": {
           "scenario": "După ce îți îmbini focus stack-ul, observi o bandă neclară pe mijlocul imaginii, unde nimic nu e clar. Ce a mers, cel mai probabil, greșit?",
           "hint": "Gândește-te la ce face legătura dintre zona clară a unui cadru și cea a cadrului următor.",
           "successMessage": "Exact! Suprapunerea insuficientă între cadrele vecine creează un gol în care niciun cadru nu e clar. Crește suprapunerea la 25-30% și refotografiază.",
-          "failureMessage": "O bandă neclară înseamnă, de obicei, că distanța dintre pașii de focalizare a fost prea mare — DoF-ul cadrelor vecine nu s-a suprapus suficient. Crește procentul de suprapunere.",
+          "failureMessage": "O bandă neclară înseamnă, de obicei, că distanța dintre pașii de focalizare a fost prea mare — profunzime de câmp-ul cadrelor vecine nu s-a suprapus suficient. Crește procentul de suprapunere.",
           "options": {
-            "0": { "label": "Diafragma a fost prea largă" },
-            "1": { "label": "Suprapunere insuficientă între pașii de focalizare" },
-            "2": { "label": "Trepiedul s-a mișcat pe parcursul secvenței" },
-            "3": { "label": "ISO-ul a fost prea mare" }
+            "0": {
+              "label": "Diafragma a fost prea largă"
+            },
+            "1": {
+              "label": "Suprapunere insuficientă între pașii de focalizare"
+            },
+            "2": {
+              "label": "Trepiedul s-a mișcat pe parcursul secvenței"
+            },
+            "3": {
+              "label": "ISO-ul a fost prea mare"
+            }
           }
         }
       }

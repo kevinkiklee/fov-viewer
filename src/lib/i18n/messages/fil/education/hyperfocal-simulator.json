@@ -45,9 +45,15 @@
           "successMessage": "Tama! Ang Full Frame ang tamang pagpipilian para sa standard na 35mm sensor.",
           "failureMessage": "Hindi tama — piliin ang Full Frame sensor para tumugma sa standard na 35mm camera body.",
           "options": {
-            "0": { "label": "Full Frame" },
-            "1": { "label": "APS-C (Nikon/Sony)" },
-            "2": { "label": "Micro Four Thirds" }
+            "0": {
+              "label": "Full Frame"
+            },
+            "1": {
+              "label": "APS-C (Nikon/Sony)"
+            },
+            "2": {
+              "label": "Micro Four Thirds"
+            }
           }
         },
         "1": {
@@ -56,8 +62,12 @@
           "successMessage": "Tama! Ang 24mm lens ay may mas maikling hyperfocal distance dahil may squared na relasyon ang focal length.",
           "failureMessage": "Sa katunayan, ang mas maikling focal length ay laging nagbibigay ng mas maikling hyperfocal distance. Panalo ang 24mm dito.",
           "options": {
-            "0": { "label": "24mm sa f/8" },
-            "1": { "label": "50mm sa f/8" }
+            "0": {
+              "label": "24mm sa f/8"
+            },
+            "1": {
+              "label": "50mm sa f/8"
+            }
           }
         },
         "2": {
@@ -66,9 +76,15 @@
           "successMessage": "Magaling! Tama mong na-identify na kailangan mo ng hyperfocal distance na mga 6m, at nakita mo ang tamang aperture range.",
           "failureMessage": "Tandaan, ang near focus ay katumbas ng kalahati ng hyperfocal distance. Kailangan ng hyperfocal na nasa mga 6m para makakuha ng near-focus limit na 3m.",
           "options": {
-            "0": { "label": "f/2.8 — f/4" },
-            "1": { "label": "f/5.6 — f/8" },
-            "2": { "label": "f/16 — f/22" }
+            "0": {
+              "label": "f/2.8 — f/4"
+            },
+            "1": {
+              "label": "f/5.6 — f/8"
+            },
+            "2": {
+              "label": "f/16 — f/22"
+            }
           }
         },
         "3": {
@@ -77,19 +93,29 @@
           "successMessage": "Eksakto! Ang mas maliit na M43 sensor ay gumagamit ng mas maliit na CoC (mga 0.015mm kumpara sa 0.03mm), na nagpapataas ng hyperfocal distances para sa parehong focal length at aperture.",
           "failureMessage": "Ang pangunahing salik ay ang circle of confusion. Ang mas maliit na sensor ay nangangailangan ng mas masikip na CoC standard, na nagtutulak sa hyperfocal distances nang mas malayo.",
           "options": {
-            "0": { "label": "Ang focal length ng lens ay nagbabago sa crop sensor" },
-            "1": { "label": "Ang mas maliit na sensor ay gumagamit ng mas maliit na circle of confusion" },
-            "2": { "label": "Ang Micro Four Thirds camera ay may mas kaunting tumpak na autofocus" }
+            "0": {
+              "label": "Ang focal length ng lens ay nagbabago sa crop sensor"
+            },
+            "1": {
+              "label": "Ang mas maliit na sensor ay gumagamit ng mas maliit na circle of confusion"
+            },
+            "2": {
+              "label": "Ang Micro Four Thirds camera ay may mas kaunting tumpak na autofocus"
+            }
           }
         },
         "4": {
           "scenario": "Kumukuha ka ng architecture sa 14mm f/11 sa full frame. Ipinapakita ng table ang isang napakaikling hyperfocal distance. Dapat ka bang mag-stop down pa sa f/22 para sa mas malalim na depth of field, o mas maganda ba ang f/11?",
           "hint": "Isaalang-alang kung ano ang nangyayari sa image sharpness sa napakaliit na aperture.",
-          "successMessage": "Magaling! Sa f/11, ang diffraction ay minimal sa full frame, at ang hyperfocal distance sa 14mm ay napakaikli na. Ang pag-stop down sa f/22 ay magpapasama ng imahe dahil sa diffraction nang walang makabuluhang DoF benepisyo.",
-          "failureMessage": "Kahit ang f/22 ay nagbibigay ng mas maikling hyperfocal distance sa papel, ang diffraction softening sa f/22 sa full frame ay talagang nagpapababa ng kabuuang image sharpness. Sa 14mm f/11, ang hyperfocal distance ay napakaikli na, kaya ang dagdag na DoF ay hindi katumbas ng diffraction penalty.",
+          "successMessage": "Magaling! Sa f/11, ang diffraction ay minimal sa full frame, at ang hyperfocal distance sa 14mm ay napakaikli na. Ang pag-stop down sa f/22 ay magpapasama ng imahe dahil sa diffraction nang walang makabuluhang depth of field benepisyo.",
+          "failureMessage": "Kahit ang f/22 ay nagbibigay ng mas maikling hyperfocal distance sa papel, ang diffraction softening sa f/22 sa full frame ay talagang nagpapababa ng kabuuang image sharpness. Sa 14mm f/11, ang hyperfocal distance ay napakaikli na, kaya ang dagdag na depth of field ay hindi katumbas ng diffraction penalty.",
           "options": {
-            "0": { "label": "Mag-stop down sa f/22 para sa maximum depth of field" },
-            "1": { "label": "Manatili sa f/11 — ang diffraction sa f/22 ay magbabawas sa sharpness" }
+            "0": {
+              "label": "Mag-stop down sa f/22 para sa maximum depth of field"
+            },
+            "1": {
+              "label": "Manatili sa f/11 — ang diffraction sa f/22 ay magbabawas sa sharpness"
+            }
           }
         }
       }

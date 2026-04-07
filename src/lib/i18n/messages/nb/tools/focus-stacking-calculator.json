@@ -15,7 +15,7 @@
       "shotCount": "Antall bilder",
       "totalDepth": "Total dybde",
       "overlapMargin": "Overlappsmargin",
-      "perShotDoF": "DoF per bilde",
+      "perShotDoF": "dybdeskarphet per bilde",
       "focusStep": "Fokussteg",
       "exportPlan": "Eksporter plan",
       "exportCSV": "Eksporter som CSV",

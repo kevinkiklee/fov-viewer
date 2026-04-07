@@ -9,7 +9,7 @@
         },
         "1": {
           "heading": "Planlægning af stacken",
-          "text": "Nøglen til en vellykket stack er, at hver optagelses dybdeskarphed overlapper den næste med 20–30 %. For lidt overlap efterlader huller uden skarphed; for meget spilder billeder uden gevinst. Beregneren finder DoF pr. billede ud fra uskarphedscirklen, trækker overlapmargenen fra og dividerer den samlede dybde med det effektive skridt for at finde antallet af billeder."
+          "text": "Nøglen til en vellykket stack er, at hver optagelses dybdeskarphed overlapper den næste med 20–30 %. For lidt overlap efterlader huller uden skarphed; for meget spilder billeder uden gevinst. Beregneren finder dybdeskarphed pr. billede ud fra uskarphedscirklen, trækker overlapmargenen fra og dividerer den samlede dybde med det effektive skridt for at finde antallet af billeder."
         },
         "2": {
           "heading": "Fletning og justering",
@@ -19,7 +19,7 @@
       "keyFactors": {
         "0": {
           "label": "Blænde",
-          "description": "Bestemmer dybdeskarphed pr. billede. En moderat blænde (f/5.6–f/8) balancerer skarphed og DoF pr. billede. Undgå meget små blænder — diffraktion æder den skarphed, du i første omgang prøver at stacke dig til."
+          "description": "Bestemmer dybdeskarphed pr. billede. En moderat blænde (f/5.6–f/8) balancerer skarphed og dybdeskarphed pr. billede. Undgå meget små blænder — diffraktion æder den skarphed, du i første omgang prøver at stacke dig til."
         },
         "1": {
           "label": "Dybdeområde",
@@ -27,7 +27,7 @@
         },
         "2": {
           "label": "Overlap",
-          "description": "Hvor stor en procentdel af hvert billedes DoF, der overlapper med nabobilledets. 20–30 % er standard. Mindre risikerer huller, mere spilder billeder."
+          "description": "Hvor stor en procentdel af hvert billedes dybdeskarphed, der overlapper med nabobilledets. 20–30 % er standard. Mindre risikerer huller, mere spilder billeder."
         }
       },
       "tips": {
@@ -73,38 +73,60 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Du fotograferer en lille blomst, der er 3 cm dyb fra forreste kronblad til bageste stilk. Din makrolinse ved f/8 giver omkring 4 mm DoF pr. billede. Hvor mange billeder skal du bruge med 25 % overlap?",
+          "scenario": "Du fotograferer en lille blomst, der er 3 cm dyb fra forreste kronblad til bageste stilk. Din makrolinse ved f/8 giver omkring 4 mm dybdeskarphed pr. billede. Hvor mange billeder skal du bruge med 25 % overlap?",
           "hint": "Hvert billede dækker 4 mm, men med 25 % overlap er det effektive skridt 3 mm pr. billede. Divider 30 mm med 3 mm.",
-          "successMessage": "Rigtigt! Med 4 mm DoF og 25 % overlap rykker hvert skridt 3 mm. 30 mm / 3 mm = 10 billeder for at dække hele blomsten.",
-          "failureMessage": "Med 25 % overlap er det effektive skridt 75 % af DoF: 4 mm × 0,75 = 3 mm. Du skal altså bruge 30 mm / 3 mm = 10 billeder.",
+          "successMessage": "Rigtigt! Med 4 mm dybdeskarphed og 25 % overlap rykker hvert skridt 3 mm. 30 mm / 3 mm = 10 billeder for at dække hele blomsten.",
+          "failureMessage": "Med 25 % overlap er det effektive skridt 75 % af dybdeskarphed: 4 mm × 0,75 = 3 mm. Du skal altså bruge 30 mm / 3 mm = 10 billeder.",
           "options": {
-            "0": { "label": "5 billeder" },
-            "1": { "label": "10 billeder" },
-            "2": { "label": "20 billeder" },
-            "3": { "label": "30 billeder" }
+            "0": {
+              "label": "5 billeder"
+            },
+            "1": {
+              "label": "10 billeder"
+            },
+            "2": {
+              "label": "20 billeder"
+            },
+            "3": {
+              "label": "30 billeder"
+            }
           }
         },
         "1": {
           "scenario": "Du vil have det skarpest mulige resultat ud af din focus stack. Skal du skyde hvert billede ved f/2.8, f/8 eller f/22?",
           "hint": "Tænk på linsens skarpeste blænde, og hvordan diffraktion påvirker små blænder.",
-          "successMessage": "Rigtigt! f/8 er typisk den skarpeste blænde på de fleste linser. f/2.8 har for lidt DoF pr. billede (spild af billeder), og f/22 bliver blødt på grund af diffraktion.",
-          "failureMessage": "f/8 er bedst. f/2.8 giver meget tynd DoF pr. billede (og kræver mange flere billeder), og f/22 introducerer diffraktion, der modvirker hele pointen med at stacke for skarphed.",
+          "successMessage": "Rigtigt! f/8 er typisk den skarpeste blænde på de fleste linser. f/2.8 har for lidt dybdeskarphed pr. billede (spild af billeder), og f/22 bliver blødt på grund af diffraktion.",
+          "failureMessage": "f/8 er bedst. f/2.8 giver meget tynd dybdeskarphed pr. billede (og kræver mange flere billeder), og f/22 introducerer diffraktion, der modvirker hele pointen med at stacke for skarphed.",
           "options": {
-            "0": { "label": "f/2.8 — størst blænde for hurtigst lukker" },
-            "1": { "label": "f/8 — linsens sweet spot" },
-            "2": { "label": "f/22 — maks DoF pr. billede" }
+            "0": {
+              "label": "f/2.8 — størst blænde for hurtigst lukker"
+            },
+            "1": {
+              "label": "f/8 — linsens sweet spot"
+            },
+            "2": {
+              "label": "f/22 — maks dybdeskarphed pr. billede"
+            }
           }
         },
         "2": {
           "scenario": "Efter du har flettet din focus stack, ser du et blødt bånd midt i billedet, hvor intet er skarpt. Hvad gik mest sandsynligt galt?",
           "hint": "Tænk på, hvad der forbinder det ene billedes skarpe zone med det næstes.",
           "successMessage": "Præcis! For lidt overlap mellem nabobilleder skaber et hul, hvor intet billede er skarpt. Skru overlappet op til 25–30 %, og skyd igen.",
-          "failureMessage": "Et blødt bånd betyder som regel, at afstanden mellem fokustrin var for stor — DoF på nabobillederne overlappede ikke nok. Skru overlap-procenten op.",
+          "failureMessage": "Et blødt bånd betyder som regel, at afstanden mellem fokustrin var for stor — dybdeskarphed på nabobillederne overlappede ikke nok. Skru overlap-procenten op.",
           "options": {
-            "0": { "label": "Blænden var for stor" },
-            "1": { "label": "Utilstrækkeligt overlap mellem fokustrin" },
-            "2": { "label": "Stativet bevægede sig under sekvensen" },
-            "3": { "label": "ISO var for høj" }
+            "0": {
+              "label": "Blænden var for stor"
+            },
+            "1": {
+              "label": "Utilstrækkeligt overlap mellem fokustrin"
+            },
+            "2": {
+              "label": "Stativet bevægede sig under sekvensen"
+            },
+            "3": {
+              "label": "ISO var for høj"
+            }
           }
         }
       }

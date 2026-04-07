@@ -27,20 +27,20 @@
       "cropView": "Vizualizare crop:",
       "collapse": "Restrânge",
       "expand": "Extinde",
-      "fovComparison": "Comparație FOV",
+      "fovComparison": "Comparație câmp vizual",
       "loadingScene": "Se încarcă scena...",
       "faq": {
         "what-is-fov": {
           "question": "Ce este unghiul de vizualizare în fotografie?",
-          "answer": "Unghiul de vizualizare (FOV) este deschiderea unghiulară a scenei vizibile prin obiectiv și senzor. Determină cât din scenă este captat într-o fotografie și este influențat de distanța focală și de dimensiunea senzorului."
+          "answer": "Unghiul de vizualizare este deschiderea unghiulară a scenei vizibile prin obiectiv și senzor. Determină cât din scenă este captat într-o fotografie și este influențat de distanța focală și de dimensiunea senzorului."
         },
         "how-crop-factor-affects-fov": {
           "question": "Cum afectează factorul de crop unghiul de vizualizare?",
           "answer": "Un senzor mai mic (factor de crop mai mare) captează un unghi de vizualizare mai îngust decât un senzor full-frame la aceeași distanță focală. De exemplu, senzorii APS-C cu un factor de crop de 1.5x fac un obiectiv de 50mm să se comporte ca un 75mm în ceea ce privește unghiul de vizualizare."
         },
         "fov-vs-focal-length": {
-          "question": "Care este relația dintre FOV și distanța focală?",
-          "answer": "Unghiul de vizualizare și distanța focală sunt invers proporționale. Distanțele focale mai scurte (unghi larg) dau un unghi mai mare, iar cele mai lungi (tele) dau unul mai îngust. FOV-ul exact depinde și de dimensiunea senzorului."
+          "question": "Care este relația dintre câmp vizual și distanța focală?",
+          "answer": "Unghiul de vizualizare și distanța focală sunt invers proporționale. Distanțele focale mai scurte (unghi larg) dau un unghi mai mare, iar cele mai lungi (tele) dau unul mai îngust. câmp vizual-ul exact depinde și de dimensiunea senzorului."
         }
       }
     }

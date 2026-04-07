@@ -1,11 +1,11 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Görüş alanı (FOV), kameranızın bir sahneden ne kadarını yakaladığıdır. Geniş açı bir objektif (24mm gibi) geniş bir görünüm görürken, telefoto bir objektif (200mm gibi) küçük bir dilime yakınlaşır. Bu simülatör, gerçek dünya sahneleri üzerinde dört adede kadar objektifi farklı sensörlerle karşılaştırmanıza ve her kombinasyonun tam olarak ne yakaladığını görselleştirmenize olanak tanır.",
+      "beginner": "Görüş alanı, kameranızın bir sahneden ne kadarını yakaladığıdır. Geniş açı bir objektif (24mm gibi) geniş bir görünüm görürken, telefoto bir objektif (200mm gibi) küçük bir dilime yakınlaşır. Bu simülatör, gerçek dünya sahneleri üzerinde dört adede kadar objektifi farklı sensörlerle karşılaştırmanıza ve her kombinasyonun tam olarak ne yakaladığını görselleştirmenize olanak tanır.",
       "deeper": {
         "0": {
-          "heading": "FOV Formülü",
-          "text": "Görüş alanı iki faktör tarafından belirlenir: odak uzaklığı ve sensör boyutu. Yatay FOV açısı 2 × arctan(sensörGenişliği / (2 × odakUzaklığı)) olarak hesaplanır. Daha kısa odak uzaklığı veya daha büyük sensör daha geniş bir görüş açısı üretir."
+          "heading": "görüş alanı Formülü",
+          "text": "Görüş alanı iki faktör tarafından belirlenir: odak uzaklığı ve sensör boyutu. Yatay görüş alanı açısı 2 × arctan(sensörGenişliği / (2 × odakUzaklığı)) olarak hesaplanır. Daha kısa odak uzaklığı veya daha büyük sensör daha geniş bir görüş açısı üretir."
         },
         "1": {
           "heading": "Kırpma Faktörü ve Eşdeğer Odak Uzaklığı",
@@ -31,7 +31,7 @@
         },
         "3": {
           "label": "Sahne Bağlamı",
-          "description": "Farklı sahneler (şehir manzaraları, iç mekanlar, doğa) FOV değişikliklerinin çeşitli gerçek dünya bağlamlarında nasıl hissedildiğini anlamanıza yardımcı olur."
+          "description": "Farklı sahneler (şehir manzaraları, iç mekanlar, doğa) görüş alanı değişikliklerinin çeşitli gerçek dünya bağlamlarında nasıl hissedildiğini anlamanıza yardımcı olur."
         }
       },
       "tips": {
@@ -60,7 +60,7 @@
         },
         "Orientation": {
           "term": "Yön",
-          "definition": "Yatay ve dikey kamera yönü arasında geçiş yapın. FOV dikdörtgeni buna göre döner."
+          "definition": "Yatay ve dikey kamera yönü arasında geçiş yapın. görüş alanı dikdörtgeni buna göre döner."
         }
       },
       "challenges": {
@@ -70,9 +70,15 @@
           "successMessage": "Doğru! 24mm'lik bir objektif sahnenin 70mm'den çok daha fazlasını görür. Geniş açı objektiflerin kısa odak uzaklıkları vardır.",
           "failureMessage": "Daha kısa odak uzaklıkları daha geniş görüş alanları verir. 24mm, silüetin 70mm'den çok daha fazlasını yakalayan geniş açı bir objektiftir.",
           "options": {
-            "0": { "label": "24mm" },
-            "1": { "label": "70mm" },
-            "2": { "label": "200mm" }
+            "0": {
+              "label": "24mm"
+            },
+            "1": {
+              "label": "70mm"
+            },
+            "2": {
+              "label": "200mm"
+            }
           }
         },
         "1": {
@@ -81,20 +87,32 @@
           "successMessage": "Doğru! Tam karede 50mm, klasik \"normal\" objektiftir — yaklaşık 46 derecelik görüş alanı, insan gözünün doğal olarak odaklandığı şeye yakındır.",
           "failureMessage": "Tam karede 50mm, görüş alanı (~46 derece) rahat insan algısına yakından eşleştiği için \"normal\" objektif olarak kabul edilir.",
           "options": {
-            "0": { "label": "Ultra geniş açı" },
-            "1": { "label": "Normal / standart" },
-            "2": { "label": "Telefoto" }
+            "0": {
+              "label": "Ultra geniş açı"
+            },
+            "1": {
+              "label": "Normal / standart"
+            },
+            "2": {
+              "label": "Telefoto"
+            }
           }
         },
         "2": {
-          "scenario": "İki objektif ekleyin: Objektif A, APS-C'de (Nikon/Sony) 35mm ve Objektif B, Tam Karede 50mm. İki FOV kaplamasını karşılaştırın. Ne fark ediyorsunuz?",
+          "scenario": "İki objektif ekleyin: Objektif A, APS-C'de (Nikon/Sony) 35mm ve Objektif B, Tam Karede 50mm. İki görüş alanı kaplamasını karşılaştırın. Ne fark ediyorsunuz?",
           "hint": "35mm çarpı APS-C kırpma faktörü 1,5 eşittir...",
           "successMessage": "Kesinlikle! APS-C'de (1,5x kırpma) 35mm, tam karede 52,5mm'ye eşdeğer görüş alanı verir — 50mm FF'ye neredeyse aynı. Kaplamalar neredeyse aynı boyuttadır.",
           "failureMessage": "35mm x 1,5 kırpma faktörü = 52,5mm eşdeğeri. Bu tam karede 50mm'ye neredeyse aynıdır, bu yüzden kaplamalar neredeyse aynıdır.",
           "options": {
-            "0": { "label": "Neredeyse aynı görüş alanlarına sahipler" },
-            "1": { "label": "APS-C objektif çok daha geniş bir görünüm gösteriyor" },
-            "2": { "label": "Tam Kare objektif çok daha geniş bir görünüm gösteriyor" }
+            "0": {
+              "label": "Neredeyse aynı görüş alanlarına sahipler"
+            },
+            "1": {
+              "label": "APS-C objektif çok daha geniş bir görünüm gösteriyor"
+            },
+            "2": {
+              "label": "Tam Kare objektif çok daha geniş bir görünüm gösteriyor"
+            }
           }
         },
         "3": {
@@ -103,20 +121,32 @@
           "successMessage": "Doğru! Tam Kare daha fazlasını görür çünkü daha büyük sensör 24mm objektifin görüntü çemberinin daha geniş bir kısmını yakalar. APS-C'de aynı 24mm objektif yaklaşık 36mm gibi kadrajlar.",
           "failureMessage": "Tam Kare sahnenin daha fazlasını yakalar. Daha büyük sensör objektif görüntü çemberinin daha fazlasını kullanarak daha geniş etkili bir görüş alanı verir.",
           "options": {
-            "0": { "label": "Tam Kare — daha büyük sensör daha fazlasını görür" },
-            "1": { "label": "APS-C — kırpma sensörü daha fazlasını görür" },
-            "2": { "label": "İkisi de aynıyı görür — önemli olan odak uzaklığıdır" }
+            "0": {
+              "label": "Tam Kare — daha büyük sensör daha fazlasını görür"
+            },
+            "1": {
+              "label": "APS-C — kırpma sensörü daha fazlasını görür"
+            },
+            "2": {
+              "label": "İkisi de aynıyı görür — önemli olan odak uzaklığıdır"
+            }
           }
         },
         "4": {
           "scenario": "Bir yaban hayatı fotoğrafçısı Mikro Dört Üçlü üzerinde 200mm objektifle çekim yapıyor. Bu hangi tam kare eşdeğer odak uzaklığını üretir ve tam karede gerçekten 400mm objektif kullanmaya kıyasla karşılaştığı dezavantaj nedir?",
           "hint": "M43'ün 2x kırpma faktörü var. Alan derinliği ve sensör boyutu farklılıklarını düşünün.",
-          "successMessage": "Mükemmel! M43'te (2x kırpma) 200mm, 400mm eşdeğer görüş alanı verir. Karşılaştığı dezavantaj: kadrajlama 400mm FF ile eşleşse de, alan derinliği 200mm objektife (daha derin DoF) eşleşir ve daha küçük sensör daha az toplam ışık toplar, yani yüksek ISO'da daha kötü gürültü performansı demektir. Avantajı çok daha küçük, hafif ve ucuz bir objektiftir.",
-          "failureMessage": "200mm x 2,0 kırpma = 400mm eşdeğer FOV. Ama FF'de 400mm ile aynı değildir: daha fazla alan derinliği (gerçek 200mm odak uzaklığına dayalı), daha az ışık toplama (daha küçük sensör) ve yüksek ISO'da daha fazla gürültü elde edersiniz. Avantajı önemli ölçüde daha küçük ve hafif ekipmandır.",
+          "successMessage": "Mükemmel! M43'te (2x kırpma) 200mm, 400mm eşdeğer görüş alanı verir. Karşılaştığı dezavantaj: kadrajlama 400mm FF ile eşleşse de, alan derinliği 200mm objektife (daha derin alan derinliği) eşleşir ve daha küçük sensör daha az toplam ışık toplar, yani yüksek ISO'da daha kötü gürültü performansı demektir. Avantajı çok daha küçük, hafif ve ucuz bir objektiftir.",
+          "failureMessage": "200mm x 2,0 kırpma = 400mm eşdeğer görüş alanı. Ama FF'de 400mm ile aynı değildir: daha fazla alan derinliği (gerçek 200mm odak uzaklığına dayalı), daha az ışık toplama (daha küçük sensör) ve yüksek ISO'da daha fazla gürültü elde edersiniz. Avantajı önemli ölçüde daha küçük ve hafif ekipmandır.",
           "options": {
-            "0": { "label": "400mm eşdeğer — aynı FOV ama daha derin DoF, daha fazla gürültü, daha küçük/hafif ekipman" },
-            "1": { "label": "400mm eşdeğer — tam karede 400mm ile her yönden aynı" },
-            "2": { "label": "200mm eşdeğer — kırpma faktörü FOV'u etkilemez" }
+            "0": {
+              "label": "400mm eşdeğer — aynı görüş alanı ama daha derin alan derinliği, daha fazla gürültü, daha küçük/hafif ekipman"
+            },
+            "1": {
+              "label": "400mm eşdeğer — tam karede 400mm ile her yönden aynı"
+            },
+            "2": {
+              "label": "200mm eşdeğer — kırpma faktörü görüş alanı'u etkilemez"
+            }
           }
         }
       }

@@ -15,7 +15,7 @@
       "shotCount": "Απαιτούμενες λήψεις",
       "totalDepth": "Συνολικό βάθος",
       "overlapMargin": "Περιθώριο επικάλυψης",
-      "perShotDoF": "DoF ανά λήψη",
+      "perShotDoF": "βάθος πεδίου ανά λήψη",
       "focusStep": "Βήμα εστίασης",
       "exportPlan": "Εξαγωγή πλάνου",
       "exportCSV": "Εξαγωγή ως CSV",
