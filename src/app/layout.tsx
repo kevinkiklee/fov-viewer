@@ -9,6 +9,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html suppressHydrationWarning>
       <head>
+        <meta name="facebook-domain-verification" content="ggwy69tbq5cn3pvypxdvay1xl6ykjs" />
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
