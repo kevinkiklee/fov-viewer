@@ -34,7 +34,11 @@ test-results/
 # Claude / Superpowers
 .claude/
 .superpowers/
+.worktrees/
 docs/superpowers/
+
+# Internal business docs
+docs/internal/
 
 # Scratch files
 *.png
