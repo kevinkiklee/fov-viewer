@@ -302,7 +302,7 @@ describe('i18n routing config consistency', () => {
 
   it('every locale has an OpenGraph locale', () => {
     for (const locale of locales) {
-      expect(localeOpenGraph[locale]).toMatch(/^[a-z]{2}_[A-Z]{2}$/)
+      expect(localeOpenGraph[locale]).toMatch(/^[a-z]{2,3}_[A-Z]{2}$/)
     }
   })
 

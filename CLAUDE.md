@@ -10,7 +10,7 @@ PhotoTools is an educational photography application — free calculators, simul
 
 - Next.js 16 (App Router, Turbopack dev)
 - React 19 + TypeScript 6
-- next-intl 4.x (i18n — 5 locales: en, es, ja, de, fr)
+- next-intl 4.x (i18n — 31 locales: en, es, ja, de, fr, nl, ko, pt, it, hi, zh, tr, pl, id, vi, th, ru, bn, zh-TW, uk, sv, da, nb, fi, cs, ro, hu, el, ms, fil, ca)
 - Vitest + jsdom + @testing-library/react + @testing-library/jest-dom
 - ESLint with typescript-eslint
 - CSS Modules + CSS custom properties (design tokens)
@@ -23,7 +23,7 @@ PhotoTools is an educational photography application — free calculators, simul
 - `npm run dev` — start dev server with Turbopack at `http://localhost:3000`
 - `npm run build` — production build via `next build`
 - `npm run start` — serve production build locally
-- `npm test` — run Vitest tests (443 tests across 35 files)
+- `npm test` — run Vitest tests (724 tests across 44 files)
 - `npm run test:watch` — run tests in watch mode
 - `npm run test:e2e` — run Playwright e2e tests (requires a build first)
 - `npm run test:e2e:ui` — run Playwright tests with interactive UI
@@ -92,19 +92,25 @@ public/                   Images, icons, manifest
 
 ## Internationalization (i18n)
 
-Uses **next-intl** with 5 locales: English (en), Spanish (es), Japanese (ja), German (de), French (fr).
+Uses **next-intl** with **31 locales**:
+
+- **Original 5**: English (en), Spanish (es), Japanese (ja), German (de), French (fr)
+- **First wave (11)**: Dutch (nl), Korean (ko), Portuguese (pt), Italian (it), Hindi (hi), Simplified Chinese (zh), Turkish (tr), Polish (pl), Indonesian (id), Vietnamese (vi), Thai (th)
+- **Second wave (15)**: Russian (ru), Bengali (bn), Traditional Chinese (zh-TW), Ukrainian (uk), Swedish (sv), Danish (da), Norwegian Bokmål (nb), Finnish (fi), Czech (cs), Romanian (ro), Hungarian (hu), Greek (el), Malay (ms), Filipino (fil), Catalan (ca)
+
+The 31-locale set is defined in `src/lib/i18n/routing.ts` along with `localeNames` (display names for the language switcher) and `localeOpenGraph` (BCP-47 → OG locale mapping). The `LanguageSwitcher` sorts locales alphabetically by display name and shows a scrollable dropdown (`max-height: 60vh`).
 
 ### How it works
 
-**Routing:** All routes are locale-prefixed (`/en/fov-simulator`, `/es/fov-simulator`, etc.). Middleware (`src/middleware.ts`) detects locale from URL → cookie → Accept-Language → fallback `en`. Config lives in `src/lib/i18n/routing.ts` (locale list, `defineRouting`). Navigation uses locale-aware wrappers from `src/lib/i18n/navigation.ts` — always import `Link`, `usePathname`, `useRouter`, `redirect` from `@/lib/i18n/navigation`, NOT from `next/link` or `next/navigation`.
+**Routing:** All routes are locale-prefixed (`/en/fov-simulator`, `/es/fov-simulator`, `/zh-TW/fov-simulator`, etc.). The proxy at `src/proxy.ts` (Next.js Routing Middleware, formerly `middleware.ts`) detects locale from URL → cookie → Accept-Language → fallback `en`, and adds a 308 redirect for lowercase `/zh-tw/*` → `/zh-TW/*` since Next.js routing is case-sensitive and `zh-TW` is the only hyphenated locale. Config lives in `src/lib/i18n/routing.ts` (locale list, `defineRouting`). Navigation uses locale-aware wrappers from `src/lib/i18n/navigation.ts` — always import `Link`, `usePathname`, `useRouter`, `redirect` from `@/lib/i18n/navigation`, NOT from `next/link` or `next/navigation`.
 
 **Layouts:** Root layout (`src/app/layout.tsx`) provides `<html>`, `<body>`, and imports `globals.css`. It does NOT use any next-intl APIs. Locale layout (`src/app/[locale]/layout.tsx`) calls `setRequestLocale(locale)`, wraps children in `NextIntlClientProvider`. Any client component using next-intl hooks (like `usePathname` from navigation, `useLocale`, `useTranslations`) MUST be rendered inside the `NextIntlClientProvider`.
 
-**Messages:** Translatable strings live in JSON files under `src/lib/i18n/messages/{locale}/` (37 files per locale, 185 total). The message loader (`src/lib/i18n/request.ts`) dynamically imports all files for the request's locale and merges them into namespaces. English is the source of truth — other locales mirror the exact same key structure.
+**Messages:** Translatable strings live in JSON files under `src/lib/i18n/messages/{locale}/` (41 files per locale, 1271 total across 31 locales). The message loader (`src/lib/i18n/request.ts`) dynamically imports all files for the request's locale and merges them into namespaces. English is the source of truth — other locales mirror the exact same key structure. **Translation discipline:** see `src/lib/i18n/glossary.photography.json` for the canonical photography terms in all 31 locales (used as the reference glossary by translation agents).
 
 **Tool names/descriptions** are translated via the `tools` namespace (`tools.{slug}.name`, `tools.{slug}.description`). The homepage and nav read from translations, not from the hardcoded `tool.name`/`tool.description` in the tool registry. Tool slugs in URLs stay in English across all locales.
 
-**Translation coverage:** Run `node scripts/check-translations.mjs` to verify all locales have complete key coverage vs English.
+**Translation coverage:** Run `node scripts/check-translations.mjs` to verify all 31 locales have complete key coverage vs English. Run `node scripts/find-english-leaks.mjs` to detect English text that leaked into translated files (heuristic with allowlist for brand/tech codes — exits non-zero on HARD leaks). Run `node scripts/translation-status.mjs` for a per-locale file-count + last-modified summary.
 
 **Namespaces** (top-level key in each JSON file → how components access strings):
 
@@ -123,17 +129,18 @@ Education files are merged into a single `education` namespace; tool UI files ar
 
 ### Adding new strings
 
-**To an existing tool** — add keys to the tool's JSON file in ALL locales:
+**To an existing tool** — add keys to the tool's JSON file in ALL 31 locales:
 1. Add key to `src/lib/i18n/messages/en/tools/<tool-slug>.json` under the `toolUI.<tool-slug>` object
-2. Add the same key with translated values to `es/`, `ja/`, `de/`, `fr/` versions
+2. Add the same key with translated values to all 30 other locale folders (use the photography glossary in `src/lib/i18n/glossary.photography.json` for canonical terminology)
 3. In component: `const t = useTranslations('toolUI.<tool-slug>')` → `t('newKey')`
+4. Run `node scripts/check-translations.mjs` and `node scripts/find-english-leaks.mjs` to verify
 
-**To a new tool** — files must be created in ALL locales and registered:
-1. Create `src/lib/i18n/messages/{en,es,ja,de,fr}/tools/<tool-slug>.json` with `{ "toolUI": { "<tool-slug>": { ... } } }`
-2. Create `src/lib/i18n/messages/{en,es,ja,de,fr}/education/<tool-slug>.json` with `{ "education": { "<tool-slug>": { ... } } }`
+**To a new tool** — files must be created in ALL 31 locales and registered:
+1. Create `src/lib/i18n/messages/{locale}/tools/<tool-slug>.json` with `{ "toolUI": { "<tool-slug>": { ... } } }` for each of the 31 locales
+2. Create `src/lib/i18n/messages/{locale}/education/<tool-slug>.json` with `{ "education": { "<tool-slug>": { ... } } }` for each locale
 3. **Register both files in `src/lib/i18n/request.ts`**: add an import to the `Promise.all` array, add the variable to the `toolUIMessages` and/or `educationMessages` reducer array. **If you skip this step, the strings will not load and you'll get `MISSING_MESSAGE` errors at runtime.**
-4. Add the tool's name/description to `messages/{en,es,ja,de,fr}/tools.json` under the `tools` namespace
-5. Run `node scripts/check-translations.mjs` to verify coverage
+4. Add the tool's name/description to `messages/{locale}/tools.json` under the `tools` namespace for each locale
+5. Run `node scripts/check-translations.mjs` to verify coverage and `node scripts/find-english-leaks.mjs` to detect leaks
 
 **To shared UI** (nav, footer, actions, etc.) — add keys to `messages/{locale}/common.json` under the appropriate sub-object in ALL locales.
 
@@ -152,9 +159,13 @@ All redirect rules are centralized in `src/lib/i18n/redirects.ts`. Static redire
 - **Glossary** (`src/lib/data/glossary.ts`) stores entry IDs and optional relatedTool slugs. Terms and definitions are in `messages/{locale}/glossary.json`.
 - **Tool slugs** — URL slugs stay in English across all locales. Never translate slugs.
 
-### Japanese Font
+### Conditional Fonts (Japanese & Bengali)
 
-Noto Sans JP is loaded conditionally for the `ja` locale only (via `next/font` in `[locale]/layout.tsx`). A `[lang="ja"]` CSS rule in `globals.css` applies the font. Non-Japanese locales use the default font stack.
+`Noto Sans JP` and `Noto Sans Bengali` are loaded conditionally via `next/font` in `[locale]/layout.tsx` and applied via `[lang="ja"]` and `[lang="bn"]` CSS rules in `globals.css`. Other locales use the default font stack. Both fonts use `display: swap` and the smallest applicable subset to minimize CWV impact.
+
+### Legal Translation Disclaimer
+
+Privacy and Terms pages render `commonT('legalTranslationDisclaimer')` as a callout `<aside>` for non-English locales, telling users that the translation is for convenience and the English version is legally binding. The disclaimer key is in every locale's `common.json`.
 
 ## Data Management
 
@@ -218,7 +229,7 @@ GoogleAdSense integration managed via `src/lib/ads.ts` (configuration and featur
 - **DRY**: Avoid duplicating logic, styles, constants, or markup. Extract shared utilities, components, and data modules. When adding a feature, check if similar patterns already exist in the codebase and reuse them.
 - **200-line file limit**: Keep all `.ts`/`.tsx` files under 200 lines (test files exempt). If a file grows beyond this, break it into smaller focused modules (e.g. extract hooks, sub-components, helpers, constants, or types into separate files).
 - **Test files** co-located next to source files (`*.test.ts`)
-- **35 test files, 443 tests** covering math, data, education, ads, i18n, and component integration
+- **44 test files, 724 tests** covering math, data, education, ads, i18n (including all 31 locales), and component integration
 - **After file changes in `src/app/`**, clear `.next` cache (`rm -rf .next`) and restart dev server to avoid stale MIME type and 404 errors
 - **i18n strings required**: Whenever a new user-facing string is added or an existing one is modified, create or update the corresponding translation in the appropriate JSON file under `src/lib/i18n/messages/en/`. Never hardcode user-facing text directly in components — always use `useTranslations` (client) or `getTranslations` (server) to reference translation keys.
 - **Privacy Sandbox is deprecated** — do not discuss, recommend, or implement any Privacy Sandbox APIs (Topics, Attribution Reporting, Protected Audience, etc.)
