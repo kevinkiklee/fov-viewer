@@ -1,6 +1,15 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen } from '@testing-library/react'
 
+// Mock IntersectionObserver for jsdom
+class MockIntersectionObserver {
+  observe = vi.fn()
+  disconnect = vi.fn()
+  unobserve = vi.fn()
+  constructor() {}
+}
+vi.stubGlobal('IntersectionObserver', MockIntersectionObserver)
+
 vi.mock('@/lib/ads', () => ({
   isAdsEnabled: vi.fn(),
   AD_FORMATS: {
