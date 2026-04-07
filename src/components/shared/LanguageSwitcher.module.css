@@ -39,6 +39,8 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 100;
   min-width: 140px;
+  max-height: 60vh;
+  overflow-y: auto;
 }
 
 .option {

@@ -85,7 +85,8 @@ export async function generateOgImage(slug: string, overrides?: { name?: string,
   )
 }
 
-export async function generateHomepageOgImage() {
+export async function generateHomepageOgImage(opts: { title: string; description: string }) {
+  const { title, description } = opts
   return new ImageResponse(
     (
       <OgBackground>
@@ -111,10 +112,10 @@ export async function generateHomepageOgImage() {
               marginBottom: 24,
             }}
           >
-            Free Photography Tools
+            {title}
           </div>
           <div style={{ fontSize: 28, color: '#888888', lineHeight: 1.5 }}>
-            Interactive calculators, simulators, and visualizers for photographers. No sign-up required.
+            {description}
           </div>
         </div>
         <OgAccentLine />

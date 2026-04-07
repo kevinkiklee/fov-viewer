@@ -1,6 +1,6 @@
 import { defineRouting } from 'next-intl/routing'
 
-export const locales = ['en', 'es', 'ja', 'de', 'fr', 'nl', 'ko', 'pt', 'it', 'hi', 'zh', 'tr', 'pl', 'id', 'vi', 'th'] as const
+export const locales = ['en', 'es', 'ja', 'de', 'fr', 'nl', 'ko', 'pt', 'it', 'hi', 'zh', 'tr', 'pl', 'id', 'vi', 'th', 'ru', 'bn', 'zh-TW', 'uk', 'sv', 'da', 'nb', 'fi', 'cs', 'ro', 'hu', 'el', 'ms', 'fil', 'ca'] as const
 export type Locale = (typeof locales)[number]
 export const defaultLocale: Locale = 'en'
 
@@ -21,6 +21,21 @@ export const localeNames: Record<Locale, string> = {
   id: 'Bahasa Indonesia',
   vi: 'Tiếng Việt',
   th: 'ไทย',
+  ru: 'Русский',
+  bn: 'বাংলা',
+  'zh-TW': '繁體中文',
+  uk: 'Українська',
+  sv: 'Svenska',
+  da: 'Dansk',
+  nb: 'Norsk bokmål',
+  fi: 'Suomi',
+  cs: 'Čeština',
+  ro: 'Română',
+  hu: 'Magyar',
+  el: 'Ελληνικά',
+  ms: 'Bahasa Melayu',
+  fil: 'Filipino',
+  ca: 'Català',
 }
 
 export const localeOpenGraph: Record<Locale, string> = {
@@ -40,6 +55,21 @@ export const localeOpenGraph: Record<Locale, string> = {
   id: 'id_ID',
   vi: 'vi_VN',
   th: 'th_TH',
+  ru: 'ru_RU',
+  bn: 'bn_IN',
+  'zh-TW': 'zh_TW',
+  uk: 'uk_UA',
+  sv: 'sv_SE',
+  da: 'da_DK',
+  nb: 'nb_NO',
+  fi: 'fi_FI',
+  cs: 'cs_CZ',
+  ro: 'ro_RO',
+  hu: 'hu_HU',
+  el: 'el_GR',
+  ms: 'ms_MY',
+  fil: 'fil_PH',
+  ca: 'ca_ES',
 }
 
 export const routing = defineRouting({

@@ -13,6 +13,7 @@ export function LanguageSwitcher() {
   const router = useRouter()
   const [open, setOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
+  const sortedLocales = [...locales].sort((a, b) => localeNames[a].localeCompare(localeNames[b]))
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -54,7 +55,7 @@ export function LanguageSwitcher() {
       </button>
       {open && (
         <ul className={styles.dropdown} role="listbox" aria-label="Select language">
-          {locales.map((l) => (
+          {sortedLocales.map((l) => (
             <li key={l} role="option" aria-selected={l === locale}>
               <button
                 className={`${styles.option} ${l === locale ? styles.optionActive : ''}`}

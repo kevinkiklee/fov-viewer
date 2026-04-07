@@ -17,6 +17,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
   const { locale } = await params
   setRequestLocale(locale)
   const t = await getTranslations('privacy')
+  const commonT = await getTranslations('common')
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -34,6 +35,22 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
   return (
     <div style={{ padding: 'var(--space-xl) var(--space-md)', maxWidth: 800, margin: '0 auto', overflowY: 'auto' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {locale !== 'en' && (
+        <aside
+          role="note"
+          style={{
+            padding: 'var(--space-md)',
+            marginBottom: 'var(--space-lg)',
+            borderLeft: '3px solid var(--accent)',
+            background: 'var(--bg-secondary)',
+            fontSize: 14,
+            color: 'var(--text-secondary)',
+            borderRadius: 4,
+          }}
+        >
+          {commonT('legalTranslationDisclaimer')}
+        </aside>
+      )}
       <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 'var(--space-sm)' }}>{t('title')}</h1>
       <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--space-xl)' }}>{t('effectiveDate')}</p>
 

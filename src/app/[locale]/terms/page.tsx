@@ -16,6 +16,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
   const { locale } = await params
   setRequestLocale(locale)
   const t = await getTranslations('terms')
+  const commonT = await getTranslations('common')
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -43,6 +44,22 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {locale !== 'en' && (
+        <aside
+          role="note"
+          style={{
+            padding: 'var(--space-md)',
+            marginBottom: 'var(--space-lg)',
+            borderLeft: '3px solid var(--accent)',
+            background: 'var(--bg-secondary)',
+            fontSize: 14,
+            color: 'var(--text-secondary)',
+            borderRadius: 4,
+          }}
+        >
+          {commonT('legalTranslationDisclaimer')}
+        </aside>
+      )}
       <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 'var(--space-sm)' }}>
         {t('title')}
       </h1>

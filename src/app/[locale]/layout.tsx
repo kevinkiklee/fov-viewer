@@ -7,12 +7,27 @@ import { notFound } from 'next/navigation'
 
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Analytics } from '@vercel/analytics/next'
+import { Noto_Sans_JP, Noto_Sans_Bengali } from 'next/font/google'
 import { ThemeProvider } from '@/components/layout/ThemeProvider'
 import { JsonLd } from '@/components/shared/JsonLd'
 import { AdScripts } from '@/components/shared/AdScripts'
 import { routing, localeOpenGraph } from '@/lib/i18n/routing'
 import type { Locale } from '@/lib/i18n/routing'
 import { getCookieyesId } from '@/lib/ads'
+
+const notoSansJP = Noto_Sans_JP({
+  subsets: ['latin'],
+  variable: '--font-ja',
+  display: 'swap',
+  weight: ['400', '500', '600', '700'],
+})
+
+const notoSansBengali = Noto_Sans_Bengali({
+  subsets: ['bengali', 'latin'],
+  variable: '--font-bn',
+  display: 'swap',
+  weight: ['400', '500', '600', '700'],
+})
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
@@ -39,6 +54,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       url: `https://www.phototools.io/${locale}`,
       siteName: 'PhotoTools',
       locale: ogLocale,
+      alternateLocale: routing.locales
+        .filter((l) => l !== locale)
+        .map((l) => localeOpenGraph[l]),
       type: 'website',
     },
     twitter: { card: 'summary_large_image', title: ogTitle, description },
@@ -62,12 +80,14 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   const commonT = await getTranslations({ locale, namespace: 'common' })
   const siteT = await getTranslations({ locale, namespace: 'metadata.site' })
+  const ogLocale = localeOpenGraph[locale as Locale] || 'en_US'
   const websiteJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'PhotoTools',
     url: 'https://www.phototools.io',
     description: siteT('description'),
+    inLanguage: ogLocale,
   }
   const orgJsonLd = {
     '@context': 'https://schema.org',
@@ -75,6 +95,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     name: 'PhotoTools',
     url: 'https://www.phototools.io',
     logo: 'https://www.phototools.io/icon.svg',
+    inLanguage: ogLocale,
   }
 
   const cookieyesId = getCookieyesId()
@@ -104,7 +125,14 @@ export default async function LocaleLayout({ children, params }: Props) {
         <JsonLd />
         <ThemeProvider>
           <ViewTransition>
-            <div id="main-content">
+            <div
+              id="main-content"
+              className={
+                locale === 'ja' ? notoSansJP.variable :
+                locale === 'bn' ? notoSansBengali.variable :
+                undefined
+              }
+            >
               {children}
             </div>
           </ViewTransition>

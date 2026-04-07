@@ -89,6 +89,6 @@ for (const locale of locales) {
 test('bare tool URL redirects to locale-prefixed URL', async ({ page }) => {
   const response = await page.goto('/fov-simulator')
   // Should redirect to /en/fov-simulator (or another locale)
-  expect(page.url()).toMatch(/\/[a-z]{2}\/fov-simulator/)
+  expect(page.url()).toMatch(/\/[a-z]{2}(-[A-Z]{2})?\/fov-simulator/)
   expect(response!.status()).toBeLessThan(400)
 })

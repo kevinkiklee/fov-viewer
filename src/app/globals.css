@@ -4,6 +4,10 @@
   font-family: var(--font-ja, inherit), sans-serif;
 }
 
+[lang="bn"] {
+  font-family: var(--font-bn, inherit), sans-serif;
+}
+
 /* Hide native number input spinners globally */
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
