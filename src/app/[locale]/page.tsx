@@ -53,6 +53,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                     <Link
                       href={`/${tool.slug}`}
                       className={styles.card}
+                      data-ph-capture-attribute-source="homepage-card"
+                      data-ph-capture-attribute-tool-slug={tool.slug}
                     >
                       <div className={styles.cardHeader}>
                         <ToolIcon slug={tool.slug} className={styles.cardIcon} />

@@ -9,6 +9,7 @@ import type { ToolCategory } from '@/lib/types'
 import { ToolIcon } from '@/components/shared/ToolIcon'
 import { ThemeToggle } from './ThemeToggle'
 import { LanguageSwitcher } from '@/components/shared/LanguageSwitcher'
+import { trackNavClick, trackMobileMenuToggle } from '@/lib/analytics'
 import styles from './Nav.module.css'
 
 interface NavProps {
@@ -101,7 +102,11 @@ export function Nav({ theme, onThemeChange }: NavProps) {
         >
           <button
             className={`${styles.dropdownButton} ${toolsOpen ? styles.dropdownButtonActive : ''}`}
-            onClick={() => setToolsOpen((v) => !v)}
+            onClick={() => {
+              const next = !toolsOpen
+              setToolsOpen(next)
+              trackMobileMenuToggle({ action: next ? 'open' : 'close' })
+            }}
             aria-expanded={toolsOpen}
             aria-haspopup="true"
           >
@@ -135,7 +140,12 @@ export function Nav({ theme, onThemeChange }: NavProps) {
                             key={tool.slug}
                             href={`/${tool.slug}`}
                             className={styles.megaItem}
-                            onClick={(e) => { if (!e.metaKey && !e.ctrlKey) setToolsOpen(false) }}
+                            data-ph-capture-attribute-source="mega-menu"
+                            data-ph-capture-attribute-tool-slug={tool.slug}
+                            onClick={(e) => {
+                              if (!e.metaKey && !e.ctrlKey) setToolsOpen(false)
+                              trackNavClick({ target: tool.slug, source: 'mega-menu' })
+                            }}
                           >
                             <span className={styles.megaItemHeader}>
                               <ToolIcon slug={tool.slug} width={16} height={16} className={styles.megaItemIcon} />
@@ -162,7 +172,12 @@ export function Nav({ theme, onThemeChange }: NavProps) {
             )}
           </AnimatePresence>
         </div>
-        <Link href="/learn/glossary" className={styles.navLink}>{t('glossary')}</Link>
+        <Link
+          href="/learn/glossary"
+          className={styles.navLink}
+          data-ph-capture-attribute-source="mega-menu"
+          onClick={() => trackNavClick({ target: 'glossary', source: 'mega-menu' })}
+        >{t('glossary')}</Link>
         <div className={styles.spacer} />
         <span className={styles.desktopThemeToggle}><ThemeToggle theme={theme} onChange={onThemeChange} /></span>
         <LanguageSwitcher />
