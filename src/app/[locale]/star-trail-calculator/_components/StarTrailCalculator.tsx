@@ -2,6 +2,7 @@
 
 import { useState, useRef, useMemo, useCallback } from 'react'
 import { useTranslations } from 'next-intl'
+import { useToolSession } from '@/lib/analytics/hooks/useToolSession'
 import { rule500, ruleNPF, stackingTime, formatDuration } from '@/lib/math/startrail'
 import { pixelPitch } from '@/lib/math/diffraction'
 import { SENSORS } from '@/lib/data/sensors'
@@ -32,6 +33,7 @@ const PARAM_SCHEMA = {
 
 export function StarTrailCalculator() {
   const t = useTranslations('toolUI.star-trail-calculator')
+  const { trackParam } = useToolSession()
   const [mode, setMode] = useState<'sharp' | 'trails'>('trails')
   const canvasHandle = useRef<StarTrailCanvasHandle>(null)
   const exportCanvasRef = useRef<HTMLCanvasElement>(null)
@@ -103,7 +105,8 @@ export function StarTrailCalculator() {
   const controlsProps = {
     mode, focalLength, sensorId, resolution, aperture, latitude,
     exposurePerFrame, numFrames, gap, sharpResults, trailResult,
-    onModeChange: setMode, onFocalLengthChange: setFocalLength,
+    onModeChange: (v: 'sharp' | 'trails') => { trackParam({ param_name: 'mode', param_value: v, input_type: 'toggle' }); setMode(v) },
+    onFocalLengthChange: (v: number) => { trackParam({ param_name: 'focal_length', param_value: String(v), input_type: 'slider' }); setFocalLength(v) },
     onSensorIdChange: setSensorId, onResolutionChange: setResolution,
     onApertureChange: setAperture, onLatitudeChange: setLatitude,
     onExposurePerFrameChange: setExposurePerFrame,

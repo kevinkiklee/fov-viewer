@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import { useTranslations } from 'next-intl'
+import { useToolSession } from '@/lib/analytics/hooks/useToolSession'
 import { shutterWithNd, formatShutterSpeed } from '@/lib/math/exposure'
 import { getToolBySlug } from '@/lib/data/tools'
 import { useQueryInit, useToolQuerySync, intParam } from '@/lib/utils/querySync'
@@ -81,6 +82,7 @@ function ControlsPanel({ baseIdx, ndIdx, resultSpeed, ndStops, onBaseChange, onN
 
 export function NdFilterCalculator() {
   const t = useTranslations('toolUI.nd-filter-calculator')
+  const { trackParam } = useToolSession()
   const [baseIdx, setBaseIdx] = useState(6)
   const [ndIdx, setNdIdx] = useState(2)
   useQueryInit(PARAM_SCHEMA, { base: setBaseIdx, nd: setNdIdx })
@@ -97,8 +99,8 @@ export function NdFilterCalculator() {
     ndIdx,
     resultSpeed,
     ndStops: ndFilter.stops,
-    onBaseChange: setBaseIdx,
-    onNdChange: setNdIdx,
+    onBaseChange: (v: number) => { trackParam({ param_name: 'base_shutter', param_value: BASE_SHUTTER_SPEEDS[v].label, input_type: 'select' }); setBaseIdx(v) },
+    onNdChange: (v: number) => { trackParam({ param_name: 'nd_filter', param_value: ND_FILTERS[v].label, input_type: 'select' }); setNdIdx(v) },
   }
 
   return (

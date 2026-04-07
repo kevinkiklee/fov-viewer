@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import { useToolSession } from '@/lib/analytics/hooks/useToolSession'
 import { calcStackingSequence } from '@/lib/math/dof'
 import { getSensor } from '@/lib/data/sensors'
 import { useQueryInit, useToolQuerySync } from '@/lib/utils/querySync'
@@ -13,6 +14,7 @@ import { ToolActions } from '@/components/shared/ToolActions'
 import s from './FocusStacking.module.css'
 
 export function FocusStacking() {
+  const { trackParam } = useToolSession()
   const [focalLength, setFocalLength] = useState(50)
   const [aperture, setAperture] = useState(8)
   const [sensorId, setSensorId] = useState('ff')
@@ -51,8 +53,8 @@ export function FocusStacking() {
 
   const settingsProps = {
     focalLength, aperture, sensorId, nearLimit, farLimit, overlapPct,
-    onFocalLengthChange: setFocalLength,
-    onApertureChange: setAperture,
+    onFocalLengthChange: (v: number) => { trackParam({ param_name: 'focal_length', param_value: String(v), input_type: 'slider' }); setFocalLength(v) },
+    onApertureChange: (v: number) => { trackParam({ param_name: 'aperture', param_value: String(v), input_type: 'select' }); setAperture(v) },
     onSensorChange: setSensorId,
     onNearLimitChange: setNearLimit,
     onFarLimitChange: setFarLimit,

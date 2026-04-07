@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback } from 'react'
 import { useTranslations } from 'next-intl'
+import { useToolSession } from '@/lib/analytics/hooks/useToolSession'
 import { calcEquivalentSettings } from '@/lib/math/dof'
 import { SENSORS, getSensor } from '@/lib/data/sensors'
 import { useQueryInit, useToolQuerySync } from '@/lib/utils/querySync'
@@ -15,6 +16,7 @@ import s from './EquivalentSettings.module.css'
 
 export function EquivalentSettings() {
   const t = useTranslations('toolUI.equivalent-settings-calculator')
+  const { trackParam } = useToolSession()
   const [focalLength, setFocalLength] = useState(85)
   const [aperture, setAperture] = useState(1.4)
   const [distance, setDistance] = useState(3)
@@ -67,8 +69,8 @@ export function EquivalentSettings() {
     aperture,
     distance,
     sensorId,
-    onFocalLengthChange: setFocalLength,
-    onApertureChange: setAperture,
+    onFocalLengthChange: (v: number) => { trackParam({ param_name: 'focal_length', param_value: String(v), input_type: 'slider' }); setFocalLength(v) },
+    onApertureChange: (v: number) => { trackParam({ param_name: 'aperture', param_value: String(v), input_type: 'select' }); setAperture(v) },
     onDistanceChange: setDistance,
     onSensorChange: setSensorId,
   }

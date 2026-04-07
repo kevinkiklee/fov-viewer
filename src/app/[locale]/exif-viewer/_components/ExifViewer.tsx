@@ -3,6 +3,7 @@
 import { useState, useCallback, useRef, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import ExifReader from 'exifreader'
+import { useToolSession } from '@/lib/analytics/hooks/useToolSession'
 import { PhotoUploadPanel } from '@/components/shared/PhotoUploadPanel'
 import { LearnPanel } from '@/components/shared/LearnPanel'
 import { ToolActions } from '@/components/shared/ToolActions'
@@ -28,6 +29,7 @@ function ControlsPanel({ onFile, onSample }: { onFile: (file: File) => void; onS
 
 export function ExifViewer() {
   const t = useTranslations('toolUI.exif-viewer')
+  const { trackParam } = useToolSession()
   const [data, setData] = useState<ExifResult | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [imageUrl, setImageUrl] = useState<string | null>(null)
@@ -50,6 +52,7 @@ export function ExifViewer() {
   }, [t])
 
   const handleFile = useCallback((file: File) => {
+    trackParam({ param_name: 'file_type', param_value: file.type, input_type: 'button' })
     setError(null)
     setData(null)
     if (imageUrl && imageUrl.startsWith('blob:')) URL.revokeObjectURL(imageUrl)
@@ -67,7 +70,7 @@ export function ExifViewer() {
     }
     reader.onerror = () => setError(t('failedToReadFile'))
     reader.readAsArrayBuffer(file)
-  }, [imageUrl, t])
+  }, [imageUrl, t, trackParam])
 
   const handleBuildExport = useCallback(() => {
     const canvas = exportCanvasRef.current

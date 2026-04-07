@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useCallback, useEffect, useRef } from 'react'
+import { useToolSession } from '@/lib/analytics/hooks/useToolSession'
 import { DraftBanner } from '@/components/shared/DraftBanner'
 import { ToolActions } from '@/components/shared/ToolActions'
 import { getToolBySlug, getToolStatus } from '@/lib/data/tools'
@@ -19,6 +20,7 @@ const NO_FRAME_CONFIG: FrameConfig = { ...DEFAULT_FRAME_CONFIG, borderWidth: 0 }
 const DEFAULT_PHOTO_URL = '/images/scenes/wildlife.jpg'
 
 export function FrameStudio() {
+  const { trackParam } = useToolSession()
   const tool = getToolBySlug(SLUG)
   const isDraft = tool ? getToolStatus(tool) === 'draft' : false
 
@@ -108,7 +110,9 @@ export function FrameStudio() {
   }, [handleResetEdits])
 
   const sidebarProps = {
-    mode, onModeChange: setMode, onFile: handleFile,
+    mode,
+    onModeChange: (v: EditorMode) => { trackParam({ param_name: 'mode', param_value: v, input_type: 'button' }); setMode(v) },
+    onFile: handleFile,
     aspectRatio, onRatioChange: setAspectRatio, onApplyCrop: useCallback(() => setMode('view'), []),
     frameConfig, onFrameConfigChange: setFrameConfig,
     activeGrids, onActiveGridsChange: handleActiveGridsChange,

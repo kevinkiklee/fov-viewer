@@ -2,6 +2,8 @@
 
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { useTranslations } from 'next-intl'
+import { useToolSession } from '@/lib/analytics/hooks/useToolSession'
+import type { DisplayMode } from './sensorSizeTypes'
 import { LearnPanel } from '@/components/shared/LearnPanel'
 import { ToolActions } from '@/components/shared/ToolActions'
 import type { SensorPreset } from '@/lib/types'
@@ -17,6 +19,7 @@ import { useSensorState } from './useSensorState'
 
 export function SensorSize() {
   const t = useTranslations('toolUI.sensor-size-comparison')
+  const { trackParam } = useToolSession()
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [hoveredSensor, setHoveredSensor] = useState<string | null>(null)
 
@@ -135,7 +138,8 @@ export function SensorSize() {
 
   const controlsProps = {
     visible, mode, customSensors,
-    onToggleSensor: toggleSensor, onModeChange: setMode,
+    onToggleSensor: (id: string) => { trackParam({ param_name: 'sensor', param_value: id, input_type: 'toggle' }); toggleSensor(id) },
+    onModeChange: (m: DisplayMode) => { trackParam({ param_name: 'mode', param_value: m, input_type: 'select' }); setMode(m) },
     onAddCustom: addCustomSensor, onRemoveCustom: removeCustomSensor,
     onRemoveAllCustom: removeAllCustomSensors, onEditCustom: editCustomSensor,
   }
