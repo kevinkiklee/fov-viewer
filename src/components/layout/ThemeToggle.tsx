@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { trackThemeToggle } from '@/lib/analytics'
 
 interface ThemeToggleProps {
   theme: string
@@ -13,7 +14,11 @@ export function ThemeToggle({ theme, onChange }: ThemeToggleProps) {
 
   return (
     <button
-      onClick={() => onChange(theme === 'dark' ? 'light' : 'dark')}
+      onClick={() => {
+        const newTheme = theme === 'dark' ? 'light' : 'dark'
+        trackThemeToggle({ new_theme: newTheme })
+        onChange(newTheme)
+      }}
       title={label}
       aria-label={label}
       style={{

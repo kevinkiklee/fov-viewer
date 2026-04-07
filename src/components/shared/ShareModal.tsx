@@ -4,6 +4,7 @@ import { useState, useCallback } from 'react'
 import { toast } from 'sonner'
 import { useTranslations } from 'next-intl'
 import * as Dialog from '@radix-ui/react-dialog'
+import { trackShareClick } from '@/lib/analytics'
 import styles from './ShareModal.module.css'
 
 interface ShareModalProps {
@@ -32,6 +33,13 @@ export function ShareModal({ toolName, toolSlug, onClose }: ShareModalProps) {
   }
 
   const copy = useCallback((key: string, text: string) => {
+    const methodMap: Record<string, 'copy-link' | 'embed' | 'markdown' | 'bbcode'> = {
+      link: 'copy-link',
+      markdown: 'markdown',
+      bbcode: 'bbcode',
+      iframe: 'embed',
+    }
+    trackShareClick({ method: methodMap[key] || 'copy-link' })
     navigator.clipboard.writeText(text).then(() => {
       setCopied(key)
       toast(tToast('copied'))

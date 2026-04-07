@@ -5,6 +5,7 @@ import { useLocale } from 'next-intl'
 import { usePathname, useRouter } from '@/lib/i18n/navigation'
 import { locales, localeNames, localeFlags } from '@/lib/i18n/routing'
 import type { Locale } from '@/lib/i18n/routing'
+import { trackLanguageSwitch } from '@/lib/analytics'
 import styles from './LanguageSwitcher.module.css'
 
 export function LanguageSwitcher() {
@@ -35,6 +36,7 @@ export function LanguageSwitcher() {
   }, [])
 
   function switchLocale(newLocale: Locale) {
+    trackLanguageSwitch({ from_locale: locale, to_locale: newLocale })
     router.replace(pathname, { locale: newLocale })
     setOpen(false)
   }
