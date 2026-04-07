@@ -49,13 +49,12 @@ export function Glossary() {
 
   useEffect(() => {
     const q = query.trim()
-    if (q && q !== prevQueryRef.current) {
-      const timer = setTimeout(() => {
-        trackGlossarySearch({ search_term: q, results_count: filtered.length })
-        prevQueryRef.current = q
-      }, 500)
-      return () => clearTimeout(timer)
-    }
+    if (!q || q === prevQueryRef.current) return
+    const timer = setTimeout(() => {
+      trackGlossarySearch({ search_term: q, results_count: filtered.length })
+      prevQueryRef.current = q
+    }, 500)
+    return () => clearTimeout(timer)
   }, [query, filtered.length])
 
   const grouped = useMemo(() => {

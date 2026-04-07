@@ -69,7 +69,8 @@ export function AnalyticsProvider({ children }: AnalyticsProviderProps) {
     const cleanupConsent = onConsentChange((state) => applyConsent(state))
 
     if (process.env.NODE_ENV !== 'production') {
-      ;(window as Record<string, unknown>).__analytics = {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      ;(window as any).__analytics = {
         grantConsent: (category: string) => {
           const current = getConsentState()
           applyConsent({
