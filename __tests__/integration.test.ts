@@ -16,7 +16,7 @@ import { ASPECT_RATIOS, TEXTURES } from '@/lib/data/frameStudio'
 import { TEXTURE_PRESETS } from '@/lib/math/frame-texture'
 import { WB_PRESETS } from '@/lib/data/whiteBalance'
 import { HARMONY_KEYS } from '@/lib/data/colorSchemeGenerator'
-import { locales, defaultLocale, localeNames, localeOpenGraph } from '@/lib/i18n/routing'
+import { locales, defaultLocale, localeNames, localeOpenGraph, localeFlags } from '@/lib/i18n/routing'
 
 describe('FOV calculations with real sensor data', () => {
   it('all sensors produce valid FOV at all focal lengths', () => {
@@ -306,11 +306,21 @@ describe('i18n routing config consistency', () => {
     }
   })
 
-  it('localeNames and localeOpenGraph cover exactly the locales list', () => {
+  it('every locale has a flag emoji (regional indicator pair)', () => {
+    // A flag emoji is exactly two regional indicator symbols (U+1F1E6..U+1F1FF)
+    const RIS_RANGE = /^[\u{1F1E6}-\u{1F1FF}]{2}$/u
+    for (const locale of locales) {
+      expect(localeFlags[locale]).toMatch(RIS_RANGE)
+    }
+  })
+
+  it('localeNames, localeOpenGraph, and localeFlags cover exactly the locales list', () => {
     const nameKeys = Object.keys(localeNames).sort()
     const ogKeys = Object.keys(localeOpenGraph).sort()
+    const flagKeys = Object.keys(localeFlags).sort()
     const sortedLocales = [...locales].sort()
     expect(nameKeys).toEqual(sortedLocales)
     expect(ogKeys).toEqual(sortedLocales)
+    expect(flagKeys).toEqual(sortedLocales)
   })
 })

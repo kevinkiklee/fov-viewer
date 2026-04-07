@@ -38,13 +38,23 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 100;
-  min-width: 140px;
-  max-height: 60vh;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(160px, 1fr);
+  max-height: 80vh;
   overflow-y: auto;
 }
 
+@media (max-width: 720px) {
+  .dropdown {
+    grid-auto-columns: minmax(140px, 1fr);
+  }
+}
+
 .option {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   width: 100%;
   padding: 6px 12px;
   background: none;
@@ -54,6 +64,19 @@
   text-align: left;
   cursor: pointer;
   transition: background 0.1s, color 0.1s;
+}
+
+.flag {
+  font-size: 15px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.name {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .option:hover {

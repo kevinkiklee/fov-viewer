@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { useLocale } from 'next-intl'
 import { usePathname, useRouter } from '@/lib/i18n/navigation'
-import { locales, localeNames } from '@/lib/i18n/routing'
+import { locales, localeNames, localeFlags } from '@/lib/i18n/routing'
 import type { Locale } from '@/lib/i18n/routing'
 import styles from './LanguageSwitcher.module.css'
 
@@ -14,6 +14,8 @@ export function LanguageSwitcher() {
   const [open, setOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
   const sortedLocales = [...locales].sort((a, b) => localeNames[a].localeCompare(localeNames[b]))
+  const COLUMNS = 3
+  const rowsPerColumn = Math.ceil(sortedLocales.length / COLUMNS)
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -54,14 +56,20 @@ export function LanguageSwitcher() {
         <span className={styles.code}>{locale.toUpperCase()}</span>
       </button>
       {open && (
-        <ul className={styles.dropdown} role="listbox" aria-label="Select language">
+        <ul
+          className={styles.dropdown}
+          role="listbox"
+          aria-label="Select language"
+          style={{ gridTemplateRows: `repeat(${rowsPerColumn}, auto)` }}
+        >
           {sortedLocales.map((l) => (
             <li key={l} role="option" aria-selected={l === locale}>
               <button
                 className={`${styles.option} ${l === locale ? styles.optionActive : ''}`}
                 onClick={() => switchLocale(l)}
               >
-                {localeNames[l]}
+                <span className={styles.flag} aria-hidden="true">{localeFlags[l]}</span>
+                <span className={styles.name}>{localeNames[l]}</span>
               </button>
             </li>
           ))}
