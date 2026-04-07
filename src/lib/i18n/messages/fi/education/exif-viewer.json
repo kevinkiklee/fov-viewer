@@ -1,41 +1,41 @@
 {
   "education": {
     "exif-viewer": {
-      "beginner": "EXIF-tiedot ovat piilotettua tietoa, joka upotetaan jokaiseen kamerasi ottamaan kuvaan. Ne kertovat mitä kameraa ja objektiivia käytit, tarkat asetukset (aukon, suljinajan, ISO:n), päivämäärän ja kellonajan sekä joskus jopa GPS-koordinaatit. Tämä työkalu lukee nämä tiedot lataamatta kuvaasi mihinkään — kaikki tapahtuu selaimessasi.",
-      "deeper": "EXIF (Exchangeable Image File Format) on JEITA:n/CIPA:n määrittämä standardi, joka tallentaa metatietoja JPEG-, TIFF- ja joihinkin RAW-tiedostoihin. Tiedot kirjoitetaan tiedoston otsikon tiettyihin osiin avain-arvo-pareina TIFF-pohjaista IFD-rakennetta (Image File Directory) käyttäen. IFD-osioita on useita: IFD0 kuvan perustietoja varten, EXIF-ali-IFD kameran asetuksia varten, GPS-IFD sijaintitietoa varten ja Interop-IFD yhteensopivuusdataa varten. Kameravalmistajat kirjoittavat myös omaa \"MakerNote\"-tietoa, joka sisältää linssikorjaukset, tarkennuspisteet, laukaisumäärät ja muita mallikohtaisia yksityiskohtia. Sosiaalisen median alustat riisuvat usein EXIF-tiedot lataamisen yhteydessä yksityisyyden vuoksi, mutta muistikortilla oleva alkuperäinen tiedosto säilyttää ne aina. EXIF:n ymmärtäminen auttaa oppimaan omista kuvaustottumuksistasi ja päättelemään ihailemiesi kuvien takana olevat asetukset.",
+      "beginner": "EXIF-tiedot ovat piilotettua metatietoa, joka tallentuu jokaiseen kameran ottamaan kuvaan. Ne kertovat, mitä kameraa ja objektiivia käytit, tarkat asetukset (aukon, suljinajan, ISO:n), päivämäärän ja kellonajan ja joskus jopa GPS-koordinaatit. Tämä työkalu lukee tiedot lähettämättä kuvaa mihinkään — kaikki tapahtuu selaimessasi.",
+      "deeper": "EXIF (Exchangeable Image File Format) on JEITA:n/CIPA:n määrittelemä standardi, joka tallentaa metatietoja JPEG-, TIFF- ja osaan RAW-tiedostoista. Tiedot kirjoitetaan tiedoston otsakkeen osiin avain–arvo-pareina TIFF-pohjaisella IFD-rakenteella (Image File Directory). IFD-osioita on useita: IFD0 kuvan perustiedoille, EXIF-ali-IFD kameran asetuksille, GPS-IFD sijaintitiedoille ja Interop-IFD yhteensopivuustiedoille. Kameravalmistajat kirjoittavat myös omia \"MakerNote\"-tietoja, joissa on esimerkiksi linssikorjauksia, tarkennuspisteitä, laukaisumääriä ja muita runkokohtaisia yksityiskohtia. Sosiaalinen media riisuu EXIF-tiedot kuvista usein yksityisyyden vuoksi, mutta muistikortilla oleva alkuperäinen tiedosto säilyttää ne aina. EXIF:n ymmärtämisestä on hyötyä: opit omista kuvaustottumuksistasi ja voit päätellä ihailemiesi kuvien taustalla olleet asetukset.",
       "keyFactors": {
         "0": {
           "label": "Kamera ja objektiivi",
-          "description": "Valmistaja, malli, objektiivin nimi ja objektiivin valmistaja — hyödyllisiä välineiden tunnistamiseen verkosta löytämissäsi kuvissa."
+          "description": "Valmistaja, malli, objektiivin nimi ja objektiivin valmistaja — hyödyllisiä kaluston tunnistamiseen verkosta löytyvistä kuvista."
         },
         "1": {
           "label": "Valotusasetukset",
-          "description": "Aukko, suljinaika, ISO ja polttoväli — jokaisen ruudun ydinkuvausparametrit."
+          "description": "Aukko, suljinaika, ISO ja polttoväli — jokaisen kuvan keskeiset kuvausparametrit."
         },
         "2": {
           "label": "Päivämäärä ja GPS",
-          "description": "Milloin ja missä kuva on otettu. Huomaa, että GPS-tiedot paljastavat sijaintisi, kun jaat tiedostoja."
+          "description": "Milloin ja missä kuva on otettu. Muista, että GPS-tiedot paljastavat sijaintisi, kun jaat tiedostoja."
         },
         "3": {
           "label": "Ohjelmisto",
-          "description": "Näyttää, millä muokkausohjelmalla tiedosto on viimeksi tallennettu. Hyödyllinen tarkistaaksesi, onko kuvaa käsitelty."
+          "description": "Näyttää, millä muokkausohjelmalla tiedosto on viimeksi tallennettu. Auttaa päättelemään, onko kuvaa käsitelty."
         }
       },
       "tips": {
         "0": {
-          "text": "Tarkista polttoväli ja 35 mm -ekvivalentti ymmärtääksesi, käyttikö kuvaaja laajaa, normaalia vai tele-perspektiiviä — tämä opettaa sommittelua enemmän kuin mikään kolmanneksen sääntö."
+          "text": "Katso polttoväli ja 35 mm -ekvivalentti, niin tiedät, käyttikö kuvaaja laajakulmaa, normaalia vai teleä. Tämä opettaa sommittelusta enemmän kuin mikään kolmanneksen sääntö."
         },
         "1": {
-          "text": "Jos ihailemasi kuva on otettu korkealla ISO:lla ja suurella aukolla, se kertoo että kyseessä oli hämärä tilanne. Käytä EXIFiä ymmärtääksesi kuvaajan kohtaamia rajoitteita."
+          "text": "Jos ihailemasi kuva on otettu korkealla ISO:lla ja suurella aukolla, se kertoo hämärästä tilanteesta. EXIF auttaa ymmärtämään, mitä rajoitteita kuvaaja kohtasi."
         },
         "2": {
-          "text": "Ennen kuin jaat kuvia verkossa, muista että EXIF voi sisältää GPS-sijaintisi. Poista metatiedot muokkausohjelmistosi vientiasetuksista, jos yksityisyys huolestuttaa."
+          "text": "Ennen kuvien jakamista verkossa muista, että EXIF-tiedoissa voi olla GPS-sijainti. Poista metatiedot muokkausohjelman vientiasetuksista, jos yksityisyys huolettaa."
         }
       },
       "tooltips": {
         "Make": {
           "term": "Valmistaja",
-          "definition": "Kameran valmistajan nimi (esim. Canon, Nikon, Sony) EXIF-otsikossa."
+          "definition": "Kameran valmistajan nimi (esim. Canon, Nikon, Sony) EXIF-otsakkeessa."
         },
         "Model": {
           "term": "Malli",
@@ -43,15 +43,15 @@
         },
         "Aperture": {
           "term": "Aukko",
-          "definition": "F-luku, johon objektiivi oli asetettu. Pienemmät luvut tarkoittavat suurempaa aukkoa ja enemmän valoa."
+          "definition": "F-luku, johon objektiivi oli asetettu. Pieni luku tarkoittaa suurta aukkoa ja enemmän valoa."
         },
         "Shutter Speed": {
           "term": "Suljinaika",
-          "definition": "Kuinka kauan kenno oli valotettuna. Ilmaistaan murtolukuna (esim. 1/250s) tai kokonaisina sekunteina pitkissä valotuksissa."
+          "definition": "Aika, jonka kenno oli valotettuna. Ilmoitetaan murtolukuna (esim. 1/250s) tai kokonaisina sekunteina pitkissä valotuksissa."
         },
         "ISO": {
           "term": "ISO",
-          "definition": "Kennon herkkyysasetus. Korkeampi ISO kirkastaa kuvaa mutta lisää kohinaa."
+          "definition": "Kennon herkkyysasetus. Korkea ISO kirkastaa kuvaa, mutta lisää kohinaa."
         },
         "Focal Length": {
           "term": "Polttoväli",
@@ -59,61 +59,61 @@
         },
         "Focal Length (35mm equiv)": {
           "term": "Polttoväli (35 mm -ekvivalentti)",
-          "definition": "Ekvivalentti polttoväli ikään kuin kuva olisi otettu 35 mm:n täyskennolla. Hyödyllinen kuvakulman vertailuun eri kennokokojen välillä."
+          "definition": "Ekvivalentti polttoväli ikään kuin kuva olisi otettu 35 mm:n täyskennolla. Helpottaa kuvakulmien vertailua eri kennokokojen välillä."
         },
         "GPS": {
           "term": "GPS",
-          "definition": "Leveys- ja pituuskoordinaatit, jotka GPS-moduuleilla varustetut kamerat upottavat tietoihin. Paljastaa, missä kuva on otettu."
+          "definition": "Leveys- ja pituuskoordinaatit, jotka GPS-moduulilla varustetut kamerat upottavat tiedostoon. Paljastaa kuvauspaikan."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Löysit upean kuvan verkosta ja haluat tietää, mitä objektiivia käytettiin. Mikä EXIF-osio kertoo sen?",
+          "scenario": "Löysit upean kuvan verkosta ja haluat tietää, millä objektiivilla se on kuvattu. Mikä EXIF-osio paljastaa sen?",
           "hint": "Kameran ja objektiivin tiedot ovat eri osioissa.",
-          "successMessage": "Oikein! Lens-osio näyttää objektiivin mallin ja valmistajan.",
-          "failureMessage": "Lens-osio sisältää objektiivin mallin — katso sieltä tunnistaaksesi käytetyn lasin.",
+          "successMessage": "Oikein! Objektiivi-osiossa näkyy objektiivin malli ja valmistaja.",
+          "failureMessage": "Objektiivi-osio sisältää objektiivin mallin — sieltä näet, millä lasilla kuva on otettu.",
           "options": {
-            "0": { "label": "Camera" },
-            "1": { "label": "Lens" },
-            "2": { "label": "Settings" }
+            "0": { "label": "Kamera" },
+            "1": { "label": "Objektiivi" },
+            "2": { "label": "Asetukset" }
           }
         },
         "1": {
-          "scenario": "Latasit kuvan ja näet: Aukko f/1.8, suljinaika 1/4000s, ISO 100. Otettiinko kuva todennäköisesti kirkkaassa vai hämärässä valossa?",
-          "hint": "Erittäin nopea suljinaika matalalla ISO:lla viittaa runsaaseen valoon.",
-          "successMessage": "Juuri niin! Nopea suljinaika (1/4000s) perus-ISO:lla (100) kertoo, että valoa oli runsaasti — todennäköisesti kirkas ulkotila.",
-          "failureMessage": "Suljinaika 1/4000s ISO 100:ssa tarkoittaa, että kamera tarvitsi hyvin vähän herkkyyttä ja hyvin lyhyttä valotusta. Se on kirkas ulkoilmanäkymä.",
+          "scenario": "Latasit kuvan ja näet asetukset: aukko f/1.8, suljinaika 1/4000s, ISO 100. Onko kuva otettu kirkkaassa vai hämärässä valossa?",
+          "hint": "Erittäin lyhyt suljinaika ja matala ISO viittaavat runsaaseen valoon.",
+          "successMessage": "Juuri niin! Lyhyt suljinaika (1/4000s) perus-ISO:lla (100) kertoo, että valoa oli runsaasti — kyseessä on todennäköisesti kirkas ulkotilanne.",
+          "failureMessage": "1/4000s ja ISO 100 tarkoittavat, että kamera tarvitsi hyvin vähän herkkyyttä ja hyvin lyhyen valotuksen. Se on kirkas ulkoilmanäkymä.",
           "options": {
-            "0": { "label": "Kirkas valo — nopea suljin matalalla ISO:lla" },
+            "0": { "label": "Kirkas valo — lyhyt suljin ja matala ISO" },
             "1": { "label": "Hämärä valo — suuri aukko kompensoi" }
           }
         },
         "2": {
-          "scenario": "Kuvassa lukee polttoväli 50 mm ja polttoväli (35 mm -ekvivalentti) 75 mm. Mitä kennoa kamera käytti?",
+          "scenario": "Kuvassa polttoväli on 50 mm ja 35 mm -ekvivalentti 75 mm. Mitä kennoa kamerassa on?",
           "hint": "35 mm -ekvivalentti on polttoväli kerrottuna kertoimella.",
-          "successMessage": "Oikein! 75 / 50 = 1,5x kerroin, joka on APS-C-kenno (Nikon/Sony-versio).",
-          "failureMessage": "Jaa 35 mm -ekvivalentti todellisella polttovälillä: 75 / 50 = 1,5x. Se kerroin vastaa APS-C:tä (Nikon/Sony).",
+          "successMessage": "Oikein! 75 / 50 = 1,5× kerroin, eli kyseessä on APS-C-kenno (Nikon/Sony).",
+          "failureMessage": "Jaa 35 mm -ekvivalentti todellisella polttovälillä: 75 / 50 = 1,5×. Tämä kerroin vastaa APS-C:tä (Nikon/Sony).",
           "options": {
-            "0": { "label": "Täyskenno (1,0x kerroin)" },
-            "1": { "label": "APS-C (1,5x kerroin)" },
-            "2": { "label": "Micro Four Thirds (2,0x kerroin)" }
+            "0": { "label": "Täyskenno (kerroin 1,0×)" },
+            "1": { "label": "APS-C (kerroin 1,5×)" },
+            "2": { "label": "Micro Four Thirds (kerroin 2,0×)" }
           }
         },
         "3": {
-          "scenario": "Näet kaksi kuvaa samasta näkymästä. Kuva A: f/2.8, 1/60s, ISO 3200. Kuva B: f/2.8, 1/60s, ISO 200. Kumpi kuva on otettu kirkkaammassa valossa?",
-          "hint": "Korkeampi ISO kompensoi vähäisempää valoa.",
-          "successMessage": "Aivan! Kuva B ISO 200:ssa oli paljon kirkkaammassa valossa. Kuva A tarvitsi ISO 3200:n (4 aukkoa enemmän herkkyyttä) saavuttaakseen saman valotuksen, eli näkymä oli paljon tummempi.",
-          "failureMessage": "Kuva B oli kirkkaammassa valossa. Sama aukko ja suljinaika, mutta ISO 200 vs. 3200 tarkoittaa että Kuva A oli paljon hämärämmässä ympäristössä ja tarvitsi 4 aukkoa enemmän kennon herkkyyttä.",
+          "scenario": "Näet kaksi kuvaa samasta näkymästä. Kuva A: f/2.8, 1/60s, ISO 3200. Kuva B: f/2.8, 1/60s, ISO 200. Kumpi on otettu kirkkaammassa valossa?",
+          "hint": "Korkea ISO kompensoi valon puutetta.",
+          "successMessage": "Aivan! Kuva B (ISO 200) on otettu paljon kirkkaammassa valossa. Kuva A tarvitsi saman valotuksen saavuttamiseen ISO 3200:n eli 4 valotusaskelta enemmän herkkyyttä — näkymä oli siis huomattavasti tummempi.",
+          "failureMessage": "Kuva B on kirkkaammassa valossa. Sama aukko ja suljinaika, mutta ISO 200 vs. 3200 tarkoittaa, että Kuva A on otettu paljon hämärämmässä ympäristössä ja kenno tarvitsi 4 valotusaskelta enemmän herkkyyttä.",
           "options": {
             "0": { "label": "Kuva A (ISO 3200)" },
             "1": { "label": "Kuva B (ISO 200)" }
           }
         },
         "4": {
-          "scenario": "Analysoit villieläinkuvaa: 400 mm, f/5.6, 1/2000s, ISO 1600. EXIF näyttää ohjelmistokentässä \"Adobe Lightroom Classic 13.1\". Mitä voit päätellä kuvaajasta ja kuvausolosuhteista?",
-          "hint": "Huomioi pitkä polttoväli, avoin aukko, nopea suljin ja kohonnut ISO yhdessä.",
-          "successMessage": "Hieno analyysi! 400 mm f/5.6:lla (todennäköisesti avoin tuolla objektiivilla) ja nopealla 1/2000s suljinajalla viittaa nopeasti liikkuvaan kohteeseen (lintuja tai villieläimiä toiminnassa). ISO 1600 kertoo, että valoa ei ollut paljon — luultavasti pilvipouta tai varjoisa paikka. Lightroom-kenttä vahvistaa, että kuva on jälkikäsitelty.",
-          "failureMessage": "Asetukset paljastavat paljon: 400 mm f/5.6 on tyypillinen villieläinteleobjektiivi avoinna, 1/2000s jäädyttää nopean eläimen liikkeen, ja ISO 1600 tarkoittaa että valoa oli rajoitetusti (ei kirkas aurinko). Lightroom-merkintä vahvistaa, että tiedosto on käsitelty.",
+          "scenario": "Analysoit villieläinkuvaa: 400 mm, f/5.6, 1/2000s, ISO 1600. Ohjelmistokentässä lukee \"Adobe Lightroom Classic 13.1\". Mitä voit päätellä kuvaajasta ja kuvausolosuhteista?",
+          "hint": "Tarkastele pitkää polttoväliä, avointa aukkoa, lyhyttä suljinta ja kohonnutta ISO:a yhdessä.",
+          "successMessage": "Hieno analyysi! 400 mm f/5.6:lla (todennäköisesti objektiivin suurin aukko) ja lyhyellä 1/2000s:n suljinajalla kuvataan nopeaa kohdetta, kuten lintua tai muuta villieläintä liikkeessä. ISO 1600 kertoo, että valoa ei ollut paljon — luultavasti pilvipouta tai varjoisa paikka. Lightroom-merkintä vahvistaa, että kuva on käsitelty jälkikäteen.",
+          "failureMessage": "Asetukset paljastavat paljon: 400 mm f/5.6 on tyypillinen villieläinteleobjektiivi auki, 1/2000s pysäyttää nopean eläimen liikkeen, ja ISO 1600 kertoo, että valoa oli rajallisesti (ei kirkasta aurinkoa). Lightroom-merkintä vahvistaa, että tiedosto on käsitelty.",
           "options": {
             "0": { "label": "Nopea kohde kohtuullisessa valossa, jälkikäsitelty Lightroomissa" },
             "1": { "label": "Hidas kohde kirkkaassa valossa, suoraan kamerasta" },

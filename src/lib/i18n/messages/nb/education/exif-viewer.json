@@ -1,8 +1,8 @@
 {
   "education": {
     "exif-viewer": {
-      "beginner": "EXIF-data er skjult informasjon som ligger i hvert bilde kameraet tar. Det forteller hvilket kamera og objektiv du brukte, de nøyaktige innstillingene (blender, lukkertid, ISO), dato og klokkeslett, og noen ganger til og med GPS-koordinater. Dette verktøyet leser EXIF uten å laste opp bildet — alt skjer i nettleseren din.",
-      "deeper": "EXIF (Exchangeable Image File Format) er en standard fra JEITA/CIPA som lagrer metadata i JPEG-, TIFF- og enkelte RAW-filer. Dataene skrives inn i bestemte segmenter av filheaderen som tag-baserte nøkkel/verdi-par i en TIFF-basert IFD-struktur (Image File Directory). Det finnes flere IFD-seksjoner: IFD0 for grunnleggende bildeinfo, EXIF-sub-IFD for kamerainnstillinger, GPS-IFD for posisjonsdata og Interop-IFD for kompatibilitet. Kameraprodusenter skriver også proprietær «MakerNote»-data som inneholder objektivkorrigeringer, fokuspunkter, antall lukkerutløsninger og annen modellspesifikk informasjon. Sosiale medier fjerner ofte EXIF ved opplasting av personvernhensyn, men originalfilen på minnekortet har dem alltid. Å forstå EXIF hjelper deg å lære av dine egne mønstre og å spore settings bak bilder du beundrer.",
+      "beginner": "EXIF-data er skjult informasjon som ligger i hvert bilde kameraet tar. Det forteller hvilket kamera og objektiv du brukte, nøyaktige innstillinger (blender, lukkertid, ISO), dato og klokkeslett, og noen ganger til og med GPS-koordinater. Dette verktøyet leser EXIF uten å laste opp bildet — alt skjer i nettleseren din.",
+      "deeper": "EXIF (Exchangeable Image File Format) er en standard fra JEITA/CIPA som lagrer metadata i JPEG-, TIFF- og enkelte RAW-filer. Dataene skrives inn i bestemte segmenter av filheaderen som taggbaserte nøkkel-verdi-par i en TIFF-basert IFD-struktur (Image File Directory). Det finnes flere IFD-seksjoner: IFD0 for grunnleggende bildeinfo, EXIF-sub-IFD for kamerainnstillinger, GPS-IFD for posisjonsdata og Interop-IFD for kompatibilitet. Kameraprodusenter skriver også proprietær «MakerNote»-data som inneholder objektivkorreksjoner, fokuspunkter, antall lukkerutløsninger og annen modellspesifikk informasjon. Sosiale medier fjerner ofte EXIF ved opplasting av personvernhensyn, men originalfilen på minnekortet har dem alltid. Å forstå EXIF hjelper deg å lære av dine egne mønstre og å finne innstillingene bak bilder du beundrer.",
       "keyFactors": {
         "0": {
           "label": "Kamera og objektiv",
@@ -18,18 +18,18 @@
         },
         "3": {
           "label": "Programvare",
-          "description": "Viser hvilken redigeringsprogramvare som sist lagret filen. Nyttig for å sjekke om et bilde er bearbeidet."
+          "description": "Viser hvilken programvare som sist lagret filen. Nyttig for å sjekke om et bilde er bearbeidet."
         }
       },
       "tips": {
         "0": {
-          "text": "Sjekk brennvidde og 35 mm-ekvivalent for å forstå om fotografen brukte vidvinkel, normal eller tele — det lærer deg mer om komposisjon enn noen tredjedelsregel."
+          "text": "Sjekk brennvidden og 35 mm-ekvivalenten for å se om fotografen brukte vidvinkel, normal eller tele — det lærer deg mer om komposisjon enn noen tredjedelsregel."
         },
         "1": {
-          "text": "Hvis et bilde du beundrer er tatt på høy ISO med stor blenderåpning, forteller det at det var svakt lys. Bruk EXIF til å forstå begrensningene fotografen jobbet under."
+          "text": "Er et bilde du beundrer tatt på høy ISO med stor blenderåpning, forteller det deg at det var svakt lys. Bruk EXIF til å forstå hvilke begrensninger fotografen jobbet under."
         },
         "2": {
-          "text": "Før du deler bilder på nett, husk at EXIF kan inneholde GPS-posisjonen din. Fjern metadata via eksportinnstillingene i redigeringsprogrammet hvis personvern er viktig."
+          "text": "Før du deler bilder på nett, husk at EXIF kan inneholde GPS-posisjonen din. Fjern metadataene via eksportinnstillingene i redigeringsprogrammet hvis personvern er viktig."
         }
       },
       "tooltips": {
@@ -43,7 +43,7 @@
         },
         "Aperture": {
           "term": "Blender",
-          "definition": "F-tallet objektivet var satt til. Lavere tall betyr større blenderåpning og mer lys."
+          "definition": "F-tallet objektivet var stilt inn på. Lavere tall betyr større blenderåpning og mer lys."
         },
         "Shutter Speed": {
           "term": "Lukkertid",
@@ -59,7 +59,7 @@
         },
         "Focal Length (35mm equiv)": {
           "term": "Brennvidde (35 mm-ekv.)",
-          "definition": "Den ekvivalente brennvidden som om bildet ble tatt på en 35 mm fullformatsensor. Nyttig for å sammenligne synsfelt på tvers av sensorstørrelser."
+          "definition": "Den ekvivalente brennvidden som om bildet var tatt på en 35 mm fullformatsensor. Nyttig for å sammenligne synsfelt på tvers av sensorstørrelser."
         },
         "GPS": {
           "term": "GPS",
@@ -69,9 +69,9 @@
       "challenges": {
         "0": {
           "scenario": "Du har funnet et fantastisk bilde på nett og vil vite hvilket objektiv som ble brukt. Hvilken EXIF-seksjon forteller deg det?",
-          "hint": "Kamera- og objektivinfo ligger i ulike seksjoner.",
+          "hint": "Kamera- og objektivinfo ligger i hver sin seksjon.",
           "successMessage": "Riktig! Objektiv-seksjonen viser objektivmodell og produsent.",
-          "failureMessage": "Objektiv-seksjonen inneholder objektivmodellen — sjekk der for å finne ut hvilket glass som ble brukt.",
+          "failureMessage": "Objektiv-seksjonen inneholder objektivmodellen — se der for å finne ut hvilket glass som ble brukt.",
           "options": {
             "0": { "label": "Kamera" },
             "1": { "label": "Objektiv" },
@@ -90,7 +90,7 @@
         },
         "2": {
           "scenario": "Et bilde viser Brennvidde: 50 mm og Brennvidde (35 mm-ekv.): 75 mm. Hvilken sensor brukte kameraet?",
-          "hint": "35 mm-ekvivalenten er den faktiske brennvidden multiplisert med cropfaktoren.",
+          "hint": "35 mm-ekvivalenten er den faktiske brennvidden ganget med cropfaktoren.",
           "successMessage": "Riktig! 75 / 50 = 1,5x cropfaktor, altså en APS-C-sensor (Nikon/Sony-varianten).",
           "failureMessage": "Del 35 mm-ekvivalenten på den faktiske brennvidden: 75 / 50 = 1,5x. Den cropfaktoren matcher APS-C (Nikon/Sony).",
           "options": {
@@ -100,10 +100,10 @@
           }
         },
         "3": {
-          "scenario": "Du ser to bilder av samme motiv. Bilde A: f/2.8, 1/60 s, ISO 3200. Bilde B: f/2.8, 1/60 s, ISO 200. Hvilket bilde ble tatt i mest lys?",
+          "scenario": "Du ser to bilder av samme motiv. Bilde A: f/2.8, 1/60 s, ISO 3200. Bilde B: f/2.8, 1/60 s, ISO 200. Hvilket bilde er tatt i mest lys?",
           "hint": "Høyere ISO kompenserer for mindre lys.",
-          "successMessage": "Akkurat! Bilde B på ISO 200 hadde mye mer omgivelseslys. Bilde A trengte ISO 3200 (4 trinn mer følsomhet) for å få samme eksponering, altså var scenen mye mørkere.",
-          "failureMessage": "Bilde B ble tatt i mer lys. Samme blender og lukkertid, men ISO 200 mot 3200 betyr at Bilde A var i et mye mørkere miljø og trengte 4 trinn mer sensorfølsomhet.",
+          "successMessage": "Nettopp! Bilde B på ISO 200 hadde mye mer omgivelseslys. Bilde A trengte ISO 3200 (4 trinn mer følsomhet) for å få samme eksponering, altså var scenen mye mørkere.",
+          "failureMessage": "Bilde B ble tatt i mer lys. Samme blender og lukkertid, men ISO 200 mot 3200 betyr at bilde A var i et mye mørkere miljø og trengte 4 trinn mer sensorfølsomhet.",
           "options": {
             "0": { "label": "Bilde A (ISO 3200)" },
             "1": { "label": "Bilde B (ISO 200)" }
@@ -113,10 +113,10 @@
           "scenario": "Du analyserer et viltbilde: 400 mm, f/5.6, 1/2000 s, ISO 1600. EXIF viser at programvarefeltet er «Adobe Lightroom Classic 13.1». Hva kan du utlede om fotografen og lysforholdene?",
           "hint": "Tenk på kombinasjonen av lang brennvidde, vidåpen blender, rask lukker og høy ISO.",
           "successMessage": "Flott analyse! 400 mm på f/5.6 (sannsynligvis vidåpent for det objektivet) med rask 1/2000 s tyder på et motiv i rask bevegelse (fugler eller vilt i aksjon). ISO 1600 forteller at det ikke var sterkt sollys — trolig overskyet eller i skygge. Lightroom-feltet bekrefter at bildet er bearbeidet.",
-          "failureMessage": "Innstillingene avslører mye: 400 mm f/5.6 er et typisk vilttele vidåpent, 1/2000 s fryser rask dyrebevegelse, og ISO 1600 betyr at lyset var begrenset (ikke sterkt sollys). Lightroom-feltet bekrefter at filen er bearbeidet.",
+          "failureMessage": "Innstillingene avslører mye: 400 mm f/5.6 er et typisk vilttele vidåpent, 1/2000 s fryser raske dyrebevegelser, og ISO 1600 betyr at lyset var begrenset (ikke sterkt sollys). Lightroom-feltet bekrefter at filen er bearbeidet.",
           "options": {
-            "0": { "label": "Rask motiv i moderat lys, bearbeidet i Lightroom" },
-            "1": { "label": "Sakte motiv i sterkt lys, rett fra kameraet" },
+            "0": { "label": "Raskt motiv i moderat lys, bearbeidet i Lightroom" },
+            "1": { "label": "Saktegående motiv i sterkt lys, rett fra kameraet" },
             "2": { "label": "Landskap med bevegelsesuskarphet, kraftig redigert" }
           }
         }

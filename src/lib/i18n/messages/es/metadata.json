@@ -15,8 +15,8 @@
       "description": "Visualiza cómo la apertura, la distancia focal y la distancia al sujeto afectan al desenfoque del fondo con una simulación WebGL en tiempo real."
     },
     "focus-stacking-calculator": {
-      "title": "Calculadora de apilamiento de enfoque | PhotoTools",
-      "description": "Calcula las distancias de enfoque óptimas para lograr nitidez de principio a fin en fotografía macro y de paisaje."
+      "title": "Calculadora de apilamiento de enfoque (focus stacking) | PhotoTools",
+      "description": "Calcula las distancias de enfoque óptimas para conseguir nitidez de principio a fin en fotografía macro y de paisaje."
     },
     "equivalent-settings-calculator": {
       "title": "Calculadora de ajustes equivalentes | PhotoTools",
@@ -24,7 +24,7 @@
     },
     "exposure-simulator": {
       "title": "Simulador del triángulo de exposición",
-      "description": "Simulador interactivo del triángulo de exposición — observa cómo la apertura, la velocidad de obturación y el ISO afectan tu imagen en tiempo real con vista previa en vivo."
+      "description": "Simulador interactivo del triángulo de exposición: mira cómo la apertura, la velocidad de obturación y el ISO afectan a tu imagen, con vista previa en tiempo real."
     },
     "star-trail-calculator": {
       "title": "Calculadora de trazos estelares",
@@ -32,7 +32,7 @@
     },
     "white-balance-visualizer": {
       "title": "Visualizador de balance de blancos",
-      "description": "Observa cómo el balance de blancos y la temperatura de color afectan tus fotos. Visualiza cambios de 2000K a 10000K con vista previa en tiempo real."
+      "description": "Mira cómo el balance de blancos y la temperatura de color afectan a tus fotos. Visualiza cambios de 2000 K a 10000 K en tiempo real."
     },
     "sensor-size-comparison": {
       "title": "Comparación de tamaños de sensor",
@@ -52,7 +52,7 @@
     },
     "hyperfocal-simulator": {
       "title": "Simulador de distancia hiperfocal",
-      "description": "Visualiza la distancia hiperfocal para cualquier objetivo y sensor. Ve exactamente dónde enfocar para máxima nitidez del primer plano al infinito."
+      "description": "Visualiza la distancia hiperfocal para cualquier objetivo y sensor. Encuentra exactamente dónde enfocar para conseguir la máxima nitidez desde el primer plano hasta el infinito."
     },
     "shutter-speed-visualizer": {
       "title": "Visualizador de velocidad de obturación",
@@ -64,7 +64,7 @@
     },
     "perspective-compression-simulator": {
       "title": "Simulador de compresión de perspectiva",
-      "description": "Simulador 3D interactivo que muestra cómo la distancia focal y la distancia afectan la compresión de perspectiva. Ve cómo cambia la compresión del fondo en tiempo real."
+      "description": "Simulador 3D interactivo que muestra cómo la distancia focal y la distancia al sujeto afectan a la compresión de perspectiva. Mira cómo cambia la compresión del fondo en tiempo real."
     },
     "about": {
       "title": "Acerca de",

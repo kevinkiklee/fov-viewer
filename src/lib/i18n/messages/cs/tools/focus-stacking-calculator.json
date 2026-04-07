@@ -34,7 +34,7 @@
       "distanceUnit": "m",
       "warning": "Upozornění",
       "tooFewShots": "Rozsah hloubky pokryje jediný snímek — stackování není potřeba",
-      "tooManyShots": "Tento plán vyžaduje hodně snímků. Zkus menší clonu, abys počet snížil.",
+      "tooManyShots": "Tento plán vyžaduje hodně snímků. Zkus víc přivřít clonu, abys jejich počet snížil.",
       "macroMode": "Makro",
       "landscapeMode": "Krajina"
     }

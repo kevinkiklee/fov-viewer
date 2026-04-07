@@ -60,7 +60,7 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Carichi una foto e l'istogramma è spinto pesantemente a sinistra con quasi niente sul lato destro. Cosa ti dice questo dell'immagine?",
+          "scenario": "Carichi una foto e l'istogramma è tutto concentrato a sinistra, con quasi niente sul lato destro. Cosa ti dice questo dell'immagine?",
           "hint": "Sinistra = scuro, destra = luminoso.",
           "successMessage": "Corretto! Un istogramma pesante a sinistra significa che l'immagine è prevalentemente di toni scuri — potrebbe essere sottoesposta, o potrebbe essere un'immagine intenzionalmente scura/low-key.",
           "failureMessage": "Un istogramma ammassato a sinistra indica che l'immagine è prevalentemente scura. Questo spesso significa sottoesposizione.",
@@ -82,7 +82,7 @@
           }
         },
         "2": {
-          "scenario": "Hai scattato un vivido tramonto e l'istogramma di luminanza sembra a posto, ma quando passi alla Sovrapposizione RGB vedi il canale rosso che picca all'estrema destra. Cosa sta succedendo?",
+          "scenario": "Hai scattato un tramonto vivido e l'istogramma di luminanza sembra a posto, ma quando passi alla Sovrapposizione RGB vedi il canale rosso che raggiunge il picco all'estrema destra. Cosa sta succedendo?",
           "hint": "I singoli canali colore possono andare in clipping anche quando la luminanza complessiva non lo fa.",
           "successMessage": "Esatto! Il canale rosso è in clipping — le alte luci del tramonto hanno perso dettaglio nei toni rossi anche se la luminosità complessiva sembra accettabile. Stai perdendo sfumature di colore caldo.",
           "failureMessage": "Il canale rosso sta facendo clipping indipendentemente. Le alte luci calde e sature (tramonti, fuoco) spesso spingono il rosso a 255 mentre verde e blu sono a posto, perdendo dettaglio cromatico in quei toni.",
@@ -110,7 +110,7 @@
           "failureMessage": "Un istogramma bimodale (picchi a entrambi gli estremi, centro vuoto) significa che la scena ha più gamma dinamica di quella che il tuo sensore può catturare in un solo scatto. Fai il bracketing delle esposizioni per l'HDR, o usa il flash di riempimento per ridurre il rapporto di contrasto.",
           "options": {
             "0": { "label": "Bracketing delle esposizioni per HDR o flash di riempimento" },
-            "1": { "label": "Esponi per i mezzitoni e spera per il meglio" },
+            "1": { "label": "Esponi per i mezzitoni e incrocia le dita" },
             "2": { "label": "Passa al bianco e nero per nascondere il problema" }
           }
         }

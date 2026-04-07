@@ -57,15 +57,15 @@
       "faq": {
         "what-is-exif-data": {
           "question": "Vad är EXIF-data i ett foto?",
-          "answer": "EXIF (Exchangeable Image File Format) är metadata som kameran bäddar in i ditt foto. Det innehåller kamerainställningar (bländare, slutartid, ISO), kamera- och objektivmodell, datum och tid, och ibland GPS-position."
+          "answer": "EXIF (Exchangeable Image File Format) är metadata som kameran bäddar in i fotot. Där finns kamerainställningarna (bländare, slutartid, ISO), kamera- och objektivmodell, datum och tid, och ibland GPS-position."
         },
         "how-to-read-histogram": {
           "question": "Hur läser jag ett histogram?",
-          "answer": "Ett histogram visar ljusstyrkans fördelning i bilden från skuggor (vänster) till högdagrar (höger). Ett välexponerat foto har oftast data fördelat över hela spannet utan klippning i ändarna, men den idealiska formen beror på scenen."
+          "answer": "Ett histogram visar hur ljusstyrkan fördelar sig i bilden, från skuggor (vänster) till högdagrar (höger). Ett välexponerat foto har oftast data spridda över hela spannet utan klippning i ändarna, men den idealiska formen beror helt på scenen."
         },
         "does-exif-contain-location": {
           "question": "Innehåller EXIF min plats?",
-          "answer": "Om kameran eller mobilen har GPS aktiverat kan EXIF-datan innehålla exakta GPS-koordinater där fotot togs. Tänk på det när du delar bilder online — många sociala plattformar tar bort EXIF-data, men inte alla."
+          "answer": "Om kameran eller mobilen har GPS påslagen kan EXIF-datan innehålla exakta GPS-koordinater för var fotot togs. Tänk på det när du delar bilder online — många sociala plattformar tar bort EXIF, men inte alla."
         }
       }
     }

@@ -1,12 +1,12 @@
 {
   "toolUI": {
     "nd-filter-calculator": {
-      "baseShutterSpeed": "Base Shutter Speed",
-      "ndFilter": "ND Filter",
-      "resultingShutterSpeed": "Resulting Shutter Speed",
-      "stopsAdded": "Stops Added",
-      "quickReference": "Quick Reference",
-      "tableBase": "Base"
+      "baseShutterSpeed": "বেস শাটার স্পিড",
+      "ndFilter": "ND ফিল্টার",
+      "resultingShutterSpeed": "ফলাফল শাটার স্পিড",
+      "stopsAdded": "যোগ করা স্টপ",
+      "quickReference": "দ্রুত রেফারেন্স",
+      "tableBase": "বেস"
     }
   }
 }

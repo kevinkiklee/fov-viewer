@@ -20,7 +20,7 @@
       "cropFactor": "Crop-Faktor",
       "fieldOfView": "Bildwinkel",
       "warningUnrealisticAperture": "Diese äquivalente Blende ({value}) ist lichtstärker als jedes reale Objektiv. Der Zielsensor kann die Schärfentiefe des Ausgangssensors nicht erreichen.",
-      "warningUnrealisticFL": "Diese äquivalente Brennweite ({value}mm) ist ungewöhnlich. Ein reales Objektiv mit dieser Brennweite wirst du kaum finden.",
+      "warningUnrealisticFL": "Diese äquivalente Brennweite ({value}mm) ist ungewöhnlich. Ein reales Objektiv mit dieser Brennweite findest du kaum.",
       "warningClosestReal": "Nächstliegendes reales Objektiv: {value}mm f/{aperture}",
       "diagramTitle": "Sensor- und Bildwinkelvergleich",
       "diagramSource": "Quelle",

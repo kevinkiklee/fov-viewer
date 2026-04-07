@@ -3,8 +3,8 @@
     "site": {
       "defaultTitle": "PhotoTools — Fotografiegereedschappen",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Gratis fotografiegereedschappen: beeldhoeksimulator, kleurenschemagenerator, EXIF-viewer, foto's bijsnijden en omlijsten, en meer.",
-      "ogTitle": "PhotoTools — Gratis fotografiegereedschappen"
+      "description": "Gratis fototools: beeldhoeksimulator, kleurenschemagenerator, EXIF-viewer, foto's bijsnijden en kaderen, en meer.",
+      "ogTitle": "PhotoTools — Gratis fototools"
     },
     "fov-simulator": {
       "title": "Beeldhoeksimulator — Vergelijk brandpuntsafstanden",
@@ -12,15 +12,15 @@
     },
     "dof-simulator": {
       "title": "Scherptediepte-simulator | PhotoTools",
-      "description": "Zie in realtime hoe diafragma, brandpuntsafstand en afstand de achtergrondonscherpte beïnvloeden met WebGL-simulatie"
+      "description": "Zie in realtime hoe diafragma, brandpuntsafstand en afstand de achtergrondonscherpte beïnvloeden, met WebGL-simulatie."
     },
     "focus-stacking-calculator": {
-      "title": "Focus-stackingcalculator | PhotoTools",
-      "description": "Bereken optimale scherpstelafstanden voor scherpte van voor tot achter bij macro- en landschapsfotografie"
+      "title": "Focus stacking calculator | PhotoTools",
+      "description": "Bereken de optimale scherpstelafstanden om bij macro- en landschapsfotografie alles van voor tot achter scherp te krijgen."
     },
     "equivalent-settings-calculator": {
-      "title": "Equivalente-instellingencalculator | PhotoTools",
-      "description": "Vind het equivalent diafragma en de equivalente brandpuntsafstand tussen sensorformaten om dezelfde scherptediepte te krijgen"
+      "title": "Equivalente instellingen — calculator | PhotoTools",
+      "description": "Bereken het equivalente diafragma en de equivalente brandpuntsafstand tussen sensorformaten om dezelfde scherptediepte te krijgen."
     },
     "exposure-simulator": {
       "title": "Belichtingsdriehoeksimulator",
@@ -28,7 +28,7 @@
     },
     "star-trail-calculator": {
       "title": "Sterrensporencalculator",
-      "description": "Bereken de maximale belichtingstijd voor puntvormige sterren met de 500-regel, NPF-regel en meer. Plan sterrenspoorstapeling voor elke locatie."
+      "description": "Bereken de maximale belichtingstijd voor puntvormige sterren met de 500-regel, NPF-regel en meer. Plan stertrails voor elke locatie."
     },
     "white-balance-visualizer": {
       "title": "Witbalansvisualisatie",
@@ -44,11 +44,11 @@
     },
     "frame-studio": {
       "title": "Frame Studio",
-      "description": "Bijsnijden, omlijsten en componeren van foto's met rasteroverlays. 100% aan clientzijde — je foto's verlaten nooit je apparaat."
+      "description": "Snij foto's bij, kader ze in en stel ze samen met rasteroverlays. 100% in je browser — je foto's verlaten je apparaat niet."
     },
     "exif-viewer": {
       "title": "EXIF-viewer",
-      "description": "Bekijk EXIF-metadata, histogram en afbeeldingsvoorbeeld van elke foto. 100% aan clientzijde — je foto's verlaten nooit je apparaat."
+      "description": "Bekijk EXIF-metadata, histogram en preview van elke foto. 100% in je browser — je foto's verlaten je apparaat niet."
     },
     "hyperfocal-simulator": {
       "title": "Hyperfocale-afstandsimulator",
@@ -63,16 +63,16 @@
       "description": "Bereken de juiste sluitertijd bij gebruik van ND-filters. Ondersteunt elke filtersterkte van ND2 tot ND1000000 met een snelle referentietabel."
     },
     "perspective-compression-simulator": {
-      "title": "Perspectivische-compressiesimulator",
-      "description": "Interactieve 3D-simulator die laat zien hoe brandpuntsafstand en afstand de perspectivische compressie beïnvloeden. Bekijk achtergrondcompressie in realtime."
+      "title": "Perspectiefcompressie-simulator",
+      "description": "Interactieve 3D-simulator die laat zien hoe brandpuntsafstand en afstand de perspectiefcompressie beïnvloeden. Zie de achtergrondcompressie in realtime."
     },
     "about": {
       "title": "Over ons",
-      "description": "PhotoTools is een gratis verzameling browsergebaseerde fotografie-rekenhulpen, simulatoren en naslagwerk voor fotografen van elk niveau."
+      "description": "PhotoTools is een gratis verzameling browsergebaseerde rekenhulpen, simulatoren en naslagwerken voor fotografen van elk niveau."
     },
     "contact": {
       "title": "Contact | PhotoTools",
-      "description": "Neem contact op met het PhotoTools-team — vragen, feedback of suggesties over onze fotografiegereedschappen."
+      "description": "Neem contact op met het PhotoTools-team — vragen, feedback of suggesties over onze fototools."
     },
     "privacy": {
       "title": "Privacybeleid | PhotoTools",

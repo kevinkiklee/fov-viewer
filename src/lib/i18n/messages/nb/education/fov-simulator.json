@@ -1,48 +1,48 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Synsfelt (FOV) handler om hvor mye av et motiv kameraet fanger. En vidvinkel (for eksempel 24 mm) ser bredt, mens et teleobjektiv (for eksempel 200 mm) fokuserer på et lite utsnitt. Denne simulatoren lar deg sammenligne opptil fire objektiver på ulike sensorer, lagt over ekte scener, slik at du ser nøyaktig hva hver kombinasjon fanger.",
+      "beginner": "Synsfelt (FOV) handler om hvor mye av motivet kameraet fanger. Et vidvinkelobjektiv (for eksempel 24 mm) ser bredt, mens et teleobjektiv (for eksempel 200 mm) trekker ut et lite utsnitt. Med denne simulatoren kan du sammenligne opptil fire objektiver på ulike sensorer, lagt over ekte scener, så du ser nøyaktig hva hver kombinasjon fanger.",
       "deeper": {
         "0": {
           "heading": "Formelen for synsfelt",
-          "text": "Synsfeltet bestemmes av to ting: brennvidde og sensorstørrelse. Den horisontale FOV-vinkelen beregnes som 2 × arctan(sensorBredde / (2 × brennvidde)). Kortere brennvidde eller større sensor gir en bredere synsvinkel."
+          "text": "Synsfeltet avhenger av to ting: brennvidde og sensorstørrelse. Den horisontale FOV-vinkelen regnes ut som 2 × arctan(sensorbredde / (2 × brennvidde)). Kortere brennvidde eller større sensor gir bredere synsvinkel."
         },
         "1": {
           "heading": "Cropfaktor og ekvivalent brennvidde",
-          "text": "Når du bytter sensor, kommer begrepet «ekvivalent brennvidde» inn: et 50 mm-objektiv på en APS-C-sensor (1,5× crop) rammer inn motivet som et 75 mm på fullformat. Den mindre sensoren fanger en smalere midtdel av bildekretsen, og beskjærer i praksis bildet."
+          "text": "Når du bytter sensor, kommer begrepet «ekvivalent brennvidde» inn: et 50 mm-objektiv på en APS-C-sensor (1,5× crop) rammer inn motivet som et 75 mm på fullformat. Den mindre sensoren fanger bare den midtre delen av bildekretsen, og beskjærer i praksis bildet."
         },
         "2": {
           "heading": "Perspektiv versus brennvidde",
-          "text": "Perspektiv — det romlige forholdet mellom nære og fjerne objekter — avhenger kun av kameraets posisjon, ikke av brennvidden. Et 50 mm og et 200 mm tatt fra samme sted viser identisk perspektiv, bare med ulik beskjæring. Går du nærmere med vidvinkel forsterker du dybden; tar du et steg tilbake med tele komprimerer du den."
+          "text": "Perspektiv — det romlige forholdet mellom nære og fjerne objekter — avhenger bare av kameraets posisjon, ikke av brennvidden. Et 50 mm og et 200 mm tatt fra samme sted viser identisk perspektiv, bare med ulik beskjæring. Går du nærmere med vidvinkel, forsterker du dybden; tar du et skritt tilbake med tele, komprimerer du den."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Brennvidde",
-          "description": "Hovedkontrollen over synsfeltet. Korte brennvidder ser mer av motivet; lange ser mindre, men forstørrer fjerne motiver."
+          "description": "Det som styrer synsfeltet mest. Korte brennvidder fanger mer av motivet; lange fanger mindre, men forstørrer fjerne motiver."
         },
         "1": {
           "label": "Sensorstørrelse",
-          "description": "En mindre sensor beskjærer midten av bildekretsen og smaler inn synsfeltet (cropfaktor-effekten)."
+          "description": "En mindre sensor beskjærer midten av bildekretsen og smaler inn synsfeltet (cropfaktoreffekten)."
         },
         "2": {
           "label": "Retning",
-          "description": "Portrett (vertikal) gir et høyere og smalere utsnitt. Landskap (horisontal) gir den bredere, mer tradisjonelle visningen."
+          "description": "Portrett (stående) gir et høyere og smalere utsnitt. Landskap (liggende) gir det bredere, mer tradisjonelle utsnittet."
         },
         "3": {
           "label": "Scenesammenheng",
-          "description": "Ulike scener (bybilder, interiør, natur) hjelper deg å forstå hvordan endringer i synsfelt oppleves i ulike reelle situasjoner."
+          "description": "Ulike scener (bybilder, interiør, natur) hjelper deg å skjønne hvordan endringer i synsfelt oppleves i virkelige situasjoner."
         }
       },
       "tips": {
         "0": {
-          "text": "Legg til to objektiver og veksle mellom cropsensor og fullformat på det ene for å se cropfaktor-effekten med én gang. Et 35 mm på APS-C rammer inn nesten likt som et 50 mm på fullformat."
+          "text": "Legg til to objektiver og veksle mellom cropsensor og fullformat på det ene for å se cropfaktoreffekten med en gang. Et 35 mm på APS-C rammer inn nesten likt som et 50 mm på fullformat."
         },
         "1": {
-          "text": "Bruk scene-velgeren for å sjekke dekningen i konkrete situasjoner — en bybilde-scene viser om vidvinkelen din er bred nok til å fange et bygg fra andre siden av gaten."
+          "text": "Bruk scenevelgeren for å sjekke dekningen i konkrete situasjoner — en bybildescene viser om vidvinkelen din er bred nok til å fange et bygg fra andre siden av gata."
         },
         "2": {
-          "text": "Når du vurderer et nytt objektiv, legg det gamle som Objektiv A og det nye som Objektiv B. Overlegget viser nøyaktig hvor mye mer eller mindre du ville sett."
+          "text": "Vurderer du et nytt objektiv? Legg det gamle som Objektiv A og det nye som Objektiv B. Overlegget viser nøyaktig hvor mye mer eller mindre du ville sett."
         }
       },
       "tooltips": {
@@ -56,19 +56,19 @@
         },
         "Scene": {
           "term": "Scene",
-          "definition": "Bakgrunnsbildet som brukes som referanse. Velg en scene som passer den typen fotografi du planlegger, for å få et bedre inntrykk av dekningen."
+          "definition": "Bakgrunnsbildet som brukes som referanse. Velg en scene som passer den typen fotografering du planlegger, så får du et bedre inntrykk av dekningen."
         },
         "Orientation": {
           "term": "Retning",
-          "definition": "Veksle mellom liggende (landskap) og stående (portrett). FOV-rektangelet roterer tilsvarende."
+          "definition": "Veksle mellom liggende (landskap) og stående (portrett). FOV-rektangelet roteres tilsvarende."
         }
       },
       "challenges": {
         "0": {
           "scenario": "Du vil fange et bredt utsnitt av en bysiluett. Hvilken brennvidde gir bredere synsfelt?",
-          "hint": "Lavere brennvidde-tall betyr bredere syn.",
-          "successMessage": "Riktig! Et 24 mm-objektiv ser mye mer av motivet enn et 70 mm. Vidvinkelobjektiver har korte brennvidder.",
-          "failureMessage": "Kortere brennvidder gir bredere synsfelt. 24 mm er en vidvinkel som fanger mye mer av siluetten enn 70 mm.",
+          "hint": "Lavere brennviddetall betyr bredere syn.",
+          "successMessage": "Riktig! Et 24 mm-objektiv fanger mye mer av motivet enn et 70 mm. Vidvinkelobjektiver har korte brennvidder.",
+          "failureMessage": "Kortere brennvidder gir bredere synsfelt. 24 mm er et vidvinkelobjektiv som fanger mye mer av siluetten enn et 70 mm.",
           "options": {
             "0": { "label": "24mm" },
             "1": { "label": "70mm" },
@@ -78,8 +78,8 @@
         "1": {
           "scenario": "Sett opp Objektiv A som 50 mm på fullformat. Hva slags synsfelt gir denne «nifty fifty»-en?",
           "hint": "50 mm på fullformat kalles «normal» fordi det ligner menneskelig syn.",
-          "successMessage": "Riktig! 50 mm på fullformat er det klassiske «normal»-objektivet — synsfeltet på rundt 46 grader ligner det øyet naturlig fokuserer på.",
-          "failureMessage": "50 mm på fullformat regnes som «normal» fordi synsfeltet (~46 grader) ligger nær det vi opplever som et naturlig syn.",
+          "successMessage": "Riktig! 50 mm på fullformat er det klassiske «normalobjektivet» — synsfeltet på rundt 46 grader ligner det øyet naturlig fokuserer på.",
+          "failureMessage": "50 mm på fullformat regnes som «normal» fordi synsfeltet (~46 grader) ligger nær det vi opplever som naturlig syn.",
           "options": {
             "0": { "label": "Ultravidvinkel" },
             "1": { "label": "Normal / standard" },
@@ -88,9 +88,9 @@
         },
         "2": {
           "scenario": "Legg til to objektiver: Objektiv A er 35 mm på APS-C (Nikon/Sony), og Objektiv B er 50 mm på fullformat. Sammenlign de to FOV-overleggene. Hva legger du merke til?",
-          "hint": "35 mm ganget med APS-C-cropfaktoren 1,5 blir ...",
-          "successMessage": "Akkurat! 35 mm på APS-C (1,5x crop) gir ekvivalent synsfelt som 52,5 mm på fullformat — nesten identisk med 50 mm FF. Overleggene er nesten like store.",
-          "failureMessage": "35 mm × 1,5 cropfaktor = 52,5 mm ekvivalent. Det er nesten likt som 50 mm på fullformat, og derfor blir overleggene nesten identiske.",
+          "hint": "35 mm ganget med APS-C-cropfaktoren 1,5 blir …",
+          "successMessage": "Nettopp! 35 mm på APS-C (1,5x crop) gir samme ekvivalente synsfelt som 52,5 mm på fullformat — nesten identisk med 50 mm FF. Overleggene blir nesten like store.",
+          "failureMessage": "35 mm × 1,5 cropfaktor = 52,5 mm ekvivalent. Det er nesten likt som 50 mm på fullformat, så overleggene blir nesten identiske.",
           "options": {
             "0": { "label": "De har nesten identisk synsfelt" },
             "1": { "label": "APS-C-objektivet viser mye bredere" },
@@ -98,9 +98,9 @@
           }
         },
         "3": {
-          "scenario": "Du fotograferer et lite rom innendørs. Du har et 24 mm-objektiv. Ser du mer av rommet på fullformat eller APS-C?",
+          "scenario": "Du fotograferer i et lite rom innendørs. Du har et 24 mm-objektiv. Ser du mer av rommet på fullformat eller APS-C?",
           "hint": "En mindre sensor fanger en smalere midtdel av objektivets bildekrets.",
-          "successMessage": "Riktig! Fullformat ser mer fordi den større sensoren fanger en bredere del av bildekretsen til 24 mm-objektivet. På APS-C rammer det samme 24 mm-objektivet inn som rundt 36 mm.",
+          "successMessage": "Riktig! Fullformat fanger mer fordi den større sensoren bruker en bredere del av bildekretsen til 24 mm-objektivet. På APS-C rammer samme objektiv inn som rundt 36 mm.",
           "failureMessage": "Fullformat fanger mer av motivet. Den større sensoren bruker mer av objektivets bildekrets og gir et bredere effektivt synsfelt.",
           "options": {
             "0": { "label": "Fullformat — større sensor ser mer" },
@@ -109,10 +109,10 @@
           }
         },
         "4": {
-          "scenario": "En viltfotograf bruker et 200 mm-objektiv på Micro Four Thirds. Hvilken fullformat-ekvivalent brennvidde gir dette, og hva er kompromisset sammenlignet med å bruke et 400 mm på fullformat?",
+          "scenario": "En viltfotograf bruker et 200 mm-objektiv på Micro Four Thirds. Hvilken fullformat-ekvivalent brennvidde gir dette, og hva er kompromisset sammenlignet med et 400 mm på fullformat?",
           "hint": "M43 har cropfaktor 2x. Tenk på dybdeskarphet og forskjell i sensorstørrelse.",
-          "successMessage": "Utmerket! 200 mm på M43 (2x crop) gir et 400 mm-ekvivalent synsfelt. Kompromisset: utsnittet matcher 400 mm FF, men dybdeskarpheten følger 200 mm-objektivet (dypere DoF), og den mindre sensoren samler mindre lys totalt, noe som gir dårligere støyytelse på høy ISO. Fordelen er mye mindre, lettere og rimeligere utstyr.",
-          "failureMessage": "200 mm × 2,0 crop = 400 mm ekvivalent FOV. Men det er ikke identisk med 400 mm på FF: du får mer dybdeskarphet (basert på den faktiske 200 mm-brennvidden), mindre lysinnsamling (mindre sensor) og mer støy på høy ISO. Gevinsten er klart mindre og lettere utstyr.",
+          "successMessage": "Helt riktig! 200 mm på M43 (2x crop) gir 400 mm ekvivalent synsfelt. Kompromisset: utsnittet matcher 400 mm FF, men dybdeskarpheten følger det faktiske 200 mm-objektivet (dypere DoF), og den mindre sensoren samler mindre lys totalt, noe som gir dårligere støyytelse på høy ISO. Gevinsten er mye mindre, lettere og rimeligere utstyr.",
+          "failureMessage": "200 mm × 2,0 crop = 400 mm ekvivalent FOV. Men det er ikke helt det samme som 400 mm på FF: du får mer dybdeskarphet (fordi brennvidden faktisk er 200 mm), mindre lysinnsamling (mindre sensor) og mer støy på høy ISO. Til gjengjeld er utstyret mye mindre og lettere.",
           "options": {
             "0": { "label": "400 mm ekvivalent — samme FOV, men dypere DoF, mer støy, mindre/lettere utstyr" },
             "1": { "label": "400 mm ekvivalent — helt identisk med 400 mm på fullformat" },

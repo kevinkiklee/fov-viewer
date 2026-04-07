@@ -4,7 +4,7 @@
       "rule500": "500-regeln",
       "ruleNPF": "NPF-regeln",
       "recommendation": "Rekommendation",
-      "recommendationText": "Använd NPF-regeln ({npf}s) för skärpa på pixelnivå. 500-regeln ({r500}s) är en snabb uppskattning men kan ge streck på högupplösta sensorer.",
+      "recommendationText": "Använd NPF-regeln ({npf} s) för skärpa på pixelnivå. 500-regeln ({r500} s) är en snabb uppskattning, men kan ge streck på högupplösta sensorer.",
       "shootingTime": "Tagningstid",
       "exposure": "Exponering",
       "displayMode": "Visningsläge",
@@ -12,11 +12,11 @@
       "modeSingleShot": "Enkel bild",
       "stacking": "Stacking",
       "exposurePerFrame": "Exponering/ruta (sek)",
-      "exposurePerFrameDesc": "Slutartid för varje enskild bild",
+      "exposurePerFrameDesc": "Slutartid per enskild bild",
       "frames": "Bilder",
       "framesDesc": "Totalt antal foton att stacka",
       "gapSec": "Glapp (sek)",
-      "gapDesc": "Fördröjning mellan bilder för buffertlagring",
+      "gapDesc": "Paus mellan bilderna medan kameran sparar filen",
       "camera": "Kamera",
       "sensor": "Sensor",
       "resolutionMP": "Upplösning (MP)",
@@ -31,15 +31,15 @@
       "faq": {
         "what-is-500-rule": {
           "question": "Vad är 500-regeln i astrofoto?",
-          "answer": "500-regeln uppskattar den längsta exponeringstiden innan stjärnorna blir streck istället för punkter. Dela 500 med din effektiva brännvidd (brännvidd × cropfaktor) för att få max slutartid i sekunder för skarpa stjärnor."
+          "answer": "500-regeln ger en uppskattning av längsta exponeringstid innan stjärnorna blir streck i stället för punkter. Dela 500 med din effektiva brännvidd (brännvidd × cropfaktor) så får du maximal slutartid i sekunder för skarpa stjärnor."
         },
         "star-trails-vs-points": {
           "question": "Hur väljer jag mellan star trails och skarpa stjärnpunkter?",
-          "answer": "För skarpa stjärnpunkter (Vintergatan, stjärnbilder): använd korta exponeringar enligt 500-regeln. För kreativa star trails som visar jordens rotation: använd mycket långa exponeringar (minuter till timmar) eller stacka många kortare bilder."
+          "answer": "För skarpa stjärnpunkter (Vintergatan, stjärnbilder): använd korta exponeringar enligt 500-regeln. För kreativa star trails som visar jordens rotation: ta mycket långa exponeringar (minuter till timmar) eller stacka många kortare bilder."
         },
         "best-settings-milky-way": {
           "question": "Vilka är de bästa kamerainställningarna för Vintergatan?",
-          "answer": "Börja med största bländaren (f/1.4–f/2.8), ISO 1600–6400 och längsta slutartid som 500-regeln tillåter för ditt objektiv. Använd stabilt stativ och manuell fokus på oändligheten. Fotografera vid nymåne på en plats med mörk himmel."
+          "answer": "Börja med största bländaren (f/1.4–f/2.8), ISO 1600–6400 och den längsta slutartid som 500-regeln tillåter för ditt objektiv. Använd stabilt stativ och manuell fokus på oändligheten. Fotografera vid nymåne på en plats med mörk himmel."
         }
       }
     }

@@ -1,19 +1,19 @@
 {
   "education": {
     "equivalent-settings-calculator": {
-      "beginner": "A különböző érzékelőméretek különböző mélységélességet és látószöget adnak még azonos gyújtótávolságon és rekeszen is. Az ekvivalens beállításokkal megtalálod, hogy egy másik kamerán melyik objektív- és rekeszkombináció adja ugyanazt a kompozíciót és háttérelmosódást. Ez nélkülözhetetlen, ha formátumok között hasonlítasz gépet, vagy rendszerek között váltasz.",
+      "beginner": "A különböző érzékelőméretek még azonos gyújtótávolság és rekesz mellett is más-más mélységélességet és látószöget adnak. Az ekvivalens beállításokkal kideríthető, hogy egy másik kamerán melyik objektív- és rekeszkombináció adja ugyanazt a kompozíciót és háttérelmosódást. Nélkülözhetetlen, ha formátumok közt hasonlítasz gépet vagy rendszert váltasz.",
       "deeper": {
         "0": {
           "heading": "A crop faktor",
-          "text": "Minden érzékelőnek van egy crop faktora a 35mm-es Full Frame szabványhoz képest. Az APS-C érzékelőké körülbelül 1,5×, a Micro Four Thirdsé 2×, a közepes formátumé nagyjából 0,79×. Ha a valós gyújtótávolságot megszorzod a crop faktorral, megkapod a Full Frame-ekvivalens látószöget. Egy 35mm-es objektív APS-C-n úgy fotóz, mint egy 52,5mm Full Frame-en."
+          "text": "Minden érzékelőnek van egy crop faktora a 35mm-es Full Frame szabványhoz viszonyítva. Az APS-C érzékelőké kb. 1,5×, a Micro Four Thirdsé 2×, a közepes formátumé nagyjából 0,79×. Ha a valós gyújtótávolságot megszorzod a crop faktorral, megkapod a Full Frame-ekvivalens látószöget. Egy 35mm-es objektív APS-C-n úgy viselkedik, mint egy 52,5mm Full Frame-en."
         },
         "1": {
           "heading": "Ekvivalens rekesz és DoF",
-          "text": "Ahhoz, hogy a mélységélesség egyezzen a formátumok között, az f-számot is szorozni kell ugyanazzal a crop faktorral. Egy f/1.4-es objektív Micro Four Thirds-ön olyan DoF-et ad, mint egy f/2.8 Full Frame-en (1,4 × 2 = 2,8). Ezért kedvelik annyira a Full Frame-et a kis mélységélességért — fizikailag gyorsabb objektíveket használhatsz tágabb valós rekesszel, és olyan elmosódást érhetsz el, amit a kisebb érzékelők nem tudnak reprodukálni."
+          "text": "Ahhoz, hogy a mélységélesség is egyezzen a formátumok között, az f-számot is meg kell szoroznod ugyanazzal a crop faktorral. Egy f/1.4-es objektív Micro Four Thirds-ön annyi DoF-et ad, mint egy f/2.8 Full Frame-en (1,4 × 2 = 2,8). Ezért kedvelik annyira a Full Frame-et a kis mélységélességért — fizikailag gyorsabb objektíveket használhatsz tágabb valós rekesszel, és olyan elmosódást érhetsz el, amit a kisebb érzékelők nem tudnak visszaadni."
         },
         "2": {
           "heading": "Ekvivalens ISO és összes fény",
-          "text": "Hogy a kép fényessége is egyezzen a formátumok között, az ISO-t a crop faktor négyzetével kell igazítani. A nagyobb érzékelő több összfényt gyűjt ugyanabból a jelenetből, így alacsonyabb ISO-n is hasonló zajt ad. Egy Full Frame ISO 800-on hasonló zajt mutat, mint egy APS-C ISO 356-on vagy egy Micro Four Thirds ISO 200-on."
+          "text": "Ahhoz, hogy a kép fényessége is egyezzen a formátumok között, az ISO-t a crop faktor négyzetével kell igazítani. A nagyobb érzékelő ugyanabból a jelenetből több összfényt gyűjt, így alacsonyabb ISO-n is hasonló zajt produkál. Egy Full Frame ISO 800-on nagyjából ugyanolyan zajt mutat, mint egy APS-C ISO 356-on vagy egy Micro Four Thirds ISO 200-on."
         }
       },
       "keyFactors": {
@@ -32,13 +32,13 @@
       },
       "tips": {
         "0": {
-          "text": "Ha kamerarendszereket hasonlítasz, mindig ekvivalens beállításokon hasonlítsd őket, ne pusztán azonos f-számokon. Egy f/2.8-as objektív Micro Four Thirds-ön nem adja ugyanazt a háttérelmosódást, mint egy f/2.8 Full Frame-en — ehhez MFT-n f/1.4 kellene."
+          "text": "Kamerarendszereket mindig ekvivalens beállításokon hasonlíts össze, ne pusztán azonos f-számokon. Egy f/2.8 Micro Four Thirds-ön nem ad ugyanakkora háttérelmosódást, mint egy f/2.8 Full Frame-en — ahhoz MFT-n f/1.4 kellene."
         },
         "1": {
-          "text": "Használd az ekvivalenciát az objektívvásárlás tervezéséhez, amikor rendszert váltasz. Ha imádod a 85mm f/1.8 Full Frame hatását, keress egy 56mm f/1.2-t APS-C-re vagy egy 42,5mm f/0.95-öt MFT-re, hogy hasonló rajzot kapj."
+          "text": "Rendszerváltáskor használd az ekvivalenciát az objektívvásárlás tervezéséhez. Ha imádod a 85mm f/1.8 Full Frame hatását, keress APS-C-re egy 56mm f/1.2-t, vagy MFT-re egy 42,5mm f/0.95-öt, hogy hasonló rajzot kapj."
         },
         "2": {
-          "text": "Ne feledd, hogy az ekvivalencia a mélységélességre és a látószögre vonatkozik, nem az expozíció szempontjából vett fényerőre. Egy f/2.8-as objektív bármelyik formátumon ugyanannyi fényt enged át területegységenként — a nagyobb érzékelő csak azért gyűjt több összfényt, mert nagyobb a felülete."
+          "text": "Fontos: az ekvivalencia a mélységélességre és a látószögre vonatkozik, nem az expozíció szempontjából vett fényerőre. Egy f/2.8-as objektív bármelyik formátumon ugyanannyi fényt enged át területegységenként — a nagyobb érzékelő csak azért gyűjt több összfényt, mert nagyobb a felülete."
         }
       },
       "tooltips": {

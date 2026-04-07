@@ -17,7 +17,7 @@
       "placeholderW": "B",
       "placeholderH": "H",
       "set": "Ange",
-      "applyCrop": "Tillämpa beskärning",
+      "applyCrop": "Använd beskärningen",
       "flipOrientation": "Vänd orientering",
       "portrait": "Stående",
       "landscape": "Liggande",
@@ -76,15 +76,15 @@
       "faq": {
         "what-is-rule-of-thirds": {
           "question": "Vad är tredjedelsregeln i fotografi?",
-          "answer": "Tredjedelsregeln delar in bilden i ett 3×3-rutnät. Att placera viktiga motiv längs linjerna eller vid skärningspunkterna skapar mer dynamiska och balanserade kompositioner än att centrera motivet."
+          "answer": "Tredjedelsregeln delar in bilden i ett 3×3-rutnät. Att placera viktiga motiv längs linjerna eller i skärningspunkterna ger mer dynamiska och balanserade kompositioner än att centrera motivet."
         },
         "best-aspect-ratio-for-instagram": {
           "question": "Vilket bildförhållande är bäst för Instagram?",
-          "answer": "Instagram stöder 1:1 (kvadrat), 4:5 (stående) och 1,91:1 (liggande). 4:5 i stående format tar mest skärmyta i flödet och ger vanligtvis högst engagemang."
+          "answer": "Instagram stöder 1:1 (kvadrat), 4:5 (stående) och 1,91:1 (liggande). 4:5 i stående format tar mest skärmyta i flödet och ger oftast högst engagemang."
         },
         "how-to-use-golden-ratio": {
           "question": "Hur använder jag det gyllene snittet i kompositionen?",
-          "answer": "Det gyllene snittet (ungefär 1,618:1) skapar ett spiralmönster som leder betraktarens blick genom bilden. Placera huvudmotivet vid spiralens trängsta punkt och låt ledande linjer följa kurvan utåt."
+          "answer": "Det gyllene snittet (ungefär 1,618:1) bildar ett spiralmönster som leder betraktarens blick genom bilden. Placera huvudmotivet i spiralens trängsta punkt och låt ledande linjer följa kurvan utåt."
         }
       }
     }

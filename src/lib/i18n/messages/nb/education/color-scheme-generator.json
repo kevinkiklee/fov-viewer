@@ -1,23 +1,23 @@
 {
   "education": {
     "color-scheme-generator": {
-      "beginner": "Fargeharmoni handler om å velge farger som kler hverandre. På samme måte som musikkakkorder skaper visse fargekombinasjoner behagelige visuelle forhold. Fotografer bruker fargeharmoni til å planlegge klær, scenografi og til og med tidspunktet for utendørsfoto, slik at de får riktig palett fra naturen.",
+      "beginner": "Fargeharmoni handler om å velge farger som kler hverandre. På samme måte som musikkakkorder skaper visse fargekombinasjoner behagelige visuelle forhold. Fotografer bruker fargeharmoni til å planlegge klær, scenografi og til og med tidspunktet på dagen for utendørsfoto, slik at de får riktig palett fra naturen.",
       "deeper": {
         "0": {
           "heading": "Fargehjulet",
-          "text": "Fargeharmoni er forankret i fargehjulet, som ordner fargene i en sirkel basert på bølgelengdene deres. HSL-modellen (fargetone, metning, lyshet) samsvarer direkte med hjulet: fargetone er vinkelen (0–360°), metning er avstanden fra sentrum og lyshet styrer lysstyrken. I fotografi dukker disse sammenhengene opp naturlig — gylden time gir analoge varme toner, mens en rød låve mot grønne jorder er komplementær."
+          "text": "Fargeharmoni er forankret i fargehjulet, som ordner fargene i en sirkel etter bølgelengdene deres. HSL-modellen (fargetone, metning, lyshet) samsvarer direkte med hjulet: fargetone er vinkelen (0–360°), metning er avstanden fra sentrum, og lyshet styrer lysstyrken. I fotografi dukker disse sammenhengene opp helt naturlig — gylden time gir analoge varme toner, mens en rød låve mot grønne jorder er komplementær."
         },
         "1": {
           "heading": "Komplementære",
-          "text": "To farger som ligger rett overfor hverandre på hjulet (180° fra hverandre), for eksempel blå og oransje eller rød og grønn. Dette gir maksimal kontrast og visuell energi. Flott når du vil at motivet skal stå ut mot bakgrunnen — tenk portretter i gylden time der varme hudtoner møter en kjølig blå himmel."
+          "text": "To farger som ligger rett overfor hverandre på hjulet (180° fra hverandre), for eksempel blått og oransje eller rødt og grønt. Dette gir maksimal kontrast og visuell energi. Supert når du vil at motivet skal skille seg ut fra bakgrunnen — tenk portretter i gylden time der varme hudtoner møter en kjølig blå himmel."
         },
         "2": {
           "heading": "Analoge",
-          "text": "Tre farger som er naboer på hjulet, vanligvis innenfor en spredning på 30–60°. De gir myke, samstemte paletter med lav kontrast. Ideelt for landskap og stemningsbilder — høstløv er en naturlig analog palett i rødt, oransje og gult."
+          "text": "Tre farger som er naboer på hjulet, vanligvis innenfor en spredning på 30–60°. De gir myke, samstemte paletter med lav kontrast. Ideelt til landskap og stemningsbilder — høstløv er en naturlig analog palett i rødt, oransje og gult."
         },
         "3": {
           "heading": "Triadisk",
-          "text": "Tre farger jevnt fordelt med 120° mellomrom rundt hjulet, for eksempel rød, gul og blå. Triadiske skjemaer føles balanserte og livlige, uten spenningen i komplementær kontrast. Best resultat får du ved å la én farge dominere og bruke de to andre som aksenter."
+          "text": "Tre farger jevnt fordelt med 120° mellomrom rundt hjulet, for eksempel rødt, gult og blått. Triadiske skjemaer føles balanserte og livlige, uten spenningen i komplementær kontrast. Best resultat får du ved å la én farge dominere og bruke de to andre som aksenter."
         },
         "4": {
           "heading": "Delt komplementær",
@@ -25,7 +25,7 @@
         },
         "5": {
           "heading": "Tetradisk (dobbelt komplementær)",
-          "text": "Fire farger som danner et rektangel på hjulet — i praksis to komplementære par. Dette gir den rikeste og mest komplekse paletten, men krever nøye balanse. La én farge dominere og bruk de andre som aksenter for å unngå et kaotisk uttrykk."
+          "text": "Fire farger som danner et rektangel på hjulet — i praksis to komplementære par. Dette gir den rikeste og mest sammensatte paletten, men krever nøye balanse. La én farge dominere og bruk de andre som aksenter for å unngå et kaotisk uttrykk."
         }
       },
       "keyFactors": {
@@ -39,22 +39,22 @@
         },
         "2": {
           "label": "Metning",
-          "description": "Hvor livlige eller dempede fargene er. Lav metning gir pastelltoner og jordfarger; høy metning gir modige, mettede paletter."
+          "description": "Hvor livlige eller dempede fargene er. Lav metning gir pastelltoner og jordfarger, mens høy metning gir dristige, mettede paletter."
         },
         "3": {
           "label": "Lyshet",
-          "description": "Styrer lysstyrken. Justering av lyshet kan få samme fargetone til å føles helt forskjellig — mørk marineblå og himmelblå er samme fargetone med ulik lyshet."
+          "description": "Styrer lysstyrken. Endring i lyshet kan få samme fargetone til å føles helt forskjellig — mørk marineblå og himmelblå har samme fargetone, bare ulik lyshet."
         }
       },
       "tips": {
         "0": {
-          "text": "Til portrettsesjoner, velg en komplementær eller delt komplementær palett, og la motivet bære hovedfargen mens bakgrunnen gir kontrastfargen. Blått/oransje (portretter i gylden time) er et klassisk eksempel."
+          "text": "Til portrettsesjoner bør du velge en komplementær eller delt komplementær palett, og la motivet bære hovedfargen mens bakgrunnen gir kontrastfargen. Blått og oransje (portretter i gylden time) er et klassisk eksempel."
         },
         "1": {
           "text": "Bruk analog harmoni til landskap — naturen jobber allerede i analoge paletter. Tilpass klær og rekvisitter til de dominerende naturtonene."
         },
         "2": {
-          "text": "Reduser metningen til 30–50 % for å forhåndsvise hvordan fargene ser ut i en mer dempet, redaksjonell stil. Høy metning passer til kommersielt og mote, men lavere metning føles ofte mer raffinert."
+          "text": "Reduser metningen til 30–50 % for å se hvordan fargene ser ut i en mer dempet, redaksjonell stil. Høy metning passer til reklame og mote, men lavere metning føles ofte mer raffinert."
         }
       },
       "tooltips": {
@@ -89,9 +89,9 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Du vil ha maksimal kontrast mellom to farger til et dristig grafisk portrett. Hvilken harmonitype gir mest visuell spenning?",
+          "scenario": "Du vil ha maksimal kontrast mellom to farger til et dristig, grafisk portrett. Hvilken harmonitype gir mest visuell spenning?",
           "hint": "Farger rett overfor hverandre på hjulet skaper sterkest kontrast.",
-          "successMessage": "Riktig! Komplementære farger ligger 180 grader fra hverandre og gir høyest kontrast — perfekt for modige, iøynefallende komposisjoner.",
+          "successMessage": "Riktig! Komplementære farger ligger 180 grader fra hverandre og gir høyest kontrast — perfekt for dristige, iøynefallende komposisjoner.",
           "failureMessage": "Komplementær harmoni plasserer fargene rett overfor hverandre på hjulet og gir maksimal visuell kontrast.",
           "options": {
             "0": { "label": "Komplementær" },
@@ -111,10 +111,10 @@
           }
         },
         "2": {
-          "scenario": "En kunde vil ha et portrett med kontrast, men ikke like intenst som ren komplementær. Hvilken harmonitype demper motstanden men beholder visuell interesse?",
+          "scenario": "En kunde vil ha et portrett med kontrast, men ikke like intenst som ren komplementær. Hvilken harmonitype demper spenningen, men beholder visuell interesse?",
           "hint": "Denne typen bruker to farger nær motfargen i stedet for motfargen selv.",
-          "successMessage": "Utmerket! Delt komplementær beholder kontrasten fra komplementær, men splitter motfargen i to naboer, og gir en mindre skurrende men fortsatt dynamisk palett.",
-          "failureMessage": "Delt komplementær er svaret — den erstatter den enkle motfargen med to naboer av motfargen, og demper kontrasten uten å miste visuell energi.",
+          "successMessage": "Utmerket! Delt komplementær beholder mye av kontrasten fra komplementær, men splitter motfargen i to naboer og gir en mindre skurrende, men fortsatt dynamisk palett.",
+          "failureMessage": "Delt komplementær er svaret — den erstatter motfargen med to naboer av motfargen, og demper kontrasten uten å miste visuell energi.",
           "options": {
             "0": { "label": "Delt komplementær" },
             "1": { "label": "Triadisk" },
@@ -124,8 +124,8 @@
         "3": {
           "scenario": "Du setter hovedfargen til oransje (fargetone rundt 30 grader) med komplementær harmoni. Hvilken farge blir komplementet?",
           "hint": "Komplementær betyr 180 grader motsatt på hjulet.",
-          "successMessage": "Riktig! 30° + 180° = 210°, som ligger i det blå området. Oransje og blått er et av fotograferingens mest elskede komplementærpar.",
-          "failureMessage": "Å legge til 180° til oransje (30°) gir 210°, altså blå. Oransje-blå-paret er en klassiker i fotografi.",
+          "successMessage": "Riktig! 30° + 180° = 210°, som ligger i det blå området. Oransje og blått er et av fotografiets mest elskede komplementærpar.",
+          "failureMessage": "Å legge 180° til oransje (30°) gir 210°, altså blått. Oransje-blå-paret er en klassiker i fotografi.",
           "options": {
             "0": { "label": "Blå (~210°)" },
             "1": { "label": "Grønn (~150°)" },
@@ -134,8 +134,8 @@
         },
         "4": {
           "scenario": "Du er art director for en moteshoot og trenger en firefargepalett med både varme og kjølige toner og høy visuell rikdom. Hvilken harmonitype gir fire farger, og hva er hovedutfordringen med å bruke den?",
-          "hint": "Fire-fargeharmonien danner et rektangel på hjulet.",
-          "successMessage": "Riktig! Tetradisk harmoni gir fire farger som danner et rektangel på hjulet. Hovedutfordringen er balanse — med fire distinkte fargetoner må én dominere mens de andre fungerer som aksenter. Uten hierarki blir bildet kaotisk.",
+          "hint": "Denne firefargeharmonien danner et rektangel på hjulet.",
+          "successMessage": "Riktig! Tetradisk harmoni gir fire farger som danner et rektangel på hjulet. Hovedutfordringen er balansen — med fire distinkte fargetoner må én dominere mens de andre fungerer som aksenter. Uten et tydelig hierarki blir bildet kaotisk.",
           "failureMessage": "Tetradisk (dobbelt komplementær) gir fire farger i rektangelmønster. Utfordringen er at fire sterke fargetoner konkurrerer om oppmerksomheten — du må utpeke én dominerende farge og bruke de andre som aksenter.",
           "options": {
             "0": { "label": "Tetradisk — utfordringen er å holde visuelt hierarki mellom fire fargetoner" },

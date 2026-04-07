@@ -1,42 +1,42 @@
 {
   "metadata": {
     "site": {
-      "defaultTitle": "PhotoTools — Mga Photography Tool",
+      "defaultTitle": "PhotoTools — Mga Photography Tools",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Libreng photography tools: FOV simulator, Color scheme generator, EXIF viewer, Crop at frame ng mga litrato, at marami pang iba.",
+      "description": "Libreng photography tools: FOV simulator, color scheme generator, EXIF viewer, photo crop at frame, at marami pang iba.",
       "ogTitle": "PhotoTools — Libreng Photography Tools"
     },
     "fov-simulator": {
       "title": "FOV Simulator — Ikumpara ang Focal Lengths",
-      "description": "Ikumpara ang field of view sa iba't ibang focal length at sensor size. Libre, interactive, at pwedeng i-share."
+      "description": "Ikumpara ang field of view sa iba't ibang focal length at sensor size. Libre, interactive, at shareable."
     },
     "dof-simulator": {
-      "title": "Depth-of-Field Simulator — Kalkulador ng DoF | PhotoTools",
-      "description": "I-visualize kung paano nakakaapekto ang aperture, focal length, at distansya sa background blur gamit ang real-time WebGL simulation"
+      "title": "Depth-of-Field Simulator — DoF Calculator | PhotoTools",
+      "description": "I-visualize kung paano apektado ng aperture, focal length, at distance ang background blur gamit ang real-time WebGL simulation."
     },
     "focus-stacking-calculator": {
-      "title": "Focus Stacking Calculator — Kalkulador para sa Focus Stacking | PhotoTools",
-      "description": "Kalkulahin ang tamang focus distance para sa front-to-back sharpness sa macro at landscape photography"
+      "title": "Focus Stacking Calculator — Kalkulador ng DoF | PhotoTools",
+      "description": "Kalkulahin ang tamang focus distances para sa front-to-back sharpness sa macro at landscape photography."
     },
     "equivalent-settings-calculator": {
-      "title": "Equivalent Settings Calculator — Kalkulador ng Katumbas na Settings | PhotoTools",
-      "description": "Hanapin ang equivalent aperture at focal length sa iba't ibang sensor format para magkapareho ang depth of field"
+      "title": "Equivalent Settings Calculator — Katumbas na Settings | PhotoTools",
+      "description": "Hanapin ang equivalent aperture at focal length sa iba't ibang sensor format para magkapareho ang depth of field."
     },
     "exposure-simulator": {
-      "title": "Exposure Triangle Simulator — Simulator ng Exposure Triangle",
-      "description": "Interactive exposure triangle simulator — tingnan kung paano nakakaapekto ang aperture, shutter speed, at ISO sa litrato mo gamit ang live preview."
+      "title": "Exposure Triangle Simulator — Simulator ng Eksposyur",
+      "description": "Interactive exposure triangle simulator — tingnan kung paano apektado ng aperture, shutter speed, at ISO ang litrato mo gamit ang live preview."
     },
     "star-trail-calculator": {
       "title": "Star Trail Calculator",
-      "description": "Kalkulahin ang max exposure time para sa pinpoint stars gamit ang 500, NPF, at iba pang rules. Magplano ng star trail stacking shot para sa kahit anong lokasyon."
+      "description": "Kalkulahin ang max exposure time para sa pinpoint stars gamit ang 500, NPF, at iba pang rules. Magplano ng star trail stacking shot para sa kahit saang lokasyon."
     },
     "white-balance-visualizer": {
       "title": "White Balance Visualizer",
-      "description": "Tingnan kung paano nakakaapekto ang white balance at color temperature sa mga litrato mo. I-visualize ang pagbabago mula 2000K hanggang 10000K gamit ang real-time preview."
+      "description": "Tingnan kung paano apektado ng white balance at color temperature ang mga litrato mo. I-visualize ang pagbabago mula 2000K hanggang 10000K gamit ang real-time preview."
     },
     "sensor-size-comparison": {
       "title": "Sensor Size Comparison",
-      "description": "Ikumpara ang mga camera sensor size mula medium format hanggang smartphone. Tingnan ang overlay, side-by-side, at pixel density views gamit ang totoong camera models."
+      "description": "Ikumpara ang mga camera sensor size mula medium format hanggang smartphone. Tingnan sa overlay, side-by-side, at pixel density views gamit ang totoong camera models."
     },
     "color-scheme-generator": {
       "title": "Color Scheme Generator",
@@ -44,47 +44,47 @@
     },
     "frame-studio": {
       "title": "Frame Studio",
-      "description": "I-crop, i-frame, at i-compose ang mga litrato gamit ang grid overlays. 100% client-side — hindi umaalis ang mga litrato mo sa device."
+      "description": "I-crop, i-frame, at i-compose ang mga litrato gamit ang grid overlays. 100% client-side — hindi umaalis sa device mo ang mga litrato."
     },
     "exif-viewer": {
       "title": "EXIF Viewer",
-      "description": "Tingnan ang EXIF metadata, histogram, at image preview ng kahit anong litrato. 100% client-side — hindi umaalis ang mga litrato mo sa device."
+      "description": "Tingnan ang EXIF metadata, histogram, at image preview ng kahit anong litrato. 100% client-side — hindi umaalis sa device mo ang mga litrato."
     },
     "hyperfocal-simulator": {
-      "title": "Hyperfocal Distance Simulator — Simulator ng Hyperfocal Distance",
-      "description": "I-visualize ang hyperfocal distance para sa kahit anong lens at sensor. Tingnan kung saan eksaktong mag-focus para sa maximum sharpness mula foreground hanggang infinity."
+      "title": "Hyperfocal Distance Simulator — Hyperfocal na Distansya",
+      "description": "I-visualize ang hyperfocal distance para sa kahit anong lens at sensor. Tingnan kung saan dapat mag-focus para sa maximum sharpness mula foreground hanggang infinity."
     },
     "shutter-speed-visualizer": {
       "title": "Shutter Speed Visualizer",
-      "description": "Hanapin ang minimum shutter speed para sa matatalas na handheld na litrato. Isinasaalang-alang ang focal length, sensor size, at image stabilization."
+      "description": "Hanapin ang minimum shutter speed para sa sharp na handheld shots. Isinasaalang-alang ang focal length, sensor size, at image stabilization."
     },
     "nd-filter-calculator": {
       "title": "ND Filter Calculator",
-      "description": "Kalkulahin ang tamang shutter speed kapag gumagamit ng ND filter. Sinusuportahan ang kahit anong filter strength mula ND2 hanggang ND1000000 gamit ang quick-reference table."
+      "description": "Kalkulahin ang tamang shutter speed kapag gumagamit ng ND filter. Sinusuportahan ang lahat ng filter strength mula ND2 hanggang ND1000000 gamit ang quick-reference table."
     },
     "perspective-compression-simulator": {
-      "title": "Perspective Compression Simulator — Simulator ng Perspective Compression",
-      "description": "Interactive 3D simulator na nagpapakita kung paano nakakaapekto ang focal length at distansya sa perspective compression. Tingnan ang background compression sa real time."
+      "title": "Perspective Compression Simulator — Pagkasiksik ng Perspektibo",
+      "description": "Interactive 3D simulator na nagpapakita kung paano apektado ng focal length at distance ang perspective compression. Tingnan ang background compression in real time."
     },
     "about": {
       "title": "Tungkol",
-      "description": "Ang PhotoTools ay libreng koleksyon ng mga browser-based photography calculator, simulator, at sanggunian para sa mga photographer sa lahat ng antas ng kakayahan."
+      "description": "Ang PhotoTools ay libreng koleksyon ng mga browser-based photography calculators, simulators, at reference tools para sa mga photographer sa lahat ng skill level."
     },
     "contact": {
-      "title": "Makipag-ugnayan | PhotoTools",
-      "description": "Makipag-ugnayan sa PhotoTools team — tanong, feedback, o suhestyon tungkol sa aming mga photography tool."
+      "title": "Contact | PhotoTools",
+      "description": "Makipag-ugnayan sa PhotoTools team — tanong, feedback, o suggestion tungkol sa aming mga photography tools."
     },
     "privacy": {
       "title": "Patakaran sa Privacy | PhotoTools",
-      "description": "Alamin kung paano hinahawakan ng PhotoTools ang iyong data, kabilang ang analytics, cookies, at contact form submissions sa www.phototools.io."
+      "description": "Alamin kung paano hinahawakan ng PhotoTools ang data mo, kasama ang analytics, cookies, at contact form submissions sa www.phototools.io."
     },
     "terms": {
       "title": "Mga Tuntunin ng Serbisyo | PhotoTools",
-      "description": "Mga Tuntunin ng Serbisyo para sa PhotoTools — alamin ang tungkol sa acceptable use, intellectual property, disclaimer, at limitations of liability para sa www.phototools.io."
+      "description": "Terms of Service para sa PhotoTools — alamin ang tungkol sa acceptable use, intellectual property, disclaimer, at limitations of liability para sa www.phototools.io."
     },
     "glossary": {
       "title": "Photography Glossary",
-      "description": "Naghahanap na talasalitaan ng 50+ photography terms na may mga definition at link sa mga interactive tool."
+      "description": "Searchable glossary ng 50+ photography terms na may mga definition at links sa mga interactive tool."
     }
   }
 }

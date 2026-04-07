@@ -1,19 +1,19 @@
 {
   "education": {
     "sensor-size-comparison": {
-      "beginner": "Kamerasensorer findes i mange forskellige fysiske størrelser — fra de store mellemformat-chips i studiokameraer til de bittesmå sensorer i smartphones. En større sensor fanger mere lys, producerer mindre støj og gør det lettere at sløre baggrunden. Sensorstørrelse er en af de vigtigste faktorer, der adskiller kamerakategorier.",
+      "beginner": "Kamerasensorer findes i mange fysiske størrelser — fra de store mellemformat-chips i studiekameraer til de bittesmå sensorer i smartphones. En større sensor fanger mere lys, giver mindre støj og gør det lettere at sløre baggrunden. Sensorstørrelse er en af de vigtigste ting, der skiller kamerakategorierne fra hinanden.",
       "deeper": {
         "0": {
           "heading": "Sådan virker det",
-          "text": "Sensorstørrelse påvirker fotografiet på flere sammenhængende måder. En større sensor har et større areal til at indsamle fotoner, hvilket forbedrer signal-støj-forholdet og dynamikområdet. Sensorstørrelse er en af de vigtigste forskelle mellem kamerakategorier — fra mellemformat-studiokameraer til smartphonesensorer."
+          "text": "Sensorstørrelse påvirker fotografiet på flere sammenhængende måder. En større sensor har et større areal til at indsamle fotoner, og det forbedrer både signal-støj-forholdet og dynamikområdet. Sensorstørrelse er en af de vigtigste forskelle mellem kamerakategorier — fra mellemformat-studiekameraer til smartphone-sensorer."
         },
         "1": {
           "heading": "Cropfaktor",
-          "text": "\"Cropfaktor\" beskriver hvordan en sensor sammenlignes med 35mm fuldformat-standarden. En APS-C-sensor med 1,5x cropfaktor giver samme billedvinkel med en 35mm linse, som et fuldformat-kamera gør med en 52,5mm. Cropfaktoren multiplicerer også den effektive dybdeskarphed — en mindre sensor ser ud til at give mere dybdeskarphed ved samme udsnit, fordi du skal bruge en kortere (videre) linse for at matche billedvinklen."
+          "text": "\"Cropfaktor\" beskriver, hvordan en sensor forholder sig til 35mm fuldformat-standarden. En APS-C-sensor med 1,5x cropfaktor giver samme billedvinkel med en 35mm linse, som et fuldformat-kamera gør med en 52,5mm. Cropfaktoren påvirker også den effektive dybdeskarphed — en mindre sensor ser ud til at give mere dybdeskarphed ved samme udsnit, fordi du skal bruge en kortere (videre) linse for at matche billedvinklen."
         },
         "2": {
           "heading": "Pixeltæthed",
-          "text": "Pixeltæthed (pixel pitch) måler, hvor tæt pixels er pakket på sensoren. At pakke flere megapixels på en mindre sensor skrumper hvert fotosted og reducerer lysindsamlingen pr. pixel. En 24MP fuldformat-sensor har ~6µm pixels, mens en 24MP APS-C-sensor har ~4µm pixels, hvilket er grunden til, at fuldformat typisk klarer sig bedre ved høj ISO."
+          "text": "Pixeltæthed (pixel pitch) er et mål for, hvor tæt pixels er pakket på sensoren. Pakker du flere megapixels ind på en mindre sensor, skrumper hvert fotosite, og hver pixel samler mindre lys. En 24MP fuldformat-sensor har pixels på ca. 6µm, mens en 24MP APS-C-sensor har pixels på ca. 4µm — og det er derfor, at fuldformat typisk klarer sig bedre ved høj ISO."
         }
       },
       "keyFactors": {
@@ -36,31 +36,31 @@
       },
       "tips": {
         "0": {
-          "text": "Brug overlay-tilstanden til at se præcis, hvor meget større én sensor er end en anden — arealforskellen er ofte mere dramatisk, end tallene antyder."
+          "text": "Brug overlay-tilstanden til at se præcis, hvor meget større én sensor er end en anden — forskellen i areal er ofte mere dramatisk, end tallene antyder."
         },
         "1": {
-          "text": "Skift til pixeltæthedstilstand og indtast dit kameras opløsning for at sammenligne pixel pitch. Har dit kamera meget høj pixeltæthed, rammer du diffraktionsgrænserne ved bredere blænder end forventet."
+          "text": "Skift til pixeltæthedstilstand, og indtast dit kameras opløsning for at sammenligne pixel pitch. Har dit kamera meget høj pixeltæthed, rammer du diffraktionsgrænsen ved bredere blænder end forventet."
         },
         "2": {
-          "text": "Når du sammenligner kameraer, betyder sensorareal mere end megapixelantal for støjpræstationen. En 20MP fuldformat-sensor vil typisk være bedre end en 40MP APS-C ved høj ISO."
+          "text": "Når du sammenligner kameraer, betyder sensorarealet mere end megapixelantallet for støjen. En 20MP fuldformatsensor vil typisk være bedre end en 40MP APS-C ved høj ISO."
         }
       },
       "tooltips": {
         "Sensor": {
           "term": "Sensor",
-          "definition": "Tænd eller sluk for individuelle sensorformater for at inkludere dem i den visuelle sammenligning og datatabellen."
+          "definition": "Tænd eller sluk for de enkelte sensorformater for at tage dem med i den visuelle sammenligning og datatabellen."
         },
         "Display Mode": {
           "term": "Visningstilstand",
-          "definition": "Overlay viser alle sensorer centreret på samme punkt. Side om side placerer dem ved siden af hinanden i samme skala. Pixeltæthed visualiserer, hvor tæt pixels er pakket."
+          "definition": "Overlay viser alle sensorer centreret i samme punkt. Side om side placerer dem ved siden af hinanden i samme skala. Pixeltæthed viser, hvor tæt pixels er pakket."
         },
         "Resolution": {
           "term": "Opløsning",
-          "definition": "Det samlede megapixelantal, der bruges til at beregne pixel pitch i pixeltæthedstilstand. Højere megapixels på samme sensorstørrelse betyder mindre individuelle pixels."
+          "definition": "Det samlede megapixelantal, som bruges til at beregne pixel pitch i pixeltæthedstilstand. Højere megapixels på samme sensorstørrelse betyder mindre pixels."
         },
         "Crop Factor": {
           "term": "Cropfaktor",
-          "definition": "Forholdet mellem 35mm fuldformatens diagonal og denne sensors diagonal. En 1,5x cropfaktor betyder, at en 50mm linse framer som en 75mm på fuldformat."
+          "definition": "Forholdet mellem 35mm fuldformatens diagonal og denne sensors diagonal. En cropfaktor på 1,5x betyder, at en 50mm linse framer som en 75mm på fuldformat."
         }
       },
       "challenges": {
@@ -87,9 +87,9 @@
           }
         },
         "2": {
-          "scenario": "To kameraer har begge 24 megapixels — ét fuldformat (36×24mm) og ét APS-C (24×16mm). Hvilket har bedst støjpræstation ved høj ISO, og hvorfor?",
-          "hint": "Tænk på, hvordan det samme antal pixels spredt over forskellige sensorarealer påvirker de enkelte pixels størrelse.",
-          "successMessage": "Præcis! Fuldformatsensoren spreder 24MP over et større areal, så hver pixel er fysisk større (~6µm mod ~4µm pitch) og fanger flere fotoner, hvilket giver mindre støj.",
+          "scenario": "To kameraer har begge 24 megapixels — et fuldformat (36×24mm) og et APS-C (24×16mm). Hvilket klarer sig bedst ved høj ISO, og hvorfor?",
+          "hint": "Tænk på, hvordan det samme antal pixels fordelt over forskellige sensorarealer påvirker den enkelte pixels størrelse.",
+          "successMessage": "Præcis! Fuldformatsensoren fordeler de 24MP over et større areal, så hver pixel er fysisk større (~6µm mod ~4µm pitch) og fanger flere fotoner — og det giver mindre støj.",
           "failureMessage": "Fuldformatet vinder — samme megapixelantal på et større areal betyder større pixels, der samler mere lys og giver mindre støj ved høj ISO.",
           "options": {
             "0": { "label": "Fuldformat — større pixels samler mere lys" },
@@ -98,10 +98,10 @@
           }
         },
         "3": {
-          "scenario": "Hvis du kigger på sammenligningstabellen, hvilket sensorformat har en cropfaktor tættest på 2,0x?",
+          "scenario": "Hvis du kigger på sammenligningstabellen — hvilket sensorformat har en cropfaktor tættest på 2,0x?",
           "hint": "Cropfaktoren er fuldformatens diagonal divideret med sensorens diagonal.",
-          "successMessage": "Rigtigt! Micro Four Thirds har en cropfaktor på 2,0x, og det er derfor en 25mm M43-linse framer som en 50mm på fuldformat.",
-          "failureMessage": "Micro Four Thirds har en 2,0x cropfaktor. Tjek tabellen — dens diagonal er præcis halvdelen af fuldformatens.",
+          "successMessage": "Rigtigt! Micro Four Thirds har en cropfaktor på 2,0x, og derfor framer en 25mm M43-linse som en 50mm på fuldformat.",
+          "failureMessage": "Micro Four Thirds har en cropfaktor på 2,0x. Tjek tabellen — dens diagonal er præcis halvdelen af fuldformatens.",
           "options": {
             "0": { "label": "APS-C (Canon)" },
             "1": { "label": "Micro Four Thirds" },
@@ -111,7 +111,7 @@
         "4": {
           "scenario": "Du sammenligner et 50MP mellemformatkamera med et 50MP fuldformatkamera i pixeltæthedstilstand. Begge har samme megapixelantal. Hvilket kamera har den største pixel pitch, og hvilken praktisk fordel giver det?",
           "hint": "Pixel pitch afhænger af sensorbredden divideret med antallet af vandrette pixels.",
-          "successMessage": "Rigtigt! Mellemformatsensoren er fysisk større, så ved 50MP er pixels større (højere pitch). Det giver omkring 1/3 stops bedre lysindsamling pr. pixel og lidt senere diffraktion.",
+          "successMessage": "Rigtigt! Mellemformatsensoren er fysisk større, så ved 50MP er pixels større (højere pitch). Det giver omkring 1/3 stop bedre lysindsamling pr. pixel og lidt senere diffraktion.",
           "failureMessage": "Mellemformatsensoren er større, så ved samme opløsning er hver pixel fysisk større. Større pixels samler flere fotoner og giver bedre dynamikområde og lidt senere diffraktionsgrænser.",
           "options": {
             "0": { "label": "Mellemformat — bedre lysindsamling pr. pixel og dynamikområde" },

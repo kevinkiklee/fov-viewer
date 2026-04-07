@@ -1,94 +1,94 @@
 {
   "education": {
     "star-trail-calculator": {
-      "beginner": "Tähdet näyttävät liikkuvan taivaalla, koska Maa pyörii. Jos suljin on auki tarpeeksi kauan, tähdet venyvät raidoiksi kuvassasi. Tähtiratalaskuri auttaa sinua löytämään maksimivalotusajan pistemäisille tähdille tai suunnittelemaan pitkiä valotuksia kauniiden ympyräkaaristen tähtiratojen luomiseksi.",
+      "beginner": "Tähdet näyttävät liikkuvan taivaalla, koska Maa pyörii. Jos suljin on auki riittävän kauan, tähdet venyvät kuvassa raidoiksi. Tähtiratalaskurin avulla löydät pisimmän valotusajan, jolla tähdet pysyvät pistemäisinä, tai voit suunnitella pitkiä valotussarjoja kauniita kaarevia tähtiratoja varten.",
       "deeper": {
         "0": {
           "heading": "Miten tähdet liikkuvat",
-          "text": "Maa pyörii 360° noin 23 tunnissa ja 56 minuutissa (sideerinen vuorokausi), joten tähdet liikkuvat noin 15 kaarisekuntia sekunnissa taivaanpäiväntasaajalla. Napojen lähellä olevat tähdet (Pohjantähti pohjoisessa) piirtävät pienempiä ympyröitä ja liikkuvat hitaammin."
+          "text": "Maa pyörii 360° noin 23 tunnissa ja 56 minuutissa (sideerinen vuorokausi), joten tähdet liikkuvat taivaanpäiväntasaajalla noin 15 kaarisekuntia sekunnissa. Taivaannapojen lähellä olevat tähdet (pohjoisessa Pohjantähti) piirtävät pienempiä ympyröitä ja liikkuvat hitaammin."
         },
         "1": {
           "heading": "500-sääntö vs. NPF-sääntö",
-          "text": "Klassinen \"500-sääntö\" jakaa 500:n tehollisella polttovälilläsi arvioidakseen maksimivalotuksen ennen kuin venytys näkyy — mutta se suunniteltiin matalaresoluutioisille kennoille. NPF-sääntö ottaa huomioon pikselikoon, polttovälin, aukon ja deklinaation, tuottaen lyhyempiä ja tarkempia rajoja moderneille korkearesoluutioisille kameroille."
+          "text": "Klassinen 500-sääntö jakaa luvun 500 tehollisella polttovälillä ja arvioi näin pisimmän valotuksen, jolla tähdet pysyvät vielä pisteinä — mutta sääntö on suunniteltu vanhoille matalaresoluutioisille kennoille. NPF-sääntö huomioi lisäksi pikselikoon, polttovälin, aukon ja deklinaation ja antaa tarkemmat, tyypillisesti lyhyemmät rajat moderneille korkean resoluution kameroille."
         },
         "2": {
           "heading": "Pinoaminen tähtiratoja varten",
-          "text": "Tarkoituksellisia tähtiratoja varten kuvaajat ottavat monia lyhyempiä valotuksia (tyypillisesti 30s kukin) ja pinoavat ne ohjelmistossa. Tämä välttää kohinan kertymisen, mahdollistaa aukottomat radat ja tarkoittaa ettei yksi huono ruutu pilaa koko kuvaa."
+          "text": "Tähtiratakuvissa kuvaajat ottavat yleensä useita lyhyempiä valotuksia (tyypillisesti 30 s per ruutu) ja pinoavat ne jälkikäsittelyssä. Näin kennon kohina ei kasva liikaa, radat pysyvät katkeamattomina, eikä yksi pilalle mennyt ruutu tuhoa koko kuvaa."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Polttoväli",
-          "description": "Pidemmät polttovälit suurentavat tähtien liikettä, vaatien lyhyempiä valotuksia pistemäisille tähdille. 14 mm:n objektiivilla voi valottaa 5–10 kertaa pidempään kuin 200 mm:n objektiivilla."
+          "description": "Pitkä polttoväli suurentaa tähtien liikettä, jolloin pistemäiset tähdet vaativat lyhyemmät valotusajat. 14 mm:n objektiivilla voi valottaa 5–10 kertaa pidempään kuin 200 mm:n objektiivilla."
         },
         "1": {
           "label": "Kennon resoluutio",
-          "description": "Korkearesoluutioiset kennot paljastavat tähtien venymän lyhyemmillä valotusajoilla. 500-sääntö on liian antelias moderneille 40 MP+ kameroille."
+          "description": "Korkean resoluution kennoilla tähtien venymä näkyy lyhyemmilläkin valotusajoilla. 500-sääntö on liian antelias moderneille 40 MP+ kameroille."
         },
         "2": {
           "label": "Leveysaste ja deklinaatio",
-          "description": "Taivaannapojen lähellä olevat tähdet liikkuvat vähemmän sekunnissa. Pohjantähteä kohti osoittaminen mahdollistaa pidempiä valotuksia ennen raitoja."
+          "description": "Taivaannapojen lähellä olevat tähdet liikkuvat sekunnissa vähemmän. Pohjantähden suuntaan osoittaminen sallii pidemmät valotukset ennen kuin raitoja syntyy."
         },
         "3": {
           "label": "Pinoaminen vs. yksittäinen valotus",
-          "description": "Tähtiradoissa monien lyhyiden valotusten pinoaminen tuottaa puhtaampia tuloksia kuin yksi äärimmäisen pitkä valotus ja mahdollistaa keskeytyksistä toipumisen."
+          "description": "Tähtiradoissa useiden lyhyiden valotusten pinoaminen tuottaa puhtaamman tuloksen kuin yksi erittäin pitkä valotus, ja mahdollistaa keskeytyksistä toipumisen."
         }
       },
       "tips": {
         "0": {
-          "text": "Käytä NPF-sääntöä 500-säännön sijaan moderneille kameroille. Se ottaa huomioon kennon resoluution ja tuottaa tarkempia maksimivalotusaikoja, etenkin korkeamegapikselisillä rungoilla."
+          "text": "Käytä moderneilla kameroilla NPF-sääntöä 500-säännön sijaan. Se huomioi kennon resoluution ja antaa tarkemmat pisimmän valotuksen ajat, etenkin korkean megapikselimäärän rungoilla."
         },
         "1": {
-          "text": "Tähtiratojen pinoamiseen pidä ruutujen väliset aukot alle 2–3 sekunnissa käyttämällä langallista kaukolaukaisinta tai intervalometria. Pidemmät aukot luovat pisteviä raitoja sulavien sijaan."
+          "text": "Tähtiratojen pinoamisessa pidä ruutujen välinen tauko alle 2–3 sekunnissa langallisella kaukolaukaisimella tai intervallilaukaisimella. Pidemmät tauot katkaisevat radat pisteviksi sen sijaan että ne olisivat yhtenäisiä."
         },
         "2": {
-          "text": "Sisällytä Pohjantähti (tai eteläinen taivaannapa) sommitelmaasi saadaksesi vaikuttavat samankeskiset ympyräradat. Napaan lähempänä olevat tähdet piirtävät tiukempia kaaria."
+          "text": "Sisällytä Pohjantähti (tai eteläinen taivaannapa) sommitelmaan, niin saat vaikuttavat samankeskiset kaaret. Lähellä napaa olevat tähdet piirtävät tiukempia kaaria."
         }
       },
       "tooltips": {
         "mode": {
           "term": "Tila",
-          "definition": "Valitse \"Sharp Stars\" laskeaksesi maksimivalotusajan pistemäisille tähdille tai \"Star Trails\" suunnitellaksesi valotussarjoja tarkoituksellisia rataefektejä varten."
+          "definition": "Valitse \"Pistemäiset tähdet\", kun haluat laskea pisimmän valotusajan teräville tähdille, tai \"Tähtiradat\", kun suunnittelet valotussarjaa näkyviä ratoja varten."
         },
         "focalLength": {
           "term": "Polttoväli",
-          "definition": "Objektiivin polttoväli millimetreinä. Pidemmät polttovälit suurentavat tähtien näennäistä liikettä, vaatien lyhyempiä yksittäisvalotuksia."
+          "definition": "Objektiivin polttoväli millimetreinä. Pitkä polttoväli suurentaa tähtien näennäistä liikettä, jolloin yksittäiset valotukset pitää pitää lyhyempinä."
         },
         "sensor": {
           "term": "Kennokoko",
-          "definition": "Kennon fyysiset mitat. Yhdistettynä resoluutioon määrittää pikselikoon, joka vaikuttaa siihen kuinka nopeasti tähtien venymä tulee näkyviin."
+          "definition": "Kennon fyysiset mitat. Yhdessä resoluution kanssa määrittää pikselikoon, joka vaikuttaa siihen, kuinka nopeasti tähtien venymä tulee näkyviin."
         },
         "resolution": {
           "term": "Resoluutio",
-          "definition": "Kennon resoluutio megapikseleinä. Korkearesoluutioiset kamerat paljastavat tähtien venymän aikaisemmin, koska jokainen pikseli kattaa pienemmän taivaan kulman."
+          "definition": "Kennon resoluutio megapikseleinä. Korkean resoluution kameroissa tähtien venymä näkyy aikaisemmin, koska jokainen pikseli kattaa pienemmän taivaan alueen."
         },
         "aperture": {
           "term": "Aukko",
-          "definition": "Objektiivin aukko. Astrokuvaukseen käytä suurinta saatavilla olevaa aukkoa (pienintä f-lukua) tallentaaksesi mahdollisimman paljon tähtien valoa joka ruutuun."
+          "definition": "Objektiivin aukko. Astrokuvauksessa käytä suurinta mahdollista aukkoa (pienintä f-lukua), jotta jokaiseen ruutuun saadaan mahdollisimman paljon tähtien valoa."
         },
         "latitude": {
           "term": "Leveysaste",
-          "definition": "Maantieteellinen leveysasteesi. Vaikuttaa tähtien näennäiseen liikenopeuteen — korkeammilla leveysasteilla napaan lähellä olevat tähdet liikkuvat hitaammin ruudussa."
+          "definition": "Maantieteellinen leveysasteesi. Vaikuttaa tähtien näennäiseen liikenopeuteen — korkeilla leveysasteilla napaa lähellä olevat tähdet liikkuvat kuvassa hitaammin."
         },
         "exposurePerFrame": {
-          "term": "Valotus ruutua kohden",
-          "definition": "Yksittäisen ruudun suljinaika tähtiratasarjassa. Tyypillisesti 15–30 sekuntia tallentaakseen tarpeeksi valoa ja välttäen liiallista kohinaa."
+          "term": "Valotus / ruutu",
+          "definition": "Yksittäisen ruudun suljinaika tähtiratasarjassa. Tyypillisesti 15–30 sekuntia, jolloin valoa kertyy riittävästi ilman liiallista kohinaa."
         },
         "numberOfFrames": {
           "term": "Ruutujen määrä",
-          "definition": "Kuinka monta yksittäistä valotusta otetaan. Enemmän ruutuja tarkoittaa pidempiä, dramaattisempia tähtiratoja. 120 ruutua 30 sekunnin välein tuottaa yhden tunnin ratoja."
+          "definition": "Yksittäisten valotusten lukumäärä. Mitä enemmän ruutuja, sitä pidemmät ja dramaattisemmat tähtiradat. 120 ruutua 30 sekunnin välein tuottaa noin tunnin mittaiset radat."
         },
         "gapBetweenFrames": {
-          "term": "Aukko ruutujen välillä",
-          "definition": "Aika valotusten välillä, jolloin kamera tallentaa tiedoston. Pidä tämä mahdollisimman lyhyenä (1–3 sekuntia) välttääksesi pisteviä ratoja."
+          "term": "Ruutujen välinen tauko",
+          "definition": "Aika peräkkäisten valotusten välillä, jolloin kamera tallentaa tiedoston. Pidä mahdollisimman lyhyenä (1–3 sekuntia), jotta radoista ei tule pistemäisiä."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Kuvaat Linnunrataa 24 mm:n objektiivilla täyskennoisella 24 MP:n kameralla. Kuinka pitkään voit likimäärin valottaa 500-säännön mukaan ennen kuin tähdet alkavat venyä?",
-          "hint": "500-sääntö: maksimisekunnit = 500 / polttoväli.",
-          "successMessage": "Oikein! 500 / 24 = noin 20 sekuntia. Tämä on hyvä lähtökohta, vaikka NPF-sääntö saattaisi ehdottaa hieman lyhyempää aikaa kriittistä terävyyttä varten.",
-          "failureMessage": "Käytä 500-sääntöä: jaa 500 polttovälilläsi (24 mm). Saat noin 20 sekuntia.",
+          "scenario": "Kuvaat Linnunrataa 24 mm:n objektiivilla 24 MP:n täyskennoisella kameralla. Suunnilleen kuinka pitkään voit valottaa 500-säännön mukaan ennen kuin tähdet alkavat venyä?",
+          "hint": "500-sääntö: enimmäisaika sekunteina = 500 / polttoväli.",
+          "successMessage": "Oikein! 500 / 24 ≈ 20 sekuntia. Hyvä lähtökohta, joskin NPF-sääntö saattaisi kriittisen terävyyden takia ehdottaa hieman lyhyempää.",
+          "failureMessage": "Käytä 500-sääntöä: jaa 500 polttovälillä (24 mm). Tulos on noin 20 sekuntia.",
           "options": {
             "0": { "label": "5 sekuntia" },
             "1": { "label": "10 sekuntia" },
@@ -97,10 +97,10 @@
           }
         },
         "1": {
-          "scenario": "Haluat kuvata Orionin sumun 200 mm:n objektiivilla rajaavalla kennolla (1,5x kerroin). Mikä on likimääräinen maksimivalotus 500-säännöllä?",
+          "scenario": "Haluat kuvata Orionin sumun 200 mm:n objektiivilla rajaavalla kennolla (kerroin 1,5×). Mikä on karkea enimmäisvalotus 500-säännöllä?",
           "hint": "Rajaavalla kennolla kerro ensin polttoväli kertoimella ja sovella sitten sääntöä.",
-          "successMessage": "Oikein! Tehollinen polttoväli on 200 mm × 1,5 = 300 mm. 500 / 300 = ~1,7 sekuntia. Telepituuksilla rajaavilla kennoilla on hyvin vähän aikaa ennen kuin venymä näkyy.",
-          "failureMessage": "Muista ottaa kerroin huomioon: 200 mm × 1,5 = 300 mm tehollinen. Sitten 500 / 300 antaa noin 1,7 sekuntia.",
+          "successMessage": "Oikein! Tehollinen polttoväli on 200 mm × 1,5 = 300 mm. 500 / 300 ≈ 1,7 sekuntia. Telepituuksilla rajaavalla kennolla aikaa on hyvin vähän ennen kuin venymä näkyy.",
+          "failureMessage": "Muista huomioida kerroin: 200 mm × 1,5 = 300 mm tehollinen polttoväli. 500 / 300 ≈ 1,7 sekuntia.",
           "options": {
             "0": { "label": "~1,7 sekuntia" },
             "1": { "label": "~2,5 sekuntia" },
@@ -109,10 +109,10 @@
           }
         },
         "2": {
-          "scenario": "Haluat luoda 2 tunnin tähtiratakuvan. Aiot kuvata 30 sekunnin valotuksia 2 sekunnin aukoilla. Kuinka monta ruutua tarvitset?",
-          "hint": "Laske kuinka monta 32 sekunnin väliä (30s valotus + 2s aukko) mahtuu 2 tuntiin (7200 sekuntia).",
-          "successMessage": "Oikein! 7200 sekuntia / 32 sekuntia per ruutu = 225 ruutua. Saat sulavat, jatkuvat radat 2 tunnin Maan pyörähdyksen ajalta.",
-          "failureMessage": "Kaksi tuntia = 7200 sekuntia. Jokainen ruutukierros on 30s + 2s = 32s. Jaa 7200 luvulla 32 saadaksesi tarvittavien ruutujen määrän.",
+          "scenario": "Haluat tehdä 2 tunnin tähtiratakuvan. Aiot ottaa 30 sekunnin valotuksia 2 sekunnin tauoilla. Kuinka monta ruutua tarvitset?",
+          "hint": "Laske, kuinka monta 32 sekunnin jaksoa (30 s valotus + 2 s tauko) mahtuu 2 tuntiin (7200 sekuntiin).",
+          "successMessage": "Oikein! 7200 s / 32 s per ruutu = 225 ruutua. Saat kahden tunnin ajalta yhtenäiset, sulavat tähtiradat.",
+          "failureMessage": "Kaksi tuntia = 7200 sekuntia. Jokainen ruutukierros on 30 s + 2 s = 32 s. Jaa 7200 luvulla 32, niin saat tarvittavien ruutujen määrän.",
           "options": {
             "0": { "label": "120 ruutua" },
             "1": { "label": "180 ruutua" },
@@ -121,27 +121,27 @@
           }
         },
         "3": {
-          "scenario": "Ystäväsi käyttää 50 MP:n täyskennoista kameraa ja noudatti 500-sääntöä 20 mm:n objektiivilla, saaden 25 sekunnin valotuksen. Hän valittaa, että tähdet näyttävät lyhyiltä raidoilta lähennettäessä. Miksi?",
-          "hint": "500-sääntö suunniteltiin vanhemmille, matalaresoluutioisille kennoille.",
-          "successMessage": "Juuri niin! 500-sääntö on liian antelias korkearesoluutioisille kennoille. 50 MP:n täyskennoisella kennolla pikselikoko on noin 4,4 mikrometriä, ja NPF-sääntö suosittelisi noin 10–12 sekuntia todella teräville tähdille.",
-          "failureMessage": "500-sääntö luotiin, kun kennoissa oli paljon vähemmän megapikseleitä. 50 MP:llä jokainen pikseli kattaa paljon pienemmän siivun taivasta, paljastaen tähtien liikkeen, joka oli näkymätön vanhemmissa kameroissa.",
+          "scenario": "Ystäväsi käyttää 50 MP:n täyskennoista kameraa ja sovelsi 500-sääntöä 20 mm:n objektiivilla, jolloin valotusajaksi tuli 25 sekuntia. Hän valittaa, että lähennettäessä tähdet näyttävät pieniltä raidoilta. Miksi?",
+          "hint": "500-sääntö on kehitetty vanhoille, matalaresoluutioisille kennoille.",
+          "successMessage": "Juuri niin! 500-sääntö on liian antelias korkean resoluution kennoille. 50 MP:n täyskennolla pikselikoko on noin 4,4 µm, ja NPF-sääntö suosittelisi teräville tähdille noin 10–12 sekuntia.",
+          "failureMessage": "500-sääntö luotiin aikana, jolloin kennoissa oli paljon vähemmän megapikseleitä. 50 MP:llä jokainen pikseli kattaa paljon pienemmän alueen taivaasta ja paljastaa sen tähtien liikkeen, joka jäi vanhoissa kameroissa piiloon.",
           "options": {
-            "0": { "label": "Objektiivi oli epätarkasti tarkennettu" },
-            "1": { "label": "500-sääntö on liian antelias korkearesoluutioisille kennoille" },
+            "0": { "label": "Objektiivi oli tarkennettu väärin" },
+            "1": { "label": "500-sääntö on liian antelias korkean resoluution kennoille" },
             "2": { "label": "Kamera tärisi tuulessa" },
             "3": { "label": "20 mm on liian laaja astrokuvaukseen" }
           }
         },
         "4": {
-          "scenario": "Haluat yhden tunnin tähtiratakuvan. Miksi kokeneet astrokuvaajat pinoavat monia lyhyitä valotuksia (esim. 240 × 15s) sen sijaan että ottaisivat yhden tunnin valotuksen?",
-          "hint": "Mieti mitä tapahtuu kennon kohinalle, akun kestolle ja palautettavuudelle erittäin pitkässä yksittäisvalotuksessa.",
-          "successMessage": "Oikein! Yksittäinen tunnin valotus kertyy massiivisesti lämpökohinaa, tyhjentää akun, ja jos jotain menee pieleen (tärinä, kaste, auton ajovalot), koko kuva on pilalla. Lyhyiden ruutujen pinoaminen pitää kohinan alhaisena, sallii huonojen ruutujen poiston ja on paljon anteeksiantavampaa.",
-          "failureMessage": "Pitkät yksittäisvalotukset kerryttävät vakavaa lämpökohinaa ja riskeeraavat täyden menetyksen keskeytyksistä. Lyhyiden ruutujen pinoaminen pitää kohinan hallittavana, antaa hylätä pilatut ruudut ja tuottaa puhtaampia tuloksia.",
+          "scenario": "Haluat tunnin mittaisen tähtiratakuvan. Miksi kokeneet astrokuvaajat pinoavat mieluummin useita lyhyitä valotuksia (esim. 240 × 15 s) kuin ottavat yhden tunnin mittaisen valotuksen?",
+          "hint": "Mieti, mitä tapahtuu kennon kohinalle, akun kestolle ja sarjan pelastettavuudelle, jos yksittäinen valotus kestää erittäin kauan.",
+          "successMessage": "Oikein! Tunnin yksittäisvalotukseen kertyy valtavasti lämpökohinaa, akku kuluu loppuun, ja jos jotain menee pieleen (tärinä, kaste, auton ajovalot), koko kuva on pilalla. Lyhyiden ruutujen pinoaminen pitää kohinan kurissa, sallii huonojen ruutujen poistamisen ja on paljon anteeksiantavampaa.",
+          "failureMessage": "Pitkät yksittäisvalotukset keräävät paljon lämpökohinaa, ja pieni keskeytys pilaa koko kuvan. Lyhyiden ruutujen pinoaminen pitää kohinan hallinnassa, antaa hylätä pilatut ruudut ja tuottaa puhtaamman lopputuloksen.",
           "options": {
-            "0": { "label": "Pinoaminen tuottaa pidempiä ratoja kuin yksi valotus" },
-            "1": { "label": "Yksittäisvalotukset eivät voi tallentaa tähtien liikettä" },
-            "2": { "label": "Pinoaminen vähentää kohinaa, sallii toipumisen keskeytyksistä ja säästää akkua" },
-            "3": { "label": "Ei käytännön eroa — puhtaasti mieltymyskysymys" }
+            "0": { "label": "Pinoamalla saa pidemmät radat kuin yhdellä valotuksella" },
+            "1": { "label": "Yksittäisvalotus ei pysty tallentamaan tähtien liikettä" },
+            "2": { "label": "Pinoaminen vähentää kohinaa, antaa toipua keskeytyksistä ja säästää akkua" },
+            "3": { "label": "Ei käytännön eroa — puhdas makuasia" }
           }
         }
       }

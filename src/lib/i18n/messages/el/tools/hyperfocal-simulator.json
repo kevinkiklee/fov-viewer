@@ -1,21 +1,21 @@
 {
   "toolUI": {
     "hyperfocal-simulator": {
-      "settings": "Settings",
-      "focalLength": "Focal Length",
-      "aperture": "Aperture",
-      "focusDistance": "Focus Distance:",
-      "sensor": "Sensor",
-      "scene": "Scene:",
-      "sceneLandscape": "Landscape",
-      "sceneStreet": "Street",
-      "hyperfocalDistance": "Hyperfocal Distance",
-      "nearLimit": "Near Limit",
-      "farLimit": "Far Limit",
-      "focusDistanceResult": "Focus Distance",
-      "hyperfocalReference": "Hyperfocal Reference",
-      "sharpToInfinity": "Sharp to infinity",
-      "nearLimitBadge": "Near limit:"
+      "settings": "Ρυθμίσεις",
+      "focalLength": "Εστιακή απόσταση",
+      "aperture": "Διάφραγμα",
+      "focusDistance": "Απόσταση εστίασης:",
+      "sensor": "Αισθητήρας",
+      "scene": "Σκηνή:",
+      "sceneLandscape": "Τοπίο",
+      "sceneStreet": "Δρόμος",
+      "hyperfocalDistance": "Υπερεστιακή απόσταση",
+      "nearLimit": "Κοντινό όριο",
+      "farLimit": "Μακρινό όριο",
+      "focusDistanceResult": "Απόσταση εστίασης",
+      "hyperfocalReference": "Αναφορά υπερεστιακής",
+      "sharpToInfinity": "Ευκρινές μέχρι το άπειρο",
+      "nearLimitBadge": "Κοντινό όριο:"
     }
   }
 }

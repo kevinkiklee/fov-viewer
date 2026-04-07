@@ -7,7 +7,7 @@
       "switchToLandscape": "Bytt til landskap",
       "centerOverlays": "Sentrer overlegg",
       "addLens": "+ Legg til objektiv",
-      "fovSimulator": "FOV Simulator",
+      "fovSimulator": "FOV-simulator",
       "sensor": "Sensor",
       "copyImage": "Kopier bilde",
       "copyLink": "Kopier lenke",
@@ -32,11 +32,11 @@
       "faq": {
         "what-is-fov": {
           "question": "Hva er synsfelt i fotografi?",
-          "answer": "Synsfelt (FOV) er den vinkelen av motivet som er synlig gjennom objektivet og sensoren din. Det bestemmer hvor mye av en scene som blir med i bildet, og avhenger av brennvidde og sensorstørrelse."
+          "answer": "Synsfelt (FOV) er den delen av motivet du ser gjennom objektivet og sensoren. Det bestemmer hvor mye av en scene som kommer med i bildet, og avhenger av brennvidde og sensorstørrelse."
         },
         "how-crop-factor-affects-fov": {
           "question": "Hvordan påvirker cropfaktoren synsfeltet?",
-          "answer": "En mindre sensor (høyere cropfaktor) fanger et smalere synsfelt enn en fullformatsensor med samme brennvidde. For eksempel gir en APS-C-sensor med 1,5x cropfaktor et 50 mm-objektiv omtrent samme synsfelt som et 75 mm-objektiv på fullformat."
+          "answer": "En mindre sensor (høyere cropfaktor) fanger et smalere synsfelt enn en fullformatsensor med samme brennvidde. For eksempel gir et 50 mm-objektiv på en APS-C-sensor med 1,5x cropfaktor omtrent samme synsfelt som et 75 mm på fullformat."
         },
         "fov-vs-focal-length": {
           "question": "Hva er sammenhengen mellom synsfelt og brennvidde?",

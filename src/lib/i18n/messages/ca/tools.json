@@ -1,11 +1,11 @@
 {
   "tools": {
     "fov-simulator": {
-      "name": "FOV Simulator",
+      "name": "Simulador d'angle de visió",
       "description": "Compara l'angle de visió entre distàncies focals i mides de sensor"
     },
     "color-scheme-generator": {
-      "name": "Color Scheme Generator",
+      "name": "Generador de paletes de colors",
       "description": "Crea paletes de colors per a les teves sessions fotogràfiques"
     },
     "exposure-simulator": {
@@ -13,11 +13,11 @@
       "description": "Mira com interactuen el diafragma, la velocitat d'obturació i l'ISO"
     },
     "dof-simulator": {
-      "name": "Depth-of-Field Simulator",
+      "name": "Simulador de profunditat de camp",
       "description": "Visualitza com el diafragma, la distància focal i la distància afecten el desenfocament del fons"
     },
     "focus-stacking-calculator": {
-      "name": "Focus Stacking Calculator",
+      "name": "Calculadora de focus stacking",
       "description": "Calcula distàncies d'enfocament òptimes per a una nitidesa de davant a darrere"
     },
     "equivalent-settings-calculator": {
@@ -29,15 +29,15 @@
       "description": "Descobreix on enfocar per obtenir la màxima nitidesa des del primer pla fins a l'infinit"
     },
     "shutter-speed-visualizer": {
-      "name": "Shutter Speed Visualizer",
+      "name": "Visualitzador de velocitat d'obturació",
       "description": "Troba la velocitat d'obturació mínima per a fotos nítides a pols"
     },
     "nd-filter-calculator": {
-      "name": "ND Filter Calculator",
+      "name": "Calculadora de filtres ND",
       "description": "Calcula el temps d'exposició amb qualsevol filtre ND"
     },
     "star-trail-calculator": {
-      "name": "Star Trail Calculator",
+      "name": "Calculadora de rastres d'estrelles",
       "description": "Calcula l'exposició màxima per a estrelles nítides o planifica fotos de rastres d'estrelles"
     },
     "perspective-compression-simulator": {
@@ -45,11 +45,11 @@
       "description": "Mira com la distància focal afecta la compressió del fons"
     },
     "white-balance-visualizer": {
-      "name": "White Balance Visualizer",
+      "name": "Visualitzador de balanç de blancs",
       "description": "Mira com la temperatura de color afecta les teves fotos"
     },
     "sensor-size-comparison": {
-      "name": "Sensor Size Comparison",
+      "name": "Comparador de mides de sensor",
       "description": "Compara visualment les mides dels sensors de càmera"
     },
     "frame-studio": {
@@ -57,7 +57,7 @@
       "description": "Retalla, emmarca i composa fotos amb graelles superposades"
     },
     "exif-viewer": {
-      "name": "EXIF Viewer",
+      "name": "Visor EXIF",
       "description": "Consulta les metadades EXIF i l'histograma de qualsevol foto — 100% al navegador"
     }
   }

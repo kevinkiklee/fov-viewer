@@ -1,7 +1,7 @@
 {
   "education": {
     "histogram": {
-      "beginner": "Un histograma és un gràfic que mostra com de brillants o foscos són els píxels de la teva foto. El costat esquerre representa les ombres (zones fosques), el centre els mitjos tons, i el costat dret les altes llums (zones brillants). Si el gràfic està amuntegat a un costat, la teva foto pot estar subexposada o sobreexposada.",
+      "beginner": "Un histograma és un gràfic que mostra com de brillants o foscos són els píxels de la teva foto. El costat esquerre representa les ombres (zones fosques), el centre els tons mitjans, i el costat dret les altes llums (zones brillants). Si el gràfic està amuntegat a un costat, la teva foto pot estar subexposada o sobreexposada.",
       "deeper": "Un histograma representa el nombre de píxels (eix vertical) en funció del nivell de brillantor (eix horitzontal, 0-255 per a imatges de 8 bits). En mode luminància, la brillantor de cada píxel es calcula com una mitjana ponderada dels canals vermell, verd i blau (normalment 0,299R + 0,587G + 0,114B, coincidint amb la percepció humana). El mode RGB mostra tres distribucions separades, revelant quins canals de color es poden saturar de manera independent — un canal vermell empès a 255 mentre el blau està bé indica saturació en tons càlids, com un cel de posta. La \"saturació\" (clipping) passa quan els valors dels píxels toquen el límit 0 o 255, cosa que vol dir que s'ha perdut irrecuperablement detall a les ombres o a les altes llums. La saturació a negre (píxels a 0) perd detall d'ombra; la saturació a blanc (píxels a 255) perd detall d'altes llums. Disparar en RAW dona aproximadament 2-3 passos addicionals de marge recuperable a les altes llums més enllà del que mostra l'histograma JPEG, raó per la qual molts fotògrafs \"exposen cap a la dreta\" (ETTR) — empenyent l'exposició tan a la dreta com sigui possible sense saturar les dades RAW.",
       "keyFactors": {
         "0": {
@@ -42,7 +42,7 @@
           "definition": "La regió més a l'esquerra de l'histograma (aproximadament 0-85), que representa els tons més foscos de la imatge."
         },
         "Midtones": {
-          "term": "Mitjos tons",
+          "term": "Tons mitjans",
           "definition": "La regió central (aproximadament 86-170), que representa la brillantor mitjana — els tons de pell i la majoria de textures naturals hi cauen."
         },
         "Highlights": {

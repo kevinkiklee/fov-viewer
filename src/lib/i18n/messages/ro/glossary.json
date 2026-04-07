@@ -21,15 +21,15 @@
       },
       "bokeh": {
         "term": "Bokeh",
-        "definition": "Calitatea estetică a zonelor neclare dintr-o imagine, în special a luminilor. Un bokeh neted și circular este în general preferat, fiind influențat de designul obiectivului și forma diafragmei."
+        "definition": "Calitatea estetică a zonelor neclare dintr-o imagine, în special a punctelor luminoase. Un bokeh fin și circular este în general preferat și depinde de construcția obiectivului și de forma diafragmei."
       },
       "bracketing": {
         "term": "Bracketing",
-        "definition": "Realizarea mai multor cadre ale aceleiași scene cu setări diferite de expunere. Folosit pentru fotografia HDR sau pentru a avea cel puțin un cadru corect expus."
+        "definition": "Realizarea mai multor cadre cu aceeași scenă, dar cu expuneri diferite. Se folosește pentru fotografia HDR sau ca să te asiguri că ai cel puțin un cadru expus corect."
       },
       "bulb-mode": {
         "term": "Modul Bulb",
-        "definition": "Un mod de declanșare în care obturatorul rămâne deschis cât timp butonul este apăsat. Folosit pentru expuneri foarte lungi, dincolo de setările cronometrate ale camerei."
+        "definition": "Un mod de declanșare în care obturatorul rămâne deschis cât timp este ținut apăsat butonul. Folosit pentru expuneri foarte lungi, peste limitele timpilor cronometrați din aparat."
       },
       "burst-mode": {
         "term": "Mod rafală",
@@ -41,7 +41,7 @@
       },
       "circle-of-confusion": {
         "term": "Cerc de confuzie",
-        "definition": "Cel mai mare cerc de neclaritate care apare încă ca un punct pentru ochiul uman. Determină limitele clarității acceptabile și este folosit în calculul adâncimii câmpului."
+        "definition": "Cel mai mare cerc neclar care pentru ochiul uman mai apare încă drept punct. Stabilește limita clarității acceptabile și se folosește la calculul adâncimii câmpului."
       },
       "color-temperature": {
         "term": "Temperatura culorii",
@@ -53,11 +53,11 @@
       },
       "depth-of-field": {
         "term": "Adâncimea câmpului",
-        "definition": "Intervalul de distanță dintr-o scenă care apare acceptabil de clar. Este controlat de diafragmă, distanță focală și distanța față de subiect."
+        "definition": "Intervalul de distanță dintr-o scenă care apare acceptabil de clar. Este controlat de diafragmă, distanța focală și distanța până la subiect."
       },
       "diffraction": {
         "term": "Difracție",
-        "definition": "Curbarea luminii când trece printr-o diafragmă mică, ceea ce înmoaie imaginea. Stabilește o limită practică pentru cât de mult poți închide diafragma unui obiectiv."
+        "definition": "Devierea luminii când trece printr-o diafragmă mică, ceea ce face imaginea mai moale. Stabilește o limită practică până la care poți închide diafragma unui obiectiv."
       },
       "dynamic-range": {
         "term": "Gamă dinamică",
@@ -69,7 +69,7 @@
       },
       "exposure-compensation": {
         "term": "Compensare de expunere",
-        "definition": "Un control al camerei care anulează expunerea măsurată, de obicei în trepte de 1/3 stop. Valorile pozitive luminează imaginea; valorile negative o întunecă."
+        "definition": "Un control al aparatului care ajustează expunerea măsurată de exponometru, de obicei în trepte de 1/3 de stop. Valorile pozitive luminează imaginea, iar cele negative o întunecă."
       },
       "exposure-triangle": {
         "term": "Triunghiul expunerii",
@@ -93,7 +93,7 @@
       },
       "golden-hour": {
         "term": "Ora de aur",
-        "definition": "Perioada de scurt după răsărit sau înainte de apus, când lumina soarelui este caldă, moale și direcțională. Foarte apreciată pentru fotografia de peisaj și de portret."
+        "definition": "Perioada scurtă de după răsărit sau dinainte de apus, când lumina soarelui este caldă, moale și direcțională. Foarte apreciată în fotografia de peisaj și de portret."
       },
       "histogram": {
         "term": "Histogramă",
@@ -101,39 +101,39 @@
       },
       "hyperfocal-distance": {
         "term": "Distanță hiperfocală",
-        "definition": "Cea mai apropiată distanță de focalizare la care totul, de la jumătate din acea distanță până la infinit, apare acceptabil de clar. Maximizează adâncimea câmpului pentru o diafragmă dată."
+        "definition": "Cea mai apropiată distanță de focalizare la care totul, de la jumătatea acelei distanțe până la infinit, rămâne acceptabil de clar. Maximizează adâncimea câmpului pentru o diafragmă dată."
       },
       "image-stabilization": {
         "term": "Stabilizare de imagine",
-        "definition": "Un sistem care reduce tremuratul camerei, fie în obiectiv (OIS), fie în corpul camerei (IBIS). Oferă de obicei 3-7 stopuri de avantaj la fotografierea din mână."
+        "definition": "Un sistem care reduce tremuratul aparatului, fie din obiectiv (OIS), fie din corpul camerei (IBIS). De obicei îți câștigă 3-7 stopuri când fotografiezi din mână."
       },
       "iso": {
         "term": "ISO",
-        "definition": "O măsură a sensibilității senzorului la lumină. Valori ISO mai mari luminează imaginea, dar introduc mai mult zgomot."
+        "definition": "O măsură a sensibilității senzorului la lumină. Valorile ISO mai mari luminează imaginea, dar introduc mai mult zgomot."
       },
       "jpeg": {
         "term": "JPEG",
-        "definition": "Un format de fișier comprimat care aplică compresie cu pierderi. Dimensiuni mai mici ale fișierului, dar mai puțină flexibilitate la editare comparativ cu RAW."
+        "definition": "Un format de fișier cu compresie cu pierderi. Ocupă mai puțin spațiu, dar îți lasă mai puțină flexibilitate la editare decât un RAW."
       },
       "kelvin": {
         "term": "Kelvin",
-        "definition": "Unitatea folosită pentru a măsura temperatura culorii luminii. Fotografii folosesc valorile Kelvin pentru a seta balansul de alb și a potrivi culoarea luminii ambientale."
+        "definition": "Unitatea folosită pentru a măsura temperatura culorii luminii. Fotografii folosesc valorile Kelvin ca să seteze balansul de alb și să potrivească culoarea luminii ambientale."
       },
       "lens-compression": {
         "term": "Compresie de obiectiv",
-        "definition": "Efectul vizual al unui obiectiv teleobiectiv care face obiectele îndepărtate să pară mai apropiate de subiectele din prim-plan. Este cauzat de distanța mare de fotografiere, nu de obiectivul în sine."
+        "definition": "Efectul vizual prin care un teleobiectiv face ca obiectele îndepărtate să pară mai aproape de subiectele din prim-plan. De fapt este cauzat de distanța mare de fotografiere, nu de obiectiv în sine."
       },
       "light-meter": {
         "term": "Exponometru",
-        "definition": "Un dispozitiv sau sistem al camerei care măsoară intensitatea luminii pentru a determina setările corecte de expunere. Camerele folosesc măsurarea luminii reflectate; exponometrele de mână pot măsura și lumina incidentă."
+        "definition": "Un dispozitiv sau un sistem din aparat care măsoară intensitatea luminii pentru a determina expunerea corectă. Aparatele măsoară lumina reflectată; exponometrele de mână pot măsura și lumina incidentă."
       },
       "long-exposure": {
         "term": "Expunere lungă",
-        "definition": "O fotografie făcută cu un timp de expunere lent, de obicei de secunde sau minute. Folosită pentru dâre de lumină, apă netedă, dâre de stele și scene cu lumină slabă."
+        "definition": "O fotografie făcută cu un timp de expunere lent, de obicei de secunde sau minute. Folosită pentru dâre de lumină, apă mătăsoasă, dâre de stele și scene cu lumină slabă."
       },
       "macro": {
         "term": "Macro",
-        "definition": "Fotografia care reproduce subiecte la sau aproape de mărimea naturală (raport 1:1). Necesită obiective macro specializate sau tuburi de extensie."
+        "definition": "Fotografia care redă subiectele la mărime naturală sau aproape de ea (raport 1:1). Necesită obiective macro dedicate sau tuburi de extensie."
       },
       "medium-format": {
         "term": "Format mediu",
@@ -145,23 +145,23 @@
       },
       "micro-four-thirds": {
         "term": "Micro Four Thirds",
-        "definition": "Un sistem de camere mirrorless cu un senzor de 17.3 x 13mm, oferind un factor de crop de 2x. Oferă corpuri și obiective compacte cu calitate bună a imaginii."
+        "definition": "Un sistem de aparate mirrorless cu senzor de 17,3 x 13 mm și factor de crop de 2x. Oferă corpuri și obiective compacte, cu o calitate bună a imaginii."
       },
       "mirror-lock-up": {
         "term": "Mirror lock-up",
-        "definition": "O funcție DSLR care ridică oglinda înainte de declanșarea obturatorului, reducând vibrațiile. Folosită pentru cadre clare pe trepied, mai ales la timpi lenți de expunere."
+        "definition": "O funcție a aparatelor DSLR care ridică oglinda înainte de declanșare, reducând vibrațiile. Se folosește pentru cadre clare pe trepied, mai ales la timpi lenți de expunere."
       },
       "nd-filter": {
         "term": "Filtru ND",
-        "definition": "Un filtru de densitate neutră care reduce cantitatea de lumină care intră în obiectiv fără a afecta culoarea. Permite expuneri mai lungi sau diafragme mai largi în condiții de lumină puternică."
+        "definition": "Un filtru de densitate neutră care reduce cantitatea de lumină care ajunge pe senzor, fără să afecteze culoarea. Îți permite expuneri mai lungi sau diafragme mai largi în lumină puternică."
       },
       "noise": {
         "term": "Zgomot",
-        "definition": "Variație aleatoare a luminozității și culorii în imaginile digitale, cel mai vizibilă în zonele de umbră și la ISO ridicat. Poate fi redus cu software de reducere a zgomotului."
+        "definition": "Variații aleatorii de luminozitate și culoare în imaginile digitale, cele mai vizibile în umbre și la ISO ridicat. Poate fi atenuat cu software de reducere a zgomotului."
       },
       "overexposure": {
         "term": "Supraexpunere",
-        "definition": "Când o imagine primește prea multă lumină, provocând tăierea luminilor la alb pur și pierderea detaliului. Opusul subexpunerii."
+        "definition": "Când imaginea primește prea multă lumină, luminile ajung la alb pur și pierd detaliile. Opusul subexpunerii."
       },
       "panorama": {
         "term": "Panoramă",
@@ -169,15 +169,15 @@
       },
       "pixel-pitch": {
         "term": "Pas de pixel",
-        "definition": "Distanța în micrometri dintre centrele pixelilor adiacenți de pe un senzor. Un pas de pixel mai mare înseamnă, în general, performanță mai bună în lumină slabă."
+        "definition": "Distanța în micrometri dintre centrele a doi pixeli vecini de pe senzor. În general, un pas de pixel mai mare înseamnă o performanță mai bună în lumină slabă."
       },
       "polarizer": {
         "term": "Filtru polarizator",
-        "definition": "Un filtru care reduce reflexiile și strălucirile de pe suprafețele nemetalice și poate adânci cerul albastru. Funcționează prin blocarea undelor de lumină care oscilează într-o anumită direcție."
+        "definition": "Un filtru care reduce reflexiile și strălucirile de pe suprafețele nemetalice și poate intensifica albastrul cerului. Funcționează blocând undele de lumină care oscilează pe o anumită direcție."
       },
       "prime-lens": {
         "term": "Obiectiv fix",
-        "definition": "Un obiectiv cu distanță focală fixă (fără zoom). Obiectivele fixe sunt de obicei mai clare, mai rapide (diafragmă mai largă) și mai ușoare decât obiectivele zoom comparabile."
+        "definition": "Un obiectiv cu distanță focală fixă (fără zoom). De obicei, obiectivele fixe sunt mai clare, mai luminoase (diafragmă mai largă) și mai ușoare decât obiectivele zoom comparabile."
       },
       "raw": {
         "term": "RAW",
@@ -185,23 +185,23 @@
       },
       "reciprocal-rule": {
         "term": "Regula reciprocă",
-        "definition": "O regulă care spune că timpul minim de expunere pentru fotografierea din mână ar trebui să fie 1/(distanța focală) pentru a evita tremuratul camerei. Pentru un obiectiv de 200mm, folosește cel puțin 1/200s."
+        "definition": "Regula care spune că timpul minim de expunere pentru fotografierea din mână ar trebui să fie 1/(distanța focală) ca să eviți tremurul aparatului. Pentru un obiectiv de 200mm, folosește cel puțin 1/200s."
       },
       "rule-of-thirds": {
         "term": "Regula treimilor",
-        "definition": "O regulă de compoziție care împarte cadrul într-o grilă 3x3. Așezarea subiectelor de-a lungul liniilor sau la intersecțiile lor creează adesea o imagine mai echilibrată."
+        "definition": "O regulă de compoziție care împarte cadrul într-o grilă 3x3. Plasând subiectele pe linii sau în punctele lor de intersecție obții, de multe ori, o imagine mai echilibrată."
       },
       "sensor-size": {
         "term": "Dimensiunea senzorului",
-        "definition": "Dimensiunile fizice ale senzorului de imagine al unei camere. Senzorii mai mari captează mai multă lumină, oferă adâncime a câmpului mai mică și produc în general mai puțin zgomot."
+        "definition": "Dimensiunile fizice ale senzorului de imagine al unui aparat foto. Senzorii mai mari captează mai multă lumină, oferă o adâncime a câmpului mai mică și, în general, produc mai puțin zgomot."
       },
       "shutter-speed": {
         "term": "Timp de expunere",
-        "definition": "Durata în care obturatorul camerei este deschis pe parcursul unei expuneri. Timpii rapizi îngheață mișcarea; timpii lenți permit neclaritatea de mișcare."
+        "definition": "Durata în care obturatorul aparatului rămâne deschis pe parcursul unei expuneri. Timpii rapizi îngheață mișcarea, iar cei lenți lasă neclaritatea de mișcare să apară."
       },
       "star-trails": {
         "term": "Dâre de stele",
-        "definition": "Dâre de lumină create de mișcarea aparentă a stelelor pe parcursul unei expuneri lungi. Pot fi captate într-o singură expunere foarte lungă sau prin stacking-ul mai multor cadre mai scurte."
+        "definition": "Dâre de lumină create de mișcarea aparentă a stelelor în timpul unei expuneri lungi. Pot fi obținute dintr-o singură expunere foarte lungă sau prin stacking-ul mai multor cadre mai scurte."
       },
       "stop": {
         "term": "Stop",
@@ -213,11 +213,11 @@
       },
       "tilt-shift": {
         "term": "Tilt-shift",
-        "definition": "Un obiectiv care poate înclina planul de focalizare și deplasa cercul de imagine față de senzor. Folosit pentru fotografia de arhitectură și efecte de focalizare selectivă."
+        "definition": "Un obiectiv care poate înclina planul de focalizare și deplasa cercul de imagine față de senzor. Se folosește la fotografia de arhitectură și pentru efecte de focalizare selectivă."
       },
       "underexposure": {
         "term": "Subexpunere",
-        "definition": "Când o imagine primește prea puțină lumină, făcând zonele de umbră să-și piardă detaliul și să pară zgomotoase. Opusul supraexpunerii."
+        "definition": "Când imaginea primește prea puțină lumină, iar umbrele își pierd detaliul și par zgomotoase. Opusul supraexpunerii."
       },
       "vignetting": {
         "term": "Vignetare",
@@ -225,7 +225,7 @@
       },
       "white-balance": {
         "term": "Balans de alb",
-        "definition": "O setare a camerei care reglează culorile astfel încât obiectele albe să pară neutre sub diferite condiții de iluminare. Poate fi setat automat sau manual folosind valori Kelvin."
+        "definition": "O setare a aparatului care reglează culorile astfel încât obiectele albe să apară neutre sub diferite condiții de iluminare. Poate fi setat automat sau manual, folosind valori Kelvin."
       },
       "wide-angle": {
         "term": "Unghi larg",
@@ -233,7 +233,7 @@
       },
       "zoom-lens": {
         "term": "Obiectiv zoom",
-        "definition": "Un obiectiv cu interval variabil de distanță focală, care permite fotografului să schimbe încadrarea fără să se miște. Oferă versatilitate cu prețul dimensiunii, greutății și uneori clarității."
+        "definition": "Un obiectiv cu distanță focală variabilă, care îi permite fotografului să schimbe încadrarea fără să se miște. Oferă versatilitate, cu prețul dimensiunii, al greutății și, uneori, al clarității."
       }
     }
   }

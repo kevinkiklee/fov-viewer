@@ -3,24 +3,24 @@
     "site": {
       "defaultTitle": "PhotoTools — 사진 도구",
       "titleTemplate": "%s | PhotoTools",
-      "description": "무료 사진 도구: 화각 시뮬레이터, 배색 생성기, EXIF 뷰어, 사진 자르기 및 프레이밍 등.",
+      "description": "무료 사진 도구 — 화각 시뮬레이터, 배색 생성기, EXIF 뷰어, 사진 자르기 및 프레이밍까지 한곳에서 사용해 보세요.",
       "ogTitle": "PhotoTools — 무료 사진 도구"
     },
     "fov-simulator": {
       "title": "화각 시뮬레이터 — 초점 거리 비교",
-      "description": "다양한 초점 거리와 센서 크기에 따른 화각을 비교합니다. 무료, 인터랙티브, 공유 가능."
+      "description": "다양한 초점 거리와 센서 크기에서 화각이 어떻게 달라지는지 비교해 보세요. 무료, 인터랙티브, 링크 공유 가능."
     },
     "dof-simulator": {
       "title": "피사계 심도 시뮬레이터 | PhotoTools",
-      "description": "실시간 WebGL 시뮬레이션으로 조리개, 초점 거리, 거리가 배경 블러에 어떤 영향을 미치는지 시각화합니다"
+      "description": "조리개, 초점 거리, 피사체 거리가 배경 흐림에 어떻게 작용하는지 실시간 WebGL 시뮬레이션으로 확인해 보세요."
     },
     "focus-stacking-calculator": {
       "title": "포커스 스태킹 계산기 | PhotoTools",
-      "description": "매크로 및 풍경 사진에서 앞뒤 전체 선명도를 위한 최적의 초점 거리를 계산합니다"
+      "description": "매크로와 풍경 촬영에서 앞에서 뒤까지 선명한 결과를 얻기 위한 최적의 초점 단계를 계산해 보세요."
     },
     "equivalent-settings-calculator": {
       "title": "환산 설정 계산기 | PhotoTools",
-      "description": "센서 포맷 간 피사계 심도를 일치시키기 위한 환산 조리개와 초점 거리를 찾아줍니다"
+      "description": "다른 센서 포맷에서 같은 피사계 심도와 화각을 얻기 위한 환산 조리개와 초점 거리를 찾아 줍니다."
     },
     "exposure-simulator": {
       "title": "노출 삼각형 시뮬레이터",
@@ -40,7 +40,7 @@
     },
     "color-scheme-generator": {
       "title": "배색 생성기",
-      "description": "보색, 유사색, 삼색 조화, 사색 조화 등의 배색 이론을 활용하여 사진을 위한 색상 팔레트를 생성합니다. 사진 색상 추출이 가능한 인터랙티브 색상 휠."
+      "description": "보색, 유사색, 삼색 조화, 사색 조화 등 색채 이론을 바탕으로 사진용 컬러 팔레트를 만들어 보세요. 사진에서 색상을 추출할 수 있는 인터랙티브 색상환을 제공합니다."
     },
     "frame-studio": {
       "title": "프레임 스튜디오",
@@ -64,7 +64,7 @@
     },
     "perspective-compression-simulator": {
       "title": "원근 압축 시뮬레이터",
-      "description": "초점 거리와 거리가 원근 압축에 미치는 영향을 보여주는 인터랙티브 3D 시뮬레이터. 배경 압축 변화를 실시간으로 확인하세요."
+      "description": "초점 거리와 피사체 거리가 원근 압축에 어떻게 작용하는지 보여주는 인터랙티브 3D 시뮬레이터. 배경 압축 변화를 실시간으로 확인해 보세요."
     },
     "about": {
       "title": "소개",

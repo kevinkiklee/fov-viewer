@@ -1,7 +1,7 @@
 {
   "glossary": {
     "title": "Valokuvauksen sanasto",
-    "subtitle": "Haettava sanasto valokuvauksen termeille. Klikkaa termiä nähdäksesi sen selityksen.",
+    "subtitle": "Haettava valokuvaussanasto. Klikkaa termiä ja näet sen selityksen.",
     "searchPlaceholder": "Hae termejä...",
     "searchAriaLabel": "Hae sanaston termejä",
     "noResults": "Hakuasi vastaavia termejä ei löytynyt.",
@@ -40,8 +40,8 @@
         "definition": "Objektiivivirhe, jossa eri aallonpituudet tarkentuvat hieman eri kohtiin, aiheuttaen värireunoja voimakaskontrastisiin reunoihin. Yleisempää halvemmissa objektiiveissa ja suurilla aukoilla."
       },
       "circle-of-confusion": {
-        "term": "Hajapiste",
-        "definition": "Suurin sumennusympyrä, joka näkyy ihmissilmälle vielä pisteenä. Määrittää hyväksyttävän terävyyden rajat ja sitä käytetään syväterävyyden laskennassa."
+        "term": "Hajapiirto (CoC)",
+        "definition": "Suurin epäterävä ympyrä, joka vielä näkyy ihmissilmälle pisteenä. Määrittää hyväksyttävän terävyyden rajan ja sitä käytetään syväterävyyden laskennassa."
       },
       "color-temperature": {
         "term": "Värilämpötila",
@@ -61,15 +61,15 @@
       },
       "dynamic-range": {
         "term": "Dynamiikka-alue",
-        "definition": "Tummimpien varjojen ja kirkkaimpien valojen välinen alue, jonka kamera pystyy tallentamaan yhteen valotukseen. Mitataan aukoissa (EV)."
+        "definition": "Tummimpien varjojen ja kirkkaimpien valojen välinen alue, jonka kamera pystyy tallentamaan yhteen valotukseen. Mitataan valotusaskelina (EV)."
       },
       "ev": {
         "term": "EV (valotusarvo)",
-        "definition": "Luku, joka kuvaa suljinajan ja aukon yhdistelmää, joka tuottaa saman valotuksen. Jokainen 1 EV:n askel puolittaa tai kaksinkertaistaa valon määrän."
+        "definition": "Luku, joka kuvaa sitä suljinajan ja aukon yhdistelmää, joka tuottaa saman valotuksen. Jokainen 1 EV:n askel puolittaa tai kaksinkertaistaa valon määrän."
       },
       "exposure-compensation": {
         "term": "Valotuskorjaus",
-        "definition": "Kameran säädin, joka ohittaa mitatun valotuksen, tyypillisesti 1/3 aukon tarkkuudella. Positiiviset arvot kirkastavat kuvaa, negatiiviset tummentavat."
+        "definition": "Kameran säädin, jolla ohitetaan mitattu valotus, tyypillisesti 1/3 askeleen tarkkuudella. Positiivinen arvo kirkastaa kuvaa, negatiivinen tummentaa."
       },
       "exposure-triangle": {
         "term": "Valotuskolmio",
@@ -77,7 +77,7 @@
       },
       "f-stop": {
         "term": "F-luku",
-        "definition": "Objektiivin aukon mittayksikkö. Jokainen kokonainen aukko (f/1.4, f/2, f/2.8, f/4...) puolittaa objektiivin läpi kulkevan valomäärän."
+        "definition": "Objektiivin aukon mittayksikkö. Jokainen kokonainen valotusaskel (f/1.4, f/2, f/2.8, f/4...) puolittaa objektiivin läpäisevän valomäärän."
       },
       "focal-length": {
         "term": "Polttoväli",
@@ -101,11 +101,11 @@
       },
       "hyperfocal-distance": {
         "term": "Hyperfokaalietäisyys",
-        "definition": "Lähin tarkennusetäisyys, jolla kaikki puolesta tuosta etäisyydestä äärettömyyteen näkyy hyväksyttävän terävänä. Maksimoi syväterävyyden tietyllä aukolla."
+        "definition": "Lyhin tarkennusetäisyys, jolla kaikki puolesta tästä etäisyydestä äärettömään näkyy hyväksyttävän terävänä. Maksimoi syväterävyyden tietyllä aukolla."
       },
       "image-stabilization": {
         "term": "Kuvanvakain",
-        "definition": "Järjestelmä, joka vähentää kameran tärinän aiheuttamaa epäterävyyttä joko objektiivissa (OIS) tai kamerarungossa (IBIS). Tuo tyypillisesti 3–7 aukon edun käsivarakuvaukseen."
+        "definition": "Järjestelmä, joka vähentää kameran tärinän aiheuttamaa epäterävyyttä joko objektiivissa (OIS) tai kamerarungossa (IBIS). Tuo tyypillisesti 3–7 valotusaskeleen edun käsivarakuvaukseen."
       },
       "iso": {
         "term": "ISO",
@@ -185,7 +185,7 @@
       },
       "reciprocal-rule": {
         "term": "Käänteislukusääntö",
-        "definition": "Ohje, jonka mukaan käsivaralta otetun kuvan minimisuljinaika tulisi olla 1/(polttoväli) kameran tärinän välttämiseksi. 200 mm:n objektiivilla käytä vähintään 1/200 s."
+        "definition": "Ohje, jonka mukaan käsivaralta otetun kuvan lyhimmän suljinajan tulisi olla 1/(polttoväli), jotta kameran tärinä ei pilaa kuvaa. 200 mm:n objektiivilla käytä siis vähintään 1/200 s."
       },
       "rule-of-thirds": {
         "term": "Kolmanneksen sääntö",
@@ -197,14 +197,14 @@
       },
       "shutter-speed": {
         "term": "Suljinaika",
-        "definition": "Aika, jonka kameran suljin on auki valotuksen aikana. Nopeammat ajat jäädyttävät liikkeen, hitaammat sallivat liike-epäterävyyden."
+        "definition": "Aika, jonka kameran suljin on auki valotuksen aikana. Lyhyt aika pysäyttää liikkeen, pitkä antaa liike-epäterävyyden tulla näkyviin."
       },
       "star-trails": {
         "term": "Tähtiradat",
         "definition": "Valoraitoja, jotka syntyvät tähtien näennäisestä liikkeestä pitkän valotuksen aikana. Voidaan kuvata joko yhdellä hyvin pitkällä valotuksella tai pinoamalla useita lyhyempiä ruutuja."
       },
       "stop": {
-        "term": "Aukko (stop)",
+        "term": "Valotusaskel (stop)",
         "definition": "Valotuksen muutosyksikkö, joka tarkoittaa valon määrän kaksinkertaistumista tai puolittumista. Pätee samalla tavalla aukkoon, suljinaikaan ja ISO:on."
       },
       "telephoto": {

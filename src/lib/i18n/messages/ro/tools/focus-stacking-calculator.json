@@ -2,7 +2,7 @@
   "toolUI": {
     "focus-stacking-calculator": {
       "settings": "Setări",
-      "camera": "Cameră și obiectiv",
+      "camera": "Aparat și obiectiv",
       "focalLength": "Distanță focală",
       "aperture": "Diafragmă",
       "sensor": "Senzor",
@@ -10,7 +10,7 @@
       "nearLimit": "Limita apropiată",
       "farLimit": "Limita îndepărtată",
       "overlap": "Suprapunere",
-      "overlapDescription": "Procentul de suprapunere a DoF între cadrele adiacente, pentru îmbinare fără goluri",
+      "overlapDescription": "Cât la sută din DoF se suprapune între cadrele vecine, pentru o îmbinare fără goluri",
       "results": "Rezultate",
       "shotCount": "Cadre necesare",
       "totalDepth": "Adâncime totală",
@@ -33,8 +33,8 @@
       "infinity": "∞",
       "distanceUnit": "m",
       "warning": "Avertisment",
-      "tooFewShots": "Intervalul de adâncime încape într-un singur cadru — stacking-ul nu este necesar",
-      "tooManyShots": "Acest plan cere multe cadre. Ia în calcul o diafragmă mai îngustă pentru a reduce numărul.",
+      "tooFewShots": "Intervalul de adâncime încape într-un singur cadru — nu e nevoie de stacking",
+      "tooManyShots": "Acest plan cere multe cadre. Gândește-te să închizi diafragma ca să reduci numărul.",
       "macroMode": "Macro",
       "landscapeMode": "Peisaj"
     }

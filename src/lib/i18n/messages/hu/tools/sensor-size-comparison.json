@@ -31,15 +31,15 @@
       "faq": {
         "what-is-crop-factor": {
           "question": "Mi a crop faktor, és miért számít?",
-          "answer": "A crop faktor azt írja le, mekkora a méretkülönbség egy kamera érzékelője és a Full Frame (35mm) érzékelő között. Befolyásolja az effektív gyújtótávolságot, a mélységélességet és a gyenge fényű teljesítményt. Egy 1,5× crop faktor azt jelenti, hogy az érzékelő 1,5-ször kisebb, mint a Full Frame."
+          "answer": "A crop faktor azt mutatja, mekkora a méretkülönbség egy kamera érzékelője és a Full Frame (35mm) érzékelő között. Hatással van az effektív gyújtótávolságra, a mélységélességre és a gyenge fényű teljesítményre. Az 1,5× crop faktor azt jelenti, hogy az érzékelő 1,5-ször kisebb, mint a Full Frame."
         },
         "full-frame-vs-aps-c": {
           "question": "Mik a Full Frame és az APS-C érzékelők előnyei egymással szemben?",
-          "answer": "A Full Frame érzékelők jobb gyenge fényű teljesítményt, kisebb mélységélességet és szélesebb látószöget adnak bármely gyújtótávolságon. Az APS-C érzékelők olcsóbbak, könnyebbek, és extra hatótávolságot adnak vadvilág- és sportfotózáshoz."
+          "answer": "A Full Frame érzékelők jobb gyenge fényű teljesítményt, kisebb mélységélességet és szélesebb látószöget adnak minden gyújtótávolságon. Az APS-C érzékelők olcsóbbak, könnyebbek, és extra hatótávolságot adnak vadvilág- és sportfotózáshoz."
         },
         "sensor-size-and-depth-of-field": {
           "question": "Hogyan hat az érzékelőméret a mélységélességre?",
-          "answer": "A nagyobb érzékelők ekvivalens kompozíción kisebb mélységélességet adnak. Ha kisebb érzékelővel akarod ugyanazt a kompozíciót, vagy rövidebb gyújtótávolságot használsz (nagyobb DoF), vagy hátrébb lépsz (nagyobb DoF) — mindkettő csökkenti a háttérelmosódást."
+          "answer": "A nagyobb érzékelők ekvivalens kompozíción kisebb mélységélességet adnak. Ha ugyanazt a kompozíciót kisebb érzékelővel akarod elérni, vagy rövidebb gyújtótávolságot használsz (nagyobb DoF), vagy hátrébb lépsz (nagyobb DoF) — mindkettő csökkenti a háttérelmosódást."
         }
       }
     }

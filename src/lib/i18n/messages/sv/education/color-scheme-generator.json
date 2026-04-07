@@ -1,15 +1,15 @@
 {
   "education": {
     "color-scheme-generator": {
-      "beginner": "Färgharmoni handlar om att välja färger som fungerar bra tillsammans. Precis som musikaliska ackord skapar vissa färgkombinationer tilltalande visuella relationer. Fotografer använder färgharmoni för att planera kläder, rekvisita och till och med tidpunkten för utomhustagningar så att de får rätt palett ur naturen.",
+      "beginner": "Färgharmoni handlar om att välja färger som fungerar tillsammans. Precis som musikaliska ackord skapar vissa färgkombinationer tilltalande visuella relationer. Fotografer använder färgharmoni för att planera kläder, rekvisita och till och med tidpunkten för utomhustagningar, så att naturen själv bidrar med rätt palett.",
       "deeper": {
         "0": {
           "heading": "Färgcirkeln",
-          "text": "Teorin om färgharmoni utgår från färgcirkeln, som ordnar kulörer i en cirkel utifrån våglängdernas förhållanden. HSL-modellen (Hue, Saturation, Lightness) motsvarar direkt cirkeln: hue är vinkeln (0–360°), saturation är avståndet från mitten och lightness styr ljushet. I fotografi uppstår dessa förhållanden naturligt — gyllene timmen ger analoga varma toner, medan en röd lada mot gröna fält är komplementär."
+          "text": "Färgharmoniteorin utgår från färgcirkeln, som ordnar kulörerna efter våglängdernas förhållanden. HSL-modellen (Hue, Saturation, Lightness) motsvarar direkt cirkeln: hue är vinkeln (0–360°), saturation är avståndet från mitten och lightness styr ljusheten. I fotografi uppstår de här förhållandena naturligt — gyllene timmen ger analoga varma toner, medan en röd lada mot gröna fält är komplementär."
         },
         "1": {
           "heading": "Komplementär",
-          "text": "Två färger som ligger rakt emot varandra på cirkeln (180° isär), till exempel blått och orange eller rött och grönt. Det ger maximal kontrast och visuell energi. Bra för att lyfta fram ett motiv mot bakgrunden — tänk porträtt i gyllene timmen där varma hudtoner kontrasterar mot en sval blå himmel."
+          "text": "Två färger som ligger rakt emot varandra på cirkeln (180° isär), till exempel blått och orange eller rött och grönt. Det ger maximal kontrast och visuell energi. Bra för att lyfta fram ett motiv mot bakgrunden — tänk porträtt i gyllene timmen där varma hudtoner kontrasterar mot en kall blå himmel."
         },
         "2": {
           "heading": "Analog",
@@ -51,10 +51,10 @@
           "text": "För porträttsessioner: välj en komplementär eller delat komplementär palett och låt motivet bära huvudfärgen medan bakgrunden står för den kontrasterande kulören. Blå/orange (porträtt i gyllene timmen) är ett klassiskt exempel."
         },
         "1": {
-          "text": "Använd analog harmoni för landskap — naturen arbetar redan i analoga paletter. Matcha klädrådgivningen eller rekvisitan efter de dominerande naturliga kulörerna."
+          "text": "Använd analog harmoni för landskap — naturen arbetar redan i analoga paletter. Låt kläder och rekvisita matcha de dominerande kulörerna i scenen."
         },
         "2": {
-          "text": "Dra ner mättnaden till 30–50 % för att se hur färgerna upplevs i en mer dämpad, redaktionell stil. Hög mättnad funkar för kommersiellt och mode, men lägre mättnad känns ofta mer sofistikerat."
+          "text": "Dra ned mättnaden till 30–50 % för att se hur färgerna upplevs i en mer dämpad, redaktionell stil. Hög mättnad funkar för kommersiellt och mode, men lägre mättnad känns ofta mer sofistikerat."
         }
       },
       "tooltips": {

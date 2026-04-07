@@ -1,62 +1,62 @@
 {
   "education": {
     "focus-stacking-calculator": {
-      "beginner": "Focus stacking er en teknikk der du tar flere bilder med ulik fokusavstand og slår dem sammen i programvare for å få et bilde med skarphet fra front til bak. Det er uunnværlig i makrofotografi, der dybdeskarpheten er hårtynn, og nyttig i landskap når du vil ha både nær forgrunn og fjern bakgrunn skarpt.",
+      "beginner": "Focus stacking er en teknikk der du tar flere bilder med ulik fokusavstand og slår dem sammen i programvare for å få ett bilde med skarphet fra front til bak. Det er uvurderlig i makrofotografi, der dybdeskarpheten er hårtynn, og nyttig i landskap når du vil ha både nær forgrunn og fjern bakgrunn skarpt.",
       "deeper": {
         "0": {
           "heading": "Hvorfor stacking er nødvendig",
-          "text": "Ved makroforstørrelser kan selv f/16 gi bare noen få millimeter dybdeskarphet. Å blende ned enda mer introduserer diffraksjon som degraderer bildet. Focus stacking lar deg fotografere på objektivets skarpeste blender (typisk f/5.6–f/8) og kombinere de skarpe skivene. Hvert bilde flytter fokus et lite skritt fremover og dekker en ny del av motivet."
+          "text": "Ved makroforstørrelser kan selv f/16 gi bare noen få millimeter dybdeskarphet. Å blende enda mer ned gir diffraksjon som drar ned bildekvaliteten. Focus stacking lar deg fotografere på objektivets skarpeste blender (typisk f/5.6–f/8) og kombinere de skarpe skivene. Hvert bilde flytter fokus et lite skritt fremover og dekker en ny del av motivet."
         },
         "1": {
           "heading": "Planlegging av stacken",
-          "text": "Nøkkelen til en vellykket stack er at dybdeskarpheten til hvert bilde overlapper det neste med 20–30 %. For lite overlapp gir hull der ingenting er skarpt; for mye sløser bilder uten gevinst. Kalkulatoren finner DoF per bilde med uskarphetssirkel-formelen, trekker fra overlappsmarginen, og deler det totale dybdeområdet på effektivt steg for å regne ut antall bilder."
+          "text": "Nøkkelen til en vellykket stack er at dybdeskarpheten i hvert bilde overlapper det neste med 20–30 %. For lite overlapp gir hull der ingenting er skarpt; for mye sløser med bilder uten gevinst. Kalkulatoren finner DoF per bilde med uskarphetssirkelformelen, trekker fra overlappsmarginen, og deler det totale dybdeområdet på effektivt steg for å regne ut antall bilder."
         },
         "2": {
           "heading": "Sammenføyning og justering",
-          "text": "Programvare som Photoshop, Helicon Focus eller Zerene Stacker justerer rammene (det oppstår små forstørrelsesendringer når fokus endres) og velger de skarpeste pikslene fra hvert lag. Stødig stativ, jevn belysning og en fokusrigg med presise steg gir de reneste resultatene."
+          "text": "Programvare som Photoshop, Helicon Focus eller Zerene Stacker justerer rammene (det oppstår små forstørrelsesendringer når fokus endres) og velger de skarpeste pikslene fra hvert lag. Stødig stativ, jevn belysning og en fokusrigg med presise steg gir det reneste resultatet."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Blender",
-          "description": "Bestemmer dybdeskarphet per bilde. En moderat blender (f/5.6–f/8) balanserer skarphet og DoF per bilde. Unngå svært små blenderåpninger — diffraksjon ødelegger nettopp skarpheten du stacker for."
+          "description": "Bestemmer dybdeskarpheten i hvert bilde. En moderat blender (f/5.6–f/8) balanserer skarphet og DoF per bilde. Unngå svært små blenderåpninger — diffraksjonen ødelegger nettopp den skarpheten du stacker for."
         },
         "1": {
           "label": "Dybdeområde",
-          "description": "Avstanden fra nærmeste til fjerneste punkt du vil ha skarpt. Større område krever flere bilder. I makro kan det være noen få centimeter; i landskap flere meter opp til uendelig."
+          "description": "Avstanden fra nærmeste til fjerneste punkt du vil ha skarpt. Større område krever flere bilder. I makro kan det være noen få centimeter, i landskap flere meter opp til uendelig."
         },
         "2": {
           "label": "Overlapp",
-          "description": "Hvor stor del av hvert bildes DoF som overlapper nabobildet. 20–30 % er standard. Mindre gir hull; mer sløser bilder."
+          "description": "Hvor stor del av DoF-en i hvert bilde som overlapper nabobildet. 20–30 % er standard. Mindre gir hull, mer sløser med bilder."
         }
       },
       "tips": {
         "0": {
-          "text": "Bruk en fokusrigg i stedet for objektivets fokusring til makro-stacking. En rigg flytter hele kameraet fremover i presise steg og unngår de små forstørrelsesendringene som oppstår når du endrer fokus på objektivet."
+          "text": "Bruk en fokusrigg i stedet for objektivets fokusring når du stacker makro. En rigg flytter hele kameraet fremover i presise steg og unngår de små forstørrelsesendringene som oppstår når du endrer fokus på selve objektivet."
         },
         "1": {
-          "text": "Hold blenderen på objektivets sweet spot (typisk f/5.6–f/8). Hele poenget med stacking er å slippe å blende ned til f/16+, så bruk den skarpeste blenderen og la stacken gi deg dybden."
+          "text": "Hold blenderen på objektivets sweet spot (typisk f/5.6–f/8). Hele poenget med stacking er at du slipper å blende ned til f/16 og mindre, så bruk den skarpeste blenderen og la stacken gi deg dybden."
         },
         "2": {
-          "text": "For landskapsstacks, fotografer forfra og bakover: fokuser på nærmeste element først, og flytt deretter fokus mot uendelig. Det gjør justering enklere siden forgrunnen (med mest parallakse) er fanget først."
+          "text": "Når du stacker landskap, fotografer forfra og bakover: fokuser på det nærmeste elementet først, og flytt deretter fokuset mot uendelig. Det gjør justeringen enklere, siden forgrunnen (med mest parallakse) er fanget først."
         }
       },
       "tooltips": {
         "focalLength": {
           "term": "Brennvidde",
-          "definition": "Objektivets brennvidde i millimeter. Lengre brennvidder reduserer dybdeskarpheten per bilde, og krever flere bilder for å dekke samme dybdeområde."
+          "definition": "Objektivets brennvidde i millimeter. Lengre brennvidder gir mindre dybdeskarphet per bilde og krever flere bilder for å dekke samme dybdeområde."
         },
         "aperture": {
           "term": "Blender",
-          "definition": "Objektivåpningen (f-tall). Til stacking bruker du objektivets skarpeste blender i stedet for å blende ned — stacken står for dybden."
+          "definition": "Blenderåpningen (f-tall). Når du stacker, bruker du objektivets skarpeste blender i stedet for å blende ned — stacken står for dybden."
         },
         "sensor": {
           "term": "Sensorstørrelse",
-          "definition": "Større sensorer gir grunnere DoF per bilde ved samme utsnitt, noe som kan øke antallet bilder som trengs."
+          "definition": "Større sensorer gir grunnere DoF per bilde ved samme utsnitt, og det kan øke antallet bilder du trenger."
         },
         "nearLimit": {
           "term": "Nærgrense",
-          "definition": "Det nærmeste punktet i motivet du vil ha skarpt. Her settes fokus for det første bildet i stacken."
+          "definition": "Det nærmeste punktet på motivet du vil ha skarpt. Her setter du fokus i det første bildet i stacken."
         },
         "farLimit": {
           "term": "Fjerngrense",
@@ -64,11 +64,11 @@
         },
         "overlap": {
           "term": "Overlapp",
-          "definition": "Prosent DoF-overlapp mellom påfølgende bilder. 20–30 % sikrer at det ikke oppstår hull ved sammenføyning."
+          "definition": "Prosent DoF-overlapp mellom påfølgende bilder. 20–30 % sikrer at det ikke blir hull ved sammenføyning."
         },
         "shotCount": {
           "term": "Antall bilder",
-          "definition": "Totalt antall bilder som trengs for å dekke dybdeområdet med angitt overlapp. Flere bilder = mer bearbeiding, men jevnere resultat."
+          "definition": "Totalt antall bilder som trengs for å dekke dybdeområdet med valgt overlapp. Flere bilder = mer etterarbeid, men jevnere resultat."
         }
       },
       "challenges": {
@@ -85,9 +85,9 @@
           }
         },
         "1": {
-          "scenario": "Du vil ha best mulig skarphet fra focus stacken din. Bør du ta hvert bilde på f/2.8, f/8 eller f/22?",
+          "scenario": "Du vil ha best mulig skarphet ut av focus stacken. Bør du ta hvert bilde på f/2.8, f/8 eller f/22?",
           "hint": "Tenk på objektivets skarpeste blender og hvordan diffraksjon påvirker små blenderåpninger.",
-          "successMessage": "Riktig! f/8 er typisk skarpeste blender for de fleste objektiver. f/2.8 gir for lite DoF per bilde (sløser bilder) og f/22 blir myk av diffraksjon.",
+          "successMessage": "Riktig! f/8 er typisk skarpeste blender for de fleste objektiver. f/2.8 gir for lite DoF per bilde (sløser med bilder), og f/22 blir mykt av diffraksjon.",
           "failureMessage": "f/8 er det beste valget. f/2.8 gir veldig tynn DoF per bilde (krever mange flere bilder), og f/22 gir diffraksjon som motarbeider hele poenget med stacking.",
           "options": {
             "0": { "label": "f/2.8 — vidåpent for raskest lukker" },
@@ -96,10 +96,10 @@
           }
         },
         "2": {
-          "scenario": "Etter at du har slått sammen focus stacken din, ser du et mykt bånd midt i bildet der ingenting er skarpt. Hva gikk sannsynligvis galt?",
-          "hint": "Tenk på hva som binder sammen ett bildes skarpe sone til det neste.",
-          "successMessage": "Akkurat! For lite overlapp mellom nabobilder lager et hull der ingen av bildene er skarpe. Øk overlapp til 25–30 % og ta bildene på nytt.",
-          "failureMessage": "Et mykt bånd betyr vanligvis at avstanden mellom fokusstegene var for stor — DoF på naboer overlappet ikke nok. Øk overlapp-prosenten.",
+          "scenario": "Når du har slått sammen focus stacken, ser du et mykt bånd midt i bildet der ingenting er skarpt. Hva gikk sannsynligvis galt?",
+          "hint": "Tenk på hva som binder den skarpe sonen i ett bilde sammen med det neste.",
+          "successMessage": "Nettopp! For lite overlapp mellom nabobilder lager et hull der ingen av bildene er skarpe. Øk overlappet til 25–30 % og ta bildene på nytt.",
+          "failureMessage": "Et mykt bånd betyr vanligvis at avstanden mellom fokusstegene var for stor — DoF-en i nabobildene overlappet ikke nok. Øk overlappsprosenten.",
           "options": {
             "0": { "label": "Blenderen var for stor" },
             "1": { "label": "For lite overlapp mellom fokussteg" },

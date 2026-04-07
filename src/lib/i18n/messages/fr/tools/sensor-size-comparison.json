@@ -30,16 +30,16 @@
       "canvasAriaLabel": "Comparaison de tailles de capteur en mode {mode}",
       "faq": {
         "what-is-crop-factor": {
-          "question": "Qu'est-ce que le facteur de recadrage et pourquoi est-il important ?",
-          "answer": "Le facteur de recadrage d\u00e9crit la diff\u00e9rence de taille entre le capteur d'un appareil photo et un capteur plein format (35 mm). Il affecte la longueur focale effective, la profondeur de champ et les performances en basse lumi\u00e8re. Un facteur de recadrage de 1,5x signifie que le capteur est 1,5 fois plus petit que le plein format."
+          "question": "Qu'est-ce que le facteur de recadrage et pourquoi compte-t-il ?",
+          "answer": "Le facteur de recadrage décrit l'écart de taille entre le capteur d'un boîtier et un capteur plein format (35 mm). Il joue sur la focale effective, la profondeur de champ et le rendu en basse lumière. Un facteur de 1,5× veut dire que le capteur est 1,5 fois plus petit que le plein format."
         },
         "full-frame-vs-aps-c": {
-          "question": "Quels sont les avantages du plein format par rapport \u00e0 l'APS-C ?",
-          "answer": "Les capteurs plein format offrent de meilleures performances en basse lumi\u00e8re, une profondeur de champ plus faible et un champ de vision plus large \u00e0 toute longueur focale. Les capteurs APS-C sont plus abordables, plus l\u00e9gers et offrent une port\u00e9e suppl\u00e9mentaire pour la photographie animalière et sportive."
+          "question": "Quels avantages le plein format a-t-il sur l'APS-C ?",
+          "answer": "Le plein format offre un meilleur rendu en basse lumière, une profondeur de champ plus faible et un champ de vision plus large à focale égale. L'APS-C est plus abordable, plus léger et apporte de l'allonge pour la photo animalière et sportive."
         },
         "sensor-size-and-depth-of-field": {
-          "question": "Comment la taille du capteur affecte-t-elle la profondeur de champ ?",
-          "answer": "Les capteurs plus grands produisent une profondeur de champ plus faible \u00e0 cadrage \u00e9quivalent. Pour obtenir le m\u00eame cadrage avec un capteur plus petit, on utilise soit une focale plus courte (profondeur plus grande) soit on recule (profondeur plus grande), les deux r\u00e9duisant le flou d'arri\u00e8re-plan."
+          "question": "Comment la taille du capteur joue-t-elle sur la profondeur de champ ?",
+          "answer": "Les grands capteurs donnent une profondeur de champ plus faible à cadrage équivalent. Pour obtenir le même cadrage avec un capteur plus petit, on prend une focale plus courte ou on recule — les deux augmentent la profondeur de champ et réduisent le flou d'arrière-plan."
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "education": {
     "nd-filter-calculator": {
-      "beginner": "Ett ND-filter (neutralt gråfilter) är som solglasögon för kameraobjektivet. Det minskar ljusmängden som kommer in utan att påverka färgerna, så att du kan använda längre slutartider eller större bländare när det är ljust ute. Det är så fotografer får silkeslena vattenfall, slätt hav eller suddiga moln mitt på dagen.",
-      "deeper": "ND-filter klassas efter hur många stegs ljus de blockerar. Ett ND2-filter (1 steg) halverar ljuset, ett ND8 (3 steg) minskar det till 1/8, och ett ND1000 (10 steg) minskar ljuset med en faktor 1024. Namngivningen kan vara förvirrande: \"ND8\" betyder att filterfaktorn är 8 (3 steg), medan \"ND 0.9\" är optisk täthet (varje 0,3 = 1 steg, så 0,9 = 3 steg). Den nya slutartiden är helt enkelt basslutartiden multiplicerad med filterfaktorn. Exempel: om din ofiltrerade exponering är 1/125s och du lägger på ett 10-stegs ND (ND1000) blir nya slutartiden 1/125 × 1024 = cirka 8 sekunder. Att stacka flera ND-filter summerar stegvärdena men kan ge vinjettering och färgskift, särskilt på vidvinkelobjektiv.",
+      "beginner": "Ett ND-filter (neutralt gråfilter) är som solglasögon för objektivet. Det minskar ljusmängden som släpps in utan att förvränga färgerna, så att du kan använda längre slutartider eller större bländare även när det är ljust ute. Det är så fotografer får silkeslena vattenfall, slätt hav eller suddiga moln mitt på dagen.",
+      "deeper": "ND-filter klassas efter hur många stegs ljus de blockerar. Ett ND2-filter (1 steg) halverar ljuset, ett ND8 (3 steg) minskar det till 1/8, och ett ND1000 (10 steg) minskar ljuset med en faktor 1024. Namngivningen kan vara förvirrande: \"ND8\" betyder att filterfaktorn är 8 (3 steg), medan \"ND 0.9\" är optisk täthet (varje 0,3 = 1 steg, så 0,9 = 3 steg). Den nya slutartiden är helt enkelt basslutartiden gånger filterfaktorn. Exempel: är din ofiltrerade exponering 1/125 s och du sätter på ett 10-stegs ND (ND1000) blir nya slutartiden 1/125 × 1024 ≈ 8 sekunder. Att stacka flera ND-filter summerar stegvärdena, men kan ge vinjettering och färgskift, särskilt på vidvinkelobjektiv.",
       "keyFactors": {
         "0": {
           "label": "Basslutartid",
@@ -25,7 +25,7 @@
           "text": "Vid havsfoto: exponeringar på 1–2 sekunder slätar ut små krusningar till textur men behåller vågornas struktur. Exponeringar på 30 sekunder eller mer ger helt plant, dimmigt vatten."
         },
         "2": {
-          "text": "Billiga ND-filter lägger ofta på ett färgskift (ofta magenta eller brunt). Satsa på kvalitetsglas från välrenommerade märken, eller lär dig korrigera färgskiftet i efterbehandlingen med hjälp av ett gråkort."
+          "text": "Billiga ND-filter lägger ofta på ett färgskift (ofta magenta eller brunt). Satsa på kvalitetsglas från ett pålitligt märke, eller lär dig korrigera skiftet i efterbehandlingen med hjälp av ett gråkort."
         }
       },
       "tooltips": {
@@ -50,8 +50,8 @@
         "0": {
           "scenario": "Du är vid ett vattenfall och kameran mäter en korrekt exponering på 1/125s utan filter. Du sätter på ett 3-stegs ND-filter (ND8). Vilken blir den nya slutartiden?",
           "hint": "Varje steg dubblar exponeringstiden. 3 steg betyder 2 × 2 × 2 = 8 gånger längre.",
-          "successMessage": "Rätt! 1/125s × 8 = 1/15s. Det är en bra start för rörelseoskärpa i vattnet, men du kanske vill ha ett ännu starkare filter för riktigt silkeslent resultat.",
-          "failureMessage": "Ett 3-stegs ND-filter multiplicerar exponeringstiden med 8 (2^3 = 8). Så 1/125s blir 1/15s.",
+          "successMessage": "Rätt! 1/125 s × 8 = 1/15 s. Det är en bra start för rörelseoskärpa i vattnet, men du kanske vill ha ett ännu starkare filter för riktigt silkeslent resultat.",
+          "failureMessage": "Ett 3-stegs ND-filter multiplicerar exponeringstiden med 8 (2^3 = 8). Så 1/125 s blir 1/15 s.",
           "options": {
             "0": { "label": "1/60s" },
             "1": { "label": "1/30s" },
@@ -62,7 +62,7 @@
         "1": {
           "scenario": "Du vill skapa en 30-sekunders exponering av moln som rör sig över himlen. Utan filter är den korrekta exponeringen 1/30s. Hur många stegs ND-filtrering behöver du?",
           "hint": "Du ska gå från 1/30s till 30s — det är 1/30 × faktor = 30, så faktorn = 900. Hitta närmaste tvåpotens.",
-          "successMessage": "Rätt! Att gå från 1/30s till 30s är ungefär en 1000-faldig ökning, vilket motsvarar cirka 10 steg. Ett ND1000 (10 steg) tar dig till ungefär 33 sekunder.",
+          "successMessage": "Rätt! Att gå från 1/30 s till 30 s är ungefär en 1000-faldig ökning, alltså cirka 10 steg. Ett ND1000 (10 steg) tar dig till ungefär 33 sekunder.",
           "failureMessage": "Förhållandet är 30 / (1/30) = 900. Närmaste tvåpotens är 1024 (2^10), så du behöver ett 10-stegs ND-filter.",
           "options": {
             "0": { "label": "6 steg (ND64)" },
@@ -74,8 +74,8 @@
         "2": {
           "scenario": "Du fotograferar en havsscen vid solnedgång. Ljuset försvinner och din basexponering (utan filter) är nu 1/4s vid f/11, ISO 100. Du vill ha 2-minutersexponeringar för ultra-slätt vatten. Vilken styrka på ND-filtret behöver du?",
           "hint": "Från 1/4s till 120s är en faktor 480. Hitta närmaste stegvärde.",
-          "successMessage": "Ett 9-stegs ND skulle ge dig 1/4 × 512 = 128 sekunder, alltså drygt 2 minuter. Perfekt för den där dimmiga, eteriska havslooken i solnedgång.",
-          "failureMessage": "Från 0,25s till 120s är ungefär en 480-faldig ökning. 2^9 = 512, vilket ligger nära 480, så ett 9-stegs filter tar dig till cirka 128 sekunder.",
+          "successMessage": "Ett 9-stegs ND ger dig 1/4 × 512 = 128 sekunder, alltså drygt 2 minuter. Perfekt för den där dimmiga, eteriska havslooken i solnedgång.",
+          "failureMessage": "Från 0,25 s till 120 s är ungefär en 480-faldig ökning. 2^9 = 512, vilket ligger nära 480, så ett 9-stegs filter tar dig till cirka 128 sekunder.",
           "options": {
             "0": { "label": "6 steg" },
             "1": { "label": "9 steg" },
@@ -86,10 +86,10 @@
         "3": {
           "scenario": "Du vill fotografera ett porträtt vid f/1.4 i stark sol (basexponering: f/1.4, 1/8000s, ISO 100). Kamerans maximala slutartid är 1/8000s. Kan du fotografera vid f/1.4 utan ND-filter?",
           "hint": "Kolla om 1/8000s vid f/1.4 och ISO 100 räcker, eller om scenen fortfarande är överexponerad.",
-          "successMessage": "Rätt! En mycket ljus dag (EV 15+) kräver f/1.4 vid ISO 100 ofta slutartider snabbare än 1/8000s, vilket de flesta kameror inte klarar. Ett 2–3 stegs ND-filter låter dig fotografera öppet utan överexponering.",
-          "failureMessage": "I stark sol kan f/1.4 vid ISO 100 kräva slutartider bortom kamerans 1/8000s-gräns. Ett ND-filter är nödvändigt för stor bländare i starkt ljus.",
+          "successMessage": "Rätt! En mycket ljus dag (EV 15+) kräver f/1.4 vid ISO 100 ofta slutartider snabbare än 1/8000 s, vilket de flesta kameror inte klarar. Ett 2–3 stegs ND-filter låter dig fotografera öppet utan att bränna ut högdagrarna.",
+          "failureMessage": "I stark sol kan f/1.4 vid ISO 100 kräva slutartider bortom kamerans 1/8000 s-gräns. Ett ND-filter är i princip nödvändigt för öppen bländare i starkt ljus.",
           "options": {
-            "0": { "label": "Ja — 1/8000s räcker" },
+            "0": { "label": "Ja — 1/8000 s räcker" },
             "1": { "label": "Nej — du behöver troligen ett 2–3 stegs ND-filter" },
             "2": { "label": "Höj bara ISO som kompensation" }
           }

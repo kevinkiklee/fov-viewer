@@ -43,7 +43,7 @@
       "subjectTarget": "Mål",
       "modeSingle": "Enkeltvisning",
       "modeWipe": "Wipe-sammenligning",
-      "modeSplit": "Delt sammenligning",
+      "modeSplit": "Delt visning",
       "blurReadout": "Uskarphet: {value}",
       "simulateDiffraction": "Simuler diffraksjon",
       "diffractionWarning": "Diffraksjon kan redusere skarpheten ved denne blenderen",

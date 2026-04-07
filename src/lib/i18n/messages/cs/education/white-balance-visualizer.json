@@ -18,8 +18,8 @@
       },
       "keyFactors": {
         "0": {
-          "label": "Teplota barev (Kelvin)",
-          "description": "Číselná míra barvy světla. Nízké Kelviny = teplé/oranžové světlo. Vysoké Kelviny = chladné/modré světlo. Denní světlo je přibližně 5500 K."
+          "label": "Teplota barev (kelviny)",
+          "description": "Číselná míra barvy světla. Nízké hodnoty v kelvinech = teplé/oranžové světlo. Vysoké hodnoty = chladné/modré světlo. Denní světlo je přibližně 5500 K."
         },
         "1": {
           "label": "Zdroj světla",
@@ -89,14 +89,14 @@
           }
         },
         "2": {
-          "scenario": "Nastavuješ vyvážení bílé ručně v Kelvinech. Fotka vypadá příliš modře/studeně. Máš Kelvinovu hodnotu zvýšit, nebo snížit, abys ji oteplil?",
-          "hint": "Kelvinovo nastavení WB říká fotoaparátu, jakou teplotu má zdroj světla. Vyšší Kelvin znamená, že fotoaparát přidá víc tepla.",
-          "successMessage": "Správně! Zvýšení Kelvinu fotoaparátu řekne, že světlo je chladnější, než ve skutečnosti je, a fotoaparát kompenzuje přidáním tepla. Na oteplení studeného snímku Kelvin zvyš.",
-          "failureMessage": "Když zvýšíš Kelvin, fotoaparát přidá víc tepla na kompenzaci. Takže pro opravu studeného/modrého snímku Kelvin zvedni.",
+          "scenario": "Nastavuješ vyvážení bílé ručně v kelvinech. Fotka vypadá příliš modře/studeně. Máš hodnotu v kelvinech zvýšit, nebo snížit, abys ji oteplil?",
+          "hint": "Nastavení WB v kelvinech říká fotoaparátu, jakou teplotu má zdroj světla. Vyšší hodnota v kelvinech znamená, že fotoaparát přidá víc tepla.",
+          "successMessage": "Správně! Zvýšením hodnoty v kelvinech fotoaparátu řekneš, že je světlo chladnější, než ve skutečnosti je, a fotoaparát kompenzuje přidáním tepla. Na oteplení studeného snímku hodnotu v kelvinech zvyš.",
+          "failureMessage": "Když hodnotu v kelvinech zvýšíš, fotoaparát přidá víc tepla na kompenzaci. Takže pro opravu studeného/modrého snímku hodnotu v kelvinech zvedni.",
           "options": {
-            "0": { "label": "Zvýšit Kelvin (například z 5500 K na 7500 K)" },
-            "1": { "label": "Snížit Kelvin (například z 5500 K na 3200 K)" },
-            "2": { "label": "Směr Kelvinu nemá na teplotu vliv" }
+            "0": { "label": "Zvýšit hodnotu v kelvinech (například z 5500 K na 7500 K)" },
+            "1": { "label": "Snížit hodnotu v kelvinech (například z 5500 K na 3200 K)" },
+            "2": { "label": "Směr nastavení v kelvinech nemá na teplotu vliv" }
           }
         },
         "3": {
@@ -112,10 +112,10 @@
           }
         },
         "4": {
-          "scenario": "Fotíš náladovou noční scénu ve městě a chceš záměrně studený modrý tón. Pouliční lampy jsou sodíkové (~2200 K). Jaké Kelvinovo WB dá nejsilnější posun do modra?",
+          "scenario": "Fotíš náladovou noční scénu ve městě a chceš záměrně studený modrý tón. Pouliční lampy jsou sodíkové (~2200 K). Jaká hodnota WB v kelvinech dá nejsilnější posun do modra?",
           "hint": "Nastavení WB mnohem nižší, než je skutečná teplota zdroje, posune snímek k modré.",
           "successMessage": "Správně! Nastavení WB na 7500 K (přednastavení Stín) fotoaparátu řekne, že je zdroj velmi chladný/modrý — a tak kompenzuje masivním přidáním tepla. Protože skutečné sodíkové světlo je jen 2200 K (velmi teplé), tahle přehnaná korekce přestřelí přes neutrál do silného modrého nádechu. Čím víc nastavíš WB nad skutečnou teplotu zdroje, tím silnější bude posun do modré.",
-          "failureMessage": "Nastavení Kelvinova WB výrazně nad skutečnou teplotu zdroje způsobí, že fotoaparát přehnaně koriguje do modré. Se sodíkovými lampami 2200 K dává nastavení WB 7500 K a výš nejsilnější studený modrý vzhled.",
+          "failureMessage": "Nastavení WB v kelvinech výrazně nad skutečnou teplotu zdroje způsobí, že fotoaparát přehnaně koriguje do modré. Se sodíkovými lampami 2200 K dává nastavení WB 7500 K a výš nejsilnější studený modrý vzhled.",
           "options": {
             "0": { "label": "2200 K (odpovídá sodíkovým lampám)" },
             "1": { "label": "3200 K (přednastavení Žárovka)" },

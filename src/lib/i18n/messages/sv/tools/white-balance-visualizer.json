@@ -14,15 +14,15 @@
       "faq": {
         "what-is-white-balance": {
           "question": "Vad är vitbalans i fotografi?",
-          "answer": "Vitbalans justerar färgerna i bilden så att objekt som ser vita ut i verkligheten också ser vita ut på bilden. Olika ljuskällor ger olika färgtemperaturer, och vitbalansen kompenserar för skillnaderna."
+          "answer": "Vitbalansen justerar färgerna i bilden så att föremål som är vita i verkligheten också ser vita ut på fotot. Olika ljuskällor har olika färgtemperatur, och vitbalansen kompenserar för skillnaden."
         },
         "kelvin-vs-presets": {
           "question": "Ska jag använda Kelvin-värden eller vitbalansförinställningar?",
-          "answer": "Förinställningar (Daylight, Cloudy, Tungsten) är smidiga utgångspunkter, men ett specifikt Kelvin-värde ger mer exakt kontroll. Fotografera i RAW så kan du justera vitbalansen förlustfritt i efterbehandlingen."
+          "answer": "Förinställningarna (Daylight, Cloudy, Tungsten) är smidiga utgångspunkter, men ett specifikt Kelvin-värde ger mer exakt kontroll. Fotograferar du i RAW kan du dessutom justera vitbalansen förlustfritt i efterbehandlingen."
         },
         "when-to-use-manual-white-balance": {
           "question": "När ska jag använda manuell vitbalans?",
-          "answer": "Använd manuell vitbalans vid blandat ljus (naturligt plus artificiellt), studiosetups som kräver exakt färgåtergivning, produktfoto och närhelst automatisk vitbalans ger ojämna resultat över en bildserie."
+          "answer": "Använd manuell vitbalans vid blandat ljus (naturligt plus artificiellt), i studiouppställningar som kräver exakt färgåtergivning, vid produktfoto och varje gång auto-WB ger ojämna resultat över en bildserie."
         }
       }
     }

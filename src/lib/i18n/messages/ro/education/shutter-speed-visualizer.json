@@ -1,65 +1,65 @@
 {
   "education": {
     "shutter-speed-visualizer": {
-      "beginner": "Ghidul pentru timpul de expunere te ajută să găsești cel mai lent timp pe care îl poți folosi și să obții totuși o fotografie clară din mână. Dacă timpul e prea lent, tremuratul mâinilor va blura imaginea. Viteza minimă sigură depinde de distanța focală, de faptul că ai sau nu stabilizare de imagine și de cât de ferm ții camera.",
-      "deeper": "Clasica \"regulă reciprocă\" spune că, pentru fotografii clare din mână, timpul de expunere ar trebui să fie cel puțin 1/(distanța focală) secunde — deci un obiectiv de 200mm cere cel puțin 1/200s. Pe camerele cu senzor crop, ar trebui să folosești distanța focală echivalentă (de exemplu, 200mm pe un crop 1.5x = 1/300s). Stabilizarea modernă din corp (IBIS) și optică (OIS) îți poate oferi 3-7 stopuri suplimentare de libertate din mână, ceea ce înseamnă că obiectivul stabilizat de 200mm ar putea fi clar la 1/15s sau chiar mai lent. Totuși, stabilizarea compensează doar tremuratul camerei, nu și mișcarea subiectului. O persoană care merge spre tine la 1/15s va fi în continuare blurată, indiferent de stabilizare. Pentru subiecți în mișcare, trebuie să alegi un timp de expunere bazat pe viteza și direcția subiectului, nu doar pe distanța focală.",
+      "beginner": "Ghidul pentru timpul de expunere te ajută să găsești cel mai lent timp pe care îl poți folosi și să obții totuși o fotografie clară din mână. Dacă timpul e prea lent, tremurul mâinilor îți blurează imaginea. Timpul minim sigur depinde de distanța focală, de faptul că ai sau nu stabilizare de imagine și de cât de ferm ții aparatul.",
+      "deeper": "Clasica „regulă reciprocă” spune că, pentru fotografii clare din mână, timpul de expunere ar trebui să fie cel puțin 1/(distanța focală) secunde — deci un 200mm cere cel puțin 1/200s. Pe aparatele cu senzor crop, folosește distanța focală echivalentă (de exemplu, 200mm pe un crop 1.5× = 1/300s). Stabilizarea modernă, din corp (IBIS) sau din obiectiv (OIS), îți poate aduce 3-7 stopuri în plus pentru fotografierea din mână, adică obiectivul stabilizat de 200mm ar putea fi clar la 1/15s sau chiar mai lent. Totuși, stabilizarea compensează doar tremurul aparatului, nu și mișcarea subiectului. O persoană care vine spre tine la 1/15s va fi în continuare blurată, indiferent de stabilizare. Pentru subiectele în mișcare, alege timpul de expunere în funcție de viteza și direcția subiectului, nu doar după distanța focală.",
       "keyFactors": {
         "0": {
           "label": "Distanță focală",
-          "description": "Distanțele focale mai lungi amplifică tremuratul camerei. Regula reciprocă (1/distanță focală) este punctul de plecare pentru determinarea timpului minim de expunere."
+          "description": "Distanțele focale mai lungi amplifică tremurul aparatului. Regula reciprocă (1/distanța focală) este punctul de plecare pentru timpul minim de expunere."
         },
         "1": {
           "label": "Stabilizare de imagine",
-          "description": "OIS (din obiectiv) oferă de obicei 2-4 stopuri de avantaj. IBIS (din corp) oferă 3-5 stopuri. OIS+IBIS combinate pot atinge 5-7 stopuri pe unele sisteme."
+          "description": "OIS (din obiectiv) oferă de obicei 2-4 stopuri. IBIS (din corp) oferă 3-5 stopuri. OIS+IBIS combinate pot atinge 5-7 stopuri pe unele sisteme."
         },
         "2": {
           "label": "Mișcarea subiectului",
-          "description": "Subiecții statici au nevoie doar de suficientă viteză pentru a contracara tremuratul camerei. Subiecții în mișcare cer timpi mai rapizi, indiferent de stabilizare: mers (~1/125s), alergare (~1/500s), vehicule (~1/1000s+)."
+          "description": "Subiectele statice au nevoie doar de un timp suficient cât să contracareze tremurul aparatului. Subiectele în mișcare cer timpi mai rapizi, indiferent de stabilizare: mers (~1/125s), alergare (~1/500s), vehicule (~1/1000s+)."
         },
         "3": {
           "label": "Dimensiunea senzorului (factor de crop)",
-          "description": "Camerele cu senzor crop înmulțesc efectiv distanța focală pentru regula reciprocă. Un obiectiv de 50mm pe un crop 1.5x se comportă ca un 75mm, deci ai nevoie de cel puțin 1/75s."
+          "description": "Aparatele cu senzor crop înmulțesc efectiv distanța focală pentru regula reciprocă. Un 50mm pe un crop 1.5× se comportă ca un 75mm, deci ai nevoie de cel puțin 1/75s."
         }
       },
       "tips": {
         "0": {
-          "text": "Sprijină-te de un perete, ține coatele strânse și expiră încet înainte să apeși pe declanșator. O tehnică bună îți poate oferi 1-2 stopuri suplimentare de stabilitate, dincolo de regula reciprocă."
+          "text": "Sprijină-te de un perete, ține coatele strâns lângă corp și expiră încet înainte să apeși pe declanșator. O tehnică bună îți mai aduce 1-2 stopuri de stabilitate, peste regula reciprocă."
         },
         "1": {
-          "text": "Când fotografiezi oameni, mișcarea subiectului îți dictează de obicei viteza minimă, nu distanța focală. Chiar și cu un obiectiv larg și stabilizare, un copil care aleargă cere cel puțin 1/500s."
+          "text": "Când fotografiezi oameni, mișcarea subiectului îți dictează de obicei timpul minim, nu distanța focală. Chiar și cu un obiectiv larg și stabilizare, un copil care aleargă cere cel puțin 1/500s."
         },
         "2": {
-          "text": "Dacă fotografiezi constant în lumină slabă, investește într-un corp de cameră cu IBIS. Abilitatea de a fotografia din mână la 1/2s cu un obiectiv larg deschide posibilități pe care niciun ISO performant nu le poate egala."
+          "text": "Dacă fotografiezi constant în lumină slabă, investește într-un corp cu IBIS. Să poți fotografia din mână la 1/2s cu un obiectiv larg îți deschide posibilități pe care niciun ISO performant nu le poate egala."
         }
       },
       "tooltips": {
         "focalLength": {
           "term": "Distanță focală",
-          "definition": "Distanța focală a obiectivului, în milimetri. Afectează direct timpul minim sigur de expunere prin regula reciprocă: 1/(distanță focală) pentru full-frame, ajustat cu factorul de crop pentru senzori mai mici."
+          "definition": "Distanța focală a obiectivului, în milimetri. Afectează direct timpul minim sigur de expunere prin regula reciprocă: 1/(distanța focală) pentru full-frame, ajustată cu factorul de crop pentru senzorii mai mici."
         },
         "sensor": {
           "term": "Dimensiunea senzorului",
-          "definition": "Dimensiunea senzorului camerei, care determină factorul de crop. APS-C (1.5x) și Micro Four Thirds (2x) înmulțesc distanța focală efectivă, cerând timpi mai rapizi pentru același obiectiv."
+          "definition": "Dimensiunea senzorului aparatului, care determină factorul de crop. APS-C (1.5×) și Micro Four Thirds (2×) înmulțesc distanța focală efectivă și cer timpi mai rapizi pentru același obiectiv."
         },
         "stabilization": {
           "term": "Stabilizare de imagine",
-          "definition": "Tehnologie care compensează tremuratul camerei. OIS (stabilizare optică) este în obiectiv, IBIS (stabilizare în corp) este în corpul camerei. Pot lucra împreună pentru beneficiu maxim."
+          "definition": "Tehnologie care compensează tremurul aparatului. OIS (stabilizare optică) este în obiectiv, iar IBIS (stabilizare în corp) este în corpul aparatului. Pot lucra împreună pentru beneficiu maxim."
         },
         "subjectMotion": {
           "term": "Mișcarea subiectului",
-          "definition": "Cât de rapid se mișcă subiectul. Subiecții statici au nevoie doar de suficient timp pentru a contracara tremuratul camerei. Subiecții în mișcare cer timpi mai rapizi, în funcție de viteza și direcția lor față de cameră."
+          "definition": "Cât de rapid se mișcă subiectul. Subiectele statice au nevoie doar de un timp suficient cât să contracareze tremurul aparatului. Subiectele în mișcare cer timpi mai rapizi, în funcție de viteza și direcția lor față de aparat."
         },
         "recommendedShutterSpeed": {
           "term": "Timp recomandat de expunere",
-          "definition": "Timpul minim calculat pentru combinația ta specifică de distanță focală, stabilizare, senzor și mișcare a subiectului. Fotografiind la acest timp sau mai rapid ar trebui să obții rezultate clare."
+          "definition": "Timpul minim calculat pentru combinația ta specifică de distanță focală, stabilizare, senzor și mișcare a subiectului. Fotografiind la acest timp sau mai rapid, ar trebui să obții rezultate clare."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Fotografiezi cu un obiectiv de 100mm pe o cameră full-frame fără stabilizare de imagine. Subiectul tău stă nemișcat. Care este timpul minim recomandat?",
+          "scenario": "Fotografiezi cu un 100mm pe un aparat full-frame fără stabilizare de imagine. Subiectul tău stă nemișcat. Care este timpul minim recomandat?",
           "hint": "Regula reciprocă: timp minim = 1 / distanța focală.",
-          "successMessage": "Corect! Regula reciprocă spune 1/100s pentru un obiectiv de 100mm pe full frame. Este punctul de plecare clasic pentru claritate din mână.",
-          "failureMessage": "Pentru un obiectiv de 100mm pe full frame fără stabilizare, regula reciprocă îți dă 1/100s ca timp minim sigur pentru subiecte statice.",
+          "successMessage": "Corect! Regula reciprocă spune 1/100s pentru un 100mm pe full frame. Este punctul de plecare clasic pentru claritate din mână.",
+          "failureMessage": "Pentru un 100mm pe full frame fără stabilizare, regula reciprocă îți dă 1/100s ca timp minim sigur pentru subiectele statice.",
           "options": {
             "0": { "label": "1/50s" },
             "1": { "label": "1/100s" },
@@ -68,10 +68,10 @@
           }
         },
         "1": {
-          "scenario": "Folosești un obiectiv de 50mm pe o cameră APS-C (factor de crop 1.5x) fără stabilizare. Ce timp minim ar trebui să folosești pentru un subiect static?",
+          "scenario": "Folosești un 50mm pe un aparat APS-C (factor de crop 1.5×), fără stabilizare. Ce timp minim ar trebui să folosești pentru un subiect static?",
           "hint": "Înmulțește distanța focală cu factorul de crop înainte să aplici regula reciprocă.",
-          "successMessage": "Exact! 50mm x 1.5 = 75mm echivalent, deci ai nevoie de cel puțin 1/75s. În practică, rotunjirea la 1/80s este alegerea sigură.",
-          "failureMessage": "Pe APS-C, factorul de crop (1.5x) înseamnă că un obiectiv de 50mm se comportă ca un 75mm. Regula reciprocă îți dă 1/75s ca timp minim.",
+          "successMessage": "Exact! 50mm × 1.5 = 75mm echivalent, deci ai nevoie de cel puțin 1/75s. În practică, alegerea sigură e să rotunjești la 1/80s.",
+          "failureMessage": "Pe APS-C, factorul de crop (1.5×) înseamnă că un 50mm se comportă ca un 75mm. Regula reciprocă îți dă 1/75s ca timp minim.",
           "options": {
             "0": { "label": "1/50s" },
             "1": { "label": "1/75s (rotunjit la 1/80s)" },
@@ -80,10 +80,10 @@
           }
         },
         "2": {
-          "scenario": "Ai un obiectiv de 200mm cu OIS (4 stopuri de stabilizare) pe un corp full-frame cu IBIS (5 stopuri). Împreună oferă aproximativ 6 stopuri de stabilizare combinată. Pentru un subiect static, care este timpul minim aproximativ?",
+          "scenario": "Ai un 200mm cu OIS (4 stopuri de stabilizare) pe un corp full-frame cu IBIS (5 stopuri). Împreună oferă aproximativ 6 stopuri de stabilizare combinată. Pentru un subiect static, care este timpul minim aproximativ?",
           "hint": "Pornește de la regula reciprocă (1/200s) și aplică 6 stopuri de beneficiu de stabilizare.",
-          "successMessage": "Corect! Pornind de la 1/200s și câștigând 6 stopuri: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3s. Aproximativ 1/3 de secundă din mână cu un obiectiv de 200mm — impresionant, dar realizabil cu stabilizarea modernă!",
-          "failureMessage": "De la 1/200s, fiecare stop de stabilizare dublează timpul utilizabil: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3s. Șase stopuri de stabilizare cu un obiectiv de 200mm dau aproximativ 1/3s.",
+          "successMessage": "Corect! Pornind de la 1/200s și câștigând 6 stopuri: 1/200 → 1/100 → 1/50 → 1/25 → 1/13 → 1/6 → 1/3s. Aproximativ 1/3 de secundă din mână cu un 200mm — impresionant, dar realizabil cu stabilizarea modernă!",
+          "failureMessage": "De la 1/200s, fiecare stop de stabilizare dublează timpul utilizabil: 1/200 → 1/100 → 1/50 → 1/25 → 1/13 → 1/6 → 1/3s. Șase stopuri de stabilizare cu un 200mm dau aproximativ 1/3s.",
           "options": {
             "0": { "label": "1/30s" },
             "1": { "label": "1/8s" },
@@ -92,10 +92,10 @@
           }
         },
         "3": {
-          "scenario": "Fotografiezi un prieten care face jogging într-un parc cu un obiectiv de 35mm pe o cameră full-frame cu IBIS. IBIS-ul tău îți oferă 5 stopuri de stabilizare, deci regula reciprocă singură ți-ar permite să fotografiezi la aproximativ 1 secundă. Ar trebui să folosești 1 secundă?",
-          "hint": "Stabilizarea compensează tremuratul camerei, nu mișcarea subiectului.",
-          "successMessage": "Corect! Stabilizarea contracarează doar tremuratul camerei. O persoană care face jogging cere cel puțin 1/250s ca să îi îngheți mișcarea, indiferent cât de bună este stabilizarea ta.",
-          "failureMessage": "Stabilizarea nu poate îngheța un subiect în mișcare. Pentru o persoană care face jogging, ai nevoie de cel puțin 1/250s ca să previi blur-ul de mișcare, chiar dacă aparatul ar putea sta stabil la 1 secundă.",
+          "scenario": "Fotografiezi un prieten care face jogging într-un parc, cu un 35mm pe un aparat full-frame cu IBIS. IBIS-ul tău îți oferă 5 stopuri de stabilizare, deci, dacă ai merge doar după regula reciprocă, ai putea fotografia pe la 1 secundă. Ar trebui să folosești 1 secundă?",
+          "hint": "Stabilizarea compensează tremurul aparatului, nu mișcarea subiectului.",
+          "successMessage": "Corect! Stabilizarea contracarează doar tremurul aparatului. O persoană care face jogging cere cel puțin 1/250s ca să-i îngheți mișcarea, indiferent cât de bună e stabilizarea ta.",
+          "failureMessage": "Stabilizarea nu poate îngheța un subiect în mișcare. Pentru o persoană care face jogging ai nevoie de cel puțin 1/250s ca să eviți blurul de mișcare, chiar dacă aparatul ar putea sta stabil la 1 secundă.",
           "options": {
             "0": { "label": "Da — IBIS-ul gestionează toată mișcarea" },
             "1": { "label": "Nu — folosește cel puțin 1/250s ca să îngheți alergătorul" },
@@ -104,9 +104,9 @@
           }
         },
         "4": {
-          "scenario": "Vrei să faci un cadru cu panning al unui biciclist — ciclistul să fie clar, iar fundalul să arate dâre de blur de mișcare. Folosești un obiectiv de 70mm pe full frame. Ce interval de timp de expunere ar trebui să încerci?",
-          "hint": "Panning-ul folosește intenționat un timp lent în timp ce urmărești subiectul. Prea rapid îngheață totul; prea lent blurează și subiectul.",
-          "successMessage": "Corect! Pentru panning la un biciclist, 1/30s până la 1/60s este punctul dulce. Este suficient de lent cât să bluzeze fundalul în dâre, iar mișcarea ta de urmărire ține ciclistul relativ clar. Cere exercițiu — fotografiază în rafală și așteaptă-te la multe respingeri.",
+          "scenario": "Vrei să faci un cadru cu panning al unui biciclist — ciclistul să fie clar, iar fundalul să aibă dâre de blur de mișcare. Folosești un 70mm pe full frame. Ce interval de timp de expunere ar trebui să încerci?",
+          "hint": "Panning-ul folosește intenționat un timp lent în timp ce urmărești subiectul. Prea rapid îngheață totul, prea lent îți blurează și subiectul.",
+          "successMessage": "Corect! Pentru panning la un biciclist, 1/30s până la 1/60s e punctul optim. E suficient de lent cât să bluzeze fundalul în dâre, iar mișcarea ta de urmărire ține ciclistul relativ clar. Cere exercițiu — fotografiază în rafală și așteaptă-te la multe cadre ratate.",
           "failureMessage": "Panning-ul cere un timp suficient de lent cât să blureze fundalul, dar suficient de rapid cât urmărirea ta să țină subiectul clar. Pentru un biciclist, 1/30s până la 1/60s este intervalul tipic.",
           "options": {
             "0": { "label": "1/1000s până la 1/2000s" },

@@ -39,7 +39,7 @@
         },
         "sensor-size-and-depth-of-field": {
           "question": "\u00bfC\u00f3mo afecta el tama\u00f1o del sensor a la profundidad de campo?",
-          "answer": "Los sensores m\u00e1s grandes producen una profundidad de campo m\u00e1s reducida con un encuadre equivalente. Para obtener el mismo encuadre con un sensor m\u00e1s peque\u00f1o, se usa una distancia focal m\u00e1s corta (mayor profundidad) o se aleja m\u00e1s (mayor profundidad), ambos reduciendo el desenfoque del fondo."
+          "answer": "Los sensores m\u00e1s grandes producen una profundidad de campo m\u00e1s reducida con el mismo encuadre. Para conseguir el mismo encuadre con un sensor m\u00e1s peque\u00f1o, hay que usar una distancia focal m\u00e1s corta o alejarse del sujeto, y ambas cosas aumentan la profundidad de campo y reducen el desenfoque del fondo."
         }
       }
     }

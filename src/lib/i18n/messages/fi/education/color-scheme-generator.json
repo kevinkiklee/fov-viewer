@@ -1,11 +1,11 @@
 {
   "education": {
     "color-scheme-generator": {
-      "beginner": "Väriharmonia tarkoittaa värien valitsemista niin, että ne näyttävät yhdessä hyvältä. Aivan kuten musiikilliset soinnut, tietyt väriyhdistelmät luovat miellyttäviä visuaalisia suhteita. Valokuvaajat käyttävät väriharmoniaa vaatetuksen, lavasteiden ja jopa ulkokuvausten ajankohdan suunnittelussa saadakseen luonnosta oikean paletin.",
+      "beginner": "Väriharmonia tarkoittaa värien valitsemista niin, että ne näyttävät hyvältä yhdessä. Aivan kuten musiikin sointujen, tiettyjen väriyhdistelmien välillä on miellyttävä visuaalinen suhde. Valokuvaajat hyödyntävät väriharmoniaa vaatetuksen, rekvisiitan ja jopa ulkokuvausten ajankohdan suunnittelussa, jotta luonto tarjoaa valmiiksi oikean paletin.",
       "deeper": {
         "0": {
           "heading": "Väripyörä",
-          "text": "Väriharmoniateoria pohjautuu väripyörään, joka järjestää sävyt ympyräksi niiden aallonpituussuhteiden mukaan. HSL-malli (Hue, Saturation, Lightness) liittyy suoraan pyörään: sävy on kulma (0–360°), värikylläisyys etäisyys keskipisteestä, ja vaaleus säätelee kirkkautta. Valokuvauksessa nämä suhteet esiintyvät luonnostaan — kultainen hetki tuottaa analogisen lämpimän sävymaailman, kun taas punainen lato vihreällä niityllä on komplementtivärien pari."
+          "text": "Väriharmoniateoria perustuu väripyörään, joka järjestää sävyt ympyrän muotoon niiden aallonpituussuhteiden mukaan. HSL-malli (Hue, Saturation, Lightness) kytkeytyy suoraan pyörään: sävy on kulma (0–360°), värikylläisyys etäisyys keskipisteestä ja vaaleus kirkkaus. Nämä suhteet ovat valokuvauksessa jatkuvasti läsnä — kultainen hetki tuottaa luonnostaan analogisen lämpimän sävymaailman, kun taas punainen lato vihreällä niityllä on klassinen komplementtipari."
         },
         "1": {
           "heading": "Komplementtivärit",
@@ -25,7 +25,7 @@
         },
         "5": {
           "heading": "Tetradiset värit (kaksoiskomplementti)",
-          "text": "Neljä väriä, jotka muodostavat suorakulmion pyörällä — käytännössä kaksi komplementtiparia. Tarjoaa rikkaimman ja monimutkaisimman paletin mutta vaatii huolellista tasapainottamista. Anna yhden värin hallita ja käytä muita tukevina korostuksina välttääksesi kaoottisen ilmeen."
+          "text": "Neljä väriä, jotka muodostavat väripyörälle suorakulmion — käytännössä kaksi komplementtiparia. Antaa rikkaimman ja monitahoisimman paletin, mutta vaatii huolellista tasapainottamista. Anna yhden värin olla hallitseva ja käytä muita tukevina korostuksina, jotta ilme ei mene kaoottiseksi."
         }
       },
       "keyFactors": {
@@ -48,13 +48,13 @@
       },
       "tips": {
         "0": {
-          "text": "Muotokuvauksissa valitse komplementti- tai jaettu komplementtipaletti, ja pue kohteesi avainvärin mukaiseen asuun, kun tausta tarjoaa vastakkaisen sävyn. Sininen/oranssi (kultaisen hetken muotokuvat) on klassikkoesimerkki."
+          "text": "Muotokuvauksissa valitse komplementti- tai jaettu komplementtipaletti: pue kohde avainvärin mukaiseen asuun ja anna taustan tarjota vastaväri. Sininen/oranssi (kultaisen hetken muotokuvat) on klassinen esimerkki."
         },
         "1": {
-          "text": "Käytä analogista harmoniaa maisemissa — luonto toimii jo valmiiksi analogisissa paleteissa. Sovita vaatetus- ja rekvisiittavalinnat hallitseviin luonnon sävyihin."
+          "text": "Käytä maisemissa analogista harmoniaa — luonto tarjoaa ne jo valmiiksi. Sovita vaatetus ja rekvisiitta ympäristön vallitseviin sävyihin."
         },
         "2": {
-          "text": "Laske värikylläisyys 30–50 %:iin nähdäksesi, miltä värit näyttävät hillitymmässä, toimituksellisemmassa tyylissä. Korkea kylläisyys toimii mainos- ja muotikuvauksessa, mutta matalampi tuntuu usein hienostuneemmalta."
+          "text": "Laske värikylläisyys 30–50 %:iin, niin näet, miltä värit näyttäisivät hillitymmässä, editoriaalisessa tyylissä. Korkea kylläisyys sopii mainos- ja muotikuvaukseen, mutta matalampi tuntuu usein hienostuneemmalta."
         }
       },
       "tooltips": {
@@ -64,7 +64,7 @@
         },
         "Key Color": {
           "term": "Avainväri",
-          "definition": "Palettisi hallitseva väri. Kaikki muut harmonian värit lasketaan suhteessa tähän lähtösävyyn."
+          "definition": "Paletin hallitseva väri. Kaikki muut harmonian värit lasketaan suhteessa tähän lähtösävyyn."
         },
         "Hue": {
           "term": "Sävy",
@@ -72,7 +72,7 @@
         },
         "Saturation": {
           "term": "Värikylläisyys",
-          "definition": "Värin voimakkuus 0 %:sta (harmaa) 100 %:iin (täysin eloisa). Säätelee, kuinka rohkealta tai vaimealta koko paletti näyttää."
+          "definition": "Värin voimakkuus 0 %:sta (harmaa) 100 %:iin (täysin eloisa). Määrää, kuinka rohkealta tai vaimealta koko paletti näyttää."
         },
         "Lightness": {
           "term": "Vaaleus",
@@ -89,10 +89,10 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Haluat maksimikontrastin kahden värin välille rohkeaan graafiseen muotokuvaan. Mikä harmoniatyyppi antaa eniten visuaalista jännitettä?",
-          "hint": "Pyörällä suoraan vastakkaiset värit tuottavat voimakkaimman kontrastin.",
-          "successMessage": "Oikein! Komplementtivärit ovat 180 asteen päässä toisistaan ja tuottavat korkeimman kontrastin — täydellisiä rohkeisiin, huomiota herättäviin sommitelmiin.",
-          "failureMessage": "Komplementtiharmonia asettaa värit pyörän vastakkaisille puolille ja luo maksimivisuaalisen kontrastin.",
+          "scenario": "Haluat kahden värin välille mahdollisimman suuren kontrastin rohkeaan graafiseen muotokuvaan. Mikä harmoniatyyppi antaa eniten visuaalista jännitettä?",
+          "hint": "Väripyörässä suoraan vastakkaiset värit tuottavat voimakkaimman kontrastin.",
+          "successMessage": "Oikein! Komplementtivärit ovat 180 asteen päässä toisistaan ja tuottavat voimakkaimman kontrastin — täydellisiä rohkeisiin, huomiota kerääviin sommitelmiin.",
+          "failureMessage": "Komplementtiharmonia asettaa värit väripyörän vastakkaisille puolille ja synnyttää maksimaalisen kontrastin.",
           "options": {
             "0": { "label": "Komplementti" },
             "1": { "label": "Analoginen" },
@@ -100,10 +100,10 @@
           }
         },
         "1": {
-          "scenario": "Suunnittelet kultaisen hetken kuvausta ja haluat lämpimiä, yhtenäisiä sävyjä. Mikä harmoniatyyppi pitää värit lähekkäin pyörällä?",
-          "hint": "Tämä tyyppi käyttää naapurisävyjä sulavaan, yhtenäiseen tuntuun.",
-          "successMessage": "Aivan! Analoginen harmonia käyttää vierekkäisiä värejä ja tarjoaa lämpimän, yhtenäisen paletin — täydellisen kultaiseen hetkeen.",
-          "failureMessage": "Analoginen harmonia pitää kaikki värit naapureina pyörällä — ihanteellinen yhtenäisiin lämpimiin tai kylmiin paletteihin.",
+          "scenario": "Suunnittelet kultaisen hetken kuvausta ja haluat lämpimiä, yhtenäisiä sävyjä. Mikä harmoniatyyppi pitää värit lähekkäin väripyörällä?",
+          "hint": "Tämä harmonia käyttää naapurisävyjä ja antaa pehmeän, yhtenäisen tunnelman.",
+          "successMessage": "Aivan! Analoginen harmonia käyttää vierekkäisiä värejä ja antaa lämpimän ja yhtenäisen paletin — täydellinen kultaiseen hetkeen.",
+          "failureMessage": "Analoginen harmonia pitää kaikki värit naapureina väripyörällä — ihanteellinen yhtenäisiin lämpimiin tai kylmiin paletteihin.",
           "options": {
             "0": { "label": "Komplementti" },
             "1": { "label": "Analoginen" },
@@ -111,10 +111,10 @@
           }
         },
         "2": {
-          "scenario": "Asiakas haluaa muotokuvan, jossa on kontrastia mutta ei yhtä voimakasta kuin puhtaalla komplementtiparilla. Mikä harmoniatyyppi pehmentää vastakkainasettelua ja silti säilyttää visuaalisen kiinnostavuuden?",
-          "hint": "Tämä tyyppi käyttää kahta väriä lähellä vastaväriä suoran vastavärin sijaan.",
-          "successMessage": "Erinomaista! Jaettu komplementti säilyttää komplementtiharmonian kontrastin, mutta jakaa vastavärin kahteen reunavärin sävyyn, tuottaen vähemmän iskevän mutta silti dynaamisen paletin.",
-          "failureMessage": "Jaettu komplementti on vastaus — se korvaa yksittäisen vastavärin kahdella vastavärin naapurilla, pehmentäen kontrastia mutta säilyttäen visuaalisen energian.",
+          "scenario": "Asiakas haluaa muotokuvan, jossa on kontrastia mutta ei niin voimakasta kuin puhtaalla komplementtiparilla. Mikä harmoniatyyppi pehmentää vastakkainasettelua, mutta säilyttää silti visuaalisen kiinnostavuuden?",
+          "hint": "Tämä harmonia käyttää suoran vastavärin sijasta sen kahta vieressä olevaa sävyä.",
+          "successMessage": "Erinomaista! Jaettu komplementti säilyttää komplementtiharmonian kontrastin, mutta korvaa vastavärin sen kahdella naapurilla — lopputulos on vähemmän iskevä mutta silti dynaaminen paletti.",
+          "failureMessage": "Jaettu komplementti on oikea vastaus — se korvaa yksittäisen vastavärin kahdella sen naapurisävyllä, jolloin kontrasti pehmenee mutta visuaalinen energia säilyy.",
           "options": {
             "0": { "label": "Jaettu komplementti" },
             "1": { "label": "Triadinen" },
@@ -122,10 +122,10 @@
           }
         },
         "3": {
-          "scenario": "Asetat avainväriksi oranssin (sävy ~30 astetta) ja käytät komplementtiharmoniaa. Mikä väri on komplementti?",
-          "hint": "Komplementti tarkoittaa 180 astetta vastakkaista pyörällä.",
-          "successMessage": "Oikein! 30° + 180° = 210°, joka osuu sinisen alueelle. Oranssi ja sininen on yksi valokuvauksen rakastetuimmista komplementtipareista.",
-          "failureMessage": "Lisäämällä 180° oranssiin (30°) saadaan 210°, joka on sininen. Oranssin ja sinisen komplementtipari on valokuvauksen perusasia.",
+          "scenario": "Asetat avainväriksi oranssin (sävy noin 30°) ja käytät komplementtiharmoniaa. Mikä on sen komplementtiväri?",
+          "hint": "Komplementti on 180° vastakkaisella puolella väripyörää.",
+          "successMessage": "Oikein! 30° + 180° = 210°, mikä osuu sinisen alueelle. Oranssi ja sininen on yksi valokuvauksen rakastetuimmista komplementtipareista.",
+          "failureMessage": "Oranssin (30°) komplementti saadaan lisäämällä 180°, jolloin tuloksena on 210° eli sininen. Oranssin ja sinisen pari on valokuvauksen perusasia.",
           "options": {
             "0": { "label": "Sininen (~210°)" },
             "1": { "label": "Vihreä (~150°)" },
@@ -133,10 +133,10 @@
           }
         },
         "4": {
-          "scenario": "Suunnittelet muotilehden editoriaalikuvausta ja tarvitset nelivärisen paletin, jossa on sekä lämpimiä että kylmiä sävyjä ja paljon visuaalista rikkautta. Mikä harmoniatyyppi antaa sinulle neljä väriä, ja mikä on sen käytön suurin haaste?",
-          "hint": "Neliväriharmonia muodostaa suorakulmion pyörälle.",
-          "successMessage": "Aivan! Tetradinen harmonia antaa neljä väriä, jotka muodostavat suorakulmion pyörällä. Suurin haaste on tasapaino — kun neljä selkeää sävyä kilpailee, yhden on hallittava ja muiden tuotava korostusta. Ilman hierarkiaa kuva tuntuu kaoottiselta.",
-          "failureMessage": "Tetradinen (kaksoiskomplementti) tarjoaa neljä väriä suorakulmaisessa järjestelmässä. Haasteena on, että neljä vahvaa sävyä kilpailevat huomiosta — yhden värin on oltava hallitseva ja muiden korostuksia.",
+          "scenario": "Suunnittelet muotilehden editoriaalikuvausta ja tarvitset nelivärisen paletin, jossa on sekä lämpimiä että kylmiä sävyjä ja paljon visuaalista rikkautta. Mikä harmoniatyyppi antaa neljä väriä, ja mikä on sen käytön suurin haaste?",
+          "hint": "Neliväriharmonia muodostaa väripyörälle suorakulmion.",
+          "successMessage": "Aivan! Tetradinen harmonia antaa neljä väriä, jotka muodostavat väripyörälle suorakulmion. Suurin haaste on tasapaino — kun neljä vahvaa sävyä kilpailee, yhden täytyy olla hallitseva ja muiden korostuksia. Ilman selkeää hierarkiaa kuva alkaa tuntua kaoottiselta.",
+          "failureMessage": "Tetradinen (kaksoiskomplementti) antaa neljä väriä suorakulmaisessa järjestelmässä. Haasteena on se, että neljä vahvaa sävyä kilpailee huomiosta — yhden värin on oltava hallitseva ja muiden korostuksia.",
           "options": {
             "0": { "label": "Tetradinen — haasteena visuaalisen hierarkian säilyttäminen neljän sävyn välillä" },
             "1": { "label": "Triadinen — haasteena liian vähän värejä" },

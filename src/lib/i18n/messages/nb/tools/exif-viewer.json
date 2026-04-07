@@ -61,11 +61,11 @@
         },
         "how-to-read-histogram": {
           "question": "Hvordan leser jeg et histogram?",
-          "answer": "Et histogram viser fordelingen av lysverdier i bildet, fra skygger (venstre) til høylys (høyre). Et velexponert bilde har vanligvis data jevnt fordelt over hele spennet uten å klippe i noen ende, men den ideelle formen avhenger av motivet."
+          "answer": "Et histogram viser fordelingen av lysverdier i bildet, fra skygger (venstre) til høylys (høyre). Et veleksponert bilde har vanligvis dataene jevnt fordelt over hele spennet uten klipping i noen av endene, men den ideelle formen avhenger av motivet."
         },
         "does-exif-contain-location": {
           "question": "Inneholder EXIF-data posisjonen min?",
-          "answer": "Hvis kameraet eller mobilen har GPS aktivert, kan EXIF-data inneholde nøyaktige GPS-koordinater for hvor bildet ble tatt. Vær oppmerksom på dette når du deler bilder — mange sosiale nettverk fjerner EXIF-data automatisk, men ikke alle."
+          "answer": "Hvis kameraet eller mobilen har GPS aktivert, kan EXIF-dataene inneholde nøyaktige GPS-koordinater for hvor bildet ble tatt. Vær oppmerksom på dette når du deler bilder — mange sosiale medier fjerner EXIF-data automatisk, men ikke alle."
         }
       }
     }

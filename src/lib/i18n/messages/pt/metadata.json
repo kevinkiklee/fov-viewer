@@ -3,7 +3,7 @@
     "site": {
       "defaultTitle": "PhotoTools — Ferramentas de Fotografia",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Ferramentas gratuitas de fotografia: simulador de campo de visão, gerador de esquema de cores, visualizador EXIF, corte e emolduramento de fotos e muito mais.",
+      "description": "Ferramentas gratuitas de fotografia: simulador de campo de visão, gerador de esquema de cores, visualizador EXIF, corte e moldura de fotos e muito mais.",
       "ogTitle": "PhotoTools — Ferramentas Gratuitas de Fotografia"
     },
     "fov-simulator": {

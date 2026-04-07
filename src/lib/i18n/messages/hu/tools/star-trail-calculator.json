@@ -4,7 +4,7 @@
       "rule500": "500-as szabály",
       "ruleNPF": "NPF szabály",
       "recommendation": "Ajánlás",
-      "recommendationText": "Használd az NPF szabályt ({npf}s) pixelszintű élességhez. Az 500-as szabály ({r500}s) gyors becslés, de nagyfelbontású érzékelőkön csíkozódást mutathat.",
+      "recommendationText": "Pixelszintű élességhez használd az NPF szabályt ({npf}s). Az 500-as szabály ({r500}s) gyors becslés, de nagyfelbontású érzékelőkön már látszódhatnak a csíkok.",
       "shootingTime": "Fotózási idő",
       "exposure": "Expozíció",
       "displayMode": "Nézet",
@@ -31,15 +31,15 @@
       "faq": {
         "what-is-500-rule": {
           "question": "Mi az 500-as szabály az asztrofotózásban?",
-          "answer": "Az 500-as szabály megbecsüli a leghosszabb expozíciós időt, mielőtt a csillagok pontok helyett csíkokként jelennének meg. Oszd el az 500-at az effektív gyújtótávolságoddal (gyújtótávolság × crop faktor), hogy megkapd a maximális záridőt másodpercben éles csillagokhoz."
+          "answer": "Az 500-as szabály megbecsüli a leghosszabb expozíciós időt, ami alatt a csillagok még pontnak látszanak és nem csíkozódnak el. Oszd el az 500-at az effektív gyújtótávolságoddal (gyújtótávolság × crop faktor), és megkapod a maximális záridőt másodpercben a pontszerű csillagokhoz."
         },
         "star-trails-vs-points": {
-          "question": "Hogyan válasszak a csillagívek és az éles csillagpontok között?",
-          "answer": "Éles csillagpontokhoz (Tejút, csillagképek) használj rövid expozíciókat az 500-as szabály alapján. A Föld forgását mutató kreatív csillagívekhez használj nagyon hosszú expozíciókat (percek-órák), vagy stackelj több rövidebb kockát."
+          "question": "Hogyan válasszak a csillagívek és a pontszerű csillagok között?",
+          "answer": "Pontszerű csillagokhoz (Tejút, csillagképek) használj rövid expozíciókat az 500-as szabály szerint. A Föld forgását megmutató, kreatív csillagívekhez használj nagyon hosszú expozíciót (perceket, órákat), vagy stackelj sok rövidebb kockát."
         },
         "best-settings-milky-way": {
           "question": "Mik a legjobb kamerabeállítások a Tejút fotózásához?",
-          "answer": "Kezdj a legtágabb elérhető rekesszel (f/1.4–f/2.8), ISO 1600–6400 és a leghosszabb záridővel, amit az 500-as szabály enged az objektívedhez. Használj stabil állványt és manuális fókuszt végtelenre. Újholdkor fotózz sötét égű helyen."
+          "answer": "Indulj a legtágabb rekesszel, amid van (f/1.4–f/2.8), ISO 1600–6400 között, és olyan záridővel, amit az 500-as szabály még enged az objektívedhez. Használj stabil állványt és állítsd a fókuszt manuálisan végtelenre. Újholdkor fotózz, sötét égbolt alatt."
         }
       }
     }

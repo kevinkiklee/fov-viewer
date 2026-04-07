@@ -39,7 +39,7 @@
           "text": "Gunakan Peraturan NPF dan bukan Peraturan 500 untuk kamera moden. Ia mengambil kira resolusi sensor dan menghasilkan masa pendedahan maksimum yang lebih tepat, terutamanya dengan badan berbilang megapiksel tinggi."
         },
         "1": {
-          "text": "Untuk stacking jejak bintang, kekalkan jurang antara bingkai di bawah 2-3 saat menggunakan jauh kawalan berwayar atau intervalometer. Jurang yang lebih panjang mencipta jejak berbintik dan bukan lancar."
+          "text": "Untuk stacking jejak bintang, kekalkan jurang antara bingkai di bawah 2-3 saat menggunakan kawalan jauh berwayar atau intervalometer. Jurang yang lebih panjang menghasilkan jejak berbintik dan bukan lancar."
         },
         "2": {
           "text": "Masukkan Polaris (atau Kutub Angkasa Selatan) dalam komposisi anda untuk jejak bulatan sepusat yang dramatik. Bintang lebih dekat dengan kutub mengesan arka lebih ketat."
@@ -87,7 +87,7 @@
         "0": {
           "scenario": "Anda sedang menangkap Bima Sakti dengan lensa 24mm pada kamera full-frame 24MP. Menggunakan Peraturan 500, kira-kira berapa lama anda boleh mendedah sebelum bintang mula berjejak?",
           "hint": "Peraturan 500: saat maksimum = 500 / panjang fokus.",
-          "successMessage": "Betul! 500 / 24 = kira-kira 20 saat. Ini adalah titik permulaan yang baik, walaupun Peraturan NPF mungkin mencadangkan masa yang sedikit lebih pendek untuk ketajaman kritikal.",
+          "successMessage": "Betul! 500 / 24 = kira-kira 20 saat. Ini ialah titik permulaan yang baik, walaupun Peraturan NPF mungkin mencadangkan masa yang sedikit lebih pendek untuk ketajaman kritikal.",
           "failureMessage": "Gunakan Peraturan 500: bahagikan 500 dengan panjang fokus anda (24mm). Itu memberi anda kira-kira 20 saat.",
           "options": {
             "0": { "label": "5 saat" },

@@ -76,15 +76,15 @@
       "faq": {
         "what-is-rule-of-thirds": {
           "question": "Mi a harmadolás szabálya a fotózásban?",
-          "answer": "A harmadolás szabálya 3×3-as rácsra osztja a képet. Ha a fő témákat a rácsvonalak mentén vagy azok metszéspontjaira helyezed, dinamikusabb, kiegyensúlyozottabb kompozíciót kapsz, mint a téma középre helyezésével."
+          "answer": "A harmadolás szabálya 3×3-as rácsra osztja a képet. Ha a fő témát a rácsvonalak mentén vagy a metszéspontjaikra helyezed, dinamikusabb, kiegyensúlyozottabb kompozíciót kapsz, mintha középre tennéd."
         },
         "best-aspect-ratio-for-instagram": {
-          "question": "Mi a legjobb képarány az Instagram posztokhoz?",
-          "answer": "Az Instagram támogatja az 1:1 (négyzet), 4:5 (álló) és 1,91:1 (fekvő) arányokat. A 4:5 álló arány foglalja a legtöbb képernyőterületet a feedben, és tipikusan ez kapja a legnagyobb figyelmet."
+          "question": "Mi a legjobb képarány Instagram-posztokhoz?",
+          "answer": "Az Instagram az 1:1 (négyzet), 4:5 (álló) és 1,91:1 (fekvő) arányokat támogatja. A 4:5 álló arány foglalja el a legtöbb képernyőterületet a feedben, és jellemzően ez kapja a legtöbb figyelmet."
         },
         "how-to-use-golden-ratio": {
           "question": "Hogyan használjam az aranymetszést a fotókompozícióban?",
-          "answer": "Az aranymetszés (kb. 1,618:1) spirálmintát hoz létre, ami átvezeti a szemet a képen. Helyezd a fő témát a spirál legszűkebb pontjára, és hagyd, hogy a vezetővonalak kifelé kövessék a görbét."
+          "answer": "Az aranymetszés (kb. 1,618:1) egy spirálmintát rajzol ki, ami átvezeti a szemet a képen. Tedd a fő témát a spirál legszűkebb pontjára, és hagyd, hogy a vezetővonalak kifelé kövessék a görbét."
         }
       }
     }

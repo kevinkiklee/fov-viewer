@@ -31,7 +31,7 @@
       "faq": {
         "what-is-crop-factor": {
           "question": "Hva er cropfaktor, og hvorfor er det viktig?",
-          "answer": "Cropfaktor beskriver forskjellen i størrelse mellom en kamerasensor og en fullformatsensor (35 mm). Den påvirker effektiv brennvidde, dybdeskarphet og ytelse i svakt lys. En cropfaktor på 1,5x betyr at sensoren er 1,5 ganger mindre enn fullformat."
+          "answer": "Cropfaktor beskriver størrelsesforholdet mellom en kamerasensor og en fullformatsensor (35 mm). Den påvirker effektiv brennvidde, dybdeskarphet og ytelsen i svakt lys. En cropfaktor på 1,5x betyr at sensorens diagonal er 1,5 ganger mindre enn fullformat."
         },
         "full-frame-vs-aps-c": {
           "question": "Hva er fordelene med fullformat sammenlignet med APS-C?",
@@ -39,7 +39,7 @@
         },
         "sensor-size-and-depth-of-field": {
           "question": "Hvordan påvirker sensorstørrelse dybdeskarpheten?",
-          "answer": "Større sensorer gir grunnere dybdeskarphet ved samme utsnitt. For å få samme utsnitt med en mindre sensor må du enten bruke kortere brennvidde (dypere DoF) eller gå lenger unna (dypere DoF), og begge deler reduserer bakgrunnsuskarpheten."
+          "answer": "Større sensorer gir grunnere dybdeskarphet ved samme utsnitt. For å få samme utsnitt med en mindre sensor må du enten bruke kortere brennvidde eller gå lenger unna — begge deler gir dypere dybdeskarphet og mindre bakgrunnsuskarphet."
         }
       }
     }

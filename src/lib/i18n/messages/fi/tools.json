@@ -2,11 +2,11 @@
   "tools": {
     "fov-simulator": {
       "name": "FOV Simulator",
-      "description": "Vertaa kuvakulmia eri polttoväleillä ja kennokokoilla"
+      "description": "Vertaa kuvakulmaa eri polttoväleillä ja kennoilla"
     },
     "color-scheme-generator": {
       "name": "Color Scheme Generator",
-      "description": "Rakenna väripaletteja kuvauksia varten"
+      "description": "Luo väripaletteja kuvauksia varten"
     },
     "exposure-simulator": {
       "name": "Valotuskolmion simulaattori",
@@ -14,7 +14,7 @@
     },
     "dof-simulator": {
       "name": "Depth-of-Field Simulator",
-      "description": "Visualisoi, miten aukko, polttoväli ja etäisyys vaikuttavat taustan sumentumiseen"
+      "description": "Näe, miten aukko, polttoväli ja etäisyys vaikuttavat taustan sumenemiseen"
     },
     "focus-stacking-calculator": {
       "name": "Focus Stacking Calculator",
@@ -26,11 +26,11 @@
     },
     "hyperfocal-simulator": {
       "name": "Hyperfokaalietäisyyden simulaattori",
-      "description": "Opi, mihin tarkennat saadaksesi maksimiterävyyden etualasta äärettömyyteen"
+      "description": "Opi, mihin tarkentaa, jotta kuva on terävä etualasta äärettömyyteen"
     },
     "shutter-speed-visualizer": {
       "name": "Shutter Speed Visualizer",
-      "description": "Etsi turvallinen minimisuljinaika teräviin käsivarakuviin"
+      "description": "Löydä turvallinen suljinaika teräviin käsivarakuviin"
     },
     "nd-filter-calculator": {
       "name": "ND Filter Calculator",
@@ -38,7 +38,7 @@
     },
     "star-trail-calculator": {
       "name": "Star Trail Calculator",
-      "description": "Laske maksimivalotus teräville tähdille tai suunnittele tähtiratakuvaus"
+      "description": "Laske pisin valotus pistemäisille tähdille tai suunnittele tähtiratakuvaus"
     },
     "perspective-compression-simulator": {
       "name": "Perspektiivin pakkautumisen simulaattori",
@@ -50,7 +50,7 @@
     },
     "sensor-size-comparison": {
       "name": "Sensor Size Comparison",
-      "description": "Vertaa kameroiden kennokokoja visuaalisesti"
+      "description": "Vertaile kameroiden kennokokoja visuaalisesti"
     },
     "frame-studio": {
       "name": "Frame Studio",

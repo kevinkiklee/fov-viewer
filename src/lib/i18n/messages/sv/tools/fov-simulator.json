@@ -32,15 +32,15 @@
       "faq": {
         "what-is-fov": {
           "question": "Vad är bildvinkel i fotografi?",
-          "answer": "Bildvinkel (FOV) är det vinkelområde av scenen som syns genom objektivet och sensorn. Den avgör hur mycket av en scen som fångas i ett foto och påverkas av brännvidd och sensorstorlek."
+          "answer": "Bildvinkeln (FOV) är det vinkelområde av scenen som syns genom objektiv och sensor. Den avgör hur mycket av en scen som fångas i fotot och styrs av brännvidd och sensorstorlek."
         },
         "how-crop-factor-affects-fov": {
           "question": "Hur påverkar cropfaktorn bildvinkeln?",
-          "answer": "En mindre sensor (högre cropfaktor) fångar en smalare bildvinkel än en fullformatssensor vid samma brännvidd. Till exempel gör APS-C-sensorer med 1,5× cropfaktor att ett 50 mm-objektiv beter sig som ett 75 mm sett till bildvinkeln."
+          "answer": "En mindre sensor (högre cropfaktor) fångar en smalare bildvinkel än en fullformatssensor vid samma brännvidd. På en APS-C-sensor med 1,5× cropfaktor beter sig till exempel ett 50 mm-objektiv som ett 75 mm sett till bildvinkeln."
         },
         "fov-vs-focal-length": {
           "question": "Vad är sambandet mellan bildvinkel och brännvidd?",
-          "answer": "Bildvinkel och brännvidd är omvänt relaterade. Kortare brännvidder (vidvinkel) ger bredare bildvinkel, medan längre brännvidder (tele) ger smalare bildvinkel. Den exakta bildvinkeln beror också på sensorstorleken."
+          "answer": "Bildvinkel och brännvidd är omvänt relaterade. Kortare brännvidder (vidvinkel) ger bredare bildvinkel, medan längre brännvidder (tele) ger smalare. Den exakta bildvinkeln beror också på sensorstorleken."
         }
       }
     }

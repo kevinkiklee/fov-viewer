@@ -1,25 +1,25 @@
 {
   "education": {
     "frame-studio": {
-      "beginner": "Frame Studio hjælper dig med at beskære, indramme og komponere dine billeder direkte i browseren. Brug kompositionsgitre til at forbedre dit udsnit, beskær til populære billedformater, og tilføj professionelt udseende rammer — alt sammen uden at miste billedkvalitet.",
+      "beginner": "Frame Studio hjælper dig med at beskære, indramme og komponere dine billeder direkte i browseren. Brug kompositionsgitre til at forbedre dit udsnit, beskær til populære billedformater, og læg professionelle rammer på — alt sammen uden at miste billedkvalitet.",
       "deeper": {
         "0": {
           "heading": "Kompositionsgitre",
-          "text": "Tredjedelsreglen inddeler billedet i et 3×3-gitter — placér motiver på linjerne eller i deres skæringspunkter for naturlig visuel balance. Det gyldne snit (ca. 1,618:1) giver en matematisk harmonisk opdeling, der har været brugt i kunst og arkitektur i århundreder. Den gyldne spiral fører øjet langs en logaritmisk kurve udledt af Fibonacci-talrækken og er nyttig til at lede beskueren gennem billedet."
+          "text": "Tredjedelsreglen deler billedet op i et 3×3-gitter — placér motiver på linjerne eller i deres skæringspunkter for naturlig visuel balance. Det gyldne snit (ca. 1,618:1) giver en matematisk harmonisk opdeling, der har været brugt i kunst og arkitektur i århundreder. Den gyldne spiral fører øjet langs en logaritmisk kurve udledt af Fibonacci-talrækken og er nyttig til at føre beskueren gennem billedet."
         },
         "1": {
           "heading": "Billedformater",
-          "text": "Forskellige billedformater tjener forskellige formål. 1:1 (kvadrat) fungerer godt til sociale medier og symmetriske kompositioner. 3:2 er det klassiske 35mm filmformat. 4:3 er almindeligt på Micro Four Thirds og ældre digitale kameraer. 16:9 er standard widescreen til video og biografagtige kompositioner. 5:4 er traditionelt til 8×10 prints."
+          "text": "Forskellige billedformater tjener forskellige formål. 1:1 (kvadrat) fungerer godt til sociale medier og symmetriske kompositioner. 3:2 er det klassiske 35mm filmformat. 4:3 er almindeligt på Micro Four Thirds og ældre digitale kameraer. 16:9 er standard widescreen til video og biografagtige kompositioner. 5:4 bruges traditionelt til 8×10-prints."
         },
         "2": {
           "heading": "Rammer og kanter",
-          "text": "At tilføje en ramme om et billede efterligner en fysisk passepartout og ramme. En hvid passepartout giver visuelt pusterum og leder blikket indad. Rammens bredde i forhold til billedet påvirker den opfattede \"vægt\" af fotografiet. Galleripræsentationer bruger typisk bredere mat. En let skygge skaber dybde og simulerer, hvordan et indrammet print hænger på væggen."
+          "text": "En ramme omkring billedet efterligner en fysisk passepartout og ramme. En hvid passepartout giver visuelt pusterum og leder blikket indad. Rammens bredde i forhold til billedet påvirker fotografiets opfattede \"vægt\". Galleripræsentationer bruger typisk bredere passepartouter. En let skygge skaber dybde og simulerer, hvordan et indrammet print hænger på væggen."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Kompositionsgitter",
-          "description": "Overlayguides hjælper dig med at vurdere og forbedre placeringen af motivet i billedet."
+          "description": "Overlay-guides hjælper dig med at vurdere og forbedre motivets placering i billedet."
         },
         "1": {
           "label": "Billedformat",
@@ -27,22 +27,22 @@
         },
         "2": {
           "label": "Rammebredde",
-          "description": "Bredere rammer tilføjer tyngde og fokus; smalle rammer føles moderne og minimalistiske."
+          "description": "Bredere rammer giver tyngde og fokus; smalle rammer føles moderne og minimalistiske."
         },
         "3": {
-          "label": "Mat-farve",
-          "description": "Hvide mats er klassikere i kunstfotografi. Mørke mats fremhæver lysere billeder. Farvede mats kan komplementere eller kontrastere."
+          "label": "Passepartout-farve",
+          "description": "Hvide passepartouter er klassikere i kunstfotografi. Mørke fremhæver lysere billeder. Farvede passepartouter kan komplementere eller kontrastere."
         }
       },
       "tips": {
         "0": {
-          "text": "Til Instagram-posts: beskær til 4:5 (portræt) for at fylde mest muligt i feedet."
+          "text": "Til Instagram: beskær til 4:5 (portræt) for at fylde mest muligt i feedet."
         },
         "1": {
-          "text": "Når du tilføjer en ramme til print, brug en matbredde på mindst 10 % af billedets korteste side for et professionelt udtryk."
+          "text": "Når du lægger en ramme på et print, så brug en passepartoutbredde på mindst 10 % af billedets korteste side for et professionelt udtryk."
         },
         "2": {
-          "text": "Den gyldne spiral virker bedst til billeder med et naturligt flow — vand, veje eller bueformet arkitektur."
+          "text": "Den gyldne spiral fungerer bedst på billeder med et naturligt flow — vand, veje eller bueformet arkitektur."
         }
       },
       "tooltips": {
@@ -52,11 +52,11 @@
         },
         "Rule of Thirds": {
           "term": "Tredjedelsreglen",
-          "definition": "En kompositionsregel, der inddeler billedet i 9 lige store dele. At placere motiver i skæringspunkterne skaber visuel interesse."
+          "definition": "En kompositionsregel, der deler billedet op i 9 lige store dele. At placere motiver i skæringspunkterne giver visuel interesse."
         },
         "Golden Ratio": {
           "term": "Det gyldne snit",
-          "definition": "En matematisk proportion (~1,618:1), der findes i naturen og kunsten. Giver æstetisk behagelige opdelinger af rummet."
+          "definition": "En matematisk proportion (~1,618:1), der findes i naturen og i kunsten. Giver æstetisk behagelige opdelinger af billedet."
         },
         "Border Width": {
           "term": "Rammebredde",
@@ -64,19 +64,19 @@
         },
         "Inner Mat": {
           "term": "Indre passepartout",
-          "definition": "En anden, smallere kant mellem den ydre ramme og billedet — efterligner den afskårne indre passepartout på en fysisk billedramme."
+          "definition": "En ekstra, smallere kant mellem den ydre ramme og billedet — efterligner den afskårne indre passepartout på en fysisk billedramme."
         },
         "Corner Radius": {
           "term": "Hjørneradius",
-          "definition": "Runder rammens hjørner. Nul giver skarpe hjørner, højere værdier giver et blødere, afrundet look."
+          "definition": "Runder rammens hjørner. Nul giver skarpe hjørner; højere værdier giver et blødere, afrundet look."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Du vil poste et portrætfoto på Instagram og have maksimal tilstedeværelse i feedet. Hvilket billedformat skal du bruge?",
+          "scenario": "Du vil poste et portrætfoto på Instagram og fylde mest muligt i feedet. Hvilket billedformat skal du bruge?",
           "hint": "Instagram-portrætposter bruger et format, der er højere end bredt.",
           "successMessage": "Rigtigt! 4:5 giver dig maksimal lodret plads i Instagram-feedet.",
-          "failureMessage": "Instagram-portrætposter bruger 4:5 (vend 5:4 til portræt) for mest muligt plads i feedet.",
+          "failureMessage": "Instagram-portrætposter bruger 4:5 (vend 5:4 til portræt) for at fylde mest muligt i feedet.",
           "options": {
             "0": { "label": "1:1 (kvadrat)" },
             "1": { "label": "4:5 (portræt)" },
@@ -95,7 +95,7 @@
           }
         },
         "2": {
-          "scenario": "Du klargør et billede til gallerie-print på 8×10-papir. Hvilket billedformat passer til denne printstørrelse?",
+          "scenario": "Du gør et billede klar til galleri-print på 8×10-papir. Hvilket billedformat passer til den printstørrelse?",
           "hint": "8÷10 forenkles til et velkendt forhold.",
           "successMessage": "Rigtigt! 5:4 passer perfekt til 8×10-print.",
           "failureMessage": "8×10 forenkles til 4:5, som er portrætversionen af 5:4.",
@@ -106,8 +106,8 @@
           }
         },
         "3": {
-          "scenario": "Et landskabsfoto viser en slynget flod fra forgrunden til bjerge i baggrunden. Hvilket gitter-overlay matcher dette naturlige flow bedst?",
-          "hint": "Et gitter følger en naturlig kurvet bane.",
+          "scenario": "Et landskabsfoto viser en slynget flod fra forgrunden og ud til bjergene i baggrunden. Hvilket gitter-overlay matcher bedst dette naturlige flow?",
+          "hint": "Ét af gitrene følger en naturlig kurvet bane.",
           "successMessage": "Godt valg! Den gyldne spiral følger kurver og ledelinjer perfekt.",
           "failureMessage": "Den gyldne spiral er ideel til billeder med naturlige kurvede elementer som floder, veje eller kyster.",
           "options": {

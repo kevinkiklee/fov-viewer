@@ -13,57 +13,57 @@
       "lightness": "Lightness:",
       "splitAngle": "Split angle:",
       "spread": "Spread:",
-      "rectangleWidth": "Lapad ng rektanggulo:",
+      "rectangleWidth": "Rectangle width:",
       "square": "(square)",
       "pickFromPhoto": "Kunin mula sa Litrato",
       "dropPhotoPrompt": "I-drop ang litrato dito o i-click para mag-browse",
-      "keyColorLabel": "Key color — i-click para kopyahin ang hex",
-      "clickToCopyHex": "I-click para kopyahin ang hex",
-      "copiedExcl": "Nakopya!",
-      "copyColors": "Kopyahin ang mga kulay",
+      "keyColorLabel": "Key color — i-click para i-copy ang hex",
+      "clickToCopyHex": "I-click para i-copy ang hex",
+      "copiedExcl": "Na-copy!",
+      "copyColors": "Kopyahin ang mga colors",
       "hexFormat": "Hex",
       "cssFormat": "CSS",
       "rgbFormat": "RGB",
-      "copyHexCodes": "Kopyahin ang mga hex code",
+      "copyHexCodes": "Kopyahin ang hex codes",
       "copyCssVariables": "Kopyahin ang CSS variables",
       "copyRgbValues": "Kopyahin ang RGB values",
-      "pickColorFromPhoto": "Kumuha ng kulay mula sa litrato",
+      "pickColorFromPhoto": "Kumuha ng color mula sa litrato",
       "close": "Isara",
       "dropPhotoOrBrowse": "I-drop ang litrato dito o i-click para mag-browse",
       "tapToChoose": "I-tap para pumili ng litrato",
-      "tapToSample": "I-tap kahit saan sa litrato para kunin ang kulay na iyon",
+      "tapToSample": "I-tap kahit saan sa litrato para kunin ang color na iyon",
       "changePhoto": "Palitan ang litrato",
-      "privacyNote": "Nananatili ang litrato mo sa browser — walang ina-upload",
+      "privacyNote": "Nananatili sa browser ang litrato mo — walang ina-upload",
       "suggestions": {
         "complementary": {
-          "warm": "Maganda para sa: mainit na sunset portraits na may malamig na shadow contrast",
-          "cool": "Maganda para sa: moody blue-hour shots na may mainit na accent lighting",
-          "default": "Maganda para sa: high-contrast na komposisyon na may malakas na visual tension"
+          "warm": "Bagay sa: warm sunset portraits na may cool shadow contrast",
+          "cool": "Bagay sa: moody blue-hour shots na may warm accent lighting",
+          "default": "Bagay sa: high-contrast composition na may malakas na visual tension"
         },
         "analogous": {
-          "warm": "Maganda para sa: golden hour landscapes na may pinag-isang mainit na tones",
-          "cool": "Maganda para sa: tahimik na water scenes at twilight photography",
-          "default": "Maganda para sa: harmonious nature shots na may smooth na color transitions"
+          "warm": "Bagay sa: golden hour landscapes na may unified warm tones",
+          "cool": "Bagay sa: tahimik na water scenes at twilight photography",
+          "default": "Bagay sa: harmonious nature shots na may smooth na color transitions"
         },
-        "triadic": "Gamitin para sa: vibrant editorial work at bold creative portraits",
+        "triadic": "Gamitin sa: vibrant editorial work at bold creative portraits",
         "splitComplementary": {
-          "warm": "Gamitin para sa: contrasting wardrobe laban sa natural na backdrop",
-          "default": "Gamitin para sa: balanseng product photography na may visual variety"
+          "warm": "Gamitin sa: contrasting wardrobe laban sa natural na backdrop",
+          "default": "Gamitin sa: balanced product photography na may visual variety"
         },
-        "tetradic": "Gamitin para sa: masaganang editorial layouts at masalimuot na multi-subject komposisyon"
+        "tetradic": "Gamitin sa: masaganang editorial layouts at masalimuot na multi-subject composition"
       },
       "faq": {
         "what-is-color-harmony": {
           "question": "Ano ang color harmony sa photography?",
-          "answer": "Ang color harmony ay tumutukoy sa mga kaaya-ayang kombinasyon ng kulay batay sa kanilang posisyon sa color wheel. Ang mga harmonious na kulay ay gumagawa ng visual na balanse at kayang magdulot ng partikular na mood sa mga litrato mo."
+          "answer": "Ang color harmony ay tungkol sa mga kombinasyon ng kulay na kaaya-ayang tingnan, batay sa posisyon nila sa color wheel. Ang harmonious na colors ay gumagawa ng visual balance at pwedeng magdulot ng specific na mood sa mga litrato mo."
         },
         "complementary-vs-analogous": {
           "question": "Ano ang pagkakaiba ng complementary at analogous colors?",
-          "answer": "Ang mga complementary colors ay magkasalungat sa isa't isa sa color wheel (tulad ng asul at orange) at gumagawa ng mataas na contrast. Ang mga analogous colors ay magkakatabi (tulad ng asul, blue-green, at berde) at gumagawa ng mas harmonious at pinag-isang pakiramdam."
+          "answer": "Magkasalungat sa color wheel ang complementary colors (gaya ng blue at orange) at gumagawa ng mataas na contrast. Magkakatabi naman sa wheel ang analogous colors (gaya ng blue, blue-green, at green) at gumagawa ng mas harmonious at unified na feel."
         },
         "how-to-use-color-schemes-photography": {
-          "question": "Paano ako gagamit ng color schemes sa photography?",
-          "answer": "Magplano ng shoot mo sa paligid ng color palette — pumili ng wardrobe, lokasyon, at props na tumutugma sa scheme mo. Sa post-processing, gumamit ng color grading para bigyang-diin ang napili mong palette. Ang color schemes ay tumutulong na lumikha ng pare-parehong visual na identity sa isang photo series."
+          "question": "Paano gagamitin ang color schemes sa photography?",
+          "answer": "Magplano ng shoot mo around sa color palette — pumili ng wardrobe, location, at props na tumutugma sa scheme mo. Sa post-processing, gumamit ng color grading para i-emphasize ang napili mong palette. Tinutulungan ka ng color schemes na gumawa ng consistent visual identity sa isang photo series."
         }
       }
     }

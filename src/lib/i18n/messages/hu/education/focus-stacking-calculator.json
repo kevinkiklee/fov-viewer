@@ -1,19 +1,19 @@
 {
   "education": {
     "focus-stacking-calculator": {
-      "beginner": "A focus stacking egy olyan technika, amikor több fotót készítesz különböző fókusztávolságokon, majd szoftverrel egyesíted őket, hogy elölről hátulig éles képet kapj. Elengedhetetlen makrófotózáshoz, ahol a mélységélesség borotvavékony, és hasznos tájképekhez is, amikor a közeli előtér és a távoli háttér is éles kell, hogy legyen.",
+      "beginner": "A focus stacking olyan technika, amikor több fotót készítesz különböző fókusztávolságokon, majd szoftverrel egyesíted őket, hogy elölről hátulig éles képet kapj. Makrófotózásnál elengedhetetlen, ahol a mélységélesség borotvavékony; tájképhez is hasznos, ha a közeli előtér és a távoli háttér is éles kell legyen.",
       "deeper": {
         "0": {
           "heading": "Miért kell stackelni",
-          "text": "Makrónagyításnál még az f/16 is csak néhány milliméter mélységélességet adhat. Ha tovább szűkítesz, a diffrakció lágyítja a képet, és rontja a minőséget. A focus stackinggel az objektív legélesebb rekeszén fotózhatsz (jellemzően f/5.6–f/8), és az éles szeleteket egyesíted. Minden kocka egy kicsit előrébb fókuszál, és új szeletet fed le a témából."
+          "text": "Makrónagyításnál még f/16-on is csak néhány milliméter mélységélességet kapsz. Ha tovább szűkítesz, a diffrakció lágyítja a képet, és rontja a minőséget. A focus stackinggel az objektív legélesebb rekeszén fotózhatsz (jellemzően f/5.6–f/8), és az éles szeleteket egyesíted. Minden kocka egy kicsivel előrébb fókuszál, és egy újabb szeletet fed le a témából."
         },
         "1": {
           "heading": "A stack tervezése",
-          "text": "A sikeres stack kulcsa, hogy minden kép mélységélessége 20-30%-ban átfedje a következőt. Túl kevés átfedésnél rések maradnak, ahol nincs éles rész; túl sok esetén feleslegesen sok kockát használsz el. A kalkulátor a szóráskör képletéből számolja a kockánkénti DoF-et, levonja az átfedést, majd a teljes mélységet elosztja az effektív lépéssel, hogy megkapja a szükséges kockaszámot."
+          "text": "A sikeres stack kulcsa, hogy minden kép mélységélessége 20–30%-ban átfedje a következőt. Túl kevés átfedésnél rések maradnak, ahol semmi sem éles; túl sok esetén feleslegesen sok kockát használsz el. A kalkulátor a szóráskör képletéből számolja a kockánkénti DoF-et, levonja az átfedést, aztán a teljes mélységet elosztja az effektív lépéssel, és megkapja a szükséges kockaszámot."
         },
         "2": {
-          "heading": "Összevonás és igazítás",
-          "text": "A Photoshop, Helicon Focus vagy Zerene Stacker egymáshoz igazítja a kockákat (a fókusz változásakor enyhe nagyításbeli eltolódás lép fel), majd kiválasztja az éles pixeleket minden rétegből. Erős állvány, állandó fény és fókussín a pontos lépésekhez — így kapod a legtisztább eredményt."
+          "heading": "Egyesítés és igazítás",
+          "text": "A Photoshop, a Helicon Focus vagy a Zerene Stacker egymáshoz igazítja a kockákat (a fókusz változásakor enyhe nagyításbeli eltolódás is fellép), majd kiválasztja az éles pixeleket az egyes rétegekből. Stabil állvánnyal, állandó fénnyel és a pontos lépésekhez használt fókussínnel kapod a legtisztább eredményt."
         }
       },
       "keyFactors": {
@@ -32,13 +32,13 @@
       },
       "tips": {
         "0": {
-          "text": "Makróhoz használj fókussínt az objektív fókuszgyűrűje helyett. A sín a teljes kamerát mozgatja előre pontos lépésekkel, elkerülve az enyhe nagyításbeli eltolódásokat, amiket a fókusz állítása okozna."
+          "text": "Makróhoz használj fókussínt az objektív fókuszgyűrűje helyett. A sín a teljes kamerát mozgatja előre pontos lépésekkel, így elkerülöd a fókusz állítása miatti apró nagyításbeli eltolódásokat."
         },
         "1": {
-          "text": "Állítsd az objektívet a legélesebb rekeszre (jellemzően f/5.6–f/8). A stack értelme éppen az, hogy ne kelljen f/16-ig leszűkíteni — használd a legélesebb rekeszt, a mélységet pedig a stack oldja meg."
+          "text": "Állítsd az objektívet a legélesebb rekeszére (jellemzően f/5.6–f/8). A stacknek éppen az a lényege, hogy ne kelljen f/16-ig leszűkítened — használd a legélesebb rekeszt, a mélységet pedig a stack oldja meg."
         },
         "2": {
-          "text": "Tájképnél elölről hátrafelé haladj: először a legközelebbi pontra fókuszálj, majd lépésenként a végtelen felé. Így az igazítás könnyebb, mert a legtöbb parallaxissal bíró előteret fogod elsőnek."
+          "text": "Tájképnél elölről haladj hátrafelé: először a legközelebbi pontra fókuszálj, majd lépésről lépésre a végtelen felé. Így az igazítás könnyebb, mert a legnagyobb parallaxisú előteret kapod el elsőnek."
         }
       },
       "tooltips": {

@@ -1,49 +1,49 @@
 {
   "education": {
     "exposure-simulator": {
-      "beginner": "Eksponeringstrekanten beskriver hvordan tre kamerainnstillinger — blender, lukkertid og ISO — jobber sammen for å styre hvor lyst bildet blir. Endrer du en av dem, må du justere minst en av de andre for å beholde samme lysstyrke. Hver innstilling har også sin egen kreative sideeffekt: blender styrer bakgrunnsuskarphet, lukkertid styrer bevegelsesuskarphet, og ISO styrer bildestøy.",
-      "deeper": "Eksponering måles i eksponeringsverdi (EV), der hvert helt EV-trinn dobler eller halverer lysmengden. En økning på 1 EV (ett «trinn») betyr dobbelt så mye lys inn på sensoren. Blender følger en geometrisk rekke (f/1.4, f/2, f/2.8, f/4 ...) der hvert helt trinn halverer lyset gjennom objektivet, fordi åpningens areal er omvendt proporsjonalt med kvadratet av f-tallet. Lukkertid er mer intuitiv: dobbel tid gir dobbelt lys. ISO forsterker signalet fra sensoren — dobbel ISO gir dobbelt lysstyrke, men også mer støy. I praksis setter du som regel den parameteren som betyr mest for ditt kreative valg først (blender for dybdeskarphet, lukker for bevegelse), og balanserer de andre. Moderne kameraer måler i 1/3-trinn for finere kontroll.",
+      "beginner": "Eksponeringstrekanten beskriver hvordan tre kamerainnstillinger — blender, lukkertid og ISO — spiller sammen for å styre hvor lyst bildet blir. Endrer du én av dem, må du justere minst én av de andre for å holde samme lysstyrke. Hver innstilling har også sin egen kreative sideeffekt: blenderen styrer bakgrunnsuskarphet, lukkertiden styrer bevegelsesuskarphet, og ISO styrer bildestøy.",
+      "deeper": "Eksponering måles i eksponeringsverdi (EV), der hvert hele EV-trinn dobler eller halverer lysmengden. Én EV opp («ett trinn») betyr dobbelt så mye lys inn på sensoren. Blenderen følger en geometrisk rekke (f/1.4, f/2, f/2.8, f/4 …) der hvert hele trinn halverer lyset gjennom objektivet, fordi blenderåpningens areal er omvendt proporsjonal med kvadratet av f-tallet. Lukkertid er mer intuitiv: dobbel tid gir dobbelt lys. ISO forsterker signalet fra sensoren — dobbel ISO gir dobbel lysstyrke, men også mer støy. I praksis setter du som regel den parameteren som betyr mest kreativt først (blender for dybdeskarphet, lukker for bevegelse), og balanserer resten. Moderne kameraer måler i 1/3-trinn for finere kontroll.",
       "keyFactors": {
         "0": {
           "label": "Blender",
-          "description": "Styrer størrelsen på objektivåpningen. Hvert hele trinn (for eksempel f/2.8 til f/4) halverer lyset. Påvirker også dybdeskarpheten — større åpning gir mer bakgrunnsuskarphet."
+          "description": "Styrer størrelsen på blenderåpningen. Hvert hele trinn (for eksempel f/2.8 til f/4) halverer lyset. Påvirker også dybdeskarpheten — større åpning gir mer bakgrunnsuskarphet."
         },
         "1": {
           "label": "Lukkertid",
-          "description": "Styrer hvor lenge sensoren eksponeres for lys. Korte tider fryser bevegelse; lange tider skaper bevegelsesuskarphet. Dobbel tid gir dobbel lysmengde."
+          "description": "Styrer hvor lenge sensoren eksponeres for lys. Korte tider fryser bevegelse, lange tider skaper bevegelsesuskarphet. Dobbel tid gir dobbel lysmengde."
         },
         "2": {
           "label": "ISO",
-          "description": "Styrer sensorens lysfølsomhet. Høyere ISO gir lysere bilde, men mer korn/støy. Bruk alltid den laveste ISO-en som gir deg den eksponeringen du trenger."
+          "description": "Styrer sensorens lysfølsomhet. Høyere ISO gir lysere bilde, men mer korn og støy. Bruk alltid den laveste ISO-verdien som gir deg den eksponeringen du trenger."
         },
         "3": {
           "label": "Eksponeringsverdi (EV)",
-          "description": "Ett tall som representerer den totale lysstyrken. EV 0 tilsvarer en eksponering på 1 sekund ved f/1.0. Hvert +1 EV halverer lysmengden."
+          "description": "Ett tall som oppsummerer total lysstyrke. EV 0 tilsvarer en eksponering på 1 sekund ved f/1.0. Hvert +1 EV halverer lysmengden."
         }
       },
       "tips": {
         "0": {
-          "text": "Start med blenderprioritet: sett blenderen etter ønsket dybdeskarphet og la kameraet velge lukkertid. Øk ISO bare når lukkertiden blir for lav for håndholdt skarphet."
+          "text": "Start med blenderprioritet: sett blenderen etter ønsket dybdeskarphet, og la kameraet velge lukkertid. Øk ISO bare når lukkertiden blir for lav for skarpe bilder på frihånd."
         },
         "1": {
           "text": "Til sport og action bytter du til lukkerprioritet: velg en rask lukkertid (1/500 s eller raskere) og la kameraet justere blender og ISO."
         },
         "2": {
-          "text": "«Sunny 16»-regelen er en rask mental snarvei: på en solrik dag setter du blender til f/16, lukkertid til 1/ISO (for eksempel 1/100 s ved ISO 100), og får et godt eksponert bilde uten å måle."
+          "text": "«Sunny 16»-regelen er en grei mental snarvei: på en solrik dag setter du blenderen til f/16 og lukkertiden til 1/ISO (for eksempel 1/100 s ved ISO 100), og du får et godt eksponert bilde uten å måle."
         }
       },
       "tooltips": {
         "aperture": {
           "term": "Blender",
-          "definition": "Objektivåpningens størrelse uttrykt som et f-tall. Lavere tall (f/1.4) slipper inn mer lys og gir uskarp bakgrunn. Høyere tall (f/16) slipper inn mindre lys, men holder mer av scenen skarp."
+          "definition": "Blenderåpningens størrelse uttrykt som et f-tall. Lavere tall (f/1.4) slipper inn mer lys og gir uskarp bakgrunn. Høyere tall (f/16) slipper inn mindre lys, men holder mer av scenen skarp."
         },
         "shutterSpeed": {
           "term": "Lukkertid",
-          "definition": "Hvor lenge sensoren eksponeres for lys, vanligvis i brøkdeler av et sekund (1/250 s) eller hele sekunder (2 s). Korte tider fryser bevegelse; lange tider skaper bevegelsesuskarphet."
+          "definition": "Hvor lenge sensoren eksponeres for lys, vanligvis i brøkdeler av et sekund (1/250 s) eller hele sekunder (2 s). Korte tider fryser bevegelse, lange tider skaper bevegelsesuskarphet."
         },
         "iso": {
           "term": "ISO",
-          "definition": "Et mål på sensorens lysfølsomhet. ISO 100 er basen (reneste bilde). Hver dobling (200, 400, 800 ...) gjør bildet ett trinn lysere, men legger gradvis på mer støy."
+          "definition": "Et mål på sensorens lysfølsomhet. ISO 100 er utgangspunktet (reneste bilde). Hver dobling (200, 400, 800 …) gjør bildet ett trinn lysere, men legger gradvis på mer støy."
         },
         "ev": {
           "term": "Eksponeringsverdi (EV)",
@@ -54,8 +54,8 @@
         "0": {
           "scenario": "Du fotograferer hunden din som løper i parken på en solrik dag. Bildene blir uskarpe. Hvilken innstilling bør du prioritere for å fryse bevegelsen?",
           "hint": "Bevegelsesuskarphet kommer av at motivet beveger seg under eksponeringen.",
-          "successMessage": "Riktig! En rask lukkertid som 1/1000 s fryser hunden mens den løper. På en solrik dag har du nok lys til å holde dette.",
-          "failureMessage": "Den innstillingen fryser ikke bevegelsen direkte. For å stoppe et motiv i bevegelse trenger du en rask lukkertid — jo kortere eksponering, desto mindre tid har motivet til å bli uskarpt.",
+          "successMessage": "Riktig! En rask lukkertid som 1/1000 s fryser hunden midt i løpet. På en solrik dag har du nok lys til å klare den.",
+          "failureMessage": "Den innstillingen fryser ikke bevegelsen direkte. For å stoppe et motiv i bevegelse trenger du rask lukkertid — jo kortere eksponering, desto mindre tid har motivet til å bli uskarpt.",
           "options": {
             "0": { "label": "Åpne blenderen til f/2.8" },
             "1": { "label": "Bruk en rask lukkertid (1/1000 s)" },
@@ -65,9 +65,9 @@
         },
         "1": {
           "scenario": "Du tar bilder i en bursdag innendørs. Bildene er for mørke på f/3.5, 1/60 s, ISO 400. Du kan ikke bruke blits. Hva er det beste neste steget?",
-          "hint": "Du trenger mer lys inn på sensoren, eller mer forsterking av signalet.",
-          "successMessage": "Bra tenkt! Å øke ISO til 1600 gir deg to ekstra trinn med lys, og du holder lukkertiden høy nok til å være håndholdt.",
-          "failureMessage": "Den endringen kan skape andre problemer. Siden blenderen allerede er nesten helt åpen og du trenger lukkertid som tåler håndholdt bruk, er det mest praktisk å øke ISO.",
+          "hint": "Du trenger mer lys inn på sensoren, eller mer forsterkning av signalet.",
+          "successMessage": "Bra tenkt! Å øke ISO til 1600 gir deg to ekstra trinn med lys, og du holder lukkertiden høy nok til å kunne fotografere på frihånd.",
+          "failureMessage": "Den endringen kan skape andre problemer. Siden blenderen allerede er nesten helt åpen og du trenger en lukkertid som tåler frihånd, er det mest praktisk å øke ISO.",
           "options": {
             "0": { "label": "Øk ISO til 1600" },
             "1": { "label": "Senk lukkertid til 1/4 s" },
@@ -78,8 +78,8 @@
         "2": {
           "scenario": "Du vil fange en foss med silkemykt vann på en lys dag. Nåværende innstillinger er f/8, 1/250 s, ISO 100. Hva bør du endre for å få silkeeffekten?",
           "hint": "Silkemykt vann krever lang eksponering, men det er sterkt lys ute.",
-          "successMessage": "Akkurat! En lang lukkertid (1/2 s eller lengre), kombinert med å blende ned til f/22 (og eventuelt et ND-filter), gir deg silkemykt vann.",
-          "failureMessage": "For å få silkemykt vann trenger du en lang lukkertid — rundt 1/2 s til flere sekunder. På en lys dag må du også redusere lysmengden inn i objektivet for å unngå overeksponering.",
+          "successMessage": "Nettopp! En lang lukkertid (1/2 s eller lengre), kombinert med å blende ned til f/22 (og eventuelt et ND-filter), gir deg silkemykt vann.",
+          "failureMessage": "For å få silkemykt vann trenger du lang lukkertid — rundt 1/2 s til flere sekunder. På en lys dag må du også redusere lysmengden inn i objektivet for å unngå overeksponering.",
           "options": {
             "0": { "label": "Bruk 1/2 s og blend ned til f/22" },
             "1": { "label": "Bruk 1/1000 s på f/2.8" },
@@ -88,10 +88,10 @@
           }
         },
         "3": {
-          "scenario": "Et velexponert bilde er tatt på f/5.6, 1/125 s, ISO 200. Du vil bytte til f/2.8 for mer bakgrunnsuskarphet. Hvordan må du justere de andre innstillingene for å beholde samme eksponering?",
+          "scenario": "Et veleksponert bilde er tatt på f/5.6, 1/125 s, ISO 200. Du vil bytte til f/2.8 for mer bakgrunnsuskarphet. Hvordan må du justere de andre innstillingene for å beholde samme eksponering?",
           "hint": "Fra f/5.6 til f/2.8 er 2 trinn mer lys. Du må ta bort 2 trinn et annet sted.",
           "successMessage": "Perfekt! Å åpne fra f/5.6 til f/2.8 gir 2 trinn mer lys. Å gå fra 1/125 s til 1/500 s tar bort nøyaktig 2 trinn, og eksponeringen blir identisk.",
-          "failureMessage": "Regnestykket må gå opp. f/5.6 til f/2.8 er +2 trinn. Du må kompensere ved å ta bort nøyaktig 2 trinn via raskere lukkertid, lavere ISO eller en kombinasjon.",
+          "failureMessage": "Regnestykket må gå opp. f/5.6 til f/2.8 er +2 trinn. Du må kompensere ved å ta bort nøyaktig 2 trinn — raskere lukkertid, lavere ISO eller en kombinasjon.",
           "options": {
             "0": { "label": "1/500 s på ISO 200" },
             "1": { "label": "1/250 s på ISO 200" },
@@ -100,9 +100,9 @@
           }
         },
         "4": {
-          "scenario": "Du fotograferer en konsert i en mørk lokale. Artistene beveger seg raskt under fargede scenelys. Du trenger minst 1/250 s for å fryse bevegelse. Raskeste objektiv er f/2.8. Hvilken ISO trenger du omtrent hvis scenen måler til EV 6?",
-          "hint": "Ved EV 6, f/2.8, beregn ISO-en som trengs for å oppnå 1/250 s. Hvert helt ISO-trinn dobler lysstyrken.",
-          "successMessage": "Riktig! Ved EV 6 med f/2.8 og 1/250 s trenger du ISO 3200. Konsertfotografi krever ofte høy ISO — å kjenne kameraets brukbare ISO-grense er kritisk i disse situasjonene.",
+          "scenario": "Du fotograferer en konsert i et mørkt lokale. Artistene beveger seg raskt under fargede scenelys. Du trenger minst 1/250 s for å fryse bevegelsen. Det raskeste objektivet ditt er f/2.8. Hvilken ISO trenger du omtrent hvis scenen måler til EV 6?",
+          "hint": "Ved EV 6 og f/2.8, regn ut hvilken ISO som trengs for 1/250 s. Hvert hele ISO-trinn dobler lysstyrken.",
+          "successMessage": "Riktig! Ved EV 6 med f/2.8 og 1/250 s trenger du ISO 3200. Konsertfoto krever ofte høy ISO — det er helt avgjørende å kjenne kameraets brukbare ISO-grense i slike situasjoner.",
           "failureMessage": "Ved EV 6 krever kombinasjonen f/2.8 og 1/250 s ISO 3200 for riktig eksponering. Eksponeringsformelen balanserer blender, lukkertid og ISO mot det tilgjengelige lyset.",
           "options": {
             "0": { "label": "ISO 400" },

@@ -52,9 +52,9 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Stai fotografando il tuo cane che corre al parco in una giornata di sole. L'immagine continua a venire mossa. Quale impostazione dovresti prioritizzare per congelare il movimento?",
+          "scenario": "Stai fotografando il tuo cane che corre al parco in una giornata di sole. Le immagini risultano mosse. A quale impostazione dovresti dare la priorità per congelare il movimento?",
           "hint": "Il mosso è causato dal soggetto che si muove durante l'esposizione.",
-          "successMessage": "Corretto! Un tempo di posa veloce come 1/1000s congelerà il tuo cane a metà corsa. In una giornata di sole, hai abbastanza luce per supportare questo.",
+          "successMessage": "Corretto! Un tempo di posa rapido come 1/1000s congelerà il tuo cane a metà corsa. In una giornata di sole hai abbastanza luce per permettertelo.",
           "failureMessage": "Quell'impostazione non congelerà direttamente il movimento. Per fermare un soggetto in movimento, hai bisogno di un tempo di posa veloce — più corta è l'esposizione, meno tempo ha il soggetto per sfocare.",
           "options": {
             "0": { "label": "Aprire l'apertura a f/2.8" },

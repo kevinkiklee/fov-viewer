@@ -2,7 +2,7 @@
   "education": {
     "nd-filter-calculator": {
       "beginner": "Penapis ND (neutral density) adalah seperti cermin mata hitam untuk lensa kamera anda. Ia mengurangkan jumlah cahaya yang memasuki lensa tanpa mengubah warna, membolehkan anda menggunakan kelajuan pengatup lebih perlahan atau aperture lebih luas dalam keadaan terang. Inilah cara jurugambar mencipta air terjun seperti sutera, lautan yang lancar, atau awan yang kabur pada waktu siang.",
-      "deeper": "Penapis ND dinilai mengikut berapa banyak stop cahaya yang disekatnya. Penapis ND2 (1 stop) mengurangkan separuh cahaya, ND8 (3 stop) mengurangkannya kepada 1/8, dan ND1000 (10 stop) mengurangkan cahaya dengan faktor 1024. Konvensyen penamaan boleh mengelirukan: \"ND8\" bermakna faktor penapis ialah 8 (3 stop), manakala \"ND 0.9\" menggunakan tatatanda ketumpatan optik (setiap 0.3 = 1 stop, jadi 0.9 = 3 stop). Kelajuan pengatup yang terhasil adalah hanya kelajuan asas didarab dengan faktor penapis. Contohnya, jika pendedahan anda tanpa penapis adalah 1/125s dan anda menambah ND 10-stop (ND1000), kelajuan pengatup baharu ialah 1/125 x 1024 = kira-kira 8 saat. Menyusun beberapa penapis ND menambah nilai stopnya bersama-sama tetapi boleh memperkenalkan vignetting dan keserasan warna, terutamanya dengan lensa sudut lebar.",
+      "deeper": "Penapis ND dinilai mengikut berapa banyak stop cahaya yang disekatnya. Penapis ND2 (1 stop) mengurangkan separuh cahaya, ND8 (3 stop) mengurangkannya kepada 1/8, dan ND1000 (10 stop) mengurangkan cahaya dengan faktor 1024. Konvensyen penamaan boleh mengelirukan: \"ND8\" bermakna faktor penapis ialah 8 (3 stop), manakala \"ND 0.9\" menggunakan tatatanda ketumpatan optik (setiap 0.3 = 1 stop, jadi 0.9 = 3 stop). Kelajuan pengatup yang terhasil ialah kelajuan asas didarab dengan faktor penapis. Contohnya, jika pendedahan anda tanpa penapis ialah 1/125s dan anda menambah ND 10-stop (ND1000), kelajuan pengatup baharu ialah 1/125 x 1024 = kira-kira 8 saat. Menyusun beberapa penapis ND menambah nilai stopnya bersama-sama tetapi boleh memperkenalkan vignetting dan lapisan warna asing, terutamanya dengan lensa sudut lebar.",
       "keyFactors": {
         "0": {
           "label": "Kelajuan Pengatup Asas",
@@ -25,7 +25,7 @@
           "text": "Untuk pemandangan laut, pendedahan 1-2 saat melancarkan riak kecil menjadi tekstur sambil mengekalkan struktur ombak. Pendedahan 30 saat atau lebih mencipta air yang benar-benar rata dan berkabus."
         },
         "2": {
-          "text": "Penapis ND murah sering menambah keserasan warna (biasanya magenta atau coklat). Melabur dalam kaca berkualiti dari jenama bereputasi, atau belajar untuk membetulkan keserasan dalam pasca-pemprosesan menggunakan rujukan kad kelabu."
+          "text": "Penapis ND murah sering menambah lapisan warna asing (biasanya magenta atau coklat). Melabur dalam kaca berkualiti daripada jenama bereputasi, atau belajar untuk membetulkan lapisan warna ini dalam pasca-pemprosesan menggunakan rujukan kad kelabu."
         }
       },
       "tooltips": {
@@ -97,11 +97,11 @@
         "4": {
           "scenario": "Anda memiliki penapis ND 6-stop dan 3-stop. Anda menyusunnya pada lensa anda dengan pendedahan asas 1/250s. Apakah kelajuan pengatup yang terhasil, dan apa yang patut anda awasi dengan persediaan ini?",
           "hint": "Tambah nilai stop bersama-sama, kemudian kira pendedahan baharu. Fikirkan tentang kesan sampingan optik susunan.",
-          "successMessage": "Betul! 6 + 3 = 9 stop. 1/250 x 512 = kira-kira 2 saat. Awasi vignetting (sudut gelap) pada lensa sudut lebar dan potensi keserasan warna dari kaca murah.",
-          "failureMessage": "Susun menambah nilai stop: 6 + 3 = 9 stop jumlah. 2^9 = 512, jadi 1/250 x 512 = ~2 saat. Susunan juga boleh menyebabkan vignetting dan keserasan warna.",
+          "successMessage": "Betul! 6 + 3 = 9 stop. 1/250 x 512 = kira-kira 2 saat. Awasi vignetting (sudut gelap) pada lensa sudut lebar dan potensi lapisan warna asing daripada kaca murah.",
+          "failureMessage": "Menyusun penapis menambah nilai stop: 6 + 3 = 9 stop jumlah. 2^9 = 512, jadi 1/250 x 512 = ~2 saat. Susunan juga boleh menyebabkan vignetting dan lapisan warna asing.",
           "options": {
             "0": { "label": "~0.5s, awasi lens flare" },
-            "1": { "label": "~2s, awasi vignetting dan keserasan warna" },
+            "1": { "label": "~2s, awasi vignetting dan lapisan warna asing" },
             "2": { "label": "~4s, awasi sensor terlalu panas" },
             "3": { "label": "~8s, tiada kebimbangan dengan susunan" }
           }

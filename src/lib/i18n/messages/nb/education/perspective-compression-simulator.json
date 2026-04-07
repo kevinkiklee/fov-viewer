@@ -1,31 +1,31 @@
 {
   "education": {
     "perspective-compression-simulator": {
-      "beginner": "Perspektivkomprimering er en optisk effekt der objekter på ulike avstander ser ut til å være nærmere hverandre enn de faktisk er. Den ser du best med lange teleobjektiver (som 200 mm eller 400 mm) fra stor avstand. I motsetning til hva mange tror, er det ikke objektivet i seg selv som skaper komprimeringen, men avstanden mellom kamera og motiv.",
-      "deeper": "Komprimering skjer fordi den relative forskjellen i avstand mellom motivet i forgrunnen og bakgrunnen blir liten når du står langt unna. Hvis du for eksempel er 30 meter fra motivet og bakgrunnen er ytterligere 6 meter bak, er bakgrunnen bare 20 % lenger bort enn motivet. Står du derimot 1,5 meter unna, gjør den samme 6-meter-avstanden bakgrunnen 500 % lenger bort. Ved å flytte deg langt vekk og bruke et teleobjektiv til å «fylle utsnittet» med motivet, reduserer du den relative dybden, og bakgrunnen virker større og «komprimert» mot motivet.",
+      "beginner": "Perspektivkomprimering er en optisk effekt der objekter på ulike avstander ser ut til å være nærmere hverandre enn de faktisk er. Du ser den tydeligst med lange teleobjektiver (som 200 mm eller 400 mm) fra stor avstand. I motsetning til hva mange tror, er det ikke selve objektivet som skaper komprimeringen — det er avstanden mellom kamera og motiv.",
+      "deeper": "Komprimering skjer fordi den relative forskjellen i avstand mellom forgrunnsmotivet og bakgrunnen blir liten når du står langt unna. Er du for eksempel 30 meter fra motivet og bakgrunnen er ytterligere 6 meter bak, er bakgrunnen bare 20 % lenger bort enn motivet. Står du derimot 1,5 meter unna, gjør de samme 6 meterne bakgrunnen 500 % lenger bort. Ved å flytte deg langt vekk og bruke et teleobjektiv til å «fylle utsnittet» med motivet, reduserer du den relative dybden, og bakgrunnen virker større og «komprimert» mot motivet.",
       "keyFactors": {
         "0": {
-          "label": "Skuddavstand",
+          "label": "Avstand til motivet",
           "description": "Hovedårsaken til komprimering. Jo lenger unna motivet du står, desto mer komprimert ser bakgrunnen ut i forhold til motivet."
         },
         "1": {
           "label": "Brennvidde",
-          "description": "Teleobjektiver forstørrer bildet og lar deg fylle utsnittet med motivet fra en avstand der komprimeringen er synlig. Vidvinkel krever at du er nær, og det forsterker opplevd dybde."
+          "description": "Teleobjektiver forstørrer bildet og lar deg fylle utsnittet med motivet fra en avstand der komprimeringen blir synlig. Vidvinkel krever at du er nær, og det forsterker opplevd dybde."
         },
         "2": {
           "label": "Relativ dybde",
-          "description": "Komprimering er sterkest når avstanden mellom motiv og bakgrunn er liten sammenlignet med avstanden mellom kamera og motiv."
+          "description": "Komprimeringen er sterkest når avstanden mellom motiv og bakgrunn er liten sammenlignet med avstanden mellom kamera og motiv."
         }
       },
       "tips": {
         "0": {
-          "text": "For å få fjellene til å virke enorme bak et motiv bør du flytte deg så langt unna som mulig og bruke det lengste teleobjektivet du har. Det «trekker» bakgrunnen nærmere forgrunnen."
+          "text": "Vil du få fjellene til å virke enorme bak motivet? Flytt deg så langt unna som mulig og bruk det lengste teleobjektivet du har. Det «trekker» bakgrunnen nærmere forgrunnen."
         },
         "1": {
-          "text": "I portrettfoto foretrekkes ofte 85 mm eller 135 mm fordi den lette komprimeringen gir en mer smigrende gjengivelse av ansiktstrekkene enn vidvinkel."
+          "text": "I portrettfoto foretrekkes ofte 85 mm eller 135 mm, fordi den lette komprimeringen gir en mer smigrende gjengivelse av ansiktstrekkene enn vidvinkel."
         },
         "2": {
-          "text": "Bruk perspektivutvidelse (vidvinkel tett på) for å fremheve ledende linjer i forgrunnen og gjøre et rom til å føles større og åpnere."
+          "text": "Bruk perspektivutvidelse (vidvinkel tett på) for å fremheve ledende linjer i forgrunnen og få et rom til å føles større og mer åpent."
         }
       },
       "tooltips": {
@@ -39,14 +39,14 @@
         },
         "maintainSize": {
           "term": "Behold motivstørrelse",
-          "definition": "Justerer automatisk kameraets avstand når du endrer brennvidde, slik at hovedmotivet beholder samme størrelse i utsnittet. Dette demonstrerer dolly zoom-effekten."
+          "definition": "Justerer automatisk kameraets avstand når du endrer brennvidde, slik at hovedmotivet beholder samme størrelse i utsnittet. Dette viser dolly zoom-effekten."
         }
       },
       "challenges": {
         "0": {
           "scenario": "Du vil ta et bilde av en venn foran et fjell, og vil at fjellet skal virke så stort som mulig bak hen. Hva bør du gjøre?",
           "hint": "Komprimering kommer av avstand, og teleobjektiver lar deg fylle utsnittet fra langt unna.",
-          "successMessage": "Akkurat! Ved å flytte langt unna og bruke et teleobjektiv komprimerer du avstanden mellom vennen og fjellet, og fjellet ser mye større ut.",
+          "successMessage": "Nettopp! Ved å flytte deg langt unna og bruke et teleobjektiv komprimerer du avstanden mellom vennen og fjellet, og fjellet ser mye større ut.",
           "failureMessage": "Ikke helt. Å gå nærmere med vidvinkel ville gjort fjellet mindre og lenger unna. Flytt deg bakover og zoom inn!",
           "options": {
             "0": { "label": "Flytt deg bakover og bruk et 200 mm-objektiv" },

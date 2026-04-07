@@ -18,7 +18,7 @@
     },
     "focus-stacking-calculator": {
       "name": "Focus Stacking Calculator",
-      "description": "Räkna ut optimala fokusavstånd för skärpa från främst till bakåt"
+      "description": "Räkna ut optimala fokusavstånd för skärpa från förgrund till bakgrund"
     },
     "equivalent-settings-calculator": {
       "name": "Kalkylator för ekvivalenta inställningar",

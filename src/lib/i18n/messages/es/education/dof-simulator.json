@@ -1,7 +1,7 @@
 {
   "education": {
     "dof-simulator": {
-      "beginner": "La profundidad de campo (PdC) es el rango de distancia en tu foto que aparece aceptablemente nítido. Una PdC reducida desenfoca el fondo detrás del sujeto, mientras que una PdC amplia mantiene todo en foco desde el primer plano hasta el horizonte. Controlar la PdC es una de las herramientas creativas más poderosas en fotografía.",
+      "beginner": "La profundidad de campo (PdC) es el tramo de distancia en tu foto que sale aceptablemente nítido. Una PdC reducida desenfoca el fondo detrás del sujeto, mientras que una PdC amplia mantiene todo enfocado desde el primer plano hasta el horizonte. Saber controlar la PdC es uno de los recursos creativos más útiles que tienes como fotógrafo.",
       "deeper": {
         "0": {
           "heading": "Cómo funciona la PdC",
@@ -13,7 +13,7 @@
         },
         "2": {
           "heading": "Bokeh y difracción",
-          "text": "El bokeh se refiere a la calidad de las zonas fuera de foco. El número y la forma de las láminas del diafragma afectan el carácter del bokeh — láminas más redondeadas producen reflejos más suaves y circulares. En aperturas muy cerradas (f/16+), la difracción hace que la luz se disperse al pasar por los bordes del diafragma, suavizando toda la imagen incluso dentro de la zona de PdC. Siempre hay un punto óptimo — normalmente en torno a f/5.6-f/8 en formato completo — donde la nitidez y la profundidad de campo se equilibran de la mejor manera."
+          "text": "El bokeh es la calidad de las zonas desenfocadas. El número y la forma de las láminas del diafragma marcan su carácter: láminas más redondeadas producen reflejos más suaves y circulares. En aperturas muy cerradas (f/16+), la difracción dispersa la luz al pasar por los bordes del diafragma y suaviza toda la imagen, incluso dentro de la zona enfocada. En la mayoría de los objetivos hay una apertura óptima —normalmente entre f/5.6 y f/8 en formato completo— donde la nitidez y la profundidad de campo se equilibran mejor."
         }
       },
       "keyFactors": {
@@ -165,10 +165,10 @@
           }
         },
         "3": {
-          "scenario": "Estás haciendo macrofotografía de una flor y notas que solo los pétalos delanteros están nítidos. El resto de la flor se difumina. Estás a f/5.6. ¿Qué deberías hacer para enfocar más de la flor?",
-          "hint": "A distancias de enfoque cercanas, la PdC se vuelve extremadamente delgada. Considera tu apertura.",
-          "successMessage": "¡Correcto! Cerrar a f/11 o f/16 aumenta tu delgadísima PdC en trabajo macro. Solo ten cuidado con el suavizado por difracción en aperturas muy pequeñas.",
-          "failureMessage": "Abrir más la apertura haría la PdC aún más delgada. En macrofotografía, cerrar la apertura (número f más alto) es la principal forma de ganar más profundidad.",
+          "scenario": "Estás haciendo macrofotografía de una flor y notas que solo los pétalos delanteros están nítidos. El resto de la flor se desenfoca. Estás a f/5.6. ¿Qué deberías hacer para enfocar más zona de la flor?",
+          "hint": "A distancias de enfoque muy cercanas, la PdC se vuelve extremadamente reducida. Piensa en tu apertura.",
+          "successMessage": "¡Correcto! Cerrar a f/11 o f/16 amplía la PdC, que en macro suele ser mínima. Eso sí, vigila el suavizado por difracción en aperturas muy cerradas.",
+          "failureMessage": "Abrir más la apertura reduciría todavía más la PdC. En macrofotografía, cerrar el diafragma (número f más alto) es la principal forma de ganar profundidad.",
           "options": {
             "0": {
               "label": "Abrir a f/2.8 para más luz"

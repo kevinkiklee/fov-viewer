@@ -10,7 +10,7 @@
       "nearLimit": "Närgräns",
       "farLimit": "Bortre gräns",
       "overlap": "Överlapp",
-      "overlapDescription": "Procent skärpedjupsöverlapp mellan grannbilder för sömlös hopfogning",
+      "overlapDescription": "Hur stor del av skärpedjupet som ska överlappa mellan närliggande bilder för jämn hopfogning",
       "results": "Resultat",
       "shotCount": "Antal bilder",
       "totalDepth": "Totalt djup",

@@ -2,7 +2,7 @@
   "tools": {
     "fov-simulator": {
       "name": "Simulateur de champ de vision",
-      "description": "Compare le champ de vision selon les longueurs focales et les tailles de capteur"
+      "description": "Compare le champ de vision selon les focales et les tailles de capteur"
     },
     "color-scheme-generator": {
       "name": "Générateur de palette de couleurs",
@@ -10,23 +10,23 @@
     },
     "exposure-simulator": {
       "name": "Simulateur du triangle d'exposition",
-      "description": "Découvre l'interaction entre ouverture, vitesse d'obturation et ISO"
+      "description": "Comprends l'interaction entre ouverture, vitesse d'obturation et ISO"
     },
     "dof-simulator": {
       "name": "Simulateur de profondeur de champ",
-      "description": "Visualise comment l'ouverture, la focale et la distance affectent le flou d'arrière-plan"
+      "description": "Vois comment l'ouverture, la focale et la distance jouent sur le flou d'arrière-plan"
     },
     "focus-stacking-calculator": {
       "name": "Calculateur de focus stacking",
       "description": "Calcule les distances de mise au point optimales pour une netteté totale"
     },
     "equivalent-settings-calculator": {
-      "name": "Calculateur de paramètres équivalents",
+      "name": "Calculateur de réglages équivalents",
       "description": "Trouve l'ouverture et la focale équivalentes entre formats de capteur"
     },
     "hyperfocal-simulator": {
       "name": "Simulateur de distance hyperfocale",
-      "description": "Apprends où faire la mise au point pour une netteté maximale du premier plan à l'infini"
+      "description": "Sache où faire la mise au point pour une netteté maximale du premier plan à l'infini"
     },
     "shutter-speed-visualizer": {
       "name": "Visualiseur de vitesse d'obturation",
@@ -42,11 +42,11 @@
     },
     "perspective-compression-simulator": {
       "name": "Simulateur de compression de perspective",
-      "description": "Découvre comment la longueur focale affecte la compression de l'arrière-plan"
+      "description": "Vois comment la focale joue sur la compression de l'arrière-plan"
     },
     "white-balance-visualizer": {
       "name": "Visualiseur de balance des blancs",
-      "description": "Découvre comment la température de couleur affecte tes photos"
+      "description": "Vois comment la température de couleur change tes photos"
     },
     "sensor-size-comparison": {
       "name": "Comparaison des tailles de capteur",

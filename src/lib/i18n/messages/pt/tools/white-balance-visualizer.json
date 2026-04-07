@@ -14,7 +14,7 @@
       "faq": {
         "what-is-white-balance": {
           "question": "O que é balanço de branco na fotografia?",
-          "answer": "O balanço de branco ajusta as cores na sua foto para que objetos que parecem brancos pessoalmente também pareçam brancos na imagem. Diferentes fontes de luz emitem diferentes temperaturas de cor, e o balanço de branco compensa essas variações."
+          "answer": "O balanço de branco ajusta as cores na sua foto para que objetos que parecem brancos ao olho nu também pareçam brancos na imagem. Diferentes fontes de luz emitem temperaturas de cor diferentes, e o balanço de branco compensa essas variações."
         },
         "kelvin-vs-presets": {
           "question": "Devo usar valores Kelvin ou predefinições de balanço de branco?",

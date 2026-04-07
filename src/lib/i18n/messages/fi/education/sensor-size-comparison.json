@@ -1,74 +1,74 @@
 {
   "education": {
     "sensor-size-comparison": {
-      "beginner": "Kameroiden kennoja on monta eri fyysistä kokoa, studiokameroissa käytetyistä suurista keskiformaattipiiristä aina älypuhelinten pieniin kennoihin. Suurempi kenno kerää enemmän valoa, tuottaa vähemmän kohinaa ja helpottaa taustan sumennuksen saamista. Kennokoko on yksi suurimmista tekijöistä, jotka erottavat kameraluokat toisistaan.",
+      "beginner": "Kameroiden kennoja on monessa fyysisessä koossa — studiokameroiden suurista keskiformaattikennoista aina älypuhelinten pieniin kennoihin. Suurempi kenno kerää enemmän valoa, tuottaa vähemmän kohinaa ja antaa helpommin sumean taustan. Kennokoko on yksi suurimmista tekijöistä, joka erottaa kameraluokat toisistaan.",
       "deeper": {
         "0": {
           "heading": "Miten se toimii",
-          "text": "Kennokoko vaikuttaa valokuvaukseen monella toisiinsa kietoutuvalla tavalla. Suuremmalla kennolla on suurempi pinta-ala fotonien keräämiseen, mikä parantaa signaali-kohina-suhdetta ja dynamiikka-aluetta. Kennokoko on yksi tärkeimmistä eroista kameraluokkien välillä — keskiformaatin studiokameroista älypuhelinten kennoihin."
+          "text": "Kennokoko vaikuttaa valokuvaukseen monella toisiinsa kietoutuvalla tavalla. Suuremmalla kennolla on enemmän pinta-alaa fotonien keräämiseen, mikä parantaa signaali-kohina-suhdetta ja dynamiikka-aluetta. Kennokoko on yksi tärkeimmistä eroista kameraluokkien välillä — aina studiokäyttöön tarkoitetuista keskiformaattikennoista älypuhelinten kennoihin."
         },
         "1": {
           "heading": "Kerroin",
-          "text": "\"Kerroin\" kuvaa, miten kenno vertautuu 35 mm:n täyskennostandardiin. APS-C-kenno, jonka kerroin on 1,5x, antaa saman kuvakulman 35 mm:n objektiivilla kuin täyskennoinen kamera 52,5 mm:n objektiivilla. Tämä kerroin myös kertaa tehollisen syväterävyyden — pienempi kenno näyttää antavan enemmän syväterävyyttä samalla rajauksella, koska sovittaaksesi kuvakulman tarvitset laajemman (lyhyemmän) objektiivin."
+          "text": "Kerroin kuvaa, miten kenno suhteutuu 35 mm:n täyskennostandardiin. APS-C-kenno, jonka kerroin on 1,5×, antaa 35 mm:n objektiivilla saman kuvakulman kuin täyskenno 52,5 mm:n objektiivilla. Sama kerroin vaikuttaa myös tehokkaaseen syväterävyyteen — pienemmällä kennolla syväterävyyttä on samassa rajauksessa enemmän, koska saman kuvakulman saamiseen tarvitaan lyhyempi polttoväli."
         },
         "2": {
           "heading": "Pikselitiheys",
-          "text": "Pikselitiheys (pikselikoko) mittaa, kuinka tiiviisti pikselit on pakattu kennolle. Enemmän megapikseleitä pienemmälle kennolle kutistaa jokaista valonkeruupistettä, vähentäen pikselikohtaista valonkeruuta. 24 MP:n täyskennoisella kennolla on ~6 µm:n pikselit, kun taas 24 MP:n APS-C-kennolla ~4 µm:n pikselit, minkä vuoksi täyskenno toimii yleensä paremmin korkealla ISO:lla."
+          "text": "Pikselitiheys (pikselikoko) kertoo, kuinka tiiviisti pikselit on pakattu kennolle. Kun samalle pinta-alalle ahdetaan lisää megapikseleitä, jokainen valonkeruupiste pienenee ja kerää vähemmän valoa. 24 MP:n täyskennolla pikselikoko on noin 6 µm, kun taas 24 MP:n APS-C:llä noin 4 µm — tästä syystä täyskenno toimii yleensä paremmin korkeilla ISO:illa."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Fyysiset mitat",
-          "description": "Leveys ja korkeus millimetreinä määrittävät kokonaisvalonkeruualueen ja kuvakulman annetulla objektiivilla."
+          "description": "Leveys ja korkeus millimetreinä määräävät kokonaisvalonkeruualueen ja kuvakulman tietyllä objektiivilla."
         },
         "1": {
           "label": "Kerroin",
-          "description": "Täyskennon diagonaalin suhde kennon diagonaaliin. Polttovälillä kerrottuna se antaa \"ekvivalentin\" polttovälin."
+          "description": "Täyskennon diagonaalin suhde tähän kennoon. Polttovälillä kerrottuna se antaa ekvivalentin polttovälin."
         },
         "2": {
           "label": "Pikselitiheys",
-          "description": "Kuinka tiiviisti pikselit on pakattu. Pienempi pikselikoko tarkoittaa enemmän yksityiskohtia mutta vähemmän valoa pikseliä kohden, mikä vaikuttaa kohinasuorituskykyyn."
+          "description": "Kuinka tiiviisti pikselit on pakattu kennolle. Pienempi pikselikoko tarkoittaa enemmän yksityiskohtia mutta vähemmän valoa pikseliä kohden, mikä vaikuttaa kohinankäyttäytymiseen."
         },
         "3": {
           "label": "Kennon pinta-ala",
-          "description": "Kokonaispinta-ala neliömillimetreinä. 44x33 mm:n keskiformaattikennolla (Fujifilm GFX, Hasselblad X) on noin 1,7x täyskennon pinta-ala, kun taas suurempi 54x40 mm:n keskiformaatti on noin 2,5x. Täyskenno on karkeasti 13x huippupuhelimen kennon pinta-ala."
+          "description": "Kennon kokonaispinta-ala neliömillimetreinä. 44×33 mm:n keskiformaattikennolla (Fujifilm GFX, Hasselblad X) on noin 1,7-kertainen pinta-ala täyskennoon verrattuna, ja suuremmalla 54×40 mm:n keskiformaatilla noin 2,5-kertainen. Täyskenno puolestaan on noin 13 kertaa suurempi kuin huippupuhelimen kenno."
         }
       },
       "tips": {
         "0": {
-          "text": "Käytä päällekkäistilaa nähdäksesi tarkalleen, kuinka paljon suurempi yksi kenno on kuin toinen — pinta-alaero on usein dramaattisempi kuin luvut antavat ymmärtää."
+          "text": "Käytä päällekkäisnäkymää, niin näet tarkalleen, kuinka paljon suurempi yksi kenno on toiseen verrattuna — pinta-alaero on usein paljon dramaattisempi kuin pelkät luvut antavat ymmärtää."
         },
         "1": {
-          "text": "Vaihda pikselitiheystilaan ja syötä kamerasi resoluutio vertaillaksesi pikselikokoa. Jos kamerassasi on hyvin korkea pikselitiheys, saatat osua diffraktiorajoihin suuremmilla aukoilla kuin odotat."
+          "text": "Vaihda pikselitiheysnäkymään ja syötä oman kamerasi resoluutio, niin voit vertailla pikselikokoa. Jos kamerassa on erittäin tiheä pikselikuvio, diffraktio voi alkaa pehmentää kuvaa suuremmilla aukoilla kuin luulisi."
         },
         "2": {
-          "text": "Kameroita vertaillessa kennon pinta-ala merkitsee kohinasuorituskyvyssä enemmän kuin megapikselimäärä. 20 MP:n täyskennoinen kenno toimii tyypillisesti paremmin kuin 40 MP:n APS-C-kenno korkealla ISO:lla."
+          "text": "Kameroita vertailtaessa kennon pinta-alalla on kohinankäyttäytymisen kannalta enemmän merkitystä kuin megapikselimäärällä. 20 MP:n täyskenno toimii korkealla ISO:lla tyypillisesti paremmin kuin 40 MP:n APS-C."
         }
       },
       "tooltips": {
         "Sensor": {
           "term": "Kenno",
-          "definition": "Vaihda yksittäisiä kennomuotoja päälle tai pois sisällyttääksesi ne visuaaliseen vertailuun ja datataulukkoon."
+          "definition": "Kytke yksittäisiä kennoformaatteja päälle tai pois, niin ne sisältyvät visuaaliseen vertailuun ja datataulukkoon."
         },
         "Display Mode": {
           "term": "Näyttötila",
-          "definition": "Päällekkäistila näyttää kaikki kennot samasta keskipisteestä. Rinnakkain-tila asettaa ne vierekkäin samassa mittakaavassa. Pikselitiheys visualisoi, kuinka tiiviisti pikselit on pakattu."
+          "definition": "Päällekkäisnäkymä näyttää kaikki kennot samasta keskipisteestä. Rinnakkaisnäkymä asettaa ne vierekkäin samassa mittakaavassa. Pikselitiheysnäkymä havainnollistaa, kuinka tiiviisti pikselit on pakattu."
         },
         "Resolution": {
           "term": "Resoluutio",
-          "definition": "Kokonaismegapikselimäärä, jota käytetään pikselikoon laskemiseen pikselitiheystilassa. Enemmän megapikseleitä samalla kennokoolla tarkoittaa pienempiä yksittäisiä pikseleitä."
+          "definition": "Megapikselien kokonaismäärä, jota käytetään pikselikoon laskentaan pikselitiheysnäkymässä. Mitä enemmän megapikseleitä samalle kennolle, sitä pienempiä yksittäiset pikselit ovat."
         },
         "Crop Factor": {
           "term": "Kerroin",
-          "definition": "35 mm:n täyskennon diagonaalin suhde tämän kennon diagonaaliin. 1,5x kerroin tarkoittaa, että 50 mm:n objektiivi rajaa kuten 75 mm täyskennolla."
+          "definition": "35 mm:n täyskennon diagonaalin suhde tämän kennon diagonaaliin. Kerroin 1,5× tarkoittaa, että 50 mm:n objektiivi rajaa kuten 75 mm täyskennolla."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Täyskennoinen kenno on 36x24 mm. APS-C-kennolla on 1,5x kerroin. Mikä on APS-C-kennon likimääräinen leveys?",
+          "scenario": "Täyskennon koko on 36×24 mm. APS-C:n kerroin on 1,5×. Mikä on APS-C-kennon likimääräinen leveys?",
           "hint": "Jaa täyskennon leveys kertoimella.",
-          "successMessage": "Oikein! 36 mm / 1,5 ≈ 24 mm. APS-C-kenno on noin 24x16 mm, eli noin 44 % täyskennon pinta-alasta.",
-          "failureMessage": "Jaa täyskennon leveys (36 mm) kertoimella (1,5x): 36 / 1,5 = 24 mm.",
+          "successMessage": "Oikein! 36 mm / 1,5 ≈ 24 mm. APS-C-kenno on siis noin 24×16 mm eli vain noin 44 % täyskennon pinta-alasta.",
+          "failureMessage": "Jaa täyskennon leveys (36 mm) kertoimella (1,5×): 36 / 1,5 = 24 mm.",
           "options": {
             "0": { "label": "24 mm" },
             "1": { "label": "30 mm" },
@@ -76,10 +76,10 @@
           }
         },
         "1": {
-          "scenario": "Kiinnität 50 mm:n objektiivin kameraan, jonka kenno on 2,0x kertoimella. Mikä on täyskennoekvivalentti polttoväli?",
+          "scenario": "Kiinnität 50 mm:n objektiivin kameraan, jonka kerroin on 2,0×. Mikä on täyskennoekvivalentti polttoväli?",
           "hint": "Kerro polttoväli kertoimella.",
-          "successMessage": "Aivan! 50 mm × 2,0 = 100 mm:n ekvivalentti. Tästä syystä Micro Four Thirds -kamerat ovat suosittuja telekuvauksessa — saat lisäkantamaa jokaisesta objektiivista.",
-          "failureMessage": "Kerro objektiivin polttoväli kertoimella: 50 mm × 2,0 = 100 mm:n ekvivalentti.",
+          "successMessage": "Aivan! 50 mm × 2,0 = 100 mm ekvivalenttina. Tästä syystä Micro Four Thirds -kamerat ovat suosittuja telekuvauksessa — jokaisesta objektiivista saa lisäkantamaa.",
+          "failureMessage": "Kerro objektiivin polttoväli kertoimella: 50 mm × 2,0 = 100 mm ekvivalenttina.",
           "options": {
             "0": { "label": "25 mm" },
             "1": { "label": "75 mm" },
@@ -87,21 +87,21 @@
           }
         },
         "2": {
-          "scenario": "Kahdessa kamerassa on molemmissa 24 megapikseliä — toinen on täyskennoinen (36x24 mm) ja toinen APS-C (24x16 mm). Kummalla on parempi korkean ISO:n kohinasuorituskyky, ja miksi?",
-          "hint": "Mieti, miten sama pikselimäärä jakautuu eri kokoisille kennoille ja miten se vaikuttaa yksittäisen pikselin kokoon.",
-          "successMessage": "Juuri niin! Täyskennoinen kenno levittää 24 MP:n suuremmalle alueelle, joten jokainen pikseli on fyysisesti suurempi (~6 µm vs. ~4 µm koko) ja kerää enemmän fotoneja, mikä johtaa vähäisempään kohinaan.",
-          "failureMessage": "Täyskenno voittaa — sama megapikselimäärä suuremmalla alueella tarkoittaa suurempia pikseleitä, jotka keräävät enemmän valoa, tuottaen vähemmän kohinaa korkealla ISO:lla.",
+          "scenario": "Kahdessa kamerassa on molemmissa 24 megapikseliä — toinen on täyskenno (36×24 mm) ja toinen APS-C (24×16 mm). Kumpi toimii paremmin korkealla ISO:lla, ja miksi?",
+          "hint": "Mieti, miten sama pikselimäärä jakautuu erikokoisille kennoille ja miten se vaikuttaa yksittäisen pikselin kokoon.",
+          "successMessage": "Juuri niin! Täyskenno levittää 24 MP:n suuremmalle alueelle, joten jokainen pikseli on fyysisesti isompi (~6 µm vs. ~4 µm) ja kerää enemmän fotoneita. Tämä näkyy vähäisempänä kohinana.",
+          "failureMessage": "Täyskenno voittaa — sama megapikselimäärä suuremmalla alueella tarkoittaa isompia pikseleitä, jotka keräävät enemmän valoa ja tuottavat vähemmän kohinaa korkealla ISO:lla.",
           "options": {
-            "0": { "label": "Täyskenno — suuremmat pikselit keräävät enemmän valoa" },
-            "1": { "label": "APS-C — pienemmät kennot ovat tehokkaampia" },
-            "2": { "label": "Sama kohina — megapikselimäärä merkitsee" }
+            "0": { "label": "Täyskenno — isommat pikselit keräävät enemmän valoa" },
+            "1": { "label": "APS-C — pienempi kenno on tehokkaampi" },
+            "2": { "label": "Sama kohina — vain megapikselimäärä ratkaisee" }
           }
         },
         "3": {
-          "scenario": "Vertailutaulukkoa katsoen, millä kennomuodolla on kerroin lähinnä 2,0x?",
-          "hint": "Kerroin on täyskennon diagonaali jaettuna kennon diagonaalilla.",
-          "successMessage": "Oikein! Micro Four Thirdsin kerroin on 2,0x, minkä vuoksi 25 mm:n M43-objektiivi rajaa kuten 50 mm täyskennolla.",
-          "failureMessage": "Micro Four Thirdsillä on 2,0x kerroin. Tarkista taulukko — sen diagonaali on tarkalleen puolet täyskennon diagonaalista.",
+          "scenario": "Kun katsot vertailutaulukkoa, millä kennoformaatilla on kerroin lähinnä 2,0×?",
+          "hint": "Kerroin saadaan jakamalla täyskennon diagonaali kennon diagonaalilla.",
+          "successMessage": "Oikein! Micro Four Thirdsin kerroin on 2,0×, minkä vuoksi 25 mm:n M43-objektiivi rajaa samoin kuin 50 mm täyskennolla.",
+          "failureMessage": "Micro Four Thirdsin kerroin on 2,0×. Katso taulukosta — sen diagonaali on tasan puolet täyskennon diagonaalista.",
           "options": {
             "0": { "label": "APS-C (Canon)" },
             "1": { "label": "Micro Four Thirds" },
@@ -109,14 +109,14 @@
           }
         },
         "4": {
-          "scenario": "Vertaat 50 MP:n keskiformaattikameraa 50 MP:n täyskennoiseen kameraan pikselitiheystilassa. Molemmilla on sama megapikselimäärä. Kummalla kameralla on suurempi pikselikoko, ja mikä käytännön etu siitä seuraa?",
-          "hint": "Pikselikoko riippuu kennon leveydestä jaettuna vaakapikseleiden määrällä.",
-          "successMessage": "Aivan! Keskiformaattikenno on fyysisesti suurempi, joten 50 MP:ssä sen pikselit ovat suurempia (suurempi pikselikoko). Tämä antaa sille noin 1/3 aukkoa paremman pikselikohtaisen valonkeruun sekä hieman myöhäisemmän diffraktion alkamisen.",
-          "failureMessage": "Keskiformaattikenno on suurempi, joten samalla resoluutiolla jokainen pikseli on fyysisesti suurempi. Suuremmat pikselit keräävät enemmän fotoneita, tarjoten paremman dynamiikka-alueen ja hieman myöhäisemmät diffraktiorajat.",
+          "scenario": "Vertailet 50 MP:n keskiformaattikameraa 50 MP:n täyskennoiseen pikselitiheysnäkymässä. Molemmilla on sama megapikselimäärä. Kummalla on suurempi pikselikoko, ja mitä käytännön hyötyä siitä on?",
+          "hint": "Pikselikoko saadaan jakamalla kennon leveys vaakapikselien määrällä.",
+          "successMessage": "Aivan! Keskiformaattikenno on fyysisesti suurempi, joten 50 MP:llä sen pikselit ovat isompia. Tämä antaa sille noin 1/3 askelta paremman valonkeruun pikseliä kohti ja siirtää diffraktion alkamista hieman pidemmälle.",
+          "failureMessage": "Keskiformaattikenno on suurempi, joten samalla resoluutiolla jokainen pikseli on fyysisesti isompi. Isot pikselit keräävät enemmän fotoneita, tarjoavat paremman dynamiikka-alueen ja siirtävät diffraktiorajaa hieman pidemmälle.",
           "options": {
-            "0": { "label": "Keskiformaatti — parempi pikselikohtainen valonkeruu ja dynamiikka-alue" },
+            "0": { "label": "Keskiformaatti — parempi valonkeruu pikseliä kohti ja laajempi dynamiikka-alue" },
             "1": { "label": "Täyskenno — pienemmät pikselit ovat tehokkaampia" },
-            "2": { "label": "Molemmat ovat identtiset, koska niillä on sama megapikselimäärä" }
+            "2": { "label": "Molemmat ovat samat, koska niissä on sama megapikselimäärä" }
           }
         }
       }

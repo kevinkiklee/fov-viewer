@@ -1,31 +1,31 @@
 {
   "education": {
     "color-scheme-generator": {
-      "beginner": "Farveharmoni handler om at vælge farver, der ser godt ud sammen. Ligesom musikalske akkorder skaber visse farvekombinationer behagelige visuelle sammenhænge. Fotografer bruger farveharmoni til at planlægge tøj, scenografi og tidspunktet for udendørs optagelser, så paletten bliver den rigtige.",
+      "beginner": "Farveharmoni handler om at vælge farver, der fungerer sammen. Ligesom musikalske akkorder skaber bestemte farvekombinationer behagelige visuelle sammenhænge. Fotografer bruger farveharmoni til at planlægge tøj, scenografi og tidspunktet for udendørs optagelser, så paletten bliver som ønsket.",
       "deeper": {
         "0": {
           "heading": "Farvecirklen",
-          "text": "Farveharmoni bygger på farvecirklen, som arrangerer kulører i en cirkel ud fra deres bølgelængder. HSL-modellen (hue, saturation, lightness) kan mappes direkte til cirklen: hue er vinklen (0–360°), saturation er afstanden fra centrum, og lightness styrer lysstyrken. I fotografi opstår disse sammenhænge naturligt — den gyldne time giver analoge varme toner, mens en rød lade foran grønne marker er komplementær."
+          "text": "Farveharmoni bygger på farvecirklen, som ordner kulører i en cirkel ud fra deres bølgelængder. HSL-modellen (hue, saturation, lightness) kan mappes direkte til cirklen: hue er vinklen (0–360°), saturation er afstanden fra centrum, og lightness styrer lysstyrken. I fotografi opstår de her sammenhænge helt naturligt — den gyldne time giver analoge varme toner, og en rød lade foran grønne marker er komplementær."
         },
         "1": {
           "heading": "Komplementær",
-          "text": "To farver, der sidder lige overfor hinanden på cirklen (180° fra hinanden), som blå og orange eller rød og grøn. Det giver maksimal kontrast og visuel energi. Perfekt til at få motivet til at springe frem — tænk på portrætter i den gyldne time, hvor varme hudtoner står mod en kølig blå himmel."
+          "text": "To farver, der sidder lige over for hinanden på cirklen (180° fra hinanden), som blå og orange eller rød og grøn. Det giver maksimal kontrast og visuel energi. Perfekt til at få motivet til at springe frem — tænk på portrætter i den gyldne time, hvor varme hudtoner står mod en kølig blå himmel."
         },
         "2": {
           "heading": "Analog",
-          "text": "Tre farver, der er naboer på cirklen, typisk inden for 30–60°. De giver bløde, sammenhængende paletter med lav kontrast. Ideelt til landskaber og stemningsbilleder — efterårsløvet er en naturlig analog palet af rødt, orange og gult."
+          "text": "Tre farver, der er naboer på cirklen, typisk inden for 30–60°. Det giver bløde, samlede paletter med lav kontrast. Ideelt til landskaber og stemningsbilleder — efterårsløvet er en naturlig analog palet af rødt, orange og gult."
         },
         "3": {
           "heading": "Triadisk",
-          "text": "Tre farver placeret med 120° mellemrum rundt på cirklen, f.eks. rød, gul og blå. Triadiske skemaer virker balancerede og livfulde uden spændingen fra komplementær kontrast. Lad én farve dominere og brug de to andre som accenter for det stærkeste resultat."
+          "text": "Tre farver placeret med 120° mellemrum rundt på cirklen, f.eks. rød, gul og blå. Triadiske skemaer virker balancerede og livfulde uden spændingen fra komplementær kontrast. Lad én farve dominere, og brug de to andre som accenter — det giver det stærkeste resultat."
         },
         "4": {
           "heading": "Split-komplementær",
-          "text": "En variation af komplementær, hvor man bruger de to naboer til den modsatte farve i stedet for den modsatte selv. Det bevarer den høje kontrast fra komplementær, men dæmper den visuelle spænding, så det bliver mere alsidigt og tilgivende. Et populært valg til styled portrætsessioner."
+          "text": "En variation af komplementær, hvor du bruger de to naboer til den modsatte farve i stedet for den modsatte selv. Du bevarer den høje kontrast, men dæmper den visuelle spænding, så det bliver mere alsidigt og tilgivende. Et populært valg til gennemarbejdede portrætsessioner."
         },
         "5": {
           "heading": "Tetradisk (dobbelt-komplementær)",
-          "text": "Fire farver, der danner et rektangel på cirklen — reelt to komplementære par. Det giver den rigeste og mest komplekse palet, men kræver omhyggelig balance. Lad én farve dominere og brug de andre som støttende accenter, så billedet ikke bliver kaotisk."
+          "text": "Fire farver, der danner et rektangel på cirklen — reelt to komplementære par. Det giver den rigeste og mest komplekse palet, men kræver omhyggelig balance. Lad én farve dominere, og brug de andre som støttende accenter, så billedet ikke bliver kaotisk."
         }
       },
       "keyFactors": {
@@ -43,24 +43,24 @@
         },
         "3": {
           "label": "Lightness",
-          "description": "Styrer lysstyrken. Den samme hue kan føles helt anderledes alt efter lightness — mørk marineblå og himmelblå er samme hue i forskellig lysstyrke."
+          "description": "Styrer lysstyrken. Den samme hue kan føles helt anderledes alt efter lightness — mørk marineblå og himmelblå er faktisk samme hue, bare i forskellig lysstyrke."
         }
       },
       "tips": {
         "0": {
-          "text": "Til portrætter: vælg en komplementær eller split-komplementær palet og lad motivet bære hovedfarven, mens baggrunden giver den modsatte. Blå/orange (portrætter i den gyldne time) er et klassisk eksempel."
+          "text": "Til portrætter: vælg en komplementær eller split-komplementær palet, og lad motivet bære hovedfarven, mens baggrunden leverer den modsatte. Blå/orange (portrætter i den gyldne time) er et klassisk eksempel."
         },
         "1": {
-          "text": "Brug analog harmoni til landskaber — naturen arbejder allerede i analoge paletter. Match tøjvalg eller props til de dominerende naturtoner."
+          "text": "Brug analog harmoni til landskaber — naturen arbejder i forvejen i analoge paletter. Match tøjvalg eller rekvisitter til de dominerende naturtoner."
         },
         "2": {
-          "text": "Skru saturation ned til 30–50 % for at se, hvordan farverne ser ud i en mere afdæmpet, redaktionel stil. Høj saturation virker til kommerciel og mode, men lavere saturation føles ofte mere forfinet."
+          "text": "Skru saturation ned til 30–50 %, så du ser, hvordan farverne tager sig ud i en mere afdæmpet, editorial stil. Høj saturation fungerer til reklame og mode, mens lavere saturation ofte føles mere forfinet."
         }
       },
       "tooltips": {
         "Harmony Type": {
           "term": "Harmonitype",
-          "definition": "Farvesammenhængens mønster: Komplementær (modsatte), Analog (naboer), Triadisk (tre-vejs), Split-komplementær (forskudte modsatte) eller Tetradisk (fire-vejs rektangel)."
+          "definition": "Mønsteret for farvesammenhængen: Komplementær (modsatte), Analog (naboer), Triadisk (trevejs), Split-komplementær (forskudte modsatte) eller Tetradisk (firevejs rektangel)."
         },
         "Key Color": {
           "term": "Nøglefarve",
@@ -90,9 +90,9 @@
       "challenges": {
         "0": {
           "scenario": "Du vil have maksimal kontrast mellem to farver til et markant grafisk portræt. Hvilken harmonitype giver mest visuel spænding?",
-          "hint": "Farver, der ligger direkte overfor hinanden på cirklen, skaber den stærkeste kontrast.",
+          "hint": "Farver, der ligger direkte over for hinanden på cirklen, giver den stærkeste kontrast.",
           "successMessage": "Rigtigt! Komplementære farver ligger 180 grader fra hinanden og giver den højeste kontrast — perfekt til markante, iøjnefaldende kompositioner.",
-          "failureMessage": "Komplementær harmoni placerer farverne direkte overfor hinanden på cirklen og skaber maksimal visuel kontrast.",
+          "failureMessage": "Komplementær harmoni placerer farverne direkte over for hinanden på cirklen og giver maksimal visuel kontrast.",
           "options": {
             "0": { "label": "Komplementær" },
             "1": { "label": "Analog" },
@@ -111,10 +111,10 @@
           }
         },
         "2": {
-          "scenario": "En kunde ønsker et portræt med kontrast, men ikke så intens som rent komplementær. Hvilken harmonitype dæmper kontrasten uden at miste visuel interesse?",
-          "hint": "Denne type bruger to farver tæt på komplementet i stedet for den direkte modsatte.",
-          "successMessage": "Flot! Split-komplementær bevarer kontrasten fra komplementær, men deler den modsatte farve op i to flankerende hues, hvilket giver en mindre skinger, men stadig dynamisk palet.",
-          "failureMessage": "Split-komplementær er svaret — den erstatter den enkelte modsatte farve med to naboer til den modsatte og dæmper kontrasten uden at miste energien.",
+          "scenario": "En kunde vil have et portræt med kontrast, men ikke så intens som ren komplementær. Hvilken harmonitype dæmper kontrasten uden at miste visuel interesse?",
+          "hint": "Den her type bruger to farver tæt på den modsatte i stedet for den direkte modsatte selv.",
+          "successMessage": "Flot! Split-komplementær bevarer kontrasten fra komplementær, men deler den modsatte farve op i to flankerende hues, så paletten bliver mindre skinger, men stadig dynamisk.",
+          "failureMessage": "Split-komplementær er svaret — den erstatter den enkelte modsatte farve med de to naboer til den modsatte og dæmper kontrasten uden at miste energien.",
           "options": {
             "0": { "label": "Split-komplementær" },
             "1": { "label": "Triadisk" },
@@ -135,7 +135,7 @@
         "4": {
           "scenario": "Du art-direkter en mode-editorial og har brug for en palet med fire farver, der både har varme og kølige toner samt høj visuel rigdom. Hvilken harmonitype giver dig fire farver, og hvad er den største udfordring ved at bruge den?",
           "hint": "Harmonien med fire farver danner et rektangel på cirklen.",
-          "successMessage": "Rigtigt! Tetradisk harmoni giver fire farver, der danner et rektangel på cirklen. Den største udfordring er balance — med fire forskellige hues skal én dominere, mens de andre accenterer. Uden hierarki virker billedet kaotisk.",
+          "successMessage": "Rigtigt! Tetradisk harmoni giver fire farver, der danner et rektangel på cirklen. Den største udfordring er balancen — med fire forskellige hues skal én dominere, mens de andre fungerer som accenter. Uden hierarki bliver billedet kaotisk.",
           "failureMessage": "Tetradisk (dobbelt-komplementær) giver fire farver i en rektangulær opstilling. Udfordringen er, at fire stærke hues kæmper om opmærksomheden — du skal udpege én dominerende farve og bruge de andre som accenter.",
           "options": {
             "0": { "label": "Tetradisk — udfordringen er at holde visuelt hierarki mellem fire hues" },

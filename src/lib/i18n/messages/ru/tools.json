@@ -1,11 +1,11 @@
 {
   "tools": {
     "fov-simulator": {
-      "name": "FOV Simulator",
+      "name": "Симулятор угла обзора",
       "description": "Сравнение угла обзора на разных фокусных расстояниях и матрицах"
     },
     "color-scheme-generator": {
-      "name": "Color Scheme Generator",
+      "name": "Генератор цветовых схем",
       "description": "Подбор цветовых палитр для фотосъёмки"
     },
     "exposure-simulator": {

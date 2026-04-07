@@ -3,18 +3,18 @@
     "star-trail-calculator": {
       "rule500": "500 Rule",
       "ruleNPF": "NPF Rule",
-      "recommendation": "Rekomendasyon",
-      "recommendationText": "Gamitin ang NPF rule ({npf}s) para sa pixel-level sharpness. Ang 500 rule ({r500}s) ay mabilis na estimate pero maaaring magpakita ng trailing sa mga high-resolution na sensor.",
-      "shootingTime": "Oras ng Pagkuha",
+      "recommendation": "Recommendation",
+      "recommendationText": "Gamitin ang NPF rule ({npf}s) para sa pixel-level sharpness. Ang 500 rule ({r500}s) ay quick estimate lang, pero pwedeng magpakita ng trailing sa mga high-resolution sensor.",
+      "shootingTime": "Shooting Time",
       "exposure": "Exposure",
       "displayMode": "Display Mode",
       "modeStarTrails": "Star Trails",
       "modeSingleShot": "Single Shot",
       "stacking": "Stacking",
       "exposurePerFrame": "Exposure / frame (sec)",
-      "exposurePerFrameDesc": "Shutter speed para sa bawat individual na frame",
+      "exposurePerFrameDesc": "Shutter speed para sa bawat individual frame",
       "frames": "Frames",
-      "framesDesc": "Kabuuang bilang ng litratong ise-stack",
+      "framesDesc": "Total na bilang ng frames na ise-stack",
       "gapSec": "Gap (sec)",
       "gapDesc": "Delay sa pagitan ng frames para sa buffer write",
       "camera": "Camera",
@@ -22,8 +22,8 @@
       "resolutionMP": "Resolution (MP)",
       "apertureLabel": "Aperture",
       "latitude": "Latitude",
-      "position": "Posisyon",
-      "useMyLocation": "Gamitin ang Aking Lokasyon",
+      "position": "Position",
+      "useMyLocation": "Gamitin ang Location ko",
       "latitudeLabel": "Latitude:",
       "equator": "Equator 0°",
       "mid45": "Mid 45°",
@@ -31,15 +31,15 @@
       "faq": {
         "what-is-500-rule": {
           "question": "Ano ang 500 rule sa astrophotography?",
-          "answer": "Tinatantya ng 500 rule ang pinakamahabang exposure time bago lumitaw ang mga bituin bilang trails sa halip na puntos. Hatiin ang 500 sa iyong effective focal length (focal length × crop factor) para makuha ang maximum shutter speed sa segundo para sa matatalas na bituin."
+          "answer": "Ang 500 rule ay nag-e-estimate ng pinakamahabang exposure time bago magmukhang trails ang mga bituin sa halip na pinpoint. Hatiin ang 500 sa effective focal length mo (focal length × crop factor) para makuha ang max shutter speed in seconds para sa sharp na stars."
         },
         "star-trails-vs-points": {
           "question": "Paano pumili sa pagitan ng star trails at sharp star points?",
-          "answer": "Para sa matatalas na star points (Milky Way, konstelasyon), gumamit ng maiikling exposure na sumusunod sa 500 rule. Para sa creative na star trails na nagpapakita ng pag-ikot ng Earth, gumamit ng napakahabang exposure (minuto hanggang oras) o i-stack ang maraming mas maiikling exposure."
+          "answer": "Para sa sharp star points (Milky Way, constellations), gumamit ng maikling exposures na sumusunod sa 500 rule. Para sa creative star trails na nagpapakita ng rotation ng Earth, gumamit ng napakahabang exposure (minutes to hours) o i-stack ang maraming maiikling exposure."
         },
         "best-settings-milky-way": {
           "question": "Ano ang pinakamagandang camera settings para sa Milky Way photography?",
-          "answer": "Magsimula sa pinakamalawak na aperture na available (f/1.4–f/2.8), ISO 1600–6400, at ang pinakamahabang shutter speed na pinapayagan ng 500 rule para sa lens mo. Gumamit ng matibay na tripod at manual focus na naka-set sa infinity. Kumuha sa panahon ng new moon sa isang dark sky na lokasyon."
+          "answer": "Magsimula sa pinakamalawak na aperture na meron ka (f/1.4–f/2.8), ISO 1600–6400, at sa pinakamahabang shutter speed na pwede sa 500 rule para sa lens mo. Gumamit ng matibay na tripod at manual focus na naka-set sa infinity. Mag-shoot tuwing new moon sa dark sky location."
         }
       }
     }

@@ -6,7 +6,7 @@
     },
     "color-scheme-generator": {
       "name": "Color Scheme Generator",
-      "description": "Byg farvepaletter til dine fotoopgaver"
+      "description": "Byg farvepaletter til dine billeder"
     },
     "exposure-simulator": {
       "name": "Eksponeringstrekantsimulator",
@@ -14,23 +14,23 @@
     },
     "dof-simulator": {
       "name": "Depth-of-Field Simulator",
-      "description": "Visualisér hvordan blænde, brændvidde og afstand påvirker baggrundsuskarpheden"
+      "description": "Se hvordan blænde, brændvidde og afstand påvirker baggrundsuskarpheden"
     },
     "focus-stacking-calculator": {
       "name": "Focus Stacking Calculator",
-      "description": "Beregn optimale fokusafstande for skarphed fra forgrund til baggrund"
+      "description": "Beregn de optimale fokusafstande, så du får skarphed fra forgrund til baggrund"
     },
     "equivalent-settings-calculator": {
-      "name": "Beregner for ækvivalente indstillinger",
+      "name": "Ækvivalent-beregner",
       "description": "Find ækvivalent blænde og brændvidde på tværs af sensorformater"
     },
     "hyperfocal-simulator": {
-      "name": "Hyperfokal afstandssimulator",
-      "description": "Find ud af, hvor du skal fokusere for maksimal skarphed fra forgrund til uendelig"
+      "name": "Hyperfokal simulator",
+      "description": "Find ud af hvor du skal stille skarpt for maksimal skarphed fra forgrund til uendelig"
     },
     "shutter-speed-visualizer": {
       "name": "Shutter Speed Visualizer",
-      "description": "Find den laveste sikre lukkertid til skarpe håndholdte billeder"
+      "description": "Find den langsomste lukkertid, du kan slippe af sted med håndholdt"
     },
     "nd-filter-calculator": {
       "name": "ND Filter Calculator",
@@ -38,10 +38,10 @@
     },
     "star-trail-calculator": {
       "name": "Star Trail Calculator",
-      "description": "Beregn maks eksponering for skarpe stjerner eller planlæg star trails"
+      "description": "Beregn den længste eksponering for skarpe stjerner, eller planlæg star trails"
     },
     "perspective-compression-simulator": {
-      "name": "Perspektivkompressionssimulator",
+      "name": "Perspektivkompression-simulator",
       "description": "Se hvordan brændvidden påvirker baggrundskompressionen"
     },
     "white-balance-visualizer": {
@@ -54,11 +54,11 @@
     },
     "frame-studio": {
       "name": "Frame Studio",
-      "description": "Beskær, indram og komponér billeder med gitterguider"
+      "description": "Beskær, indram og komponér billeder med kompositionsguider"
     },
     "exif-viewer": {
       "name": "EXIF Viewer",
-      "description": "Se EXIF-metadata og histogram for ethvert foto — 100 % i browseren"
+      "description": "Se EXIF-metadata og histogram for ethvert foto — direkte i browseren"
     }
   }
 }

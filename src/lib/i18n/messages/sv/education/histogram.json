@@ -1,8 +1,8 @@
 {
   "education": {
     "histogram": {
-      "beginner": "Ett histogram är en graf som visar hur ljusa eller mörka pixlarna i ditt foto är. Vänstra sidan representerar skuggor (mörka områden), mitten representerar mellantoner och högra sidan representerar högdagrar (ljusa områden). Om grafen är samlad åt ena sidan kan bilden vara underexponerad eller överexponerad.",
-      "deeper": "Ett histogram plottar antalet pixlar (y-axeln) mot ljusstyrkan (x-axeln, 0–255 för 8-bitarsbilder). I luminansläge beräknas varje pixels ljusstyrka som ett viktat medelvärde av röda, gröna och blå kanalen (vanligtvis 0,299R + 0,587G + 0,114B, i linje med människans uppfattning). RGB-läget visar tre separata fördelningar och avslöjar vilka färgkanaler som kan vara på väg att klippas oberoende av varandra — en röd kanal som når 255 medan blått är okej betyder att högdagrarna klipps i varma toner, som en solnedgångshimmel. \"Klippning\" uppstår när pixelvärden når 0 eller 255, vilket betyder att skugg- eller högdagersdetaljer har gått förlorade. Svart klippning (pixlar vid 0) tappar skuggdetaljer; vit klippning (pixlar vid 255) tappar högdagersdetaljer. Att fotografera RAW ger ungefär 2–3 extra steg återvinningsbart högdagersutrymme bortom det JPEG-histogrammet visar, vilket är anledningen till att många fotografer \"exponerar åt höger\" (ETTR) — pressar exponeringen så ljus som möjligt utan att klippa RAW-datan.",
+      "beginner": "Ett histogram är en graf över hur ljusa eller mörka pixlarna i ditt foto är. Vänstra sidan visar skuggor (mörka områden), mitten visar mellantoner och högra sidan visar högdagrar (ljusa områden). Om grafen är samlad åt ena sidan kan bilden vara underexponerad eller överexponerad.",
+      "deeper": "Ett histogram plottar antalet pixlar (y-axeln) mot ljusstyrkan (x-axeln, 0–255 för 8-bitarsbilder). I luminansläget räknas varje pixels ljusstyrka som ett viktat medelvärde av röd, grön och blå kanal (vanligtvis 0,299R + 0,587G + 0,114B, i linje med människans färguppfattning). RGB-läget visar tre separata fördelningar och avslöjar vilka färgkanaler som kan vara på väg att klippas oberoende av varandra — når röd kanal 255 medan blå mår bra betyder det att högdagrarna klipps i varma toner, som en solnedgångshimmel. \"Klippning\" uppstår när pixelvärden når 0 eller 255, och innebär att skugg- eller högdagerdetaljer gått förlorade. Svart klippning (pixlar vid 0) tappar skuggdetaljer, vit klippning (pixlar vid 255) tappar högdagerdetaljer. Att fotografera i RAW ger ungefär 2–3 extra steg återställbara högdagrar utöver det JPEG-histogrammet visar, vilket är anledningen till att många fotografer \"exponerar åt höger\" (ETTR) — pressar exponeringen så ljus som möjligt utan att klippa RAW-datan.",
       "keyFactors": {
         "0": {
           "label": "Tonfördelning",
@@ -23,13 +23,13 @@
       },
       "tips": {
         "0": {
-          "text": "Det finns ingen \"perfekt\" histogramform. Ett foto av en svart katt på en mörk soffa ska vara vänstertung. Bedöm histogrammet mot din kreativa intention, inte mot någon ideal kurva."
+          "text": "Det finns ingen \"perfekt\" histogramform. Ett foto av en svart katt på en mörk soffa ska vara vänstertungt. Bedöm histogrammet utifrån vad du vill uppnå med bilden, inte mot någon ideal kurva."
         },
         "1": {
-          "text": "Kolla RGB-overlayläget för solnedgångar och neonskyltar. Röda kanalen klipps ofta långt innan den blå gör det, vilket ger förlorade detaljer i varma högdagrar även när luminanshistogrammet ser okej ut."
+          "text": "Kolla RGB-overlayläget för solnedgångar och neonskyltar. Röda kanalen klipps ofta långt innan den blå, vilket betyder att du tappar detaljer i varma högdagrar även när luminanshistogrammet ser hyfsat ut."
         },
         "2": {
-          "text": "Om du ser klippningsvarningar i båda ändarna samtidigt överstiger scenen sannolikt kamerans dynamiska omfång. Överväg gaffling för HDR eller graduerade ND-filter."
+          "text": "Ser du klippningsvarningar i båda ändarna samtidigt överstiger scenen troligen kamerans dynamiska omfång. Överväg gaffling för HDR eller graduerade ND-filter."
         }
       },
       "tooltips": {

@@ -1,17 +1,17 @@
 {
   "toolUI": {
     "shutter-speed-visualizer": {
-      "description": "Se hvordan lukkertiden påvirker motion blur for forskellige motiver.",
+      "description": "Se hvordan lukkertiden påvirker bevægelsessløring på forskellige motiver.",
       "shutterSpeed": "Lukkertid",
       "shutterSpeedAriaLabel": "Lukkertid",
       "sliderSlow": "Langsom (2s)",
       "sliderFast": "Hurtig (1/4000)",
       "selectedSpeed": "Valgt tid",
-      "motionBlurAriaLabel": "Visualisering af motion blur for forskellige motiver",
+      "motionBlurAriaLabel": "Visualisering af bevægelsessløring på forskellige motiver",
       "verdictFrozen": "Frosset",
       "verdictMostlySharp": "Næsten skarp",
       "verdictSlightBlur": "Let sløring",
-      "verdictMotionBlur": "Motion blur",
+      "verdictMotionBlur": "Bevægelsessløring",
       "standingPerson": "Stående person",
       "slowWalk": "Langsom gang",
       "jogging": "Jogging",

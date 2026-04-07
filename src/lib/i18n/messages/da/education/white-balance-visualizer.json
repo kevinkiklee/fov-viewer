@@ -1,19 +1,19 @@
 {
   "education": {
     "white-balance-visualizer": {
-      "beginner": "Hvidbalance justerer farverne i dit billede, så hvide objekter faktisk ser hvide ud i ethvert lys. Forskellige lyskilder har forskellige farvetemperaturer — et stearinlys er varmt og orange, mens skygge er køligt og blåligt. Kameraets hvidbalance kompenserer for forskellene, så farverne virker naturlige.",
+      "beginner": "Hvidbalance justerer farverne, så hvide objekter faktisk ser hvide ud — uanset lyset. Forskellige lyskilder har forskellige farvetemperaturer — et stearinlys er varmt og orange, mens skygge er køligt og blåligt. Kameraets hvidbalance kompenserer for forskellene, så farverne virker naturlige.",
       "deeper": {
         "0": {
           "heading": "Farvetemperatur",
-          "text": "Farvetemperatur måles i Kelvin (K) og svarer til farven af lys udsendt af et idealt \"sort legeme\" opvarmet til den temperatur. Lave værdier (2000–3500K) giver varmt, rødorange lys (glødepærer, stearinlys), mens høje værdier (6500–10000K) giver køligt, blåligt lys (skygge, overskyet himmel)."
+          "text": "Farvetemperatur måles i Kelvin (K) og svarer til den farve, et idealt \"sort legeme\" udsender, når det opvarmes til den temperatur. Lave værdier (2000–3500K) giver varmt, rødorange lys (glødepærer, stearinlys), mens høje værdier (6500–10000K) giver køligt, blåligt lys (skygge, overskyet himmel)."
         },
         "1": {
           "heading": "Sådan virker hvidbalance",
-          "text": "Kameraets hvidbalancesystem lægger det omvendte farveskift på, så det neutraliserer det omgivende farvekast. Sætter du hvidbalance til \"Tungsten\" (~3200K), tilføjer kameraet blåt for at modvirke det orange kast fra glødepærer. I digital fotografi anvendes hvidbalance som en multiplikator på de røde og blå kanaler i forhold til grøn."
+          "text": "Kameraets hvidbalance lægger det omvendte farveskift på, så det neutraliserer det omgivende farvekast. Sætter du hvidbalance til \"Tungsten\" (~3200K), tilføjer kameraet blåt for at modvirke det orange kast fra glødepærer. I digital fotografi fungerer hvidbalance som en multiplikator på de røde og blå kanaler i forhold til den grønne."
         },
         "2": {
-          "heading": "RAW-fordelen",
-          "text": "Skyder du i RAW-format, bevares alle farvedata, og du kan ændre hvidbalance frit i efterbehandlingen uden kvalitetstab — det er blot en metadata-tag, der anvendes ved konverteringen."
+          "heading": "Fordelen ved RAW",
+          "text": "Skyder du RAW, bevares alle farvedata, og du kan ændre hvidbalancen frit i efterbehandlingen uden kvalitetstab — det er blot en metadata-tag, der anvendes ved konverteringen."
         }
       },
       "keyFactors": {
@@ -26,8 +26,8 @@
           "description": "Forskellige kilder udsender forskellige farvetemperaturer: stearinlys (~1800K), glødepærer (~2800K), lysstofrør (~4000K), middagssol (~5500K), overskyet himmel (~6500K), skygge (~7500K)."
         },
         "2": {
-          "label": "RAW vs. JPEG",
-          "description": "Skyder du RAW, kan du ændre hvidbalance i efterbehandlingen uden kvalitetstab. JPEG brænder hvidbalancen permanent ind, så det er vigtigere at ramme rigtigt i kameraet."
+          "label": "RAW kontra JPEG",
+          "description": "Skyder du RAW, kan du ændre hvidbalance i efterbehandlingen uden kvalitetstab. JPEG brænder hvidbalancen permanent ind i filen, så det er vigtigere at ramme rigtigt i kameraet."
         },
         "3": {
           "label": "Blandet lys",
@@ -39,35 +39,35 @@
           "text": "Skyd altid RAW, hvis du vil have fuld fleksibilitet til at justere hvidbalancen senere. RAW-filer gemmer de ubearbejdede sensordata, så ændringer i hvidbalance er tabsfri."
         },
         "1": {
-          "text": "Til kreativ effekt: prøv at \"fejl-matche\" hvidbalancen bevidst. Sætter du dagslys-WB i den gyldne time, bliver solnedgangen endnu varmere, mens tungsten-WB udendørs giver et dramatisk koldt blåt look."
+          "text": "Prøv bevidst at \"fejl-matche\" hvidbalancen for kreativ effekt. Sætter du dagslys-WB i den gyldne time, bliver solnedgangen endnu varmere, mens tungsten-WB udendørs giver et dramatisk koldt blåt look."
         },
         "2": {
-          "text": "I blandet lys (f.eks. et rum oplyst af både vinduet og glødepærer) kan du bruge et gråkort til en brugerdefineret hvidbalance eller sætte en gel på din flash, så den matcher det omgivende lys."
+          "text": "I blandet lys (f.eks. et rum oplyst af både vinduet og glødepærer) kan du bruge et gråkort til en brugerdefineret hvidbalance — eller sætte en gel på din flash, så den matcher det omgivende lys."
         }
       },
       "tooltips": {
         "colorTemperature": {
           "term": "Farvetemperatur",
-          "definition": "Et mål for lysets farve i Kelvin (K). Baseret på den teoretiske farve af et opvarmet sort legeme. Lavere værdier er varmere (orange/rødt), højere værdier er koldere (blå)."
+          "definition": "Et mål for lysets farve i Kelvin (K), baseret på den teoretiske farve af et opvarmet sort legeme. Lavere værdier er varmere (orange/rødt), højere værdier er koldere (blå)."
         },
         "preset": {
-          "term": "Hvidbalance-forudindstilling",
-          "definition": "En foruddefineret hvidbalance kalibreret til en almindelig lyskilde. Typiske forudindstillinger: Tungsten (~3200K), Lysstof (~4000K), Dagslys (~5500K), Overskyet (~6500K) og Skygge (~7500K)."
+          "term": "WB-forudindstilling",
+          "definition": "En foruddefineret hvidbalance, der er kalibreret til en typisk lyskilde. Almindelige forudindstillinger: Tungsten (~3200K), Lysstof (~4000K), Dagslys (~5500K), Overskyet (~6500K) og Skygge (~7500K)."
         },
         "rgbValues": {
           "term": "RGB-værdier",
-          "definition": "De røde, grønne og blå kanalværdier (0-255 hver), der repræsenterer farven af lyset ved den valgte temperatur. Bruges til at visualisere, hvordan lyskilden tonesætter motivet."
+          "definition": "De røde, grønne og blå kanalværdier (0-255 hver), der viser farven af lyset ved den valgte temperatur. Giver dig en visuel fornemmelse af, hvordan lyskilden farver motivet."
         },
         "hexCode": {
           "term": "Hex-kode",
-          "definition": "En hexadecimal farvekode på seks tegn (f.eks. #FF8C00). Nyttig til at referere den præcise farve i designsoftware eller webudvikling."
+          "definition": "En hexadecimal farvekode på seks tegn (f.eks. #FF8C00). Nyttig, hvis du skal bruge den præcise farve i designsoftware eller webudvikling."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Dine indendørs billeder under almindelige husglødepærer virker meget orange/gule. Hvilken hvidbalance-forudindstilling skal du bruge for at rette op på det?",
-          "hint": "Glødepærer i hjemmet udsender varmt, orange lys omkring 2800–3200K.",
-          "successMessage": "Rigtigt! Tungsten-forudindstillingen tilføjer blåt for at modvirke det orange kast fra glødepærer og bringer farverne tilbage mod neutralt.",
+          "scenario": "Dine indendørs billeder under almindelige glødepærer virker meget orange/gule. Hvilken WB-forudindstilling skal du vælge for at rette op på det?",
+          "hint": "Glødepærer i hjemmet udsender varmt orange lys omkring 2800–3200K.",
+          "successMessage": "Rigtigt! Tungsten-forudindstillingen tilføjer blåt for at modvirke det orange kast fra glødepærer og trækker farverne tilbage mod neutralt.",
           "failureMessage": "Glødepærer udsender varmt orange lys. Tungsten-hvidbalancen er lavet til at neutralisere det kast ved at tilføje blåt.",
           "options": {
             "0": { "label": "Dagslys" },
@@ -77,10 +77,10 @@
           }
         },
         "1": {
-          "scenario": "Du fotograferer portrætter i den gyldne time og vil beholde solnedgangens smukke varme glød. Hvilken hvidbalance-indstilling skal du bruge?",
-          "hint": "Sætter du den \"korrekte\" WB i den gyldne time, neutraliserer den de varme toner, du vil beholde.",
+          "scenario": "Du fotograferer portrætter i den gyldne time og vil beholde solnedgangens smukke varme glød. Hvilken WB-indstilling skal du vælge?",
+          "hint": "Sætter du den \"korrekte\" WB i den gyldne time, neutraliseres de varme toner, du vil beholde.",
           "successMessage": "Rigtigt! Dagslys-forudindstillingen (eller sågar Overskyet/Skygge) i den gyldne time bevarer og forstærker de varme toner i stedet for at neutralisere dem.",
-          "failureMessage": "For at beholde glødens varme skal du bruge en WB, der ikke kompenserer for varmt lys. Dagslys eller højere forudindstillinger beholder (og forstærker) varmen.",
+          "failureMessage": "Vil du beholde glødens varme, skal du bruge en WB, der ikke kompenserer for varmt lys. Dagslys eller højere forudindstillinger beholder (og forstærker) varmen.",
           "options": {
             "0": { "label": "Auto-hvidbalance" },
             "1": { "label": "Tungsten (for at neutralisere varmen)" },
@@ -89,9 +89,9 @@
           }
         },
         "2": {
-          "scenario": "Du justerer hvidbalance manuelt i Kelvin. Dit billede ser for blåt/koldt ud. Skal du hæve eller sænke Kelvin-værdien for at gøre det varmere?",
+          "scenario": "Du justerer hvidbalancen manuelt i Kelvin. Dit billede er for blåt/koldt. Skal du hæve eller sænke Kelvin-værdien for at gøre det varmere?",
           "hint": "Kelvin-indstillingen fortæller kameraet, hvilken farvetemperatur lyskilden har. En højere Kelvin får kameraet til at lægge mere varme på.",
-          "successMessage": "Ja! Hæver du Kelvin-værdien, fortæller du kameraet, at lyset er koldere, end det er, så kameraet kompenserer ved at tilføje varme. Sæt en højere K for at varme et koldt billede op.",
+          "successMessage": "Ja! Hæver du Kelvin-værdien, fortæller du kameraet, at lyset er koldere, end det i virkeligheden er, og kameraet kompenserer ved at tilføje varme. Sæt en højere K for at varme et koldt billede op.",
           "failureMessage": "Når du hæver Kelvin-værdien, lægger kameraet mere varme på for at kompensere. For at rette et koldt/blåt billede: hæv Kelvin-værdien.",
           "options": {
             "0": { "label": "Hæv Kelvin (f.eks. 5500K til 7500K)" },
@@ -100,22 +100,22 @@
           }
         },
         "3": {
-          "scenario": "Du fotograferer en restaurantinteriør med varme tungsten-pendelarmaturer over bordene og koldt blåt dagslys gennem store vinduer. Personer nær vinduerne virker blå, og personer under lamperne virker orange. Hvad er den bedste tilgang?",
-          "hint": "Ingen enkelt hvidbalance-indstilling kan korrigere to meget forskellige farvetemperaturer samtidig.",
-          "successMessage": "Præcis! At sætte en gel på flashen eller ekstra lys for at matche én dominerende kilde — eller at vælge en kompromis-WB og korrigere selektivt i efterbehandling — er de bedste tilgange til blandet lys.",
-          "failureMessage": "Blandet lys er en af de sværeste WB-udfordringer. Én hvidbalance kan ikke korrigere begge kilder samtidig. Du skal enten matche kilderne med gels eller rette op selektivt i efterbehandling.",
+          "scenario": "Du fotograferer en restaurantinteriør med varme tungsten-pendler over bordene og koldt blåt dagslys gennem store vinduer. Personer nær vinduerne virker blå, og personer under lamperne virker orange. Hvad er den bedste tilgang?",
+          "hint": "Ingen enkelt WB-indstilling kan rette op på to meget forskellige farvetemperaturer på én gang.",
+          "successMessage": "Præcis! Sæt en gel på flashen eller på ekstra lyskilder, så de matcher én dominerende kilde — eller vælg en kompromis-WB og korrigér selektivt i efterbehandling. Det er de bedste tilgange til blandet lys.",
+          "failureMessage": "Blandet lys er en af de sværeste WB-udfordringer. Én hvidbalance kan ikke rette op på begge kilder samtidig. Du skal enten matche kilderne med gels eller korrigere selektivt i efterbehandling.",
           "options": {
             "0": { "label": "Sæt WB til Tungsten — det løser det hele" },
             "1": { "label": "Sæt WB til Dagslys — vinduerne er vigtigst" },
-            "2": { "label": "Brug auto-WB og skyd RAW, og korrigér så hver zone i efterbehandling" },
+            "2": { "label": "Brug auto-WB, skyd RAW, og korrigér hver zone i efterbehandling" },
             "3": { "label": "Hæv ISO for at gøre farverne mere præcise" }
           }
         },
         "4": {
-          "scenario": "Du skyder et stemningsfuldt, filmisk natmotiv i en by og vil have en bevidst kold blå tone. Gadelygterne er natriumsdamp (~2200K). Hvilken Kelvin-indstilling giver dig den stærkeste blå forskydning?",
-          "hint": "Sætter du WB meget lavere end lyskildens faktiske temperatur — nej, omvendt: sætter du den meget højere end den faktiske, skifter billedet mod blåt.",
-          "successMessage": "Rigtigt! At sætte WB til 7500K (Skygge-forudindstillingen) fortæller kameraet, at lyskilden er meget kold/blå — så det kompenserer med kraftig varmekorrektion. Men da de faktiske natriumlamper kun er 2200K (meget varme), overshoot'er korrektionen forbi neutral og giver en stærk blå tone. Jo højere du sætter WB-Kelvin over den faktiske lyskildetemperatur, jo stærkere blå forskydning.",
-          "failureMessage": "At sætte en WB-Kelvin meget højere end lyskildens faktiske temperatur får kameraet til at overkorrigere mod blåt. Med 2200K natriumlamper giver en WB på 7500K+ det stærkeste kolde blå look.",
+          "scenario": "Du skyder et stemningsfuldt, filmisk natmotiv i en by og vil have en bevidst kold blå tone. Gadelygterne er natriumdamp (~2200K). Hvilken Kelvin-indstilling giver dig den stærkeste blå forskydning?",
+          "hint": "Sætter du WB meget højere end lyskildens faktiske temperatur, trækker billedet mod blåt.",
+          "successMessage": "Rigtigt! Sætter du WB til 7500K (Skygge-forudindstillingen), fortæller du kameraet, at lyskilden er meget kold/blå — så det kompenserer med kraftig varmekorrektion. Men da natriumlamperne i virkeligheden kun er 2200K (meget varme), skyder korrektionen forbi neutral og giver en stærk blå tone. Jo højere du sætter WB-Kelvin over lyskildens faktiske temperatur, jo stærkere bliver den blå forskydning.",
+          "failureMessage": "Sætter du en WB-Kelvin meget højere end lyskildens faktiske temperatur, overkorrigerer kameraet mod blåt. Med 2200K natriumlamper giver en WB på 7500K+ det stærkeste kolde blå look.",
           "options": {
             "0": { "label": "2200K (matcher natriumlamperne)" },
             "1": { "label": "3200K (Tungsten)" },

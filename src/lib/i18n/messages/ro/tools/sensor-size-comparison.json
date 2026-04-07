@@ -31,15 +31,15 @@
       "faq": {
         "what-is-crop-factor": {
           "question": "Ce este factorul de crop și de ce contează?",
-          "answer": "Factorul de crop descrie diferența de dimensiune dintre senzorul unei camere și un senzor full-frame (35mm). Afectează distanța focală efectivă, adâncimea câmpului și performanța în lumină slabă. Un factor de crop de 1.5x înseamnă că senzorul este de 1.5 ori mai mic decât full frame."
+          "answer": "Factorul de crop exprimă diferența de dimensiune dintre senzorul unui aparat foto și un senzor full-frame (35mm). Influențează distanța focală efectivă, adâncimea câmpului și performanța în lumină slabă. Un factor de crop de 1.5x înseamnă că senzorul este de 1,5 ori mai mic decât full frame."
         },
         "full-frame-vs-aps-c": {
           "question": "Care sunt avantajele senzorilor full frame față de APS-C?",
-          "answer": "Senzorii full-frame oferă performanță mai bună în lumină slabă, adâncime a câmpului mai mică și un unghi de vizualizare mai larg la orice distanță focală. Senzorii APS-C sunt mai accesibili, mai ușori și oferă acoperire suplimentară pentru fotografia de natură sălbatică și sport."
+          "answer": "Senzorii full-frame oferă performanță mai bună în lumină slabă, o adâncime a câmpului mai mică și un unghi de vizualizare mai larg la aceeași distanță focală. Senzorii APS-C sunt mai accesibili și mai ușori, iar factorul de crop îți oferă un plus de apropiere utilă la fotografia de natură sălbatică și de sport."
         },
         "sensor-size-and-depth-of-field": {
           "question": "Cum afectează dimensiunea senzorului adâncimea câmpului?",
-          "answer": "Senzorii mai mari produc o adâncime a câmpului mai mică la încadrare echivalentă. Ca să obții aceeași încadrare cu un senzor mai mic, fie folosești o distanță focală mai scurtă (DoF mai mare), fie te depărtezi (DoF mai mare), ambele reducând blur-ul de fundal."
+          "answer": "Senzorii mai mari produc o adâncime a câmpului mai mică la încadrare echivalentă. Ca să obții aceeași încadrare cu un senzor mai mic, fie folosești o distanță focală mai scurtă, fie te îndepărtezi — ambele variante măresc DoF-ul și reduc blurul de fundal."
         }
       }
     }

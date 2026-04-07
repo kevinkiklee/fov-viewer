@@ -2,7 +2,7 @@
   "education": {
     "hyperfocal-simulator": {
       "beginner": "La distanza iperfocale è il punto più vicino su cui puoi mettere a fuoco mantenendo tutto all'infinito accettabilmente nitido. Quando metti a fuoco alla distanza iperfocale, la tua profondità di campo si estende da metà di quella distanza fino all'infinito. I fotografi paesaggisti usano questa tecnica per massimizzare la nitidezza dal primo piano all'orizzonte.",
-      "deeper": "La distanza iperfocale è derivata dall'equazione delle lenti sottili e dal concetto del circolo di confusione (CdC). È uguale alla lunghezza focale al quadrato divisa per il prodotto del numero f e il diametro del CdC: H = f² / (N × c). Tutto da H/2 all'infinito rientra nella nitidezza accettabile. Il CdC dipende dalla dimensione del sensore — sensori più piccoli hanno un CdC accettabile più piccolo, che spinge la distanza iperfocale più lontano per la stessa lunghezza focale e apertura. Ecco perché le fotocamere con sensore crop sembrano avere una maggiore profondità di campo: lo standard CdC è più stretto rispetto all'area dell'immagine. In pratica, l'ammorbidimento da diffrazione ad aperture molto piccole (f/16 e oltre sulla maggior parte dei sensori) significa che c'è un compromesso tra massimizzare la profondità di campo e mantenere la nitidezza pixel per pixel.",
+      "deeper": "La distanza iperfocale è derivata dall'equazione delle lenti sottili e dal concetto del circolo di confusione (CdC). È uguale alla lunghezza focale al quadrato divisa per il prodotto del numero f e il diametro del CdC: H = f² / (N × c). Tutto da H/2 all'infinito rientra nella nitidezza accettabile. Il CdC dipende dalla dimensione del sensore — sensori più piccoli hanno un CdC accettabile più piccolo, che sposta la distanza iperfocale più lontano per la stessa lunghezza focale e apertura. Ecco perché le fotocamere con sensore crop sembrano avere una maggiore profondità di campo: lo standard CdC è più piccolo rispetto all'area dell'immagine. In pratica, l'ammorbidimento da diffrazione ad aperture molto piccole (f/16 e oltre sulla maggior parte dei sensori) significa che c'è un compromesso tra massimizzare la profondità di campo e mantenere la nitidezza pixel per pixel.",
       "keyFactors": {
         "0": {
           "label": "Lunghezza focale",
@@ -35,7 +35,7 @@
       "tooltips": {
         "Sensor": {
           "term": "Sensore",
-          "definition": "Il formato del sensore della fotocamera. Sensori più piccoli hanno uno standard di circolo di confusione più stretto, che sposta tutte le distanze iperfocali più lontano."
+          "definition": "Il formato del sensore della fotocamera. Sensori più piccoli hanno uno standard di circolo di confusione più piccolo, che sposta tutte le distanze iperfocali più lontano."
         }
       },
       "challenges": {
@@ -75,7 +75,7 @@
           "scenario": "Un amico passa da una fotocamera full-frame a una Micro Quattro Terzi ma continua a usare le stesse lunghezze focali. Si lamenta che le distanze iperfocali sembrano diverse. Perché?",
           "hint": "Il circolo di confusione è calcolato in base alla dimensione del sensore.",
           "successMessage": "Esatto! Il sensore M43 più piccolo usa un CdC più piccolo (circa 0,015mm vs 0,03mm), che aumenta le distanze iperfocali per la stessa lunghezza focale e apertura.",
-          "failureMessage": "Il fattore chiave è il circolo di confusione. Sensori più piccoli richiedono uno standard CdC più stretto, che spinge le distanze iperfocali più lontano.",
+          "failureMessage": "Il fattore chiave è il circolo di confusione. Sensori più piccoli richiedono uno standard CdC più piccolo, che sposta le distanze iperfocali più lontano.",
           "options": {
             "0": { "label": "La lunghezza focale dell'obiettivo cambia sui sensori crop" },
             "1": { "label": "Sensori più piccoli usano un circolo di confusione più piccolo" },

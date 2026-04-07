@@ -14,15 +14,15 @@
       "faq": {
         "what-is-white-balance": {
           "question": "Hvad er hvidbalance i fotografi?",
-          "answer": "Hvidbalance justerer farverne i dit billede, så objekter, der er hvide i virkeligheden, også ser hvide ud på billedet. Forskellige lyskilder udsender forskellige farvetemperaturer, og hvidbalance kompenserer for de forskelle."
+          "answer": "Hvidbalance justerer farverne, så noget der er hvidt i virkeligheden, også ser hvidt ud på billedet. Forskellige lyskilder har forskellige farvetemperaturer, og hvidbalancen kompenserer for det."
         },
         "kelvin-vs-presets": {
-          "question": "Skal jeg bruge Kelvin-værdier eller hvidbalance-forudindstillinger?",
-          "answer": "Forudindstillinger (Dagslys, Overskyet, Tungsten) er praktiske udgangspunkter, men en bestemt Kelvin-værdi giver mere præcis kontrol. Skyd i RAW, så du kan justere hvidbalancen tabsfrit i efterbehandlingen."
+          "question": "Skal jeg bruge Kelvin-værdier eller WB-forudindstillinger?",
+          "answer": "Forudindstillinger (Dagslys, Overskyet, Tungsten) er praktiske udgangspunkter, men en bestemt Kelvin-værdi giver dig mere præcis kontrol. Skyd i RAW, så kan du justere hvidbalancen tabsfrit i efterbehandlingen."
         },
         "when-to-use-manual-white-balance": {
           "question": "Hvornår bør jeg bruge manuel hvidbalance?",
-          "answer": "Brug manuel hvidbalance i blandet lys (naturligt og kunstigt), til studieopstillinger der kræver præcis farve, til produktfotografi og altid når auto-hvidbalance giver inkonsekvente resultater på tværs af en serie."
+          "answer": "Brug manuel hvidbalance i blandet lys (naturligt og kunstigt), i studieopsætninger hvor farven skal sidde, til produktfotografi, og altid når auto-WB giver ujævne resultater hen over en serie."
         }
       }
     }

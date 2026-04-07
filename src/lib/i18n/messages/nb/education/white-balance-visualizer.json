@@ -1,25 +1,25 @@
 {
   "education": {
     "white-balance-visualizer": {
-      "beginner": "Hvitbalanse justerer fargene i bildet slik at hvite objekter faktisk ser hvite ut under alle lysforhold. Ulike lyskilder har ulike fargetemperaturer — et stearinlys er varmt og oransje, mens skygge er kjølig og blå. Kameraets hvitbalanse-innstilling kompenserer for disse forskjellene slik at fargene ser naturlige ut.",
+      "beginner": "Hvitbalanse justerer fargene i bildet slik at hvite objekter faktisk ser hvite ut under alle lysforhold. Ulike lyskilder har ulike fargetemperaturer — et stearinlys er varmt og oransje, mens skygge er kjølig og blå. Kameraets hvitbalanseinnstilling kompenserer for disse forskjellene slik at fargene ser naturlige ut.",
       "deeper": {
         "0": {
           "heading": "Fargetemperatur",
-          "text": "Fargetemperatur måles i Kelvin (K) og tilsvarer fargen på lys sendt ut av et ideelt «svart legeme» varmet opp til den temperaturen. Lave verdier (2000–3500 K) gir varmt, rødoransje lys (glødelamper, stearinlys), mens høye verdier (6500–10000 K) gir kjølig, blåaktig lys (skygge, overskyet himmel)."
+          "text": "Fargetemperatur måles i Kelvin (K) og tilsvarer fargen på lyset som sendes ut av et ideelt «svart legeme» varmet opp til denne temperaturen. Lave verdier (2000–3500 K) gir varmt, rødoransje lys (glødelamper, stearinlys), mens høye verdier (6500–10000 K) gir kjølig, blålig lys (skygge, overskyet himmel)."
         },
         "1": {
           "heading": "Hvordan hvitbalanse fungerer",
-          "text": "Kameraets hvitbalanse legger på det motsatte fargestikket for å nøytralisere lyset. Når du setter hvitbalansen til «Glødelampe» (~3200 K), legger kameraet til blått for å motvirke det oransje stikket fra glødelampene. I digital fotografi brukes hvitbalanse som en multiplikator på rød- og blåkanalene relativt til grønn."
+          "text": "Kameraets hvitbalanse legger på motsatt fargestikk for å nøytralisere lyset. Setter du hvitbalansen til «Glødelampe» (~3200 K), legger kameraet til blått for å motvirke det oransje stikket fra glødelampene. I digital fotografi fungerer hvitbalanse som en multiplikator på rød- og blåkanalene i forhold til grønn."
         },
         "2": {
           "heading": "RAW-fordelen",
-          "text": "Fotografering i RAW bevarer all fargedata og lar deg endre hvitbalansen fritt i etterarbeidet uten kvalitetstap — det er bare en metadata-tag som brukes under konvertering."
+          "text": "Når du fotograferer i RAW, beholdes all fargeinformasjon, og du kan endre hvitbalansen fritt i etterarbeidet uten kvalitetstap — det er bare en metadata-tag som brukes under konvertering."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Fargetemperatur (Kelvin)",
-          "description": "Tallverdien for lysets farge. Lav Kelvin = varmt/oransje lys. Høy Kelvin = kjølig/blått lys. Dagslys er cirka 5500 K."
+          "description": "Tallverdien for fargen på lyset. Lav Kelvin = varmt/oransje lys. Høy Kelvin = kjølig/blått lys. Dagslys ligger rundt 5500 K."
         },
         "1": {
           "label": "Lyskilde",
@@ -27,7 +27,7 @@
         },
         "2": {
           "label": "RAW vs. JPEG",
-          "description": "Med RAW kan du endre hvitbalansen i etterarbeidet uten kvalitetstap. JPEG bakes hvitbalansen fast, så det blir viktigere å treffe den riktig i kameraet."
+          "description": "Med RAW kan du endre hvitbalansen i etterarbeidet uten kvalitetstap. I JPEG bakes hvitbalansen fast, så det er viktigere å treffe den riktig i kameraet."
         },
         "3": {
           "label": "Blandingslys",
@@ -36,13 +36,13 @@
       },
       "tips": {
         "0": {
-          "text": "Fotografer alltid RAW hvis du vil ha full fleksibilitet til å justere hvitbalansen i etterkant. RAW-filer lagrer ubehandlet sensordata, så endringer i hvitbalanse er tapsfrie."
+          "text": "Fotografer alltid i RAW hvis du vil ha full fleksibilitet til å justere hvitbalansen i etterkant. RAW-filer lagrer ubehandlede sensordata, så endringer i hvitbalanse er tapsfrie."
         },
         "1": {
-          "text": "Til kreativ effekt kan du bevisst «feile» hvitbalansen. Å sette dagslys-WB i gylden time gjør solnedganger enda varmere, mens glødelampe-WB utendørs gir en dramatisk kald blå look."
+          "text": "Du kan også bevisst «bomme» på hvitbalansen for kreativ effekt. Å sette dagslys-WB i gylden time gjør solnedganger enda varmere, mens glødelampe-WB utendørs gir et dramatisk kaldt, blått uttrykk."
         },
         "2": {
-          "text": "I blandingslys (for eksempel et rom med både dagslys og glødelamper) bør du bruke et gråkort til å sette egendefinert hvitbalanse, eller gele blitsen din til å matche omgivelseslyset."
+          "text": "I blandingslys (for eksempel et rom med både dagslys og glødelamper) bør du bruke et gråkort til å sette egendefinert hvitbalanse, eller sette en gel på blitsen slik at den matcher omgivelseslyset."
         }
       },
       "tooltips": {
@@ -65,10 +65,10 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Innendørsbildene dine under vanlige glødelamper ser veldig oransje/gule ut. Hvilken hvitbalanse-forhåndsinnstilling bør du bruke for å fikse det?",
-          "hint": "Glødelamper sender ut varmt, oransje-tonet lys rundt 2800–3200 K.",
-          "successMessage": "Riktig! Glødelampe-innstillingen legger til blått for å motvirke det oransje stikket fra glødelamper, og gir nøytrale farger igjen.",
-          "failureMessage": "Glødelamper lager varmt oransje lys. Glødelampe-innstillingen er laget nettopp for å nøytralisere dette stikket ved å legge til blått.",
+          "scenario": "Innendørsbildene dine under vanlige glødelamper ser veldig oransje-gule ut. Hvilken hvitbalanseinnstilling bør du bruke for å rette det opp?",
+          "hint": "Glødelamper sender ut varmt, oransjelig lys rundt 2800–3200 K.",
+          "successMessage": "Riktig! Glødelampe-innstillingen legger til blått for å motvirke det oransje stikket fra lampene, og du får nøytrale farger igjen.",
+          "failureMessage": "Glødelamper gir varmt oransje lys. Glødelampe-innstillingen er laget nettopp for å nøytralisere dette stikket ved å legge til blått.",
           "options": {
             "0": { "label": "Dagslys" },
             "1": { "label": "Glødelampe" },
@@ -78,9 +78,9 @@
         },
         "1": {
           "scenario": "Du tar portretter i gylden time og vil beholde den vakre varme gløden fra solnedgangen. Hvilken hvitbalanse bør du bruke?",
-          "hint": "Hvis du setter den «riktige» hvitbalansen for gylden time, vil du nøytralisere nettopp den varmen du vil beholde.",
+          "hint": "Hvis du setter den «riktige» hvitbalansen for gylden time, nøytraliserer du jo nettopp den varmen du vil beholde.",
           "successMessage": "Riktig! Å bruke Dagslys-innstillingen (eller til og med Overskyet/Skygge) i gylden time bevarer og forsterker de varme tonene i stedet for å nøytralisere dem.",
-          "failureMessage": "For å beholde den varme gløden i gylden time må du bruke en WB som ikke kompenserer for det varme lyset. Dagslys eller høyere innstillinger beholder (og forsterker) varmen.",
+          "failureMessage": "For å beholde den varme gløden i gylden time må du bruke en WB som ikke kompenserer for det varme lyset. Dagslys eller høyere innstillinger bevarer (og forsterker) varmen.",
           "options": {
             "0": { "label": "Automatisk hvitbalanse" },
             "1": { "label": "Glødelampe (for å nøytralisere varmen)" },
@@ -89,33 +89,33 @@
           }
         },
         "2": {
-          "scenario": "Du justerer hvitbalanse manuelt i Kelvin. Bildet ser for blått/kaldt ut. Bør du øke eller senke Kelvin-verdien for å varme det opp?",
-          "hint": "Kelvin-innstillingen forteller kameraet hva slags fargetemperatur lyskilden har. Høyere Kelvin-verdi får kameraet til å legge til mer varme.",
-          "successMessage": "Riktig! Å øke Kelvin-verdien forteller kameraet at lyset er kjøligere enn det faktisk er, så kameraet kompenserer med å legge til varme. Sett høyere K for å varme opp et kaldt bilde.",
-          "failureMessage": "Når du øker Kelvin-verdien, legger kameraet til mer varme for å kompensere. For å fikse et kaldt/blått bilde øker du altså Kelvin-tallet.",
+          "scenario": "Du justerer hvitbalansen manuelt i Kelvin. Bildet ser for blått og kjølig ut. Bør du øke eller senke Kelvin-verdien for å varme det opp?",
+          "hint": "Kelvin-innstillingen forteller kameraet hvilken fargetemperatur lyskilden har. Høyere Kelvin-verdi får kameraet til å legge til mer varme.",
+          "successMessage": "Riktig! Når du øker Kelvin-verdien, forteller du kameraet at lyset er kjøligere enn det faktisk er, så kameraet kompenserer ved å legge til varme. Sett høyere K for å varme opp et kjølig bilde.",
+          "failureMessage": "Når du øker Kelvin-verdien, legger kameraet til mer varme for å kompensere. For å rette opp et kjølig, blått bilde øker du altså Kelvin-tallet.",
           "options": {
-            "0": { "label": "Øk Kelvin (f.eks. 5500 K til 7500 K)" },
-            "1": { "label": "Senk Kelvin (f.eks. 5500 K til 3200 K)" },
-            "2": { "label": "Kelvin-retningen påvirker ikke varme" }
+            "0": { "label": "Øk Kelvin (f.eks. fra 5500 K til 7500 K)" },
+            "1": { "label": "Senk Kelvin (f.eks. fra 5500 K til 3200 K)" },
+            "2": { "label": "Kelvin-retningen påvirker ikke varmen" }
           }
         },
         "3": {
-          "scenario": "Du fotograferer en restaurant med varme glødelamper i taket og kjølig dagslys gjennom store vinduer. Folk ved vinduet ser blå ut, og folk under lampene ser oransje ut. Hva er beste fremgangsmåte?",
-          "hint": "Ingen enkel hvitbalanse-innstilling kan rette opp to svært ulike fargetemperaturer samtidig.",
-          "successMessage": "Akkurat! Å gele blitsen eller ekstra lys for å matche én dominerende kilde, eller å velge et kompromiss-WB og korrigere selektivt i etterkant, er beste fremgangsmåte for blandingslys.",
-          "failureMessage": "Blandingslys er en av de vanskeligste WB-utfordringene. Én enkelt WB kan ikke rette opp begge kildene samtidig. Du må enten matche kildene med geler eller fikse det punktvis i etterkant.",
+          "scenario": "Du fotograferer på en restaurant med varme glødelamper i taket og kjølig dagslys gjennom store vinduer. Folk ved vinduet ser blå ut, og folk under lampene ser oransje ut. Hva er beste fremgangsmåte?",
+          "hint": "Ingen enkel hvitbalanseinnstilling klarer å rette opp to svært ulike fargetemperaturer samtidig.",
+          "successMessage": "Nettopp! Den beste løsningen i blandingslys er å sette en gel på blitsen eller tilleggslyset for å matche én dominerende kilde, eller å velge en kompromiss-WB og korrigere selektivt i etterkant.",
+          "failureMessage": "Blandingslys er en av de vanskeligste WB-utfordringene. Én enkelt WB kan ikke rette opp begge kildene samtidig. Du må enten matche kildene med geler eller korrigere punktvis i etterkant.",
           "options": {
-            "0": { "label": "Sett WB til Glødelampe — det fikser alt" },
+            "0": { "label": "Sett WB til Glødelampe — det løser alt" },
             "1": { "label": "Sett WB til Dagslys — vinduene er viktigst" },
-            "2": { "label": "Bruk Auto-WB og fotografer RAW, korriger deretter per sone i etterkant" },
-            "3": { "label": "Øk ISO for å gjøre fargene mer nøyaktige" }
+            "2": { "label": "Bruk auto-WB og fotografer i RAW, og korriger sone for sone i etterkant" },
+            "3": { "label": "Øk ISO for å få mer nøyaktige farger" }
           }
         },
         "4": {
-          "scenario": "Du tar en stemningsfull, kinomatisk nattscene i byen og vil ha en bevisst kald blå tone. Gatelysene er natriumdamplamper (~2200 K). Hvilken Kelvin-hvitbalanse gir kraftigst blåforskyvning?",
-          "hint": "Å sette WB langt høyere enn den faktiske lyskildens temperatur skifter bildet mot blått.",
-          "successMessage": "Riktig! Å sette WB til 7500 K (Skygge-innstilling) forteller kameraet at lyskilden er veldig kjølig/blå — så det kompenserer ved å legge til kraftig varmekorreksjon. Men siden natriumlampene faktisk er bare 2200 K (svært varme), overkorrigerer dette forbi nøytralt og gir et sterkt blått stikk. Jo høyere du setter WB-Kelvin over den reelle lystemperaturen, desto kraftigere blåforskyvning.",
-          "failureMessage": "Å sette en WB-Kelvin-verdi mye høyere enn den faktiske lyskildens temperatur får kameraet til å overkorrigere mot blått. Med 2200 K natriumlys gir WB på 7500 K eller mer den kraftigste kalde blå looken.",
+          "scenario": "Du tar en stemningsfull, kinomatisk nattscene i byen og vil ha en bevisst kjølig blåtone. Gatelysene er natriumdamplamper (~2200 K). Hvilken Kelvin-hvitbalanse gir kraftigst blåforskyvning?",
+          "hint": "Å sette WB langt høyere enn den faktiske lyskildens temperatur trekker bildet mot blått.",
+          "successMessage": "Riktig! Setter du WB til 7500 K (Skygge), forteller du kameraet at lyskilden er veldig kjølig og blå — så det kompenserer med kraftig varmekorreksjon. Men siden natriumlampene faktisk bare er 2200 K (svært varme), overkorrigerer du forbi nøytralt og får et sterkt blått stikk. Jo høyere du setter WB-Kelvin over den reelle lystemperaturen, desto kraftigere blir blåforskyvningen.",
+          "failureMessage": "Å sette en WB-Kelvin-verdi mye høyere enn den faktiske lyskildens temperatur får kameraet til å overkorrigere mot blått. Med 2200 K natriumlys gir WB på 7500 K eller mer den sterkeste kjølig-blå looken.",
           "options": {
             "0": { "label": "2200 K (matcher natriumlampene)" },
             "1": { "label": "3200 K (Glødelampe-innstilling)" },

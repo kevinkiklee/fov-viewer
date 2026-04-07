@@ -1,20 +1,20 @@
 {
   "education": {
     "histogram": {
-      "beginner": "O histogramă este un grafic care arată cât de luminoși sau întunecați sunt pixelii din fotografia ta. Partea stângă reprezintă umbrele (zone întunecate), mijlocul reprezintă tonurile medii, iar partea dreaptă luminile (zone strălucitoare). Dacă graficul este înghesuit pe o parte, fotografia poate fi subexpusă sau supraexpusă.",
-      "deeper": "O histogramă plasează numărul de pixeli (axa verticală) în funcție de nivelul de luminozitate (axa orizontală, 0-255 pentru imagini de 8 biți). În modul luminanță, luminozitatea fiecărui pixel este calculată ca o medie ponderată a canalelor roșu, verde și albastru (de obicei 0.299R + 0.587G + 0.114B, potrivită percepției umane). Modul RGB arată trei distribuții separate, dezvăluind ce canale de culoare pot tăia independent — un canal roșu împins până la 255 în timp ce albastrul este în regulă indică tăiere a luminilor în tonurile calde, cum ar fi un cer la apus. \"Tăierea\" apare când valorile pixelilor ating limita de 0 sau 255, ceea ce înseamnă că detaliul de umbră sau de lumină a fost pierdut irecuperabil. Tăierea neagră (pixeli la 0) pierde detaliul umbrelor; tăierea albă (pixeli la 255) pierde detaliul luminilor. Fotografierea în RAW oferă aproximativ 2-3 stopuri suplimentare de rezervă în lumini, dincolo de ce arată histograma JPEG, motiv pentru care mulți fotografi practică \"expose to the right\" (ETTR) — împing expunerea cât mai spre dreapta, fără să taie datele RAW.",
+      "beginner": "Histograma e un grafic care arată cât de luminoși sau întunecați sunt pixelii din fotografia ta. Partea stângă reprezintă umbrele (zonele întunecate), mijlocul reprezintă tonurile medii, iar partea dreaptă luminile (zonele strălucitoare). Dacă graficul e înghesuit pe o parte, fotografia poate fi subexpusă sau supraexpusă.",
+      "deeper": "Histograma plasează numărul de pixeli (axa verticală) în funcție de nivelul de luminozitate (axa orizontală, 0-255 pentru imaginile de 8 biți). În modul luminanță, luminozitatea fiecărui pixel se calculează ca medie ponderată a canalelor roșu, verde și albastru (de obicei 0.299R + 0.587G + 0.114B, ponderare potrivită percepției umane). Modul RGB arată trei distribuții separate, dezvăluind ce canale de culoare pot tăia independent — un canal roșu împins până la 255, în timp ce albastrul e încă în regulă, indică tăierea luminilor în tonurile calde, cum ar fi un cer la apus. „Tăierea” apare când valorile pixelilor ating limita de 0 sau 255, ceea ce înseamnă că detaliul din umbre sau din lumini a fost pierdut irecuperabil. Tăierea în negru (pixeli la 0) face să dispară detaliul umbrelor, iar tăierea în alb (pixeli la 255) face să dispară detaliul luminilor. Fotografierea în RAW îți oferă aproximativ 2-3 stopuri suplimentare de rezervă în lumini, peste ceea ce arată histograma JPEG — motiv pentru care mulți fotografi practică „expose to the right” (ETTR), împingând expunerea cât mai spre dreapta, fără să taie datele RAW.",
       "keyFactors": {
         "0": {
           "label": "Distribuție tonală",
-          "description": "Forma generală îți spune dacă imaginea este întunecată (grea la stânga), luminoasă (grea la dreapta) sau echilibrată (întinsă pe tot intervalul)."
+          "description": "Forma generală îți spune dacă imaginea este întunecată (adunată la stânga), luminoasă (adunată la dreapta) sau echilibrată (întinsă pe tot intervalul)."
         },
         "1": {
           "label": "Tăiere",
-          "description": "Vârfurile la marginile extreme, stânga sau dreapta, indică detaliu pierdut în umbre sau lumini."
+          "description": "Vârfurile lipite de marginile extreme, stânga sau dreapta, indică detaliu pierdut în umbre sau în lumini."
         },
         "2": {
           "label": "Separarea canalelor",
-          "description": "Modul RGB dezvăluie comportamentul individual al canalelor de culoare — util pentru detectarea tăierii specifice unor culori, în scene saturate."
+          "description": "Modul RGB dezvăluie comportamentul fiecărui canal de culoare în parte — util pentru a detecta tăierea specifică unor culori, în scene saturate."
         },
         "3": {
           "label": "Gamă dinamică",
@@ -23,13 +23,13 @@
       },
       "tips": {
         "0": {
-          "text": "Nu există o formă \"perfectă\" de histogramă. O fotografie cu o pisică neagră pe o canapea întunecată ar trebui să fie grea la stânga. Judecă histograma după intenția ta creativă, nu după o curbă ideală."
+          "text": "Nu există o formă „perfectă” de histogramă. O fotografie cu o pisică neagră pe o canapea întunecată ar trebui să aibă totul la stânga. Judecă histograma după intenția ta creativă, nu după o curbă ideală."
         },
         "1": {
-          "text": "Verifică modul suprapunere RGB pentru fotografii de apus sau cu neoane. Canalul roșu taie adesea cu mult înainte de albastru, ceea ce duce la pierderea detaliului în luminile calde chiar dacă histograma de luminanță pare în regulă."
+          "text": "Verifică modul suprapunere RGB pentru fotografiile de apus sau cu neoane. Canalul roșu taie adesea cu mult înainte de albastru, iar asta duce la pierderea detaliului în luminile calde, chiar dacă histograma de luminanță pare în regulă."
         },
         "2": {
-          "text": "Dacă vezi avertismente de tăiere la ambele capete simultan, scena depășește probabil gama dinamică a camerei. Ia în calcul bracketing pentru HDR sau folosește filtre ND graduate."
+          "text": "Dacă vezi avertismente de tăiere la ambele capete în același timp, scena depășește, cel mai probabil, gama dinamică a aparatului. Gândește-te la bracketing pentru HDR sau la filtre ND graduate."
         }
       },
       "tooltips": {
@@ -39,31 +39,31 @@
         },
         "Shadows": {
           "term": "Umbre",
-          "definition": "Regiunea din stânga histogramei (aproximativ 0-85), reprezentând tonurile cele mai întunecate din imagine."
+          "definition": "Zona din stânga histogramei (aproximativ 0-85), care reprezintă tonurile cele mai întunecate din imagine."
         },
         "Midtones": {
           "term": "Tonuri medii",
-          "definition": "Regiunea centrală (aproximativ 86-170), reprezentând luminozitatea medie — tonurile de piele și majoritatea texturilor naturale se încadrează aici."
+          "definition": "Zona centrală (aproximativ 86-170), care reprezintă luminozitatea medie — tonurile de piele și majoritatea texturilor naturale se încadrează aici."
         },
         "Highlights": {
           "term": "Lumini",
-          "definition": "Regiunea din dreapta (aproximativ 171-255), reprezentând tonurile cele mai strălucitoare: cer, reflexii și surse de lumină."
+          "definition": "Zona din dreapta (aproximativ 171-255), care reprezintă tonurile cele mai strălucitoare: cerul, reflexiile și sursele de lumină."
         },
         "Black Clipping": {
-          "term": "Tăiere neagră",
-          "definition": "Procentul de pixeli la luminozitate 0 (negru pur). Valorile mari înseamnă că detaliul umbrelor a fost pierdut și nu poate fi recuperat."
+          "term": "Tăiere în negru",
+          "definition": "Procentul de pixeli cu luminozitate 0 (negru pur). Valorile mari înseamnă că detaliul umbrelor a fost pierdut și nu poate fi recuperat."
         },
         "White Clipping": {
-          "term": "Tăiere albă",
-          "definition": "Procentul de pixeli la luminozitate 255 (alb pur). Valorile mari înseamnă că detaliul luminilor a fost ars."
+          "term": "Tăiere în alb",
+          "definition": "Procentul de pixeli cu luminozitate 255 (alb pur). Valorile mari înseamnă că detaliul luminilor a fost „ars”."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Încarci o fotografie și histograma este împinsă puternic spre stânga, cu aproape nimic în partea dreaptă. Ce îți spune asta despre imagine?",
+          "scenario": "Încarci o fotografie, iar histograma este împinsă puternic spre stânga, cu aproape nimic în partea dreaptă. Ce îți spune asta despre imagine?",
           "hint": "Stânga = întunecat, dreapta = luminos.",
-          "successMessage": "Corect! O histogramă grea la stânga înseamnă că imaginea este dominată de tonuri întunecate — poate fi subexpusă sau poate fi o imagine întunecată/low-key intenționată.",
-          "failureMessage": "O histogramă înghesuită la stânga indică o imagine predominant întunecată. Asta înseamnă adesea subexpunere.",
+          "successMessage": "Corect! O histogramă adunată la stânga înseamnă că imaginea e dominată de tonuri întunecate — poate fi subexpusă sau o imagine întunecată/low-key făcută intenționat.",
+          "failureMessage": "O histogramă înghesuită la stânga arată o imagine predominant întunecată. Adesea înseamnă subexpunere.",
           "options": {
             "0": { "label": "Imaginea este subexpusă sau foarte întunecată" },
             "1": { "label": "Imaginea este supraexpusă sau foarte luminoasă" },
@@ -82,10 +82,10 @@
           }
         },
         "2": {
-          "scenario": "Ai fotografiat un apus viu și histograma de luminanță pare în regulă, dar când treci la suprapunere RGB vezi canalul roșu cu un vârf în extrema dreaptă. Ce se întâmplă?",
+          "scenario": "Ai fotografiat un apus viu, iar histograma de luminanță pare în regulă, dar când treci pe suprapunere RGB vezi canalul roșu cu un vârf în extrema dreaptă. Ce se întâmplă?",
           "hint": "Canalele de culoare individuale pot tăia chiar dacă luminanța generală nu o face.",
-          "successMessage": "Exact! Canalul roșu taie — luminile apusului au pierdut detaliul în tonurile roșii, chiar dacă luminozitatea generală arată acceptabil. Pierzi nuanțele culorilor calde.",
-          "failureMessage": "Canalul roșu taie independent. Luminile calde saturate (apusuri, foc) împing adesea roșul la 255 în timp ce verdele și albastrul sunt bine, pierzând detaliul de culoare în acele tonuri.",
+          "successMessage": "Exact! Canalul roșu taie — luminile apusului au pierdut detaliul în tonurile roșii, chiar dacă luminozitatea generală pare în regulă. Pierzi nuanțele culorilor calde.",
+          "failureMessage": "Canalul roșu taie independent. Luminile calde saturate (apusuri, foc) împing adesea roșul la 255, în timp ce verdele și albastrul sunt încă în regulă, iar detaliul de culoare din acele tonuri se pierde.",
           "options": {
             "0": { "label": "Canalul roșu taie — detaliul luminilor calde este pierdut" },
             "1": { "label": "Imaginea este supraexpusă în general" },
@@ -93,25 +93,25 @@
           }
         },
         "3": {
-          "scenario": "Unealta raportează 2.3% tăiere neagră și 0.1% tăiere albă. Ar trebui să ajustezi expunerea?",
-          "hint": "Cantități mici de tăiere sunt normale — umbrele negre pure și luminile speculare sunt de așteptat.",
-          "successMessage": "Judecată bună! 2.3% tăiere neagră este modestă și adesea înseamnă doar umbre adânci sau margini întunecate. 0.1% tăiere albă sunt probabil lumini speculare (reflexii ale soarelui). Această expunere este bună pentru majoritatea scopurilor.",
-          "failureMessage": "Aceste procente de tăiere sunt destul de mici. Puțină tăiere neagră în umbre adânci și tăiere albă minimă de la lumini speculare este normală și de așteptat. Nu e nevoie de ajustare.",
+          "scenario": "Unealta raportează 2.3% tăiere în negru și 0.1% tăiere în alb. Ar trebui să ajustezi expunerea?",
+          "hint": "Cantitățile mici de tăiere sunt normale — umbrele negru pur și luminile speculare sunt de așteptat.",
+          "successMessage": "Judecată bună! 2,3% tăiere în negru e o valoare modestă și, de cele mai multe ori, înseamnă doar umbre adânci sau margini întunecate. 0,1% tăiere în alb sunt, probabil, lumini speculare (reflexii ale soarelui). Această expunere e bună pentru majoritatea cazurilor.",
+          "failureMessage": "Aceste procente de tăiere sunt destul de mici. Puțină tăiere în negru în umbrele adânci și o tăiere minimă în alb de la luminile speculare sunt normale și de așteptat. Nu ai nevoie de ajustări.",
           "options": {
-            "0": { "label": "Crește expunerea ca să reduci tăierea neagră" },
-            "1": { "label": "Asta e bine — tăiere mică în umbre și lumini speculare este normală" },
-            "2": { "label": "Scade expunerea ca să elimini tăierea albă" }
+            "0": { "label": "Crește expunerea ca să reduci tăierea în negru" },
+            "1": { "label": "Așa e bine — puțină tăiere în umbre și în luminile speculare e normală" },
+            "2": { "label": "Scade expunerea ca să elimini tăierea în alb" }
           }
         },
         "4": {
-          "scenario": "Fotografiezi o scenă cu contrast ridicat: o mireasă într-o rochie albă stând într-o catedrală întunecată. Histograma arată vârfuri puternice la ambele extreme, cu un gol la tonurile medii. Cum ar trebui să gestionezi asta?",
+          "scenario": "Fotografiezi o scenă cu contrast ridicat: o mireasă într-o rochie albă, într-o catedrală întunecată. Histograma arată vârfuri puternice la ambele extreme, cu un gol la tonurile medii. Cum ar trebui să gestionezi asta?",
           "hint": "Când gama dinamică a scenei depășește gama senzorului, ai nevoie de o tehnică cu mai multe expuneri.",
-          "successMessage": "Perfect! Această histogramă bimodală indică faptul că scena depășește gama dinamică a senzorului. Bracketing-ul de expunere (HDR) captează atât interiorul întunecat, cât și detaliul rochiei luminoase. Alternativ, folosește blițul de umplere pentru a ridica umbrele.",
-          "failureMessage": "O histogramă bimodală (vârfuri la ambele extreme, mijloc gol) înseamnă că scena are mai multă gamă dinamică decât poate capta senzorul într-un singur cadru. Fă bracketing pentru HDR sau folosește bliț de umplere pentru a reduce raportul de contrast.",
+          "successMessage": "Perfect! Această histogramă bimodală arată că scena depășește gama dinamică a senzorului. Bracketing-ul de expunere (HDR) captează atât interiorul întunecat, cât și detaliul rochiei luminoase. Alternativ, folosește blițul de umplere ca să ridici umbrele.",
+          "failureMessage": "O histogramă bimodală (vârfuri la ambele extreme, mijloc gol) înseamnă că scena are mai multă gamă dinamică decât poate capta senzorul într-un singur cadru. Fă bracketing pentru HDR sau folosește bliț de umplere ca să reduci raportul de contrast.",
           "options": {
-            "0": { "label": "Bracketing pentru HDR sau folosește bliț de umplere" },
-            "1": { "label": "Expune pentru tonuri medii și speră la ce-o fi" },
-            "2": { "label": "Treci la alb-negru ca să ascunzi problema" }
+            "0": { "label": "Bracketing pentru HDR sau bliț de umplere" },
+            "1": { "label": "Expune pentru tonurile medii și speră să iasă" },
+            "2": { "label": "Treci pe alb-negru ca să ascunzi problema" }
           }
         }
       }

@@ -92,10 +92,10 @@
           }
         },
         "3": {
-          "scenario": "Você está fotografando um amigo fazendo cooper em um parque usando uma lente 35mm em uma câmera full frame com IBIS. Seu IBIS dá 5 stops de estabilização, então a regra da reciprocidade sozinha permitiria fotografar em cerca de 1 segundo. Você deveria usar 1 segundo?",
+          "scenario": "Você está fotografando um amigo correndo em um parque usando uma lente 35mm em uma câmera full frame com IBIS. Seu IBIS dá 5 stops de estabilização, então a regra da reciprocidade sozinha permitiria fotografar em cerca de 1 segundo. Você deveria usar 1 segundo?",
           "hint": "Estabilização compensa trepidação da câmera, não movimento do assunto.",
-          "successMessage": "Correto! Estabilização só contrabalança trepidação da câmera. Uma pessoa fazendo cooper precisa de pelo menos 1/250s para congelar o movimento, independente de quão boa é sua estabilização.",
-          "failureMessage": "Estabilização não pode congelar um assunto em movimento. Para uma pessoa fazendo cooper, você precisa de pelo menos 1/250s para evitar desfoque de movimento, mesmo que sua câmera consiga ficar firme em 1 segundo.",
+          "successMessage": "Correto! Estabilização só contrabalança trepidação da câmera. Uma pessoa correndo precisa de pelo menos 1/250s para congelar o movimento, independente de quão boa é sua estabilização.",
+          "failureMessage": "Estabilização não pode congelar um assunto em movimento. Para uma pessoa correndo, você precisa de pelo menos 1/250s para evitar desfoque de movimento, mesmo que sua câmera consiga ficar firme em 1 segundo.",
           "options": {
             "0": { "label": "Sim — IBIS cuida de todo o movimento" },
             "1": { "label": "Não — use pelo menos 1/250s para congelar o corredor" },

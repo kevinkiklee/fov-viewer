@@ -1,19 +1,19 @@
 {
   "education": {
     "star-trail-calculator": {
-      "beginner": "A csillagok mozogni látszanak az égen, mert a Föld forog. Ha elég sokáig marad nyitva a zár, a csillagok csíkokká nyúlnak a fotón. A csillagív-kalkulátor segít megtalálni a maximális expozíciós időt a pontszerű csillagokhoz, vagy megtervezni a hosszú expozíciókat a gyönyörű körkörös csillagívekhez.",
+      "beginner": "A csillagok azért látszanak mozogni az égen, mert a Föld forog. Ha elég sokáig marad nyitva a zár, a csillagok csíkokká nyúlnak a fotón. A csillagív-kalkulátorral megtalálhatod a maximális expozíciós időt a pontszerű csillagokhoz, vagy megtervezheted a hosszú expozíciókat a gyönyörű körkörös csillagívekhez.",
       "deeper": {
         "0": {
           "heading": "Hogyan mozognak a csillagok",
-          "text": "A Föld 360°-ot fordul körülbelül 23 óra 56 perc alatt (sziderikus nap), így a csillagok nagyjából 15 ívmásodperccel mozognak másodpercenként az égi egyenlítőnél. A pólusokhoz közeli csillagok (északon a Sarkcsillag) kisebb köröket rajzolnak és látszólag lassabban mozognak."
+          "text": "A Föld körülbelül 23 óra 56 perc alatt fordul 360°-ot (sziderikus nap), így a csillagok az égi egyenlítőnél nagyjából 15 ívmásodpercet mozdulnak másodpercenként. A pólusokhoz közeli csillagok (északon a Sarkcsillag) kisebb köröket rajzolnak, és látszólag lassabban mozognak."
         },
         "1": {
-          "heading": "Az 500-as szabály vs. NPF szabály",
-          "text": "A klasszikus „500-as szabály” 500-at oszt az effektív gyújtótávolsággal, hogy megbecsülje a maximális expozíciót, mielőtt a csíkozódás láthatóvá válik — de alacsonyabb felbontású érzékelőkhöz tervezték. Az NPF szabály figyelembe veszi a pixel pitch-et, a gyújtótávolságot, a rekeszt és a deklinációt, rövidebb és pontosabb határokat adva a modern nagyfelbontású kamerákhoz."
+          "heading": "500-as szabály vs. NPF szabály",
+          "text": "A klasszikus „500-as szabály” 500-at oszt az effektív gyújtótávolsággal, és így becsüli meg a maximális expozíciót, mielőtt a csíkozódás láthatóvá válna — de alacsonyabb felbontású érzékelőkhöz tervezték. Az NPF szabály figyelembe veszi a pixel pitch-et, a gyújtótávolságot, a rekeszt és a deklinációt, így a modern nagyfelbontású kamerákhoz rövidebb és pontosabb határt ad."
         },
         "2": {
           "heading": "Stackelés a csillagívekhez",
-          "text": "A szándékos csillagívekhez a fotósok sok rövidebb expozíciót (tipikusan 30s-t) készítenek, és szoftverrel egyesítik őket. Ez elkerüli a zajfelhalmozódást, biztosítja a folyamatos íveket, és egyetlen rossz kocka sem teszi tönkre az egész felvételt."
+          "text": "A szándékolt csillagívekhez a fotósok sok rövidebb expozíciót készítenek (jellemzően 30s-t), és szoftverrel egyesítik őket. Így elkerülhető a zajfelhalmozódás, folyamatosak lesznek az ívek, és egyetlen elrontott kocka sem teszi tönkre az egész felvételt."
         }
       },
       "keyFactors": {
@@ -36,13 +36,13 @@
       },
       "tips": {
         "0": {
-          "text": "Használd az NPF szabályt az 500-as helyett modern kamerákhoz. Figyelembe veszi az érzékelőfelbontást, és pontosabb maximális expozíciós időt ad, különösen nagy megapixeles vázakkal."
+          "text": "Modern kamerákhoz az 500-as helyett az NPF szabályt használd. Figyelembe veszi az érzékelőfelbontást, és pontosabb maximális expozíciós időt ad, főleg nagy megapixeles vázaknál."
         },
         "1": {
-          "text": "Csillagív-stackhez tartsd a kockák közötti réseket 2-3 másodperc alatt vezetékes távkioldóval vagy intervalometerrel. Hosszabb rés pöttyözött ívet ad sima helyett."
+          "text": "Csillagív-stacknél tartsd a kockák közötti réseket 2–3 másodperc alatt, vezetékes távkioldóval vagy intervalometerrel. Ha hosszabb a rés, a sima ív helyett pöttyözött ívet kapsz."
         },
         "2": {
-          "text": "Vedd be a Sarkcsillagot (vagy a Déli Égi Pólust) a kompozícióba drámai koncentrikus kör-ívekért. A pólushoz közelebbi csillagok szorosabb íveket rajzolnak."
+          "text": "Vedd be a Sarkcsillagot (vagy a Déli Égi Pólust) a kompozícióba, ha drámai, koncentrikus ívsorokat szeretnél. A pólushoz közelebbi csillagok szorosabb ívet rajzolnak."
         }
       },
       "tooltips": {

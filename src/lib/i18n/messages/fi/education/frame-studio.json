@@ -1,93 +1,93 @@
 {
   "education": {
     "frame-studio": {
-      "beginner": "Frame Studio auttaa sinua rajaamaan, kehystämään ja sommittelemaan kuviasi suoraan selaimessa. Käytä sommitteluruudukkoja rajauksesi parantamiseen, rajaa suosittuihin kuvasuhteisiin ja lisää ammattimaisen näköisiä reunoja — kaikki ilman kuvanlaadun menetystä.",
+      "beginner": "Frame Studio auttaa rajaamaan, kehystämään ja sommittelemaan kuvia suoraan selaimessa. Käytä sommitteluruudukkoja rajauksen parantamiseen, rajaa suosittuihin kuvasuhteisiin ja lisää siistejä kehyksiä — kaikki ilman kuvanlaadun menetystä.",
       "deeper": {
         "0": {
           "heading": "Sommitteluruudukot",
-          "text": "Kolmanneksen sääntö jakaa kuvan 3×3-ruudukkoon — kohteiden asettaminen viivoille tai risteyksiin luo luonnollisen visuaalisen tasapainon. Kultainen leikkaus (noin 1,618:1) tarjoaa matemaattisesti sopusointuisen jaon, jota on käytetty taiteessa ja arkkitehtuurissa vuosisatoja. Kultainen spiraali ohjaa katsetta logaritmista kaarta pitkin, joka on johdettu Fibonaccin sarjasta, ja on hyödyllinen katsojan ohjaamiseen kuvan läpi."
+          "text": "Kolmanneksen sääntö jakaa kuvan 3×3-ruudukkoon — kun sijoitat kohteen viivoille tai niiden risteyskohtiin, syntyy luonnollinen visuaalinen tasapaino. Kultainen leikkaus (noin 1,618:1) tarjoaa matemaattisesti sopusointuisen jaon, jota on käytetty taiteessa ja arkkitehtuurissa jo vuosisatoja. Kultainen spiraali ohjaa katseen logaritmista kaarta pitkin (Fibonaccin sarjasta johdettu) ja auttaa viemään katsojan silmän kuvan läpi."
         },
         "1": {
           "heading": "Kuvasuhteet",
-          "text": "Eri kuvasuhteet palvelevat eri tarkoituksia. 1:1 (neliö) toimii hyvin sosiaalisessa mediassa ja symmetrisissä sommitelmissa. 3:2 on klassinen 35 mm:n filmisuhde. 4:3 on yleinen Micro Four Thirdsissä ja vanhemmissa digikameroissa. 16:9 on videon ja elokuvallisten sommitelmien standardi laajakuvasuhde. 5:4 on perinteinen 8×10-vedoksille."
+          "text": "Eri kuvasuhteet palvelevat eri tarkoituksia. 1:1 (neliö) toimii hyvin somessa ja symmetrisissä sommitelmissa. 3:2 on klassinen 35 mm -filmin suhde. 4:3 on yleinen Micro Four Thirdsissä ja vanhemmissa digikameroissa. 16:9 on videon ja elokuvallisten sommitelmien laajakuvastandardi. 5:4 puolestaan on perinteinen 8×10-vedoksille."
         },
         "2": {
           "heading": "Kehystys ja reunat",
-          "text": "Reunan lisääminen kuvan ympärille jäljittelee fyysisen passepartoutin ja kehyksen vaikutusta. Valkoinen passepartout tuo visuaalista hengittelytilaa ja ohjaa huomion sisäänpäin. Reunan leveys suhteessa kuvaan vaikuttaa valokuvan koettuun \"painoon\". Galleriatyyliset esitykset käyttävät tyypillisesti leveämpiä passepartoutteja. Hienovarainen varjo luo syvyyttä ja simuloi sitä, miltä kehystetty vedos näyttää seinällä."
+          "text": "Reunan lisääminen kuvan ympärille jäljittelee fyysistä passepartoutia ja kehystä. Valkoinen passepartout tuo visuaalista hengitystilaa ja ohjaa katseen kuvaan. Reunan leveys suhteessa kuvaan vaikuttaa valokuvan koettuun painoarvoon — galleriatyylinen esitys käyttää yleensä leveämpää passepartoutia. Hienovarainen varjo tuo syvyyttä ja antaa aavistuksen siitä, miltä kehystetty vedos näyttää seinällä."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Sommitteluruudukko",
-          "description": "Apuviivat auttavat sinua arvioimaan ja parantamaan kohteen sijoittelua rajauksessa."
+          "description": "Apuviivat auttavat arvioimaan ja parantamaan kohteen sijoittelua rajauksessa."
         },
         "1": {
           "label": "Kuvasuhde",
-          "description": "Leveyden ja korkeuden suhde vaikuttaa siihen, miltä kuva tuntuu — leveämmät suhteet tuntuvat elokuvallisilta, neliö tasapainoiselta."
+          "description": "Leveyden ja korkeuden suhde vaikuttaa siihen, miltä kuva tuntuu — leveä suhde on elokuvallinen, neliö tasapainoinen."
         },
         "2": {
           "label": "Reunan leveys",
-          "description": "Leveämmät reunat tuovat arvokkuutta ja fokuksen; kapeat tuntuvat moderneilta ja minimalistisilta."
+          "description": "Leveä reuna tuo arvokkuutta ja ohjaa katseen kuvaan; kapea tuntuu modernilta ja minimalistiselta."
         },
         "3": {
           "label": "Passepartoutin väri",
-          "description": "Valkoiset passepartoutit ovat klassisia taidekuvauksessa. Tummat passepartoutit korostavat vaaleampia kuvia. Värilliset passepartoutit voivat täydentää tai kontrastoida."
+          "description": "Valkoinen passepartout on taidekuvauksen klassikko. Tumma passepartout korostaa vaaleita kuvia. Väriä voi käyttää joko täydentämään tai kontrastoimaan kuvaa."
         }
       },
       "tips": {
         "0": {
-          "text": "Instagram-julkaisuihin rajaa 4:5 (pystysuora) varataksesi maksimaalisen näyttötilan feedissä."
+          "text": "Rajaa Instagram-julkaisuja varten suhteeseen 4:5 (pysty), niin saat mahdollisimman paljon näkyvyyttä feedissä."
         },
         "1": {
-          "text": "Kun lisäät reunan tulostusta varten, käytä passepartoutin leveyttä, joka on vähintään 10 % kuvan lyhyemmästä ulottuvuudesta saadaksesi ammattimaisen ilmeen."
+          "text": "Tulostukseen tarkoitetussa reunassa passepartoutin leveyden tulisi olla vähintään 10 % kuvan lyhyemmästä sivusta, jotta ilme näyttää ammattimaiselta."
         },
         "2": {
-          "text": "Kultainen spiraali on tehokkain kuvissa, joissa on luonnollista virtausta — vettä, teitä tai kaarevia rakenteita."
+          "text": "Kultainen spiraali toimii parhaiten kuvissa, joissa on luonnollinen virtaus — esimerkiksi vettä, teitä tai kaarevia rakenteita."
         }
       },
       "tooltips": {
         "Aspect Ratio": {
           "term": "Kuvasuhde",
-          "definition": "Leveyden ja korkeuden suhdeluku. Yleisiä suhteita ovat 3:2 (35 mm), 4:3 (M43) ja 16:9 (laajakuva)."
+          "definition": "Leveyden ja korkeuden suhde. Yleisiä suhteita ovat 3:2 (35 mm), 4:3 (M43) ja 16:9 (laajakuva)."
         },
         "Rule of Thirds": {
           "term": "Kolmanneksen sääntö",
-          "definition": "Sommitteluohje, joka jakaa kuvan 9 yhtä suureen osaan. Kohteiden asettaminen risteyspisteisiin luo visuaalista kiinnostavuutta."
+          "definition": "Sommitteluohje, joka jakaa kuvan yhdeksään yhtä suureen osaan. Kohteiden sijoittaminen risteyspisteisiin tuo kuvaan visuaalista kiinnostavuutta."
         },
         "Golden Ratio": {
           "term": "Kultainen leikkaus",
-          "definition": "Matemaattinen suhde (~1,618:1), jota löytyy luonnosta ja taiteesta. Luo esteettisesti miellyttäviä tilajakoja."
+          "definition": "Matemaattinen suhde (noin 1,618:1), jota löytyy luonnosta ja taiteesta. Tuottaa esteettisesti miellyttäviä tilajakoja."
         },
         "Border Width": {
           "term": "Reunan leveys",
-          "definition": "Kehyksen reunan paksuus pikseleinä. Menee kuvan ulkopuolelle, kasvattaen kokonaismittoja rajaamatta."
+          "definition": "Kehyksen reunan paksuus pikseleinä. Reuna asettuu kuvan ulkopuolelle ja kasvattaa kokonaismittoja rajaamatta sisältöä."
         },
         "Inner Mat": {
           "term": "Sisempi passepartout",
-          "definition": "Toinen, ohuempi reuna ulkokehyksen ja kuvan välissä — jäljittelee fyysisen tauluhyvityskehyksen viistettyä sisäpassepartoutia."
+          "definition": "Toinen, ohuempi reuna ulkokehyksen ja kuvan välissä — jäljittelee fyysisen kehyksen viistettyä sisäpassepartoutia."
         },
         "Corner Radius": {
           "term": "Kulmapyöristys",
-          "definition": "Pyöristää kehyksen reunan kulmia. Nolla antaa terävät kulmat, suuremmat arvot pehmeämmän, pyöristetyn ilmeen."
+          "definition": "Pyöristää kehyksen kulmia. Nolla antaa terävät kulmat, suuremmat arvot pehmeämmän ja pyöristetymmän ilmeen."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Haluat julkaista pystymuotokuvan Instagramissa maksimaalisella feed-näkyvyydellä. Mitä kuvasuhdetta käytät?",
-          "hint": "Instagramin pystyjulkaisut käyttävät korkeampaa kuin leveää suhdetta.",
-          "successMessage": "Oikein! 4:5 antaa maksimaalisen pystytilan Instagram-feedissä.",
-          "failureMessage": "Instagramin pystyjulkaisut käyttävät 4:5 (käännä 5:4 pystyasentoon) maksimoidakseen feed-tilan.",
+          "scenario": "Haluat julkaista pystymuotokuvan Instagramissa niin, että se saa mahdollisimman paljon näkyvyyttä feedissä. Mitä kuvasuhdetta käytät?",
+          "hint": "Instagramin pystyjulkaisut käyttävät korkeampaa kuin leveämpää suhdetta.",
+          "successMessage": "Oikein! 4:5 antaa eniten pystysuuntaista tilaa Instagramin feedissä.",
+          "failureMessage": "Instagramin pystyjulkaisut käyttävät suhdetta 4:5 (5:4 pystyasentoon käännettynä), jotta feedissä saadaan mahdollisimman paljon tilaa.",
           "options": {
-            "0": { "label": "1:1 (Neliö)" },
-            "1": { "label": "4:5 (Pysty)" },
-            "2": { "label": "16:9 (Laajakuva)" }
+            "0": { "label": "1:1 (neliö)" },
+            "1": { "label": "4:5 (pysty)" },
+            "2": { "label": "16:9 (laajakuva)" }
           }
         },
         "1": {
-          "scenario": "Mikä sommitteluruudukko on eniten opetettu lähtökohta aloittelijoille?",
-          "hint": "Se jakaa kuvan 9 yhtä suureen osaan.",
+          "scenario": "Mikä sommitteluruudukko on aloittelijoille opetettava peruslähtökohta?",
+          "hint": "Se jakaa kuvan yhdeksään yhtä suureen osaan.",
           "successMessage": "Aivan! Kolmanneksen sääntö on sommittelun perusta.",
-          "failureMessage": "Kolmanneksen sääntö (3×3-ruudukko) on yleisin lähtökohta sommittelun oppimiseen.",
+          "failureMessage": "Kolmanneksen sääntö (3×3-ruudukko) on yleisin lähtökohta sommittelun opettelemiseen.",
           "options": {
             "0": { "label": "Kolmanneksen sääntö" },
             "1": { "label": "Kultainen spiraali" },
@@ -95,10 +95,10 @@
           }
         },
         "2": {
-          "scenario": "Valmistelet kuvaa gallerian tulostusta varten 8×10-paperille. Mikä kuvasuhde vastaa tätä tulostuskokoa?",
-          "hint": "8×10 yksinkertaistuu tunnettuun suhteeseen.",
+          "scenario": "Valmistelet kuvaa galleriaan tulostettavaksi 8×10-paperille. Mikä kuvasuhde vastaa tätä tulostuskokoa?",
+          "hint": "8×10 supistuu tunnettuun suhteeseen.",
           "successMessage": "Oikein! 5:4 vastaa tarkalleen 8×10-tulostuksen mittoja.",
-          "failureMessage": "8×10 yksinkertaistuu 4:5:ksi, joka on 5:4:n pystyversio.",
+          "failureMessage": "8×10 supistuu suhteeseen 4:5, joka on 5:4:n pystyversio.",
           "options": {
             "0": { "label": "3:2" },
             "1": { "label": "5:4" },
@@ -106,10 +106,10 @@
           }
         },
         "3": {
-          "scenario": "Maisemakuvassa on mutkitteleva joki, joka johtaa etualasta vuorille taustalle. Mikä ruudukkokerros sopii parhaiten tähän luonnolliseen virtaukseen?",
-          "hint": "Yksi ruudukkotyyppi seuraa luonnollista kaarevaa polkua.",
+          "scenario": "Maisemakuvassa on mutkitteleva joki, joka johtaa etualasta kohti vuoria taustalla. Mikä ruudukko sopii parhaiten tämän luonnollisen virtauksen tueksi?",
+          "hint": "Yksi ruudukoista seuraa luonnollista kaarevaa polkua.",
           "successMessage": "Hieno valinta! Kultainen spiraali seuraa kaaria ja johtolinjoja täydellisesti.",
-          "failureMessage": "Kultainen spiraali on ihanteellinen kuviin, joissa on luonnollisia kaaria, kuten joet, tiet tai rantaviivat.",
+          "failureMessage": "Kultainen spiraali on ihanteellinen kuviin, joissa on luonnollisia kaaria — esimerkiksi jokia, teitä tai rantaviivoja.",
           "options": {
             "0": { "label": "Keskiristi" },
             "1": { "label": "Kultainen spiraali" },
@@ -117,14 +117,14 @@
           }
         },
         "4": {
-          "scenario": "Haluat puhtaan valkoisen reunan esittääksesi kuvasi sosiaalisessa mediassa. Mitä kehysesiasetusta käytät?",
-          "hint": "Mieti, mikä esiasetus antaa yksinkertaisen valkoisen reunan.",
-          "successMessage": "Oikein! White-esiasetus lisää 100 pikselin valkoisen reunan kuvasi ympärille.",
-          "failureMessage": "White-esiasetus on suunniteltu puhtaan, yksinkertaisen valkoisen reunan esittämiseen.",
+          "scenario": "Haluat lisätä kuvasi ympärille puhtaan valkoisen reunan someen jakamista varten. Mitä kehysesiasetusta käytät?",
+          "hint": "Mieti, mikä esiasetus tuottaa yksinkertaisen valkoisen reunan.",
+          "successMessage": "Oikein! Valkoinen-esiasetus lisää kuvan ympärille 100 pikselin valkoisen reunan.",
+          "failureMessage": "Valkoinen-esiasetus on tehty nimenomaan puhtaan, yksinkertaisen valkoisen reunan lisäämiseen.",
           "options": {
-            "0": { "label": "None" },
-            "1": { "label": "White" },
-            "2": { "label": "Black" }
+            "0": { "label": "Ei mitään" },
+            "1": { "label": "Valkoinen" },
+            "2": { "label": "Musta" }
           }
         }
       }

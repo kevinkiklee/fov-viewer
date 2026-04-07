@@ -2,7 +2,7 @@
   "education": {
     "shutter-speed-visualizer": {
       "beginner": "Panduan kelajuan pengatup membantu anda mencari kelajuan pengatup paling perlahan yang boleh anda gunakan sambil masih mendapat foto tangan yang tajam. Jika kelajuan pengatup anda terlalu perlahan, gegaran kamera dari tangan anda akan mengaburkan imej. Kelajuan selamat minimum bergantung kepada panjang fokus anda, sama ada anda mempunyai penstabilan imej, dan betapa stabilnya tangan anda.",
-      "deeper": "\"Peraturan salingan\" klasik menyatakan bahawa untuk foto tangan yang tajam, kelajuan pengatup anda hendaklah sekurang-kurangnya 1/(panjang fokus) saat — jadi lensa 200mm memerlukan sekurang-kurangnya 1/200s. Pada kamera sensor crop, anda harus menggunakan panjang fokus setara (contoh 200mm pada crop 1.5x = 1/300s). Penstabilan dalam badan moden (IBIS) dan penstabilan optik (OIS) boleh memberi anda 3-7 stop tambahan ruang untuk penangkapan tangan, bermakna lensa 200mm yang distabilkan itu mungkin tajam pada 1/15s atau bahkan lebih perlahan. Walau bagaimanapun, penstabilan hanya mengimbangi gegaran kamera, bukan pergerakan subjek. Seorang yang berjalan ke arah anda pada 1/15s masih akan kabur tanpa mengira penstabilan. Untuk subjek bergerak, anda mesti memilih kelajuan pengatup berdasarkan kelajuan dan jarak subjek, bukan hanya panjang fokus.",
+      "deeper": "\"Peraturan salingan\" klasik menyatakan bahawa untuk foto tangan yang tajam, kelajuan pengatup anda hendaklah sekurang-kurangnya 1/(panjang fokus) saat — jadi lensa 200mm memerlukan sekurang-kurangnya 1/200s. Pada kamera sensor crop, anda perlu menggunakan panjang fokus setara (contoh 200mm pada crop 1.5x = 1/300s). Penstabilan dalam badan moden (IBIS) dan penstabilan optik (OIS) boleh memberi anda 3-7 stop tambahan ruang untuk penangkapan tangan, bermakna lensa 200mm yang distabilkan itu mungkin tajam pada 1/15s atau lebih perlahan lagi. Walau bagaimanapun, penstabilan hanya mengimbangi gegaran kamera, bukan pergerakan subjek. Seseorang yang berjalan ke arah anda pada 1/15s tetap akan kabur tanpa mengira penstabilan. Untuk subjek bergerak, anda mesti memilih kelajuan pengatup berdasarkan kelajuan dan jarak subjek, bukan hanya panjang fokus.",
       "keyFactors": {
         "0": {
           "label": "Panjang Fokus",
@@ -58,7 +58,7 @@
         "0": {
           "scenario": "Anda sedang menangkap dengan lensa 100mm pada kamera full-frame tanpa penstabilan imej. Subjek anda berdiri diam. Apakah kelajuan pengatup minimum yang disarankan?",
           "hint": "Peraturan salingan: kelajuan pengatup minimum = 1 / panjang fokus.",
-          "successMessage": "Betul! Peraturan salingan mengatakan 1/100s untuk lensa 100mm pada full frame. Ini adalah titik permulaan klasik untuk ketajaman tangan.",
+          "successMessage": "Betul! Peraturan salingan mengatakan 1/100s untuk lensa 100mm pada full frame. Ini ialah titik permulaan klasik untuk ketajaman tangan.",
           "failureMessage": "Untuk lensa 100mm pada full frame tanpa penstabilan, peraturan salingan memberi anda 1/100s sebagai kelajuan pengatup minimum yang selamat untuk subjek statik.",
           "options": {
             "0": { "label": "1/50s" },

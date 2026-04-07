@@ -1,19 +1,19 @@
 {
   "education": {
     "equivalent-settings-calculator": {
-      "beginner": "Eri kennokoot tuottavat erilaisen syväterävyyden ja kuvakulman jopa samalla polttovälillä ja aukolla. Ekvivalenttiasetukset auttavat sinua löytämään objektiivin ja aukon yhdistelmän toisella kameralla, joka toistaa saman rajauksen ja taustan sumennuksen. Tämä on olennaista, kun vertailet eri formaattien välineitä tai vaihdat kamerajärjestelmästä toiseen.",
+      "beginner": "Eri kennokoot tuottavat erilaisen syväterävyyden ja kuvakulman jopa samalla polttovälillä ja aukolla. Ekvivalenttiasetusten avulla löydät sen objektiivi- ja aukkoyhdistelmän, jolla saa toisella kameralla saman rajauksen ja taustan sumennuksen. Tämä on tärkeää, kun vertailet eri formaattien kalustoa tai vaihdat järjestelmästä toiseen.",
       "deeper": {
         "0": {
           "heading": "Kerroin",
-          "text": "Jokaisella kennolla on kerroin suhteessa 35 mm:n täyskennostandardiin. APS-C-kennojen kerroin on noin 1,5×, Micro Four Thirdsin 2× ja keskiformaatin noin 0,79×. Kertomalla todellinen polttoväli kertoimella saat täyskennoekvivalentin kuvakulman. 35 mm:n objektiivi APS-C:llä rajaa kuin 52,5 mm täyskennolla."
+          "text": "Jokaisella kennolla on kerroin 35 mm:n täyskennoon verrattuna. APS-C:llä se on noin 1,5×, Micro Four Thirdsillä 2× ja keskiformaatilla noin 0,79×. Kun kerrot todellisen polttovälin kertoimella, saat täyskennoekvivalentin kuvakulman. 35 mm:n objektiivi APS-C:llä rajaa siis samoin kuin 52,5 mm täyskennolla."
         },
         "1": {
           "heading": "Ekvivalentti aukko ja syväterävyys",
-          "text": "Jotta syväterävyys vastaa eri formaateilla, kerro f-luku samalla kertoimella. f/1.4-objektiivi Micro Four Thirdsillä tuottaa syväterävyyden, joka vastaa f/2.8:aa täyskennolla (1,4 × 2 = 2,8). Tästä syystä täyskennoisia kameroita arvostetaan matalasta syväterävyydestä — voit käyttää fyysisesti valovoimaisempia objektiiveja laajemmilla todellisilla aukoilla ja saavuttaa sumennuksen, jota pienemmät kennot eivät voi toistaa."
+          "text": "Kun haluat vastaavan syväterävyyden toisella formaatilla, kerro f-luku samalla kertoimella. f/1.4 Micro Four Thirdsillä tuottaa saman syväterävyyden kuin f/2.8 täyskennolla (1,4 × 2 = 2,8). Juuri tästä syystä täyskennoisia kameroita arvostetaan matalasta syväterävyydestä — niillä voi käyttää fyysisesti valovoimaisempia objektiiveja ja saavuttaa sellaista taustan sumennusta, johon pienemmät kennot eivät yllä."
         },
         "2": {
           "heading": "Ekvivalentti ISO ja kokonaisvalomäärä",
-          "text": "Valotuksen kirkkauden sovittaminen eri formaattien välillä vaatii ISO:n säätämistä kertoimen neliöllä. Suurempi kenno kerää enemmän kokonaisvaloa samasta näkymästä, mikä tarkoittaa että se voi käyttää matalampaa ISO:a vastaavalla kohinatasolla. Täyskennoinen kenno ISO 800:ssa tuottaa samaa kohinaa kuin APS-C-kenno ISO 356:ssa ja Micro Four Thirds -kenno ISO 200:ssa."
+          "text": "Kun haluat saman kohinan kahdella eri formaatilla, ISO:a pitää säätää kertoimen neliöllä. Suurempi kenno kerää samasta näkymästä enemmän kokonaisvaloa, joten se voi käyttää matalampaa ISO:a samalla kohinatasolla. Täyskenno ISO 800:lla tuottaa suunnilleen saman kohinan kuin APS-C ISO 356:lla ja Micro Four Thirds ISO 200:lla."
         }
       },
       "keyFactors": {
@@ -23,60 +23,60 @@
         },
         "1": {
           "label": "Kennokoko",
-          "description": "Fyysisesti suuremmat kennot keräävät enemmän valoa ja tuottavat matalamman syväterävyyden vastaavalla rajauksella. Ekvivalenssilaskuri paljastaa tarkasti, kuinka paljon eroa kukin formaatti tekee."
+          "description": "Fyysisesti suurempi kenno kerää enemmän valoa ja tuottaa samassa rajauksessa matalamman syväterävyyden. Ekvivalenssilaskuri näyttää tarkasti, kuinka suuri ero formaattien välillä on."
         },
         "2": {
           "label": "Saatavilla olevat objektiivit",
-          "description": "Ekvivalenssimatematiikka voi vaatia objektiivia, jota ei ole olemassa. 17 mm f/0.7 on ekvivalentti 35 mm f/1.4:lle MFT:llä — mutta sellaista ei valmisteta. Todellinen kalusto rajoittaa sitä, mikä on saavutettavissa."
+          "description": "Ekvivalenssilaskelma voi vaatia objektiivia, jota ei ole olemassa. 17 mm f/0.7 vastaisi MFT:llä 35 mm f/1.4:ää, mutta sellaista ei valmisteta. Todellinen objektiivikanta rajoittaa sitä, mikä on käytännössä mahdollista."
         }
       },
       "tips": {
         "0": {
-          "text": "Kun vertaat kamerajärjestelmiä, vertaa aina ekvivalenttiasetuksilla äläkä pelkästään f-lukujen mukaan. f/2.8-objektiivi Micro Four Thirdsillä ei anna samaa taustan sumennusta kuin f/2.8 täyskennolla — tarvitset f/1.4:n MFT:llä vastaavuuteen."
+          "text": "Kun vertailet kamerajärjestelmiä, vertaile aina ekvivalenttiasetuksilla, älä pelkkiä f-lukuja. f/2.8-objektiivi Micro Four Thirdsillä ei anna samaa taustan sumennusta kuin f/2.8 täyskennolla — vastaavuuteen tarvitaan MFT:llä f/1.4."
         },
         "1": {
-          "text": "Käytä ekvivalenssia suunnitellessasi objektiivihankintoja järjestelmää vaihdettaessa. Jos rakastat 85 mm f/1.8:n ulkonäköä täyskennolla, etsi 56 mm f/1.2 APS-C:lle tai 42,5 mm f/0.95 MFT:lle saadaksesi vastaavan rendauksen."
+          "text": "Käytä ekvivalenssilaskelmia apuna, kun suunnittelet objektiivihankintoja järjestelmää vaihtaessa. Jos pidät 85 mm f/1.8:n ilmeestä täyskennolla, vastaava ilme löytyy APS-C:ltä 56 mm f/1.2:sta ja MFT:ltä 42,5 mm f/0.95:sta."
         },
         "2": {
-          "text": "Muista, että ekvivalenssi pätee syväterävyyteen ja kuvakulmaan, ei objektiivin valovoimaan valotuksessa. f/2.8-objektiivi millä tahansa formaatilla päästää läpi saman valomäärän pinta-alaa kohti — suurempi kenno vain kerää enemmän kokonaisvaloa suuremman pinta-alansa ansiosta."
+          "text": "Muista, että ekvivalenssi pätee syväterävyyteen ja kuvakulmaan — ei objektiivin valovoimaan valotuksen kannalta. f/2.8-objektiivi päästää pinta-alayksikköä kohti saman valomäärän formaatista riippumatta; suurempi kenno vain kerää enemmän kokonaisvaloa suuremman pinta-alansa ansiosta."
         }
       },
       "tooltips": {
         "sourceSensor": {
           "term": "Lähdekenno",
-          "definition": "Sen kameran kennoformaatti, jonka asetukset haluat sovittaa. Kaikki ekvivalenssilaskelmat ovat suhteellisia tähän lähtöpisteeseen."
+          "definition": "Sen kameran kennoformaatti, jonka asetuksia haluat vertailla. Kaikki ekvivalenssilaskelmat tehdään suhteessa tähän lähtökohtaan."
         },
         "sourceFocalLength": {
           "term": "Polttoväli",
-          "definition": "Lähdekamerasi objektiivin todellinen polttoväli. Tämä muunnetaan ekvivalentiksi polttoväleiksi kohdemuodoille."
+          "definition": "Lähdekameran objektiivin todellinen polttoväli. Tästä lasketaan ekvivalentit polttovälit kohdeformaateille."
         },
         "sourceAperture": {
           "term": "Aukko",
-          "definition": "Lähdekamerasi f-luku. Kunkin kohdemuodon ekvivalentti aukko määrittää vastaavan syväterävyyden."
+          "definition": "Lähdekameran f-luku. Kohdeformaatin ekvivalentti aukko kertoo, millä arvolla syväterävyys vastaa lähdekokoonpanoa."
         },
         "targetSensor": {
           "term": "Kohdekenno",
-          "definition": "Kennoformaatti, jolle haluat löytää ekvivalenttiasetukset. Laskuri soveltaa suhteellista kerrointa laskiessaan vastaavan polttovälin ja aukon."
+          "definition": "Kennoformaatti, jolle ekvivalenttiasetuksia lasketaan. Laskuri käyttää suhteellista kerrointa ja antaa vastaavan polttovälin ja aukon."
         },
         "cropFactor": {
           "term": "Kerroin",
-          "definition": "35 mm:n täyskennon diagonaalin ja kohdekennon välinen suhde. Kerro polttoväli kertoimella saadaksesi ekvivalentin kuvakulman; kerro aukko kertoimella saadaksesi ekvivalentin syväterävyyden."
+          "definition": "35 mm:n täyskennon diagonaalin suhde kohdekennon diagonaaliin. Kun kerrot polttovälin kertoimella, saat ekvivalentin kuvakulman; kun kerrot aukon kertoimella, saat ekvivalentin syväterävyyden."
         },
         "equivalentFL": {
           "term": "Ekvivalentti polttoväli",
-          "definition": "Polttoväli kohdemuodolla, joka tuottaa saman kuvakulman kuin lähdekokoonpano."
+          "definition": "Kohdeformaatin polttoväli, joka antaa saman kuvakulman kuin lähdekokoonpano."
         },
         "equivalentAperture": {
           "term": "Ekvivalentti aukko",
-          "definition": "Kohdemuodon f-luku, joka tuottaa saman syväterävyyden kuin lähdekokoonpano. Voi olla valovoimaisempi kuin mikään todellinen objektiivi."
+          "definition": "Kohdeformaatin f-luku, joka tuottaa saman syväterävyyden kuin lähdekokoonpano. Voi olla valovoimaisempi kuin yksikään todellinen objektiivi."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Kuvaat muotokuvia 85 mm f/1.8:lla täyskennolla. Kaverisi käyttää Micro Four Thirdsiä (2× kerroin). Mitä polttoväliä kaverisi tarvitsee sovittaakseen kuvakulmasi?",
-          "hint": "Jaa täyskennon polttoväli MFT:n kertoimella löytääksesi tarvittavan todellisen objektiivin.",
-          "successMessage": "Oikein! 85 mm / 2 = 42,5 mm. Kaverisi tarvitsee 42,5 mm:n objektiivin Micro Four Thirdsille saadakseen saman rajauksen kuin sinun 85 mm täyskennolla.",
-          "failureMessage": "Sovittaaksesi kuvakulman, jaa kertoimella: 85 mm / 2 = 42,5 mm. Se on tarvittava todellinen polttoväli MFT-rungolla.",
+          "scenario": "Kuvaat muotokuvia 85 mm f/1.8:lla täyskennolla. Kaverisi käyttää Micro Four Thirdsiä (kerroin 2×). Minkä polttovälin objektiivia hän tarvitsee samaan kuvakulmaan?",
+          "hint": "Jaa täyskennon polttoväli MFT:n kertoimella, niin saat todellisen polttovälin.",
+          "successMessage": "Oikein! 85 mm / 2 = 42,5 mm. Kaveri tarvitsee siis 42,5 mm:n objektiivin Micro Four Thirdsille, jotta rajaus vastaa 85 mm:ää täyskennolla.",
+          "failureMessage": "Kun haluat saman kuvakulman, jaa kertoimella: 85 mm / 2 = 42,5 mm. Tämä on MFT-rungolle tarvittava todellinen polttoväli.",
           "options": {
             "0": { "label": "42,5 mm" },
             "1": { "label": "85 mm" },
@@ -85,25 +85,25 @@
           }
         },
         "1": {
-          "scenario": "Kaverisi löysi 42,5 mm f/1.8:n objektiivin MFT-kameraansa. Vastaako taustan sumennus sinun 85 mm f/1.8:ta täyskennolla?",
-          "hint": "Kerro kerroin myös aukolla löytääksesi ekvivalentin syväterävyyden.",
-          "successMessage": "Aivan! 42,5 mm f/1.8 MFT:llä vastaa syväterävyydeltään 85 mm f/3.6:ta täyskennolla (1,8 × 2 = 3,6). Sinun täyskennoinen f/1.8-kuvasi tuottaa huomattavasti enemmän sumennusta.",
-          "failureMessage": "Ei — MFT:n f/1.8 vastaa syväterävyydeltään f/3.6:ta täyskennolla (1,8 × 2× kerroin = 3,6). Sovittaaksesi täyskennon f/1.8-sumennuksen, kaverisi tarvitsisi f/0.9:n MFT:llä, jota ei ole olemassa.",
+          "scenario": "Kaveri löysi MFT-kameraansa 42,5 mm f/1.8 -objektiivin. Vastaako sen taustan sumennus sinun 85 mm f/1.8:ta täyskennolla?",
+          "hint": "Kerro myös aukko samalla kertoimella — näin saat ekvivalentin syväterävyyden.",
+          "successMessage": "Aivan! 42,5 mm f/1.8 MFT:llä vastaa syväterävyydeltään 85 mm f/3.6:ta täyskennolla (1,8 × 2 = 3,6). Sinun täyskennoinen f/1.8-kuvasi antaa siis selvästi enemmän sumennusta.",
+          "failureMessage": "Ei — MFT:n f/1.8 vastaa syväterävyydeltään f/3.6:ta täyskennolla (1,8 × 2 = 3,6). Jotta kaveri saisi saman taustan sumennuksen, hän tarvitsisi MFT:lle f/0.9-objektiivin, jollaista ei ole olemassa.",
           "options": {
             "0": { "label": "Kyllä — sama f/1.8 tarkoittaa samaa sumennusta" },
-            "1": { "label": "Ei — MFT f/1.8 vastaa täyskennon f/3.6-syväterävyyttä" },
+            "1": { "label": "Ei — MFT:n f/1.8 vastaa täyskennon f/3.6:n syväterävyyttä" },
             "2": { "label": "Ei — MFT tuottaa enemmän sumennusta, koska kenno on pienempi" }
           }
         },
         "2": {
-          "scenario": "Valokuvaaja vaihtaa täyskennosta APS-C:hen (1,5× kerroin) ja haluaa sovittaa 50 mm f/1.4:n ulkonäön täyskennolla. Mitä ekvivalenttia objektiivia ja aukkoa hän tarvitsee APS-C:llä?",
-          "hint": "Jaa polttoväli kertoimella saadaksesi ekvivalentin kuvakulman. Jaa aukko kertoimella saadaksesi ekvivalentin syväterävyyden.",
-          "successMessage": "Juuri niin! 50 / 1,5 = 33 mm kuvakulmalle ja f/1.4 / 1,5 = f/0.93 vastaavalle syväterävyydelle. Koska f/0.93-objektiivia ei ole, APS-C-kamera ei voi täysin toistaa täyskennon ulkonäköä.",
-          "failureMessage": "Oikea vastaus on ~33 mm f/0.93. Koska 50 / 1,5 = 33,3 mm ja 1,4 / 1,5 = 0,93. f/0.93-objektiivia ei ole olemassa, joten täyskennon ulkonäköä ei voida täysin sovittaa APS-C:llä.",
+          "scenario": "Valokuvaaja vaihtaa täyskennosta APS-C:hen (kerroin 1,5×) ja haluaa saada saman ilmeen kuin 50 mm f/1.4:llä täyskennolla. Minkä ekvivalentin objektiivin ja aukon hän tarvitsee APS-C:llä?",
+          "hint": "Jaa polttoväli kertoimella, niin saat ekvivalentin kuvakulman. Jaa myös aukko kertoimella, niin saat ekvivalentin syväterävyyden.",
+          "successMessage": "Juuri niin! 50 / 1,5 = 33 mm (kuvakulma) ja f/1.4 / 1,5 ≈ f/0.93 (syväterävyys). Koska f/0.93-objektiivia ei ole, APS-C ei pysty täysin toistamaan täyskennon ilmettä.",
+          "failureMessage": "Oikea vastaus on noin 33 mm f/0.93: 50 / 1,5 ≈ 33,3 mm ja 1,4 / 1,5 ≈ 0,93. Koska f/0.93-objektiivia ei ole olemassa, täyskennon ilmettä ei saa täysin toistettua APS-C:llä.",
           "options": {
             "0": { "label": "35 mm f/1.4 — riittävän lähellä" },
-            "1": { "label": "33 mm f/0.93 — tarkka vastaavuus, mutta sellaista objektiivia ei ole" },
-            "2": { "label": "75 mm f/2.1 — kerro kertoimella" }
+            "1": { "label": "33 mm f/0.93 — tarkka vastine, mutta sellaista objektiivia ei ole" },
+            "2": { "label": "75 mm f/2.1 — kerrotaan kertoimella" }
           }
         }
       }

@@ -4,7 +4,7 @@
       "rule500": "500-regel",
       "ruleNPF": "NPF-regel",
       "recommendation": "Anbefaling",
-      "recommendationText": "Brug NPF-reglen ({npf}s) for skarphed på pixel-niveau. 500-reglen ({r500}s) er et hurtigt estimat, men kan vise slør på sensorer med høj opløsning.",
+      "recommendationText": "Brug NPF-reglen ({npf}s) for skarphed helt ned på pixelniveau. 500-reglen ({r500}s) er et hurtigt overslag, men kan give slør på sensorer med høj opløsning.",
       "shootingTime": "Optagetid",
       "exposure": "Eksponering",
       "displayMode": "Visningstilstand",
@@ -31,15 +31,15 @@
       "faq": {
         "what-is-500-rule": {
           "question": "Hvad er 500-reglen i astrofotografi?",
-          "answer": "500-reglen estimerer den længste eksponeringstid, før stjerner fremstår som striber i stedet for punkter. Divider 500 med din effektive brændvidde (brændvidde × cropfaktor) for at få den maksimale lukkertid i sekunder til skarpe stjerner."
+          "answer": "500-reglen giver et hurtigt overslag på den længste eksponeringstid, inden stjernerne begynder at trække striber i stedet for at stå som punkter. Divider 500 med din effektive brændvidde (brændvidde × cropfaktor), så får du den længste lukkertid i sekunder til skarpe stjerner."
         },
         "star-trails-vs-points": {
           "question": "Hvordan vælger jeg mellem star trails og skarpe stjernepunkter?",
-          "answer": "Til skarpe stjernepunkter (Mælkevejen, stjernebilleder): brug korte eksponeringer efter 500-reglen. Til kreative star trails, der viser Jordens rotation: brug meget lange eksponeringer (minutter til timer) eller stack mange kortere eksponeringer."
+          "answer": "Vil du have skarpe stjernepunkter (Mælkevejen, stjernebilleder), så brug korte eksponeringer efter 500-reglen. Vil du lave kreative star trails, der viser Jordens rotation, så brug meget lange eksponeringer (minutter til timer) — eller stack mange kortere billeder."
         },
         "best-settings-milky-way": {
-          "question": "Hvilke kameraindstillinger er bedst til Mælkeveje-fotografi?",
-          "answer": "Start med den største blænde (f/1.4–f/2.8), ISO 1600–6400 og den længste lukkertid, 500-reglen tillader for din linse. Brug et stabilt stativ og manuel fokus indstillet på uendelig. Skyd ved nymåne på en lokation med mørk himmel."
+          "question": "Hvilke kameraindstillinger er bedst til Mælkevejen?",
+          "answer": "Start med den største blænde (f/1.4–f/2.8), ISO 1600–6400 og den længste lukkertid, 500-reglen tillader for din linse. Brug et stabilt stativ, og stil skarpt manuelt på uendelig. Skyd ved nymåne på et sted med mørk himmel."
         }
       }
     }

@@ -1,19 +1,19 @@
 {
   "education": {
     "frame-studio": {
-      "beginner": "A Frame Studio segít vágni, keretezni és komponálni a fotóidat, egyenesen a böngészőben. Használj kompozíciós rácsokat a jobb keretezéshez, vágj népszerű képarányokra, és adj professzionális megjelenésű kereteket — mindezt képminőség-veszteség nélkül.",
+      "beginner": "A Frame Studióval egyenesen a böngészőben vághatod, keretezheted és komponálhatod a fotóidat. Használhatsz kompozíciós rácsokat a jobb keretezéshez, vághatsz népszerű képarányokra, és adhatsz profi hatású kereteket — mindezt képminőség-veszteség nélkül.",
       "deeper": {
         "0": {
           "heading": "Kompozíciós rácsok",
-          "text": "A harmadolás szabálya 3×3-as rácsra osztja a képet — ha a témát a vonalak mentén vagy metszéspontokra helyezed, természetes vizuális egyensúly jön létre. Az aranymetszés (nagyjából 1,618:1) matematikailag harmonikus felosztást ad, amit a művészetben és az építészetben évszázadok óta használnak. Az aranyspirál egy logaritmikus görbét követ a Fibonacci-sorozatból, ami a szemet átvezeti a képen."
+          "text": "A harmadolás szabálya 3×3-as rácsra osztja a képet — ha a témát a vonalak mentén vagy a metszéspontokra helyezed, természetes vizuális egyensúly jön létre. Az aranymetszés (nagyjából 1,618:1) matematikailag harmonikus felosztást ad, amit a művészetben és az építészetben évszázadok óta használnak. Az aranyspirál a Fibonacci-sorozatból származó logaritmikus görbét követ, és vezeti a szemet a képen."
         },
         "1": {
           "heading": "Képarányok",
-          "text": "Különböző képarányok különböző célokat szolgálnak. A 1:1 (négyzet) jól működik közösségi médián és szimmetrikus kompozíciókban. A 3:2 a klasszikus 35mm filmes arány. A 4:3 gyakori Micro Four Thirds és régebbi digitális gépeknél. A 16:9 a szélesvásznú szabvány videóhoz és filmes kompozíciókhoz. A 5:4 hagyományos a 8×10-es nyomatokhoz."
+          "text": "A különböző képarányok különböző célokat szolgálnak. Az 1:1 (négyzet) jól működik közösségi médián és szimmetrikus kompozícióknál. A 3:2 a klasszikus 35mm-es filmes arány. A 4:3 gyakori Micro Four Thirds és régebbi digitális gépeknél. A 16:9 a szélesvásznú szabvány videóhoz és filmes kompozíciókhoz. Az 5:4 hagyományos arány a 8×10-es nyomatokhoz."
         },
         "2": {
           "heading": "Keretezés és paszpartu",
-          "text": "Egy keret hozzáadása a fotóhoz utánozza a fizikai paszpartut és keretet. A fehér paszpartu vizuális levegőt ad, és befelé irányítja a figyelmet. A keret szélességének aránya a képhez befolyásolja a fotó érzékelt „súlyát”. A galériás bemutatáshoz jellemzően szélesebb paszpartu illik. Egy finom árnyék mélységet ad, ahogy egy keretezett nyomat is ül a falon."
+          "text": "Ha keretet adsz a fotóhoz, az a fizikai paszpartut és képkeretet imitálja. A fehér paszpartu vizuális levegőt ad, és befelé irányítja a figyelmet. A keret szélességének és a képnek az aránya hatással van a fotó érzékelt „súlyára”. Galériás bemutatáshoz jellemzően szélesebb paszpartu illik. A finom árnyék mélységet ad, mintha a keretezett nyomat a falon ülne."
         }
       },
       "keyFactors": {

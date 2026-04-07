@@ -1,8 +1,8 @@
 {
   "education": {
     "hyperfocal-simulator": {
-      "beginner": "Hyperfokal avstand er det nærmeste punktet du kan fokusere på og fortsatt beholde alt i uendelig akseptabelt skarpt. Når du fokuserer på den hyperfokale avstanden, strekker dybdeskarpheten seg fra halvparten av den avstanden og helt ut til uendelig. Landskapsfotografer bruker teknikken for å få maksimal skarphet fra forgrunn til horisont.",
-      "deeper": "Hyperfokal avstand kommer fra linselikningen og begrepet uskarphetssirkel (CoC). Den beregnes som brennvidden i annen delt på produktet av f-tallet og CoC-diameteren: H = f² / (N × c). Alt fra H/2 og ut til uendelig faller innenfor akseptabel skarphet. CoC avhenger av sensorstørrelsen — mindre sensorer har en tettere akseptabel CoC, noe som skyver hyperfokal avstand lenger unna ved samme brennvidde og blender. Derfor virker det som om cropsensorer har mer dybdeskarphet: CoC-standarden er tettere i forhold til bildeflaten. I praksis gjør diffraksjon ved svært små blenderåpninger (f/16 og mer på de fleste sensorer) at det er en avveining mellom å maksimere dybdeskarphet og å bevare skarphet per piksel.",
+      "beginner": "Hyperfokal avstand er det nærmeste punktet du kan fokusere på og fortsatt ha alt i uendelig akseptabelt skarpt. Fokuserer du på den hyperfokale avstanden, strekker dybdeskarpheten seg fra halvparten av avstanden og helt ut til uendelig. Landskapsfotografer bruker teknikken for å få maksimal skarphet fra forgrunn til horisont.",
+      "deeper": "Hyperfokal avstand kommer fra linselikningen og begrepet uskarphetssirkel (CoC). Den regnes ut som brennvidden i annen delt på produktet av f-tallet og CoC-diameteren: H = f² / (N × c). Alt fra H/2 og ut til uendelig faller innenfor akseptabel skarphet. CoC avhenger av sensorstørrelsen — mindre sensorer har en tettere akseptabel CoC, og det skyver hyperfokal avstand lenger unna ved samme brennvidde og blender. Det er derfor cropsensorer tilsynelatende har mer dybdeskarphet: CoC-standarden er tettere i forhold til bildeflaten. I praksis gjør diffraksjon ved svært små blenderåpninger (f/16 og mindre på de fleste sensorer) at du må velge mellom maksimal dybdeskarphet og skarphet per piksel.",
       "keyFactors": {
         "0": {
           "label": "Brennvidde",
@@ -14,7 +14,7 @@
         },
         "2": {
           "label": "Sensorstørrelse",
-          "description": "Mindre sensorer bruker en mindre uskarphetssirkel, noe som øker hyperfokal avstand ved tilsvarende utsnitt."
+          "description": "Mindre sensorer bruker en mindre uskarphetssirkel, og det øker hyperfokal avstand ved samme utsnitt."
         },
         "3": {
           "label": "Uskarphetssirkel",
@@ -23,26 +23,26 @@
       },
       "tips": {
         "0": {
-          "text": "Til rask landskapsfoto kan du fokusere omtrent en tredjedel inn i motivet — det tilnærmer hyperfokalpunktet for de fleste vidvinkeloppsett."
+          "text": "Til rask landskapsfoto kan du fokusere omtrent en tredjedel inn i motivet — det er en god tilnærming til hyperfokalpunktet for de fleste vidvinkeloppsett."
         },
         "1": {
-          "text": "Unngå å blende ned forbi f/16 på fullformat eller f/11 på APS-C. Diffraksjon nuller ut gevinsten du er ute etter."
+          "text": "Unngå å blende ned forbi f/16 på fullformat eller f/11 på APS-C. Diffraksjonen spiser opp den dybdegevinsten du er ute etter."
         },
         "2": {
-          "text": "Bruk live view-forstørrelse for å treffe fokus presist på hyperfokal avstand i stedet for å stole på avstandsskalaen på objektivet, som ofte er upresis på moderne autofokus-objektiver."
+          "text": "Bruk forstørrelse i live view for å treffe fokuset presist på hyperfokal avstand, i stedet for å stole på avstandsskalaen på objektivet — den er ofte upresis på moderne autofokusobjektiver."
         }
       },
       "tooltips": {
         "Sensor": {
           "term": "Sensor",
-          "definition": "Kameraets sensorformat. Mindre sensorer har en tettere CoC-standard, som flytter hyperfokal avstand lenger unna."
+          "definition": "Kameraets sensorformat. Mindre sensorer har en tettere CoC-standard, og det flytter hyperfokal avstand lenger unna."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Du fotograferer et landskap med et 24 mm-objektiv på et fullformat-kamera. Hvilket sensorformat bør du velge for å se hyperfokal avstand på fullformat?",
+          "scenario": "Du fotograferer et landskap med et 24 mm-objektiv på et fullformatkamera. Hvilket sensorformat bør du velge for å se hyperfokal avstand på fullformat?",
           "hint": "Fullformat er standard 35 mm-sensor.",
-          "successMessage": "Riktig! Fullformat er det rette valget for et standard 35 mm-kamerahus.",
+          "successMessage": "Riktig! Fullformat er riktig valg for et standard 35 mm-kamerahus.",
           "failureMessage": "Ikke helt — velg Fullformat for å matche et standard 35 mm-kamerahus.",
           "options": {
             "0": { "label": "Fullformat" },
@@ -51,10 +51,10 @@
           }
         },
         "1": {
-          "scenario": "I tabellen for fullformat: hvilken kombinasjon har kortere hyperfokal avstand — 24 mm på f/8 eller 50 mm på f/8?",
+          "scenario": "I tabellen for fullformat — hvilken kombinasjon har kortest hyperfokal avstand: 24 mm på f/8 eller 50 mm på f/8?",
           "hint": "Hyperfokal avstand øker med kvadratet av brennvidden.",
-          "successMessage": "Riktig! 24 mm har mye kortere hyperfokal avstand fordi brennvidden inngår i annen.",
-          "failureMessage": "Faktisk gir kortere brennvidder alltid kortere hyperfokal avstand. 24 mm vinner her.",
+          "successMessage": "Riktig! 24 mm gir mye kortere hyperfokal avstand fordi brennvidden inngår i annen.",
+          "failureMessage": "Kortere brennvidder gir alltid kortere hyperfokal avstand. 24 mm vinner her.",
           "options": {
             "0": { "label": "24 mm på f/8" },
             "1": { "label": "50 mm på f/8" }
@@ -74,8 +74,8 @@
         "3": {
           "scenario": "En venn bytter fra fullformat til Micro Four Thirds, men fortsetter å fotografere på samme brennvidder. Hen klager på at hyperfokal avstand virker annerledes. Hvorfor?",
           "hint": "Uskarphetssirkelen beregnes ut fra sensorstørrelsen.",
-          "successMessage": "Akkurat! Den mindre M43-sensoren bruker en mindre CoC (omtrent 0,015 mm mot 0,03 mm), noe som øker hyperfokal avstand ved samme brennvidde og blender.",
-          "failureMessage": "Nøkkelfaktoren er uskarphetssirkelen. Mindre sensorer krever en tettere CoC-standard, som skyver hyperfokal avstand lenger unna.",
+          "successMessage": "Nettopp! Den mindre M43-sensoren bruker en mindre CoC (omtrent 0,015 mm mot 0,03 mm), og det øker hyperfokal avstand ved samme brennvidde og blender.",
+          "failureMessage": "Nøkkelen er uskarphetssirkelen. Mindre sensorer krever en tettere CoC-standard, og det skyver hyperfokal avstand lenger unna.",
           "options": {
             "0": { "label": "Objektivets brennvidde endres på cropsensor" },
             "1": { "label": "Mindre sensorer bruker en mindre uskarphetssirkel" },
@@ -85,8 +85,8 @@
         "4": {
           "scenario": "Du fotograferer arkitektur på 14 mm f/11 på fullformat. Tabellen viser svært kort hyperfokal avstand. Bør du blende ned videre til f/22 for enda mer dybdeskarphet, eller er f/11 det beste valget?",
           "hint": "Tenk på hva som skjer med skarpheten ved svært små blenderåpninger.",
-          "successMessage": "Utmerket! På f/11 er diffraksjon minimal på fullformat, og hyperfokal avstand på 14 mm er allerede veldig kort. Å blende ned til f/22 ville gjort bildet mykere uten reell DoF-gevinst.",
-          "failureMessage": "Selv om f/22 gir kortere hyperfokal på papiret, reduserer diffraksjon på f/22 den totale skarpheten på fullformat. På 14 mm f/11 er hyperfokal avstand allerede så kort at den ekstra dybden ikke er verdt diffraksjonsstraffen.",
+          "successMessage": "Utmerket! På f/11 er diffraksjonen minimal på fullformat, og hyperfokal avstand på 14 mm er allerede veldig kort. Å blende ned til f/22 ville gjort bildet mykere uten reell DoF-gevinst.",
+          "failureMessage": "Selv om f/22 gir kortere hyperfokal avstand på papiret, reduserer diffraksjonen på f/22 den totale skarpheten på fullformat. På 14 mm f/11 er hyperfokal avstand allerede så kort at den ekstra dybden ikke er verdt diffraksjonstapet.",
           "options": {
             "0": { "label": "Blend ned til f/22 for maks dybdeskarphet" },
             "1": { "label": "Bli på f/11 — diffraksjon på f/22 reduserer skarpheten" }

@@ -38,7 +38,7 @@
       "latitudeLabel": "Breddegrad",
       "longitudeLabel": "Længdegrad",
       "softwareLabel": "Software",
-      "gpsWarning": "Dette foto indeholder lokationsdata. Vær forsigtig, når du deler den originale fil.",
+      "gpsWarning": "Dette foto indeholder positionsdata. Vær forsigtig, når du deler den originale fil.",
       "luminance": "Luminans",
       "red": "Rød",
       "green": "Grøn",
@@ -57,15 +57,15 @@
       "faq": {
         "what-is-exif-data": {
           "question": "Hvad er EXIF-data i et foto?",
-          "answer": "EXIF-data (Exchangeable Image File Format) er metadata indlejret i dit foto af kameraet. De indeholder kameraindstillinger (blænde, lukkertid, ISO), kamera- og linsemodel, dato og tid og nogle gange GPS-lokation."
+          "answer": "EXIF-data (Exchangeable Image File Format) er metadata, som kameraet lægger ind i filen. De indeholder kameraindstillinger (blænde, lukkertid, ISO), kamera- og linsemodel, dato og tidspunkt — og nogle gange GPS-position."
         },
         "how-to-read-histogram": {
-          "question": "Hvordan læser jeg et foto-histogram?",
-          "answer": "Et histogram viser fordelingen af lysstyrke i dit billede fra skygger (venstre) til højlys (højre). Et godt eksponeret foto har typisk data fordelt over hele spektret uden clipping i nogen af enderne, men den ideelle form afhænger af motivet."
+          "question": "Hvordan læser jeg et histogram?",
+          "answer": "Et histogram viser fordelingen af lysstyrken i dit billede — fra skygger (venstre) til højlys (højre). Et godt eksponeret foto har typisk data fordelt hele vejen hen uden clipping i nogen af enderne, men den ideelle form afhænger af motivet."
         },
         "does-exif-contain-location": {
-          "question": "Indeholder EXIF-data min lokation?",
-          "answer": "Har dit kamera eller din telefon GPS slået til, kan EXIF-data indeholde præcise GPS-koordinater for, hvor billedet er taget. Vær opmærksom på det, når du deler fotos online — mange sociale platforme fjerner EXIF-data, men ikke alle gør det."
+          "question": "Indeholder EXIF-data min position?",
+          "answer": "Hvis dit kamera eller din telefon har GPS slået til, kan EXIF-data indeholde præcise koordinater for, hvor billedet er taget. Vær opmærksom på det, inden du deler fotos online — mange sociale platforme fjerner EXIF, men langt fra alle gør det."
         }
       }
     }

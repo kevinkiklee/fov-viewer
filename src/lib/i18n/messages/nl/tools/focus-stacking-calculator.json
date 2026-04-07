@@ -10,7 +10,7 @@
       "nearLimit": "Voorste grens",
       "farLimit": "Achterste grens",
       "overlap": "Overlap",
-      "overlapDescription": "Percentage scherptediepte-overlap tussen opeenvolgende opnamen voor een vloeiende samenvoeging",
+      "overlapDescription": "Percentage overlap in scherptediepte tussen opeenvolgende opnamen, voor een soepele samenvoeging",
       "results": "Resultaten",
       "shotCount": "Benodigde opnamen",
       "totalDepth": "Totale diepte",
@@ -33,8 +33,8 @@
       "infinity": "∞",
       "distanceUnit": "m",
       "warning": "Waarschuwing",
-      "tooFewShots": "Het dieptebereik valt binnen één opname — stacking is niet nodig",
-      "tooManyShots": "Dit plan vereist veel opnamen. Overweeg een kleiner diafragma om het aantal te verminderen.",
+      "tooFewShots": "Het dieptebereik past binnen één opname — stacking is niet nodig",
+      "tooManyShots": "Dit plan vraagt veel opnamen. Kies eventueel een kleiner diafragma om het aantal terug te brengen.",
       "macroMode": "Macro",
       "landscapeMode": "Landschap"
     }

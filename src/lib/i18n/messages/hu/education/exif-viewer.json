@@ -1,8 +1,8 @@
 {
   "education": {
     "exif-viewer": {
-      "beginner": "Az EXIF adatok a kamera által minden fotóba beágyazott rejtett információk. Rögzítik, milyen kamerát és objektívet használtál, a pontos beállításokat (rekesz, záridő, ISO), a dátumot és időt, néha még GPS-koordinátákat is. Ez az eszköz úgy olvassa ki ezeket, hogy nem tölti fel sehová a fotódat — minden a böngésződben történik.",
-      "deeper": "Az EXIF (Exchangeable Image File Format) egy a JEITA/CIPA által meghatározott szabvány, ami JPEG, TIFF és néhány RAW fájlba ágyazott metaadatokat tárol. Az adatok a fájl fejlécének bizonyos szegmenseibe íródnak címke-érték párokként, TIFF-alapú IFD (Image File Directory) szerkezetben. Több IFD szekció van: az IFD0 az alapvető képadatokat, az EXIF al-IFD a kamerabeállításokat, a GPS IFD a helymeghatározást, az Interop IFD pedig a kompatibilitási adatokat tárolja. A kameragyártók saját „MakerNote” adatokat is írnak bele, amik objektívkorrekciókat, fókuszpontokat, záridőszámlálót és más modellspecifikus részleteket tartalmaznak. A közösségi platformok gyakran eltávolítják az EXIF-et feltöltéskor adatvédelmi okból, de a memóriakártyán lévő eredeti fájl mindig megőrzi. Az EXIF ismeretével tanulhatsz a saját fotós szokásaidból, és visszafejtheted a csodált képek mögötti beállításokat.",
+      "beginner": "Az EXIF adatok azok a rejtett információk, amiket a kamera minden fotóba beágyaz. Rögzítik, milyen kamerával és objektívvel fotóztál, a pontos beállításokat (rekesz, záridő, ISO), a dátumot és az időpontot, néha GPS-koordinátákat is. Ez az eszköz úgy olvassa ki ezeket, hogy a fotódat sehová nem tölti fel — minden a böngésződben történik.",
+      "deeper": "Az EXIF (Exchangeable Image File Format) egy JEITA/CIPA-szabvány, amely a JPEG-, TIFF- és néhány RAW-fájlba ágyazott metaadatokat tárolja. Az adatok a fájl fejlécének bizonyos szegmenseibe íródnak címke-érték párokként, TIFF-alapú IFD (Image File Directory) szerkezetben. Több IFD-szekció van: az IFD0 tárolja az alapvető képadatokat, az EXIF al-IFD a kamerabeállításokat, a GPS IFD a helymeghatározást, az Interop IFD pedig a kompatibilitási információkat. A kameragyártók saját „MakerNote” adatokat is beleírnak, amik objektívkorrekciókat, fókuszpontokat, kioldásszámlálót és más modellspecifikus részleteket tartalmaznak. A közösségi platformok feltöltéskor gyakran eltávolítják az EXIF-et adatvédelmi okból, de a memóriakártyán lévő eredeti fájl mindig megőrzi. Az EXIF-ből sokat tanulhatsz a saját fotós szokásaidról, és visszafejtheted a csodált képek mögötti beállításokat is.",
       "keyFactors": {
         "0": {
           "label": "Kamera és objektív",
@@ -23,13 +23,13 @@
       },
       "tips": {
         "0": {
-          "text": "Nézd meg a gyújtótávolságot és a 35mm-es ekvivalenst, hogy megértsd, a fotós nagylátószögű, normál vagy teleperspektívát használt — ez többet tanít a kompozícióról, mint bármelyik harmadolási szabály."
+          "text": "Nézd meg a gyújtótávolságot és a 35mm-ekvivalens értéket, hogy lásd, a fotós nagylátószögű, normál vagy teleperspektívát használt — ez többet tanít a kompozícióról, mint bármilyen harmadolási szabály."
         },
         "1": {
-          "text": "Ha egy csodált fotót magas ISO-n és tág rekesszel készítettek, az elárulja, hogy gyenge fényben készült. Használd az EXIF-et, hogy megértsd, milyen feltételekkel dolgozott a fotós."
+          "text": "Ha egy csodált fotó magas ISO-n és tág rekesszel készült, az elárulja, hogy gyenge fényben született. Az EXIF-ből megtudhatod, milyen körülmények közt dolgozott a fotós."
         },
         "2": {
-          "text": "Mielőtt fotót posztolsz az interneten, vedd figyelembe, hogy az EXIF GPS-adatot tartalmazhat. Ha aggaszt az adatvédelem, a szerkesztőd exportbeállításaiban távolíttasd el a metaadatokat."
+          "text": "Mielőtt kiteszel egy fotót az internetre, gondolj arra, hogy az EXIF GPS-adatot is tartalmazhat. Ha fontos az adatvédelem, a szerkesztőd exportbeállításaiban távolítsd el a metaadatokat."
         }
       },
       "tooltips": {
@@ -110,10 +110,10 @@
           }
         },
         "4": {
-          "scenario": "Egy vadvilág-fotót elemzel: 400mm, f/5.6, 1/2000s, ISO 1600. Az EXIF szoftver mezője „Adobe Lightroom Classic 13.1”. Mit lehet ebből következtetni a fotósról és a felvételi körülményekről?",
-          "hint": "Vedd figyelembe együtt a hosszú gyújtótávolságot, a teljesen nyitott rekeszt, a gyors záridőt és az emelt ISO-t.",
-          "successMessage": "Jó elemzés! A 400mm f/5.6 (valószínűleg teljesen nyitva ezen az objektíven) és az 1/2000s gyors záridő gyors mozgású témára utal (madarak vagy vadállatok akcióban). Az ISO 1600 jelzi, hogy nem erős napfényben készült — valószínűleg borult vagy árnyékos helyen. A Lightroom mező megerősíti, hogy volt utómunka.",
-          "failureMessage": "A beállítások sokat elárulnak: a 400mm f/5.6 egy tipikus vadvilág-telefotó teljesen nyitva, az 1/2000s lefagyasztja a gyors állatmozgást, az ISO 1600 pedig korlátozott fényt jelez (nincs erős nap). A Lightroom bejegyzés megerősíti, hogy a fájlt feldolgozták.",
+          "scenario": "Egy vadvilágfotót elemzel: 400mm, f/5.6, 1/2000s, ISO 1600. Az EXIF szoftver mezőjében „Adobe Lightroom Classic 13.1” szerepel. Mit mond ez neked a fotósról és a felvételi körülményekről?",
+          "hint": "Nézd együtt a hosszú gyújtótávolságot, a teljesen nyitott rekeszt, a gyors záridőt és az emelt ISO-t.",
+          "successMessage": "Jó elemzés! A 400mm f/5.6 (ezen az objektíven valószínűleg teljesen nyitva) és az 1/2000s gyors záridő gyorsan mozgó témára utal (akcióban lévő madarak vagy vadállatok). Az ISO 1600 arra utal, hogy nem erős napfényben készült — inkább borult időben vagy árnyékban. A Lightroom-bejegyzés pedig megerősíti, hogy volt utómunka.",
+          "failureMessage": "A beállítások sokat elárulnak: a 400mm f/5.6 tipikus vadvilág-teleobjektív teljesen nyitva, az 1/2000s lefagyasztja a gyors állatmozgást, az ISO 1600 pedig korlátozott fényre utal (nincs erős nap). A Lightroom-bejegyzés megerősíti, hogy a fájlt feldolgozták.",
           "options": {
             "0": { "label": "Gyors téma mérsékelt fényben, Lightroomban utómunkázva" },
             "1": { "label": "Lassú téma erős fényben, közvetlenül a kameráról" },

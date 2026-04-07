@@ -76,15 +76,15 @@
       "faq": {
         "what-is-rule-of-thirds": {
           "question": "Was ist die Drittelregel in der Fotografie?",
-          "answer": "Die Drittelregel teilt dein Bild in ein 3\u00d73-Raster. Wenn du wichtige Motive entlang der Rasterlinien oder an ihren Schnittpunkten platzierst, entstehen dynamischere, ausgewogenere Kompositionen als beim Zentrieren des Motivs."
+          "answer": "Die Drittelregel teilt dein Bild in ein 3×3-Raster. Wenn du wichtige Motive entlang der Rasterlinien oder an deren Schnittpunkten platzierst, entstehen dynamischere und ausgewogenere Bilder, als wenn du das Motiv mittig setzt."
         },
         "best-aspect-ratio-for-instagram": {
-          "question": "Welches Seitenverh\u00e4ltnis ist am besten f\u00fcr Instagram-Beitr\u00e4ge?",
-          "answer": "Instagram unterst\u00fctzt 1:1 (Quadrat), 4:5 (Hochformat) und 1,91:1 (Querformat). Das 4:5-Hochformat nimmt den meisten Bildschirmplatz im Feed ein und erzielt typischerweise das h\u00f6chste Engagement."
+          "question": "Welches Seitenverhältnis eignet sich am besten für Instagram-Beiträge?",
+          "answer": "Instagram unterstützt 1:1 (Quadrat), 4:5 (Hochformat) und 1,91:1 (Querformat). Das Hochformat 4:5 nimmt im Feed den meisten Bildschirmplatz ein und erzielt erfahrungsgemäß das beste Engagement."
         },
         "how-to-use-golden-ratio": {
-          "question": "Wie verwende ich den Goldenen Schnitt f\u00fcr die Bildkomposition?",
-          "answer": "Der Goldene Schnitt (etwa 1,618:1) erzeugt ein Spiralmuster, das den Blick des Betrachters durch das Bild f\u00fchrt. Platziere dein Hauptmotiv am engsten Punkt der Spirale und lass Leitlinien der Kurve nach au\u00dfen folgen."
+          "question": "Wie nutze ich den Goldenen Schnitt für die Bildkomposition?",
+          "answer": "Der Goldene Schnitt (etwa 1,618:1) erzeugt ein Spiralmuster, das den Blick des Betrachters durchs Bild führt. Platziere dein Hauptmotiv am engsten Punkt der Spirale und lass Leitlinien der Kurve nach außen folgen."
         }
       }
     }

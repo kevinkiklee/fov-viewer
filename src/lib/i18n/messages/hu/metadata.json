@@ -3,88 +3,88 @@
     "site": {
       "defaultTitle": "PhotoTools — fotós eszközök",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Ingyenes fotós eszközök: látószög-szimulátor, színpaletta-generátor, EXIF-megjelenítő, fotóvágás és -keretezés, és még sok más.",
+      "description": "Ingyenes fotós eszközök: látószög-szimulátor, színpaletta-generátor, EXIF-olvasó, fotóvágás és -keretezés, és még sok minden más.",
       "ogTitle": "PhotoTools — ingyenes fotós eszközök"
     },
     "fov-simulator": {
       "title": "FOV Simulator — gyújtótávolságok összehasonlítása",
-      "description": "Hasonlíts össze látószögeket különböző gyújtótávolságokon és érzékelőméreteken. Ingyenes, interaktív, megosztható."
+      "description": "Hasonlítsd össze a látószögeket különböző gyújtótávolságokon és érzékelőméreteken. Ingyenes, interaktív, megosztható."
     },
     "dof-simulator": {
       "title": "Mélységélesség-szimulátor | PhotoTools",
-      "description": "Szemléltesd valós idejű WebGL-szimulációval, hogyan hat a rekesz, a gyújtótávolság és a távolság a háttérelmosódásra."
+      "description": "Valós idejű WebGL-szimuláció: nézd meg, hogyan hat a rekesz, a gyújtótávolság és a téma távolsága a háttérelmosódásra."
     },
     "focus-stacking-calculator": {
       "title": "Focus stacking-kalkulátor | PhotoTools",
-      "description": "Számítsd ki az optimális fókusztávolságokat az elölről hátulig éles képhez makró- és tájfotózáshoz."
+      "description": "Számítsd ki az optimális fókusztávolságokat az elejétől a végéig éles képhez — makró- és tájfotózáshoz."
     },
     "equivalent-settings-calculator": {
       "title": "Ekvivalens beállítások kalkulátor | PhotoTools",
-      "description": "Találd meg az ekvivalens rekeszt és gyújtótávolságot az érzékelőformátumok között azonos mélységélességhez."
+      "description": "Számítsd ki az ekvivalens rekeszt és gyújtótávolságot az érzékelőformátumok között, azonos mélységélességhez."
     },
     "exposure-simulator": {
       "title": "Expozíciós háromszög szimulátor | PhotoTools",
-      "description": "Interaktív expozíciós háromszög-szimulátor — nézd élő előnézeten, hogyan hat a rekesz, a záridő és az ISO a képedre."
+      "description": "Interaktív expozíciós háromszög-szimulátor — élő előnézeten láthatod, hogyan hat a rekesz, a záridő és az ISO a képedre."
     },
     "star-trail-calculator": {
       "title": "Star Trail Calculator",
-      "description": "Számold ki a maximális expozíciós időt éles csillagokhoz az 500-as, NPF és más szabályokkal. Tervezz csillagívfelvételeket bármilyen helyszínre."
+      "description": "Számítsd ki a maximális expozíciós időt pontszerű csillagokhoz az 500-as, az NPF és más szabályokkal. Tervezz csillagív-felvételeket bármilyen helyszínre."
     },
     "white-balance-visualizer": {
       "title": "White Balance Visualizer",
-      "description": "Nézd meg, hogyan hat a fehéregyensúly és a színhőmérséklet a fotóidra. Szemléltesd a változásokat 2000K-től 10000K-ig, élő előnézetben."
+      "description": "Nézd meg, hogyan hat a fehéregyensúly és a színhőmérséklet a fotóidra. 2000K-től 10000K-ig, élő előnézettel."
     },
     "sensor-size-comparison": {
       "title": "Sensor Size Comparison",
-      "description": "Hasonlítsd össze a kamera-érzékelőket a közepes formátumtól az okostelefonig. Átfedés, egymás melletti és pixelsűrűség-nézet, valódi kameramodellekkel."
+      "description": "Hasonlítsd össze a kameraérzékelőket a közepes formátumtól az okostelefonig. Átfedéses, egymás melletti és pixelsűrűség-nézet, valódi kameramodellekkel."
     },
     "color-scheme-generator": {
       "title": "Color Scheme Generator",
-      "description": "Generálj fotós színpalettákat komplementer, analóg, triadikus és tetradikus harmóniák segítségével. Interaktív színkör fotóválasztóval."
+      "description": "Állíts össze fotós színpalettákat komplementer, analóg, triadikus és tetradikus harmóniák alapján. Interaktív színkör fotóválasztóval."
     },
     "frame-studio": {
       "title": "Frame Studio",
-      "description": "Vágj, keretezz és komponálj fotókat rács-segédvonalakkal. 100%-ban a böngészőben — a fotóid soha nem hagyják el az eszközöd."
+      "description": "Vágj, keretezz és komponálj fotókat rács-segédvonalakkal. 100%-ban a böngészőben — a fotóid ki sem kerülnek az eszközödről."
     },
     "exif-viewer": {
       "title": "EXIF Viewer",
-      "description": "Nézd meg bármely fotó EXIF metaadatait, hisztogramját és előnézetét. 100%-ban a böngészőben — a fotóid soha nem hagyják el az eszközöd."
+      "description": "Nézd meg bármelyik fotó EXIF metaadatait, hisztogramját és előnézetét. 100%-ban a böngészőben — a fotóid ki sem kerülnek az eszközödről."
     },
     "hyperfocal-simulator": {
       "title": "Hiperfokális távolság szimulátor | PhotoTools",
-      "description": "Szemléltesd a hiperfokális távolságot bármilyen objektívhez és érzékelőhöz. Nézd meg, pontosan hová fókuszálj a maximális élességért."
+      "description": "Jelenítsd meg a hiperfokális távolságot bármilyen objektívhez és érzékelőhöz. Nézd meg, pontosan hová érdemes fókuszálnod a maximális élességért."
     },
     "shutter-speed-visualizer": {
       "title": "Shutter Speed Visualizer",
-      "description": "Találd meg a legkisebb záridőt az éles kézi felvételekhez. Figyelembe veszi a gyújtótávolságot, az érzékelőméretet és a képstabilizálást."
+      "description": "Keresd meg a leglassabb záridőt, amivel még éles kézi felvételt csinálhatsz. Figyelembe veszi a gyújtótávolságot, az érzékelőméretet és a képstabilizálást."
     },
     "nd-filter-calculator": {
       "title": "ND Filter Calculator",
-      "description": "Számítsd ki a helyes záridőt ND szűrők használatakor. ND2-től ND1000000-ig minden erősséget támogat, gyorsreferencia-táblázattal."
+      "description": "Számítsd ki a helyes záridőt ND szűrő használatakor. ND2-től ND1000000-ig minden erősséget kezel, gyorsreferencia-táblázattal."
     },
     "perspective-compression-simulator": {
       "title": "Perspektíva-tömörítés szimulátor | PhotoTools",
-      "description": "Interaktív 3D-s szimulátor, ami megmutatja, hogyan hat a gyújtótávolság és a távolság a perspektíva-tömörítésre. Nézd valós időben a háttérváltozást."
+      "description": "Interaktív 3D-s szimulátor, amin látszik, hogyan hat a gyújtótávolság és a téma távolsága a perspektíva-tömörítésre. Valós időben figyelheted, ahogy a háttér változik."
     },
     "about": {
       "title": "Rólunk",
-      "description": "A PhotoTools ingyenes, böngésző-alapú fotós kalkulátorok, szimulátorok és referenciák gyűjteménye minden szintű fotósnak."
+      "description": "A PhotoTools ingyenes, böngészőben futó fotós kalkulátorok, szimulátorok és referenciák gyűjteménye minden szintű fotósnak."
     },
     "contact": {
       "title": "Kapcsolat | PhotoTools",
-      "description": "Lépj kapcsolatba a PhotoTools csapatával — kérdések, visszajelzések vagy javaslatok a fotós eszközeinkkel kapcsolatban."
+      "description": "Lépj kapcsolatba a PhotoTools csapatával — kérdések, visszajelzések és ötletek a fotós eszközeinkhez."
     },
     "privacy": {
       "title": "Adatvédelmi tájékoztató | PhotoTools",
-      "description": "Tudd meg, hogyan kezeli a PhotoTools az adataidat: analitika, sütik és kapcsolati űrlap a www.phototools.io oldalon."
+      "description": "Hogyan kezeli a PhotoTools az adataidat: analitika, sütik és kapcsolati űrlap a www.phototools.io oldalon."
     },
     "terms": {
       "title": "Felhasználási feltételek | PhotoTools",
-      "description": "A PhotoTools felhasználási feltételei — elfogadható használat, szellemi tulajdon, szavatosság kizárása és felelősségkorlátozás a www.phototools.io oldalon."
+      "description": "A PhotoTools felhasználási feltételei — elfogadható használat, szellemi tulajdon, szavatossági kizárás és felelősségkorlátozás a www.phototools.io oldalon."
     },
     "glossary": {
       "title": "Fotós fogalomtár",
-      "description": "Kereshető fogalomtár 50+ fotós szakkifejezéssel, definíciókkal és linkekkel az interaktív eszközökhöz."
+      "description": "Kereshető fogalomtár 50+ fotós szakkifejezéssel, definíciókkal és az interaktív eszközökre mutató linkekkel."
     }
   }
 }

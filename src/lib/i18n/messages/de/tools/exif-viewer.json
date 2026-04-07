@@ -57,15 +57,15 @@
       "faq": {
         "what-is-exif-data": {
           "question": "Was sind EXIF-Daten in einem Foto?",
-          "answer": "EXIF-Daten (Exchangeable Image File Format) sind Metadaten, die von der Kamera in dein Foto eingebettet werden. Sie umfassen Kameraeinstellungen (Blende, Verschlusszeit, ISO), das Kamera- und Objektivmodell, Datum und Uhrzeit sowie manchmal den GPS-Standort."
+          "answer": "EXIF-Daten (Exchangeable Image File Format) sind Metadaten, die deine Kamera in das Foto einbettet. Dazu gehören Kameraeinstellungen (Blende, Verschlusszeit, ISO), Kamera- und Objektivmodell, Datum und Uhrzeit sowie manchmal der GPS-Standort."
         },
         "how-to-read-histogram": {
           "question": "Wie lese ich ein Foto-Histogramm?",
-          "answer": "Ein Histogramm zeigt die Helligkeitsverteilung in deinem Bild von Schatten (links) bis Lichter (rechts). Ein gut belichtetes Foto hat typischerweise Daten \u00fcber den gesamten Bereich verteilt, ohne Clipping an beiden Enden, wobei die ideale Form von der Szene abh\u00e4ngt."
+          "answer": "Ein Histogramm zeigt die Helligkeitsverteilung im Bild von den Schatten (links) bis zu den Lichtern (rechts). Ein gut belichtetes Foto verteilt seine Daten meist über den gesamten Bereich, ohne an den Enden zu clippen — die ideale Form hängt aber von der Szene ab."
         },
         "does-exif-contain-location": {
           "question": "Enthalten EXIF-Daten meinen Standort?",
-          "answer": "Wenn deine Kamera oder dein Smartphone GPS aktiviert hat, k\u00f6nnen EXIF-Daten pr\u00e4zise GPS-Koordinaten enthalten, wo das Foto aufgenommen wurde. Beachte dies beim Teilen von Fotos online \u2014 viele soziale Plattformen entfernen EXIF-Daten, aber nicht alle."
+          "answer": "Wenn an deiner Kamera oder deinem Smartphone GPS aktiviert ist, können EXIF-Daten exakte Koordinaten des Aufnahmeorts enthalten. Denk daran beim Teilen im Netz — viele soziale Plattformen entfernen EXIF-Daten, aber längst nicht alle."
         }
       }
     }

@@ -1,15 +1,15 @@
 {
   "glossary": {
     "title": "Fotós fogalomtár",
-    "subtitle": "Kereshető referencia a fotós szakkifejezésekhez. Kattints bármelyik fogalomra a definíciójáért.",
+    "subtitle": "Kereshető referencia a fotós szakkifejezésekhez. Kattints bármelyik fogalomra a definícióhoz.",
     "searchPlaceholder": "Keresés a fogalmak között...",
     "searchAriaLabel": "Keresés a fogalomtárban",
-    "noResults": "Nincs találat a kereséshez.",
+    "noResults": "Nincs találat.",
     "tryTool": "Próbáld ki: {toolName}",
     "entries": {
       "aperture": {
         "term": "Rekesz",
-        "definition": "Az objektív nyílása, amelyen át a fény beér a kamerába. A tágabb rekesz (alacsonyabb f-szám) több fényt enged be, és kisebb mélységélességet ad."
+        "definition": "Az objektív nyílása, amin keresztül a fény a kamerába jut. A tágabb rekesz (alacsonyabb f-szám) több fényt enged be, és kisebb mélységélességet ad."
       },
       "aspect-ratio": {
         "term": "Képarány",
@@ -17,63 +17,63 @@
       },
       "autofocus": {
         "term": "Autofókusz",
-        "definition": "Kamerarendszer, ami automatikusan állítja be az objektívet, hogy a téma éles legyen. A modern rendszerek fáziskülönbség- vagy kontrasztészlelést használnak."
+        "definition": "Kamerarendszer, amely automatikusan beállítja az objektívet, hogy a téma éles legyen. A modern rendszerek fáziskülönbség- vagy kontrasztészlelést használnak."
       },
       "bokeh": {
         "term": "Bokeh",
-        "definition": "A kép elmosódott részeinek esztétikai minősége, különösen a fénypontoké. A lágy, kerek bokeht általában kedvelik, és az objektív felépítése és a rekesz alakja befolyásolja."
+        "definition": "A kép életlen részeinek esztétikai minősége, különösen a pontszerű fényeké. A lágy, kerek bokeh a legkedveltebb; az objektív felépítése és a rekeszlamellák alakja határozza meg."
       },
       "bracketing": {
         "term": "Expozíciósorozat (bracketing)",
-        "definition": "Ugyanarról a jelenetről több felvétel készítése különböző expozíciós beállításokkal. HDR-fotózáshoz vagy ahhoz használják, hogy biztosan legyen legalább egy jól exponált kocka."
+        "definition": "Több felvétel készítése ugyanarról a jelenetről különböző expozíciós beállításokkal. HDR-fotózáshoz használják, vagy ahhoz, hogy biztosan legyen legalább egy jól exponált kocka."
       },
       "bulb-mode": {
         "term": "Bulb mód",
-        "definition": "Zárbeállítás, amelynél a zár addig marad nyitva, amíg a kioldót nyomva tartod. Nagyon hosszú expozíciókhoz használják, a kamera időzített beállításain túl."
+        "definition": "Zárbeállítás, amelynél a zár addig marad nyitva, amíg nyomva tartod a kioldót. A kamera beépített időzítésein túlmutató, nagyon hosszú expozíciókhoz használják."
       },
       "burst-mode": {
         "term": "Sorozatfelvétel",
-        "definition": "Olyan felvételi mód, ahol a kamera gyors egymásutánban több képkockát készít másodpercenként. Hasznos gyors események megörökítéséhez vagy a legjobb pillanat kiválasztásához."
+        "definition": "Felvételi mód, amelynél a kamera gyors egymásutánban, másodpercenként több képkockát készít. Gyors események megörökítéséhez és a legjobb pillanat kiválasztásához hasznos."
       },
       "chromatic-aberration": {
         "term": "Kromatikus aberráció",
-        "definition": "Optikai hiba, amikor a fény különböző hullámhosszai kissé eltérő pontokban fókuszálódnak, színes peremet okozva a nagy kontrasztú éleken. Gyakoribb olcsóbb objektíveken és tágra nyitott rekesznél."
+        "definition": "Optikai hiba, amelynél a fény különböző hullámhosszai kissé eltérő pontokba fókuszálódnak, így színes peremet okoznak a nagy kontrasztú éleken. Gyakoribb az olcsóbb objektíveken és tágra nyitott rekesznél."
       },
       "circle-of-confusion": {
         "term": "Szóráskör (Circle of Confusion)",
-        "definition": "A legnagyobb elmosódott folt, ami a szem számára még pontnak látszik. Ez határozza meg az elfogadható élesség határát, és szerepel a mélységélesség számításában."
+        "definition": "A legnagyobb elmosódott folt, amit a szem még pontnak érzékel. Ez határozza meg az elfogadható élesség határát, és szerepel a mélységélesség kiszámításában."
       },
       "color-temperature": {
         "term": "Színhőmérséklet",
-        "definition": "Kelvinben mért érték, ami leírja egy fényforrás melegségét vagy hűvösségét. Az alacsonyabb értékek (2700K) melegnek/narancsosnak, a magasabbak (6500K+) hűvösnek/kéknek tűnnek."
+        "definition": "Kelvinben mért érték, amely leírja egy fényforrás melegségét vagy hűvösségét. Az alacsonyabb értékek (2700K) melegnek/narancsosnak, a magasabbak (6500K+) hűvösnek/kéknek hatnak."
       },
       "crop-factor": {
         "term": "Crop faktor",
-        "definition": "Egy kameraérzékelő átlójának aránya a 35 mm-es full-frame érzékelőéhez képest. Befolyásolja az effektív gyújtótávolságot és a látószöget."
+        "definition": "Egy kameraérzékelő átlójának aránya a 35 mm-es full-frame érzékelő átlójához képest. Hatással van az effektív gyújtótávolságra és a látószögre."
       },
       "depth-of-field": {
         "term": "Mélységélesség",
-        "definition": "A jelenet azon távolságtartománya, ami elfogadhatóan élesnek látszik. A rekesz, a gyújtótávolság és a téma távolsága szabályozza."
+        "definition": "A jelenet azon távolságtartománya, amely elfogadhatóan élesnek látszik. A rekesz, a gyújtótávolság és a téma távolsága szabályozza."
       },
       "diffraction": {
         "term": "Diffrakció",
-        "definition": "A fény elhajlása, amikor kis rekesznyíláson halad át, ami lágyítja a képet. Gyakorlati határt szab annak, meddig érdemes az objektívet leszűkíteni."
+        "definition": "A fény elhajlása, amikor kis rekesznyíláson halad át; lágyítja a képet. Gyakorlati határt szab annak, meddig érdemes az objektívet leszűkíteni."
       },
       "dynamic-range": {
         "term": "Dinamikatartomány",
-        "definition": "A legmélyebb árnyékok és a legvilágosabb fénypontok közötti tartomány, amit a kamera egyetlen expozícióban rögzíteni tud. Fényértékben (EV) mérik."
+        "definition": "A legmélyebb árnyékok és a legvilágosabb fénypontok közötti tartomány, amit a kamera egyetlen expozícióban rögzíteni tud. Fényértékben (EV) mérjük."
       },
       "ev": {
-        "term": "EV (expozíciós érték)",
-        "definition": "Szám, ami a záridő és a rekesz olyan kombinációját jelöli, ami azonos expozíciót ad. Minden 1 EV-s lépés megduplázza vagy felezi a fényt."
+        "term": "EV (fényérték)",
+        "definition": "Szám, amely a záridő és a rekesz azon kombinációit jelöli, amelyek azonos expozíciót adnak. Minden 1 EV-s lépés duplázza vagy felezi a fényt."
       },
       "exposure-compensation": {
         "term": "Expozíciókorrekció",
-        "definition": "Kamerabeállítás, ami felülírja a fénymérő által ajánlott expozíciót, tipikusan 1/3 EV-s lépésekben. A pozitív értékek világosítják, a negatívak sötétítik a képet."
+        "definition": "Kamerabeállítás, amely felülírja a fénymérő által javasolt expozíciót, jellemzően 1/3 EV-s lépésekben. A pozitív értékek világosítják, a negatívak sötétítik a képet."
       },
       "exposure-triangle": {
         "term": "Expozíciós háromszög",
-        "definition": "A rekesz, a záridő és az ISO kapcsolata. Ha egyet változtatsz, a többit is módosítani kell, hogy az expozíció változatlan maradjon."
+        "definition": "A rekesz, a záridő és az ISO hármasa. Ha az egyiket változtatod, a másik kettőn is igazítani kell, hogy az expozíció változatlan maradjon."
       },
       "f-stop": {
         "term": "F-stop",
@@ -85,59 +85,59 @@
       },
       "focus-stacking": {
         "term": "Focus stacking",
-        "definition": "Olyan technika, amikor különböző fókusztávolságokon készült képeket egyesítesz utómunkában, hogy nagyobb mélységélességet érj el, mint egyetlen expozícióval lehetséges."
+        "definition": "Technika, amelynél különböző fókusztávolságokon készült képeket egyesítesz utómunkában, hogy nagyobb mélységélességet érj el, mint amit egyetlen expozícióval el lehet érni."
       },
       "full-frame": {
         "term": "Full Frame",
-        "definition": "A 35 mm-es filmmel megegyező érzékelőméret (36 x 24 mm). A gyújtótávolság- és crop-faktor számítások referenciaértéke."
+        "definition": "A 35 mm-es filmmel megegyező érzékelőméret (36 × 24 mm). A gyújtótávolság- és crop-faktor-számítások viszonyítási alapja."
       },
       "golden-hour": {
         "term": "Arany óra",
-        "definition": "A napkelte utáni vagy naplemente előtti rövid időszak, amikor a napfény meleg, lágy és irányított. Kedvelt táj- és portréfotózáshoz."
+        "definition": "A napkelte utáni és a naplemente előtti rövid időszak, amikor a napfény meleg, lágy és alacsony szögből érkezik. Tájképhez és portréhoz kedvelt időszak."
       },
       "histogram": {
         "term": "Hisztogram",
-        "definition": "Grafikon, ami a kép fényességértékeinek eloszlását mutatja. A bal oldal az árnyékokat, a jobb oldal a fénypontokat jelöli."
+        "definition": "Grafikon, amely a kép fényességértékeinek eloszlását mutatja. A bal oldal az árnyékokat, a jobb oldal a fénypontokat ábrázolja."
       },
       "hyperfocal-distance": {
         "term": "Hiperfokális távolság",
-        "definition": "A legközelebbi fókusztávolság, amelynél a felétől a végtelenig minden elfogadhatóan éles. Adott rekesznél maximalizálja a mélységélességet."
+        "definition": "A legközelebbi fókusztávolság, amelynél a fele távolságtól a végtelenig minden elfogadhatóan éles. Adott rekesz mellett maximalizálja a mélységélességet."
       },
       "image-stabilization": {
         "term": "Képstabilizálás",
-        "definition": "Rendszer, ami csökkenti a bemozdulás okozta elmosódást, vagy az objektívben (OIS), vagy a kameravázban (IBIS). Általában 3-7 stopnyi előnyt ad kézből fotózáshoz."
+        "definition": "Rendszer, amely csökkenti a bemozdulás okozta elmosódást, vagy az objektívben (OIS), vagy a kameravázban (IBIS). Jellemzően 3–7 stopnyi előnyt ad kézből fotózáshoz."
       },
       "iso": {
         "term": "ISO",
-        "definition": "Az érzékelő fényérzékenységének mértéke. Magasabb ISO-értékek világosítják a képet, de több zajt okoznak."
+        "definition": "Az érzékelő fényérzékenységének mértéke. A magasabb ISO-érték világosítja a képet, de több zajjal jár."
       },
       "jpeg": {
         "term": "JPEG",
-        "definition": "Veszteséges tömörítést alkalmazó képfájl-formátum. Kisebb fájlméret, de kevésbé rugalmas szerkeszthetőség, mint a RAW."
+        "definition": "Veszteséges tömörítést használó képfájl-formátum. Kisebb fájlméret, de a RAW-hoz képest kevésbé rugalmas az utómunkában."
       },
       "kelvin": {
         "term": "Kelvin",
-        "definition": "A fény színhőmérsékletének mértékegysége. A fotósok Kelvin-értékekkel állítják be a fehéregyensúlyt, hogy illeszkedjen a környező fény színéhez."
+        "definition": "A fény színhőmérsékletének mértékegysége. A fotósok Kelvin-értékkel állítják be a fehéregyensúlyt, hogy illeszkedjen a környező fény színéhez."
       },
       "lens-compression": {
         "term": "Objektív-tömörítés",
-        "definition": "Vizuális hatás, amikor egy teleobjektív a távoli tárgyakat közelebb hozza az előtéri témához. Valójában a nagy felvételi távolság okozza, nem maga az objektív."
+        "definition": "Vizuális hatás, amelynél egy teleobjektív a távoli tárgyakat látszólag közelebb hozza az előtéri témához. Valójában a nagy felvételi távolság okozza, nem maga az objektív."
       },
       "light-meter": {
         "term": "Fénymérő",
-        "definition": "Eszköz vagy kamerarendszer, ami a fény erősségét méri a helyes expozíció meghatározásához. A kamerák visszavert fényt mérnek; a kézi fénymérők képesek a beeső fényt is mérni."
+        "definition": "Eszköz vagy kamerarendszer, amely méri a fény erősségét a helyes expozíció meghatározásához. A kamerák a visszavert fényt mérik; a kézi fénymérők a beeső fényt is tudják mérni."
       },
       "long-exposure": {
         "term": "Hosszú expozíció",
-        "definition": "Lassú záridővel, jellemzően másodperceken vagy perceken át készült felvétel. Fénycsíkokhoz, sima vízfelszínhez, csillagívekhez és gyenge fényű jelenetekhez használják."
+        "definition": "Lassú záridővel, jellemzően másodperceken vagy perceken át készített felvétel. Fénycsíkokhoz, selymes vízfelszínhez, csillagívekhez és gyenge fényű jelenetekhez használják."
       },
       "macro": {
         "term": "Makró",
-        "definition": "Fotózás, ami az alanyt élethűen vagy annak közelében (1:1 arányban) nagyítva örökíti meg. Erre kifejlesztett makróobjektívet vagy közgyűrűket igényel."
+        "definition": "Fotózás, amelynél a témát élethű nagyítással (1:1) vagy ahhoz közel örökíted meg. Erre tervezett makróobjektívet vagy közgyűrűket igényel."
       },
       "medium-format": {
         "term": "Közepes formátum",
-        "definition": "Full Frame-nél nagyobb érzékelőméret, tipikusan 44 x 33 mm vagy 54 x 40 mm. Nagyobb felbontást, kisebb mélységélességet és tágabb dinamikatartományt kínál."
+        "definition": "A Full Frame-nél nagyobb érzékelőméret, jellemzően 44 × 33 mm vagy 54 × 40 mm. Nagyobb felbontást, kisebb mélységélességet és tágabb dinamikatartományt kínál."
       },
       "megapixel": {
         "term": "Megapixel",
@@ -145,27 +145,27 @@
       },
       "micro-four-thirds": {
         "term": "Micro Four Thirds",
-        "definition": "Tükör nélküli kamerarendszer 17,3 x 13 mm-es érzékelővel, ami 2x-es crop faktort eredményez. Kompakt vázat és objektíveket kínál jó képminőséggel."
+        "definition": "Tükör nélküli kamerarendszer 17,3 × 13 mm-es érzékelővel, 2×-es crop faktorral. Kompakt vázat és objektíveket kínál jó képminőséggel."
       },
       "mirror-lock-up": {
         "term": "Tükörelőfelhajtás",
-        "definition": "DSLR funkció, ami a tükröt a zár kioldása előtt felhajtja, csökkentve a rezgést. Éles, állványos felvételekhez használják, különösen lassú záridőnél."
+        "definition": "DSLR-funkció, amely a tükröt a zár kioldása előtt felhajtja, így csökkenti a rezgést. Éles, állványos felvételekhez használják, különösen lassú záridőnél."
       },
       "nd-filter": {
         "term": "ND szűrő",
-        "definition": "Semleges sűrűségű szűrő, ami az objektívbe jutó fény mennyiségét csökkenti a színek megváltoztatása nélkül. Hosszabb expozíciót vagy tágabb rekeszt tesz lehetővé erős fényben."
+        "definition": "Semleges sűrűségű szűrő, amely a színek megváltoztatása nélkül csökkenti az objektívbe jutó fény mennyiségét. Erős fényben hosszabb expozíciót vagy tágabb rekeszt tesz lehetővé."
       },
       "noise": {
         "term": "Zaj",
-        "definition": "Véletlenszerű fényesség- és színingadozás a digitális képeken. Leginkább az árnyékokban és magas ISO-n látható. Zajszűrő szoftverrel csökkenthető."
+        "definition": "Véletlenszerű fényesség- és színingadozás a digitális képeken. Leginkább az árnyékokban és magas ISO-n látszik. Zajszűrő szoftverrel csökkenthető."
       },
       "overexposure": {
         "term": "Túlexponálás",
-        "definition": "Amikor a kép túl sok fényt kap, és a fénypontok tiszta fehérbe vágnak, elveszítve a részleteket. Az alulexponálás ellentéte."
+        "definition": "Amikor a kép túl sok fényt kap, és a fénypontok tiszta fehérbe vágnak, részlet nélkül. Az alulexponálás ellentéte."
       },
       "panorama": {
         "term": "Panoráma",
-        "definition": "Széles látószögű kép, amit több, részben átfedő felvétel egymáshoz fűzésével készítenek. Akár 360 fokos jelenetet is lefedhet."
+        "definition": "Széles látószögű kép, amelyet több, részben átfedő felvétel összefűzésével készítenek. Akár 360 fokos jelenetet is lefedhet."
       },
       "pixel-pitch": {
         "term": "Pixelosztás (pixel pitch)",
@@ -173,7 +173,7 @@
       },
       "polarizer": {
         "term": "Polárszűrő",
-        "definition": "Szűrő, ami csökkenti a tükröződéseket és csillogást nem fémes felületekről, és mélyíteni tudja a kék eget. Úgy működik, hogy blokkolja az adott irányban rezgő fényhullámokat."
+        "definition": "Szűrő, amely csökkenti a nem fémes felületekről érkező tükröződéseket és csillogást, és mélyíti a kék eget. Úgy működik, hogy blokkolja az adott irányban rezgő fényhullámokat."
       },
       "prime-lens": {
         "term": "Fix objektív",
@@ -181,59 +181,59 @@
       },
       "raw": {
         "term": "RAW",
-        "definition": "Tömörítetlen vagy veszteségmentesen tömörített fájlformátum, ami az érzékelő összes adatát megőrzi. Maximális utómunka-rugalmasságot kínál nagyobb fájlméret árán."
+        "definition": "Tömörítetlen vagy veszteségmentesen tömörített fájlformátum, amely megőrzi az érzékelő összes adatát. Maximális utómunka-rugalmasságot ad, nagyobb fájlméret árán."
       },
       "reciprocal-rule": {
         "term": "Reciprokszabály",
-        "definition": "Irányelv, ami szerint a legkisebb kézi záridő 1/(gyújtótávolság) legyen, hogy elkerüld a bemozdulást. Egy 200 mm-es objektívnél legalább 1/200s használandó."
+        "definition": "Irányelv, amely szerint a legkisebb kézi záridő 1/(gyújtótávolság) legyen, hogy elkerüld a bemozdulást. Egy 200 mm-es objektívhez legalább 1/200s-t kell használni."
       },
       "rule-of-thirds": {
         "term": "Harmadolás szabálya",
-        "definition": "Kompozíciós irányelv, ami a képet 3x3-as rácsra osztja. A témák a vonalak mentén vagy azok metszéspontjában való elhelyezése általában kiegyensúlyozottabb képet ad."
+        "definition": "Kompozíciós irányelv, amely a képet 3×3-as rácsra osztja. Ha a témát a vonalak mentén vagy a metszéspontjaikra helyezed, általában kiegyensúlyozottabb képet kapsz."
       },
       "sensor-size": {
         "term": "Érzékelőméret",
-        "definition": "A kamera képérzékelőjének fizikai mérete. A nagyobb érzékelők több fényt gyűjtenek, kisebb mélységélességet adnak és általában kevesebb zajt produkálnak."
+        "definition": "A kamera képérzékelőjének fizikai mérete. A nagyobb érzékelők több fényt gyűjtenek, kisebb mélységélességet adnak, és általában kevesebb zajjal dolgoznak."
       },
       "shutter-speed": {
         "term": "Záridő",
-        "definition": "Az az időtartam, ameddig a kamera zárja az expozíció során nyitva van. A gyorsabb záridők megállítják a mozgást, a lassabbak bemozdulást engednek."
+        "definition": "Az az időtartam, ameddig a kamera zárja az expozíció alatt nyitva van. A gyors záridő lefagyasztja a mozgást, a lassú bemozdulást enged."
       },
       "star-trails": {
         "term": "Csillagívek (star trails)",
-        "definition": "A csillagok látszólagos mozgása által keltett fénycsíkok hosszú expozíción. Elkészíthetők egyetlen nagyon hosszú expozícióval vagy több rövidebb kocka egyesítésével."
+        "definition": "A csillagok látszólagos mozgása által rajzolt fénycsíkok hosszú expozíción. Készíthetsz egyetlen nagyon hosszú expozícióval, vagy több rövidebb kocka egyesítésével."
       },
       "stop": {
         "term": "Stop",
-        "definition": "Az expozíció változásának mértékegysége, ami a fény mennyiségének megduplázását vagy felezését jelenti. Egyaránt vonatkozik a rekeszre, záridőre és ISO-ra."
+        "definition": "Az expozíció változásának mértékegysége: a fény mennyiségének megduplázását vagy felezését jelenti. Egyformán vonatkozik a rekeszre, a záridőre és az ISO-ra."
       },
       "telephoto": {
         "term": "Teleobjektív",
-        "definition": "Olyan objektív, aminek a gyújtótávolsága kb. 70 mm-nél hosszabb (Full Frame-ekvivalensben). A teleobjektívek nagyítják a távoli témákat és tömörítik a perspektívát."
+        "definition": "Olyan objektív, amelynek a gyújtótávolsága kb. 70 mm-nél hosszabb (Full Frame-ekvivalensben). A teleobjektívek nagyítják a távoli témákat és tömörítik a perspektívát."
       },
       "tilt-shift": {
         "term": "Tilt-shift objektív",
-        "definition": "Olyan objektív, ami képes megdönteni a fókuszsíkot, és eltolni a képkört az érzékelőhöz képest. Építészeti fotózáshoz és szelektív fókuszhatásokhoz használják."
+        "definition": "Olyan objektív, amely képes megdönteni a fókuszsíkot, és eltolni a képkört az érzékelőhöz képest. Építészeti fotózáshoz és szelektív élességi hatásokhoz használják."
       },
       "underexposure": {
         "term": "Alulexponálás",
-        "definition": "Amikor a kép túl kevés fényt kap, és az árnyékok elvesztik a részleteiket, zajosak lesznek. A túlexponálás ellentéte."
+        "definition": "Amikor a kép túl kevés fényt kap, és az árnyékok elveszítik a részleteket, miközben zajossá válnak. A túlexponálás ellentéte."
       },
       "vignetting": {
         "term": "Vignetta",
-        "definition": "A kép sarkainak és széleinek sötétedése a középhez képest. Okozhatja az objektív felépítése, szűrők vagy napellenzők, és néha szándékosan hozzá is adják utómunkában."
+        "definition": "A kép sarkainak és szélének sötétedése a középhez képest. Okozhatja az objektív felépítése, szűrők vagy napellenzők; néha szándékosan is hozzáadják utómunkában."
       },
       "white-balance": {
         "term": "Fehéregyensúly",
-        "definition": "Kamerabeállítás, ami a színeket úgy korrigálja, hogy a fehér tárgyak különböző fényviszonyok között is semlegesnek tűnjenek. Automatikusan vagy kézzel, Kelvin-értékkel állítható."
+        "definition": "Kamerabeállítás, amely úgy korrigálja a színeket, hogy a fehér tárgyak különböző fényviszonyok között is semlegesnek tűnjenek. Automatikusan vagy kézzel, Kelvin-értékkel állítható."
       },
       "wide-angle": {
-        "term": "Nagylátószögű",
-        "definition": "Rövid gyújtótávolságú objektív (tipikusan 35 mm alatti Full Frame-en), ami szélesebb látószöget rögzít. Gyakran használják tájfotózáshoz, építészethez és belső terekhez."
+        "term": "Nagylátószögű objektív",
+        "definition": "Rövid gyújtótávolságú objektív (jellemzően 35 mm alatti Full Frame-en), amely szélesebb látószöget rögzít. Gyakran használják tájképhez, építészeti fotózáshoz és belső terekhez."
       },
       "zoom-lens": {
         "term": "Zoom objektív",
-        "definition": "Változtatható gyújtótávolságú objektív, amivel a fotós mozgás nélkül is változtathatja a kompozíciót. Sokoldalú, bár általában nagyobb, nehezebb és néha kevésbé éles, mint a fix objektívek."
+        "definition": "Változtatható gyújtótávolságú objektív, amivel a fotós elmozdulás nélkül is átrendezheti a kompozíciót. Sokoldalú, de általában nagyobb, nehezebb, és néha kicsit kevésbé éles, mint a fix objektívek."
       }
     }
   }

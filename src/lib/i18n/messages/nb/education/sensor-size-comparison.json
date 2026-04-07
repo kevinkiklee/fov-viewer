@@ -1,19 +1,19 @@
 {
   "education": {
     "sensor-size-comparison": {
-      "beginner": "Kamerasensorer finnes i mange fysiske størrelser, fra de store mellomformat-brikkene i studiokameraer til de bittesmå sensorene i mobiltelefoner. Større sensor fanger mer lys, gir mindre støy og gjør det lettere å få uskarp bakgrunn. Sensorstørrelse er en av de viktigste faktorene som skiller kamerakategoriene.",
+      "beginner": "Kamerasensorer finnes i mange fysiske størrelser, fra de store mellomformatbrikkene i studiokameraer til de bittesmå sensorene i mobiltelefoner. En større sensor fanger mer lys, gir mindre støy og gjør det lettere å få uskarp bakgrunn. Sensorstørrelse er ett av de viktigste skillene mellom kamerakategoriene.",
       "deeper": {
         "0": {
           "heading": "Slik fungerer det",
-          "text": "Sensorstørrelse påvirker fotografi på flere måter som henger sammen. En større sensor har et større areal til å samle fotoner, noe som bedrer signal/støy-forholdet og det dynamiske området. Sensorstørrelse er en av de viktigste forskjellene mellom kamerakategorier — fra mellomformat-studiokameraer til sensorene i mobiltelefoner."
+          "text": "Sensorstørrelse påvirker fotografi på flere sammenhengende måter. En større sensor har et større areal til å samle fotoner, noe som bedrer signal/støy-forholdet og det dynamiske området. Sensorstørrelse er ett av de viktigste skillene mellom kamerakategoriene — fra mellomformatstudiokameraer til sensorene i mobiltelefoner."
         },
         "1": {
           "heading": "Cropfaktor",
-          "text": "«Cropfaktor» beskriver hvordan en sensor forholder seg til 35 mm fullformat-standarden. En APS-C-sensor med cropfaktor 1,5x gir samme synsfelt med et 35 mm-objektiv som et fullformat-kamera ville gjort med et 52,5 mm. Denne cropfaktoren multipliserer også den effektive dybdeskarpheten — en mindre sensor virker å gi mer dybdeskarphet ved samme utsnitt, fordi du trenger et bredere (kortere) objektiv for å matche synsfeltet."
+          "text": "«Cropfaktor» beskriver hvordan en sensor forholder seg til 35 mm fullformatstandarden. En APS-C-sensor med cropfaktor 1,5x gir samme synsfelt med et 35 mm-objektiv som et fullformatkamera ville gjort med et 52,5 mm. Cropfaktoren ganger også effektiv dybdeskarphet — en mindre sensor virker å gi mer dybdeskarphet ved samme utsnitt, fordi du trenger et bredere (kortere) objektiv for å matche synsfeltet."
         },
         "2": {
           "heading": "Pikseltetthet",
-          "text": "Pikseltetthet (pikselavstand) beskriver hvor tett pikslene er pakket på sensoren. Å trykke flere megapiksler inn på en mindre sensor krymper hver enkelt fotoseltlokalitet, og reduserer lysinnsamlingen per piksel. En 24 MP fullformat-sensor har piksler på rundt 6 µm, mens en 24 MP APS-C har rundt 4 µm — derfor yter fullformat-sensoren vanligvis bedre på høy ISO."
+          "text": "Pikseltetthet (pikselavstand) beskriver hvor tett pikslene er pakket på sensoren. Å presse flere megapiksler inn på en mindre sensor krymper hver enkelt fotodiode, og reduserer lysinnsamlingen per piksel. En 24 MP fullformatsensor har piksler på rundt 6 µm, mens en 24 MP APS-C har rundt 4 µm — derfor yter fullformatsensoren vanligvis bedre på høy ISO."
         }
       },
       "keyFactors": {
@@ -23,7 +23,7 @@
         },
         "1": {
           "label": "Cropfaktor",
-          "description": "Forholdet mellom fullformat-diagonalen og sensor-diagonalen. Multiplisert med brennvidden gir det den «ekvivalente» brennvidden."
+          "description": "Forholdet mellom fullformatdiagonalen og sensordiagonalen. Ganget med brennvidden gir det den «ekvivalente» brennvidden."
         },
         "2": {
           "label": "Pikseltetthet",
@@ -31,18 +31,18 @@
         },
         "3": {
           "label": "Sensorareal",
-          "description": "Totalt areal i mm². En 44x33 mm mellomformat-sensor (Fujifilm GFX, Hasselblad X) har omtrent 1,7x arealet til fullformat, mens en større 54x40 mm mellomformat-brikke er rundt 2,5x. Fullformat er grovt sett 13x arealet til en flaggskip-mobilsensor."
+          "description": "Totalt areal i mm². En 44x33 mm mellomformatsensor (Fujifilm GFX, Hasselblad X) har omtrent 1,7x arealet til fullformat, mens en større 54x40 mm mellomformatbrikke er rundt 2,5x. Fullformat er grovt sett 13x arealet til en flaggskip-mobilsensor."
         }
       },
       "tips": {
         "0": {
-          "text": "Bruk overlegg-modus for å se nøyaktig hvor mye større en sensor er enn en annen — arealforskjellen er ofte mer dramatisk enn tallene skulle tilsi."
+          "text": "Bruk overleggmodus for å se nøyaktig hvor mye større én sensor er enn en annen — arealforskjellen er ofte mer dramatisk enn tallene skulle tilsi."
         },
         "1": {
-          "text": "Bytt til pikseltetthet-modus og legg inn kameraoppløsningen din for å sammenligne pikselavstand. Har kameraet svært høy pikseltetthet, kan du treffe diffraksjonsgrensen på bredere blenderåpninger enn du forventer."
+          "text": "Bytt til pikseltetthetmodus og legg inn kameraoppløsningen din for å sammenligne pikselavstand. Har kameraet svært høy pikseltetthet, kan du treffe diffraksjonsgrensen på større blenderåpninger enn du forventer."
         },
         "2": {
-          "text": "Når du sammenligner kameraer, betyr sensorareal mer enn megapikseltall for støyytelse. En 20 MP fullformat-sensor slår vanligvis en 40 MP APS-C på høy ISO."
+          "text": "Når du sammenligner kameraer, betyr sensorareal mer enn megapikseltall for støyytelse. En 20 MP fullformatsensor slår vanligvis en 40 MP APS-C på høy ISO."
         }
       },
       "tooltips": {
@@ -56,19 +56,19 @@
         },
         "Resolution": {
           "term": "Oppløsning",
-          "definition": "Totalt antall megapiksler som brukes til å regne ut pikselavstand i pikseltetthet-modus. Flere megapiksler på samme sensorstørrelse betyr mindre individuelle piksler."
+          "definition": "Totalt antall megapiksler som brukes til å regne ut pikselavstanden i pikseltetthetmodus. Flere megapiksler på samme sensorstørrelse betyr mindre enkeltpiksler."
         },
         "Crop Factor": {
           "term": "Cropfaktor",
-          "definition": "Forholdet mellom 35 mm fullformat-diagonalen og denne sensor-diagonalen. En cropfaktor på 1,5x betyr at et 50 mm-objektiv rammer inn som et 75 mm på fullformat."
+          "definition": "Forholdet mellom 35 mm fullformatdiagonalen og denne sensordiagonalen. En cropfaktor på 1,5x betyr at et 50 mm-objektiv rammer inn som et 75 mm på fullformat."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "En fullformat-sensor måler 36x24 mm. En APS-C-sensor har cropfaktor 1,5x. Hva er omtrent bredden på en APS-C-sensor?",
-          "hint": "Del fullformat-bredden på cropfaktoren.",
+          "scenario": "En fullformatsensor måler 36x24 mm. En APS-C-sensor har cropfaktor 1,5x. Hva er omtrent bredden på en APS-C-sensor?",
+          "hint": "Del fullformatbredden på cropfaktoren.",
           "successMessage": "Riktig! 36 mm ÷ 1,5 ≈ 24 mm. APS-C-sensoren er cirka 24x16 mm, med rundt 44 % av arealet til fullformat.",
-          "failureMessage": "Del fullformat-bredden (36 mm) på cropfaktoren (1,5x): 36 ÷ 1,5 = 24 mm.",
+          "failureMessage": "Del fullformatbredden (36 mm) på cropfaktoren (1,5x): 36 ÷ 1,5 = 24 mm.",
           "options": {
             "0": { "label": "24 mm" },
             "1": { "label": "30 mm" },
@@ -76,10 +76,10 @@
           }
         },
         "1": {
-          "scenario": "Du monterer et 50 mm-objektiv på et kamera med cropfaktor 2,0x. Hvilken fullformat-ekvivalent brennvidde får du?",
-          "hint": "Multipliser brennvidden med cropfaktoren.",
-          "successMessage": "Riktig! 50 mm × 2,0 = 100 mm ekvivalent. Derfor er Micro Four Thirds-kameraer populære til telearbeid — du får ekstra rekkevidde fra alle objektiver.",
-          "failureMessage": "Multipliser objektivets brennvidde med cropfaktoren: 50 mm × 2,0 = 100 mm ekvivalent.",
+          "scenario": "Du monterer et 50 mm-objektiv på et kamera med cropfaktor 2,0x. Hvilken fullformatekvivalent brennvidde får du?",
+          "hint": "Gang brennvidden med cropfaktoren.",
+          "successMessage": "Riktig! 50 mm × 2,0 = 100 mm ekvivalent. Derfor er Micro Four Thirds-kameraer populære til telearbeid — du får ekstra rekkevidde ut av alle objektiver.",
+          "failureMessage": "Gang objektivets brennvidde med cropfaktoren: 50 mm × 2,0 = 100 mm ekvivalent.",
           "options": {
             "0": { "label": "25 mm" },
             "1": { "label": "75 mm" },
@@ -89,7 +89,7 @@
         "2": {
           "scenario": "To kameraer har begge 24 megapiksler — ett fullformat (36x24 mm) og ett APS-C (24x16 mm). Hvilket har best støyytelse på høy ISO, og hvorfor?",
           "hint": "Tenk på hvordan samme antall piksler fordelt over ulike sensorarealer påvirker pikselstørrelsen.",
-          "successMessage": "Akkurat! Fullformat-sensoren fordeler 24 MP over et større areal, så hver piksel er fysisk større (~6 µm mot ~4 µm avstand), fanger flere fotoner og gir mindre støy.",
+          "successMessage": "Nettopp! Fullformatsensoren fordeler 24 MP over et større areal, så hver piksel er fysisk større (~6 µm mot ~4 µm avstand), fanger flere fotoner og gir mindre støy.",
           "failureMessage": "Fullformat vinner — samme antall megapiksler på et større areal betyr større piksler som samler mer lys, og dermed mindre støy på høy ISO.",
           "options": {
             "0": { "label": "Fullformat — større piksler samler mer lys" },
@@ -99,9 +99,9 @@
         },
         "3": {
           "scenario": "Hvilket sensorformat i tabellen har cropfaktor nærmest 2,0x?",
-          "hint": "Cropfaktoren er fullformat-diagonalen delt på sensor-diagonalen.",
+          "hint": "Cropfaktoren er fullformatdiagonalen delt på sensordiagonalen.",
           "successMessage": "Riktig! Micro Four Thirds har cropfaktor 2,0x, og derfor rammer et 25 mm M43-objektiv inn som 50 mm på fullformat.",
-          "failureMessage": "Micro Four Thirds har cropfaktor 2,0x. Sjekk tabellen — diagonalen er nøyaktig halvparten av fullformat-diagonalen.",
+          "failureMessage": "Micro Four Thirds har cropfaktor 2,0x. Sjekk tabellen — diagonalen er nøyaktig halvparten av fullformatdiagonalen.",
           "options": {
             "0": { "label": "APS-C (Canon)" },
             "1": { "label": "Micro Four Thirds" },
@@ -109,10 +109,10 @@
           }
         },
         "4": {
-          "scenario": "Du sammenligner et 50 MP mellomformat-kamera med et 50 MP fullformat-kamera i pikseltetthet-modus. Begge har samme antall megapiksler. Hvilket kamera har større pikselavstand, og hva er den praktiske fordelen?",
-          "hint": "Pikselavstand avhenger av sensorbredden delt på antall horisontale piksler.",
-          "successMessage": "Riktig! Mellomformat-sensoren er fysisk større, så på 50 MP er pikslene større (større avstand). Det gir omtrent 1/3 trinn bedre lysinnsamling per piksel, pluss at diffraksjon starter litt senere.",
-          "failureMessage": "Mellomformat-sensoren er større, så ved samme oppløsning er hver piksel fysisk større. Større piksler samler flere fotoner, gir bedre dynamisk område og litt senere diffraksjonsgrense.",
+          "scenario": "Du sammenligner et 50 MP mellomformatkamera med et 50 MP fullformatkamera i pikseltetthetmodus. Begge har samme antall megapiksler. Hvilket kamera har størst pikselavstand, og hva er den praktiske fordelen?",
+          "hint": "Pikselavstanden avhenger av sensorbredden delt på antall horisontale piksler.",
+          "successMessage": "Riktig! Mellomformatsensoren er fysisk større, så på 50 MP er pikslene større (større avstand). Det gir omtrent 1/3 trinn bedre lysinnsamling per piksel, og diffraksjonen slår inn litt senere.",
+          "failureMessage": "Mellomformatsensoren er større, så ved samme oppløsning er hver piksel fysisk større. Større piksler samler flere fotoner, gir bedre dynamisk område og noe senere diffraksjonsgrense.",
           "options": {
             "0": { "label": "Mellomformat — bedre lysinnsamling per piksel og dynamisk område" },
             "1": { "label": "Fullformat — mindre piksler er mer effektive" },

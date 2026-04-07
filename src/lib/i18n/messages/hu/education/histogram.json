@@ -1,35 +1,35 @@
 {
   "education": {
     "histogram": {
-      "beginner": "A hisztogram egy grafikon, ami megmutatja, mennyire világosak vagy sötétek a pixelek a fotódon. A bal oldal az árnyékokat (sötét részeket), a közép a féltónusokat, a jobb oldal a fénypontokat (világos részeket) jelöli. Ha a grafikon egy oldalra tömörül, a fotó lehet, hogy alul- vagy túlexponált.",
-      "deeper": "A hisztogram a pixelszámot (függőleges tengely) ábrázolja a fényesség függvényében (vízszintes tengely, 0–255 8 bites képnél). Luminancia módban minden pixel fényessége a vörös, zöld és kék csatorna súlyozott átlaga (jellemzően 0,299R + 0,587G + 0,114B, ami illeszkedik az emberi észleléshez). RGB módban három külön eloszlás látszik, felfedve, melyik csatorna vág be önmagában — egy 255-ig felnyomott vörös, miközben a kék rendben van, meleg tónusú (pl. naplementés ég) fénypontvágást jelent. A „clipping” akkor történik, amikor a pixelérték eléri a 0 vagy 255 határt, és a részlet helyrehozhatatlanul elveszik. A fekete clipping (0-s pixelek) árnyékrészletet veszít; a fehér clipping (255-ös pixelek) fénypontrészletet. A RAW fotózás nagyjából 2-3 stop extra visszaszerezhető fénypont-tartalékot ad a JPEG-hisztogramhoz képest, ezért „exponálnak jobbra” (ETTR) sok fotósok — a lehető legvilágosabban anélkül, hogy a RAW-adatot clippelné.",
+      "beginner": "A hisztogram egy grafikon, ami megmutatja, mennyire világosak vagy sötétek a fotód pixelei. A bal oldal az árnyékokat (sötét részek), a közép a féltónusokat, a jobb oldal pedig a fénypontokat (világos részek) jelöli. Ha a grafikon az egyik oldalra tolódik, a fotó könnyen lehet, hogy alul- vagy túlexponált.",
+      "deeper": "A hisztogram a pixelszámot (függőleges tengely) ábrázolja a fényesség függvényében (vízszintes tengely, 8 bites képnél 0–255 között). Luminancia módban minden pixel fényessége a vörös, a zöld és a kék csatorna súlyozott átlaga (jellemzően 0,299R + 0,587G + 0,114B, ami illeszkedik az emberi érzékeléshez). RGB módban három külön eloszlást látsz, amiből kiderül, melyik csatorna clippel önmagában — ha a vörös felmegy 255-ig, miközben a kék még rendben van, az meleg tónusú (pl. naplementés ég) fénypont-clippinget jelent. A clipping akkor történik, amikor a pixelérték eléri a 0 vagy a 255 határt, és a részlet visszaállíthatatlanul elveszik. A fekete clipping (0 értékű pixelek) árnyékrészletet veszít, a fehér clipping (255 értékű pixelek) pedig fénypontrészletet. A RAW fotózás a JPEG hisztogramhoz képest nagyjából 2–3 stop extra visszaszerezhető fénypont-tartalékot ad, ezért „exponálnak jobbra” (ETTR) sok fotósok — a lehető legvilágosabbra, úgy, hogy a RAW-adat még ne clippeljen.",
       "keyFactors": {
         "0": {
           "label": "Tónuseloszlás",
-          "description": "Az általános alak megmutatja, sötét (balra tolt), világos (jobbra tolt) vagy kiegyensúlyozott (a teljes tartományra szétterül) a kép."
+          "description": "Az általános alakból látszik, hogy a kép sötét (balra tolt), világos (jobbra tolt) vagy kiegyensúlyozott (a teljes tartományra eloszlik)."
         },
         "1": {
           "label": "Clipping",
-          "description": "A bal vagy jobb szélen lévő tüskék elveszett részleteket jelölnek az árnyékokban vagy a fénypontokban."
+          "description": "A bal vagy jobb szélen lévő tüskék elveszett részleteket jeleznek — vagy az árnyékokban, vagy a fénypontokban."
         },
         "2": {
           "label": "Csatorna-szétválasztás",
-          "description": "Az RGB mód feltárja az egyes színcsatornák viselkedését — hasznos a színspecifikus clipping észleléséhez telített jelenetekben."
+          "description": "Az RGB mód megmutatja az egyes színcsatornák külön viselkedését — hasznos a színspecifikus clipping észleléséhez erősen telített jelenetekben."
         },
         "3": {
           "label": "Dinamikatartomány",
-          "description": "A teljes szélességet clipping nélkül kitöltő hisztogram a rendelkezésre álló dinamikatartomány jó kihasználását jelzi."
+          "description": "Ha a hisztogram clipping nélkül tölti ki a teljes szélességet, az a rendelkezésre álló dinamikatartomány jó kihasználását mutatja."
         }
       },
       "tips": {
         "0": {
-          "text": "Nincs „tökéletes” hisztogramforma. Egy sötét kanapén ülő fekete macska képe jogosan balra tolt. A hisztogramot a kreatív szándékod alapján ítéld meg, ne egy ideális görbe alapján."
+          "text": "Nincs „tökéletes” hisztogramforma. Egy sötét kanapén ülő fekete macska képe teljesen jogosan balra tolt. A hisztogramot a kreatív szándékod alapján ítéld meg, ne egy elvárt ideális görbe alapján."
         },
         "1": {
-          "text": "Naplementés és neonfényes fotóknál nézd meg az RGB-módot. A vörös csatorna gyakran sokkal előbb clippel, mint a kék, így a meleg fénypontok részletei a luminancia-hisztogram szerinti rendben ellenére is elveszhetnek."
+          "text": "Naplementés és neonfényes fotóknál nézd meg az RGB módot. A vörös csatorna gyakran sokkal előbb clippel, mint a kék, így a meleg fénypontok részlete a luminancia-hisztogram szerinti rendben ellenére is elveszhet."
         },
         "2": {
-          "text": "Ha clipping-figyelmeztetést látsz egyszerre mindkét szélen, a jelenet valószínűleg túllépi a kamerád dinamikatartományát. Fontold meg a bracketinget HDR-hez vagy átmenetes ND szűrő használatát."
+          "text": "Ha egyszerre látsz clipping-figyelmeztetést mindkét szélen, a jelenet valószínűleg túllépi a kamerád dinamikatartományát. Fontold meg a bracketinget HDR-hez, vagy használj átmenetes ND szűrőt."
         }
       },
       "tooltips": {

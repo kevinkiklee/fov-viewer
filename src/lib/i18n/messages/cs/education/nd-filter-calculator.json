@@ -1,7 +1,7 @@
 {
   "education": {
     "nd-filter-calculator": {
-      "beginner": "ND filtr (neutrálně šedý) je jako sluneční brýle pro objektiv. Snižuje množství světla vstupujícího do objektivu bez toho, aby měnil barvy, takže si za jasného dne můžeš dovolit pomalejší časy nebo širší clonu. Takhle fotografové tvoří hedvábné vodopády, hladké oceány nebo rozmazané mraky během dne.",
+      "beginner": "ND filtr (neutrální šedý) je jako sluneční brýle pro objektiv. Snižuje množství světla vstupujícího do objektivu bez toho, aby měnil barvy, takže si za jasného dne můžeš dovolit pomalejší časy nebo širší clonu. Takhle fotografové tvoří hedvábné vodopády, hladké oceány nebo rozmazané mraky během dne.",
       "deeper": "ND filtry se označují podle toho, o kolik clon světlo blokují. ND2 (1 stop) ubere půlku světla, ND8 (3 stopy) ho sníží na osminu a ND1000 (10 stopů) zmenší světlo 1024×. Značení bývá matoucí: „ND8\" znamená faktor filtru 8 (3 stopy), zatímco „ND 0,9\" používá optickou hustotu (každých 0,3 = 1 stop, takže 0,9 = 3 stopy). Výsledný čas je prostě základní čas vynásobený faktorem filtru. Například když je tvoje neutrální expozice 1/125 s a nasadíš 10stopový ND (ND1000), nový čas je 1/125 × 1024 ≈ 8 sekund. Kombinování víc ND filtrů sčítá jejich stopy, ale může zavést vinětaci a barevný nádech, zejména u širokoúhlých objektivů.",
       "keyFactors": {
         "0": {
@@ -35,15 +35,15 @@
         },
         "ndFilter": {
           "term": "ND filtr",
-          "definition": "Neutrálně šedý filtr, který rovnoměrně snižuje prostupnost světla. Označuje se faktorem (ND2, ND4, ND8...) nebo počtem stopů redukce. ND2 = 1 stop, ND4 = 2 stopy, ND8 = 3 stopy a tak dál."
+          "definition": "Neutrální šedý filtr, který rovnoměrně snižuje prostupnost světla. Označuje se faktorem (ND2, ND4, ND8...) nebo počtem stopů redukce. ND2 = 1 stop, ND4 = 2 stopy, ND8 = 3 stopy a tak dál."
         },
         "resultingShutterSpeed": {
           "term": "Výsledný expoziční čas",
           "definition": "Nový čas po započtení ND filtru. Spočítá se vynásobením základního času faktorem filtru (například 1/125 s × 1024 pro 10stopový ND)."
         },
         "stopsAdded": {
-          "term": "Přidané clony",
-          "definition": "Počet stopů redukce světla, které filtr přidává. Každý stop zdvojnásobí potřebný čas. 10 stopů znamená 1024× delší expozici."
+          "term": "Přidané clonové stupně (EV)",
+          "definition": "Počet clonových stupňů (stopů) redukce světla, které filtr přidává. Každý stop zdvojnásobí potřebný čas. 10 stopů znamená 1024× delší expozici."
         }
       },
       "challenges": {

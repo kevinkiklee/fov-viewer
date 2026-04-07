@@ -1,19 +1,19 @@
 {
   "education": {
     "star-trail-calculator": {
-      "beginner": "Stjernene ser ut til å bevege seg over himmelen fordi jorda roterer. Er lukkeren åpen lenge nok, strekker stjernene seg til spor i bildet. Stjernespor-kalkulatoren hjelper deg å finne maks eksponeringstid for skarpe stjerner, eller planlegge lange eksponeringer for vakre sirkulære stjernespor.",
+      "beginner": "Stjernene ser ut til å bevege seg over himmelen fordi jorda roterer. Er lukkeren åpen lenge nok, strekkes stjernene ut til spor i bildet. Stjernespor-kalkulatoren hjelper deg å finne lengste eksponeringstid for skarpe stjerner, eller å planlegge lange eksponeringer for vakre, sirkulære stjernespor.",
       "deeper": {
         "0": {
           "heading": "Hvordan stjernene beveger seg",
-          "text": "Jorda roterer 360° på cirka 23 timer og 56 minutter (et stjernedøgn), så stjernene beveger seg rundt 15 buesekunder per sekund ved himmelekvator. Stjerner nær polene (Polaris i nord) lager mindre sirkler og virker å bevege seg langsommere."
+          "text": "Jorda roterer 360° på cirka 23 timer og 56 minutter (ett stjernedøgn), så stjernene beveger seg rundt 15 buesekunder per sekund ved himmelekvator. Stjerner nær polene (Polaris i nord) tegner mindre sirkler og virker å bevege seg langsommere."
         },
         "1": {
           "heading": "500-regelen vs. NPF-regelen",
-          "text": "Den klassiske «500-regelen» deler 500 på den effektive brennvidden for å anslå maks eksponering før sporingen blir synlig — men den ble laget for sensorer med lavere oppløsning. NPF-regelen tar hensyn til pikselavstand, brennvidde, blender og deklinasjon, og gir kortere og mer nøyaktige grenser for moderne høyoppløste kameraer."
+          "text": "Den klassiske «500-regelen» deler 500 på den effektive brennvidden for å anslå lengste eksponering før sporingen blir synlig — men den ble laget for sensorer med lavere oppløsning. NPF-regelen tar hensyn til pikselavstand, brennvidde, blender og deklinasjon, og gir kortere og mer nøyaktige grenser for moderne høyoppløste kameraer."
         },
         "2": {
           "heading": "Stabling for stjernespor",
-          "text": "For bevisste stjernespor tar fotografer mange kortere eksponeringer (typisk 30 s hver) og stabler dem i programvare. Det unngår støyoppbygging, gir sammenhengende spor uten hull, og sørger for at ett dårlig bilde ikke ødelegger hele opptaket."
+          "text": "For bevisste stjernespor tar fotografer mange kortere eksponeringer (typisk 30 s hver) og stabler dem i programvare. Det unngår oppbygging av støy, gir sammenhengende spor uten hull, og sørger for at ett dårlig bilde ikke ødelegger hele opptaket."
         }
       },
       "keyFactors": {
@@ -23,7 +23,7 @@
         },
         "1": {
           "label": "Sensoroppløsning",
-          "description": "Høyoppløste sensorer avslører stjernesporing ved kortere eksponeringer. 500-regelen er for sjenerøs for moderne 40 MP+-kameraer."
+          "description": "Høyoppløste sensorer avslører stjernesporing ved kortere eksponeringer. 500-regelen er for romslig for moderne kameraer med 40 MP og mer."
         },
         "2": {
           "label": "Breddegrad og deklinasjon",
@@ -31,15 +31,15 @@
         },
         "3": {
           "label": "Stabling vs. enkelteksponering",
-          "description": "For stjernespor gir stabling av mange korte eksponeringer renere resultater enn én ekstremt lang eksponering, og du kan redde arbeidet hvis noe går galt underveis."
+          "description": "For stjernespor gir stabling av mange korte eksponeringer renere resultat enn én ekstremt lang eksponering, og du kan redde arbeidet hvis noe går galt underveis."
         }
       },
       "tips": {
         "0": {
-          "text": "Bruk NPF-regelen i stedet for 500-regelen på moderne kameraer. Den tar hensyn til sensoroppløsning og gir mer nøyaktige maks eksponeringstider, spesielt med mange megapiksler."
+          "text": "Bruk NPF-regelen i stedet for 500-regelen på moderne kameraer. Den tar hensyn til sensoroppløsning og gir mer nøyaktige grenser, spesielt med mange megapiksler."
         },
         "1": {
-          "text": "Til stjernespor-stabling bør du holde pausen mellom bildene under 2–3 sekunder med en fjernutløser eller intervallometer. Lengre pauser gir prikkete i stedet for jevne spor."
+          "text": "Når du stabler stjernesporbilder, bør du holde pausen mellom bildene under 2–3 sekunder med en fjernutløser eller et intervallometer. Lengre pauser gir stiplete i stedet for jevne spor."
         },
         "2": {
           "text": "Inkluder Polaris (eller den sørlige himmelpolen) i komposisjonen for dramatiske konsentriske sirkelspor. Stjerner nær polen tegner tettere buer."
@@ -48,7 +48,7 @@
       "tooltips": {
         "mode": {
           "term": "Modus",
-          "definition": "Velg «Skarpe stjerner» for å regne ut maks eksponeringstid for skarpe stjerner, eller «Stjernespor» for å planlegge eksponeringssekvenser for bevisste sporeffekter."
+          "definition": "Velg «Skarpe stjerner» for å regne ut lengste eksponeringstid for skarpe stjerner, eller «Stjernespor» for å planlegge eksponeringssekvenser for bevisste sporeffekter."
         },
         "focalLength": {
           "term": "Brennvidde",
@@ -60,11 +60,11 @@
         },
         "resolution": {
           "term": "Oppløsning",
-          "definition": "Sensoroppløsning i megapiksler. Høyoppløste kameraer avslører stjernesporing raskere fordi hver piksel dekker en mindre del av himmelen."
+          "definition": "Sensorens oppløsning i megapiksler. Høyoppløste kameraer avslører stjernesporing raskere fordi hver piksel dekker en mindre del av himmelen."
         },
         "aperture": {
           "term": "Blender",
-          "definition": "Objektivets åpning. For astrofoto bør du bruke størst mulig blenderåpning (lavest f-tall) for å fange mest mulig stjernelys i hvert bilde."
+          "definition": "Objektivets blenderåpning. I astrofoto bør du bruke størst mulig blenderåpning (lavest f-tall) for å fange mest mulig stjernelys i hvert bilde."
         },
         "latitude": {
           "term": "Breddegrad",
@@ -76,17 +76,17 @@
         },
         "numberOfFrames": {
           "term": "Antall bilder",
-          "definition": "Hvor mange enkelteksponeringer du skal ta. Flere bilder gir lengre og mer dramatiske stjernespor. 120 bilder à 30 sekunder gir én time med spor."
+          "definition": "Hvor mange enkelteksponeringer du skal ta. Flere bilder gir lengre og mer dramatiske stjernespor. 120 bilder à 30 sekunder gir en time med spor."
         },
         "gapBetweenFrames": {
           "term": "Pause mellom bilder",
-          "definition": "Tiden mellom eksponeringene som kameraet trenger til å lagre filen. Hold denne så kort som mulig (1–3 sekunder) for å unngå prikkete spor."
+          "definition": "Tiden mellom eksponeringene som kameraet trenger for å lagre filen. Hold den så kort som mulig (1–3 sekunder) for å unngå stiplete spor."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Du fotograferer Melkeveien med et 24 mm-objektiv på et fullformat-kamera med 24 MP. Hvor lenge kan du omtrent eksponere med 500-regelen før stjernene begynner å lage spor?",
-          "hint": "500-regelen: maks sekunder = 500 / brennvidde.",
+          "scenario": "Du fotograferer Melkeveien med et 24 mm-objektiv på et fullformatkamera med 24 MP. Hvor lenge kan du omtrent eksponere etter 500-regelen før stjernene begynner å lage spor?",
+          "hint": "500-regelen: sekunder = 500 / brennvidde.",
           "successMessage": "Riktig! 500 / 24 = cirka 20 sekunder. Det er et godt utgangspunkt, selv om NPF-regelen kanskje foreslår en litt kortere tid for kritisk skarphet.",
           "failureMessage": "Bruk 500-regelen: del 500 på brennvidden (24 mm). Det gir cirka 20 sekunder.",
           "options": {
@@ -97,8 +97,8 @@
           }
         },
         "1": {
-          "scenario": "Du vil fotografere Oriontåken med et 200 mm-objektiv på et cropsensor-kamera (cropfaktor 1,5x). Hva er omtrent maks eksponering med 500-regelen?",
-          "hint": "På cropsensor multipliserer du først brennvidden med cropfaktoren, så bruker du regelen.",
+          "scenario": "Du vil fotografere Oriontåken med et 200 mm-objektiv på et cropsensorkamera (cropfaktor 1,5x). Hva er omtrent lengste eksponering etter 500-regelen?",
+          "hint": "På cropsensor ganger du først brennvidden med cropfaktoren, så bruker du regelen.",
           "successMessage": "Riktig! Effektiv brennvidde er 200 mm × 1,5 = 300 mm. 500 / 300 = cirka 1,7 sekunder. På telebrennvidder med cropsensor har du veldig lite tid før sporing dukker opp.",
           "failureMessage": "Husk å regne med cropfaktoren: 200 mm × 1,5 = 300 mm effektivt. Så gir 500 / 300 cirka 1,7 sekunder.",
           "options": {
@@ -109,7 +109,7 @@
           }
         },
         "2": {
-          "scenario": "Du vil lage et 2-timers stjernespor-bilde. Planen er å ta 30-sekunders eksponeringer med 2 sekunders pause. Hvor mange bilder trenger du?",
+          "scenario": "Du vil lage et 2 timer langt stjernesporbilde. Planen er å ta 30-sekunders eksponeringer med 2 sekunders pause. Hvor mange bilder trenger du?",
           "hint": "Regn ut hvor mange 32-sekunders intervaller (30 s eksponering + 2 s pause) som passer i 2 timer (7200 sekunder).",
           "successMessage": "Riktig! 7200 sekunder / 32 sekunder per bilde = 225 bilder. Du får jevne, sammenhengende spor over 2 timer med jordrotasjon.",
           "failureMessage": "To timer = 7200 sekunder. Hvert bildesyklus er 30 s + 2 s = 32 s. Del 7200 på 32 for å finne antall bilder.",
@@ -121,9 +121,9 @@
           }
         },
         "3": {
-          "scenario": "En venn bruker et 50 MP fullformat-kamera og fulgte 500-regelen med et 20 mm-objektiv, og tok en 25-sekunders eksponering. Hen klager på at stjernene ser ut som små striper når hen zoomer inn. Hvorfor?",
+          "scenario": "En venn bruker et 50 MP fullformatkamera og fulgte 500-regelen med et 20 mm-objektiv, og tok en 25-sekunders eksponering. Hen klager på at stjernene ser ut som små striper når hen zoomer inn. Hvorfor?",
           "hint": "500-regelen ble laget for eldre sensorer med lavere oppløsning.",
-          "successMessage": "Akkurat! 500-regelen er for sjenerøs for høyoppløste sensorer. En 50 MP fullformat-sensor har pikselavstand rundt 4,4 mikrometer, og NPF-regelen ville anbefalt grovt 10–12 sekunder for virkelig skarpe stjerner.",
+          "successMessage": "Nettopp! 500-regelen er for romslig for høyoppløste sensorer. En 50 MP fullformatsensor har pikselavstand rundt 4,4 mikrometer, og NPF-regelen ville anbefalt grovt 10–12 sekunder for skikkelig skarpe stjerner.",
           "failureMessage": "500-regelen ble laget da sensorer hadde langt færre megapiksler. Med 50 MP dekker hver piksel en mye mindre del av himmelen, og avslører bevegelse som var usynlig på eldre kameraer.",
           "options": {
             "0": { "label": "Objektivet var ute av fokus" },
@@ -133,15 +133,15 @@
           }
         },
         "4": {
-          "scenario": "Du vil ha et 1-times stjernespor-bilde. Hvorfor stabler erfarne astrofotografer mange korte eksponeringer (f.eks. 240 × 15 s) i stedet for én enkelt 1-times eksponering?",
+          "scenario": "Du vil ha et stjernesporbilde over én time. Hvorfor stabler erfarne astrofotografer mange korte eksponeringer (f.eks. 240 × 15 s) i stedet for én enkelt eksponering på én time?",
           "hint": "Tenk på hva som skjer med sensorstøy, batterilevetid og redningsmuligheter ved en svært lang enkelteksponering.",
-          "successMessage": "Riktig! En time lang enkelteksponering gir massiv termisk støy, tapper batteriet, og om noe går galt (vibrasjon, dugg, billys) er hele bildet ødelagt. Stabling av korte bilder holder støyen nede, lar deg forkaste dårlige bilder, og er mye mer tilgivende.",
-          "failureMessage": "Lange enkelteksponeringer bygger opp kraftig termisk støy og kan gå fullstendig tapt ved enhver forstyrrelse. Å stable korte bilder holder støyen under kontroll, lar deg forkaste ødelagte bilder, og gir renere resultater.",
+          "successMessage": "Riktig! En eksponering på én time gir massiv termisk støy, tapper batteriet, og hvis noe går galt (vibrasjon, dugg, billys) er hele bildet ødelagt. Å stable korte bilder holder støyen nede, lar deg forkaste dårlige bilder, og er mye mer tilgivende.",
+          "failureMessage": "Lange enkelteksponeringer bygger opp kraftig termisk støy og kan gå fullstendig tapt ved enhver forstyrrelse. Å stable korte bilder holder støyen under kontroll, lar deg forkaste ødelagte bilder, og gir renere resultat.",
           "options": {
             "0": { "label": "Stabling gir lengre spor enn én enkelteksponering" },
             "1": { "label": "Enkelteksponeringer kan ikke fange stjernebevegelse" },
-            "2": { "label": "Stabling reduserer støy, lar deg redde opptak, og sparer batteri" },
-            "3": { "label": "Det er ingen praktisk forskjell — det er bare en smakssak" }
+            "2": { "label": "Stabling reduserer støy, lar deg redde opptaket, og sparer batteri" },
+            "3": { "label": "Ingen praktisk forskjell — bare en smakssak" }
           }
         }
       }

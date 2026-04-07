@@ -31,15 +31,15 @@
       "faq": {
         "what-is-crop-factor": {
           "question": "Vad är cropfaktor och varför spelar den roll?",
-          "answer": "Cropfaktorn beskriver storleksskillnaden mellan en kameras sensor och en fullformatssensor (35 mm). Den påverkar den effektiva brännvidden, skärpedjupet och prestandan i svagt ljus. En cropfaktor på 1,5× betyder att sensorn är 1,5 gånger mindre än fullformat."
+          "answer": "Cropfaktorn beskriver storleksförhållandet mellan en kamerasensor och en 35 mm fullformatssensor. Den påverkar den effektiva brännvidden, skärpedjupet och prestandan i svagt ljus. En cropfaktor på 1,5× betyder att sensorns diagonal är 1,5 gånger kortare än fullformatets."
         },
         "full-frame-vs-aps-c": {
           "question": "Vilka är fördelarna med fullformat kontra APS-C?",
-          "answer": "Fullformatssensorer har bättre prestanda i svagt ljus, grundare skärpedjup och bredare bildvinkel vid given brännvidd. APS-C-sensorer är billigare, lättare och ger extra räckvidd för vilt- och sportfoto."
+          "answer": "Fullformatssensorer har bättre prestanda i svagt ljus, grundare skärpedjup och bredare bildvinkel vid samma brännvidd. APS-C-sensorer är billigare, lättare och ger extra räckvidd som är guld värt för vilt- och sportfoto."
         },
         "sensor-size-and-depth-of-field": {
           "question": "Hur påverkar sensorstorleken skärpedjupet?",
-          "answer": "Större sensorer ger grundare skärpedjup vid ekvivalent bildutsnitt. För att få samma bildutsnitt med en mindre sensor använder du antingen en kortare brännvidd (större skärpedjup) eller går längre bort (större skärpedjup) — båda minskar bakgrundsoskärpan."
+          "answer": "Större sensorer ger grundare skärpedjup vid samma bildutsnitt. För att få samma bildutsnitt med en mindre sensor måste du antingen använda en kortare brännvidd (större skärpedjup) eller backa (större skärpedjup) — båda minskar bakgrundsoskärpan."
         }
       }
     }

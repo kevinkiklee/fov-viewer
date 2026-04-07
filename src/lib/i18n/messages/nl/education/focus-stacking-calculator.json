@@ -1,58 +1,58 @@
 {
   "education": {
     "focus-stacking-calculator": {
-      "beginner": "Focus stacking is een techniek waarbij je meerdere foto's maakt op verschillende scherpstelafstanden en deze in software samenvoegt tot een beeld dat van voor tot achter scherp is. Het is onmisbaar voor macrofotografie, waar de scherptediepte flinterdun is, en handig bij landschapsfotografie wanneer zowel de dichtbije voorgrond als de verre achtergrond scherp moeten zijn.",
+      "beginner": "Focus stacking is een techniek waarbij je meerdere foto's maakt op verschillende scherpstelafstanden en die in software samenvoegt tot één beeld dat van voor tot achter scherp is. Het is onmisbaar bij macrofotografie, waar de scherptediepte flinterdun is, en handig bij landschapsfotografie als zowel de dichte voorgrond als de verre achtergrond scherp moet zijn.",
       "deeper": {
         "0": {
           "heading": "Waarom stacking nodig is",
-          "text": "Bij macrovergrotingen levert zelfs f/16 soms maar een paar millimeter scherptediepte op. Nog verder afdiafragmeren introduceert diffractieverzachting die het beeld doet verslechteren. Met focus stacking kun je fotograferen op het scherpste diafragma van de lens (meestal f/5.6-f/8) en de scherpe plakjes combineren. Elk beeld verschuift de scherpstelling iets naar voren, waardoor een nieuwe laag van het onderwerp wordt vastgelegd."
+          "text": "Bij macrovergrotingen levert zelfs f/16 soms maar een paar millimeter scherptediepte op. Nog verder afdiafragmeren brengt diffractie met zich mee, waardoor het beeld zachter wordt. Met focus stacking kun je fotograferen op het scherpste diafragma van de lens (meestal f/5.6 tot f/8) en de scherpe plakjes combineren. Bij elke opname verschuift de scherpstelling een stukje, zodat er telkens een nieuwe laag van het onderwerp wordt vastgelegd."
         },
         "1": {
           "heading": "De stack plannen",
-          "text": "De sleutel tot een geslaagde stack is dat de scherptediepte van elke opname 20-30% overlapt met de volgende. Te weinig overlap zorgt voor gaten waar niets scherp is; te veel verspilt opnamen zonder winst. De calculator bepaalt de scherptediepte per opname via de circle of confusion-formule, trekt de overlapmarge af en deelt het totale dieptebereik door de effectieve stapgrootte om het aantal opnamen te berekenen."
+          "text": "De sleutel tot een geslaagde stack is dat de scherptediepte van elke opname 20 tot 30% overlapt met de volgende. Te weinig overlap geeft gaten waar niets scherp is; te veel verspilt opnamen zonder winst. De calculator bepaalt de scherptediepte per opname via de formule voor de verwarringscirkel, trekt de overlapmarge eraf en deelt het totale dieptebereik door de effectieve stapgrootte om het aantal opnamen te berekenen."
         },
         "2": {
           "heading": "Samenvoegen en uitlijnen",
-          "text": "Software zoals Photoshop, Helicon Focus of Zerene Stacker lijnt de frames uit (bij veranderende scherpstelling treden kleine vergrotingsverschuivingen op) en selecteert vervolgens de scherpste pixels uit elke laag. Fotograferen op een stevig statief met constante belichting en het gebruik van een macroslede voor precieze stappen levert de zuiverste resultaten op."
+          "text": "Software zoals Photoshop, Helicon Focus of Zerene Stacker lijnt de frames uit (bij elke scherpstelverandering ontstaan kleine vergrotingsverschuivingen) en kiest vervolgens de scherpste pixels uit elke laag. Werken vanaf een stevig statief met constante belichting en een macroslede voor precieze stappen levert de zuiverste resultaten op."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Diafragma",
-          "description": "Bepaalt de scherptediepte per opname. Een gematigd diafragma (f/5.6-f/8) balanceert scherpte en scherptediepte per frame. Vermijd zeer kleine diafragma's — diffractie vermindert juist de scherpte waarvoor je stacking inzet."
+          "description": "Bepaalt de scherptediepte per opname. Een gematigd diafragma (f/5.6 tot f/8) houdt scherpte en scherptediepte per frame in balans. Vermijd zeer kleine diafragma's — diffractie haalt juist de scherpte onderuit waarvoor je stacking inzet."
         },
         "1": {
           "label": "Dieptebereik",
-          "description": "De afstand van het dichtstbijzijnde tot het verste punt dat je scherp wilt hebben. Grotere bereiken vragen meer opnamen. Bij macrowerk gaat het soms om centimeters; bij landschappen kan het meters tot oneindig beslaan."
+          "description": "De afstand van het dichtstbijzijnde tot het verste punt dat je scherp wilt hebben. Grotere bereiken vragen om meer opnamen. Bij macrowerk gaat het soms om centimeters; bij landschap kan het meters tot oneindig beslaan."
         },
         "2": {
           "label": "Overlap",
-          "description": "Het percentage van de scherptediepte per opname dat overlapt met de aangrenzende opnamen. 20-30% is standaard. Minder riskeert gaten; meer verspilt frames."
+          "description": "Het percentage van de scherptediepte per opname dat overlapt met de aangrenzende frames. 20 tot 30% is standaard. Minder geeft risico op gaten; meer verspilt frames."
         }
       },
       "tips": {
         "0": {
-          "text": "Gebruik bij macrostacking een macroslede in plaats van de scherpstelring van de lens. Een slede verplaatst de hele camera in precieze stappen naar voren, waardoor je de kleine vergrotingsveranderingen vermijdt die ontstaan bij het opnieuw scherpstellen van de lens."
+          "text": "Gebruik bij macrostacking een macroslede in plaats van de scherpstelring van de lens. Een slede schuift de hele camera in precieze stappen naar voren, waardoor je de kleine vergrotingsverschuivingen vermijdt die ontstaan als je opnieuw met de lens scherpstelt."
         },
         "1": {
-          "text": "Houd je diafragma op de sweet spot van de lens (meestal f/5.6-f/8). Het doel van stacking is juist om niet naar f/16 en verder af te diafragmeren, dus gebruik het scherpste diafragma en laat de stack de diepte verzorgen."
+          "text": "Houd je diafragma op de sweet spot van de lens (meestal f/5.6 tot f/8). Het hele doel van stacking is om niet naar f/16 of verder af te diafragmeren — gebruik dus het scherpste diafragma en laat de stack zelf voor de diepte zorgen."
         },
         "2": {
-          "text": "Werk bij landschapsstacks van voor naar achter: stel eerst scherp op het dichtstbijzijnde element en verplaats de scherpstelling vervolgens richting oneindig. Dit maakt uitlijnen eenvoudiger, omdat de voorgrond (met de meeste parallax) als eerste wordt vastgelegd."
+          "text": "Werk bij landschapsstacks van voor naar achter: stel eerst scherp op het dichtstbijzijnde element en schuif de scherpstelling vervolgens richting oneindig. Dat maakt uitlijnen makkelijker, omdat je de voorgrond (met de meeste parallax) als eerste vastlegt."
         }
       },
       "tooltips": {
         "focalLength": {
           "term": "Brandpuntsafstand",
-          "definition": "De brandpuntsafstand van de lens in millimeters. Langere brandpuntsafstanden verkleinen de scherptediepte per opname, waardoor er meer frames nodig zijn om hetzelfde dieptebereik af te dekken."
+          "definition": "De brandpuntsafstand van de lens in millimeters. Langere brandpuntsafstanden verkleinen de scherptediepte per opname, waardoor er meer frames nodig zijn om hetzelfde dieptebereik te dekken."
         },
         "aperture": {
           "term": "Diafragma",
-          "definition": "De lensopening (f-getal). Gebruik bij stacking het scherpste diafragma van de lens in plaats van af te diafragmeren — de stack zorgt voor de diepte."
+          "definition": "De lensopening (f-getal). Gebruik bij stacking het scherpste diafragma van de lens in plaats van af te diafragmeren — de stack zelf zorgt voor de diepte."
         },
         "sensor": {
           "term": "Sensorformaat",
-          "definition": "Grotere sensoren hebben een kleinere scherptediepte per opname bij equivalente kadrering, waardoor er meer stackframes nodig kunnen zijn."
+          "definition": "Grotere sensoren hebben bij dezelfde kadrering een kleinere scherptediepte per opname, waardoor er soms meer frames in de stack nodig zijn."
         },
         "nearLimit": {
           "term": "Voorste grens",
@@ -60,23 +60,23 @@
         },
         "farLimit": {
           "term": "Achterste grens",
-          "definition": "Het verste punt in de scène dat je scherp wilt hebben. De laatste opname van de stack dekt deze afstand af."
+          "definition": "Het verste punt in de scène dat je scherp wilt hebben. De laatste opname van de stack dekt deze afstand."
         },
         "overlap": {
           "term": "Overlap",
-          "definition": "Het percentage scherptediepte-overlap tussen opeenvolgende opnamen. 20-30% voorkomt gaten na software-uitlijning en samenvoeging."
+          "definition": "Het percentage waarin de scherptediepte van opeenvolgende opnamen overlapt. 20 tot 30% voorkomt gaten na het uitlijnen en samenvoegen in software."
         },
         "shotCount": {
           "term": "Aantal opnamen",
-          "definition": "Het totale aantal frames dat nodig is om het dieptebereik met de opgegeven overlap af te dekken. Meer opnamen = meer verwerking, maar vloeiender resultaat."
+          "definition": "Het totale aantal frames dat nodig is om het dieptebereik met de opgegeven overlap te dekken. Meer opnamen betekent meer verwerking, maar een soepeler resultaat."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Je fotografeert een kleine bloem die 3 cm diep is, van het voorste blaadje tot de achterste stengel. Je macrolens geeft bij f/8 ongeveer 4 mm scherptediepte per opname. Hoeveel frames heb je ongeveer nodig met 25% overlap?",
+          "scenario": "Je fotografeert een kleine bloem van 3 cm diep, van het voorste blaadje tot de achterste stengel. Je macrolens geeft bij f/8 ongeveer 4 mm scherptediepte per opname. Hoeveel frames heb je grofweg nodig met 25% overlap?",
           "hint": "Elke opname dekt 4 mm, maar met 25% overlap is de effectieve stap 3 mm per frame. Deel 30 mm door 3 mm.",
-          "successMessage": "Correct! Met 4 mm scherptediepte en 25% overlap schuift elke stap 3 mm op. 30 mm / 3 mm = 10 opnamen om de hele bloem af te dekken.",
-          "failureMessage": "Bij 25% overlap is de effectieve stap per frame 75% van de scherptediepte: 4 mm × 0,75 = 3 mm. Je hebt 30 mm / 3 mm = 10 opnamen nodig.",
+          "successMessage": "Klopt! Met 4 mm scherptediepte en 25% overlap schuift elke stap 3 mm op. 30 mm / 3 mm = 10 opnamen om de hele bloem te dekken.",
+          "failureMessage": "Bij 25% overlap is de effectieve stap per frame 75% van de scherptediepte: 4 mm × 0,75 = 3 mm. Je hebt dus 30 mm / 3 mm = 10 opnamen nodig.",
           "options": {
             "0": { "label": "5 opnamen" },
             "1": { "label": "10 opnamen" },
@@ -86,25 +86,25 @@
         },
         "1": {
           "scenario": "Je wilt het scherpst mogelijke resultaat uit je focus stack. Moet je elk frame op f/2.8, f/8 of f/22 maken?",
-          "hint": "Denk aan het scherpste diafragma van de lens en hoe diffractie kleine diafragma's beïnvloedt.",
-          "successMessage": "Juist! f/8 is meestal het scherpste diafragma voor de meeste lenzen. f/2.8 geeft te weinig scherptediepte per opname (wat frames verspilt) en f/22 heeft last van diffractieverzachting.",
-          "failureMessage": "f/8 is de beste keuze. f/2.8 geeft zeer dunne scherptediepte per opname (waardoor je veel meer frames nodig hebt) en f/22 introduceert diffractieverzachting, wat het hele doel van stacking voor scherpte ondermijnt.",
+          "hint": "Denk aan de sweet spot van de lens en aan hoe diffractie bij kleine diafragma's gaat tegenwerken.",
+          "successMessage": "Klopt! f/8 is bij de meeste lenzen het scherpste diafragma. f/2.8 geeft te weinig scherptediepte per opname (en dus extra frames) en f/22 heeft last van diffractieverzachting.",
+          "failureMessage": "f/8 is de beste keuze. f/2.8 geeft per opname een flinterdunne scherptediepte (waardoor je veel meer frames nodig hebt) en f/22 brengt diffractieverzachting met zich mee, wat het hele doel van stacking voor scherpte onderuithaalt.",
           "options": {
-            "0": { "label": "f/2.8 — grootst voor snelste sluitertijd" },
+            "0": { "label": "f/2.8 — grootste opening voor de snelste sluitertijd" },
             "1": { "label": "f/8 — sweet spot van de lens" },
             "2": { "label": "f/22 — maximale scherptediepte per opname" }
           }
         },
         "2": {
           "scenario": "Na het samenvoegen van je focus stack zie je een zachte band over het midden van het beeld waar niets scherp is. Wat ging er waarschijnlijk mis?",
-          "hint": "Denk na over wat de scherpe zone van het ene frame met het volgende verbindt.",
-          "successMessage": "Precies! Te weinig overlap tussen aangrenzende frames zorgt voor een gat waar geen van beide opnamen scherp is. Verhoog de overlap tot 25-30% en fotografeer opnieuw.",
-          "failureMessage": "Een zachte band betekent meestal dat de afstand tussen de scherpstelstappen te groot was — de scherptediepte van aangrenzende frames overlapte onvoldoende. Verhoog het overlappercentage.",
+          "hint": "Denk na over wat de scherpe zone van het ene frame verbindt met die van het volgende.",
+          "successMessage": "Precies! Te weinig overlap tussen aangrenzende frames laat een gat ontstaan waar geen van beide opnamen scherp is. Zet de overlap op 25 tot 30% en fotografeer opnieuw.",
+          "failureMessage": "Een zachte band betekent meestal dat de scherpstelstappen te groot waren — de scherptediepte van aangrenzende frames overlapte te weinig. Verhoog het overlappercentage.",
           "options": {
             "0": { "label": "Het diafragma was te groot" },
-            "1": { "label": "Te weinig overlap tussen scherpstelstappen" },
+            "1": { "label": "Te weinig overlap tussen de scherpstelstappen" },
             "2": { "label": "Het statief bewoog tijdens de reeks" },
-            "3": { "label": "De ISO was te hoog" }
+            "3": { "label": "De ISO stond te hoog" }
           }
         }
       }

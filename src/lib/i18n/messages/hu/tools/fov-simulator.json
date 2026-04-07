@@ -32,15 +32,15 @@
       "faq": {
         "what-is-fov": {
           "question": "Mi a látószög a fotózásban?",
-          "answer": "A látószög (FOV) a jelenet azon szögterülete, amit az objektív és az érzékelő együtt lát. Meghatározza, mennyit rögzít a kép a jelenetből, és a gyújtótávolság és érzékelőméret együtt befolyásolja."
+          "answer": "A látószög (FOV) az a szögtartomány a jelenetből, amit az objektív és az érzékelő együtt lát. Meghatározza, hogy mennyit örökít meg a kép a jelenetből, és a gyújtótávolság, valamint az érzékelőméret együtt alakítja."
         },
         "how-crop-factor-affects-fov": {
           "question": "Hogyan hat a crop faktor a látószögre?",
-          "answer": "Egy kisebb érzékelő (nagyobb crop faktor) szűkebb látószöget rögzít ugyanazon a gyújtótávolságon, mint egy Full Frame érzékelő. Például egy APS-C érzékelő 1,5× crop faktorral úgy fotóz egy 50mm-es objektívvel, mint egy 75mm-es Full Frame-en."
+          "answer": "A kisebb érzékelő (nagyobb crop faktor) szűkebb látószöget rögzít ugyanazon a gyújtótávolságon, mint egy Full Frame érzékelő. Például egy APS-C érzékelőn 1,5× crop faktorral az 50mm-es objektív ugyanúgy viselkedik, mint egy 75mm-es Full Frame-en."
         },
         "fov-vs-focal-length": {
-          "question": "Milyen kapcsolat van a FOV és a gyújtótávolság között?",
-          "answer": "A látószög és a gyújtótávolság fordítottan arányosak. A rövidebb gyújtótávolság (nagylátószögű) szélesebb látószöget ad, míg a hosszabb (teleobjektív) szűkebbet. A pontos FOV az érzékelőmérettől is függ."
+          "question": "Milyen kapcsolat van a látószög és a gyújtótávolság között?",
+          "answer": "A látószög és a gyújtótávolság fordítottan arányos. A rövidebb gyújtótávolság (nagylátószögű objektív) szélesebb látószöget ad, a hosszabb (teleobjektív) szűkebbet. A pontos látószög az érzékelőméretől is függ."
         }
       }
     }

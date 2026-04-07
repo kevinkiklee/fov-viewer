@@ -117,7 +117,7 @@
           }
         },
         "4": {
-          "scenario": "Voc�� quer uma borda branca limpa para apresentar sua foto nas redes sociais. Qual predefinição de moldura você deve usar?",
+          "scenario": "Você quer uma borda branca limpa para apresentar sua foto nas redes sociais. Qual predefinição de moldura você deve usar?",
           "hint": "Pense em qual predefinição dá uma borda branca simples.",
           "successMessage": "Correto! A predefinição Branco adiciona uma borda branca de 100px ao redor da sua foto.",
           "failureMessage": "A predefinição Branco é projetada para uma apresentação com borda branca limpa e simples.",

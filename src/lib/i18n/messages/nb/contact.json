@@ -1,7 +1,7 @@
 {
   "contact": {
     "title": "Kontakt oss",
-    "description": "Har du et spørsmål, funnet en feil eller et forslag til et nytt verktøy? Vi vil gjerne høre fra deg.",
+    "description": "Har du et spørsmål, funnet en feil eller et forslag til et nytt verktøy? Vi hører gjerne fra deg.",
     "form": {
       "nameLabel": "Navn",
       "namePlaceholder": "Ditt navn",
@@ -10,13 +10,13 @@
       "subjectLabel": "Emne",
       "subjectPlaceholder": "Hva handler det om?",
       "messageLabel": "Melding",
-      "messagePlaceholder": "Din melding ...",
+      "messagePlaceholder": "Meldingen din …",
       "submit": "Send melding",
-      "sending": "Sender ...",
+      "sending": "Sender …",
       "honeypotLabel": "Nettside",
       "successToast": "Meldingen er sendt! Vi svarer så snart vi kan.",
       "errorToast": "Noe gikk galt. Prøv igjen.",
-      "networkErrorToast": "Nettverksfeil. Sjekk tilkoblingen og prøv igjen.",
+      "networkErrorToast": "Nettverksfeil. Sjekk forbindelsen og prøv igjen.",
       "sentTitle": "Takk for at du tok kontakt!",
       "sentMessage": "Vi svarer så snart vi kan.",
       "sendAnother": "Send en ny melding"

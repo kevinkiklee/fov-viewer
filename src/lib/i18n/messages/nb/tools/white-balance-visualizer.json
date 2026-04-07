@@ -4,7 +4,7 @@
       "colorTemperature": "Fargetemperatur:",
       "warm": "Varm",
       "neutral": "Nøytral",
-      "cool": "Kald",
+      "cool": "Kjølig",
       "presets": "Forhåndsinnstillinger",
       "red": "Rød",
       "green": "Grønn",
@@ -14,15 +14,15 @@
       "faq": {
         "what-is-white-balance": {
           "question": "Hva er hvitbalanse i fotografi?",
-          "answer": "Hvitbalanse justerer fargene i bildet slik at objekter som ser hvite ut i virkeligheten også ser hvite ut på bildet. Ulike lyskilder har ulike fargetemperaturer, og hvitbalansen kompenserer for disse forskjellene."
+          "answer": "Hvitbalanse justerer fargene i bildet slik at objekter som er hvite i virkeligheten også ser hvite ut på bildet. Ulike lyskilder har ulike fargetemperaturer, og hvitbalansen kompenserer for disse forskjellene."
         },
         "kelvin-vs-presets": {
           "question": "Bør jeg bruke Kelvin-verdier eller faste hvitbalanse-innstillinger?",
-          "answer": "Faste innstillinger (Dagslys, Overskyet, Glødelampe) er praktiske utgangspunkt, men en konkret Kelvin-verdi gir mer presis kontroll. Fotografer i RAW for å kunne justere hvitbalansen uten tap i etterarbeidet."
+          "answer": "Faste innstillinger (Dagslys, Overskyet, Glødelampe) er greie utgangspunkt, men en konkret Kelvin-verdi gir mer presis kontroll. Fotografer i RAW hvis du vil kunne justere hvitbalansen uten kvalitetstap i etterarbeidet."
         },
         "when-to-use-manual-white-balance": {
           "question": "Når bør jeg bruke manuell hvitbalanse?",
-          "answer": "Bruk manuell hvitbalanse ved blandingslys (naturlig og kunstig i samme rom), studiosituasjoner som krever presis fargegjengivelse, produktfotografi, og når automatisk hvitbalanse gir ujevne resultater fra bilde til bilde."
+          "answer": "Bruk manuell hvitbalanse ved blandingslys (naturlig og kunstig lys i samme rom), i studio når du trenger presis fargegjengivelse, til produktfotografi, og når automatisk hvitbalanse gir ujevne resultater fra bilde til bilde."
         }
       }
     }

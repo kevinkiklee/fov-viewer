@@ -1,12 +1,12 @@
 {
   "education": {
     "exif-viewer": {
-      "beginner": "EXIF-data er skjulte oplysninger indlejret i ethvert foto, dit kamera tager. De fortæller hvilket kamera og hvilken linse du brugte, de præcise indstillinger (blænde, lukkertid, ISO), dato og tid og nogle gange GPS-koordinater. Dette værktøj læser data uden at uploade dit billede — alt sker i din browser.",
-      "deeper": "EXIF (Exchangeable Image File Format) er en standard defineret af JEITA/CIPA, der gemmer metadata i JPEG, TIFF og visse RAW-filer. Data skrives i bestemte segmenter af filens header som tag-nøgle-værdi-par i en TIFF-baseret IFD-struktur (Image File Directory). Der er flere IFD-sektioner: IFD0 til grundlæggende billedinfo, EXIF-sub-IFD til kameraindstillinger, GPS-IFD til geolokation og Interop-IFD til kompatibilitet. Kameraproducenter skriver også proprietær \"MakerNote\"-data med linsekorrektioner, fokuspunkter, lukkertælling og andre modelspecifikke detaljer. Sociale medier fjerner ofte EXIF-data ved upload af hensyn til privatliv, men den originale fil på dit hukommelseskort beholder dem altid. At forstå EXIF hjælper dig med at lære af dine egne optagemønstre og regne dig frem til indstillingerne bag fotos, du beundrer.",
+      "beginner": "EXIF-data er skjulte oplysninger, som dit kamera lægger ind i alle billeder, det tager. De fortæller dig, hvilket kamera og hvilken linse du brugte, de præcise indstillinger (blænde, lukkertid, ISO), dato og tidspunkt — og nogle gange GPS-koordinater. Det her værktøj læser data uden at uploade dit billede — alt sker i din browser.",
+      "deeper": "EXIF (Exchangeable Image File Format) er en standard defineret af JEITA/CIPA, der gemmer metadata i JPEG, TIFF og visse RAW-filer. Data skrives i bestemte segmenter af filens header som tag-nøgle-værdi-par i en TIFF-baseret IFD-struktur (Image File Directory). Der er flere IFD-sektioner: IFD0 til grundlæggende billedinfo, EXIF-sub-IFD til kameraindstillinger, GPS-IFD til geoposition og Interop-IFD til kompatibilitet. Kameraproducenter skriver også deres egen \"MakerNote\"-data med linsekorrektioner, fokuspunkter, lukkertælling og andre modelspecifikke detaljer. Sociale medier fjerner ofte EXIF-data ved upload af hensyn til privatlivet, men den originale fil på dit hukommelseskort beholder dem altid. At forstå EXIF hjælper dig med at lære af dine egne optagemønstre og regne dig frem til indstillingerne bag de fotos, du beundrer.",
       "keyFactors": {
         "0": {
           "label": "Kamera og linse",
-          "description": "Mærke, model, linsenavn og linseproducent — nyttigt til at identificere grej i fotos, du finder online."
+          "description": "Mærke, model, linsenavn og linseproducent — nyttigt, hvis du vil identificere grejet i fotos, du finder online."
         },
         "1": {
           "label": "Eksponeringsindstillinger",
@@ -14,22 +14,22 @@
         },
         "2": {
           "label": "Dato og GPS",
-          "description": "Hvornår og hvor billedet blev taget. Vær opmærksom på, at GPS-data afslører din placering, når du deler filer."
+          "description": "Hvornår og hvor billedet blev taget. Vær opmærksom på, at GPS-data afslører din position, når du deler filer."
         },
         "3": {
           "label": "Software",
-          "description": "Viser hvilket redigeringsprogram, der senest gemte filen. Nyttigt, hvis du vil tjekke, om et billede er blevet efterbehandlet."
+          "description": "Viser, hvilket redigeringsprogram der senest gemte filen. Nyttigt, hvis du vil tjekke, om et billede er blevet efterbehandlet."
         }
       },
       "tips": {
         "0": {
-          "text": "Kig på brændvidden og 35mm-ækvivalenten for at forstå, om fotografen brugte et vidt, normalt eller tele-perspektiv — det lærer dig mere om komposition end nogen tredjedelsregel."
+          "text": "Kig på brændvidden og 35mm-ækvivalenten for at afgøre, om fotografen brugte et vidt, normalt eller tele-perspektiv — det lærer dig mere om komposition end nogen tredjedelsregel."
         },
         "1": {
-          "text": "Hvis et billede, du beundrer, er taget ved høj ISO med stor blænde, fortæller det dig, at lyset var svagt. Brug EXIF til at forstå de betingelser, fotografen arbejdede under."
+          "text": "Hvis et billede, du beundrer, er taget ved høj ISO med stor blænde, fortæller det dig, at lyset var svagt. Brug EXIF til at forstå de forhold, fotografen arbejdede under."
         },
         "2": {
-          "text": "Inden du deler fotos online, så husk at EXIF kan indeholde din GPS-placering. Fjern metadata via eksportindstillinger i dit redigeringsprogram, hvis privatliv betyder noget."
+          "text": "Inden du deler fotos online, så husk at EXIF kan indeholde din GPS-position. Fjern metadata via eksportindstillingerne i dit redigeringsprogram, hvis privatlivet er vigtigt for dig."
         }
       },
       "tooltips": {
@@ -59,11 +59,11 @@
         },
         "Focal Length (35mm equiv)": {
           "term": "Brændvidde (35mm ækv.)",
-          "definition": "Den ækvivalente brændvidde, som hvis billedet var taget på en fuldformat 35mm sensor. Nyttig til at sammenligne billedvinkel på tværs af sensorstørrelser."
+          "definition": "Den ækvivalente brændvidde, som billedet ville svare til på en 35mm fuldformatsensor. Nyttig, når du vil sammenligne billedvinkel på tværs af sensorstørrelser."
         },
         "GPS": {
           "term": "GPS",
-          "definition": "Bredde- og længdegrad indlejret af kameraer med GPS-modul. Afslører hvor billedet er taget."
+          "definition": "Bredde- og længdegrad lagt ind af kameraer med GPS-modul. Afslører, hvor billedet er taget."
         }
       },
       "challenges": {
@@ -82,7 +82,7 @@
           "scenario": "Du uploader et foto og ser Blænde: f/1.8, Lukkertid: 1/4000s, ISO: 100. Blev billedet sandsynligvis taget i stærkt eller svagt lys?",
           "hint": "En meget hurtig lukkertid ved lav ISO tyder på masser af lys.",
           "successMessage": "Ja! Den hurtige lukkertid (1/4000s) ved base-ISO (100) fortæller dig, at der var masser af lys — sandsynligvis udendørs i solskin.",
-          "failureMessage": "En lukkertid på 1/4000s ved ISO 100 betyder, at kameraet kun havde brug for minimal følsomhed og meget kort eksponering. Det er et skarpt udendørsmotiv.",
+          "failureMessage": "En lukkertid på 1/4000s ved ISO 100 betyder, at kameraet kun havde brug for minimal følsomhed og meget kort eksponering. Det er et billede taget udendørs i klart lys.",
           "options": {
             "0": { "label": "Stærkt lys — hurtig lukker og lav ISO" },
             "1": { "label": "Svagt lys — den store blænde kompenserer" }
@@ -100,10 +100,10 @@
           }
         },
         "3": {
-          "scenario": "Du ser to fotos af samme motiv. Foto A: f/2.8, 1/60s, ISO 3200. Foto B: f/2.8, 1/60s, ISO 200. Hvilket billede blev taget i mest lys?",
+          "scenario": "Du ser to fotos af samme motiv. Foto A: f/2.8, 1/60s, ISO 3200. Foto B: f/2.8, 1/60s, ISO 200. Hvilket billede er taget i mest lys?",
           "hint": "Højere ISO kompenserer for mindre lys.",
-          "successMessage": "Præcis! Foto B ved ISO 200 havde meget mere omgivende lys. Foto A krævede ISO 3200 (4 stops mere følsomhed) for at opnå samme eksponering, så motivet var markant mørkere.",
-          "failureMessage": "Foto B blev taget i mere lys. Samme blænde og lukkertid, men ISO 200 mod 3200 betyder, at Foto A var i langt mørkere omgivelser og krævede 4 stops mere følsomhed.",
+          "successMessage": "Præcis! Foto B ved ISO 200 havde meget mere omgivende lys. Foto A krævede ISO 3200 (4 stops mere følsomhed) for at få samme eksponering, så motivet var markant mørkere.",
+          "failureMessage": "Foto B er taget i mere lys. Samme blænde og lukkertid, men ISO 200 mod 3200 betyder, at Foto A var i langt mørkere omgivelser og krævede 4 stops mere følsomhed.",
           "options": {
             "0": { "label": "Foto A (ISO 3200)" },
             "1": { "label": "Foto B (ISO 200)" }
@@ -111,13 +111,13 @@
         },
         "4": {
           "scenario": "Du analyserer et vildtfoto: 400mm, f/5.6, 1/2000s, ISO 1600. EXIF viser, at softwarefeltet er \"Adobe Lightroom Classic 13.1\". Hvad kan du udlede om fotografen og optageforholdene?",
-          "hint": "Overvej den lange brændvidde, den åbne blænde, den hurtige lukker og den hævede ISO tilsammen.",
-          "successMessage": "Flot analyse! 400mm ved f/5.6 (sandsynligvis helt åben på den linse) med en hurtig 1/2000s lukker tyder på et hurtigt motiv (fugle eller dyr i aktion). ISO 1600 tyder på, at det ikke var direkte sollys — sandsynligvis overskyet eller i skygge. Lightroom-feltet bekræfter efterbehandling.",
+          "hint": "Se på den lange brændvidde, den åbne blænde, den hurtige lukker og den hævede ISO samlet.",
+          "successMessage": "Flot analyse! 400mm ved f/5.6 (sandsynligvis helt åben på den linse) med en hurtig 1/2000s lukker tyder på et hurtigt motiv (fugle eller dyr i aktion). ISO 1600 tyder på, at det ikke var direkte sollys — sandsynligvis overskyet eller i skygge. Lightroom-feltet bekræfter, at filen er efterbehandlet.",
           "failureMessage": "Indstillingerne afslører meget: 400mm f/5.6 er typisk vildttele helt åbent, 1/2000s fryser hurtige dyrebevægelser, og ISO 1600 betyder begrænset lys (ikke direkte sol). Lightroom-posten bekræfter, at filen er bearbejdet.",
           "options": {
             "0": { "label": "Hurtigt motiv i moderat lys, efterbehandlet i Lightroom" },
             "1": { "label": "Langsomt motiv i stærkt lys, direkte fra kameraet" },
-            "2": { "label": "Landskab med motion blur, kraftigt bearbejdet" }
+            "2": { "label": "Landskab med bevægelsessløring, kraftigt bearbejdet" }
           }
         }
       }

@@ -1,16 +1,16 @@
 {
   "toolUI": {
     "white-balance-visualizer": {
-      "colorTemperature": "Color Temperature:",
-      "warm": "Warm",
-      "neutral": "Neutral",
-      "cool": "Cool",
-      "presets": "Presets",
-      "red": "Red",
-      "green": "Green",
-      "blue": "Blue",
+      "colorTemperature": "রঙের তাপমাত্রা:",
+      "warm": "উষ্ণ",
+      "neutral": "নিরপেক্ষ",
+      "cool": "শীতল",
+      "presets": "প্রিসেট",
+      "red": "লাল",
+      "green": "সবুজ",
+      "blue": "নীল",
       "hex": "Hex",
-      "loadingScene": "Loading scene...",
+      "loadingScene": "দৃশ্য লোড হচ্ছে...",
       "faq": {
         "what-is-white-balance": {
           "question": "ফটোগ্রাফিতে হোয়াইট ব্যালেন্স কী?",

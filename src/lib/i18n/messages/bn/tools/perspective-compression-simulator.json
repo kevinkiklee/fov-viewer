@@ -1,13 +1,13 @@
 {
   "toolUI": {
     "perspective-compression-simulator": {
-      "cameraSettings": "Camera Settings",
-      "focalLength": "Focal Length",
-      "equivalent35mm": "Equivalent (35mm)",
-      "perspectiveDistance": "Perspective & Distance",
-      "subjectDistance": "Subject Distance",
-      "maintainSubjectSize": "Maintain Subject Size",
-      "resetAll": "Reset All"
+      "cameraSettings": "ক্যামেরা সেটিংস",
+      "focalLength": "ফোকাল দৈর্ঘ্য",
+      "equivalent35mm": "সমতুল্য (35mm)",
+      "perspectiveDistance": "পরিপ্রেক্ষিত ও দূরত্ব",
+      "subjectDistance": "সাবজেক্টের দূরত্ব",
+      "maintainSubjectSize": "সাবজেক্ট সাইজ বজায় রাখো",
+      "resetAll": "সব রিসেট করো"
     }
   }
 }

@@ -1,65 +1,65 @@
 {
   "education": {
     "shutter-speed-visualizer": {
-      "beginner": "Suljinaikaopas auttaa sinua löytämään hitaimman suljinajan, jota voit vielä käyttää terävään käsivarakuvaan. Jos suljinaikasi on liian hidas, käsien tärinästä johtuva kameran liike sumentaa kuvan. Turvallinen minimiaika riippuu polttovälistäsi, kuvanvakaimen olemassaolosta ja siitä, kuinka vakaat kätesi ovat.",
-      "deeper": "Klassinen \"käänteislukusääntö\" sanoo, että teräviin käsivarakuviin suljinajan tulisi olla vähintään 1/(polttoväli) sekuntia — joten 200 mm:n objektiivi vaatii vähintään 1/200s:n. Rajaavilla kameroilla kannattaa käyttää ekvivalenttia polttoväliä (esim. 200 mm 1,5x kertoimella = 1/300s). Modernit rungon sisäinen vakain (IBIS) ja optinen vakain (OIS) voivat tuoda 3–7 lisäaukkoa käsivaravaraa, jolloin vakaa 200 mm saattaa olla terävä jopa 1/15s:lla tai hitaammalla. Vakain kuitenkin kompensoi vain kameran tärinää, ei kohteen liikettä. Kohti tuleva kävelijä on 1/15s:ssa silti sumentunut vakaimesta riippumatta. Liikkuville kohteille sinun on valittava suljinaika kohteen nopeuden ja etäisyyden, ei pelkän polttovälin mukaan.",
+      "beginner": "Suljinaikaopas auttaa sinua löytämään pisimmän suljinajan, jolla käsivarakuvasta vielä tulee terävä. Jos suljinaika on liian pitkä, käsien tärinä sumentaa kuvan. Turvallinen lyhin aika riippuu polttovälistä, kuvanvakaimesta ja siitä, kuinka vakaat kätesi ovat.",
+      "deeper": "Klassinen käänteislukusääntö sanoo, että käsivaralta teräväksi kuvaksi suljinajan tulisi olla vähintään 1/(polttoväli) sekuntia — 200 mm:n objektiivi vaatii siis vähintään 1/200s:n. Rajaavalla kennolla kannattaa käyttää ekvivalenttia polttoväliä (esim. 200 mm × 1,5 kertoimella = 1/300s). Moderni rungon sisäinen kuvanvakain (IBIS) ja optinen vakain (OIS) voivat tuoda 3–7 valotusaskelta lisää käsivaravaraa, jolloin hyvin vakautetulla 200 mm:llä kuva voi olla terävä jopa 1/15s:lla tai pidemmällä ajalla. Vakain kuitenkin kompensoi vain kameran tärinää, ei kohteen liikettä. Kohti tuleva kävelijä on 1/15s:lla silti sumea, olipa vakain millainen tahansa. Liikkuvia kohteita varten suljinaika valitaan kohteen nopeuden ja etäisyyden mukaan, ei pelkän polttovälin mukaan.",
       "keyFactors": {
         "0": {
           "label": "Polttoväli",
-          "description": "Pidemmät polttovälit suurentavat kameran tärinää. Käänteislukusääntö (1/polttoväli) on lähtökohta minimisuljinajan määrittämiseen."
+          "description": "Pitkä polttoväli suurentaa kameran tärinän vaikutusta. Käänteislukusääntö (1/polttoväli) on lähtökohta lyhimmän turvallisen suljinajan määrittämiseen."
         },
         "1": {
           "label": "Kuvanvakain",
-          "description": "OIS (objektiivipohjainen) tarjoaa tyypillisesti 2–4 aukon hyödyn. IBIS (runkopohjainen) tarjoaa 3–5 aukkoa. Yhdistetty OIS+IBIS voi saavuttaa 5–7 aukkoa joissain järjestelmissä."
+          "description": "OIS (objektiivissa) antaa tyypillisesti 2–4 valotusaskelta hyötyä. IBIS (rungossa) 3–5 askelta. Yhdistetty OIS+IBIS voi yltää joissakin järjestelmissä 5–7 askeleen hyötyyn."
         },
         "2": {
           "label": "Kohteen liike",
-          "description": "Paikallaan olevat kohteet vaativat vain tarpeeksi nopeuden kameran tärinän torjumiseen. Liikkuvat kohteet tarvitsevat nopeampia aikoja vakaimesta riippumatta: kävely (~1/125s), juoksu (~1/500s), ajoneuvot (~1/1000s+)."
+          "description": "Paikallaan oleville kohteille riittää, että suljinaika vastustaa kameran tärinää. Liikkuvat kohteet vaativat lyhyempiä aikoja vakaimesta riippumatta: kävely (~1/125s), juoksu (~1/500s), ajoneuvot (~1/1000s tai lyhyempi)."
         },
         "3": {
           "label": "Kennokoko (kerroin)",
-          "description": "Rajaavat kennot kertovat käytännössä polttovälin käänteislukusäännössä. 50 mm 1,5x rajauksella käyttäytyy kuten 75 mm, joten tarvitset vähintään 1/75s:n."
+          "description": "Rajaavalla kennolla polttoväli kerrotaan kertoimella ennen käänteislukusäännön soveltamista. 50 mm APS-C:llä (1,5×) käyttäytyy kuten 75 mm, joten tarvitset vähintään 1/75s:n."
         }
       },
       "tips": {
         "0": {
-          "text": "Tue itsesi seinää vasten, laita kyynärpäät kylkeen ja hengitä ulos hitaasti ennen laukaisimen painamista. Hyvä tekniikka voi antaa sinulle 1–2 aukkoa lisää vakautta käänteislukusäännön päälle."
+          "text": "Tue itsesi seinään, paina kyynärpäät kylkiä vasten ja hengitä rauhallisesti ulos ennen laukaisua. Hyvä kuvaustekniikka voi tuoda 1–2 valotusaskelta lisää varaa käänteislukusäännön päälle."
         },
         "1": {
-          "text": "Ihmisiä kuvatessa kohteen liike yleensä sanelee minimiajan, ei polttoväli. Jopa laajakulmalla ja vakaimella juokseva lapsi vaatii vähintään 1/500s:n."
+          "text": "Ihmisiä kuvatessa suljinajan määrää yleensä kohteen liike, ei polttoväli. Juokseva lapsi vaatii vähintään 1/500s:n, vaikka käytössä olisi laajakulma ja vakain."
         },
         "2": {
-          "text": "Jos kuvaat jatkuvasti hämärässä, sijoita kamerarunkoon, jossa on IBIS. Mahdollisuus kuvata käsivaralta 1/2s:lla laajakulmalla avaa mahdollisuuksia, joita mikään korkean ISO:n suorituskyky ei voi korvata."
+          "text": "Jos kuvaat jatkuvasti hämärässä, hanki runko, jossa on IBIS. Mahdollisuus kuvata käsivaralta 1/2s:lla laajakulmalla avaa tilaisuuksia, joita mikään korkea ISO ei pysty korvaamaan."
         }
       },
       "tooltips": {
         "focalLength": {
           "term": "Polttoväli",
-          "definition": "Objektiivin polttoväli millimetreinä. Vaikuttaa suoraan turvalliseen minimisuljinaikaan käänteislukusäännön kautta: 1/(polttoväli) täyskennolle, kertoimella säädettynä pienemmille kennoille."
+          "definition": "Objektiivin polttoväli millimetreinä. Vaikuttaa suoraan turvalliseen lyhimpään suljinaikaan käänteislukusäännön kautta: 1/(polttoväli) täyskennolle, kertoimella säädettynä pienemmille kennoille."
         },
         "sensor": {
           "term": "Kennokoko",
-          "definition": "Kameran kennokoko, joka määrittää kertoimen. APS-C (1,5x) ja Micro Four Thirds (2x) kertovat tehollisen polttovälin, vaatien nopeampia suljinaikoja samalla objektiivilla."
+          "definition": "Kameran kennokoko, joka määrää kertoimen. APS-C (1,5×) ja Micro Four Thirds (2×) kertovat tehollisen polttovälin, jolloin samalla objektiivilla tarvitaan lyhyempi suljinaika."
         },
         "stabilization": {
           "term": "Kuvanvakain",
-          "definition": "Teknologia, joka kompensoi kameran tärinää. OIS (Optical Image Stabilization) on objektiivissa, IBIS (In-Body Image Stabilization) kamerarungossa. Ne voivat toimia yhdessä maksimaalisen hyödyn saamiseksi."
+          "definition": "Teknologia, joka kompensoi kameran tärinää. OIS (Optical Image Stabilization) on objektiivissa, IBIS (In-Body Image Stabilization) kamerarungossa. Ne voivat toimia yhdessä ja antaa maksimaalisen hyödyn."
         },
         "subjectMotion": {
           "term": "Kohteen liike",
-          "definition": "Kuinka nopeasti kohteesi liikkuu. Paikallaan olevat kohteet tarvitsevat vain riittävän suljinajan kameran tärinän vastustamiseen. Liikkuvat kohteet tarvitsevat nopeampia aikoja nopeutensa ja suuntansa mukaan kameraan nähden."
+          "definition": "Kuinka nopeasti kohde liikkuu. Paikallaan oleville kohteille riittää suljinaika, joka vastustaa kameran tärinää. Liikkuvat kohteet vaativat lyhyempiä aikoja nopeutensa ja kameraan nähden olevan suuntansa mukaan."
         },
         "recommendedShutterSpeed": {
           "term": "Suositeltu suljinaika",
-          "definition": "Minimisuljinaika, joka on laskettu juuri sinun yhdistelmällesi polttoväliä, vakainta, kennoa ja kohteen liikettä. Tällä nopeudella tai nopeammalla kuvaaminen tuottaa teräviä tuloksia."
+          "definition": "Lyhin suljinaika, joka on laskettu juuri sinun yhdistelmällesi polttoväliä, vakainta, kennoa ja kohteen liikettä. Tällä tai lyhyemmällä ajalla kuvattaessa tulos on terävä."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Kuvaat 100 mm:n objektiivilla täyskennoisella kameralla ilman kuvanvakainta. Kohteesi seisoo paikallaan. Mikä on suositeltu minimisuljinaika?",
-          "hint": "Käänteislukusääntö: minimisuljinaika = 1 / polttoväli.",
-          "successMessage": "Oikein! Käänteislukusääntö sanoo 1/100s 100 mm:n objektiiville täyskennolla. Tämä on klassinen lähtökohta käsivaraterävyydelle.",
-          "failureMessage": "100 mm:n objektiivilla täyskennolla ilman vakainta käänteislukusääntö antaa sinulle 1/100s:n turvallisena minimisuljinaikana staattisille kohteille.",
+          "scenario": "Kuvaat 100 mm:n objektiivilla täyskennoisella kameralla ilman kuvanvakainta. Kohde seisoo paikallaan. Mikä on suositeltu lyhin suljinaika?",
+          "hint": "Käänteislukusääntö: lyhin suljinaika = 1 / polttoväli.",
+          "successMessage": "Oikein! Käänteislukusääntö antaa 100 mm:n objektiiville täyskennolla 1/100s:n. Tämä on klassinen lähtökohta käsivaraterävyydelle.",
+          "failureMessage": "100 mm:n objektiivilla täyskennolla ilman vakainta käänteislukusääntö antaa paikallaan oleville kohteille lyhimmäksi turvalliseksi suljinajaksi 1/100s.",
           "options": {
             "0": { "label": "1/50s" },
             "1": { "label": "1/100s" },
@@ -68,22 +68,22 @@
           }
         },
         "1": {
-          "scenario": "Käytät 50 mm:n objektiivia APS-C-kameralla (1,5x kerroin) ilman vakainta. Mitä minimisuljinaikaa kannattaa käyttää paikallaan olevalle kohteelle?",
+          "scenario": "Käytät 50 mm:n objektiivia APS-C-kamerassa (kerroin 1,5×) ilman vakainta. Mikä on lyhin suljinaika paikallaan olevalle kohteelle?",
           "hint": "Kerro polttoväli kertoimella ennen käänteislukusäännön soveltamista.",
-          "successMessage": "Aivan! 50 mm × 1,5 = 75 mm:n ekvivalentti, joten tarvitset vähintään 1/75s:n. Käytännössä pyöristys ylös 1/80s:ksi on turvallinen valinta.",
-          "failureMessage": "APS-C:llä kerroin (1,5x) tarkoittaa, että 50 mm:n objektiivi käyttäytyy kuten 75 mm. Käänteislukusääntö antaa 1/75s minimisuljinajaksi.",
+          "successMessage": "Aivan! 50 mm × 1,5 = 75 mm:n ekvivalentti, joten tarvitset vähintään 1/75s:n. Käytännössä 1/80s on turvallinen pyöristys.",
+          "failureMessage": "APS-C:llä kerroin 1,5× tarkoittaa, että 50 mm käyttäytyy kuten 75 mm. Käänteislukusääntö antaa lyhimmäksi suljinajaksi 1/75s.",
           "options": {
             "0": { "label": "1/50s" },
-            "1": { "label": "1/75s (pyöristetty 1/80s:ään)" },
+            "1": { "label": "1/75s (pyöristettynä 1/80s)" },
             "2": { "label": "1/100s" },
             "3": { "label": "1/125s" }
           }
         },
         "2": {
-          "scenario": "Sinulla on 200 mm OIS:llä (4 aukkoa vakainta) täyskennoisella rungolla, jossa on IBIS (5 aukkoa). Yhdessä ne tarjoavat noin 6 aukkoa yhdistettyä vakautta. Paikallaan olevalle kohteelle, mikä on likimääräinen minimisuljinaika?",
-          "hint": "Aloita käänteislukusäännöllä (1/200s) ja sovella sitten 6 aukon vakaimen hyötyä.",
-          "successMessage": "Oikein! Lähtien 1/200s:sta ja voittaen 6 aukkoa: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3s. Noin 1/3 sekuntia käsivaralta 200 mm:n objektiivilla — vaikuttavaa mutta saavutettavissa modernilla vakaimella!",
-          "failureMessage": "Lähtien 1/200s:sta jokainen vakaimen aukko kaksinkertaistaa käyttökelpoisen ajan: 1/200 -> 1/100 -> 1/50 -> 1/25 -> 1/13 -> 1/6 -> 1/3s. Kuusi aukkoa vakainta 200 mm:n objektiivilla antaa noin 1/3s.",
+          "scenario": "Käytössäsi on 200 mm OIS:llä (4 askelta vakainta) täyskennoisessa rungossa, jossa on IBIS (5 askelta). Yhdessä ne antavat noin 6 askeleen yhdistetyn vakaimen. Mikä on karkea lyhin suljinaika paikallaan olevalle kohteelle?",
+          "hint": "Aloita käänteislukusäännöstä (1/200s) ja sovella sen päälle 6 askeleen vakainhyöty.",
+          "successMessage": "Oikein! 1/200s + 6 askelta vakainta: 1/200 → 1/100 → 1/50 → 1/25 → 1/13 → 1/6 → 1/3s. Noin 1/3 sekunti käsivaralta 200 mm:n objektiivilla — vaikuttavaa mutta mahdollista modernilla vakaimella!",
+          "failureMessage": "Lähtökohtana 1/200s. Jokainen vakaimen askel kaksinkertaistaa käytettävissä olevan ajan: 1/200 → 1/100 → 1/50 → 1/25 → 1/13 → 1/6 → 1/3s. Kuusi askelta vakainta 200 mm:llä tarkoittaa noin 1/3 s.",
           "options": {
             "0": { "label": "1/30s" },
             "1": { "label": "1/8s" },
@@ -92,22 +92,22 @@
           }
         },
         "3": {
-          "scenario": "Kuvaat ystävääsi, joka hölkkää puistossa, käyttäen 35 mm:n objektiivia täyskennoisella kameralla jossa on IBIS. IBIS antaa sinulle 5 aukkoa vakautta, joten pelkkä käänteislukusääntö sallisi kuvaamisen noin 1 sekunnin ajalla. Pitäisikö sinun käyttää 1 sekuntia?",
+          "scenario": "Kuvaat ystävääsi, joka hölkkää puistossa. Käytössäsi on 35 mm:n objektiivi täyskennoisessa kamerassa, jossa on IBIS. IBIS antaa 5 askelta varaa, joten pelkkä käänteislukusääntö sallisi jopa 1 sekunnin valotuksen. Kannattaako käyttää 1 sekuntia?",
           "hint": "Vakain kompensoi kameran tärinää, ei kohteen liikettä.",
-          "successMessage": "Oikein! Vakain vastustaa vain kameran tärinää. Hölkkäävä ihminen vaatii vähintään 1/250s liikkeen jäädyttämiseksi, vakaimesi laadusta riippumatta.",
-          "failureMessage": "Vakain ei voi jäädyttää liikkuvaa kohdetta. Hölkkäävälle ihmiselle tarvitset vähintään 1/250s liike-epäterävyyden estämiseen, vaikka kamerasi voisi pysyä paikallaan 1 sekunnissa.",
+          "successMessage": "Oikein! Vakain vastustaa vain kameran tärinää. Hölkkäävä ihminen vaatii vähintään 1/250s:n, jotta liike pysähtyy — riippumatta siitä, kuinka hyvä vakain on.",
+          "failureMessage": "Vakain ei pysäytä liikkuvaa kohdetta. Hölkkäävälle ihmiselle tarvitaan vähintään 1/250s liike-epäterävyyden välttämiseksi, vaikka kamera pysyisikin paikallaan jopa 1 sekunnin valotuksella.",
           "options": {
             "0": { "label": "Kyllä — IBIS hoitaa kaiken liikkeen" },
-            "1": { "label": "Ei — käytä vähintään 1/250s jäädyttääksesi hölkkääjän" },
+            "1": { "label": "Ei — käytä vähintään 1/250s, niin hölkkääjä pysähtyy" },
             "2": { "label": "Ei — käytä 1/60s kompromissina" },
             "3": { "label": "Riippuu ISO-asetuksesta" }
           }
         },
         "4": {
-          "scenario": "Haluat luoda panorointikuvan pyöräilijästä — ajajan tulee olla terävä ja taustan näyttää liike-epäterävyyden juovia. Käytät 70 mm:n objektiivia täyskennolla. Mitä suljinaika-aluetta kannattaa kokeilla?",
-          "hint": "Panorointi käyttää tarkoituksella hidasta suljinaikaa kohdetta seuratessaan. Liian nopea jäädyttää kaiken; liian hidas sumentaa jopa kohteen.",
-          "successMessage": "Oikein! Pyöräilijän panorointiin 1/30s–1/60s on sulava kohta. Tämä on tarpeeksi hidas sumentamaan taustan juoviksi, ja seuraamisliikkeesi pitää ajajan suhteellisen terävänä. Vaatii harjoittelua — kuvaa sarjakuvauksessa ja odota monia hylättyjä ruutuja.",
-          "failureMessage": "Panorointi vaatii suljinajan, joka on riittävän hidas sumentamaan taustan mutta tarpeeksi nopea pitämään kohteen terävänä seurattaessa. Pyöräilijälle 1/30s–1/60s on tyypillinen alue.",
+          "scenario": "Haluat tehdä panorointikuvan pyöräilijästä — ajaja terävänä ja tausta liike-epäterävyyden juovina. Käytät 70 mm:n objektiivia täyskennolla. Mitä suljinaika-aluetta kannattaa kokeilla?",
+          "hint": "Panoroinnissa käytetään tarkoituksella pitkää suljinaikaa, kun kohdetta seurataan. Liian lyhyt pysäyttää kaiken, liian pitkä sumentaa jopa kohteen.",
+          "successMessage": "Oikein! Pyöräilijän panorointiin 1/30s–1/60s on makea piste. Tausta sumenee juoviksi ja seuraamisliike pitää ajajan suhteellisen terävänä. Vaatii harjoittelua — kuvaa sarjakuvauksella ja varaudu hylkäämään useita ruutuja.",
+          "failureMessage": "Panorointi vaatii suljinajan, joka on riittävän pitkä sumentamaan taustan mutta kuitenkin sopivan lyhyt, jotta kohde pysyy seurattaessa terävänä. Pyöräilijälle 1/30s–1/60s on tyypillinen alue.",
           "options": {
             "0": { "label": "1/1000s–1/2000s" },
             "1": { "label": "1/250s–1/500s" },

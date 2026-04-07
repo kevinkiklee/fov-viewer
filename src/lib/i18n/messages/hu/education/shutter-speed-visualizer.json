@@ -1,8 +1,8 @@
 {
   "education": {
     "shutter-speed-visualizer": {
-      "beginner": "A záridő-útmutató segít megtalálni a leglassabb záridőt, amit még használhatsz éles kézi fotóhoz. Ha a záridő túl lassú, a kéz bemozdulása elmossa a képet. A biztonságos minimum a gyújtótávolságtól, a képstabilizálástól és attól függ, mennyire vagy stabil kézzel.",
-      "deeper": "A klasszikus „reciprokszabály” szerint éles kézi fotózáshoz a záridőnek legalább 1/(gyújtótávolság) másodpercnek kell lennie — tehát egy 200mm-es objektívhez legalább 1/200s kell. Crop érzékelős kameráknál az ekvivalens gyújtótávolságot kell használnod (pl. 200mm 1,5× crop-on = 1/300s). A modern vázstabilizálás (IBIS) és optikai stabilizálás (OIS) 3-7 stopnyi extra mozgásteret adhat kézi fotózáshoz, így egy stabilizált 200mm-es objektív akár 1/15s-en vagy annál is lassabban is éles lehet. A stabilizálás azonban csak a bemozdulást kompenzálja, a téma mozgását nem. Egy feléd sétáló ember 1/15s-en bemozdul, függetlenül a stabilizálástól. Mozgó témáknál a téma sebessége és távolsága alapján kell választanod záridőt, nem csak a gyújtótávolság alapján.",
+      "beginner": "Ez az eszköz abban segít, hogy megtaláld a leglassabb záridőt, amit még használhatsz éles kézi fotóhoz. Ha a záridő túl lassú, a kéz bemozdulása elmossa a képet. A biztonságos minimum a gyújtótávolságtól, a képstabilizálástól és attól függ, mennyire vagy stabil kézű.",
+      "deeper": "A klasszikus „reciprokszabály” szerint éles kézi fotózáshoz a záridőnek legalább 1/(gyújtótávolság) másodpercnek kell lennie — tehát egy 200mm-es objektívhez legalább 1/200s kell. Crop érzékelős kameráknál az ekvivalens gyújtótávolsággal kell számolnod (pl. 200mm 1,5× crop-on = 1/300s). A modern vázstabilizálás (IBIS) és az optikai stabilizálás (OIS) 3–7 stopnyi plusz mozgásteret adhat kézi fotózáshoz, így egy stabilizált 200mm-es objektív akár 1/15s-en vagy annál is lassabban is éles lehet. A stabilizálás azonban csak a bemozdulást kompenzálja, a téma mozgását nem. Egy feléd sétáló ember 1/15s-en a stabilizálástól függetlenül bemozdul. Mozgó témánál a záridőt a téma sebessége és távolsága alapján válaszd, nem csak a gyújtótávolság alapján.",
       "keyFactors": {
         "0": {
           "label": "Gyújtótávolság",
@@ -23,13 +23,13 @@
       },
       "tips": {
         "0": {
-          "text": "Támaszkodj neki egy falnak, húzd be a könyöködet, és lassan fújj ki, mielőtt lenyomnád a kioldót. A jó technika 1-2 stopnyi extra stabilitást adhat a reciprokszabályon felül."
+          "text": "Támaszkodj neki egy falnak, húzd be a könyöködet, és lassan fújj ki, mielőtt lenyomnád a kioldót. A jó technika 1–2 stopnyi extra stabilitást adhat a reciprokszabályon felül."
         },
         "1": {
-          "text": "Embereket fotózva általában a téma mozgása szabja meg a minimális záridőt, nem a gyújtótávolság. Még nagylátószögű objektívvel és stabilizálással is legalább 1/500s kell egy futó gyerekhez."
+          "text": "Embereket fotózva általában a téma mozgása szabja meg a minimális záridőt, nem a gyújtótávolság. Egy futó gyerekhez még nagylátószögű objektívvel és stabilizálással is legalább 1/500s kell."
         },
         "2": {
-          "text": "Ha folyamatosan gyenge fényben fotózol, vegyél IBIS-es vázat. A lehetőség, hogy kézzel 1/2s-en fotózz nagylátószögű objektívvel, olyan ajtókat nyit, amiket semmilyen magas ISO teljesítmény nem pótol."
+          "text": "Ha rendszeresen gyenge fényben fotózol, vegyél IBIS-es vázat. Az, hogy nagylátószögű objektívvel kézzel 1/2s-en fotózhatsz, olyan kapukat nyit, amiket semmilyen magas ISO-teljesítmény nem pótol."
         }
       },
       "tooltips": {

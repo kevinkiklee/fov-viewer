@@ -1,20 +1,20 @@
 {
   "toolUI": {
     "hyperfocal-simulator": {
-      "settings": "Mga Setting",
+      "settings": "Settings",
       "focalLength": "Focal Length",
       "aperture": "Aperture",
       "focusDistance": "Focus Distance:",
       "sensor": "Sensor",
-      "scene": "Eksena:",
+      "scene": "Scene:",
       "sceneLandscape": "Landscape",
-      "sceneStreet": "Kalye",
+      "sceneStreet": "Street",
       "hyperfocalDistance": "Hyperfocal Distance",
       "nearLimit": "Near Limit",
       "farLimit": "Far Limit",
       "focusDistanceResult": "Focus Distance",
       "hyperfocalReference": "Hyperfocal Reference",
-      "sharpToInfinity": "Matalas hanggang infinity",
+      "sharpToInfinity": "Sharp hanggang infinity",
       "nearLimitBadge": "Near limit:"
     }
   }

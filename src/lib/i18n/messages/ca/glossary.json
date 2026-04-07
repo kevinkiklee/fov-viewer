@@ -69,7 +69,7 @@
       },
       "exposure-compensation": {
         "term": "Compensació d'exposició",
-        "definition": "Un control de la càmera que anul·la l'exposició del fotòmetre, generalment en increments de 1/3 de pas. Els valors positius aclareixen la imatge; els negatius la enfosqueixen."
+        "definition": "Un control de la càmera que anul·la l'exposició del fotòmetre, generalment en increments d'1/3 de pas. Els valors positius aclareixen la imatge; els negatius l'enfosqueixen."
       },
       "exposure-triangle": {
         "term": "Triangle d'exposició",
@@ -81,7 +81,7 @@
       },
       "focal-length": {
         "term": "Distància focal",
-        "definition": "La distància en mil·límetres des del centre òptic d'un objectiu fins al sensor quan es enfoca a l'infinit. Determina l'angle de visió i l'ampliació."
+        "definition": "La distància en mil·límetres des del centre òptic d'un objectiu fins al sensor quan s'enfoca a l'infinit. Determina l'angle de visió i l'ampliació."
       },
       "focus-stacking": {
         "term": "Focus stacking",

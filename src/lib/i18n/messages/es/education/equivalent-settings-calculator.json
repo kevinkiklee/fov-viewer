@@ -1,7 +1,7 @@
 {
   "education": {
     "equivalent-settings-calculator": {
-      "beginner": "Los distintos tamaños de sensor producen diferente profundidad de campo y campo de visión incluso con la misma distancia focal y apertura. Los ajustes equivalentes te permiten encontrar la combinación de objetivo y apertura en una segunda cámara que reproduce el mismo encuadre y desenfoque de fondo. Esto es imprescindible al comparar equipo entre formatos o al cambiar de sistema de cámara.",
+      "beginner": "Los distintos tamaños de sensor producen distinta profundidad de campo y campo de visión, incluso con la misma distancia focal y apertura. Los ajustes equivalentes te ayudan a encontrar la combinación de objetivo y apertura en otra cámara que reproduce el mismo encuadre y el mismo desenfoque de fondo. Es imprescindible cuando comparas equipo entre formatos o te planteas cambiar de sistema.",
       "deeper": {
         "0": {
           "heading": "El factor de recorte",
@@ -27,7 +27,7 @@
         },
         "2": {
           "label": "Objetivos disponibles",
-          "description": "La matemática de la equivalencia a veces exige un objetivo que no existe. Un 17 mm f/0.7 equivale a un 35 mm f/1.4 en MFT — pero no se fabrica ese objetivo. El equipo real limita lo que es alcanzable."
+          "description": "Las cuentas de la equivalencia a veces piden un objetivo que no existe. Por ejemplo, un 17 mm f/0.7 sería el equivalente en MFT a un 35 mm f/1.4 en formato completo, pero no se fabrica ese objetivo. El equipo real impone sus propios límites."
         }
       },
       "tips": {

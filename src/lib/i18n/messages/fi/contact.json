@@ -1,14 +1,14 @@
 {
   "contact": {
     "title": "Ota yhteyttä",
-    "description": "Onko sinulla kysymys, löysitkö bugin tai haluaisitko ehdottaa uutta työkalua? Kuulisimme mielellämme sinusta.",
+    "description": "Onko sinulla kysymys, löysitkö bugin tai haluatko ehdottaa uutta työkalua? Kuulisimme mielellämme ajatuksesi.",
     "form": {
       "nameLabel": "Nimi",
       "namePlaceholder": "Nimesi",
       "emailLabel": "Sähköposti",
       "emailPlaceholder": "sinun@sahkoposti.fi",
       "subjectLabel": "Aihe",
-      "subjectPlaceholder": "Mistä viesti koskee?",
+      "subjectPlaceholder": "Mitä viesti koskee?",
       "messageLabel": "Viesti",
       "messagePlaceholder": "Viestisi...",
       "submit": "Lähetä viesti",

@@ -1,54 +1,54 @@
 {
   "education": {
     "equivalent-settings-calculator": {
-      "beginner": "Verschillende sensorformaten leveren een andere scherptediepte en beeldhoek op, zelfs bij dezelfde brandpuntsafstand en hetzelfde diafragma. Met equivalente instellingen vind je de lens- en diafragmacombinatie op een tweede camera die dezelfde kadrering en achtergrondvervaging reproduceert. Dit is essentieel bij het vergelijken van apparatuur tussen formaten of het overstappen tussen camerasystemen.",
+      "beginner": "Verschillende sensorformaten leveren een andere scherptediepte en beeldhoek op, zelfs bij dezelfde brandpuntsafstand en hetzelfde diafragma. Met equivalente instellingen bereken je de combinatie van lens en diafragma op een andere camera die dezelfde kadrering en achtergrondonscherpte oplevert. Dit is onmisbaar als je apparatuur tussen formaten vergelijkt of overstapt naar een ander camerasysteem.",
       "deeper": {
         "0": {
           "heading": "De cropfactor",
-          "text": "Elke sensor heeft een cropfactor ten opzichte van de 35mm fullframe-standaard. APS-C-sensoren hebben een factor rond 1,5×, Micro Four Thirds 2× en middenformaat ongeveer 0,79×. Door de werkelijke brandpuntsafstand met de cropfactor te vermenigvuldigen krijg je de fullframe-equivalente beeldhoek. Een 35mm-lens op APS-C kadreert als een 52,5mm op fullframe."
+          "text": "Elke sensor heeft een cropfactor ten opzichte van de 35mm fullframe-standaard. APS-C-sensoren zitten rond 1,5×, Micro Four Thirds op 2× en middenformaat op ongeveer 0,79×. Vermenigvuldig je de werkelijke brandpuntsafstand met de cropfactor, dan krijg je de fullframe-equivalente beeldhoek. Een 35mm-lens op APS-C kadreert dus als een 52,5mm op fullframe."
         },
         "1": {
           "heading": "Equivalent diafragma en scherptediepte",
-          "text": "Om de scherptediepte tussen formaten te matchen, vermenigvuldig je het f-getal met dezelfde cropfactor. Een f/1.4-lens op Micro Four Thirds levert scherptediepte op die equivalent is aan f/2.8 op fullframe (1,4 × 2 = 2,8). Daarom worden fullframe-camera's gewaardeerd om hun kleine scherptediepte — je kunt fysiek lichtsterkere lenzen gebruiken met een groter daadwerkelijk diafragma en zo een vervaging bereiken die kleinere sensoren niet kunnen evenaren."
+          "text": "Om de scherptediepte tussen formaten gelijk te trekken, vermenigvuldig je het f-getal met dezelfde cropfactor. Een f/1.4 op Micro Four Thirds geeft een scherptediepte die overeenkomt met f/2.8 op fullframe (1,4 × 2 = 2,8). Juist daarom zijn fullframe-camera's geliefd vanwege hun kleine scherptediepte: je kunt fysiek lichtsterkere lenzen met een grotere werkelijke opening gebruiken en zo een onscherpte halen die kleinere sensoren niet kunnen evenaren."
         },
         "2": {
           "heading": "Equivalente ISO en totale lichthoeveelheid",
-          "text": "Om de belichtingshelderheid tussen formaten te matchen, pas je de ISO aan met het kwadraat van de cropfactor. De grotere sensor vangt meer totaal licht op van dezelfde scène, dus kan hij met een lagere ISO werken en toch een equivalente ruisprestatie leveren. Een fullframe-sensor bij ISO 800 produceert vergelijkbare ruis als een APS-C-sensor bij ISO 356 en een Micro Four Thirds-sensor bij ISO 200."
+          "text": "Om het belichtingsniveau tussen formaten gelijk te trekken, pas je de ISO aan met het kwadraat van de cropfactor. De grotere sensor vangt van dezelfde scène in totaal meer licht op, dus kan hij met een lagere ISO werken en toch dezelfde ruisprestatie halen. Een fullframe-sensor op ISO 800 geeft ongeveer dezelfde ruis als een APS-C-sensor op ISO 356 en een Micro Four Thirds-sensor op ISO 200."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Cropfactor",
-          "description": "De verhouding tussen de diagonaal van de fullframe-sensor en die van de doelsensor. Dit ene getal stuurt alle equivalentieberekeningen voor brandpuntsafstand, diafragma en ISO."
+          "description": "De verhouding tussen de diagonaal van de fullframe-sensor en die van de doelsensor. Dit ene getal stuurt alle equivalentieberekeningen voor brandpuntsafstand, diafragma én ISO."
         },
         "1": {
           "label": "Sensorformaat",
-          "description": "Fysiek grotere sensoren vangen meer licht op en produceren een kleinere scherptediepte bij equivalente kadrering. De equivalentiecalculator laat precies zien hoeveel verschil elk formaat maakt."
+          "description": "Fysiek grotere sensoren vangen meer licht op en geven bij dezelfde kadrering een kleinere scherptediepte. De equivalentiecalculator laat precies zien hoeveel verschil elk formaat maakt."
         },
         "2": {
           "label": "Beschikbare lenzen",
-          "description": "Equivalentieberekeningen kunnen om een lens vragen die niet bestaat. Een 17mm f/0.7 is het equivalent van 35mm f/1.4 op MFT — maar zo'n lens wordt niet gemaakt. De beschikbare apparatuur bepaalt wat haalbaar is."
+          "description": "Equivalentieberekeningen vragen soms om een lens die niet bestaat. Een 17mm f/0.7 is het equivalent van 35mm f/1.4 op MFT — maar zo'n lens wordt niet gemaakt. Wat haalbaar is, hangt af van de beschikbare apparatuur."
         }
       },
       "tips": {
         "0": {
-          "text": "Vergelijk camerasystemen altijd op equivalente instellingen in plaats van op hetzelfde f-getal. Een f/2.8-lens op Micro Four Thirds geeft niet dezelfde achtergrondvervaging als f/2.8 op fullframe — daarvoor heb je f/1.4 op MFT nodig."
+          "text": "Vergelijk camerasystemen altijd op equivalente instellingen in plaats van op hetzelfde f-getal. Een f/2.8-lens op Micro Four Thirds geeft niet dezelfde achtergrondonscherpte als f/2.8 op fullframe — daarvoor heb je f/1.4 op MFT nodig."
         },
         "1": {
-          "text": "Gebruik equivalentie om lensaankopen te plannen bij het wisselen van systeem. Als je de look van 85mm f/1.8 op fullframe mooi vindt, kijk dan naar een 56mm f/1.2 op APS-C of een 42,5mm f/0.95 op MFT voor een vergelijkbare weergave."
+          "text": "Gebruik equivalentie om lensaankopen te plannen als je van systeem wisselt. Vind je de look van 85mm f/1.8 op fullframe mooi, kijk dan op APS-C naar een 56mm f/1.2 of op MFT naar een 42,5mm f/0.95 voor een vergelijkbaar beeld."
         },
         "2": {
-          "text": "Onthoud dat equivalentie geldt voor scherptediepte en beeldhoek, niet voor de lichtsterkte van de lens qua belichting. Een f/2.8-lens laat op elk formaat dezelfde hoeveelheid licht per oppervlakte-eenheid door — de grotere sensor vangt alleen meer totaal licht op door zijn grotere oppervlak."
+          "text": "Onthoud dat equivalentie geldt voor scherptediepte en beeldhoek, niet voor de belichtingswaarde van de lens. Een f/2.8-lens laat op elk formaat dezelfde hoeveelheid licht per oppervlakte-eenheid door — de grotere sensor vangt alleen meer totaal licht op doordat zijn oppervlak groter is."
         }
       },
       "tooltips": {
         "sourceSensor": {
           "term": "Bronsensor",
-          "definition": "Het sensorformaat van de camera waarvan je de instellingen wilt matchen. Alle equivalentieberekeningen gaan uit van dit startpunt."
+          "definition": "Het sensorformaat van de camera waarvan je de instellingen wilt matchen. Alle equivalentieberekeningen vertrekken vanaf dit startpunt."
         },
         "sourceFocalLength": {
           "term": "Brandpuntsafstand",
-          "definition": "De werkelijke brandpuntsafstand van de lens op je broncamera. Deze wordt omgezet naar equivalente brandpuntsafstanden op de doelformaten."
+          "definition": "De werkelijke brandpuntsafstand van de lens op je broncamera. Deze wordt omgerekend naar equivalente brandpuntsafstanden op de doelformaten."
         },
         "sourceAperture": {
           "term": "Diafragma",
@@ -60,7 +60,7 @@
         },
         "cropFactor": {
           "term": "Cropfactor",
-          "definition": "De verhouding tussen de diagonaal van een 35mm fullframe-sensor en de doelsensor. Vermenigvuldig de brandpuntsafstand met de cropfactor voor equivalente beeldhoek; vermenigvuldig het diafragma met de cropfactor voor equivalente scherptediepte."
+          "definition": "De verhouding tussen de diagonaal van een 35mm fullframe-sensor en die van de doelsensor. Vermenigvuldig de brandpuntsafstand met de cropfactor voor de equivalente beeldhoek; doe hetzelfde met het diafragma voor een equivalente scherptediepte."
         },
         "equivalentFL": {
           "term": "Equivalente brandpuntsafstand",
@@ -68,15 +68,15 @@
         },
         "equivalentAperture": {
           "term": "Equivalent diafragma",
-          "definition": "Het f-getal op het doelformaat dat dezelfde scherptediepte oplevert als de bronopstelling. Kan lichtsterker zijn dan elke bestaande lens."
+          "definition": "Het f-getal op het doelformaat dat dezelfde scherptediepte oplevert als de bronopstelling. Kan lichtsterker uitvallen dan welke bestaande lens dan ook."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Je maakt portretten met een 85mm f/1.8-lens op een fullframe-camera. Een vriend gebruikt Micro Four Thirds (2× crop). Welke brandpuntsafstand heeft je vriend nodig om dezelfde beeldhoek te krijgen?",
+          "scenario": "Je maakt portretten met een 85mm f/1.8 op een fullframe-camera. Een vriend gebruikt Micro Four Thirds (2× crop). Welke brandpuntsafstand heeft je vriend nodig voor dezelfde beeldhoek?",
           "hint": "Deel de fullframe-brandpuntsafstand door de MFT-cropfactor om de benodigde werkelijke brandpuntsafstand te vinden.",
-          "successMessage": "Correct! 85mm / 2 = 42,5mm. Je vriend heeft een 42,5mm-lens op Micro Four Thirds nodig om dezelfde kadrering te krijgen als jouw 85mm op fullframe.",
-          "failureMessage": "Om de beeldhoek te matchen, deel je door de cropfactor: 85mm / 2 = 42,5mm. Dat is de werkelijke brandpuntsafstand die nodig is op de MFT-body.",
+          "successMessage": "Klopt! 85mm / 2 = 42,5mm. Je vriend heeft op Micro Four Thirds een 42,5mm-lens nodig om dezelfde kadrering te krijgen als jouw 85mm op fullframe.",
+          "failureMessage": "Om de beeldhoek te matchen deel je door de cropfactor: 85mm / 2 = 42,5mm. Dat is de werkelijke brandpuntsafstand die op de MFT-body nodig is.",
           "options": {
             "0": { "label": "42,5mm" },
             "1": { "label": "85mm" },
@@ -85,21 +85,21 @@
           }
         },
         "1": {
-          "scenario": "Je vriend vond een 42,5mm f/1.8-lens voor zijn MFT-camera. Komt de achtergrondvervaging overeen met jouw 85mm f/1.8 op fullframe?",
+          "scenario": "Je vriend heeft een 42,5mm f/1.8 voor zijn MFT-camera gevonden. Komt de achtergrondonscherpte overeen met jouw 85mm f/1.8 op fullframe?",
           "hint": "Pas de cropfactor ook toe op het diafragma om de equivalente scherptediepte te vinden.",
-          "successMessage": "Juist! De 42,5mm f/1.8 op MFT geeft een scherptediepte die equivalent is aan 85mm f/3.6 op fullframe (1,8 × 2 = 3,6). Jouw f/1.8-fullframeopname produceert aanzienlijk meer vervaging.",
-          "failureMessage": "Nee — f/1.8 op MFT geeft een scherptediepte die equivalent is aan f/3.6 op fullframe (1,8 × 2× crop = 3,6). Om de vervaging van jouw fullframe f/1.8 te matchen, zou je vriend f/0.9 op MFT nodig hebben, wat niet bestaat.",
+          "successMessage": "Klopt! De 42,5mm f/1.8 op MFT geeft een scherptediepte die overeenkomt met 85mm f/3.6 op fullframe (1,8 × 2 = 3,6). Jouw f/1.8-fullframeopname levert dus duidelijk meer onscherpte op.",
+          "failureMessage": "Nee — f/1.8 op MFT geeft een scherptediepte die gelijk is aan f/3.6 op fullframe (1,8 × 2× crop = 3,6). Om de onscherpte van jouw fullframe f/1.8 te matchen zou je vriend f/0.9 op MFT nodig hebben, en zo'n lens bestaat niet.",
           "options": {
-            "0": { "label": "Ja — hetzelfde f/1.8 betekent dezelfde vervaging" },
-            "1": { "label": "Nee — f/1.8 op MFT is gelijk aan f/3.6 fullframe-scherptediepte" },
-            "2": { "label": "Nee — MFT geeft meer vervaging omdat de sensor kleiner is" }
+            "0": { "label": "Ja — hetzelfde f/1.8 geeft dezelfde onscherpte" },
+            "1": { "label": "Nee — f/1.8 op MFT komt overeen met f/3.6 op fullframe" },
+            "2": { "label": "Nee — MFT geeft juist meer onscherpte omdat de sensor kleiner is" }
           }
         },
         "2": {
-          "scenario": "Een fotograaf die overstapt van fullframe naar APS-C (1,5× crop) wil de look van een 50mm f/1.4 op fullframe matchen. Welke equivalente lens en welk diafragma heeft hij of zij nodig op APS-C?",
+          "scenario": "Een fotograaf stapt over van fullframe naar APS-C (1,5× crop) en wil de look van een 50mm f/1.4 op fullframe nabootsen. Welke equivalente lens en welk diafragma heeft hij of zij nodig op APS-C?",
           "hint": "Deel de brandpuntsafstand door de cropfactor voor een equivalente beeldhoek. Deel het diafragma door de cropfactor voor een equivalente scherptediepte.",
-          "successMessage": "Precies! 50 / 1,5 = 33mm voor de beeldhoek en f/1.4 / 1,5 = f/0.93 voor de bijbehorende scherptediepte. Omdat er geen f/0.93-lens bestaat, kan de APS-C-camera de fullframe-look niet volledig nabootsen.",
-          "failureMessage": "Het juiste antwoord is ~33mm f/0.93. 50 / 1,5 = 33,3mm en 1,4 / 1,5 = 0,93. Er bestaat geen f/0.93-lens, dus de fullframe-look is op APS-C niet volledig te matchen.",
+          "successMessage": "Precies! 50 / 1,5 = 33mm voor de beeldhoek en f/1.4 / 1,5 = f/0.93 voor de bijbehorende scherptediepte. Een f/0.93-lens bestaat niet, dus de APS-C-camera kan de fullframe-look niet helemaal nabootsen.",
+          "failureMessage": "Het juiste antwoord is ongeveer 33mm f/0.93. 50 / 1,5 = 33,3mm en 1,4 / 1,5 = 0,93. Een f/0.93-lens bestaat niet, dus op APS-C is de fullframe-look niet volledig te matchen.",
           "options": {
             "0": { "label": "35mm f/1.4 — dicht genoeg" },
             "1": { "label": "33mm f/0.93 — exacte match, maar zo'n lens bestaat niet" },

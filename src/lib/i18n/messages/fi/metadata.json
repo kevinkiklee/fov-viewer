@@ -8,7 +8,7 @@
     },
     "fov-simulator": {
       "title": "FOV Simulator — vertaa polttovälejä",
-      "description": "Vertaa kuvakulmaa eri polttoväleillä ja kennokokoilla. Ilmainen, interaktiivinen ja jaettava."
+      "description": "Vertaa kuvakulmaa eri polttoväleillä ja kennokoilla. Ilmainen, interaktiivinen ja jaettava."
     },
     "dof-simulator": {
       "title": "Syväterävyyden simulaattori | PhotoTools",
@@ -27,8 +27,8 @@
       "description": "Interaktiivinen valotuskolmion simulaattori — näe reaaliajassa, miten aukko, suljinaika ja ISO vaikuttavat kuvaasi."
     },
     "star-trail-calculator": {
-      "title": "Tähtirataa laskuri",
-      "description": "Laske maksimivalotusaika pistemäisille tähdille 500-sääntöä, NPF-sääntöä ja muita sääntöjä käyttäen. Suunnittele tähtiratakuvausten pinoaminen mihin tahansa sijaintiin."
+      "title": "Tähtiratalaskuri",
+      "description": "Laske enimmäisvalotusaika pistemäisille tähdille 500-säännön, NPF-säännön ja muiden sääntöjen avulla. Suunnittele tähtiratakuvien pinoaminen mihin tahansa sijaintiin."
     },
     "white-balance-visualizer": {
       "title": "Valkotasapainon visualisoija",
@@ -36,11 +36,11 @@
     },
     "sensor-size-comparison": {
       "title": "Kennokokojen vertailu",
-      "description": "Vertaa kameroiden kennokokoja keskiformaatista älypuhelimeen. Näe päällekkäis-, rinnakkais- ja pikselitiheysnäkymät oikeilla kameramalleilla."
+      "description": "Vertaa kameroiden kennokokoja keskiformaatista älypuhelimeen. Tarkastele kuvia päällekkäin, rinnakkain tai pikselitiheytenä oikeilla kameramalleilla."
     },
     "color-scheme-generator": {
-      "title": "Värimallien generaattori",
-      "description": "Luo valokuvaukseen väripaletteja komplementti-, analogisen, triadisen ja tetradisen väriharmonian avulla. Interaktiivinen väripyörä ja kuvan värinpoiminta."
+      "title": "Väripalettigeneraattori",
+      "description": "Luo valokuvaukseen väripaletteja komplementti-, analogisen, triadisen ja tetradisen väriharmonian avulla. Interaktiivinen väripyörä ja värien poiminta kuvasta."
     },
     "frame-studio": {
       "title": "Frame Studio",
@@ -52,19 +52,19 @@
     },
     "hyperfocal-simulator": {
       "title": "Hyperfokaalietäisyyden simulaattori",
-      "description": "Visualisoi hyperfokaalietäisyys mille tahansa objektiiville ja kennolle. Näe tarkalleen, mihin tarkentaa saadaksesi maksimiterävyyden etualasta äärettömyyteen."
+      "description": "Visualisoi hyperfokaalietäisyys mille tahansa objektiiville ja kennolle. Näe tarkalleen, mihin tarkentaa, jotta kuva on terävä etualasta äärettömyyteen."
     },
     "shutter-speed-visualizer": {
       "title": "Suljinajan visualisoija",
-      "description": "Etsi minimisuljinaika teräviin käsivarakuviin. Huomioi polttovälin, kennokoon ja kuvanvakaimen."
+      "description": "Löydä lyhin suljinaika teräviin käsivarakuviin. Huomioi polttovälin, kennokoon ja kuvanvakaimen."
     },
     "nd-filter-calculator": {
       "title": "ND-suotimen laskuri",
-      "description": "Laske oikea suljinaika ND-suodinta käytettäessä. Tukee mitä tahansa suodinvahvuutta ND2:sta ND1000000:aan pikahakutaulukon kanssa."
+      "description": "Laske oikea suljinaika ND-suodinta käytettäessä. Tukee kaikkia suodinvahvuuksia ND2:sta ND1000000:aan, mukana pikahakutaulukko."
     },
     "perspective-compression-simulator": {
       "title": "Perspektiivin pakkautumisen simulaattori",
-      "description": "Interaktiivinen 3D-simulaattori, joka näyttää miten polttoväli ja etäisyys vaikuttavat perspektiivin pakkautumiseen. Näe taustan pakkautumisen muutos reaaliajassa."
+      "description": "Interaktiivinen 3D-simulaattori, joka näyttää, miten polttoväli ja etäisyys vaikuttavat perspektiivin pakkautumiseen. Näe taustan pakkautuminen reaaliajassa."
     },
     "about": {
       "title": "Tietoja",
@@ -76,7 +76,7 @@
     },
     "privacy": {
       "title": "Tietosuojaseloste | PhotoTools",
-      "description": "Lue miten PhotoTools käsittelee tietojasi, mukaan lukien analytiikka, evästeet ja yhteydenottolomakkeen lähetykset osoitteessa www.phototools.io."
+      "description": "Lue, miten PhotoTools käsittelee tietojasi — analytiikka, evästeet ja yhteydenottolomakkeen viestit osoitteessa www.phototools.io."
     },
     "terms": {
       "title": "Käyttöehdot | PhotoTools",

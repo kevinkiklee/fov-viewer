@@ -56,7 +56,7 @@
         },
         "subjectDistance": {
           "term": "Distanza del soggetto",
-          "definition": "La distanza dal sensore della fotocamera al punto di messa a fuoco. Distanze di messa a fuoco più ravvicinate risultano in una profondità di campo più ridotta."
+          "definition": "La distanza dal sensore della fotocamera al punto di messa a fuoco. Più ti avvicini al soggetto, più la profondità di campo si riduce."
         },
         "sensor": {
           "term": "Dimensione del sensore",
@@ -167,7 +167,7 @@
         "3": {
           "scenario": "Stai facendo macrofotografia di un fiore e noti che solo i petali anteriori sono nitidi. Il resto del fiore sfuma nella sfocatura. Sei a f/5.6. Cosa dovresti fare per avere più fiore a fuoco?",
           "hint": "A distanze di messa a fuoco ravvicinate, la PdC diventa estremamente sottile. Considera la tua apertura.",
-          "successMessage": "Giusto! Chiudere a f/11 o f/16 aumenta la tua PdC sottilissima nella macrofotografia. Fai solo attenzione all'ammorbidimento da diffrazione ad aperture molto piccole.",
+          "successMessage": "Giusto! Chiudere a f/11 o f/16 aumenta la PdC, che nella macrofotografia è sottilissima. Fai solo attenzione all'ammorbidimento da diffrazione ad aperture molto piccole.",
           "failureMessage": "Aprire di più l'apertura renderebbe la PdC ancora più sottile. Nella macrofotografia, chiudere il diaframma (numero f più alto) è il modo principale per guadagnare più profondità.",
           "options": {
             "0": {
@@ -187,7 +187,7 @@
         "4": {
           "scenario": "Stai confrontando due fotocamere per i ritratti: una full-frame con obiettivo 85mm f/1.8 e una Micro Quattro Terzi con obiettivo 42,5mm f/1.8. Entrambe producono un'inquadratura equivalente. Quale fotocamera produce una profondità di campo più ridotta?",
           "hint": "Pensa alle lunghezze focali equivalenti e a come la dimensione del sensore influisce sul calcolo della PdC allo stesso numero f.",
-          "successMessage": "Corretto! La fotocamera full-frame produce circa 2 stop di PdC più ridotta. Sebbene l'obiettivo MFT abbia lo stesso numero f, la lunghezza focale effettiva più corta (42,5mm vs 85mm) risulta in una profondità di campo più ampia a inquadratura equivalente.",
+          "successMessage": "Corretto! La fotocamera full-frame produce circa 2 stop di PdC più ridotta. Sebbene l'obiettivo MFT abbia lo stesso numero f, la lunghezza focale effettiva più corta (42,5mm vs 85mm) comporta una profondità di campo più ampia a inquadratura equivalente.",
           "failureMessage": "Sebbene entrambi gli obiettivi siano f/1.8, la fotocamera full-frame usa una lunghezza focale effettiva maggiore per la stessa inquadratura, producendo una PdC significativamente più ridotta.",
           "options": {
             "0": {

@@ -14,15 +14,15 @@
       "faq": {
         "what-is-white-balance": {
           "question": "Mi a fehéregyensúly a fotózásban?",
-          "answer": "A fehéregyensúly úgy igazítja a színeket a fotón, hogy a valóságban fehérnek látszó tárgyak a képen is fehérek legyenek. A különböző fényforrások eltérő színhőmérsékletet bocsátanak ki, és a fehéregyensúly ezeket az eltéréseket kompenzálja."
+          "answer": "A fehéregyensúly úgy igazítja a színeket a fotón, hogy ami a valóságban fehér, az a képen is fehér maradjon. A különböző fényforrások eltérő színhőmérsékletűek, és a fehéregyensúly ezeket az eltéréseket kompenzálja."
         },
         "kelvin-vs-presets": {
-          "question": "Kelvin értékeket vagy fehéregyensúly-beállításokat használjak?",
-          "answer": "A beállítások (Daylight, Cloudy, Tungsten) kényelmes kiindulópontok, de egy konkrét Kelvin-érték megadása pontosabb vezérlést ad. Fotózz RAW-ban, hogy a fehéregyensúlyt utómunkában veszteség nélkül módosíthasd."
+          "question": "Kelvin-értéket vagy fehéregyensúly-beállítást használjak?",
+          "answer": "Az előbeállítások (Daylight, Cloudy, Tungsten) kényelmes kiindulópontok, de egy konkrét Kelvin-érték megadása pontosabb kontrollt ad. Fotózz RAW-ban, hogy utómunkában veszteség nélkül módosíthasd a fehéregyensúlyt."
         },
         "when-to-use-manual-white-balance": {
           "question": "Mikor használjak manuális fehéregyensúlyt?",
-          "answer": "Manuális fehéregyensúlyt használj kevert fényhez (természetes és mesterséges együtt), stúdióbeállításokhoz, ahol pontos szín kell, termékfotózáshoz, és minden olyan esetben, amikor az automatikus fehéregyensúly ingadozó eredményt ad egy sorozaton belül."
+          "answer": "Manuális fehéregyensúlyt használj kevert fényhez (természetes és mesterséges fény együtt), stúdióhoz, ahol pontos szín kell, termékfotózáshoz, és minden olyan helyzetben, amikor az automatikus fehéregyensúly ingadozó eredményt ad egy sorozaton belül."
         }
       }
     }

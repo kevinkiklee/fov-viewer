@@ -5,7 +5,7 @@
       "deeper": {
         "0": {
           "heading": "Warum Stacking nötig ist",
-          "text": "Bei Makro-Abbildungsmaßstäben liefert selbst f/16 oft nur wenige Millimeter Schärfentiefe. Noch weiter abzublenden führt zu Beugungsunschärfe, die das Bild verschlechtert. Focus Stacking erlaubt es dir, bei der schärfsten Blende des Objektivs (meist f/5.6–f/8) zu fotografieren und die scharfen Schichten zu kombinieren. Jede Aufnahme verschiebt den Fokus ein Stück nach vorn und erfasst eine neue Ebene des Motivs."
+          "text": "Bei Makro-Abbildungsmaßstäben liefert selbst f/16 oft nur wenige Millimeter Schärfentiefe. Noch weiter abzublenden führt zu Beugungsunschärfe, die das Bild verschlechtert. Focus Stacking erlaubt es dir, bei der schärfsten Blende des Objektivs (meist f/5,6–f/8) zu fotografieren und die scharfen Schichten zu kombinieren. Jede Aufnahme verschiebt den Fokus ein Stück nach vorn und erfasst eine neue Ebene des Motivs."
         },
         "1": {
           "heading": "Den Stack planen",
@@ -19,7 +19,7 @@
       "keyFactors": {
         "0": {
           "label": "Blende",
-          "description": "Bestimmt die Schärfentiefe pro Aufnahme. Eine mittlere Blende (f/5.6–f/8) balanciert Schärfe und Schärfentiefe pro Bild. Vermeide sehr kleine Blendenöffnungen — Beugung mindert genau die Schärfe, für die du stapelst."
+          "description": "Bestimmt die Schärfentiefe pro Aufnahme. Eine mittlere Blende (f/5,6–f/8) sorgt für ein gutes Verhältnis aus Schärfe und Schärfentiefe pro Bild. Vermeide sehr kleine Blendenöffnungen — Beugung mindert genau die Schärfe, für die du stapelst."
         },
         "1": {
           "label": "Tiefenbereich",
@@ -35,7 +35,7 @@
           "text": "Verwende für Makro-Stacks einen Fokusschlitten statt des Fokusrings am Objektiv. Ein Schlitten bewegt die gesamte Kamera in präzisen Schritten nach vorn und vermeidet die leichten Vergrößerungsänderungen, die beim Nachfokussieren entstehen."
         },
         "1": {
-          "text": "Halte die Blende im Sweet Spot deines Objektivs (meist f/5.6–f/8). Der Sinn des Stackings ist, nicht auf f/16+ abblenden zu müssen — wähle die schärfste Blende und lass den Stack die Tiefe übernehmen."
+          "text": "Halte die Blende im Sweet Spot deines Objektivs (meist f/5,6–f/8). Der Sinn des Stackings ist, nicht auf f/16+ abblenden zu müssen — wähle die schärfste Blende und überlass die Tiefe dem Stack."
         },
         "2": {
           "text": "Für Landschafts-Stacks arbeite von vorn nach hinten: Fokussiere zuerst auf das nächste Element und schiebe den Fokus dann Richtung unendlich. Das erleichtert die Ausrichtung, weil der Vordergrund (mit dem meisten Parallaxeneffekt) zuerst erfasst wird."
@@ -93,13 +93,13 @@
           }
         },
         "1": {
-          "scenario": "Du willst das schärfstmögliche Ergebnis aus deinem Focus Stack. Solltest du jedes Bild bei f/2.8, f/8 oder f/22 aufnehmen?",
-          "hint": "Denke an die schärfste Blende des Objektivs und wie Beugung kleine Blendenöffnungen beeinflusst.",
-          "successMessage": "Richtig! f/8 ist bei den meisten Objektiven die schärfste Blende. f/2.8 liefert zu wenig Schärfentiefe pro Aufnahme (mehr Bilder nötig), und f/22 leidet unter Beugungsunschärfe.",
-          "failureMessage": "f/8 ist die beste Wahl. f/2.8 liefert eine sehr dünne Schärfentiefe pro Aufnahme (viel mehr Bilder nötig), und f/22 bringt Beugungsunschärfe, die den Sinn des Stackings — maximale Schärfe — zunichtemacht.",
+          "scenario": "Du willst das schärfstmögliche Ergebnis aus deinem Focus Stack. Solltest du jedes Bild bei f/2,8, f/8 oder f/22 aufnehmen?",
+          "hint": "Denke an die schärfste Blende des Objektivs und daran, wie Beugung kleine Blendenöffnungen beeinflusst.",
+          "successMessage": "Richtig! f/8 ist bei den meisten Objektiven die schärfste Blende. f/2,8 liefert zu wenig Schärfentiefe pro Aufnahme (mehr Bilder nötig), und f/22 leidet unter Beugungsunschärfe.",
+          "failureMessage": "f/8 ist die beste Wahl. f/2,8 liefert eine sehr dünne Schärfentiefe pro Aufnahme (viel mehr Bilder nötig), und f/22 bringt Beugungsunschärfe, die den Sinn des Stackings — maximale Schärfe — zunichtemacht.",
           "options": {
             "0": {
-              "label": "f/2.8 — weiteste Öffnung für schnellste Verschlusszeit"
+              "label": "f/2,8 — größte Öffnung für die schnellste Verschlusszeit"
             },
             "1": {
               "label": "f/8 — Sweet Spot des Objektivs"

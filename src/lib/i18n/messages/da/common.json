@@ -70,7 +70,7 @@
       "banner": "Forhåndsvisning — dette værktøj er endnu ikke offentligt"
     },
     "fileUpload": {
-      "dropPrompt": "Træk et billede hertil eller klik for at vælge",
+      "dropPrompt": "Træk et billede hertil, eller klik for at vælge",
       "tapPrompt": "Tryk for at vælge et foto",
       "privacy": "Dine billeder forlader aldrig din enhed",
       "selectedFile": "Valgt fil: {fileName}. Klik for at vælge et andet billede",
@@ -102,7 +102,7 @@
     },
     "notFound": {
       "title": "Siden blev ikke fundet",
-      "message": "Den side, du leder efter, findes ikke eller er blevet flyttet.",
+      "message": "Den side, du leder efter, findes ikke eller er flyttet.",
       "backHome": "Tilbage til forsiden",
       "popularTools": "Populære værktøjer"
     },
@@ -123,6 +123,6 @@
       "1in": "1\"-sensor",
       "phone": "Smartphone-flagskib (1/1,3\")"
     },
-    "legalTranslationDisclaimer": "Dette er en oversættelse til vejledende brug. Den engelske version er den juridisk bindende. Se /en/privacy."
+    "legalTranslationDisclaimer": "Den her oversættelse er kun til vejledende brug. Den engelske version er den juridisk bindende. Se /en/privacy."
   }
 }

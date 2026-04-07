@@ -13,16 +13,16 @@
       "loadingScene": "Szene wird geladen...",
       "faq": {
         "what-is-white-balance": {
-          "question": "Was ist Wei\u00dfabgleich in der Fotografie?",
-          "answer": "Der Wei\u00dfabgleich passt die Farben in deinem Foto so an, dass Objekte, die in der Realit\u00e4t wei\u00df erscheinen, auch im Bild wei\u00df aussehen. Verschiedene Lichtquellen strahlen unterschiedliche Farbtemperaturen aus, und der Wei\u00dfabgleich gleicht diese Unterschiede aus."
+          "question": "Was ist Weißabgleich in der Fotografie?",
+          "answer": "Der Weißabgleich passt die Farben im Foto so an, dass Objekte, die in Wirklichkeit weiß sind, auch im Bild weiß aussehen. Verschiedene Lichtquellen strahlen in unterschiedlichen Farbtemperaturen, und der Weißabgleich gleicht diese Unterschiede aus."
         },
         "kelvin-vs-presets": {
-          "question": "Sollte ich Kelvin-Werte oder Wei\u00dfabgleich-Voreinstellungen verwenden?",
-          "answer": "Voreinstellungen (Tageslicht, Bew\u00f6lkt, Wolfram) sind bequeme Ausgangspunkte, aber ein bestimmter Kelvin-Wert gibt pr\u00e4zisere Kontrolle. Fotografiere im RAW-Format, um den Wei\u00dfabgleich zerst\u00f6rungsfrei in der Nachbearbeitung anzupassen."
+          "question": "Sollte ich Kelvin-Werte oder Weißabgleich-Voreinstellungen verwenden?",
+          "answer": "Voreinstellungen (Tageslicht, Bewölkt, Kunstlicht) sind praktische Ausgangspunkte, aber ein konkreter Kelvin-Wert erlaubt feinere Kontrolle. Fotografiere im RAW-Format, dann lässt sich der Weißabgleich später zerstörungsfrei in der Nachbearbeitung korrigieren."
         },
         "when-to-use-manual-white-balance": {
-          "question": "Wann sollte ich den manuellen Wei\u00dfabgleich verwenden?",
-          "answer": "Verwende den manuellen Wei\u00dfabgleich bei Mischlicht (Kombination aus nat\u00fcrlichem und k\u00fcnstlichem Licht), Studioaufbauten, die exakte Farbgenauigkeit erfordern, Produktfotografie und immer wenn der automatische Wei\u00dfabgleich inkonsistente Ergebnisse \u00fcber eine Serie von Aufnahmen liefert."
+          "question": "Wann sollte ich den manuellen Weißabgleich nutzen?",
+          "answer": "Greif zum manuellen Weißabgleich bei Mischlicht (natürliches und künstliches Licht zusammen), bei Studio-Setups mit exakten Farbanforderungen, in der Produktfotografie und immer dann, wenn der automatische Weißabgleich über eine Serie hinweg unterschiedliche Ergebnisse liefert."
         }
       }
     }

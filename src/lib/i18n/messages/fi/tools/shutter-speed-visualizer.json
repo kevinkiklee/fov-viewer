@@ -1,17 +1,17 @@
 {
   "toolUI": {
     "shutter-speed-visualizer": {
-      "description": "Näe, miten suljinaika vaikuttaa liike-epäterävyyteen eri kohteilla.",
+      "description": "Näe, miten suljinaika vaikuttaa liike-epäterävyyteen erilaisilla kohteilla.",
       "shutterSpeed": "Suljinaika",
       "shutterSpeedAriaLabel": "Suljinaika",
       "sliderSlow": "Hidas (2s)",
       "sliderFast": "Nopea (1/4000)",
       "selectedSpeed": "Valittu aika",
       "motionBlurAriaLabel": "Liike-epäterävyyden visualisointi eri kohteille",
-      "verdictFrozen": "Jäätynyt",
+      "verdictFrozen": "Pysäytetty",
       "verdictMostlySharp": "Enimmäkseen terävä",
-      "verdictSlightBlur": "Hieman sumennusta",
-      "verdictMotionBlur": "Liike-epäterävyys",
+      "verdictSlightBlur": "Hieman liike-epäterävyyttä",
+      "verdictMotionBlur": "Selvä liike-epäterävyys",
       "standingPerson": "Seisova henkilö",
       "slowWalk": "Hidas kävely",
       "jogging": "Hölkkä",

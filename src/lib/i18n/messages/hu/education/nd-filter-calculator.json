@@ -1,8 +1,8 @@
 {
   "education": {
     "nd-filter-calculator": {
-      "beginner": "Az ND (semleges sűrűségű) szűrő olyan, mint a napszemüveg a kameralencsének. Csökkenti az objektívbe jutó fény mennyiségét a színek megváltoztatása nélkül, így lassabb záridőt vagy tágabb rekeszt használhatsz erős fényben. Így készítenek a fotósok selymes vízeséseket, sima óceánokat vagy elmosódott felhőket nappal.",
-      "deeper": "Az ND szűrőket az határozza meg, hány stopnyi fényt blokkolnak. Egy ND2 szűrő (1 stop) felezi a fényt, egy ND8 (3 stop) 1/8-ra csökkenti, egy ND1000 (10 stop) pedig 1024-szeresére. Az elnevezések kicsit zavarosak lehetnek: az „ND8” azt jelenti, hogy a szűrőfaktor 8 (3 stop), míg az „ND 0.9” optikai sűrűség-jelölést használ (minden 0,3 = 1 stop, így 0,9 = 3 stop). Az új záridő egyszerűen az eredeti szorozva a szűrőfaktorral. Például ha a szűretlen expozíciód 1/125s, és felteszel egy 10 stopos ND-t (ND1000), az új záridő 1/125 × 1024 ≈ 8 másodperc. Több ND szűrő egymásra rakása összeadja a stop-értékeket, de vignettet és színtorzítást okozhat, különösen nagylátószögű objektíveken.",
+      "beginner": "Az ND (semleges sűrűségű) szűrő olyan, mint egy napszemüveg az objektívnek. A színek megváltoztatása nélkül csökkenti az objektívbe jutó fény mennyiségét, így erős fényben is használhatsz lassabb záridőt vagy tágabb rekeszt. Így csinálnak a fotósok nappal selymes vízeséseket, sima óceánt vagy elmosódott felhőket.",
+      "deeper": "Az ND szűrőket az határozza meg, hány stop fényt blokkolnak. Egy ND2 szűrő (1 stop) felezi a fényt, egy ND8 (3 stop) nyolcadára csökkenti, egy ND1000 (10 stop) pedig 1024-szeresére. Az elnevezés kicsit zavaros tud lenni: az „ND8” szűrőfaktor 8-as (3 stop), az „ND 0.9” viszont optikai sűrűség-jelölés (minden 0,3 = 1 stop, így 0,9 = 3 stop). Az új záridő egyszerűen az eredeti szorozva a szűrőfaktorral. Ha például a szűretlen expozíciód 1/125s, és felteszel egy 10 stopos ND-t (ND1000), az új záridő 1/125 × 1024 ≈ 8 másodperc. Több ND szűrő egymásra rakásakor a stop-értékek összeadódnak, de vignetta és színtorzítás is jelentkezhet, különösen nagylátószögű objektíveken.",
       "keyFactors": {
         "0": {
           "label": "Alap záridő",
@@ -19,13 +19,13 @@
       },
       "tips": {
         "0": {
-          "text": "Komponálj és fókuszálj, mielőtt feltennél egy erős ND szűrőt. 10 stopnyi fénycsökkenésnél a kereső és az autofókusz is küzd a sötétben."
+          "text": "Mielőtt felteszel egy erős ND szűrőt, komponálj és fókuszálj meg. 10 stopnyi fénycsökkenésnél a kereső és az autofókusz is küszködik a sötétben."
         },
         "1": {
-          "text": "Tengerparti fotókhoz az 1-2 másodperces expozíciók textúrává simítják a kis hullámzást, miközben megőrzik a hullámok szerkezetét. 30 másodperc vagy több teljesen sima, ködös vizet ad."
+          "text": "Tengerparti fotókhoz az 1–2 másodperces expozíció textúrává simítja a kis hullámzást, de a nagyobb hullámok szerkezetét megtartja. 30 másodperctől fölfelé már teljesen sima, ködös víz jön ki."
         },
         "2": {
-          "text": "Az olcsó ND szűrők gyakran színtorzítást adnak (általában magentát vagy barnát). Fektess minőségi üvegbe, vagy tanuld meg utómunkában korrigálni a torzítást szürkekártyás referenciával."
+          "text": "Az olcsó ND szűrők gyakran színtorzítást adnak (általában magentát vagy barnát). Vagy fektess minőségi üvegbe, vagy tanuld meg utómunkában korrigálni a torzítást szürkekártyás referenciával."
         }
       },
       "tooltips": {
@@ -48,10 +48,10 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Egy vízesésnél vagy, és a kamera szűrő nélkül 1/125s-re méri a helyes expozíciót. Felteszel egy 3 stopos ND-t (ND8). Mi lesz az új záridő?",
-          "hint": "Minden stop duplázza az expozíciós időt. 3 stop azt jelenti, hogy 2 × 2 × 2 = 8-szor hosszabb.",
-          "successMessage": "Jó! 1/125s × 8 = 1/15s. Ez jó kezdet a víz bemozdulásához, bár a selymes hatáshoz még erősebb szűrő kellhet.",
-          "failureMessage": "Egy 3 stopos ND szűrő 8-szorosára szorozza az expozíciós időt (2^3 = 8). Így az 1/125s 1/15s-re lesz.",
+          "scenario": "Egy vízesésnél vagy, és a kamera szűrő nélkül 1/125s-re méri a helyes expozíciót. Felteszel egy 3 stopos ND-t (ND8). Mennyi lesz az új záridő?",
+          "hint": "Minden stop duplázza az expozíciós időt. 3 stop annyi, mint 2 × 2 × 2 = 8-szor hosszabb.",
+          "successMessage": "Így van! 1/125s × 8 = 1/15s. Ez jó kezdet a víz bemozdulásához, bár a selymes hatáshoz még erősebb szűrő kellhet.",
+          "failureMessage": "A 3 stopos ND szűrő nyolcszorosára nyújtja az expozíciós időt (2^3 = 8). Így az 1/125s-ből 1/15s lesz.",
           "options": {
             "0": { "label": "1/60s" },
             "1": { "label": "1/30s" },

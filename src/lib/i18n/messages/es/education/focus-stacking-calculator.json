@@ -35,7 +35,7 @@
           "text": "Usa un raíl de enfoque en lugar del anillo de enfoque del objetivo para apilamientos macro. Un raíl mueve toda la cámara hacia adelante en incrementos precisos, evitando los ligeros cambios de magnificación que ocurren al reenfocar el objetivo."
         },
         "1": {
-          "text": "Mantén tu apertura en el punto dulce del objetivo (normalmente f/5.6-f/8). El propósito del apilamiento es evitar cerrar a f/16+, así que usa la apertura más nítida y deja que el apilamiento se encargue de la profundidad."
+          "text": "Mantén tu apertura en el apertura óptima del objetivo (normalmente f/5.6-f/8). El propósito del apilamiento es evitar cerrar a f/16+, así que usa la apertura más nítida y deja que el apilamiento se encargue de la profundidad."
         },
         "2": {
           "text": "Para apilamientos de paisaje, dispara de adelante hacia atrás: enfoca primero el elemento más cercano y luego ve desplazando el enfoque hacia el infinito. Esto facilita la alineación, ya que el primer plano (con mayor paralaje) se captura primero."
@@ -102,7 +102,7 @@
               "label": "f/2.8 — la más abierta para la velocidad más rápida"
             },
             "1": {
-              "label": "f/8 — punto dulce del objetivo"
+              "label": "f/8 — apertura óptima del objetivo"
             },
             "2": {
               "label": "f/22 — máxima PdC por toma"

@@ -1,95 +1,95 @@
 {
   "education": {
     "hyperfocal-simulator": {
-      "beginner": "Hyperfokaalietäisyys on lähin piste, johon voit tarkentaa ja silti pitää kaiken äärettömyydessä hyväksyttävän terävänä. Kun tarkennat hyperfokaalietäisyydelle, syväterävyytesi ulottuu puolesta tuosta etäisyydestä aina äärettömyyteen. Maisemakuvaajat käyttävät tätä tekniikkaa maksimoidakseen terävyyden etualasta horisonttiin.",
-      "deeper": "Hyperfokaalietäisyys on johdettu ohuen linssin yhtälöstä ja hajapisteen (CoC) käsitteestä. Se on yhtä kuin polttoväli neliöön jaettuna f-luvun ja CoC:n halkaisijan tulolla: H = f² / (N × c). Kaikki H/2:sta äärettömyyteen kuuluu hyväksyttävään terävyyteen. CoC riippuu kennokoosta — pienemmillä kennoilla on pienempi hyväksyttävä CoC, mikä työntää hyperfokaalietäisyyden kauemmas samalla polttovälillä ja aukolla. Tämän vuoksi rajaavat kennot näyttävät tarjoavan suuremman syväterävyyden: CoC-standardi on tiukempi suhteessa kuva-alueeseen. Käytännössä diffraktion aiheuttama pehmentyminen hyvin pienillä aukoilla (f/16 ja sitä pienemmät useimmilla kennoilla) tarkoittaa, että syväterävyyden maksimoimisen ja pikselikohtaisen terävyyden säilyttämisen välillä on kompromissi.",
+      "beginner": "Hyperfokaalietäisyys on lähin piste, johon voit tarkentaa niin, että kaikki sen takana aina äärettömään asti pysyy hyväksyttävän terävänä. Kun tarkennat hyperfokaalietäisyyteen, syväterävyys ulottuu puolesta tästä etäisyydestä äärettömään. Maisemakuvaajat käyttävät tätä tekniikkaa saadakseen maksimaalisen terävyyden etualasta horisonttiin.",
+      "deeper": "Hyperfokaalietäisyys johdetaan ohuen linssin yhtälöstä ja hajapiirron (CoC) käsitteestä. Kaava on yksinkertainen: H = f² / (N × c), jossa f on polttoväli, N on f-luku ja c on CoC:n halkaisija. Kaikki alueella H/2 → ääretön kuuluu hyväksyttävän terävään alueeseen. CoC riippuu kennokoosta — pienemmällä kennolla CoC on tiukempi, mikä siirtää hyperfokaalietäisyyttä kauemmas samalla polttovälillä ja aukolla. Juuri tästä syystä rajaavilla kennoilla näyttää olevan enemmän syväterävyyttä: CoC-standardi on tiukempi suhteessa kuva-alaan. Käytännössä hyvin pienillä aukoilla (f/16 ja sen alle useimmilla kennoilla) diffraktio pehmentää kuvaa, joten maksimaalisen syväterävyyden ja pikselitason terävyyden välille jää aina kompromissi.",
       "keyFactors": {
         "0": {
           "label": "Polttoväli",
-          "description": "Pidemmät polttovälit kasvattavat hyperfokaalietäisyyttä voimakkaasti — se skaalautuu polttovälin neliön mukaan."
+          "description": "Pitkä polttoväli kasvattaa hyperfokaalietäisyyttä voimakkaasti — se skaalautuu polttovälin neliön mukaan."
         },
         "1": {
           "label": "Aukko",
-          "description": "Pienemmät aukot (suuremmat f-luvut) pienentävät hyperfokaalietäisyyttä ja laajentavat syväterävyyttä."
+          "description": "Pieni aukko (suuri f-luku) lyhentää hyperfokaalietäisyyttä ja laajentaa syväterävyyttä."
         },
         "2": {
           "label": "Kennokoko",
-          "description": "Pienemmät kennot käyttävät pienempää hajapistettä, mikä kasvattaa hyperfokaalietäisyyttä vastaavalla rajauksella."
+          "description": "Pienempi kenno käyttää pienempää hajapiirtoa, mikä kasvattaa hyperfokaalietäisyyttä samassa rajauksessa."
         },
         "3": {
-          "label": "Hajapiste",
-          "description": "Suurin sumennuspisteen halkaisija, jota pidetään \"hyväksyttävän teräväksi\" — tyypillisesti 0,03 mm täyskennolle."
+          "label": "Hajapiirto (CoC)",
+          "description": "Suurin epäterävän pisteen halkaisija, joka vielä lasketaan hyväksyttävän teräväksi — tyypillisesti 0,03 mm täyskennolla."
         }
       },
       "tips": {
         "0": {
-          "text": "Nopeaan maisematyöhön tarkenna noin kolmanneksen sisään näkymästä — se lähentelee hyperfokaalipistettä useimmissa laajakulmakokoonpanoissa."
+          "text": "Nopeassa maisemakuvauksessa tarkenna noin kolmanneksen päähän näkymän syvyydestä — se vastaa hyperfokaalipistettä riittävän hyvin useimmissa laajakulmatilanteissa."
         },
         "1": {
-          "text": "Vältä sulkemista f/16:n yli täyskennolla tai f/11:n yli APS-C:llä. Diffraktio kumoaa tavoittelemasi syväterävyyshyödyt."
+          "text": "Älä mene täyskennolla yli f/16:n tai APS-C:llä yli f/11:n. Diffraktio syö sen syväterävyyshyödyn, jota tavoittelet."
         },
         "2": {
-          "text": "Käytä live view -suurennusta tarkentaaksesi täsmälleen hyperfokaalietäisyydelle sen sijaan että luottaisit objektiivin etäisyysasteikkoon, joka on usein epätarkka moderneissa automaattitarkennusobjektiiveissa."
+          "text": "Käytä live view -suurennusta ja tarkenna manuaalisesti täsmälleen hyperfokaalietäisyyteen äläkä luota objektiivin etäisyysasteikkoon — se on moderneissa autofokusobjektiiveissa usein epätarkka."
         }
       },
       "tooltips": {
         "Sensor": {
           "term": "Kenno",
-          "definition": "Kameran kennoformaatti. Pienemmillä kennoilla on tiukempi hajapistestandardi, mikä siirtää kaikkia hyperfokaalietäisyyksiä kauemmas."
+          "definition": "Kameran kennoformaatti. Pienemmillä kennoilla on tiukempi hajapiirron raja, mikä siirtää hyperfokaalietäisyyttä kauemmas."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Kuvaat maisemaa 24 mm:n objektiivilla täyskennolla. Minkä kennomuodon valitset nähdäksesi täyskennon hyperfokaalietäisyydet?",
-          "hint": "Täyskenno on vakio 35 mm:n kennokoko.",
-          "successMessage": "Oikein! Full Frame on oikea valinta vakio 35 mm:n kennolle.",
-          "failureMessage": "Ei aivan — valitse Full Frame -kenno vastaamaan vakio 35 mm:n kamerarunkoa.",
+          "scenario": "Kuvaat maisemaa 24 mm:n objektiivilla täyskennolla. Minkä kennoformaatin valitset nähdäksesi täyskennon hyperfokaalietäisyydet?",
+          "hint": "Täyskenno on vakiokokoinen 35 mm:n kenno.",
+          "successMessage": "Oikein! Täyskenno (Full Frame) on oikea valinta 35 mm:n kennolle.",
+          "failureMessage": "Ei aivan — valitse Full Frame, jotta hyperfokaalietäisyydet vastaavat 35 mm:n kamerarunkoa.",
           "options": {
-            "0": { "label": "Full Frame" },
+            "0": { "label": "Täyskenno (Full Frame)" },
             "1": { "label": "APS-C (Nikon/Sony)" },
             "2": { "label": "Micro Four Thirds" }
           }
         },
         "1": {
           "scenario": "Kun katsot täyskennon taulukkoa, kummalla on lyhyempi hyperfokaalietäisyys: 24 mm f/8:lla vai 50 mm f/8:lla?",
-          "hint": "Hyperfokaalietäisyys kasvaa polttovälin neliössä.",
-          "successMessage": "Aivan! 24 mm:n objektiivilla on paljon lyhyempi hyperfokaalietäisyys, koska polttoväli on neliömäisessä suhteessa.",
-          "failureMessage": "Itse asiassa lyhyemmät polttovälit tuottavat aina lyhyemmät hyperfokaalietäisyydet. 24 mm voittaa tässä.",
+          "hint": "Hyperfokaalietäisyys kasvaa polttovälin neliön mukaan.",
+          "successMessage": "Aivan! 24 mm:llä hyperfokaalietäisyys on huomattavasti lyhyempi, koska polttoväli vaikuttaa siihen neliöllisesti.",
+          "failureMessage": "Lyhyempi polttoväli antaa aina lyhyemmän hyperfokaalietäisyyden. 24 mm voittaa tässä.",
           "options": {
             "0": { "label": "24 mm f/8:lla" },
             "1": { "label": "50 mm f/8:lla" }
           }
         },
         "2": {
-          "scenario": "Vaellat APS-C-kameran ja 35 mm:n objektiivin kanssa. Haluat kaiken noin 3 metristä äärettömyyteen terävänä. Mikä aukkoalue taulukossa kannattaa etsiä löytääksesi hyperfokaalietäisyyden lähellä 6 metriä (jotta sen puolikas — 3 m — on lähirajasi)?",
-          "hint": "Muista: lähiraja = hyperfokaali / 2. Etsi aukkoa, joka antaa hyperfokaalin noin 6 metriin.",
-          "successMessage": "Hieno pohdinta! Tunnistit oikein, että tarvitset hyperfokaalietäisyyden noin 6 m ja löysit oikean aukkoalueen.",
-          "failureMessage": "Muista, lähiraja on puolet hyperfokaalietäisyydestä. Hyperfokaalin tulee olla noin 6 m, jotta lähiraja on 3 m.",
+          "scenario": "Olet vaeltamassa APS-C-kameralla ja 35 mm:n objektiivilla. Haluat, että kaikki noin 3 metristä äärettömään on terävää. Mitä aukkoaluetta etsit taulukosta, jotta hyperfokaalietäisyys olisi noin 6 metriä (ja lähiraja 3 m)?",
+          "hint": "Muista: lähiraja = hyperfokaalietäisyys / 2. Etsi aukkoa, joka antaa hyperfokaalietäisyydeksi noin 6 m.",
+          "successMessage": "Hieno pohdinta! Tunnistit oikein, että tarvitset hyperfokaalietäisyydeksi noin 6 m, ja löysit siihen sopivan aukkoalueen.",
+          "failureMessage": "Muista, että lähiraja on puolet hyperfokaalietäisyydestä. Hyperfokaalietäisyyden tulee olla noin 6 m, jotta lähiraja on 3 m.",
           "options": {
-            "0": { "label": "f/2.8 — f/4" },
-            "1": { "label": "f/5.6 — f/8" },
-            "2": { "label": "f/16 — f/22" }
+            "0": { "label": "f/2.8 – f/4" },
+            "1": { "label": "f/5.6 – f/8" },
+            "2": { "label": "f/16 – f/22" }
           }
         },
         "3": {
-          "scenario": "Ystäväsi vaihtaa täyskennosta Micro Four Thirdsiin mutta jatkaa samojen polttovälien kuvaamista. Hän valittaa, että hyperfokaalietäisyydet vaikuttavat erilaisilta. Miksi?",
-          "hint": "Hajapiste lasketaan kennokoon perusteella.",
-          "successMessage": "Juuri niin! Pienempi M43-kenno käyttää pienempää CoC:tä (noin 0,015 mm vs. 0,03 mm), mikä kasvattaa hyperfokaalietäisyyksiä samalla polttovälillä ja aukolla.",
-          "failureMessage": "Avaintekijä on hajapiste. Pienemmät kennot vaativat tiukempaa CoC-standardia, mikä työntää hyperfokaalietäisyyksiä kauemmas.",
+          "scenario": "Ystäväsi vaihtaa täyskennosta Micro Four Thirds -kameraan mutta käyttää yhä samoja polttovälejä. Hän ihmettelee, miksi hyperfokaalietäisyydet näyttävät nyt erilaisilta. Miksi näin on?",
+          "hint": "Hajapiirto lasketaan kennokoon perusteella.",
+          "successMessage": "Juuri niin! Pienempi M43-kenno käyttää pienempää hajapiirtoa (noin 0,015 mm vs. 0,03 mm), mikä kasvattaa hyperfokaalietäisyyttä samalla polttovälillä ja aukolla.",
+          "failureMessage": "Kyse on hajapiirrosta. Pienemmillä kennoilla hajapiirron raja on tiukempi, ja siksi hyperfokaalietäisyys siirtyy kauemmas.",
           "options": {
             "0": { "label": "Objektiivin polttoväli muuttuu rajaavilla kennoilla" },
-            "1": { "label": "Pienemmät kennot käyttävät pienempää hajapistettä" },
-            "2": { "label": "Micro Four Thirds -kameroilla on epätarkempi automaattitarkennus" }
+            "1": { "label": "Pienempi kenno käyttää pienempää hajapiirtoa" },
+            "2": { "label": "Micro Four Thirds -kameroissa on epätarkempi autofokus" }
           }
         },
         "4": {
-          "scenario": "Kuvaat arkkitehtuuria 14 mm f/11:llä täyskennolla. Taulukko näyttää hyvin lyhyen hyperfokaalietäisyyden. Kannattaako sulkea vielä pidemmälle f/22:een saadaksesi vielä enemmän syväterävyyttä, vai onko f/11 parempi valinta?",
-          "hint": "Mieti, mitä kuvan terävyydelle tapahtuu hyvin pienillä aukoilla.",
-          "successMessage": "Erinomaista! f/11:llä diffraktio on minimaalista täyskennolla, ja 14 mm:n hyperfokaalietäisyys on jo hyvin lyhyt. f/22:een sulkeminen pehmentäisi kuvaa diffraktion vuoksi ilman merkittävää syväterävyyshyötyä.",
-          "failureMessage": "Vaikka f/22 antaa lyhyemmän hyperfokaalietäisyyden paperilla, diffraktion pehmentyminen f/22:lla täyskennolla itse asiassa vähentää kuvan yleistä terävyyttä. 14 mm f/11:llä hyperfokaalietäisyys on jo niin lyhyt, että ylimääräinen syväterävyys ei ole diffraktiorangaistuksen arvoinen.",
+          "scenario": "Kuvaat arkkitehtuuria 14 mm f/11:llä täyskennolla. Taulukko näyttää hyvin lyhyen hyperfokaalietäisyyden. Kannattaako pienentää aukkoa vielä f/22:een saadaksesi lisää syväterävyyttä, vai onko f/11 parempi valinta?",
+          "hint": "Mieti, mitä kuvan terävyydelle käy hyvin pienillä aukoilla.",
+          "successMessage": "Erinomaista! f/11:llä diffraktio on täyskennolla minimaalista, ja 14 mm:n hyperfokaalietäisyys on jo valmiiksi hyvin lyhyt. f/22:een siirtyminen vain pehmentäisi kuvaa diffraktion vuoksi ilman merkittävää lisää syväterävyyteen.",
+          "failureMessage": "Vaikka f/22 näyttää taulukossa lyhyemmän hyperfokaalietäisyyden, diffraktio f/22:lla heikentää kuvan yleistä terävyyttä täyskennolla. 14 mm f/11:llä hyperfokaalietäisyys on jo niin lyhyt, ettei lisäsyväterävyys ole diffraktiotappion arvoinen.",
           "options": {
-            "0": { "label": "Sulje f/22:een maksimaalisen syväterävyyden saamiseksi" },
-            "1": { "label": "Pysy f/11:ssä — diffraktio f/22:lla vähentää terävyyttä" }
+            "0": { "label": "Pienennä aukko f/22:een maksimaalisen syväterävyyden saamiseksi" },
+            "1": { "label": "Pysy f/11:ssä — diffraktio f/22:lla heikentää terävyyttä" }
           }
         }
       }

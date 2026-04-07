@@ -1,33 +1,33 @@
 {
   "education": {
     "star-trail-calculator": {
-      "beginner": "Stelele par să se miște pe cer pentru că Pământul se rotește. Dacă obturatorul rămâne deschis suficient de mult, stelele se vor transforma în dâre în fotografia ta. Calculatorul de dâre de stele te ajută să găsești timpul maxim de expunere pentru stele punctiforme sau să planifici expuneri lungi pentru arcuri frumoase, circulare.",
+      "beginner": "Stelele par să se miște pe cer pentru că Pământul se rotește. Dacă obturatorul rămâne deschis suficient de mult, stelele se transformă în dâre în fotografia ta. Calculatorul de dâre de stele te ajută să găsești timpul maxim de expunere pentru stele punctiforme sau să planifici expunerile lungi pentru arcuri frumoase, circulare.",
       "deeper": {
         "0": {
           "heading": "Cum se mișcă stelele",
-          "text": "Pământul se rotește 360\u00b0 în aproximativ 23 de ore și 56 de minute (o zi siderală), deci stelele se mișcă cu aproximativ 15 secunde de arc pe secundă la ecuatorul celest. Stelele din apropierea polilor (Polaris la nord) trasează cercuri mai mici și par să se miște mai lent."
+          "text": "Pământul se rotește cu 360° în aproximativ 23 de ore și 56 de minute (o zi siderală), deci stelele se deplasează cu aproximativ 15 secunde de arc pe secundă la ecuatorul celest. Stelele din apropierea polilor (Polaris la nord) trasează cercuri mai mici și par să se miște mai lent."
         },
         "1": {
           "heading": "Regula 500 vs. regula NPF",
-          "text": "Clasica \"regulă 500\" împarte 500 la distanța focală efectivă pentru a estima expunerea maximă înainte ca dârele să devină vizibile — dar a fost concepută pentru senzori de rezoluție mai mică. Regula NPF ia în calcul pasul pixelilor, distanța focală, diafragma și declinația, producând limite mai scurte și mai precise pentru camerele moderne de înaltă rezoluție."
+          "text": "Clasica „regulă 500” împarte 500 la distanța focală efectivă ca să estimeze expunerea maximă înainte ca dârele să devină vizibile — dar a fost concepută pentru senzori de rezoluție mai mică. Regula NPF ia în calcul pasul pixelilor, distanța focală, diafragma și declinația și produce limite mai scurte și mai precise pentru aparatele moderne, de rezoluție mare."
         },
         "2": {
           "heading": "Stacking pentru dâre de stele",
-          "text": "Pentru dâre de stele intenționate, fotografii fac multe expuneri mai scurte (de obicei câte 30s) și le combină în software. Asta evită acumularea de zgomot, permite dâre fără goluri și înseamnă că un singur cadru prost nu strică întregul cadru."
+          "text": "Pentru dârele de stele intenționate, fotografii fac multe expuneri mai scurte (de obicei câte 30s) și le combină în software. Așa eviți acumularea de zgomot, obții dâre fără goluri și un singur cadru ratat nu îți strică întregul rezultat."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Distanță focală",
-          "description": "Distanțele focale mai lungi amplifică mișcarea stelelor, cerând expuneri mai scurte pentru stele punctiforme. Un obiectiv de 14mm poate expune de 5-10 ori mai mult decât un 200mm."
+          "description": "Distanțele focale mai lungi amplifică mișcarea stelelor și cer expuneri mai scurte pentru stele punctiforme. Un 14mm poate expune de 5-10 ori mai mult decât un 200mm."
         },
         "1": {
           "label": "Rezoluția senzorului",
-          "description": "Senzorii de rezoluție mai mare scot la iveală dârele stelelor la timpi mai scurți de expunere. Regula 500 este prea generoasă pentru camerele moderne de 40MP+."
+          "description": "Senzorii cu rezoluție mai mare scot la iveală dârele stelelor la timpi mai scurți. Regula 500 e prea generoasă pentru aparatele moderne de 40MP+."
         },
         "2": {
           "label": "Latitudine și declinație",
-          "description": "Stelele apropiate de polii celești se mișcă mai puțin pe secundă. Îndreptarea camerei spre Polaris îți permite expuneri mai lungi înainte să apară dârele."
+          "description": "Stelele apropiate de polii celești se mișcă mai puțin pe secundă. Dacă îndrepți aparatul spre Polaris, poți face expuneri mai lungi înainte să apară dârele."
         },
         "3": {
           "label": "Stacking vs. expunere unică",
@@ -36,58 +36,58 @@
       },
       "tips": {
         "0": {
-          "text": "Folosește regula NPF în locul regulii 500 pentru camerele moderne. Ia în calcul rezoluția senzorului și produce timpi maximi de expunere mai preciși, mai ales pe corpuri cu mulți megapixeli."
+          "text": "Pentru aparatele moderne, folosește regula NPF în locul regulii 500. Ia în calcul rezoluția senzorului și dă timpi maximi de expunere mai preciși, mai ales pe corpuri cu mulți megapixeli."
         },
         "1": {
-          "text": "Pentru stacking de dâre de stele, păstrează pauzele dintre cadre sub 2-3 secunde, folosind o telecomandă cu cablu sau un intervalometru. Pauzele mai lungi creează dâre punctate, nu netede."
+          "text": "La stacking-ul pentru dâre de stele, ține pauzele dintre cadre sub 2-3 secunde, folosind o telecomandă cu cablu sau un intervalometru. Pauzele mai lungi dau dâre punctate, nu netede."
         },
         "2": {
-          "text": "Include Polaris (sau polul ceresc sudic) în compoziție pentru dâre concentrice dramatice. Stelele mai apropiate de pol trasează arcuri mai strânse."
+          "text": "Include Polaris (sau polul ceresc sudic) în compoziție, ca să obții dâre concentrice dramatice. Stelele mai apropiate de pol trasează arcuri mai strânse."
         }
       },
       "tooltips": {
         "mode": {
           "term": "Mod",
-          "definition": "Alege \"Stele clare\" pentru a calcula timpul maxim de expunere pentru stele punctiforme, sau \"Dâre de stele\" pentru a planifica secvențe de expunere pentru efecte intenționate de dâre."
+          "definition": "Alege „Stele clare” ca să calculezi timpul maxim de expunere pentru stele punctiforme sau „Dâre de stele” ca să planifici secvențe de expunere pentru efecte intenționate de dâre."
         },
         "focalLength": {
           "term": "Distanță focală",
-          "definition": "Distanța focală a obiectivului în milimetri. Distanțele focale mai lungi amplifică mișcarea aparentă a stelelor, cerând expuneri individuale mai scurte."
+          "definition": "Distanța focală a obiectivului, în milimetri. Distanțele focale mai lungi amplifică mișcarea aparentă a stelelor și cer expuneri individuale mai scurte."
         },
         "sensor": {
           "term": "Dimensiunea senzorului",
-          "definition": "Dimensiunile fizice ale senzorului. Împreună cu rezoluția, determină pasul pixelilor, care afectează cât de repede devin vizibile dârele stelelor."
+          "definition": "Dimensiunile fizice ale senzorului. Împreună cu rezoluția, determină pasul pixelilor, care influențează cât de repede devin vizibile dârele stelelor."
         },
         "resolution": {
           "term": "Rezoluție",
-          "definition": "Rezoluția senzorului în megapixeli. Camerele de rezoluție mai mare scot la iveală dârele stelelor mai devreme, pentru că fiecare pixel acoperă o porțiune unghiulară mai mică din cer."
+          "definition": "Rezoluția senzorului, în megapixeli. Aparatele cu rezoluție mai mare scot la iveală dârele stelelor mai devreme, pentru că fiecare pixel acoperă o porțiune unghiulară mai mică din cer."
         },
         "aperture": {
           "term": "Diafragmă",
-          "definition": "Deschiderea obiectivului. Pentru astrofotografie, folosește cea mai largă diafragmă disponibilă (cea mai mică cifră f) pentru a capta cât mai multă lumină stelară în fiecare cadru."
+          "definition": "Deschiderea obiectivului. Pentru astrofotografie, folosește cea mai largă diafragmă disponibilă (cea mai mică cifră f), ca să captezi cât mai multă lumină stelară în fiecare cadru."
         },
         "latitude": {
           "term": "Latitudine",
-          "definition": "Latitudinea ta geografică. Afectează viteza aparentă de mișcare a stelelor — la latitudini mai mari, stelele de lângă pol se mișcă mai lent prin cadru."
+          "definition": "Latitudinea ta geografică. Influențează viteza aparentă de mișcare a stelelor — la latitudini mai mari, stelele de lângă pol se mișcă mai lent prin cadru."
         },
         "exposurePerFrame": {
           "term": "Expunere per cadru",
-          "definition": "Timpul de expunere pentru fiecare cadru individual dintr-o secvență de dâre de stele. De obicei 15-30 de secunde, pentru a capta suficientă lumină evitând zgomotul excesiv."
+          "definition": "Timpul de expunere pentru fiecare cadru individual dintr-o secvență de dâre de stele. De obicei 15-30 de secunde, pentru a capta suficientă lumină, dar fără zgomot excesiv."
         },
         "numberOfFrames": {
           "term": "Număr de cadre",
-          "definition": "Câte expuneri individuale să faci. Mai multe cadre înseamnă dâre mai lungi, mai dramatice. 120 de cadre a câte 30 de secunde produc o oră de dâre."
+          "definition": "Câte expuneri individuale să faci. Mai multe cadre înseamnă dâre mai lungi, mai dramatice. 120 de cadre a câte 30 de secunde dau o oră de dâre."
         },
         "gapBetweenFrames": {
           "term": "Pauză între cadre",
-          "definition": "Timpul dintre expuneri, pentru ca aparatul să salveze fișierul. Ține-l cât mai scurt (1-3 secunde) ca să eviți dârele punctate."
+          "definition": "Timpul dintre expuneri, cât aparatul salvează fișierul. Ține-l cât mai scurt (1-3 secunde) ca să eviți dârele punctate."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Fotografiezi Calea Lactee cu un obiectiv de 24mm pe o cameră full-frame de 24MP. Folosind regula 500, cât de mult poți expune înainte ca stelele să înceapă să se miște în dâre?",
+          "scenario": "Fotografiezi Calea Lactee cu un 24mm pe un aparat full-frame de 24MP. Folosind regula 500, cât de mult poți expune înainte ca stelele să înceapă să se transforme în dâre?",
           "hint": "Regula 500: secunde maxime = 500 / distanța focală.",
-          "successMessage": "Exact! 500 / 24 = aproximativ 20 de secunde. Este un punct de plecare bun, deși regula NPF ar putea sugera un timp ușor mai scurt pentru claritate critică.",
+          "successMessage": "Exact! 500 / 24 = aproximativ 20 de secunde. E un punct de plecare bun, deși regula NPF ar putea sugera un timp ceva mai scurt pentru claritate critică.",
           "failureMessage": "Aplică regula 500: împarte 500 la distanța focală (24mm). Asta îți dă aproximativ 20 de secunde.",
           "options": {
             "0": { "label": "5 secunde" },
@@ -97,13 +97,13 @@
           }
         },
         "1": {
-          "scenario": "Vrei să fotografiezi nebuloasa Orion cu un obiectiv de 200mm pe o cameră cu senzor crop (factor de crop 1.5x). Care este expunerea maximă aproximativă, folosind regula 500?",
+          "scenario": "Vrei să fotografiezi nebuloasa Orion cu un 200mm pe un aparat cu senzor crop (factor de crop 1.5×). Care este expunerea maximă aproximativă, după regula 500?",
           "hint": "Cu un senzor crop, înmulțește mai întâi distanța focală cu factorul de crop, apoi aplică regula.",
-          "successMessage": "Corect! Distanța focală efectivă este 200mm x 1.5 = 300mm. 500 / 300 = ~1.7 secunde. La distanțe focale tele pe senzori crop, ai foarte puțin timp înainte să apară dârele.",
-          "failureMessage": "Ține minte să iei în calcul factorul de crop: 200mm x 1.5 = 300mm efectiv. Apoi 500 / 300 dă aproximativ 1.7 secunde.",
+          "successMessage": "Corect! Distanța focală efectivă este 200mm × 1.5 = 300mm. 500 / 300 = ~1,7 secunde. La distanțe focale tele, pe senzori crop, ai foarte puțin timp până să apară dârele.",
+          "failureMessage": "Ține minte să iei în calcul factorul de crop: 200mm × 1.5 = 300mm efectiv. Apoi 500 / 300 dă aproximativ 1,7 secunde.",
           "options": {
-            "0": { "label": "~1.7 secunde" },
-            "1": { "label": "~2.5 secunde" },
+            "0": { "label": "~1,7 secunde" },
+            "1": { "label": "~2,5 secunde" },
             "2": { "label": "~5 secunde" },
             "3": { "label": "~10 secunde" }
           }
@@ -121,24 +121,24 @@
           }
         },
         "3": {
-          "scenario": "Un prieten folosește o cameră full-frame de 50MP și a urmat regula 500 cu un obiectiv de 20mm, obținând o expunere de 25 de secunde. Se plânge că stelele arată ca dâre scurte când dă zoom. De ce?",
+          "scenario": "Un prieten folosește un aparat full-frame de 50MP și a aplicat regula 500 cu un 20mm, obținând o expunere de 25 de secunde. Se plânge că stelele apar ca dâre scurte când dă zoom. De ce?",
           "hint": "Regula 500 a fost concepută pentru senzori mai vechi, de rezoluție mai mică.",
-          "successMessage": "Exact! Regula 500 este prea generoasă pentru senzorii de rezoluție mare. Un senzor full-frame de 50MP are un pas de pixel de aproximativ 4.4 micrometri, iar regula NPF ar recomanda aproximativ 10-12 secunde pentru stele cu adevărat clare.",
-          "failureMessage": "Regula 500 a fost creată când senzorii aveau cu mult mai puțini megapixeli. Cu 50MP, fiecare pixel acoperă o felie mult mai mică din cer, scoțând la iveală mișcare stelară invizibilă pe camerele mai vechi.",
+          "successMessage": "Exact! Regula 500 e prea generoasă pentru senzorii cu rezoluție mare. Un senzor full-frame de 50MP are un pas de pixel de aproximativ 4,4 micrometri, iar regula NPF ar recomanda aproximativ 10-12 secunde pentru stele cu adevărat clare.",
+          "failureMessage": "Regula 500 a fost gândită când senzorii aveau cu mult mai puțini megapixeli. Cu 50MP, fiecare pixel acoperă o felie mult mai mică din cer, scoțând la iveală mișcări stelare invizibile pe aparatele mai vechi.",
           "options": {
-            "0": { "label": "Obiectivul era nefocalizat" },
-            "1": { "label": "Regula 500 este prea generoasă pentru senzorii de rezoluție mare" },
-            "2": { "label": "Camera se clătina în vânt" },
-            "3": { "label": "20mm este prea larg pentru astrofotografie" }
+            "0": { "label": "Obiectivul nu era focalizat corect" },
+            "1": { "label": "Regula 500 e prea generoasă pentru senzorii cu rezoluție mare" },
+            "2": { "label": "Aparatul se clătina în vânt" },
+            "3": { "label": "20mm e prea larg pentru astrofotografie" }
           }
         },
         "4": {
-          "scenario": "Vrei o imagine cu dâre de stele de 1 oră. De ce fotografii astro experimentați combină multe expuneri scurte (de exemplu 240 x 15s), în loc să facă o singură expunere de 1 oră?",
-          "hint": "Gândește-te ce se întâmplă cu zgomotul senzorului, cu bateria și cu posibilitatea de recuperare pe parcursul unei singure expuneri extrem de lungi.",
-          "successMessage": "Corect! O singură expunere de o oră acumulează zgomot termic masiv, golește bateria, iar dacă ceva merge prost (vibrație, rouă, far de mașină), tot cadrul este stricat. Combinând cadre scurte păstrezi zgomotul scăzut, poți arunca cadrele stricate și este mult mai iertător.",
-          "failureMessage": "Expunerile lungi unice acumulează zgomot termic sever și riscă pierderea totală în cazul oricărei întreruperi. Combinarea cadrelor scurte păstrează zgomotul gestionabil, îți permite să elimini cadrele stricate și produce rezultate mai curate.",
+          "scenario": "Vrei o imagine cu dâre de stele de 1 oră. De ce fac fotografii astro experimentați multe expuneri scurte (de exemplu 240 × 15s), în loc de o singură expunere de 1 oră?",
+          "hint": "Gândește-te ce se întâmplă cu zgomotul senzorului, cu bateria și cu șansa de recuperare pe parcursul unei singure expuneri extrem de lungi.",
+          "successMessage": "Corect! O singură expunere de o oră acumulează un zgomot termic masiv, epuizează bateria, iar dacă ceva merge prost (vibrație, rouă, farurile unei mașini), tot cadrul este pierdut. Prin stacking-ul cadrelor scurte, zgomotul rămâne scăzut, poți arunca cadrele stricate și ești mult mai în siguranță.",
+          "failureMessage": "Expunerile lungi unice acumulează zgomot termic sever și riscă pierderea totală în cazul oricărei întreruperi. Stacking-ul cadrelor scurte păstrează zgomotul gestionabil, îți permite să elimini cadrele stricate și dă rezultate mai curate.",
           "options": {
-            "0": { "label": "Stacking-ul produce dâre mai lungi decât o singură expunere" },
+            "0": { "label": "Stacking-ul dă dâre mai lungi decât o singură expunere" },
             "1": { "label": "Expunerile unice nu pot înregistra mișcarea stelelor" },
             "2": { "label": "Stacking-ul reduce zgomotul, permite recuperarea după întreruperi și economisește bateria" },
             "3": { "label": "Nu există o diferență practică — e pur și simplu o preferință personală" }

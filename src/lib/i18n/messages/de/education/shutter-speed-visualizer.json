@@ -43,7 +43,7 @@
         },
         "stabilization": {
           "term": "Bildstabilisierung",
-          "definition": "Technologie, die Kameraverwacklung kompensiert. OIS (Optische Bildstabilisierung) ist im Objektiv, IBIS (gehäusebasierte Bildstabilisierung) ist in der Kamera. Sie können für maximalen Nutzen zusammenarbeiten."
+          "definition": "Technologie, die Kameraverwacklung kompensiert. OIS (Optische Bildstabilisierung) sitzt im Objektiv, IBIS (gehäusebasierte Bildstabilisierung) in der Kamera. Beide können zusammenarbeiten und sich gegenseitig verstärken."
         },
         "subjectMotion": {
           "term": "Motivbewegung",

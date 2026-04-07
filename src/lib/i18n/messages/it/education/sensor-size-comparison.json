@@ -89,7 +89,7 @@
         "2": {
           "scenario": "Due fotocamere hanno entrambe 24 megapixel — una full-frame (36×24mm) e una APS-C (24×16mm). Quale ha migliori prestazioni di rumore ad alti ISO, e perché?",
           "hint": "Pensa a come lo stesso numero di pixel distribuito su diverse aree del sensore influisce sulla dimensione individuale dei pixel.",
-          "successMessage": "Esatto! Il sensore full-frame distribuisce 24MP su un'area maggiore, quindi ogni pixel è fisicamente più grande (~6µm vs ~4µm di passo) e cattura più fotoni, risultando in meno rumore.",
+          "successMessage": "Esatto! Il sensore full-frame distribuisce 24MP su un'area maggiore, quindi ogni pixel è fisicamente più grande (~6µm vs ~4µm di passo) e cattura più fotoni, producendo meno rumore.",
           "failureMessage": "Il sensore full-frame vince — lo stesso numero di megapixel su un'area maggiore significa pixel più grandi che raccolgono più luce, producendo meno rumore ad alti ISO.",
           "options": {
             "0": { "label": "Full frame — pixel più grandi raccolgono più luce" },

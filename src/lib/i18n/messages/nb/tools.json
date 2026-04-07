@@ -1,23 +1,23 @@
 {
   "tools": {
     "fov-simulator": {
-      "name": "FOV Simulator",
+      "name": "FOV-simulator",
       "description": "Sammenlign synsfelt på tvers av brennvidder og sensorstørrelser"
     },
     "color-scheme-generator": {
-      "name": "Color Scheme Generator",
-      "description": "Bygg fargepaletter til fotoshoots"
+      "name": "Fargeskjema-generator",
+      "description": "Bygg fargepaletter til fotograferingen"
     },
     "exposure-simulator": {
       "name": "Eksponeringstriangel-simulator",
       "description": "Se hvordan blender, lukkertid og ISO spiller sammen"
     },
     "dof-simulator": {
-      "name": "Depth-of-Field Simulator",
-      "description": "Visualiser hvordan blender, brennvidde og avstand påvirker bakgrunnsuskarphet"
+      "name": "Dybdeskarphet-simulator",
+      "description": "Se hvordan blender, brennvidde og avstand påvirker bakgrunnsuskarpheten"
     },
     "focus-stacking-calculator": {
-      "name": "Focus Stacking Calculator",
+      "name": "Focus stacking-kalkulator",
       "description": "Beregn optimale fokusavstander for skarphet fra front til bak"
     },
     "equivalent-settings-calculator": {
@@ -29,27 +29,27 @@
       "description": "Lær hvor du skal fokusere for maksimal skarphet fra forgrunn til uendelig"
     },
     "shutter-speed-visualizer": {
-      "name": "Shutter Speed Visualizer",
-      "description": "Finn laveste trygge lukkertid for skarpe håndholdte bilder"
+      "name": "Lukkertid-visualisering",
+      "description": "Finn laveste trygge lukkertid for skarpe bilder på frihånd"
     },
     "nd-filter-calculator": {
-      "name": "ND Filter Calculator",
-      "description": "Beregn eksponeringstid med et hvilket som helst ND-filter"
+      "name": "ND-filter-kalkulator",
+      "description": "Regn ut eksponeringstid med hvilket som helst ND-filter"
     },
     "star-trail-calculator": {
-      "name": "Star Trail Calculator",
-      "description": "Beregn maks eksponering for skarpe stjerner, eller planlegg stjernespor-bilder"
+      "name": "Stjernespor-kalkulator",
+      "description": "Beregn lengste eksponering for skarpe stjerner, eller planlegg stjernesporbilder"
     },
     "perspective-compression-simulator": {
       "name": "Perspektivkomprimering-simulator",
       "description": "Se hvordan brennvidde påvirker bakgrunnskomprimering"
     },
     "white-balance-visualizer": {
-      "name": "White Balance Visualizer",
+      "name": "Hvitbalanse-visualisering",
       "description": "Se hvordan fargetemperatur påvirker bildene dine"
     },
     "sensor-size-comparison": {
-      "name": "Sensor Size Comparison",
+      "name": "Sensorstørrelse-sammenligning",
       "description": "Sammenlign kamerasensorer visuelt"
     },
     "frame-studio": {
@@ -57,8 +57,8 @@
       "description": "Beskjær, ramm inn og komponer bilder med rutenett"
     },
     "exif-viewer": {
-      "name": "EXIF Viewer",
-      "description": "Se EXIF-metadata og histogram for ethvert bilde — 100 % i nettleseren"
+      "name": "EXIF-leser",
+      "description": "Se EXIF-metadata og histogram for hvilket som helst bilde — 100 % i nettleseren"
     }
   }
 }

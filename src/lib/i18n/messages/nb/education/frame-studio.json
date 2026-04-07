@@ -1,45 +1,45 @@
 {
   "education": {
     "frame-studio": {
-      "beginner": "Frame Studio hjelper deg å beskjære, ramme inn og komponere bildene dine direkte i nettleseren. Bruk komposisjonsrutenett for bedre innramming, beskjær til populære bildeforhold, og legg til profesjonelle kanter — alt uten kvalitetstap.",
+      "beginner": "Frame Studio hjelper deg med å beskjære, ramme inn og komponere bildene dine direkte i nettleseren. Bruk komposisjonsrutenett for bedre innramming, beskjær til populære bildeforhold, og legg til profesjonelle kanter — alt uten kvalitetstap.",
       "deeper": {
         "0": {
           "heading": "Komposisjonsrutenett",
-          "text": "Tredjedelsregelen deler bildet inn i et 3×3-rutenett — å plassere motivene langs linjene eller i skjæringspunktene gir naturlig visuell balanse. Det gylne snitt (omtrent 1,618:1) gir en matematisk harmonisk inndeling som har blitt brukt i kunst og arkitektur i århundrer. Den gylne spiralen leder blikket langs en logaritmisk kurve basert på Fibonacci-rekken, og fungerer godt til å føre betrakteren gjennom bildet."
+          "text": "Tredjedelsregelen deler bildet inn i et 3×3-rutenett — plasserer du motivene langs linjene eller i skjæringspunktene, får du naturlig visuell balanse. Det gylne snittet (omtrent 1,618:1) gir en matematisk harmonisk inndeling som har blitt brukt i kunst og arkitektur i århundrer. Den gylne spiralen fører blikket langs en logaritmisk kurve basert på Fibonacci-rekken, og fungerer godt til å lede betrakteren gjennom bildet."
         },
         "1": {
           "heading": "Bildeforhold",
-          "text": "Ulike bildeforhold passer til ulike formål. 1:1 (kvadrat) fungerer godt i sosiale medier og symmetriske komposisjoner. 3:2 er det klassiske 35 mm-filmforholdet. 4:3 er vanlig i Micro Four Thirds og eldre digitale kameraer. 16:9 er standard widescreen for video og kinomatiske komposisjoner. 5:4 er tradisjonelt for 8×10-kopier."
+          "text": "Ulike bildeforhold passer til ulike formål. 1:1 (kvadrat) fungerer godt i sosiale medier og i symmetriske komposisjoner. 3:2 er det klassiske 35 mm-filmforholdet. 4:3 er vanlig i Micro Four Thirds og eldre digitale kameraer. 16:9 er standard widescreen for video og kinomatiske komposisjoner. 5:4 brukes tradisjonelt til 8×10-kopier."
         },
         "2": {
           "heading": "Rammer og kanter",
-          "text": "En kant rundt et bilde etterligner effekten av en fysisk passepartout og ramme. En hvit passepartout gir pusterom og leder blikket innover. Bredden i forhold til bildet påvirker den opplevde «vekten» i motivet. Gallerioppsett bruker gjerne brede passepartouter. En subtil skygge gir dybde og etterligner hvordan et innrammet trykk henger på en vegg."
+          "text": "En kant rundt et bilde etterligner effekten av en fysisk passepartout og ramme. En hvit passepartout gir pusterom og leder blikket innover. Bredden i forhold til bildet påvirker den opplevde «vekten» i motivet. I galleriopphengninger brukes ofte brede passepartouter. En subtil skygge gir dybde og etterligner slik et innrammet trykk henger på en vegg."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Komposisjonsrutenett",
-          "description": "Overleggsguider hjelper deg å vurdere og forbedre hvordan motivet plasseres i bildet."
+          "description": "Rutenettsguider hjelper deg å vurdere og forbedre hvordan motivet er plassert i bildet."
         },
         "1": {
           "label": "Bildeforhold",
-          "description": "Forholdet mellom bredde og høyde påvirker hvordan bildet føles — bredere forhold føles mer kinomatiske, kvadrat føles balansert."
+          "description": "Forholdet mellom bredde og høyde påvirker hvordan bildet føles — bredere forhold virker mer kinomatiske, kvadrat føles balansert."
         },
         "2": {
           "label": "Rammebredde",
-          "description": "Brede rammer gir tyngde og fokus; smale rammer føles moderne og minimalistiske."
+          "description": "Brede rammer gir tyngde og fokus, smale rammer føles moderne og minimalistiske."
         },
         "3": {
           "label": "Passepartout-farge",
-          "description": "Hvit passepartout er klassisk for kunstfoto. Mørk passepartout fremhever lysere bilder. Farget passepartout kan komplettere eller kontrastere."
+          "description": "Hvit passepartout er klassisk for kunstfoto. Mørk passepartout fremhever lysere bilder. En farget passepartout kan utfylle eller kontrastere motivet."
         }
       },
       "tips": {
         "0": {
-          "text": "Til Instagram-innlegg bør du beskjære til 4:5 (portrett) for å ta maksimalt med skjermplass i feeden."
+          "text": "Til Instagram-innlegg bør du beskjære til 4:5 (portrett) for å ta mest mulig plass i feeden."
         },
         "1": {
-          "text": "Når du legger til kant for print, bruk en passepartout på minst 10 % av bildets korteste side for et profesjonelt uttrykk."
+          "text": "Når du legger til kant for print, bør du bruke en passepartout på minst 10 % av bildets korteste side for et profesjonelt uttrykk."
         },
         "2": {
           "text": "Den gylne spiralen fungerer best på bilder med naturlig flyt — vann, veier eller buet arkitektur."
@@ -55,12 +55,12 @@
           "definition": "En komposisjonsregel som deler bildet i 9 like deler. Å plassere motiver i skjæringspunktene skaper visuell interesse."
         },
         "Golden Ratio": {
-          "term": "Gyldent snitt",
-          "definition": "Et matematisk forhold (~1,618:1) som dukker opp i naturen og kunsten. Skaper estetisk behagelige inndelinger av bilderommet."
+          "term": "Det gylne snittet",
+          "definition": "Et matematisk forhold (~1,618:1) som dukker opp i natur og kunst. Skaper estetisk behagelige inndelinger av bilderommet."
         },
         "Border Width": {
           "term": "Rammebredde",
-          "definition": "Tykkelsen på kantrammen i piksler. Legges utenfor bildet og øker totalmålene uten beskjæring."
+          "definition": "Tykkelsen på kantrammen i piksler. Legges utenfor bildet og øker totalmålene uten å beskjære motivet."
         },
         "Inner Mat": {
           "term": "Indre passepartout",
@@ -73,10 +73,10 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Du vil poste et portrett på Instagram med maksimal tilstedeværelse i feeden. Hvilket bildeforhold bør du bruke?",
-          "hint": "Portrett-innlegg på Instagram bruker et høyere-enn-bredt forhold.",
+          "scenario": "Du vil poste et portrett på Instagram og ta mest mulig plass i feeden. Hvilket bildeforhold bør du bruke?",
+          "hint": "Portrettinnlegg på Instagram bruker et høyere-enn-bredt forhold.",
           "successMessage": "Riktig! 4:5 gir deg mest vertikal plass i Instagram-feeden.",
-          "failureMessage": "Portrett-innlegg på Instagram bruker 4:5 (snu 5:4 til stående) for mest plass i feeden.",
+          "failureMessage": "Portrettinnlegg på Instagram bruker 4:5 (5:4 snudd til stående) for å ta mest mulig plass i feeden.",
           "options": {
             "0": { "label": "1:1 (kvadrat)" },
             "1": { "label": "4:5 (portrett)" },
@@ -95,9 +95,9 @@
           }
         },
         "2": {
-          "scenario": "Du forbereder et bilde til gallerikopi på 8×10 papir. Hvilket bildeforhold matcher denne størrelsen?",
+          "scenario": "Du klargjør et bilde for gallerikopi på 8×10-papir. Hvilket bildeforhold matcher denne størrelsen?",
           "hint": "8×10 kan forenkles til et velkjent forhold.",
-          "successMessage": "Riktig! 5:4 matcher 8×10-kopimål perfekt.",
+          "successMessage": "Riktig! 5:4 matcher 8×10-kopiformatet perfekt.",
           "failureMessage": "8×10 forenkles til 4:5, som er portrettversjonen av 5:4.",
           "options": {
             "0": { "label": "3:2" },
@@ -106,10 +106,10 @@
           }
         },
         "3": {
-          "scenario": "Et landskapsbilde har en buktende elv som leder fra forgrunnen til fjell i bakgrunnen. Hvilket rutenett-overlegg matcher denne naturlige flyten best?",
-          "hint": "Én rutenett-type følger en naturlig kurve.",
+          "scenario": "Et landskapsbilde har en buktende elv som fører fra forgrunnen til fjell i bakgrunnen. Hvilket rutenettoverlegg passer best til denne naturlige flyten?",
+          "hint": "Én av rutenetttypene følger en naturlig kurve.",
           "successMessage": "Bra valg! Den gylne spiralen følger kurver og ledende linjer perfekt.",
-          "failureMessage": "Den gylne spiralen er ideell for bilder med naturlige kurveelementer som elver, veier eller kystlinjer.",
+          "failureMessage": "Den gylne spiralen er ideell for bilder med naturlige kurver, som elver, veier eller kystlinjer.",
           "options": {
             "0": { "label": "Senterkryss" },
             "1": { "label": "Gylden spiral" },
@@ -117,10 +117,10 @@
           }
         },
         "4": {
-          "scenario": "Du vil ha en ren hvit kant rundt bildet ditt for sosiale medier. Hvilken forhåndsinnstilling bør du bruke?",
+          "scenario": "Du vil ha en ren, hvit kant rundt bildet ditt for sosiale medier. Hvilken forhåndsinnstilling bør du bruke?",
           "hint": "Tenk på hvilken forhåndsinnstilling som gir en enkel hvit kant.",
           "successMessage": "Riktig! Forhåndsinnstillingen «Hvit» legger til en 100 px hvit kant rundt bildet.",
-          "failureMessage": "Forhåndsinnstillingen «Hvit» er laget for en enkel, ren hvit kant.",
+          "failureMessage": "Forhåndsinnstillingen «Hvit» er laget for nettopp dette — en enkel, ren hvit kant.",
           "options": {
             "0": { "label": "Ingen" },
             "1": { "label": "Hvit" },

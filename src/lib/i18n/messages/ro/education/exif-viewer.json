@@ -1,12 +1,12 @@
 {
   "education": {
     "exif-viewer": {
-      "beginner": "Datele EXIF sunt informații ascunse, integrate în fiecare fotografie făcută de camera ta. Ele înregistrează ce cameră și obiectiv ai folosit, setările exacte (diafragmă, timp de expunere, ISO), data și ora, iar uneori chiar și coordonatele GPS. Această unealtă citește aceste date fără să încarce fotografia nicăieri — totul se întâmplă în browserul tău.",
-      "deeper": "EXIF (Exchangeable Image File Format) este un standard definit de JEITA/CIPA care stochează metadate în fișiere JPEG, TIFF și în unele RAW. Datele sunt scrise în segmente specifice din header-ul fișierului, ca perechi cheie-valoare etichetate, folosind o structură IFD (Image File Directory) bazată pe TIFF. Există mai multe secțiuni IFD: IFD0 pentru informații de bază despre imagine, sub-IFD-ul EXIF pentru setările camerei, IFD-ul GPS pentru geolocalizare și IFD-ul Interop pentru date de compatibilitate. Producătorii de camere scriu și date proprietare \"MakerNote\" care conțin corecții de obiectiv, puncte de focalizare, numărul de declanșări și alte detalii specifice modelului. Platformele de social media elimină adesea datele EXIF la încărcare, pentru confidențialitate, dar fișierul original de pe cardul de memorie le păstrează mereu. Înțelegerea EXIF te ajută să înveți din propriile tipare de fotografiere și să descifrezi setările din spatele fotografiilor care îți plac.",
+      "beginner": "Datele EXIF sunt informații ascunse, integrate în fiecare fotografie făcută cu aparatul tău. Înregistrează ce aparat și obiectiv ai folosit, setările exacte (diafragmă, timp de expunere, ISO), data și ora, iar uneori chiar și coordonatele GPS. Unealta asta citește aceste date fără să încarce fotografia nicăieri — totul se întâmplă în browserul tău.",
+      "deeper": "EXIF (Exchangeable Image File Format) este un standard definit de JEITA/CIPA care stochează metadate în fișierele JPEG, TIFF și în unele RAW. Datele sunt scrise în segmente specifice din header-ul fișierului, ca perechi etichetate cheie-valoare, într-o structură IFD (Image File Directory) bazată pe TIFF. Există mai multe secțiuni IFD: IFD0 pentru informații de bază despre imagine, sub-IFD-ul EXIF pentru setările aparatului, IFD-ul GPS pentru geolocalizare și IFD-ul Interop pentru date de compatibilitate. Producătorii de aparate scriu și date proprietare „MakerNote”, care conțin corecții de obiectiv, puncte de focalizare, numărul declanșărilor și alte detalii specifice modelului. Rețelele sociale elimină adesea datele EXIF la încărcare, pentru confidențialitate, dar fișierul original de pe cardul de memorie le păstrează întotdeauna. Înțelegerea datelor EXIF te ajută să înveți din propriile tale tipare de fotografiere și să descifrezi setările din spatele fotografiilor care îți plac.",
       "keyFactors": {
         "0": {
-          "label": "Cameră și obiectiv",
-          "description": "Marcă, model, numele obiectivului și producătorul — utile pentru identificarea echipamentului în fotografiile pe care le găsești online."
+          "label": "Aparat și obiectiv",
+          "description": "Marca, modelul, numele obiectivului și producătorul — utile pentru identificarea echipamentului din fotografiile pe care le găsești online."
         },
         "1": {
           "label": "Setări de expunere",
@@ -14,32 +14,32 @@
         },
         "2": {
           "label": "Data și GPS",
-          "description": "Când și unde a fost făcută fotografia. Ține cont că datele GPS îți dezvăluie locația când partajezi fișiere."
+          "description": "Când și unde a fost făcută fotografia. Ține cont că datele GPS îți dezvăluie locația atunci când distribui fișierele."
         },
         "3": {
           "label": "Software",
-          "description": "Arată ce program de editare a salvat ultima dată fișierul. Util pentru a verifica dacă o imagine a fost procesată."
+          "description": "Arată ce program de editare a salvat ultima oară fișierul. Util ca să verifici dacă o imagine a fost procesată."
         }
       },
       "tips": {
         "0": {
-          "text": "Verifică distanța focală și echivalentul 35mm ca să înțelegi dacă fotograful a folosit o perspectivă largă, normală sau tele — asta te învață mai mult despre compoziție decât orice regulă a treimilor."
+          "text": "Verifică distanța focală și echivalentul 35mm ca să-ți dai seama dacă fotograful a folosit o perspectivă largă, normală sau tele — asta te învață mai mult despre compoziție decât orice regulă a treimilor."
         },
         "1": {
-          "text": "Dacă o fotografie pe care o admiri a fost făcută la ISO mare și diafragmă largă, îți spune că a fost o situație cu lumină slabă. Folosește EXIF ca să înțelegi constrângerile cu care s-a confruntat fotograful."
+          "text": "Dacă o fotografie pe care o admiri a fost făcută la ISO mare și diafragmă largă, asta îți spune că a fost o situație cu lumină slabă. Folosește EXIF-ul ca să înțelegi constrângerile cu care s-a luptat fotograful."
         },
         "2": {
-          "text": "Înainte să distribui fotografii online, ține cont că EXIF poate conține locația ta GPS. Șterge metadatele din setările de export ale software-ului de editare dacă îți pasă de confidențialitate."
+          "text": "Înainte să distribui fotografii online, ține cont că EXIF-ul poate conține locația ta GPS. Dacă îți pasă de confidențialitate, șterge metadatele din setările de export ale softului de editare."
         }
       },
       "tooltips": {
         "Make": {
           "term": "Marcă",
-          "definition": "Numele producătorului camerei (de exemplu Canon, Nikon, Sony) stocat în header-ul EXIF."
+          "definition": "Numele producătorului aparatului (de exemplu Canon, Nikon, Sony), stocat în header-ul EXIF."
         },
         "Model": {
           "term": "Model",
-          "definition": "Modelul exact al camerei (de exemplu \"EOS R5\", \"Z 9\") care a făcut imaginea."
+          "definition": "Modelul exact al aparatului (de exemplu „EOS R5”, „Z 9”) cu care a fost făcută imaginea."
         },
         "Aperture": {
           "term": "Diafragmă",
@@ -51,7 +51,7 @@
         },
         "ISO": {
           "term": "ISO",
-          "definition": "Setarea sensibilității senzorului. ISO mai mare luminează imaginea, dar adaugă zgomot."
+          "definition": "Setarea sensibilității senzorului. Un ISO mai mare luminează imaginea, dar adaugă zgomot."
         },
         "Focal Length": {
           "term": "Distanță focală",
@@ -59,37 +59,37 @@
         },
         "Focal Length (35mm equiv)": {
           "term": "Distanță focală (echiv. 35mm)",
-          "definition": "Distanța focală echivalentă ca și cum ar fi fost făcută pe un senzor full-frame de 35mm. Utilă pentru compararea unghiului de vizualizare între dimensiuni de senzor."
+          "definition": "Distanța focală echivalentă ca și cum ar fi fost făcută pe un senzor full-frame de 35mm. Utilă pentru compararea unghiului de vizualizare între formate de senzor."
         },
         "GPS": {
           "term": "GPS",
-          "definition": "Coordonate de latitudine și longitudine integrate de camerele cu module GPS. Dezvăluie unde a fost făcută fotografia."
+          "definition": "Coordonatele de latitudine și longitudine integrate de aparatele cu modul GPS. Dezvăluie unde a fost făcută fotografia."
         }
       },
       "challenges": {
         "0": {
           "scenario": "Ai găsit o fotografie extraordinară online și vrei să afli ce obiectiv a fost folosit. Ce secțiune EXIF îți spune?",
-          "hint": "Informațiile despre cameră și obiectiv sunt în secțiuni diferite.",
+          "hint": "Informațiile despre aparat și obiectiv sunt în secțiuni diferite.",
           "successMessage": "Corect! Secțiunea Obiectiv arată modelul și producătorul obiectivului.",
           "failureMessage": "Secțiunea Obiectiv conține modelul obiectivului — verifică acolo ca să identifici sticla folosită.",
           "options": {
-            "0": { "label": "Cameră" },
+            "0": { "label": "Aparat" },
             "1": { "label": "Obiectiv" },
             "2": { "label": "Setări" }
           }
         },
         "1": {
           "scenario": "Ai încărcat o fotografie și vezi: Diafragmă f/1.8, Timp de expunere 1/4000s, ISO 100. A fost făcută probabil în lumină puternică sau slabă?",
-          "hint": "Un timp de expunere foarte scurt la ISO mic sugerează multă lumină disponibilă.",
-          "successMessage": "Exact! Timpul scurt (1/4000s) la ISO de bază (100) îți spune că era multă lumină — probabil afară, în plin soare.",
-          "failureMessage": "Un timp de 1/4000s la ISO 100 înseamnă că camerei i-a trebuit foarte puțină sensibilitate și expunere foarte scurtă. Asta e o scenă în aer liber, bine luminată.",
+          "hint": "Un timp foarte scurt la ISO mic sugerează multă lumină disponibilă.",
+          "successMessage": "Exact! Un timp scurt (1/4000s) la ISO de bază (100) îți spune că era multă lumină — probabil afară, în plin soare.",
+          "failureMessage": "1/4000s la ISO 100 înseamnă că aparatul a avut nevoie de foarte puțină sensibilitate și de o expunere foarte scurtă. Asta e o scenă în aer liber, bine luminată.",
           "options": {
             "0": { "label": "Lumină puternică — timp scurt la ISO mic" },
             "1": { "label": "Lumină slabă — diafragma largă compensează" }
           }
         },
         "2": {
-          "scenario": "O fotografie arată Distanță focală: 50mm și Distanță focală (echiv. 35mm): 75mm. Ce senzor folosea camera?",
+          "scenario": "O fotografie arată Distanță focală: 50mm și Distanță focală (echiv. 35mm): 75mm. Ce senzor folosea aparatul?",
           "hint": "Echivalentul 35mm este distanța focală înmulțită cu factorul de crop.",
           "successMessage": "Corect! 75 / 50 = factor de crop 1.5x, adică un senzor APS-C (varianta Nikon/Sony).",
           "failureMessage": "Împarte echivalentul 35mm la distanța focală reală: 75 / 50 = 1.5x. Acel factor de crop se potrivește cu APS-C (Nikon/Sony).",
@@ -110,13 +110,13 @@
           }
         },
         "4": {
-          "scenario": "Analizezi o fotografie de natură sălbatică: 400mm, f/5.6, 1/2000s, ISO 1600. Câmpul Software din EXIF arată \"Adobe Lightroom Classic 13.1\". Ce poți deduce despre fotograf și condițiile de fotografiere?",
-          "hint": "Consideră împreună distanța focală mare, diafragma deschisă complet, timpul rapid și ISO-ul ridicat.",
-          "successMessage": "Analiză bună! 400mm la f/5.6 (probabil deschis complet pentru acest obiectiv) cu un timp rapid de 1/2000s sugerează un subiect în mișcare rapidă (păsări sau animale în acțiune). ISO 1600 indică faptul că nu era soare puternic — probabil noros sau la umbră. Câmpul Lightroom confirmă că s-a făcut post-procesare.",
-          "failureMessage": "Setările dezvăluie multe: 400mm f/5.6 este un tele tipic de natură sălbatică deschis complet, 1/2000s îngheață mișcarea rapidă a animalelor, iar ISO 1600 înseamnă că lumina era limitată (nu soare puternic). Prezența Lightroom confirmă procesarea fișierului.",
+          "scenario": "Analizezi o fotografie de natură sălbatică: 400mm, f/5.6, 1/2000s, ISO 1600. Câmpul Software din EXIF arată „Adobe Lightroom Classic 13.1”. Ce poți deduce despre fotograf și despre condițiile de fotografiere?",
+          "hint": "Ia în calcul, împreună, distanța focală mare, diafragma deschisă complet, timpul rapid și ISO-ul ridicat.",
+          "successMessage": "Analiză bună! 400mm la f/5.6 (probabil deschis complet pentru acest obiectiv), cu un timp rapid de 1/2000s, sugerează un subiect în mișcare rapidă (păsări sau animale în acțiune). ISO 1600 indică faptul că nu era soare puternic — probabil cer noros sau umbră. Câmpul Lightroom confirmă că s-a făcut post-procesare.",
+          "failureMessage": "Setările dezvăluie multe: 400mm f/5.6 este un tele tipic de natură sălbatică, deschis complet; 1/2000s îngheață mișcarea rapidă a animalelor, iar ISO 1600 înseamnă că lumina era limitată (nu soare puternic). Prezența Lightroom confirmă procesarea fișierului.",
           "options": {
             "0": { "label": "Subiect rapid în lumină moderată, procesat în Lightroom" },
-            "1": { "label": "Subiect lent în lumină puternică, direct din cameră" },
+            "1": { "label": "Subiect lent în lumină puternică, direct din aparat" },
             "2": { "label": "Peisaj cu blur de mișcare, puternic editat" }
           }
         }

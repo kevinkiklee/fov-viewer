@@ -1,7 +1,7 @@
 {
   "contact": {
     "title": "Kapcsolat",
-    "description": "Van kérdésed, találtál egy hibát, vagy javasolnál egy új eszközt? Örömmel hallunk felőled.",
+    "description": "Van kérdésed, hibát találtál, vagy van egy ötleted egy új eszközhöz? Örömmel hallunk felőled.",
     "form": {
       "nameLabel": "Név",
       "namePlaceholder": "A neved",
@@ -18,7 +18,7 @@
       "errorToast": "Valami elromlott. Kérjük, próbáld újra.",
       "networkErrorToast": "Hálózati hiba. Ellenőrizd a kapcsolatot, és próbáld újra.",
       "sentTitle": "Köszönjük, hogy írtál!",
-      "sentMessage": "Amint lehet, visszajelzünk.",
+      "sentMessage": "Amint tudunk, visszajelzünk.",
       "sendAnother": "Új üzenet küldése"
     }
   }

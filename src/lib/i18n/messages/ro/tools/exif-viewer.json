@@ -2,12 +2,12 @@
   "toolUI": {
     "exif-viewer": {
       "loadExamplePhoto": "Încarcă fotografia exemplu",
-      "couldNotReadExif": "Nu am putut citi datele EXIF din această imagine.",
-      "failedToReadFile": "Nu am putut citi fișierul.",
+      "couldNotReadExif": "Nu s-au putut citi datele EXIF din această imagine.",
+      "failedToReadFile": "Fișierul nu a putut fi citit.",
       "uploadedPhoto": "Fotografie încărcată",
       "analysis": "Analiză",
       "exposureValue": "Valoare de expunere",
-      "sectionCamera": "Cameră",
+      "sectionCamera": "Aparat",
       "sectionLens": "Obiectiv",
       "sectionExposure": "Expunere",
       "sectionImage": "Imagine",
@@ -57,15 +57,15 @@
       "faq": {
         "what-is-exif-data": {
           "question": "Ce sunt datele EXIF dintr-o fotografie?",
-          "answer": "Datele EXIF (Exchangeable Image File Format) sunt metadate integrate în fotografie de către cameră. Includ setările camerei (diafragmă, timp de expunere, ISO), modelul camerei și al obiectivului, data și ora, iar uneori și locația GPS."
+          "answer": "Datele EXIF (Exchangeable Image File Format) sunt metadate integrate în fotografie de către aparatul foto. Includ setările aparatului (diafragmă, timp de expunere, ISO), modelul corpului și al obiectivului, data și ora, iar uneori și locația GPS."
         },
         "how-to-read-histogram": {
           "question": "Cum citesc o histogramă de fotografie?",
-          "answer": "O histogramă arată distribuția luminozității din imagine, de la umbre (stânga) la lumini (dreapta). O fotografie bine expusă are de obicei datele răspândite pe întregul interval, fără tăiere la capete, deși forma ideală depinde de scenă."
+          "answer": "Histograma arată distribuția luminozității din imagine, de la umbre (stânga) la lumini (dreapta). O fotografie bine expusă are de obicei datele întinse pe întregul interval, fără tăiere la capete, deși forma ideală depinde de scenă."
         },
         "does-exif-contain-location": {
           "question": "Datele EXIF conțin locația mea?",
-          "answer": "Dacă ai GPS-ul activat pe cameră sau telefon, datele EXIF pot include coordonatele GPS precise de unde a fost făcută fotografia. Ține cont de asta când distribui fotografii online — multe platforme sociale elimină datele EXIF, dar nu toate."
+          "answer": "Dacă ai GPS-ul activ pe aparat sau pe telefon, datele EXIF pot include coordonatele GPS exacte ale locului unde a fost făcută fotografia. Ține cont de asta când distribui poze online — multe rețele sociale elimină datele EXIF, dar nu toate."
         }
       }
     }

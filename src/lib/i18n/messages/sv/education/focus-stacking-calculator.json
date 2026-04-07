@@ -1,25 +1,25 @@
 {
   "education": {
     "focus-stacking-calculator": {
-      "beginner": "Focus stacking är en teknik där du tar flera bilder med olika fokusavstånd och fogar ihop dem i mjukvara för att få en bild som är skarp från främst till bakåt. Det är nödvändigt i makrofoto, där skärpedjupet är hårfint tunt, och användbart i landskapsfoto när du vill ha både nära förgrund och avlägsen bakgrund i fokus.",
+      "beginner": "Focus stacking är en teknik där du tar flera bilder med olika fokusavstånd och fogar ihop dem i efterbehandlingen så att hela bilden blir skarp från förgrund till bakgrund. Tekniken är oumbärlig i makrofoto, där skärpedjupet är hårfint, och praktisk i landskapsfoto när du vill ha både nära förgrund och avlägsen bakgrund skarpt.",
       "deeper": {
         "0": {
           "heading": "Varför stacking behövs",
-          "text": "Vid makroförstoringar kan även f/16 ge bara några millimeters skärpedjup. Att bländaa ner ytterligare gör bilden mjuk av diffraktion och förstör kvaliteten. Focus stacking låter dig fotografera vid objektivets skarpaste bländare (vanligtvis f/5.6–f/8) och kombinera de skarpa skivorna. Varje bild flyttar fokus lite framåt och täcker en ny skiva av motivet."
+          "text": "Vid makroförstoringar kan till och med f/16 ge bara några millimeters skärpedjup. Att blända ned ännu mer mjukar upp bilden av diffraktion och förstör skärpan du är ute efter. Med focus stacking kan du fotografera vid objektivets skarpaste bländare (vanligtvis f/5.6–f/8) och foga ihop de skarpa skivorna. Varje bild flyttar fokus en bit framåt och täcker en ny skiva av motivet."
         },
         "1": {
           "heading": "Planera stacken",
-          "text": "Nyckeln till en lyckad stack är att varje bilds skärpedjup överlappar nästa med 20–30 %. För lite överlapp skapar glapp där inget är skarpt; för mycket slösar bort bilder utan nytta. Kalkylatorn räknar ut skärpedjupet per bild via oskärpecirkelformeln, drar av överlappsmarginalen och dividerar det totala djupområdet med det effektiva steget för att få antalet bilder."
+          "text": "Nyckeln till en lyckad stack är att varje bilds skärpedjup överlappar nästa med 20–30 %. För lite överlapp ger glapp där inget är skarpt, för mycket slösar bara på bilder i onödan. Kalkylatorn räknar ut skärpedjupet per bild via oskärpecirkelformeln, drar av överlappsmarginalen och dividerar det totala djupområdet med det effektiva steget för att få antalet bilder."
         },
         "2": {
           "heading": "Hopfogning och alignment",
-          "text": "Program som Photoshop, Helicon Focus eller Zerene Stacker alignar bildrutorna (små förstoringsskift uppstår när fokus ändras) och väljer sedan de skarpaste pixlarna från varje lager. Ett stabilt stativ, konsekvent ljus och en fokusrail för exakta steg ger renaste resultatet."
+          "text": "Program som Photoshop, Helicon Focus eller Zerene Stacker passar in bildrutorna mot varandra (små förstoringsförändringar uppstår när fokus ändras) och plockar sedan de skarpaste pixlarna från varje lager. Ett stabilt stativ, jämnt ljus och en fokusrail för exakta steg ger renaste resultatet."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Bländare",
-          "description": "Bestämmer skärpedjupet per bild. En måttlig bländare (f/5.6–f/8) balanserar skärpa och skärpedjup i varje ruta. Undvik mycket små bländare — diffraktion tar bort den skärpa du stackar för."
+          "description": "Bestämmer skärpedjupet per bild. En måttlig bländare (f/5.6–f/8) balanserar skärpa och skärpedjup i varje ruta. Undvik mycket små bländare — diffraktionen äter upp den skärpa du stackar för att bevara."
         },
         "1": {
           "label": "Djupområde",
@@ -32,13 +32,13 @@
       },
       "tips": {
         "0": {
-          "text": "Använd en fokusrail istället för objektivets fokusring vid makrostacking. En rail flyttar hela kameran framåt i exakta steg och undviker den lilla förstoringsförändring som sker när man ändrar fokus på objektivet."
+          "text": "Använd en fokusrail i stället för objektivets fokusring vid makrostacking. Railen flyttar hela kameran framåt i exakta steg och undviker den lilla förstoringsförändring som uppstår när man vrider på fokusringen."
         },
         "1": {
-          "text": "Håll bländaren vid objektivets sweet spot (oftast f/5.6–f/8). Hela poängen med stacking är att slippa bländaa ner till f/16 och mindre — använd den skarpaste bländaren och låt stacken sköta djupet."
+          "text": "Håll bländaren vid objektivets sweet spot (oftast f/5.6–f/8). Hela poängen med stacking är att slippa blända ned till f/16 eller mindre — använd den skarpaste bländaren och låt stacken sköta djupet."
         },
         "2": {
-          "text": "För landskapsstackar: fotografera från främst till bakåt. Fokusera på det närmaste elementet först och stega sedan fokus mot oändligheten. Det gör alignment enklare eftersom förgrunden (med mest parallax) fångas först."
+          "text": "För landskapsstackar: fotografera från förgrund till bakgrund. Fokusera på det närmaste först och flytta sedan fokus stegvis mot oändligheten. Det gör ihoppassningen lättare eftersom förgrunden (med mest parallax) fångas först."
         }
       },
       "tooltips": {
@@ -48,7 +48,7 @@
         },
         "aperture": {
           "term": "Bländare",
-          "definition": "Linsöppningen (f-talet). För stacking: använd objektivets skarpaste bländare istället för att bländaa ner — stacken ger djupet."
+          "definition": "Bländaröppningen (f-talet). För stacking: använd objektivets skarpaste bländare i stället för att blända ned — stacken ger djupet."
         },
         "sensor": {
           "term": "Sensorstorlek",
@@ -64,7 +64,7 @@
         },
         "overlap": {
           "term": "Överlapp",
-          "definition": "Procenten skärpedjupsöverlapp mellan på varandra följande bilder. 20–30 % säkerställer att det inte blir glapp efter alignment och hopfogning i mjukvara."
+          "definition": "Hur stor andel av skärpedjupet som överlappar mellan närliggande bilder. 20–30 % ser till att det inte blir glapp när bilderna passas ihop och fogas samman i programmet."
         },
         "shotCount": {
           "term": "Antal bilder",
@@ -75,8 +75,8 @@
         "0": {
           "scenario": "Du fotograferar en liten blomma som är 3 cm djup från främre kronblad till bakre stjälk. Ditt makroobjektiv vid f/8 ger cirka 4 mm skärpedjup per bild. Ungefär hur många bilder behöver du med 25 % överlapp?",
           "hint": "Varje bild täcker 4 mm, men 25 % överlapp betyder att effektiva steget är 3 mm per bild. Dividera 30 mm med 3 mm.",
-          "successMessage": "Rätt! Med 4 mm skärpedjup och 25 % överlapp går varje steg 3 mm framåt. 30 mm / 3 mm = 10 bilder för att täcka hela blomman.",
-          "failureMessage": "Med 25 % överlapp är effektiva steget 75 % av skärpedjupet: 4 mm × 0,75 = 3 mm. Du behöver 30 mm / 3 mm = 10 bilder.",
+          "successMessage": "Rätt! Med 4 mm skärpedjup och 25 % överlapp flyttas fokus 3 mm per steg. 30 mm / 3 mm = 10 bilder för att täcka hela blomman.",
+          "failureMessage": "Med 25 % överlapp blir det effektiva steget 75 % av skärpedjupet: 4 mm × 0,75 = 3 mm. Du behöver 30 mm / 3 mm = 10 bilder.",
           "options": {
             "0": { "label": "5 bilder" },
             "1": { "label": "10 bilder" },
@@ -98,8 +98,8 @@
         "2": {
           "scenario": "Efter att ha fogat ihop din focus stack ser du ett mjukt band tvärs över mitten av bilden där inget är skarpt. Vad har troligen gått fel?",
           "hint": "Fundera på vad som kopplar ihop ena bildens skarpa zon med nästa.",
-          "successMessage": "Precis! Otillräckligt överlapp mellan grannbilderna skapar ett glapp där ingen bild är skarp. Öka överlappet till 25–30 % och fota om.",
-          "failureMessage": "Ett mjukt band betyder vanligen att fokussteget var för stort — grannbildernas skärpedjup överlappade inte tillräckligt. Öka överlappsprocenten.",
+          "successMessage": "Precis! För litet överlapp mellan närliggande bilder skapar ett glapp där ingen bild är skarp. Öka överlappet till 25–30 % och fota om.",
+          "failureMessage": "Ett mjukt band betyder oftast att fokussteget var för stort — närliggande bilders skärpedjup mötte inte varandra. Öka överlappet i procent.",
           "options": {
             "0": { "label": "Bländaren var för stor" },
             "1": { "label": "Otillräckligt överlapp mellan fokussteg" },

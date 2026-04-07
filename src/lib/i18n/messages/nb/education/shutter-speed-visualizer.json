@@ -1,12 +1,12 @@
 {
   "education": {
     "shutter-speed-visualizer": {
-      "beginner": "Lukkertid-guiden hjelper deg å finne den laveste lukkertiden du kan bruke og fortsatt få et skarpt håndholdt bilde. Hvis lukkertiden er for lav, vil kameraristelse fra hendene dine gjøre bildet uskarpt. Den laveste trygge hastigheten avhenger av brennvidde, om du har bildestabilisering, og hvor stødige hendene dine er.",
-      "deeper": "Den klassiske «resiprok-regelen» sier at for skarpe håndholdte bilder bør lukkertiden være minst 1/(brennvidde) sekunder — så et 200 mm-objektiv trenger minst 1/200 s. På cropsensor-kameraer bør du bruke ekvivalent brennvidde (for eksempel 200 mm på 1,5x crop = 1/300 s). Moderne innebygd stabilisering (IBIS) og optisk stabilisering (OIS) gir deg 3–7 ekstra blendertrinn å spille på, slik at det stabiliserte 200 mm-objektivet kan være skarpt på 1/15 s eller enda lavere. Men stabilisering kompenserer bare for kameraristelse, ikke motivets bevegelse. En person som går mot deg blir fortsatt uskarp på 1/15 s, uansett hvor god stabiliseringen er. For motiver i bevegelse må du velge lukkertid basert på motivets fart og avstand, ikke bare på brennvidden.",
+      "beginner": "Lukkertidguiden hjelper deg å finne den laveste lukkertiden du kan bruke og fortsatt få et skarpt bilde på frihånd. Er lukkertiden for lav, vil kameraristing fra hendene dine gjøre bildet uskarpt. Den laveste trygge lukkertiden avhenger av brennvidde, om du har bildestabilisering, og hvor stødige hendene dine er.",
+      "deeper": "Den klassiske «resiprokregelen» sier at for skarpe bilder på frihånd bør lukkertiden være minst 1/(brennvidde) sekunder — et 200 mm-objektiv trenger altså minst 1/200 s. På cropsensorkameraer bør du bruke ekvivalent brennvidde (for eksempel 200 mm på 1,5x crop = 1/300 s). Moderne innebygd stabilisering (IBIS) og optisk stabilisering (OIS) gir deg 3–7 ekstra trinn å spille på, slik at et stabilisert 200 mm-objektiv kan være skarpt på 1/15 s eller enda lavere. Men stabilisering kompenserer bare for kameraristing, ikke for motivets bevegelse. En person som går mot deg blir fortsatt uskarp på 1/15 s, uansett hvor god stabiliseringen er. For motiver i bevegelse må du velge lukkertid etter motivets fart og retning, ikke bare etter brennvidden.",
       "keyFactors": {
         "0": {
           "label": "Brennvidde",
-          "description": "Lange brennvidder forstørrer kameraristelse. Resiprok-regelen (1/brennvidde) er utgangspunktet for å finne minste lukkertid."
+          "description": "Lange brennvidder forstørrer kameraristing. Resiprokregelen (1/brennvidde) er utgangspunktet for å finne minste lukkertid."
         },
         "1": {
           "label": "Bildestabilisering",
@@ -14,52 +14,52 @@
         },
         "2": {
           "label": "Motivets bevegelse",
-          "description": "Stille motiver trenger bare nok hastighet til å motvirke kameraristelse. Motiver i bevegelse krever raskere tider uansett stabilisering: gåing (~1/125 s), løping (~1/500 s), kjøretøy (~1/1000 s+)."
+          "description": "Stillestående motiver trenger bare nok lukkertid til å motvirke kameraristing. Motiver i bevegelse krever raskere tider uansett stabilisering: gåing (~1/125 s), løping (~1/500 s), kjøretøy (~1/1000 s og raskere)."
         },
         "3": {
           "label": "Sensorstørrelse (cropfaktor)",
-          "description": "Cropsensor-kameraer multipliserer effektivt brennvidden for resiprok-regelen. Et 50 mm på 1,5x crop oppfører seg som 75 mm, så du trenger minst 1/75 s."
+          "description": "Cropsensorkameraer ganger effektivt brennvidden i resiprokregelen. Et 50 mm på 1,5x crop oppfører seg som 75 mm, så du trenger minst 1/75 s."
         }
       },
       "tips": {
         "0": {
-          "text": "Støtt deg mot en vegg, hold albuene inntil kroppen, og pust rolig ut før du trykker på utløseren. God teknikk kan gi deg 1–2 ekstra trinn stødighet utover resiprok-regelen."
+          "text": "Støtt deg mot en vegg, hold albuene inntil kroppen, og pust rolig ut før du trykker på utløseren. God teknikk kan gi deg 1–2 ekstra trinn stødighet utover resiprokregelen."
         },
         "1": {
-          "text": "Når du fotograferer mennesker, er det motivets bevegelse som vanligvis bestemmer minste lukkertid, ikke brennvidden. Selv med vidvinkel og stabilisering trenger et barn som løper minst 1/500 s."
+          "text": "Når du fotograferer mennesker, er det motivets bevegelse som vanligvis bestemmer minste lukkertid, ikke brennvidden. Selv med vidvinkel og stabilisering trenger et løpende barn minst 1/500 s."
         },
         "2": {
-          "text": "Fotograferer du ofte i svakt lys? Invester i et kamerahus med IBIS. Å kunne fotografere håndholdt på 1/2 s med vidvinkel åpner muligheter som ingen høy-ISO-ytelse kan matche."
+          "text": "Fotograferer du ofte i svakt lys? Invester i et kamerahus med IBIS. Å kunne fotografere på frihånd med 1/2 s og vidvinkel åpner muligheter som ingen høy-ISO-ytelse kan matche."
         }
       },
       "tooltips": {
         "focalLength": {
           "term": "Brennvidde",
-          "definition": "Objektivets brennvidde i millimeter. Påvirker minste trygge lukkertid direkte via resiprok-regelen: 1/(brennvidde) for fullformat, justert med cropfaktor for mindre sensorer."
+          "definition": "Objektivets brennvidde i millimeter. Påvirker minste trygge lukkertid direkte via resiprokregelen: 1/(brennvidde) for fullformat, justert med cropfaktor for mindre sensorer."
         },
         "sensor": {
           "term": "Sensorstørrelse",
-          "definition": "Kameraets sensorstørrelse, som bestemmer cropfaktoren. APS-C (1,5x) og Micro Four Thirds (2x) multipliserer effektiv brennvidde og krever raskere lukkertid for samme objektiv."
+          "definition": "Kameraets sensorstørrelse, som bestemmer cropfaktoren. APS-C (1,5x) og Micro Four Thirds (2x) ganger effektiv brennvidde og krever raskere lukkertid for samme objektiv."
         },
         "stabilization": {
           "term": "Bildestabilisering",
-          "definition": "Teknologi som kompenserer for kameraristelse. OIS (optisk stabilisering) sitter i objektivet, IBIS (in-body) i kamerahuset. De kan jobbe sammen for maksimal gevinst."
+          "definition": "Teknologi som kompenserer for kameraristing. OIS (optisk stabilisering) sitter i objektivet, IBIS (in-body) i kamerahuset. De kan jobbe sammen for maksimal gevinst."
         },
         "subjectMotion": {
           "term": "Motivets bevegelse",
-          "definition": "Hvor fort motivet beveger seg. Stille motiver trenger bare nok lukkertid til å motvirke kameraristelse. Motiver i bevegelse krever raskere tider basert på fart og retning i forhold til kameraet."
+          "definition": "Hvor fort motivet beveger seg. Stillestående motiver trenger bare nok lukkertid til å motvirke kameraristing. Motiver i bevegelse krever raskere tider, avhengig av fart og retning i forhold til kameraet."
         },
         "recommendedShutterSpeed": {
           "term": "Anbefalt lukkertid",
-          "definition": "Minste lukkertid beregnet for din kombinasjon av brennvidde, stabilisering, sensor og motivbevegelse. Fotografering på denne hastigheten eller raskere bør gi skarpe resultater."
+          "definition": "Minste lukkertid beregnet ut fra din kombinasjon av brennvidde, stabilisering, sensor og motivbevegelse. Fotograferer du på denne tiden eller raskere, bør du få skarpe bilder."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Du fotograferer med et 100 mm-objektiv på et fullformat-kamera uten bildestabilisering. Motivet står stille. Hva er minste anbefalte lukkertid?",
-          "hint": "Resiprok-regelen: minste lukkertid = 1 / brennvidde.",
-          "successMessage": "Riktig! Resiprok-regelen gir 1/100 s for et 100 mm-objektiv på fullformat. Det er det klassiske utgangspunktet for håndholdt skarphet.",
-          "failureMessage": "For et 100 mm på fullformat uten stabilisering gir resiprok-regelen 1/100 s som minste trygge lukkertid for stille motiver.",
+          "scenario": "Du fotograferer med et 100 mm-objektiv på et fullformatkamera uten bildestabilisering. Motivet står stille. Hva er minste anbefalte lukkertid?",
+          "hint": "Resiprokregelen: minste lukkertid = 1 / brennvidde.",
+          "successMessage": "Riktig! Resiprokregelen gir 1/100 s for et 100 mm-objektiv på fullformat. Det er det klassiske utgangspunktet for skarphet på frihånd.",
+          "failureMessage": "For et 100 mm på fullformat uten stabilisering gir resiprokregelen 1/100 s som minste trygge lukkertid for stillestående motiver.",
           "options": {
             "0": { "label": "1/50 s" },
             "1": { "label": "1/100 s" },
@@ -68,10 +68,10 @@
           }
         },
         "1": {
-          "scenario": "Du bruker et 50 mm-objektiv på et APS-C-kamera (cropfaktor 1,5x) uten stabilisering. Hva er minste lukkertid for et stille motiv?",
-          "hint": "Multipliser brennvidden med cropfaktoren før du bruker resiprok-regelen.",
+          "scenario": "Du bruker et 50 mm-objektiv på et APS-C-kamera (cropfaktor 1,5x) uten stabilisering. Hva er minste lukkertid for et stillestående motiv?",
+          "hint": "Gang brennvidden med cropfaktoren før du bruker resiprokregelen.",
           "successMessage": "Riktig! 50 mm × 1,5 = 75 mm ekvivalent, så du trenger minst 1/75 s. I praksis er det trygt å runde opp til 1/80 s.",
-          "failureMessage": "På APS-C gjør cropfaktoren (1,5x) at et 50 mm oppfører seg som et 75 mm. Resiprok-regelen gir 1/75 s som minste tid.",
+          "failureMessage": "På APS-C gjør cropfaktoren (1,5x) at et 50 mm oppfører seg som et 75 mm. Resiprokregelen gir 1/75 s som minste tid.",
           "options": {
             "0": { "label": "1/50 s" },
             "1": { "label": "1/75 s (rund til 1/80 s)" },
@@ -80,9 +80,9 @@
           }
         },
         "2": {
-          "scenario": "Du har et 200 mm-objektiv med OIS (4 trinn stabilisering) på et fullformat-hus med IBIS (5 trinn). Til sammen gir de rundt 6 trinn stabilisering. Hva er omtrent minste lukkertid for et stille motiv?",
-          "hint": "Start med resiprok-regelen (1/200 s) og legg til 6 trinn stabilisering.",
-          "successMessage": "Riktig! Fra 1/200 s og 6 trinn: 1/200 → 1/100 → 1/50 → 1/25 → 1/13 → 1/6 → 1/3 s. Cirka 1/3 sekund håndholdt med 200 mm — imponerende, men fullt mulig med moderne stabilisering!",
+          "scenario": "Du har et 200 mm-objektiv med OIS (4 trinn stabilisering) på et fullformathus med IBIS (5 trinn). Til sammen gir de rundt 6 trinn stabilisering. Hva er omtrent minste lukkertid for et stillestående motiv?",
+          "hint": "Start med resiprokregelen (1/200 s) og legg til 6 trinn stabilisering.",
+          "successMessage": "Riktig! Fra 1/200 s og 6 trinn: 1/200 → 1/100 → 1/50 → 1/25 → 1/13 → 1/6 → 1/3 s. Cirka 1/3 sekund på frihånd med 200 mm — imponerende, men fullt mulig med moderne stabilisering!",
           "failureMessage": "Fra 1/200 s dobler hvert stabiliseringstrinn den brukbare tiden: 1/200 → 1/100 → 1/50 → 1/25 → 1/13 → 1/6 → 1/3 s. Seks trinn med 200 mm gir omtrent 1/3 s.",
           "options": {
             "0": { "label": "1/30 s" },
@@ -92,9 +92,9 @@
           }
         },
         "3": {
-          "scenario": "Du fotograferer en venn som jogger i en park med et 35 mm-objektiv på et fullformat-kamera med IBIS. IBIS gir 5 trinn stabilisering, så resiprok-regelen alene ville gitt deg cirka 1 sekund. Bør du bruke 1 sekund?",
-          "hint": "Stabilisering kompenserer for kameraristelse, ikke for motivets bevegelse.",
-          "successMessage": "Riktig! Stabilisering motvirker bare kameraristelse. En joggende person trenger minst 1/250 s for å fryse bevegelsen, uansett hvor god stabiliseringen er.",
+          "scenario": "Du fotograferer en venn som jogger i en park med et 35 mm-objektiv på et fullformatkamera med IBIS. IBIS gir 5 trinn stabilisering, så resiprokregelen alene ville gitt deg cirka 1 sekund. Bør du bruke 1 sekund?",
+          "hint": "Stabilisering kompenserer for kameraristing, ikke for motivets bevegelse.",
+          "successMessage": "Riktig! Stabilisering motvirker bare kameraristing. En joggende person trenger minst 1/250 s for å fryses, uansett hvor god stabiliseringen er.",
           "failureMessage": "Stabilisering kan ikke fryse et motiv i bevegelse. For en joggende person trenger du minst 1/250 s for å unngå bevegelsesuskarphet, selv om kameraet kunne holdt seg stødig i 1 sekund.",
           "options": {
             "0": { "label": "Ja — IBIS håndterer all bevegelse" },
@@ -104,8 +104,8 @@
           }
         },
         "4": {
-          "scenario": "Du vil ta et panorerende bilde av en syklist — rytteren skal være skarp mens bakgrunnen viser bevegelsesuskarphet. Du bruker et 70 mm-objektiv på fullformat. Hvilket lukkertid-område bør du prøve?",
-          "hint": "Panorering bruker bevisst en lav lukkertid mens du følger motivet. For rask fryser alt; for lav gjør også motivet uskarpt.",
+          "scenario": "Du vil ta et panoreringsbilde av en syklist — rytteren skal være skarp mens bakgrunnen viser bevegelsesuskarphet. Du bruker et 70 mm-objektiv på fullformat. Hvilket lukkertidområde bør du prøve?",
+          "hint": "Panorering bruker bevisst en lav lukkertid mens du følger motivet. For rask tid fryser alt, for lav gjør også motivet uskarpt.",
           "successMessage": "Riktig! For å panorere en syklist er 1/30 s til 1/60 s sweet spot. Det er lavt nok til at bakgrunnen blir til striper, mens sporingsbevegelsen din holder rytteren relativt skarp. Det krever øvelse — bruk seriemodus og regn med mange bortkastede bilder.",
           "failureMessage": "Panorering krever en lukkertid lav nok til å gjøre bakgrunnen uskarp, men rask nok til at sporingen din holder motivet skarpt. For en syklist ligger det vanligvis mellom 1/30 s og 1/60 s.",
           "options": {

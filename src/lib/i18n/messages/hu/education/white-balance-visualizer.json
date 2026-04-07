@@ -1,19 +1,19 @@
 {
   "education": {
     "white-balance-visualizer": {
-      "beginner": "A fehéregyensúly úgy igazítja a színeket a fotódon, hogy a fehér tárgyak bármilyen fényben fehérnek látszódjanak. A különböző fényforrásoknak eltérő a színhőmérséklete — egy gyertya meleg és narancsos, az árnyék hűvös és kékes. A kamera fehéregyensúly-beállítása ezeket a különbségeket kompenzálja, hogy a színek természetesnek tűnjenek.",
+      "beginner": "A fehéregyensúly úgy igazítja a fotó színeit, hogy a fehér tárgyak bármilyen fényben fehérnek látszódjanak. A különböző fényforrásoknak más a színhőmérséklete — a gyertya meleg és narancsos, az árnyék hűvös és kékes. A kamera fehéregyensúly-beállítása ezeket a különbségeket kompenzálja, így a színek természetesek maradnak.",
       "deeper": {
         "0": {
           "heading": "Színhőmérséklet",
-          "text": "A színhőmérsékletet Kelvinben (K) mérik, és az „ideális feketetest” által az adott hőmérsékleten kibocsátott fény színének felel meg. Az alacsonyabb értékek (2000–3500K) meleg, vöröses-narancsos fényt adnak (izzók, gyertyák), a magasabbak (6500–10000K) pedig hűvös, kékes fényt (árnyék, borult ég)."
+          "text": "A színhőmérsékletet Kelvinben (K) mérjük, és annak felel meg, hogy egy „ideális feketetest” adott hőmérsékleten milyen színű fényt bocsát ki. Az alacsonyabb értékek (2000–3500K) meleg, vöröses-narancsos fényt adnak (izzók, gyertyák), a magasabbak (6500–10000K) pedig hűvös, kékes fényt (árnyék, borult ég)."
         },
         "1": {
           "heading": "Hogyan működik a fehéregyensúly",
-          "text": "A kamera fehéregyensúly-rendszere az ellentétes színeltolódást alkalmazza, hogy semlegesítse a környezeti színárnyalatot. Ha a fehéregyensúlyt „Tungsten” (~3200K) módba állítod, a kamera kéket ad hozzá, hogy ellensúlyozza az izzók narancsos színét. A digitális fotózásban a fehéregyensúlyt a vörös és kék csatorna szorzójaként alkalmazzák a zöldhöz képest."
+          "text": "A kamera fehéregyensúly-rendszere ellentétes irányú színeltolást alkalmaz, hogy semlegesítse a környezeti színárnyalatot. Ha a fehéregyensúlyt „Tungsten” (~3200K) módba állítod, a kamera kéket ad hozzá, és ezzel ellensúlyozza az izzók narancsos fényét. A digitális fotózásban a fehéregyensúly a vörös és a kék csatorna szorzójaként jelenik meg a zöldhöz képest."
         },
         "2": {
           "heading": "A RAW előnye",
-          "text": "A RAW formátum minden színadatot megőriz, és lehetővé teszi a fehéregyensúly szabad utólagos módosítását minőségvesztés nélkül — ez pusztán egy metaadat-címke, amit a konverziókor alkalmaznak."
+          "text": "A RAW formátum minden színadatot megőriz, és lehetővé teszi, hogy a fehéregyensúlyt utólag szabadon, veszteség nélkül állítgasd — lényegében csak egy metaadat-címke, amit a konverziókor alkalmaz a szoftver."
         }
       },
       "keyFactors": {
@@ -36,13 +36,13 @@
       },
       "tips": {
         "0": {
-          "text": "Mindig RAW-ban fotózz, ha teljes rugalmasságot akarsz a fehéregyensúly későbbi módosításához. A RAW fájlok a feldolgozatlan érzékelőadatot tárolják, így a fehéregyensúly-változtatás veszteségmentes."
+          "text": "Ha teljes rugalmasságot akarsz a fehéregyensúly utólagos állításához, fotózz mindig RAW-ban. A RAW-fájl a nyers érzékelőadatokat tárolja, így a fehéregyensúly módosítása veszteségmentes."
         },
         "1": {
-          "text": "Kreatív hatásért próbálj szándékosan „rosszul” illeszteni. Arany órában napfény-fehéregyensúlyt beállítva még melegebbek lesznek a naplementék, míg kültéren Tungsten-beállítás drámaian hideg kék hangulatot ad."
+          "text": "Kreatív hatásért próbálj szándékosan „rosszul” illeszteni. Arany órában a Daylight fehéregyensúly még melegebbé teszi a naplementéket, kültéren pedig a Tungsten-beállítás drámai, hideg kék hangulatot ad."
         },
         "2": {
-          "text": "Kevert fényben (pl. ablakfény + izzólámpa) használj szürkekártyát egyéni fehéregyensúly beállításához, vagy illeszd a vaku színét a környezeti fényforráshoz gélszűrővel."
+          "text": "Kevert fényben (pl. ablakfény + izzólámpa) használj szürkekártyát egyedi fehéregyensúlyhoz, vagy gélszűrővel illeszd a vaku színét a környezeti fényforráshoz."
         }
       },
       "tooltips": {
@@ -65,10 +65,10 @@
       },
       "challenges": {
         "0": {
-          "scenario": "A beltéri fotóid hagyományos izzólámpák alatt nagyon narancsosak/sárgásak. Melyik fehéregyensúly-beállítás javítja?",
-          "hint": "A háztartási izzók meleg, narancsos fényt bocsátanak ki 2800-3200K körül.",
-          "successMessage": "Jó! A Tungsten beállítás kéket ad hozzá, hogy ellensúlyozza az izzók narancsosságát, és semleges színeket kapj.",
-          "failureMessage": "Az izzók meleg narancsos fényt bocsátanak ki. A Tungsten beállítást kifejezetten ennek a színárnyalatnak a semlegesítésére tervezték kék hozzáadásával.",
+          "scenario": "A beltéri fotóid hagyományos izzólámpa alatt nagyon narancsosak/sárgásak. Melyik fehéregyensúly-beállítás javítja ezt?",
+          "hint": "A háztartási izzók meleg, narancsos fényt adnak, nagyjából 2800–3200K körül.",
+          "successMessage": "Így van! A Tungsten beállítás kéket ad hozzá, hogy ellensúlyozza az izzók narancsosságát, és semleges színeket kapj.",
+          "failureMessage": "Az izzók meleg, narancsos fényt adnak. A Tungsten beállítást kifejezetten erre a színárnyalatra tervezték — kéket ad hozzá a semlegesítéshez.",
           "options": {
             "0": { "label": "Daylight" },
             "1": { "label": "Tungsten" },
@@ -78,9 +78,9 @@
         },
         "1": {
           "scenario": "Portrékat fotózol arany órában, és meg akarod tartani a naplemente gyönyörű meleg ragyogását. Melyik fehéregyensúly-beállítást használd?",
-          "hint": "Ha a „helyes” fehéregyensúlyt állítod be arany órához, az semlegesíti a meleg tónusokat, amiket meg akarsz tartani.",
-          "successMessage": "Jó! A Daylight beállítás (vagy akár a Cloudy/Shade) arany órában megőrzi és felerősíti a meleg tónusokat ahelyett, hogy semlegesítené őket.",
-          "failureMessage": "Az arany óra meleg ragyogásának megtartásához olyan fehéregyensúlyt használj, ami nem kompenzálja a meleg fényt. A Daylight vagy magasabb beállítások megőrzik (sőt fokozzák) a melegséget.",
+          "hint": "Ha arany órában „helyes” fehéregyensúlyt állítasz be, azzal éppen a meleg tónusokat semlegesíted, amiket meg akartál tartani.",
+          "successMessage": "Így van! A Daylight beállítás (vagy akár a Cloudy/Shade) arany órában megőrzi, sőt felerősíti a meleg tónusokat, ahelyett hogy semlegesítené őket.",
+          "failureMessage": "Az arany óra meleg ragyogásának megtartásához olyan fehéregyensúlyt használj, ami nem kompenzálja a meleg fényt. A Daylight vagy a magasabb beállítások megőrzik, sőt még fokozzák is a melegséget.",
           "options": {
             "0": { "label": "Automatikus fehéregyensúly" },
             "1": { "label": "Tungsten (a melegség semlegesítéséhez)" },

@@ -1,8 +1,8 @@
 {
   "education": {
     "perspective-compression-simulator": {
-      "beginner": "A perspektíva-tömörítés egy optikai hatás, amelynél a különböző távolságban lévő tárgyak közelebb tűnnek egymáshoz, mint valójában. Leggyakrabban hosszú teleobjektíveknél (pl. 200mm vagy 400mm) figyelhető meg nagy távolságból. Népszerű hiedelemmel ellentétben nem maga az objektív okozza a tömörítést, hanem a kamera és a jelenet közötti távolság.",
-      "deeper": "A tömörítés azért jön létre, mert nagy távolságokon a téma és a háttér közötti relatív távolságkülönbség kicsi lesz. Például ha 30 méterre vagy a témától, és a háttér még 6 méterrel mögötte, akkor a háttér csak 20%-kal van messzebb, mint a téma. 1,5 méterről ugyanaz a 6 méteres rés 500%-kal teszi távolabbivá a hátteret. Ha messzebb mész és teleobjektívvel „megtöltöd a képet” a témával, csökkented a relatív mélységet, és a háttér nagyobbnak, „összetömörítettnek” tűnik a téma mögött.",
+      "beginner": "A perspektíva-tömörítés optikai hatás, amelynél a különböző távolságban lévő tárgyak közelebbinek tűnnek egymáshoz, mint amennyire valójában vannak. Leggyakrabban hosszú teleobjektíveknél (pl. 200mm vagy 400mm), nagy távolságból figyelhető meg. Bár sokan másra gondolnak, a tömörítést nem maga az objektív okozza, hanem a kamera és a jelenet közötti távolság.",
+      "deeper": "A tömörítés azért alakul ki, mert nagy távolságokon a téma és a háttér közötti relatív távolságkülönbség kicsi lesz. Ha például 30 méterre vagy a témától, és a háttér még 6 méterrel mögötte van, akkor a háttér csak 20%-kal van messzebb, mint a téma. 1,5 méterről nézve viszont ugyanaz a 6 méteres rés 500%-kal teszi távolabbivá a hátteret. Ha hátrébb mész, és teleobjektívvel „megtöltöd a képet” a témával, csökkented a relatív mélységet, és a háttér nagyobbnak, „összetömörítettnek” hat a téma mögött.",
       "keyFactors": {
         "0": {
           "label": "Felvételi távolság",
@@ -19,10 +19,10 @@
       },
       "tips": {
         "0": {
-          "text": "Ha azt akarod, hogy a hegyek hatalmasnak tűnjenek a téma mögött, menj annyira messze, amennyire lehet, és használj a leghosszabb teleobjektívet. Ez „behúzza” a hátteret az előtérhez."
+          "text": "Ha azt akarod, hogy a hegyek hatalmasnak tűnjenek a téma mögött, menj olyan messzire, amennyire lehet, és használd a leghosszabb teleobjektívedet. Ez „behúzza” a hátteret az előtérhez."
         },
         "1": {
-          "text": "Portréfotózásnál a 85mm vagy 135mm objektívek kedveltek, mert az enyhe tömörítés hízelgőbb arcábrázolást ad a nagylátószögű objektívekhez képest."
+          "text": "Portréfotózásnál a 85mm vagy 135mm objektívek azért kedveltek, mert az enyhe tömörítés hízelgőbben rajzolja az arcot, mint a nagylátószögű objektívek."
         },
         "2": {
           "text": "Használd a perspektíva-kiterjesztést (nagylátószögű, közeli felvétel), hogy kiemeld az előtér vonalvezetését, és nagyobbnak, tágasabbnak hasson a tér."

@@ -1,8 +1,8 @@
 {
   "education": {
     "hyperfocal-simulator": {
-      "beginner": "Den hyperfokale afstand er det tætteste punkt, du kan fokusere på, mens alt i uendelig stadig er acceptabelt skarpt. Når du fokuserer på den hyperfokale afstand, strækker dybdeskarpheden sig fra halvdelen af den afstand helt ud til uendelig. Landskabsfotografer bruger teknikken til at maksimere skarpheden fra forgrund til horisont.",
-      "deeper": "Den hyperfokale afstand udledes af tyndlinseligningen og begrebet uskarphedscirkel (CoC). Den er lig med brændvidden i anden divideret med produktet af f-tallet og CoC-diameteren: H = f² / (N × c). Alt fra H/2 til uendelig falder inden for acceptabel skarphed. CoC afhænger af sensorstørrelse — mindre sensorer har en mindre acceptabel CoC, hvilket skubber hyperfokal afstanden længere væk ved samme brændvidde og blænde. Derfor ser crop-sensor-kameraer ud til at have større dybdeskarphed: CoC-standarden er strammere i forhold til billedets areal. I praksis betyder diffraktion ved meget små blænder (f/16 og opefter på de fleste sensorer), at der er et kompromis mellem maksimal dybdeskarphed og skarphed pr. pixel.",
+      "beginner": "Den hyperfokale afstand er det tætteste punkt, du kan stille skarpt på, mens alt ude i uendelig stadig er acceptabelt skarpt. Stiller du skarpt på hyperfokal afstand, strækker dybdeskarpheden sig fra halvdelen af den afstand og helt ud til uendelig. Landskabsfotografer bruger teknikken til at maksimere skarpheden fra forgrund til horisont.",
+      "deeper": "Den hyperfokale afstand udledes af tyndlinseligningen og begrebet uskarphedscirkel (CoC). Den er lig med brændvidden i anden divideret med produktet af f-tallet og CoC-diameteren: H = f² / (N × c). Alt fra H/2 til uendelig falder inden for acceptabel skarphed. CoC afhænger af sensorstørrelsen — mindre sensorer har en mindre acceptabel CoC, og det skubber hyperfokal afstanden længere væk ved samme brændvidde og blænde. Derfor ser crop-sensor-kameraer ud til at have større dybdeskarphed: CoC-standarden er strammere i forhold til billedets areal. I praksis betyder diffraktion ved meget små blænder (f/16 og opefter på de fleste sensorer), at der er et kompromis mellem maksimal dybdeskarphed og skarphed pr. pixel.",
       "keyFactors": {
         "0": {
           "label": "Brændvidde",
@@ -14,28 +14,28 @@
         },
         "2": {
           "label": "Sensorstørrelse",
-          "description": "Mindre sensorer bruger en mindre uskarphedscirkel, hvilket øger hyperfokal afstanden ved samme udsnit."
+          "description": "Mindre sensorer bruger en mindre uskarphedscirkel, og det øger hyperfokal afstanden ved samme udsnit."
         },
         "3": {
           "label": "Uskarphedscirkel",
-          "description": "Den maksimale diameter på en uskarphedsplet, der regnes \"acceptabelt skarp\" — typisk 0,03 mm for fuldformat."
+          "description": "Den største diameter på en uskarphedsplet, der regnes for \"acceptabelt skarp\" — typisk 0,03 mm for fuldformat."
         }
       },
       "tips": {
         "0": {
-          "text": "Til hurtig landskabsfotografering: fokusér omkring en tredjedel ind i motivet — det nærmer sig hyperfokal punktet for de fleste vidvinkel-opsætninger."
+          "text": "Til hurtig landskabsfotografering: stil skarpt omkring en tredjedel ind i billedet — det rammer tæt på hyperfokal punktet for de fleste vidvinkel-opsætninger."
         },
         "1": {
-          "text": "Undgå at lukke ned under f/16 på fuldformat eller f/11 på APS-C. Diffraktion udligner de dybdegevinster, du jagter."
+          "text": "Undgå at lukke ned under f/16 på fuldformat eller f/11 på APS-C. Diffraktion æder den dybde, du troede, du vandt."
         },
         "2": {
-          "text": "Brug live view med forstørrelse til at ramme fokus præcist på hyperfokal afstanden i stedet for at stole på linsens afstandsskala, som ofte er upræcis på moderne autofokuslinser."
+          "text": "Brug live view med forstørrelse til at ramme fokus præcist på hyperfokal afstanden i stedet for at stole på linsens afstandsskala — den er ofte upræcis på moderne autofokuslinser."
         }
       },
       "tooltips": {
         "Sensor": {
           "term": "Sensor",
-          "definition": "Kamerasensorens format. Mindre sensorer har en strammere standard for uskarphedscirklen, hvilket skubber alle hyperfokal afstande længere væk."
+          "definition": "Kamerasensorens format. Mindre sensorer har en strammere standard for uskarphedscirklen, og det skubber alle hyperfokal afstande længere væk."
         }
       },
       "challenges": {
@@ -61,9 +61,9 @@
           }
         },
         "2": {
-          "scenario": "Du vandrer med et APS-C-kamera og et 35mm. Du vil have alt fra ca. 3 meter til uendelig skarpt. Hvilket blændeområde skal du kigge på i tabellen for at finde en hyperfokal afstand omkring 6 meter (så halvdelen — 3 m — er din nære fokusgrænse)?",
+          "scenario": "Du er ude at vandre med et APS-C-kamera og et 35mm. Du vil have alt fra ca. 3 meter til uendelig skarpt. Hvilket blændeområde skal du kigge på i tabellen for at finde en hyperfokal afstand omkring 6 meter (så halvdelen — 3 m — er din nære fokusgrænse)?",
           "hint": "Husk: nær fokus = hyperfokal / 2. Find en blænde, der giver hyperfokal omkring 6 m.",
-          "successMessage": "Flot! Du regnede rigtigt ud, at du skal bruge en hyperfokal afstand på ca. 6 m, og fandt det rigtige blændeområde.",
+          "successMessage": "Flot! Du regnede rigtigt ud, at du skal bruge en hyperfokal afstand på ca. 6 m, og du fandt det rigtige blændeområde.",
           "failureMessage": "Husk: nær fokus er halvdelen af hyperfokal afstanden. Du skal have hyperfokal omkring 6 m for at få en nær fokusgrænse på 3 m.",
           "options": {
             "0": { "label": "f/2.8 — f/4" },
@@ -72,10 +72,10 @@
           }
         },
         "3": {
-          "scenario": "En ven skifter fra et fuldformat til Micro Four Thirds, men bliver ved med at skyde de samme brændvidder. De klager over, at hyperfokal afstandene virker anderledes. Hvorfor?",
+          "scenario": "En ven skifter fra fuldformat til Micro Four Thirds, men bliver ved med at skyde de samme brændvidder. Han klager over, at hyperfokal afstandene virker anderledes. Hvorfor?",
           "hint": "Uskarphedscirklen beregnes ud fra sensorstørrelsen.",
-          "successMessage": "Præcis! Den mindre M43-sensor bruger en mindre CoC (omkring 0,015 mm mod 0,03 mm), hvilket øger hyperfokal afstanden for samme brændvidde og blænde.",
-          "failureMessage": "Nøglefaktoren er uskarphedscirklen. Mindre sensorer kræver en strammere CoC-standard, der skubber hyperfokal afstande længere væk.",
+          "successMessage": "Præcis! Den mindre M43-sensor bruger en mindre CoC (omkring 0,015 mm mod 0,03 mm), og det øger hyperfokal afstanden for samme brændvidde og blænde.",
+          "failureMessage": "Nøglefaktoren er uskarphedscirklen. Mindre sensorer kræver en strammere CoC-standard, og det skubber hyperfokal afstande længere væk.",
           "options": {
             "0": { "label": "Linsens brændvidde ændres på crop-sensorer" },
             "1": { "label": "Mindre sensorer bruger en mindre uskarphedscirkel" },
@@ -84,9 +84,9 @@
         },
         "4": {
           "scenario": "Du fotograferer arkitektur ved 14mm f/11 på fuldformat. Tabellen viser en meget kort hyperfokal afstand. Skal du lukke mere ned til f/22 for endnu mere dybdeskarphed, eller er f/11 det bedre valg?",
-          "hint": "Tænk på hvad der sker med billedskarpheden ved meget små blænder.",
-          "successMessage": "Flot! Ved f/11 er diffraktionen minimal på fuldformat, og hyperfokal afstanden ved 14mm er allerede meget kort. At lukke ned til f/22 ville blødgøre billedet på grund af diffraktion uden meningsfuld DoF-gevinst.",
-          "failureMessage": "Selvom f/22 på papiret giver en kortere hyperfokal afstand, reducerer diffraktionen ved f/22 på fuldformat faktisk den samlede skarphed. Ved 14mm f/11 er hyperfokal afstanden allerede så kort, at den ekstra DoF ikke er diffraktions-straffen værd.",
+          "hint": "Tænk på, hvad der sker med billedets skarphed ved meget små blænder.",
+          "successMessage": "Flot! Ved f/11 er diffraktionen minimal på fuldformat, og hyperfokal afstanden ved 14mm er allerede meget kort. At lukke ned til f/22 ville blødgøre billedet på grund af diffraktion uden nogen reel DoF-gevinst.",
+          "failureMessage": "Selvom f/22 på papiret giver en kortere hyperfokal afstand, reducerer diffraktionen ved f/22 på fuldformat den samlede skarphed. Ved 14mm f/11 er hyperfokal afstanden allerede så kort, at den ekstra DoF ikke er diffraktionsstraffen værd.",
           "options": {
             "0": { "label": "Luk ned til f/22 for maksimal dybdeskarphed" },
             "1": { "label": "Bliv ved f/11 — diffraktion ved f/22 reducerer skarpheden" }

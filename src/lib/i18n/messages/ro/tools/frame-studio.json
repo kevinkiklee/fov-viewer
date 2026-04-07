@@ -2,7 +2,7 @@
   "toolUI": {
     "frame-studio": {
       "photo": "Fotografie",
-      "dropPrompt": "Trage o fotografie sau apasă pentru a răsfoi",
+      "dropPrompt": "Trage o fotografie aici sau apasă pentru a răsfoi",
       "modeView": "Vizualizează",
       "modeCrop": "Decupează",
       "modeFrame": "Cadru",
@@ -11,7 +11,7 @@
       "deletePhoto": "Șterge fotografia",
       "resetGrid": "Resetează grila",
       "export": "Exportă",
-      "uploadPrompt": "Încarcă o fotografie pentru a începe",
+      "uploadPrompt": "Încarcă o fotografie ca să începi",
       "aspectRatio": "Raport de aspect",
       "customRatio": "Raport personalizat",
       "placeholderW": "L",
@@ -19,8 +19,8 @@
       "set": "Setează",
       "applyCrop": "Aplică decuparea",
       "flipOrientation": "Inversează orientarea",
-      "portrait": "Portrait",
-      "landscape": "Landscape",
+      "portrait": "Vertical",
+      "landscape": "Orizontal",
       "frame": "Cadru",
       "presets": "Presete",
       "presetNone": "Niciunul",
@@ -76,15 +76,15 @@
       "faq": {
         "what-is-rule-of-thirds": {
           "question": "Ce este regula treimilor în fotografie?",
-          "answer": "Regula treimilor împarte imaginea într-o grilă 3×3. Plasarea subiectelor principale de-a lungul liniilor grilei sau la intersecțiile lor creează compoziții mai dinamice și mai echilibrate decât centrarea subiectului."
+          "answer": "Regula treimilor împarte cadrul într-o grilă 3×3. Plasând subiectele principale pe liniile grilei sau în punctele de intersecție obții compoziții mai dinamice și mai echilibrate decât dacă centrezi subiectul."
         },
         "best-aspect-ratio-for-instagram": {
           "question": "Care este cel mai bun raport de aspect pentru postările pe Instagram?",
-          "answer": "Instagram suportă 1:1 (pătrat), 4:5 (portrait) și 1.91:1 (landscape). Raportul 4:5 portrait ocupă cel mai mult spațiu pe ecran în feed și are de obicei cel mai mare engagement."
+          "answer": "Instagram acceptă 1:1 (pătrat), 4:5 (vertical) și 1.91:1 (orizontal). Raportul 4:5 vertical ocupă cel mai mult spațiu pe ecran în feed și, de obicei, are cel mai mare engagement."
         },
         "how-to-use-golden-ratio": {
           "question": "Cum folosesc raportul de aur pentru compoziția foto?",
-          "answer": "Raportul de aur (aproximativ 1.618:1) creează un model în spirală care ghidează ochiul privitorului prin imagine. Plasează subiectul principal în punctul cel mai strâns al spiralei și lasă liniile de ghidaj să urmeze curba spre exterior."
+          "answer": "Raportul de aur (aproximativ 1.618:1) creează o spirală care ghidează privirea prin imagine. Plasează subiectul principal în punctul cel mai strâns al spiralei și lasă liniile de ghidaj să urmeze curba spre exterior."
         }
       }
     }

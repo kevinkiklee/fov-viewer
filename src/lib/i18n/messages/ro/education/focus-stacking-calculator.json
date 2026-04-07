@@ -1,44 +1,44 @@
 {
   "education": {
     "focus-stacking-calculator": {
-      "beginner": "Focus stacking este o tehnică prin care faci mai multe fotografii la distanțe de focalizare diferite și le îmbini în software ca să obții o imagine clară din prim-plan până în fundal. Este esențial pentru fotografia macro, unde adâncimea câmpului este extrem de subțire, și util în peisaj când ai nevoie să ai atât prim-planul apropiat, cât și fundalul îndepărtat, în focalizare.",
+      "beginner": "Focus stacking este tehnica prin care faci mai multe cadre la distanțe de focalizare diferite și le îmbini în software ca să obții o imagine clară din prim-plan până în fundal. E esențial la fotografia macro, unde adâncimea câmpului e extrem de subțire, și util în peisaj când ai nevoie să ai atât prim-planul apropiat, cât și fundalul îndepărtat, în focalizare.",
       "deeper": {
         "0": {
           "heading": "De ce este necesar stacking-ul",
-          "text": "La măriri macro, chiar și f/16 poate oferi doar câțiva milimetri de adâncime a câmpului. Închiderea și mai mult introduce înmuiere prin difracție care degradează imaginea. Focus stacking-ul îți permite să fotografiezi la cea mai clară diafragmă a obiectivului (de obicei f/5.6-f/8) și să combini feliile clare. Fiecare cadru mută focalizarea ușor înainte, acoperind o nouă felie din subiect."
+          "text": "La măririle macro, chiar și f/16 poate da doar câțiva milimetri de adâncime a câmpului. Dacă închizi și mai mult, apare înmuierea prin difracție, care degradează imaginea. Focus stacking-ul îți permite să fotografiezi la cea mai clară diafragmă a obiectivului (de obicei f/5.6-f/8) și să combini feliile clare. La fiecare cadru, focalizarea se mută puțin mai departe și acoperă o nouă felie din subiect."
         },
         "1": {
           "heading": "Planificarea stack-ului",
-          "text": "Cheia unui stack reușit este ca adâncimea câmpului a fiecărui cadru să se suprapună cu a următorului cu 20-30%. Prea puțină suprapunere creează goluri unde nimic nu e clar; prea multă risipește cadre fără beneficiu. Calculatorul determină DoF-ul per cadru folosind formula cercului de confuzie, scade marja de suprapunere și împarte intervalul total de adâncime la pasul efectiv pentru a calcula numărul de cadre."
+          "text": "Cheia unui stack reușit este ca adâncimea câmpului din fiecare cadru să se suprapună 20-30% cu cea a cadrului următor. Prea puțină suprapunere creează goluri în care nimic nu e clar, iar prea multă risipește cadre fără beneficiu. Calculatorul determină DoF-ul per cadru folosind formula cercului de confuzie, scade marja de suprapunere și împarte intervalul total de adâncime la pasul efectiv ca să calculeze numărul de cadre."
         },
         "2": {
           "heading": "Îmbinare și aliniere",
-          "text": "Programe precum Photoshop, Helicon Focus sau Zerene Stacker aliniază cadrele (schimbări ușoare de mărire apar când se schimbă focalizarea), apoi selectează cei mai clari pixeli din fiecare strat. Fotografierea pe un trepied solid, cu lumină constantă, și folosirea unei șine de focalizare pentru incremente precise oferă cele mai curate rezultate."
+          "text": "Programe precum Photoshop, Helicon Focus sau Zerene Stacker aliniază cadrele (când focalizarea se schimbă, apar mici variații de mărire), apoi aleg cei mai clari pixeli din fiecare strat. Fotografierea pe un trepied solid, cu lumină constantă, și folosirea unei șine de focalizare pentru pași preciși dau cele mai curate rezultate."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Diafragmă",
-          "description": "Determină adâncimea câmpului per cadru. O diafragmă moderată (f/5.6-f/8) echilibrează claritatea și DoF-ul per cadru. Evită diafragmele foarte mici — difracția reduce tocmai claritatea pentru care faci stack."
+          "description": "Determină adâncimea câmpului per cadru. O diafragmă moderată (f/5.6-f/8) echilibrează claritatea și DoF-ul per cadru. Evită diafragmele foarte închise — difracția ia exact claritatea pentru care faci stacking-ul."
         },
         "1": {
           "label": "Interval de adâncime",
-          "description": "Distanța de la cel mai apropiat la cel mai îndepărtat punct pe care îl vrei clar. Intervalele mai mari cer mai multe cadre. La macro pot fi doar câțiva centimetri; la peisaje pot ajunge de la câțiva metri la infinit."
+          "description": "Distanța de la cel mai apropiat la cel mai îndepărtat punct pe care îl vrei clar. Intervalele mai mari cer mai multe cadre. La macro sunt doar câțiva centimetri, iar la peisaje pot ajunge de la câțiva metri până la infinit."
         },
         "2": {
           "label": "Suprapunere",
-          "description": "Procentul din DoF-ul fiecărui cadru care se suprapune cu cele adiacente. 20-30% este standard. Mai puțin riscă goluri; mai mult risipește cadre."
+          "description": "Procentul din DoF-ul fiecărui cadru care se suprapune cu cele vecine. 20-30% este standardul. Mai puțin de atât riști goluri, iar mai mult înseamnă cadre risipite."
         }
       },
       "tips": {
         "0": {
-          "text": "Folosește o șină de focalizare în loc să rotești inelul de focalizare al obiectivului la stacking-ul macro. Șina mișcă întreaga cameră înainte în incremente precise, evitând schimbările ușoare de mărire care apar când refocalizezi obiectivul."
+          "text": "La stacking-ul macro, folosește o șină de focalizare în loc să rotești inelul obiectivului. Șina mută întregul aparat înainte în pași preciși și evită micile schimbări de mărire care apar când refocalizezi obiectivul."
         },
         "1": {
-          "text": "Ține diafragma la punctul dulce al obiectivului (de obicei f/5.6-f/8). Sensul stacking-ului este să eviți închiderea la f/16+, așa că folosește cea mai clară diafragmă și lasă stack-ul să se ocupe de adâncime."
+          "text": "Ține diafragma în punctul optim al obiectivului (de obicei f/5.6-f/8). Ideea stacking-ului e tocmai să eviți închiderea la f/16 și peste, așa că folosește cea mai clară diafragmă și lasă stack-ul să se ocupe de adâncime."
         },
         "2": {
-          "text": "Pentru stack-uri de peisaj, fotografiază din față în spate: focalizează mai întâi pe elementul cel mai apropiat, apoi muta focalizarea spre infinit. Asta face alinierea mai ușoară, pentru că prim-planul (cu cel mai mult paralaxă) este captat primul."
+          "text": "Pentru stack-urile de peisaj, fotografiază din față în spate: focalizează mai întâi pe elementul cel mai apropiat, apoi mută focalizarea spre infinit. Așa alinierea e mai ușoară, pentru că prim-planul (care are cea mai mare paralaxă) e captat primul."
         }
       },
       "tooltips": {
@@ -48,11 +48,11 @@
         },
         "aperture": {
           "term": "Diafragmă",
-          "definition": "Deschiderea obiectivului (cifra f). Pentru stacking, folosește cea mai clară diafragmă a obiectivului, nu închide — stack-ul oferă adâncimea."
+          "definition": "Deschiderea obiectivului (cifra f). Pentru stacking, folosește cea mai clară diafragmă a obiectivului, nu închide — de adâncime se ocupă stack-ul."
         },
         "sensor": {
           "term": "Dimensiunea senzorului",
-          "definition": "Senzorii mai mari au DoF per cadru mai mic la încadrare echivalentă, ceea ce poate crește numărul de cadre necesare."
+          "definition": "Senzorii mai mari au un DoF per cadru mai mic la încadrare echivalentă, ceea ce poate crește numărul de cadre necesare."
         },
         "nearLimit": {
           "term": "Limita apropiată",
@@ -64,19 +64,19 @@
         },
         "overlap": {
           "term": "Suprapunere",
-          "definition": "Procentul de suprapunere a adâncimii câmpului între cadrele succesive. 20-30% asigură că nu apar goluri după alinierea și îmbinarea în software."
+          "definition": "Procentul cu care se suprapun adâncimile câmpului între cadrele succesive. 20-30% asigură că nu rămân goluri după alinierea și îmbinarea în software."
         },
         "shotCount": {
           "term": "Număr de cadre",
-          "definition": "Numărul total de cadre necesare pentru a acoperi intervalul de adâncime cu suprapunerea specificată. Mai multe cadre = mai multă procesare, dar rezultate mai netede."
+          "definition": "Numărul total de cadre necesare pentru a acoperi intervalul de adâncime cu suprapunerea specificată. Mai multe cadre = mai multă procesare, dar rezultate mai fine."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Fotografiezi o floare mică, cu 3cm adâncime de la petala frontală la tulpină. Obiectivul tău macro la f/8 oferă aproximativ 4mm de DoF per cadru. Aproximativ câte cadre îți trebuie cu 25% suprapunere?",
-          "hint": "Fiecare cadru acoperă 4mm, dar cu 25% suprapunere pasul efectiv este 3mm per cadru. Împarte 30mm la 3mm.",
-          "successMessage": "Corect! Cu 4mm DoF și 25% suprapunere, fiecare pas avansează 3mm. 30mm / 3mm = 10 cadre pentru a acoperi toată floarea.",
-          "failureMessage": "Cu 25% suprapunere, pasul efectiv al fiecărui cadru este 75% din DoF: 4mm × 0.75 = 3mm. Ai nevoie de 30mm / 3mm = 10 cadre.",
+          "scenario": "Fotografiezi o floare mică, cu 3 cm adâncime de la petala din față la tulpină. Obiectivul tău macro la f/8 îți dă aproximativ 4 mm de DoF per cadru. De câte cadre ai nevoie, aproximativ, cu 25% suprapunere?",
+          "hint": "Fiecare cadru acoperă 4 mm, dar cu 25% suprapunere pasul efectiv este de 3 mm. Împarte 30 mm la 3 mm.",
+          "successMessage": "Corect! Cu 4 mm DoF și 25% suprapunere, fiecare pas avansează 3 mm. 30 mm / 3 mm = 10 cadre pentru a acoperi toată floarea.",
+          "failureMessage": "Cu 25% suprapunere, pasul efectiv al fiecărui cadru este 75% din DoF: 4 mm × 0,75 = 3 mm. Ai nevoie de 30 mm / 3 mm = 10 cadre.",
           "options": {
             "0": { "label": "5 cadre" },
             "1": { "label": "10 cadre" },
@@ -87,19 +87,19 @@
         "1": {
           "scenario": "Vrei cel mai clar rezultat posibil din focus stack-ul tău. Ar trebui să fotografiezi fiecare cadru la f/2.8, f/8 sau f/22?",
           "hint": "Ia în calcul cea mai clară diafragmă a obiectivului și cum afectează difracția diafragmele mici.",
-          "successMessage": "Exact! f/8 este de obicei cea mai clară diafragmă pentru majoritatea obiectivelor. f/2.8 oferă prea puțin DoF per cadru (risipind cadre), iar f/22 suferă de înmuiere prin difracție.",
-          "failureMessage": "f/8 este cea mai bună alegere. f/2.8 dă un DoF per cadru foarte subțire (cerând multe cadre în plus), iar f/22 introduce înmuiere prin difracție, care învinge scopul stacking-ului pentru claritate.",
+          "successMessage": "Exact! f/8 este de obicei cea mai clară diafragmă pentru majoritatea obiectivelor. f/2.8 dă prea puțin DoF per cadru (risipești cadre), iar f/22 suferă de înmuiere prin difracție.",
+          "failureMessage": "f/8 este cea mai bună alegere. f/2.8 dă un DoF per cadru foarte subțire (cere multe cadre în plus), iar f/22 introduce înmuiere prin difracție, care anulează tocmai rostul stacking-ului pentru claritate.",
           "options": {
-            "0": { "label": "f/2.8 — cel mai larg pentru timp rapid" },
-            "1": { "label": "f/8 — punctul dulce al obiectivului" },
+            "0": { "label": "f/2.8 — cea mai largă, pentru timp rapid" },
+            "1": { "label": "f/8 — punctul optim al obiectivului" },
             "2": { "label": "f/22 — DoF maxim per cadru" }
           }
         },
         "2": {
-          "scenario": "După ce îți îmbini focus stack-ul, observi o bandă neclară pe mijlocul imaginii, unde nimic nu este clar. Ce a mers cel mai probabil greșit?",
-          "hint": "Gândește-te la ce conectează zona clară a unui cadru cu a următorului.",
-          "successMessage": "Exact! Suprapunerea insuficientă între cadrele adiacente creează un gol unde niciun cadru nu este clar. Crește suprapunerea la 25-30% și refotografiază.",
-          "failureMessage": "O bandă neclară înseamnă de obicei că distanța dintre pașii de focalizare a fost prea mare — DoF-ul cadrelor adiacente nu s-a suprapus suficient. Crește procentul de suprapunere.",
+          "scenario": "După ce îți îmbini focus stack-ul, observi o bandă neclară pe mijlocul imaginii, unde nimic nu e clar. Ce a mers, cel mai probabil, greșit?",
+          "hint": "Gândește-te la ce face legătura dintre zona clară a unui cadru și cea a cadrului următor.",
+          "successMessage": "Exact! Suprapunerea insuficientă între cadrele vecine creează un gol în care niciun cadru nu e clar. Crește suprapunerea la 25-30% și refotografiază.",
+          "failureMessage": "O bandă neclară înseamnă, de obicei, că distanța dintre pașii de focalizare a fost prea mare — DoF-ul cadrelor vecine nu s-a suprapus suficient. Crește procentul de suprapunere.",
           "options": {
             "0": { "label": "Diafragma a fost prea largă" },
             "1": { "label": "Suprapunere insuficientă între pașii de focalizare" },

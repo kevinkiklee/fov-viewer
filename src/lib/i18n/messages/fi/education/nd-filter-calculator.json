@@ -1,57 +1,57 @@
 {
   "education": {
     "nd-filter-calculator": {
-      "beginner": "ND-suodin (harmaasuodin) on kuin aurinkolasit kamerasi objektiiville. Se vähentää objektiiviin tulevan valon määrää muuttamatta värejä, mikä sallii hitaampien suljinaikojen tai suurempien aukkojen käytön kirkkaissa olosuhteissa. Näin valokuvaajat luovat silkinpehmeitä vesiputouksia, tasaisia meriä tai sumeita pilviä keskellä päivää.",
-      "deeper": "ND-suotimet luokitellaan sen mukaan, kuinka monta aukkoa valoa ne estävät. ND2-suodin (1 aukko) puolittaa valon, ND8 (3 aukkoa) vähentää sen 1/8:aan, ja ND1000 (10 aukkoa) vähentää valoa 1024-kertaisesti. Nimeämiskäytännöt voivat olla sekavia: \"ND8\" tarkoittaa että suotimen kerroin on 8 (3 aukkoa), kun taas \"ND 0.9\" käyttää optisen tiheyden merkintää (kukin 0,3 = 1 aukko, joten 0,9 = 3 aukkoa). Tuloksena saatava suljinaika on yksinkertaisesti peruslähtöaika kerrottuna suotimen kertoimella. Esimerkiksi jos suodaton valotuksesi on 1/125s ja lisäät 10 aukon ND:n (ND1000), uusi suljinaika on 1/125 × 1024 = noin 8 sekuntia. Useiden ND-suotimien pinoaminen lisää niiden aukkoarvot yhteen mutta voi aiheuttaa vinjetointia ja värivirheitä etenkin laajakulmaobjektiiveilla.",
+      "beginner": "ND-suodin (harmaasuodin) on kuin aurinkolasit objektiivin edessä. Se vähentää objektiiviin tulevan valon määrää muuttamatta värejä, jolloin kirkkaassakin valossa voi käyttää pitkiä suljinaikoja tai suuria aukkoja. Näin valokuvaajat saavat keskellä päivää silkinpehmeitä vesiputouksia, tasaisen meren tai liikkuvia pilviä.",
+      "deeper": "ND-suotimet luokitellaan sen mukaan, kuinka monta valotusaskelta ne vähentävät. ND2 (1 askel) puolittaa valon, ND8 (3 askelta) vähentää sen kahdeksasosaan ja ND1000 (10 askelta) vähentää valoa 1024-kertaisesti. Nimeäminen voi olla sekavaa: \"ND8\" tarkoittaa, että suodin vähentää valoa kahdeksasosaan (3 askelta), kun taas \"ND 0.9\" käyttää optisen tiheyden merkintää (0,3 = yksi askel, joten 0,9 = kolme askelta). Uusi suljinaika saadaan yksinkertaisesti kertomalla lähtösuljinaika suotimen kertoimella. Jos esimerkiksi valotus ilman suodinta on 1/125s ja laitat eteen 10 askeleen ND-suotimen (ND1000), uudeksi suljinajaksi tulee 1/125 × 1024 ≈ 8 sekuntia. Useiden ND-suotimien pinoaminen laskee askelmäärät yhteen, mutta voi aiheuttaa vinjetointia ja värivääristymiä erityisesti laajakulmaobjektiiveilla.",
       "keyFactors": {
         "0": {
-          "label": "Peruslähtösuljinaika",
-          "description": "Oikea valotusaika ilman suodinta. Mittaa näkymä ensin, sitten laske suodatettu valotus tästä lähtökohdasta."
+          "label": "Lähtösuljinaika",
+          "description": "Oikea valotusaika ilman suodinta. Mittaa näkymä ensin, ja laske suodatettu valotus tästä lähtökohdasta."
         },
         "1": {
           "label": "Suotimen vahvuus",
-          "description": "Mitataan aukoissa. Jokainen aukko kaksinkertaistaa valotusajan. Yleisiä vahvuuksia: 3 aukkoa (ND8), 6 aukkoa (ND64) ja 10 aukkoa (ND1000)."
+          "description": "Mitataan valotusaskelina. Jokainen askel kaksinkertaistaa valotusajan. Yleisiä vahvuuksia: 3 askelta (ND8), 6 askelta (ND64) ja 10 askelta (ND1000)."
         },
         "2": {
           "label": "Suotimien pinoaminen",
-          "description": "Voit yhdistää suotimia lisäämällä niiden aukkoarvot. 3 aukon + 6 aukon pino antaa 9 aukon vähennyksen. Varo vinjetointia laajakulmaobjektiiveilla."
+          "description": "Voit yhdistää suotimia laskemalla askelmäärät yhteen. 3 askelta + 6 askelta = yhteensä 9 askeleen vähennys. Varo vinjetointia laajakulmaobjektiiveilla."
         }
       },
       "tips": {
         "0": {
-          "text": "Sommittele ja tarkenna ennen vahvan ND-suotimen kiinnittämistä. 10 aukon valovähennyksellä etsimesi ja automaattitarkennuksesi kamppailevat pimeydessä."
+          "text": "Sommittele ja tarkenna ennen kuin kiinnität vahvan ND-suotimen. 10 askeleen ND:n kanssa etsin ja autofokus tuskailevat pimeässä."
         },
         "1": {
-          "text": "Merimaisemissa 1–2 sekunnin valotukset pehmentävät pienet aallot tekstuuriksi säilyttäen aaltorakenteen. 30 sekunnin tai pidemmät valotukset luovat täysin tasaisen, sumuisen veden."
+          "text": "Merimaisemissa 1–2 sekunnin valotukset pehmentävät pikkuaallot tekstuuriksi, mutta säilyttävät silti aaltojen muodon. 30 sekunnin tai pidempi valotus antaa täysin tasaisen, sumuisen vedenpinnan."
         },
         "2": {
-          "text": "Halvat ND-suotimet tuovat usein värivirheen (yleensä magenta tai ruskea). Sijoita laadukkaaseen lasiin tunnetuilta valmistajilta tai opi korjaamaan väri jälkikäsittelyssä harmaakortin avulla."
+          "text": "Edulliset ND-suotimet aiheuttavat usein värivääristymiä (yleensä magentaa tai ruskeaa). Panosta laadukkaisiin lasisuotimiin tunnetuilta valmistajilta tai opettele korjaamaan värit jälkikäsittelyssä harmaakortin avulla."
         }
       },
       "tooltips": {
         "baseShutterSpeed": {
-          "term": "Peruslähtösuljinaika",
-          "definition": "Oikean valotuksen suljinaika ilman ND-suodinta. Tämä on lähtöpisteesi — laskuri kertoo sen suotimen kertoimella."
+          "term": "Lähtösuljinaika",
+          "definition": "Oikean valotuksen suljinaika ilman ND-suodinta. Tämä on lähtöpiste, josta laskuri kertoo ajan suotimen kertoimella."
         },
         "ndFilter": {
           "term": "ND-suodin",
-          "definition": "Harmaasuodin, joka vähentää valon läpäisyä tasaisesti. Luokiteltu suotimen kertoimella (ND2, ND4, ND8...) tai valovähennysaukoilla. ND2 = 1 aukko, ND4 = 2 aukkoa, ND8 = 3 aukkoa jne."
+          "definition": "Harmaasuodin, joka vähentää valoa tasaisesti. Luokitellaan suotimen kertoimella (ND2, ND4, ND8...) tai valotusaskelina. ND2 = 1 askel, ND4 = 2 askelta, ND8 = 3 askelta ja niin edelleen."
         },
         "resultingShutterSpeed": {
-          "term": "Tuloksena oleva suljinaika",
-          "definition": "Uusi suljinaika, kun ND-suodin on huomioitu. Lasketaan kertomalla peruslähtösuljinaika suotimen kertoimella (esim. 1/125s × 1024 10 aukon ND:lle)."
+          "term": "Uusi suljinaika",
+          "definition": "Suljinaika ND-suodin huomioituna. Saadaan kertomalla lähtösuljinaika suotimen kertoimella (esim. 1/125s × 1024, kun käytössä on 10 askeleen ND)."
         },
         "stopsAdded": {
-          "term": "Lisätyt aukot",
-          "definition": "ND-suotimen tarjoamien valovähennysaukkojen määrä. Jokainen aukko kaksinkertaistaa tarvittavan valotusajan. 10 aukkoa tarkoittaa että valotus on 1024 kertaa pidempi."
+          "term": "Lisätyt valotusaskeleet",
+          "definition": "ND-suotimen vähentämien valotusaskeleiden määrä. Jokainen askel kaksinkertaistaa tarvittavan valotusajan. 10 askelta tarkoittaa 1024-kertaista valotusta."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Olet vesiputouksella ja kamerasi mittaa oikean valotuksen 1/125s:ssa ilman suodinta. Kiinnität 3 aukon ND-suotimen (ND8). Mikä on uusi suljinaika?",
-          "hint": "Jokainen aukko kaksinkertaistaa valotusajan. 3 aukkoa tarkoittaa 2 × 2 × 2 = 8 kertaa pidempää.",
-          "successMessage": "Oikein! 1/125s × 8 = 1/15s. Tämä on hyvä alku liike-epäterävyydelle vedessä, vaikka haluat ehkä vielä vahvemman suotimen silkinpehmeisiin tuloksiin.",
-          "failureMessage": "3 aukon ND-suodin kertoo valotusajan 8:lla (2^3 = 8). Joten 1/125s muuttuu 1/15s:ksi.",
+          "scenario": "Olet vesiputouksella, ja kamera mittaa oikean valotuksen 1/125s:iin ilman suodinta. Kiinnität 3 askeleen ND-suotimen (ND8). Mikä on uusi suljinaika?",
+          "hint": "Yksi askel kaksinkertaistaa valotusajan. 3 askelta tarkoittaa 2 × 2 × 2 = 8-kertaista aikaa.",
+          "successMessage": "Oikein! 1/125s × 8 = 1/15s. Hyvä alku veden liike-epäterävyyteen, mutta silkinpehmeään tulokseen saatat tarvita vielä vahvemman suotimen.",
+          "failureMessage": "3 askeleen ND-suodin kertoo valotusajan 8:lla (2³ = 8). Näin 1/125s muuttuu 1/15s:ksi.",
           "options": {
             "0": { "label": "1/60s" },
             "1": { "label": "1/30s" },
@@ -60,50 +60,50 @@
           }
         },
         "1": {
-          "scenario": "Haluat luoda 30 sekunnin valotuksen pilvistä, jotka liikkuvat taivaalla. Ilman suodinta oikea valotus on 1/30s. Kuinka monta aukkoa ND-suodatusta tarvitset?",
-          "hint": "Sinun on siirryttävä 1/30s:stä 30 sekuntiin — eli 1/30 × kerroin = 30, joten kerroin = 900. Etsi lähin kahden potenssi.",
-          "successMessage": "Oikein! Siirtyminen 1/30s:stä 30s:ään on noin 1000-kertainen kasvu, mikä on noin 10 aukkoa. ND1000 (10 aukkoa) -suodin vie sinut noin 33 sekuntiin.",
-          "failureMessage": "Suhde on 30 / (1/30) = 900. Lähin kahden potenssi on 1024 (2^10), joten tarvitset 10 aukon ND-suotimen.",
+          "scenario": "Haluat kuvata 30 sekunnin valotuksen taivaalla liikkuvista pilvistä. Ilman suodinta oikea valotus on 1/30s. Kuinka monta askelta ND-suodatusta tarvitset?",
+          "hint": "Valotusajan on kasvettava 1/30s:sta 30 sekuntiin — eli 1/30 × kerroin = 30, joten kerroin = 900. Etsi lähin kahden potenssi.",
+          "successMessage": "Oikein! 1/30s → 30s on noin tuhatkertainen kasvu eli noin 10 askelta. ND1000 (10 askelta) vie ajan noin 33 sekuntiin.",
+          "failureMessage": "Suhde on 30 / (1/30) = 900. Lähin kahden potenssi on 1024 (2¹⁰), joten tarvitset 10 askeleen ND-suotimen.",
           "options": {
-            "0": { "label": "6 aukkoa (ND64)" },
-            "1": { "label": "8 aukkoa (ND256)" },
-            "2": { "label": "10 aukkoa (ND1000)" },
-            "3": { "label": "15 aukkoa (ND32768)" }
+            "0": { "label": "6 askelta (ND64)" },
+            "1": { "label": "8 askelta (ND256)" },
+            "2": { "label": "10 askelta (ND1000)" },
+            "3": { "label": "15 askelta (ND32768)" }
           }
         },
         "2": {
-          "scenario": "Kuvaat merimaisemaa auringonlaskun aikaan. Valo haalistuu ja peruslähtövalotuksesi (ilman suodinta) on nyt 1/4s f/11:llä, ISO 100. Haluat 2 minuutin valotuksia erittäin tasaiseen veteen. Minkä vahvuuden ND-suotimen tarvitset?",
-          "hint": "1/4s:stä 120s:ään on kerroin 480. Etsi lähin aukkoarvo.",
-          "successMessage": "9 aukon ND antaisi sinulle 1/4 × 512 = 128 sekuntia, eli hieman yli 2 minuuttia. Täydellinen sumuiseen, eteeriseen merimaisemaan auringonlaskussa.",
-          "failureMessage": "0,25s:stä 120s:ään on noin 480-kertainen kasvu. 2^9 = 512, mikä on lähellä 480:tä, joten 9 aukon suodin vie sinut noin 128 sekuntiin.",
+          "scenario": "Kuvaat merimaisemaa auringonlaskun aikaan. Valo haalistuu, ja lähtövalotus (ilman suodinta) on nyt 1/4s, f/11, ISO 100. Haluat 2 minuutin valotuksen täysin tasaiseen veteen. Minkä vahvuinen ND-suodin tarvitaan?",
+          "hint": "1/4s:sta 120s:iin on kerroin noin 480. Etsi lähin askelmäärä.",
+          "successMessage": "9 askeleen ND antaisi 1/4 × 512 = 128 sekuntia eli hieman yli 2 minuuttia. Juuri sopiva sumuiseen, eteeriseen auringonlaskumaisemaan.",
+          "failureMessage": "0,25s:sta 120s:iin on noin 480-kertainen kasvu. 2⁹ = 512, mikä on lähellä 480:tä, joten 9 askeleen suodin vie ajan noin 128 sekuntiin.",
           "options": {
-            "0": { "label": "6 aukkoa" },
-            "1": { "label": "9 aukkoa" },
-            "2": { "label": "10 aukkoa" },
-            "3": { "label": "13 aukkoa" }
+            "0": { "label": "6 askelta" },
+            "1": { "label": "9 askelta" },
+            "2": { "label": "10 askelta" },
+            "3": { "label": "13 askelta" }
           }
         },
         "3": {
-          "scenario": "Haluat kuvata muotokuvaa f/1.4:ssa kirkkaassa auringonpaisteessa (peruslähtövalotus: f/1.4, 1/8000s, ISO 100). Kamerasi maksimisuljinaika on 1/8000s. Voitko kuvata f/1.4:ssa ilman ND-suodinta?",
-          "hint": "Tarkista onko 1/8000s f/1.4:llä ja ISO 100:lla saavutettavissa vai onko näkymä yhä ylivalotettu.",
-          "successMessage": "Oikein! Hyvin kirkkaana päivänä (EV 15+) f/1.4 ISO 100:lla vaatii usein nopeampia suljinaikoja kuin 1/8000s, jota useimmat kamerat eivät pysty saavuttamaan. 2–3 aukon ND-suodin sallii kuvaamisen avoimella aukolla ilman ylivalotusta.",
-          "failureMessage": "Kirkkaassa auringonpaisteessa f/1.4 ISO 100:lla voi vaatia suljinaikoja kameran 1/8000s:n rajan yli. ND-suodin on olennainen suuriaukkoisen kuvauksen kirkkaissa olosuhteissa.",
+          "scenario": "Haluat kuvata muotokuvan f/1.4:llä kirkkaassa auringonpaisteessa (lähtövalotus: f/1.4, 1/8000s, ISO 100). Kameran lyhin suljinaika on 1/8000s. Pärjäätkö ilman ND-suodinta?",
+          "hint": "Tarkista, riittääkö 1/8000s aukolla f/1.4 ja ISO 100:lla vai ylivalottuuko kuva silti.",
+          "successMessage": "Oikein! Todella kirkkaassa valossa (EV 15+) f/1.4 ja ISO 100 vaativat usein lyhyempää suljinaikaa kuin 1/8000s, mihin useimmat kamerat eivät pysty. 2–3 askeleen ND-suodin mahdollistaa kuvaamisen täysin auki olevalla aukolla ilman ylivalottumista.",
+          "failureMessage": "Kirkkaassa auringonpaisteessa f/1.4 ja ISO 100 saattavat vaatia lyhyempää suljinaikaa kuin kameran raja 1/8000s. ND-suodin on käytännössä välttämätön suuriaukkoiseen kuvaamiseen kirkkaassa valossa.",
           "options": {
-            "0": { "label": "Kyllä — 1/8000s on riittävän nopea" },
-            "1": { "label": "Ei — tarvitset todennäköisesti 2–3 aukon ND-suotimen" },
-            "2": { "label": "Nosta vain ISO:a kompensoidaksesi" }
+            "0": { "label": "Kyllä — 1/8000s riittää" },
+            "1": { "label": "Ei — tarvitset todennäköisesti 2–3 askeleen ND-suotimen" },
+            "2": { "label": "Nosta vain ISO:a ja kompensoi niin" }
           }
         },
         "4": {
-          "scenario": "Sinulla on 6 aukon ja 3 aukon ND-suotimet. Pinoat ne objektiivillesi peruslähtövalotuksella 1/250s. Mikä on tuloksena oleva suljinaika, ja mitä tällä kokoonpanolla kannattaa tarkkailla?",
-          "hint": "Laske aukkoarvot yhteen ja laske sitten uusi valotus. Mieti pinoamisen optisia sivuvaikutuksia.",
-          "successMessage": "Oikein! 6 + 3 = 9 aukkoa. 1/250 × 512 = noin 2 sekuntia. Varo vinjetointia (tummat kulmat) laajakulmaobjektiiveilla ja mahdollisia värivirheitä halvasta lasista.",
-          "failureMessage": "Pinoaminen lisää aukkoarvot: 6 + 3 = 9 aukkoa yhteensä. 2^9 = 512, joten 1/250 × 512 = ~2 sekuntia. Pinoaminen voi myös aiheuttaa vinjetointia ja värivirheitä.",
+          "scenario": "Sinulla on 6 askeleen ja 3 askeleen ND-suotimet. Pinoat ne objektiivin eteen, kun lähtövalotus on 1/250s. Mikä on uusi suljinaika, ja mitä tässä kokoonpanossa kannattaa varoa?",
+          "hint": "Laske askelmäärät yhteen ja laske sitten uusi valotus. Muista pinoamisen optiset sivuvaikutukset.",
+          "successMessage": "Oikein! 6 + 3 = 9 askelta. 1/250 × 512 ≈ 2 sekuntia. Varo vinjetointia (tummat kulmat) laajakulmaobjektiiveilla ja edullisen lasin mahdollisia värivääristymiä.",
+          "failureMessage": "Pinoaminen laskee askelmäärät yhteen: 6 + 3 = 9 askelta. 2⁹ = 512, joten 1/250 × 512 ≈ 2 sekuntia. Pinoaminen voi myös aiheuttaa vinjetointia ja värivääristymiä.",
           "options": {
-            "0": { "label": "~0,5s, varo linssiheijastumia" },
-            "1": { "label": "~2s, varo vinjetointia ja värivirheitä" },
-            "2": { "label": "~4s, varo kennon ylikuumenemista" },
-            "3": { "label": "~8s, ei huolia pinoamisesta" }
+            "0": { "label": "~0,5s — varo linssiheijastumia" },
+            "1": { "label": "~2s — varo vinjetointia ja värivääristymiä" },
+            "2": { "label": "~4s — varo kennon ylikuumenemista" },
+            "3": { "label": "~8s — ei ongelmia pinoamisesta" }
           }
         }
       }

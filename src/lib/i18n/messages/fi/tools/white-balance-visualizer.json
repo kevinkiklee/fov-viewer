@@ -14,15 +14,15 @@
       "faq": {
         "what-is-white-balance": {
           "question": "Mikä valkotasapaino on valokuvauksessa?",
-          "answer": "Valkotasapaino säätää kuvan värejä niin, että kohteet, jotka näyttävät valkoisilta omin silmin, näyttävät valkoisilta myös kuvassa. Eri valonlähteet säteilevät eri värilämpötiloja, ja valkotasapaino kompensoi näitä vaihteluita."
+          "answer": "Valkotasapaino säätää kuvan värejä niin, että silmin valkoisina näkyvät kohteet näyttävät valkoisilta myös kuvassa. Eri valonlähteillä on eri värilämpötila, ja valkotasapaino kompensoi näitä eroja."
         },
         "kelvin-vs-presets": {
-          "question": "Pitäisikö käyttää Kelvin-arvoja vai valkotasapainoesiasetuksia?",
-          "answer": "Esiasetukset (Daylight, Cloudy, Tungsten) ovat käteviä lähtökohtia, mutta tietyn Kelvin-arvon asettaminen antaa tarkemman hallinnan. Kuvaa RAW-muodossa säätääksesi valkotasapainoa häviöttömästi jälkikäsittelyssä."
+          "question": "Kannattaako käyttää Kelvin-arvoja vai valkotasapainon esiasetuksia?",
+          "answer": "Esiasetukset (päivänvalo, pilvinen, hehkulamppu) ovat käteviä lähtökohtia, mutta tarkan Kelvin-arvon asettaminen antaa paremman hallinnan. Kuvaa RAW-muodossa, jotta voit säätää valkotasapainoa jälkikäteen häviöttömästi."
         },
         "when-to-use-manual-white-balance": {
           "question": "Milloin kannattaa käyttää manuaalista valkotasapainoa?",
-          "answer": "Käytä manuaalista valkotasapainoa sekoittuneessa valaistuksessa (luonnollinen ja keinovalo yhdessä), studioasetelmissa jotka vaativat tarkkaa värientoistoa, tuotekuvauksessa ja aina kun automaattinen valkotasapaino tuottaa epäyhtenäisiä tuloksia kuvasarjan yli."
+          "answer": "Käytä manuaalista valkotasapainoa sekavassa valaistuksessa (luonnonvalo ja keinovalo yhdessä), studiossa tarkkaa värintoistoa vaativissa kuvauksissa, tuotekuvauksessa ja aina silloin, kun automaattinen valkotasapaino antaa epäyhtenäisiä tuloksia kuvasarjan aikana."
         }
       }
     }

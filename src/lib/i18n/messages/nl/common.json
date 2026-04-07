@@ -1,8 +1,8 @@
 {
   "common": {
-    "skipToContent": "Ga naar inhoud",
+    "skipToContent": "Naar de inhoud",
     "nav": {
-      "tools": "Gereedschappen",
+      "tools": "Tools",
       "glossary": "Woordenlijst",
       "closeMenu": "Menu sluiten",
       "comingSoon": "Binnenkort",
@@ -22,8 +22,8 @@
       "cookieSettings": "Cookie-instellingen"
     },
     "theme": {
-      "switchToLight": "Schakel naar lichte modus",
-      "switchToDark": "Schakel naar donkere modus"
+      "switchToLight": "Lichte modus inschakelen",
+      "switchToDark": "Donkere modus inschakelen"
     },
     "actions": {
       "copyImage": "Afbeelding kopiëren",
@@ -43,15 +43,15 @@
       "openPanel": "Leerpaneel openen",
       "collapsePanel": "Leerpaneel inklappen",
       "whatIsThis": "Wat is dit?",
-      "howItWorks": "Hoe werkt het",
+      "howItWorks": "Hoe het werkt",
       "keyFactors": "Belangrijkste factoren",
-      "proTip": "Professionele tip",
+      "proTip": "Pro-tip",
       "challenge": "Uitdaging",
       "hint": "Hint: {hint}",
       "completed": "Voltooid",
       "checkAnswer": "Antwoord controleren",
       "nextChallenge": "Volgende uitdaging",
-      "tryAgain": "Opnieuw proberen",
+      "tryAgain": "Nog eens proberen",
       "resetAll": "Alles resetten",
       "resetAllChallenges": "Alle uitdagingen resetten",
       "challengeNumber": "Uitdaging {number}"

@@ -84,8 +84,8 @@
     },
     "controls": {
       "focalLength": "Brennweite",
-      "aperture": "Aperture",
-      "distance": "Distance",
+      "aperture": "Blende",
+      "distance": "Entfernung",
       "clickToEnterValue": "Klicken, um einen Wert einzugeben",
       "decrease": "Verringern",
       "increase": "Erhöhen"
@@ -123,6 +123,6 @@
       "1in": "1\"-Sensor",
       "phone": "Smartphone Flagship (1/1.3\")"
     },
-    "legalTranslationDisclaimer": "Dies ist eine Übersetzung zu Ihrer Bequemlichkeit. Die englische Version ist die rechtsverbindliche Fassung. Siehe /en/privacy."
+    "legalTranslationDisclaimer": "Dies ist eine Übersetzung zu deiner Information. Die englische Fassung ist rechtsverbindlich. Siehe /en/privacy."
   }
 }

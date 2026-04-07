@@ -7,16 +7,16 @@
       "ogTitle": "PhotoTools — Outils photo gratuits"
     },
     "fov-simulator": {
-      "title": "Simulateur de champ de vision — Comparer les longueurs focales",
-      "description": "Compare le champ de vision selon différentes longueurs focales et tailles de capteur. Gratuit, interactif et partageable."
+      "title": "Simulateur de champ de vision — Comparer les focales",
+      "description": "Compare le champ de vision selon différentes focales et tailles de capteur. Gratuit, interactif et partageable."
     },
     "dof-simulator": {
       "title": "Simulateur de profondeur de champ | PhotoTools",
-      "description": "Visualise comment l'ouverture, la focale et la distance influencent le flou d'arrière-plan grâce à une simulation WebGL en temps réel."
+      "description": "Vois comment l'ouverture, la focale et la distance jouent sur le flou d'arrière-plan grâce à une simulation WebGL en temps réel."
     },
     "focus-stacking-calculator": {
       "title": "Calculateur de focus stacking | PhotoTools",
-      "description": "Calcule les distances de mise au point optimales pour une netteté du premier plan à l'infini en photographie macro et de paysage."
+      "description": "Calcule les distances de mise au point pour une netteté du premier plan à l'infini, en macro comme en paysage."
     },
     "equivalent-settings-calculator": {
       "title": "Calculateur de réglages équivalents | PhotoTools",
@@ -24,7 +24,7 @@
     },
     "exposure-simulator": {
       "title": "Simulateur du triangle d'exposition",
-      "description": "Simulateur interactif du triangle d'exposition — découvre comment l'ouverture, la vitesse d'obturation et l'ISO affectent ton image en temps réel avec un aperçu en direct."
+      "description": "Simulateur interactif du triangle d'exposition — vois en direct l'effet de l'ouverture, de la vitesse d'obturation et des ISO sur ton image."
     },
     "star-trail-calculator": {
       "title": "Calculateur de filé d'étoiles",
@@ -32,7 +32,7 @@
     },
     "white-balance-visualizer": {
       "title": "Visualiseur de balance des blancs",
-      "description": "Découvre comment la balance des blancs et la température de couleur affectent tes photos. Visualise les changements de 2000K à 10000K avec un aperçu en temps réel."
+      "description": "Vois comment la balance des blancs et la température de couleur changent tes photos, de 2000 K à 10000 K, avec un aperçu en temps réel."
     },
     "sensor-size-comparison": {
       "title": "Comparaison des tailles de capteur",
@@ -52,11 +52,11 @@
     },
     "hyperfocal-simulator": {
       "title": "Simulateur de distance hyperfocale",
-      "description": "Visualise la distance hyperfocale pour n'importe quel objectif et capteur. Découvre exactement où faire la mise au point pour une netteté maximale du premier plan à l'infini."
+      "description": "Visualise la distance hyperfocale pour n'importe quel objectif et capteur. Sache exactement où faire la mise au point pour une netteté maximale du premier plan à l'infini."
     },
     "shutter-speed-visualizer": {
       "title": "Visualiseur de vitesse d'obturation",
-      "description": "Trouve la vitesse d'obturation minimale pour des photos nettes à main levée. Tient compte de la longueur focale, de la taille du capteur et de la stabilisation d'image."
+      "description": "Trouve la vitesse d'obturation minimale pour des photos nettes à main levée. Tient compte de la focale, de la taille du capteur et de la stabilisation d'image."
     },
     "nd-filter-calculator": {
       "title": "Calculateur de filtre ND",
@@ -64,7 +64,7 @@
     },
     "perspective-compression-simulator": {
       "title": "Simulateur de compression de perspective",
-      "description": "Simulateur 3D interactif montrant comment la longueur focale et la distance affectent la compression de perspective. Observe le changement de compression en temps réel."
+      "description": "Simulateur 3D interactif qui montre comment la focale et la distance jouent sur la compression de perspective. Observe le changement en temps réel."
     },
     "about": {
       "title": "À propos",
@@ -76,7 +76,7 @@
     },
     "privacy": {
       "title": "Politique de confidentialité | PhotoTools",
-      "description": "Découvre comment PhotoTools traite tes données, y compris les analyses, les cookies et les soumissions du formulaire de contact sur www.phototools.io."
+      "description": "Comment PhotoTools traite tes données : analyses, cookies et envois du formulaire de contact sur www.phototools.io."
     },
     "terms": {
       "title": "Conditions d'utilisation | PhotoTools",

@@ -36,18 +36,18 @@
       "privacyNote": "Dit foto bliver i din browser — intet bliver uploadet",
       "suggestions": {
         "complementary": {
-          "warm": "God til: varme solnedgangsportrætter med kølig skyggekontrast",
-          "cool": "God til: stemningsfulde blue hour-billeder med varme accentlys",
-          "default": "God til: højkontrastkompositioner med stærk visuel spænding"
+          "warm": "God til: varme portrætter i solnedgang med kølig skyggekontrast",
+          "cool": "God til: stemningsfulde blue hour-billeder med varmt accentlys",
+          "default": "God til: kontrastfulde kompositioner med stærk visuel spænding"
         },
         "analogous": {
           "warm": "God til: landskaber i den gyldne time med samlede varme toner",
-          "cool": "God til: rolige vandmotiver og tusmørkefotografi",
+          "cool": "God til: rolige vandmotiver og billeder i tusmørke",
           "default": "God til: harmoniske naturbilleder med bløde farveovergange"
         },
-        "triadic": "Brug til: livlige editorials og markante kreative portrætter",
+        "triadic": "Brug til: livlige editorials og markante, kreative portrætter",
         "splitComplementary": {
-          "warm": "Brug til: kontrasterende tøjvalg mod en naturlig baggrund",
+          "warm": "Brug til: kontrastfulde tøjvalg mod en naturlig baggrund",
           "default": "Brug til: balanceret produktfotografi med visuel variation"
         },
         "tetradic": "Brug til: rige editorial-layouts og komplekse kompositioner med flere motiver"
@@ -55,15 +55,15 @@
       "faq": {
         "what-is-color-harmony": {
           "question": "Hvad er farveharmoni i fotografi?",
-          "answer": "Farveharmoni er æstetisk velfungerende farvekombinationer baseret på farvernes placering på farvecirklen. Harmoniske farver skaber visuel balance og kan fremkalde bestemte stemninger i dine billeder."
+          "answer": "Farveharmoni er farvekombinationer, der fungerer æstetisk, fordi de tager udgangspunkt i farvernes placering på farvecirklen. Harmoniske farver skaber visuel balance og kan fremkalde bestemte stemninger i dine billeder."
         },
         "complementary-vs-analogous": {
           "question": "Hvad er forskellen på komplementære og analoge farver?",
-          "answer": "Komplementære farver ligger lige overfor hinanden på farvecirklen (som blå og orange) og skaber høj kontrast. Analoge farver ligger ved siden af hinanden (som blå, blågrøn og grøn) og skaber en mere harmonisk, samlet fornemmelse."
+          "answer": "Komplementære farver ligger lige over for hinanden på farvecirklen (som blå og orange) og giver høj kontrast. Analoge farver ligger ved siden af hinanden (som blå, blågrøn og grøn) og giver et mere harmonisk og samlet udtryk."
         },
         "how-to-use-color-schemes-photography": {
           "question": "Hvordan bruger jeg farveskemaer i fotografi?",
-          "answer": "Planlæg dine optagelser ud fra en farvepalet — vælg tøj, lokationer og props, der matcher dit skema. I efterbehandlingen kan du bruge farvegradering til at understrege din valgte palet. Farveskemaer hjælper med at skabe en sammenhængende visuel identitet på tværs af en billedserie."
+          "answer": "Planlæg dine optagelser ud fra en farvepalet — vælg tøj, lokationer og rekvisitter, der passer til dit skema. I efterbehandlingen kan du bruge color grading til at understrege paletten. Farveskemaer hjælper dig med at skabe et sammenhængende visuelt udtryk hen over en hel billedserie."
         }
       }
     }

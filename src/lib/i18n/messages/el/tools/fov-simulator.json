@@ -1,46 +1,46 @@
 {
   "toolUI": {
     "fov-simulator": {
-      "rotate": "Rotate",
-      "center": "Center",
-      "switchToPortrait": "Switch to portrait",
-      "switchToLandscape": "Switch to landscape",
-      "centerOverlays": "Center overlays",
-      "addLens": "+ Add lens",
+      "rotate": "Περιστροφή",
+      "center": "Κέντρο",
+      "switchToPortrait": "Αλλαγή σε κάθετο",
+      "switchToLandscape": "Αλλαγή σε οριζόντιο",
+      "centerOverlays": "Κεντράρισμα υπερθέσεων",
+      "addLens": "+ Προσθήκη φακού",
       "fovSimulator": "FOV Simulator",
-      "sensor": "Sensor",
-      "copyImage": "Copy image",
-      "copyLink": "Copy link",
-      "embed": "Embed",
-      "reset": "Reset",
-      "frameInfo": "Frame Info",
-      "distance": "Distance",
-      "showFramingGuides": "Show framing guides",
-      "wide": "wide",
-      "embedTitle": "Embed",
-      "closeEmbedModal": "Close embed modal",
+      "sensor": "Αισθητήρας",
+      "copyImage": "Αντιγραφή εικόνας",
+      "copyLink": "Αντιγραφή συνδέσμου",
+      "embed": "Ενσωμάτωση",
+      "reset": "Επαναφορά",
+      "frameInfo": "Πληροφορίες κάδρου",
+      "distance": "Απόσταση",
+      "showFramingGuides": "Εμφάνιση οδηγών καδραρίσματος",
+      "wide": "ευρύ",
+      "embedTitle": "Ενσωμάτωση",
+      "closeEmbedModal": "Κλείσιμο παραθύρου ενσωμάτωσης",
       "markdownLabel": "Markdown (Reddit, GitHub)",
       "bbcodeLabel": "BBCode (Forums)",
-      "htmlEmbedLabel": "HTML Embed",
-      "copied": "Copied",
-      "copy": "Copy",
-      "cropView": "Crop view:",
-      "collapse": "Collapse",
-      "expand": "Expand",
-      "fovComparison": "FOV Comparison",
-      "loadingScene": "Loading scene...",
+      "htmlEmbedLabel": "Ενσωμάτωση HTML",
+      "copied": "Αντιγράφηκε",
+      "copy": "Αντιγραφή",
+      "cropView": "Προβολή crop:",
+      "collapse": "Σύμπτυξη",
+      "expand": "Ανάπτυξη",
+      "fovComparison": "Σύγκριση οπτικού πεδίου",
+      "loadingScene": "Φόρτωση σκηνής...",
       "faq": {
         "what-is-fov": {
           "question": "Τι είναι το οπτικό πεδίο στη φωτογραφία;",
-          "answer": "Το οπτικό πεδίο (FOV) είναι η γωνιακή έκταση της σκηνής που είναι ορατή μέσω του φακού και του αισθητήρα της κάμεράς σου. Καθορίζει πόση από τη σκηνή αποτυπώνεται σε μια φωτογραφία και επηρεάζεται από την εστιακή απόσταση και το μέγεθος του αισθητήρα."
+          "answer": "Το οπτικό πεδίο (FOV) είναι η γωνιακή έκταση της σκηνής που βλέπει ο φακός και ο αισθητήρας της κάμεράς σου. Καθορίζει πόση σκηνή χωράει στη φωτογραφία και εξαρτάται από την εστιακή απόσταση και το μέγεθος του αισθητήρα."
         },
         "how-crop-factor-affects-fov": {
           "question": "Πώς επηρεάζει ο συντελεστής crop το οπτικό πεδίο;",
-          "answer": "Ένας μικρότερος αισθητήρας (μεγαλύτερος συντελεστής crop) αποτυπώνει στενότερο οπτικό πεδίο από έναν full-frame αισθητήρα στην ίδια εστιακή απόσταση. Για παράδειγμα, οι αισθητήρες APS-C με συντελεστή crop 1.5× κάνουν έναν φακό 50mm να συμπεριφέρεται σαν 75mm ως προς το οπτικό πεδίο."
+          "answer": "Ένας μικρότερος αισθητήρας (μεγαλύτερος συντελεστής crop) αποτυπώνει στενότερο οπτικό πεδίο από έναν full-frame αισθητήρα στην ίδια εστιακή απόσταση. Για παράδειγμα, σε αισθητήρα APS-C με συντελεστή crop 1.5×, ένας φακός 50mm συμπεριφέρεται σαν 75mm ως προς το οπτικό πεδίο."
         },
         "fov-vs-focal-length": {
           "question": "Ποια είναι η σχέση μεταξύ οπτικού πεδίου και εστιακής απόστασης;",
-          "answer": "Το οπτικό πεδίο και η εστιακή απόσταση έχουν αντιστρόφως ανάλογη σχέση. Οι μικρότερες εστιακές αποστάσεις (ευρυγώνιες) δίνουν πιο ευρύ οπτικό πεδίο, ενώ οι μεγαλύτερες (τηλεφωτογραφικές) δίνουν πιο στενό. Το ακριβές οπτικό πεδίο εξαρτάται επίσης από το μέγεθος του αισθητήρα."
+          "answer": "Το οπτικό πεδίο και η εστιακή απόσταση έχουν αντιστρόφως ανάλογη σχέση. Οι μικρότερες εστιακές αποστάσεις (ευρυγώνιες) δίνουν πιο ευρύ οπτικό πεδίο, ενώ οι μεγαλύτερες (τηλεφακοί) το στενεύουν. Το ακριβές οπτικό πεδίο εξαρτάται επίσης από το μέγεθος του αισθητήρα."
         }
       }
     }

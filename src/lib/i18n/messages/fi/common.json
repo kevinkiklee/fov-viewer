@@ -45,7 +45,7 @@
       "whatIsThis": "Mikä tämä on?",
       "howItWorks": "Näin se toimii",
       "keyFactors": "Keskeiset tekijät",
-      "proTip": "Proffan vinkki",
+      "proTip": "Ammattilaisen vinkki",
       "challenge": "Tehtävä",
       "hint": "Vihje: {hint}",
       "completed": "Suoritettu",
@@ -70,15 +70,15 @@
       "banner": "Esikatselu — tämä työkalu ei ole vielä julkinen"
     },
     "fileUpload": {
-      "dropPrompt": "Pudota kuva tähän tai klikkaa selataksesi",
-      "tapPrompt": "Napauta valitaksesi kuvan",
+      "dropPrompt": "Pudota kuva tähän tai selaa klikkaamalla",
+      "tapPrompt": "Valitse kuva napauttamalla",
       "privacy": "Kuvasi eivät koskaan poistu laitteeltasi",
-      "selectedFile": "Valittu tiedosto: {fileName}. Klikkaa valitaksesi toisen kuvan",
-      "defaultLabel": "Sinun kuvasi"
+      "selectedFile": "Valittu tiedosto: {fileName}. Vaihda kuvaa klikkaamalla",
+      "defaultLabel": "Oma kuvasi"
     },
     "scene": {
       "label": "Näkymä:",
-      "yourPhoto": "Sinun kuvasi",
+      "yourPhoto": "Oma kuvasi",
       "removePhoto": "Poista kuva",
       "uploadPhoto": "Lataa kuva"
     },
@@ -86,7 +86,7 @@
       "focalLength": "Polttoväli",
       "aperture": "Aukko",
       "distance": "Etäisyys",
-      "clickToEnterValue": "Klikkaa syöttääksesi arvon",
+      "clickToEnterValue": "Syötä arvo klikkaamalla",
       "decrease": "Vähennä",
       "increase": "Lisää"
     },

@@ -31,16 +31,16 @@
       "loadingScene": "Szene wird geladen...",
       "faq": {
         "what-is-fov": {
-          "question": "Was ist das Sichtfeld in der Fotografie?",
-          "answer": "Das Sichtfeld (FOV) ist der Winkelbereich der Szene, der durch dein Objektiv und den Kamerasensor sichtbar ist. Es bestimmt, wie viel einer Szene in einem Foto erfasst wird, und wird von der Brennweite und der Sensorgr\u00f6\u00dfe beeinflusst."
+          "question": "Was ist der Bildwinkel in der Fotografie?",
+          "answer": "Der Bildwinkel (Field of View) ist der Winkelbereich der Szene, den dein Objektiv zusammen mit dem Kamerasensor erfasst. Er bestimmt, wie viel einer Szene auf dem Foto zu sehen ist, und hängt von Brennweite und Sensorgröße ab."
         },
         "how-crop-factor-affects-fov": {
-          "question": "Wie beeinflusst der Crop-Faktor das Sichtfeld?",
-          "answer": "Ein kleinerer Sensor (h\u00f6herer Crop-Faktor) erfasst ein engeres Sichtfeld als ein Vollformatsensor bei gleicher Brennweite. Zum Beispiel l\u00e4sst ein APS-C-Sensor mit 1,5-fachem Crop-Faktor ein 50-mm-Objektiv in Bezug auf das Sichtfeld wie ein 75-mm-Objektiv wirken."
+          "question": "Wie beeinflusst der Crop-Faktor den Bildwinkel?",
+          "answer": "Ein kleinerer Sensor (höherer Crop-Faktor) erfasst bei gleicher Brennweite einen engeren Bildwinkel als ein Vollformatsensor. Ein APS-C-Sensor mit 1,5-fachem Crop-Faktor lässt ein 50-mm-Objektiv beispielsweise wie ein 75-mm-Objektiv wirken."
         },
         "fov-vs-focal-length": {
-          "question": "Welche Beziehung besteht zwischen Sichtfeld und Brennweite?",
-          "answer": "Sichtfeld und Brennweite stehen in umgekehrtem Verh\u00e4ltnis zueinander. K\u00fcrzere Brennweiten (Weitwinkel) ergeben ein breiteres Sichtfeld, w\u00e4hrend l\u00e4ngere Brennweiten (Tele) ein engeres Sichtfeld ergeben. Das genaue Sichtfeld h\u00e4ngt auch von der Sensorgr\u00f6\u00dfe ab."
+          "question": "Welche Beziehung besteht zwischen Bildwinkel und Brennweite?",
+          "answer": "Bildwinkel und Brennweite verhalten sich umgekehrt zueinander. Kürzere Brennweiten (Weitwinkel) ergeben einen weiteren Bildwinkel, längere Brennweiten (Tele) einen engeren. Der genaue Bildwinkel hängt zusätzlich von der Sensorgröße ab."
         }
       }
     }

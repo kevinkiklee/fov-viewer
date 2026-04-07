@@ -1,12 +1,12 @@
 {
   "toolUI": {
     "nd-filter-calculator": {
-      "baseShutterSpeed": "Peruslähtösuljinaika",
+      "baseShutterSpeed": "Lähtösuljinaika",
       "ndFilter": "ND-suodin",
-      "resultingShutterSpeed": "Tuloksena oleva suljinaika",
-      "stopsAdded": "Lisätyt aukot",
+      "resultingShutterSpeed": "Uusi suljinaika",
+      "stopsAdded": "Lisätyt valotusaskeleet",
       "quickReference": "Pikaohje",
-      "tableBase": "Perus"
+      "tableBase": "Lähtö"
     }
   }
 }

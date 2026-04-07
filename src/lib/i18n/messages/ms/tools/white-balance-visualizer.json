@@ -18,7 +18,7 @@
         },
         "kelvin-vs-presets": {
           "question": "Patutkah saya menggunakan nilai Kelvin atau preset imbangan putih?",
-          "answer": "Preset (Daylight, Cloudy, Tungsten) adalah titik permulaan yang memudahkan, tetapi menetapkan nilai Kelvin tertentu memberi kawalan yang lebih tepat. Tangkap dalam format RAW untuk melaraskan imbangan putih tanpa kehilangan kualiti dalam pasca-pemprosesan."
+          "answer": "Preset (Daylight, Cloudy, Tungsten) ialah titik permulaan yang memudahkan, tetapi menetapkan nilai Kelvin tertentu memberi anda kawalan yang lebih tepat. Tangkap dalam format RAW untuk melaraskan imbangan putih tanpa kehilangan kualiti dalam pasca-pemprosesan."
         },
         "when-to-use-manual-white-balance": {
           "question": "Bila saya patut menggunakan imbangan putih manual?",

@@ -36,7 +36,7 @@
         },
         "how-crop-factor-affects-fov": {
           "question": "\u00bfC\u00f3mo afecta el factor de recorte al campo de visi\u00f3n?",
-          "answer": "Un sensor m\u00e1s peque\u00f1o (mayor factor de recorte) captura un campo de visi\u00f3n m\u00e1s estrecho que un sensor de formato completo a la misma distancia focal. Por ejemplo, los sensores APS-C con un factor de recorte de 1.5x hacen que un objetivo de 50mm se comporte como uno de 75mm en t\u00e9rminos de campo de visi\u00f3n."
+          "answer": "Un sensor m\u00e1s peque\u00f1o (mayor factor de recorte) captura un campo de visi\u00f3n m\u00e1s estrecho que un sensor de formato completo a la misma distancia focal. Por ejemplo, en un sensor APS-C con un factor de recorte de 1.5x, un objetivo de 50 mm encuadra como uno de 75 mm en formato completo."
         },
         "fov-vs-focal-length": {
           "question": "\u00bfCu\u00e1l es la relaci\u00f3n entre el FOV y la distancia focal?",

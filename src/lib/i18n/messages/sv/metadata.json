@@ -3,7 +3,7 @@
     "site": {
       "defaultTitle": "PhotoTools — Fotoverktyg",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Gratis fotoverktyg: FOV-simulator, färgschemagenerator, EXIF-läsare, beskärning och inramning med mera.",
+      "description": "Gratis fotoverktyg: FOV-simulator, färgschemagenerator, EXIF-läsare, beskärning, inramning och mycket mer.",
       "ogTitle": "PhotoTools — Gratis fotoverktyg"
     },
     "fov-simulator": {
@@ -12,11 +12,11 @@
     },
     "dof-simulator": {
       "title": "Skärpedjupssimulator | PhotoTools",
-      "description": "Visualisera skärpedjupet i realtid — se hur bländare, brännvidd och avstånd påverkar bakgrundsoskärpan med WebGL-simulering."
+      "description": "Visualisera skärpedjupet i realtid — se hur bländare, brännvidd och avstånd påverkar bakgrundsoskärpan i en WebGL-simulering."
     },
     "focus-stacking-calculator": {
       "title": "Focus stacking-kalkylator | PhotoTools",
-      "description": "Räkna ut optimala fokusavstånd för skärpa genom hela bilden i makro- och landskapsfoto."
+      "description": "Räkna ut optimala fokusavstånd för att få skärpa genom hela bilden i makro- och landskapsfoto."
     },
     "equivalent-settings-calculator": {
       "title": "Kalkylator för ekvivalenta inställningar | PhotoTools",
@@ -24,31 +24,31 @@
     },
     "exposure-simulator": {
       "title": "Exponeringstriangelsimulator",
-      "description": "Interaktiv simulator för exponeringstriangeln — se i realtid hur bländare, slutartid och ISO påverkar bilden med live-förhandsvisning."
+      "description": "Interaktiv simulator för exponeringstriangeln — se i realtid hur bländare, slutartid och ISO påverkar bilden, med livevisning."
     },
     "star-trail-calculator": {
       "title": "Star Trail Calculator",
-      "description": "Räkna ut maximal exponeringstid för skarpa stjärnor med 500-regeln, NPF-regeln m.fl. Planera star trail-stacking för vilken plats som helst."
+      "description": "Räkna ut maximal exponeringstid för skarpa stjärnor med 500-regeln, NPF-regeln med flera. Planera star trail-stacking för vilken plats som helst."
     },
     "white-balance-visualizer": {
       "title": "White Balance Visualizer",
-      "description": "Se hur vitbalans och färgtemperatur påverkar dina foton. Visualisera förändringar från 2000 K till 10000 K med realtidsförhandsvisning."
+      "description": "Se hur vitbalans och färgtemperatur påverkar dina foton. Visualisera förändringar från 2000 K till 10000 K i realtid."
     },
     "sensor-size-comparison": {
       "title": "Sensor Size Comparison",
-      "description": "Jämför sensorstorlekar från mellanformat till smartphone. Överlägg, sida vid sida och pixeltäthet med verkliga kameramodeller."
+      "description": "Jämför sensorstorlekar från mellanformat till mobiltelefoner. Overlay, sida vid sida och pixeltäthet med verkliga kameramodeller."
     },
     "color-scheme-generator": {
       "title": "Color Scheme Generator",
-      "description": "Skapa färgpaletter för fotografering med komplement, analoga, triadiska och tetradiska färgharmonier. Interaktiv färgcirkel med fotoplockning."
+      "description": "Skapa färgpaletter för fotografering med komplementära, analoga, triadiska och tetradiska färgharmonier. Interaktiv färgcirkel med färgplockning från foto."
     },
     "frame-studio": {
       "title": "Frame Studio",
-      "description": "Beskär, rama in och komponera foton med kompositionsrutnät. 100 % i webbläsaren — dina foton lämnar aldrig din enhet."
+      "description": "Beskär, rama in och komponera foton med kompositionsrutnät. Körs helt i webbläsaren — dina foton lämnar aldrig din enhet."
     },
     "exif-viewer": {
       "title": "EXIF Viewer",
-      "description": "Se EXIF-metadata, histogram och förhandsvisning för vilket foto som helst. 100 % i webbläsaren — dina foton lämnar aldrig din enhet."
+      "description": "Se EXIF-metadata, histogram och förhandsvisning för vilket foto som helst. Körs helt i webbläsaren — dina foton lämnar aldrig din enhet."
     },
     "hyperfocal-simulator": {
       "title": "Hyperfokalavståndssimulator",
@@ -56,7 +56,7 @@
     },
     "shutter-speed-visualizer": {
       "title": "Shutter Speed Visualizer",
-      "description": "Hitta kortaste slutartid för skarpa handhållna foton. Tar hänsyn till brännvidd, sensorstorlek och bildstabilisering."
+      "description": "Hitta kortaste säkra slutartid för skarpa handhållna foton. Tar hänsyn till brännvidd, sensorstorlek och bildstabilisering."
     },
     "nd-filter-calculator": {
       "title": "ND Filter Calculator",
@@ -64,7 +64,7 @@
     },
     "perspective-compression-simulator": {
       "title": "Perspektivkompressionssimulator",
-      "description": "Interaktiv 3D-simulator som visar hur brännvidd och avstånd påverkar perspektivkompression. Se bakgrundskompressionen förändras i realtid."
+      "description": "Interaktiv 3D-simulator som visar hur brännvidd och avstånd påverkar perspektivkompression. Se bakgrundskompressionen ändras i realtid."
     },
     "about": {
       "title": "Om oss",

@@ -2,14 +2,14 @@
   "glossary": {
     "title": "Fotografiordliste",
     "subtitle": "Søgbar oversigt over fotografibegreber. Klik på et begreb for at se forklaringen.",
-    "searchPlaceholder": "Søg i begreber...",
+    "searchPlaceholder": "Søg i begreberne …",
     "searchAriaLabel": "Søg i ordlistens begreber",
     "noResults": "Ingen begreber matcher din søgning.",
     "tryTool": "Prøv {toolName}",
     "entries": {
       "aperture": {
         "term": "Blænde",
-        "definition": "Åbningen i linsen, som lyset passerer igennem. En større blænde (lavere f-tal) slipper mere lys ind og giver mindre dybdeskarphed."
+        "definition": "Den åbning i linsen, som lyset passerer igennem. En større blænde (lavere f-tal) slipper mere lys ind og giver mindre dybdeskarphed."
       },
       "aspect-ratio": {
         "term": "Billedformat",
@@ -17,7 +17,7 @@
       },
       "autofocus": {
         "term": "Autofokus",
-        "definition": "Et kamerasystem, der automatisk justerer linsen for at stille skarpt på motivet. Moderne systemer bruger fasedetektion eller kontrastdetektion."
+        "definition": "Et kamerasystem, der automatisk stiller skarpt på motivet. Moderne systemer bruger fasedetektion eller kontrastdetektion."
       },
       "bokeh": {
         "term": "Bokeh",
@@ -25,23 +25,23 @@
       },
       "bracketing": {
         "term": "Bracketing",
-        "definition": "At tage flere billeder af samme motiv med forskellige eksponeringer. Bruges til HDR-fotografi eller for at sikre mindst ét korrekt eksponeret billede."
+        "definition": "At tage flere billeder af samme motiv med forskellige eksponeringer. Bruges til HDR-fotografi, eller for at sikre mindst ét korrekt eksponeret billede."
       },
       "bulb-mode": {
         "term": "Bulb-tilstand",
-        "definition": "En lukkerindstilling, hvor lukkeren bliver åben så længe udløseren holdes nede. Bruges til meget lange eksponeringer ud over kameraets indbyggede tider."
+        "definition": "En lukkerindstilling, hvor lukkeren forbliver åben, så længe udløseren holdes nede. Bruges til meget lange eksponeringer ud over kameraets indbyggede tider."
       },
       "burst-mode": {
         "term": "Serieoptagelse",
-        "definition": "En optageindstilling, hvor kameraet tager flere billeder i sekundet i hurtig rækkefølge. Nyttigt til hurtig action eller til at fange det bedste øjeblik."
+        "definition": "En optageindstilling, hvor kameraet tager flere billeder i sekundet i hurtig rækkefølge. Nyttig til hurtig action eller til at fange det bedste øjeblik."
       },
       "chromatic-aberration": {
         "term": "Kromatisk aberration",
-        "definition": "En linsefejl, hvor forskellige bølgelængder af lys fokuseres en smule forskelligt, så der opstår farvekanter langs kontrastrige overgange. Oftere på billige linser og ved åbne blænder."
+        "definition": "En linsefejl, hvor forskellige bølgelængder af lys fokuseres en smule forskelligt, så der opstår farvekanter langs kontrastrige overgange. Ses oftere på billige linser og ved åbne blænder."
       },
       "circle-of-confusion": {
         "term": "Uskarphedscirkel",
-        "definition": "Den største uskarphedsplet, som det menneskelige øje stadig opfatter som et punkt. Den afgør grænserne for acceptabel skarphed og bruges i beregning af dybdeskarphed."
+        "definition": "Den største uskarphedsplet, som øjet stadig opfatter som et punkt. Den afgør grænserne for acceptabel skarphed og bruges i beregning af dybdeskarphed."
       },
       "color-temperature": {
         "term": "Farvetemperatur",
@@ -57,7 +57,7 @@
       },
       "diffraction": {
         "term": "Diffraktion",
-        "definition": "Bøjningen af lys når det passerer gennem en lille blændeåbning, hvilket gør billedet blødere. Det sætter en praktisk grænse for, hvor meget du kan lukke blænden."
+        "definition": "Bøjningen af lys, når det passerer gennem en lille blændeåbning. Det gør billedet blødere og sætter en praktisk grænse for, hvor meget du kan lukke blænden."
       },
       "dynamic-range": {
         "term": "Dynamikområde",
@@ -65,15 +65,15 @@
       },
       "ev": {
         "term": "EV (eksponeringsværdi)",
-        "definition": "Et tal, der repræsenterer en kombination af lukkertid og blænde, som giver samme eksponering. Hvert trin på 1 EV fordobler eller halverer lysmængden."
+        "definition": "Et tal, der beskriver en kombination af lukkertid og blænde, som giver samme eksponering. Hvert trin på 1 EV fordobler eller halverer lysmængden."
       },
       "exposure-compensation": {
         "term": "Eksponeringskompensation",
-        "definition": "En kamerakontrol, der tilsidesætter den målte eksponering, typisk i trin på 1/3 stop. Positive værdier gør billedet lysere; negative værdier gør det mørkere."
+        "definition": "En kamerakontrol, der overruler den målte eksponering, typisk i trin på 1/3 stop. Positive værdier gør billedet lysere; negative værdier gør det mørkere."
       },
       "exposure-triangle": {
         "term": "Eksponeringstrekant",
-        "definition": "Samspillet mellem blænde, lukkertid og ISO. Ændrer du en af dem, skal du justere de andre for at bevare samme eksponering."
+        "definition": "Samspillet mellem blænde, lukkertid og ISO. Ændrer du én af dem, skal du justere de andre for at bevare samme eksponering."
       },
       "f-stop": {
         "term": "F-stop",
@@ -81,7 +81,7 @@
       },
       "focal-length": {
         "term": "Brændvidde",
-        "definition": "Afstanden i millimeter fra linsens optiske centrum til sensoren, når den er fokuseret på uendelig. Bestemmer billedvinklen og forstørrelsen."
+        "definition": "Afstanden i millimeter fra linsens optiske centrum til sensoren, når der er stillet skarpt på uendelig. Bestemmer billedvinklen og forstørrelsen."
       },
       "focus-stacking": {
         "term": "Focus stacking",
@@ -89,11 +89,11 @@
       },
       "full-frame": {
         "term": "Fuldformat",
-        "definition": "En sensorstørrelse svarende til 35mm film (36 x 24mm). Det er referencestandarden for brændvidde og cropfaktorberegninger."
+        "definition": "En sensorstørrelse svarende til 35mm film (36 × 24mm). Det er referencestandarden for brændvidde og cropfaktorberegninger."
       },
       "golden-hour": {
         "term": "Den gyldne time",
-        "definition": "Perioden lige efter solopgang eller før solnedgang, hvor sollyset er varmt, blødt og retningsbestemt. Højt værdsat i landskabs- og portrætfotografi."
+        "definition": "Perioden lige efter solopgang eller lige før solnedgang, hvor sollyset er varmt, blødt og retningsbestemt. Højt værdsat i landskabs- og portrætfotografi."
       },
       "histogram": {
         "term": "Histogram",
@@ -121,11 +121,11 @@
       },
       "lens-compression": {
         "term": "Linsekompression",
-        "definition": "Den visuelle effekt, hvor en teleobjektiv får fjerne objekter til at se tættere på forgrunden ud. Det skyldes den lange optageafstand, ikke selve linsen."
+        "definition": "Den visuelle effekt, hvor en telelinse får fjerne objekter til at se ud, som om de ligger tættere på forgrunden. Det skyldes den lange optageafstand, ikke selve linsen."
       },
       "light-meter": {
         "term": "Lysmåler",
-        "definition": "En enhed eller et kamerasystem, der måler lysintensiteten for at bestemme den rette eksponering. Kameraer måler reflekteret lys; håndholdte målere kan måle indfaldende lys."
+        "definition": "Et apparat eller et kamerasystem, der måler lysstyrken for at finde den rette eksponering. Kameraer måler reflekteret lys; håndholdte målere kan også måle indfaldende lys."
       },
       "long-exposure": {
         "term": "Langtidseksponering",
@@ -137,7 +137,7 @@
       },
       "medium-format": {
         "term": "Mellemformat",
-        "definition": "En sensorstørrelse større end fuldformat, typisk omkring 44 x 33mm eller 54 x 40mm. Giver højere opløsning, mindre dybdeskarphed og større dynamikområde."
+        "definition": "En sensorstørrelse, der er større end fuldformat, typisk omkring 44 × 33mm eller 54 × 40mm. Giver højere opløsning, mindre dybdeskarphed og større dynamikområde."
       },
       "megapixel": {
         "term": "Megapixel",
@@ -145,23 +145,23 @@
       },
       "micro-four-thirds": {
         "term": "Micro Four Thirds",
-        "definition": "Et spejlløst kamerasystem med en sensor på 17,3 x 13mm og en cropfaktor på 2x. Giver kompakte huse og linser med god billedkvalitet."
+        "definition": "Et spejlløst kamerasystem med en sensor på 17,3 × 13mm og en cropfaktor på 2x. Giver kompakte huse og linser med god billedkvalitet."
       },
       "mirror-lock-up": {
         "term": "Spejl-op-funktion",
-        "definition": "En DSLR-funktion, der klapper spejlet op, før lukkeren udløses, så vibrationer reduceres. Bruges til skarpe stativbilleder, især ved langsomme lukkertider."
+        "definition": "En DSLR-funktion, der klapper spejlet op, før lukkeren udløses, så vibrationerne reduceres. Bruges til skarpe stativbilleder, især ved langsomme lukkertider."
       },
       "nd-filter": {
         "term": "ND-filter",
-        "definition": "Et gråfilter, der reducerer mængden af lys ind i linsen uden at ændre farverne. Tillader længere eksponeringer eller større blænder i stærkt lys."
+        "definition": "Et gråfilter, der reducerer mængden af lys ind i linsen uden at ændre farverne. Gør det muligt at bruge længere eksponeringer eller større blænder i stærkt lys."
       },
       "noise": {
         "term": "Støj",
-        "definition": "Tilfældige variationer i lysstyrke og farve i digitale billeder, mest synlige i skygger og ved høj ISO. Kan reduceres med støjreduktionssoftware."
+        "definition": "Tilfældige variationer i lysstyrke og farve i digitale billeder. Mest synlig i skygger og ved høj ISO. Kan reduceres med støjreduktionssoftware."
       },
       "overexposure": {
         "term": "Overeksponering",
-        "definition": "Når et billede får for meget lys, så højlysene bliver rent hvide og mister detalje. Det modsatte af undereksponering."
+        "definition": "Når et billede får for meget lys, så højlysene brænder ud til rent hvidt og mister detalje. Det modsatte af undereksponering."
       },
       "panorama": {
         "term": "Panorama",
@@ -169,7 +169,7 @@
       },
       "pixel-pitch": {
         "term": "Pixel pitch",
-        "definition": "Afstanden i mikrometer mellem centrene af nabopixels på en sensor. Større pixel pitch betyder generelt bedre ydelse i svagt lys."
+        "definition": "Afstanden i mikrometer mellem centrene af to nabopixels på en sensor. Jo større pixel pitch, jo bedre ydelse i svagt lys — som hovedregel."
       },
       "polarizer": {
         "term": "Polarisationsfilter",
@@ -177,7 +177,7 @@
       },
       "prime-lens": {
         "term": "Fast brændvidde",
-        "definition": "En linse med fast brændvidde (ingen zoom). Fastobjektiver er typisk skarpere, lysstærkere og lettere end tilsvarende zoomlinser."
+        "definition": "En linse med fast brændvidde (ingen zoom). Fastobjektiver er typisk skarpere, lysstærkere og lettere end tilsvarende zoomobjektiver."
       },
       "raw": {
         "term": "RAW",
@@ -185,11 +185,11 @@
       },
       "reciprocal-rule": {
         "term": "Reciprokregelen",
-        "definition": "En tommelfingerregel, der siger, at minimumslukkertiden ved håndholdt fotografering skal være 1/(brændvidde) for at undgå kamerabevægelse. Med en 200mm linse: mindst 1/200 s."
+        "definition": "En tommelfingerregel, der siger, at den mindste lukkertid ved håndholdt fotografering skal være 1/(brændvidde) for at undgå kamerarystelser. Med en 200mm linse: mindst 1/200 s."
       },
       "rule-of-thirds": {
         "term": "Tredjedelsreglen",
-        "definition": "En kompositionsregel, der inddeler billedet i et 3x3-gitter. Placering af motiver langs linjerne eller i deres skæringspunkter skaber ofte en mere balanceret komposition."
+        "definition": "En kompositionsregel, der deler billedet op i et 3×3-gitter. At placere motiver langs linjerne eller i deres skæringspunkter skaber ofte en mere balanceret komposition."
       },
       "sensor-size": {
         "term": "Sensorstørrelse",
@@ -197,11 +197,11 @@
       },
       "shutter-speed": {
         "term": "Lukkertid",
-        "definition": "Hvor længe kameraets lukker er åben under eksponeringen. Hurtige tider fryser bevægelse; langsomme tider giver bevægelsessløring."
+        "definition": "Hvor længe kameraets lukker er åben under eksponeringen. Hurtige tider fryser bevægelse, og langsomme tider giver bevægelsessløring."
       },
       "star-trails": {
         "term": "Star trails",
-        "definition": "Lysstriber skabt af stjernernes tilsyneladende bevægelse under en lang eksponering. Kan fanges i én meget lang eksponering eller ved at stacke flere kortere billeder."
+        "definition": "Lysstriber skabt af stjernernes tilsyneladende bevægelse under en lang eksponering. Kan fanges i én meget lang eksponering — eller ved at stacke flere kortere billeder."
       },
       "stop": {
         "term": "Stop",
@@ -209,7 +209,7 @@
       },
       "telephoto": {
         "term": "Tele",
-        "definition": "En linse med en brændvidde længere end omkring 70mm (fuldformat-ækvivalent). Tele forstørrer fjerne motiver og komprimerer perspektivet."
+        "definition": "En linse med en brændvidde længere end omkring 70mm (fuldformat-ækvivalent). Telelinser forstørrer fjerne motiver og komprimerer perspektivet."
       },
       "tilt-shift": {
         "term": "Tilt-shift",
@@ -217,11 +217,11 @@
       },
       "underexposure": {
         "term": "Undereksponering",
-        "definition": "Når et billede får for lidt lys, så skyggerne mister detalje og virker støjede. Det modsatte af overeksponering."
+        "definition": "Når et billede får for lidt lys, så skyggerne mister detalje og bliver støjede. Det modsatte af overeksponering."
       },
       "vignetting": {
         "term": "Vignettering",
-        "definition": "En formørkning i billedets hjørner og kanter i forhold til midten. Kan skyldes linsedesign, filtre eller modlysblænder og tilføjes nogle gange bevidst i efterbehandling."
+        "definition": "En formørkning af billedets hjørner og kanter i forhold til midten. Kan skyldes linsedesign, filtre eller modlysblænder — og tilføjes nogle gange bevidst i efterbehandling."
       },
       "white-balance": {
         "term": "Hvidbalance",
@@ -233,7 +233,7 @@
       },
       "zoom-lens": {
         "term": "Zoomobjektiv",
-        "definition": "En linse med variabel brændvidde, så fotografen kan ændre udsnittet uden at flytte sig. Fleksibel, men ofte på bekostning af størrelse, vægt og skarphed."
+        "definition": "En linse med variabel brændvidde, så du kan ændre udsnittet uden at flytte dig. Fleksibel, men ofte på bekostning af størrelse, vægt og skarphed."
       }
     }
   }

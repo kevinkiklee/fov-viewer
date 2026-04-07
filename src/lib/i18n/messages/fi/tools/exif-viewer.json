@@ -2,7 +2,7 @@
   "toolUI": {
     "exif-viewer": {
       "loadExamplePhoto": "Lataa esimerkkikuva",
-      "couldNotReadExif": "EXIF-tietoja ei voitu lukea tästä kuvasta.",
+      "couldNotReadExif": "Tämän kuvan EXIF-tietoja ei voitu lukea.",
       "failedToReadFile": "Tiedoston lukeminen epäonnistui.",
       "uploadedPhoto": "Ladattu kuva",
       "analysis": "Analyysi",
@@ -38,7 +38,7 @@
       "latitudeLabel": "Leveysaste",
       "longitudeLabel": "Pituusaste",
       "softwareLabel": "Ohjelmisto",
-      "gpsWarning": "Tämä kuva sisältää sijaintitietoja. Ole varovainen jakaessasi alkuperäistä tiedostoa.",
+      "gpsWarning": "Tämä kuva sisältää sijaintitiedot. Ole varovainen, kun jaat alkuperäisen tiedoston.",
       "luminance": "Luminanssi",
       "red": "Punainen",
       "green": "Vihreä",
@@ -57,15 +57,15 @@
       "faq": {
         "what-is-exif-data": {
           "question": "Mitä EXIF-tiedot ovat kuvassa?",
-          "answer": "EXIF (Exchangeable Image File Format) -tiedot ovat kameran kuvaan upottamaa metatietoa. Ne sisältävät kameran asetukset (aukko, suljinaika, ISO), kameran ja objektiivin mallin, päivämäärän ja kellonajan sekä joskus GPS-sijainnin."
+          "answer": "EXIF (Exchangeable Image File Format) tarkoittaa metatietoja, jotka kamera tallentaa kuvan sisään. Ne sisältävät kameran asetukset (aukko, suljinaika, ISO), kameran ja objektiivin mallin, päivämäärän ja kellonajan sekä joskus GPS-sijainnin."
         },
         "how-to-read-histogram": {
           "question": "Miten luen kuvan histogrammia?",
-          "answer": "Histogrammi näyttää kuvan kirkkauden jakauman varjoista (vasen) valoihin (oikea). Hyvin valotetussa kuvassa data on yleensä jakautunut koko alueelle ilman leikkautumista kummassakaan päässä, vaikka ihannemuoto riippuu näkymästä."
+          "answer": "Histogrammi näyttää kuvan kirkkausjakauman varjoista (vasen reuna) valoihin (oikea reuna). Hyvin valotetussa kuvassa data on yleensä levittäytynyt koko alueelle eikä leikkaudu kummastakaan päästä, vaikka ihanteellinen muoto riippuukin aiheesta."
         },
         "does-exif-contain-location": {
           "question": "Sisältävätkö EXIF-tiedot sijaintini?",
-          "answer": "Jos kamerassasi tai puhelimessasi on GPS käytössä, EXIF-tiedot voivat sisältää tarkat GPS-koordinaatit, missä kuva on otettu. Huomioi tämä jakaessasi kuvia verkossa — monet sosiaaliset alustat poistavat EXIF-tiedot, mutta eivät kaikki."
+          "answer": "Jos kamerassasi tai puhelimessasi on GPS käytössä, EXIF-tiedoissa voi olla tarkat GPS-koordinaatit kuvauspaikasta. Muista tämä, kun jaat kuvia verkossa — monet some-palvelut poistavat EXIF-tiedot, mutta eivät kaikki."
         }
       }
     }

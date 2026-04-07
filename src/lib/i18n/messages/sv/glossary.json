@@ -21,7 +21,7 @@
       },
       "bokeh": {
         "term": "Bokeh",
-        "definition": "Den estetiska kvaliteten på de oskärpa områdena i bilden, särskilt högdagrar. Mjuk, rund bokeh anses oftast tilltalande och styrs av objektivets konstruktion och bländarens form."
+        "definition": "Den estetiska kvaliteten hos de oskärpa områdena i bilden, särskilt högdagrarna. Mjuk, rund bokeh upplevs oftast som tilltalande och styrs av objektivets konstruktion och bländarbladens form."
       },
       "bracketing": {
         "term": "Gaffling",
@@ -41,7 +41,7 @@
       },
       "circle-of-confusion": {
         "term": "Oskärpecirkel",
-        "definition": "Den största oskärpefläck på sensorn som fortfarande uppfattas som en punkt av det mänskliga ögat. Den definierar gränsen för acceptabel skärpa och används vid beräkning av skärpedjup."
+        "definition": "Den största oskärpefläcken på sensorn som fortfarande uppfattas som en punkt av ögat. Definierar gränsen för acceptabel skärpa och används vid beräkning av skärpedjup."
       },
       "color-temperature": {
         "term": "Färgtemperatur",
@@ -57,7 +57,7 @@
       },
       "diffraction": {
         "term": "Diffraktion",
-        "definition": "Ljusets böjning när det passerar en liten bländaröppning, vilket gör bilden mjukare. Sätter en praktisk gräns för hur långt du kan nedbländaa ett objektiv."
+        "definition": "Ljusets böjning när det passerar en liten bländaröppning, vilket gör bilden mjukare. Sätter en praktisk gräns för hur långt du kan blända ned ett objektiv."
       },
       "dynamic-range": {
         "term": "Dynamiskt omfång",
@@ -113,7 +113,7 @@
       },
       "jpeg": {
         "term": "JPEG",
-        "definition": "Ett komprimerat bildformat som använder destruktiv kompression. Mindre filstorlekar men mindre flexibilitet vid redigering jämfört med RAW."
+        "definition": "Ett komprimerat bildformat som använder förstörande kompression. Mindre filer men mindre flexibilitet i efterbehandlingen jämfört med RAW."
       },
       "kelvin": {
         "term": "Kelvin",
@@ -121,7 +121,7 @@
       },
       "lens-compression": {
         "term": "Objektivkompression",
-        "definition": "Den visuella effekten av ett teleobjektiv som får avlägsna objekt att se närmare förgrunden ut. Effekten beror på det långa tagningsavståndet, inte på objektivet i sig."
+        "definition": "Den visuella effekten där avlägsna objekt ser ut att ligga närmare förgrunden, ofta förknippad med teleobjektiv. Effekten beror egentligen på det långa tagningsavståndet, inte på objektivet i sig."
       },
       "light-meter": {
         "term": "Exponeringsmätare",

@@ -120,7 +120,7 @@
           "scenario": "Anda sedang mengambil gambar sekumpulan 8 orang yang disusun dalam dua baris di majlis perkahwinan. Aperture apa yang akan membantu memastikan semua orang berada dalam fokus?",
           "hint": "Dengan orang ramai pada jarak yang sedikit berbeza, anda memerlukan kedalaman medan yang cukup untuk meliputi kedua-dua baris.",
           "successMessage": "Pilihan bagus! f/5.6 menyediakan kedalaman medan yang mencukupi untuk mengekalkan kedua-dua baris tajam sambil masih mengekalkan kelajuan pengatup yang baik di dalam bangunan.",
-          "failureMessage": "Aperture itu mungkin meninggalkan baris belakang di luar fokus atau terlalu sempit. Untuk dua baris orang, f/5.6 adalah titik permulaan yang boleh dipercayai.",
+          "failureMessage": "Aperture itu mungkin meninggalkan baris belakang di luar fokus atau terlalu sempit. Untuk dua baris orang, f/5.6 ialah titik permulaan yang boleh dipercayai.",
           "options": {
             "0": { "label": "f/1.4" },
             "1": { "label": "f/2.8" },

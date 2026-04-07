@@ -1,19 +1,19 @@
 {
   "education": {
     "sensor-size-comparison": {
-      "beginner": "Senzorii de cameră vin în multe dimensiuni fizice diferite, de la cipurile mari de format mediu folosite în camerele de studio, până la senzorii minusculi din telefoane. Un senzor mai mare captează mai multă lumină, produce mai puțin zgomot și face mai ușoară blurarea fundalului. Dimensiunea senzorului este unul dintre cei mai mari factori care separă categoriile de camere.",
+      "beginner": "Senzorii de aparat foto vin în multe dimensiuni fizice diferite, de la cipurile mari de format mediu folosite în aparatele de studio, până la senzorii minusculi din telefoane. Un senzor mai mare captează mai multă lumină, produce mai puțin zgomot și face mai ușoară blurarea fundalului. Dimensiunea senzorului e unul dintre cei mai importanți factori care separă categoriile de aparate foto.",
       "deeper": {
         "0": {
           "heading": "Cum funcționează",
-          "text": "Dimensiunea senzorului afectează fotografia în mai multe feluri interconectate. Un senzor mai mare are o suprafață mai mare pentru a colecta fotoni, îmbunătățind raportul semnal-zgomot și gama dinamică. Dimensiunea senzorului este una dintre cele mai importante diferențe între categoriile de camere — de la formatul mediu din studio până la senzorii de smartphone."
+          "text": "Dimensiunea senzorului influențează fotografia în mai multe feluri legate între ele. Un senzor mai mare are o suprafață mai mare pe care colectează fotoni, ceea ce îmbunătățește raportul semnal-zgomot și gama dinamică. Dimensiunea senzorului e una dintre cele mai importante diferențe între categoriile de aparate foto — de la formatul mediu din studio până la senzorii de smartphone."
         },
         "1": {
           "heading": "Factor de crop",
-          "text": "\"Factorul de crop\" descrie cum se compară un senzor cu standardul full-frame de 35mm. Un senzor APS-C cu un factor de crop de 1.5x oferă același unghi de vizualizare cu un obiectiv de 35mm ca o cameră full-frame cu un obiectiv de 52.5mm. Acest factor de crop înmulțește și adâncimea efectivă a câmpului — un senzor mai mic pare să ofere mai multă adâncime a câmpului la aceeași încadrare, pentru că ai nevoie de un obiectiv mai larg (mai scurt) ca să potrivești unghiul de vizualizare."
+          "text": "„Factorul de crop” descrie cum se compară un senzor cu standardul full-frame de 35mm. Un senzor APS-C cu factor de crop de 1.5× dă același unghi de vizualizare cu un obiectiv de 35mm ca un aparat full-frame cu un obiectiv de 52,5mm. Factorul de crop afectează și adâncimea efectivă a câmpului — un senzor mai mic pare să ofere mai multă adâncime a câmpului la aceeași încadrare, pentru că ai nevoie de un obiectiv mai larg (mai scurt) ca să potrivești unghiul de vizualizare."
         },
         "2": {
           "heading": "Densitatea pixelilor",
-          "text": "Densitatea pixelilor (pasul pixelilor) măsoară cât de strâns sunt împachetați pixelii pe senzor. Înghesuirea mai multor megapixeli pe un senzor mai mic reduce fiecare fotosit, scăzând colectarea de lumină per pixel. Un senzor full-frame de 24MP are pixeli de ~6\u00b5m, în timp ce un senzor APS-C de 24MP are pixeli de ~4\u00b5m, motiv pentru care senzorul full-frame performează de obicei mai bine la ISO mare."
+          "text": "Densitatea pixelilor (pasul pixelilor) măsoară cât de strâns sunt împachetați pixelii pe senzor. Înghesuirea mai multor megapixeli pe un senzor mai mic reduce fiecare fotosit, scăzând astfel cantitatea de lumină colectată per pixel. Un senzor full-frame de 24MP are pixeli de ~6µm, iar un APS-C de 24MP are pixeli de ~4µm, motiv pentru care senzorul full-frame se comportă, de obicei, mai bine la ISO mare."
         }
       },
       "keyFactors": {
@@ -23,7 +23,7 @@
         },
         "1": {
           "label": "Factor de crop",
-          "description": "Raportul dintre diagonala full-frame și diagonala senzorului. Înmulțit cu distanța focală, îți dă distanța focală \"echivalentă\"."
+          "description": "Raportul dintre diagonala full-frame și diagonala senzorului. Înmulțit cu distanța focală, îți dă distanța focală „echivalentă”."
         },
         "2": {
           "label": "Densitatea pixelilor",
@@ -31,44 +31,44 @@
         },
         "3": {
           "label": "Suprafața senzorului",
-          "description": "Suprafața totală în mm\u00b2. Un senzor de format mediu de 44x33mm (Fujifilm GFX, Hasselblad X) are aproximativ 1.7x suprafața unui full-frame, în timp ce un cip de format mediu mai mare, de 54x40mm, are aproximativ 2.5x. Full-frame-ul este de aproximativ 13 ori mai mare ca suprafață decât un senzor de smartphone flagship."
+          "description": "Suprafața totală în mm². Un senzor de format mediu de 44×33mm (Fujifilm GFX, Hasselblad X) are aproximativ 1,7× suprafața unui full-frame, iar un cip de format mediu mai mare, de 54×40mm, are aproximativ 2,5×. Full-frame-ul este de aproximativ 13 ori mai mare, ca suprafață, decât un senzor de smartphone flagship."
         }
       },
       "tips": {
         "0": {
-          "text": "Folosește modul de suprapunere ca să vezi exact cât de mult mai mare este un senzor față de altul — diferența de suprafață este adesea mai dramatică decât sugerează cifrele."
+          "text": "Folosește modul suprapunere ca să vezi exact cât de mult mai mare e un senzor față de altul — diferența de suprafață e adesea mai dramatică decât sugerează cifrele."
         },
         "1": {
-          "text": "Treci la modul de densitate a pixelilor și introdu rezoluția camerei tale pentru a compara pasul pixelilor. Dacă camera ta are densitate de pixeli foarte mare, poți atinge limitele de difracție la diafragme mai largi decât te-ai aștepta."
+          "text": "Treci pe modul densitate a pixelilor și introdu rezoluția aparatului tău ca să compari pasul pixelilor. Dacă aparatul tău are densitate de pixeli foarte mare, poți atinge limitele de difracție la diafragme mai largi decât te-ai aștepta."
         },
         "2": {
-          "text": "Când compari camere, suprafața senzorului contează mai mult decât numărul de megapixeli pentru performanța la zgomot. Un senzor full-frame de 20MP va depăși de obicei un APS-C de 40MP la ISO mare."
+          "text": "Când compari aparate, suprafața senzorului contează mai mult decât numărul de megapixeli pentru performanța la zgomot. Un senzor full-frame de 20MP va depăși, de obicei, un APS-C de 40MP la ISO mare."
         }
       },
       "tooltips": {
         "Sensor": {
           "term": "Senzor",
-          "definition": "Activează sau dezactivează formatele individuale de senzor pentru a le include în comparația vizuală și în tabelul de date."
+          "definition": "Activează sau dezactivează formatele individuale de senzor ca să le incluzi în comparația vizuală și în tabelul cu date."
         },
         "Display Mode": {
           "term": "Mod de afișare",
-          "definition": "Suprapunere arată toți senzorii centrați în același punct. Alăturat îi plasează unul lângă celălalt la aceeași scară. Densitatea pixelilor vizualizează cât de strâns sunt împachetați pixelii."
+          "definition": "Suprapunere afișează toți senzorii centrați în același punct. Alăturat îi plasează unul lângă celălalt, la aceeași scară. Densitatea pixelilor vizualizează cât de strâns sunt împachetați pixelii."
         },
         "Resolution": {
           "term": "Rezoluție",
-          "definition": "Numărul total de megapixeli folosit pentru calculul pasului de pixel în modul densitate. Mai mulți megapixeli pe aceeași dimensiune de senzor înseamnă pixeli individuali mai mici."
+          "definition": "Numărul total de megapixeli folosit la calculul pasului de pixel în modul densitate. Mai mulți megapixeli pe aceeași dimensiune de senzor înseamnă pixeli individuali mai mici."
         },
         "Crop Factor": {
           "term": "Factor de crop",
-          "definition": "Raportul dintre diagonala full-frame 35mm și diagonala acestui senzor. Un factor de crop de 1.5x înseamnă că un obiectiv de 50mm încadrează ca un 75mm pe full frame."
+          "definition": "Raportul dintre diagonala full-frame 35mm și diagonala acestui senzor. Un factor de crop de 1.5× înseamnă că un 50mm încadrează ca un 75mm pe full frame."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Un senzor full-frame măsoară 36\u00d724mm. Un senzor APS-C are un factor de crop de 1.5x. Care este lățimea aproximativă a unui senzor APS-C?",
+          "scenario": "Un senzor full-frame măsoară 36×24mm. Un senzor APS-C are un factor de crop de 1.5×. Care este lățimea aproximativă a unui senzor APS-C?",
           "hint": "Împarte lățimea full-frame la factorul de crop.",
-          "successMessage": "Corect! 36mm \u00f7 1.5 \u2248 24mm. Senzorul APS-C este de aproximativ 24\u00d716mm, ceea ce îi dă aproximativ 44% din suprafața full-frame.",
-          "failureMessage": "Împarte lățimea full-frame (36mm) la factorul de crop (1.5x): 36 \u00f7 1.5 = 24mm.",
+          "successMessage": "Corect! 36mm ÷ 1.5 ≈ 24mm. Senzorul APS-C este de aproximativ 24×16mm, ceea ce îi dă aproximativ 44% din suprafața full-frame.",
+          "failureMessage": "Împarte lățimea full-frame (36mm) la factorul de crop (1.5×): 36 ÷ 1.5 = 24mm.",
           "options": {
             "0": { "label": "24mm" },
             "1": { "label": "30mm" },
@@ -76,10 +76,10 @@
           }
         },
         "1": {
-          "scenario": "Montezi un obiectiv de 50mm pe o cameră cu un senzor cu factor de crop de 2.0x. Ce distanță focală echivalentă full-frame obții?",
+          "scenario": "Montezi un obiectiv de 50mm pe un aparat cu senzor care are factor de crop de 2.0×. Ce distanță focală echivalentă full-frame obții?",
           "hint": "Înmulțește distanța focală cu factorul de crop.",
-          "successMessage": "Exact! 50mm \u00d7 2.0 = 100mm echivalent. De aceea camerele Micro Four Thirds sunt populare pentru fotografia cu tele — obții acoperire suplimentară din fiecare obiectiv.",
-          "failureMessage": "Înmulțește distanța focală a obiectivului cu factorul de crop: 50mm \u00d7 2.0 = 100mm echivalent.",
+          "successMessage": "Exact! 50mm × 2.0 = 100mm echivalent. De aceea aparatele Micro Four Thirds sunt populare pentru fotografia cu tele — obții un plus de apropiere din fiecare obiectiv.",
+          "failureMessage": "Înmulțește distanța focală a obiectivului cu factorul de crop: 50mm × 2.0 = 100mm echivalent.",
           "options": {
             "0": { "label": "25mm" },
             "1": { "label": "75mm" },
@@ -87,10 +87,10 @@
           }
         },
         "2": {
-          "scenario": "Două camere au ambele 24 de megapixeli — una full-frame (36\u00d724mm) și una APS-C (24\u00d716mm). Care are o performanță mai bună la zgomot la ISO mare și de ce?",
-          "hint": "Gândește-te cum afectează dimensiunea pixelului individual împărțirea aceluiași număr de pixeli pe suprafețe diferite de senzor.",
-          "successMessage": "Exact! Senzorul full-frame răspândește 24MP pe o suprafață mai mare, deci fiecare pixel este fizic mai mare (~6\u00b5m vs ~4\u00b5m pas) și captează mai mulți fotoni, rezultând mai puțin zgomot.",
-          "failureMessage": "Senzorul full-frame câștigă — același număr de megapixeli pe o suprafață mai mare înseamnă pixeli mai mari care colectează mai multă lumină, producând mai puțin zgomot la ISO mare.",
+          "scenario": "Două aparate au, amândouă, 24 de megapixeli — unul full-frame (36×24mm) și unul APS-C (24×16mm). Care are o performanță mai bună la zgomot la ISO mare și de ce?",
+          "hint": "Gândește-te cum influențează dimensiunea pixelului individual împărțirea aceluiași număr de pixeli pe suprafețe diferite de senzor.",
+          "successMessage": "Exact! Senzorul full-frame împarte 24MP pe o suprafață mai mare, deci fiecare pixel e fizic mai mare (~6µm față de ~4µm) și captează mai mulți fotoni, iar rezultatul e mai puțin zgomot.",
+          "failureMessage": "Senzorul full-frame câștigă — același număr de megapixeli pe o suprafață mai mare înseamnă pixeli mai mari, care colectează mai multă lumină și produc mai puțin zgomot la ISO mare.",
           "options": {
             "0": { "label": "Full frame — pixelii mai mari colectează mai multă lumină" },
             "1": { "label": "APS-C — senzorii mai mici sunt mai eficienți" },
@@ -98,10 +98,10 @@
           }
         },
         "3": {
-          "scenario": "Uitându-te la tabelul de comparație, ce format de senzor are un factor de crop cel mai apropiat de 2.0x?",
+          "scenario": "Uitându-te la tabelul de comparație, ce format de senzor are un factor de crop cel mai apropiat de 2.0×?",
           "hint": "Factorul de crop este diagonala full-frame împărțită la diagonala senzorului.",
-          "successMessage": "Corect! Micro Four Thirds are un factor de crop de 2.0x, motiv pentru care un obiectiv M43 de 25mm încadrează ca un 50mm pe full frame.",
-          "failureMessage": "Micro Four Thirds are un factor de crop de 2.0x. Verifică tabelul — diagonala sa este exact jumătate din diagonala full-frame.",
+          "successMessage": "Corect! Micro Four Thirds are un factor de crop de 2.0×, motiv pentru care un obiectiv M43 de 25mm încadrează ca un 50mm pe full frame.",
+          "failureMessage": "Micro Four Thirds are un factor de crop de 2.0×. Verifică tabelul — diagonala sa este exact jumătate din diagonala full-frame.",
           "options": {
             "0": { "label": "APS-C (Canon)" },
             "1": { "label": "Micro Four Thirds" },
@@ -109,10 +109,10 @@
           }
         },
         "4": {
-          "scenario": "Compari o cameră de format mediu de 50MP cu o full-frame de 50MP folosind modul de densitate a pixelilor. Ambele au același număr de megapixeli. Care cameră are pasul de pixel mai mare și ce avantaj practic îi dă asta?",
+          "scenario": "Compari un aparat de format mediu de 50MP cu unul full-frame de 50MP folosind modul densitate a pixelilor. Ambele au același număr de megapixeli. Care are pasul de pixel mai mare și ce avantaj practic îi dă asta?",
           "hint": "Pasul de pixel depinde de lățimea senzorului împărțită la numărul de pixeli orizontali.",
-          "successMessage": "Exact! Senzorul de format mediu este fizic mai mare, deci la 50MP pixelii săi sunt mai mari (pas mai mare). Asta îi oferă aproximativ 1/3 de stop mai bună colectare de lumină per pixel, plus un debut ușor întârziat al difracției.",
-          "failureMessage": "Senzorul de format mediu este mai mare, deci la aceeași rezoluție fiecare pixel este fizic mai mare. Pixelii mai mari colectează mai mulți fotoni, oferind gamă dinamică mai bună și limite de difracție ușor mai târzii.",
+          "successMessage": "Exact! Senzorul de format mediu e fizic mai mare, deci la 50MP pixelii săi sunt mai mari (pas mai mare). Asta îi aduce, aproximativ, 1/3 de stop în plus la colectarea luminii per pixel, plus un debut ușor întârziat al difracției.",
+          "failureMessage": "Senzorul de format mediu e mai mare, deci la aceeași rezoluție fiecare pixel e fizic mai mare. Pixelii mai mari colectează mai mulți fotoni, oferind gamă dinamică mai bună și limite de difracție ușor mai târzii.",
           "options": {
             "0": { "label": "Format mediu — colectare de lumină și gamă dinamică mai bune per pixel" },
             "1": { "label": "Full Frame — pixelii mai mici sunt mai eficienți" },

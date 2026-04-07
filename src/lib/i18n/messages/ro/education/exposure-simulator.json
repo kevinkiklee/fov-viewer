@@ -1,8 +1,8 @@
 {
   "education": {
     "exposure-simulator": {
-      "beginner": "Triunghiul expunerii descrie cum lucrează împreună trei setări ale camerei — diafragmă, timp de expunere și ISO — pentru a controla cât de luminoasă este fotografia ta. Schimbarea unei setări cere ajustarea a cel puțin uneia dintre celelalte pentru a menține aceeași luminozitate. Fiecare setare are și propriul efect creativ: diafragma controlează blurul de fundal, timpul de expunere controlează blurul de mișcare, iar ISO-ul controlează zgomotul imaginii.",
-      "deeper": "Expunerea este măsurată în Valoare de Expunere (EV), unde fiecare treaptă EV întreagă reprezintă o dublare sau înjumătățire a luminii. O creștere de 1 EV (un \"stop\") înseamnă de două ori mai multă lumină care ajunge la senzor. Diafragma urmează o progresie geometrică (f/1.4, f/2, f/2.8, f/4...) unde fiecare stop complet înjumătățește lumina care intră în obiectiv, pentru că aria deschiderii este invers proporțională cu pătratul cifrei f. Timpul de expunere este mai intuitiv: dublând timpul dublezi lumina. ISO-ul amplifică semnalul de la senzor — dublând ISO-ul dublezi luminozitatea efectivă, dar amplifici și zgomotul. În practică, setezi mai întâi parametrul care contează cel mai mult pentru intenția ta creativă (diafragmă pentru control DoF, timp pentru mișcare), apoi le echilibrezi pe celelalte. Camerele moderne măsoară în trepte de 1/3 stop pentru un control mai fin.",
+      "beginner": "Triunghiul expunerii descrie felul în care trei setări ale aparatului — diafragmă, timp de expunere și ISO — lucrează împreună ca să controleze cât de luminoasă e fotografia ta. Când schimbi una, e nevoie să ajustezi cel puțin încă una, ca să păstrezi aceeași luminozitate. Fiecare are și un efect creativ propriu: diafragma controlează blurul fundalului, timpul de expunere controlează blurul de mișcare, iar ISO-ul controlează zgomotul imaginii.",
+      "deeper": "Expunerea este măsurată în Valoare de Expunere (EV), iar fiecare treaptă EV întreagă reprezintă o dublare sau o înjumătățire a luminii. O creștere de 1 EV (un „stop”) înseamnă de două ori mai multă lumină care ajunge pe senzor. Diafragma urmează o progresie geometrică (f/1.4, f/2, f/2.8, f/4...), în care fiecare stop complet înjumătățește lumina care intră în obiectiv, pentru că aria deschiderii este invers proporțională cu pătratul cifrei f. Timpul de expunere e mai intuitiv: dublezi timpul, dublezi lumina. ISO-ul amplifică semnalul de la senzor — dublându-l, dublezi luminozitatea efectivă, dar amplifici și zgomotul. În practică, setezi mai întâi parametrul care contează cel mai mult pentru intenția ta creativă (diafragma pentru controlul DoF, timpul pentru mișcare), apoi le echilibrezi pe celelalte. Aparatele moderne măsoară în trepte de 1/3 de stop pentru un control mai fin.",
       "keyFactors": {
         "0": {
           "label": "Diafragmă",
@@ -14,7 +14,7 @@
         },
         "2": {
           "label": "ISO",
-          "description": "Controlează sensibilitatea senzorului la lumină. ISO mai mare luminează imaginea, dar adaugă granulație/zgomot. Folosește mereu cel mai mic ISO care îți oferă expunerea necesară."
+          "description": "Controlează sensibilitatea senzorului la lumină. Un ISO mai mare luminează imaginea, dar adaugă granulație/zgomot. Folosește întotdeauna cel mai mic ISO care îți dă expunerea de care ai nevoie."
         },
         "3": {
           "label": "Valoare de expunere (EV)",
@@ -23,13 +23,13 @@
       },
       "tips": {
         "0": {
-          "text": "Începe cu modul Aperture Priority: setează diafragma pentru adâncimea câmpului dorită și lasă camera să aleagă timpul de expunere. Crește ISO-ul doar când timpul de expunere scade prea mult pentru cadre clare din mână."
+          "text": "Începe cu modul Aperture Priority: setează diafragma pentru adâncimea câmpului dorită și lasă aparatul să aleagă timpul de expunere. Crește ISO-ul doar când timpul scade prea mult ca să mai obții cadre clare din mână."
         },
         "1": {
-          "text": "Pentru sport și acțiune, treci pe Shutter Priority: alege un timp rapid (1/500s sau mai rapid) și lasă camera să ajusteze diafragma și ISO-ul."
+          "text": "Pentru sport și acțiune, treci pe Shutter Priority: alege un timp rapid (1/500s sau mai rapid) și lasă aparatul să ajusteze diafragma și ISO-ul."
         },
         "2": {
-          "text": "Regula \"Sunny 16\" este o scurtătură mentală utilă: într-o zi însorită, setează diafragma la f/16, timpul de expunere la 1/ISO (de exemplu 1/100s la ISO 100), și vei obține o imagine bine expusă fără să măsori lumina."
+          "text": "Regula „Sunny 16” este o scurtătură mentală utilă: într-o zi însorită, setezi diafragma la f/16 și timpul de expunere la 1/ISO (de exemplu 1/100s la ISO 100), și obții o imagine bine expusă fără să măsori lumina."
         }
       },
       "tooltips": {
@@ -53,9 +53,9 @@
       "challenges": {
         "0": {
           "scenario": "Îți fotografiezi câinele alergând în parc într-o zi însorită. Imaginile îți ies mereu neclare. Ce setare ar trebui să prioritizezi ca să îngheți mișcarea?",
-          "hint": "Blur-ul de mișcare este cauzat de mișcarea subiectului în timpul expunerii.",
-          "successMessage": "Corect! Un timp rapid, ca 1/1000s, îți va îngheța câinele în plin salt. Într-o zi însorită ai suficientă lumină pentru a-l susține.",
-          "failureMessage": "Acea setare nu îngheață direct mișcarea. Ca să oprești un subiect în mișcare, ai nevoie de un timp de expunere rapid — cu cât expunerea e mai scurtă, cu atât subiectul are mai puțin timp să se blureze.",
+          "hint": "Blurul de mișcare e provocat de mișcarea subiectului în timpul expunerii.",
+          "successMessage": "Corect! Un timp rapid, cum ar fi 1/1000s, îți îngheață câinele în plin salt. Într-o zi însorită ai suficientă lumină ca să îl susții.",
+          "failureMessage": "Acea setare nu îngheață direct mișcarea. Ca să oprești un subiect în mișcare ai nevoie de un timp de expunere rapid — cu cât expunerea e mai scurtă, cu atât subiectul are mai puțin timp să se blureze.",
           "options": {
             "0": { "label": "Deschide diafragma la f/2.8" },
             "1": { "label": "Folosește un timp rapid (1/1000s)" },
@@ -64,22 +64,22 @@
           }
         },
         "1": {
-          "scenario": "Faci poze la o petrecere de aniversare în interior. Imaginile îți ies prea întunecate la f/3.5, 1/60s, ISO 400. Nu poți folosi blițul. Care este cel mai bun pas următor?",
-          "hint": "Ai nevoie de mai multă lumină pe senzor sau de mai multă amplificare a semnalului.",
-          "successMessage": "Bun! Crescând ISO-ul la 1600 câștigi două stopuri în plus de luminozitate, păstrând timpul de expunere suficient de rapid pentru cadre din mână.",
-          "failureMessage": "Acea schimbare ar putea cauza alte probleme. Pentru că diafragma este deja aproape de maxim, iar timpul de expunere trebuie să rămână suficient de rapid pentru mână, creșterea ISO-ului este cea mai practică ajustare.",
+          "scenario": "Faci poze la o petrecere aniversară, în interior. Imaginile îți ies prea întunecate la f/3.5, 1/60s, ISO 400. Nu poți folosi blițul. Care e cel mai bun pas următor?",
+          "hint": "Îți trebuie mai multă lumină pe senzor sau mai multă amplificare a semnalului.",
+          "successMessage": "Bun! Ducând ISO la 1600 câștigi încă două stopuri de luminozitate, iar timpul de expunere rămâne suficient de rapid pentru cadre din mână.",
+          "failureMessage": "Acea schimbare ar putea crea alte probleme. Pentru că diafragma e deja aproape de maxim, iar timpul trebuie să rămână destul de rapid pentru mână, creșterea ISO-ului e cea mai practică ajustare.",
           "options": {
             "0": { "label": "Crește ISO la 1600" },
             "1": { "label": "Încetinește timpul la 1/4s" },
             "2": { "label": "Închide diafragma la f/8" },
-            "3": { "label": "Treci la o cameră cu senzor mai mic" }
+            "3": { "label": "Treci la un aparat cu senzor mai mic" }
           }
         },
         "2": {
-          "scenario": "Vrei să captezi o cascadă cu un efect de apă mătăsoasă, într-o zi strălucitoare. Setările tale actuale sunt f/8, 1/250s, ISO 100. Ce ar trebui să schimbi ca să obții aspectul mătăsos?",
+          "scenario": "Vrei să prinzi o cascadă cu efect de apă mătăsoasă, într-o zi însorită. Setările tale actuale sunt f/8, 1/250s, ISO 100. Ce ar trebui să schimbi ca să obții efectul mătăsos?",
           "hint": "Apa mătăsoasă cere o expunere lungă, dar afară e foarte luminos.",
-          "successMessage": "Exact! Folosind un timp lent (1/2s sau mai mult) și compensând prin închiderea diafragmei la f/22 (și eventual cu un filtru ND) vei obține acel efect de apă mătăsoasă.",
-          "failureMessage": "Ca să obții apă mătăsoasă, ai nevoie de un timp lent — de la 1/2s la câteva secunde. Într-o zi însorită trebuie totodată să reduci lumina care intră în obiectiv pentru a evita supraexpunerea.",
+          "successMessage": "Exact! Cu un timp lent (1/2s sau mai mult) și compensând prin închiderea diafragmei la f/22 (și eventual cu un filtru ND), obții efectul de apă mătăsoasă.",
+          "failureMessage": "Ca să obții apă mătăsoasă, ai nevoie de un timp lent — de la 1/2s la câteva secunde. Într-o zi însorită, trebuie totodată să reduci lumina care ajunge pe senzor ca să eviți supraexpunerea.",
           "options": {
             "0": { "label": "Folosește 1/2s și închide la f/22" },
             "1": { "label": "Folosește 1/1000s la f/2.8" },
@@ -88,10 +88,10 @@
           }
         },
         "3": {
-          "scenario": "Fotografia ta corect expusă este la f/5.6, 1/125s, ISO 200. Vrei să treci la f/2.8 pentru mai mult blur de fundal. Cum ar trebui să ajustezi celelalte setări ca să menții aceeași expunere?",
+          "scenario": "Fotografia ta corect expusă este la f/5.6, 1/125s, ISO 200. Vrei să treci la f/2.8 ca să ai mai mult blur pe fundal. Cum ajustezi celelalte setări ca să păstrezi aceeași expunere?",
           "hint": "De la f/5.6 la f/2.8 sunt 2 stopuri în plus de lumină. Trebuie să scazi 2 stopuri din altă parte.",
-          "successMessage": "Perfect! Deschiderea de la f/5.6 la f/2.8 adaugă 2 stopuri de lumină. Schimbând timpul de expunere de la 1/125s la 1/500s scazi exact 2 stopuri, păstrând expunerea identică.",
-          "failureMessage": "Calculul trebuie să se echilibreze. De la f/5.6 la f/2.8 sunt +2 stopuri. Trebuie să compensezi scăzând exact 2 stopuri prin timp mai rapid, ISO mai mic sau o combinație.",
+          "successMessage": "Perfect! Deschiderea de la f/5.6 la f/2.8 adaugă 2 stopuri de lumină. Schimbând timpul de la 1/125s la 1/500s scazi exact 2 stopuri, iar expunerea rămâne identică.",
+          "failureMessage": "Calculul trebuie să se echilibreze. De la f/5.6 la f/2.8 sunt +2 stopuri. Trebuie să compensezi scăzând exact 2 stopuri printr-un timp mai rapid, un ISO mai mic sau o combinație între ele.",
           "options": {
             "0": { "label": "1/500s la ISO 200" },
             "1": { "label": "1/250s la ISO 200" },
@@ -100,10 +100,10 @@
           }
         },
         "4": {
-          "scenario": "Fotografiezi un concert într-o sală întunecată. Interpreții se mișcă rapid sub lumini colorate de scenă. Ai nevoie de cel puțin 1/250s ca să îngheți mișcarea. Cel mai rapid obiectiv al tău este f/2.8. Ce ISO îți trebuie probabil dacă scena se măsoară la EV 6?",
+          "scenario": "Fotografiezi un concert într-o sală întunecată. Interpreții se mișcă rapid sub luminile colorate de scenă. Ai nevoie de cel puțin 1/250s ca să îngheți mișcarea. Cel mai luminos obiectiv al tău este f/2.8. Ce ISO îți trebuie, cel mai probabil, dacă scena se măsoară la EV 6?",
           "hint": "La EV 6, f/2.8, calculează ISO-ul necesar pentru 1/250s. Fiecare stop complet de ISO dublează luminozitatea.",
-          "successMessage": "Corect! La EV 6 cu f/2.8 și 1/250s ai nevoie de ISO 3200. Fotografia de concert cere adesea ISO mare — cunoașterea limitei utilizabile a camerei tale este critică în aceste situații.",
-          "failureMessage": "La EV 6, combinația de f/2.8 și 1/250s cere ISO 3200 pentru expunere corectă. Formula expunerii echilibrează diafragma, timpul și ISO-ul în raport cu lumina disponibilă.",
+          "successMessage": "Corect! La EV 6, cu f/2.8 și 1/250s, ai nevoie de ISO 3200. Fotografia de concert cere adesea ISO mare — e esențial să cunoști limita utilizabilă a aparatului tău în astfel de situații.",
+          "failureMessage": "La EV 6, combinația f/2.8 și 1/250s cere ISO 3200 pentru o expunere corectă. Formula expunerii echilibrează diafragma, timpul și ISO-ul în raport cu lumina disponibilă.",
           "options": {
             "0": { "label": "ISO 400" },
             "1": { "label": "ISO 800" },

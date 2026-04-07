@@ -1,10 +1,10 @@
 {
   "toolUI": {
     "perspective-compression-simulator": {
-      "cameraSettings": "Mga Setting ng Camera",
+      "cameraSettings": "Camera Settings",
       "focalLength": "Focal Length",
       "equivalent35mm": "Equivalent (35mm)",
-      "perspectiveDistance": "Perspective at Distansya",
+      "perspectiveDistance": "Perspective at Distance",
       "subjectDistance": "Subject Distance",
       "maintainSubjectSize": "Panatilihin ang Subject Size",
       "resetAll": "I-reset Lahat"

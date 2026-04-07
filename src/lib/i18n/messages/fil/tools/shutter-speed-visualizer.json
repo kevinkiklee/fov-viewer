@@ -1,27 +1,27 @@
 {
   "toolUI": {
     "shutter-speed-visualizer": {
-      "description": "Tingnan kung paano nakakaapekto ang shutter speed sa motion blur para sa iba't ibang subject.",
+      "description": "Tingnan kung paano apektado ng shutter speed ang motion blur para sa iba't ibang subjects.",
       "shutterSpeed": "Shutter Speed",
       "shutterSpeedAriaLabel": "Shutter speed",
-      "sliderSlow": "Mabagal (2s)",
-      "sliderFast": "Mabilis (1/4000)",
-      "selectedSpeed": "Napiling Speed",
-      "motionBlurAriaLabel": "Visualization ng motion blur para sa iba't ibang subject",
-      "verdictFrozen": "Naka-freeze",
-      "verdictMostlySharp": "Karamihan ay matalas",
-      "verdictSlightBlur": "Bahagyang blur",
+      "sliderSlow": "Slow (2s)",
+      "sliderFast": "Fast (1/4000)",
+      "selectedSpeed": "Selected Speed",
+      "motionBlurAriaLabel": "Motion blur visualization para sa iba't ibang subjects",
+      "verdictFrozen": "Frozen",
+      "verdictMostlySharp": "Mostly sharp",
+      "verdictSlightBlur": "Slight blur",
       "verdictMotionBlur": "Motion blur",
       "standingPerson": "Nakatayong tao",
-      "slowWalk": "Mabagal na lakad",
+      "slowWalk": "Slow walk",
       "jogging": "Jogging",
-      "running": "Tumatakbo",
-      "cyclist": "Siklista",
+      "running": "Running",
+      "cyclist": "Cyclist",
       "birdsInFlight": "Lumilipad na ibon",
-      "carCity": "Kotse (lungsod)",
+      "carCity": "Kotse (city)",
       "f1Car": "F1 car",
       "airplaneLanding": "Eroplano (landing)",
-      "stationary": "nakatigil"
+      "stationary": "stationary"
     }
   }
 }

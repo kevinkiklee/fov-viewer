@@ -1,45 +1,45 @@
 {
   "toolUI": {
     "sensor-size-comparison": {
-      "displayMode": "Display Mode",
-      "modeOverlay": "Overlay",
-      "modeSideBySide": "Side by Side",
-      "modePixelDensity": "Pixel Density",
-      "pixelDensityDescription": "Εμφανίζονται τυπικές τιμές megapixel για κάθε αισθητήρα. Τα μεγαλύτερα pixels (μεγαλύτερα κελιά) αποτυπώνουν περισσότερο φως.",
-      "sensors": "Sensors",
-      "customSensors": "Custom Sensors",
-      "placeholderName": "Name",
-      "placeholderW": "W (mm)",
-      "placeholderH": "H (mm)",
-      "placeholderMP": "Megapixels (optional)",
+      "displayMode": "Λειτουργία προβολής",
+      "modeOverlay": "Υπέρθεση",
+      "modeSideBySide": "Δίπλα-δίπλα",
+      "modePixelDensity": "Πυκνότητα pixel",
+      "pixelDensityDescription": "Εμφανίζονται τυπικές τιμές megapixel για κάθε αισθητήρα. Τα μεγαλύτερα pixel (μεγαλύτερα κελιά) συλλαμβάνουν περισσότερο φως.",
+      "sensors": "Αισθητήρες",
+      "customSensors": "Προσαρμοσμένοι αισθητήρες",
+      "placeholderName": "Όνομα",
+      "placeholderW": "Π (mm)",
+      "placeholderH": "Υ (mm)",
+      "placeholderMP": "Megapixel (προαιρετικό)",
       "placeholderMPShort": "MP",
       "maxDimensionWarning": "Η μέγιστη διάσταση αισθητήρα είναι 99 mm",
-      "addSensor": "Add Sensor",
-      "save": "Save",
-      "cancelEdit": "Cancel",
-      "edit": "Edit",
-      "remove": "Remove",
-      "deleteAllCustom": "Delete All Custom Sensors",
-      "tableSensor": "Sensor",
-      "tableWidth": "Width (mm)",
-      "tableHeight": "Height (mm)",
-      "tableAspectRatio": "Aspect Ratio",
-      "tableArea": "Area (mm\u00b2)",
-      "tableCropFactor": "Crop Factor",
-      "tableAspectCrop": "Aspect Crop",
+      "addSensor": "Προσθήκη αισθητήρα",
+      "save": "Αποθήκευση",
+      "cancelEdit": "Ακύρωση",
+      "edit": "Επεξεργασία",
+      "remove": "Αφαίρεση",
+      "deleteAllCustom": "Διαγραφή όλων των προσαρμοσμένων αισθητήρων",
+      "tableSensor": "Αισθητήρας",
+      "tableWidth": "Πλάτος (mm)",
+      "tableHeight": "Ύψος (mm)",
+      "tableAspectRatio": "Αναλογία πλευρών",
+      "tableArea": "Επιφάνεια (mm²)",
+      "tableCropFactor": "Συντελεστής crop",
+      "tableAspectCrop": "Crop αναλογίας",
       "canvasAriaLabel": "Σύγκριση μεγέθους αισθητήρα σε λειτουργία {mode}",
       "faq": {
         "what-is-crop-factor": {
           "question": "Τι είναι ο συντελεστής crop και γιατί έχει σημασία;",
-          "answer": "Ο συντελεστής crop περιγράφει τη διαφορά μεγέθους μεταξύ του αισθητήρα μιας κάμερας και ενός full-frame (35mm) αισθητήρα. Επηρεάζει την πραγματική εστιακή απόσταση, το βάθος πεδίου και την απόδοση σε χαμηλό φωτισμό. Συντελεστής crop 1.5× σημαίνει ότι ο αισθητήρας είναι 1.5 φορές μικρότερος από το full frame."
+          "answer": "Ο συντελεστής crop περιγράφει τη διαφορά μεγέθους μεταξύ του αισθητήρα μιας κάμερας και ενός full-frame (35mm) αισθητήρα. Επηρεάζει την ενεργή εστιακή απόσταση, το βάθος πεδίου και την απόδοση σε χαμηλό φωτισμό. Συντελεστής crop 1.5× σημαίνει ότι ο αισθητήρας είναι 1.5 φορές μικρότερος από το full frame."
         },
         "full-frame-vs-aps-c": {
-          "question": "Ποια είναι τα πλεονεκτήματα των full-frame σε σχέση με τους APS-C αισθητήρες;",
-          "answer": "Οι full-frame αισθητήρες προσφέρουν καλύτερη απόδοση σε χαμηλό φωτισμό, μικρότερο βάθος πεδίου και ευρύτερο οπτικό πεδίο σε οποιαδήποτε εστιακή απόσταση. Οι αισθητήρες APS-C είναι πιο οικονομικοί, πιο ελαφριοί και δίνουν επιπλέον εμβέλεια για φωτογραφία άγριας ζωής και αθλημάτων."
+          "question": "Ποια είναι τα πλεονεκτήματα των full-frame έναντι των APS-C αισθητήρων;",
+          "answer": "Οι full-frame αισθητήρες προσφέρουν καλύτερη απόδοση σε χαμηλό φωτισμό, πιο ρηχό βάθος πεδίου και ευρύτερο οπτικό πεδίο σε οποιαδήποτε εστιακή απόσταση. Οι αισθητήρες APS-C είναι πιο οικονομικοί, πιο ελαφριοί και δίνουν επιπλέον εμβέλεια για φωτογραφία άγριας ζωής και αθλημάτων."
         },
         "sensor-size-and-depth-of-field": {
           "question": "Πώς επηρεάζει το μέγεθος του αισθητήρα το βάθος πεδίου;",
-          "answer": "Οι μεγαλύτεροι αισθητήρες δίνουν μικρότερο βάθος πεδίου στην ίδια κάδρωση. Για να πετύχεις το ίδιο κάδρο με μικρότερο αισθητήρα, είτε χρησιμοποιείς μικρότερη εστιακή απόσταση (μεγαλύτερο βάθος πεδίου), είτε απομακρύνεσαι (μεγαλύτερο βάθος πεδίου) — και στις δύο περιπτώσεις μειώνεται το θόλωμα του φόντου."
+          "answer": "Οι μεγαλύτεροι αισθητήρες δίνουν πιο ρηχό βάθος πεδίου στο ίδιο κάδρο. Για να πετύχεις το ίδιο κάδρο με μικρότερο αισθητήρα, είτε χρησιμοποιείς μικρότερη εστιακή απόσταση (μεγαλύτερο βάθος πεδίου) είτε απομακρύνεσαι (μεγαλύτερο βάθος πεδίου) — και στις δύο περιπτώσεις μειώνεται το θόλωμα του φόντου."
         }
       }
     }

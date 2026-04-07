@@ -13,7 +13,7 @@
         },
         "2": {
           "heading": "Empilhamento para Trilhas de Estrelas",
-          "text": "Para trilhas de estrelas intencionais, fotógrafos disparam muitas exposições mais curtas (tipicamente 30s cada) e as empilham em software. Isso evita acúmulo de ruído, permite trilhas sem interrupções, e significa que um único quadro ruim não arruina a foto inteira."
+          "text": "Para trilhas de estrelas intencionais, fotógrafos disparam muitas exposições mais curtas (tipicamente 30s cada) e as empilham em software. Isso evita acúmulo de ruído, permite trilhas contínuas e significa que um único quadro ruim não arruina a foto inteira."
         }
       },
       "keyFactors": {
@@ -135,7 +135,7 @@
         "4": {
           "scenario": "Você quer uma imagem de trilha de estrelas de 1 hora. Por que astrofotógrafos experientes empilham muitas exposições curtas (ex.: 240 x 15s) em vez de tirar uma única exposição de 1 hora?",
           "hint": "Pense no que acontece com o ruído do sensor, vida da bateria e recuperação durante uma exposição única extremamente longa.",
-          "successMessage": "Correto! Uma única exposição de uma hora acumula ruído térmico massivo, drena a bateria, e se algo der errado (vibração, orvalho, farol de carro) a foto inteira é arruinada. Empilhar quadros curtos mantém o ruído baixo, permite remover quadros ruins, e é muito mais tolerante.",
+          "successMessage": "Correto! Uma única exposição de uma hora acumula muito ruído térmico, drena a bateria e, se algo der errado (vibração, orvalho, farol de carro), a foto inteira é arruinada. Empilhar quadros curtos mantém o ruído baixo, permite remover quadros ruins e perdoa muito mais erros.",
           "failureMessage": "Exposições únicas longas acumulam ruído térmico severo e arriscam perda total de qualquer interrupção. Empilhar quadros curtos mantém o ruído gerenciável, permite descartar quadros arruinados, e produz resultados mais limpos.",
           "options": {
             "0": { "label": "Empilhamento produz trilhas mais longas que exposição única" },

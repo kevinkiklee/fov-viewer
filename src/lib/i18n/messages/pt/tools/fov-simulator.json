@@ -31,16 +31,16 @@
       "loadingScene": "Carregando cena...",
       "faq": {
         "what-is-fov": {
-          "question": "O que e campo de visao na fotografia?",
-          "answer": "O campo de visao (CdV) e a extensao angular da cena visivel atraves da lente e do sensor da camera. Determina quanta cena e capturada em uma foto e e afetado pela distancia focal e pelo tamanho do sensor."
+          "question": "O que é campo de visão na fotografia?",
+          "answer": "O campo de visão (CdV) é a extensão angular da cena visível através da lente e do sensor da câmera. Determina quanto da cena cabe em uma foto e depende da distância focal e do tamanho do sensor."
         },
         "how-crop-factor-affects-fov": {
-          "question": "Como o fator de corte afeta o campo de visao?",
-          "answer": "Um sensor menor (fator de corte maior) captura um campo de visao mais estreito do que um sensor full frame na mesma distancia focal. Por exemplo, sensores APS-C com fator de corte de 1,5x fazem uma lente de 50mm se comportar como uma de 75mm em termos de campo de visao."
+          "question": "Como o fator de corte afeta o campo de visão?",
+          "answer": "Um sensor menor (fator de corte maior) captura um campo de visão mais estreito do que um sensor full frame na mesma distância focal. Por exemplo, em sensores APS-C com fator de corte de 1,5x, uma lente de 50mm enquadra como uma 75mm em full frame."
         },
         "fov-vs-focal-length": {
-          "question": "Qual e a relacao entre campo de visao e distancia focal?",
-          "answer": "Campo de visao e distancia focal sao inversamente relacionados. Distancias focais mais curtas (grande angular) proporcionam um campo de visao mais amplo, enquanto distancias focais mais longas (teleobjetiva) proporcionam um campo de visao mais estreito. O CdV exato tambem depende do tamanho do sensor."
+          "question": "Qual é a relação entre campo de visão e distância focal?",
+          "answer": "Campo de visão e distância focal têm relação inversa. Distâncias focais mais curtas (grande angular) oferecem um campo de visão mais amplo, enquanto distâncias focais mais longas (teleobjetiva) oferecem um campo de visão mais estreito. O CdV exato também depende do tamanho do sensor."
         }
       }
     }

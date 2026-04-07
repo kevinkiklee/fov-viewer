@@ -88,7 +88,7 @@
           }
         },
         "3": {
-          "scenario": "Foto anda yang mempunyai pendedahan yang betul adalah pada f/5.6, 1/125s, ISO 200. Anda mahu bertukar kepada f/2.8 untuk lebih banyak kekaburan latar belakang. Bagaimanakah anda harus melaraskan tetapan lain untuk mengekalkan pendedahan yang sama?",
+          "scenario": "Foto anda yang mempunyai pendedahan betul ialah pada f/5.6, 1/125s, ISO 200. Anda mahu bertukar kepada f/2.8 untuk lebih banyak kekaburan latar belakang. Bagaimanakah anda perlu melaraskan tetapan lain untuk mengekalkan pendedahan yang sama?",
           "hint": "Dari f/5.6 ke f/2.8 adalah 2 stop lebih cahaya. Anda perlu membuang 2 stop di tempat lain.",
           "successMessage": "Sempurna! Membuka dari f/5.6 ke f/2.8 menambah 2 stop cahaya. Menukar kelajuan pengatup dari 1/125s ke 1/500s mengeluarkan tepat 2 stop, mengekalkan pendedahan yang sama.",
           "failureMessage": "Matematik perlu seimbang. f/5.6 ke f/2.8 adalah +2 stop. Anda perlu mengimbangi dengan membuang tepat 2 stop melalui kelajuan pengatup lebih pantas, ISO lebih rendah, atau gabungan.",

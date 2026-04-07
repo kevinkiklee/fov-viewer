@@ -17,7 +17,7 @@
       "framesDesc": "Numărul total de fotografii pentru stacking",
       "gapSec": "Pauză (sec)",
       "gapDesc": "Pauză între cadre pentru scrierea în buffer",
-      "camera": "Cameră",
+      "camera": "Aparat",
       "sensor": "Senzor",
       "resolutionMP": "Rezoluție (MP)",
       "apertureLabel": "Diafragmă",
@@ -31,15 +31,15 @@
       "faq": {
         "what-is-500-rule": {
           "question": "Ce este regula 500 în astrofotografie?",
-          "answer": "Regula 500 estimează cel mai lung timp de expunere înainte ca stelele să apară ca dâre, nu ca puncte. Împarte 500 la distanța focală efectivă (distanța focală \u00d7 factor de crop) ca să obții timpul maxim de expunere în secunde pentru stele clare."
+          "answer": "Regula 500 estimează cel mai lung timp de expunere înainte ca stelele să apară ca dâre, nu ca puncte. Împarte 500 la distanța focală efectivă (distanța focală × factor de crop) și obții timpul maxim de expunere, în secunde, pentru stele clare."
         },
         "star-trails-vs-points": {
           "question": "Cum aleg între dâre de stele și puncte clare?",
-          "answer": "Pentru puncte clare de stele (Calea Lactee, constelații), folosește expuneri scurte conform regulii 500. Pentru dâre creative care arată rotația Pământului, folosește expuneri foarte lungi (de la minute la ore) sau combină mai multe expuneri mai scurte."
+          "answer": "Pentru stele ca puncte clare (Calea Lactee, constelații), folosește expuneri scurte, conform regulii 500. Pentru dâre creative care scot în evidență rotația Pământului, folosește expuneri foarte lungi (de la minute la ore) sau combină prin stacking mai multe expuneri scurte."
         },
         "best-settings-milky-way": {
           "question": "Care sunt cele mai bune setări pentru fotografia Căii Lactee?",
-          "answer": "Începe cu cea mai largă diafragmă disponibilă (f/1.4\u2013f/2.8), ISO 1600\u20136400 și cel mai lung timp pe care îl permite regula 500 pentru obiectivul tău. Folosește un trepied solid și focalizare manuală setată la infinit. Fotografiază în lună nouă, într-o locație cu cer întunecat."
+          "answer": "Pornește de la cea mai largă diafragmă pe care o ai (f/1.4–f/2.8), ISO 1600–6400 și cel mai lung timp permis de regula 500 pentru obiectivul tău. Folosește un trepied solid și focalizare manuală setată la infinit. Fotografiază la lună nouă, într-o locație cu cer întunecat."
         }
       }
     }

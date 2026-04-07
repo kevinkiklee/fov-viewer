@@ -4,7 +4,7 @@
       "rule500": "500-sääntö",
       "ruleNPF": "NPF-sääntö",
       "recommendation": "Suositus",
-      "recommendationText": "Käytä NPF-sääntöä ({npf}s) pikselitason terävyyteen. 500-sääntö ({r500}s) on nopea arvio, mutta voi näyttää venymää korkearesoluutioisilla kennoilla.",
+      "recommendationText": "Käytä NPF-sääntöä ({npf}s) pikselitarkkaan terävyyteen. 500-sääntö ({r500}s) on nopea arvio, mutta tähdet saattavat näyttää venyneiltä korkean resoluution kennoilla.",
       "shootingTime": "Kuvausaika",
       "exposure": "Valotus",
       "displayMode": "Näyttötila",
@@ -15,8 +15,8 @@
       "exposurePerFrameDesc": "Kunkin yksittäisen ruudun suljinaika",
       "frames": "Ruudut",
       "framesDesc": "Pinottavien kuvien kokonaismäärä",
-      "gapSec": "Aukko (s)",
-      "gapDesc": "Viive ruutujen välillä puskurin kirjoitukseen",
+      "gapSec": "Väli (s)",
+      "gapDesc": "Viive ruutujen välissä puskurin kirjoittamista varten",
       "camera": "Kamera",
       "sensor": "Kenno",
       "resolutionMP": "Resoluutio (MP)",
@@ -31,15 +31,15 @@
       "faq": {
         "what-is-500-rule": {
           "question": "Mikä on 500-sääntö astrokuvauksessa?",
-          "answer": "500-sääntö arvioi pisimmän valotusajan ennen kuin tähdet näkyvät raitoina pisteiden sijaan. Jaa 500 tehollisella polttovälilläsi (polttoväli × kerroin) saadaksesi maksimisuljinajan sekunteina teräville tähdille."
+          "answer": "500-säännöllä arvioidaan pisin valotusaika, jolla tähdet pysyvät pisteinä eivätkä muutu raidoiksi. Jaa 500 tehollisella polttovälillä (polttoväli × kerroin), niin saat pisimmän suljinajan sekunteina."
         },
         "star-trails-vs-points": {
-          "question": "Miten valitsen tähtiratojen ja terävien tähtipisteiden välillä?",
-          "answer": "Teräviin tähtipisteisiin (Linnunrata, tähdistöt) käytä lyhyitä valotuksia 500-säännön mukaisesti. Luovia tähtiratoja varten, jotka näyttävät Maan pyörimisen, käytä hyvin pitkiä valotuksia (minuutteja tai tunteja) tai pinoa useita lyhyempiä valotuksia."
+          "question": "Milloin kannattaa kuvata tähtiratoja ja milloin pistemäisiä tähtiä?",
+          "answer": "Pistemäisiin tähtiin (Linnunrata, tähtikuviot) käytä lyhyitä valotuksia 500-säännön mukaan. Tähtiratoja varten, jotka näyttävät Maan pyörimisen, käytä joko hyvin pitkiä valotuksia (minuutteja tai tunteja) tai pinoa useita lyhyempiä valotuksia."
         },
         "best-settings-milky-way": {
-          "question": "Mitkä ovat parhaat kameran asetukset Linnunradan kuvaukseen?",
-          "answer": "Aloita suurimmalla saatavilla olevalla aukolla (f/1.4–f/2.8), ISO 1600–6400 ja pisimmällä suljinajalla, jonka 500-sääntö sallii objektiivillesi. Käytä tukevaa kolmijalkaa ja manuaalista tarkennusta äärettömyyteen. Kuvaa uuden kuun aikaan tummassa taivaskohteessa."
+          "question": "Mitkä ovat parhaat asetukset Linnunradan kuvaamiseen?",
+          "answer": "Aloita suurimmalla aukolla (f/1.4–f/2.8), ISO 1600–6400 ja pisimmällä suljinajalla, jonka 500-sääntö sallii objektiivillesi. Käytä tukevaa jalustaa ja tarkenna manuaalisesti äärettömään. Kuvaa uudenkuun aikaan tummalla taivaspaikalla."
         }
       }
     }

@@ -2,7 +2,7 @@
   "toolUI": {
     "frame-studio": {
       "photo": "Bilde",
-      "dropPrompt": "Slipp et bilde eller klikk for å bla",
+      "dropPrompt": "Slipp et bilde her, eller klikk for å bla",
       "modeView": "Vis",
       "modeCrop": "Beskjær",
       "modeFrame": "Ramme",
@@ -76,15 +76,15 @@
       "faq": {
         "what-is-rule-of-thirds": {
           "question": "Hva er tredjedelsregelen i fotografi?",
-          "answer": "Tredjedelsregelen deler bildet inn i et 3×3-rutenett. Å plassere de viktigste motivene langs linjene eller i skjæringspunktene skaper mer dynamiske og balanserte komposisjoner enn å plassere motivet midt i bildet."
+          "answer": "Tredjedelsregelen deler bildet inn i et 3×3-rutenett. Plasserer du de viktigste motivene langs linjene eller i skjæringspunktene, får du mer dynamiske og balanserte komposisjoner enn om du setter motivet midt i bildet."
         },
         "best-aspect-ratio-for-instagram": {
           "question": "Hvilket bildeforhold er best for Instagram-innlegg?",
-          "answer": "Instagram støtter 1:1 (kvadrat), 4:5 (portrett) og 1,91:1 (landskap). Portrettformatet 4:5 tar mest plass i feeden og får vanligvis høyest engasjement."
+          "answer": "Instagram støtter 1:1 (kvadrat), 4:5 (portrett) og 1,91:1 (landskap). Portrettformatet 4:5 tar mest plass i feeden og får vanligvis mest engasjement."
         },
         "how-to-use-golden-ratio": {
           "question": "Hvordan bruker jeg det gylne snitt i bildekomposisjon?",
-          "answer": "Det gylne snitt (omtrent 1,618:1) skaper et spiralmønster som leder blikket gjennom bildet. Plasser hovedmotivet i det tetteste punktet i spiralen, og la ledende linjer følge kurven utover."
+          "answer": "Det gylne snittet (omtrent 1,618:1) skaper et spiralmønster som leder blikket gjennom bildet. Plasser hovedmotivet i det tetteste punktet av spiralen, og la ledende linjer følge kurven utover."
         }
       }
     }

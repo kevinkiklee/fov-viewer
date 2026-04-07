@@ -1,25 +1,25 @@
 {
   "education": {
     "equivalent-settings-calculator": {
-      "beginner": "Ulike sensorstørrelser gir ulik dybdeskarphet og synsfelt selv ved samme brennvidde og blender. Ekvivalente innstillinger lar deg finne kombinasjonen av objektiv og blender på et annet kamera som gjengir samme utsnitt og bakgrunnsuskarphet. Det er uunnværlig når du sammenligner utstyr på tvers av formater eller bytter mellom kamerasystemer.",
+      "beginner": "Ulike sensorstørrelser gir ulik dybdeskarphet og synsfelt selv ved samme brennvidde og blender. Ekvivalente innstillinger lar deg finne den kombinasjonen av objektiv og blender på et annet kamera som gjengir samme utsnitt og bakgrunnsuskarphet. Det er uvurderlig når du sammenligner utstyr på tvers av formater eller bytter mellom kamerasystemer.",
       "deeper": {
         "0": {
           "heading": "Cropfaktoren",
-          "text": "Hver sensor har en cropfaktor i forhold til 35 mm fullformat. APS-C har cirka 1,5×, Micro Four Thirds 2×, og mellomformat rundt 0,79×. Multipliser den faktiske brennvidden med cropfaktoren for å finne det fullformat-ekvivalente synsfeltet. Et 35 mm-objektiv på APS-C rammer inn som et 52,5 mm på fullformat."
+          "text": "Hver sensor har en cropfaktor i forhold til 35 mm fullformat. APS-C har cirka 1,5×, Micro Four Thirds 2× og mellomformat rundt 0,79×. Gang den faktiske brennvidden med cropfaktoren for å finne det fullformat-ekvivalente synsfeltet. Et 35 mm-objektiv på APS-C rammer inn som et 52,5 mm på fullformat."
         },
         "1": {
           "heading": "Ekvivalent blender og DoF",
-          "text": "For å matche dybdeskarpheten mellom formater multipliserer du f-tallet med samme cropfaktor. Et f/1.4-objektiv på Micro Four Thirds gir DoF tilsvarende f/2.8 på fullformat (1,4 × 2 = 2,8). Dette er grunnen til at fullformat er populært for grunn dybdeskarphet — du kan bruke fysisk lysere objektiver med større faktisk blenderåpning for å få uskarphet mindre sensorer ikke klarer å reprodusere."
+          "text": "For å matche dybdeskarpheten mellom formater ganger du f-tallet med samme cropfaktor. Et f/1.4-objektiv på Micro Four Thirds gir DoF tilsvarende f/2.8 på fullformat (1,4 × 2 = 2,8). Det er derfor fullformat er populært for grunn dybdeskarphet — du kan bruke fysisk lysere objektiver med større faktisk blenderåpning for å få uskarphet mindre sensorer rett og slett ikke klarer å reprodusere."
         },
         "2": {
           "heading": "Ekvivalent ISO og total lysmengde",
-          "text": "Å matche eksponeringsstyrken mellom formater krever at du justerer ISO med kvadratet av cropfaktoren. Den større sensoren samler mer lys totalt for samme motiv, og kan derfor bruke lavere ISO for tilsvarende støyytelse. En fullformat-sensor på ISO 800 gir tilsvarende støy som en APS-C på ISO 356 og en Micro Four Thirds på ISO 200."
+          "text": "Å matche eksponeringsstyrken mellom formater krever at du justerer ISO med kvadratet av cropfaktoren. Den større sensoren samler mer lys totalt for samme motiv, og kan derfor bruke lavere ISO for tilsvarende støyytelse. En fullformatsensor på ISO 800 gir tilsvarende støy som en APS-C på ISO 356 og en Micro Four Thirds på ISO 200."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Cropfaktor",
-          "description": "Forholdet mellom fullformat-sensorens diagonal og målsensorens diagonal. Dette ene tallet driver alle ekvivalensberegninger for brennvidde, blender og ISO."
+          "description": "Forholdet mellom fullformatsensorens diagonal og målsensorens diagonal. Dette ene tallet driver alle ekvivalensberegninger for brennvidde, blender og ISO."
         },
         "1": {
           "label": "Sensorstørrelse",
@@ -27,18 +27,18 @@
         },
         "2": {
           "label": "Tilgjengelige objektiver",
-          "description": "Ekvivalens-matematikk kan kreve et objektiv som ikke finnes. Et 17 mm f/0.7 er ekvivalenten til 35 mm f/1.4 på MFT — men et slikt objektiv er ikke laget. Virkeligheten setter grensene."
+          "description": "Ekvivalensregnestykket kan kreve et objektiv som ikke finnes. Et 17 mm f/0.7 er ekvivalent til 35 mm f/1.4 på MFT — men et slikt objektiv er aldri blitt laget. Virkeligheten setter grensene."
         }
       },
       "tips": {
         "0": {
-          "text": "Når du sammenligner kamerasystemer, sammenlign alltid ekvivalente innstillinger i stedet for matchende f-tall. Et f/2.8-objektiv på Micro Four Thirds gir ikke samme bakgrunnsuskarphet som f/2.8 på fullformat — du trenger f/1.4 på MFT for å matche."
+          "text": "Når du sammenligner kamerasystemer, sammenlign alltid ekvivalente innstillinger, ikke like f-tall. Et f/2.8-objektiv på Micro Four Thirds gir ikke samme bakgrunnsuskarphet som f/2.8 på fullformat — du trenger f/1.4 på MFT for å matche."
         },
         "1": {
-          "text": "Bruk ekvivalens til å planlegge objektivkjøp når du bytter system. Elsker du looken av 85 mm f/1.8 på fullformat, se etter 56 mm f/1.2 på APS-C eller 42,5 mm f/0.95 på MFT for tilsvarende gjengivelse."
+          "text": "Bruk ekvivalens til å planlegge objektivkjøp når du bytter system. Elsker du looken av 85 mm f/1.8 på fullformat, bør du se etter 56 mm f/1.2 på APS-C eller 42,5 mm f/0.95 på MFT for tilsvarende gjengivelse."
         },
         "2": {
-          "text": "Husk at ekvivalens gjelder dybdeskarphet og synsfelt, ikke objektivets lysstyrke for eksponering. Et f/2.8-objektiv på et hvilket som helst format slipper inn like mye lys per flateenhet — den større sensoren samler bare mer lys totalt på grunn av større areal."
+          "text": "Husk at ekvivalens gjelder dybdeskarphet og synsfelt, ikke objektivets lysstyrke for eksponering. Et f/2.8-objektiv på hvilket som helst format slipper inn like mye lys per flateenhet — den større sensoren samler bare mer lys totalt fordi arealet er større."
         }
       },
       "tooltips": {
@@ -60,7 +60,7 @@
         },
         "cropFactor": {
           "term": "Cropfaktor",
-          "definition": "Forholdet mellom diagonalen på en 35 mm fullformatsensor og målsensoren. Multipliser brennvidde med cropfaktor for ekvivalent synsfelt; multipliser blender med cropfaktor for ekvivalent DoF."
+          "definition": "Forholdet mellom diagonalen på en 35 mm fullformatsensor og målsensoren. Gang brennvidden med cropfaktoren for ekvivalent synsfelt, og gang blenderen med cropfaktoren for ekvivalent DoF."
         },
         "equivalentFL": {
           "term": "Ekvivalent brennvidde",
@@ -68,7 +68,7 @@
         },
         "equivalentAperture": {
           "term": "Ekvivalent blender",
-          "definition": "F-tallet på målformatet som gir samme dybdeskarphet som kildeoppsettet. Kan være lysere enn noe reelt objektiv."
+          "definition": "F-tallet på målformatet som gir samme dybdeskarphet som kildeoppsettet. Kan være lysere enn noe virkelig objektiv."
         }
       },
       "challenges": {
@@ -87,8 +87,8 @@
         "1": {
           "scenario": "Vennen din fant et 42,5 mm f/1.8 til MFT-kameraet sitt. Vil bakgrunnsuskarpheten matche ditt 85 mm f/1.8 på fullformat?",
           "hint": "Bruk cropfaktoren også på blenderen for å finne ekvivalent DoF.",
-          "successMessage": "Riktig! 42,5 mm f/1.8 på MFT gir ekvivalent DoF som 85 mm f/3.6 på fullformat (1,8 × 2 = 3,6). Ditt fullformat-bilde på f/1.8 gir betydelig mer uskarphet.",
-          "failureMessage": "Nei — MFT f/1.8 gir DoF tilsvarende f/3.6 på fullformat (1,8 × 2× crop = 3,6). For å matche uskarpheten fra f/1.8 på fullformat, måtte vennen din hatt f/0.9 på MFT, som ikke finnes.",
+          "successMessage": "Riktig! 42,5 mm f/1.8 på MFT gir ekvivalent DoF som 85 mm f/3.6 på fullformat (1,8 × 2 = 3,6). Ditt fullformatbilde på f/1.8 gir betydelig mer uskarphet.",
+          "failureMessage": "Nei — MFT f/1.8 gir DoF tilsvarende f/3.6 på fullformat (1,8 × 2 = 3,6). For å matche uskarpheten fra f/1.8 på fullformat måtte vennen din hatt f/0.9 på MFT, som ikke finnes.",
           "options": {
             "0": { "label": "Ja — samme f/1.8 betyr samme uskarphet" },
             "1": { "label": "Nei — MFT f/1.8 tilsvarer fullformat f/3.6 i dybdeskarphet" },
@@ -98,8 +98,8 @@
         "2": {
           "scenario": "En fotograf som bytter fra fullformat til APS-C (1,5× crop) vil matche looken av 50 mm f/1.4 på fullformat. Hvilket ekvivalent objektiv og blender trengs på APS-C?",
           "hint": "Del brennvidde på cropfaktor for ekvivalent FOV. Del blender på cropfaktor for ekvivalent DoF.",
-          "successMessage": "Akkurat! 50 / 1,5 = 33 mm for synsfelt, og f/1.4 / 1,5 = f/0.93 for matchende DoF. Siden ingen f/0.93 finnes, kan APS-C-kameraet ikke fullt ut gjenskape fullformat-looken.",
-          "failureMessage": "Riktig svar er ~33 mm f/0.93. 50 / 1,5 = 33,3 mm og 1,4 / 1,5 = 0,93. Et f/0.93-objektiv finnes ikke, så fullformat-looken kan ikke matches helt på APS-C.",
+          "successMessage": "Nettopp! 50 / 1,5 = 33 mm for synsfelt, og f/1.4 / 1,5 = f/0.93 for matchende DoF. Siden f/0.93 ikke finnes, kan APS-C-kameraet ikke fullt ut gjenskape fullformatlooken.",
+          "failureMessage": "Riktig svar er ~33 mm f/0.93. 50 / 1,5 = 33,3 mm og 1,4 / 1,5 = 0,93. Et f/0.93-objektiv finnes ikke, så fullformatlooken kan ikke matches helt på APS-C.",
           "options": {
             "0": { "label": "35 mm f/1.4 — nærme nok" },
             "1": { "label": "33 mm f/0.93 — eksakt match, men finnes ikke" },

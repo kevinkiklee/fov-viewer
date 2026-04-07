@@ -31,15 +31,15 @@
       "faq": {
         "what-is-500-rule": {
           "question": "Was ist die 500er-Regel in der Astrofotografie?",
-          "answer": "Die 500er-Regel sch\u00e4tzt die l\u00e4ngste Belichtungszeit, bevor Sterne als Striche statt als Punkte erscheinen. Teile 500 durch deine effektive Brennweite (Brennweite \u00d7 Crop-Faktor), um die maximale Verschlusszeit in Sekunden f\u00fcr scharfe Sterne zu erhalten."
+          "answer": "Die 500er-Regel schätzt die längste Belichtungszeit, bevor Sterne als Striche statt als Punkte erscheinen. Teile 500 durch deine effektive Brennweite (Brennweite × Crop-Faktor), und du erhältst die maximale Verschlusszeit in Sekunden für punktförmige Sterne."
         },
         "star-trails-vs-points": {
-          "question": "Wie w\u00e4hle ich zwischen Sternenspuren und scharfen Sternpunkten?",
-          "answer": "F\u00fcr scharfe Sternpunkte (Milchstra\u00dfe, Sternbilder) verwende kurze Belichtungen gem\u00e4\u00df der 500er-Regel. F\u00fcr kreative Sternenspuren, die die Erdrotation zeigen, verwende sehr lange Belichtungen (Minuten bis Stunden) oder staple mehrere k\u00fcrzere Belichtungen."
+          "question": "Wie wähle ich zwischen Sternenspuren und punktförmigen Sternen?",
+          "answer": "Für scharfe Sternpunkte (Milchstraße, Sternbilder) nimmst du kurze Belichtungen nach der 500er-Regel. Für kreative Sternenspuren, die die Erdrotation zeigen, brauchst du sehr lange Belichtungen (Minuten bis Stunden) oder stackst mehrere kürzere Aufnahmen."
         },
         "best-settings-milky-way": {
-          "question": "Was sind die besten Kameraeinstellungen f\u00fcr Milchstra\u00dfenfotografie?",
-          "answer": "Beginne mit der weitesten verf\u00fcgbaren Blende (f/1,4\u2013f/2,8), ISO 1600\u20136400 und der l\u00e4ngsten Verschlusszeit, die die 500er-Regel f\u00fcr dein Objektiv erlaubt. Verwende ein stabiles Stativ und manuellen Fokus auf Unendlich. Fotografiere bei Neumond an einem dunklen Standort."
+          "question": "Welche Kameraeinstellungen eignen sich am besten für die Milchstraße?",
+          "answer": "Beginne mit der größten verfügbaren Blende (f/1,4–f/2,8), ISO 1600–6400 und der längsten Verschlusszeit, die die 500er-Regel für dein Objektiv zulässt. Nutze ein stabiles Stativ und stelle den Fokus manuell auf Unendlich. Fotografiere bei Neumond an einem lichtarmen Standort."
         }
       }
     }

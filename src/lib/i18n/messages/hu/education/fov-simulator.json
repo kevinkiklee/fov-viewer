@@ -1,19 +1,19 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "A látószög (FOV) azt mutatja meg, mennyit lát a kamerád egy jelenetből. Egy nagylátószögű objektív (mint a 24mm) széles képet fog be, míg egy teleobjektív (mint a 200mm) egy szűk szeletre fókuszál. Ez a szimulátor akár négy objektívet is megjeleníthet különböző érzékelőkön, valós jeleneteken átfedve, hogy pontosan lásd, mit ölel fel egy-egy kombináció.",
+      "beginner": "A látószög (FOV) azt mutatja meg, mennyit lát a kamerád a jelenetből. Egy nagylátószögű objektív (pl. 24mm) széles képet fog be, egy teleobjektív (pl. 200mm) pedig egy szűk szeletre koncentrál. Ez a szimulátor akár négy objektívet is egyszerre megjelenít, különböző érzékelőkkel, valós jelenetek fölé rétegezve, így pontosan láthatod, mit ölel át egy-egy kombináció.",
       "deeper": {
         "0": {
           "heading": "A látószög képlete",
-          "text": "A látószöget két tényező határozza meg: a gyújtótávolság és az érzékelőméret. A vízszintes látószög számítása 2 × arctan(érzékelőszélesség / (2 × gyújtótávolság)). A rövidebb gyújtótávolság vagy nagyobb érzékelő szélesebb szöget ad."
+          "text": "A látószöget két dolog határozza meg: a gyújtótávolság és az érzékelőméret. A vízszintes látószög képlete 2 × arctan(érzékelőszélesség / (2 × gyújtótávolság)). A rövidebb gyújtótávolság vagy a nagyobb érzékelő szélesebb szöget ad."
         },
         "1": {
           "heading": "Crop faktor és ekvivalens gyújtótávolság",
-          "text": "Érzékelőváltáskor az „ekvivalens gyújtótávolság” fogalma lép be: egy 50mm-es objektív egy APS-C érzékelőn (1,5× crop) úgy fotóz, mint egy 75mm Full Frame-en. A kisebb érzékelő a képkör szűkebb, központi részét fogja be, lényegében belevágva a képbe."
+          "text": "Érzékelőváltáskor jön be az „ekvivalens gyújtótávolság” fogalma: egy 50mm-es objektív APS-C érzékelőn (1,5× crop) úgy viselkedik, mint egy 75mm Full Frame-en. A kisebb érzékelő a képkör szűkebb, központi részét fogja be — lényegében belevág a képbe."
         },
         "2": {
           "heading": "Perspektíva vs. gyújtótávolság",
-          "text": "A perspektíva — a közeli és távoli tárgyak térbeli viszonya — csak a kamera helyzetétől függ, nem a gyújtótávolságtól. Egy 50mm és egy 200mm azonos pontról fotózva azonos perspektívát mutat, csak más kivágásban. Ha közelebb mész nagylátószöggel, felnagyítod a mélységet; ha hátrébb lépsz teleobjektívvel, összetömöríted."
+          "text": "A perspektíva — a közeli és távoli tárgyak térbeli viszonya — csak a kamera helyzetétől függ, a gyújtótávolságtól nem. Egy 50mm és egy 200mm ugyanarról a pontról fotózva ugyanazt a perspektívát mutatja, csak más kivágásban. Ha nagylátószöggel közelebb lépsz, felnagyítod a mélységérzetet; ha teleobjektívvel hátrébb húzódsz, összetömöríted."
         }
       },
       "keyFactors": {
@@ -36,13 +36,13 @@
       },
       "tips": {
         "0": {
-          "text": "Adj hozzá két objektívet, és az egyiknél váltogass a crop és a Full Frame érzékelő között, hogy azonnal lásd a crop faktor hatását. Egy 35mm APS-C-n szinte ugyanazt fogja be, mint egy 50mm Full Frame-en."
+          "text": "Adj hozzá két objektívet, és az egyiknél váltogass a crop és a Full Frame érzékelő között — azonnal látni fogod a crop faktor hatását. Egy 35mm APS-C-n szinte pont annyit fog be, mint egy 50mm Full Frame-en."
         },
         "1": {
-          "text": "Használd a jelenetválasztót konkrét helyzetek előkészítéséhez — egy városkép-jelenet megmutatja, hogy a nagylátószöged elég széles-e egy épület megörökítéséhez az utca túloldaláról."
+          "text": "Használd a jelenetválasztót konkrét helyzetek átgondolására — egy városkép-jeleneten meg tudod nézni, hogy a nagylátószöged elég széles-e ahhoz, hogy elkapj egy épületet az utca túloldaláról."
         },
         "2": {
-          "text": "Ha objektívvásárlást tervezel, tedd be a jelenlegit A objektívként, és a fontolgatott új objektívet B-ként. Az átfedés pontosan megmutatja, mennyivel többet vagy kevesebbet látnál."
+          "text": "Ha objektívet tervezel venni, tedd be a jelenlegit A objektívnek, és a kiszemelt újat B-nek. Az átfedésen pontosan látni fogod, mennyivel többet vagy kevesebbet látnál vele."
         }
       },
       "tooltips": {
@@ -65,10 +65,10 @@
       },
       "challenges": {
         "0": {
-          "scenario": "Egy város sziluettjéről szeretnél széles képet készíteni. Melyik gyújtótávolság ad szélesebb látószöget?",
-          "hint": "Az alacsonyabb gyújtótávolsági szám szélesebb látószöget jelent.",
-          "successMessage": "Jó! Egy 24mm-es objektív sokkal többet lát a jelenetből, mint egy 70mm. A nagylátószögű objektíveknek rövid a gyújtótávolsága.",
-          "failureMessage": "A rövidebb gyújtótávolság szélesebb látószöget ad. A 24mm egy nagylátószögű objektív, ami sokkal többet fog be a sziluettből, mint a 70mm.",
+          "scenario": "Szeretnél egy széles képet készíteni egy város sziluettjéről. Melyik gyújtótávolság ad szélesebb látószöget?",
+          "hint": "A kisebb gyújtótávolsági szám szélesebb látószöget jelent.",
+          "successMessage": "Így van! A 24mm-es objektív sokkal többet lát a jelenetből, mint egy 70mm. A nagylátószögű objektívek gyújtótávolsága rövid.",
+          "failureMessage": "A rövidebb gyújtótávolság szélesebb látószöget ad. A 24mm nagylátószögű objektív, sokkal többet fog be a sziluettből, mint a 70mm.",
           "options": {
             "0": { "label": "24mm" },
             "1": { "label": "70mm" },
@@ -76,9 +76,9 @@
           }
         },
         "1": {
-          "scenario": "Állítsd be az A objektívet 50mm-re Full Frame-en. Milyen látószöget ad ez a „nifty fifty”?",
-          "hint": "Az 50mm Full Frame-en „normál” objektív, mert közelít az emberi látáshoz.",
-          "successMessage": "Jó! Egy 50mm Full Frame-en a klasszikus „normál” objektív — a kb. 46 fokos látószög közel áll ahhoz, amire a szem természetesen fókuszál.",
+          "scenario": "Állítsd az A objektívet 50mm-re Full Frame-en. Milyen látószöget ad ez a „nifty fifty”?",
+          "hint": "Az 50mm Full Frame-en „normál” objektívnek számít, mert közel áll az emberi látáshoz.",
+          "successMessage": "Így van! Az 50mm Full Frame-en a klasszikus „normál” objektív — a nagyjából 46 fokos látószöge közel esik ahhoz, amire a szem természetesen fókuszál.",
           "failureMessage": "Az 50mm Full Frame-en „normál” objektívnek számít, mert a látószöge (~46 fok) jól illeszkedik a kényelmes emberi látáshoz.",
           "options": {
             "0": { "label": "Ultra-nagylátószögű" },
@@ -87,10 +87,10 @@
           }
         },
         "2": {
-          "scenario": "Adj hozzá két objektívet: A 35mm APS-C-n (Nikon/Sony), B 50mm Full Frame-en. Hasonlítsd össze a két FOV-átfedést. Mit veszel észre?",
-          "hint": "A 35mm megszorozva az APS-C 1,5-es crop faktorával egyenlő…",
-          "successMessage": "Pontosan! A 35mm APS-C-n (1,5× crop) ekvivalens látószöget ad az 52,5mm Full Frame-mel — ami majdnem azonos az 50mm FF-mel. Az átfedések nagyjából azonos méretűek.",
-          "failureMessage": "35mm × 1,5 crop = 52,5mm ekvivalens. Ez szinte megegyezik az 50mm Full Frame-mel, ezért olyan hasonló a két átfedés.",
+          "scenario": "Adj hozzá két objektívet: A 35mm APS-C-n (Nikon/Sony), B 50mm Full Frame-en. Hasonlítsd össze a két FOV-átfedést. Mit látsz?",
+          "hint": "A 35mm szorozva az APS-C 1,5-es crop faktorával annyi, mint…",
+          "successMessage": "Pontosan! A 35mm APS-C-n (1,5× crop) ugyanazt a látószöget adja, mint egy 52,5mm Full Frame-en — ami majdnem azonos az 50mm FF-mel. A két átfedés nagyjából ugyanakkora.",
+          "failureMessage": "35mm × 1,5 crop = 52,5mm ekvivalens. Ez szinte pontosan egyezik az 50mm Full Frame-mel, ezért olyan hasonló a két átfedés.",
           "options": {
             "0": { "label": "Szinte azonos a látószögük" },
             "1": { "label": "Az APS-C sokkal szélesebb nézetet mutat" },
@@ -98,10 +98,10 @@
           }
         },
         "3": {
-          "scenario": "Egy kicsi szoba belső terét fotózod. 24mm-es objektíved van. Többet látsz a szobából Full Frame-en vagy APS-C-n?",
-          "hint": "A kisebb érzékelő az objektív képkörének szűkebb, központi részét fogja be.",
-          "successMessage": "Jó! A Full Frame többet lát, mert a nagyobb érzékelő a 24mm képkörének szélesebb részét fogja. APS-C-n ugyanaz a 24mm úgy fotóz, mint egy ~36mm.",
-          "failureMessage": "A Full Frame többet rögzít a jelenetből. A nagyobb érzékelő az objektív képkörének nagyobb részét használja, szélesebb effektív látószöget adva.",
+          "scenario": "Egy kis szoba belső terét fotózod, 24mm-es objektíved van. Többet látsz a szobából Full Frame-en vagy APS-C-n?",
+          "hint": "A kisebb érzékelő az objektív képkörének szűkebb, középső részét fogja be.",
+          "successMessage": "Így van! A Full Frame többet lát, mert a nagyobb érzékelő a 24mm képkörének szélesebb részét használja. APS-C-n ugyanaz a 24mm úgy viselkedik, mint egy ~36mm.",
+          "failureMessage": "A Full Frame többet rögzít a jelenetből. A nagyobb érzékelő az objektív képkörének nagyobb részét használja, így szélesebb effektív látószöget kapsz.",
           "options": {
             "0": { "label": "Full Frame — a nagyobb érzékelő többet lát" },
             "1": { "label": "APS-C — a crop érzékelő többet lát" },
@@ -109,10 +109,10 @@
           }
         },
         "4": {
-          "scenario": "Egy vadvilág-fotós Micro Four Thirds-ön 200mm-rel fotóz. Milyen Full Frame-ekvivalens gyújtótávolságot ad ez, és mi a kompromisszum egy valódi 400mm Full Frame-mel szemben?",
-          "hint": "Az MFT 2x-es crop faktor. Gondolj a mélységélességre és az érzékelőméret különbségére.",
-          "successMessage": "Kiváló! 200mm MFT-n (2x crop) 400mm-ekvivalens látószöget ad. A kompromisszum: a kompozíció illeszkedik a 400mm FF-hez, de a mélységélesség a 200mm-es objektívéhez igazodik (nagyobb DoF), és a kisebb érzékelő kevesebb összfényt gyűjt, ami magas ISO-n rosszabb zajteljesítményt jelent. Az előnye, hogy sokkal kisebb, könnyebb és olcsóbb objektív.",
-          "failureMessage": "200mm × 2,0 crop = 400mm ekvivalens látószög. De nem ugyanaz, mint egy 400mm Full Frame-en: nagyobb DoF (a valós 200mm FL alapján), kevesebb összfény (kisebb érzékelő), és több zaj magas ISO-n. Az előny: jelentősen kisebb és könnyebb felszerelés.",
+          "scenario": "Egy vadvilág-fotós Micro Four Thirds-ön 200mm-rel fotóz. Milyen Full Frame-ekvivalens látószöget ad ez, és mi a kompromisszum egy valódi 400mm Full Frame-hez képest?",
+          "hint": "Az MFT 2x-es crop faktorú. Gondolj a mélységélességre és az érzékelőméret különbségére.",
+          "successMessage": "Kiváló! 200mm MFT-n (2x crop) 400mm-ekvivalens látószöget ad. A kompromisszum: a kompozíció olyan lesz, mint egy 400mm FF, de a mélységélesség a 200mm-es valós gyújtótávolsághoz igazodik (nagyobb DoF), és a kisebb érzékelő kevesebb összfényt gyűjt, ami magas ISO-n rosszabb zajteljesítményt ad. Cserébe viszont sokkal kisebb, könnyebb és olcsóbb az objektív.",
+          "failureMessage": "200mm × 2,0 crop = 400mm ekvivalens látószög. De ez nem ugyanaz, mint egy 400mm Full Frame-en: nagyobb DoF (a valós 200mm alapján), kevesebb összfény (kisebb érzékelő), és több zaj magas ISO-n. Viszont sokkal kisebb és könnyebb a felszerelés.",
           "options": {
             "0": { "label": "400mm ekvivalens — azonos FOV, de nagyobb DoF, több zaj, kisebb/könnyebb felszerelés" },
             "1": { "label": "400mm ekvivalens — minden szempontból azonos a 400mm Full Frame-mel" },

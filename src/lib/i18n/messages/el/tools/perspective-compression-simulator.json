@@ -1,13 +1,13 @@
 {
   "toolUI": {
     "perspective-compression-simulator": {
-      "cameraSettings": "Camera Settings",
-      "focalLength": "Focal Length",
-      "equivalent35mm": "Equivalent (35mm)",
-      "perspectiveDistance": "Perspective & Distance",
-      "subjectDistance": "Subject Distance",
-      "maintainSubjectSize": "Maintain Subject Size",
-      "resetAll": "Reset All"
+      "cameraSettings": "Ρυθμίσεις κάμερας",
+      "focalLength": "Εστιακή απόσταση",
+      "equivalent35mm": "Ισοδύναμο (35mm)",
+      "perspectiveDistance": "Προοπτική & απόσταση",
+      "subjectDistance": "Απόσταση θέματος",
+      "maintainSubjectSize": "Διατήρηση μεγέθους θέματος",
+      "resetAll": "Επαναφορά όλων"
     }
   }
 }

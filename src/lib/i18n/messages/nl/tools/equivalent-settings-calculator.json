@@ -19,8 +19,8 @@
       "equivalentDoF": "Equivalente scherptediepte",
       "cropFactor": "Cropfactor",
       "fieldOfView": "Beeldhoek",
-      "warningUnrealisticAperture": "Dit equivalente diafragma ({value}) is lichtsterker dan elke bestaande lens. De doelsensor kan de scherptediepte van de bron niet evenaren.",
-      "warningUnrealisticFL": "Deze equivalente brandpuntsafstand ({value}mm) is ongebruikelijk. Mogelijk bestaat er geen lens met deze brandpuntsafstand.",
+      "warningUnrealisticAperture": "Dit equivalente diafragma ({value}) is lichtsterker dan welke bestaande lens dan ook. De doelsensor kan de scherptediepte van de bron niet evenaren.",
+      "warningUnrealisticFL": "Deze equivalente brandpuntsafstand ({value}mm) is ongebruikelijk. Er bestaat waarschijnlijk geen lens met deze brandpuntsafstand.",
       "warningClosestReal": "Dichtstbijzijnde bestaande lens: {value}mm f/{aperture}",
       "diagramTitle": "Sensor- en beeldhoekvergelijking",
       "diagramSource": "Bron",
@@ -32,7 +32,7 @@
       "matchExposure": "Belichting afstemmen",
       "sameFOV": "Zelfde beeldhoek",
       "sameDoF": "Zelfde scherptediepte",
-      "sameExposure": "Zelfde belichtingshelderheid"
+      "sameExposure": "Zelfde belichtingsniveau"
     }
   }
 }

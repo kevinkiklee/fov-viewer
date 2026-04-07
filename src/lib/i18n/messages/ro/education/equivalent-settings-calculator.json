@@ -1,19 +1,19 @@
 {
   "education": {
     "equivalent-settings-calculator": {
-      "beginner": "Dimensiunile diferite de senzor produc adâncimi ale câmpului și unghiuri de vizualizare diferite, chiar și la aceeași distanță focală și diafragmă. Setările echivalente te ajută să găsești combinația de obiectiv și diafragmă de pe o a doua cameră care reproduce aceeași încadrare și același blur pe fundal. E esențial când compari echipamente între formate sau când schimbi sisteme.",
+      "beginner": "Dimensiunile diferite de senzor produc adâncimi ale câmpului și unghiuri de vizualizare diferite, chiar și la aceeași distanță focală și diafragmă. Setările echivalente te ajută să găsești combinația de obiectiv și diafragmă de pe un al doilea aparat foto care reproduce aceeași încadrare și același blur pe fundal. E esențial când compari echipamente între formate sau când schimbi sistemul.",
       "deeper": {
         "0": {
           "heading": "Factorul de crop",
-          "text": "Fiecare senzor are un factor de crop raportat la standardul full-frame de 35mm. Senzorii APS-C au un factor în jur de 1.5×, Micro Four Thirds 2×, iar formatul mediu aproximativ 0.79×. Înmulțind distanța focală reală cu factorul de crop obții unghiul de vizualizare echivalent full-frame. Un obiectiv de 35mm pe APS-C încadrează ca un 52.5mm pe full frame."
+          "text": "Fiecare senzor are un factor de crop raportat la standardul full-frame de 35mm. Senzorii APS-C au un factor în jur de 1.5×, Micro Four Thirds 2×, iar formatul mediu aproximativ 0.79×. Înmulțind distanța focală reală cu factorul de crop obții unghiul de vizualizare echivalent pe full-frame. Un obiectiv de 35mm pe APS-C încadrează ca un 52.5mm pe full frame."
         },
         "1": {
           "heading": "Diafragmă echivalentă și DoF",
-          "text": "Ca să potrivești adâncimea câmpului între formate, înmulțește cifra f cu același factor de crop. Un obiectiv f/1.4 pe Micro Four Thirds produce un DoF echivalent cu f/2.8 pe full frame (1.4 × 2 = 2.8). De aceea camerele full-frame sunt apreciate pentru DoF-ul mic — poți folosi obiective fizic mai rapide la diafragme reale mai largi, ca să obții un blur pe care senzorii mai mici nu-l pot reproduce."
+          "text": "Ca să potrivești adâncimea câmpului între formate, înmulțește cifra f cu același factor de crop. Un obiectiv f/1.4 pe Micro Four Thirds produce un DoF echivalent cu f/2.8 pe full frame (1.4 × 2 = 2.8). De aceea aparatele full-frame sunt apreciate pentru DoF-ul mic — poți folosi obiective fizic mai luminoase, la diafragme reale mai largi, și obții un blur pe care senzorii mai mici nu îl pot reproduce."
         },
         "2": {
           "heading": "ISO echivalent și lumina totală",
-          "text": "Potrivirea luminozității expunerii între formate cere ajustarea ISO-ului cu factorul de crop la pătrat. Senzorul mai mare colectează mai multă lumină totală pentru aceeași scenă, ceea ce înseamnă că poate folosi un ISO mai mic pentru o performanță echivalentă la zgomot. Un senzor full-frame la ISO 800 produce zgomot similar cu un senzor APS-C la ISO 356 și cu un Micro Four Thirds la ISO 200."
+          "text": "Pentru a potrivi luminozitatea expunerii între formate trebuie să ajustezi ISO-ul cu factorul de crop ridicat la pătrat. Senzorul mai mare colectează mai multă lumină totală din aceeași scenă, așa că poate folosi un ISO mai mic pentru o performanță echivalentă la zgomot. Un senzor full-frame la ISO 800 produce zgomot similar cu un senzor APS-C la ISO 356 și cu un Micro Four Thirds la ISO 200."
         }
       },
       "keyFactors": {
@@ -23,36 +23,36 @@
         },
         "1": {
           "label": "Dimensiunea senzorului",
-          "description": "Senzorii fizic mai mari captează mai multă lumină și produc DoF mai mic la încadrare echivalentă. Calculatorul de echivalență îți arată exact cât contează fiecare format."
+          "description": "Senzorii fizic mai mari captează mai multă lumină și produc un DoF mai mic la încadrare echivalentă. Calculatorul de echivalență îți arată exact cât contează fiecare format."
         },
         "2": {
           "label": "Obiective disponibile",
-          "description": "Calculul de echivalență poate cere un obiectiv care nu există. Un 17mm f/0.7 este echivalentul lui 35mm f/1.4 pe MFT — dar un astfel de obiectiv nu se fabrică. Echipamentele reale limitează ce poți obține."
+          "description": "Calculul de echivalență poate cere un obiectiv care nu există. Un 17mm f/0.7 ar fi echivalentul unui 35mm f/1.4 pe MFT — dar un astfel de obiectiv pur și simplu nu se fabrică. Echipamentele reale limitează ce poți obține."
         }
       },
       "tips": {
         "0": {
-          "text": "Când compari sisteme, compară întotdeauna la setări echivalente, nu potrivind cifrele f. Un obiectiv f/2.8 pe Micro Four Thirds nu dă același blur pe fundal ca f/2.8 pe full frame — pe MFT ai nevoie de f/1.4 pentru a egala."
+          "text": "Când compari sisteme, compară-le întotdeauna la setări echivalente, nu potrivind cifrele f. Un obiectiv f/2.8 pe Micro Four Thirds nu dă același blur pe fundal ca f/2.8 pe full frame — pe MFT ai nevoie de f/1.4 ca să obții același efect."
         },
         "1": {
-          "text": "Folosește echivalența ca să planifici achizițiile de obiective când schimbi sistemul. Dacă îți place aspectul unui 85mm f/1.8 pe full frame, caută un 56mm f/1.2 pe APS-C sau un 42.5mm f/0.95 pe MFT pentru un randament similar."
+          "text": "Folosește echivalența atunci când îți planifici achiziția de obiective la schimbarea sistemului. Dacă îți place aspectul unui 85mm f/1.8 pe full frame, caută un 56mm f/1.2 pe APS-C sau un 42.5mm f/0.95 pe MFT, ca să obții un rezultat similar."
         },
         "2": {
-          "text": "Ține minte: echivalența se aplică adâncimii câmpului și unghiului de vizualizare, nu vitezei obiectivului pentru expunere. Un obiectiv f/2.8 pe orice format tot lasă să intre aceeași cantitate de lumină pe unitate de suprafață — senzorul mai mare doar colectează mai multă lumină totală datorită suprafeței mai mari."
+          "text": "Ține minte: echivalența se aplică adâncimii câmpului și unghiului de vizualizare, nu luminozității obiectivului din punctul de vedere al expunerii. Un obiectiv f/2.8, pe orice format, lasă să intre aceeași cantitate de lumină pe unitatea de suprafață — doar că senzorul mai mare colectează mai multă lumină totală, pentru că are o suprafață mai mare."
         }
       },
       "tooltips": {
         "sourceSensor": {
           "term": "Senzor sursă",
-          "definition": "Formatul senzorului camerei ale cărei setări vrei să le egalezi. Toate calculele de echivalență sunt raportate la acest punct de plecare."
+          "definition": "Formatul senzorului aparatului ale cărui setări vrei să le egalezi. Toate calculele de echivalență pornesc de la acest punct."
         },
         "sourceFocalLength": {
           "term": "Distanță focală",
-          "definition": "Distanța focală reală a obiectivului de pe camera sursă. Va fi convertită în distanțe focale echivalente pe formatele țintă."
+          "definition": "Distanța focală reală a obiectivului de pe aparatul sursă. Va fi convertită în distanțe focale echivalente pe formatele țintă."
         },
         "sourceAperture": {
           "term": "Diafragmă",
-          "definition": "Cifra f de pe camera sursă. Diafragma echivalentă de pe fiecare format țintă determină potrivirea adâncimii câmpului."
+          "definition": "Cifra f de pe aparatul sursă. Diafragma echivalentă de pe fiecare format țintă determină potrivirea adâncimii câmpului."
         },
         "targetSensor": {
           "term": "Senzor țintă",
@@ -60,23 +60,23 @@
         },
         "cropFactor": {
           "term": "Factor de crop",
-          "definition": "Raportul dintre diagonala unui senzor full-frame de 35mm și diagonala senzorului țintă. Înmulțește distanța focală cu factorul de crop pentru FOV echivalent; înmulțește diafragma cu factorul de crop pentru DoF echivalent."
+          "definition": "Raportul dintre diagonala unui senzor full-frame de 35mm și diagonala senzorului țintă. Înmulțește distanța focală cu factorul de crop pentru FOV echivalent, respectiv diafragma cu factorul de crop pentru DoF echivalent."
         },
         "equivalentFL": {
           "term": "Distanță focală echivalentă",
-          "definition": "Distanța focală de pe formatul țintă care produce același unghi de vizualizare ca setarea sursă."
+          "definition": "Distanța focală de pe formatul țintă care dă același unghi de vizualizare ca setarea sursă."
         },
         "equivalentAperture": {
           "term": "Diafragmă echivalentă",
-          "definition": "Cifra f de pe formatul țintă care produce aceeași adâncime a câmpului ca setarea sursă. Poate fi mai rapidă decât orice obiectiv real."
+          "definition": "Cifra f de pe formatul țintă care dă aceeași adâncime a câmpului ca setarea sursă. Poate fi mai luminoasă decât orice obiectiv real."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Faci portrete cu un obiectiv de 85mm f/1.8 pe o cameră full-frame. Un prieten folosește Micro Four Thirds (crop 2×). Ce distanță focală îi trebuie ca să egaleze unghiul tău de vizualizare?",
-          "hint": "Împarte distanța focală full-frame la factorul de crop MFT pentru a afla obiectivul real necesar.",
-          "successMessage": "Corect! 85mm / 2 = 42.5mm. Prietenul tău are nevoie de un 42.5mm pe Micro Four Thirds ca să obțină aceeași încadrare ca 85mm pe full frame.",
-          "failureMessage": "Ca să potrivești unghiul de vizualizare, împarte la factorul de crop: 85mm / 2 = 42.5mm. Asta e distanța focală reală necesară pe corpul MFT.",
+          "scenario": "Faci portrete cu un 85mm f/1.8 pe un aparat full-frame. Un prieten folosește Micro Four Thirds (crop 2×). Ce distanță focală îi trebuie ca să egaleze unghiul tău de vizualizare?",
+          "hint": "Împarte distanța focală full-frame la factorul de crop MFT ca să afli obiectivul real necesar.",
+          "successMessage": "Corect! 85mm / 2 = 42,5mm. Prietenul tău are nevoie de un 42,5mm pe Micro Four Thirds ca să obțină aceeași încadrare ca 85mm pe full frame.",
+          "failureMessage": "Ca să potrivești unghiul de vizualizare, împarte la factorul de crop: 85mm / 2 = 42,5mm. Asta e distanța focală reală necesară pe corpul MFT.",
           "options": {
             "0": { "label": "42.5mm" },
             "1": { "label": "85mm" },
@@ -85,10 +85,10 @@
           }
         },
         "1": {
-          "scenario": "Prietenul tău a găsit un obiectiv de 42.5mm f/1.8 pentru camera lui MFT. Va egala blur-ul de fundal pe care îl ai tu cu 85mm f/1.8 pe full frame?",
-          "hint": "Aplică factorul de crop și asupra diafragmei ca să găsești DoF-ul echivalent.",
-          "successMessage": "Exact! 42.5mm f/1.8 pe MFT dă DoF echivalent cu 85mm f/3.6 pe full frame (1.8 × 2 = 3.6). Cadrul tău full-frame la f/1.8 produce semnificativ mai mult blur.",
-          "failureMessage": "Nu — f/1.8 pe MFT dă DoF echivalent cu f/3.6 pe full frame (1.8 × 2× crop = 3.6). Ca să egaleze blur-ul tău f/1.8 full-frame, prietenul tău ar avea nevoie de f/0.9 pe MFT, care nu există.",
+          "scenario": "Prietenul tău a găsit un 42,5mm f/1.8 pentru aparatul lui MFT. Va egala blurul fundalului pe care îl obții tu cu 85mm f/1.8 pe full frame?",
+          "hint": "Aplică factorul de crop și diafragmei ca să afli DoF-ul echivalent.",
+          "successMessage": "Exact! 42,5mm f/1.8 pe MFT dă un DoF echivalent cu 85mm f/3.6 pe full frame (1.8 × 2 = 3.6). Cadrul tău full-frame, la f/1.8, produce semnificativ mai mult blur.",
+          "failureMessage": "Nu — f/1.8 pe MFT dă un DoF echivalent cu f/3.6 pe full frame (1.8 × 2× crop = 3.6). Ca să egaleze blurul tău de f/1.8 pe full-frame, prietenul tău ar avea nevoie de f/0.9 pe MFT, iar un astfel de obiectiv nu există.",
           "options": {
             "0": { "label": "Da — aceeași f/1.8 înseamnă același blur" },
             "1": { "label": "Nu — f/1.8 pe MFT echivalează cu f/3.6 pe full frame" },
@@ -96,10 +96,10 @@
           }
         },
         "2": {
-          "scenario": "Un fotograf care trece de la full frame la APS-C (crop 1.5×) vrea să egaleze aspectul unui 50mm f/1.4 de pe full frame. De ce obiectiv și diafragmă echivalente are nevoie pe APS-C?",
-          "hint": "Împarte distanța focală la factorul de crop pentru FOV echivalent. Împarte diafragma la factorul de crop pentru DoF echivalent.",
-          "successMessage": "Exact! 50 / 1.5 = 33mm pentru unghiul de vizualizare și f/1.4 / 1.5 = f/0.93 pentru DoF echivalent. Pentru că nu există un obiectiv f/0.93, camera APS-C nu poate replica complet aspectul full-frame.",
-          "failureMessage": "Răspunsul corect este ~33mm f/0.93. Pentru că 50 / 1.5 = 33.3mm și 1.4 / 1.5 = 0.93. Nu există obiectiv f/0.93, deci aspectul full-frame nu poate fi egalat complet pe APS-C.",
+          "scenario": "Un fotograf care trece de la full frame la APS-C (crop 1.5×) vrea să egaleze aspectul unui 50mm f/1.4 folosit pe full frame. De ce obiectiv și ce diafragmă echivalentă are nevoie pe APS-C?",
+          "hint": "Împarte distanța focală la factorul de crop pentru FOV echivalent, respectiv diafragma la factorul de crop pentru DoF echivalent.",
+          "successMessage": "Exact! 50 / 1.5 = 33mm pentru unghiul de vizualizare, iar f/1.4 / 1.5 = f/0.93 pentru DoF echivalent. Pentru că nu există niciun obiectiv f/0.93, aparatul APS-C nu poate reproduce complet aspectul full-frame.",
+          "failureMessage": "Răspunsul corect este ~33mm f/0.93, pentru că 50 / 1.5 = 33,3mm și 1.4 / 1.5 = 0,93. Nu există obiectiv f/0.93, așa că aspectul full-frame nu poate fi egalat complet pe APS-C.",
           "options": {
             "0": { "label": "35mm f/1.4 — aproape" },
             "1": { "label": "33mm f/0.93 — potrivire exactă, dar un astfel de obiectiv nu există" },

@@ -84,8 +84,8 @@
     },
     "controls": {
       "focalLength": "फ़ोकल लेंथ",
-      "aperture": "Aperture",
-      "distance": "Distance",
+      "aperture": "अपर्चर",
+      "distance": "दूरी",
       "clickToEnterValue": "वैल्यू दर्ज करने के लिए क्लिक करें",
       "decrease": "घटाएँ",
       "increase": "बढ़ाएँ"

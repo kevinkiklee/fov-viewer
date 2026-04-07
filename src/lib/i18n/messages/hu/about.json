@@ -5,23 +5,23 @@
     "sections": {
       "whatIs": {
         "title": "Mi a PhotoTools?",
-        "body": "A PhotoTools ingyenes, interaktív fotós kalkulátorok, szimulátorok és referenciaeszközök gyűjteménye. Akár most találkozol először az expozíciós háromszöggel, akár egy tájképhez számolsz hiperfokális távolságot, a PhotoTools praktikus, vizuális eszközöket ad a kezedbe, amivel mélyebben megértheted a fotózást."
+        "body": "A PhotoTools ingyenes, interaktív fotós kalkulátorok, szimulátorok és referenciaeszközök gyűjteménye. Mindegy, hogy most találkozol először az expozíciós háromszöggel, vagy egy tájképhez számolsz hiperfokális távolságot — a PhotoTools olyan gyakorlati, vizuális eszközöket ad a kezedbe, amikkel mélyebben megértheted a fotózást."
       },
       "whoIsItFor": {
         "title": "Kinek szól?",
-        "body": "Minden szintű fotósnak — a kezdőtől, aki most ismerkedik a rekesz és a mélységélesség kapcsolatával, a tapasztalt fotósig, aki csillagív-felvételt tervez. Minden eszközhöz tartozik egy tanulópanel magyarázatokkal, kulcstényezőkkel, profi tippekkel és interaktív feladatokkal, amivel tesztelheted a tudásodat."
+        "body": "Minden szintű fotósnak — a kezdőtől, aki most ismerkedik a rekesz és a mélységélesség kapcsolatával, egészen a tapasztalt fotósig, aki csillagív-felvételt tervez. Minden eszközhöz tartozik egy tanulópanel magyarázatokkal, kulcstényezőkkel, profi tippekkel és interaktív feladatokkal, amikkel tesztelheted a tudásodat."
       },
       "privacyFirst": {
         "title": "Az adatvédelem az első",
-        "body": "Minden számítás és szimuláció teljes egészében a böngésződben fut. A fotóid soha nem hagyják el az eszközöd — például az EXIF Viewer 100%-ban kliensoldalon dolgozza fel a képeket. Nincs regisztráció, és az anonim analitikán kívül semmilyen személyes adatot nem gyűjtünk."
+        "body": "Minden számítás és szimuláció teljes egészében a böngésződben fut. A fotóid ki sem kerülnek az eszközödről — az EXIF Viewer például 100%-ban kliensoldalon dolgozza fel a képeket. Nincs regisztráció, és az anonim analitikán túl semmilyen személyes adatot nem gyűjtünk."
       },
       "builtBy": {
-        "title": "Fotósok készítették",
-        "body": "A PhotoTools-t egy fotós és szoftverfejlesztő építi és tartja karban, aki jobb vizuális eszközöket akart a fotózás technikai oldalának megértéséhez. Az eszközök valódi optikán és fizikán alapulnak — nem közelítéseken —, így megbízhatsz az eredményekben a terepen is."
+        "title": "Fotósok készítik",
+        "body": "A PhotoTools-t egy fotós és szoftverfejlesztő építi és tartja karban, aki jobb vizuális eszközöket akart a fotózás technikai oldalának megértéséhez. Az eszközök valódi optikán és fizikán alapulnak — nem közelítéseken —, így a terepen is bízhatsz az eredményeikben."
       },
       "getInTouch": {
         "title": "Lépj kapcsolatba",
-        "body": "Van javaslatod, hibabejelentésed vagy eszközötleted? Írj nekünk a <contactLink>kapcsolati oldalon</contactLink>."
+        "body": "Van javaslatod, hibajelentésed vagy ötleted egy új eszközhöz? Írj nekünk a <contactLink>kapcsolati oldalon</contactLink>."
       }
     }
   }

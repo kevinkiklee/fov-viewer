@@ -1,25 +1,25 @@
 {
   "education": {
     "white-balance-visualizer": {
-      "beginner": "Balansul de alb ajustează culorile din fotografia ta astfel încât obiectele albe să pară cu adevărat albe, sub orice iluminare. Sursele diferite de lumină au temperaturi de culoare diferite — o lumânare este caldă și portocalie, în timp ce umbra este rece și albastră. Setarea balansului de alb din cameră compensează aceste diferențe pentru ca toate culorile să arate natural.",
+      "beginner": "Balansul de alb ajustează culorile din fotografia ta astfel încât obiectele albe să pară cu adevărat albe, sub orice iluminare. Sursele diferite de lumină au temperaturi de culoare diferite — o lumânare e caldă și portocalie, iar umbra e rece și albastră. Setarea balansului de alb din aparat compensează aceste diferențe, ca să facă toate culorile să arate natural.",
       "deeper": {
         "0": {
           "heading": "Temperatura culorii",
-          "text": "Temperatura culorii este măsurată în Kelvin (K) și corespunde culorii luminii emise de un \"corp negru\" ideal încălzit la acea temperatură. Valorile mai mici (2000\u20133500K) produc lumină caldă, roșu-portocalie (becuri incandescente, lumânări), iar valorile mai mari (6500\u201310000K) produc lumină rece, albăstruie (umbră, cer noros)."
+          "text": "Temperatura culorii se măsoară în Kelvin (K) și corespunde culorii luminii emise de un „corp negru” ideal încălzit la acea temperatură. Valorile mai mici (2000–3500K) dau lumină caldă, roșu-portocalie (becuri incandescente, lumânări), iar valorile mai mari (6500–10000K) dau lumină rece, albăstruie (umbră, cer noros)."
         },
         "1": {
           "heading": "Cum funcționează balansul de alb",
-          "text": "Sistemul de balans de alb al camerei aplică schimbarea inversă de culoare pentru a neutraliza tenta ambientală. Când setezi balansul de alb la \"Tungsten\" (~3200K), camera adaugă albastru pentru a contracara tenta portocalie a becurilor incandescente. În fotografia digitală, balansul de alb este aplicat ca un multiplicator pe canalele roșu și albastru, în raport cu verdele."
+          "text": "Sistemul de balans de alb din aparat aplică o schimbare inversă de culoare, ca să neutralizeze tenta ambientală. Când setezi balansul de alb pe „Tungsten” (~3200K), aparatul adaugă albastru pentru a contracara tenta portocalie a becurilor incandescente. În fotografia digitală, balansul de alb se aplică ca un multiplicator pe canalele roșu și albastru, în raport cu verdele."
         },
         "2": {
           "heading": "Avantajul RAW",
-          "text": "Fotografierea în format RAW păstrează toate datele de culoare și îți permite să schimbi balansul de alb liber în post-procesare, fără pierderi de calitate — este doar un tag de metadate aplicat la conversie."
+          "text": "Fotografierea în RAW păstrează toate datele de culoare și îți permite să schimbi balansul de alb liber în post-procesare, fără pierderi de calitate — e doar un tag de metadate aplicat la conversie."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Temperatura culorii (Kelvin)",
-          "description": "Măsura numerică a culorii luminii. Kelvin mic = lumină caldă/portocalie. Kelvin mare = lumină rece/albastră. Lumina zilei este aproximativ 5500K."
+          "description": "Măsura numerică a culorii luminii. Kelvin mic = lumină caldă/portocalie. Kelvin mare = lumină rece/albastră. Lumina zilei e aproximativ 5500K."
         },
         "1": {
           "label": "Sursa de lumină",
@@ -27,48 +27,48 @@
         },
         "2": {
           "label": "RAW vs JPEG",
-          "description": "Fotografierea în RAW îți permite să schimbi balansul de alb în post fără pierderi de calitate. JPEG-ul fixează balansul de alb permanent, așa că e important să-l nimerești în cameră."
+          "description": "Fotografierea în RAW îți permite să schimbi balansul de alb în post-procesare, fără pierderi de calitate. JPEG-ul fixează balansul de alb permanent, așa că e important să-l nimerești din aparat."
         },
         "3": {
           "label": "Iluminare mixtă",
-          "description": "Scenele cu mai multe surse de lumină la temperaturi diferite (de exemplu lumină de geam + lămpi tungsten) fac imposibilă neutralizarea perfectă a tuturor culorilor simultan."
+          "description": "Scenele cu mai multe surse de lumină la temperaturi diferite (de exemplu lumină de la geam + lămpi tungsten) fac imposibilă neutralizarea perfectă, simultană, a tuturor culorilor."
         }
       },
       "tips": {
         "0": {
-          "text": "Fotografiază întotdeauna în RAW dacă vrei flexibilitate totală la ajustarea ulterioară a balansului de alb. Fișierele RAW stochează datele neprocesate ale senzorului, deci schimbările de balans de alb sunt fără pierderi."
+          "text": "Fotografiază întotdeauna în RAW dacă vrei flexibilitate totală la ajustarea ulterioară a balansului de alb. Fișierele RAW stochează datele neprocesate ale senzorului, deci schimbările de balans de alb se fac fără pierderi."
         },
         "1": {
-          "text": "Pentru efect creativ, încearcă să \"nepotrivești\" intenționat balansul de alb. Setând daylight în ora de aur face apusurile și mai calde, iar setând tungsten afară creează un aspect dramatic, rece și albastru."
+          "text": "Pentru efect creativ, încearcă să „nepotrivești” intenționat balansul de alb. Setarea Daylight în ora de aur face apusurile și mai calde, iar Tungsten afară creează un aspect dramatic, rece și albastru."
         },
         "2": {
-          "text": "În situații cu iluminare mixtă (de exemplu o cameră luminată atât de lumina de geam, cât și de lămpi tungsten), folosește un card gri ca să setezi un balans de alb personalizat, sau pune geluri pe bliț ca să se potrivească cu sursa ambientală."
+          "text": "În situații cu iluminare mixtă (de exemplu o încăpere luminată atât de lumina de la geam, cât și de lămpi tungsten), folosește un card gri ca să setezi un balans de alb personalizat sau pune geluri pe bliț ca să se potrivească cu sursa ambientală."
         }
       },
       "tooltips": {
         "colorTemperature": {
           "term": "Temperatura culorii",
-          "definition": "O măsură a culorii luminii, în Kelvin (K). Bazată pe culoarea teoretică a unui corp negru încălzit. Valorile mai mici sunt mai calde (portocaliu/roșu), cele mai mari sunt mai reci (albastru)."
+          "definition": "O măsură a culorii luminii, în Kelvin (K). Se bazează pe culoarea teoretică a unui corp negru încălzit. Valorile mai mici sunt mai calde (portocaliu/roșu), iar cele mai mari sunt mai reci (albastru)."
         },
         "preset": {
           "term": "Preset de balans de alb",
-          "definition": "O setare predefinită de balans de alb, calibrată pentru o sursă de lumină comună. Presetele includ Tungsten (~3200K), Fluorescent (~4000K), Daylight (~5500K), Cloudy (~6500K) și Shade (~7500K)."
+          "definition": "O setare predefinită de balans de alb, calibrată pentru o sursă de lumină uzuală. Presetele includ Tungsten (~3200K), Fluorescent (~4000K), Daylight (~5500K), Cloudy (~6500K) și Shade (~7500K)."
         },
         "rgbValues": {
           "term": "Valori RGB",
-          "definition": "Valorile canalelor roșu, verde și albastru (0-255 fiecare) care reprezintă culoarea luminii la temperatura selectată. Folosite pentru a vizualiza cum tintează sursa de lumină scena."
+          "definition": "Valorile canalelor roșu, verde și albastru (0-255 fiecare) care reprezintă culoarea luminii la temperatura selectată. Le folosești ca să vizualizezi cum tintează scena sursa de lumină."
         },
         "hexCode": {
           "term": "Cod hex",
-          "definition": "O reprezentare hexazecimală din șase caractere a culorii (de exemplu #FF8C00). Utilă pentru a referenția culoarea exactă în software de design sau dezvoltare web."
+          "definition": "O reprezentare hexazecimală din șase caractere a culorii (de exemplu #FF8C00). Utilă pentru a referi culoarea exactă într-un software de design sau dezvoltare web."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Fotografiile tale făcute în interior sub becuri obișnuite arată foarte portocaliu/galben. Ce preset de balans de alb ar trebui să folosești ca să corectezi asta?",
+          "scenario": "Fotografiile tale făcute în interior, sub becuri obișnuite, ies foarte portocalii/galbene. Ce preset de balans de alb ar trebui să folosești ca să corectezi asta?",
           "hint": "Becurile incandescente de casă emit lumină caldă, portocalie, în jur de 2800-3200K.",
-          "successMessage": "Corect! Presetul Tungsten adaugă albastru pentru a contracara tenta portocalie a becurilor incandescente, readucând culorile la neutru.",
-          "failureMessage": "Becurile incandescente/tungsten emit lumină caldă, portocalie. Presetul Tungsten este conceput special pentru a neutraliza această tentă adăugând albastru.",
+          "successMessage": "Corect! Presetul Tungsten adaugă albastru ca să contracareze tenta portocalie a becurilor incandescente și readuce culorile la neutru.",
+          "failureMessage": "Becurile incandescente/tungsten emit lumină caldă, portocalie. Presetul Tungsten este gândit special pentru a neutraliza această tentă, adăugând albastru.",
           "options": {
             "0": { "label": "Daylight" },
             "1": { "label": "Tungsten" },
@@ -77,22 +77,22 @@
           }
         },
         "1": {
-          "scenario": "Faci portrete în ora de aur și vrei să păstrezi strălucirea caldă și frumoasă a apusului. Ce setare de balans de alb ar trebui să folosești?",
-          "hint": "Dacă setezi balansul de alb \"corect\" pentru ora de aur, ar neutraliza tonurile calde pe care vrei să le păstrezi.",
-          "successMessage": "Corect! Folosind presetul Daylight (sau chiar Cloudy/Shade) în ora de aur păstrezi și chiar accentuezi tonurile calde, în loc să le neutralizezi.",
-          "failureMessage": "Ca să păstrezi strălucirea caldă a orei de aur, folosește un balans de alb care nu compensează lumina caldă. Daylight sau presete mai mari vor menține (și chiar amplifica) căldura.",
+          "scenario": "Faci portrete în ora de aur și vrei să păstrezi strălucirea caldă, frumoasă, a apusului. Ce setare de balans de alb ar trebui să folosești?",
+          "hint": "Dacă setezi balansul de alb „corect” pentru ora de aur, ar neutraliza exact tonurile calde pe care vrei să le păstrezi.",
+          "successMessage": "Corect! Folosind presetul Daylight (sau chiar Cloudy/Shade) în ora de aur, păstrezi și chiar accentuezi tonurile calde, în loc să le neutralizezi.",
+          "failureMessage": "Ca să păstrezi strălucirea caldă a orei de aur, folosește un balans de alb care nu compensează lumina caldă. Daylight sau presetele mai mari vor menține (și chiar vor amplifica) căldura.",
           "options": {
             "0": { "label": "Auto White Balance" },
-            "1": { "label": "Tungsten (pentru a neutraliza căldura)" },
-            "2": { "label": "Daylight (pentru a păstra căldura)" },
+            "1": { "label": "Tungsten (ca să neutralizeze căldura)" },
+            "2": { "label": "Daylight (ca să păstreze căldura)" },
             "3": { "label": "Flash" }
           }
         },
         "2": {
-          "scenario": "Ajustezi manual balansul de alb în Kelvin. Fotografia ta arată prea albastru/rece. Ar trebui să crești sau să scazi valoarea Kelvin ca să o încălzești?",
-          "hint": "Setarea Kelvin a balansului de alb îi spune camerei ce temperatură are sursa de lumină. Setarea unei valori Kelvin mai mari face camera să adauge mai multă căldură.",
-          "successMessage": "Exact! Creșterea valorii Kelvin îi spune camerei că lumina este mai rece decât este cu adevărat, deci camera compensează adăugând căldură. Setează un K mai mare ca să încălzești o imagine care pare rece.",
-          "failureMessage": "Când crești valoarea Kelvin, camera adaugă mai multă căldură pentru compensare. Deci, ca să corectezi o imagine rece/albastră, ridică valoarea Kelvin.",
+          "scenario": "Ajustezi manual balansul de alb în Kelvin. Fotografia ta pare prea albastră/rece. Ar trebui să crești sau să scazi valoarea Kelvin ca să o încălzești?",
+          "hint": "Valoarea Kelvin a balansului de alb îi spune aparatului ce temperatură are sursa de lumină. Dacă setezi o valoare Kelvin mai mare, aparatul adaugă mai multă căldură.",
+          "successMessage": "Exact! Crescând valoarea Kelvin, îi spui aparatului că lumina e mai rece decât e în realitate, deci aparatul compensează adăugând căldură. Setează un K mai mare ca să încălzești o imagine care pare rece.",
+          "failureMessage": "Când crești valoarea Kelvin, aparatul adaugă mai multă căldură pentru compensare. Deci, ca să corectezi o imagine rece/albastră, ridică valoarea Kelvin.",
           "options": {
             "0": { "label": "Crește Kelvin (de exemplu 5500K la 7500K)" },
             "1": { "label": "Scade Kelvin (de exemplu 5500K la 3200K)" },
@@ -100,24 +100,24 @@
           }
         },
         "3": {
-          "scenario": "Fotografiezi interiorul unui restaurant care are lămpi pendul calde tungsten deasupra și lumină rece albastră de zi care intră prin ferestre mari. Oamenii de lângă ferestre par albaștri, iar cei de sub lămpi par portocalii. Care este cea mai bună abordare?",
+          "scenario": "Fotografiezi interiorul unui restaurant care are lămpi pendul tungsten, calde, deasupra, și lumină rece, albastră, de zi, care intră prin ferestre mari. Oamenii de lângă ferestre par albaștri, iar cei de sub lămpi par portocalii. Care e cea mai bună abordare?",
           "hint": "Nicio singură setare de balans de alb nu poate corecta simultan două temperaturi de culoare foarte diferite.",
-          "successMessage": "Exact! Pune geluri pe bliț sau pe luminile suplimentare ca să se potrivească cu o sursă dominantă, sau alege un balans de alb de compromis și corectează selectiv în post — sunt cele mai bune abordări pentru iluminare mixtă.",
-          "failureMessage": "Iluminarea mixtă este una dintre cele mai dificile provocări de balans de alb. Un singur balans nu poate corecta ambele surse simultan. Trebuie fie să potrivești sursele cu geluri, fie să corectezi selectiv în post.",
+          "successMessage": "Exact! Pui geluri pe bliț sau pe luminile suplimentare ca să se potrivească cu o sursă dominantă sau alegi un balans de alb de compromis și corectezi selectiv în post — sunt cele mai bune abordări pentru iluminare mixtă.",
+          "failureMessage": "Iluminarea mixtă e una dintre cele mai dificile provocări de balans de alb. O singură setare nu poate corecta ambele surse simultan. Trebuie fie să potrivești sursele cu geluri, fie să corectezi selectiv în post-procesare.",
           "options": {
-            "0": { "label": "Setează balansul la Tungsten — va repara totul" },
-            "1": { "label": "Setează balansul la Daylight — ferestrele sunt mai importante" },
+            "0": { "label": "Setează balansul pe Tungsten — va repara totul" },
+            "1": { "label": "Setează balansul pe Daylight — ferestrele sunt mai importante" },
             "2": { "label": "Folosește Auto WB și fotografiază în RAW, apoi corectează fiecare zonă în post" },
-            "3": { "label": "Crește ISO-ul ca să faci culorile mai precise" }
+            "3": { "label": "Crește ISO-ul ca să obții culori mai precise" }
           }
         },
         "4": {
-          "scenario": "Fotografiezi o scenă atmosferică, cinematografică, de noapte într-un oraș și vrei o tentă rece, albastră, intenționată. Luminile stradale sunt cu vapori de sodiu (~2200K). Ce setare Kelvin de balans de alb îți dă cel mai puternic shift spre albastru?",
-          "hint": "Setând balansul de alb mult sub temperatura reală a sursei va deplasa imaginea spre albastru.",
-          "successMessage": "Corect! Setând balansul la 7500K (presetul Shade) îi spui camerei că sursa de lumină este foarte rece/albastră — deci compensează adăugând corecție de căldură puternică. Dar pentru că luminile cu sodiu sunt de fapt de doar 2200K (foarte calde), această supracorectare trece de neutru, într-o tentă albastră puternică. Cu cât setezi valoarea Kelvin mai sus deasupra temperaturii reale a luminii, cu atât shift-ul spre albastru devine mai puternic.",
-          "failureMessage": "Setând o valoare Kelvin mult mai mare decât temperatura reală a sursei face camera să supracorecteze spre albastru. Cu lumini de sodiu de 2200K, setând balansul la 7500K+ creezi cel mai puternic aspect rece, albastru.",
+          "scenario": "Fotografiezi o scenă atmosferică, cinematografică, de noapte, într-un oraș, și vrei o tentă rece, albastră, intenționată. Luminile stradale sunt cu vapori de sodiu (~2200K). Ce setare Kelvin de balans de alb îți dă cel mai puternic shift spre albastru?",
+          "hint": "Setând balansul de alb mult peste temperatura reală a sursei, împingi imaginea spre albastru.",
+          "successMessage": "Corect! Setând balansul pe 7500K (presetul Shade), îi spui aparatului că sursa de lumină e foarte rece/albastră — iar el compensează adăugând o corecție puternică de căldură. Dar pentru că luminile cu sodiu sunt, de fapt, de doar 2200K (foarte calde), această supracorectare trece de neutru, într-o tentă albastră puternică. Cu cât valoarea Kelvin e mai mare decât temperatura reală a luminii, cu atât shift-ul spre albastru devine mai puternic.",
+          "failureMessage": "Setând o valoare Kelvin mult mai mare decât temperatura reală a sursei, aparatul supracorectează spre albastru. Cu lumini de sodiu de 2200K, setând balansul la 7500K+ obții cel mai puternic aspect rece, albastru.",
           "options": {
-            "0": { "label": "2200K (potrivit cu luminile de sodiu)" },
+            "0": { "label": "2200K (potrivit luminilor de sodiu)" },
             "1": { "label": "3200K (presetul Tungsten)" },
             "2": { "label": "7500K sau mai mare (presetul Shade)" },
             "3": { "label": "5500K (presetul Daylight)" }

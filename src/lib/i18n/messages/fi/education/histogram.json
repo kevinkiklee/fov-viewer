@@ -1,117 +1,117 @@
 {
   "education": {
     "histogram": {
-      "beginner": "Histogrammi on kaavio, joka näyttää kuinka kirkkaita tai tummia kuvasi pikselit ovat. Vasen puoli edustaa varjoja (tummia alueita), keskellä ovat keskisävyt ja oikealla valot (kirkkaat alueet). Jos käyrä on kasautunut toiselle puolelle, kuvasi saattaa olla ali- tai ylivalotettu.",
-      "deeper": "Histogrammi piirtää pikselimäärän (pystyakseli) kirkkausarvoa vastaan (vaaka-akseli, 0–255 8-bittisissä kuvissa). Luminanssitilassa kunkin pikselin kirkkaus lasketaan punaisen, vihreän ja sinisen kanavien painotettuna keskiarvona (tyypillisesti 0.299R + 0.587G + 0.114B, vastaten ihmisen havaintoa). RGB-tila näyttää kolme erillistä jakaumaa ja paljastaa, mitkä värikanavat saattavat leikata itsenäisesti — 255:een työntynyt punainen kanava sinisen ollessa kunnossa viittaa valoleikkautumiseen lämpimissä sävyissä, kuten auringonlaskun taivaassa. \"Leikkautuminen\" tapahtuu, kun pikseliarvot osuvat 0:n tai 255:n rajaan, tarkoittaen että varjo- tai valoyksityiskohta on peruuttamattomasti menetetty. Mustan leikkautuminen (pikselit arvossa 0) menettää varjoyksityiskohtia; valkoisen leikkautuminen (pikselit arvossa 255) menettää valoyksityiskohtia. RAW-kuvaus antaa noin 2–3 ylimääräistä aukkoa palautettavissa olevaa valotilaa sen lisäksi, mitä JPEG-histogrammi näyttää, minkä vuoksi monet valokuvaajat \"valottavat oikealle\" (ETTR) — työntävät valotusta niin kirkkaaksi kuin mahdollista leikkaamatta RAW-dataa.",
+      "beginner": "Histogrammi on kaavio, joka näyttää, kuinka kirkkaita tai tummia kuvan pikselit ovat. Vasemmalla ovat varjot (tummat alueet), keskellä keskisävyt ja oikealla valot (kirkkaat alueet). Jos käyrä kasautuu voimakkaasti toiselle puolelle, kuva voi olla ali- tai ylivalotettu.",
+      "deeper": "Histogrammi piirtää pikselimäärän (pystyakseli) kirkkausarvoa vastaan (vaaka-akseli, 0–255 8-bittisissä kuvissa). Luminanssinäkymässä kunkin pikselin kirkkaus lasketaan R-, G- ja B-kanavien painotettuna keskiarvona (tyypillisesti 0,299R + 0,587G + 0,114B, joka vastaa ihmisen havaintoa). RGB-näkymä näyttää kolme erillistä jakaumaa ja paljastaa, mitkä kanavat saattavat leikkautua itsenäisesti — 255:een työntynyt punainen kanava sinisen ollessa kunnossa kertoo valon leikkautumisesta lämpimissä sävyissä, kuten auringonlaskun taivaassa. Leikkautuminen tapahtuu, kun pikseliarvo osuu rajaan 0 tai 255 — silloin varjo- tai valoyksityiskohta on menetetty lopullisesti. Mustan leikkautuminen (pikselit arvossa 0) menettää varjoyksityiskohdat, valkoisen leikkautuminen (pikselit arvossa 255) menettää valoyksityiskohdat. RAW-kuvaus antaa noin 2–3 valotusaskelta ylimääräistä palautettavaa valotilaa sen päälle, mitä JPEG-histogrammi näyttää. Juuri tämän takia monet valokuvaajat käyttävät ETTR-tekniikkaa (\"expose to the right\") — työntävät valotusta niin kirkkaaksi kuin mahdollista ilman, että RAW-data leikkautuu.",
       "keyFactors": {
         "0": {
           "label": "Sävyjakauma",
-          "description": "Yleinen muoto kertoo, onko kuva tumma (painottunut vasemmalle), kirkas (painottunut oikealle) vai tasapainoinen (jakautunut koko alueelle)."
+          "description": "Käyrän yleinen muoto kertoo, onko kuva tumma (painottunut vasemmalle), kirkas (painottunut oikealle) vai tasapainoinen (jakautunut koko alueelle)."
         },
         "1": {
           "label": "Leikkautuminen",
-          "description": "Piikit ääripäissä (vasen tai oikea reuna) kertovat yksityiskohtien menetyksestä varjoissa tai valoissa."
+          "description": "Piikit ääripäissä (vasen tai oikea reuna) paljastavat, että varjoista tai valoista on menetetty yksityiskohtia."
         },
         "2": {
           "label": "Kanavien erottelu",
-          "description": "RGB-tila paljastaa yksittäisten värikanavien käyttäytymisen — hyödyllinen värikohtaisen leikkautumisen havaitsemiseen värikylläisissä näkymissä."
+          "description": "RGB-näkymä paljastaa yksittäisten värikanavien käyttäytymisen — hyödyllinen värikohtaisen leikkautumisen havaitsemiseen voimakkaan värikylläisissä näkymissä."
         },
         "3": {
           "label": "Dynamiikka-alue",
-          "description": "Koko leveyden kattava histogrammi ilman leikkautumista kertoo saatavilla olevan dynamiikka-alueen hyvästä käytöstä."
+          "description": "Koko leveydeltä jakautunut histogrammi ilman leikkautumista kertoo, että dynamiikka-alue on käytössä hyvin."
         }
       },
       "tips": {
         "0": {
-          "text": "\"Täydellistä\" histogrammin muotoa ei ole. Mustan kissan kuvan tummalla sohvalla pitääkin olla painottunut vasemmalle. Arvioi histogrammia luovan tavoitteesi mukaan, ei jonkin ihannekäyrän perusteella."
+          "text": "Täydellistä histogrammin muotoa ei ole olemassa. Mustan kissan kuvassa tummalla sohvalla käyrä kuuluukin painottua vasemmalle. Arvioi histogrammia aina luovan tavoitteesi kautta, älä jonkin ihannekäyrän mukaan."
         },
         "1": {
-          "text": "Tarkista RGB-päällekkäistila auringonlasku- ja neonvalokuville. Punainen kanava leikkaa usein paljon ennen sinistä, menettäen yksityiskohtia lämpimissä valoissa vaikka luminanssihistogrammi näyttäisi kunnossa olevalta."
+          "text": "Tarkista RGB-näkymä auringonlasku- ja neonvalokuvista. Punainen kanava leikkautuu usein paljon ennen sinistä — lämpimistä valoista katoaa yksityiskohtia, vaikka luminanssihistogrammi näyttäisi ihan hyvältä."
         },
         "2": {
-          "text": "Jos näet leikkautumisvaroituksia molemmissa päissä samanaikaisesti, näkymä ylittää todennäköisesti kamerasi dynamiikka-alueen. Harkitse haarukointia HDR:ää varten tai asteikkoisten ND-suotimien käyttöä."
+          "text": "Jos näet leikkautumisvaroituksia yhtä aikaa molemmissa päissä, näkymä ylittää todennäköisesti kameran dynamiikka-alueen. Harkitse valotushaarukointia HDR:ää varten tai liukuvärjättyjä ND-suotimia."
         }
       },
       "tooltips": {
         "View Mode": {
-          "term": "Katselutila",
-          "definition": "Luminanssi näyttää kokonaiskirkkauden. RGB-päällekkäistila näyttää kaikki kolme värikanavaa päällekkäin. Kaikki kanavat näyttää RGB:n plus luminanssin yhdessä."
+          "term": "Näkymä",
+          "definition": "Luminanssi näyttää kokonaiskirkkauden. RGB-päällekkäisnäkymä näyttää kaikki kolme värikanavaa päällekkäin. Kaikki kanavat -näkymä yhdistää RGB:n ja luminanssin."
         },
         "Shadows": {
           "term": "Varjot",
-          "definition": "Histogrammin vasemmanpuoleisin alue (karkeasti 0–85), edustaen kuvan tummimpia sävyjä."
+          "definition": "Histogrammin vasen alue (karkeasti 0–85), joka edustaa kuvan tummimpia sävyjä."
         },
         "Midtones": {
           "term": "Keskisävyt",
-          "definition": "Keskialue (karkeasti 86–170), edustaen keskikirkkautta — ihonsävyt ja useimmat luonnonpinnat osuvat tänne."
+          "definition": "Histogrammin keskialue (karkeasti 86–170), joka edustaa keskikirkkautta — ihonsävyt ja useimmat luonnonpinnat osuvat tänne."
         },
         "Highlights": {
           "term": "Valot",
-          "definition": "Oikeanpuoleisin alue (karkeasti 171–255), edustaen kirkkaimpia sävyjä: taivasta, heijastuksia ja valonlähteitä."
+          "definition": "Histogrammin oikea alue (karkeasti 171–255), joka edustaa kirkkaimpia sävyjä: taivasta, heijastuksia ja valonlähteitä."
         },
         "Black Clipping": {
           "term": "Mustan leikkautuminen",
-          "definition": "Niiden pikselien prosenttiosuus, joiden kirkkaus on 0 (puhdas musta). Korkeat arvot tarkoittavat että varjoyksityiskohta on menetetty eikä palautettavissa."
+          "definition": "Niiden pikselien osuus, joiden kirkkaus on 0 (puhdas musta). Suuri arvo tarkoittaa, että varjoyksityiskohdat on menetetty lopullisesti."
         },
         "White Clipping": {
           "term": "Valkoisen leikkautuminen",
-          "definition": "Niiden pikselien prosenttiosuus, joiden kirkkaus on 255 (puhdas valkoinen). Korkeat arvot tarkoittavat että valoyksityiskohdat ovat palaneet."
+          "definition": "Niiden pikselien osuus, joiden kirkkaus on 255 (puhdas valkoinen). Suuri arvo tarkoittaa, että valoyksityiskohdat ovat palaneet eivätkä ole palautettavissa."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Lataat kuvan ja histogrammi on työntynyt voimakkaasti vasemmalle ilman juuri mitään oikealla. Mitä tämä kertoo kuvasta?",
+          "scenario": "Lataat kuvan ja histogrammi on työntynyt voimakkaasti vasemmalle, eikä oikealla ole juuri mitään. Mitä tämä kertoo kuvasta?",
           "hint": "Vasen = tumma, oikea = kirkas.",
-          "successMessage": "Oikein! Vasemmalle painottunut histogrammi tarkoittaa, että kuva on pääosin tummia sävyjä — se voi olla alivalotettu tai tarkoituksellisesti tumma/low-key-kuva.",
-          "failureMessage": "Vasemmalle kasautunut histogrammi ilmaisee, että kuva on pääosin tumma. Tämä tarkoittaa usein alivalotusta.",
+          "successMessage": "Oikein! Vasemmalle painottunut histogrammi kertoo, että kuva koostuu pääosin tummista sävyistä — kuva voi olla alivalotettu tai tarkoituksellisesti tumma low-key-kuva.",
+          "failureMessage": "Vasemmalle kasautunut histogrammi tarkoittaa, että kuva on pääosin tumma. Tämä merkitsee usein alivalotusta.",
           "options": {
             "0": { "label": "Kuva on alivalotettu tai hyvin tumma" },
             "1": { "label": "Kuva on ylivalotettu tai hyvin kirkas" },
-            "2": { "label": "Kuvassa on täydellinen valotus" }
+            "2": { "label": "Kuva on valotukseltaan täydellinen" }
           }
         },
         "1": {
-          "scenario": "Mitä katselutilaa käytät nähdäksesi kuvasi yleiskirkkausjakauman yhtenä käyränä?",
-          "hint": "Yksi tila yhdistää kaiken väritiedon yhdeksi kirkkauskäyräksi.",
-          "successMessage": "Aivan! Luminanssitila näyttää yhden käyrän, joka edustaa koettua kokonaiskirkkautta.",
-          "failureMessage": "Luminanssitila on yksinkertaisin näkymä — se yhdistää R:n, G:n ja B:n yhdeksi kirkkauskäyräksi.",
+          "scenario": "Mitä näkymää käytät, kun haluat nähdä kuvan kokonaiskirkkausjakauman yhtenä käyränä?",
+          "hint": "Yksi näkymä yhdistää kaiken väritiedon yhdeksi kirkkauskäyräksi.",
+          "successMessage": "Aivan! Luminanssinäkymä näyttää yhden käyrän, joka kuvaa koettua kokonaiskirkkautta.",
+          "failureMessage": "Luminanssinäkymä on yksinkertaisin — se yhdistää R-, G- ja B-kanavat yhdeksi kirkkauskäyräksi.",
           "options": {
             "0": { "label": "Luminanssi" },
-            "1": { "label": "RGB-päällekkäin" },
+            "1": { "label": "RGB päällekkäin" },
             "2": { "label": "Kaikki kanavat" }
           }
         },
         "2": {
-          "scenario": "Kuvasit eloisan auringonlaskun ja luminanssihistogrammi näyttää kunnossa olevalta, mutta vaihtaessasi RGB-päällekkäistilaan näet punaisen kanavan piikittävän ääressä oikealla. Mitä tapahtuu?",
-          "hint": "Yksittäiset värikanavat voivat leikata vaikka kokonaisluminanssi ei leikkaisi.",
-          "successMessage": "Juuri niin! Punainen kanava leikkaa — auringonlaskun valot ovat menettäneet yksityiskohtia punaisissa sävyissä vaikka yleinen kirkkaus näyttää hyväksyttävältä. Menetät lämpimiä värinyansseja.",
-          "failureMessage": "Punainen kanava leikkaa itsenäisesti. Kylläiset lämpimät valot (auringonlaskut, tuli) työntävät usein punaisen 255:een vihreän ja sinisen ollessa kunnossa, menettäen värin niissä sävyissä.",
+          "scenario": "Kuvasit eloisan auringonlaskun. Luminanssihistogrammi näyttää ihan hyvältä, mutta kun vaihdat RGB-näkymään, huomaat punaisen kanavan piikittävän oikeassa reunassa. Mitä tapahtuu?",
+          "hint": "Yksittäinen värikanava voi leikkautua, vaikka kokonaisluminanssi ei leikkautuisi.",
+          "successMessage": "Juuri niin! Punainen kanava leikkautuu — auringonlaskun valoista katoaa yksityiskohtia punaisissa sävyissä, vaikka kokonaiskirkkaus näyttääkin hyvältä. Menetät lämpimiä värinyansseja.",
+          "failureMessage": "Punainen kanava leikkautuu omillaan. Voimakkaan värikylläisissä lämpimissä valoissa (auringonlaskut, tuli) punainen yltyy usein 255:een, vaikka vihreä ja sininen ovat kunnossa — lopputuloksena näistä sävyistä katoaa värien nyanssit.",
           "options": {
-            "0": { "label": "Punaisen kanavan leikkautuminen — lämpimien valojen yksityiskohta menetetty" },
+            "0": { "label": "Punainen kanava leikkautuu — lämpimistä valoista katoaa yksityiskohtia" },
             "1": { "label": "Kuva on kokonaisuudessaan ylivalotettu" },
             "2": { "label": "Valkotasapaino on väärä" }
           }
         },
         "3": {
-          "scenario": "Työkalu ilmoittaa 2,3 % mustan leikkautumista ja 0,1 % valkoisen leikkautumista. Pitäisikö sinun säätää valotusta?",
-          "hint": "Pieni määrä leikkautumista on normaalia — puhtaan mustat varjot ja peiliheijastukset ovat odotettavissa.",
-          "successMessage": "Hyvä harkinta! 2,3 % mustan leikkautumista on maltillista ja usein vain syviä varjoja tai tummia reunoja. 0,1 % valkoisen leikkautumista on todennäköisesti peiliheijastuksia (auringon heijastukset). Tämä valotus on kunnossa useimmille tarkoituksille.",
-          "failureMessage": "Nämä leikkautumisprosentit ovat varsin pieniä. Hieman mustan leikkautumista syvissä varjoissa ja pieni valkoisen leikkautuminen peiliheijastuksista on normaalia ja odotettavissa. Ei tarvitse säätää.",
+          "scenario": "Työkalu ilmoittaa 2,3 % mustan leikkautumista ja 0,1 % valkoisen leikkautumista. Kannattaako valotusta säätää?",
+          "hint": "Pieni määrä leikkautumista on normaalia — syvät mustat varjot ja peiliheijastukset ovat odotettavissa.",
+          "successMessage": "Hyvä harkinta! 2,3 % mustan leikkautumista on maltillista ja tulee usein syvistä varjoista tai tummista reunoista. 0,1 % valkoisen leikkautumista on todennäköisesti peiliheijastuksia (auringon välähdyksiä). Tämä valotus on kunnossa useimpiin käyttötarkoituksiin.",
+          "failureMessage": "Nämä leikkautumisprosentit ovat hyvin pieniä. Pieni mustan leikkautuminen syvissä varjoissa ja vähäinen valkoisen leikkautuminen peiliheijastuksissa on normaalia ja odotettavaa. Valotusta ei tarvitse säätää.",
           "options": {
-            "0": { "label": "Kasvata valotusta vähentääksesi mustan leikkautumista" },
-            "1": { "label": "Tämä on kunnossa — pieni leikkautuminen varjoissa ja peiliheijastuksissa on normaalia" },
-            "2": { "label": "Vähennä valotusta poistaaksesi valkoisen leikkautumisen" }
+            "0": { "label": "Nosta valotusta, niin mustan leikkautuminen vähenee" },
+            "1": { "label": "Valotus on kunnossa — pieni leikkautuminen varjoissa ja peiliheijastuksissa on normaalia" },
+            "2": { "label": "Laske valotusta, niin valkoisen leikkautuminen poistuu" }
           }
         },
         "4": {
-          "scenario": "Kuvaat voimakaskontrastista näkymää: morsiamen valkoisessa puvussa tummassa katedraalissa. Histogrammi näyttää voimakkaat piikit molemmissa ääripäissä ja aukon keskisävyissä. Miten käsittelet tämän?",
-          "hint": "Kun näkymän dynamiikka-alue ylittää kennon alueen, tarvitset monivalotustekniikkaa.",
-          "successMessage": "Täydellistä! Tämä kaksimoodinen histogrammi osoittaa, että näkymä ylittää kennosi dynamiikka-alueen. Valotushaarukointi (HDR) tallentaa sekä tumman sisätilan että kirkkaan puvun yksityiskohdat. Vaihtoehtoisesti käytä täydennyssalamaa varjojen nostamiseen.",
-          "failureMessage": "Kaksimoodinen histogrammi (piikit molemmissa ääripäissä, tyhjä keskikohta) tarkoittaa että näkymällä on enemmän dynamiikka-aluetta kuin kennosi pystyy tallentamaan yhteen kuvaan. Haarukoi valotuksia HDR:ää varten tai käytä täydennyssalamaa vähentääksesi kontrastisuhdetta.",
+          "scenario": "Kuvaat voimakaskontrastista näkymää: morsian valkoisessa puvussa tummassa katedraalissa. Histogrammissa on voimakkaat piikit molemmissa päissä ja aukko keskellä. Miten toimit?",
+          "hint": "Kun näkymän dynamiikka-alue ylittää kennon alueen, tarvitaan monivalotustekniikkaa.",
+          "successMessage": "Täydellistä! Kaksihuippuinen histogrammi osoittaa, että näkymä ylittää kennosi dynamiikka-alueen. Valotushaarukointi (HDR) tallentaa sekä tumman sisätilan että kirkkaan puvun yksityiskohdat. Vaihtoehtoisesti voit nostaa varjoja täydennyssalamalla.",
+          "failureMessage": "Kaksihuippuinen histogrammi (piikit molemmissa päissä, tyhjä keskellä) tarkoittaa, että näkymässä on enemmän dynamiikka-aluetta kuin kenno pystyy tallentamaan yhteen ruutuun. Haarukoi valotuksia HDR:ää varten tai pienennä kontrastia täydennyssalamalla.",
           "options": {
             "0": { "label": "Haarukoi valotuksia HDR:ää varten tai käytä täydennyssalamaa" },
-            "1": { "label": "Valota keskisävyille ja toivo parasta" },
-            "2": { "label": "Vaihda mustavalkoon piilottaaksesi ongelman" }
+            "1": { "label": "Mittaa keskisävyille ja toivo parasta" },
+            "2": { "label": "Vaihda mustavalkoon, niin ongelma peittyy" }
           }
         }
       }

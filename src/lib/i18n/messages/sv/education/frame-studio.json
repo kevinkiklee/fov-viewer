@@ -1,7 +1,7 @@
 {
   "education": {
     "frame-studio": {
-      "beginner": "Frame Studio hjälper dig beskära, rama in och komponera dina foton direkt i webbläsaren. Använd kompositionsrutnät för att förbättra bildutsnittet, beskär till populära bildförhållanden och lägg till professionella ramar — allt utan att förlora bildkvalitet.",
+      "beginner": "Frame Studio hjälper dig beskära, rama in och komponera dina foton direkt i webbläsaren. Lägg på kompositionsrutnät för att finslipa bildutsnittet, beskär till vanliga bildförhållanden och sätt på proffsiga ramar — allt utan att tappa i bildkvalitet.",
       "deeper": {
         "0": {
           "heading": "Kompositionsrutnät",
@@ -13,7 +13,7 @@
         },
         "2": {
           "heading": "Inramning och kanter",
-          "text": "Att lägga till en kant runt ett foto efterliknar en fysisk passepartout och ram. En vit passepartout ger visuell andningsyta och riktar fokus inåt. Kantens bredd relativt bilden påverkar den upplevda \"tyngden\". Galleripresentationer använder oftast bredare passepartout. En subtil skugga skapar djup och ger känslan av att en inramad bild hänger på en vägg."
+          "text": "En kant runt fotot efterliknar en fysisk passepartout och ram. En vit passepartout ger bilden luft att andas och drar fokus inåt. Kantens bredd i förhållande till bilden styr hur \"tung\" ramen upplevs — galleripresentationer använder oftast bredare passepartout. En diskret skugga skapar djup och får bilden att kännas som en inramad kopia på väggen."
         }
       },
       "keyFactors": {
@@ -117,10 +117,10 @@
           }
         },
         "4": {
-          "scenario": "Du vill ha en ren vit ram runt ditt foto för sociala medier. Vilket rampresetet ska du välja?",
-          "hint": "Fundera på vilket preset som ger en enkel vit ram.",
-          "successMessage": "Rätt! Preset \"Vit\" lägger till en 100 px vit ram runt bilden.",
-          "failureMessage": "Preset \"Vit\" är utformat för en ren, enkel vit ram.",
+          "scenario": "Du vill ha en ren vit ram runt ditt foto för sociala medier. Vilken ramförinställning ska du välja?",
+          "hint": "Fundera på vilken förinställning som ger en enkel vit ram.",
+          "successMessage": "Rätt! Förinställningen \"Vit\" lägger till en 100 px vit ram runt bilden.",
+          "failureMessage": "Förinställningen \"Vit\" är gjord för en ren, enkel vit ram.",
           "options": {
             "0": { "label": "Ingen" },
             "1": { "label": "Vit" },

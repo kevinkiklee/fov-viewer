@@ -70,15 +70,15 @@
       "banner": "Forhåndsvisning — dette verktøyet er ikke publisert ennå"
     },
     "fileUpload": {
-      "dropPrompt": "Slipp et bilde her eller klikk for å bla",
+      "dropPrompt": "Slipp et bilde her, eller klikk for å bla",
       "tapPrompt": "Trykk for å velge et bilde",
-      "privacy": "Bildene dine forlater aldri enheten din",
+      "privacy": "Bildene dine forlater aldri enheten",
       "selectedFile": "Valgt fil: {fileName}. Klikk for å velge et annet bilde",
-      "defaultLabel": "Ditt bilde"
+      "defaultLabel": "Bildet ditt"
     },
     "scene": {
       "label": "Scene:",
-      "yourPhoto": "Ditt bilde",
+      "yourPhoto": "Bildet ditt",
       "removePhoto": "Fjern bilde",
       "uploadPhoto": "Last opp bilde"
     },
@@ -102,7 +102,7 @@
     },
     "notFound": {
       "title": "Fant ikke siden",
-      "message": "Siden du leter etter finnes ikke eller er flyttet.",
+      "message": "Siden du leter etter, finnes ikke eller er flyttet.",
       "backHome": "Tilbake til forsiden",
       "popularTools": "Populære verktøy"
     },

@@ -33,7 +33,7 @@
       "cookieConsent": {
         "title": "Consenso ai cookie",
         "body1": "Quando visiti PhotoTools per la prima volta, viene visualizzato un banner di consenso ai cookie che ti permette di accettare o rifiutare i cookie non essenziali. Questo banner è gestito da CookieYes, una piattaforma di gestione del consenso certificata da Google che supporta il framework IAB Transparency and Consent (TCF) v2.3.",
-        "body2": "Puoi modificare le tue preferenze di consenso in qualsiasi momento cliccando sul link delle impostazioni cookie nel footer. Se rifiuti i cookie pubblicitari, vedrai comunque gli annunci, ma non saranno personalizzati in base alla tua cronologia di navigazione."
+        "body2": "Puoi modificare le tue preferenze di consenso in qualsiasi momento cliccando sul link delle impostazioni cookie a piè di pagina. Se rifiuti i cookie pubblicitari, vedrai comunque gli annunci, ma non saranno personalizzati in base alla tua cronologia di navigazione."
       },
       "ccpa": {
         "title": "Residenti in California (CCPA)",

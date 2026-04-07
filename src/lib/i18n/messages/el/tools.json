@@ -1,23 +1,23 @@
 {
   "tools": {
     "fov-simulator": {
-      "name": "FOV Simulator",
+      "name": "Προσομοιωτής οπτικού πεδίου",
       "description": "Σύγκρινε το οπτικό πεδίο σε διαφορετικές εστιακές αποστάσεις και μεγέθη αισθητήρα"
     },
     "color-scheme-generator": {
-      "name": "Color Scheme Generator",
+      "name": "Δημιουργός χρωματικών παλετών",
       "description": "Φτιάξε χρωματικές παλέτες για τις λήψεις σου"
     },
     "exposure-simulator": {
       "name": "Προσομοιωτής τριγώνου έκθεσης",
-      "description": "Δες πώς αλληλεπιδρούν διάφραγμα, ταχύτητα κλείστρου και ISO"
+      "description": "Δες πώς αλληλεπιδρούν το διάφραγμα, η ταχύτητα κλείστρου και το ISO"
     },
     "dof-simulator": {
-      "name": "Depth-of-Field Simulator",
-      "description": "Οπτικοποίησε πώς διάφραγμα, εστιακή απόσταση και απόσταση επηρεάζουν το θόλωμα του φόντου"
+      "name": "Προσομοιωτής βάθους πεδίου",
+      "description": "Οπτικοποίησε πώς το διάφραγμα, η εστιακή απόσταση και η απόσταση επηρεάζουν το θόλωμα του φόντου"
     },
     "focus-stacking-calculator": {
-      "name": "Focus Stacking Calculator",
+      "name": "Υπολογιστής focus stacking",
       "description": "Υπολόγισε τις βέλτιστες αποστάσεις εστίασης για ευκρίνεια από μπροστά έως πίσω"
     },
     "equivalent-settings-calculator": {
@@ -29,15 +29,15 @@
       "description": "Μάθε πού να εστιάζεις για μέγιστη ευκρίνεια από το προσκήνιο μέχρι το άπειρο"
     },
     "shutter-speed-visualizer": {
-      "name": "Shutter Speed Visualizer",
+      "name": "Οπτικοποιητής ταχύτητας κλείστρου",
       "description": "Βρες την ελάχιστη ασφαλή ταχύτητα κλείστρου για ευκρινείς λήψεις με το χέρι"
     },
     "nd-filter-calculator": {
-      "name": "ND Filter Calculator",
+      "name": "Υπολογιστής φίλτρου ND",
       "description": "Υπολόγισε τον χρόνο έκθεσης με οποιοδήποτε φίλτρο ND"
     },
     "star-trail-calculator": {
-      "name": "Star Trail Calculator",
+      "name": "Υπολογιστής ιχνών αστεριών",
       "description": "Υπολόγισε τη μέγιστη έκθεση για ευκρινή αστέρια ή σχεδίασε λήψεις με ίχνη αστεριών"
     },
     "perspective-compression-simulator": {
@@ -45,19 +45,19 @@
       "description": "Δες πώς η εστιακή απόσταση επηρεάζει τη συμπίεση του φόντου"
     },
     "white-balance-visualizer": {
-      "name": "White Balance Visualizer",
+      "name": "Οπτικοποιητής ισορροπίας λευκού",
       "description": "Δες πώς η θερμοκρασία χρώματος επηρεάζει τις φωτογραφίες σου"
     },
     "sensor-size-comparison": {
-      "name": "Sensor Size Comparison",
+      "name": "Σύγκριση μεγέθους αισθητήρα",
       "description": "Σύγκρινε οπτικά τα μεγέθη αισθητήρων"
     },
     "frame-studio": {
-      "name": "Frame Studio",
+      "name": "Στούντιο καδραρίσματος",
       "description": "Κόψε, πλαισίωσε και σύνθεσε φωτογραφίες με πλέγματα σύνθεσης"
     },
     "exif-viewer": {
-      "name": "EXIF Viewer",
+      "name": "Προβολέας EXIF",
       "description": "Δες EXIF metadata και ιστόγραμμα για οποιαδήποτε φωτογραφία — 100% στον browser σου"
     }
   }

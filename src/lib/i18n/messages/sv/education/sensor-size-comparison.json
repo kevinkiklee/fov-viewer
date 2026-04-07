@@ -1,11 +1,11 @@
 {
   "education": {
     "sensor-size-comparison": {
-      "beginner": "Kamerasensorer finns i många olika fysiska storlekar, från de stora mellanformatschippen i studiokameror ner till de pyttesmå sensorerna i smartphones. En större sensor fångar mer ljus, producerar mindre brus och gör det lättare att sudda bakgrunder. Sensorstorleken är en av de största faktorerna som skiljer kamerakategorier åt.",
+      "beginner": "Kamerasensorer finns i en rad olika fysiska storlekar — från de stora mellanformatschippen i studiokameror ned till de pyttesmå sensorerna i mobiltelefoner. En större sensor fångar mer ljus, ger mindre brus och gör det lättare att sudda bakgrunder. Sensorstorleken är en av de största skillnaderna mellan kamerakategorier.",
       "deeper": {
         "0": {
           "heading": "Så fungerar det",
-          "text": "Sensorstorleken påverkar fotograferingen på flera sammanlänkade sätt. En större sensor har större yta att samla fotoner på, vilket förbättrar signal-brus-förhållandet och det dynamiska omfånget. Sensorstorleken är en av de viktigaste skillnaderna mellan kamerakategorier — från mellanformat i studio till smartphonesensorer."
+          "text": "Sensorstorleken påverkar fotograferingen på flera sammanflätade sätt. En större sensor har större yta att samla fotoner på, vilket förbättrar signal-brus-förhållandet och det dynamiska omfånget. Det är en av de viktigaste skillnaderna mellan kamerakategorier — från mellanformat i studio till sensorerna i mobiltelefoner."
         },
         "1": {
           "heading": "Cropfaktor",
@@ -13,7 +13,7 @@
         },
         "2": {
           "heading": "Pixeltäthet",
-          "text": "Pixeltäthet (pixelavstånd) mäter hur tätt pixlarna är packade på sensorn. Att packa fler megapixel på en mindre sensor krymper varje fotocell och minskar ljusinsamlingen per pixel. En 24 MP fullformatssensor har ~6 µm pixlar medan en 24 MP APS-C-sensor har ~4 µm pixlar, vilket är varför fullformatssensorn oftast presterar bättre vid höga ISO."
+          "text": "Pixeltäthet (pixelavstånd) mäter hur tätt pixlarna är packade på sensorn. Fler megapixel på en mindre sensor betyder mindre fotoceller och mindre ljus per pixel. En 24 MP fullformatssensor har ~6 µm pixlar medan en 24 MP APS-C-sensor har ~4 µm pixlar, och det är därför fullformatssensorn oftast klarar höga ISO bättre."
         }
       },
       "keyFactors": {

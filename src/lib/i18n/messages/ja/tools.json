@@ -17,12 +17,12 @@
       "description": "絞り、焦点距離、撮影距離が背景ボケにどう影響するかを視覚化"
     },
     "focus-stacking-calculator": {
-      "name": "フォーカスブラケット計算ツール",
-      "description": "手前から奥までシャープに撮るための最適なピント位置を計算"
+      "name": "フォーカススタッキング計算ツール",
+      "description": "手前から奥までシャープに仕上げるためのピント位置を計算"
     },
     "equivalent-settings-calculator": {
-      "name": "換算設定計算ツール",
-      "description": "センサーフォーマット間で同等の絞りと焦点距離を算出"
+      "name": "等価設定計算ツール",
+      "description": "センサーフォーマット間で等価の絞りと焦点距離を算出"
     },
     "hyperfocal-simulator": {
       "name": "過焦点距離シミュレーター",

@@ -92,10 +92,10 @@
           }
         },
         "3": {
-          "scenario": "Fotografies un amic fent footing en un parc amb un 35mm en full frame amb IBIS. El teu IBIS et dona 5 passos d'estabilització, per tant la regla del recíproc per si sola et deixaria disparar a aproximadament 1 segon. Hauries de fer servir 1 segon?",
+          "scenario": "Fotografies un amic trotant en un parc amb un 35mm en full frame amb IBIS. El teu IBIS et dona 5 passos d'estabilització, per tant la regla del recíproc per si sola et deixaria disparar a aproximadament 1 segon. Hauries de fer servir 1 segon?",
           "hint": "L'estabilització compensa la trepidació, no el moviment del subjecte.",
-          "successMessage": "Correcte! L'estabilització només contrarresta la trepidació. Una persona fent footing necessita almenys 1/250s per congelar el moviment, independentment de com de bona sigui l'estabilització.",
-          "failureMessage": "L'estabilització no pot congelar un subjecte en moviment. Per a una persona fent footing, necessites almenys 1/250s per evitar el rastre de moviment, encara que la càmera pogués mantenir-se estable a 1 segon.",
+          "successMessage": "Correcte! L'estabilització només contrarresta la trepidació. Una persona trotant necessita almenys 1/250s per congelar el moviment, independentment de com de bona sigui l'estabilització.",
+          "failureMessage": "L'estabilització no pot congelar un subjecte en moviment. Per a una persona trotant, necessites almenys 1/250s per evitar el rastre de moviment, encara que la càmera pogués mantenir-se estable a 1 segon.",
           "options": {
             "0": { "label": "Sí — l'IBIS gestiona tot el moviment" },
             "1": { "label": "No — fes servir almenys 1/250s per congelar el corredor" },

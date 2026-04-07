@@ -13,7 +13,7 @@
         },
         "2": {
           "heading": "Ketumpatan piksel",
-          "text": "Ketumpatan piksel (pitch piksel) mengukur betapa rapatnya piksel dibungkus pada sensor. Memadat lebih banyak megapiksel ke sensor yang lebih kecil mengecilkan setiap photosite, mengurangkan pengumpulan cahaya per-piksel. Sensor full-frame 24MP mempunyai piksel ~6µm manakala sensor APS-C 24MP mempunyai piksel ~4µm, itulah sebabnya sensor full-frame biasanya lebih baik pada ISO tinggi."
+          "text": "Ketumpatan piksel (pitch piksel) mengukur betapa rapatnya piksel disusun pada sensor. Memadatkan lebih banyak megapiksel ke dalam sensor yang lebih kecil mengecilkan setiap photosite, mengurangkan pengumpulan cahaya per piksel. Sensor full-frame 24MP mempunyai piksel ~6µm manakala sensor APS-C 24MP mempunyai piksel ~4µm, itulah sebabnya sensor full-frame biasanya lebih baik pada ISO tinggi."
         }
       },
       "keyFactors": {

@@ -16,7 +16,7 @@
       "rectangleWidth": "Rektangelbredde:",
       "square": "(kvadrat)",
       "pickFromPhoto": "Plukk fra bilde",
-      "dropPhotoPrompt": "Slipp et bilde her eller klikk for å bla",
+      "dropPhotoPrompt": "Slipp et bilde her, eller klikk for å bla",
       "keyColorLabel": "Hovedfarge — klikk for å kopiere hex",
       "clickToCopyHex": "Klikk for å kopiere hex",
       "copiedExcl": "Kopiert!",
@@ -29,9 +29,9 @@
       "copyRgbValues": "Kopier RGB-verdier",
       "pickColorFromPhoto": "Plukk farge fra bilde",
       "close": "Lukk",
-      "dropPhotoOrBrowse": "Slipp et bilde her eller klikk for å bla",
+      "dropPhotoOrBrowse": "Slipp et bilde her, eller klikk for å bla",
       "tapToChoose": "Trykk for å velge et bilde",
-      "tapToSample": "Trykk hvor som helst i bildet for å plukke fargen",
+      "tapToSample": "Trykk hvor som helst i bildet for å plukke farge",
       "changePhoto": "Bytt bilde",
       "privacyNote": "Bildet ditt blir i nettleseren — ingenting lastes opp",
       "suggestions": {
@@ -42,15 +42,15 @@
         },
         "analogous": {
           "warm": "Passer til: landskap i gylden time med samstemte varme toner",
-          "cool": "Passer til: rolige vannmotiver og skumringsfotografi",
-          "default": "Passer til: harmoniske naturbilder med myke fargeovergangene"
+          "cool": "Passer til: rolige vannmotiver og skumringsfoto",
+          "default": "Passer til: harmoniske naturbilder med myke fargeoverganger"
         },
-        "triadic": "Bruk til: levende redaksjonelt arbeid og modige, kreative portretter",
+        "triadic": "Passer til: livlig redaksjonelt arbeid og dristige, kreative portretter",
         "splitComplementary": {
-          "warm": "Bruk til: klær som står i kontrast til et naturlig bakteppe",
-          "default": "Bruk til: balansert produktfotografi med visuell variasjon"
+          "warm": "Passer til: klær som står i kontrast til et naturlig bakteppe",
+          "default": "Passer til: balansert produktfotografi med visuell variasjon"
         },
-        "tetradic": "Bruk til: rike redaksjonelle layouter og sammensatte komposisjoner med flere motiver"
+        "tetradic": "Passer til: rike redaksjonelle oppsett og sammensatte komposisjoner med flere motiver"
       },
       "faq": {
         "what-is-color-harmony": {
@@ -63,7 +63,7 @@
         },
         "how-to-use-color-schemes-photography": {
           "question": "Hvordan bruker jeg fargeskjemaer i fotografi?",
-          "answer": "Planlegg fotograferingen rundt en fargepalett — velg klær, steder og rekvisitter som passer skjemaet. I etterarbeidet kan du bruke fargegrading for å fremheve paletten. Fargeskjemaer hjelper deg å lage en helhetlig visuell identitet på tvers av en bildeserie."
+          "answer": "Planlegg fotograferingen rundt en fargepalett — velg klær, steder og rekvisitter som passer skjemaet. I etterarbeidet kan du bruke fargegrading til å fremheve paletten. Fargeskjemaer hjelper deg å bygge en helhetlig visuell identitet gjennom en hel bildeserie."
         }
       }
     }

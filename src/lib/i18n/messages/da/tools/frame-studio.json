@@ -76,15 +76,15 @@
       "faq": {
         "what-is-rule-of-thirds": {
           "question": "Hvad er tredjedelsreglen i fotografi?",
-          "answer": "Tredjedelsreglen inddeler billedet i et 3×3-gitter. Placerer du hovedmotivet langs linjerne eller i deres skæringspunkter, får du en mere dynamisk og balanceret komposition end ved at centrere motivet."
+          "answer": "Tredjedelsreglen deler billedet op i et 3×3-gitter. Hvis du placerer hovedmotivet langs linjerne eller i deres skæringspunkter, får du en mere dynamisk og balanceret komposition end ved at sætte motivet i midten."
         },
         "best-aspect-ratio-for-instagram": {
-          "question": "Hvilket billedformat er bedst til Instagram-posts?",
-          "answer": "Instagram understøtter 1:1 (kvadrat), 4:5 (portræt) og 1,91:1 (landskab). Portrætformatet 4:5 fylder mest i feedet og får typisk den højeste engagement."
+          "question": "Hvilket billedformat er bedst til Instagram?",
+          "answer": "Instagram understøtter 1:1 (kvadrat), 4:5 (portræt) og 1,91:1 (landskab). Portrætformatet 4:5 fylder mest i feedet og får typisk mest engagement."
         },
         "how-to-use-golden-ratio": {
-          "question": "Hvordan bruger jeg det gyldne snit til fotokomposition?",
-          "answer": "Det gyldne snit (ca. 1,618:1) skaber et spiralmønster, der fører blikket gennem billedet. Placér hovedmotivet i spiralens tætteste punkt, og lad ledelinjer følge kurven udad."
+          "question": "Hvordan bruger jeg det gyldne snit i komposition?",
+          "answer": "Det gyldne snit (ca. 1,618:1) danner et spiralmønster, der fører blikket gennem billedet. Placér hovedmotivet i spiralens tætteste punkt, og lad ledelinjer følge kurven udad."
         }
       }
     }

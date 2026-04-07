@@ -2,7 +2,7 @@
   "toolUI": {
     "histogram": {
       "luminance": "Luminanssi",
-      "rgbOverlay": "RGB-päällekkäin",
+      "rgbOverlay": "RGB päällekkäin",
       "allChannels": "Kaikki kanavat",
       "shadows": "Varjot",
       "midtones": "Keskisävyt",
@@ -11,7 +11,7 @@
       "whiteClipping": "Valkoisen leikkautuminen",
       "pureBlack": "puhdas musta",
       "pureWhite": "puhdas valkoinen",
-      "uploadPrompt": "Lataa kuva nähdäksesi EXIF-tiedot ja histogrammin",
+      "uploadPrompt": "Lataa kuva, niin näet EXIF-tiedot ja histogrammin",
       "uploadedPhoto": "Ladattu kuva",
       "noExifData": "Tästä kuvasta ei löytynyt EXIF-tietoja.",
       "sectionCamera": "Kamera",

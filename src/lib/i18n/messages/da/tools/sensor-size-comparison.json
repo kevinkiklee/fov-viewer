@@ -5,7 +5,7 @@
       "modeOverlay": "Overlay",
       "modeSideBySide": "Side om side",
       "modePixelDensity": "Pixeltæthed",
-      "pixelDensityDescription": "Viser almindelige megapixelantal for hver sensor. Større pixels (større celler) fanger mere lys.",
+      "pixelDensityDescription": "Viser typiske megapixelantal for hver sensor. Større pixels (større celler) fanger mere lys.",
       "sensors": "Sensorer",
       "customSensors": "Brugerdefinerede sensorer",
       "placeholderName": "Navn",
@@ -30,16 +30,16 @@
       "canvasAriaLabel": "Sensor-sammenligning i {mode}-tilstand",
       "faq": {
         "what-is-crop-factor": {
-          "question": "Hvad er cropfaktor, og hvorfor betyder det noget?",
-          "answer": "Cropfaktor beskriver størrelsesforskellen mellem et kameras sensor og en fuldformat- (35mm) sensor. Den påvirker den effektive brændvidde, dybdeskarpheden og ydelsen i svagt lys. En 1,5x cropfaktor betyder, at sensoren er 1,5 gange mindre end fuldformat."
+          "question": "Hvad er cropfaktor, og hvorfor betyder den noget?",
+          "answer": "Cropfaktor beskriver størrelsesforskellen mellem et kameras sensor og en fuldformatsensor (35mm). Den påvirker den effektive brændvidde, dybdeskarpheden og ydelsen i svagt lys. En cropfaktor på 1,5x betyder, at sensorens diagonal er 1,5 gange mindre end fuldformatets."
         },
         "full-frame-vs-aps-c": {
-          "question": "Hvad er fordelene ved fuldformat vs. APS-C-sensorer?",
+          "question": "Hvad er fordelene ved fuldformat kontra APS-C?",
           "answer": "Fuldformatsensorer giver bedre ydelse i svagt lys, mindre dybdeskarphed og bredere billedvinkel ved en given brændvidde. APS-C-sensorer er billigere, lettere og giver ekstra rækkevidde til vildt- og sportsfotografi."
         },
         "sensor-size-and-depth-of-field": {
           "question": "Hvordan påvirker sensorstørrelsen dybdeskarpheden?",
-          "answer": "Større sensorer giver mindre dybdeskarphed ved samme udsnit. For at få samme udsnit med en mindre sensor skal du enten bruge en kortere brændvidde (større DoF) eller gå længere væk (større DoF) — begge reducerer baggrundsuskarpheden."
+          "answer": "Større sensorer giver mindre dybdeskarphed ved samme udsnit. For at få samme udsnit med en mindre sensor skal du enten bruge en kortere brændvidde eller gå længere væk — og begge dele øger dybdeskarpheden og reducerer baggrundsuskarpheden."
         }
       }
     }

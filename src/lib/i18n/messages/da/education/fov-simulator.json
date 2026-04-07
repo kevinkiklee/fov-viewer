@@ -1,54 +1,54 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Billedvinkel (FOV) er, hvor meget af et motiv dit kamera fanger. En vidvinkellinse (som 24mm) ser bredt, mens et teleobjektiv (som 200mm) zoomer ind på en lille del. Denne simulator lader dig sammenligne op til fire linser på forskellige sensorer, lagt over virkelige motiver, så du præcist kan se, hvad hver kombination fanger.",
+      "beginner": "Billedvinkel (FOV) er, hvor meget af et motiv dit kamera kan få med. En vidvinkel (som 24mm) ser bredt, mens en tele (som 200mm) zoomer ind på en lille del. I denne simulator kan du sammenligne op til fire linser på forskellige sensorer, lagt oven på rigtige motiver, så du præcist kan se, hvad hver kombination fanger.",
       "deeper": {
         "0": {
           "heading": "FOV-formlen",
-          "text": "Billedvinklen afgøres af to faktorer: brændvidde og sensorstørrelse. Den vandrette FOV-vinkel beregnes som 2 × arctan(sensorbredde / (2 × brændvidde)). En kortere brændvidde eller en større sensor giver en bredere billedvinkel."
+          "text": "Billedvinklen afhænger af to ting: brændvidde og sensorstørrelse. Den vandrette FOV-vinkel beregnes som 2 × arctan(sensorbredde / (2 × brændvidde)). En kortere brændvidde eller en større sensor giver en bredere billedvinkel."
         },
         "1": {
           "heading": "Cropfaktor og ækvivalent brændvidde",
-          "text": "Når du skifter sensor, gælder \"ækvivalent brændvidde\": en 50mm linse på en APS-C sensor (1,5× crop) framer som en 75mm på fuldformat. Den mindre sensor fanger en smallere, central del af billedcirklen og croppede reelt ind."
+          "text": "Når du skifter sensor, kommer begrebet \"ækvivalent brændvidde\" i spil: en 50mm linse på en APS-C-sensor (1,5× crop) framer som en 75mm på fuldformat. Den mindre sensor fanger en smallere, central del af billedcirklen og cropper reelt ind."
         },
         "2": {
-          "heading": "Perspektiv vs. brændvidde",
-          "text": "Perspektiv — den rumlige sammenhæng mellem nære og fjerne objekter — afhænger kun af kameraets position, ikke af brændvidden. En 50mm og en 200mm taget fra samme sted viser identisk perspektiv, bare forskelligt udsnit. Går du tættere på med en vid linse, overdrives dybden; træder du tilbage med et tele, komprimeres den."
+          "heading": "Perspektiv kontra brændvidde",
+          "text": "Perspektivet — altså hvordan nære og fjerne ting forholder sig til hinanden — afhænger udelukkende af, hvor kameraet står, og ikke af brændvidden. Et billede taget med 50mm og et med 200mm fra samme sted har identisk perspektiv, kun udsnittet er forskelligt. Går du tæt på med en vid linse, overdrives dybden; træder du tilbage med et tele, bliver den komprimeret."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Brændvidde",
-          "description": "Den primære kontrol over billedvinklen. Kortere brændvidder ser mere af motivet; længere ser mindre, men forstørrer fjerne motiver."
+          "description": "Den vigtigste kontrol over billedvinklen. Kortere brændvidder får mere af motivet med; længere brændvidder får mindre med, men forstørrer fjerne motiver."
         },
         "1": {
           "label": "Sensorstørrelse",
-          "description": "En mindre sensor cropper ind i midten af billedcirklen og snævrer billedvinklen (cropfaktor-effekten)."
+          "description": "En mindre sensor cropper ind i midten af billedcirklen og snævrer billedvinklen ind (cropfaktor-effekten)."
         },
         "2": {
           "label": "Orientering",
-          "description": "Portræt (lodret) viser en højere, smallere del. Landskab (vandret) viser den bredere, mere traditionelle udsnit."
+          "description": "Portræt (lodret) viser en højere, smallere del. Landskab (vandret) viser det bredere, mere klassiske udsnit."
         },
         "3": {
           "label": "Motivkontekst",
-          "description": "Forskellige motiver (bybilleder, interiør, natur) hjælper dig med at forstå, hvordan FOV føles i forskellige virkelige situationer."
+          "description": "Forskellige motiver (bybilleder, interiør, natur) hjælper dig med at fornemme, hvordan FOV fungerer i virkelige situationer."
         }
       },
       "tips": {
         "0": {
-          "text": "Tilføj to linser og skift mellem en crop-sensor og fuldformat på den ene — så ser du cropfaktor-effekten med det samme. Et 35mm på APS-C framer næsten identisk med et 50mm på fuldformat."
+          "text": "Tilføj to linser, og skift sensoren på den ene mellem crop og fuldformat — så kan du se cropfaktor-effekten med det samme. Et 35mm på APS-C framer næsten ligesom et 50mm på fuldformat."
         },
         "1": {
-          "text": "Brug motivvælgeren til at tjekke dækningen i specifikke optagesituationer — et bybillede viser, om din vidvinkel er bred nok til at fange en bygning fra den anden side af gaden."
+          "text": "Brug motivvælgeren til at tjekke dækningen i konkrete situationer — et bybillede viser dig, om din vidvinkel er bred nok til at få en bygning med fra den anden side af gaden."
         },
         "2": {
-          "text": "Skal du købe en ny linse, så læg din nuværende linse ind som Lens A og den, du overvejer, som Lens B. Overlayet viser præcis, hvor meget mere eller mindre du ville se."
+          "text": "Skal du købe en ny linse, så læg din nuværende ind som Lens A og den, du overvejer, som Lens B. Overlayet viser præcis, hvor meget mere eller mindre du får med."
         }
       },
       "tooltips": {
         "Focal Length": {
           "term": "Brændvidde",
-          "definition": "Afstanden (i mm) fra linsens optiske centrum til sensoren, når den er fokuseret på uendelig. Kortere = bredere billedvinkel."
+          "definition": "Afstanden (i mm) fra linsens optiske centrum til sensoren, når der er stillet skarpt på uendelig. Kortere = bredere billedvinkel."
         },
         "Sensor": {
           "term": "Sensor",
@@ -56,19 +56,19 @@
         },
         "Scene": {
           "term": "Motiv",
-          "definition": "Baggrundsreferencen. Vælg et motiv, der matcher den type fotografi, du planlægger, så du bedre kan vurdere linsens dækning."
+          "definition": "Baggrundsreferencen. Vælg et motiv, der ligner det, du selv skal fotografere, så du bedre kan vurdere linsens dækning."
         },
         "Orientation": {
           "term": "Orientering",
-          "definition": "Skift mellem landskab (vandret) og portræt (lodret) kameraorientering. FOV-rektanglet roterer tilsvarende."
+          "definition": "Skift mellem landskab (vandret) og portræt (lodret). FOV-rektanglet roterer tilsvarende."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Du vil fange en bred udsigt over et bybillede. Hvilken brændvidde giver en bredere billedvinkel?",
-          "hint": "Lavere brændvidder betyder bredere udsigt.",
-          "successMessage": "Rigtigt! En 24mm linse ser meget mere af motivet end en 70mm. Vidvinkellinser har korte brændvidder.",
-          "failureMessage": "Kortere brændvidder giver bredere billedvinkler. 24mm er en vidvinkel og fanger meget mere af skylinen end 70mm.",
+          "scenario": "Du vil fange en bred udsigt over en skyline. Hvilken brændvidde giver den bredeste billedvinkel?",
+          "hint": "Kortere brændvidder giver bredere udsyn.",
+          "successMessage": "Rigtigt! En 24mm får meget mere med end en 70mm. Vidvinkelobjektiver har korte brændvidder.",
+          "failureMessage": "Kortere brændvidder giver bredere billedvinkler. 24mm er en vidvinkel og får meget mere af skylinen med end 70mm.",
           "options": {
             "0": { "label": "24mm" },
             "1": { "label": "70mm" },
@@ -76,10 +76,10 @@
           }
         },
         "1": {
-          "scenario": "Sæt Lens A som et 50mm på fuldformat. Hvilken type billedvinkel giver denne \"nifty fifty\"?",
-          "hint": "50mm på fuldformat kaldes en \"normal\" linse, fordi den ligner det menneskelige syn.",
-          "successMessage": "Ja! 50mm på fuldformat er den klassiske \"normale\" linse — dens ~46 graders billedvinkel minder om det, det menneskelige øje naturligt fokuserer på.",
-          "failureMessage": "Et 50mm på fuldformat regnes som en \"normal\" linse, fordi dens billedvinkel (~46 grader) nærmer sig den komfortable menneskelige synsoplevelse.",
+          "scenario": "Sæt Lens A til et 50mm på fuldformat. Hvilken type billedvinkel giver denne \"nifty fifty\"?",
+          "hint": "50mm på fuldformat kaldes en \"normal\" linse, fordi den ligger tæt på det menneskelige syn.",
+          "successMessage": "Ja! 50mm på fuldformat er den klassiske \"normale\" linse — dens billedvinkel på ca. 46 grader svarer omtrent til det, det menneskelige øje naturligt fokuserer på.",
+          "failureMessage": "Et 50mm på fuldformat regnes for en \"normal\" linse, fordi dens billedvinkel (ca. 46 grader) ligger tæt på, hvad øjet naturligt dækker.",
           "options": {
             "0": { "label": "Ultravid" },
             "1": { "label": "Normal / standard" },
@@ -88,20 +88,20 @@
         },
         "2": {
           "scenario": "Tilføj to linser: Lens A er 35mm på APS-C (Nikon/Sony), og Lens B er 50mm på fuldformat. Sammenlign de to FOV-overlays. Hvad ser du?",
-          "hint": "35mm ganget med APS-C's cropfaktor 1,5 er lig med...",
-          "successMessage": "Præcis! 35mm på APS-C (1,5x crop) giver en ækvivalent billedvinkel på 52,5mm på fuldformat — næsten identisk med 50mm FF. Overlayene er næsten samme størrelse.",
-          "failureMessage": "35mm x 1,5 cropfaktor = 52,5mm ækvivalent. Det er næsten identisk med 50mm på fuldformat, hvorfor overlayene er næsten ens.",
+          "hint": "35mm ganget med APS-C-cropfaktoren 1,5 giver …",
+          "successMessage": "Præcis! 35mm på APS-C (1,5x crop) giver en ækvivalent billedvinkel svarende til 52,5mm på fuldformat — altså næsten identisk med 50mm FF. Overlayene ligger næsten oven i hinanden.",
+          "failureMessage": "35mm × 1,5 cropfaktor = 52,5mm ækvivalent. Det er næsten det samme som 50mm på fuldformat, og derfor er overlayene næsten ens.",
           "options": {
             "0": { "label": "De har næsten identisk billedvinkel" },
-            "1": { "label": "APS-C-linsen viser en meget bredere udsigt" },
-            "2": { "label": "Fuldformat-linsen viser en meget bredere udsigt" }
+            "1": { "label": "APS-C-linsen viser et meget bredere udsyn" },
+            "2": { "label": "Fuldformat-linsen viser et meget bredere udsyn" }
           }
         },
         "3": {
-          "scenario": "Du fotograferer et lille rums interiør. Du har et 24mm. Ser du mere af rummet på fuldformat eller APS-C?",
+          "scenario": "Du fotograferer et lille rum indendørs med et 24mm. Får du mest af rummet med på fuldformat eller APS-C?",
           "hint": "En mindre sensor fanger en smallere, central del af linsens billedcirkel.",
-          "successMessage": "Rigtigt! Fuldformat ser mere, fordi den større sensor fanger en bredere del af 24mm-linsens billedcirkel. På APS-C framer samme 24mm-linse som ~36mm.",
-          "failureMessage": "Fuldformat fanger mere af motivet. Den større sensor bruger mere af linsens billedcirkel og giver en bredere effektiv billedvinkel.",
+          "successMessage": "Rigtigt! Fuldformat får mere med, fordi den større sensor bruger en bredere del af 24mm-linsens billedcirkel. På APS-C framer samme 24mm-linse som et ~36mm.",
+          "failureMessage": "Fuldformat får mere af motivet med. Den større sensor bruger mere af linsens billedcirkel og giver en bredere effektiv billedvinkel.",
           "options": {
             "0": { "label": "Fuldformat — større sensor ser mere" },
             "1": { "label": "APS-C — crop-sensor ser mere" },
@@ -109,10 +109,10 @@
           }
         },
         "4": {
-          "scenario": "En vildtfotograf skyder med et 200mm på Micro Four Thirds. Hvilken fuldformat-ækvivalent brændvidde giver det, og hvad er kompromiset sammenlignet med faktisk at bruge et 400mm på fuldformat?",
+          "scenario": "En vildtfotograf skyder med et 200mm på Micro Four Thirds. Hvilken fuldformat-ækvivalent brændvidde svarer det til, og hvad er kompromiset sammenlignet med faktisk at bruge et 400mm på fuldformat?",
           "hint": "M43 har 2x cropfaktor. Tænk på dybdeskarphed og sensorstørrelse.",
-          "successMessage": "Flot! 200mm på M43 (2x crop) giver en 400mm-ækvivalent billedvinkel. Kompromiset: selvom udsnittet matcher et 400mm FF, matcher dybdeskarpheden 200mm-linsen (mere DoF), og den mindre sensor samler mindre total lys, så støjen bliver værre ved høj ISO. Fordelen er en meget mindre, lettere og billigere linse.",
-          "failureMessage": "200mm x 2,0 crop = 400mm ækvivalent FOV. Men det er ikke det samme som et 400mm på FF: du får mere dybdeskarphed (baseret på faktiske 200mm), mindre lysindsamling (mindre sensor) og mere støj ved høj ISO. Gevinsten er betydeligt mindre og lettere grej.",
+          "successMessage": "Flot! 200mm på M43 (2x crop) svarer til en billedvinkel på 400mm på fuldformat. Men kompromiset er, at selvom udsnittet matcher 400mm FF, matcher dybdeskarpheden stadig 200mm-linsen (altså mere DoF), og den mindre sensor samler mindre lys i alt, så støjen bliver værre ved høj ISO. Til gengæld er linsen meget mindre, lettere og billigere.",
+          "failureMessage": "200mm × 2,0 crop = 400mm ækvivalent FOV. Men det er ikke det samme som et 400mm på FF: du får mere dybdeskarphed (baseret på de faktiske 200mm), mindre samlet lysindsamling (mindre sensor) og mere støj ved høj ISO. Gevinsten er meget mindre og lettere grej.",
           "options": {
             "0": { "label": "400mm ækvivalent — samme FOV, men mere DoF, mere støj, mindre og lettere grej" },
             "1": { "label": "400mm ækvivalent — identisk med 400mm på fuldformat i alle henseender" },

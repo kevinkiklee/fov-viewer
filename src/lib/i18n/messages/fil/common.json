@@ -1,116 +1,116 @@
 {
   "common": {
-    "skipToContent": "Lumaktaw papunta sa content",
+    "skipToContent": "Lumaktaw sa content",
     "nav": {
-      "tools": "Mga Tool",
-      "glossary": "Talasalitaan",
+      "tools": "Tools",
+      "glossary": "Glossary",
       "closeMenu": "Isara ang menu",
       "comingSoon": "Malapit na",
       "categories": {
-        "visualizer": "Mga Visualizer",
-        "calculator": "Mga Calculator",
-        "reference": "Sanggunian",
-        "file-tool": "Mga File Tool"
+        "visualizer": "Visualizers",
+        "calculator": "Calculators",
+        "reference": "Reference",
+        "file-tool": "File Tools"
       }
     },
     "footer": {
-      "glossary": "Talasalitaan",
+      "glossary": "Glossary",
       "about": "Tungkol",
-      "contact": "Makipag-ugnayan",
-      "privacy": "Patakaran sa Privacy",
-      "terms": "Mga Tuntunin ng Serbisyo",
-      "cookieSettings": "Mga Setting ng Cookie"
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookieSettings": "Cookie Settings"
     },
     "theme": {
       "switchToLight": "Lumipat sa light mode",
       "switchToDark": "Lumipat sa dark mode"
     },
     "actions": {
-      "copyImage": "Kopyahin ang larawan",
+      "copyImage": "Kopyahin ang litrato",
       "reset": "I-reset",
       "copyLink": "Kopyahin ang link",
       "share": "I-share",
       "embed": "I-embed"
     },
     "toast": {
-      "linkCopied": "Nakopya ang link!",
-      "imageCopied": "Nakopya ang larawan!",
-      "failedToCopy": "Hindi makopya",
-      "copied": "Nakopya!"
+      "linkCopied": "Na-copy ang link!",
+      "imageCopied": "Na-copy ang litrato!",
+      "failedToCopy": "Hindi ma-copy",
+      "copied": "Na-copy!"
     },
     "learn": {
       "title": "Matuto",
       "openPanel": "Buksan ang learn panel",
       "collapsePanel": "Isara ang learn panel",
       "whatIsThis": "Ano ito?",
-      "howItWorks": "Paano ito gumagana",
+      "howItWorks": "Paano gumagana",
       "keyFactors": "Mahahalagang salik",
       "proTip": "Pro Tip",
-      "challenge": "Hamon",
-      "hint": "Pahiwatig: {hint}",
+      "challenge": "Challenge",
+      "hint": "Hint: {hint}",
       "completed": "Tapos na",
-      "checkAnswer": "Suriin ang Sagot",
-      "nextChallenge": "Susunod na Hamon",
-      "tryAgain": "Subukan Muli",
-      "resetAll": "I-reset lahat",
-      "resetAllChallenges": "I-reset lahat ng hamon",
-      "challengeNumber": "Hamon {number}"
+      "checkAnswer": "I-check ang Sagot",
+      "nextChallenge": "Next Challenge",
+      "tryAgain": "Subukan Ulit",
+      "resetAll": "I-reset Lahat",
+      "resetAllChallenges": "I-reset lahat ng challenge",
+      "challengeNumber": "Challenge {number}"
     },
     "share": {
       "title": "I-share at I-embed",
       "closeModal": "Isara ang share modal",
-      "directLink": "Direktang Link",
+      "directLink": "Direct Link",
       "markdown": "Markdown (Reddit, GitHub)",
-      "bbcode": "BBCode (Mga Forum)",
+      "bbcode": "BBCode (Forums)",
       "htmlEmbed": "HTML Embed",
       "copy": "Kopyahin",
-      "copied": "Nakopya"
+      "copied": "Na-copy"
     },
     "draft": {
-      "banner": "Preview — Hindi pa pampubliko ang tool na ito"
+      "banner": "Preview — Hindi pa public ang tool na ito"
     },
     "fileUpload": {
-      "dropPrompt": "I-drop ang larawan dito o i-click para mag-browse",
+      "dropPrompt": "I-drop ang litrato dito o i-click para mag-browse",
       "tapPrompt": "I-tap para pumili ng litrato",
-      "privacy": "Hindi umaalis sa device mo ang mga litrato mo",
-      "selectedFile": "Napiling file: {fileName}. I-click para pumili ng ibang larawan",
-      "defaultLabel": "Ang Litrato Mo"
+      "privacy": "Hindi umaalis sa device mo ang mga litrato",
+      "selectedFile": "Napiling file: {fileName}. I-click para pumili ng ibang litrato",
+      "defaultLabel": "Litrato Mo"
     },
     "scene": {
-      "label": "Eksena:",
-      "yourPhoto": "Ang litrato mo",
+      "label": "Scene:",
+      "yourPhoto": "Litrato mo",
       "removePhoto": "Alisin ang litrato",
       "uploadPhoto": "Mag-upload ng litrato"
     },
     "controls": {
       "focalLength": "Focal length",
       "aperture": "Aperture",
-      "distance": "Distansya",
-      "clickToEnterValue": "I-click para maglagay ng value",
+      "distance": "Distance",
+      "clickToEnterValue": "I-click para mag-enter ng value",
       "decrease": "Bawasan",
       "increase": "Dagdagan"
     },
     "dof": {
-      "depthOfField": "Depth of field: {totalDoF} mula sa {nearFocus} hanggang {farFocus}",
+      "depthOfField": "Depth of field: {totalDoF} mula {nearFocus} hanggang {farFocus}",
       "infinity": "Infinity"
     },
     "ad": {
-      "closeAd": "Isara ang advertisement"
+      "closeAd": "Isara ang ad"
     },
     "tooltip": {
       "infoLabel": "Info: {term}"
     },
     "notFound": {
-      "title": "Hindi Natagpuan ang Page",
-      "message": "Ang page na hinahanap mo ay hindi umiiral o nailipat na.",
+      "title": "Hindi Mahanap ang Page",
+      "message": "Ang page na hinahanap mo ay wala na o nailipat sa ibang lugar.",
       "backHome": "Bumalik sa Home",
-      "popularTools": "Mga Sikat na Tool"
+      "popularTools": "Popular na Tools"
     },
     "breadcrumb": {
       "home": "Home"
     },
     "relatedTools": {
-      "title": "Mga Kaugnay na Tool"
+      "title": "Related Tools"
     },
     "sensors": {
       "mf_645": "Medium Format (54x40)",
@@ -123,6 +123,6 @@
       "1in": "1\" Sensor",
       "phone": "Smartphone Flagship (1/1.3\")"
     },
-    "legalTranslationDisclaimer": "Ito ay isang convenience translation. Ang bersyon sa Ingles ang legal na may bisa. Tingnan ang /en/privacy."
+    "legalTranslationDisclaimer": "Convenience translation lang ito. Ang English version ang legal na may bisa. Tingnan ang /en/privacy."
   }
 }

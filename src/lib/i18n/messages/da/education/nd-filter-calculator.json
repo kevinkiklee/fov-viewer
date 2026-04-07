@@ -1,12 +1,12 @@
 {
   "education": {
     "nd-filter-calculator": {
-      "beginner": "Et ND-filter (neutral density) er som solbriller til din linse. Det reducerer lyset ind i linsen uden at ændre farverne, så du kan bruge langsommere lukkertider eller større blænder i stærkt lys. Sådan skaber fotografer silkebløde vandfald, glat hav og udviskede skyer midt på dagen.",
-      "deeper": "ND-filtre klassificeres efter, hvor mange stops lys de blokerer. Et ND2-filter (1 stop) halverer lyset, et ND8 (3 stops) reducerer til 1/8, og et ND1000 (10 stops) reducerer lyset med en faktor 1024. Navnekonventionerne kan være forvirrende: \"ND8\" betyder filterfaktor 8 (3 stops), mens \"ND 0.9\" bruger optisk densitet (hver 0,3 = 1 stop, så 0,9 = 3 stops). Den nye lukkertid er simpelthen basislukkertiden ganget med filterfaktoren. Er din ufiltrerede eksponering 1/125s, og du sætter et 10-stop ND (ND1000) på, bliver den nye lukkertid 1/125 x 1024 = ca. 8 sekunder. Du kan stacke flere ND-filtre ved at lægge deres stop-værdier sammen, men det kan give vignettering og farvekast, især på vidvinkellinser.",
+      "beginner": "Et ND-filter (neutral density) er som solbriller til din linse. Det reducerer lyset ind i linsen uden at ændre farverne, så du kan bruge langsommere lukkertider eller større blænder i stærkt lys. Det er sådan, fotografer laver silkebløde vandfald, glatte hav og udviskede skyer midt på dagen.",
+      "deeper": "ND-filtre klassificeres efter, hvor mange stops lys de blokerer. Et ND2-filter (1 stop) halverer lyset, et ND8 (3 stops) reducerer til 1/8, og et ND1000 (10 stops) reducerer lyset med en faktor 1024. Navngivningen kan være forvirrende: \"ND8\" betyder filterfaktor 8 (3 stops), mens \"ND 0.9\" bruger optisk densitet (hver 0,3 = 1 stop, så 0,9 = 3 stops). Den nye lukkertid er simpelthen basislukkertiden ganget med filterfaktoren. Er din ufiltrerede eksponering 1/125s, og du sætter et 10-stop ND (ND1000) på, bliver den nye lukkertid 1/125 × 1024 = ca. 8 sekunder. Du kan stacke flere ND-filtre ved at lægge deres stop-værdier sammen, men det kan give vignettering og farvekast, især på vidvinkellinser.",
       "keyFactors": {
         "0": {
           "label": "Basislukkertid",
-          "description": "Den korrekte eksponeringstid uden filter. Mål motivet først, og beregn den filtrerede eksponering ud fra det."
+          "description": "Den korrekte eksponeringstid uden filter. Mål motivet først, og beregn den filtrerede eksponering ud fra den."
         },
         "1": {
           "label": "Filterstyrke",
@@ -14,18 +14,18 @@
         },
         "2": {
           "label": "Stacking af filtre",
-          "description": "Du kan kombinere filtre ved at lægge deres stop-værdier sammen. Et 3-stop + 6-stop giver 9 stops reduktion. Pas på vignettering på vidvinkellinser."
+          "description": "Du kan kombinere filtre ved at lægge deres stop-værdier sammen. Et 3-stop + 6-stop giver 9 stops reduktion. Pas på vignettering, når du bruger vidvinkel."
         }
       },
       "tips": {
         "0": {
-          "text": "Komponér og fokusér, før du sætter et kraftigt ND-filter på. Med 10 stops lysreduktion har søger og autofokus det svært i mørket."
+          "text": "Komponér og stil skarpt, før du sætter et kraftigt ND-filter på. Med 10 stops lysreduktion har både søger og autofokus det svært i mørket."
         },
         "1": {
-          "text": "Til seascapes: 1–2 sekunders eksponeringer udglatter små krusninger til tekstur og bevarer bølgestrukturen. Eksponeringer på 30 sekunder eller mere giver helt fladt, diset vand."
+          "text": "Til seascapes: 1–2 sekunders eksponeringer udglatter små krusninger til tekstur og bevarer bølgestrukturen. Eksponeringer på 30 sekunder og opefter giver helt fladt, diset vand."
         },
         "2": {
-          "text": "Billige ND-filtre giver ofte farvekast (som regel magenta eller brunligt). Invester i kvalitetsglas fra anerkendte mærker, eller lær at korrigere kastet i efterbehandling med et gråkort som reference."
+          "text": "Billige ND-filtre giver ofte farvekast (som regel magenta eller brunligt). Invester i kvalitetsglas fra anerkendte mærker — eller lær at korrigere kastet i efterbehandling med et gråkort som reference."
         }
       },
       "tooltips": {
@@ -35,11 +35,11 @@
         },
         "ndFilter": {
           "term": "ND-filter",
-          "definition": "Et gråfilter, der uniformt reducerer lystransmissionen. Klassificeres efter filterfaktor (ND2, ND4, ND8...) eller stops lysreduktion. ND2 = 1 stop, ND4 = 2 stops, ND8 = 3 stops osv."
+          "definition": "Et gråfilter, der jævnt reducerer lystransmissionen. Klassificeres efter filterfaktor (ND2, ND4, ND8 …) eller stops lysreduktion. ND2 = 1 stop, ND4 = 2 stops, ND8 = 3 stops osv."
         },
         "resultingShutterSpeed": {
           "term": "Resulterende lukkertid",
-          "definition": "Den nye lukkertid efter ND-filteret. Beregnes ved at gange basislukkertiden med filterfaktoren (f.eks. 1/125s x 1024 for et 10-stop ND)."
+          "definition": "Den nye lukkertid efter ND-filteret. Beregnes ved at gange basislukkertiden med filterfaktoren (f.eks. 1/125s × 1024 for et 10-stop ND)."
         },
         "stopsAdded": {
           "term": "Tilføjede stops",
@@ -49,8 +49,8 @@
       "challenges": {
         "0": {
           "scenario": "Du står ved et vandfald, og dit kamera måler en korrekt eksponering på 1/125s uden filter. Du sætter et 3-stop ND (ND8) på. Hvad bliver den nye lukkertid?",
-          "hint": "Hvert stop fordobler eksponeringstiden. 3 stops betyder 2 x 2 x 2 = 8 gange længere.",
-          "successMessage": "Rigtigt! 1/125s x 8 = 1/15s. Det er et godt udgangspunkt for bevægelsessløring i vandet, men du vil måske have et kraftigere filter for helt silkebløde resultater.",
+          "hint": "Hvert stop fordobler eksponeringstiden. 3 stops = 2 × 2 × 2 = 8 gange længere.",
+          "successMessage": "Rigtigt! 1/125s × 8 = 1/15s. Det er et godt udgangspunkt for bevægelsessløring i vandet, men du vil måske have et kraftigere filter, hvis resultatet skal være helt silkeblødt.",
           "failureMessage": "Et 3-stop ND-filter ganger eksponeringstiden med 8 (2^3 = 8). Så 1/125s bliver til 1/15s.",
           "options": {
             "0": { "label": "1/60s" },
@@ -60,9 +60,9 @@
           }
         },
         "1": {
-          "scenario": "Du vil lave en 30-sekunders eksponering af skyer, der driver over himlen. Uden filter er den korrekte eksponering 1/30s. Hvor mange stops ND skal du bruge?",
-          "hint": "Du skal fra 1/30s til 30s — altså 1/30 x faktor = 30, så faktor = 900. Find den nærmeste toerpotens.",
-          "successMessage": "Korrekt! Fra 1/30s til 30s er cirka en stigning på 1000x, hvilket er omkring 10 stops. Et ND1000 (10-stop) filter bringer dig til ca. 33 sekunder.",
+          "scenario": "Du vil lave en 30-sekunders eksponering af skyer, der driver hen over himlen. Uden filter er den korrekte eksponering 1/30s. Hvor mange stops ND skal du bruge?",
+          "hint": "Du skal fra 1/30s til 30s — altså 1/30 × faktor = 30, så faktor = 900. Find den nærmeste toerpotens.",
+          "successMessage": "Korrekt! Fra 1/30s til 30s er cirka en stigning på 1000x, hvilket er omkring 10 stops. Et ND1000 (10-stop)-filter bringer dig til ca. 33 sekunder.",
           "failureMessage": "Forholdet er 30 / (1/30) = 900. Nærmeste toerpotens er 1024 (2^10), så du skal bruge et 10-stop ND-filter.",
           "options": {
             "0": { "label": "6 stops (ND64)" },
@@ -72,9 +72,9 @@
           }
         },
         "2": {
-          "scenario": "Du fotograferer en kystlandskab ved solnedgang. Lyset forsvinder, og din baseeksponering (uden filter) er nu 1/4s ved f/11, ISO 100. Du vil have 2-minutters eksponeringer for ultra-glat vand. Hvilken ND-filterstyrke skal du bruge?",
+          "scenario": "Du fotograferer et kystlandskab ved solnedgang. Lyset forsvinder, og din baseeksponering (uden filter) er nu 1/4s ved f/11, ISO 100. Du vil lave 2-minutters eksponeringer for ultra-glat vand. Hvilken ND-filterstyrke skal du bruge?",
           "hint": "Fra 1/4s til 120s er en faktor på 480. Find den nærmeste stop-værdi.",
-          "successMessage": "Et 9-stop ND ville give dig 1/4 x 512 = 128 sekunder eller lidt over 2 minutter. Perfekt til det disede, æteriske kystmotiv i solnedgangen.",
+          "successMessage": "Et 9-stop ND ville give dig 1/4 × 512 = 128 sekunder eller lidt over 2 minutter. Perfekt til det disede, æteriske kystmotiv i solnedgangen.",
           "failureMessage": "Fra 0,25s til 120s er ca. en 480x stigning. 2^9 = 512, hvilket er tæt på 480, så et 9-stop filter bringer dig til ca. 128 sekunder.",
           "options": {
             "0": { "label": "6 stops" },
@@ -85,9 +85,9 @@
         },
         "3": {
           "scenario": "Du vil tage et portræt ved f/1.4 i stærk sol (baseeksponering: f/1.4, 1/8000s, ISO 100). Dit kameras maksimale lukkertid er 1/8000s. Kan du skyde ved f/1.4 uden ND-filter?",
-          "hint": "Tjek om 1/8000s ved f/1.4 og ISO 100 er muligt, eller om motivet stadig er overeksponeret.",
-          "successMessage": "Rigtigt! På en meget lys dag (EV 15+) kræver f/1.4 ved ISO 100 ofte lukkertider hurtigere end 1/8000s, hvilket de fleste kameraer ikke kan. Et 2–3 stops ND-filter lader dig skyde helt åbent uden overeksponering.",
-          "failureMessage": "I stærk sol kan f/1.4 ved ISO 100 kræve lukkertider hurtigere end kameraets grænse på 1/8000s. Et ND-filter er uundværligt til åbne blænder i stærkt lys.",
+          "hint": "Tjek om 1/8000s ved f/1.4 og ISO 100 er nok, eller om motivet stadig er overeksponeret.",
+          "successMessage": "Rigtigt! På en meget lys dag (EV 15+) kræver f/1.4 ved ISO 100 ofte lukkertider hurtigere end 1/8000s — og det kan de fleste kameraer ikke. Et 2–3 stops ND-filter lader dig skyde helt åbent uden at overeksponere.",
+          "failureMessage": "I stærk sol kan f/1.4 ved ISO 100 kræve lukkertider hurtigere end kameraets grænse på 1/8000s. Et ND-filter er uundværligt, hvis du vil skyde med åbne blænder i stærkt lys.",
           "options": {
             "0": { "label": "Ja — 1/8000s er hurtig nok" },
             "1": { "label": "Nej — du skal sandsynligvis bruge et 2–3 stops ND-filter" },
@@ -95,10 +95,10 @@
           }
         },
         "4": {
-          "scenario": "Du har et 6-stop og et 3-stop ND-filter. Du stacker dem på din linse med en baseeksponering på 1/250s. Hvad bliver den resulterende lukkertid, og hvad skal du holde øje med i denne opsætning?",
-          "hint": "Læg stop-værdierne sammen, og beregn så den nye eksponering. Tænk på de optiske bivirkninger ved stacking.",
-          "successMessage": "Rigtigt! 6 + 3 = 9 stops. 1/250 x 512 = ca. 2 sekunder. Hold øje med vignettering (mørke hjørner) på vidvinkellinser og mulige farvekast fra billige filtre.",
-          "failureMessage": "Stacking lægger stop-værdierne sammen: 6 + 3 = 9 stops i alt. 2^9 = 512, så 1/250 x 512 = ~2 sekunder. Stacking kan også give vignettering og farvekast.",
+          "scenario": "Du har et 6-stop og et 3-stop ND-filter. Du stacker dem på din linse med en baseeksponering på 1/250s. Hvad bliver den resulterende lukkertid, og hvad skal du holde øje med i den opsætning?",
+          "hint": "Læg stop-værdierne sammen, og beregn så den nye eksponering. Tænk også på de optiske bivirkninger ved stacking.",
+          "successMessage": "Rigtigt! 6 + 3 = 9 stops. 1/250 × 512 = ca. 2 sekunder. Hold øje med vignettering (mørke hjørner) på vidvinkellinser og mulige farvekast fra billige filtre.",
+          "failureMessage": "Stacking lægger stop-værdierne sammen: 6 + 3 = 9 stops i alt. 2^9 = 512, så 1/250 × 512 = ~2 sekunder. Stacking kan også give vignettering og farvekast.",
           "options": {
             "0": { "label": "~0,5s, pas på lens flare" },
             "1": { "label": "~2s, pas på vignettering og farvekast" },

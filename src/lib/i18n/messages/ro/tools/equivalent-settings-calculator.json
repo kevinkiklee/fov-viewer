@@ -2,7 +2,7 @@
   "toolUI": {
     "equivalent-settings-calculator": {
       "settings": "Setări",
-      "sourceCamera": "Camera ta",
+      "sourceCamera": "Aparatul tău",
       "sourceSensor": "Senzor",
       "sourceFocalLength": "Distanță focală",
       "sourceAperture": "Diafragmă",
@@ -19,8 +19,8 @@
       "equivalentDoF": "DoF echivalent",
       "cropFactor": "Factor de crop",
       "fieldOfView": "Unghi de vizualizare",
-      "warningUnrealisticAperture": "Această diafragmă echivalentă ({value}) este mai rapidă decât orice obiectiv real. Senzorul țintă nu poate egala adâncimea câmpului sursei.",
-      "warningUnrealisticFL": "Această distanță focală echivalentă ({value}mm) este neobișnuită. Poate nu vei găsi un obiectiv real la această valoare.",
+      "warningUnrealisticAperture": "Această diafragmă echivalentă ({value}) este mai luminoasă decât orice obiectiv real. Senzorul țintă nu poate obține aceeași adâncime a câmpului ca sursa.",
+      "warningUnrealisticFL": "Această distanță focală echivalentă ({value}mm) este neobișnuită. Probabil nu vei găsi un obiectiv real la această valoare.",
       "warningClosestReal": "Cel mai apropiat obiectiv real: {value}mm f/{aperture}",
       "diagramTitle": "Comparație senzor și FOV",
       "diagramSource": "Sursă",

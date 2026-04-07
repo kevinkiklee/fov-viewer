@@ -3,8 +3,8 @@
     "fov-simulator": {
       "rotate": "Rotește",
       "center": "Centrează",
-      "switchToPortrait": "Comută pe portrait",
-      "switchToLandscape": "Comută pe landscape",
+      "switchToPortrait": "Comută pe vertical",
+      "switchToLandscape": "Comută pe orizontal",
       "centerOverlays": "Centrează suprapunerile",
       "addLens": "+ Adaugă obiectiv",
       "fovSimulator": "FOV Simulator",

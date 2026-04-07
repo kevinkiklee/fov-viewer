@@ -5,21 +5,21 @@
     "sections": {
       "overview": {
         "title": "Áttekintés",
-        "body": "A PhotoTools üzemelteti a www.phototools.io oldalt, egy ingyenes oktatási célú fotós erőforrást, ami interaktív kalkulátorokat, szimulátorokat és referenciaeszközöket kínál. Ez az adatvédelmi tájékoztató leírja, hogyan gyűjtjük, használjuk és kezeljük az információkat, amikor az oldalt meglátogatod vagy használod. A PhotoTools használatával elfogadod az itt leírt gyakorlatokat."
+        "body": "A PhotoTools üzemelteti a www.phototools.io oldalt, egy ingyenes, oktatási célú fotós platformot, amely interaktív kalkulátorokat, szimulátorokat és referenciaeszközöket kínál. Ez az adatvédelmi tájékoztató leírja, hogyan gyűjtjük, használjuk és kezeljük az információkat, amikor meglátogatod vagy használod az oldalt. A PhotoTools használatával elfogadod az itt leírt gyakorlatot."
       },
       "informationWeCollect": {
         "title": "Milyen adatokat gyűjtünk",
         "intro": "Az oldal működtetéséhez és fejlesztéséhez minimális adatot gyűjtünk:",
-        "analytics": "<strong>Analitika:</strong> A Google Analytics-et használjuk annak megértésére, hogyan használod az oldalt (például meglátogatott oldalak, ott töltött idő, eszköztípus). Az analitikai adatok anonimizáltak — ezen keresztül nem gyűjtünk személyazonosításra alkalmas információt. Az IP-címek tárolás előtt anonimizálódnak.",
-        "contactForm": "<strong>Kapcsolati űrlap:</strong> Ha elküldöd a kapcsolati űrlapot, bekérjük a neved, az e-mail címed, a tárgyat és az üzenetet. Ezeket az adatokat kizárólag a válaszadáshoz használjuk, és az e-mail kézbesítésén túl nem tároljuk — nem kerülnek adatbázisba, és hosszú távon nem őrizzük meg.",
+        "analytics": "<strong>Analitika:</strong> A Google Analyticset azért használjuk, hogy lássuk, hogyan használod az oldalt (pl. meglátogatott oldalak, ott töltött idő, eszköztípus). Az analitikai adatok anonimizáltak — ezen keresztül nem gyűjtünk személyazonosításra alkalmas információt. Az IP-címeket tárolás előtt anonimizáljuk.",
+        "contactForm": "<strong>Kapcsolati űrlap:</strong> Ha beküldöd a kapcsolati űrlapot, elkérjük a neved, az e-mail címed, a tárgyat és az üzenetet. Ezeket az adatokat kizárólag a válaszadáshoz használjuk, és az e-mail kézbesítésén túl nem tároljuk — nem kerülnek adatbázisba, és hosszú távon nem őrizzük meg őket.",
         "noAccounts": "<strong>Nincsenek fiókok:</strong> A PhotoTools nem igényel regisztrációt vagy felhasználói fiókot. Nem gyűjtünk jelszavakat vagy fizetési adatokat."
       },
       "cookies": {
         "title": "Sütik",
-        "intro": "A PhotoTools sütiket használ az analitika és a hirdetési funkciók támogatására. Pontosabban:",
-        "analyticsCookies": "<strong>A Google Analytics sütijei</strong> összesített és anonim formában követik az oldal használatát. Ezek segítenek megérteni, mely eszközök a legnépszerűbbek, és hogyan javíthatjuk az oldalt.",
-        "adCookies": "<strong>Harmadik féltől származó hirdetési sütiket</strong> hirdetési partnereink helyezhetnek el releváns hirdetések megjelenítésére és a hirdetési teljesítmény mérésére.",
-        "control": "A sütiket a böngésződ beállításain keresztül szabályozhatod vagy letilthatod. Ne feledd, hogy a sütik letiltása néhány funkció működését befolyásolhatja."
+        "intro": "A PhotoTools sütiket használ az analitika és a hirdetési funkciók támogatásához. Pontosabban:",
+        "analyticsCookies": "<strong>A Google Analytics sütijei</strong> összesített, anonim formában követik az oldal használatát. Ezek segítenek abban, hogy lássuk, mely eszközök a legnépszerűbbek, és hogyan tudjuk fejleszteni az oldalt.",
+        "adCookies": "<strong>Harmadik féltől származó hirdetési sütiket</strong> a hirdetési partnereink helyezhetnek el, hogy releváns hirdetéseket mutassanak, és mérjék a hirdetési teljesítményt.",
+        "control": "A sütiket a böngésződ beállításaiban szabályozhatod vagy letilthatod. Figyelj rá, hogy a sütik letiltása egyes funkciók működését befolyásolhatja."
       },
       "thirdPartyAdvertising": {
         "title": "Harmadik féltől származó hirdetések",
@@ -57,7 +57,7 @@
       },
       "changesToPolicy": {
         "title": "A tájékoztató módosításai",
-        "body": "Ezt az adatvédelmi tájékoztatót időről időre frissíthetjük. Ilyenkor a módosított változat ezen az oldalon jelenik meg, új hatálybalépési dátummal. Javasoljuk, hogy időnként nézd át ezt a tájékoztatót. A PhotoTools folyamatos használata a módosítások után a frissített tájékoztató elfogadásának minősül."
+        "body": "Ezt az adatvédelmi tájékoztatót időről időre frissíthetjük. Ilyenkor a módosított változat ezen az oldalon jelenik meg, új hatálybalépési dátummal. Javasoljuk, hogy időnként nézd át ezt a tájékoztatót. Ha a módosítások után továbbra is használod a PhotoToolst, az a frissített tájékoztató elfogadásának minősül."
       },
       "contact": {
         "title": "Kapcsolat",

@@ -5,41 +5,41 @@
       "modeOverlay": "Overlay",
       "modeSideBySide": "Side by Side",
       "modePixelDensity": "Pixel Density",
-      "pixelDensityDescription": "Ipinapakita ang mga karaniwang megapixel count para sa bawat sensor. Ang mas malalaking pixel (mas malalaking cells) ay kumukuha ng mas maraming liwanag.",
-      "sensors": "Mga Sensor",
-      "customSensors": "Mga Custom na Sensor",
+      "pixelDensityDescription": "Ipinapakita ang typical na megapixel count para sa bawat sensor. Mas malaki ang pixels (mas malaking cells), mas maraming light ang nakukuha.",
+      "sensors": "Sensors",
+      "customSensors": "Custom Sensors",
       "placeholderName": "Pangalan",
       "placeholderW": "W (mm)",
       "placeholderH": "H (mm)",
-      "placeholderMP": "Megapixels (opsyonal)",
+      "placeholderMP": "Megapixels (optional)",
       "placeholderMPShort": "MP",
       "maxDimensionWarning": "Ang max sensor dimension ay 99 mm",
       "addSensor": "Magdagdag ng Sensor",
       "save": "I-save",
-      "cancelEdit": "Kanselahin",
+      "cancelEdit": "Cancel",
       "edit": "I-edit",
       "remove": "Alisin",
-      "deleteAllCustom": "Tanggalin Lahat ng Custom Sensor",
+      "deleteAllCustom": "I-delete Lahat ng Custom Sensors",
       "tableSensor": "Sensor",
-      "tableWidth": "Lapad (mm)",
-      "tableHeight": "Taas (mm)",
+      "tableWidth": "Width (mm)",
+      "tableHeight": "Height (mm)",
       "tableAspectRatio": "Aspect Ratio",
       "tableArea": "Area (mm²)",
       "tableCropFactor": "Crop Factor",
       "tableAspectCrop": "Aspect Crop",
-      "canvasAriaLabel": "Paghahambing ng sensor size sa {mode} mode",
+      "canvasAriaLabel": "Sensor size comparison sa {mode} mode",
       "faq": {
         "what-is-crop-factor": {
-          "question": "Ano ang crop factor at bakit ito mahalaga?",
-          "answer": "Inilalarawan ng crop factor ang pagkakaiba ng sukat sa pagitan ng sensor ng camera at ng full-frame (35mm) sensor. Nakakaapekto ito sa effective focal length, depth of field, at low-light performance. Ang 1.5x crop factor ay nangangahulugang ang sensor ay 1.5 beses na mas maliit kaysa sa full frame."
+          "question": "Ano ang crop factor at bakit mahalaga ito?",
+          "answer": "Inilalarawan ng crop factor ang size difference sa pagitan ng sensor ng camera mo at ng full-frame (35mm) sensor. Apektado nito ang effective focal length, depth of field, at low-light performance. Ang 1.5x crop factor ay ibig sabihin 1.5 times na mas maliit ang sensor kaysa sa full frame."
         },
         "full-frame-vs-aps-c": {
-          "question": "Ano ang mga bentahe ng full frame kumpara sa APS-C sensor?",
-          "answer": "Ang mga full-frame sensor ay nag-aalok ng mas magandang low-light performance, mas mababaw na depth of field, at mas malawak na field of view sa kahit anong focal length. Ang APS-C sensors ay mas mura, mas magaan, at nagbibigay ng dagdag na reach para sa wildlife at sports photography."
+          "question": "Ano ang mga advantages ng full frame kumpara sa APS-C sensor?",
+          "answer": "Ang full-frame sensors ay may mas magandang low-light performance, mas shallow na depth of field, at mas malawak na field of view sa kahit anong focal length. Ang APS-C sensors naman ay mas mura, mas gaan, at may dagdag na reach para sa wildlife at sports photography."
         },
         "sensor-size-and-depth-of-field": {
-          "question": "Paano nakakaapekto ang sensor size sa depth of field?",
-          "answer": "Ang mas malalaking sensor ay gumagawa ng mas mababaw na depth of field sa equivalent framing. Para makuha ang parehong framing gamit ang mas maliit na sensor, kailangan mo ng mas maikling focal length (mas malalim na DOF) o lumayo (mas malalim na DOF), kapwa nagbabawas ng background blur."
+          "question": "Paano apektado ng sensor size ang depth of field?",
+          "answer": "Mas malaki ang sensor, mas shallow ang depth of field sa equivalent framing. Para makuha ang parehong framing gamit ang mas maliit na sensor, kailangan mo ng mas maikling focal length (mas deep ang DoF) o lumayo (mas deep din ang DoF) — parehong nagpapababa sa background blur."
         }
       }
     }

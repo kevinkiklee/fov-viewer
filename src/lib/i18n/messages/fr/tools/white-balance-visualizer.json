@@ -14,15 +14,15 @@
       "faq": {
         "what-is-white-balance": {
           "question": "Qu'est-ce que la balance des blancs en photographie ?",
-          "answer": "La balance des blancs ajuste les couleurs de votre photo pour que les objets qui paraissent blancs en r\u00e9alit\u00e9 apparaissent \u00e9galement blancs dans l'image. Diff\u00e9rentes sources de lumi\u00e8re \u00e9mettent diff\u00e9rentes temp\u00e9ratures de couleur, et la balance des blancs compense ces variations."
+          "answer": "La balance des blancs ajuste les couleurs de ta photo pour que les objets vraiment blancs dans la scène apparaissent aussi blancs dans l'image. Chaque source de lumière a sa propre température de couleur, et la balance des blancs compense ces écarts."
         },
         "kelvin-vs-presets": {
-          "question": "Dois-je utiliser des valeurs Kelvin ou des pr\u00e9r\u00e9glages de balance des blancs ?",
-          "answer": "Les pr\u00e9r\u00e9glages (Lumi\u00e8re du jour, Nuageux, Tungst\u00e8ne) sont des points de d\u00e9part pratiques, mais d\u00e9finir une valeur Kelvin sp\u00e9cifique offre un contr\u00f4le plus pr\u00e9cis. Photographiez en format RAW pour ajuster la balance des blancs de mani\u00e8re non destructive en post-traitement."
+          "question": "Faut-il utiliser des valeurs Kelvin ou des préréglages de balance des blancs ?",
+          "answer": "Les préréglages (Lumière du jour, Nuageux, Tungstène) sont de bons points de départ, mais fixer une valeur Kelvin précise donne un contrôle plus fin. Photographie en RAW pour ajuster la balance des blancs sans perte en post-traitement."
         },
         "when-to-use-manual-white-balance": {
-          "question": "Quand dois-je utiliser la balance des blancs manuelle ?",
-          "answer": "Utilisez la balance des blancs manuelle pour l'\u00e9clairage mixte (combinant naturel et artificiel), les configurations studio n\u00e9cessitant une pr\u00e9cision exacte des couleurs, la photographie de produit et chaque fois que la balance des blancs automatique produit des r\u00e9sultats incoh\u00e9rents sur une s\u00e9rie de prises."
+          "question": "Quand passer à la balance des blancs manuelle ?",
+          "answer": "Passe en manuel pour l'éclairage mixte (naturel + artificiel), les prises en studio qui exigent une fidélité parfaite des couleurs, la photo de produit et chaque fois que la balance auto donne des résultats inégaux sur une série de photos."
         }
       }
     }

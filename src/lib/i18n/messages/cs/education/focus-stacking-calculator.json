@@ -1,7 +1,7 @@
 {
   "education": {
     "focus-stacking-calculator": {
-      "beginner": "Focus stacking je technika, při které pořídíš víc fotek zaostřených na různé vzdálenosti a v softwaru je spojíš do jediného snímku ostrého od popředí po pozadí. V makrofotografii, kde je hloubka ostrosti minimální, je to nezbytná technika a v krajinářské fotografii se hodí, když potřebuješ mít ostré blízké popředí i vzdálené pozadí.",
+      "beginner": "Focus stacking je technika, při které pořídíš víc fotek zaostřených na různé vzdálenosti a v softwaru je spojíš do jediného snímku ostrého od popředí po pozadí. V makrofotografii, kde je hloubka ostrosti minimální, se bez ní neobejdeš, a v krajinářské fotografii se hodí, když potřebuješ ostré jak blízké popředí, tak vzdálené pozadí.",
       "deeper": {
         "0": {
           "heading": "Proč je stackování nutné",

@@ -90,7 +90,7 @@
         },
         "2": {
           "scenario": "Anda melaraskan imbangan putih secara manual dalam Kelvin. Foto anda kelihatan terlalu biru/sejuk. Patutkah anda meningkatkan atau mengurangkan nilai Kelvin untuk memanaskannya?",
-          "hint": "Tetapan WB Kelvin memberitahu kamera suhu warna sumber cahaya. Menetapkan nilai Kelvin lebih tinggi membuatkan kamera menambah lebih banyak kehangatan.",
+          "hint": "Tetapan WB Kelvin memberitahu kamera suhu warna sumber cahaya. Menetapkan nilai Kelvin lebih tinggi menyebabkan kamera menambah lebih banyak kehangatan.",
           "successMessage": "Betul! Meningkatkan nilai Kelvin memberitahu kamera cahaya adalah lebih sejuk daripada sebenar, jadi kamera mengimbangi dengan menambah kehangatan. Tetapkan K lebih tinggi untuk memanaskan imej yang kelihatan sejuk.",
           "failureMessage": "Apabila anda meningkatkan nilai Kelvin, kamera menambah lebih banyak kehangatan untuk mengimbangi. Jadi untuk membetulkan imej sejuk/biru, naikkan nombor Kelvin.",
           "options": {
@@ -102,7 +102,7 @@
         "3": {
           "scenario": "Anda sedang menangkap bahagian dalam restoran yang mempunyai lampu tungsten hangat gantung di atas dan cahaya siang biru sejuk melalui tingkap besar. Orang berhampiran tingkap kelihatan biru, dan orang di bawah lampu kelihatan jingga. Apakah pendekatan terbaik?",
           "hint": "Tiada tetapan imbangan putih tunggal boleh membetulkan dua suhu warna yang sangat berbeza secara serentak.",
-          "successMessage": "Tepat sekali! Menggel lampu denyar atau lampu tambahan untuk memadankan satu sumber dominan, atau memilih WB kompromi dan membetulkannya secara terpilih dalam pasca, adalah pendekatan terbaik untuk pencahayaan campuran.",
+          "successMessage": "Tepat sekali! Memasang gel pada lampu denyar atau lampu tambahan untuk memadankan satu sumber dominan, atau memilih WB kompromi dan membetulkannya secara terpilih dalam pasca, ialah pendekatan terbaik untuk pencahayaan campuran.",
           "failureMessage": "Pencahayaan campuran adalah salah satu cabaran WB yang paling sukar. Satu WB tidak dapat membetulkan kedua-dua sumber secara serentak. Anda perlu sama ada memadankan sumber dengan gel atau membetulkannya secara terpilih dalam pasca.",
           "options": {
             "0": { "label": "Tetapkan WB ke Tungsten — ia akan membetulkan segalanya" },
@@ -112,10 +112,10 @@
           }
         },
         "4": {
-          "scenario": "Anda sedang menangkap adegan malam sinematik bermoody di bandar dan mahukan rona biru sejuk yang disengajakan. Lampu jalan adalah wap sodium (~2200K). Apakah tetapan imbangan putih Kelvin yang akan memberi anda peralihan biru paling kuat?",
+          "scenario": "Anda sedang menangkap adegan malam sinematik beraura suram di bandar dan mahukan rona biru sejuk yang disengajakan. Lampu jalan ialah wap sodium (~2200K). Apakah tetapan imbangan putih Kelvin yang akan memberi anda peralihan biru paling kuat?",
           "hint": "Menetapkan WB jauh lebih rendah daripada suhu sumber cahaya sebenar akan mengalihkan imej ke arah biru.",
           "successMessage": "Betul! Menetapkan WB ke 7500K (preset Shade) memberitahu kamera sumber cahaya adalah sangat sejuk/biru — jadi ia mengimbangi dengan menambah pembetulan kehangatan yang berat. Tetapi memandangkan lampu sodium sebenar hanya 2200K (sangat hangat), pembetulan berlebihan ini mengayun melepasi neutral ke dalam lapisan biru yang kuat. Semakin tinggi anda menetapkan WB Kelvin melebihi suhu cahaya sebenar, semakin kuat peralihan biru.",
-          "failureMessage": "Menetapkan nilai WB Kelvin jauh lebih tinggi daripada suhu sumber cahaya sebenar membuatkan kamera membetulkan terlalu banyak ke arah biru. Dengan lampu sodium 2200K, menetapkan WB ke 7500K+ mencipta rupa biru sejuk yang paling kuat.",
+          "failureMessage": "Menetapkan nilai WB Kelvin jauh lebih tinggi daripada suhu sumber cahaya sebenar menyebabkan kamera membetulkan terlalu banyak ke arah biru. Dengan lampu sodium 2200K, menetapkan WB ke 7500K+ menghasilkan rupa biru sejuk yang paling kuat.",
           "options": {
             "0": { "label": "2200K (memadankan lampu sodium)" },
             "1": { "label": "3200K (preset Tungsten)" },

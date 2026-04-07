@@ -2,7 +2,7 @@
   "education": {
     "hyperfocal-simulator": {
       "beginner": "Hyperfokalavståndet är den närmaste punkten du kan fokusera på och ändå hålla allt på oändligheten acceptabelt skarpt. När du fokuserar på hyperfokalavståndet sträcker sig skärpedjupet från halva det avståndet hela vägen till oändligheten. Landskapsfotografer använder tekniken för att maximera skärpan från förgrund till horisont.",
-      "deeper": "Hyperfokalavståndet härleds ur tunna-linsen-ekvationen och begreppet oskärpecirkel (CoC). Det är brännvidden i kvadrat dividerat med produkten av f-talet och oskärpecirkelns diameter: H = f² / (N × c). Allt från H/2 till oändligheten hamnar inom acceptabel skärpa. Oskärpecirkeln beror på sensorstorleken — mindre sensorer har en mindre acceptabel CoC, vilket skjuter hyperfokalavståndet längre bort vid samma brännvidd och bländare. Det är därför cropsensorkameror verkar ha större skärpedjup: CoC-standarden är snävare i förhållande till bildytan. I praktiken sätter diffraktion vid mycket små bländare (f/16 och mindre på de flesta sensorer) en gräns — det blir en avvägning mellan att maximera skärpedjupet och att behålla skärpa på pixelnivå.",
+      "deeper": "Hyperfokalavståndet härleds ur tunna linsens ekvation och begreppet oskärpecirkel (CoC). Det är brännvidden i kvadrat dividerat med produkten av f-talet och oskärpecirkelns diameter: H = f² / (N × c). Allt från H/2 till oändligheten hamnar inom acceptabel skärpa. Oskärpecirkeln beror på sensorstorleken — mindre sensorer har en snävare CoC-standard, vilket skjuter hyperfokalavståndet längre bort vid samma brännvidd och bländare. Det är därför cropsensorkameror verkar ge större skärpedjup: CoC-standarden är snävare i förhållande till bildytan. I praktiken sätter diffraktionen vid mycket små bländare (f/16 och mindre på de flesta sensorer) en gräns — det blir en avvägning mellan maximalt skärpedjup och skärpa på pixelnivå.",
       "keyFactors": {
         "0": {
           "label": "Brännvidd",
@@ -26,7 +26,7 @@
           "text": "För snabbt landskapsarbete: fokusera ungefär en tredjedel in i scenen — det ligger nära hyperfokalpunkten för de flesta vidvinkeluppställningar."
         },
         "1": {
-          "text": "Undvik att bländaa ner förbi f/16 på fullformat eller f/11 på APS-C. Diffraktion äter upp den skärpedjupsfördel du jagar."
+          "text": "Undvik att blända ned förbi f/16 på fullformat eller f/11 på APS-C. Diffraktionen äter upp den skärpedjupsvinst du jagar."
         },
         "2": {
           "text": "Använd live view-förstoring för att sätta fokus exakt på hyperfokalavståndet i stället för att lita på objektivets avståndsskala, som ofta är opålitlig på moderna autofokusobjektiv."
@@ -83,12 +83,12 @@
           }
         },
         "4": {
-          "scenario": "Du fotograferar arkitektur vid 14 mm f/11 på fullformat. Tabellen visar ett mycket kort hyperfokalavstånd. Ska du bländaa ner vidare till f/22 för ännu större skärpedjup, eller är f/11 det bättre valet?",
+          "scenario": "Du fotograferar arkitektur vid 14 mm f/11 på fullformat. Tabellen visar ett mycket kort hyperfokalavstånd. Ska du blända ned vidare till f/22 för ännu större skärpedjup, eller är f/11 det bättre valet?",
           "hint": "Tänk på vad som händer med bildskärpan vid mycket små bländare.",
-          "successMessage": "Utmärkt! Vid f/11 är diffraktionen minimal på fullformat, och hyperfokalavståndet vid 14 mm är redan mycket kort. Att bländaa ner till f/22 skulle mjuka upp bilden av diffraktion utan meningsfull vinst i skärpedjup.",
-          "failureMessage": "Även om f/22 ger ett kortare hyperfokalavstånd på pappret minskar diffraktionsmjukheten vid f/22 på fullformat den totala bildskärpan. Vid 14 mm f/11 är hyperfokalen redan så kort att det extra skärpedjupet inte är värt diffraktionsstraffet.",
+          "successMessage": "Utmärkt! Vid f/11 är diffraktionen minimal på fullformat, och hyperfokalavståndet vid 14 mm är redan mycket kort. Att blända ned till f/22 skulle bara mjuka upp bilden av diffraktion utan någon värd nämnvärd skärpedjupsvinst.",
+          "failureMessage": "Visserligen ger f/22 ett kortare hyperfokalavstånd på papperet, men diffraktionsmjukheten vid f/22 på fullformat drar ned den totala bildskärpan. Vid 14 mm f/11 är hyperfokalen redan så kort att det extra skärpedjupet inte är värt priset i skärpa.",
           "options": {
-            "0": { "label": "Bländaa ner till f/22 för maximalt skärpedjup" },
+            "0": { "label": "Blända ned till f/22 för maximalt skärpedjup" },
             "1": { "label": "Stanna vid f/11 — diffraktion vid f/22 minskar skärpan" }
           }
         }

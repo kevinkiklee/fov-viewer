@@ -2,13 +2,13 @@
   "toolUI": {
     "equivalent-settings-calculator": {
       "settings": "Asetukset",
-      "sourceCamera": "Sinun kamerasi",
+      "sourceCamera": "Oma kamerasi",
       "sourceSensor": "Kenno",
       "sourceFocalLength": "Polttoväli",
       "sourceAperture": "Aukko",
       "sourceISO": "ISO",
       "sourceDistance": "Kohteen etäisyys",
-      "targetSensors": "Vertaa kanssa",
+      "targetSensors": "Vertailtavat kennot",
       "addSensor": "+ Lisää kenno",
       "removeSensor": "Poista",
       "equivalenceCard": "Ekvivalenttiasetukset",
@@ -19,8 +19,8 @@
       "equivalentDoF": "Ekvivalentti syväterävyys",
       "cropFactor": "Kerroin",
       "fieldOfView": "Kuvakulma",
-      "warningUnrealisticAperture": "Tämä ekvivalentti aukko ({value}) on valovoimaisempi kuin mikään todellinen objektiivi. Kohdekenno ei voi sovittaa lähteen syväterävyyttä.",
-      "warningUnrealisticFL": "Tämä ekvivalentti polttoväli ({value} mm) on harvinainen. Et välttämättä löydä oikeaa objektiivia tällä polttovälillä.",
+      "warningUnrealisticAperture": "Tämä ekvivalentti aukko ({value}) on valovoimaisempi kuin mikään todellinen objektiivi. Kohdekennolla ei voi saavuttaa lähteen syväterävyyttä.",
+      "warningUnrealisticFL": "Tämä ekvivalentti polttoväli ({value} mm) on harvinainen. Tähän polttoväliin ei välttämättä löydy todellista objektiivia.",
       "warningClosestReal": "Lähin todellinen objektiivi: {value} mm f/{aperture}",
       "diagramTitle": "Kennon ja kuvakulman vertailu",
       "diagramSource": "Lähde",
@@ -32,7 +32,7 @@
       "matchExposure": "Sovita valotus",
       "sameFOV": "Sama kuvakulma",
       "sameDoF": "Sama syväterävyys",
-      "sameExposure": "Sama valotuksen kirkkaus"
+      "sameExposure": "Sama valotustaso"
     }
   }
 }

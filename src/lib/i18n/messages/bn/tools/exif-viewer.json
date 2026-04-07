@@ -6,7 +6,7 @@
       "failedToReadFile": "ফাইল পড়তে ব্যর্থ।",
       "uploadedPhoto": "আপলোড করা ছবি",
       "analysis": "বিশ্লেষণ",
-      "exposureValue": "Exposure Value",
+      "exposureValue": "এক্সপোজার ভ্যালু",
       "sectionCamera": "ক্যামেরা",
       "sectionLens": "লেন্স",
       "sectionExposure": "এক্সপোজার",
@@ -14,8 +14,8 @@
       "sectionDate": "তারিখ",
       "sectionGPS": "GPS",
       "sectionSoftware": "সফটওয়্যার",
-      "make": "Make",
-      "model": "Model",
+      "make": "নির্মাতা",
+      "model": "মডেল",
       "lensModel": "লেন্স মডেল",
       "lensMake": "লেন্স নির্মাতা",
       "apertureLabel": "অ্যাপারচার",
@@ -60,7 +60,7 @@
           "answer": "EXIF (Exchangeable Image File Format) ডেটা হলো ক্যামেরার দ্বারা তোমার ছবিতে এমবেড করা মেটাডেটা। এতে ক্যামেরার সেটিংস (অ্যাপারচার, শাটার স্পিড, ISO), ক্যামেরা ও লেন্সের মডেল, তারিখ ও সময়, এবং কখনো কখনো GPS অবস্থান থাকে।"
         },
         "how-to-read-histogram": {
-          "question": "ছবির হিস্টোগ্রাম কীভাবে পড়বো?",
+          "question": "ছবির হিস্টোগ্রাম কীভাবে পড়ব?",
           "answer": "একটি হিস্টোগ্রাম তোমার ছবিতে উজ্জ্বলতার বণ্টন দেখায়, ছায়া (বাম) থেকে হাইলাইট (ডান) পর্যন্ত। একটি সঠিকভাবে এক্সপোজড ছবিতে সাধারণত দুই প্রান্তে ক্লিপিং ছাড়াই পুরো পরিসরে ডেটা ছড়ানো থাকে, যদিও আদর্শ আকৃতি দৃশ্যের উপর নির্ভর করে।"
         },
         "does-exif-contain-location": {

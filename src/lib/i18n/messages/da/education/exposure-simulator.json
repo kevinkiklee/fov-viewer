@@ -1,61 +1,61 @@
 {
   "education": {
     "exposure-simulator": {
-      "beginner": "Eksponeringstrekanten beskriver, hvordan tre kameraindstillinger — blænde, lukkertid og ISO — arbejder sammen om at styre, hvor lyst dit billede bliver. Ændrer du én indstilling, skal du justere mindst en af de andre for at holde samme lysstyrke. Hver indstilling har også sin egen kreative bivirkning: blænden styrer baggrundsuskarphed, lukkertiden styrer motion blur, og ISO styrer billedstøj.",
-      "deeper": "Eksponering måles i eksponeringsværdi (EV), hvor hvert helt EV-trin svarer til en fordobling eller halvering af lys. En stigning på 1 EV (et \"stop\") betyder dobbelt så meget lys til sensoren. Blænden følger en geometrisk progression (f/1.4, f/2, f/2.8, f/4...), hvor hvert hele stop halverer lysmængden, fordi åbningens areal er omvendt proportional med kvadratet på f-tallet. Lukkertid er mere intuitiv: fordobler du tiden, fordobler du lysmængden. ISO forstærker signalet fra sensoren — en dobbelt ISO giver dobbelt effektiv lysstyrke, men også mere støj. I praksis indstiller du som regel først den parameter, der betyder mest for dit kreative formål (blænde for DoF, lukker for bevægelse), og balancerer derefter de andre. Moderne kameraer måler i 1/3-stop trin for finere kontrol.",
+      "beginner": "Eksponeringstrekanten beskriver, hvordan tre kameraindstillinger — blænde, lukkertid og ISO — arbejder sammen om at styre, hvor lyst dit billede bliver. Ændrer du én af dem, skal du justere mindst en af de andre for at holde samme lysstyrke. Hver indstilling har også sin egen kreative bivirkning: blænden styrer baggrundsuskarpheden, lukkertiden styrer bevægelsessløring, og ISO styrer billedstøjen.",
+      "deeper": "Eksponering måles i eksponeringsværdi (EV), hvor hvert helt EV-trin svarer til en fordobling eller halvering af lysmængden. En stigning på 1 EV (et \"stop\") betyder dobbelt så meget lys til sensoren. Blænden følger en geometrisk progression (f/1.4, f/2, f/2.8, f/4 …), hvor hvert helt stop halverer lysmængden, fordi åbningens areal er omvendt proportionalt med kvadratet på f-tallet. Lukkertid er mere intuitiv: fordobler du tiden, fordobler du lysmængden. ISO forstærker signalet fra sensoren — dobbelt ISO giver dobbelt effektiv lysstyrke, men også mere støj. I praksis sætter du som regel først den parameter, der betyder mest kreativt (blænden til DoF, lukkeren til bevægelse), og balancerer så de andre. Moderne kameraer justerer i 1/3-stops trin, så du får finere kontrol.",
       "keyFactors": {
         "0": {
           "label": "Blænde",
-          "description": "Styrer linsens åbning. Hvert hele stop (f.eks. f/2.8 til f/4) halverer lysmængden. Påvirker også dybdeskarphed — større blænder slører baggrunden mere."
+          "description": "Styrer linsens åbning. Hvert helt stop (f.eks. f/2.8 til f/4) halverer lysmængden. Påvirker også dybdeskarpheden — større blænder slører baggrunden mere."
         },
         "1": {
           "label": "Lukkertid",
-          "description": "Styrer hvor længe sensoren eksponeres. Hurtigere tider fryser bevægelse; langsommere tider giver motion blur. Fordobling af tiden fordobler lysmængden."
+          "description": "Styrer, hvor længe sensoren eksponeres. Hurtige tider fryser bevægelse; langsomme tider giver bevægelsessløring. En fordobling af tiden fordobler lysmængden."
         },
         "2": {
           "label": "ISO",
-          "description": "Styrer sensorens lysfølsomhed. Højere ISO gør billedet lysere, men tilføjer korn/støj. Brug altid den lavest mulige ISO, der stadig giver den eksponering, du skal bruge."
+          "description": "Styrer sensorens lysfølsomhed. Højere ISO gør billedet lysere, men giver mere støj. Brug altid den lavest mulige ISO, der stadig giver dig den eksponering, du skal bruge."
         },
         "3": {
           "label": "Eksponeringsværdi (EV)",
-          "description": "Et enkelt tal for den samlede lysstyrke. EV 0 svarer til 1 sekunds eksponering ved f/1.0. Hvert +1 EV halverer lysmængden."
+          "description": "Et enkelt tal for den samlede lysstyrke. EV 0 svarer til 1 sekunds eksponering ved f/1.0. Hver +1 EV fordobler lysmængden."
         }
       },
       "tips": {
         "0": {
-          "text": "Start i Aperture Priority: sæt blænden efter den dybdeskarphed du vil have, og lad kameraet vælge lukkertiden. Skru kun op for ISO, når lukkertiden bliver for langsom til skarpe håndholdte billeder."
+          "text": "Start i blændeprioritet: vælg blænden efter den dybdeskarphed, du vil have, og lad kameraet bestemme lukkertiden. Skru kun op for ISO, når lukkertiden bliver for langsom til skarpe håndholdte billeder."
         },
         "1": {
-          "text": "Til sport og action: skift til Shutter Priority, vælg en hurtig lukkertid (1/500s eller hurtigere), og lad kameraet justere blænde og ISO."
+          "text": "Til sport og action: skift til lukkerprioritet, vælg en hurtig lukkertid (1/500s eller hurtigere), og lad kameraet om at justere blænde og ISO."
         },
         "2": {
-          "text": "\"Sunny 16\"-reglen er en hurtig huskeregel: på en solrig dag sættes blænden til f/16, lukkertiden til 1/ISO (f.eks. 1/100s ved ISO 100), og du får en korrekt eksponeret optagelse uden måling."
+          "text": "\"Sunny 16\"-reglen er en fin huskeregel: på en solrig dag sætter du blænden til f/16 og lukkertiden til 1/ISO (f.eks. 1/100s ved ISO 100), så har du en korrekt eksponering uden at måle."
         }
       },
       "tooltips": {
         "aperture": {
           "term": "Blænde",
-          "definition": "Linsens åbningsstørrelse udtrykt som f-tal. Lavere tal (f/1.4) slipper mere lys ind og slører baggrunden. Højere tal (f/16) slipper mindre lys ind, men holder mere af motivet skarpt."
+          "definition": "Linsens åbning udtrykt som f-tal. Lavere tal (f/1.4) slipper mere lys ind og slører baggrunden. Højere tal (f/16) slipper mindre lys ind, men holder mere af billedet skarpt."
         },
         "shutterSpeed": {
           "term": "Lukkertid",
-          "definition": "Varigheden, sensoren eksponeres, typisk målt i brøkdele af et sekund (1/250s) eller hele sekunder (2s). Hurtigere tider fryser bevægelse; langsommere tider giver motion blur."
+          "definition": "Den tid, sensoren eksponeres, typisk målt i brøkdele af et sekund (1/250s) eller hele sekunder (2s). Hurtige tider fryser bevægelse; langsomme tider giver bevægelsessløring."
         },
         "iso": {
           "term": "ISO",
-          "definition": "Et mål for sensorens lysfølsomhed. ISO 100 er basislinjen (reneste billede). Hver fordobling (200, 400, 800...) gør billedet ét stop lysere, men tilføjer gradvist mere støj."
+          "definition": "Et mål for sensorens lysfølsomhed. ISO 100 er udgangspunktet (det reneste billede). Hver fordobling (200, 400, 800 …) gør billedet ét stop lysere, men tilføjer også mere støj."
         },
         "ev": {
           "term": "Eksponeringsværdi (EV)",
-          "definition": "Et enkelt tal, der opsummerer den samlede eksponering. Højere EV betyder lysere forhold eller mere lys optaget. Hvert +1 EV er dobbelt så meget lys."
+          "definition": "Et enkelt tal, der opsummerer den samlede eksponering. Højere EV betyder lysere forhold eller mere lys til sensoren. Hver +1 EV er dobbelt så meget lys."
         }
       },
       "challenges": {
         "0": {
           "scenario": "Du fotograferer din hund, der løber i parken på en solrig dag. Billederne bliver ved med at være slørede. Hvilken indstilling bør du prioritere for at fryse bevægelsen?",
-          "hint": "Motion blur opstår, fordi motivet bevæger sig under eksponeringen.",
+          "hint": "Bevægelsessløring opstår, fordi motivet flytter sig under eksponeringen.",
           "successMessage": "Rigtigt! En hurtig lukkertid som 1/1000s fryser din hund midt i løbet. På en solrig dag har du masser af lys til det.",
-          "failureMessage": "Den indstilling fryser ikke direkte bevægelsen. For at stoppe et motiv i bevægelse skal du bruge en hurtig lukkertid — jo kortere eksponering, jo mindre tid har motivet til at blive sløret.",
+          "failureMessage": "Den indstilling fryser ikke bevægelsen. For at stoppe et motiv i bevægelse skal du bruge en hurtig lukkertid — jo kortere eksponering, jo mindre tid har motivet til at blive sløret.",
           "options": {
             "0": { "label": "Åbn blænden til f/2.8" },
             "1": { "label": "Brug en hurtig lukkertid (1/1000s)" },
@@ -65,9 +65,9 @@
         },
         "1": {
           "scenario": "Du fotograferer en indendørs fødselsdag. Dine billeder er for mørke ved f/3.5, 1/60s, ISO 400. Du kan ikke bruge flash. Hvad er det bedste næste skridt?",
-          "hint": "Du skal enten have mere lys på sensoren eller mere forstærkning af signalet.",
+          "hint": "Du skal enten have mere lys ind på sensoren eller mere forstærkning af signalet.",
           "successMessage": "Godt tænkt! At hæve ISO til 1600 giver dig to stops mere lysstyrke og holder lukkertiden hurtig nok til håndholdt.",
-          "failureMessage": "Den ændring kan give andre problemer. Da blænden allerede er næsten helt åben, og du skal have en lukkertid, der er hurtig nok til håndholdt, er højere ISO den mest praktiske justering.",
+          "failureMessage": "Den ændring kan give dig andre problemer. Da blænden allerede er næsten helt åben, og du skal have en lukkertid, der er hurtig nok til håndholdt, er højere ISO den mest praktiske justering.",
           "options": {
             "0": { "label": "Hæv ISO til 1600" },
             "1": { "label": "Sænk lukkertiden til 1/4s" },
@@ -77,9 +77,9 @@
         },
         "2": {
           "scenario": "Du vil fotografere et vandfald med silkeblødt vand på en lys dag. Dine nuværende indstillinger er f/8, 1/250s, ISO 100. Hvad skal du ændre for at få det silkeglatte look?",
-          "hint": "Silkeblødt vand kræver en lang eksponering, men det er meget lyst udenfor.",
-          "successMessage": "Præcis! En langsom lukkertid (1/2s eller længere) kompenseret med en lille blænde ned til f/22 (og måske et ND-filter) giver dig det silkeglatte look.",
-          "failureMessage": "For silkeblødt vand skal du bruge en langsom lukkertid — omkring 1/2s til flere sekunder. På en lys dag skal du også reducere lyset ind i linsen for at undgå overeksponering.",
+          "hint": "Silkeblødt vand kræver lang eksponering, men der er meget lys udenfor.",
+          "successMessage": "Præcis! En langsom lukkertid (1/2s eller længere) kompenseret med en lille blænde helt ned til f/22 (og måske et ND-filter) giver dig det silkeglatte look.",
+          "failureMessage": "Silkeblødt vand kræver en langsom lukkertid — omkring 1/2s til flere sekunder. På en lys dag skal du også reducere lysmængden ind i linsen, ellers bliver det overeksponeret.",
           "options": {
             "0": { "label": "Brug 1/2s lukker og luk til f/22" },
             "1": { "label": "Brug 1/1000s ved f/2.8" },
@@ -88,10 +88,10 @@
           }
         },
         "3": {
-          "scenario": "Dit korrekt eksponerede billede er ved f/5.6, 1/125s, ISO 200. Du vil skifte til f/2.8 for mere baggrundsuskarphed. Hvordan justerer du de andre indstillinger for at bevare samme eksponering?",
-          "hint": "Fra f/5.6 til f/2.8 er 2 stops mere lys. Du skal fjerne 2 stops et andet sted.",
-          "successMessage": "Perfekt! Åbner du fra f/5.6 til f/2.8, tilføjer du 2 stops lys. Ændrer du lukkertiden fra 1/125s til 1/500s, fjerner du præcis 2 stops og holder eksponeringen identisk.",
-          "failureMessage": "Regnestykket skal gå op. f/5.6 til f/2.8 er +2 stops. Du skal kompensere ved at fjerne præcis 2 stops via hurtigere lukker, lavere ISO eller en kombination.",
+          "scenario": "Dit korrekt eksponerede billede er ved f/5.6, 1/125s, ISO 200. Du vil skifte til f/2.8 for mere baggrundsuskarphed. Hvordan justerer du de andre indstillinger, så eksponeringen holder?",
+          "hint": "Fra f/5.6 til f/2.8 er 2 stops mere lys. Du skal tage 2 stops ud et andet sted.",
+          "successMessage": "Perfekt! Åbner du fra f/5.6 til f/2.8, lægger du 2 stops lys til. Ændrer du lukkertiden fra 1/125s til 1/500s, tager du præcis 2 stops ud igen, og eksponeringen bliver identisk.",
+          "failureMessage": "Regnestykket skal gå op. f/5.6 til f/2.8 er +2 stops. Du skal kompensere ved at tage præcis 2 stops ud via hurtigere lukker, lavere ISO eller en kombination.",
           "options": {
             "0": { "label": "1/500s ved ISO 200" },
             "1": { "label": "1/250s ved ISO 200" },
@@ -100,10 +100,10 @@
           }
         },
         "4": {
-          "scenario": "Du fotograferer en koncert på et mørkt spillested. Musikerne bevæger sig hurtigt under farvede scenelys. Du skal bruge mindst 1/250s for at fryse bevægelsen. Din hurtigste linse er f/2.8. Hvilken ISO har du sandsynligvis brug for, hvis motivet måles til EV 6?",
-          "hint": "Ved EV 6, f/2.8, så beregn den ISO, der kræves for at opnå 1/250s. Hvert fuldt ISO-stop fordobler lysstyrken.",
-          "successMessage": "Rigtigt! Ved EV 6 med f/2.8 og 1/250s skal du bruge ISO 3200. Koncertfotografi kræver ofte høj ISO — at kende dit kameras brugbare ISO-grænse er afgørende her.",
-          "failureMessage": "Ved EV 6 kræver kombinationen af f/2.8 og 1/250s ISO 3200 for korrekt eksponering. Eksponeringsformlen balancerer blænde, lukkertid og ISO mod det tilgængelige lys.",
+          "scenario": "Du fotograferer en koncert på et mørkt spillested. Musikerne bevæger sig hurtigt under farvet scenelys. Du skal bruge mindst 1/250s for at fryse bevægelsen. Din lysstærkeste linse er f/2.8. Hvilken ISO har du sandsynligvis brug for, hvis motivet måles til EV 6?",
+          "hint": "Ved EV 6 og f/2.8 — find den ISO, der skal til for 1/250s. Hvert fuldt ISO-stop fordobler lysstyrken.",
+          "successMessage": "Rigtigt! Ved EV 6 med f/2.8 og 1/250s skal du bruge ISO 3200. Koncertfotografi kræver ofte høj ISO — det er vigtigt at kende dit kameras brugbare ISO-grænse her.",
+          "failureMessage": "Ved EV 6 kræver kombinationen af f/2.8 og 1/250s ISO 3200 for at være korrekt eksponeret. Eksponeringsformlen balancerer blænde, lukkertid og ISO mod det lys, der er til rådighed.",
           "options": {
             "0": { "label": "ISO 400" },
             "1": { "label": "ISO 800" },

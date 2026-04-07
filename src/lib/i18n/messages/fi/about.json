@@ -5,23 +5,23 @@
     "sections": {
       "whatIs": {
         "title": "Mikä PhotoTools on?",
-        "body": "PhotoTools on ilmainen kokoelma interaktiivisia valokuvauslaskureita, simulaattoreita ja hakuteoksia. Kun opettelet valotuskolmion ensimmäistä kertaa tai lasket hyperfokaalietäisyyttä maisemakuvauksen avuksi, PhotoTools tarjoaa käytännölliset visuaaliset työkalut valokuvauksen ymmärtämisen syventämiseen."
+        "body": "PhotoTools on ilmainen kokoelma interaktiivisia valokuvauslaskureita, simulaattoreita ja hakuteoksia. Opettelitpa valotuskolmiota ensimmäistä kertaa tai laskitpa hyperfokaalietäisyyttä maisemakuvausta varten, PhotoTools tarjoaa käytännönläheiset visuaaliset työkalut valokuvauksen ymmärtämisen syventämiseen."
       },
       "whoIsItFor": {
         "title": "Kenelle?",
-        "body": "Kaiken tasoisille valokuvaajille — aloittelijoista, jotka tutkivat aukon vaikutusta syväterävyyteen, kokeneisiin kuvaajiin, jotka suunnittelevat tähtiratakuvausta. Jokaisessa työkalussa on oppimispaneeli, joka sisältää selitykset, keskeiset tekijät, proffan vinkit ja interaktiiviset tehtävät tietosi testaamiseen."
+        "body": "Kaikentasoisille valokuvaajille — aloittelijoista, jotka tutkivat aukon vaikutusta syväterävyyteen, kokeneisiin kuvaajiin, jotka suunnittelevat tähtiratakuvausta. Jokaisessa työkalussa on oppimispaneeli, jossa on selitykset, keskeiset tekijät, ammattilaisen vinkit ja interaktiiviset tehtävät osaamisen testaamiseen."
       },
       "privacyFirst": {
         "title": "Tietosuoja etusijalla",
-        "body": "Kaikki laskelmat ja simulaatiot tehdään kokonaan selaimessasi. Kuvasi eivät koskaan poistu laitteeltasi — esimerkiksi EXIF-lukija käsittelee kuvat 100-prosenttisesti selainpuolella. Rekisteröitymistä ei vaadita, eikä henkilötietoja kerätä anonyymiä analytiikkaa lukuun ottamatta."
+        "body": "Kaikki laskelmat ja simulaatiot tehdään kokonaan selaimessasi. Kuvasi eivät koskaan poistu laitteeltasi — esimerkiksi EXIF-lukija käsittelee kuvat täysin selaimessa. Rekisteröitymistä ei vaadita, eikä henkilötietoja kerätä anonyymiä analytiikkaa lukuun ottamatta."
       },
       "builtBy": {
         "title": "Valokuvaajan tekemä",
-        "body": "PhotoToolsia rakentaa ja ylläpitää valokuvaaja ja ohjelmistokehittäjä, joka kaipasi parempia visuaalisia työkaluja valokuvauksen teknisen puolen ymmärtämiseen. Työkalut perustuvat oikeaan optiikkaan ja fysiikkaan — eivät karkeisiin arvioihin — joten voit luottaa tuloksiin kentällä."
+        "body": "PhotoToolsia rakentaa ja ylläpitää valokuvaaja ja ohjelmistokehittäjä, joka kaipasi parempia visuaalisia työkaluja valokuvauksen teknisen puolen ymmärtämiseen. Työkalut perustuvat oikeaan optiikkaan ja fysiikkaan — ei karkeisiin arvioihin — joten tuloksiin voi luottaa myös kentällä."
       },
       "getInTouch": {
         "title": "Ota yhteyttä",
-        "body": "Onko sinulla ehdotus, bugiraportti tai työkaluidea? Ota yhteyttä <contactLink>yhteydenottosivun</contactLink> kautta."
+        "body": "Onko mielessäsi ehdotus, bugiraportti tai työkaluidea? Ota yhteyttä <contactLink>yhteydenottosivun</contactLink> kautta."
       }
     }
   }

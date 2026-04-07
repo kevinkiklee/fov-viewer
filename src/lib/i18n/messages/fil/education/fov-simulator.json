@@ -1,48 +1,48 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Ang field of view (FOV) ay kung gaano karami sa eksena ang kinukuha ng camera mo. Ang wide-angle na lens (tulad ng 24mm) ay nakakakita ng malawak na tanawin, habang ang telephoto lens (tulad ng 200mm) ay nagpapakipot sa maliit na slice. Pinapayagan ka ng simulator na ito na ikumpara ang hanggang apat na lens sa iba't ibang sensor, naka-overlay sa real-world na eksena, para ma-visualize mo nang eksakto kung ano ang nakukuha ng bawat kombinasyon.",
+      "beginner": "Ang field of view (FOV) ay kung gaano karami sa scene ang kinukuha ng camera mo. Ang wide-angle lens (gaya ng 24mm) ay nakakakuha ng malawak na tanawin, habang ang telephoto lens (gaya ng 200mm) ay nagpapakipot sa isang maliit na slice. Sa simulator na ito, pwede mong ikumpara hanggang apat na lens sa iba't ibang sensor, naka-overlay sa real-world scenes, para makita mo nang eksakto kung ano ang nakukuha ng bawat kombinasyon.",
       "deeper": {
         "0": {
           "heading": "Ang FOV Formula",
-          "text": "Ang field of view ay tinutukoy ng dalawang salik: focal length at sensor size. Ang horizontal FOV angle ay kinakalkula bilang 2 × arctan(sensorWidth / (2 × focalLength)). Ang mas maikling focal length o mas malaking sensor ay gumagawa ng mas malawak na angle of view."
+          "text": "Dalawang factors ang tumutukoy sa field of view: focal length at sensor size. Kinakalkula ang horizontal FOV angle bilang 2 × arctan(sensorWidth / (2 × focalLength)). Mas maikli ang focal length o mas malaki ang sensor, mas malawak ang angle of view."
         },
         "1": {
           "heading": "Crop Factor at Equivalent Focal Length",
-          "text": "Kapag lumilipat ng sensor, nag-a-apply ang konsepto ng \"equivalent focal length\": ang 50mm lens sa APS-C sensor (1.5× crop) ay pare-pareho ang framing sa 75mm sa full frame. Ang mas maliit na sensor ay kumukuha ng mas makitid na central portion ng image circle, effectively cropping in."
+          "text": "Kapag pumalit ka ng sensor, pumapasok ang concept ng \"equivalent focal length\": ang 50mm lens sa APS-C sensor (1.5× crop) ay parehong framing sa 75mm sa full frame. Kinukuha ng mas maliit na sensor ang mas makitid na gitnang bahagi ng image circle, effectively crop in."
         },
         "2": {
           "heading": "Perspective kumpara sa Focal Length",
-          "text": "Ang perspective — ang spatial na ugnayan ng malalapit at malalayong bagay — ay depende lamang sa posisyon ng camera, hindi sa focal length. Ang 50mm at 200mm na shot mula sa parehong lugar ay nagpapakita ng magkaparehong perspective, iba lang ang crop. Ang pagpalapit gamit ang wide lens ay nagpapalakas sa lalim; ang pagatras gamit ang telephoto ay nagko-compress dito."
+          "text": "Ang perspective — ang spatial na relasyon ng mga malalapit at malalayong bagay — ay nakadepende lang sa position ng camera, hindi sa focal length. Ang 50mm at 200mm na shot mula sa parehong spot ay parehong perspective, iba lang ang crop. Ang paglapit gamit ang wide lens ay nagpapalalim ng lalim; ang paglayo gamit ang telephoto ay nagko-compress nito."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Focal Length",
-          "description": "Ang pangunahing kontrol sa field of view. Ang mas maikling focal length ay nakakakita ng mas marami sa eksena; ang mas mahaba ay nakakakita ng mas kaunti pero nagpapalaki ng malalayong subject."
+          "description": "Ang main control sa field of view. Mas maikli ang focal length, mas marami ang nakukuha sa scene; mas mahaba, mas kaunti pero mas pinapalaki ang malalayong subjects."
         },
         "1": {
           "label": "Sensor Size",
-          "description": "Ang mas maliit na sensor ay nag-c-crop sa sentro ng image circle, na nagpapakipot sa field of view (ang crop factor effect)."
+          "description": "Kinu-crop ng mas maliit na sensor ang gitna ng image circle, na nagpapakipot sa field of view (ang crop factor effect)."
         },
         "2": {
           "label": "Orientation",
-          "description": "Ang portrait (vertical) na orientation ay nagpapakita ng mas matangkad at mas makitid na slice. Ang landscape (horizontal) ay nagpapakita ng mas malawak at mas tradisyonal na tanawin."
+          "description": "Ang portrait (vertical) orientation ay mas matangkad at makitid ang slice. Ang landscape (horizontal) ay mas malawak at mas traditional na tanawin."
         },
         "3": {
           "label": "Scene Context",
-          "description": "Ang iba't ibang eksena (cityscapes, interiors, nature) ay tumutulong sa iyo na maunawaan kung paano ang mga pagbabago ng FOV ay nararamdaman sa iba't ibang real-world na konteksto."
+          "description": "Ang iba't ibang scenes (cityscapes, interiors, nature) ay tumutulong sa iyong maintindihan kung paano nararamdaman ang FOV changes sa iba't ibang real-world settings."
         }
       },
       "tips": {
         "0": {
-          "text": "Magdagdag ng dalawang lens at i-toggle sa pagitan ng crop sensor at full frame sa isa sa kanila para agad na makita ang crop-factor effect. Ang 35mm sa APS-C ay halos magkaparehong framing sa 50mm sa full frame."
+          "text": "Magdagdag ng dalawang lens at i-toggle ang isa sa pagitan ng crop sensor at full frame para makita agad ang crop-factor effect. Ang 35mm sa APS-C ay halos kapareho ng framing sa 50mm sa full frame."
         },
         "1": {
-          "text": "Gamitin ang scene selector para suriin ang coverage para sa mga partikular na shooting situation — ang cityscape scene ay nagpapakita kung sapat ba ang lawak ng iyong wide-angle para kunan ang gusali mula sa kabilang kalye."
+          "text": "Gamitin ang scene selector para i-check ang coverage para sa specific na shooting situations — ipapakita ng cityscape scene kung sapat ba ang lawak ng wide-angle mo para kunin ang building mula sa kabilang kalye."
         },
         "2": {
-          "text": "Kapag nagpaplano ng pagbili ng lens, idagdag ang kasalukuyang lens mo bilang Lens A at ang lens na iniisip mong bilhin bilang Lens B. Ipapakita ng overlay nang eksakto kung gaano karami o gaano kaunti ang makikita mo."
+          "text": "Kapag nagpaplano ng pagbili ng lens, ilagay ang current lens mo bilang Lens A at ang gusto mong bilhin bilang Lens B. Ipapakita ng overlay nang eksakto kung gaano karami o gaano kaunti ang makikita mo."
         }
       },
       "tooltips": {

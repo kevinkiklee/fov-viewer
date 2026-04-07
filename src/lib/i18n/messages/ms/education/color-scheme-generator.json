@@ -9,7 +9,7 @@
         },
         "1": {
           "heading": "Komplementari",
-          "text": "Dua warna yang duduk terus bertentangan antara satu sama lain pada roda (180° terpisah), seperti biru dan jingga atau merah dan hijau. Ini mencipta kontras maksimum dan tenaga visual. Bagus untuk membuatkan subjek menonjol pada latar belakang — fikirkan potret golden hour di mana rona kulit hangat berkontras dengan langit biru sejuk."
+          "text": "Dua warna yang berada tepat bertentangan antara satu sama lain pada roda (180° terpisah), seperti biru dan jingga atau merah dan hijau. Ini mencipta kontras maksimum dan tenaga visual. Bagus untuk menjadikan subjek menonjol pada latar belakang — fikirkan potret golden hour di mana rona kulit hangat berkontras dengan langit biru sejuk."
         },
         "2": {
           "heading": "Analogus",
@@ -35,7 +35,7 @@
         },
         "1": {
           "label": "Hue",
-          "description": "Sudut warna asas pada roda (0-360 darjah). Ini adalah titik permulaan untuk semua pengiraan harmoni."
+          "description": "Sudut warna asas pada roda (0-360 darjah). Inilah titik permulaan untuk semua pengiraan harmoni."
         },
         "2": {
           "label": "Saturation",
@@ -48,7 +48,7 @@
       },
       "tips": {
         "0": {
-          "text": "Untuk sesi potret, pilih palet komplementari atau split-complementary, kemudian minta subjek memakai warna utama sementara latar belakang menyediakan rona kontras. Biru/jingga (potret golden hour) adalah contoh klasik."
+          "text": "Untuk sesi potret, pilih palet komplementari atau split-complementary, kemudian minta subjek mengenakan pakaian berwarna utama sementara latar belakang menyediakan rona kontras. Biru/jingga (potret golden hour) ialah contoh klasik."
         },
         "1": {
           "text": "Gunakan harmoni analogus untuk landskap — alam sudah bekerja dalam palet analogus. Padankan nasihat pakaian atau pilihan prop anda dengan rona semula jadi yang dominan."
@@ -90,9 +90,9 @@
       "challenges": {
         "0": {
           "scenario": "Anda mahukan kontras maksimum antara dua warna untuk potret grafik yang berani. Jenis harmoni yang manakah memberi anda ketegangan visual paling banyak?",
-          "hint": "Warna yang terus berlawanan antara satu sama lain pada roda mencipta kontras paling kuat.",
+          "hint": "Warna yang berada tepat berlawanan antara satu sama lain pada roda mencipta kontras paling kuat.",
           "successMessage": "Betul! Warna komplementari duduk 180 darjah terpisah dan menghasilkan kontras paling tinggi — sempurna untuk komposisi yang berani dan menarik perhatian.",
-          "failureMessage": "Harmoni komplementari meletakkan warna terus bertentangan pada roda, mencipta kontras visual maksimum.",
+          "failureMessage": "Harmoni komplementari meletakkan warna tepat bertentangan pada roda, mencipta kontras visual maksimum.",
           "options": {
             "0": { "label": "Complementary" },
             "1": { "label": "Analogous" },
@@ -113,7 +113,7 @@
         "2": {
           "scenario": "Seorang klien mahukan potret dengan kontras tetapi tidak seintens komplementari tulen. Jenis harmoni yang manakah melembutkan pertentangan sambil mengekalkan tarikan visual?",
           "hint": "Jenis ini menggunakan dua warna berhampiran komplemen bukannya bertentangan langsung.",
-          "successMessage": "Sangat bagus! Split complementary mengekalkan kontras komplementari tetapi membelah warna bertentangan kepada dua hue mengapit, menghasilkan palet yang kurang menjengkelkan tetapi masih dinamik.",
+          "successMessage": "Sangat bagus! Split complementary mengekalkan kontras komplementari tetapi membelah warna bertentangan kepada dua hue mengapit, menghasilkan palet yang kurang mengganggu mata tetapi masih dinamik.",
           "failureMessage": "Split Complementary ialah jawapannya — ia menggantikan satu warna bertentangan dengan dua jiran bertentangan, melembutkan kontras sambil mengekalkan tenaga visual.",
           "options": {
             "0": { "label": "Split Complementary" },
@@ -135,7 +135,7 @@
         "4": {
           "scenario": "Anda sedang mengarahkan seni sebuah editorial fesyen dan memerlukan palet empat warna yang menyediakan rona hangat dan sejuk dengan kekayaan visual tinggi. Jenis harmoni yang manakah memberi anda empat warna, dan apakah cabaran utama apabila menggunakannya?",
           "hint": "Harmoni empat warna membentuk segi empat tepat pada roda.",
-          "successMessage": "Betul! Harmoni tetradik memberikan empat warna yang membentuk segi empat tepat pada roda. Cabaran utamanya adalah keseimbangan — dengan empat hue berbeza, satu harus mendominasi sementara yang lain menjadi aksen. Tanpa hierarki, imej terasa kacau.",
+          "successMessage": "Betul! Harmoni tetradik memberikan empat warna yang membentuk segi empat tepat pada roda. Cabaran utamanya ialah keseimbangan — dengan empat hue berbeza, satu warna perlu mendominasi sementara yang lain menjadi aksen. Tanpa hierarki, imej terasa kacau.",
           "failureMessage": "Tetradik (double-complementary) menyediakan empat warna dalam susunan segi empat tepat. Cabarannya ialah empat hue kuat bersaing untuk perhatian — anda perlu menetapkan satu warna dominan dan gunakan yang lain sebagai aksen.",
           "options": {
             "0": { "label": "Tetradic — cabaran ialah mengekalkan hierarki visual antara empat hue" },

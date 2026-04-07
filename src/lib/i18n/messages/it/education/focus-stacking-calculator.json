@@ -1,7 +1,7 @@
 {
   "education": {
     "focus-stacking-calculator": {
-      "beginner": "Il focus stacking è una tecnica in cui scatti più foto a diverse distanze di messa a fuoco e le fondi via software per creare un'immagine nitida dal primo piano allo sfondo. È essenziale per la macrofotografia, dove la profondità di campo è sottilissima, ed è utile nella fotografia di paesaggio quando hai bisogno che sia il primo piano vicino sia lo sfondo lontano siano perfettamente nitidi.",
+      "beginner": "Il focus stacking è una tecnica in cui scatti più foto a diverse distanze di messa a fuoco e le fondi via software per creare un'immagine nitida dal primo piano allo sfondo. È essenziale per la macrofotografia, dove la profondità di campo è sottilissima, ed è utile nella fotografia di paesaggio quando vuoi che sia il primo piano vicino sia lo sfondo lontano risultino perfettamente nitidi.",
       "deeper": {
         "0": {
           "heading": "Perché lo stacking è necessario",
@@ -35,7 +35,7 @@
           "text": "Usa una slitta per il focus invece della ghiera dell'obiettivo per lo stacking macro. La slitta sposta l'intera fotocamera in avanti con incrementi precisi, evitando le piccole variazioni di ingrandimento che si verificano rifocalizzando l'obiettivo."
         },
         "1": {
-          "text": "Mantieni l'apertura al punto dolce dell'obiettivo (tipicamente f/5.6-f/8). Lo scopo dello stacking è evitare di chiudere fino a f/16 o oltre, quindi usa l'apertura più nitida e lascia che sia lo stack a gestire la profondità."
+          "text": "Mantieni l'apertura al punto ottimale dell'obiettivo (tipicamente f/5.6-f/8). Lo scopo dello stacking è evitare di chiudere fino a f/16 o oltre, quindi usa l'apertura più nitida e lascia che sia lo stack a coprire la profondità."
         },
         "2": {
           "text": "Per gli stack di paesaggio, scatta dal primo piano allo sfondo: metti a fuoco prima sull'elemento più vicino, poi sposta gradualmente il fuoco verso l'infinito. Questo rende l'allineamento più facile, perché il primo piano (con più parallasse) viene catturato per primo."
@@ -91,7 +91,7 @@
           "failureMessage": "f/8 è la scelta migliore. f/2.8 dà una PdC per scatto molto sottile (richiedendo molti più fotogrammi), mentre f/22 introduce ammorbidimento da diffrazione che vanifica lo scopo dello stacking per la nitidezza.",
           "options": {
             "0": { "label": "f/2.8 — la più ampia per tempi più rapidi" },
-            "1": { "label": "f/8 — punto dolce dell'obiettivo" },
+            "1": { "label": "f/8 — punto ottimale dell'obiettivo" },
             "2": { "label": "f/22 — PdC per scatto massima" }
           }
         },

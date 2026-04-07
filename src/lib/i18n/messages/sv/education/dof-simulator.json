@@ -1,19 +1,19 @@
 {
   "education": {
     "dof-simulator": {
-      "beginner": "Skärpedjup (DoF) är det avståndsområde i bilden som upplevs som acceptabelt skarpt. Ett grunt skärpedjup suddar bakgrunden bakom motivet, medan ett stort skärpedjup håller allt från förgrund till horisont skarpt. Att kontrollera skärpedjupet är ett av de starkaste kreativa verktygen i fotografi.",
+      "beginner": "Skärpedjupet (DoF) är det avståndsområde i bilden som ser acceptabelt skarpt ut. Ett grunt skärpedjup suddar bakgrunden bakom motivet, medan ett stort skärpedjup håller allt från förgrund till horisont skarpt. Att kontrollera skärpedjupet är ett av fotografins starkaste kreativa verktyg.",
       "deeper": {
         "0": {
           "heading": "Så fungerar skärpedjup",
-          "text": "Skärpedjup styrs av oskärpecirkeln (CoC) — den största oskärpefläck på sensorn som fortfarande uppfattas som skarp av ögat. Tre fysiska faktorer bestämmer skärpedjupet: brännvidd, bländare och motivsavstånd. En större bländare (lägre f-tal) ger grundare skärpedjup eftersom linsen samlar ljuset i brantare vinklar, vilket gör att oskärpa punkter breder ut sig till större cirklar på sensorn."
+          "text": "Skärpedjupet styrs av oskärpecirkeln (CoC) — den största oskärpefläcken på sensorn som ögat fortfarande uppfattar som skarp. Tre fysiska faktorer bestämmer skärpedjupet: brännvidd, bländare och motivsavstånd. En större bländare (lägre f-tal) ger grundare skärpedjup, eftersom objektivet samlar ljuset i brantare vinklar och oskärpa punkter breder ut sig till större cirklar på sensorn."
         },
         "1": {
           "heading": "Brännvidd och avstånd",
-          "text": "Längre brännvidder förstorar bilden, vilket också förstorar oskärpecirklarna och krymper skärpedjupet. Att gå närmare motivet minskar skärpedjupet av samma skäl — det relativa avståndet mellan motiv och bakgrund blir större. Hyperfokalavståndet är det fokusavstånd där skärpedjupet sträcker sig från halva det avståndet till oändligheten, vilket maximerar skärpan i hela scenen."
+          "text": "Längre brännvidder förstorar bilden, och därmed också oskärpecirklarna, vilket krymper skärpedjupet. Att gå närmare motivet minskar skärpedjupet av samma skäl — det relativa avståndet mellan motiv och bakgrund blir större. Hyperfokalavståndet är det fokusavstånd där skärpedjupet sträcker sig från halva det avståndet ända till oändligheten, vilket maximerar skärpan i hela scenen."
         },
         "2": {
           "heading": "Bokeh och diffraktion",
-          "text": "Bokeh syftar på kvaliteten i de oskärpa områdena. Antalet bländarblad och deras form påverkar bokehens karaktär — mer rundade blad ger mjukare, mer cirkulära högdagrar. Vid mycket små bländare (f/16 och mindre) sprider diffraktionen ljuset när det passerar bländarkanten, vilket gör hela bilden mjukare även inom skärpedjupszonen. Det finns alltid en sweet spot — vanligtvis runt f/5.6–f/8 på fullformat — där skärpa och skärpedjup är optimalt balanserade."
+          "text": "Bokeh handlar om kvaliteten hos de oskärpa områdena. Antalet bländarblad och deras form påverkar bokehens karaktär — rundare blad ger mjukare, mer cirkulära högdagrar. Vid mycket små bländare (f/16 och mindre) sprider diffraktionen ljuset när det passerar bländarkanten, så att hela bilden blir mjukare även inom skärpedjupszonen. Det finns alltid en sweet spot — vanligtvis runt f/5.6–f/8 på fullformat — där skärpa och skärpedjup är som bäst i balans."
         }
       },
       "keyFactors": {
@@ -42,7 +42,7 @@
           "text": "Vid landskapsfotografering: fokusera på hyperfokalavståndet snarare än på oändligheten. Det ger maximal skärpa från nära förgrund till avlägsen bakgrund."
         },
         "2": {
-          "text": "Vill du ha maximal bakgrundsoskärpa i ett porträtt: öka brännvidden och kom så nära motivet bildutsnittet tillåter — båda ändringarna samverkar och krymper skärpedjupet ordentligt."
+          "text": "Vill du ha maximal bakgrundsoskärpa i ett porträtt: öka brännvidden och gå så nära motivet som bildutsnittet tillåter — båda greppen samverkar och krymper skärpedjupet ordentligt."
         }
       },
       "tooltips": {
@@ -129,7 +129,7 @@
           }
         },
         "2": {
-          "scenario": "Du fotograferar ett landskap med vildblommor 2 meter bort och berg i bakgrunden. Du använder ett 24 mm-objektiv på fullformat. Vilken teknik ger maximal skärpa från främst till bakåt?",
+          "scenario": "Du fotograferar ett landskap med vildblommor 2 meter bort och berg i bakgrunden. Du använder ett 24 mm-objektiv på fullformat. Vilken teknik ger maximal skärpa från förgrund till bakgrund?",
           "hint": "Det finns ett specifikt avstånd du kan fokusera på som maximerar skärpezonen från förgrund till oändlighet.",
           "successMessage": "Precis! Att fokusera på hyperfokalavståndet vid f/11 gör att allt från cirka 1 meter till oändligheten blir acceptabelt skarpt — perfekt för den här scenen.",
           "failureMessage": "Fokuserar du på oändligheten blir blommorna mjuka. Använd hyperfokalavståndet för att sträcka skärpan från nära förgrund till oändlighet.",
@@ -143,11 +143,11 @@
         "3": {
           "scenario": "Du makrofotograferar en blomma och märker att bara de främre kronbladen är skarpa. Resten av blomman är suddig. Du är på f/5.6. Vad bör du göra för att få mer av blomman i fokus?",
           "hint": "På nära håll blir skärpedjupet extremt tunt. Tänk på bländaren.",
-          "successMessage": "Rätt! Att nedbländaa till f/11 eller f/16 ökar det hårfint tunna skärpedjupet i makrofoto. Var bara uppmärksam på att diffraktion kan göra bilden mjukare vid mycket små bländare.",
-          "failureMessage": "Att öppna bländaren ytterligare skulle göra skärpedjupet ännu tunnare. Vid makrofoto är nedbländning (högre f-tal) det främsta sättet att få mer djup.",
+          "successMessage": "Rätt! Att blända ned till f/11 eller f/16 drar ut det hårfina skärpedjupet i makrofoto. Håll bara ett öga på diffraktionen — bilden kan bli mjukare vid mycket små bländare.",
+          "failureMessage": "Att öppna bländaren mer skulle bara göra skärpedjupet ännu tunnare. I makrofoto är det just att blända ned (högre f-tal) som ger mer djup.",
           "options": {
             "0": { "label": "Öppna till f/2.8 för mer ljus" },
-            "1": { "label": "Nedbländaa till f/11" },
+            "1": { "label": "Blända ned till f/11" },
             "2": { "label": "Byt till ett vidvinkelobjektiv" },
             "3": { "label": "Flytta dig längre från blomman" }
           }

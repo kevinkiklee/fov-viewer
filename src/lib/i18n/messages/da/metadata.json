@@ -1,10 +1,10 @@
 {
   "metadata": {
     "site": {
-      "defaultTitle": "PhotoTools — fotografiværktøjer",
+      "defaultTitle": "PhotoTools — værktøjer til fotografer",
       "titleTemplate": "%s | PhotoTools",
-      "description": "Gratis fotografiværktøjer: FOV-simulator, farvepaletgenerator, EXIF-viewer, beskær og indram billeder og meget mere.",
-      "ogTitle": "PhotoTools — gratis fotografiværktøjer"
+      "description": "Gratis værktøjer til fotografer: FOV-simulator, farvepaletgenerator, EXIF-viewer, beskær og indram billeder og meget mere.",
+      "ogTitle": "PhotoTools — gratis værktøjer til fotografer"
     },
     "fov-simulator": {
       "title": "FOV Simulator — sammenlign brændvidder",
@@ -12,67 +12,67 @@
     },
     "dof-simulator": {
       "title": "Dybdeskarphedssimulator | PhotoTools",
-      "description": "Visualisér hvordan blænde, brændvidde og afstand påvirker baggrundsuskarpheden med live WebGL-simulation"
+      "description": "Se hvordan blænde, brændvidde og afstand påvirker baggrundsuskarpheden — med live WebGL-simulation."
     },
     "focus-stacking-calculator": {
       "title": "Focus stacking-beregner | PhotoTools",
-      "description": "Beregn optimale fokusafstande for skarphed fra forgrund til baggrund i makro- og landskabsfotografi"
+      "description": "Beregn de optimale fokusafstande, så du får skarphed fra forgrund til baggrund i makro- og landskabsbilleder."
     },
     "equivalent-settings-calculator": {
-      "title": "Beregner for ækvivalente indstillinger | PhotoTools",
-      "description": "Find ækvivalent blænde og brændvidde på tværs af sensorformater for samme dybdeskarphed"
+      "title": "Ækvivalent-beregner | PhotoTools",
+      "description": "Find ækvivalent blænde og brændvidde på tværs af sensorformater, så du får samme dybdeskarphed."
     },
     "exposure-simulator": {
       "title": "Eksponeringstrekantsimulator | PhotoTools",
-      "description": "Interaktiv eksponeringstrekant — se i realtid hvordan blænde, lukkertid og ISO påvirker billedet med live preview."
+      "description": "Interaktiv eksponeringstrekant — se i realtid, hvordan blænde, lukkertid og ISO påvirker billedet, med live preview."
     },
     "star-trail-calculator": {
       "title": "Star Trail Calculator",
-      "description": "Beregn maks eksponeringstid for knivskarpe stjerner med 500-reglen, NPF-reglen og andre regler. Planlæg star trails for ethvert sted."
+      "description": "Beregn den længste eksponeringstid for knivskarpe stjerner med 500-reglen, NPF-reglen og flere. Planlæg star trails, uanset hvor du befinder dig."
     },
     "white-balance-visualizer": {
       "title": "White Balance Visualizer",
-      "description": "Se hvordan hvidbalance og farvetemperatur påvirker dine billeder. Visualisér ændringer fra 2000K til 10000K i realtid."
+      "description": "Se hvordan hvidbalance og farvetemperatur påvirker dine billeder. Følg ændringerne fra 2000K til 10000K i realtid."
     },
     "sensor-size-comparison": {
       "title": "Sensor Size Comparison",
-      "description": "Sammenlign kamerasensorer fra mellemformat til smartphone. Se overlay, side om side og pixeltæthed med rigtige kameramodeller."
+      "description": "Sammenlign kamerasensorer fra mellemformat til smartphone. Se overlay, side om side og pixeltæthed for rigtige kameramodeller."
     },
     "color-scheme-generator": {
       "title": "Color Scheme Generator",
-      "description": "Generér farvepaletter til fotografering med komplementære, analoge, triadiske og tetradiske farveharmonier. Interaktiv farvecirkel med billedfarvevælger."
+      "description": "Lav farvepaletter til dine billeder med komplementære, analoge, triadiske og tetradiske farveharmonier. Interaktiv farvecirkel med pipette til at hente farver fra fotos."
     },
     "frame-studio": {
       "title": "Frame Studio",
-      "description": "Beskær, indram og komponér fotos med gitterguider. 100 % i browseren — dine billeder forlader aldrig din enhed."
+      "description": "Beskær, indram og komponér fotos med kompositionsguider. Alt foregår i browseren — dine billeder forlader aldrig din enhed."
     },
     "exif-viewer": {
       "title": "EXIF Viewer",
-      "description": "Se EXIF-metadata, histogram og preview for ethvert foto. 100 % i browseren — dine billeder forlader aldrig din enhed."
+      "description": "Se EXIF-metadata, histogram og preview for ethvert foto. Alt foregår i browseren — dine billeder forlader aldrig din enhed."
     },
     "hyperfocal-simulator": {
-      "title": "Hyperfokal afstandssimulator | PhotoTools",
-      "description": "Visualisér hyperfokal afstand for enhver linse og sensor. Se præcis hvor du skal fokusere for maksimal skarphed fra forgrund til uendelig."
+      "title": "Hyperfokal simulator | PhotoTools",
+      "description": "Se hyperfokal afstand for enhver linse og sensor. Find præcis hvor du skal stille skarpt for maksimal skarphed fra forgrund til uendelig."
     },
     "shutter-speed-visualizer": {
       "title": "Shutter Speed Visualizer",
-      "description": "Find den laveste lukkertid til skarpe håndholdte billeder. Tager højde for brændvidde, sensorstørrelse og billedstabilisering."
+      "description": "Find den langsomste lukkertid, du kan slippe af sted med håndholdt. Tager højde for brændvidde, sensorstørrelse og billedstabilisering."
     },
     "nd-filter-calculator": {
       "title": "ND Filter Calculator",
-      "description": "Beregn den korrekte lukkertid ved brug af ND-filtre. Understøtter enhver filterstyrke fra ND2 til ND1000000 med hurtigoversigt."
+      "description": "Beregn den korrekte lukkertid, når du bruger ND-filtre. Understøtter alle filterstyrker fra ND2 til ND1000000 med hurtigoversigt."
     },
     "perspective-compression-simulator": {
-      "title": "Perspektivkompressionssimulator | PhotoTools",
-      "description": "Interaktiv 3D-simulator der viser hvordan brændvidde og afstand påvirker perspektivkompression. Se baggrundskompressionen ændre sig i realtid."
+      "title": "Perspektivkompression-simulator | PhotoTools",
+      "description": "Interaktiv 3D-simulator, der viser, hvordan brændvidde og afstand påvirker perspektivkompression. Se baggrundskompressionen ændre sig i realtid."
     },
     "about": {
       "title": "Om",
-      "description": "PhotoTools er en gratis samling af browserbaserede fotografiberegnere, simulatorer og referencer til fotografer på alle niveauer."
+      "description": "PhotoTools er en gratis samling af browserbaserede beregnere, simulatorer og opslagsværker til fotografer på alle niveauer."
     },
     "contact": {
       "title": "Kontakt | PhotoTools",
-      "description": "Kom i kontakt med PhotoTools-teamet — spørgsmål, feedback eller forslag til vores fotografiværktøjer."
+      "description": "Kom i kontakt med PhotoTools — spørgsmål, feedback eller forslag til vores værktøjer."
     },
     "privacy": {
       "title": "Privatlivspolitik | PhotoTools",
@@ -80,11 +80,11 @@
     },
     "terms": {
       "title": "Vilkår for brug | PhotoTools",
-      "description": "Vilkår for brug af PhotoTools — acceptabel brug, immaterielle rettigheder, ansvarsfraskrivelser og begrænsning af ansvar for www.phototools.io."
+      "description": "Vilkår for brug af PhotoTools — acceptabel brug, immaterielle rettigheder, ansvarsfraskrivelser og ansvarsbegrænsning for www.phototools.io."
     },
     "glossary": {
       "title": "Fotografiordliste",
-      "description": "Søgbar ordliste med 50+ fotografibegreber med forklaringer og links til interaktive værktøjer."
+      "description": "Søgbar ordliste med over 50 fotografibegreber, forklaringer og links til interaktive værktøjer."
     }
   }
 }

@@ -1,8 +1,8 @@
 {
   "education": {
     "hyperfocal-simulator": {
-      "beginner": "A hiperfokális távolság a legközelebbi pont, amire fókuszálhatsz úgy, hogy a végtelen is elfogadhatóan éles marad. Ha a hiperfokális távolságra fókuszálsz, a mélységélesség ennek a távolságnak a felétől a végtelenig terjed. A tájfotósok ezt használják, hogy az előtértől a horizontig mindent élesen tartsanak.",
-      "deeper": "A hiperfokális távolság a vékonylencse-egyenletből és a szóráskör (CoC) fogalmából származik. Egyenlő a gyújtótávolság négyzetével osztva az f-szám és a CoC átmérőjének szorzatával: H = f² / (N × c). H/2-től a végtelenig minden elfogadhatóan élesnek számít. A CoC az érzékelőmérettől függ — a kisebb érzékelőkhöz kisebb CoC tartozik, ami ugyanannál a gyújtótávolságnál és rekesznél messzebbre tolja a hiperfokális távolságot. Ezért tűnik úgy, hogy a crop-érzékelős kamerák nagyobb mélységélességet adnak: a CoC-szabvány szigorúbb a képterülethez viszonyítva. A gyakorlatban a nagyon kicsi rekeszek (f/16 és e fölött a legtöbb érzékelőn) diffrakciós lágyítást okoznak, ami kompromisszumot jelent a mélységélesség maximalizálása és a pixelszintű élesség között.",
+      "beginner": "A hiperfokális távolság a legközelebbi pont, amire úgy fókuszálhatsz, hogy a végtelen is elfogadhatóan éles maradjon. Ha erre fókuszálsz, a mélységélesség ennek a távolságnak a felétől a végtelenig terjed. A tájfotósok azért használják, hogy az előtértől a horizontig mindent élesen tartsanak.",
+      "deeper": "A hiperfokális távolság a vékonylencse-egyenletből és a szóráskör (CoC) fogalmából vezethető le. A gyújtótávolság négyzete osztva az f-szám és a CoC átmérőjének szorzatával: H = f² / (N × c). A H/2-től a végtelenig minden elfogadhatóan élesnek számít. A CoC az érzékelőmérettől függ — a kisebb érzékelőkhöz kisebb CoC tartozik, ami ugyanannál a gyújtótávolságnál és rekesznél messzebbre tolja a hiperfokális távolságot. Ezért tűnik úgy, hogy a crop érzékelős kamerák nagyobb mélységélességet adnak: a CoC-szabvány szigorúbb a képterülethez képest. A gyakorlatban a nagyon kicsi rekesz (Full Frame-en tipikusan f/16 fölött) diffrakciós lágyulást okoz, ami kompromisszumot jelent a mélységélesség maximalizálása és a pixelszintű élesség között.",
       "keyFactors": {
         "0": {
           "label": "Gyújtótávolság",
@@ -23,13 +23,13 @@
       },
       "tips": {
         "0": {
-          "text": "Gyors tájmunkához fókuszálj nagyjából a jelenet harmadára — a legtöbb nagylátószögű beállításnál ez jó közelítése a hiperfokális pontnak."
+          "text": "Gyors tájmunkához fókuszálj nagyjából a jelenet harmadolásánál lévő pontra — a legtöbb nagylátószögű beállításnál ez jó közelítése a hiperfokális pontnak."
         },
         "1": {
-          "text": "Ne szűkíts f/16 fölé Full Frame-en, vagy f/11 fölé APS-C-n. A diffrakció visszaveszi azt a mélységélességet, amiért küzdesz."
+          "text": "Ne szűkíts f/16 fölé Full Frame-en, vagy f/11 fölé APS-C-n. A diffrakció visszaveszi azt a mélységélességet, amiért kínlódtál."
         },
         "2": {
-          "text": "Használd az élőkép nagyítást a pontos fókuszbeállításhoz a hiperfokális távolságon, ne hagyatkozz az objektíven lévő távolságskálára, ami a modern autofókuszos objektíveken gyakran pontatlan."
+          "text": "A hiperfokális távolságon nagyított élőképpel állítsd be pontosan a fókuszt, ne az objektíven lévő távolságskálára hagyatkozz — a modern autofókuszos objektíveken gyakran pontatlan."
         }
       },
       "tooltips": {

@@ -1,8 +1,8 @@
 {
   "education": {
     "perspective-compression-simulator": {
-      "beginner": "Perspektiivin pakkautuminen on optinen ilmiö, jossa eri etäisyyksillä olevat kohteet näyttävät olevan lähempänä toisiaan kuin todellisuudessa ovat. Se näkyy yleisimmin, kun käytetään pitkiä teleobjektiiveja (kuten 200 mm tai 400 mm) kaukaa. Toisin kuin yleisesti luullaan, pakkautumista ei aiheuta itse objektiivi, vaan kameran ja näkymän välinen etäisyys.",
-      "deeper": "Pakkautuminen tapahtuu, koska suurilla etäisyyksillä etualan kohteen ja taustan välinen suhteellinen etäisyysero muuttuu pieneksi. Esimerkiksi jos olet 30 metrin päässä kohteestasi ja tausta on vielä 6 metriä kauempana, tausta on vain 20 % kauempana kuin kohde. 1,5 metrin päästä sama 6 metrin ero tekee taustasta 500 % kauempana. Kun siirryt kauas ja käytät teleobjektiivia \"täyttääksesi kehyksen\" kohteella, vähennät suhteellista syvyyttä, jolloin tausta näyttää suuremmalta ja \"pakkautuu\" kohdetta vasten.",
+      "beginner": "Perspektiivin pakkautuminen on optinen ilmiö, jossa eri etäisyyksillä olevat kohteet näyttävät olevan lähempänä toisiaan kuin todellisuudessa ovat. Se näkyy selvimmin, kun kuvataan pitkällä teleobjektiivilla (esim. 200 mm tai 400 mm) kaukaa. Yleisestä luulosta poiketen ilmiötä ei aiheuta itse objektiivi, vaan kameran ja näkymän välinen etäisyys.",
+      "deeper": "Pakkautuminen syntyy siitä, että suurilla etäisyyksillä etualan kohteen ja taustan välinen suhteellinen etäisyysero pienenee. Jos esimerkiksi olet 30 metrin päässä kohteesta ja tausta on vielä 6 metriä kauempana, tausta on vain 20 % kauempana kuin kohde. 1,5 metristä sama 6 metrin ero tekee taustasta jo 500 % kauempaa. Kun peräännyt ja käytät teleobjektiivia, jolla täytät kuvan kohteella, suhteellinen syvyys pienenee — tausta näyttää suuremmalta ja ikään kuin pakkautuu kohdetta vasten.",
       "keyFactors": {
         "0": {
           "label": "Kuvausetäisyys",
@@ -19,19 +19,19 @@
       },
       "tips": {
         "0": {
-          "text": "Saadaksesi vuoret näyttämään massiivisilta kohteen takana, siirry mahdollisimman kauas ja käytä pisintä teleobjektiiviasi. Tämä \"vetää\" taustan lähemmäs etualaa."
+          "text": "Kun haluat vuorien näyttävän massiivisilta kohteen takana, peräänny mahdollisimman kauas ja käytä pisintä telettä, mikä löytyy. Näin tausta \"vedetään\" lähelle etualaa."
         },
         "1": {
-          "text": "Muotokuvauksessa 85 mm:n tai 135 mm:n objektiivia suositaan usein, koska lievä pakkautuminen tuottaa imartelevamman esityksen kasvonpiirteistä verrattuna laajakulmaobjektiiveihin."
+          "text": "Muotokuvauksessa suositaan usein 85 mm:n tai 135 mm:n objektiivia, koska lievä pakkautuminen piirtää kasvonpiirteet imartelevammin kuin laajakulma."
         },
         "2": {
-          "text": "Käytä perspektiivin laajentumista (laajakulma lähellä) korostaaksesi etualan johtolinjoja ja saadaksesi tilan tuntumaan avarammalta ja avoimemmalta."
+          "text": "Käytä perspektiivin laajentumista (laajakulma läheltä), kun haluat korostaa etualan johtolinjoja ja saada tilan tuntumaan avarammalta."
         }
       },
       "tooltips": {
         "focalLength": {
           "term": "Polttoväli",
-          "definition": "Objektiivin suurennusteho. Pidemmät polttovälit (tele) sallivat kuvaamisen kauempaa, mikä on varsinainen syy perspektiivin pakkautumiseen."
+          "definition": "Objektiivin suurennusteho. Pitkä polttoväli (tele) mahdollistaa kuvaamisen kaukaa, mikä on perspektiivin pakkautumisen varsinainen syy."
         },
         "distance": {
           "term": "Kohteen etäisyys",
@@ -39,18 +39,18 @@
         },
         "maintainSize": {
           "term": "Säilytä kohteen koko",
-          "definition": "Säätää kameran etäisyyden automaattisesti polttoväliä muutettaessa, jotta pääkohde pysyy samankokoisena rajauksessa. Demonstroi \"dolly zoom\" -vaikutusta."
+          "definition": "Säätää kameran etäisyyttä automaattisesti polttoväliä muutettaessa, jotta pääkohde pysyy samankokoisena kuvassa. Havainnollistaa dolly zoom -ilmiötä."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Haluat ottaa kuvan ystävästäsi vuoren edessä, ja haluat vuoren näyttävän mahdollisimman suurelta hänen takanaan. Mitä sinun tulisi tehdä?",
-          "hint": "Pakkautuminen johtuu etäisyydestä, ja teleobjektiivit antavat täyttää rajauksen kaukaa.",
-          "successMessage": "Juuri niin! Siirtymällä kauas ja käyttämällä teleobjektiivia pakkaat ystäväsi ja vuoren välisen etäisyyden, jolloin vuori näyttää paljon suuremmalta.",
-          "failureMessage": "Ei aivan. Lähemmäs meneminen laajakulmaobjektiivilla saisi vuoren näyttämään pienemmältä ja kauempana olevalta. Siirry kauemmas ja zoomaa sisään!",
+          "scenario": "Haluat ottaa kuvan ystävästäsi vuoren edessä, ja haluat vuoren näyttävän mahdollisimman suurelta hänen takanaan. Miten toimit?",
+          "hint": "Pakkautuminen johtuu etäisyydestä, ja teleobjektiivilla voit täyttää rajauksen kaukaa.",
+          "successMessage": "Juuri niin! Kun peräännyt ja käytät teleobjektiivia, ystäväsi ja vuoren välinen etäisyys pakkautuu ja vuori näyttää paljon suuremmalta.",
+          "failureMessage": "Ei aivan. Laajakulmalla läheltä kuvattuna vuori näyttäisi pienemmältä ja kauempana olevalta. Peräänny ja zoomaa sisään!",
           "options": {
-            "0": { "label": "Siirry kauemmas ja käytä 200 mm:n objektiivia" },
-            "1": { "label": "Siirry lähemmäs ja käytä 24 mm:n objektiivia" },
+            "0": { "label": "Peräänny ja käytä 200 mm:n objektiivia" },
+            "1": { "label": "Mene lähemmäs ja käytä 24 mm:n objektiivia" },
             "2": { "label": "Pysy paikallasi ja käytä 50 mm:n objektiivia" }
           }
         }

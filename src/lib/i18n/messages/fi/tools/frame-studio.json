@@ -2,7 +2,7 @@
   "toolUI": {
     "frame-studio": {
       "photo": "Kuva",
-      "dropPrompt": "Pudota kuva tai klikkaa selataksesi",
+      "dropPrompt": "Pudota kuva tai selaa klikkaamalla",
       "modeView": "Näytä",
       "modeCrop": "Rajaa",
       "modeFrame": "Kehystä",
@@ -11,9 +11,9 @@
       "deletePhoto": "Poista kuva",
       "resetGrid": "Nollaa ruudukko",
       "export": "Vie",
-      "uploadPrompt": "Lataa kuva aloittaaksesi",
+      "uploadPrompt": "Aloita lataamalla kuva",
       "aspectRatio": "Kuvasuhde",
-      "customRatio": "Mukautettu suhde",
+      "customRatio": "Mukautettu kuvasuhde",
       "placeholderW": "L",
       "placeholderH": "K",
       "set": "Aseta",
@@ -50,7 +50,7 @@
       "textureWood": "Puu",
       "textureMarble": "Marmori",
       "cornerRadius": "Kulmapyöristys:",
-      "gridOverlay": "Ruudukkokerros",
+      "gridOverlay": "Ruudukko kuvan päällä",
       "gridType": "Tyyppi",
       "gridNone": "Ei mitään",
       "gridRuleOfThirds": "3x3",
@@ -68,23 +68,23 @@
       "format": "Muoto:",
       "quality": "Laatu:",
       "qualityMaximum": "Maksimi",
-      "includeGridOverlay": "Sisällytä ruudukkokerros",
-      "downscaleNotice": "Kuvasi ({from}) ylittää selaimen canvas-maksimikoon ja viedään koossa {to}.",
+      "includeGridOverlay": "Sisällytä ruudukko",
+      "downscaleNotice": "Kuvasi ({from}) ylittää selaimen canvas-enimmäiskoon, ja se viedään koossa {to}.",
       "cancel": "Peruuta",
       "exporting": "Viedään...",
       "download": "Lataa",
       "faq": {
         "what-is-rule-of-thirds": {
-          "question": "Mikä kolmanneksen sääntö on valokuvauksessa?",
-          "answer": "Kolmanneksen sääntö jakaa kuvan 3×3-ruudukkoon. Kohteiden asettaminen ruudukon viivoille tai niiden risteyksiin luo dynaamisempia, tasapainoisempia sommitelmia kuin kohteen keskittäminen."
+          "question": "Mikä on kolmanneksen sääntö valokuvauksessa?",
+          "answer": "Kolmanneksen sääntö jakaa kuva-alan 3×3-ruudukkoon. Kun sijoitat kohteet ruudukon viivoille tai niiden risteyskohtiin, syntyy dynaamisempia ja tasapainoisempia sommitelmia kuin keskittämällä kohde."
         },
         "best-aspect-ratio-for-instagram": {
           "question": "Mikä on paras kuvasuhde Instagram-julkaisuihin?",
-          "answer": "Instagram tukee 1:1 (neliö), 4:5 (pysty) ja 1.91:1 (vaaka). 4:5 pystysuhde vie eniten näyttötilaa feedissä ja saa tyypillisesti korkeimman sitoutumisen."
+          "answer": "Instagram tukee suhteita 1:1 (neliö), 4:5 (pysty) ja 1,91:1 (vaaka). 4:5-pystysuhde vie eniten tilaa feedissä ja kerää yleensä eniten reagointeja."
         },
         "how-to-use-golden-ratio": {
-          "question": "Miten käytän kultaista leikkausta kuvan sommittelussa?",
-          "answer": "Kultainen leikkaus (noin 1,618:1) luo spiraalikuvion, joka ohjaa katsojan silmää kuvan läpi. Sijoita pääkohde spiraalin tiukimpaan kohtaan ja anna johtolinjojen seurata käyrää ulospäin."
+          "question": "Miten kultaista leikkausta käytetään sommittelussa?",
+          "answer": "Kultainen leikkaus (noin 1,618:1) muodostaa spiraalikuvion, joka ohjaa katsojan silmää kuvan läpi. Sijoita pääkohde spiraalin tiukimpaan kohtaan ja anna johtolinjojen seurata kaarta ulospäin."
         }
       }
     }

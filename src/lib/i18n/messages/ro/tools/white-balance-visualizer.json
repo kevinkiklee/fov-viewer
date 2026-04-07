@@ -14,15 +14,15 @@
       "faq": {
         "what-is-white-balance": {
           "question": "Ce este balansul de alb în fotografie?",
-          "answer": "Balansul de alb ajustează culorile în fotografia ta astfel încât obiectele care apar albe în realitate să apară albe și în imagine. Sursele de lumină diferite emit temperaturi de culoare diferite, iar balansul de alb compensează aceste variații."
+          "answer": "Balansul de alb ajustează culorile din fotografie astfel încât obiectele care sunt albe în realitate să apară albe și în imagine. Sursele de lumină emit temperaturi de culoare diferite, iar balansul de alb compensează aceste variații."
         },
         "kelvin-vs-presets": {
           "question": "Să folosesc valori Kelvin sau presete de balans de alb?",
-          "answer": "Presetele (Daylight, Cloudy, Tungsten) sunt puncte de plecare convenabile, dar setarea unei valori Kelvin specifice oferă control mai precis. Fotografiază în format RAW pentru a ajusta balansul de alb fără pierderi în post-procesare."
+          "answer": "Presetele (Daylight, Cloudy, Tungsten) sunt puncte de plecare comode, dar o valoare Kelvin setată manual îți oferă un control mai precis. Fotografiază în format RAW ca să poți ajusta balansul de alb fără pierderi în post-procesare."
         },
         "when-to-use-manual-white-balance": {
           "question": "Când să folosesc balansul de alb manual?",
-          "answer": "Folosește balans de alb manual pentru iluminare mixtă (combinând lumină naturală și artificială), setări de studio care cer acuratețe cromatică exactă, fotografie de produs și oricând balansul automat produce rezultate inconsistente într-o serie de cadre."
+          "answer": "Folosește balansul de alb manual când ai iluminare mixtă (lumină naturală și artificială combinate), în studio unde ai nevoie de acuratețe cromatică exactă, la fotografia de produs și ori de câte ori balansul automat îți dă rezultate inconstante de la un cadru la altul."
         }
       }
     }

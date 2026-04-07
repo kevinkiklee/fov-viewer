@@ -1,126 +1,126 @@
 {
   "education": {
     "white-balance-visualizer": {
-      "beginner": "Valkotasapaino säätää kuvasi värejä niin, että valkoiset kohteet todella näyttävät valkoisilta missä tahansa valossa. Eri valonlähteillä on eri värilämpötilat — kynttilä on lämmin ja oranssi, kun taas varjo on kylmä ja sininen. Kamerasi valkotasapainoasetus kompensoi näitä eroja, jotta värit näyttävät luonnollisilta.",
+      "beginner": "Valkotasapaino säätää kuvan värejä niin, että valkoiset kohteet näyttävät oikeasti valkoisilta missä tahansa valaistuksessa. Eri valonlähteillä on eri värilämpötila — kynttilänliekki on lämmin ja oranssi, varjo puolestaan kylmä ja sininen. Kameran valkotasapainoasetus kompensoi näitä eroja, jotta värit näyttävät luonnollisilta.",
       "deeper": {
         "0": {
           "heading": "Värilämpötila",
-          "text": "Värilämpötila mitataan kelvineissä (K) ja vastaa ideaalisen \"mustan kappaleen\" lähettämän valon väriä, kun se on lämmitetty tuohon lämpötilaan. Alemmat arvot (2000–3500 K) tuottavat lämmintä, punaoranssia valoa (hehkulamput, kynttilät), kun taas korkeammat arvot (6500–10000 K) tuottavat kylmää, sinertävää valoa (varjo, pilvinen taivas)."
+          "text": "Värilämpötila ilmoitetaan kelvineinä (K). Se vastaa sitä väriä, jolla ideaalinen musta kappale säteilisi valoa kyseiseen lämpötilaan lämmitettynä. Matalat arvot (2000–3500 K) tuottavat lämmintä, puna-oranssia valoa (hehkulamput, kynttilät), ja korkeat arvot (6500–10000 K) kylmää, sinertävää valoa (varjo, pilvinen taivas)."
         },
         "1": {
           "heading": "Miten valkotasapaino toimii",
-          "text": "Kameran valkotasapainojärjestelmä soveltaa käänteistä värisiirtymää neutralisoidakseen ympäristön värivirheen. Kun asetat valkotasapainon \"Tungstenille\" (~3200 K), kamera lisää sinistä vastapainoiksi hehkulamppujen oranssille vivahteelle. Digitaalivalokuvauksessa valkotasapaino toteutetaan kertoimena punaiselle ja siniselle kanavalle suhteessa vihreään."
+          "text": "Kameran valkotasapainojärjestelmä lisää kuvaan käänteisen värisiirtymän, joka kumoaa ympäristön värivivahteen. Kun asetat valkotasapainon hehkulampulle (~3200 K), kamera lisää kuvaan sinistä kompensoidakseen hehkulamppujen oranssin sävyn. Digitaalisesti valkotasapaino toteutetaan kertomalla punaista ja sinistä kanavaa suhteessa vihreään."
         },
         "2": {
-          "heading": "RAW:n etu",
-          "text": "RAW-muotoinen kuvaaminen säilyttää kaiken väritiedon ja sallii valkotasapainon muuttamisen vapaasti jälkikäsittelyssä ilman laadun menetystä — se on vain metatietomerkintä, joka sovelletaan muunnoksen aikana."
+          "heading": "RAW-muodon etu",
+          "text": "RAW-kuvaus säilyttää kaiken väritiedon ja antaa muuttaa valkotasapainoa vapaasti jälkikäsittelyssä ilman laadun menetystä — se on vain metatietomerkintä, joka sovelletaan muunnosvaiheessa."
         }
       },
       "keyFactors": {
         "0": {
-          "label": "Värilämpötila (Kelvin)",
-          "description": "Valon värin numeerinen mittari. Matala Kelvin = lämmin/oranssi valo. Korkea Kelvin = kylmä/sininen valo. Päivänvalo on noin 5500 K."
+          "label": "Värilämpötila (kelvin)",
+          "description": "Valon värin numeerinen mitta. Matala kelvin = lämmin/oranssi valo. Korkea kelvin = kylmä/sininen valo. Päivänvalo on noin 5500 K."
         },
         "1": {
           "label": "Valonlähde",
-          "description": "Eri lähteet säteilevät eri värilämpötiloja: kynttilät (~1800 K), hehkulamput (~2800 K), loisteputket (~4000 K), keskipäivän aurinko (~5500 K), pilvinen taivas (~6500 K), varjo (~7500 K)."
+          "description": "Eri valonlähteillä on eri värilämpötila: kynttilä (~1800 K), hehkulamppu (~2800 K), loisteputki (~4000 K), keskipäivän aurinko (~5500 K), pilvinen taivas (~6500 K), varjo (~7500 K)."
         },
         "2": {
           "label": "RAW vs. JPEG",
-          "description": "RAW-kuvaaminen antaa muuttaa valkotasapainoa jälkikäsittelyssä ilman laadun menetystä. JPEG polttaa valkotasapainon pysyvästi, joten sen saaminen oikein kamerassa on tärkeämpää."
+          "description": "RAW-kuvaus antaa muuttaa valkotasapainoa jälkikäsittelyssä häviöttömästi. JPEG polttaa valkotasapainon pysyvästi kuvaan, joten sen saaminen oikein jo kameralla on tärkeämpää."
         },
         "3": {
           "label": "Sekoittunut valaistus",
-          "description": "Näkymät, joissa on useita eri lämpöisiä valonlähteitä (esim. ikkunan päivänvalo + hehkulampputasolampun), tekevät mahdottomaksi kaikkien värien täydellisen neutraloinnin samanaikaisesti."
+          "description": "Kun näkymässä on useita eri värilämpöisiä valonlähteitä (esim. ikkunan päivänvaloa ja hehkulamppuja), kaikkia värejä on mahdoton saada kerralla neutraaleiksi."
         }
       },
       "tips": {
         "0": {
-          "text": "Kuvaa aina RAW:lla, jos haluat täyden joustavuuden valkotasapainon säätämiseen myöhemmin. RAW-tiedostot tallentavat käsittelemättömän kennodatan, joten valkotasapainon muutokset ovat häviöttömiä."
+          "text": "Kuvaa aina RAW-muodossa, jos haluat täyden vapauden säätää valkotasapainoa jälkikäteen. RAW-tiedosto sisältää käsittelemättömän kennodatan, joten valkotasapainon muutokset ovat häviöttömiä."
         },
         "1": {
-          "text": "Luovaa efektiä varten kokeile tarkoituksella \"mismatch\"-asetusta. Päivänvalon WB kultaisen hetken aikana tekee auringonlaskusta vielä lämpimämmän, kun taas Tungsten-WB ulkona luo dramaattisen kylmän sinisen ilmeen."
+          "text": "Luovassa käytössä kannattaa kokeilla tarkoituksella \"väärää\" valkotasapainoa. Päivänvalo-WB kultaisen hetken aikaan tekee auringonlaskusta entistä lämpimämmän, ja hehkulamppu-WB ulkona synnyttää dramaattisen kylmän sinisen ilmeen."
         },
         "2": {
-          "text": "Sekoittuneissa valaistustilanteissa (esim. huone valaistu ikkunavalolla ja hehkulampuilla), käytä harmaakorttia mukautetun valkotasapainon asettamiseen tai geeleitä salamassa vastaamaan ympäristön valonlähdettä."
+          "text": "Sekoittuneessa valaistuksessa (esim. huone, jossa on ikkunavaloa ja hehkulamppuja) käytä harmaakorttia mukautetun valkotasapainon asettamiseen, tai geelitä salama vastaamaan ympäristön valonlähdettä."
         }
       },
       "tooltips": {
         "colorTemperature": {
           "term": "Värilämpötila",
-          "definition": "Valon värin mittari kelvineissä (K). Perustuu lämmitetyn mustan kappaleen teoreettiseen väriin. Matalammat arvot ovat lämpimämpiä (oranssi/punainen), korkeammat viileämpiä (sininen)."
+          "definition": "Valon värin mitta kelvineinä (K). Perustuu lämmitetyn mustan kappaleen teoreettiseen väriin. Matala arvo on lämmin (oranssi/punainen), korkea viileä (sininen)."
         },
         "preset": {
           "term": "Valkotasapainon esiasetus",
-          "definition": "Ennalta määritetty valkotasapainoasetus yleiselle valonlähteelle. Esiasetuksia ovat Tungsten (~3200 K), Fluorescent (~4000 K), Daylight (~5500 K), Cloudy (~6500 K) ja Shade (~7500 K)."
+          "definition": "Valmis valkotasapainoasetus yleisille valonlähteille. Esiasetuksia ovat esimerkiksi hehkulamppu (~3200 K), loistevalo (~4000 K), päivänvalo (~5500 K), pilvinen (~6500 K) ja varjo (~7500 K)."
         },
         "rgbValues": {
           "term": "RGB-arvot",
-          "definition": "Punaisen, vihreän ja sinisen kanavan arvot (0–255 kukin), jotka edustavat valon väriä valitussa lämpötilassa. Käytetään visualisoimaan miten valonlähde värjää näkymän."
+          "definition": "Punaisen, vihreän ja sinisen kanavan arvot (kukin 0–255), jotka kuvaavat valon väriä valitussa lämpötilassa. Auttavat havainnollistamaan, miten valonlähde värjää näkymän."
         },
         "hexCode": {
           "term": "Hex-koodi",
-          "definition": "Kuusimerkkinen heksadesimaaliesitys väristä (esim. #FF8C00). Hyödyllinen tarkan värin viittaamiseen suunnitteluohjelmistossa tai web-kehityksessä."
+          "definition": "Kuusimerkkinen heksadesimaaliesitys väristä (esim. #FF8C00). Kätevä tapa viitata tiettyyn väriin suunnitteluohjelmistoissa tai web-kehityksessä."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Sisäkuvasi tavallisten hehkulamppujen alla näyttävät hyvin oransseilta/keltaisilta. Mitä valkotasapainoesiasetusta kannattaa käyttää tämän korjaamiseen?",
-          "hint": "Kodin hehkulamput säteilevät lämmintä, oranssisävyistä valoa noin 2800–3200 K.",
-          "successMessage": "Oikein! Tungsten-esiasetus lisää sinistä vastapainoiksi hehkulamppujen oranssille vivahteelle ja tuo värit takaisin neutraaleiksi.",
-          "failureMessage": "Hehkulamput säteilevät lämmintä oranssia valoa. Tungsten-valkotasapainoesiasetus on suunniteltu nimenomaan neutralisoimaan tämä värivirhe lisäämällä sinistä.",
+          "scenario": "Sisäkuvasi tavallisten hehkulamppujen valossa näyttävät hyvin oransseilta ja keltaisilta. Mikä valkotasapainon esiasetus korjaa tämän parhaiten?",
+          "hint": "Tavalliset hehkulamput säteilevät lämmintä, oranssisävyistä valoa noin 2800–3200 K:ssa.",
+          "successMessage": "Oikein! Hehkulamppu-esiasetus lisää kuvaan sinistä kompensoidakseen hehkulamppujen oranssin sävyn ja palauttaa värit neutraaleiksi.",
+          "failureMessage": "Hehkulamput säteilevät lämmintä oranssia valoa. Hehkulamppu-esiasetus on nimenomaan tehty kumoamaan tämä värivivahde lisäämällä sinistä.",
           "options": {
-            "0": { "label": "Daylight" },
-            "1": { "label": "Tungsten" },
-            "2": { "label": "Shade" },
-            "3": { "label": "Fluorescent" }
+            "0": { "label": "Päivänvalo" },
+            "1": { "label": "Hehkulamppu" },
+            "2": { "label": "Varjo" },
+            "3": { "label": "Loistevalo" }
           }
         },
         "1": {
-          "scenario": "Kuvaat muotokuvia kultaisen hetken aikana ja haluat säilyttää auringonlaskun kauniin lämpimän hehkun. Mitä valkotasapainoasetusta käytät?",
-          "hint": "Jos asetat \"oikean\" WB:n kultaiselle hetkelle, se neutraloisi ne lämpimät sävyt, jotka haluat pitää.",
-          "successMessage": "Oikein! Daylight-esiasetuksen (tai jopa Cloudy/Shade:n) käyttö kultaisen hetken aikana säilyttää ja korostaa lämpimiä sävyjä sen sijaan että neutraloisi ne.",
-          "failureMessage": "Säilyttääksesi kultaisen hetken lämpimän hehkun, käytä WB:tä joka ei kompensoi lämmintä valoa. Daylight tai korkeampi esiasetus säilyttää (ja jopa korostaa) lämpöä.",
+          "scenario": "Kuvaat muotokuvia kultaisen hetken aikaan ja haluat säilyttää auringonlaskun kauniin lämpimän hehkun. Mitä valkotasapainoa käytät?",
+          "hint": "\"Oikea\" valkotasapaino kultaiselle hetkelle neutraloisi juuri ne lämpimät sävyt, jotka haluat säilyttää.",
+          "successMessage": "Oikein! Päivänvalo-esiasetus (tai jopa pilvinen/varjo) kultaisen hetken aikaan säilyttää ja jopa korostaa lämpimiä sävyjä sen sijaan, että poistaisi ne.",
+          "failureMessage": "Kun haluat säilyttää kultaisen hetken lämpimän hehkun, käytä valkotasapainoa, joka ei kompensoi lämmintä valoa. Päivänvalo tai sitä korkeampi esiasetus säilyttää lämmön (ja jopa korostaa sitä).",
           "options": {
-            "0": { "label": "Auto White Balance" },
-            "1": { "label": "Tungsten (neutralisoidaksesi lämmön)" },
-            "2": { "label": "Daylight (säilyttääksesi lämmön)" },
-            "3": { "label": "Flash" }
+            "0": { "label": "Automaattivalkotasapaino" },
+            "1": { "label": "Hehkulamppu (neutraloi lämmön)" },
+            "2": { "label": "Päivänvalo (säilyttää lämmön)" },
+            "3": { "label": "Salama" }
           }
         },
         "2": {
-          "scenario": "Säädät valkotasapainoa manuaalisesti kelvineissä. Kuvasi näyttää liian siniseltä/kylmältä. Pitäisikö sinun nostaa vai laskea Kelvin-arvoa lämmittääksesi sitä?",
-          "hint": "Kelvin-WB-asetus kertoo kameralle, mikä värilämpötila valonlähde on. Korkeamman Kelvin-arvon asettaminen saa kameran lisäämään lämpöä.",
-          "successMessage": "Aivan! Kelvin-arvon nostaminen kertoo kameralle, että valo on kylmempää kuin se todellisuudessa on, joten kamera kompensoi lisäämällä lämpöä. Aseta korkeampi K lämmittääksesi kylmältä näyttävää kuvaa.",
-          "failureMessage": "Kun nostat Kelvin-arvoa, kamera lisää lämpöä kompensoinniksi. Joten kylmän/sinisen kuvan korjaamiseen nosta Kelvin-lukua.",
+          "scenario": "Säädät valkotasapainoa manuaalisesti kelvineissä. Kuva näyttää liian siniseltä ja kylmältä. Pitääkö Kelvin-arvoa nostaa vai laskea, jotta kuva lämpenisi?",
+          "hint": "Valkotasapainon Kelvin-arvo kertoo kameralle, minkä värilämpötilan valonlähteestä on kyse. Korkea arvo saa kameran lisäämään lämpöä.",
+          "successMessage": "Aivan! Kun nostat Kelvin-arvoa, kerrot kameralle, että valo on todellisuutta kylmempää — ja kamera kompensoi lisäämällä lämpöä. Nosta siis Kelvin-arvoa, kun haluat kylmältä näyttävän kuvan lämpimämmäksi.",
+          "failureMessage": "Kun nostat Kelvin-arvoa, kamera kompensoi lisäämällä lämpöä. Nosta siis Kelvin-arvoa korjataksesi kylmän, sinisen kuvan.",
           "options": {
-            "0": { "label": "Nosta Kelviniä (esim. 5500K -> 7500K)" },
-            "1": { "label": "Laske Kelviniä (esim. 5500K -> 3200K)" },
+            "0": { "label": "Nosta Kelviniä (esim. 5500 K → 7500 K)" },
+            "1": { "label": "Laske Kelviniä (esim. 5500 K → 3200 K)" },
             "2": { "label": "Kelvinin suunta ei vaikuta lämpöön" }
           }
         },
         "3": {
-          "scenario": "Kuvaat ravintolan sisätilaa, jossa on lämpimiä hehkulampunriippuvalaisimia yläpuolella ja kylmää sinistä päivänvaloa isoista ikkunoista. Ikkunoiden lähellä olevat ihmiset näyttävät sinisiltä, ja lamppujen alla olevat ihmiset oransseilta. Mikä on paras lähestymistapa?",
-          "hint": "Mikään yksittäinen valkotasapainoasetus ei voi korjata kahta hyvin erilaista värilämpötilaa samanaikaisesti.",
-          "successMessage": "Juuri niin! Salaman tai lisävalojen geeleitys vastaamaan yhtä hallitsevaa lähdettä tai kompromissi-WB:n valitseminen ja valikoiva korjaus jälkikäsittelyssä ovat parhaat lähestymistavat sekoittuneeseen valaistukseen.",
-          "failureMessage": "Sekoittunut valaistus on yksi vaikeimmista WB-haasteista. Yksi WB ei voi korjata molempia lähteitä samanaikaisesti. Sinun on joko sovitettava lähteet geeleillä tai korjattava se valikoivasti jälkikäsittelyssä.",
+          "scenario": "Kuvaat ravintolan sisätilaa, jossa yläpuolella roikkuu lämpimiä hehkulampunpallovalaisimia ja suurista ikkunoista tulee kylmää sinistä päivänvaloa. Ikkunoiden lähellä olevat ihmiset näyttävät sinisiltä ja lamppujen alla olevat oransseilta. Mikä on paras lähestymistapa?",
+          "hint": "Yksikään yksittäinen valkotasapainoasetus ei pysty korjaamaan kahta hyvin erilaista värilämpötilaa samanaikaisesti.",
+          "successMessage": "Juuri niin! Salaman tai lisävalojen geelittäminen yhden hallitsevan valonlähteen mukaan, tai kompromissi-WB ja alueittainen korjaus jälkikäsittelyssä, ovat parhaat ratkaisut sekoittuneeseen valaistukseen.",
+          "failureMessage": "Sekoittunut valaistus on yksi hankalimmista valkotasapainotilanteista. Yksi WB ei voi korjata molempia lähteitä samanaikaisesti — sinun on joko sovitettava valot geeleillä tai korjattava värit alueittain jälkikäsittelyssä.",
           "options": {
-            "0": { "label": "Aseta WB:ksi Tungsten — se korjaa kaiken" },
-            "1": { "label": "Aseta WB:ksi Daylight — ikkunat ovat tärkeämpiä" },
-            "2": { "label": "Käytä Auto WB:tä ja kuvaa RAW:na, korjaa sitten kukin alue erikseen jälkikäsittelyssä" },
-            "3": { "label": "Nosta ISO:a tehdäksesi väreistä tarkempia" }
+            "0": { "label": "Aseta WB:ksi hehkulamppu — se korjaa kaiken" },
+            "1": { "label": "Aseta WB:ksi päivänvalo — ikkunat ovat tärkeämpiä" },
+            "2": { "label": "Käytä automaatti-WB:tä ja kuvaa RAW-muodossa, korjaa kukin alue erikseen jälkikäsittelyssä" },
+            "3": { "label": "Nosta ISO:a, niin värit tulevat tarkemmiksi" }
           }
         },
         "4": {
-          "scenario": "Kuvaat tunnelmallista, elokuvallista yökohtausta kaupungissa ja haluat tarkoituksellisen kylmän sinisen sävyn. Katuvalot ovat natriumhöyryvaloja (~2200 K). Mikä Kelvin-valkotasapainoasetus antaisi voimakkaimman sinisen siirtymän?",
-          "hint": "WB:n asettaminen paljon matalammaksi kuin todellinen valonlähteen lämpötila siirtää kuvaa kohti sinistä.",
-          "successMessage": "Oikein! WB:n asettaminen 7500 K:hon (Shade-esiasetus) kertoo kameralle, että valonlähde on hyvin kylmä/sininen — joten se kompensoi lisäämällä raskasta lämpimyyskorjausta. Mutta koska todelliset natriumvalot ovat vain 2200 K (hyvin lämpimiä), tämä ylikorjaus heiluu neutraalin ohi voimakkaaseen siniseen värivirheeseen. Mitä korkeammaksi asetat WB Kelvinin yli todellisen valon lämpötilan, sitä voimakkaampi on sinisen siirtymä.",
-          "failureMessage": "WB Kelvin -arvon asettaminen paljon korkeammaksi kuin todellinen valonlähde saa kameran ylikorjaamaan kohti sinistä. Kun natriumvalot ovat 2200 K, WB:n asettaminen 7500 K+ luo voimakkaimman kylmän sinisen ilmeen.",
+          "scenario": "Kuvaat tunnelmallista, elokuvallista yöaihetta kaupungissa ja haluat tarkoituksella kylmän sinisen sävyn. Katuvalot ovat natriumhöyryvaloja (~2200 K). Mikä valkotasapainon Kelvin-arvo antaa voimakkaimman sinisen siirtymän?",
+          "hint": "Kun WB asetetaan paljon todellista valonlähteen lämpötilaa korkeammaksi, kuva siirtyy kohti sinistä.",
+          "successMessage": "Oikein! Kun asetat WB:n 7500 K:iin (varjo-esiasetus), kerrot kameralle, että valonlähde on hyvin kylmä/sininen — joten se kompensoi lisäämällä paljon lämpöä. Koska todelliset natriumvalot ovat vain 2200 K (hyvin lämpimiä), tämä ylikorjaus menee neutraalin ohi ja antaa voimakkaan sinisen sävyn. Mitä korkeammaksi WB asetetaan todellisen valon yli, sitä voimakkaampi on sinisen siirtymä.",
+          "failureMessage": "Kun WB asetetaan selvästi korkeammaksi kuin todellinen valonlähteen lämpötila, kamera ylikorjaa kohti sinistä. Kun natriumvalot ovat 2200 K, WB:n asettaminen 7500 K:hon tai sitä korkeammaksi luo voimakkaimman kylmän sinisen ilmeen.",
           "options": {
-            "0": { "label": "2200K (vastaa natriumvaloja)" },
-            "1": { "label": "3200K (Tungsten-esiasetus)" },
-            "2": { "label": "7500K tai korkeampi (Shade-esiasetus)" },
-            "3": { "label": "5500K (Daylight-esiasetus)" }
+            "0": { "label": "2200 K (vastaa natriumvaloja)" },
+            "1": { "label": "3200 K (hehkulamppu-esiasetus)" },
+            "2": { "label": "7500 K tai korkeampi (varjo-esiasetus)" },
+            "3": { "label": "5500 K (päivänvalo-esiasetus)" }
           }
         }
       }

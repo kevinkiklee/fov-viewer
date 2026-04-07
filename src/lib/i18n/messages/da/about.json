@@ -5,23 +5,23 @@
     "sections": {
       "whatIs": {
         "title": "Hvad er PhotoTools?",
-        "body": "PhotoTools er en gratis samling af interaktive fotografiberegnere, simulatorer og referenceværktøjer. Uanset om du lige er ved at lære eksponeringstrekanten eller skal udregne hyperfokal afstand før en landskabstur, giver PhotoTools dig visuelle værktøjer i hånden til at forstå fotografiet bedre."
+        "body": "PhotoTools er en gratis samling af interaktive beregnere, simulatorer og opslagsværker til fotografer. Uanset om du er i gang med at lære eksponeringstrekanten eller skal regne hyperfokal afstand ud før en landskabstur, giver PhotoTools dig visuelle værktøjer lige ved hånden — så du får en bedre forståelse af fotografiet."
       },
       "whoIsItFor": {
         "title": "Hvem er det til?",
-        "body": "Fotografer på alle niveauer — fra begyndere, der udforsker hvordan blænden påvirker dybdeskarpheden, til erfarne fotografer, der planlægger en star trail-session. Hvert værktøj har et lærepanel med forklaringer, nøglefaktorer, proftips og interaktive udfordringer, så du kan teste din viden."
+        "body": "Fotografer på alle niveauer — fra begyndere, der vil forstå, hvordan blænden påvirker dybdeskarpheden, til erfarne fotografer, der planlægger en star trail-session. Hvert værktøj har et lærepanel med forklaringer, nøglefaktorer, proftips og interaktive udfordringer, du kan teste din viden med."
       },
       "privacyFirst": {
         "title": "Privatliv først",
-        "body": "Alle beregninger og simulationer kører udelukkende i din browser. Dine billeder forlader aldrig din enhed — EXIF-vieweren behandler for eksempel billeder 100 % lokalt. Du behøver ikke oprette en konto, og der indsamles ingen personlige data ud over anonym analytics."
+        "body": "Alle beregninger og simulationer kører udelukkende i din browser. Dine billeder forlader aldrig din enhed — EXIF-vieweren behandler for eksempel billeder 100 % lokalt. Du skal ikke oprette nogen konto, og der indsamles ingen personlige data ud over anonym analytics."
       },
       "builtBy": {
         "title": "Lavet af en fotograf",
-        "body": "PhotoTools er bygget og vedligeholdt af en fotograf og softwareudvikler, der ønskede bedre visuelle værktøjer til at forstå den tekniske side af fotografi. Værktøjerne bygger på rigtig optik og fysik — ikke tilnærmelser — så du kan stole på resultaterne i marken."
+        "body": "PhotoTools er bygget og vedligeholdt af en fotograf og softwareudvikler, der gerne ville have bedre visuelle værktøjer til at forstå den tekniske side af fotografiet. Værktøjerne bygger på rigtig optik og fysik — ikke tilnærmelser — så du kan stole på resultaterne, når du står ude i marken."
       },
       "getInTouch": {
         "title": "Kom i kontakt",
-        "body": "Har du et forslag, en fejlrapport eller en idé til et nyt værktøj? Skriv via <contactLink>kontaktsiden</contactLink>."
+        "body": "Har du et forslag, en fejlrapport eller en idé til et nyt værktøj? Skriv til os via <contactLink>kontaktsiden</contactLink>."
       }
     }
   }

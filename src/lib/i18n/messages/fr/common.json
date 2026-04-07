@@ -83,8 +83,8 @@
       "uploadPhoto": "Importer une photo"
     },
     "controls": {
-      "focalLength": "Longueur focale",
-      "aperture": "Aperture",
+      "focalLength": "Focale",
+      "aperture": "Ouverture",
       "distance": "Distance",
       "clickToEnterValue": "Clique pour saisir une valeur",
       "decrease": "Diminuer",
@@ -102,7 +102,7 @@
     },
     "notFound": {
       "title": "Page introuvable",
-      "message": "La page que vous recherchez n'existe pas ou a été déplacée.",
+      "message": "La page que tu cherches n'existe pas ou a été déplacée.",
       "backHome": "Retour à l'accueil",
       "popularTools": "Outils populaires"
     },

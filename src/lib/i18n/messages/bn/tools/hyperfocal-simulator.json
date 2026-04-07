@@ -1,21 +1,21 @@
 {
   "toolUI": {
     "hyperfocal-simulator": {
-      "settings": "Settings",
-      "focalLength": "Focal Length",
-      "aperture": "Aperture",
-      "focusDistance": "Focus Distance:",
-      "sensor": "Sensor",
-      "scene": "Scene:",
-      "sceneLandscape": "Landscape",
-      "sceneStreet": "Street",
-      "hyperfocalDistance": "Hyperfocal Distance",
-      "nearLimit": "Near Limit",
-      "farLimit": "Far Limit",
-      "focusDistanceResult": "Focus Distance",
-      "hyperfocalReference": "Hyperfocal Reference",
-      "sharpToInfinity": "Sharp to infinity",
-      "nearLimitBadge": "Near limit:"
+      "settings": "সেটিংস",
+      "focalLength": "ফোকাল দৈর্ঘ্য",
+      "aperture": "অ্যাপারচার",
+      "focusDistance": "ফোকাস দূরত্ব:",
+      "sensor": "সেন্সর",
+      "scene": "দৃশ্য:",
+      "sceneLandscape": "ল্যান্ডস্কেপ",
+      "sceneStreet": "রাস্তা",
+      "hyperfocalDistance": "হাইপারফোকাল দূরত্ব",
+      "nearLimit": "নিকট সীমা",
+      "farLimit": "দূর সীমা",
+      "focusDistanceResult": "ফোকাস দূরত্ব",
+      "hyperfocalReference": "হাইপারফোকাল রেফারেন্স",
+      "sharpToInfinity": "অসীম পর্যন্ত শার্প",
+      "nearLimitBadge": "নিকট সীমা:"
     }
   }
 }

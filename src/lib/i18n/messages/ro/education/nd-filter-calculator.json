@@ -1,12 +1,12 @@
 {
   "education": {
     "nd-filter-calculator": {
-      "beginner": "Un filtru ND (densitate neutră) este ca o pereche de ochelari de soare pentru obiectivul camerei tale. Reduce cantitatea de lumină care intră în obiectiv fără să schimbe culorile, permițându-ți să folosești timpi de expunere mai lenți sau diafragme mai largi în condiții de lumină puternică. Așa creează fotografii cascade mătăsoase, oceane netede sau nori estompați pe timp de zi.",
-      "deeper": "Filtrele ND sunt clasificate după câte stopuri de lumină blochează. Un filtru ND2 (1 stop) înjumătățește lumina, un ND8 (3 stopuri) o reduce la 1/8, iar un ND1000 (10 stopuri) o reduce de 1024 de ori. Convențiile de denumire pot fi confuze: \"ND8\" înseamnă că factorul filtrului este 8 (3 stopuri), în timp ce \"ND 0.9\" folosește notația de densitate optică (fiecare 0.3 = 1 stop, deci 0.9 = 3 stopuri). Timpul de expunere rezultat este pur și simplu timpul de bază înmulțit cu factorul filtrului. De exemplu, dacă expunerea ta nefiltrată este 1/125s și adaugi un ND de 10 stopuri (ND1000), noul timp de expunere este 1/125 x 1024 = aproximativ 8 secunde. Stivuirea mai multor filtre ND adună valorile lor de stopuri, dar poate introduce vignetare și tentă de culoare, mai ales cu obiective largi.",
+      "beginner": "Un filtru ND (de densitate neutră) este ca o pereche de ochelari de soare pentru obiectivul tău. Reduce cantitatea de lumină care intră în obiectiv fără să afecteze culorile și îți permite să folosești timpi de expunere mai lungi sau diafragme mai largi în lumină puternică. Așa se fac fotografiile cu cascade mătăsoase, cu mări netede sau cu nori estompați pe timp de zi.",
+      "deeper": "Filtrele ND sunt clasificate după câte stopuri de lumină blochează. Un filtru ND2 (1 stop) înjumătățește lumina, un ND8 (3 stopuri) o reduce la 1/8, iar un ND1000 (10 stopuri) o reduce de 1024 de ori. Convențiile de denumire pot fi derutante: „ND8” înseamnă că factorul filtrului este 8 (3 stopuri), în timp ce „ND 0.9” folosește notația de densitate optică (fiecare 0.3 = 1 stop, deci 0.9 = 3 stopuri). Timpul de expunere rezultat se obține pur și simplu înmulțind timpul de bază cu factorul filtrului. De exemplu, dacă expunerea ta fără filtru este 1/125s și adaugi un ND de 10 stopuri (ND1000), noul timp de expunere este 1/125 × 1024 = aproximativ 8 secunde. Stivuirea mai multor filtre ND adună valorile lor de stopuri, dar poate introduce vignetare și tentă de culoare, mai ales cu obiective largi.",
       "keyFactors": {
         "0": {
           "label": "Timp de expunere de bază",
-          "description": "Timpul corect de expunere fără niciun filtru. Măsoară scena mai întâi, apoi calculează expunerea filtrată pornind de aici."
+          "description": "Timpul corect de expunere fără niciun filtru. Măsoară mai întâi scena, apoi calculează expunerea filtrată pornind de aici."
         },
         "1": {
           "label": "Densitatea filtrului",
@@ -14,43 +14,43 @@
         },
         "2": {
           "label": "Stivuirea filtrelor",
-          "description": "Poți combina filtre adunând valorile lor în stopuri. Un stack de 3 stopuri + 6 stopuri dă 9 stopuri de reducere. Atenție la vignetare pe obiectivele largi."
+          "description": "Poți combina filtre adunând valorile lor în stopuri. Un stack de 3 + 6 stopuri dă 9 stopuri de reducere. Atenție la vignetare pe obiectivele largi."
         }
       },
       "tips": {
         "0": {
-          "text": "Compune și focalizează înainte să atașezi un filtru ND puternic. Cu 10 stopuri de reducere a luminii, vizorul și autofocus-ul vor avea dificultăți în întuneric."
+          "text": "Compune și focalizează înainte să atașezi un filtru ND puternic. Cu 10 stopuri de reducere a luminii, vizorul și autofocus-ul se vor chinui în întuneric."
         },
         "1": {
-          "text": "Pentru fotografii de mare, expuneri de 1-2 secunde transformă ondulațiile mici în textură, păstrând structura valurilor. Expunerile de 30 de secunde sau mai mult creează apă complet plată, cețoasă."
+          "text": "Pentru fotografiile de mare, expunerile de 1-2 secunde transformă ondulațiile mici în textură, păstrând structura valurilor. Expunerile de 30 de secunde sau mai lungi dau o apă complet plată, cețoasă."
         },
         "2": {
-          "text": "Filtrele ND ieftine adaugă adesea o tentă de culoare (de obicei magenta sau maro). Investește în sticlă de calitate de la branduri de încredere sau învață să corectezi tenta în post-procesare folosind o referință de card gri."
+          "text": "Filtrele ND ieftine adaugă adesea o tentă de culoare (de obicei magenta sau maro). Investește în sticlă de calitate de la branduri de încredere sau învață să corectezi tenta în post-procesare, folosind o referință de card gri."
         }
       },
       "tooltips": {
         "baseShutterSpeed": {
           "term": "Timp de expunere de bază",
-          "definition": "Timpul de expunere pentru o expunere corectă fără niciun filtru ND atașat. Este punctul tău de plecare — calculatorul îl înmulțește cu factorul filtrului."
+          "definition": "Timpul pentru o expunere corectă fără niciun filtru ND atașat. Este punctul tău de plecare — calculatorul îl înmulțește cu factorul filtrului."
         },
         "ndFilter": {
           "term": "Filtru ND",
-          "definition": "Un filtru de densitate neutră care reduce uniform transmisia luminii. Clasificat după factorul filtrului (ND2, ND4, ND8...) sau stopuri de reducere a luminii. ND2 = 1 stop, ND4 = 2 stopuri, ND8 = 3 stopuri, și așa mai departe."
+          "definition": "Un filtru de densitate neutră care reduce uniform transmisia luminii. Clasificat după factorul filtrului (ND2, ND4, ND8...) sau după stopurile de reducere. ND2 = 1 stop, ND4 = 2 stopuri, ND8 = 3 stopuri și așa mai departe."
         },
         "resultingShutterSpeed": {
           "term": "Timp de expunere rezultat",
-          "definition": "Noul timp de expunere după ce iei în calcul filtrul ND. Calculat prin înmulțirea timpului de bază cu factorul filtrului (de exemplu 1/125s x 1024 pentru un ND de 10 stopuri)."
+          "definition": "Noul timp de expunere după ce iei în calcul filtrul ND. Se calculează înmulțind timpul de bază cu factorul filtrului (de exemplu, 1/125s × 1024 pentru un ND de 10 stopuri)."
         },
         "stopsAdded": {
           "term": "Stopuri adăugate",
-          "definition": "Numărul de stopuri de reducere a luminii pe care le oferă filtrul ND. Fiecare stop dublează timpul de expunere necesar. 10 stopuri înseamnă că expunerea este de 1024 de ori mai lungă."
+          "definition": "Numărul de stopuri de reducere a luminii pe care îl oferă filtrul ND. Fiecare stop dublează timpul de expunere necesar. 10 stopuri înseamnă o expunere de 1024 de ori mai lungă."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Ești la o cascadă și camera ta indică o expunere corectă la 1/125s fără niciun filtru. Atașezi un filtru ND de 3 stopuri (ND8). Care este noul timp de expunere?",
-          "hint": "Fiecare stop dublează timpul de expunere. 3 stopuri înseamnă 2 x 2 x 2 = de 8 ori mai lung.",
-          "successMessage": "Corect! 1/125s x 8 = 1/15s. E un start bun pentru blur de mișcare în apă, deși probabil vei vrea un filtru și mai puternic pentru rezultate cu adevărat mătăsoase.",
+          "scenario": "Ești la o cascadă și aparatul tău indică expunerea corectă la 1/125s, fără niciun filtru. Atașezi un filtru ND de 3 stopuri (ND8). Care este noul timp de expunere?",
+          "hint": "Fiecare stop dublează timpul de expunere. 3 stopuri înseamnă 2 × 2 × 2 = de 8 ori mai lung.",
+          "successMessage": "Corect! 1/125s × 8 = 1/15s. E un început bun pentru blur de mișcare în apă, deși probabil vei vrea un filtru și mai puternic ca să obții rezultate cu adevărat mătăsoase.",
           "failureMessage": "Un filtru ND de 3 stopuri înmulțește timpul de expunere cu 8 (2^3 = 8). Deci 1/125s devine 1/15s.",
           "options": {
             "0": { "label": "1/60s" },
@@ -60,9 +60,9 @@
           }
         },
         "1": {
-          "scenario": "Vrei să creezi o expunere de 30 de secunde cu nori care se mișcă pe cer. Fără filtru, expunerea corectă este 1/30s. Câte stopuri de filtrare ND îți trebuie?",
-          "hint": "Trebuie să treci de la 1/30s la 30s — adică 1/30 x factor = 30, deci factor = 900. Găsește cea mai apropiată putere a lui 2.",
-          "successMessage": "Corect! De la 1/30s la 30s este aproximativ o creștere de 1000x, adică aproximativ 10 stopuri. Un ND1000 (10 stopuri) te duce la aproximativ 33 de secunde.",
+          "scenario": "Vrei să faci o expunere de 30 de secunde cu nori care se mișcă pe cer. Fără filtru, expunerea corectă este 1/30s. De câte stopuri de filtrare ND ai nevoie?",
+          "hint": "Trebuie să treci de la 1/30s la 30s — deci 1/30 × factor = 30, adică factor = 900. Găsește cea mai apropiată putere a lui 2.",
+          "successMessage": "Corect! De la 1/30s la 30s e o creștere de aproximativ 1000×, adică aproape 10 stopuri. Un ND1000 (10 stopuri) te duce la aproximativ 33 de secunde.",
           "failureMessage": "Raportul este 30 / (1/30) = 900. Cea mai apropiată putere a lui 2 este 1024 (2^10), deci ai nevoie de un filtru ND de 10 stopuri.",
           "options": {
             "0": { "label": "6 stopuri (ND64)" },
@@ -72,10 +72,10 @@
           }
         },
         "2": {
-          "scenario": "Fotografiezi o scenă de mare la apus. Lumina scade și expunerea de bază (fără filtru) este acum 1/4s la f/11, ISO 100. Vrei expuneri de 2 minute pentru apă ultra-netedă. Ce densitate ND îți trebuie?",
-          "hint": "De la 1/4s la 120s e un factor de 480. Găsește valoarea de stop cea mai apropiată.",
-          "successMessage": "Un ND de 9 stopuri ți-ar da 1/4 x 512 = 128 secunde, adică puțin peste 2 minute. Perfect pentru acel aspect cețos, eteric, de mare la apus.",
-          "failureMessage": "De la 0.25s la 120s este o creștere de aproximativ 480x. 2^9 = 512, care este aproape de 480, deci un filtru de 9 stopuri te duce la aproximativ 128 de secunde.",
+          "scenario": "Fotografiezi o scenă de mare la apus. Lumina scade, iar expunerea de bază (fără filtru) e acum 1/4s la f/11, ISO 100. Vrei expuneri de 2 minute pentru o apă ultra-netedă. De ce densitate ND ai nevoie?",
+          "hint": "De la 1/4s la 120s e un factor de 480. Găsește valoarea cea mai apropiată, exprimată în stopuri.",
+          "successMessage": "Un ND de 9 stopuri îți dă 1/4 × 512 = 128 secunde, adică puțin peste 2 minute. Perfect pentru acel aspect cețos, eteric, de mare la apus.",
+          "failureMessage": "De la 0,25s la 120s este o creștere de aproximativ 480×. 2^9 = 512, aproape de 480, deci un filtru de 9 stopuri te duce la aproximativ 128 de secunde.",
           "options": {
             "0": { "label": "6 stopuri" },
             "1": { "label": "9 stopuri" },
@@ -84,10 +84,10 @@
           }
         },
         "3": {
-          "scenario": "Vrei să faci un portret la f/1.4 în soare puternic (expunere de bază: f/1.4, 1/8000s, ISO 100). Timpul maxim de expunere al camerei tale este 1/8000s. Poți fotografia la f/1.4 fără un filtru ND?",
-          "hint": "Verifică dacă 1/8000s la f/1.4 și ISO 100 este realizabil sau dacă scena este în continuare supraexpusă.",
-          "successMessage": "Corect! Într-o zi foarte strălucitoare (EV 15+), f/1.4 la ISO 100 are adesea nevoie de timpi mai rapizi decât 1/8000s, ceea ce majoritatea camerelor nu pot atinge. Un filtru ND de 2-3 stopuri îți permite să fotografiezi cu diafragma complet deschisă fără supraexpunere.",
-          "failureMessage": "În soare puternic, f/1.4 la ISO 100 poate cere timpi dincolo de limita de 1/8000s a camerei. Un filtru ND este esențial pentru fotografierea cu diafragmă largă în condiții luminoase.",
+          "scenario": "Vrei să faci un portret la f/1.4 în soare puternic (expunere de bază: f/1.4, 1/8000s, ISO 100). Timpul minim de expunere al aparatului tău este 1/8000s. Poți fotografia la f/1.4 fără un filtru ND?",
+          "hint": "Verifică dacă 1/8000s la f/1.4 și ISO 100 e realizabil sau dacă scena e în continuare supraexpusă.",
+          "successMessage": "Corect! Într-o zi foarte luminoasă (EV 15+), f/1.4 la ISO 100 are adesea nevoie de timpi mai rapizi de 1/8000s, iar majoritatea aparatelor nu pot atinge asta. Un filtru ND de 2-3 stopuri îți permite să fotografiezi cu diafragma complet deschisă, fără supraexpunere.",
+          "failureMessage": "În soare puternic, f/1.4 la ISO 100 poate cere timpi dincolo de limita de 1/8000s a aparatului. Un filtru ND e esențial pentru fotografierea cu diafragmă largă în condiții luminoase.",
           "options": {
             "0": { "label": "Da — 1/8000s e suficient de rapid" },
             "1": { "label": "Nu — probabil ai nevoie de un filtru ND de 2-3 stopuri" },
@@ -95,12 +95,12 @@
           }
         },
         "4": {
-          "scenario": "Ai un filtru ND de 6 stopuri și unul de 3 stopuri. Le stivuiești pe obiectiv cu o expunere de bază de 1/250s. Care este timpul de expunere rezultat și la ce ar trebui să fii atent cu acest setup?",
+          "scenario": "Ai un filtru ND de 6 stopuri și unul de 3 stopuri. Le stivuiești pe obiectiv, cu o expunere de bază de 1/250s. Care este timpul de expunere rezultat și la ce trebuie să fii atent la acest setup?",
           "hint": "Adună valorile stopurilor, apoi calculează noua expunere. Gândește-te la efectele optice secundare ale stivuirii.",
-          "successMessage": "Corect! 6 + 3 = 9 stopuri. 1/250 x 512 = aproximativ 2 secunde. Atenție la vignetare (colțuri întunecate) pe obiectivele largi și la posibile tente de culoare de la sticla ieftină.",
-          "failureMessage": "Stivuirea adună valorile stopurilor: 6 + 3 = 9 stopuri total. 2^9 = 512, deci 1/250 x 512 = ~2 secunde. Stivuirea poate cauza și vignetare și tente de culoare.",
+          "successMessage": "Corect! 6 + 3 = 9 stopuri. 1/250 × 512 = aproximativ 2 secunde. Atenție la vignetare (colțuri întunecate) pe obiectivele largi și la posibile tente de culoare de la sticla ieftină.",
+          "failureMessage": "Stivuirea adună valorile stopurilor: 6 + 3 = 9 stopuri în total. 2^9 = 512, deci 1/250 × 512 = ~2 secunde. Stivuirea poate aduce și vignetare și tente de culoare.",
           "options": {
-            "0": { "label": "~0.5s, atenție la flare" },
+            "0": { "label": "~0,5s, atenție la flare" },
             "1": { "label": "~2s, atenție la vignetare și tente de culoare" },
             "2": { "label": "~4s, atenție la supraîncălzirea senzorului" },
             "3": { "label": "~8s, fără griji la stivuire" }

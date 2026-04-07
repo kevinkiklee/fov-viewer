@@ -1,62 +1,62 @@
 {
   "education": {
     "fov-simulator": {
-      "beginner": "Kuvakulma (FOV) kertoo, kuinka paljon näkymästä kamerasi tallentaa. Laajakulmaobjektiivi (kuten 24 mm) näkee laajan näkymän, kun taas teleobjektiivi (kuten 200 mm) rajaa pienen viipaleen. Tämä simulaattori antaa sinun vertailla jopa neljää objektiivia eri kennoilla oikeiden näkymien päällä, jotta näet tarkalleen, mitä kukin yhdistelmä tallentaa.",
+      "beginner": "Kuvakulma (FOV) kertoo, kuinka paljon näkymästä kamera tallentaa. Laajakulmaobjektiivi (kuten 24 mm) näkee laajan alueen, kun taas teleobjektiivi (kuten 200 mm) rajaa kapean viipaleen. Tällä simulaattorilla voit vertailla jopa neljää objektiivia eri kennoilla oikeiden näkymien päällä ja nähdä tarkalleen, mitä kukin yhdistelmä tallentaa.",
       "deeper": {
         "0": {
           "heading": "Kuvakulman kaava",
-          "text": "Kuvakulman määrittää kaksi tekijää: polttoväli ja kennokoko. Vaakasuora kuvakulma lasketaan kaavalla 2 × arctan(sensorWidth / (2 × focalLength)). Lyhyempi polttoväli tai suurempi kenno tuottaa laajemman kuvakulman."
+          "text": "Kuvakulmaan vaikuttavat kaksi asiaa: polttoväli ja kennokoko. Vaakasuora kuvakulma lasketaan kaavalla 2 × arctan(kennon leveys / (2 × polttoväli)). Lyhyempi polttoväli tai suurempi kenno antaa laajemman kuvakulman."
         },
         "1": {
           "heading": "Kerroin ja ekvivalentti polttoväli",
-          "text": "Kennoja vaihdettaessa \"ekvivalentin polttovälin\" käsite pätee: 50 mm:n objektiivi APS-C-kennolla (1,5× kerroin) rajaa kuten 75 mm täyskennolla. Pienempi kenno tallentaa kuvapiirin kapeamman keskiosan, käytännössä rajaten sisäänpäin."
+          "text": "Kennojen välillä vertailtaessa puhutaan usein ekvivalentista polttovälistä: 50 mm APS-C-kennolla (kerroin 1,5×) rajaa samoin kuin 75 mm täyskennolla. Pienempi kenno käyttää vain kuvapiirin kapeampaa keskiosaa, mikä vastaa kuvan rajaamista sisäänpäin."
         },
         "2": {
-          "heading": "Perspektiivi vs. polttoväli",
-          "text": "Perspektiivi — lähellä ja kaukana olevien kohteiden tilasuhde — riippuu vain kameran paikasta, ei polttovälistä. 50 mm ja 200 mm samasta paikasta otettuna näyttävät identtisen perspektiivin, vain eri rajauksilla. Lähempänä laajalla objektiivilla korostaa syvyyttä; taaksepäin astuminen teleobjektiivilla pakkaa sitä."
+          "heading": "Perspektiivi ja polttoväli",
+          "text": "Perspektiivi — lähellä ja kaukana olevien kohteiden kokosuhde — riippuu vain kameran paikasta, ei polttovälistä. 50 mm ja 200 mm samalta paikalta kuvattuina näyttävät saman perspektiivin, vain eri rajauksella. Kun menet lähemmäs laajakulmalla, syvyys korostuu; kun peräännyt ja käytät teleä, syvyys litistyy."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Polttoväli",
-          "description": "Ensisijainen hallinta kuvakulmaan. Lyhyemmät polttovälit näkevät enemmän näkymästä; pidemmät näkevät vähemmän mutta suurentavat kaukaisia kohteita."
+          "description": "Tärkein kuvakulmaan vaikuttava tekijä. Lyhyt polttoväli näkee enemmän, pitkä polttoväli näkee vähemmän mutta suurentaa kaukaisia kohteita."
         },
         "1": {
           "label": "Kennokoko",
-          "description": "Pienempi kenno rajaa kuvapiirin keskelle ja kaventaa kuvakulmaa (kertoimen vaikutus)."
+          "description": "Pienempi kenno rajaa kuvapiirin keskelle ja kaventaa kuvakulmaa — tämä on kertoimen vaikutus."
         },
         "2": {
           "label": "Suunta",
-          "description": "Pystysuunta näyttää korkeamman, kapeamman viipaleen. Vaakasuunta näyttää leveämmän, perinteisemmän näkymän."
+          "description": "Pystysuunnassa näet korkean ja kapean viipaleen, vaakasuunnassa leveämmän ja tutumman näkymän."
         },
         "3": {
           "label": "Näkymän konteksti",
-          "description": "Eri näkymät (kaupunkimaisemat, sisätilat, luonto) auttavat sinua ymmärtämään, miltä kuvakulman muutokset tuntuvat eri todellisissa tilanteissa."
+          "description": "Erilaiset näkymät (kaupunki, sisätila, luonto) auttavat hahmottamaan, miltä kuvakulman muutokset tuntuvat oikeissa kuvaustilanteissa."
         }
       },
       "tips": {
         "0": {
-          "text": "Lisää kaksi objektiivia ja vaihtele kennon ja täyskennon välillä toisella niistä nähdäksesi heti kertoimen vaikutuksen. 35 mm APS-C:llä rajaa lähes identtisesti kuin 50 mm täyskennolla."
+          "text": "Lisää kaksi objektiivia ja vaihtele toisessa kennoa APS-C:n ja täyskennon välillä — näet heti, miten kerroin vaikuttaa. 35 mm APS-C:llä rajaa lähes samoin kuin 50 mm täyskennolla."
         },
         "1": {
-          "text": "Käytä näkymävalitsinta tarkistaaksesi kuvauspeiton erityistilanteille — kaupunkinäkymä paljastaa, onko laajakulmasi tarpeeksi laaja tallentamaan rakennuksen toiselta puolelta katua."
+          "text": "Valitse näkymäksi esimerkiksi kaupunkimaisema, niin voit tarkistaa objektiivisi peiton juuri kyseiseen tilanteeseen. Näet heti, onko laajakulmasi tarpeeksi laaja rakennuksen kuvaamiseen kadun toiselta puolelta."
         },
         "2": {
-          "text": "Kun suunnittelet objektiivin ostoa, lisää nykyinen objektiivisi Lens A:ksi ja harkitsemasi objektiivi Lens B:ksi. Päällekkäisnäkymä näyttää tarkalleen, kuinka paljon enemmän tai vähemmän näkisit."
+          "text": "Kun mietit uutta objektiivihankintaa, lisää nykyinen objektiivi Lens A:ksi ja harkittava objektiivi Lens B:ksi. Päällekkäisvertailu näyttää tarkalleen, kuinka paljon enemmän tai vähemmän näkisit."
         }
       },
       "tooltips": {
         "Focal Length": {
           "term": "Polttoväli",
-          "definition": "Etäisyys (mm) linssin optisesta keskipisteestä kennolle, kun tarkennus on äärettömyydessä. Lyhyempi = laajempi kuvakulma."
+          "definition": "Etäisyys (mm) objektiivin optisesta keskipisteestä kennoon, kun tarkennus on äärettömässä. Lyhyempi polttoväli = laajempi kuvakulma."
         },
         "Sensor": {
           "term": "Kenno",
-          "definition": "Tämän objektiivin kennomuoto. Eri kennokoot rajaavat kuvapiirin eri tavoin, muuttaen tehollisen kuvakulman."
+          "definition": "Tähän objektiiviin liitetyn kennon formaatti. Eri kennokoot rajaavat kuvapiirin eri tavoin ja muuttavat tehollista kuvakulmaa."
         },
         "Scene": {
           "term": "Näkymä",
-          "definition": "Taustakuvan viite. Valitse näkymä, joka vastaa suunnittelemaasi valokuvauksen tyyppiä arvioidaksesi objektiivin peiton paremmin."
+          "definition": "Taustakuvana käytetty vertailunäkymä. Valitse näkymä, joka vastaa suunnittelemaasi kuvaustyyliä, niin hahmotat objektiivin peiton paremmin."
         },
         "Orientation": {
           "term": "Suunta",
@@ -66,9 +66,9 @@
       "challenges": {
         "0": {
           "scenario": "Haluat tallentaa laajan näkymän kaupungin siluetista. Mikä polttoväli antaa laajemman kuvakulman?",
-          "hint": "Pienemmät polttoväliluvut tarkoittavat laajempaa näkymää.",
+          "hint": "Pieni polttoväli tarkoittaa laajempaa kuvakulmaa.",
           "successMessage": "Oikein! 24 mm:n objektiivi näkee paljon enemmän näkymästä kuin 70 mm. Laajakulmaobjektiiveilla on lyhyet polttovälit.",
-          "failureMessage": "Lyhyemmät polttovälit antavat laajemmat kuvakulmat. 24 mm on laajakulmaobjektiivi, joka tallentaa paljon enemmän siluetista kuin 70 mm.",
+          "failureMessage": "Lyhyempi polttoväli antaa laajemman kuvakulman. 24 mm on laajakulmaobjektiivi ja tallentaa siluetista paljon enemmän kuin 70 mm.",
           "options": {
             "0": { "label": "24 mm" },
             "1": { "label": "70 mm" },
@@ -76,10 +76,10 @@
           }
         },
         "1": {
-          "scenario": "Aseta Lens A:ksi 50 mm täyskennolla. Minkä tyyppisen kuvakulman tämä \"nifty fifty\" antaa?",
-          "hint": "50 mm täyskennolla on nimeltään \"normaali\" objektiivi, koska se lähentelee ihmisnäköä.",
-          "successMessage": "Aivan! 50 mm täyskennolla on klassinen \"normaali\" objektiivi — sen noin 46 asteen kuvakulma lähentelee sitä, mihin ihmissilmä luontaisesti tarkentaa.",
-          "failureMessage": "50 mm täyskennolla pidetään \"normaalina\" objektiivina, koska sen kuvakulma (~46 astetta) vastaa tarkasti mukavaa ihmisnäköä.",
+          "scenario": "Aseta Lens A:ksi 50 mm täyskennolla. Minkätyyppisen kuvakulman tämä \"nifty fifty\" antaa?",
+          "hint": "50 mm täyskennolla kutsutaan normaaliobjektiiviksi, koska se vastaa suunnilleen ihmissilmän näkemää.",
+          "successMessage": "Aivan! 50 mm täyskennolla on klassinen normaaliobjektiivi — sen noin 46 asteen kuvakulma vastaa aluetta, johon ihmissilmä luontaisesti tarkentaa.",
+          "failureMessage": "50 mm täyskennolla on niin sanottu normaaliobjektiivi, koska sen kuvakulma (noin 46 astetta) vastaa ihmisen luonnollista näkökenttää.",
           "options": {
             "0": { "label": "Ultralaajakulma" },
             "1": { "label": "Normaali / standardi" },
@@ -87,35 +87,35 @@
           }
         },
         "2": {
-          "scenario": "Lisää kaksi objektiivia: Lens A on 35 mm APS-C:llä (Nikon/Sony) ja Lens B on 50 mm täyskennolla. Vertaa kahta kuvakulmaesitystä. Mitä huomaat?",
+          "scenario": "Lisää kaksi objektiivia: Lens A on 35 mm APS-C:llä (Nikon/Sony) ja Lens B on 50 mm täyskennolla. Vertaile molempien kuvakulmia. Mitä huomaat?",
           "hint": "35 mm kerrottuna APS-C:n kertoimella 1,5 on...",
-          "successMessage": "Juuri niin! 35 mm APS-C:llä (1,5x kerroin) antaa ekvivalentin kuvakulman 52,5 mm:lle täyskennolla — lähes identtinen 50 mm FF:n kanssa. Päällekkäisalueet ovat melkein samankokoisia.",
-          "failureMessage": "35 mm × 1,5 kerroin = 52,5 mm ekvivalentti. Tämä on lähes identtinen 50 mm:n kanssa täyskennolla, minkä vuoksi päällekkäisalueet ovat lähes samat.",
+          "successMessage": "Juuri niin! 35 mm APS-C:llä (kerroin 1,5×) vastaa kuvakulmaltaan 52,5 mm:ä täyskennolla — eli käytännössä samaa kuin 50 mm FF:llä. Päällekkäiset alueet ovat lähes samankokoisia.",
+          "failureMessage": "35 mm × 1,5 kerroin = 52,5 mm ekvivalentti. Tämä vastaa lähes 50 mm:ä täyskennolla, minkä vuoksi päällekkäiset alueet ovat lähes samat.",
           "options": {
-            "0": { "label": "Niillä on lähes identtiset kuvakulmat" },
+            "0": { "label": "Kuvakulmat ovat lähes samat" },
             "1": { "label": "APS-C-objektiivi näyttää paljon laajemman näkymän" },
-            "2": { "label": "Täyskennoinen objektiivi näyttää paljon laajemman näkymän" }
+            "2": { "label": "Täyskenno-objektiivi näyttää paljon laajemman näkymän" }
           }
         },
         "3": {
-          "scenario": "Kuvaat pientä huoneen sisätilaa. Sinulla on 24 mm:n objektiivi. Näetkö enemmän huoneesta täyskennolla vai APS-C:llä?",
-          "hint": "Pienempi kenno tallentaa kapeamman keskiosan objektiivin kuvapiiristä.",
-          "successMessage": "Oikein! Täyskenno näkee enemmän, koska suurempi kenno tallentaa laajemman osan 24 mm:n objektiivin kuvapiiristä. APS-C:llä sama 24 mm rajaa kuin ~36 mm.",
-          "failureMessage": "Täyskenno tallentaa enemmän näkymästä. Suurempi kenno käyttää enemmän objektiivin kuvapiiristä, antaen laajemman tehollisen kuvakulman.",
+          "scenario": "Kuvaat pientä huonetta sisällä. Sinulla on 24 mm:n objektiivi. Näetkö huoneesta enemmän täyskennolla vai APS-C:llä?",
+          "hint": "Pienempi kenno käyttää vain kuvapiirin kapeampaa keskiosaa.",
+          "successMessage": "Oikein! Täyskenno näkee enemmän, koska suurempi kenno hyödyntää laajemman osan 24 mm:n objektiivin kuvapiiristä. APS-C:llä sama 24 mm rajaa kuin noin 36 mm.",
+          "failureMessage": "Täyskenno näkee enemmän. Suurempi kenno käyttää objektiivin kuvapiiristä isomman osan, jolloin tehollinen kuvakulma on laajempi.",
           "options": {
-            "0": { "label": "Täyskenno — suurempi kenno näkee enemmän" },
+            "0": { "label": "Täyskenno — isompi kenno näkee enemmän" },
             "1": { "label": "APS-C — rajaava kenno näkee enemmän" },
-            "2": { "label": "Molemmat näkevät saman — polttoväli on mikä merkitsee" }
+            "2": { "label": "Molemmat näkevät saman — vain polttoväli ratkaisee" }
           }
         },
         "4": {
-          "scenario": "Villieläinkuvaaja käyttää 200 mm:n objektiivia Micro Four Thirdsillä. Minkä täyskennoekvivalentin polttovälin tämä tuottaa, ja mikä on kompromissi verrattuna oikean 400 mm:n käyttöön täyskennolla?",
-          "hint": "M43:lla on 2x kerroin. Mieti syväterävyys- ja kennokokoeroja.",
-          "successMessage": "Erinomaista! 200 mm M43:lla (2x kerroin) antaa 400 mm -ekvivalentin kuvakulman. Kompromissi: vaikka rajaus vastaa 400 mm:a täyskennolla, syväterävyys vastaa 200 mm:n objektiivia (syvempi syväterävyys), ja pienempi kenno kerää vähemmän kokonaisvaloa, mikä tarkoittaa huonompaa kohinasuorituskykyä korkealla ISO:lla. Etuna on paljon pienempi, kevyempi ja halvempi objektiivi.",
-          "failureMessage": "200 mm × 2,0 kerroin = 400 mm ekvivalentti kuvakulma. Mutta ei identtinen 400 mm:n kanssa täyskennolla: saat enemmän syväterävyyttä (todellisen 200 mm:n mukaan), vähemmän valonkeruuta (pienempi kenno) ja enemmän kohinaa korkealla ISO:lla. Etuna on huomattavasti pienempi ja kevyempi kalusto.",
+          "scenario": "Villieläinkuvaaja käyttää 200 mm:n objektiivia Micro Four Thirds -kameralla. Mitä täyskennoekvivalenttia tämä vastaa, ja mikä on kompromissi oikeaan 400 mm:n objektiiviin täyskennolla verrattuna?",
+          "hint": "M43:lla kerroin on 2×. Mieti myös syväterävyys- ja kennokokoeroja.",
+          "successMessage": "Erinomaista! 200 mm M43:lla (kerroin 2×) vastaa kuvakulmaltaan 400 mm:ä täyskennolla. Kompromissi: vaikka rajaus vastaa 400 mm:ä, syväterävyys on edelleen sama kuin 200 mm:llä (eli syvempi), ja pienempi kenno kerää vähemmän valoa, mikä näkyy heikompana kohinankäyttäytymisenä korkealla ISO:lla. Etuna on selvästi pienempi, kevyempi ja edullisempi kalusto.",
+          "failureMessage": "200 mm × 2,0 = 400 mm ekvivalentti kuvakulma. Se ei kuitenkaan vastaa täysin 400 mm:ä täyskennolla: syväterävyys on suurempi (kuten 200 mm:llä), kenno kerää vähemmän valoa ja kohinaa tulee enemmän korkealla ISO:lla. Etuna on huomattavasti pienempi ja kevyempi kalusto.",
           "options": {
-            "0": { "label": "400 mm -ekvivalentti — sama kuvakulma mutta syvempi syväterävyys, enemmän kohinaa, pienempi/kevyempi kalusto" },
-            "1": { "label": "400 mm -ekvivalentti — identtinen kaikin puolin 400 mm:n kanssa täyskennolla" },
+            "0": { "label": "400 mm -ekvivalentti — sama kuvakulma, mutta syvempi syväterävyys, enemmän kohinaa ja pienempi/kevyempi kalusto" },
+            "1": { "label": "400 mm -ekvivalentti — täysin sama kuin 400 mm täyskennolla" },
             "2": { "label": "200 mm -ekvivalentti — kerroin ei vaikuta kuvakulmaan" }
           }
         }

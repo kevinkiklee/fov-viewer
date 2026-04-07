@@ -1,8 +1,8 @@
 {
   "education": {
     "perspective-compression-simulator": {
-      "beginner": "Compresia de perspectivă este un efect optic prin care obiectele aflate la distanțe diferite par mai apropiate unele de altele decât sunt în realitate. Este cel mai des întâlnită când folosești teleobiective lungi (precum 200mm sau 400mm) de la o distanță mare. Contrar credinței populare, nu obiectivul în sine cauzează compresia, ci distanța dintre cameră și scenă.",
-      "deeper": "Compresia apare pentru că, la distanțe mari, diferența relativă de distanță dintre subiectul din prim-plan și obiectele din fundal devine mică. De exemplu, dacă ești la 30 de metri de subiect, iar fundalul este la alți 6 metri în spatele lui, fundalul este cu doar 20% mai departe decât subiectul. De la 1.5 metri distanță, aceeași diferență de 6 metri face fundalul să fie cu 400% mai departe. Îndepărtându-te mult și folosind un teleobiectiv ca să \"umpli cadrul\" cu subiectul, reduci adâncimea relativă, făcând fundalul să pară mai mare și \"comprimat\" în spatele subiectului.",
+      "beginner": "Compresia de perspectivă este un efect optic prin care obiectele aflate la distanțe diferite par mai apropiate unele de altele decât sunt în realitate. E cel mai des întâlnită când folosești teleobiective lungi (precum 200mm sau 400mm) de la o distanță mare. Contrar credinței populare, nu obiectivul în sine cauzează compresia, ci distanța dintre aparat și scenă.",
+      "deeper": "Compresia apare pentru că, la distanțe mari, diferența relativă de distanță dintre subiectul din prim-plan și obiectele din fundal devine mică. De exemplu, dacă ești la 30 de metri de subiect, iar fundalul este la încă 6 metri în spatele lui, fundalul e cu doar 20% mai departe decât subiectul. De la 1,5 metri distanță, aceeași diferență de 6 metri face fundalul să fie cu 400% mai departe. Îndepărtându-te mult și folosind un teleobiectiv ca să „umpli cadrul” cu subiectul, reduci adâncimea relativă și faci fundalul să pară mai mare și „comprimat” în spatele subiectului.",
       "keyFactors": {
         "0": {
           "label": "Distanța de fotografiere",
@@ -10,48 +10,48 @@
         },
         "1": {
           "label": "Distanță focală",
-          "description": "Teleobiectivele măresc imaginea, permițându-ți să umpli cadrul cu subiectul de la o distanță la care compresia este vizibilă. Obiectivele largi te obligă să fii aproape, ceea ce extinde adâncimea percepută."
+          "description": "Teleobiectivele măresc imaginea și îți permit să umpli cadrul cu subiectul de la o distanță la care compresia se vede clar. Obiectivele largi te obligă să fii aproape, ceea ce extinde adâncimea percepută."
         },
         "2": {
           "label": "Adâncime relativă",
-          "description": "Compresia este cel mai evidentă când distanța dintre subiect și fundal este mică în comparație cu distanța dintre cameră și subiect."
+          "description": "Compresia e cel mai evidentă atunci când distanța dintre subiect și fundal e mică în comparație cu distanța dintre aparat și subiect."
         }
       },
       "tips": {
         "0": {
-          "text": "Ca să faci munții să pară impunători în spatele unui subiect, retrage-te cât mai mult posibil și folosește cel mai lung teleobiectiv. Asta \"trage\" fundalul mai aproape de prim-plan."
+          "text": "Ca să faci munții să pară impunători în spatele unui subiect, retrage-te cât mai mult posibil și folosește cel mai lung teleobiectiv. Asta „trage” fundalul mai aproape de prim-plan."
         },
         "1": {
-          "text": "În fotografia de portret, un obiectiv de 85mm sau 135mm este adesea preferat pentru că ușoara compresie produce o reprezentare mai măgulitoare a trăsăturilor feței, comparativ cu obiectivele largi."
+          "text": "În fotografia de portret, un 85mm sau un 135mm e adesea preferat pentru că ușoara compresie redă trăsăturile feței mai măgulitor decât un obiectiv larg."
         },
         "2": {
-          "text": "Folosește expansiunea perspectivei (unghi larg de aproape) ca să accentuezi liniile de ghidaj ale prim-planului și să faci un spațiu să pară mai amplu și mai deschis."
+          "text": "Folosește expansiunea perspectivei (unghi larg, de aproape) ca să accentuezi liniile de ghidaj din prim-plan și să faci un spațiu să pară mai amplu și mai deschis."
         }
       },
       "tooltips": {
         "focalLength": {
           "term": "Distanță focală",
-          "definition": "Puterea de mărire a obiectivului. Distanțele focale mai lungi (tele) îți permit să fotografiezi de mai departe, ceea ce de fapt cauzează compresia de perspectivă."
+          "definition": "Puterea de mărire a obiectivului. Distanțele focale mai lungi (tele) îți permit să fotografiezi de la distanțe mai mari, iar distanța e cea care produce, de fapt, compresia de perspectivă."
         },
         "distance": {
-          "term": "Distanța față de subiect",
-          "definition": "Distanța dintre cameră și subiectul principal. Creșterea acestei distanțe este cauza fizică a compresiei de perspectivă."
+          "term": "Distanța până la subiect",
+          "definition": "Distanța dintre aparat și subiectul principal. Creșterea acestei distanțe e cauza fizică a compresiei de perspectivă."
         },
         "maintainSize": {
           "term": "Menține mărimea subiectului",
-          "definition": "Ajustează automat distanța camerei când schimbi distanța focală, pentru a menține subiectul principal la aceeași mărime în cadru. Asta demonstrează efectul de \"Dolly Zoom\"."
+          "definition": "Ajustează automat distanța aparatului când schimbi distanța focală, astfel încât subiectul principal să rămână la aceeași mărime în cadru. Așa se demonstrează efectul „Dolly Zoom”."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Vrei să fotografiezi un prieten în fața unui munte și vrei ca muntele să pară cât mai mare în spatele lui. Ce ar trebui să faci?",
-          "hint": "Compresia este cauzată de distanță, iar teleobiectivele îți permit să umpli cadrul de departe.",
-          "successMessage": "Exact! Îndepărtându-te mult și folosind un teleobiectiv, comprimi distanța dintre prietenul tău și munte, făcând muntele să pară mult mai mare.",
-          "failureMessage": "Nu chiar. Apropierea cu un obiectiv larg ar face muntele să pară mai mic și mai îndepărtat. Retrage-te și mărește!",
+          "scenario": "Vrei să-l fotografiezi pe un prieten în fața unui munte și vrei ca muntele să pară cât mai mare în spatele lui. Ce ar trebui să faci?",
+          "hint": "Compresia e dată de distanță, iar teleobiectivele îți permit să umpli cadrul de departe.",
+          "successMessage": "Exact! Retrăgându-te mult și folosind un teleobiectiv, comprimi distanța dintre prietenul tău și munte, iar muntele pare mult mai mare.",
+          "failureMessage": "Nu chiar. Dacă te apropii cu un obiectiv larg, muntele va părea mai mic și mai îndepărtat. Retrage-te și folosește un tele!",
           "options": {
-            "0": { "label": "Retrage-te și folosește un obiectiv de 200mm" },
-            "1": { "label": "Apropie-te și folosește un obiectiv de 24mm" },
-            "2": { "label": "Rămâi pe loc și folosește un obiectiv de 50mm" }
+            "0": { "label": "Retrage-te și folosește un 200mm" },
+            "1": { "label": "Apropie-te și folosește un 24mm" },
+            "2": { "label": "Rămâi pe loc și folosește un 50mm" }
           }
         }
       }

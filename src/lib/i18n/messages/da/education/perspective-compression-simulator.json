@@ -1,8 +1,8 @@
 {
   "education": {
     "perspective-compression-simulator": {
-      "beginner": "Perspektivkompression er en optisk effekt, hvor objekter i forskellige afstande virker tættere på hinanden, end de faktisk er. Den ses oftest med lange teleobjektiver (som 200mm eller 400mm) fra en stor afstand. Modsat hvad mange tror, er det ikke selve linsen, der skaber kompressionen, men afstanden mellem kameraet og motivet.",
-      "deeper": "Kompression opstår, fordi den relative afstandsforskel mellem forgrundsmotivet og baggrundsobjekterne bliver lille ved store afstande. Står du f.eks. 100 fod fra motivet, og baggrunden er 20 fod længere bagved, er baggrunden kun 20 % længere væk end motivet. Fra 5 fods afstand gør samme 20 fods forskel baggrunden 500 % længere væk. Ved at gå langt væk og bruge et teleobjektiv til at \"fylde billedet\" med motivet, reducerer du den relative dybde, så baggrunden virker større og \"komprimeret\" mod motivet.",
+      "beginner": "Perspektivkompression er en optisk effekt, hvor objekter i forskellige afstande virker tættere på hinanden, end de i virkeligheden er. Den ses oftest med lange teleobjektiver (som 200mm eller 400mm) skudt fra stor afstand. Modsat hvad mange tror, er det ikke selve linsen, der skaber kompressionen — det er afstanden mellem kameraet og motivet.",
+      "deeper": "Kompression opstår, fordi den relative afstandsforskel mellem forgrundsmotivet og baggrundsobjekterne bliver lille på store afstande. Står du f.eks. 30 meter fra motivet, og baggrunden er 6 meter længere bagved, er baggrunden kun 20 % længere væk end motivet. Fra 1,5 meters afstand gør de samme 6 meters forskel baggrunden 500 % længere væk. Ved at gå langt væk og bruge et teleobjektiv til at \"fylde billedet\" med motivet reducerer du den relative dybde, så baggrunden virker større og \"komprimeret\" mod motivet.",
       "keyFactors": {
         "0": {
           "label": "Optageafstand",
@@ -10,7 +10,7 @@
         },
         "1": {
           "label": "Brændvidde",
-          "description": "Teleobjektiver forstørrer billedet, så du kan fylde udsnittet med motivet på en afstand, hvor kompressionen er synlig. Vidvinkellinser kræver, at du går tæt på, hvilket udvider den opfattede dybde."
+          "description": "Teleobjektiver forstørrer billedet, så du kan fylde udsnittet med motivet på en afstand, hvor kompressionen er synlig. Vidvinkellinser kræver, at du går tæt på, og det udvider den opfattede dybde."
         },
         "2": {
           "label": "Relativ dybde",
@@ -19,19 +19,19 @@
       },
       "tips": {
         "0": {
-          "text": "For at få bjerge til at se massive ud bag et motiv: gå så langt tilbage som muligt og brug din længste tele. Det \"trækker\" baggrunden tættere på forgrunden."
+          "text": "Vil du have bjerge til at se massive ud bag et motiv, så gå så langt tilbage som muligt, og brug din længste tele. Det \"trækker\" baggrunden tættere på forgrunden."
         },
         "1": {
-          "text": "I portrætfotografi foretrækkes ofte et 85mm eller 135mm, fordi den lette kompression gengiver ansigtstræk mere flatterende end vidvinkel."
+          "text": "I portrætfotografi er et 85mm eller 135mm ofte foretrukket, fordi den lette kompression gengiver ansigtstræk mere flatterende end vidvinkel."
         },
         "2": {
-          "text": "Brug det modsatte — perspektivudvidelse (vidvinkel tæt på) — for at fremhæve ledelinjer i forgrunden og få et rum til at virke større og mere åbent."
+          "text": "Brug den modsatte effekt — perspektivudvidelse (vidvinkel tæt på) — for at fremhæve ledelinjer i forgrunden og få et rum til at virke større og mere åbent."
         }
       },
       "tooltips": {
         "focalLength": {
           "term": "Brændvidde",
-          "definition": "Linsens forstørrelsesgrad. Længere brændvidder (tele) lader dig skyde fra større afstand, hvilket er det, der reelt skaber perspektivkompression."
+          "definition": "Linsens forstørrelsesgrad. Længere brændvidder (tele) lader dig skyde fra større afstand, og det er netop det, der skaber perspektivkompression."
         },
         "distance": {
           "term": "Motivafstand",
@@ -39,15 +39,15 @@
         },
         "maintainSize": {
           "term": "Behold motivstørrelse",
-          "definition": "Justerer automatisk kameraets afstand, når brændvidden ændres, så hovedmotivet bliver samme størrelse i billedet. Viser \"Dolly Zoom\"-effekten."
+          "definition": "Justerer automatisk kameraets afstand, når brændvidden ændres, så hovedmotivet bevarer samme størrelse i billedet. Viser \"dolly zoom\"-effekten."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Du vil tage et billede af en ven foran et bjerg, og du vil have bjerget til at se så stort ud bag vedkommende som muligt. Hvad gør du?",
+          "scenario": "Du vil tage et billede af en ven foran et bjerg, og du vil have bjerget til at se så stort ud bag din ven som muligt. Hvad gør du?",
           "hint": "Kompression skabes af afstand, og tele lader dig fylde udsnittet langvejs fra.",
-          "successMessage": "Præcis! Ved at gå langt væk og bruge en tele komprimerer du afstanden mellem din ven og bjerget, så bjerget fremstår meget større.",
-          "failureMessage": "Ikke helt. At gå tættere på med vidvinkel ville få bjerget til at virke mindre og længere væk. Træd tilbage og zoom ind!",
+          "successMessage": "Præcis! Ved at gå langt væk og bruge tele komprimerer du afstanden mellem din ven og bjerget, så bjerget fremstår meget større.",
+          "failureMessage": "Ikke helt. At gå tættere på med vidvinkel ville få bjerget til at virke mindre og længere væk. Træd tilbage, og zoom ind!",
           "options": {
             "0": { "label": "Gå tilbage og brug et 200mm" },
             "1": { "label": "Gå tættere på og brug et 24mm" },

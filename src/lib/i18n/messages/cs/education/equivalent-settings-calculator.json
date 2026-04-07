@@ -1,7 +1,7 @@
 {
   "education": {
     "equivalent-settings-calculator": {
-      "beginner": "Různé velikosti snímačů dávají při stejné ohniskové vzdálenosti a cloně jinou hloubku ostrosti a jiný zorný úhel. Ekvivalentní nastavení ti pomůže najít kombinaci objektivu a clony na druhém fotoaparátu, která reprodukuje stejný výřez i rozmazání pozadí. Je to nutnost, když porovnáváš výbavu napříč formáty nebo přecházíš mezi systémy.",
+      "beginner": "Různé velikosti snímačů dávají při stejné ohniskové vzdálenosti a cloně jinou hloubku ostrosti a jiný zorný úhel. Ekvivalentní nastavení ti pomůže najít kombinaci objektivu a clony na druhém fotoaparátu, která reprodukuje stejný výřez i rozmazání pozadí. Bez toho se neobejdeš, když porovnáváš výbavu napříč formáty nebo přecházíš mezi systémy.",
       "deeper": {
         "0": {
           "heading": "Crop faktor",

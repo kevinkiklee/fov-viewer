@@ -1,12 +1,12 @@
 {
   "education": {
     "nd-filter-calculator": {
-      "beginner": "Et ND-filter (nøytralt gråfilter) er som solbriller for kameraobjektivet. Det reduserer lysmengden inn i objektivet uten å endre fargene, slik at du kan bruke langsommere lukkertider eller større blenderåpninger i sterkt lys. Dette er slik fotografer lager silkemyke fossefall, glatt hav eller uskarpe skyer midt på dagen.",
-      "deeper": "ND-filtre klassifiseres etter hvor mange blendertrinn lys de blokkerer. Et ND2-filter (1 trinn) halverer lyset, ND8 (3 trinn) reduserer til 1/8, og ND1000 (10 trinn) reduserer lys med en faktor på 1024. Navnekonvensjonene kan være forvirrende: «ND8» betyr at filterfaktoren er 8 (3 trinn), mens «ND 0.9» bruker optisk tetthetsnotasjon (hver 0,3 = 1 trinn, så 0,9 = 3 trinn). Den resulterende lukkertiden er rett og slett grunntiden multiplisert med filterfaktoren. Hvis eksponeringen uten filter er 1/125 s og du legger på et 10-trinns ND (ND1000), blir den nye lukkertiden 1/125 × 1024 = omtrent 8 sekunder. Å stable flere ND-filtre legger sammen trinnene, men kan introdusere vignettering og fargestikk, spesielt på vidvinkel.",
+      "beginner": "Et ND-filter (nøytralt gråfilter) er som solbriller for kameraobjektivet. Det reduserer lysmengden inn i objektivet uten å endre fargene, slik at du kan bruke lengre lukkertider eller større blenderåpninger i sterkt lys. Det er slik fotografer lager silkemyke fossefall, glatt hav eller uskarpe skyer midt på dagen.",
+      "deeper": "ND-filtre klassifiseres etter hvor mange blendertrinn lys de blokkerer. Et ND2-filter (1 trinn) halverer lyset, ND8 (3 trinn) reduserer til 1/8, og ND1000 (10 trinn) reduserer lyset med en faktor på 1024. Navnekonvensjonene kan være forvirrende: «ND8» betyr at filterfaktoren er 8 (3 trinn), mens «ND 0.9» bruker optisk tetthetsnotasjon (hver 0,3 = 1 trinn, så 0,9 = 3 trinn). Den nye lukkertiden er rett og slett grunntiden ganget med filterfaktoren. Hvis eksponeringen uten filter er 1/125 s og du legger på et 10-trinns ND (ND1000), blir den nye lukkertiden 1/125 × 1024 ≈ 8 sekunder. Stabler du flere ND-filtre, legges trinnene sammen, men det kan gi vignettering og fargestikk, spesielt på vidvinkel.",
       "keyFactors": {
         "0": {
           "label": "Lukkertid uten filter",
-          "description": "Riktig eksponeringstid uten filter. Mål scenen først, og regn deretter ut den filtrerte eksponeringen fra dette utgangspunktet."
+          "description": "Riktig eksponeringstid uten filter. Mål scenen først, og regn ut den filtrerte eksponeringen fra dette utgangspunktet."
         },
         "1": {
           "label": "Filterstyrke",
@@ -19,10 +19,10 @@
       },
       "tips": {
         "0": {
-          "text": "Komponer og fokuser før du setter på et kraftig ND-filter. Med 10 trinn med reduksjon vil både søkeren og autofokusen slite i mørket."
+          "text": "Komponer og fokuser før du setter på et kraftig ND-filter. Med 10 trinn reduksjon sliter både søkeren og autofokusen i mørket."
         },
         "1": {
-          "text": "Til sjølandskap gir 1–2 sekunders eksponering glatte bølgetopper samtidig som du beholder litt struktur. Eksponeringer på 30 sekunder eller mer gir helt flatt, tåkete vann."
+          "text": "I sjølandskap gir 1–2 sekunders eksponering glatte bølgetopper samtidig som du beholder litt struktur. Eksponeringer på 30 sekunder eller mer gir helt flatt, tåkete vann."
         },
         "2": {
           "text": "Billige ND-filtre gir ofte fargestikk (som regel magenta eller brun). Invester i glass av god kvalitet fra kjente merker, eller lær deg å korrigere stikket i etterarbeidet med et gråkort som referanse."
@@ -31,27 +31,27 @@
       "tooltips": {
         "baseShutterSpeed": {
           "term": "Lukkertid uten filter",
-          "definition": "Lukkertiden som gir riktig eksponering uten ND-filter. Dette er utgangspunktet — kalkulatoren multipliserer den med filterfaktoren."
+          "definition": "Lukkertiden som gir riktig eksponering uten ND-filter. Dette er utgangspunktet — kalkulatoren ganger den med filterfaktoren."
         },
         "ndFilter": {
           "term": "ND-filter",
-          "definition": "Et nøytralt gråfilter som jevnt reduserer lysgjennomgangen. Klassifiseres etter filterfaktor (ND2, ND4, ND8 ...) eller blendertrinn. ND2 = 1 trinn, ND4 = 2 trinn, ND8 = 3 trinn, og så videre."
+          "definition": "Et nøytralt gråfilter som reduserer lysgjennomgangen jevnt. Klassifiseres etter filterfaktor (ND2, ND4, ND8 …) eller blendertrinn. ND2 = 1 trinn, ND4 = 2 trinn, ND8 = 3 trinn, og så videre."
         },
         "resultingShutterSpeed": {
           "term": "Ny lukkertid",
-          "definition": "Den nye lukkertiden etter at ND-filteret er tatt med i beregningen. Finnes ved å multiplisere lukkertiden uten filter med filterfaktoren (for eksempel 1/125 s × 1024 for et 10-trinns ND)."
+          "definition": "Den nye lukkertiden etter at ND-filteret er tatt med i beregningen. Finnes ved å gange lukkertiden uten filter med filterfaktoren (for eksempel 1/125 s × 1024 for et 10-trinns ND)."
         },
         "stopsAdded": {
           "term": "Trinn lagt til",
-          "definition": "Antall blendertrinn ND-filteret reduserer lys med. Hvert trinn dobler nødvendig eksponeringstid. 10 trinn betyr at eksponeringen er 1024 ganger lengre."
+          "definition": "Antall blendertrinn ND-filteret reduserer lyset med. Hvert trinn dobler nødvendig eksponeringstid. 10 trinn betyr at eksponeringen er 1024 ganger lengre."
         }
       },
       "challenges": {
         "0": {
           "scenario": "Du står ved et fossefall, og kameraet måler riktig eksponering på 1/125 s uten filter. Du fester et 3-trinns ND-filter (ND8). Hva blir den nye lukkertiden?",
           "hint": "Hvert trinn dobler eksponeringstiden. 3 trinn betyr 2 × 2 × 2 = 8 ganger lengre.",
-          "successMessage": "Riktig! 1/125 s × 8 = 1/15 s. Det er et godt utgangspunkt for bevegelse i vannet, selv om du kanskje vil ha et sterkere filter for silkemykt resultat.",
-          "failureMessage": "Et 3-trinns ND-filter multipliserer eksponeringstiden med 8 (2^3 = 8). Så 1/125 s blir 1/15 s.",
+          "successMessage": "Riktig! 1/125 s × 8 = 1/15 s. Det er et godt utgangspunkt for bevegelse i vannet, selv om du kanskje vil ha et sterkere filter for et silkemykt resultat.",
+          "failureMessage": "Et 3-trinns ND-filter ganger eksponeringstiden med 8 (2^3 = 8). Så 1/125 s blir 1/15 s.",
           "options": {
             "0": { "label": "1/60 s" },
             "1": { "label": "1/30 s" },
@@ -60,8 +60,8 @@
           }
         },
         "1": {
-          "scenario": "Du vil lage en 30-sekunders eksponering av skyer som driver over himmelen. Uten filter er riktig eksponering 1/30 s. Hvor mange ND-trinn trenger du?",
-          "hint": "Du skal gå fra 1/30 s til 30 s — det vil si 1/30 × faktor = 30, altså faktor = 900. Finn nærmeste toerpotens.",
+          "scenario": "Du vil lage en 30 sekunders eksponering av skyer som driver over himmelen. Uten filter er riktig eksponering 1/30 s. Hvor mange ND-trinn trenger du?",
+          "hint": "Du skal gå fra 1/30 s til 30 s — altså 1/30 × faktor = 30, som gir faktor = 900. Finn nærmeste toerpotens.",
           "successMessage": "Riktig! Fra 1/30 s til 30 s er grovt en 1000-dobling, altså cirka 10 trinn. Et ND1000 (10 trinn) gir deg rundt 33 sekunder.",
           "failureMessage": "Forholdet er 30 / (1/30) = 900. Nærmeste toerpotens er 1024 (2^10), så du trenger et 10-trinns ND-filter.",
           "options": {
@@ -72,9 +72,9 @@
           }
         },
         "2": {
-          "scenario": "Du fotograferer et sjølandskap ved solnedgang. Lyset svinner og grunneksponeringen (uten filter) er nå 1/4 s på f/11, ISO 100. Du vil ha 2-minutters eksponering for ultraglatt vann. Hvor sterkt ND-filter trenger du?",
-          "hint": "Fra 1/4 s til 120 s er en faktor på 480. Finn nærmeste trinn-verdi.",
-          "successMessage": "Et 9-trinns ND ville gi deg 1/4 × 512 = 128 sekunder, altså litt over 2 minutter. Perfekt for den drømmeaktige solnedgangen.",
+          "scenario": "Du fotograferer et sjølandskap ved solnedgang. Lyset svinner og grunneksponeringen (uten filter) er nå 1/4 s på f/11, ISO 100. Du vil ha 2 minutters eksponering for ultraglatt vann. Hvor sterkt ND-filter trenger du?",
+          "hint": "Fra 1/4 s til 120 s er en faktor på 480. Finn nærmeste trinnverdi.",
+          "successMessage": "Et 9-trinns ND gir deg 1/4 × 512 = 128 sekunder, altså litt over 2 minutter. Perfekt for den drømmeaktige solnedgangen.",
           "failureMessage": "Fra 0,25 s til 120 s er det en økning på cirka 480x. 2^9 = 512, som er nær 480, så et 9-trinns filter gir deg rundt 128 sekunder.",
           "options": {
             "0": { "label": "6 trinn" },
@@ -84,10 +84,10 @@
           }
         },
         "3": {
-          "scenario": "Du vil ta et portrett på f/1.4 i sterkt sollys (grunneksponering: f/1.4, 1/8000 s, ISO 100). Kameraet har makslukker 1/8000 s. Kan du fotografere på f/1.4 uten ND-filter?",
+          "scenario": "Du vil ta et portrett på f/1.4 i sterkt sollys (grunneksponering: f/1.4, 1/8000 s, ISO 100). Kameraet har maks lukkertid 1/8000 s. Kan du fotografere på f/1.4 uten ND-filter?",
           "hint": "Sjekk om 1/8000 s på f/1.4 og ISO 100 er nok, eller om scenen fortsatt blir overeksponert.",
-          "successMessage": "Riktig! På en svært lys dag (EV 15+) krever ofte f/1.4 på ISO 100 lukkertider raskere enn 1/8000 s, noe de fleste kameraer ikke klarer. Et 2–3-trinns ND lar deg fotografere vidåpent uten overeksponering.",
-          "failureMessage": "I sterkt sollys kan f/1.4 på ISO 100 kreve lukkertider forbi kameraets 1/8000 s-grense. Et ND-filter er nødvendig for vidåpent i sterkt lys.",
+          "successMessage": "Riktig! På en svært lys dag (EV 15+) krever f/1.4 på ISO 100 ofte lukkertider raskere enn 1/8000 s, noe de fleste kameraer ikke klarer. Et 2–3-trinns ND lar deg fotografere vidåpent uten å overeksponere.",
+          "failureMessage": "I sterkt sollys kan f/1.4 på ISO 100 kreve lukkertider forbi kameraets 1/8000 s-grense. Et ND-filter er nødvendig for å fotografere vidåpent i sterkt lys.",
           "options": {
             "0": { "label": "Ja — 1/8000 s er raskt nok" },
             "1": { "label": "Nei — du trenger sannsynligvis et 2–3-trinns ND-filter" },
@@ -95,10 +95,10 @@
           }
         },
         "4": {
-          "scenario": "Du har et 6-trinns og et 3-trinns ND-filter. Du staber dem på objektivet med en grunneksponering på 1/250 s. Hva blir lukkertiden, og hva bør du passe på med dette oppsettet?",
-          "hint": "Legg sammen trinn-verdiene, regn ut ny eksponering. Tenk på de optiske bieffektene av stabling.",
-          "successMessage": "Riktig! 6 + 3 = 9 trinn. 1/250 × 512 = cirka 2 sekunder. Pass på vignettering (mørke hjørner) på vidvinkel og mulig fargestikk fra billig glass.",
-          "failureMessage": "Stabling legger sammen trinnverdiene: 6 + 3 = 9 trinn totalt. 2^9 = 512, så 1/250 × 512 = ~2 sekunder. Stabling kan også gi vignettering og fargestikk.",
+          "scenario": "Du har et 6-trinns og et 3-trinns ND-filter. Du stabler dem på objektivet med en grunneksponering på 1/250 s. Hva blir lukkertiden, og hva bør du passe på med dette oppsettet?",
+          "hint": "Legg sammen trinnverdiene og regn ut ny eksponering. Tenk på de optiske bieffektene ved stabling.",
+          "successMessage": "Riktig! 6 + 3 = 9 trinn. 1/250 × 512 ≈ 2 sekunder. Pass på vignettering (mørke hjørner) på vidvinkel og mulig fargestikk fra billig glass.",
+          "failureMessage": "Stabling legger sammen trinnverdiene: 6 + 3 = 9 trinn totalt. 2^9 = 512, så 1/250 × 512 ≈ 2 sekunder. Stabling kan også gi vignettering og fargestikk.",
           "options": {
             "0": { "label": "~0,5 s, pass på lysspill" },
             "1": { "label": "~2 s, pass på vignettering og fargestikk" },

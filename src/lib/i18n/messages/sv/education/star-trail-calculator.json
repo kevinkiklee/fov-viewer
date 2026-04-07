@@ -1,25 +1,25 @@
 {
   "education": {
     "star-trail-calculator": {
-      "beginner": "Stjärnorna verkar röra sig över himlen eftersom jorden roterar. Om slutaren är öppen tillräckligt länge blir stjärnorna till streck i bilden. Star trail-kalkylatorn hjälper dig hitta den längsta exponeringen för nålpunktssträva stjärnor, eller planera långa exponeringar för att skapa vackra cirkulära stjärnspår.",
+      "beginner": "Stjärnorna verkar röra sig över himlen eftersom jorden roterar. Om slutaren står öppen tillräckligt länge blir stjärnorna till streck i bilden. Star trail-kalkylatorn hjälper dig hitta längsta möjliga exponering för knivskarpa stjärnpunkter, eller planera långa exponeringar för att skapa vackra cirkulära stjärnspår.",
       "deeper": {
         "0": {
           "heading": "Hur stjärnor rör sig",
-          "text": "Jorden roterar 360° på ungefär 23 timmar och 56 minuter (en siderisk dygn), så stjärnorna rör sig med cirka 15 bågsekunder per sekund vid himmelsekvatorn. Stjärnor nära polerna (Polstjärnan i norr) spårar mindre cirklar och verkar röra sig långsammare."
+          "text": "Jorden roterar 360° på ungefär 23 timmar och 56 minuter (ett stjärndygn), så stjärnorna rör sig med cirka 15 bågsekunder per sekund vid himmelsekvatorn. Stjärnor nära polerna (Polstjärnan i norr) drar mindre cirklar och verkar röra sig långsammare."
         },
         "1": {
           "heading": "500-regeln vs NPF-regeln",
-          "text": "Den klassiska \"500-regeln\" dividerar 500 med den effektiva brännvidden för att uppskatta maximal exponering innan streck syns — men den skapades för äldre, lågupplösta sensorer. NPF-regeln tar hänsyn till pixelavstånd, brännvidd, bländare och deklination, och ger kortare och mer exakta gränser för moderna högupplösta kameror."
+          "text": "Den klassiska \"500-regeln\" delar 500 med den effektiva brännvidden för att uppskatta maximal exponering innan streck börjar synas — men den togs fram för äldre sensorer med låg upplösning. NPF-regeln tar hänsyn till pixelavstånd, brännvidd, bländare och deklination, och ger kortare och mer exakta gränser för moderna högupplösta kameror."
         },
         "2": {
           "heading": "Stacking för star trails",
-          "text": "För avsiktliga star trails fotograferar man många kortare exponeringar (oftast 30 s styck) och stackar dem i mjukvara. Det undviker brusansamling, ger strecken utan glapp och gör att en enskild dålig ruta inte förstör hela bilden."
+          "text": "För avsiktliga star trails tar man många kortare exponeringar (oftast 30 s styck) och stackar dem i efterbehandlingen. På så sätt slipper du brusuppbyggnad, får jämna streck utan glapp och en enda dålig ruta förstör inte hela bilden."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Brännvidd",
-          "description": "Längre brännvidder förstorar stjärnornas rörelse och kräver kortare exponeringar för nålpunkter. Ett 14 mm kan exponera 5–10 gånger längre än ett 200 mm."
+          "description": "Längre brännvidder förstorar stjärnornas rörelse och kräver kortare exponeringar för skarpa stjärnpunkter. Ett 14 mm kan exponera 5–10 gånger längre än ett 200 mm."
         },
         "1": {
           "label": "Sensorupplösning",
@@ -36,10 +36,10 @@
       },
       "tips": {
         "0": {
-          "text": "Använd NPF-regeln i stället för 500-regeln för moderna kameror. Den tar hänsyn till sensorupplösningen och ger mer exakta max-exponeringar, särskilt med högupplösta hus."
+          "text": "Använd NPF-regeln i stället för 500-regeln på moderna kameror. Den tar hänsyn till sensorns upplösning och ger mer exakta maxexponeringar, särskilt på högupplösta hus."
         },
         "1": {
-          "text": "För star trail-stacking: håll glappen mellan bilderna under 2–3 sekunder med en sladdad fjärrutlösare eller intervalltimer. Längre glapp ger prickade istället för jämna streck."
+          "text": "För star trail-stacking: håll glappen mellan bilderna under 2–3 sekunder med en sladdad fjärrutlösare eller intervalltimer. Längre glapp ger prickade streck i stället för jämna."
         },
         "2": {
           "text": "Ta med Polstjärnan (eller den sydliga himmelspolen) i kompositionen för dramatiska koncentriska cirkelsträck. Stjärnor närmare polen ritar tätare bågar."
@@ -48,7 +48,7 @@
       "tooltips": {
         "mode": {
           "term": "Läge",
-          "definition": "Välj \"Skarpa stjärnor\" för att räkna ut maximal exponering för nålpunkter, eller \"Star trails\" för att planera exponeringssekvenser för avsiktliga stjärnspår."
+          "definition": "Välj \"Skarpa stjärnor\" för att räkna ut maximal exponering för skarpa stjärnpunkter, eller \"Star trails\" för att planera exponeringssekvenser för avsiktliga stjärnspår."
         },
         "focalLength": {
           "term": "Brännvidd",
@@ -87,7 +87,7 @@
         "0": {
           "scenario": "Du fotograferar Vintergatan med ett 24 mm-objektiv på en fullformatskamera med 24 MP. Hur länge kan du ungefär exponera enligt 500-regeln innan stjärnorna börjar bli streck?",
           "hint": "500-regeln: max sekunder = 500 / brännvidd.",
-          "successMessage": "Rätt! 500 / 24 = cirka 20 sekunder. En bra utgångspunkt, även om NPF-regeln kan föreslå något kortare tid för riktigt knivskarpa stjärnor.",
+          "successMessage": "Rätt! 500 / 24 ≈ 20 sekunder. En bra utgångspunkt, även om NPF-regeln kan föreslå något kortare tid för riktigt knivskarpa stjärnor.",
           "failureMessage": "Tillämpa 500-regeln: dela 500 med brännvidden (24 mm). Det ger ungefär 20 sekunder.",
           "options": {
             "0": { "label": "5 sekunder" },
@@ -135,7 +135,7 @@
         "4": {
           "scenario": "Du vill göra en 1-timmes star trail-bild. Varför stackar erfarna astrofotografer många korta exponeringar (t.ex. 240 x 15 s) istället för att ta en enda 1-timmes exponering?",
           "hint": "Tänk på vad som händer med sensorbrus, batteritid och möjligheten att rädda bilden under en extremt lång enstaka exponering.",
-          "successMessage": "Rätt! En enda timmeslång exponering samlar på sig massivt termiskt brus, tömmer batteriet, och om något går fel (vibration, dagg, en bilstrålkastare) är hela bilden förstörd. Stacking av korta bilder håller bruset lågt, låter dig ta bort dåliga rutor och är mycket mer förlåtande.",
+          "successMessage": "Rätt! En enda timslång exponering bygger upp ett massivt termiskt brus, tömmer batteriet, och om något går fel (vibration, dagg, ett bilstrålkastarsken) är hela bilden förstörd. Att stacka korta bilder håller bruset lågt, låter dig kasta dåliga rutor och är mycket mer förlåtande.",
           "failureMessage": "Långa enstaka exponeringar bygger upp kraftigt termiskt brus och riskerar total förlust vid minsta avbrott. Stacking av korta bilder håller bruset hanterbart, låter dig kasta förstörda rutor och ger renare resultat.",
           "options": {
             "0": { "label": "Stacking ger längre spår än en enda exponering" },

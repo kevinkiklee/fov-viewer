@@ -10,11 +10,11 @@
     },
     "exposure-simulator": {
       "name": "Simulator ng Exposure Triangle",
-      "description": "Tingnan kung paano nag-uugnay ang aperture, shutter speed, at ISO"
+      "description": "Tingnan kung paano magkakaugnay ang aperture, shutter speed, at ISO"
     },
     "dof-simulator": {
       "name": "Depth-of-Field Simulator",
-      "description": "I-visualize kung paano nakakaapekto ang aperture, focal length, at distansya sa background blur"
+      "description": "I-visualize kung paano apektado ng aperture, focal length, at distance ang background blur"
     },
     "focus-stacking-calculator": {
       "name": "Focus Stacking Calculator",
@@ -25,12 +25,12 @@
       "description": "Hanapin ang equivalent aperture at focal length sa iba't ibang sensor format"
     },
     "hyperfocal-simulator": {
-      "name": "Simulator ng Hyperfocal Distance",
+      "name": "Simulator ng Hyperfocal na Distansya",
       "description": "Alamin kung saan mag-focus para sa maximum sharpness mula foreground hanggang infinity"
     },
     "shutter-speed-visualizer": {
       "name": "Shutter Speed Visualizer",
-      "description": "Hanapin ang pinakamabagal na safe shutter speed para sa matatalas na handheld shot"
+      "description": "Hanapin ang pinakamabagal na safe shutter speed para sa sharp na handheld shots"
     },
     "nd-filter-calculator": {
       "name": "ND Filter Calculator",
@@ -38,19 +38,19 @@
     },
     "star-trail-calculator": {
       "name": "Star Trail Calculator",
-      "description": "Kalkulahin ang max exposure para sa matatalas na bituin o magplano ng star trail shot"
+      "description": "Kalkulahin ang max exposure para sa sharp na stars o magplano ng star trail shot"
     },
     "perspective-compression-simulator": {
-      "name": "Simulator ng Perspective Compression",
-      "description": "Tingnan kung paano nakakaapekto ang focal length sa background compression"
+      "name": "Simulator ng Pagkasiksik ng Perspektibo",
+      "description": "Tingnan kung paano apektado ng focal length ang background compression"
     },
     "white-balance-visualizer": {
       "name": "White Balance Visualizer",
-      "description": "Tingnan kung paano nakakaapekto ang color temperature sa mga litrato mo"
+      "description": "Tingnan kung paano apektado ng color temperature ang mga litrato mo"
     },
     "sensor-size-comparison": {
       "name": "Sensor Size Comparison",
-      "description": "Biswal na ikumpara ang mga sukat ng camera sensor"
+      "description": "Visually na ikumpara ang mga camera sensor size"
     },
     "frame-studio": {
       "name": "Frame Studio",

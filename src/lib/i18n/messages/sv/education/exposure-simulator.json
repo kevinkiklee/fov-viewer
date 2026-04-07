@@ -1,8 +1,8 @@
 {
   "education": {
     "exposure-simulator": {
-      "beginner": "Exponeringstriangeln beskriver hur tre kamerainställningar — bländare, slutartid och ISO — samverkar för att styra hur ljus din bild blir. Ändrar du en måste du justera minst en av de andra för att hålla samma ljusstyrka. Varje inställning har också sin egen kreativa sidoeffekt: bländaren styr bakgrundsoskärpa, slutartiden styr rörelseoskärpa och ISO styr brus.",
-      "deeper": "Exponering mäts i exponeringsvärde (EV), där varje helt EV-steg motsvarar en fördubbling eller halvering av ljuset. En ökning med 1 EV (ett \"steg\") betyder att dubbelt så mycket ljus når sensorn. Bländaren följer en geometrisk serie (f/1.4, f/2, f/2.8, f/4 ...) där varje helt steg halverar ljuset eftersom öppningens yta är omvänt proportionell mot kvadraten på f-talet. Slutartiden är mer intuitiv: dubbelt så lång tid, dubbelt så mycket ljus. ISO förstärker signalen från sensorn — dubbel ISO ger dubbelt så ljus bild, men förstärker också bruset. I praktiken sätter du först den parameter som spelar störst roll för din kreativa intention (bländare för skärpedjup, slutartid för rörelse) och balanserar sedan de andra. Moderna kameror mäter i 1/3-steg för finjustering.",
+      "beginner": "Exponeringstriangeln beskriver hur tre kamerainställningar — bländare, slutartid och ISO — samspelar för att avgöra hur ljus bilden blir. Ändrar du en av dem måste du justera minst en av de andra för att behålla samma ljusstyrka. Varje inställning har dessutom sin egen kreativa sidoeffekt: bländaren styr bakgrundsoskärpan, slutartiden styr rörelseoskärpan och ISO styr bruset.",
+      "deeper": "Exponering mäts i exponeringsvärde (EV), där varje helt EV-steg motsvarar en fördubbling eller halvering av ljusmängden. En ökning med 1 EV (ett \"steg\") betyder att dubbelt så mycket ljus når sensorn. Bländaren följer en geometrisk serie (f/1.4, f/2, f/2.8, f/4 ...) där varje helt steg halverar ljuset, eftersom öppningens yta är omvänt proportionell mot kvadraten på f-talet. Slutartiden är mer rättfram: dubbelt så lång tid, dubbelt så mycket ljus. ISO förstärker signalen från sensorn — dubbel ISO ger dubbelt så ljus bild, men lyfter samtidigt fram bruset. I praktiken sätter du först den parameter som betyder mest för bildens uttryck (bländare för skärpedjup, slutartid för rörelse) och balanserar sedan de andra. Moderna kameror arbetar i 1/3-steg för finjustering.",
       "keyFactors": {
         "0": {
           "label": "Bländare",
@@ -29,7 +29,7 @@
           "text": "Vid sport och action: byt till slutarprioritet. Välj en snabb slutartid (1/500s eller snabbare) och låt kameran justera bländare och ISO efter det."
         },
         "2": {
-          "text": "\"Sunny 16\"-regeln är en snabb mental genväg: en solig dag sätter du bländaren till f/16 och slutartiden till 1/ISO (t.ex. 1/100s vid ISO 100) — då får du en korrekt exponerad bild utan att mäta."
+          "text": "\"Sunny 16\"-regeln är en snabb tumregel: en solig dag sätter du bländaren till f/16 och slutartiden till 1/ISO (t.ex. 1/100 s vid ISO 100) — så får du en korrekt exponerad bild utan att mäta."
         }
       },
       "tooltips": {
@@ -71,17 +71,17 @@
           "options": {
             "0": { "label": "Höj ISO till 1600" },
             "1": { "label": "Sänk slutartiden till 1/4s" },
-            "2": { "label": "Nedbländaa till f/8" },
+            "2": { "label": "Blända ned till f/8" },
             "3": { "label": "Byt till en kamera med mindre sensor" }
           }
         },
         "2": {
           "scenario": "Du vill fånga ett vattenfall med silkeslent vatten en ljus dag. Nuvarande inställningar är f/8, 1/250s, ISO 100. Vad bör du ändra för att få silkeseffekten?",
           "hint": "Silkeslent vatten kräver lång exponering — men det är mycket ljust ute.",
-          "successMessage": "Precis! En långsam slutartid (1/2s eller längre) i kombination med att du bländar ner till f/22 (och kanske lägger på ett ND-filter) ger dig silkeseffekten.",
-          "failureMessage": "För att få silkeslent vatten behöver du en långsam slutartid — runt 1/2s till flera sekunder. En ljus dag behöver du dessutom minska ljusmängden för att inte överexponera.",
+          "successMessage": "Precis! En lång slutartid (1/2 s eller längre) kombinerad med att du bländar ned till f/22 (och kanske lägger på ett ND-filter) ger silkeseffekten.",
+          "failureMessage": "För silkeslent vatten behöver du en lång slutartid — från 1/2 s upp till flera sekunder. En ljus dag måste du dessutom dämpa ljusmängden så att bilden inte överexponeras.",
           "options": {
-            "0": { "label": "Använd 1/2s och bländaa ner till f/22" },
+            "0": { "label": "Använd 1/2 s och blända ned till f/22" },
             "1": { "label": "Använd 1/1000s vid f/2.8" },
             "2": { "label": "Höj ISO till 6400" },
             "3": { "label": "Behåll 1/250s men öppna till f/1.4" }

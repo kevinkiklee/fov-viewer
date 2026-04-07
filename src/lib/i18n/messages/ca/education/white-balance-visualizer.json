@@ -100,7 +100,7 @@
           }
         },
         "3": {
-          "scenario": "Fotografies l'interior d'un restaurant que té làmpades pendants de tungsten càlides al sostre i llum de dia freda i blava que entra per finestrals grans. Les persones a prop de les finestres es veuen blaves, i les que hi ha sota les làmpades surten taronja. Quin és el millor enfocament?",
+          "scenario": "Fotografies l'interior d'un restaurant que té làmpades penjants de tungsten càlides al sostre i llum de dia freda i blava que entra per finestrals grans. Les persones a prop de les finestres es veuen blaves, i les que hi ha sota les làmpades surten taronja. Quin és el millor enfocament?",
           "hint": "Cap ajust de balanç de blancs pot corregir dues temperatures de color molt diferents simultàniament.",
           "successMessage": "Exacte! Posar gels al flaix o a les llums addicionals perquè coincideixin amb una font dominant, o triar un balanç de blancs de compromís i corregir selectivament en postproducció, són els millors enfocaments per a il·luminació mixta.",
           "failureMessage": "La il·luminació mixta és un dels reptes més difícils del balanç de blancs. Un sol ajust no pot corregir les dues fonts alhora. Has de fer coincidir les fonts amb gels o corregir selectivament en post.",

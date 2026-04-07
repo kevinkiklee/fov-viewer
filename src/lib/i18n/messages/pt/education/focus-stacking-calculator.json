@@ -9,7 +9,7 @@
         },
         "1": {
           "heading": "Planejando a Pilha",
-          "text": "A chave para uma pilha bem-sucedida é garantir que a profundidade de campo de cada tomada sobreponha a próxima em 20-30%. Pouca sobreposição cria lacunas onde nada fica nítido; muita sobreposição desperdiça quadros sem benefício. A calculadora determina a profundidade de campo por tomada usando a fórmula do círculo de confusão, subtrai a margem de sobreposição e divide a faixa total de profundidade pelo passo efetivo para calcular o número de tomadas."
+          "text": "O segredo de uma pilha bem-sucedida é fazer a profundidade de campo de cada tomada sobrepor a próxima em 20–30%. Pouca sobreposição cria lacunas onde nada fica nítido; muita sobreposição desperdiça quadros sem benefício. A calculadora determina a profundidade de campo por tomada usando a fórmula do círculo de confusão, subtrai a margem de sobreposição e divide a faixa total de profundidade pelo passo efetivo para calcular o número de tomadas."
         },
         "2": {
           "heading": "Fusão e Alinhamento",

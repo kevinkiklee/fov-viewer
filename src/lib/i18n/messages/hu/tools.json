@@ -2,43 +2,43 @@
   "tools": {
     "fov-simulator": {
       "name": "FOV Simulator",
-      "description": "Hasonlíts össze látószögeket különböző gyújtótávolságokon és érzékelőméreteken"
+      "description": "Hasonlítsd össze a látószögeket különböző gyújtótávolságokon és érzékelőméreteken"
     },
     "color-scheme-generator": {
       "name": "Color Scheme Generator",
-      "description": "Építs színpalettákat fotózásokhoz"
+      "description": "Állíts össze színpalettákat a fotózásaidhoz"
     },
     "exposure-simulator": {
       "name": "Expozíciós háromszög szimulátor",
-      "description": "Nézd meg, hogyan hat együtt a rekesz, a záridő és az ISO"
+      "description": "Nézd meg, hogyan dolgozik együtt a rekesz, a záridő és az ISO"
     },
     "dof-simulator": {
       "name": "Depth-of-Field Simulator",
-      "description": "Szemléltesd, hogyan befolyásolja a rekesz, a gyújtótávolság és a távolság a háttérelmosódást"
+      "description": "Nézd meg, hogyan hat a rekesz, a gyújtótávolság és a téma távolsága a háttérelmosódásra"
     },
     "focus-stacking-calculator": {
       "name": "Focus Stacking Calculator",
-      "description": "Számítsd ki az optimális fókusztávolságokat az elölről hátulig éles képhez"
+      "description": "Számítsd ki az optimális fókusztávolságokat az elejétől a végéig éles képhez"
     },
     "equivalent-settings-calculator": {
       "name": "Ekvivalens beállítások kalkulátor",
-      "description": "Keresd meg az ekvivalens rekeszt és gyújtótávolságot a különböző érzékelőformátumok között"
+      "description": "Számítsd ki az ekvivalens rekeszt és gyújtótávolságot az egyes érzékelőformátumok között"
     },
     "hyperfocal-simulator": {
       "name": "Hiperfokális távolság szimulátor",
-      "description": "Tudd meg, hová kell fókuszálni az előtértől a végtelenig terjedő maximális élességhez"
+      "description": "Nézd meg, hová érdemes fókuszálnod az előtértől a végtelenig terjedő maximális élességhez"
     },
     "shutter-speed-visualizer": {
       "name": "Shutter Speed Visualizer",
-      "description": "Találd meg a legkisebb biztonságos záridőt az éles kézi felvételekhez"
+      "description": "Keresd meg a leglassabb biztonságos záridőt az éles kézi felvételekhez"
     },
     "nd-filter-calculator": {
       "name": "ND Filter Calculator",
-      "description": "Számítsd ki az expozíciós időt bármilyen ND szűrővel"
+      "description": "Számítsd ki az expozíciós időt tetszőleges ND szűrővel"
     },
     "star-trail-calculator": {
       "name": "Star Trail Calculator",
-      "description": "Számolj maximális expozíciót éles csillagokhoz, vagy tervezz csillagívfelvételeket"
+      "description": "Számítsd ki a maximális expozíciót pontszerű csillagokhoz, vagy tervezz csillagív-felvételeket"
     },
     "perspective-compression-simulator": {
       "name": "Perspektíva-tömörítés szimulátor",
@@ -46,11 +46,11 @@
     },
     "white-balance-visualizer": {
       "name": "White Balance Visualizer",
-      "description": "Lásd, hogyan befolyásolja a színhőmérséklet a fotóidat"
+      "description": "Nézd meg, hogyan hat a színhőmérséklet a fotóidra"
     },
     "sensor-size-comparison": {
       "name": "Sensor Size Comparison",
-      "description": "Hasonlítsd össze vizuálisan a kamerák érzékelőinek méretét"
+      "description": "Hasonlítsd össze vizuálisan a kameraérzékelők méretét"
     },
     "frame-studio": {
       "name": "Frame Studio",
@@ -58,7 +58,7 @@
     },
     "exif-viewer": {
       "name": "EXIF Viewer",
-      "description": "Nézd meg bármely fotó EXIF metaadatait és hisztogramját — 100%-ban a böngésződben"
+      "description": "Nézd meg bármelyik fotó EXIF metaadatait és hisztogramját — 100%-ban a böngésződben"
     }
   }
 }

@@ -1,19 +1,19 @@
 {
   "education": {
     "frame-studio": {
-      "beginner": "Frame Studio te ajută să decupezi, să încadrezi și să compui fotografiile direct în browser. Folosește grile de compoziție ca să-ți îmbunătățești încadrarea, decupează la rapoartele de aspect populare și adaugă borduri cu aspect profesionist — totul fără să pierzi calitatea imaginii.",
+      "beginner": "Frame Studio te ajută să decupezi, să încadrezi și să compui fotografiile direct în browser. Folosește grile de compoziție ca să-ți îmbunătățești încadrarea, decupează la rapoartele populare de aspect și adaugă borduri cu aspect profesionist — totul fără să pierzi din calitatea imaginii.",
       "deeper": {
         "0": {
           "heading": "Grile de compoziție",
-          "text": "Regula treimilor împarte cadrul într-o grilă 3\u00d73 — plasarea subiectelor pe linii sau la intersecții creează echilibru vizual natural. Raportul de aur (aproximativ 1.618:1) oferă o împărțire matematic armonioasă, folosită în artă și arhitectură de secole. Spirala de aur ghidează ochiul pe o curbă logaritmică derivată din șirul Fibonacci, utilă pentru a conduce privitorul prin imagine."
+          "text": "Regula treimilor împarte cadrul într-o grilă 3×3 — plasând subiectele pe linii sau la intersecții obții un echilibru vizual natural. Raportul de aur (aproximativ 1.618:1) oferă o împărțire matematic armonioasă, folosită în artă și arhitectură de secole. Spirala de aur ghidează ochiul pe o curbă logaritmică derivată din șirul Fibonacci, utilă ca să conduci privitorul prin imagine."
         },
         "1": {
           "heading": "Rapoarte de aspect",
-          "text": "Rapoartele diferite servesc scopuri diferite. 1:1 (pătrat) funcționează bine pentru rețele sociale și compoziții simetrice. 3:2 este raportul clasic al filmului de 35mm. 4:3 este comun la Micro Four Thirds și la camerele digitale mai vechi. 16:9 este raportul widescreen standard pentru video și compoziții cinematografice. 5:4 este tradițional pentru printuri 8\u00d710."
+          "text": "Rapoartele diferite au scopuri diferite. 1:1 (pătrat) merge bine pentru rețelele sociale și compozițiile simetrice. 3:2 este raportul clasic al filmului de 35mm. 4:3 este comun la Micro Four Thirds și la aparatele digitale mai vechi. 16:9 este raportul widescreen standard pentru video și compoziții cinematografice. 5:4 este tradițional pentru printurile 8×10."
         },
         "2": {
           "heading": "Încadrare și borduri",
-          "text": "Adăugarea unei borduri în jurul unei fotografii imită efectul unui paspartu fizic și al unei rame. Un paspartu alb oferă spațiu vizual de respirare și direcționează atenția spre interior. Lățimea bordurii în raport cu imaginea afectează \"greutatea\" percepută a fotografiei. Prezentările de tip galerie folosesc de obicei paspartuuri mai late. O umbră subtilă creează adâncime, simulând felul în care un print înrămat stă pe un perete."
+          "text": "O bordură adăugată în jurul fotografiei imită efectul unui paspartu fizic și al unei rame. Un paspartu alb aduce spațiu vizual de respirație și îndreaptă atenția spre interior. Lățimea bordurii în raport cu imaginea influențează „greutatea” percepută a fotografiei. Prezentările de tip galerie folosesc, de obicei, paspartuuri mai late. O umbră subtilă creează adâncime, simulând felul în care un print înrămat stă pe un perete."
         }
       },
       "keyFactors": {
@@ -23,7 +23,7 @@
         },
         "1": {
           "label": "Raport de aspect",
-          "description": "Proporția lățime-înălțime afectează cum se simte imaginea — rapoartele late par cinematografice, cele pătrate par echilibrate."
+          "description": "Proporția dintre lățime și înălțime influențează felul în care se simte imaginea — rapoartele late par cinematografice, iar cele pătrate par echilibrate."
         },
         "2": {
           "label": "Lățimea bordurii",
@@ -36,31 +36,31 @@
       },
       "tips": {
         "0": {
-          "text": "Pentru postări pe Instagram, decupează la 4:5 (portrait) ca să ocupi maximum de spațiu pe ecran în feed."
+          "text": "Pentru postările de pe Instagram, decupează la 4:5 (vertical) ca să ocupi maximum de spațiu pe ecran în feed."
         },
         "1": {
-          "text": "Când adaugi o bordură pentru print, folosește o lățime de paspartu de cel puțin 10% din dimensiunea mai mică a imaginii, pentru un aspect profesionist."
+          "text": "Când adaugi o bordură pentru print, folosește un paspartu cu lățimea de cel puțin 10% din cea mai mică dimensiune a imaginii, ca să obții un aspect profesionist."
         },
         "2": {
-          "text": "Spirala de aur este cel mai eficientă pentru imagini cu un flux natural — apă, drumuri sau arhitectură curbată."
+          "text": "Spirala de aur e cel mai eficientă pentru imaginile cu un flux natural — apă, drumuri sau arhitectură curbată."
         }
       },
       "tooltips": {
         "Aspect Ratio": {
           "term": "Raport de aspect",
-          "definition": "Relația proporțională între lățime și înălțime. Rapoartele comune includ 3:2 (35mm), 4:3 (M43) și 16:9 (widescreen)."
+          "definition": "Raportul proporțional dintre lățime și înălțime. Rapoartele comune includ 3:2 (35mm), 4:3 (M43) și 16:9 (widescreen)."
         },
         "Rule of Thirds": {
           "term": "Regula treimilor",
-          "definition": "O regulă de compoziție care împarte cadrul în 9 părți egale. Plasarea subiectelor la intersecții creează interes vizual."
+          "definition": "O regulă de compoziție care împarte cadrul în 9 părți egale. Plasarea subiectelor în punctele de intersecție creează interes vizual."
         },
         "Golden Ratio": {
           "term": "Raport de aur",
-          "definition": "O proporție matematică (~1.618:1) întâlnită în natură și artă. Creează împărțiri de spațiu plăcute estetic."
+          "definition": "O proporție matematică (~1.618:1) întâlnită în natură și artă. Produce împărțiri de spațiu plăcute estetic."
         },
         "Border Width": {
           "term": "Lățimea bordurii",
-          "definition": "Grosimea bordurii cadrului în pixeli. Stă în afara imaginii, crescând dimensiunile totale fără decupare."
+          "definition": "Grosimea bordurii cadrului, în pixeli. Se adaugă în afara imaginii, crescând dimensiunile totale fără să decupeze."
         },
         "Inner Mat": {
           "term": "Paspartu interior",
@@ -68,26 +68,26 @@
         },
         "Corner Radius": {
           "term": "Rază de colț",
-          "definition": "Rotunjește colțurile bordurii cadrului. Zero dă colțuri ascuțite, valori mai mari dau un aspect mai moale, rotunjit."
+          "definition": "Rotunjește colțurile bordurii. Zero dă colțuri ascuțite, iar valorile mai mari dau un aspect mai moale, rotunjit."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Vrei să postezi o fotografie de tip portrait pe Instagram pentru prezență maximă în feed. Ce raport de aspect ar trebui să folosești?",
-          "hint": "Postările portrait pe Instagram folosesc un raport mai înalt decât lat.",
-          "successMessage": "Corect! 4:5 îți oferă spațiul vertical maxim în feed-ul Instagram.",
-          "failureMessage": "Postările portrait pe Instagram folosesc 4:5 (inversul lui 5:4 în orientare verticală) pentru maximum de spațiu în feed.",
+          "scenario": "Vrei să postezi o fotografie verticală pe Instagram pentru prezență maximă în feed. Ce raport de aspect ar trebui să folosești?",
+          "hint": "Postările verticale pe Instagram folosesc un raport mai înalt decât lat.",
+          "successMessage": "Corect! 4:5 îți dă spațiul vertical maxim în feed-ul Instagram.",
+          "failureMessage": "Postările verticale pe Instagram folosesc 4:5 (versiunea verticală a lui 5:4), pentru maximum de spațiu în feed.",
           "options": {
             "0": { "label": "1:1 (Pătrat)" },
-            "1": { "label": "4:5 (Portrait)" },
+            "1": { "label": "4:5 (Vertical)" },
             "2": { "label": "16:9 (Widescreen)" }
           }
         },
         "1": {
-          "scenario": "Care grilă de compoziție este cel mai larg predată ca punct de plecare pentru începători?",
+          "scenario": "Ce grilă de compoziție e cel mai des predată ca punct de plecare pentru începători?",
           "hint": "Împarte cadrul în 9 secțiuni egale.",
           "successMessage": "Exact! Regula treimilor este ghidul fundamental de compoziție.",
-          "failureMessage": "Regula treimilor (grilă 3\u00d73) este cel mai comun punct de plecare pentru învățarea compoziției.",
+          "failureMessage": "Regula treimilor (grilă 3×3) este cel mai comun punct de plecare pentru învățarea compoziției.",
           "options": {
             "0": { "label": "Regula treimilor" },
             "1": { "label": "Spirala de aur" },
@@ -95,10 +95,10 @@
           }
         },
         "2": {
-          "scenario": "Pregătești o fotografie pentru print de galerie pe hârtie 8\u00d710. Ce raport de aspect se potrivește cu această dimensiune?",
-          "hint": "8\u00d710 se simplifică la un raport binecunoscut.",
-          "successMessage": "Corect! 5:4 se potrivește perfect cu dimensiunile printului 8\u00d710.",
-          "failureMessage": "8\u00d710 se simplifică la 4:5, care este versiunea portrait a lui 5:4.",
+          "scenario": "Pregătești o fotografie pentru un print de galerie pe hârtie 8×10. Ce raport de aspect se potrivește cu această dimensiune?",
+          "hint": "8×10 se simplifică la un raport binecunoscut.",
+          "successMessage": "Corect! 5:4 se potrivește perfect cu dimensiunile printului 8×10.",
+          "failureMessage": "8×10 se simplifică la 4:5, versiunea verticală a lui 5:4.",
           "options": {
             "0": { "label": "3:2" },
             "1": { "label": "5:4" },
@@ -106,10 +106,10 @@
           }
         },
         "3": {
-          "scenario": "O fotografie de peisaj are un râu șerpuitor care duce din prim-plan către munții din fundal. Ce suprapunere de grilă se potrivește cel mai bine cu acest flux natural?",
-          "hint": "Un tip de grilă urmărește o cale naturală curbată.",
+          "scenario": "O fotografie de peisaj are un râu șerpuitor care duce din prim-plan spre munții din fundal. Ce suprapunere de grilă se potrivește cel mai bine acestui flux natural?",
+          "hint": "Un tip de grilă urmează o cale curbată naturală.",
           "successMessage": "Alegere excelentă! Spirala de aur urmărește perfect curbele și liniile de ghidaj.",
-          "failureMessage": "Spirala de aur este ideală pentru imagini cu elemente curbate naturale, precum râuri, drumuri sau linii de coastă.",
+          "failureMessage": "Spirala de aur e ideală pentru imagini cu elemente curbate naturale, precum râuri, drumuri sau linii de coastă.",
           "options": {
             "0": { "label": "Cruce centrală" },
             "1": { "label": "Spirala de aur" },
@@ -117,10 +117,10 @@
           }
         },
         "4": {
-          "scenario": "Vrei o bordură albă curată pentru a prezenta fotografia pe rețele sociale. Ce preset de cadru ar trebui să folosești?",
+          "scenario": "Vrei o bordură albă curată ca să-ți prezinți fotografia pe rețelele sociale. Ce preset de cadru ar trebui să folosești?",
           "hint": "Gândește-te care preset îți dă o bordură albă simplă.",
           "successMessage": "Corect! Presetul White adaugă o bordură albă de 100px în jurul fotografiei.",
-          "failureMessage": "Presetul White este conceput pentru o prezentare curată, cu bordură albă simplă.",
+          "failureMessage": "Presetul White este gândit pentru o prezentare curată, cu o bordură albă simplă.",
           "options": {
             "0": { "label": "Niciunul" },
             "1": { "label": "Alb" },

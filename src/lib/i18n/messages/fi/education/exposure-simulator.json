@@ -1,109 +1,109 @@
 {
   "education": {
     "exposure-simulator": {
-      "beginner": "Valotuskolmio kuvaa, miten kamerasi kolme asetusta — aukko, suljinaika ja ISO — toimivat yhdessä kuvasi kirkkauden säätämiseksi. Yhden asetuksen muuttaminen vaatii ainakin yhden muun säätämistä, jotta kirkkaus pysyy samana. Jokaisella asetuksella on myös oma luova sivuvaikutuksensa: aukko säätelee taustan sumennusta, suljinaika liike-epäterävyyttä ja ISO kuvan kohinaa.",
-      "deeper": "Valotus mitataan valotusarvolla (EV), jossa jokainen kokonainen EV-askel tarkoittaa valon kaksinkertaistumista tai puolittumista. 1 EV:n nousu (yksi \"aukko\") tarkoittaa kaksinkertaista valoa kennolle. Aukko noudattaa geometrista etenemistä (f/1.4, f/2, f/2.8, f/4...), jossa jokainen kokonainen aukko puolittaa objektiiviin tulevan valon, koska aukon pinta-ala on kääntäen verrannollinen f-luvun neliöön. Suljinaika on intuitiivisempi: ajan kaksinkertaistaminen kaksinkertaistaa valon. ISO vahvistaa kennon signaalia — ISO:n kaksinkertaistaminen kaksinkertaistaa tehollisen kirkkauden mutta myös kohinan. Käytännössä asetat yleensä ensin sen parametrin, joka on tärkein luovalle tavoitteellesi (aukon syväterävyyden hallintaan, suljinajan liikkeen vuoksi) ja tasapainotat sitten muut. Modernit kamerat mittaavat 1/3 aukon tarkkuudella hienompaa säätöä varten.",
+      "beginner": "Valotuskolmio kuvaa, miten kameran kolme asetusta — aukko, suljinaika ja ISO — toimivat yhdessä ja säätävät kuvan kirkkautta. Kun muutat yhtä asetusta, ainakin yhtä muuta pitää säätää vastaavasti, jotta kirkkaus pysyy samana. Jokaisella asetuksella on myös luova sivuvaikutus: aukko hallitsee taustan sumennusta, suljinaika liikettä ja ISO kuvan kohinaa.",
+      "deeper": "Valotus mitataan valotusarvolla (EV), ja yksi EV-askel tarkoittaa valon kaksinkertaistumista tai puolittumista. Yhden EV:n nousu (yksi valotusaskel) tuo kennolle kaksinkertaisen valon. Aukko noudattaa geometrista sarjaa (f/1.4, f/2, f/2.8, f/4...), jossa jokainen kokonainen valotusaskel puolittaa objektiivin läpäisevän valon, koska aukon pinta-ala on kääntäen verrannollinen f-luvun neliöön. Suljinaika on intuitiivisempi: ajan kaksinkertaistaminen tuplaa valon. ISO vahvistaa kennon signaalia — ISO:n kaksinkertaistaminen kaksinkertaistaa tehollisen kirkkauden, mutta myös kohinan. Käytännössä kannattaa asettaa ensin se parametri, joka on tärkein luovan tavoitteen kannalta (aukko syväterävyyden hallintaan, suljinaika liikkeen vuoksi), ja tasapainottaa muut sen ympärille. Moderneissa kameroissa säätö tehdään yleensä 1/3 askeleen tarkkuudella.",
       "keyFactors": {
         "0": {
           "label": "Aukko",
-          "description": "Säätelee objektiivin aukon kokoa. Jokainen kokonainen aukko (esim. f/2.8:sta f/4:ään) puolittaa valon. Vaikuttaa myös syväterävyyteen — suuremmat aukot sumentavat taustaa enemmän."
+          "description": "Säätelee objektiivin aukon kokoa. Yksi kokonainen valotusaskel (esim. f/2.8:sta f/4:ään) puolittaa valon. Vaikuttaa myös syväterävyyteen — mitä suurempi aukko, sitä sumeampi tausta."
         },
         "1": {
           "label": "Suljinaika",
-          "description": "Säätelee, kuinka kauan kenno altistuu valolle. Nopeammat ajat jäädyttävät liikkeen; hitaammat tuovat liike-epäterävyyttä. Ajan kaksinkertaistaminen kaksinkertaistaa valon."
+          "description": "Määrää, kuinka kauan kenno altistuu valolle. Lyhyt aika pysäyttää liikkeen, pitkä tuo liike-epäterävyyttä. Ajan kaksinkertaistaminen kaksinkertaistaa valon."
         },
         "2": {
           "label": "ISO",
-          "description": "Säätelee kennon valoherkkyyttä. Korkeampi ISO kirkastaa kuvaa mutta lisää rakeisuutta/kohinaa. Käytä aina matalinta ISO:a, joka antaa tarvitsemasi valotuksen."
+          "description": "Säätää kennon valoherkkyyttä. Korkea ISO kirkastaa kuvaa, mutta lisää rakeisuutta ja kohinaa. Käytä aina pienintä ISO:a, jolla valotus riittää."
         },
         "3": {
           "label": "Valotusarvo (EV)",
-          "description": "Yksi luku, joka edustaa kokonaiskirkkautta. EV 0 vastaa 1 sekunnin valotusta f/1.0:lla. Jokainen +1 EV puolittaa valon."
+          "description": "Yksi luku, joka kuvaa kokonaiskirkkautta. EV 0 vastaa 1 sekunnin valotusta f/1.0:lla. Jokainen +1 EV puolittaa valon."
         }
       },
       "tips": {
         "0": {
-          "text": "Aloita aukon esivalintatilasta (A/Av): aseta aukko haluamaasi syväterävyyteen ja anna kameran valita suljinaika. Nosta ISO:a vain, kun suljinaika putoaa liian hitaaksi teräviin käsivarakuviin."
+          "text": "Aloita aukon esivalinnalla (A/Av): valitse aukko halutun syväterävyyden mukaan ja anna kameran päättää suljinajasta. Nosta ISO:a vasta, kun suljinaika putoaa niin hitaaksi, ettei käsivaralta enää saa teräviä kuvia."
         },
         "1": {
-          "text": "Urheiluun ja toimintaan vaihda suljinajan esivalintaan (S/Tv): valitse nopea suljinaika (1/500s tai nopeampi) ja anna kameran säätää aukko ja ISO sopivaksi."
+          "text": "Urheiluun ja toimintaan vaihda suljinajan esivalintaan (S/Tv): valitse nopea suljinaika (1/500s tai nopeampi) ja anna kameran säätää aukko ja ISO automaattisesti."
         },
         "2": {
-          "text": "\"Aurinkoinen 16\" -sääntö on nopea mielikeino: kirkkaana aurinkoisena päivänä aseta aukoksi f/16 ja suljinajaksi 1/ISO (esim. 1/100s ISO 100:ssa), niin saat oikein valotetun kuvan ilman mittausta."
+          "text": "Aurinkoinen 16 -sääntö on kätevä muistisääntö: kirkkaana aurinkoisena päivänä valitse aukoksi f/16 ja suljinajaksi 1/ISO (esim. 1/100s ISO 100:lla), niin saat oikein valotetun kuvan ilman mittausta."
         }
       },
       "tooltips": {
         "aperture": {
           "term": "Aukko",
-          "definition": "Objektiivin aukon koko ilmaistuna f-lukuna. Pienemmät luvut (f/1.4) päästävät läpi enemmän valoa ja sumentavat taustaa. Suuremmat luvut (f/16) päästävät vähemmän valoa mutta pitävät enemmän näkymää terävänä."
+          "definition": "Objektiivin aukon koko f-lukuna ilmaistuna. Pieni luku (f/1.4) päästää enemmän valoa ja sumentaa taustaa. Suuri luku (f/16) päästää vähemmän valoa mutta pitää suuremman osan näkymästä terävänä."
         },
         "shutterSpeed": {
           "term": "Suljinaika",
-          "definition": "Aika, jonka kenno altistuu valolle, tyypillisesti murto-osissa sekuntia (1/250s) tai kokonaisina sekunteina (2s). Nopeammat ajat jäädyttävät liikkeen; hitaammat luovat liike-epäterävyyttä."
+          "definition": "Aika, jonka kenno altistuu valolle. Yleensä murto-osia sekunnista (1/250s) tai kokonaisia sekunteja (2s). Lyhyt aika pysäyttää liikkeen, pitkä luo liike-epäterävyyttä."
         },
         "iso": {
           "term": "ISO",
-          "definition": "Kennon herkkyyden mittari. ISO 100 on peruslähtö (puhtain kuva). Jokainen kaksinkertaistus (200, 400, 800...) kirkastaa kuvaa yhden aukon mutta lisää asteittain kohinaa."
+          "definition": "Kennon valoherkkyyden mitta. ISO 100 on lähtöarvo (puhtain kuva). Jokainen kaksinkertaistus (200, 400, 800...) kirkastaa kuvaa yhdellä askeleella mutta lisää asteittain kohinaa."
         },
         "ev": {
           "term": "Valotusarvo (EV)",
-          "definition": "Yksittäinen luku, joka kokoaa kokonaisvalotuksen. Korkeampi EV tarkoittaa kirkkaampia olosuhteita tai enemmän tallennettua valoa. Jokainen +1 EV on kaksinkertainen valo."
+          "definition": "Yksittäinen luku, joka kuvaa kokonaisvalotuksen. Suurempi EV tarkoittaa kirkkaampia olosuhteita tai suurempaa tallennettua valomäärää. Jokainen +1 EV on kaksinkertainen valo."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Kuvaat koiraasi, joka juoksee puistossa aurinkoisena päivänä. Kuva tulee jatkuvasti epäteräväksi. Minkä asetuksen tulisi olla etusijalla liikkeen jäädyttämiseksi?",
-          "hint": "Liike-epäterävyys johtuu kohteen liikkeestä valotuksen aikana.",
-          "successMessage": "Oikein! Nopea suljinaika kuten 1/1000s jäädyttää koirasi kesken loikan. Aurinkoisena päivänä sinulla on runsaasti valoa tukemaan tätä.",
-          "failureMessage": "Tuo asetus ei suoraan jäädytä liikettä. Liikkuvan kohteen pysäyttämiseksi tarvitset nopean suljinajan — mitä lyhyempi valotus, sitä vähemmän kohteella on aikaa sumentua.",
+          "scenario": "Kuvaat koiraa, joka juoksee puistossa aurinkoisena päivänä. Kuvat tulevat jatkuvasti epäteräviksi. Minkä asetuksen tulisi olla ensisijainen, jotta liike pysähtyy?",
+          "hint": "Liike-epäterävyys syntyy siitä, että kohde liikkuu valotuksen aikana.",
+          "successMessage": "Oikein! Nopea suljinaika, kuten 1/1000s, pysäyttää koiran kesken loikan. Aurinkoisena päivänä valoa on runsaasti, joten siihen on varaa.",
+          "failureMessage": "Tuo asetus ei suoraan pysäytä liikettä. Liikkuvan kohteen pysäyttämiseen tarvitaan lyhyt suljinaika — mitä lyhyempi valotus, sitä vähemmän kohteella on aikaa sumentua.",
           "options": {
-            "0": { "label": "Avaa aukko f/2.8:aan" },
-            "1": { "label": "Käytä nopeaa suljinaikaa (1/1000s)" },
-            "2": { "label": "Nosta ISO 3200:aan" },
+            "0": { "label": "Avaa aukko arvoon f/2.8" },
+            "1": { "label": "Käytä lyhyttä suljinaikaa (1/1000s)" },
+            "2": { "label": "Nosta ISO arvoon 3200" },
             "3": { "label": "Käytä pidempää polttoväliä" }
           }
         },
         "1": {
-          "scenario": "Otat kuvia sisätiloissa syntymäpäiväjuhlissa. Kuvasi ovat liian tummia asetuksilla f/3.5, 1/60s, ISO 400. Et voi käyttää salamaa. Mikä on paras seuraava askel?",
-          "hint": "Tarvitset joko enemmän valoa kennolle tai enemmän vahvistusta signaalille.",
-          "successMessage": "Hyvä ajatus! ISO:n nostaminen 1600:aan antaa kaksi lisäaukkoa kirkkautta ja pitää samalla suljinajan riittävän nopeana käsivarakuvaukseen.",
-          "failureMessage": "Tuo muutos voi aiheuttaa muita ongelmia. Koska aukko on jo lähes suurin ja suljinajan on oltava riittävän nopea käsivaralle, ISO:n nosto on käytännöllisin säätö.",
+          "scenario": "Kuvaat syntymäpäiväjuhlia sisätiloissa. Kuvat ovat liian tummia asetuksilla f/3.5, 1/60s, ISO 400. Salamaa ei voi käyttää. Mikä on paras ratkaisu?",
+          "hint": "Tarvitset joko lisää valoa kennolle tai lisää vahvistusta signaaliin.",
+          "successMessage": "Hyvä ajatus! ISO:n nostaminen 1600:aan antaa kaksi valotusaskelta lisää kirkkautta ja pitää silti suljinajan riittävän lyhyenä käsivarakuvaukseen.",
+          "failureMessage": "Tuo muutos voi aiheuttaa muita ongelmia. Koska aukko on jo lähes täysin auki ja suljinajan on pysyttävä lyhyenä käsivarakuvauksessa, ISO:n nosto on järkevin säätö.",
           "options": {
-            "0": { "label": "Nosta ISO 1600:aan" },
-            "1": { "label": "Hidasta sulkinta 1/4s:ään" },
-            "2": { "label": "Sulje aukko f/8:aan" },
+            "0": { "label": "Nosta ISO arvoon 1600" },
+            "1": { "label": "Pidennä suljinaika arvoon 1/4s" },
+            "2": { "label": "Pienennä aukko arvoon f/8" },
             "3": { "label": "Vaihda pienempikennoiseen kameraan" }
           }
         },
         "2": {
-          "scenario": "Haluat kuvata vesiputousta silkinpehmeällä veden vaikutuksella kirkkaana päivänä. Nykyiset asetuksesi ovat f/8, 1/250s, ISO 100. Mitä sinun tulee muuttaa saadaksesi silkinpehmeän ilmeen?",
+          "scenario": "Haluat kuvata vesiputousta kirkkaana päivänä niin, että vedestä tulee silkinpehmeää. Nykyiset asetukset ovat f/8, 1/250s, ISO 100. Miten säädät asetuksia?",
           "hint": "Silkinpehmeä vesi vaatii pitkän valotuksen, mutta ulkona on hyvin kirkasta.",
-          "successMessage": "Juuri niin! Hitaan suljinajan (1/2s tai pidempi) käyttö ja kompensointi sulkemalla aukkoa f/22:een (ja mahdollisesti lisäämällä ND-suodin) antaa silkinpehmeän vesivaikutelman.",
-          "failureMessage": "Silkinpehmeän veden saamiseksi tarvitset hitaan suljinajan — noin 1/2s:stä useisiin sekunteihin. Kirkkaana päivänä joudut myös vähentämään objektiiviin tulevaa valoa välttääksesi ylivalotuksen.",
+          "successMessage": "Juuri niin! Pitkällä suljinajalla (1/2s tai pidempi) saat silkinpehmeän vesivaikutelman — kompensoi lisävalo pienentämällä aukko arvoon f/22 (ja mahdollisesti käyttämällä ND-suodinta).",
+          "failureMessage": "Silkinpehmeään veteen tarvitaan pitkä suljinaika — noin 1/2s:sta useaan sekuntiin. Kirkkaana päivänä joudut myös vähentämään objektiiviin tulevaa valoa, ettei kuva ylivalotu.",
           "options": {
-            "0": { "label": "Käytä 1/2s suljinta ja kavenna f/22:een" },
-            "1": { "label": "Käytä 1/1000s suljinta f/2.8:ssa" },
-            "2": { "label": "Nosta ISO 6400:aan" },
-            "3": { "label": "Pidä 1/250s mutta avaa f/1.4:ään" }
+            "0": { "label": "Käytä suljinta 1/2s ja pienennä aukko arvoon f/22" },
+            "1": { "label": "Käytä suljinta 1/1000s aukolla f/2.8" },
+            "2": { "label": "Nosta ISO arvoon 6400" },
+            "3": { "label": "Pidä 1/250s, mutta avaa aukko arvoon f/1.4" }
           }
         },
         "3": {
-          "scenario": "Oikein valotettu kuvasi on f/5.6, 1/125s, ISO 200. Haluat vaihtaa aukoksi f/2.8:n saadaksesi enemmän taustan sumennusta. Miten säädät muita asetuksia pitääksesi saman valotuksen?",
-          "hint": "f/5.6:sta f/2.8:aan on 2 aukkoa enemmän valoa. Sinun on poistettava 2 aukkoa jostain muualta.",
-          "successMessage": "Täydellistä! Avaaminen f/5.6:sta f/2.8:aan lisää 2 aukkoa valoa. Suljinajan muuttaminen 1/125s:stä 1/500s:ään poistaa tarkalleen 2 aukkoa, pitäen valotuksen identtisenä.",
-          "failureMessage": "Matematiikan on tasapainotuttava. f/5.6:sta f/2.8:aan on +2 aukkoa. Kompensoi poistamalla tarkalleen 2 aukkoa nopeammalla suljinajalla, matalammalla ISO:lla tai yhdistelmällä.",
+          "scenario": "Oikein valotettu kuva on f/5.6, 1/125s, ISO 200. Haluat vaihtaa aukoksi f/2.8, jotta taustasta tulee sumeampi. Miten säädät muita asetuksia, jotta valotus pysyy samana?",
+          "hint": "f/5.6:sta f/2.8:aan on 2 valotusaskelta lisää valoa. Saman verran pitää ottaa pois jostain muualta.",
+          "successMessage": "Täydellistä! Aukon avaaminen f/5.6:sta f/2.8:aan tuo 2 valotusaskelta lisää valoa. Suljinajan muuttaminen 1/125s:stä 1/500s:iin vähentää tarkalleen 2 askelta, joten valotus pysyy samana.",
+          "failureMessage": "Laskutoimituksen on mentävä tasan. f/5.6:sta f/2.8:aan on +2 valotusaskelta. Kompensoi tarkalleen 2 askelta pois — joko lyhyemmällä suljinajalla, matalammalla ISO:lla tai näiden yhdistelmällä.",
           "options": {
-            "0": { "label": "1/500s ISO 200:ssa" },
-            "1": { "label": "1/250s ISO 200:ssa" },
-            "2": { "label": "1/125s ISO 100:ssa" },
-            "3": { "label": "1/60s ISO 100:ssa" }
+            "0": { "label": "1/500s, ISO 200" },
+            "1": { "label": "1/250s, ISO 200" },
+            "2": { "label": "1/125s, ISO 100" },
+            "3": { "label": "1/60s, ISO 100" }
           }
         },
         "4": {
-          "scenario": "Kuvaat konserttia hämärässä tilassa. Esiintyjät liikkuvat nopeasti värillisten lavavalojen alla. Tarvitset vähintään 1/250s jäädyttääksesi liikkeen. Valovoimaisin objektiivisi on f/2.8. Mitä ISO:a tarvitset todennäköisesti, jos näkymä mittaa EV 6:n?",
-          "hint": "EV 6:ssa, f/2.8:lla, laske ISO saavuttaaksesi 1/250s. Jokainen ISO:n kokonainen aukko kaksinkertaistaa kirkkauden.",
-          "successMessage": "Oikein! EV 6:ssa f/2.8:lla ja 1/250s:llä tarvitset ISO 3200:n. Konserttikuvaus vaatii usein korkeaa ISO:a — kameran käyttökelpoisen ISO-rajan tunteminen on näissä tilanteissa ratkaisevaa.",
-          "failureMessage": "EV 6:ssa f/2.8:n ja 1/250s:n yhdistelmä vaatii ISO 3200:n oikeaan valotukseen. Valotuskaava tasapainottaa aukon, suljinajan ja ISO:n saatavilla olevan valon kanssa.",
+          "scenario": "Kuvaat konserttia hämärässä salissa. Esiintyjät liikkuvat nopeasti värillisten lavavalojen alla. Tarvitset vähintään 1/250s pysäyttääksesi liikkeen, ja valovoimaisin objektiivisi on f/2.8. Minkä ISO:n tarvitset, kun näkymä mittaa EV 6?",
+          "hint": "EV 6:ssa, f/2.8:lla, laske ISO niin että 1/250s riittää. Yksi ISO-askel kaksinkertaistaa kirkkauden.",
+          "successMessage": "Oikein! EV 6:ssa f/2.8:lla ja 1/250s:llä tarvitset ISO 3200:n. Konserttikuvauksessa joutuu usein korkeille ISO:ille — siksi kameran käyttökelpoisen ISO-rajan tunteminen on tärkeää.",
+          "failureMessage": "EV 6:ssa f/2.8:n ja 1/250s:n yhdistelmä vaatii oikeaan valotukseen ISO 3200:n. Valotuskaava tasapainottaa aukon, suljinajan ja ISO:n käytettävissä olevan valon kanssa.",
           "options": {
             "0": { "label": "ISO 400" },
             "1": { "label": "ISO 800" },

@@ -31,15 +31,15 @@
       "faq": {
         "what-is-crop-factor": {
           "question": "Was ist der Crop-Faktor und warum ist er wichtig?",
-          "answer": "Der Crop-Faktor beschreibt den Gr\u00f6\u00dfenunterschied zwischen dem Sensor einer Kamera und einem Vollformatsensor (35 mm). Er beeinflusst die effektive Brennweite, die Sch\u00e4rfentiefe und die Leistung bei wenig Licht. Ein 1,5-facher Crop-Faktor bedeutet, dass der Sensor 1,5-mal kleiner als Vollformat ist."
+          "answer": "Der Crop-Faktor beschreibt den Größenunterschied zwischen dem Sensor einer Kamera und einem Vollformatsensor (35 mm). Er wirkt sich auf die effektive Brennweite, die Schärfentiefe und das Verhalten bei wenig Licht aus. Ein Crop-Faktor von 1,5 bedeutet, dass der Sensor 1,5-mal kleiner ist als Vollformat."
         },
         "full-frame-vs-aps-c": {
-          "question": "Was sind die Vorteile von Vollformat- gegen\u00fcber APS-C-Sensoren?",
-          "answer": "Vollformatsensoren bieten bessere Leistung bei wenig Licht, geringere Sch\u00e4rfentiefe und ein breiteres Sichtfeld bei jeder Brennweite. APS-C-Sensoren sind g\u00fcnstiger, leichter und bieten zus\u00e4tzliche Reichweite f\u00fcr Wildtier- und Sportfotografie."
+          "question": "Welche Vorteile haben Vollformatsensoren gegenüber APS-C-Sensoren?",
+          "answer": "Vollformatsensoren liefern eine bessere Leistung bei wenig Licht, eine geringere Schärfentiefe und einen weiteren Bildwinkel bei jeder Brennweite. APS-C-Sensoren sind günstiger, leichter und bieten zusätzliche Reichweite für Wildlife- und Sportfotografie."
         },
         "sensor-size-and-depth-of-field": {
-          "question": "Wie beeinflusst die Sensorgr\u00f6\u00dfe die Sch\u00e4rfentiefe?",
-          "answer": "Gr\u00f6\u00dfere Sensoren erzeugen bei gleichem Bildausschnitt eine geringere Sch\u00e4rfentiefe. Um den gleichen Bildausschnitt mit einem kleineren Sensor zu erhalten, verwendet man entweder eine k\u00fcrzere Brennweite (gr\u00f6\u00dfere Sch\u00e4rfentiefe) oder geht weiter weg (gr\u00f6\u00dfere Sch\u00e4rfentiefe), beides reduziert die Hintergrundunsch\u00e4rfe."
+          "question": "Wie wirkt sich die Sensorgröße auf die Schärfentiefe aus?",
+          "answer": "Größere Sensoren erzeugen bei gleichem Bildausschnitt eine geringere Schärfentiefe. Um mit einem kleineren Sensor denselben Bildausschnitt zu erhalten, nimmst du entweder eine kürzere Brennweite oder gehst weiter weg — beides vergrößert die Schärfentiefe und reduziert die Hintergrundunschärfe."
         }
       }
     }

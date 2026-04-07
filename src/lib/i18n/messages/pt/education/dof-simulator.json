@@ -1,7 +1,7 @@
 {
   "education": {
     "dof-simulator": {
-      "beginner": "Profundidade de campo (PdC) é a faixa de distância na sua foto que aparece aceitavelmente nítida. Uma PdC rasa desfoca o fundo atrás do seu assunto, enquanto uma PdC profunda mantém tudo, do primeiro plano ao horizonte, em foco. Controlar a PdC é uma das ferramentas criativas mais poderosas na fotografia.",
+      "beginner": "Profundidade de campo (PdC) é a faixa de distância na sua foto que aparece aceitavelmente nítida. Uma PdC rasa desfoca o fundo atrás do seu assunto, enquanto uma PdC profunda mantém tudo, do primeiro plano ao horizonte, em foco. Controlar a PdC é um dos recursos criativos mais importantes da fotografia.",
       "deeper": {
         "0": {
           "heading": "Como a Profundidade de Campo Funciona",
@@ -125,7 +125,7 @@
           }
         },
         "1": {
-          "scenario": "Você está fotografando um grupo de 8 pessoas organizadas em duas fileiras em um casamento. Qual abertura ajudará a garantir que todos fiquem em foco?",
+          "scenario": "Você está fotografando um grupo de 8 pessoas organizadas em duas fileiras em um casamento. Qual abertura ajuda a manter todos em foco?",
           "hint": "Com pessoas em distâncias ligeiramente diferentes, você precisa de profundidade de campo suficiente para cobrir ambas as fileiras.",
           "successMessage": "Ótima escolha! f/5.6 fornece profundidade de campo suficiente para manter ambas as fileiras nítidas enquanto mantém velocidades de obturador decentes em ambientes internos.",
           "failureMessage": "Essa abertura pode deixar a fileira de trás fora de foco ou ser desnecessariamente fechada. Para duas fileiras de pessoas, f/5.6 é um ponto de partida confiável.",

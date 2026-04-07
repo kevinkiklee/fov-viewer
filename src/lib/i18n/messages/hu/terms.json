@@ -9,25 +9,25 @@
       },
       "descriptionOfService": {
         "title": "A szolgáltatás leírása",
-        "body": "A PhotoTools ingyenes, oktatási célú fotós eszközöket kínál, beleértve interaktív kalkulátorokat, szimulátorokat és referenciaanyagokat. Az oldal kizárólag tájékoztatási és oktatási célokat szolgál. Minden eszköz ingyenes, és célja, hogy segítsen a fotósoknak megérteni a fotográfiai fogalmakat."
+        "body": "A PhotoTools ingyenes, oktatási célú fotós eszközöket kínál, köztük interaktív kalkulátorokat, szimulátorokat és referenciaanyagokat. Az oldal kizárólag tájékoztatási és oktatási célokat szolgál. Minden eszköz ingyenes, és az a célja, hogy segítsen a fotósoknak megérteni a fotózás alapfogalmait."
       },
       "noWarranty": {
-        "title": "Szavatosság kizárása",
-        "body": "A PhotoTools „adott állapotában” érhető el, mindenféle kifejezett vagy hallgatólagos szavatosság nélkül. Nem garantáljuk, hogy az eszközök, kalkulátorok vagy az oldalon található információk pontosak, teljesek vagy bármely konkrét célra alkalmasak. Az eszközeink eredményei közelítések, és nem szabad rájuk hagyatkozni kritikus döntéseknél, professzionális munkáknál vagy olyan helyzetekben, ahol a pontosság elengedhetetlen. A fontos számításokat mindig ellenőriztesd képzett szakemberekkel vagy hiteles forrásokkal."
+        "title": "Szavatossági kizárás",
+        "body": "A PhotoTools „adott állapotában” érhető el, mindenféle kifejezett vagy hallgatólagos szavatosság nélkül. Nem garantáljuk, hogy az eszközök, a kalkulátorok vagy az oldalon található információk pontosak, teljesek vagy bármely konkrét célra alkalmasak. Az eszközeink eredményei közelítések, ezért nem szabad rájuk hagyatkozni kritikus döntéseknél, professzionális munkáknál vagy olyan helyzetekben, ahol a pontosság elengedhetetlen. A fontos számításokat mindig ellenőriztesd képzett szakemberekkel vagy hiteles forrásokkal."
       },
       "intellectualProperty": {
         "title": "Szellemi tulajdon",
-        "body": "A PhotoTools minden tartalma — beleértve a szövegeket, grafikákat, eszköztervezést, kódot és oktatási anyagokat — a PhotoTools tulajdona, hacsak másként nincs jelezve. Az eszközöket és a referenciaanyagokat szabadon használhatod személyes és oktatási célokra. A tartalom sokszorosítása, újraterjesztése vagy kereskedelmi felhasználása előzetes írásos engedély nélkül tilos."
+        "body": "A PhotoTools minden tartalma — így a szövegek, a grafikák, az eszközök tervezése, a forráskód és az oktatási anyagok — a PhotoTools tulajdona, hacsak kifejezetten másként nincs jelölve. Az eszközöket és a referenciaanyagokat szabadon használhatod személyes és oktatási célra. A tartalom sokszorosítása, újraterjesztése vagy kereskedelmi célú felhasználása előzetes írásos engedély nélkül tilos."
       },
       "acceptableUse": {
         "title": "Elfogadható használat",
         "intro": "A PhotoTools használatakor vállalod, hogy nem teszed a következőket:",
         "items": {
-          "laws": "Nem sértesz meg helyi, országos vagy nemzetközi jogszabályokat vagy előírásokat",
-          "disrupt": "Nem zavarod meg az oldal működését, szervereit vagy hálózatait",
-          "scrape": "Nem „kapard le”, nem másold le automatikusan és nem nyered ki szisztematikusan az oldal adatait előzetes írásos engedély nélkül",
-          "misrepresent": "Nem hamisítod meg a személyazonosságodat vagy kapcsolataidat a PhotoTools-szal folytatott kommunikációban",
-          "commercial": "Nem használod az oldalt személyes referencián túli kereskedelmi célra engedély nélkül"
+          "laws": "Nem sértesz meg helyi, országos vagy nemzetközi jogszabályt vagy előírást",
+          "disrupt": "Nem zavarod meg az oldal működését, a szervereit vagy a hálózatait",
+          "scrape": "Nem scrape-eled, nem másolod le automatikusan és nem nyered ki szisztematikusan az oldal adatait előzetes írásos engedély nélkül",
+          "misrepresent": "Nem adod ki magad másnak és nem hamisítod meg a kapcsolataidat a PhotoToolszal folytatott kommunikációban",
+          "commercial": "Nem használod az oldalt a személyes használaton túlmutató kereskedelmi célra engedély nélkül"
         }
       },
       "thirdPartyContent": {
@@ -35,12 +35,12 @@
         "body": "A PhotoTools harmadik féltől származó hirdetéseket jelenít meg, és külső weboldalakra mutató linkeket tartalmazhat. Nem vagyunk felelősek a harmadik fél hirdetők vagy linkelt oldalak tartalmáért, pontosságáért vagy gyakorlataiért. Egy hirdetés vagy külső link megjelenítése nem jelenti annak támogatását a PhotoTools részéről. A harmadik fél szolgáltatásokkal való interakcióidat azok saját feltételei és adatvédelmi tájékoztatói szabályozzák."
       },
       "limitationOfLiability": {
-        "title": "Felelősség korlátozása",
-        "body": "A törvény által megengedett legteljesebb mértékben a PhotoTools és üzemeltetői nem vállalnak felelősséget semmilyen közvetlen, közvetett, esetleges, különleges vagy következményes kárért, ami az oldal vagy eszközei használatából — vagy használhatatlanságából — ered. Ez többek között magában foglalja a PhotoTools által nyújtott információkra vagy számításokra való hagyatkozásból eredő károkat is. Az oldal használata teljes mértékben a saját kockázatodra történik."
+        "title": "A felelősség korlátozása",
+        "body": "A törvény által megengedett legteljesebb mértékben a PhotoTools és üzemeltetői nem vállalnak felelősséget semmilyen közvetlen, közvetett, járulékos, különleges vagy következményes kárért, amely az oldal vagy eszközei használatából — vagy használhatatlanságából — ered. Ez többek között a PhotoTools által nyújtott információkra vagy számításokra való hagyatkozásból eredő károkat is magában foglalja. Az oldalt teljes mértékben a saját kockázatodra használod."
       },
       "changesToTerms": {
         "title": "A feltételek módosítása",
-        "body": "Ezeket a felhasználási feltételeket bármikor módosíthatjuk. A frissített feltételek ezen az oldalon jelennek meg, új hatálybalépési dátummal. A PhotoTools folyamatos használata a módosítások közzététele után a frissített feltételek elfogadásának minősül. Javasoljuk, hogy időnként nézd át a feltételeket."
+        "body": "Ezeket a felhasználási feltételeket bármikor módosíthatjuk. A frissített feltételek ezen az oldalon jelennek meg, új hatálybalépési dátummal. Ha a módosítások közzététele után továbbra is használod a PhotoToolst, az a frissített feltételek elfogadásának minősül. Javasoljuk, hogy időnként nézd át a feltételeket."
       },
       "contact": {
         "title": "Kapcsolat",

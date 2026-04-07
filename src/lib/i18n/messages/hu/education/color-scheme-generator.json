@@ -1,31 +1,31 @@
 {
   "education": {
     "color-scheme-generator": {
-      "beginner": "A színharmónia arról szól, hogy olyan színeket válassz, amik jól mutatnak együtt. Akár a zenei akkordoknál, bizonyos színkombinációk kellemes vizuális kapcsolatot teremtenek. A fotósok színharmóniával tervezik a ruhát, a díszletet, sőt a kültéri felvételek időzítését is, hogy a természettől megkapják a megfelelő palettát.",
+      "beginner": "A színharmónia arról szól, hogy olyan színeket válassz, amik jól mutatnak együtt. Mint a zenei akkordoknál, bizonyos színkombinációk kellemes vizuális összhangot teremtenek. A fotósok a színharmóniát használják, amikor ruhát, díszletet vagy akár a kültéri felvételek időzítését tervezik, hogy a természettől megkapják a megfelelő palettát.",
       "deeper": {
         "0": {
           "heading": "A színkör",
-          "text": "A színharmónia elmélete a színkörön alapul, ami a színárnyalatokat körben rendezi a hullámhosszuk szerinti kapcsolatok alapján. A HSL (színárnyalat, telítettség, világosság) modell közvetlenül megfeleltethető a körnek: a hue a szög (0–360°), a saturation a középponttól való távolság, a lightness pedig a fényességet szabályozza. A fotózásban ezek a kapcsolatok természetesen is megjelennek — az arany óra analóg meleg tónusokat ad, míg egy piros pajta egy zöld mező előtt komplementer."
+          "text": "A színharmónia elmélete a színkörön alapul, ami a színárnyalatokat körben, hullámhosszuk szerinti kapcsolataik alapján rendezi el. A HSL (színárnyalat, telítettség, világosság) modell közvetlenül ráillik a körre: a hue a szög (0–360°), a saturation a középponttól való távolság, a lightness pedig a fényesség. A fotózásban ezek a kapcsolatok magától is megjelennek — az arany óra meleg analóg tónusokat ad, egy piros pajta egy zöld mező előtt viszont komplementer páros."
         },
         "1": {
           "heading": "Komplementer",
-          "text": "Két szín, ami pontosan egymással szemben helyezkedik el a színkörön (180°-ra egymástól), például a kék és a narancs, vagy a piros és a zöld. Ez adja a legnagyobb kontrasztot és a legerősebb vizuális energiát. Kiváló, ha a téma kiemelkedne a háttérből — gondolj az arany órás portrékra, ahol a meleg bőrtónus a hűvös kék éggel ütközik."
+          "text": "Két szín, ami a színkörön pontosan egymással szemben helyezkedik el (180°-ra egymástól), például a kék és a narancs, vagy a piros és a zöld. Ez adja a legnagyobb kontrasztot és a legerősebb vizuális energiát. Kiváló, ha azt szeretnéd, hogy a téma kiugorjon a háttérből — gondolj az arany órás portrékra, ahol a meleg bőrtónus a hűvös kék éggel ütközik."
         },
         "2": {
           "heading": "Analóg",
-          "text": "Három szín, amik szomszédosak a körön, jellemzően 30–60°-os tartományban. Lágy, egységes palettát adnak alacsony kontraszttal. Ideális tájképekhez és hangulatos munkákhoz — az őszi lombkorona természetes analóg paletta, ami a pirosat, a narancsot és a sárgát ötvözi."
+          "text": "Három szín, amelyek a körön szomszédosak, jellemzően 30–60°-os tartományban. Lágy, egységes palettát adnak alacsony kontraszttal. Ideális tájképhez és hangulatos képekhez — az őszi lombkorona természetes analóg paletta, a pirost, a narancsot és a sárgát vegyíti."
         },
         "3": {
           "heading": "Triadikus",
-          "text": "Három szín, amik 120°-os lépésekben egyenletesen oszlanak el a körön, például a piros, a sárga és a kék. A triadikus séma kiegyensúlyozott és élénk a komplementer feszültsége nélkül. A legerősebb eredményt akkor kapod, ha egy színt dominánssá teszel, a másik kettőt pedig akcentként használod."
+          "text": "Három szín, amelyek 120°-os lépésekben, egyenletesen oszlanak el a körön, például a piros, a sárga és a kék. A triadikus séma kiegyensúlyozott és élénk, a komplementer feszültsége nélkül. Akkor adja a legerősebb eredményt, ha az egyik színt dominánsként használod, a másik kettőt pedig akcentként."
         },
         "4": {
           "heading": "Osztott komplementer",
-          "text": "A komplementer egy változata, ami a szemben lévő szín helyett annak két szomszédját használja. Megtartja a komplementer erős kontrasztját, de csökkenti a vizuális feszültséget, így sokoldalúbb és megbocsátóbb. Népszerű választás stílusos portrésorozatokhoz."
+          "text": "A komplementer változata, amely a szemben lévő szín helyett annak két szomszédját veszi. Megtartja a komplementer erős kontrasztját, de enyhíti a vizuális feszültséget — így sokoldalúbb és megbocsátóbb. Stílusos portrésorozatokhoz népszerű választás."
         },
         "5": {
           "heading": "Tetradikus (dupla komplementer)",
-          "text": "Négy szín, ami téglalapot alkot a színkörön — lényegében két komplementer pár. Ez adja a leggazdagabb, legösszetettebb palettát, de gondos egyensúlyt igényel. Hagyj egy színt dominálni, a többit pedig támogató akcentként használd, hogy ne váljon kaotikussá."
+          "text": "Négy szín, amely téglalapot alkot a színkörön — lényegében két komplementer pár. Ez adja a leggazdagabb, legösszetettebb palettát, de gondos egyensúlyt igényel. Hagyd, hogy egy szín domináljon, a többit pedig kísérő akcentként használd, különben a kép kaotikussá válik."
         }
       },
       "keyFactors": {
@@ -48,13 +48,13 @@
       },
       "tips": {
         "0": {
-          "text": "Portréüléshez válassz komplementer vagy osztott komplementer palettát, és a téma viselje a kulcsszínt, míg a háttér adja a kontrasztot. A kék/narancs (arany órás portrék) klasszikus példa."
+          "text": "Portréfotózáshoz válassz komplementer vagy osztott komplementer palettát — a téma viselje a kulcsszínt, a háttér pedig adja a kontrasztot. A kék/narancs (arany órás portrék) klasszikus példa."
         },
         "1": {
-          "text": "Tájképekhez használj analóg harmóniát — a természet amúgy is analóg palettákban dolgozik. Igazítsd a ruhát vagy a kellékeket a domináns természetes színárnyalatokhoz."
+          "text": "Tájképhez használj analóg harmóniát — a természet amúgy is analóg palettákkal dolgozik. Igazítsd a ruhát vagy a kellékeket a domináns természetes színárnyalatokhoz."
         },
         "2": {
-          "text": "Csökkentsd a telítettséget 30–50%-ra, hogy lásd, milyen visszafogottabb, szerkesztői stílusban mutatnának a színek. A magas telítettség reklám- és divatfotózáshoz jó, de az alacsonyabb gyakran kifinomultabb."
+          "text": "Húzd le a telítettséget 30–50%-ra, hogy lásd, milyen a visszafogottabb, szerkesztőibb stílus. A magas telítettség reklám- és divatfotózáshoz jó, de az alacsonyabb gyakran kifinomultabb."
         }
       },
       "tooltips": {

@@ -3,8 +3,8 @@
     "fov-simulator": {
       "rotate": "Otočit",
       "center": "Vycentrovat",
-      "switchToPortrait": "Přepnout na na výšku",
-      "switchToLandscape": "Přepnout na na šířku",
+      "switchToPortrait": "Přepnout na výšku",
+      "switchToLandscape": "Přepnout na šířku",
       "centerOverlays": "Vycentrovat překryvy",
       "addLens": "+ Přidat objektiv",
       "fovSimulator": "FOV Simulator",

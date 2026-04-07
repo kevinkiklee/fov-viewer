@@ -1,19 +1,19 @@
 {
   "education": {
     "sensor-size-comparison": {
-      "beginner": "A kameraérzékelők sokféle méretben készülnek, a stúdiókamerákban használt nagy közepes formátumú chipektől az okostelefonok apró érzékelőiig. A nagyobb érzékelő több fényt gyűjt, kevesebb zajt ad, és könnyebben elmossa a hátteret. Az érzékelőméret az egyik legnagyobb tényező, ami elválasztja a kamerakategóriákat.",
+      "beginner": "A kameraérzékelők nagyon sokféle méretben készülnek, a stúdiókamerákban használt nagy közepes formátumú chipektől az okostelefonok apró érzékelőiig. A nagyobb érzékelő több fényt gyűjt, kevesebb zajt ad, és könnyebben elmossa a hátteret. Az érzékelőméret az egyik legfontosabb tényező, ami elválasztja egymástól a kamerakategóriákat.",
       "deeper": {
         "0": {
           "heading": "Hogyan működik",
-          "text": "Az érzékelőméret több, összekapcsolódó módon hat a fotózásra. A nagyobb érzékelő nagyobb területen gyűjti a fotonokat, javítva a jel-zaj viszonyt és a dinamikatartományt. Az érzékelőméret az egyik legfontosabb különbség a kamerakategóriák között — a stúdiós közepes formátumú gépektől az okostelefon-érzékelőkig."
+          "text": "Az érzékelőméret több, egymással összefüggő módon hat a fotózásra. A nagyobb érzékelő nagyobb területen gyűjti a fotonokat, így jobb a jel-zaj viszonya és tágabb a dinamikatartománya. Az érzékelőméret az egyik legfontosabb választóvonal a kamerakategóriák között — a stúdiós közepes formátumú gépektől az okostelefon-érzékelőkig."
         },
         "1": {
           "heading": "Crop faktor",
-          "text": "A „crop faktor” azt írja le, hogyan viszonyul egy érzékelő a 35mm-es Full Frame szabványhoz. Egy APS-C érzékelő 1,5× crop faktorral ugyanazt a látószöget adja egy 35mm-es objektívvel, mint egy Full Frame kamera egy 52,5mm-essel. Ez a crop faktor az effektív mélységélességet is megszorozza — egy kisebb érzékelő azonos kompozíción látszólag nagyobb mélységélességet ad, mert rövidebb (szélesebb) objektív kell a látószög illesztéséhez."
+          "text": "A „crop faktor” azt mutatja meg, hogyan viszonyul egy érzékelő a 35mm-es Full Frame szabványhoz. Egy APS-C érzékelő 1,5× crop faktorral ugyanazt a látószöget adja egy 35mm-es objektívvel, mint egy Full Frame kamera egy 52,5mm-essel. A crop faktor az effektív mélységélességet is megszorozza — a kisebb érzékelőn azonos kompozíción látszólag nagyobb a mélységélesség, mert rövidebb (szélesebb) objektív kell a látószög illesztéséhez."
         },
         "2": {
           "heading": "Pixelsűrűség",
-          "text": "A pixelsűrűség (pixel pitch) azt méri, mennyire szorosan vannak egymás mellett a pixelek az érzékelőn. Ha több megapixelt sűrítesz egy kisebb érzékelőre, minden fotoérzékelő zsugorodik, és kevesebb fényt gyűjt. Egy 24MP Full Frame érzékelő ~6µm pixelekkel rendelkezik, míg egy 24MP APS-C ~4µm pixelekkel, ezért a Full Frame általában jobban teljesít magas ISO-n."
+          "text": "A pixelsűrűség (pixel pitch) azt méri, milyen szorosan ülnek egymás mellett a pixelek az érzékelőn. Ha több megapixelt zsúfolsz egy kisebb érzékelőre, minden fotóérzékelő zsugorodik, és kevesebb fényt gyűjt. Egy 24MP Full Frame érzékelőn nagyjából 6µm-es pixelek vannak, egy 24MP APS-C-n viszont ~4µm-esek — ezért teljesít a Full Frame általában jobban magas ISO-n."
         }
       },
       "keyFactors": {
@@ -36,13 +36,13 @@
       },
       "tips": {
         "0": {
-          "text": "Használd az átfedés módot, hogy pontosan lásd, mennyivel nagyobb egy érzékelő a másiknál — a területkülönbség gyakran drámaibb, mint amit a számok sejtetnek."
+          "text": "Használd az átfedés módot, hogy pontosan lásd, mennyivel nagyobb egyik érzékelő a másiknál — a területkülönbség sokszor drámaibb, mint amit a számok sejtetnek."
         },
         "1": {
-          "text": "Válts pixelsűrűség módra, és add meg a kamerád felbontását a pixel pitch összehasonlításához. Ha a kamerád nagyon nagy pixelsűrűségű, a vártnál tágabb rekesznél is diffrakciós határba futhatsz."
+          "text": "Válts pixelsűrűség módra, és add meg a kamerád felbontását, hogy összehasonlítsd a pixel pitch-et. Ha a kamerád nagyon nagy pixelsűrűségű, a vártnál tágabb rekesznél is bejön a diffrakció."
         },
         "2": {
-          "text": "Kamerák összehasonlításakor az érzékelőterület fontosabb a zajhoz, mint a megapixelszám. Egy 20MP Full Frame érzékelő általában jobban teljesít magas ISO-n, mint egy 40MP APS-C."
+          "text": "Kamerák összehasonlításakor a zaj szempontjából az érzékelőterület fontosabb, mint a megapixelszám. Egy 20MP Full Frame általában jobban teljesít magas ISO-n, mint egy 40MP APS-C."
         }
       },
       "tooltips": {
@@ -76,9 +76,9 @@
           }
         },
         "1": {
-          "scenario": "Egy 50mm-es objektívet teszel egy 2,0×-es crop faktorú érzékelőjű kamerára. Milyen Full Frame-ekvivalens gyújtótávolságot kapsz?",
+          "scenario": "Egy 50mm-es objektívet teszel egy 2,0×-es crop faktorú kamerára. Milyen Full Frame-ekvivalens gyújtótávolságot kapsz?",
           "hint": "Szorozd meg a gyújtótávolságot a crop faktorral.",
-          "successMessage": "Jó! 50 mm × 2,0 = 100 mm ekvivalens. Ezért népszerűek a Micro Four Thirds kamerák teleobjektíves munkához — minden objektívtől extra hatótávolságot kapsz.",
+          "successMessage": "Így van! 50 mm × 2,0 = 100 mm ekvivalens. Ezért népszerűek a Micro Four Thirds gépek teleobjektíves munkához — minden objektívtől extra hatótávolságot kapsz.",
           "failureMessage": "Szorozd meg az objektív gyújtótávolságát a crop faktorral: 50 mm × 2,0 = 100 mm ekvivalens.",
           "options": {
             "0": { "label": "25 mm" },

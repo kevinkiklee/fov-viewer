@@ -57,15 +57,15 @@
       "faq": {
         "what-is-exif-data": {
           "question": "Mi az EXIF adat egy fotón?",
-          "answer": "Az EXIF (Exchangeable Image File Format) adat a kamera által a fotóba ágyazott metaadat. Tartalmazza a kamerabeállításokat (rekesz, záridő, ISO), a kamera és az objektív modelljét, a dátumot és időt, néha pedig a GPS-pozíciót is."
+          "answer": "Az EXIF (Exchangeable Image File Format) adat a kamera által a fotóba ágyazott metaadat. Tartalmazza a kamerabeállításokat (rekesz, záridő, ISO), a kamera és az objektív modelljét, a dátumot és az időpontot, néha pedig a GPS-pozíciót is."
         },
         "how-to-read-histogram": {
-          "question": "Hogyan olvassam egy fotó hisztogramját?",
-          "answer": "A hisztogram a kép fényesség-eloszlását mutatja az árnyékoktól (bal) a fénypontokig (jobb). Egy jól exponált fotó általában a teljes tartományra eloszlik clipping nélkül, bár az ideális alak jelenetenként változik."
+          "question": "Hogyan olvassam ki egy fotó hisztogramját?",
+          "answer": "A hisztogram a kép fényesség-eloszlását mutatja meg az árnyékoktól (bal oldal) a fénypontokig (jobb oldal). Egy jól exponált fotó általában a teljes tartományra eloszlik anélkül, hogy clippingbe futna, de az ideális alak jelenetenként változik."
         },
         "does-exif-contain-location": {
-          "question": "Tartalmaz az EXIF helymeghatározást?",
-          "answer": "Ha a kamerád vagy telefonod GPS-e be van kapcsolva, az EXIF pontos GPS-koordinátákat tartalmazhat arról, hol készült a fotó. Légy tudatában ennek fotók megosztásakor — sok közösségi platform eltávolítja az EXIF-et, de nem mindegyik."
+          "question": "Tartalmaz az EXIF helymeghatározási adatot?",
+          "answer": "Ha a kamerád vagy a telefonod GPS-e be van kapcsolva, az EXIF pontos GPS-koordinátákat tárolhat arról, hol készült a fotó. Figyelj oda erre fotók megosztásakor — sok közösségi platform eltávolítja az EXIF-et, de nem mindegyik."
         }
       }
     }

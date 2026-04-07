@@ -32,15 +32,15 @@
       "faq": {
         "what-is-fov": {
           "question": "Mikä kuvakulma on valokuvauksessa?",
-          "answer": "Kuvakulma (FOV) on se näkymän kulmainen ulottuvuus, joka näkyy objektiivin ja kameran kennon läpi. Se määrittää kuinka paljon näkymästä tallentuu kuvaan, ja siihen vaikuttavat polttoväli ja kennokoko."
+          "answer": "Kuvakulma (FOV) kertoo, kuinka laajan osan näkymästä objektiivi ja kenno tallentavat. Se määrittää, kuinka paljon näkymää kuvaan mahtuu, ja riippuu polttovälistä ja kennokoosta."
         },
         "how-crop-factor-affects-fov": {
           "question": "Miten kerroin vaikuttaa kuvakulmaan?",
-          "answer": "Pienempi kenno (suurempi kerroin) tallentaa kapeamman kuvakulman kuin täyskennoinen samalla polttovälillä. Esimerkiksi APS-C-kennoissa, joilla on 1,5-kertainen kerroin, 50 mm:n objektiivi käyttäytyy kuvakulman suhteen kuin 75 mm."
+          "answer": "Pienempi kenno (suurempi kerroin) tallentaa kapeamman kuvakulman kuin täyskenno samalla polttovälillä. Esimerkiksi APS-C-kennolla, jonka kerroin on 1,5x, 50 mm:n objektiivi vastaa kuvakulmaltaan 75 mm:ä täyskennolla."
         },
         "fov-vs-focal-length": {
-          "question": "Mikä on kuvakulman ja polttovälin välinen suhde?",
-          "answer": "Kuvakulma ja polttoväli ovat käänteisesti verrannollisia. Lyhyemmät polttovälit (laajakulma) antavat laajemman kuvakulman, kun taas pidemmät polttovälit (tele) antavat kapeamman kuvakulman. Tarkkaan kuvakulmaan vaikuttaa myös kennokoko."
+          "question": "Miten kuvakulma ja polttoväli liittyvät toisiinsa?",
+          "answer": "Kuvakulma ja polttoväli ovat kääntäen verrannollisia. Lyhyt polttoväli (laajakulma) antaa laajan kuvakulman, pitkä polttoväli (tele) kapean. Lopulliseen kuvakulmaan vaikuttaa myös kennokoko."
         }
       }
     }

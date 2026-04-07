@@ -1,15 +1,15 @@
 {
   "toolUI": {
     "shutter-speed-visualizer": {
-      "description": "Vezi cum afectează timpul de expunere blur-ul de mișcare pentru diferiți subiecți.",
+      "description": "Vezi cum influențează timpul de expunere blurul de mișcare pentru diferiți subiecți.",
       "shutterSpeed": "Timp de expunere",
       "shutterSpeedAriaLabel": "Timp de expunere",
       "sliderSlow": "Lent (2s)",
       "sliderFast": "Rapid (1/4000)",
       "selectedSpeed": "Viteză selectată",
-      "motionBlurAriaLabel": "Vizualizare a blur-ului de mișcare pentru diferiți subiecți",
+      "motionBlurAriaLabel": "Vizualizare a blurului de mișcare pentru diferiți subiecți",
       "verdictFrozen": "Înghețat",
-      "verdictMostlySharp": "Majoritar clar",
+      "verdictMostlySharp": "În mare parte clar",
       "verdictSlightBlur": "Blur ușor",
       "verdictMotionBlur": "Blur de mișcare",
       "standingPerson": "Persoană care stă",

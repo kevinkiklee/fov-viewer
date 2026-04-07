@@ -116,7 +116,7 @@
           "failureMessage": "Tetapan itu mendedahkan banyak: 400mm f/5.6 adalah telefoto hidupan liar biasa yang terbuka luas, 1/2000s membekukan pergerakan haiwan pantas, dan ISO 1600 bermakna cahaya adalah terhad (bukan matahari terik). Catatan Lightroom mengesahkan fail telah diproses.",
           "options": {
             "0": { "label": "Subjek pantas dalam cahaya sederhana, diproses dalam Lightroom" },
-            "1": { "label": "Subjek perlahan dalam cahaya terang, terus dari kamera" },
+            "1": { "label": "Subjek perlahan dalam cahaya terang, terus daripada kamera" },
             "2": { "label": "Tangkapan landskap dengan kekaburan pergerakan, disunting berat" }
           }
         }

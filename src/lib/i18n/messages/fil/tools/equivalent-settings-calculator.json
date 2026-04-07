@@ -1,8 +1,8 @@
 {
   "toolUI": {
     "equivalent-settings-calculator": {
-      "settings": "Mga Setting",
-      "sourceCamera": "Iyong Camera",
+      "settings": "Settings",
+      "sourceCamera": "Camera Mo",
       "sourceSensor": "Sensor",
       "sourceFocalLength": "Focal Length",
       "sourceAperture": "Aperture",
@@ -19,20 +19,20 @@
       "equivalentDoF": "Equivalent DoF",
       "cropFactor": "Crop Factor",
       "fieldOfView": "Field of View",
-      "warningUnrealisticAperture": "Ang equivalent aperture na ito ({value}) ay mas mabilis kaysa sa kahit anong tunay na lens. Hindi kayang tugmain ng target sensor ang source depth of field.",
-      "warningUnrealisticFL": "Ang equivalent focal length na ito ({value}mm) ay bihira. Maaaring hindi ka makahanap ng tunay na lens sa haba na ito.",
-      "warningClosestReal": "Pinakamalapit na tunay na lens: {value}mm f/{aperture}",
+      "warningUnrealisticAperture": "Ang equivalent aperture na ito ({value}) ay mas mabilis kaysa sa kahit anong totoong lens. Hindi kayang i-match ng target sensor ang depth of field ng source.",
+      "warningUnrealisticFL": "Bihira ang equivalent focal length na ito ({value}mm). Pwedeng hindi ka makahanap ng totoong lens sa haba na ito.",
+      "warningClosestReal": "Pinakamalapit na totoong lens: {value}mm f/{aperture}",
       "diagramTitle": "Sensor at FOV Comparison",
       "diagramSource": "Source",
       "diagramTarget": "Target",
       "diagramFovAngle": "FOV: {angle}°",
       "diagramCropFactor": "{factor}× crop",
-      "matchDoF": "Itugma ang Depth of Field",
-      "matchFoV": "Itugma ang Field of View",
-      "matchExposure": "Itugma ang Exposure",
+      "matchDoF": "I-match ang Depth of Field",
+      "matchFoV": "I-match ang Field of View",
+      "matchExposure": "I-match ang Exposure",
       "sameFOV": "Parehong field of view",
       "sameDoF": "Parehong depth of field",
-      "sameExposure": "Parehong liwanag ng exposure"
+      "sameExposure": "Parehong exposure brightness"
     }
   }
 }

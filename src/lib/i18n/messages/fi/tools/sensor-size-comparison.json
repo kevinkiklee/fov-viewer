@@ -5,7 +5,7 @@
       "modeOverlay": "Päällekkäin",
       "modeSideBySide": "Rinnakkain",
       "modePixelDensity": "Pikselitiheys",
-      "pixelDensityDescription": "Näyttää yleiset megapikselimäärät kullekin kennolle. Suuremmat pikselit (isommat solut) keräävät enemmän valoa.",
+      "pixelDensityDescription": "Näyttää tavallisimmat megapikselimäärät kullekin kennolle. Suuret pikselit (isommat kennosolut) keräävät enemmän valoa.",
       "sensors": "Kennot",
       "customSensors": "Mukautetut kennot",
       "placeholderName": "Nimi",
@@ -13,7 +13,7 @@
       "placeholderH": "K (mm)",
       "placeholderMP": "Megapikselit (valinnainen)",
       "placeholderMPShort": "MP",
-      "maxDimensionWarning": "Kennon maksimimitta on 99 mm",
+      "maxDimensionWarning": "Kennon enimmäismitta on 99 mm",
       "addSensor": "Lisää kenno",
       "save": "Tallenna",
       "cancelEdit": "Peruuta",
@@ -26,20 +26,20 @@
       "tableAspectRatio": "Kuvasuhde",
       "tableArea": "Pinta-ala (mm²)",
       "tableCropFactor": "Kerroin",
-      "tableAspectCrop": "Suhteen rajaus",
+      "tableAspectCrop": "Kuvasuhderajaus",
       "canvasAriaLabel": "Kennokokojen vertailu {mode}-tilassa",
       "faq": {
         "what-is-crop-factor": {
           "question": "Mikä on kerroin ja miksi sillä on merkitystä?",
-          "answer": "Kerroin kuvaa kameran kennon ja täyskennon (35 mm) välisen kokoeron. Se vaikuttaa tehokkaaseen polttoväliin, syväterävyyteen ja hämärän suorituskykyyn. 1,5x kerroin tarkoittaa, että kenno on 1,5 kertaa pienempi kuin täyskenno."
+          "answer": "Kerroin kuvaa kameran kennon kokoeroa täyskennoon (35 mm) verrattuna. Se vaikuttaa teholliseen polttoväliin, syväterävyyteen ja hämäräkuvauskykyyn. 1,5x kerroin tarkoittaa, että kenno on 1,5 kertaa pienempi kuin täyskenno."
         },
         "full-frame-vs-aps-c": {
-          "question": "Mitkä ovat täyskennon ja APS-C:n edut verrattuna toisiinsa?",
-          "answer": "Täyskennoiset tarjoavat paremman hämärän suorituskyvyn, matalamman syväterävyyden ja laajemman kuvakulman millä tahansa polttovälillä. APS-C-kennot ovat edullisempia, kevyempiä ja antavat lisäkantamaa villieläin- ja urheilukuvaukseen."
+          "question": "Mitä etuja täyskennolla ja APS-C:llä on toisiinsa nähden?",
+          "answer": "Täyskenno toimii paremmin hämärässä, tuottaa matalamman syväterävyyden ja antaa laajemman kuvakulman samalla polttovälillä. APS-C-kamerat ovat edullisempia ja kevyempiä, ja tarjoavat lisäkantamaa villieläin- ja urheilukuvaukseen."
         },
         "sensor-size-and-depth-of-field": {
           "question": "Miten kennokoko vaikuttaa syväterävyyteen?",
-          "answer": "Suuremmat kennot tuottavat matalamman syväterävyyden vastaavalla rajauksella. Sovittaaksesi saman rajauksen pienemmällä kennolla, käytät joko lyhyempää polttoväliä (syvempi syväterävyys) tai siirryt kauemmas (syvempi syväterävyys), molemmat vähentäen taustan sumennusta."
+          "answer": "Suurempi kenno tuottaa matalamman syväterävyyden samassa rajauksessa. Jotta saat saman rajauksen pienemmällä kennolla, joudut joko lyhentämään polttoväliä tai siirtymään kauemmas — molemmat kasvattavat syväterävyyttä ja vähentävät taustan sumennusta."
         }
       }
     }

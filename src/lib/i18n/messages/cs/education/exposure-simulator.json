@@ -91,7 +91,7 @@
           "scenario": "Správně exponovaná fotka je při f/5.6, 1/125 s, ISO 200. Chceš přepnout na f/2.8 kvůli většímu rozmazání pozadí. Jak upravíš ostatní nastavení, aby expozice zůstala stejná?",
           "hint": "Přechod z f/5.6 na f/2.8 znamená o 2 stopy víc světla. Jinde musíš 2 stopy ubrat.",
           "successMessage": "Perfektní! Otevření z f/5.6 na f/2.8 přidá 2 stopy světla. Změna času z 1/125 s na 1/500 s ubere přesně 2 stopy, takže expozice zůstane stejná.",
-          "failureMessage": "Matematika musí sedět. f/5.6 na f/2.8 je +2 stopy. Musíš kompenzovat odebráním přesně 2 stopů přes rychlejší čas, nižší ISO nebo kombinaci.",
+          "failureMessage": "Matematika musí sedět. f/5.6 na f/2.8 je +2 stopy. Musíš to kompenzovat přesně o 2 stopy — rychlejším časem, nižším ISO nebo jejich kombinací.",
           "options": {
             "0": { "label": "1/500 s při ISO 200" },
             "1": { "label": "1/250 s při ISO 200" },

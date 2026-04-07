@@ -2,19 +2,19 @@
   "education": {
     "histogram": {
       "beginner": "Et histogram er en graf som viser hvor lyse eller mørke pikslene i bildet ditt er. Venstre side er skyggene (mørke områder), midten er midttoner, og høyre side er høylys (lyse områder). Hvis grafen er klumpet på én side, kan bildet være under- eller overeksponert.",
-      "deeper": "Et histogram plotter antall piksler (vertikal akse) mot lysverdi (horisontal akse, 0–255 for 8-bit bilder). I luminansmodus beregnes lysstyrken til hver piksel som et vektet snitt av rød, grønn og blå (typisk 0,299R + 0,587G + 0,114B, som matcher menneskelig fargeoppfatning). RGB-modus viser tre separate fordelinger og avslører hvilke kanaler som eventuelt klipper uavhengig — en rødkanal presset til 255 mens blå er fin, betyr klipping i varme høylys, for eksempel en solnedgangshimmel. «Klipping» skjer når pikselverdier treffer grensen 0 eller 255, altså at skygge- eller høylysdetaljer er uopprettelig tapt. Svartklipp (piksler på 0) mister skyggedetaljer; hvittklipp (piksler på 255) mister høylysdetaljer. RAW gir vanligvis 2–3 ekstra blendertrinn med gjenvinnbart høylys utover det JPEG-histogrammet viser, og derfor «eksponerer mange til høyre» (ETTR) — altså presser eksponeringen så lys som mulig uten å klippe RAW-dataene.",
+      "deeper": "Et histogram plotter antall piksler (vertikal akse) mot lysverdi (horisontal akse, 0–255 for 8-bits bilder). I luminansmodus regnes lysstyrken i hver piksel ut som et vektet snitt av rød, grønn og blå (typisk 0,299R + 0,587G + 0,114B, som matcher menneskelig fargeoppfatning). RGB-modus viser tre separate fordelinger og avslører hvilke kanaler som eventuelt klipper hver for seg — en rødkanal presset til 255 mens blå er fin, betyr klipping i varme høylys, for eksempel en solnedgangshimmel. «Klipping» skjer når pikselverdier treffer grensen 0 eller 255, altså at skygge- eller høylysdetaljer er uopprettelig tapt. Svartklipp (piksler på 0) mister skyggedetaljer, hvittklipp (piksler på 255) mister høylysdetaljer. RAW gir vanligvis 2–3 ekstra blendertrinn med gjenvinnbart høylys utover det JPEG-histogrammet viser, og derfor eksponerer mange «til høyre» (ETTR) — altså presser eksponeringen så lyst som mulig uten å klippe RAW-dataene.",
       "keyFactors": {
         "0": {
           "label": "Tonefordeling",
-          "description": "Den overordnede formen forteller deg om bildet er mørkt (tungt til venstre), lyst (tungt til høyre) eller balansert (spredt over hele området)."
+          "description": "Den overordnede formen forteller om bildet er mørkt (tungt til venstre), lyst (tungt til høyre) eller balansert (spredt over hele området)."
         },
         "1": {
           "label": "Klipping",
-          "description": "Spiker helt til venstre eller helt til høyre betyr tapte detaljer i skygger eller høylys."
+          "description": "En spiker helt til venstre eller helt til høyre betyr tapte detaljer i skygger eller høylys."
         },
         "2": {
           "label": "Kanalseparasjon",
-          "description": "RGB-modus avslører oppførsel per kanal — nyttig for å oppdage fargespesifikk klipping i mettede motiver."
+          "description": "RGB-modus viser oppførselen per kanal — nyttig for å oppdage fargespesifikk klipping i mettede motiver."
         },
         "3": {
           "label": "Dynamisk område",
@@ -23,13 +23,13 @@
       },
       "tips": {
         "0": {
-          "text": "Det finnes ingen «perfekt» histogramform. Et bilde av en svart katt på en mørk sofa skal være tungt til venstre. Vurder histogrammet mot din kreative intensjon, ikke mot en idealkurve."
+          "text": "Det finnes ingen «perfekt» histogramform. Et bilde av en svart katt på en mørk sofa skal være tungt til venstre. Vurder histogrammet opp mot den kreative intensjonen din, ikke en idealkurve."
         },
         "1": {
-          "text": "Sjekk RGB-overlegget i solnedgangs- og neonfoto. Rødkanalen klipper ofte lenge før blå, og du kan miste detaljer i varme høylys selv om luminanshistogrammet ser fint ut."
+          "text": "Sjekk RGB-overlegget på solnedgangs- og neonfoto. Rødkanalen klipper ofte lenge før blå, og du kan miste detaljer i varme høylys selv om luminanshistogrammet ser fint ut."
         },
         "2": {
-          "text": "Ser du klippingsadvarsler i begge ender samtidig, overstiger scenen sannsynligvis kameraets dynamiske område. Vurder eksponeringsbracketing for HDR eller bruk av gradert ND-filter."
+          "text": "Ser du klippingsadvarsler i begge ender samtidig, overstiger scenen sannsynligvis kameraets dynamiske område. Vurder eksponeringsbracketing for HDR, eller bruk et gradert ND-filter."
         }
       },
       "tooltips": {
@@ -43,7 +43,7 @@
         },
         "Midtones": {
           "term": "Midttoner",
-          "definition": "Den midtre delen (grovt 86–170), som representerer middels lysstyrke — hudtoner og de fleste naturlige teksturer ligger her."
+          "definition": "Den midtre delen (grovt 86–170), som representerer middels lysstyrke — hudtoner og de fleste naturlige teksturer havner her."
         },
         "Highlights": {
           "term": "Høylys",
@@ -62,7 +62,7 @@
         "0": {
           "scenario": "Du laster opp et bilde og histogrammet er presset tungt mot venstre, med nesten ingenting på høyre side. Hva forteller dette om bildet?",
           "hint": "Venstre = mørkt, høyre = lyst.",
-          "successMessage": "Riktig! Et histogram tungt til venstre betyr at bildet er dominert av mørke toner — det kan være undereksponert, eller det kan være et bevisst mørkt/low-key-bilde.",
+          "successMessage": "Riktig! Et histogram tungt til venstre betyr at bildet er dominert av mørke toner — det kan være undereksponert, eller det kan være et bevisst low-key-bilde.",
           "failureMessage": "Et histogram klumpet til venstre viser at bildet er overveiende mørkt. Det betyr ofte undereksponering.",
           "options": {
             "0": { "label": "Bildet er undereksponert eller svært mørkt" },
@@ -72,9 +72,9 @@
         },
         "1": {
           "scenario": "Hvilken visningsmodus bør du bruke for å se den totale lysfordelingen i bildet som én graf?",
-          "hint": "Én modus samler all fargeinformasjon til én lysstyrkekurve.",
+          "hint": "Én av modusene samler all fargeinformasjon til én lysstyrkekurve.",
           "successMessage": "Riktig! Luminansmodus viser én kurve som representerer den totale opplevde lysstyrken.",
-          "failureMessage": "Luminansmodus er den enkleste visningen — den kombinerer R, G og B til én lysstyrkekurve.",
+          "failureMessage": "Luminansmodus er den enkleste visningen — den slår sammen R, G og B til én lysstyrkekurve.",
           "options": {
             "0": { "label": "Luminans" },
             "1": { "label": "RGB-overlegg" },
@@ -82,9 +82,9 @@
           }
         },
         "2": {
-          "scenario": "Du tok en intens solnedgang, og luminanshistogrammet ser fint ut, men når du bytter til RGB-overlegg ser du at rødkanalen spiker helt til høyre. Hva skjer?",
+          "scenario": "Du har tatt en intens solnedgang, og luminanshistogrammet ser fint ut, men når du bytter til RGB-overlegg, ser du at rødkanalen spiker helt til høyre. Hva skjer?",
           "hint": "Enkeltkanaler kan klippe selv om den totale luminansen ikke gjør det.",
-          "successMessage": "Akkurat! Rødkanalen klipper — solnedgangshøylysene har mistet detaljer i de røde tonene selv om total lysstyrke ser grei ut. Du mister nyanser i de varme fargene.",
+          "successMessage": "Nettopp! Rødkanalen klipper — solnedgangshøylysene har mistet detaljer i de røde tonene selv om den totale lysstyrken ser grei ut. Du mister nyanser i de varme fargene.",
           "failureMessage": "Rødkanalen klipper uavhengig. Mettede varme høylys (solnedganger, ild) presser ofte rød til 255 mens grønn og blå er fine, og du mister fargedetaljer i de tonene.",
           "options": {
             "0": { "label": "Rødkanalen klipper — varme høylysdetaljer tapt" },
@@ -95,8 +95,8 @@
         "3": {
           "scenario": "Verktøyet rapporterer 2,3 % svartklipp og 0,1 % hvittklipp. Bør du justere eksponeringen?",
           "hint": "Små mengder klipping er normalt — rent svarte skygger og spekulære høylys er forventet.",
-          "successMessage": "Bra vurdering! 2,3 % svartklipp er moderat og kommer ofte bare av dype skygger eller mørke kanter. 0,1 % hvittklipp er sannsynligvis spekulære refleksjoner (sollys som blinker). Denne eksponeringen er fin til de fleste formål.",
-          "failureMessage": "Disse klippingsprosentene er ganske små. Litt svartklipp i dype skygger og minimalt hvittklipp fra spekulære refleksjoner er normalt og forventet. Ingen justering nødvendig.",
+          "successMessage": "Bra vurdering! 2,3 % svartklipp er moderat og kommer ofte bare av dype skygger eller mørke kanter. 0,1 % hvittklipp er sannsynligvis spekulære refleksjoner (sollys som blinker). Denne eksponeringen duger til de fleste formål.",
+          "failureMessage": "Disse klippingsprosentene er ganske små. Litt svartklipp i dype skygger og minimalt hvittklipp fra spekulære refleksjoner er helt normalt. Ingen justering nødvendig.",
           "options": {
             "0": { "label": "Øk eksponeringen for å redusere svartklipp" },
             "1": { "label": "Dette er fint — små klipp i skygger og spekulære høylys er normalt" },
@@ -105,9 +105,9 @@
         },
         "4": {
           "scenario": "Du fotograferer en kontrastrik scene: en brud i hvit kjole i en mørk kirke. Histogrammet viser sterke topper i begge endene med et hull i midttonene. Hvordan håndterer du dette?",
-          "hint": "Når scenens dynamiske område overstiger sensorens område, trenger du en flereksponeringsteknikk.",
+          "hint": "Når scenens dynamiske område overstiger sensorens, trenger du en teknikk med flere eksponeringer.",
           "successMessage": "Perfekt! Dette bimodale histogrammet viser at scenen overstiger sensorens dynamiske område. Eksponeringsbracketing (HDR) fanger både det mørke interiøret og detaljene i kjolen. Alternativt kan du bruke fyllblits for å løfte skyggene.",
-          "failureMessage": "Et bimodalt histogram (topper i begge endene, tomt midt) betyr at scenen har mer dynamisk område enn sensoren klarer i ett bilde. Bracket eksponeringer for HDR, eller bruk fyllblits for å redusere kontrasten.",
+          "failureMessage": "Et bimodalt histogram (topper i begge endene og et tomt parti i midten) betyr at scenen har mer dynamisk område enn sensoren klarer i ett bilde. Bracket eksponeringer for HDR, eller bruk fyllblits for å redusere kontrasten.",
           "options": {
             "0": { "label": "Bracket eksponeringer for HDR, eller bruk fyllblits" },
             "1": { "label": "Eksponer for midttonene og håp på det beste" },

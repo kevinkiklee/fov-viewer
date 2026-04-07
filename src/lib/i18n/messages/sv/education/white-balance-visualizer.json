@@ -1,19 +1,19 @@
 {
   "education": {
     "white-balance-visualizer": {
-      "beginner": "Vitbalans justerar färgerna i ditt foto så att vita objekt faktiskt ser vita ut under olika ljus. Olika ljuskällor har olika färgtemperatur — ett stearinljus är varmt och orange, medan skugga är kallt och blått. Kamerans vitbalans kompenserar för skillnaderna så att färgerna känns naturliga.",
+      "beginner": "Vitbalansen justerar färgerna i fotot så att vita ytor faktiskt ser vita ut i olika ljus. Olika ljuskällor har olika färgtemperatur — ett stearinljus är varmt och orange, skugga är kallt och blått. Kamerans vitbalans kompenserar för skillnaden så att färgerna känns naturliga.",
       "deeper": {
         "0": {
           "heading": "Färgtemperatur",
-          "text": "Färgtemperatur mäts i Kelvin (K) och motsvarar färgen på det ljus som en ideal \"svart kropp\" skulle stråla när den värms upp. Låga värden (2000–3500 K) ger varmt, rödorange ljus (glödlampor, stearinljus), medan höga värden (6500–10000 K) ger kallt, blåaktigt ljus (skugga, mulen himmel)."
+          "text": "Färgtemperatur mäts i Kelvin (K) och motsvarar färgen på det ljus en ideal svartkropp skulle stråla när den värms upp. Låga värden (2000–3500 K) ger varmt, rödorange ljus (glödlampor, stearinljus), medan höga värden (6500–10000 K) ger kallt, blåaktigt ljus (skugga, mulen himmel)."
         },
         "1": {
           "heading": "Så fungerar vitbalans",
-          "text": "Kamerans vitbalans applicerar den omvända färgförskjutningen för att neutralisera ljusets färgskift. När du ställer in vitbalansen på \"Tungsten\" (~3200 K) lägger kameran på blått för att motverka det orange skiftet från glödlampor. I digital fotografi appliceras vitbalans som en multiplikator på röd- och blåkanalerna relativt till den gröna."
+          "text": "Kameran applicerar en omvänd färgförskjutning som neutraliserar ljusets färgskift. När du ställer vitbalansen på \"Tungsten\" (~3200 K) lägger kameran på blått för att motverka det orange skiftet från glödlampor. I digital fotografi tillämpas vitbalansen som en multiplikator på röd- och blåkanalen i förhållande till den gröna."
         },
         "2": {
           "heading": "RAW-fördelen",
-          "text": "Att fotografera i RAW bevarar all färgdata och låter dig ändra vitbalansen fritt i efterbehandlingen utan kvalitetsförlust — den är helt enkelt en metadatatagg som tillämpas vid konvertering."
+          "text": "Att fotografera i RAW bevarar all färginformation och låter dig ändra vitbalansen fritt i efterbehandlingen utan kvalitetsförlust — den är helt enkelt en metadatatagg som tillämpas vid konverteringen."
         }
       },
       "keyFactors": {
@@ -36,10 +36,10 @@
       },
       "tips": {
         "0": {
-          "text": "Fotografera alltid RAW om du vill ha full flexibilitet att justera vitbalansen efteråt. RAW-filer lagrar obearbetad sensordata, så vitbalansändringar blir förlustfria."
+          "text": "Fotografera alltid i RAW om du vill ha full frihet att justera vitbalansen efteråt. RAW-filer lagrar obearbetad sensordata, så vitbalansändringar blir förlustfria."
         },
         "1": {
-          "text": "För kreativ effekt: testa att \"fel-matcha\" vitbalansen medvetet. Sätter du dagsljus-WB under gyllene timmen blir solnedgångar ännu varmare, medan tungsten-WB utomhus skapar ett dramatiskt kallt blått utseende."
+          "text": "För kreativ effekt: testa att \"fel-matcha\" vitbalansen med flit. Sätter du dagsljus-WB under gyllene timmen blir solnedgångarna ännu varmare, medan tungsten-WB utomhus ger ett dramatiskt kallt, blått uttryck."
         },
         "2": {
           "text": "Vid blandat ljus (t.ex. ett rum upplyst av både fönsterljus och glödlampor): använd ett gråkort för att sätta anpassad vitbalans, eller gela blixten så att den matchar den omgivande ljuskällan."
@@ -48,7 +48,7 @@
       "tooltips": {
         "colorTemperature": {
           "term": "Färgtemperatur",
-          "definition": "Ett mått på ljusets färg i Kelvin (K). Baseras på den teoretiska färgen hos en uppvärmd svart kropp. Lägre värden är varmare (orange/rött), högre värden är kallare (blått)."
+          "definition": "Ett mått på ljusets färg i Kelvin (K). Baseras på den teoretiska färgen hos en uppvärmd svartkropp. Lägre värden är varmare (orange/rött), högre värden är kallare (blått)."
         },
         "preset": {
           "term": "Vitbalansinställning",

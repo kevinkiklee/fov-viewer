@@ -10,7 +10,7 @@
       "nearLimit": "Limite Próximo",
       "farLimit": "Limite Distante",
       "overlap": "Sobreposição",
-      "overlapDescription": "Porcentagem de sobreposição da profundidade de campo entre tomadas adjacentes para garantir uma fusão contínua",
+      "overlapDescription": "Porcentagem de sobreposição da profundidade de campo entre tomadas adjacentes para que a fusão fique sem falhas",
       "results": "Resultados",
       "shotCount": "Tomadas Necessárias",
       "totalDepth": "Profundidade Total",

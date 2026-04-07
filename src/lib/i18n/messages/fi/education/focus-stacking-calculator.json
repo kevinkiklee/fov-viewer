@@ -1,82 +1,82 @@
 {
   "education": {
     "focus-stacking-calculator": {
-      "beginner": "Tarkennuspinoaminen on tekniikka, jossa otat useita kuvia eri tarkennusetäisyyksiltä ja yhdistät ne ohjelmistossa luodaksesi kuvan, jossa on läpiterävyys etualasta taustaan. Se on välttämätön makrovalokuvauksessa, jossa syväterävyys on veitsenterävä, ja hyödyllinen maisemakuvauksessa, kun tarvitset sekä lähietualan että kaukaisen taustan terävinä.",
+      "beginner": "Tarkennuspinoamisessa otetaan useita kuvia eri tarkennusetäisyyksiltä ja yhdistetään ne ohjelmistossa yhdeksi kuvaksi, joka on terävä etualasta taustaan. Tekniikka on välttämätön makrokuvauksessa, jossa syväterävyys on veitsenohut, ja hyödyllinen maisemissa, joissa lähietualan ja kaukaisen taustan tulee molempien olla terävät.",
       "deeper": {
         "0": {
           "heading": "Miksi pinoaminen on tarpeen",
-          "text": "Makrokuvausasteilla jopa f/16 saattaa antaa vain muutaman millimetrin syväterävyyttä. Aukon sulkeminen pidemmälle tuo diffraktiosta johtuvaa pehmentymistä, joka heikentää kuvaa. Tarkennuspinoaminen sallii kuvaamisen objektiivin terävimmällä aukolla (tyypillisesti f/5.6–f/8) ja terävien siivujen yhdistämisen. Jokainen ruutu siirtää tarkennusta hieman eteenpäin ja kattaa uuden viipaleen kohteesta."
+          "text": "Makrosuurennuksilla jopa f/16 saattaa antaa vain muutaman millimetrin syväterävyyttä. Aukon pienentäminen vielä enemmän tuo kuvaan diffraktion pehmennystä, joka heikentää kuvaa. Tarkennuspinoamisen ansiosta voit käyttää objektiivin terävintä aukkoa (tyypillisesti f/5.6–f/8) ja yhdistää terävät viipaleet jälkikäsittelyssä. Jokainen ruutu siirtää tarkennusta hieman eteenpäin ja kattaa kohteesta uuden siivun."
         },
         "1": {
           "heading": "Pinon suunnittelu",
-          "text": "Onnistuneen pinon avain on varmistaa, että kunkin kuvan syväterävyys limittyy seuraavan kanssa 20–30 %. Liian vähäinen limitys luo aukkoja, joissa mikään ei ole terävää; liian suuri tuhlaa ruutuja ilman hyötyä. Laskuri määrittää kuvakohtaisen syväterävyyden hajapisteen kaavalla, vähentää limitysmarginaalin ja jakaa kokonaisetäisyyden tehollisella askeleella laskeakseen ruutujen määrän."
+          "text": "Onnistuneen pinon avain on pitää huoli siitä, että vierekkäiset ruudut limittyvät syväterävyydeltään 20–30 %. Liian pieni limitys jättää aukkoja, joissa mikään ei ole terävä; liian suuri tuhlaa ruutuja turhaan. Laskuri laskee kuvakohtaisen syväterävyyden hajapiirtokaavalla, vähentää limitysmarginaalin ja jakaa kokonaisetäisyyden tehollisella askeleella, jolloin saadaan tarvittava ruutujen määrä."
         },
         "2": {
           "heading": "Yhdistäminen ja kohdistus",
-          "text": "Ohjelmistot kuten Photoshop, Helicon Focus tai Zerene Stacker kohdistavat ruudut (pieniä suurennusmuutoksia tapahtuu tarkennuksen muuttuessa) ja valitsevat sitten terävimmät pikselit kustakin kerroksesta. Tukevalla kolmijalalla, tasaisella valaistuksella ja tarkennuskiskolla tarkkoja askeleita varten kuvaaminen tuottaa puhtaimmat tulokset."
+          "text": "Ohjelmat kuten Photoshop, Helicon Focus tai Zerene Stacker kohdistavat ruudut (pieniä suurennusmuutoksia syntyy tarkennuksen muuttuessa) ja valitsevat sitten terävimmät pikselit kustakin kerroksesta. Parhaat tulokset saa tukevalla jalustalla, tasaisella valaistuksella ja tarkennuskiskolla, jonka avulla askel saadaan tarkaksi."
         }
       },
       "keyFactors": {
         "0": {
           "label": "Aukko",
-          "description": "Määrittää kuvakohtaisen syväterävyyden. Maltillinen aukko (f/5.6–f/8) tasapainottaa terävyyden ja syväterävyyden ruutua kohden. Vältä hyvin pieniä aukkoja — diffraktio vähentää sitä terävyyttä, jonka vuoksi pinoat."
+          "description": "Määrää kuvakohtaisen syväterävyyden. Maltillinen aukko (f/5.6–f/8) tasapainottaa terävyyden ja syväterävyyden. Vältä hyvin pieniä aukkoja — diffraktio heikentää juuri sitä terävyyttä, jonka takia pinoat."
         },
         "1": {
           "label": "Syvyysalue",
-          "description": "Etäisyys lähimmästä kaukaisimpaan pisteeseen, jonka haluat teräväksi. Leveämmät alueet vaativat enemmän ruutuja. Makrotyössä tämä voi olla vain senttimetrejä; maisemissa metreistä äärettömyyteen."
+          "description": "Etäisyys lähimmästä kaukaisimpaan pisteeseen, jonka haluat teräväksi. Mitä laajempi alue, sitä enemmän ruutuja tarvitaan. Makrokuvauksessa puhutaan senteistä, maisemissa metreistä äärettömään."
         },
         "2": {
           "label": "Limitys",
-          "description": "Prosenttiosuus kunkin kuvan syväterävyydestä, joka limittyy viereisten ruutujen kanssa. 20–30 % on vakio. Vähemmän riskeeraa aukkoja; enemmän tuhlaa ruutuja."
+          "description": "Prosenttiosuus siitä, kuinka paljon kuvakohtainen syväterävyys limittyy viereisen ruudun kanssa. 20–30 % on vakio. Vähempi lisää riskiä aukoista, suurempi tuhlaa ruutuja."
         }
       },
       "tips": {
         "0": {
-          "text": "Käytä tarkennuskiskoa objektiivin tarkennusrenkaan sijaan makropinoamisessa. Kisko siirtää koko kameraa eteenpäin tarkoissa askeleissa välttäen sitä pientä suurennusmuutosta, jota tapahtuu objektiivia tarkennettaessa."
+          "text": "Käytä makropinoamisessa tarkennuskiskoa objektiivin tarkennusrenkaan sijasta. Kisko siirtää koko kameraa eteenpäin tarkoissa askelissa, jolloin vältät sen pienen suurennusmuutoksen, joka syntyy objektiivia tarkennettaessa."
         },
         "1": {
-          "text": "Pidä aukko objektiivin sulavassa kohdassa (tyypillisesti f/5.6–f/8). Pinoamisen tarkoitus on välttää sulkeminen f/16:n yli, joten käytä terävintä aukkoa ja anna pinon hoitaa syvyys."
+          "text": "Pidä aukko objektiivin parhaassa pisteessä (tyypillisesti f/5.6–f/8). Pinoamisen koko idea on välttää f/16:n ylittämistä — käytä siis terävintä aukkoa ja anna pinon hoitaa syvyys."
         },
         "2": {
-          "text": "Maisemapinoissa kuvaa etualasta taustaan: tarkenna ensin lähimpään elementtiin ja siirry sitten askeleittain kohti äärettömyyttä. Tämä helpottaa kohdistusta, koska etuala (jossa on eniten parallaksia) tallennetaan ensin."
+          "text": "Maisemapinoissa kuvaa etualasta taustaan: tarkenna ensin lähimpään elementtiin ja etene askeleittain kohti äärettömää. Tämä helpottaa kohdistusta, koska etuala (jossa parallaksia on eniten) tallennetaan ensin."
         }
       },
       "tooltips": {
         "focalLength": {
           "term": "Polttoväli",
-          "definition": "Objektiivin polttoväli millimetreinä. Pidemmät polttovälit pienentävät kuvakohtaista syväterävyyttä, vaatien enemmän ruutuja saman syvyysalueen kattamiseen."
+          "definition": "Objektiivin polttoväli millimetreinä. Pitkä polttoväli pienentää kuvakohtaista syväterävyyttä, jolloin saman syvyysalueen kattamiseen tarvitaan enemmän ruutuja."
         },
         "aperture": {
           "term": "Aukko",
-          "definition": "Objektiivin aukko (f-luku). Pinoamisessa käytä objektiivin terävintä aukkoa sulkemisen sijaan — pino tarjoaa syvyyden."
+          "definition": "Objektiivin aukko (f-luku). Pinoamisessa kannattaa käyttää objektiivin terävintä aukkoa eikä pienentää turhaan — syvyys tulee pinosta, ei pienestä aukosta."
         },
         "sensor": {
           "term": "Kennokoko",
-          "definition": "Suuremmilla kennoilla on matalampi kuvakohtainen syväterävyys vastaavalla rajauksella, mikä voi kasvattaa tarvittavien pinoruutujen määrää."
+          "definition": "Suuremmilla kennoilla kuvakohtainen syväterävyys on samassa rajauksessa matalampi, jolloin pinoon voi tarvita enemmän ruutuja."
         },
         "nearLimit": {
           "term": "Lähiraja",
-          "definition": "Näkymän lähin piste, jonka haluat teräväksi. Tähän tarkennetaan pinon ensimmäinen ruutu."
+          "definition": "Näkymän lähin piste, jonka haluat teräväksi. Tähän kohdistetaan pinon ensimmäinen ruutu."
         },
         "farLimit": {
           "term": "Kaukaraja",
-          "definition": "Näkymän kaukaisin piste, jonka haluat teräväksi. Pinon viimeinen ruutu kattaa tämän etäisyyden."
+          "definition": "Näkymän kaukaisin piste, jonka haluat teräväksi. Tämän etäisyyden kattaa pinon viimeinen ruutu."
         },
         "overlap": {
           "term": "Limitys",
-          "definition": "Syväterävyyden limityksen prosenttiosuus peräkkäisten ruutujen välillä. 20–30 % varmistaa, ettei aukkoja jää ohjelmistokohdistuksen ja yhdistämisen jälkeen."
+          "definition": "Syväterävyyden limitysprosentti peräkkäisten ruutujen välillä. 20–30 % riittää varmistamaan, ettei kohdistuksen ja yhdistämisen jälkeen jää aukkoja."
         },
         "shotCount": {
           "term": "Kuvien määrä",
-          "definition": "Syvyysalueen kattamiseen tarvittavien ruutujen kokonaismäärä määritetyllä limityksellä. Enemmän kuvia = enemmän käsittelyä mutta tasaisemmat tulokset."
+          "definition": "Ruutujen kokonaismäärä, joka tarvitaan syvyysalueen kattamiseen valitulla limityksellä. Enemmän ruutuja = enemmän työtä, mutta tasaisempi lopputulos."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "Kuvaat pientä kukkaa, joka on 3 cm syvä etuterälehdistä takaperän varteen. Makro-objektiivisi f/8:lla antaa noin 4 mm syväterävyyttä ruutua kohden. Suurin piirtein montako ruutua tarvitset 25 %:n limityksellä?",
-          "hint": "Kukin kuva kattaa 4 mm, mutta 25 %:n limitys tarkoittaa tehollisen askeleen olevan 3 mm per ruutu. Jaa 30 mm 3 mm:llä.",
-          "successMessage": "Oikein! 4 mm:n syväterävyydellä ja 25 %:n limityksellä jokainen askel etenee 3 mm. 30 mm / 3 mm = 10 kuvaa koko kukan kattamiseksi.",
-          "failureMessage": "25 %:n limityksellä kunkin ruudun tehollinen askel on 75 % syväterävyydestä: 4 mm × 0,75 = 3 mm. Tarvitset 30 mm / 3 mm = 10 kuvaa.",
+          "scenario": "Kuvaat pientä kukkaa, joka on 3 cm syvä etummaisista terälehdistä takavarteen. Makro-objektiivisi antaa f/8:lla noin 4 mm syväterävyyttä ruutua kohden. Suunnilleen montako ruutua tarvitset 25 %:n limityksellä?",
+          "hint": "Jokainen kuva kattaa 4 mm, mutta 25 %:n limityksellä tehollinen askel on 3 mm per ruutu. Jaa 30 mm 3 mm:llä.",
+          "successMessage": "Oikein! 4 mm:n syväterävyydellä ja 25 %:n limityksellä jokainen askel etenee 3 mm. 30 mm / 3 mm = 10 kuvaa koko kukan kattamiseen.",
+          "failureMessage": "25 %:n limityksellä tehollinen askel on 75 % syväterävyydestä: 4 mm × 0,75 = 3 mm. Tarvitset siis 30 mm / 3 mm = 10 kuvaa.",
           "options": {
             "0": { "label": "5 kuvaa" },
             "1": { "label": "10 kuvaa" },
@@ -85,25 +85,25 @@
           }
         },
         "1": {
-          "scenario": "Haluat tarkennuspinostasi mahdollisimman terävän lopputuloksen. Pitäisikö sinun kuvata jokainen ruutu f/2.8:ssa, f/8:ssa vai f/22:ssa?",
-          "hint": "Mieti objektiivin terävintä aukkoa ja miten diffraktio vaikuttaa pieniin aukkoihin.",
-          "successMessage": "Oikein! f/8 on tyypillisesti useimpien objektiivien terävin aukko. f/2.8:lla syväterävyyttä on liian vähän ruutua kohden (tuhlaa ruutuja) ja f/22 kärsii diffraktion pehmentymisestä.",
-          "failureMessage": "f/8 on paras valinta. f/2.8 antaa hyvin ohuen kuvakohtaisen syväterävyyden (vaatien paljon enemmän ruutuja), ja f/22 tuo diffraktion pehmentymistä, joka kumoaa pinoamisen terävyyshyödyn.",
+          "scenario": "Haluat tarkennuspinosta mahdollisimman terävän lopputuloksen. Kuvaatko jokaisen ruudun aukolla f/2.8, f/8 vai f/22?",
+          "hint": "Mieti objektiivin terävintä aukkoa ja sitä, miten diffraktio vaikuttaa pienillä aukoilla.",
+          "successMessage": "Oikein! f/8 on yleensä useimpien objektiivien terävin aukko. f/2.8:lla kuvakohtaista syväterävyyttä on liian vähän (tuhlaa ruutuja), ja f/22:lla diffraktio pehmentää kuvaa.",
+          "failureMessage": "f/8 on paras valinta. f/2.8 antaa liian ohuen kuvakohtaisen syväterävyyden (joten ruutuja tarvitaan paljon enemmän), ja f/22 tuo diffraktion pehmennyksen, joka vie pinoamisen terävyyshyödyn.",
           "options": {
-            "0": { "label": "f/2.8 — suurin nopeimpaan sulkimeen" },
-            "1": { "label": "f/8 — objektiivin sulava kohta" },
-            "2": { "label": "f/22 — maksimi ruutukohtainen syväterävyys" }
+            "0": { "label": "f/2.8 — suurin aukko ja nopein suljinaika" },
+            "1": { "label": "f/8 — objektiivin paras piste" },
+            "2": { "label": "f/22 — suurin kuvakohtainen syväterävyys" }
           }
         },
         "2": {
-          "scenario": "Yhdistettyäsi tarkennuspinon huomaat pehmeän kaistan kuvan keskellä, jossa mikään ei ole terävää. Mikä todennäköisesti meni pieleen?",
-          "hint": "Mieti, mikä yhdistää yhden ruudun terävän alueen seuraavaan.",
-          "successMessage": "Juuri niin! Riittämätön limitys vierekkäisten ruutujen välillä luo aukon, jossa kumpikaan ruutu ei ole terävä. Nosta limitys 25–30 %:iin ja kuvaa uudelleen.",
-          "failureMessage": "Pehmeä kaista tarkoittaa yleensä, että askel tarkennusten välillä oli liian suuri — vierekkäisten ruutujen syväterävyydet eivät limittyneet tarpeeksi. Nosta limitysprosenttia.",
+          "scenario": "Kun olet yhdistänyt tarkennuspinon, huomaat kuvan keskellä pehmeän kaistan, jossa mikään ei ole terävää. Mikä todennäköisesti meni pieleen?",
+          "hint": "Mieti, mikä yhdistää yhden ruudun terävän alueen seuraavan ruudun terävään alueeseen.",
+          "successMessage": "Juuri niin! Liian pieni limitys vierekkäisten ruutujen välillä jättää aukon, jossa kumpikaan ruutu ei ole terävä. Nosta limitys 25–30 %:iin ja kuvaa sarja uudelleen.",
+          "failureMessage": "Pehmeä kaista tarkoittaa yleensä sitä, että tarkennusaskel oli liian suuri — vierekkäisten ruutujen syväterävyydet eivät menneet tarpeeksi päällekkäin. Nosta limitysprosenttia.",
           "options": {
             "0": { "label": "Aukko oli liian suuri" },
-            "1": { "label": "Riittämätön limitys tarkennusaskelten välillä" },
-            "2": { "label": "Kolmijalka liikkui sarjan aikana" },
+            "1": { "label": "Tarkennusaskelten välinen limitys oli liian pieni" },
+            "2": { "label": "Jalusta liikkui sarjan aikana" },
             "3": { "label": "ISO oli liian korkea" }
           }
         }

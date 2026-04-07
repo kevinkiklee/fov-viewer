@@ -1,8 +1,8 @@
 {
   "education": {
     "exif-viewer": {
-      "beginner": "EXIF-data är dold information som finns inbäddad i varje bild kameran tar. Den registrerar vilken kamera och vilket objektiv du använde, exakta inställningar (bländare, slutartid, ISO), datum och tid — och ibland även GPS-koordinater. Det här verktyget läser av den informationen utan att ladda upp din bild någonstans. Allt sker i din webbläsare.",
-      "deeper": "EXIF (Exchangeable Image File Format) är en standard från JEITA/CIPA som lagrar metadata i JPEG-, TIFF- och vissa RAW-filer. Datan skrivs in i specifika segment av filhuvudet som nyckel–värde-taggar i en TIFF-baserad IFD-struktur (Image File Directory). Det finns flera IFD-sektioner: IFD0 för grundläggande bildinfo, EXIF-sub-IFD för kamerainställningar, GPS IFD för platsdata och Interop IFD för kompatibilitetsinformation. Kameratillverkare skriver även in egen \"MakerNote\"-data med objektivkorrigeringar, fokuspunkter, slutarräkning och andra modellberoende detaljer. Sociala medier tar ofta bort EXIF-data vid uppladdning av integritetsskäl, men originalfilen på minneskortet behåller den alltid. Att förstå EXIF hjälper dig att lära av ditt eget tagningsmönster och att baklängesanalysera inställningarna bakom bilder du gillar.",
+      "beginner": "EXIF-data är den dolda information som kameran bäddar in i varje bild. Där finns vilken kamera och vilket objektiv du använde, exakta inställningar (bländare, slutartid, ISO), datum och tid — och ibland GPS-koordinater. Det här verktyget läser informationen helt i din webbläsare. Bilden laddas aldrig upp någonstans.",
+      "deeper": "EXIF (Exchangeable Image File Format) är en standard från JEITA/CIPA som lagrar metadata i JPEG-, TIFF- och vissa RAW-filer. Datan skrivs in i bestämda delar av filhuvudet som nyckel–värde-taggar i en TIFF-baserad IFD-struktur (Image File Directory). Det finns flera IFD-sektioner: IFD0 för grundläggande bildinfo, EXIF-sub-IFD för kamerainställningar, GPS IFD för platsdata och Interop IFD för kompatibilitetsinformation. Kameratillverkare lägger även till egen \"MakerNote\"-data med objektivkorrigeringar, fokuspunkter, slutarräkning och andra modellspecifika detaljer. Sociala medier strippar ofta EXIF-datan vid uppladdning av integritetsskäl, men originalfilen på minneskortet behåller den alltid. Att förstå EXIF hjälper dig att lära av dina egna tagningsmönster och att bakåtanalysera inställningarna i bilder du gillar.",
       "keyFactors": {
         "0": {
           "label": "Kamera och objektiv",
@@ -23,13 +23,13 @@
       },
       "tips": {
         "0": {
-          "text": "Titta på brännvidden och 35 mm-ekvivalenten för att förstå om fotografen använde vidvinkel, normal eller tele — det lär dig mer om komposition än någon tredjedelsregel."
+          "text": "Titta på brännvidden och 35 mm-ekvivalenten för att förstå om fotografen jobbade med vidvinkel, normal eller tele — det lär dig mer om komposition än någon tredjedelsregel."
         },
         "1": {
-          "text": "Om en bild du gillar är tagen med hög ISO och stor bländare, säger det att det var svagt ljus. Använd EXIF för att förstå vilka begränsningar fotografen arbetade under."
+          "text": "Om en bild du gillar är tagen med hög ISO och stor bländare säger det dig att ljuset var svagt. Använd EXIF för att förstå vilka begränsningar fotografen arbetade under."
         },
         "2": {
-          "text": "Innan du delar foton online: tänk på att EXIF kan innehålla din GPS-position. Ta bort metadata via exportinställningarna i din bildredigerare om integritet är viktigt."
+          "text": "Innan du delar foton online: tänk på att EXIF kan innehålla din GPS-position. Ta bort metadata via exportinställningarna i din bildredigerare om du bryr dig om integriteten."
         }
       },
       "tooltips": {
