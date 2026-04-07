@@ -1,129 +1,109 @@
 {
   "education": {
     "equivalent-settings-calculator": {
-      "beginner": "Different sensor sizes produce different depth of field and field of view even at the same focal length and aperture. Equivalent settings let you find the lens and aperture combination on a second camera that reproduces the same framing and background blur. This is essential when comparing gear across formats or switching between camera systems.",
+      "beginner": "Tamanhos de sensor diferentes produzem profundidade de campo e campo de visão diferentes, mesmo na mesma distância focal e abertura. As configurações equivalentes ajudam você a encontrar a combinação de lente e abertura em outra câmera que reproduz o mesmo enquadramento e desfoque de fundo. É essencial ao comparar equipamentos entre formatos ou ao trocar de sistema.",
       "deeper": {
         "0": {
-          "heading": "The Crop Factor",
-          "text": "Every sensor has a crop factor relative to the 35mm full-frame standard. APS-C sensors have a factor around 1.5×, Micro Four Thirds 2×, and medium format around 0.79×. Multiplying the actual focal length by the crop factor gives the full-frame equivalent field of view. A 35mm lens on APS-C frames like a 52.5mm on full frame."
+          "heading": "O Fator de Corte",
+          "text": "Todo sensor tem um fator de corte em relação ao padrão full frame de 35mm. Sensores APS-C têm fator em torno de 1,5×, Micro Quatro Terços 2× e formato médio cerca de 0,79×. Multiplicar a distância focal real pelo fator de corte dá o campo de visão equivalente em full frame. Uma lente 35mm em APS-C enquadra como uma 52,5mm em full frame."
         },
         "1": {
-          "heading": "Equivalent Aperture & DoF",
-          "text": "To match depth of field across formats, multiply the f-number by the same crop factor. An f/1.4 lens on Micro Four Thirds produces DoF equivalent to f/2.8 on full frame (1.4 × 2 = 2.8). This is why full-frame cameras are prized for shallow DoF — you can use physically faster lenses at wider actual apertures to achieve blur that smaller sensors cannot replicate."
+          "heading": "Abertura Equivalente e Profundidade de Campo",
+          "text": "Para igualar a profundidade de campo entre formatos, multiplique o número f pelo mesmo fator de corte. Uma lente f/1.4 em Micro Quatro Terços produz profundidade de campo equivalente a f/2.8 em full frame (1,4 × 2 = 2,8). É por isso que câmeras full frame são valorizadas pela profundidade de campo rasa — você pode usar lentes fisicamente mais rápidas em aberturas reais maiores, obtendo um desfoque que sensores menores não conseguem reproduzir."
         },
         "2": {
-          "heading": "Equivalent ISO & Total Light",
-          "text": "Matching exposure brightness across formats requires adjusting ISO by the crop factor squared. The larger sensor collects more total light for the same scene, which means it can use a lower ISO for equivalent noise performance. A full-frame sensor at ISO 800 produces similar noise to an APS-C sensor at ISO 356 and a Micro Four Thirds sensor at ISO 200."
+          "heading": "ISO Equivalente e Luz Total",
+          "text": "Igualar o brilho da exposição entre formatos exige ajustar o ISO pelo quadrado do fator de corte. O sensor maior coleta mais luz total da mesma cena, o que significa que ele pode usar um ISO menor para obter um ruído equivalente. Um sensor full frame em ISO 800 produz ruído parecido com um APS-C em ISO 356 e um Micro Quatro Terços em ISO 200."
         }
       },
       "keyFactors": {
         "0": {
-          "label": "Crop Factor",
-          "description": "The ratio of the full-frame sensor diagonal to the target sensor diagonal. This single number drives all equivalence calculations for focal length, aperture, and ISO."
+          "label": "Fator de Corte",
+          "description": "A razão entre a diagonal do sensor full frame e a diagonal do sensor de destino. Esse número sozinho orienta todos os cálculos de equivalência para distância focal, abertura e ISO."
         },
         "1": {
-          "label": "Sensor Size",
-          "description": "Physically larger sensors capture more light and produce shallower DoF at equivalent framing. The equivalence calculator reveals exactly how much difference each format makes."
+          "label": "Tamanho do Sensor",
+          "description": "Sensores fisicamente maiores capturam mais luz e produzem profundidade de campo mais rasa em enquadramento equivalente. A calculadora de equivalência mostra exatamente quanta diferença cada formato faz."
         },
         "2": {
-          "label": "Available Lenses",
-          "description": "Equivalence math may call for a lens that does not exist. A 17mm f/0.7 is the equivalent of 35mm f/1.4 on MFT — but no such lens is made. Real-world gear limits what is achievable."
+          "label": "Lentes Disponíveis",
+          "description": "A matemática da equivalência pode exigir uma lente que não existe. Uma 17mm f/0.7 é a equivalente de uma 35mm f/1.4 em MFT — mas nenhuma lente assim é fabricada. O equipamento real limita o que é possível."
         }
       },
       "tips": {
         "0": {
-          "text": "When comparing camera systems, always compare at equivalent settings rather than matching f-numbers. An f/2.8 lens on Micro Four Thirds does not give the same background blur as f/2.8 on full frame — you need f/1.4 on MFT to match."
+          "text": "Ao comparar sistemas de câmeras, sempre compare em configurações equivalentes em vez de igualar os números f. Uma lente f/2.8 em Micro Quatro Terços não dá o mesmo desfoque de fundo que f/2.8 em full frame — você precisa de f/1.4 em MFT para igualar."
         },
         "1": {
-          "text": "Use equivalence to plan lens purchases when switching systems. If you love the look of 85mm f/1.8 on full frame, look for a 56mm f/1.2 on APS-C or a 42.5mm f/0.95 on MFT for a similar rendering."
+          "text": "Use a equivalência para planejar compras de lentes ao trocar de sistema. Se você adora a aparência de 85mm f/1.8 em full frame, procure uma 56mm f/1.2 em APS-C ou uma 42,5mm f/0.95 em MFT para ter uma renderização parecida."
         },
         "2": {
-          "text": "Remember that equivalence applies to depth of field and field of view, not to lens speed for exposure. An f/2.8 lens on any format still lets in the same amount of light per unit area — the larger sensor just collects more total light because of its greater area."
+          "text": "Lembre-se: a equivalência se aplica à profundidade de campo e ao campo de visão, não à velocidade da lente para exposição. Uma lente f/2.8 em qualquer formato ainda deixa passar a mesma quantidade de luz por área — o sensor maior só coleta mais luz total porque tem mais área."
         }
       },
       "tooltips": {
         "sourceSensor": {
-          "term": "Source Sensor",
-          "definition": "The sensor format of the camera whose settings you want to match. All equivalence calculations are relative to this starting point."
+          "term": "Sensor de Origem",
+          "definition": "O formato do sensor da câmera cujas configurações você quer igualar. Todos os cálculos de equivalência são feitos em relação a este ponto de partida."
         },
         "sourceFocalLength": {
-          "term": "Focal Length",
-          "definition": "The actual focal length of the lens on your source camera. This will be converted to equivalent focal lengths on target formats."
+          "term": "Distância Focal",
+          "definition": "A distância focal real da lente na câmera de origem. Ela será convertida para distâncias focais equivalentes nos formatos de destino."
         },
         "sourceAperture": {
-          "term": "Aperture",
-          "definition": "The f-number on your source camera. The equivalent aperture on each target format determines matching depth of field."
+          "term": "Abertura",
+          "definition": "O número f da câmera de origem. A abertura equivalente em cada formato de destino determina a profundidade de campo correspondente."
         },
         "targetSensor": {
-          "term": "Target Sensor",
-          "definition": "The sensor format you want to find equivalent settings for. The calculator applies the relative crop factor to compute matching focal length and aperture."
+          "term": "Sensor de Destino",
+          "definition": "O formato de sensor para o qual você quer encontrar configurações equivalentes. A calculadora aplica o fator de corte relativo para calcular a distância focal e a abertura correspondentes."
         },
         "cropFactor": {
-          "term": "Crop Factor",
-          "definition": "The ratio between the diagonal of a 35mm full-frame sensor and the target sensor. Multiply focal length by crop factor for equivalent FOV; multiply aperture by crop factor for equivalent DoF."
+          "term": "Fator de Corte",
+          "definition": "A razão entre a diagonal de um sensor full frame de 35mm e a do sensor de destino. Multiplique a distância focal pelo fator de corte para obter o campo de visão equivalente; multiplique a abertura pelo fator de corte para obter a profundidade de campo equivalente."
         },
         "equivalentFL": {
-          "term": "Equivalent Focal Length",
-          "definition": "The focal length on the target format that produces the same field of view as the source setup."
+          "term": "Distância Focal Equivalente",
+          "definition": "A distância focal no formato de destino que produz o mesmo campo de visão da configuração de origem."
         },
         "equivalentAperture": {
-          "term": "Equivalent Aperture",
-          "definition": "The f-number on the target format that produces the same depth of field as the source setup. May be faster than any real lens."
+          "term": "Abertura Equivalente",
+          "definition": "O número f no formato de destino que produz a mesma profundidade de campo da configuração de origem. Pode ser mais rápido do que qualquer lente real."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "You shoot portraits with an 85mm f/1.8 lens on a full-frame camera. A friend uses Micro Four Thirds (2× crop). What focal length does your friend need to match your field of view?",
-          "hint": "Divide the full-frame focal length by the MFT crop factor to find the actual lens needed.",
-          "successMessage": "Correct! 85mm / 2 = 42.5mm. Your friend needs a 42.5mm lens on Micro Four Thirds to get the same framing as your 85mm on full frame.",
-          "failureMessage": "To match the field of view, divide by the crop factor: 85mm / 2 = 42.5mm. That is the actual focal length needed on the MFT body.",
+          "scenario": "Você fotografa retratos com uma lente 85mm f/1.8 em uma câmera full frame. Um amigo usa Micro Quatro Terços (corte 2×). Que distância focal seu amigo precisa para igualar seu campo de visão?",
+          "hint": "Divida a distância focal full frame pelo fator de corte MFT para encontrar a lente real necessária.",
+          "successMessage": "Correto! 85mm / 2 = 42,5mm. Seu amigo precisa de uma lente 42,5mm em Micro Quatro Terços para obter o mesmo enquadramento que sua 85mm em full frame.",
+          "failureMessage": "Para igualar o campo de visão, divida pelo fator de corte: 85mm / 2 = 42,5mm. Essa é a distância focal real necessária no corpo MFT.",
           "options": {
-            "0": {
-              "label": "42.5mm"
-            },
-            "1": {
-              "label": "85mm"
-            },
-            "2": {
-              "label": "170mm"
-            },
-            "3": {
-              "label": "56mm"
-            }
+            "0": { "label": "42,5mm" },
+            "1": { "label": "85mm" },
+            "2": { "label": "170mm" },
+            "3": { "label": "56mm" }
           }
         },
         "1": {
-          "scenario": "Your friend found a 42.5mm f/1.8 lens for their MFT camera. Will the background blur match your 85mm f/1.8 on full frame?",
-          "hint": "Apply the crop factor to the aperture as well to find the equivalent DoF.",
-          "successMessage": "Right! The 42.5mm f/1.8 on MFT gives equivalent DoF to 85mm f/3.6 on full frame (1.8 × 2 = 3.6). Your f/1.8 full-frame shot produces significantly more blur.",
-          "failureMessage": "No — the MFT f/1.8 gives DoF equivalent to f/3.6 on full frame (1.8 × 2× crop = 3.6). To match your full-frame f/1.8 blur, your friend would need f/0.9 on MFT, which does not exist.",
+          "scenario": "Seu amigo encontrou uma lente 42,5mm f/1.8 para a câmera MFT. O desfoque de fundo vai igualar sua 85mm f/1.8 em full frame?",
+          "hint": "Aplique o fator de corte também à abertura para encontrar a profundidade de campo equivalente.",
+          "successMessage": "Isso! A 42,5mm f/1.8 em MFT dá profundidade de campo equivalente a 85mm f/3.6 em full frame (1,8 × 2 = 3,6). Sua foto em f/1.8 full frame produz muito mais desfoque.",
+          "failureMessage": "Não — a f/1.8 em MFT dá profundidade de campo equivalente a f/3.6 em full frame (1,8 × corte 2× = 3,6). Para igualar o desfoque da sua f/1.8 full frame, seu amigo precisaria de f/0.9 em MFT, que não existe.",
           "options": {
-            "0": {
-              "label": "Yes — same f/1.8 means same blur"
-            },
-            "1": {
-              "label": "No — MFT f/1.8 equals full-frame f/3.6 depth of field"
-            },
-            "2": {
-              "label": "No — MFT produces more blur because the sensor is smaller"
-            }
+            "0": { "label": "Sim — o mesmo f/1.8 significa o mesmo desfoque" },
+            "1": { "label": "Não — f/1.8 em MFT equivale a f/3.6 em full frame em profundidade de campo" },
+            "2": { "label": "Não — MFT produz mais desfoque porque o sensor é menor" }
           }
         },
         "2": {
-          "scenario": "A photographer switching from full frame to APS-C (1.5× crop) wants to match the look of a 50mm f/1.4 on full frame. What equivalent lens and aperture do they need on APS-C?",
-          "hint": "Divide focal length by the crop factor for equivalent FOV. Divide aperture by the crop factor for equivalent DoF.",
-          "successMessage": "Exactly! 50 / 1.5 = 33mm for field of view, and f/1.4 / 1.5 = f/0.93 for matching DoF. Since no f/0.93 lens exists, the APS-C camera cannot fully replicate the full-frame look.",
-          "failureMessage": "The correct answer is ~33mm f/0.93. Since 50 / 1.5 = 33.3mm and 1.4 / 1.5 = 0.93. No f/0.93 lens exists, so the full-frame look cannot be fully matched on APS-C.",
+          "scenario": "Um fotógrafo que está trocando full frame por APS-C (corte 1,5×) quer igualar a aparência de uma 50mm f/1.4 em full frame. Qual lente e abertura equivalentes ele precisa em APS-C?",
+          "hint": "Divida a distância focal pelo fator de corte para obter o campo de visão equivalente. Divida a abertura pelo fator de corte para obter a profundidade de campo equivalente.",
+          "successMessage": "Exatamente! 50 / 1,5 = 33mm para o campo de visão e f/1.4 / 1,5 = f/0.93 para igualar a profundidade de campo. Como nenhuma lente f/0.93 existe, a câmera APS-C não consegue reproduzir totalmente a aparência full frame.",
+          "failureMessage": "A resposta correta é ~33mm f/0.93. Como 50 / 1,5 = 33,3mm e 1,4 / 1,5 = 0,93. Nenhuma lente f/0.93 existe, então a aparência full frame não pode ser totalmente igualada em APS-C.",
           "options": {
-            "0": {
-              "label": "35mm f/1.4 — close enough"
-            },
-            "1": {
-              "label": "33mm f/0.93 — exact match, but no such lens exists"
-            },
-            "2": {
-              "label": "75mm f/2.1 — multiply by crop factor"
-            }
+            "0": { "label": "35mm f/1.4 — perto o suficiente" },
+            "1": { "label": "33mm f/0.93 — correspondência exata, mas essa lente não existe" },
+            "2": { "label": "75mm f/2.1 — multiplicar pelo fator de corte" }
           }
         }
       }

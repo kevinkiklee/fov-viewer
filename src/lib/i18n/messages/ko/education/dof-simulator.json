@@ -4,16 +4,16 @@
       "beginner": "피사계 심도(DoF)는 사진에서 허용 가능한 수준으로 선명하게 보이는 거리 범위입니다. 얕은 피사계 심도는 피사체 뒤의 배경을 흐리게 만들고, 깊은 피사계 심도는 전경부터 지평선까지 모든 것을 선명하게 유지합니다. 피사계 심도 제어는 사진에서 가장 강력한 창작 도구 중 하나입니다.",
       "deeper": {
         "0": {
-          "heading": "How DoF Works",
-          "text": "Depth of field is governed by the circle of confusion (CoC) — the largest blur spot on the sensor that still looks sharp to the human eye. Three physical factors determine DoF: focal length, aperture, and subject distance. A wider aperture (lower f-number) produces a shallower DoF because the lens converges light at steeper angles, causing out-of-focus points to spread into larger circles on the sensor."
+          "heading": "피사계 심도의 원리",
+          "text": "피사계 심도는 착란원(CoC) — 사람의 눈에 여전히 선명하게 보이는 센서 위 가장 큰 흐림 점 — 에 의해 결정됩니다. 피사계 심도를 결정하는 물리적 요소는 세 가지입니다: 초점 거리, 조리개, 피사체 거리. 넓은 조리개(낮은 f값)는 렌즈가 빛을 더 가파른 각도로 수렴시키므로, 초점이 맞지 않은 지점이 센서에서 더 큰 원으로 퍼져 피사계 심도가 얕아집니다."
         },
         "1": {
-          "heading": "Focal Length & Distance",
-          "text": "Longer focal lengths magnify the image, which also magnifies the blur circles, narrowing the DoF. Moving closer to your subject reduces DoF for the same reason — the relative difference in distance between the subject and background becomes greater. The hyperfocal distance is the focus distance at which DoF extends from half that distance to infinity, maximizing sharpness across the entire scene."
+          "heading": "초점 거리와 거리",
+          "text": "긴 초점 거리는 이미지를 확대하는 동시에 흐림 원도 확대하여 피사계 심도를 좁게 만듭니다. 피사체에 가까이 다가가면 같은 이유로 피사계 심도가 줄어듭니다 — 피사체와 배경 사이의 상대적인 거리 차이가 더 커지기 때문입니다. 과초점 거리는 그 거리의 절반부터 무한대까지 피사계 심도가 확장되는 초점 거리로, 장면 전체의 선명도를 최대화합니다."
         },
         "2": {
-          "heading": "Bokeh & Diffraction",
-          "text": "Bokeh refers to the quality of the out-of-focus areas. The number and shape of aperture blades affect bokeh character — more rounded blades produce smoother, more circular highlights. At very small apertures (f/16+), diffraction causes light to spread as it passes the aperture edges, softening the entire image even within the DoF zone. There is always a sweet spot — typically around f/5.6-f/8 on full-frame — where sharpness and depth of field are optimally balanced."
+          "heading": "보케와 회절",
+          "text": "보케는 초점이 맞지 않는 영역의 질감을 의미합니다. 조리개 날의 수와 모양은 보케의 성격에 영향을 미치며, 더 둥근 날은 부드럽고 더 원형에 가까운 하이라이트를 만듭니다. 매우 좁은 조리개(f/16 이상)에서는 빛이 조리개 가장자리를 지나면서 퍼지는 회절이 발생하여 피사계 심도 영역 안의 이미지까지 전체적으로 부드러워집니다. 풀프레임 기준으로 보통 f/5.6~f/8 부근에 선명도와 피사계 심도가 최적으로 균형을 이루는 지점이 있습니다."
         }
       },
       "keyFactors": {
@@ -63,8 +63,8 @@
           "definition": "카메라 센서의 물리적 크기입니다. 큰 센서(풀프레임, 중형 포맷)는 작은 센서(APS-C, 마이크로 포서드)에 비해 동일한 프레이밍에서 더 얕은 피사계 심도를 만듭니다."
         },
         "orientation": {
-          "term": "Orientation",
-          "definition": "Toggle between landscape (horizontal) and portrait (vertical) shooting orientation. This affects the framing reference for subject distance calculations."
+          "term": "방향",
+          "definition": "가로(랜드스케이프)와 세로(포트레이트) 촬영 방향을 전환합니다. 피사체 거리 계산을 위한 프레이밍 기준에 영향을 줍니다."
         },
         "nearFocus": {
           "term": "근접 초점 한계",
@@ -83,24 +83,24 @@
           "definition": "피사계 심도를 최대화하는 초점 거리입니다. 이 거리에 초점을 맞추면 과초점 거리의 절반부터 무한대까지 선명하게 보입니다."
         },
         "backgroundBlur": {
-          "term": "Background Blur",
-          "definition": "A measure of how blurred the background appears behind your subject. Higher values mean stronger blur and more subject isolation."
+          "term": "배경 흐림",
+          "definition": "피사체 뒤의 배경이 얼마나 흐리게 보이는지를 나타내는 척도입니다. 값이 높을수록 흐림이 강하고 피사체 분리 효과가 커집니다."
         },
         "coc": {
-          "term": "Circle of Confusion",
-          "definition": "The maximum diameter of a blur spot on the sensor that still appears as a point to the human eye. Determines the boundary of acceptable sharpness for depth-of-field calculations."
+          "term": "착란원",
+          "definition": "사람의 눈에 여전히 하나의 점으로 보이는 센서 위 흐림 점의 최대 지름입니다. 피사계 심도 계산에서 허용 가능한 선명도의 경계를 결정합니다."
         },
         "isolationScore": {
-          "term": "Isolation Score",
-          "definition": "A composite rating (0-100) indicating how well the subject is separated from the background, based on the amount of background blur relative to the subject size."
+          "term": "분리 점수",
+          "definition": "피사체 크기 대비 배경 흐림의 정도를 바탕으로 피사체가 배경과 얼마나 잘 분리되는지를 0~100 점수로 나타낸 종합 지표입니다."
         },
         "bokehShape": {
-          "term": "Bokeh Shape",
-          "definition": "The shape of out-of-focus highlights, determined by the number and curvature of aperture blades. More blades produce rounder, smoother bokeh."
+          "term": "보케 모양",
+          "definition": "초점이 맞지 않는 하이라이트의 모양으로, 조리개 날의 수와 곡률에 따라 결정됩니다. 날이 많을수록 보케가 더 둥글고 부드러워집니다."
         },
         "diffractionWarning": {
-          "term": "Diffraction",
-          "definition": "At very small apertures, light bends around the aperture edges, softening the image. On full-frame sensors, this typically becomes noticeable beyond f/16."
+          "term": "회절",
+          "definition": "매우 좁은 조리개에서는 빛이 조리개 가장자리를 따라 휘어져 이미지가 부드러워집니다. 풀프레임 센서에서는 보통 f/16 이상에서 뚜렷하게 나타납니다."
         }
       },
       "challenges": {

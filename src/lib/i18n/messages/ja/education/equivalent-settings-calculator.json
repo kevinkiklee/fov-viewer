@@ -1,82 +1,82 @@
 {
   "education": {
     "equivalent-settings-calculator": {
-      "beginner": "Different sensor sizes produce different depth of field and field of view even at the same focal length and aperture. Equivalent settings let you find the lens and aperture combination on a second camera that reproduces the same framing and background blur. This is essential when comparing gear across formats or switching between camera systems.",
+      "beginner": "センサーサイズが異なると、同じ焦点距離と絞りでも被写界深度や画角が変わります。等価設定を使えば、同じフレーミングと背景ぼけを再現できる、別のカメラでのレンズと絞りの組み合わせを見つけられます。フォーマット間で機材を比較したり、カメラシステムを乗り換えたりする際に欠かせない考え方です。",
       "deeper": {
         "0": {
-          "heading": "The Crop Factor",
-          "text": "Every sensor has a crop factor relative to the 35mm full-frame standard. APS-C sensors have a factor around 1.5×, Micro Four Thirds 2×, and medium format around 0.79×. Multiplying the actual focal length by the crop factor gives the full-frame equivalent field of view. A 35mm lens on APS-C frames like a 52.5mm on full frame."
+          "heading": "クロップファクター",
+          "text": "どのセンサーも、35mmフルフレームを基準にしたクロップファクターを持っています。APS-Cセンサーは約1.5倍、マイクロフォーサーズは2倍、中判は約0.79倍です。実際の焦点距離にクロップファクターを掛けると、フルフレーム換算の画角が求められます。APS-Cに付けた35mmレンズは、フルフレームの52.5mmと同じフレーミングになります。"
         },
         "1": {
-          "heading": "Equivalent Aperture & DoF",
-          "text": "To match depth of field across formats, multiply the f-number by the same crop factor. An f/1.4 lens on Micro Four Thirds produces DoF equivalent to f/2.8 on full frame (1.4 × 2 = 2.8). This is why full-frame cameras are prized for shallow DoF — you can use physically faster lenses at wider actual apertures to achieve blur that smaller sensors cannot replicate."
+          "heading": "等価絞りと被写界深度",
+          "text": "フォーマット間で被写界深度を一致させるには、f値に同じクロップファクターを掛けます。マイクロフォーサーズのf/1.4レンズは、フルフレームのf/2.8に相当する被写界深度を生みます（1.4×2＝2.8）。フルフレームカメラが浅い被写界深度で重宝されるのはこのためです。物理的に明るいレンズをより開いた実絞りで使うことで、小さなセンサーには再現できないボケを得られるのです。"
         },
         "2": {
-          "heading": "Equivalent ISO & Total Light",
-          "text": "Matching exposure brightness across formats requires adjusting ISO by the crop factor squared. The larger sensor collects more total light for the same scene, which means it can use a lower ISO for equivalent noise performance. A full-frame sensor at ISO 800 produces similar noise to an APS-C sensor at ISO 356 and a Micro Four Thirds sensor at ISO 200."
+          "heading": "等価ISOと総光量",
+          "text": "フォーマット間で露出の明るさを一致させるには、クロップファクターの2乗の分だけISOを調整する必要があります。大きなセンサーは同じシーンからより多くの総光量を集められるため、同等のノイズ性能を低いISOで実現できます。フルフレームセンサーのISO 800は、APS-CセンサーのISO 356、マイクロフォーサーズセンサーのISO 200とほぼ同じノイズ量になります。"
         }
       },
       "keyFactors": {
         "0": {
-          "label": "Crop Factor",
-          "description": "The ratio of the full-frame sensor diagonal to the target sensor diagonal. This single number drives all equivalence calculations for focal length, aperture, and ISO."
+          "label": "クロップファクター",
+          "description": "フルフレームセンサーの対角線と対象センサーの対角線の比率です。この1つの数値が、焦点距離・絞り・ISOのすべての等価計算を支配します。"
         },
         "1": {
-          "label": "Sensor Size",
-          "description": "Physically larger sensors capture more light and produce shallower DoF at equivalent framing. The equivalence calculator reveals exactly how much difference each format makes."
+          "label": "センサーサイズ",
+          "description": "物理的に大きなセンサーはより多くの光を取り込み、同等のフレーミングでより浅い被写界深度を生みます。等価計算機を使うと、フォーマットごとの差が具体的にどの程度なのかが分かります。"
         },
         "2": {
-          "label": "Available Lenses",
-          "description": "Equivalence math may call for a lens that does not exist. A 17mm f/0.7 is the equivalent of 35mm f/1.4 on MFT — but no such lens is made. Real-world gear limits what is achievable."
+          "label": "入手可能なレンズ",
+          "description": "等価計算の結果、実在しないレンズが必要になることもあります。マイクロフォーサーズで35mm f/1.4に相当するのは17mm f/0.7ですが、そのようなレンズは存在しません。現実の機材には実現可能な範囲に限界があります。"
         }
       },
       "tips": {
         "0": {
-          "text": "When comparing camera systems, always compare at equivalent settings rather than matching f-numbers. An f/2.8 lens on Micro Four Thirds does not give the same background blur as f/2.8 on full frame — you need f/1.4 on MFT to match."
+          "text": "カメラシステムを比較するときは、f値を揃えるのではなく、必ず等価設定で比較しましょう。マイクロフォーサーズのf/2.8レンズは、フルフレームのf/2.8と同じ背景ぼけにはなりません。MFTで同じボケ量を得るにはf/1.4が必要です。"
         },
         "1": {
-          "text": "Use equivalence to plan lens purchases when switching systems. If you love the look of 85mm f/1.8 on full frame, look for a 56mm f/1.2 on APS-C or a 42.5mm f/0.95 on MFT for a similar rendering."
+          "text": "システムを乗り換える際のレンズ購入計画には等価の考え方を使いましょう。フルフレームの85mm f/1.8の描写が好きなら、APS-Cでは56mm f/1.2、MFTでは42.5mm f/0.95といった選択肢を探してみましょう。"
         },
         "2": {
-          "text": "Remember that equivalence applies to depth of field and field of view, not to lens speed for exposure. An f/2.8 lens on any format still lets in the same amount of light per unit area — the larger sensor just collects more total light because of its greater area."
+          "text": "等価の考え方は被写界深度と画角には適用されますが、露出のためのレンズの明るさには当てはまりません。どのフォーマットでもf/2.8レンズは単位面積あたり同じ量の光を取り込みます。大きなセンサーは面積が広いため、より多くの総光量を集められるのです。"
         }
       },
       "tooltips": {
         "sourceSensor": {
-          "term": "Source Sensor",
-          "definition": "The sensor format of the camera whose settings you want to match. All equivalence calculations are relative to this starting point."
+          "term": "ソースセンサー",
+          "definition": "設定を合わせたいカメラのセンサーフォーマットです。等価計算はすべてこの起点に対して相対的に行われます。"
         },
         "sourceFocalLength": {
-          "term": "Focal Length",
-          "definition": "The actual focal length of the lens on your source camera. This will be converted to equivalent focal lengths on target formats."
+          "term": "焦点距離",
+          "definition": "ソースカメラのレンズの実際の焦点距離です。これが対象フォーマットでの等価焦点距離に変換されます。"
         },
         "sourceAperture": {
-          "term": "Aperture",
-          "definition": "The f-number on your source camera. The equivalent aperture on each target format determines matching depth of field."
+          "term": "絞り",
+          "definition": "ソースカメラでのf値です。各対象フォーマットでの等価絞りが、合致する被写界深度を決定します。"
         },
         "targetSensor": {
-          "term": "Target Sensor",
-          "definition": "The sensor format you want to find equivalent settings for. The calculator applies the relative crop factor to compute matching focal length and aperture."
+          "term": "ターゲットセンサー",
+          "definition": "等価設定を求めたいセンサーフォーマットです。計算機は相対的なクロップファクターを適用し、合致する焦点距離と絞りを算出します。"
         },
         "cropFactor": {
-          "term": "Crop Factor",
-          "definition": "The ratio between the diagonal of a 35mm full-frame sensor and the target sensor. Multiply focal length by crop factor for equivalent FOV; multiply aperture by crop factor for equivalent DoF."
+          "term": "クロップファクター",
+          "definition": "35mmフルフレームセンサーの対角線と対象センサーの対角線の比率です。等価画角を求めるには焦点距離にクロップファクターを掛け、等価被写界深度を求めるには絞りにクロップファクターを掛けます。"
         },
         "equivalentFL": {
-          "term": "Equivalent Focal Length",
-          "definition": "The focal length on the target format that produces the same field of view as the source setup."
+          "term": "等価焦点距離",
+          "definition": "ソースセットアップと同じ画角を生む、対象フォーマットでの焦点距離です。"
         },
         "equivalentAperture": {
-          "term": "Equivalent Aperture",
-          "definition": "The f-number on the target format that produces the same depth of field as the source setup. May be faster than any real lens."
+          "term": "等価絞り",
+          "definition": "ソースセットアップと同じ被写界深度を生む、対象フォーマットでのf値です。実在するどのレンズよりも明るい値になることがあります。"
         }
       },
       "challenges": {
         "0": {
-          "scenario": "You shoot portraits with an 85mm f/1.8 lens on a full-frame camera. A friend uses Micro Four Thirds (2× crop). What focal length does your friend need to match your field of view?",
-          "hint": "Divide the full-frame focal length by the MFT crop factor to find the actual lens needed.",
-          "successMessage": "Correct! 85mm / 2 = 42.5mm. Your friend needs a 42.5mm lens on Micro Four Thirds to get the same framing as your 85mm on full frame.",
-          "failureMessage": "To match the field of view, divide by the crop factor: 85mm / 2 = 42.5mm. That is the actual focal length needed on the MFT body.",
+          "scenario": "フルフレームカメラに85mm f/1.8レンズを付けてポートレートを撮影しています。友人はマイクロフォーサーズ（2倍クロップ）を使っています。友人があなたの画角に合わせるには、どの焦点距離のレンズが必要ですか？",
+          "hint": "フルフレームの焦点距離をMFTのクロップファクターで割れば、実際に必要なレンズの焦点距離が分かります。",
+          "successMessage": "正解です！85mm÷2＝42.5mmです。友人がフルフレームの85mmと同じフレーミングを得るには、マイクロフォーサーズで42.5mmのレンズが必要です。",
+          "failureMessage": "画角を合わせるには、クロップファクターで割ります。85mm÷2＝42.5mmが、MFTボディで必要な実際の焦点距離です。",
           "options": {
             "0": {
               "label": "42.5mm"
@@ -93,36 +93,36 @@
           }
         },
         "1": {
-          "scenario": "Your friend found a 42.5mm f/1.8 lens for their MFT camera. Will the background blur match your 85mm f/1.8 on full frame?",
-          "hint": "Apply the crop factor to the aperture as well to find the equivalent DoF.",
-          "successMessage": "Right! The 42.5mm f/1.8 on MFT gives equivalent DoF to 85mm f/3.6 on full frame (1.8 × 2 = 3.6). Your f/1.8 full-frame shot produces significantly more blur.",
-          "failureMessage": "No — the MFT f/1.8 gives DoF equivalent to f/3.6 on full frame (1.8 × 2× crop = 3.6). To match your full-frame f/1.8 blur, your friend would need f/0.9 on MFT, which does not exist.",
+          "scenario": "友人がMFTカメラ用に42.5mm f/1.8レンズを見つけました。背景ぼけは、フルフレームでのあなたの85mm f/1.8と一致しますか？",
+          "hint": "等価被写界深度を求めるには、絞りにもクロップファクターを適用しましょう。",
+          "successMessage": "その通りです！MFTの42.5mm f/1.8は、フルフレームの85mm f/3.6に相当する被写界深度になります（1.8×2＝3.6）。あなたのフルフレームf/1.8の方がはるかに強いボケを生みます。",
+          "failureMessage": "いいえ。MFTのf/1.8はフルフレームのf/3.6に相当する被写界深度になります（1.8×2倍クロップ＝3.6）。フルフレームのf/1.8と同じボケを得るには、友人はMFTでf/0.9が必要ですが、そのようなレンズは存在しません。",
           "options": {
             "0": {
-              "label": "Yes — same f/1.8 means same blur"
+              "label": "はい — 同じf/1.8なら同じボケになる"
             },
             "1": {
-              "label": "No — MFT f/1.8 equals full-frame f/3.6 depth of field"
+              "label": "いいえ — MFTのf/1.8はフルフレームのf/3.6に相当する被写界深度"
             },
             "2": {
-              "label": "No — MFT produces more blur because the sensor is smaller"
+              "label": "いいえ — センサーが小さいのでMFTの方が強いボケになる"
             }
           }
         },
         "2": {
-          "scenario": "A photographer switching from full frame to APS-C (1.5× crop) wants to match the look of a 50mm f/1.4 on full frame. What equivalent lens and aperture do they need on APS-C?",
-          "hint": "Divide focal length by the crop factor for equivalent FOV. Divide aperture by the crop factor for equivalent DoF.",
-          "successMessage": "Exactly! 50 / 1.5 = 33mm for field of view, and f/1.4 / 1.5 = f/0.93 for matching DoF. Since no f/0.93 lens exists, the APS-C camera cannot fully replicate the full-frame look.",
-          "failureMessage": "The correct answer is ~33mm f/0.93. Since 50 / 1.5 = 33.3mm and 1.4 / 1.5 = 0.93. No f/0.93 lens exists, so the full-frame look cannot be fully matched on APS-C.",
+          "scenario": "フルフレームからAPS-C（1.5倍クロップ）に乗り換えるカメラマンが、フルフレームの50mm f/1.4の描写を再現したいと考えています。APS-Cで必要な等価レンズと絞りは何ですか？",
+          "hint": "等価画角を求めるには焦点距離をクロップファクターで割り、等価被写界深度を求めるには絞りをクロップファクターで割りましょう。",
+          "successMessage": "その通りです！画角は50÷1.5＝33mm、被写界深度を合わせるにはf/1.4÷1.5＝f/0.93です。f/0.93のレンズは存在しないため、APS-Cカメラではフルフレームの描写を完全には再現できません。",
+          "failureMessage": "正解は約33mm f/0.93です。50÷1.5＝33.3mm、1.4÷1.5＝0.93となります。f/0.93のレンズは存在しないため、APS-Cではフルフレームの描写を完全には再現できません。",
           "options": {
             "0": {
-              "label": "35mm f/1.4 — close enough"
+              "label": "35mm f/1.4 — 十分近い"
             },
             "1": {
-              "label": "33mm f/0.93 — exact match, but no such lens exists"
+              "label": "33mm f/0.93 — 完全一致だが、そのレンズは存在しない"
             },
             "2": {
-              "label": "75mm f/2.1 — multiply by crop factor"
+              "label": "75mm f/2.1 — クロップファクターを掛ける"
             }
           }
         }

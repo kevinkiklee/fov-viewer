@@ -69,7 +69,7 @@
       "quality": "Qualität:",
       "qualityMaximum": "Maximum",
       "includeGridOverlay": "Rasterüberlagerung einbeziehen",
-      "downscaleNotice": "Your image ({from}) exceeds the browser's maximum canvas size and will be exported at {to}.",
+      "downscaleNotice": "Dein Bild ({from}) überschreitet die maximale Canvas-Größe des Browsers und wird mit {to} exportiert.",
       "cancel": "Abbrechen",
       "exporting": "Wird exportiert...",
       "download": "Herunterladen",

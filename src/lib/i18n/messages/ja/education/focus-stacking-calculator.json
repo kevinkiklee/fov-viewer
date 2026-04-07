@@ -1,131 +1,131 @@
 {
   "education": {
     "focus-stacking-calculator": {
-      "beginner": "Focus stacking is a technique where you take multiple photos at different focus distances and merge them in software to create an image with front-to-back sharpness. It is essential for macro photography, where depth of field is razor-thin, and useful in landscape photography when you need both near foreground and distant background in sharp focus.",
+      "beginner": "フォーカススタッキングとは、ピント位置を変えて撮影した複数の写真をソフトウェアで合成し、手前から奥まですべてシャープな1枚の画像を作り出す技法です。被写界深度が極薄になるマクロ撮影では不可欠であり、手前の前景から遠方の背景まで両方をシャープに写したい風景撮影でも役立ちます。",
       "deeper": {
         "0": {
-          "heading": "Why Stacking Is Necessary",
-          "text": "At macro magnifications, even f/16 may yield only a few millimeters of depth of field. Stopping down further introduces diffraction softening that degrades the image. Focus stacking lets you shoot at the lens's sharpest aperture (typically f/5.6-f/8) and combine the sharp slices. Each frame shifts focus slightly forward, covering a new slice of the subject."
+          "heading": "なぜスタッキングが必要なのか",
+          "text": "マクロ倍率では、f/16でも被写界深度はわずか数ミリしか得られないことがあります。それ以上絞ると回折によるぼやけが発生し、画像が劣化してしまいます。フォーカススタッキングを使えば、レンズが最もシャープな絞り（一般にf/5.6〜f/8）で撮影し、シャープな断面を合成できます。各フレームはピント位置を少しずつ前にずらし、被写体の新しい断面をカバーしていきます。"
         },
         "1": {
-          "heading": "Planning the Stack",
-          "text": "The key to a successful stack is ensuring each shot's depth of field overlaps the next by 20-30%. Too little overlap creates gaps where nothing is sharp; too much wastes frames without benefit. The calculator determines the per-shot DoF using the circle of confusion formula, subtracts the overlap margin, and divides the total depth range by the effective step to compute the number of shots."
+          "heading": "スタックの計画",
+          "text": "スタッキングを成功させる鍵は、各ショットの被写界深度が次のショットと20〜30%重なるようにすることです。重なりが少なすぎるとシャープでない隙間ができ、多すぎるとフレームを無駄にしてしまいます。この計算機は錯乱円の公式を使って1ショットあたりの被写界深度を求め、オーバーラップマージンを差し引き、全深度範囲を実効ステップで割ってショット数を算出します。"
         },
         "2": {
-          "heading": "Merging & Alignment",
-          "text": "Software like Photoshop, Helicon Focus, or Zerene Stacker aligns the frames (slight magnification shifts occur as focus changes), then selects the sharpest pixels from each layer. Shooting on a sturdy tripod with consistent lighting and using a focus rail for precise increments produces the cleanest results."
+          "heading": "合成と位置合わせ",
+          "text": "Photoshop、Helicon Focus、Zerene Stackerなどのソフトウェアは、各フレームの位置を合わせ（ピントが変わると倍率がわずかに変化します）、各レイヤーから最もシャープなピクセルを選び出します。しっかりした三脚に一定の照明を組み合わせ、精密なステップ送りのためにフォーカスレールを使用すると、最もクリーンな結果が得られます。"
         }
       },
       "keyFactors": {
         "0": {
-          "label": "Aperture",
-          "description": "Determines per-shot depth of field. A moderate aperture (f/5.6-f/8) balances sharpness and DoF per frame. Avoid very small apertures — diffraction reduces the sharpness you are stacking for."
+          "label": "絞り",
+          "description": "1ショットあたりの被写界深度を決定します。中程度の絞り（f/5.6〜f/8）は、1フレームあたりのシャープネスと被写界深度のバランスが良好です。非常に小さい絞りは避けましょう。回折によってスタッキングで得たいシャープネスが損なわれます。"
         },
         "1": {
-          "label": "Depth Range",
-          "description": "The distance from the nearest to farthest point you want sharp. Wider ranges require more shots. In macro work this may be just centimeters; in landscapes it can span meters to infinity."
+          "label": "深度範囲",
+          "description": "シャープに写したい最近点から最遠点までの距離です。範囲が広いほど多くのショットが必要になります。マクロ撮影では数センチですが、風景では数メートルから無限遠まで及ぶこともあります。"
         },
         "2": {
-          "label": "Overlap",
-          "description": "The percentage of each shot's DoF that overlaps the adjacent shots. 20-30% is standard. Less risks gaps; more wastes frames."
+          "label": "オーバーラップ",
+          "description": "各ショットの被写界深度が隣接するショットと重なる割合です。20〜30%が標準です。少なすぎると隙間のリスクがあり、多すぎるとフレームを無駄にします。"
         }
       },
       "tips": {
         "0": {
-          "text": "Use a focus rail instead of the lens's focus ring for macro stacking. A rail moves the entire camera forward in precise increments, avoiding the slight magnification changes that occur when refocusing the lens."
+          "text": "マクロのスタッキングでは、レンズのピントリングではなくフォーカスレールを使いましょう。レールはカメラ全体を精密に前方へ移動させるため、ピントを合わせ直すときに起こるわずかな倍率変化を防げます。"
         },
         "1": {
-          "text": "Keep your aperture at the lens's sweet spot (typically f/5.6-f/8). The point of stacking is to avoid stopping down to f/16+, so use the sharpest aperture and let the stack handle depth."
+          "text": "絞りはレンズのスイートスポット（通常f/5.6〜f/8）に保ちましょう。スタッキングの目的はf/16以上に絞るのを避けることにあるので、最もシャープな絞りを使い、深度はスタックに任せましょう。"
         },
         "2": {
-          "text": "For landscape stacks, shoot front-to-back: focus on the nearest element first, then step focus toward infinity. This makes alignment easier since the foreground (with the most parallax) is captured first."
+          "text": "風景のスタッキングでは、手前から奥へ撮影しましょう。まず最も近い要素にピントを合わせ、そこから無限遠に向かってピントをずらしていきます。視差が最も大きい前景を最初に捉えるため、位置合わせが容易になります。"
         }
       },
       "tooltips": {
         "focalLength": {
-          "term": "Focal Length",
-          "definition": "The lens focal length in millimeters. Longer focal lengths reduce per-shot depth of field, requiring more frames to cover the same depth range."
+          "term": "焦点距離",
+          "definition": "レンズの焦点距離（ミリメートル単位）です。焦点距離が長いほど1ショットあたりの被写界深度が浅くなるため、同じ深度範囲をカバーするのに必要なフレーム数が増えます。"
         },
         "aperture": {
-          "term": "Aperture",
-          "definition": "The lens opening (f-number). For stacking, use the lens's sharpest aperture rather than stopping down — the stack provides the depth."
+          "term": "絞り",
+          "definition": "レンズの開口部（f値）です。スタッキングでは絞り込むのではなく、レンズの最もシャープな絞りを使いましょう。深度はスタックが提供します。"
         },
         "sensor": {
-          "term": "Sensor Size",
-          "definition": "Larger sensors have a shallower per-shot depth of field at equivalent framing, which may increase the number of required stack frames."
+          "term": "センサーサイズ",
+          "definition": "センサーが大きいほど、同等のフレーミングでは1ショットあたりの被写界深度が浅くなり、必要なスタックフレーム数が増える可能性があります。"
         },
         "nearLimit": {
-          "term": "Near Limit",
-          "definition": "The closest point in the scene that you want sharp. This is where the first shot in the stack will be focused."
+          "term": "近点",
+          "definition": "シーン内でシャープに写したい最も近い位置です。スタックの最初のショットはここにピントを合わせます。"
         },
         "farLimit": {
-          "term": "Far Limit",
-          "definition": "The farthest point in the scene that you want sharp. The last shot in the stack will cover this distance."
+          "term": "遠点",
+          "definition": "シーン内でシャープに写したい最も遠い位置です。スタックの最後のショットがこの距離をカバーします。"
         },
         "overlap": {
-          "term": "Overlap",
-          "definition": "The percentage of depth-of-field overlap between consecutive shots. 20-30% ensures no gaps after software alignment and merging."
+          "term": "オーバーラップ",
+          "definition": "連続するショット間の被写界深度の重なりの割合です。20〜30%あれば、ソフトウェアでの位置合わせと合成後に隙間ができません。"
         },
         "shotCount": {
-          "term": "Shot Count",
-          "definition": "The total number of frames needed to cover the depth range with the specified overlap. More shots = more processing but smoother results."
+          "term": "ショット数",
+          "definition": "指定したオーバーラップで深度範囲をカバーするために必要な総フレーム数です。ショットが多いほど処理は重くなりますが、よりスムーズな結果が得られます。"
         }
       },
       "challenges": {
         "0": {
-          "scenario": "You are photographing a small flower that is 3cm deep from front petal to back stem. Your macro lens at f/8 gives about 4mm of DoF per shot. Roughly how many frames do you need with 25% overlap?",
-          "hint": "Each shot covers 4mm, but 25% overlap means the effective step is 3mm per frame. Divide 30mm by 3mm.",
-          "successMessage": "Correct! With 4mm DoF and 25% overlap, each step advances 3mm. 30mm / 3mm = 10 shots to cover the entire flower.",
-          "failureMessage": "With 25% overlap, each frame's effective step is 75% of the DoF: 4mm × 0.75 = 3mm. You need 30mm / 3mm = 10 shots.",
+          "scenario": "前方の花びらから後方の茎まで深さ3cmの小さな花を撮影しています。f/8のマクロレンズで1ショットあたり約4mmの被写界深度が得られます。25%のオーバーラップで必要なフレーム数はおおよそ何枚でしょうか？",
+          "hint": "各ショットは4mmをカバーしますが、25%のオーバーラップでは1フレームあたりの実効ステップは3mmになります。30mmを3mmで割ってみましょう。",
+          "successMessage": "正解です！被写界深度4mm、オーバーラップ25%なら、1ステップで3mm進みます。30mm÷3mmで、花全体をカバーするのに10ショット必要です。",
+          "failureMessage": "25%のオーバーラップでは、1フレームの実効ステップは被写界深度の75%（4mm×0.75＝3mm）です。30mm÷3mm＝10ショットが必要です。",
           "options": {
             "0": {
-              "label": "5 shots"
+              "label": "5ショット"
             },
             "1": {
-              "label": "10 shots"
+              "label": "10ショット"
             },
             "2": {
-              "label": "20 shots"
+              "label": "20ショット"
             },
             "3": {
-              "label": "30 shots"
+              "label": "30ショット"
             }
           }
         },
         "1": {
-          "scenario": "You want the sharpest possible result from your focus stack. Should you shoot each frame at f/2.8, f/8, or f/22?",
-          "hint": "Consider the lens's sharpest aperture and how diffraction affects small apertures.",
-          "successMessage": "Right! f/8 is typically the sharpest aperture for most lenses. f/2.8 has too little DoF per shot (wasting frames) and f/22 suffers from diffraction softening.",
-          "failureMessage": "f/8 is the best choice. f/2.8 gives very thin per-shot DoF (requiring many more frames), and f/22 introduces diffraction softening that defeats the purpose of stacking for sharpness.",
+          "scenario": "フォーカススタックで最もシャープな結果を得たいと思っています。各フレームはf/2.8、f/8、f/22のどれで撮影すべきですか？",
+          "hint": "レンズの最もシャープな絞りと、小さな絞りにおける回折の影響を考えましょう。",
+          "successMessage": "その通りです！f/8は多くのレンズで最もシャープな絞りです。f/2.8は1ショットあたりの被写界深度が小さすぎてフレームを無駄にし、f/22は回折によるぼやけに悩まされます。",
+          "failureMessage": "f/8が最良の選択です。f/2.8では1ショットあたりの被写界深度が非常に薄くなり（はるかに多くのフレームが必要になり）、f/22では回折によるぼやけが発生してスタッキングの目的が損なわれます。",
           "options": {
             "0": {
-              "label": "f/2.8 — widest for fastest shutter"
+              "label": "f/2.8 — 最も明るくシャッタースピードを稼ぐ"
             },
             "1": {
-              "label": "f/8 — lens sweet spot"
+              "label": "f/8 — レンズのスイートスポット"
             },
             "2": {
-              "label": "f/22 — maximum per-shot DoF"
+              "label": "f/22 — 1ショットあたりの被写界深度を最大化"
             }
           }
         },
         "2": {
-          "scenario": "After merging your focus stack, you notice a soft band across the middle of the image where nothing is sharp. What most likely went wrong?",
-          "hint": "Think about what connects one frame's sharp zone to the next.",
-          "successMessage": "Exactly! Insufficient overlap between adjacent frames creates a gap where neither shot is sharp. Increase overlap to 25-30% and reshoot.",
-          "failureMessage": "A soft band usually means the gap between focus steps was too large — the DoF of adjacent frames did not overlap enough. Increase the overlap percentage.",
+          "scenario": "フォーカススタックを合成した後、画像の中央にシャープでない柔らかい帯状の領域があることに気付きました。何が起きたと考えられますか？",
+          "hint": "1つのフレームのシャープ領域を次のフレームにどうつなげるかを考えましょう。",
+          "successMessage": "その通りです！隣接するフレーム間のオーバーラップが不足していると、どちらのショットもシャープでない隙間が生じます。オーバーラップを25〜30%に増やして撮り直しましょう。",
+          "failureMessage": "柔らかい帯状の領域は通常、ピントのステップ間隔が大きすぎたことを意味します。隣接するフレームの被写界深度が十分に重なっていなかったのです。オーバーラップの割合を上げましょう。",
           "options": {
             "0": {
-              "label": "The aperture was too wide"
+              "label": "絞りが開きすぎていた"
             },
             "1": {
-              "label": "Insufficient overlap between focus steps"
+              "label": "ピントステップ間のオーバーラップが不足していた"
             },
             "2": {
-              "label": "The tripod moved during the sequence"
+              "label": "撮影中に三脚が動いた"
             },
             "3": {
-              "label": "The ISO was too high"
+              "label": "ISOが高すぎた"
             }
           }
         }

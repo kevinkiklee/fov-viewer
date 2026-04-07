@@ -4,16 +4,16 @@
       "beginner": "La profondeur de champ (PdC) est la plage de distance dans ta photo qui paraît suffisamment nette. Une faible PdC floute l'arrière-plan derrière ton sujet, tandis qu'une grande PdC garde tout net du premier plan à l'horizon. Maîtriser la PdC est l'un des outils créatifs les plus puissants en photographie.",
       "deeper": {
         "0": {
-          "heading": "How DoF Works",
-          "text": "Depth of field is governed by the circle of confusion (CoC) — the largest blur spot on the sensor that still looks sharp to the human eye. Three physical factors determine DoF: focal length, aperture, and subject distance. A wider aperture (lower f-number) produces a shallower DoF because the lens converges light at steeper angles, causing out-of-focus points to spread into larger circles on the sensor."
+          "heading": "Comment fonctionne la PdC",
+          "text": "La profondeur de champ est régie par le cercle de confusion (CoC) — la plus grande tache de flou sur le capteur qui paraît encore nette à l'œil humain. Trois facteurs physiques la déterminent : la focale, l'ouverture et la distance au sujet. Une ouverture plus grande (nombre f plus bas) produit une PdC plus faible car l'objectif fait converger la lumière sous des angles plus prononcés, ce qui fait que les points hors mise au point s'étalent en cercles plus grands sur le capteur."
         },
         "1": {
-          "heading": "Focal Length & Distance",
-          "text": "Longer focal lengths magnify the image, which also magnifies the blur circles, narrowing the DoF. Moving closer to your subject reduces DoF for the same reason — the relative difference in distance between the subject and background becomes greater. The hyperfocal distance is the focus distance at which DoF extends from half that distance to infinity, maximizing sharpness across the entire scene."
+          "heading": "Focale et distance",
+          "text": "Les focales plus longues agrandissent l'image, ce qui agrandit aussi les cercles de flou et réduit la PdC. Se rapprocher du sujet réduit la PdC pour la même raison — l'écart relatif de distance entre le sujet et l'arrière-plan devient plus grand. La distance hyperfocale est la distance de mise au point à laquelle la PdC s'étend de la moitié de cette distance jusqu'à l'infini, maximisant la netteté sur toute la scène."
         },
         "2": {
-          "heading": "Bokeh & Diffraction",
-          "text": "Bokeh refers to the quality of the out-of-focus areas. The number and shape of aperture blades affect bokeh character — more rounded blades produce smoother, more circular highlights. At very small apertures (f/16+), diffraction causes light to spread as it passes the aperture edges, softening the entire image even within the DoF zone. There is always a sweet spot — typically around f/5.6-f/8 on full-frame — where sharpness and depth of field are optimally balanced."
+          "heading": "Bokeh et diffraction",
+          "text": "Le bokeh désigne la qualité des zones hors mise au point. Le nombre et la forme des lamelles du diaphragme influencent le caractère du bokeh — des lamelles plus arrondies produisent des points lumineux plus doux et plus circulaires. Aux très petites ouvertures (f/16 et au-delà), la diffraction fait s'étaler la lumière en passant les bords du diaphragme, adoucissant toute l'image même dans la zone de PdC. Il existe toujours un point idéal — typiquement autour de f/5.6-f/8 en plein format — où la netteté et la profondeur de champ sont équilibrées de manière optimale."
         }
       },
       "keyFactors": {
@@ -64,7 +64,7 @@
         },
         "orientation": {
           "term": "Orientation",
-          "definition": "Toggle between landscape (horizontal) and portrait (vertical) shooting orientation. This affects the framing reference for subject distance calculations."
+          "definition": "Bascule entre orientation paysage (horizontale) et portrait (verticale). Cela modifie la référence de cadrage pour le calcul de la distance au sujet."
         },
         "nearFocus": {
           "term": "Limite de mise au point proche",
@@ -83,24 +83,24 @@
           "definition": "La distance de mise au point qui maximise la profondeur de champ. Quand tu fais la mise au point à cette distance, tout de la moitié de la distance hyperfocale à l'infini paraît net."
         },
         "backgroundBlur": {
-          "term": "Background Blur",
-          "definition": "A measure of how blurred the background appears behind your subject. Higher values mean stronger blur and more subject isolation."
+          "term": "Flou d'arrière-plan",
+          "definition": "Une mesure de l'intensité du flou derrière ton sujet. Des valeurs plus élevées signifient un flou plus marqué et une meilleure isolation du sujet."
         },
         "coc": {
-          "term": "Circle of Confusion",
-          "definition": "The maximum diameter of a blur spot on the sensor that still appears as a point to the human eye. Determines the boundary of acceptable sharpness for depth-of-field calculations."
+          "term": "Cercle de confusion",
+          "definition": "Le diamètre maximum d'une tache de flou sur le capteur qui apparaît encore comme un point à l'œil humain. Il détermine la limite de netteté acceptable pour le calcul de la profondeur de champ."
         },
         "isolationScore": {
-          "term": "Isolation Score",
-          "definition": "A composite rating (0-100) indicating how well the subject is separated from the background, based on the amount of background blur relative to the subject size."
+          "term": "Score d'isolation",
+          "definition": "Une note composite (0-100) qui indique à quel point le sujet est séparé de l'arrière-plan, en fonction du flou d'arrière-plan par rapport à la taille du sujet."
         },
         "bokehShape": {
-          "term": "Bokeh Shape",
-          "definition": "The shape of out-of-focus highlights, determined by the number and curvature of aperture blades. More blades produce rounder, smoother bokeh."
+          "term": "Forme du bokeh",
+          "definition": "La forme des points lumineux hors mise au point, déterminée par le nombre et la courbure des lamelles du diaphragme. Plus de lamelles donnent un bokeh plus rond et plus doux."
         },
         "diffractionWarning": {
           "term": "Diffraction",
-          "definition": "At very small apertures, light bends around the aperture edges, softening the image. On full-frame sensors, this typically becomes noticeable beyond f/16."
+          "definition": "Aux très petites ouvertures, la lumière se courbe autour des bords du diaphragme, adoucissant l'image. Sur les capteurs plein format, cela devient typiquement perceptible au-delà de f/16."
         }
       },
       "challenges": {

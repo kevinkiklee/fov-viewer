@@ -1,131 +1,131 @@
 {
   "education": {
     "focus-stacking-calculator": {
-      "beginner": "Focus stacking is a technique where you take multiple photos at different focus distances and merge them in software to create an image with front-to-back sharpness. It is essential for macro photography, where depth of field is razor-thin, and useful in landscape photography when you need both near foreground and distant background in sharp focus.",
+      "beginner": "포커스 스태킹은 초점 거리를 달리 하여 여러 장의 사진을 촬영한 뒤 소프트웨어로 합성해 전체가 선명한 하나의 이미지를 만드는 기법입니다. 피사계 심도가 극히 얇은 매크로 촬영에서는 필수이며, 가까운 전경과 먼 배경을 모두 선명하게 담고 싶은 풍경 촬영에서도 유용합니다.",
       "deeper": {
         "0": {
-          "heading": "Why Stacking Is Necessary",
-          "text": "At macro magnifications, even f/16 may yield only a few millimeters of depth of field. Stopping down further introduces diffraction softening that degrades the image. Focus stacking lets you shoot at the lens's sharpest aperture (typically f/5.6-f/8) and combine the sharp slices. Each frame shifts focus slightly forward, covering a new slice of the subject."
+          "heading": "스태킹이 필요한 이유",
+          "text": "매크로 배율에서는 f/16으로 조여도 피사계 심도가 몇 밀리미터에 불과할 수 있습니다. 더 조이면 회절로 인해 이미지가 부드러워지면서 화질이 저하됩니다. 포커스 스태킹을 사용하면 렌즈의 가장 선명한 조리개(보통 f/5.6~f/8)로 촬영하고 선명한 조각들만 합성할 수 있습니다. 각 프레임마다 초점을 조금씩 앞으로 옮겨 피사체의 새로운 단면을 커버합니다."
         },
         "1": {
-          "heading": "Planning the Stack",
-          "text": "The key to a successful stack is ensuring each shot's depth of field overlaps the next by 20-30%. Too little overlap creates gaps where nothing is sharp; too much wastes frames without benefit. The calculator determines the per-shot DoF using the circle of confusion formula, subtracts the overlap margin, and divides the total depth range by the effective step to compute the number of shots."
+          "heading": "스택 계획하기",
+          "text": "성공적인 스태킹의 핵심은 각 샷의 피사계 심도가 다음 샷과 20~30% 겹치도록 하는 것입니다. 겹침이 너무 적으면 어떤 프레임에도 선명하지 않은 틈이 생기고, 너무 많으면 프레임만 낭비합니다. 계산기는 착란원 공식으로 샷당 피사계 심도를 구한 뒤 겹침 여유를 빼고, 전체 심도 범위를 유효 간격으로 나누어 필요한 샷 수를 계산합니다."
         },
         "2": {
-          "heading": "Merging & Alignment",
-          "text": "Software like Photoshop, Helicon Focus, or Zerene Stacker aligns the frames (slight magnification shifts occur as focus changes), then selects the sharpest pixels from each layer. Shooting on a sturdy tripod with consistent lighting and using a focus rail for precise increments produces the cleanest results."
+          "heading": "합성과 정렬",
+          "text": "Photoshop, Helicon Focus, Zerene Stacker 같은 소프트웨어는 초점이 바뀌면서 생기는 약간의 배율 변화를 보정해 프레임을 정렬한 뒤, 각 레이어에서 가장 선명한 픽셀을 선택합니다. 튼튼한 삼각대와 일정한 조명에서 촬영하고, 정밀한 이동을 위한 포커스 레일을 사용하면 가장 깔끔한 결과를 얻을 수 있습니다."
         }
       },
       "keyFactors": {
         "0": {
-          "label": "Aperture",
-          "description": "Determines per-shot depth of field. A moderate aperture (f/5.6-f/8) balances sharpness and DoF per frame. Avoid very small apertures — diffraction reduces the sharpness you are stacking for."
+          "label": "조리개",
+          "description": "샷당 피사계 심도를 결정합니다. 중간 정도의 조리개(f/5.6~f/8)는 프레임별 선명도와 심도의 균형이 좋습니다. 매우 좁은 조리개는 피하세요 — 회절이 스태킹으로 얻으려는 선명도를 떨어뜨립니다."
         },
         "1": {
-          "label": "Depth Range",
-          "description": "The distance from the nearest to farthest point you want sharp. Wider ranges require more shots. In macro work this may be just centimeters; in landscapes it can span meters to infinity."
+          "label": "심도 범위",
+          "description": "선명하게 담고 싶은 가장 가까운 지점부터 가장 먼 지점까지의 거리입니다. 범위가 넓을수록 더 많은 샷이 필요합니다. 매크로에서는 몇 센티미터에 불과할 수 있지만, 풍경에서는 수 미터에서 무한대까지 이를 수 있습니다."
         },
         "2": {
-          "label": "Overlap",
-          "description": "The percentage of each shot's DoF that overlaps the adjacent shots. 20-30% is standard. Less risks gaps; more wastes frames."
+          "label": "겹침",
+          "description": "각 샷의 피사계 심도가 이웃한 샷과 겹치는 비율입니다. 20~30%가 표준입니다. 더 적으면 빈 틈이 생길 위험이 있고, 더 많으면 프레임이 낭비됩니다."
         }
       },
       "tips": {
         "0": {
-          "text": "Use a focus rail instead of the lens's focus ring for macro stacking. A rail moves the entire camera forward in precise increments, avoiding the slight magnification changes that occur when refocusing the lens."
+          "text": "매크로 스태킹에서는 렌즈의 초점 링 대신 포커스 레일을 사용하세요. 레일은 카메라 전체를 정밀한 간격으로 앞쪽으로 이동시키므로, 렌즈 초점을 다시 맞출 때 발생하는 미세한 배율 변화를 피할 수 있습니다."
         },
         "1": {
-          "text": "Keep your aperture at the lens's sweet spot (typically f/5.6-f/8). The point of stacking is to avoid stopping down to f/16+, so use the sharpest aperture and let the stack handle depth."
+          "text": "조리개는 렌즈의 스윗 스폿(보통 f/5.6~f/8)에 두세요. 스태킹의 목적은 f/16 이상으로 조이는 것을 피하는 것이므로, 가장 선명한 조리개를 사용하고 심도는 스택이 해결하게 하세요."
         },
         "2": {
-          "text": "For landscape stacks, shoot front-to-back: focus on the nearest element first, then step focus toward infinity. This makes alignment easier since the foreground (with the most parallax) is captured first."
+          "text": "풍경 스택은 앞쪽에서 뒤쪽 순서로 촬영하세요. 가장 가까운 요소에 먼저 초점을 맞춘 뒤 무한대 방향으로 단계별로 이동합니다. 시차가 가장 큰 전경을 먼저 담기 때문에 정렬이 더 쉬워집니다."
         }
       },
       "tooltips": {
         "focalLength": {
-          "term": "Focal Length",
-          "definition": "The lens focal length in millimeters. Longer focal lengths reduce per-shot depth of field, requiring more frames to cover the same depth range."
+          "term": "초점 거리",
+          "definition": "밀리미터 단위의 렌즈 초점 거리입니다. 초점 거리가 길수록 샷당 피사계 심도가 줄어 같은 심도 범위를 커버하는 데 더 많은 프레임이 필요합니다."
         },
         "aperture": {
-          "term": "Aperture",
-          "definition": "The lens opening (f-number). For stacking, use the lens's sharpest aperture rather than stopping down — the stack provides the depth."
+          "term": "조리개",
+          "definition": "렌즈 개구부의 크기(f값)입니다. 스태킹에서는 조리개를 더 조이기보다 렌즈의 가장 선명한 조리개를 사용하세요 — 심도는 스택이 제공합니다."
         },
         "sensor": {
-          "term": "Sensor Size",
-          "definition": "Larger sensors have a shallower per-shot depth of field at equivalent framing, which may increase the number of required stack frames."
+          "term": "센서 크기",
+          "definition": "큰 센서는 동일한 프레이밍에서 샷당 피사계 심도가 더 얕으므로, 필요한 스택 프레임 수가 늘어날 수 있습니다."
         },
         "nearLimit": {
-          "term": "Near Limit",
-          "definition": "The closest point in the scene that you want sharp. This is where the first shot in the stack will be focused."
+          "term": "근거리 한계",
+          "definition": "선명하게 담고 싶은 장면 안의 가장 가까운 지점입니다. 스택의 첫 번째 샷이 이 지점에 초점을 맞춥니다."
         },
         "farLimit": {
-          "term": "Far Limit",
-          "definition": "The farthest point in the scene that you want sharp. The last shot in the stack will cover this distance."
+          "term": "원거리 한계",
+          "definition": "선명하게 담고 싶은 장면 안의 가장 먼 지점입니다. 스택의 마지막 샷이 이 거리를 커버합니다."
         },
         "overlap": {
-          "term": "Overlap",
-          "definition": "The percentage of depth-of-field overlap between consecutive shots. 20-30% ensures no gaps after software alignment and merging."
+          "term": "겹침",
+          "definition": "연속된 샷 사이에서 피사계 심도가 겹치는 비율입니다. 20~30%이면 소프트웨어 정렬과 합성 후에도 빈 틈이 생기지 않습니다."
         },
         "shotCount": {
-          "term": "Shot Count",
-          "definition": "The total number of frames needed to cover the depth range with the specified overlap. More shots = more processing but smoother results."
+          "term": "샷 수",
+          "definition": "지정한 겹침 비율로 심도 범위를 커버하기 위해 필요한 전체 프레임 수입니다. 샷이 많을수록 처리 시간이 늘어나지만 결과는 더 부드러워집니다."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "You are photographing a small flower that is 3cm deep from front petal to back stem. Your macro lens at f/8 gives about 4mm of DoF per shot. Roughly how many frames do you need with 25% overlap?",
-          "hint": "Each shot covers 4mm, but 25% overlap means the effective step is 3mm per frame. Divide 30mm by 3mm.",
-          "successMessage": "Correct! With 4mm DoF and 25% overlap, each step advances 3mm. 30mm / 3mm = 10 shots to cover the entire flower.",
-          "failureMessage": "With 25% overlap, each frame's effective step is 75% of the DoF: 4mm × 0.75 = 3mm. You need 30mm / 3mm = 10 shots.",
+          "scenario": "앞쪽 꽃잎부터 뒤쪽 줄기까지 깊이가 3cm인 작은 꽃을 촬영 중입니다. 매크로 렌즈를 f/8로 사용할 때 샷당 피사계 심도는 약 4mm입니다. 겹침 25%로 촬영하려면 대략 몇 장의 프레임이 필요할까요?",
+          "hint": "각 샷은 4mm를 커버하지만, 25% 겹침이 있으면 유효 간격은 프레임당 3mm가 됩니다. 30mm를 3mm로 나눠 보세요.",
+          "successMessage": "정답입니다! 피사계 심도 4mm에 25% 겹침이면 한 번에 3mm씩 전진합니다. 30mm ÷ 3mm = 꽃 전체를 담는 데 10장이 필요합니다.",
+          "failureMessage": "25% 겹침에서 프레임당 유효 간격은 피사계 심도의 75%입니다: 4mm × 0.75 = 3mm. 따라서 30mm ÷ 3mm = 10장이 필요합니다.",
           "options": {
             "0": {
-              "label": "5 shots"
+              "label": "5장"
             },
             "1": {
-              "label": "10 shots"
+              "label": "10장"
             },
             "2": {
-              "label": "20 shots"
+              "label": "20장"
             },
             "3": {
-              "label": "30 shots"
+              "label": "30장"
             }
           }
         },
         "1": {
-          "scenario": "You want the sharpest possible result from your focus stack. Should you shoot each frame at f/2.8, f/8, or f/22?",
-          "hint": "Consider the lens's sharpest aperture and how diffraction affects small apertures.",
-          "successMessage": "Right! f/8 is typically the sharpest aperture for most lenses. f/2.8 has too little DoF per shot (wasting frames) and f/22 suffers from diffraction softening.",
-          "failureMessage": "f/8 is the best choice. f/2.8 gives very thin per-shot DoF (requiring many more frames), and f/22 introduces diffraction softening that defeats the purpose of stacking for sharpness.",
+          "scenario": "포커스 스택에서 가능한 가장 선명한 결과를 얻고 싶습니다. 각 프레임을 f/2.8, f/8, f/22 중 어떤 조리개로 촬영해야 할까요?",
+          "hint": "렌즈에서 가장 선명한 조리개와 좁은 조리개에서 나타나는 회절의 영향을 함께 생각해 보세요.",
+          "successMessage": "맞습니다! 대부분의 렌즈에서 f/8이 가장 선명한 조리개입니다. f/2.8은 샷당 피사계 심도가 너무 얕아 프레임을 낭비하고, f/22는 회절로 인해 이미지가 부드러워집니다.",
+          "failureMessage": "f/8이 가장 좋은 선택입니다. f/2.8은 샷당 피사계 심도가 너무 얇아 훨씬 더 많은 프레임이 필요하고, f/22는 회절 연화가 발생해 선명도를 위해 스태킹을 하는 의미가 사라집니다.",
           "options": {
             "0": {
-              "label": "f/2.8 — widest for fastest shutter"
+              "label": "f/2.8 — 가장 빠른 셔터를 위해 가장 개방"
             },
             "1": {
-              "label": "f/8 — lens sweet spot"
+              "label": "f/8 — 렌즈의 스윗 스폿"
             },
             "2": {
-              "label": "f/22 — maximum per-shot DoF"
+              "label": "f/22 — 샷당 최대 피사계 심도"
             }
           }
         },
         "2": {
-          "scenario": "After merging your focus stack, you notice a soft band across the middle of the image where nothing is sharp. What most likely went wrong?",
-          "hint": "Think about what connects one frame's sharp zone to the next.",
-          "successMessage": "Exactly! Insufficient overlap between adjacent frames creates a gap where neither shot is sharp. Increase overlap to 25-30% and reshoot.",
-          "failureMessage": "A soft band usually means the gap between focus steps was too large — the DoF of adjacent frames did not overlap enough. Increase the overlap percentage.",
+          "scenario": "포커스 스택을 합성한 뒤 이미지 중간에 아무것도 선명하지 않은 흐릿한 띠가 생긴 것을 발견했습니다. 가장 큰 원인은 무엇일까요?",
+          "hint": "한 프레임의 선명 영역이 다음 프레임과 어떻게 이어지는지 생각해 보세요.",
+          "successMessage": "정확합니다! 인접한 프레임 사이의 겹침이 부족하면 어느 샷도 선명하지 않은 틈이 생깁니다. 겹침을 25~30%로 늘려 다시 촬영하세요.",
+          "failureMessage": "흐릿한 띠는 보통 초점 단계 사이의 간격이 너무 커서 인접 프레임의 피사계 심도가 충분히 겹치지 않았을 때 생깁니다. 겹침 비율을 높여 보세요.",
           "options": {
             "0": {
-              "label": "The aperture was too wide"
+              "label": "조리개가 너무 개방되어 있었다"
             },
             "1": {
-              "label": "Insufficient overlap between focus steps"
+              "label": "초점 단계 사이의 겹침이 부족했다"
             },
             "2": {
-              "label": "The tripod moved during the sequence"
+              "label": "촬영 중 삼각대가 움직였다"
             },
             "3": {
-              "label": "The ISO was too high"
+              "label": "ISO가 너무 높았다"
             }
           }
         }

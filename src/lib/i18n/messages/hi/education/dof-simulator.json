@@ -4,16 +4,16 @@
       "beginner": "डेप्थ ऑफ़ फ़ील्ड (DoF) आपकी फ़ोटो में दूरी की वह सीमा है जो स्वीकार्य रूप से शार्प दिखती है। कम DoF सब्जेक्ट के पीछे का बैकग्राउंड ब्लर करता है, जबकि गहरा DoF अग्रभूमि से क्षितिज तक सब कुछ फ़ोकस में रखता है। DoF को नियंत्रित करना फ़ोटोग्राफ़ी में सबसे शक्तिशाली क्रिएटिव टूल्स में से एक है।",
       "deeper": {
         "0": {
-          "heading": "How DoF Works",
-          "text": "Depth of field is governed by the circle of confusion (CoC) — the largest blur spot on the sensor that still looks sharp to the human eye. Three physical factors determine DoF: focal length, aperture, and subject distance. A wider aperture (lower f-number) produces a shallower DoF because the lens converges light at steeper angles, causing out-of-focus points to spread into larger circles on the sensor."
+          "heading": "फील्ड की गहराई कैसे काम करती है",
+          "text": "फील्ड की गहराई सर्कल ऑफ़ कन्फ्यूज़न (CoC) से नियंत्रित होती है — सेंसर पर वह सबसे बड़ा ब्लर स्पॉट जो मानव आँख को अभी भी शार्प दिखाई देता है। तीन भौतिक कारक फील्ड की गहराई तय करते हैं: फोकल लंबाई, अपर्चर, और विषय की दूरी। चौड़ा अपर्चर (कम f-number) कम फील्ड की गहराई उत्पन्न करता है क्योंकि लेंस प्रकाश को अधिक तीव्र कोणों पर केंद्रित करता है, जिससे आउट-ऑफ़-फोकस बिंदु सेंसर पर बड़े वृत्तों में फैल जाते हैं।"
         },
         "1": {
-          "heading": "Focal Length & Distance",
-          "text": "Longer focal lengths magnify the image, which also magnifies the blur circles, narrowing the DoF. Moving closer to your subject reduces DoF for the same reason — the relative difference in distance between the subject and background becomes greater. The hyperfocal distance is the focus distance at which DoF extends from half that distance to infinity, maximizing sharpness across the entire scene."
+          "heading": "फोकल लंबाई और दूरी",
+          "text": "लंबी फोकल लंबाई इमेज को मैग्निफ़ाई करती है, जो ब्लर सर्कल्स को भी मैग्निफ़ाई करती है और फील्ड की गहराई को संकरा करती है। विषय के करीब जाने से फील्ड की गहराई इसी कारण से कम हो जाती है — विषय और बैकग्राउंड के बीच दूरी का सापेक्ष अंतर अधिक हो जाता है। हाइपरफोकल दूरी वह फोकस दूरी है जिस पर फील्ड की गहराई उस दूरी के आधे से अनंत तक फैलती है, जो पूरे दृश्य में शार्पनेस को अधिकतम करती है।"
         },
         "2": {
-          "heading": "Bokeh & Diffraction",
-          "text": "Bokeh refers to the quality of the out-of-focus areas. The number and shape of aperture blades affect bokeh character — more rounded blades produce smoother, more circular highlights. At very small apertures (f/16+), diffraction causes light to spread as it passes the aperture edges, softening the entire image even within the DoF zone. There is always a sweet spot — typically around f/5.6-f/8 on full-frame — where sharpness and depth of field are optimally balanced."
+          "heading": "बोके और विवर्तन",
+          "text": "बोके आउट-ऑफ़-फोकस क्षेत्रों की गुणवत्ता को दर्शाता है। अपर्चर ब्लेड्स की संख्या और आकार बोके के चरित्र को प्रभावित करते हैं — अधिक गोल ब्लेड्स अधिक सहज, अधिक वृत्ताकार हाइलाइट्स उत्पन्न करते हैं। बहुत छोटे अपर्चर (f/16+) पर, विवर्तन के कारण प्रकाश अपर्चर किनारों से गुज़रते समय फैलता है, जिससे पूरी इमेज फील्ड की गहराई ज़ोन के भीतर भी सॉफ़्ट हो जाती है। हमेशा एक स्वीट स्पॉट होता है — आमतौर पर फुल-फ्रेम पर f/5.6-f/8 के आसपास — जहाँ शार्पनेस और फील्ड की गहराई का आदर्श संतुलन होता है।"
         }
       },
       "keyFactors": {
@@ -63,8 +63,8 @@
           "definition": "कैमरा सेंसर के भौतिक आयाम। बड़े सेंसर (फ़ुल-फ़्रेम, मीडियम फ़ॉर्मेट) समकक्ष फ़्रेमिंग पर छोटे सेंसर (APS-C, माइक्रो फ़ोर थर्ड्स) की तुलना में कम डेप्थ ऑफ़ फ़ील्ड उत्पन्न करते हैं।"
         },
         "orientation": {
-          "term": "Orientation",
-          "definition": "Toggle between landscape (horizontal) and portrait (vertical) shooting orientation. This affects the framing reference for subject distance calculations."
+          "term": "ओरिएंटेशन",
+          "definition": "लैंडस्केप (क्षैतिज) और पोर्ट्रेट (ऊर्ध्वाधर) शूटिंग ओरिएंटेशन के बीच टॉगल करें। यह विषय की दूरी की गणना के लिए फ़्रेमिंग संदर्भ को प्रभावित करता है।"
         },
         "nearFocus": {
           "term": "नियर फ़ोकस लिमिट",
@@ -83,24 +83,24 @@
           "definition": "वह फ़ोकस दूरी जो डेप्थ ऑफ़ फ़ील्ड को अधिकतम करती है। जब आप इस दूरी पर फ़ोकस करते हैं, तो हाइपरफ़ोकल दूरी के आधे से अनंत तक सब कुछ शार्प दिखता है।"
         },
         "backgroundBlur": {
-          "term": "Background Blur",
-          "definition": "A measure of how blurred the background appears behind your subject. Higher values mean stronger blur and more subject isolation."
+          "term": "बैकग्राउंड ब्लर",
+          "definition": "इस बात का माप कि आपके विषय के पीछे बैकग्राउंड कितना ब्लर दिखता है। उच्च मान मज़बूत ब्लर और अधिक सब्जेक्ट आइसोलेशन दर्शाते हैं।"
         },
         "coc": {
-          "term": "Circle of Confusion",
-          "definition": "The maximum diameter of a blur spot on the sensor that still appears as a point to the human eye. Determines the boundary of acceptable sharpness for depth-of-field calculations."
+          "term": "सर्कल ऑफ़ कन्फ्यूज़न",
+          "definition": "सेंसर पर ब्लर स्पॉट का अधिकतम व्यास जो अभी भी मानव आँख को एक बिंदु के रूप में दिखता है। फील्ड की गहराई की गणना के लिए स्वीकार्य शार्पनेस की सीमा तय करता है।"
         },
         "isolationScore": {
-          "term": "Isolation Score",
-          "definition": "A composite rating (0-100) indicating how well the subject is separated from the background, based on the amount of background blur relative to the subject size."
+          "term": "आइसोलेशन स्कोर",
+          "definition": "एक समग्र रेटिंग (0-100) जो दर्शाती है कि विषय बैकग्राउंड से कितनी अच्छी तरह अलग है, विषय के आकार के सापेक्ष बैकग्राउंड ब्लर की मात्रा के आधार पर।"
         },
         "bokehShape": {
-          "term": "Bokeh Shape",
-          "definition": "The shape of out-of-focus highlights, determined by the number and curvature of aperture blades. More blades produce rounder, smoother bokeh."
+          "term": "बोके आकार",
+          "definition": "आउट-ऑफ़-फोकस हाइलाइट्स का आकार, जो अपर्चर ब्लेड्स की संख्या और वक्रता से निर्धारित होता है। अधिक ब्लेड्स अधिक गोल, अधिक सहज बोके उत्पन्न करते हैं।"
         },
         "diffractionWarning": {
-          "term": "Diffraction",
-          "definition": "At very small apertures, light bends around the aperture edges, softening the image. On full-frame sensors, this typically becomes noticeable beyond f/16."
+          "term": "विवर्तन",
+          "definition": "बहुत छोटे अपर्चर पर, प्रकाश अपर्चर किनारों के चारों ओर मुड़ता है, जिससे इमेज सॉफ़्ट हो जाती है। फुल-फ्रेम सेंसरों पर, यह आमतौर पर f/16 से अधिक पर ध्यान देने योग्य हो जाता है।"
         }
       },
       "challenges": {

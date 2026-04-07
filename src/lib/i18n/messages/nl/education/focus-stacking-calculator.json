@@ -1,132 +1,110 @@
 {
   "education": {
     "focus-stacking-calculator": {
-      "beginner": "Focus stacking is a technique where you take multiple photos at different focus distances and merge them in software to create an image with front-to-back sharpness. It is essential for macro photography, where depth of field is razor-thin, and useful in landscape photography when you need both near foreground and distant background in sharp focus.",
+      "beginner": "Focus stacking is een techniek waarbij je meerdere foto's maakt op verschillende scherpstelafstanden en deze in software samenvoegt tot een beeld dat van voor tot achter scherp is. Het is onmisbaar voor macrofotografie, waar de scherptediepte flinterdun is, en handig bij landschapsfotografie wanneer zowel de dichtbije voorgrond als de verre achtergrond scherp moeten zijn.",
       "deeper": {
         "0": {
-          "heading": "Why Stacking Is Necessary",
-          "text": "At macro magnifications, even f/16 may yield only a few millimeters of depth of field. Stopping down further introduces diffraction softening that degrades the image. Focus stacking lets you shoot at the lens's sharpest aperture (typically f/5.6-f/8) and combine the sharp slices. Each frame shifts focus slightly forward, covering a new slice of the subject."
+          "heading": "Waarom stacking nodig is",
+          "text": "Bij macrovergrotingen levert zelfs f/16 soms maar een paar millimeter scherptediepte op. Nog verder afdiafragmeren introduceert diffractieverzachting die het beeld doet verslechteren. Met focus stacking kun je fotograferen op het scherpste diafragma van de lens (meestal f/5.6-f/8) en de scherpe plakjes combineren. Elk beeld verschuift de scherpstelling iets naar voren, waardoor een nieuwe laag van het onderwerp wordt vastgelegd."
         },
         "1": {
-          "heading": "Planning the Stack",
-          "text": "The key to a successful stack is ensuring each shot's depth of field overlaps the next by 20-30%. Too little overlap creates gaps where nothing is sharp; too much wastes frames without benefit. The calculator determines the per-shot DoF using the circle of confusion formula, subtracts the overlap margin, and divides the total depth range by the effective step to compute the number of shots."
+          "heading": "De stack plannen",
+          "text": "De sleutel tot een geslaagde stack is dat de scherptediepte van elke opname 20-30% overlapt met de volgende. Te weinig overlap zorgt voor gaten waar niets scherp is; te veel verspilt opnamen zonder winst. De calculator bepaalt de scherptediepte per opname via de circle of confusion-formule, trekt de overlapmarge af en deelt het totale dieptebereik door de effectieve stapgrootte om het aantal opnamen te berekenen."
         },
         "2": {
-          "heading": "Merging & Alignment",
-          "text": "Software like Photoshop, Helicon Focus, or Zerene Stacker aligns the frames (slight magnification shifts occur as focus changes), then selects the sharpest pixels from each layer. Shooting on a sturdy tripod with consistent lighting and using a focus rail for precise increments produces the cleanest results."
+          "heading": "Samenvoegen en uitlijnen",
+          "text": "Software zoals Photoshop, Helicon Focus of Zerene Stacker lijnt de frames uit (bij veranderende scherpstelling treden kleine vergrotingsverschuivingen op) en selecteert vervolgens de scherpste pixels uit elke laag. Fotograferen op een stevig statief met constante belichting en het gebruik van een macroslede voor precieze stappen levert de zuiverste resultaten op."
         }
       },
       "keyFactors": {
         "0": {
-          "label": "Aperture",
-          "description": "Determines per-shot depth of field. A moderate aperture (f/5.6-f/8) balances sharpness and DoF per frame. Avoid very small apertures — diffraction reduces the sharpness you are stacking for."
+          "label": "Diafragma",
+          "description": "Bepaalt de scherptediepte per opname. Een gematigd diafragma (f/5.6-f/8) balanceert scherpte en scherptediepte per frame. Vermijd zeer kleine diafragma's — diffractie vermindert juist de scherpte waarvoor je stacking inzet."
         },
         "1": {
-          "label": "Depth Range",
-          "description": "The distance from the nearest to farthest point you want sharp. Wider ranges require more shots. In macro work this may be just centimeters; in landscapes it can span meters to infinity."
+          "label": "Dieptebereik",
+          "description": "De afstand van het dichtstbijzijnde tot het verste punt dat je scherp wilt hebben. Grotere bereiken vragen meer opnamen. Bij macrowerk gaat het soms om centimeters; bij landschappen kan het meters tot oneindig beslaan."
         },
         "2": {
           "label": "Overlap",
-          "description": "The percentage of each shot's DoF that overlaps the adjacent shots. 20-30% is standard. Less risks gaps; more wastes frames."
+          "description": "Het percentage van de scherptediepte per opname dat overlapt met de aangrenzende opnamen. 20-30% is standaard. Minder riskeert gaten; meer verspilt frames."
         }
       },
       "tips": {
         "0": {
-          "text": "Use a focus rail instead of the lens's focus ring for macro stacking. A rail moves the entire camera forward in precise increments, avoiding the slight magnification changes that occur when refocusing the lens."
+          "text": "Gebruik bij macrostacking een macroslede in plaats van de scherpstelring van de lens. Een slede verplaatst de hele camera in precieze stappen naar voren, waardoor je de kleine vergrotingsveranderingen vermijdt die ontstaan bij het opnieuw scherpstellen van de lens."
         },
         "1": {
-          "text": "Keep your aperture at the lens's sweet spot (typically f/5.6-f/8). The point of stacking is to avoid stopping down to f/16+, so use the sharpest aperture and let the stack handle depth."
+          "text": "Houd je diafragma op de sweet spot van de lens (meestal f/5.6-f/8). Het doel van stacking is juist om niet naar f/16 en verder af te diafragmeren, dus gebruik het scherpste diafragma en laat de stack de diepte verzorgen."
         },
         "2": {
-          "text": "For landscape stacks, shoot front-to-back: focus on the nearest element first, then step focus toward infinity. This makes alignment easier since the foreground (with the most parallax) is captured first."
+          "text": "Werk bij landschapsstacks van voor naar achter: stel eerst scherp op het dichtstbijzijnde element en verplaats de scherpstelling vervolgens richting oneindig. Dit maakt uitlijnen eenvoudiger, omdat de voorgrond (met de meeste parallax) als eerste wordt vastgelegd."
         }
       },
       "tooltips": {
         "focalLength": {
-          "term": "Focal Length",
-          "definition": "The lens focal length in millimeters. Longer focal lengths reduce per-shot depth of field, requiring more frames to cover the same depth range."
+          "term": "Brandpuntsafstand",
+          "definition": "De brandpuntsafstand van de lens in millimeters. Langere brandpuntsafstanden verkleinen de scherptediepte per opname, waardoor er meer frames nodig zijn om hetzelfde dieptebereik af te dekken."
         },
         "aperture": {
-          "term": "Aperture",
-          "definition": "The lens opening (f-number). For stacking, use the lens's sharpest aperture rather than stopping down — the stack provides the depth."
+          "term": "Diafragma",
+          "definition": "De lensopening (f-getal). Gebruik bij stacking het scherpste diafragma van de lens in plaats van af te diafragmeren — de stack zorgt voor de diepte."
         },
         "sensor": {
-          "term": "Sensor Size",
-          "definition": "Larger sensors have a shallower per-shot depth of field at equivalent framing, which may increase the number of required stack frames."
+          "term": "Sensorformaat",
+          "definition": "Grotere sensoren hebben een kleinere scherptediepte per opname bij equivalente kadrering, waardoor er meer stackframes nodig kunnen zijn."
         },
         "nearLimit": {
-          "term": "Near Limit",
-          "definition": "The closest point in the scene that you want sharp. This is where the first shot in the stack will be focused."
+          "term": "Voorste grens",
+          "definition": "Het dichtstbijzijnde punt in de scène dat je scherp wilt hebben. Hier wordt de eerste opname van de stack op scherpgesteld."
         },
         "farLimit": {
-          "term": "Far Limit",
-          "definition": "The farthest point in the scene that you want sharp. The last shot in the stack will cover this distance."
+          "term": "Achterste grens",
+          "definition": "Het verste punt in de scène dat je scherp wilt hebben. De laatste opname van de stack dekt deze afstand af."
         },
         "overlap": {
           "term": "Overlap",
-          "definition": "The percentage of depth-of-field overlap between consecutive shots. 20-30% ensures no gaps after software alignment and merging."
+          "definition": "Het percentage scherptediepte-overlap tussen opeenvolgende opnamen. 20-30% voorkomt gaten na software-uitlijning en samenvoeging."
         },
         "shotCount": {
-          "term": "Shot Count",
-          "definition": "The total number of frames needed to cover the depth range with the specified overlap. More shots = more processing but smoother results."
+          "term": "Aantal opnamen",
+          "definition": "Het totale aantal frames dat nodig is om het dieptebereik met de opgegeven overlap af te dekken. Meer opnamen = meer verwerking, maar vloeiender resultaat."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "You are photographing a small flower that is 3cm deep from front petal to back stem. Your macro lens at f/8 gives about 4mm of DoF per shot. Roughly how many frames do you need with 25% overlap?",
-          "hint": "Each shot covers 4mm, but 25% overlap means the effective step is 3mm per frame. Divide 30mm by 3mm.",
-          "successMessage": "Correct! With 4mm DoF and 25% overlap, each step advances 3mm. 30mm / 3mm = 10 shots to cover the entire flower.",
-          "failureMessage": "With 25% overlap, each frame's effective step is 75% of the DoF: 4mm × 0.75 = 3mm. You need 30mm / 3mm = 10 shots.",
+          "scenario": "Je fotografeert een kleine bloem die 3 cm diep is, van het voorste blaadje tot de achterste stengel. Je macrolens geeft bij f/8 ongeveer 4 mm scherptediepte per opname. Hoeveel frames heb je ongeveer nodig met 25% overlap?",
+          "hint": "Elke opname dekt 4 mm, maar met 25% overlap is de effectieve stap 3 mm per frame. Deel 30 mm door 3 mm.",
+          "successMessage": "Correct! Met 4 mm scherptediepte en 25% overlap schuift elke stap 3 mm op. 30 mm / 3 mm = 10 opnamen om de hele bloem af te dekken.",
+          "failureMessage": "Bij 25% overlap is de effectieve stap per frame 75% van de scherptediepte: 4 mm × 0,75 = 3 mm. Je hebt 30 mm / 3 mm = 10 opnamen nodig.",
           "options": {
-            "0": {
-              "label": "5 shots"
-            },
-            "1": {
-              "label": "10 shots"
-            },
-            "2": {
-              "label": "20 shots"
-            },
-            "3": {
-              "label": "30 shots"
-            }
+            "0": { "label": "5 opnamen" },
+            "1": { "label": "10 opnamen" },
+            "2": { "label": "20 opnamen" },
+            "3": { "label": "30 opnamen" }
           }
         },
         "1": {
-          "scenario": "You want the sharpest possible result from your focus stack. Should you shoot each frame at f/2.8, f/8, or f/22?",
-          "hint": "Consider the lens's sharpest aperture and how diffraction affects small apertures.",
-          "successMessage": "Right! f/8 is typically the sharpest aperture for most lenses. f/2.8 has too little DoF per shot (wasting frames) and f/22 suffers from diffraction softening.",
-          "failureMessage": "f/8 is the best choice. f/2.8 gives very thin per-shot DoF (requiring many more frames), and f/22 introduces diffraction softening that defeats the purpose of stacking for sharpness.",
+          "scenario": "Je wilt het scherpst mogelijke resultaat uit je focus stack. Moet je elk frame op f/2.8, f/8 of f/22 maken?",
+          "hint": "Denk aan het scherpste diafragma van de lens en hoe diffractie kleine diafragma's beïnvloedt.",
+          "successMessage": "Juist! f/8 is meestal het scherpste diafragma voor de meeste lenzen. f/2.8 geeft te weinig scherptediepte per opname (wat frames verspilt) en f/22 heeft last van diffractieverzachting.",
+          "failureMessage": "f/8 is de beste keuze. f/2.8 geeft zeer dunne scherptediepte per opname (waardoor je veel meer frames nodig hebt) en f/22 introduceert diffractieverzachting, wat het hele doel van stacking voor scherpte ondermijnt.",
           "options": {
-            "0": {
-              "label": "f/2.8 — widest for fastest shutter"
-            },
-            "1": {
-              "label": "f/8 — lens sweet spot"
-            },
-            "2": {
-              "label": "f/22 — maximum per-shot DoF"
-            }
+            "0": { "label": "f/2.8 — grootst voor snelste sluitertijd" },
+            "1": { "label": "f/8 — sweet spot van de lens" },
+            "2": { "label": "f/22 — maximale scherptediepte per opname" }
           }
         },
         "2": {
-          "scenario": "After merging your focus stack, you notice a soft band across the middle of the image where nothing is sharp. What most likely went wrong?",
-          "hint": "Think about what connects one frame's sharp zone to the next.",
-          "successMessage": "Exactly! Insufficient overlap between adjacent frames creates a gap where neither shot is sharp. Increase overlap to 25-30% and reshoot.",
-          "failureMessage": "A soft band usually means the gap between focus steps was too large — the DoF of adjacent frames did not overlap enough. Increase the overlap percentage.",
+          "scenario": "Na het samenvoegen van je focus stack zie je een zachte band over het midden van het beeld waar niets scherp is. Wat ging er waarschijnlijk mis?",
+          "hint": "Denk na over wat de scherpe zone van het ene frame met het volgende verbindt.",
+          "successMessage": "Precies! Te weinig overlap tussen aangrenzende frames zorgt voor een gat waar geen van beide opnamen scherp is. Verhoog de overlap tot 25-30% en fotografeer opnieuw.",
+          "failureMessage": "Een zachte band betekent meestal dat de afstand tussen de scherpstelstappen te groot was — de scherptediepte van aangrenzende frames overlapte onvoldoende. Verhoog het overlappercentage.",
           "options": {
-            "0": {
-              "label": "The aperture was too wide"
-            },
-            "1": {
-              "label": "Insufficient overlap between focus steps"
-            },
-            "2": {
-              "label": "The tripod moved during the sequence"
-            },
-            "3": {
-              "label": "The ISO was too high"
-            }
+            "0": { "label": "Het diafragma was te groot" },
+            "1": { "label": "Te weinig overlap tussen scherpstelstappen" },
+            "2": { "label": "Het statief bewoog tijdens de reeks" },
+            "3": { "label": "De ISO was te hoog" }
           }
         }
       }

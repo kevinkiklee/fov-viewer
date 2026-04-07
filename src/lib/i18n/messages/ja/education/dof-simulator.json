@@ -4,16 +4,16 @@
       "beginner": "被写界深度（DoF）とは、写真の中で許容できるシャープネスが得られる距離の範囲です。浅い被写界深度は被写体の背後の背景をぼかし、深い被写界深度は前景から地平線まですべてにピントが合います。被写界深度のコントロールは、写真撮影における最も強力な創造的ツールの1つです。",
       "deeper": {
         "0": {
-          "heading": "How DoF Works",
-          "text": "Depth of field is governed by the circle of confusion (CoC) — the largest blur spot on the sensor that still looks sharp to the human eye. Three physical factors determine DoF: focal length, aperture, and subject distance. A wider aperture (lower f-number) produces a shallower DoF because the lens converges light at steeper angles, causing out-of-focus points to spread into larger circles on the sensor."
+          "heading": "被写界深度の仕組み",
+          "text": "被写界深度は錯乱円（CoC）によって決まります。これは、人間の目にまだシャープな点として見えるセンサー上の最大のぼけスポットのことです。被写界深度を決定する物理的要因は3つあります。焦点距離、絞り、そして被写体までの距離です。絞りを開く（f値を小さくする）ほど被写界深度は浅くなります。レンズがより急な角度で光を集光するため、ピントの合っていない点がセンサー上でより大きな円に広がるからです。"
         },
         "1": {
-          "heading": "Focal Length & Distance",
-          "text": "Longer focal lengths magnify the image, which also magnifies the blur circles, narrowing the DoF. Moving closer to your subject reduces DoF for the same reason — the relative difference in distance between the subject and background becomes greater. The hyperfocal distance is the focus distance at which DoF extends from half that distance to infinity, maximizing sharpness across the entire scene."
+          "heading": "焦点距離と距離",
+          "text": "焦点距離が長くなると画像が拡大され、それに伴いぼけの円も拡大されるため、被写界深度が狭くなります。被写体に近づくと被写界深度が浅くなるのも同じ理由で、被写体と背景の相対的な距離差が大きくなるためです。過焦点距離とは、ピントを合わせた位置からその半分の距離から無限遠までが被写界深度に収まり、シーン全体のシャープネスを最大化できる距離のことです。"
         },
         "2": {
-          "heading": "Bokeh & Diffraction",
-          "text": "Bokeh refers to the quality of the out-of-focus areas. The number and shape of aperture blades affect bokeh character — more rounded blades produce smoother, more circular highlights. At very small apertures (f/16+), diffraction causes light to spread as it passes the aperture edges, softening the entire image even within the DoF zone. There is always a sweet spot — typically around f/5.6-f/8 on full-frame — where sharpness and depth of field are optimally balanced."
+          "heading": "ボケと回折",
+          "text": "ボケとは、ピントが合っていない領域の質感を指します。絞り羽根の数と形はボケの性質に影響を与え、より丸みを帯びた羽根はより滑らかで円に近いハイライトを生みます。非常に小さい絞り（f/16以上）では、光が絞りの縁を通過する際に回折が起こり、被写界深度の範囲内であっても画像全体が柔らかくなってしまいます。フルフレームではf/5.6〜f/8付近が、シャープネスと被写界深度のバランスが最も良いスイートスポットです。"
         }
       },
       "keyFactors": {
@@ -63,8 +63,8 @@
           "definition": "カメラセンサーの物理的な寸法です。大きなセンサー（フルフレーム、中判）は、同等のフレーミングで小さなセンサー（APS-C、マイクロフォーサーズ）より浅い被写界深度を生みます。"
         },
         "orientation": {
-          "term": "Orientation",
-          "definition": "Toggle between landscape (horizontal) and portrait (vertical) shooting orientation. This affects the framing reference for subject distance calculations."
+          "term": "撮影向き",
+          "definition": "横位置（ランドスケープ）と縦位置（ポートレート）の撮影向きを切り替えます。被写体距離計算のフレーミング基準に影響します。"
         },
         "nearFocus": {
           "term": "前方ピント限界",
@@ -83,24 +83,24 @@
           "definition": "被写界深度を最大化するピント距離です。この距離にピントを合わせると、過焦点距離の半分から無限遠まですべてがシャープに見えます。"
         },
         "backgroundBlur": {
-          "term": "Background Blur",
-          "definition": "A measure of how blurred the background appears behind your subject. Higher values mean stronger blur and more subject isolation."
+          "term": "背景ぼけ",
+          "definition": "被写体の後ろの背景がどれだけぼけて見えるかを示す指標です。値が大きいほどぼけが強く、被写体がより際立ちます。"
         },
         "coc": {
-          "term": "Circle of Confusion",
-          "definition": "The maximum diameter of a blur spot on the sensor that still appears as a point to the human eye. Determines the boundary of acceptable sharpness for depth-of-field calculations."
+          "term": "錯乱円",
+          "definition": "人間の目には点として見えるセンサー上のぼけスポットの最大直径のことです。被写界深度計算における、許容できるシャープネスの境界を決定します。"
         },
         "isolationScore": {
-          "term": "Isolation Score",
-          "definition": "A composite rating (0-100) indicating how well the subject is separated from the background, based on the amount of background blur relative to the subject size."
+          "term": "被写体分離スコア",
+          "definition": "被写体の大きさに対する背景ぼけの量に基づき、被写体が背景からどれだけよく分離されているかを示す総合評価（0〜100）です。"
         },
         "bokehShape": {
-          "term": "Bokeh Shape",
-          "definition": "The shape of out-of-focus highlights, determined by the number and curvature of aperture blades. More blades produce rounder, smoother bokeh."
+          "term": "ボケの形",
+          "definition": "ピントが合っていないハイライトの形状で、絞り羽根の枚数と曲率によって決まります。羽根が多いほど、より丸く滑らかなボケになります。"
         },
         "diffractionWarning": {
-          "term": "Diffraction",
-          "definition": "At very small apertures, light bends around the aperture edges, softening the image. On full-frame sensors, this typically becomes noticeable beyond f/16."
+          "term": "回折",
+          "definition": "非常に小さい絞りでは、光が絞りの縁で曲がり画像が柔らかくなります。フルフレームセンサーでは、f/16を超えると顕著になる傾向があります。"
         }
       },
       "challenges": {

@@ -4,16 +4,16 @@
       "beginner": "Die Schärfentiefe (DoF) ist der Entfernungsbereich in deinem Foto, der akzeptabel scharf erscheint. Eine geringe Schärfentiefe verwischt den Hintergrund hinter deinem Motiv, während eine große Schärfentiefe alles vom Vordergrund bis zum Horizont scharf hält. Die Kontrolle der Schärfentiefe ist eines der mächtigsten kreativen Werkzeuge in der Fotografie.",
       "deeper": {
         "0": {
-          "heading": "How DoF Works",
-          "text": "Depth of field is governed by the circle of confusion (CoC) — the largest blur spot on the sensor that still looks sharp to the human eye. Three physical factors determine DoF: focal length, aperture, and subject distance. A wider aperture (lower f-number) produces a shallower DoF because the lens converges light at steeper angles, causing out-of-focus points to spread into larger circles on the sensor."
+          "heading": "So funktioniert die Schärfentiefe",
+          "text": "Die Schärfentiefe wird vom Zerstreuungskreis (CoC) bestimmt — dem größten Unschärfefleck auf dem Sensor, der dem menschlichen Auge noch scharf erscheint. Drei physikalische Faktoren bestimmen die Schärfentiefe: Brennweite, Blende und Motivabstand. Eine größere Blendenöffnung (niedrigere Blendenzahl) erzeugt eine geringere Schärfentiefe, weil das Objektiv Licht in steileren Winkeln bündelt, wodurch sich außerhalb des Fokus liegende Punkte zu größeren Kreisen auf dem Sensor ausbreiten."
         },
         "1": {
-          "heading": "Focal Length & Distance",
-          "text": "Longer focal lengths magnify the image, which also magnifies the blur circles, narrowing the DoF. Moving closer to your subject reduces DoF for the same reason — the relative difference in distance between the subject and background becomes greater. The hyperfocal distance is the focus distance at which DoF extends from half that distance to infinity, maximizing sharpness across the entire scene."
+          "heading": "Brennweite & Abstand",
+          "text": "Längere Brennweiten vergrößern das Bild und damit auch die Unschärfekreise, was die Schärfentiefe verringert. Näher an dein Motiv zu gehen reduziert die Schärfentiefe aus demselben Grund — der relative Abstandsunterschied zwischen Motiv und Hintergrund wird größer. Die hyperfokale Distanz ist der Fokusabstand, bei dem die Schärfentiefe von der halben Distanz bis unendlich reicht und so die Schärfe in der gesamten Szene maximiert."
         },
         "2": {
-          "heading": "Bokeh & Diffraction",
-          "text": "Bokeh refers to the quality of the out-of-focus areas. The number and shape of aperture blades affect bokeh character — more rounded blades produce smoother, more circular highlights. At very small apertures (f/16+), diffraction causes light to spread as it passes the aperture edges, softening the entire image even within the DoF zone. There is always a sweet spot — typically around f/5.6-f/8 on full-frame — where sharpness and depth of field are optimally balanced."
+          "heading": "Bokeh & Beugung",
+          "text": "Bokeh bezeichnet die Qualität der unscharfen Bildbereiche. Anzahl und Form der Blendenlamellen prägen den Bokeh-Charakter — rundere Lamellen erzeugen weichere, kreisförmigere Lichter. Bei sehr kleinen Blendenöffnungen (f/16+) sorgt Beugung dafür, dass sich Licht an den Blendenkanten ausbreitet und das gesamte Bild weicher wird — selbst innerhalb des Schärfebereichs. Es gibt immer einen Sweet Spot — typischerweise um f/5.6–f/8 bei Vollformat — bei dem Schärfe und Schärfentiefe optimal ausbalanciert sind."
         }
       },
       "keyFactors": {
@@ -63,8 +63,8 @@
           "definition": "Die physischen Abmessungen des Kamerasensors. Größere Sensoren (Vollformat, Mittelformat) erzeugen bei äquivalentem Bildausschnitt eine geringere Schärfentiefe als kleinere Sensoren (APS-C, Micro Four Thirds)."
         },
         "orientation": {
-          "term": "Orientation",
-          "definition": "Toggle between landscape (horizontal) and portrait (vertical) shooting orientation. This affects the framing reference for subject distance calculations."
+          "term": "Ausrichtung",
+          "definition": "Wechsle zwischen Quer- (horizontal) und Hochformat (vertikal). Das beeinflusst die Bildausschnitt-Referenz für die Motivabstand-Berechnung."
         },
         "nearFocus": {
           "term": "Nahgrenze",
@@ -83,24 +83,24 @@
           "definition": "Der Fokusabstand, der die Schärfentiefe maximiert. Wenn du auf diese Entfernung fokussierst, erscheint alles von der halben Hyperfokaldistanz bis Unendlich scharf."
         },
         "backgroundBlur": {
-          "term": "Background Blur",
-          "definition": "A measure of how blurred the background appears behind your subject. Higher values mean stronger blur and more subject isolation."
+          "term": "Hintergrundunschärfe",
+          "definition": "Ein Maß dafür, wie unscharf der Hintergrund hinter deinem Motiv erscheint. Höhere Werte bedeuten stärkere Unschärfe und eine klarere Freistellung des Motivs."
         },
         "coc": {
-          "term": "Circle of Confusion",
-          "definition": "The maximum diameter of a blur spot on the sensor that still appears as a point to the human eye. Determines the boundary of acceptable sharpness for depth-of-field calculations."
+          "term": "Zerstreuungskreis",
+          "definition": "Der maximale Durchmesser eines Unschärfeflecks auf dem Sensor, der dem menschlichen Auge noch als Punkt erscheint. Bestimmt die Grenze akzeptabler Schärfe für Schärfentiefe-Berechnungen."
         },
         "isolationScore": {
-          "term": "Isolation Score",
-          "definition": "A composite rating (0-100) indicating how well the subject is separated from the background, based on the amount of background blur relative to the subject size."
+          "term": "Freistellungswert",
+          "definition": "Eine zusammengesetzte Bewertung (0–100), die angibt, wie gut das Motiv vom Hintergrund getrennt ist — basierend auf der Hintergrundunschärfe im Verhältnis zur Motivgröße."
         },
         "bokehShape": {
-          "term": "Bokeh Shape",
-          "definition": "The shape of out-of-focus highlights, determined by the number and curvature of aperture blades. More blades produce rounder, smoother bokeh."
+          "term": "Bokeh-Form",
+          "definition": "Die Form unscharfer Glanzlichter, bestimmt durch Anzahl und Rundung der Blendenlamellen. Mehr Lamellen erzeugen rundere, weichere Bokeh-Formen."
         },
         "diffractionWarning": {
-          "term": "Diffraction",
-          "definition": "At very small apertures, light bends around the aperture edges, softening the image. On full-frame sensors, this typically becomes noticeable beyond f/16."
+          "term": "Beugung",
+          "definition": "Bei sehr kleinen Blendenöffnungen wird Licht an den Blendenkanten gebeugt und macht das Bild weicher. Bei Vollformatsensoren wird das typischerweise ab f/16 sichtbar."
         }
       },
       "challenges": {

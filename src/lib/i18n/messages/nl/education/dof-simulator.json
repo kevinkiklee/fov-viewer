@@ -4,16 +4,16 @@
       "beginner": "Scherptediepte (DoF) is het afstandsbereik in je foto dat aanvaardbaar scherp verschijnt. Een kleine scherptediepte vervaagt de achtergrond achter je onderwerp, terwijl een grote scherptediepte alles van voorgrond tot horizon scherp houdt. Het beheersen van scherptediepte is een van de krachtigste creatieve middelen in de fotografie.",
       "deeper": {
         "0": {
-          "heading": "How DoF Works",
-          "text": "Depth of field is governed by the circle of confusion (CoC) — the largest blur spot on the sensor that still looks sharp to the human eye. Three physical factors determine DoF: focal length, aperture, and subject distance. A wider aperture (lower f-number) produces a shallower DoF because the lens converges light at steeper angles, causing out-of-focus points to spread into larger circles on the sensor."
+          "heading": "Hoe scherptediepte werkt",
+          "text": "Scherptediepte wordt bepaald door de circle of confusion (CoC) — de grootste vervagingsvlek op de sensor die voor het menselijk oog nog scherp oogt. Drie fysieke factoren bepalen de scherptediepte: brandpuntsafstand, diafragma en onderwerpsafstand. Een groter diafragma (lager f-getal) geeft minder scherptediepte omdat de lens licht onder steilere hoeken bundelt, waardoor onscherpe punten uitsmeren tot grotere cirkels op de sensor."
         },
         "1": {
-          "heading": "Focal Length & Distance",
-          "text": "Longer focal lengths magnify the image, which also magnifies the blur circles, narrowing the DoF. Moving closer to your subject reduces DoF for the same reason — the relative difference in distance between the subject and background becomes greater. The hyperfocal distance is the focus distance at which DoF extends from half that distance to infinity, maximizing sharpness across the entire scene."
+          "heading": "Brandpuntsafstand en afstand",
+          "text": "Langere brandpuntsafstanden vergroten het beeld en daarmee ook de vervagingscirkels, wat de scherptediepte verkleint. Dichterbij je onderwerp komen verkleint de scherptediepte om dezelfde reden — het relatieve verschil in afstand tussen onderwerp en achtergrond wordt groter. De hyperfocale afstand is de scherpstelafstand waarbij de scherptediepte loopt van de helft van die afstand tot oneindig, waardoor de scherpte over de hele scène maximaal is."
         },
         "2": {
-          "heading": "Bokeh & Diffraction",
-          "text": "Bokeh refers to the quality of the out-of-focus areas. The number and shape of aperture blades affect bokeh character — more rounded blades produce smoother, more circular highlights. At very small apertures (f/16+), diffraction causes light to spread as it passes the aperture edges, softening the entire image even within the DoF zone. There is always a sweet spot — typically around f/5.6-f/8 on full-frame — where sharpness and depth of field are optimally balanced."
+          "heading": "Bokeh en diffractie",
+          "text": "Bokeh verwijst naar de kwaliteit van de onscherpe gebieden. Het aantal en de vorm van de diafragmalamellen bepalen het karakter van de bokeh — rondere lamellen geven vloeiendere, meer cirkelvormige lichtvlekken. Bij zeer kleine diafragma's (f/16 en hoger) veroorzaakt diffractie dat licht uitwaaiert langs de randen van de lensopening, waardoor het hele beeld zachter wordt, zelfs binnen de scherptediepte. Er is altijd een sweet spot — meestal rond f/5.6-f/8 op fullframe — waar scherpte en scherptediepte optimaal in balans zijn."
         }
       },
       "keyFactors": {
@@ -63,8 +63,8 @@
           "definition": "De fysieke afmetingen van de camerasensor. Grotere sensoren (fullframe, middenformaat) produceren een kleinere scherptediepte bij equivalente kadrering vergeleken met kleinere sensoren (APS-C, Micro Four Thirds)."
         },
         "orientation": {
-          "term": "Orientation",
-          "definition": "Toggle between landscape (horizontal) and portrait (vertical) shooting orientation. This affects the framing reference for subject distance calculations."
+          "term": "Oriëntatie",
+          "definition": "Wissel tussen liggend (horizontaal) en staand (verticaal) fotograferen. Dit beïnvloedt de kadreringsreferentie voor berekeningen van de onderwerpsafstand."
         },
         "nearFocus": {
           "term": "Nabije scherptegrens",
@@ -83,24 +83,24 @@
           "definition": "De scherpstelafstand die de scherptediepte maximaliseert. Wanneer je op deze afstand scherpstelt, verschijnt alles van de helft van de hyperfocale afstand tot oneindig scherp."
         },
         "backgroundBlur": {
-          "term": "Background Blur",
-          "definition": "A measure of how blurred the background appears behind your subject. Higher values mean stronger blur and more subject isolation."
+          "term": "Achtergrondvervaging",
+          "definition": "Een maat voor hoe onscherp de achtergrond achter je onderwerp oogt. Hogere waarden betekenen sterkere vervaging en meer onderwerpsisolatie."
         },
         "coc": {
-          "term": "Circle of Confusion",
-          "definition": "The maximum diameter of a blur spot on the sensor that still appears as a point to the human eye. Determines the boundary of acceptable sharpness for depth-of-field calculations."
+          "term": "Circle of confusion",
+          "definition": "De maximale diameter van een vervagingsvlek op de sensor die voor het menselijk oog nog als punt oogt. Bepaalt de grens van aanvaardbare scherpte bij scherptediepteberekeningen."
         },
         "isolationScore": {
-          "term": "Isolation Score",
-          "definition": "A composite rating (0-100) indicating how well the subject is separated from the background, based on the amount of background blur relative to the subject size."
+          "term": "Isolatiescore",
+          "definition": "Een samengestelde score (0-100) die aangeeft hoe goed het onderwerp van de achtergrond wordt gescheiden, gebaseerd op de hoeveelheid achtergrondvervaging ten opzichte van de grootte van het onderwerp."
         },
         "bokehShape": {
-          "term": "Bokeh Shape",
-          "definition": "The shape of out-of-focus highlights, determined by the number and curvature of aperture blades. More blades produce rounder, smoother bokeh."
+          "term": "Bokehvorm",
+          "definition": "De vorm van onscherpe lichtvlekken, bepaald door het aantal en de kromming van de diafragmalamellen. Meer lamellen geven rondere, vloeiendere bokeh."
         },
         "diffractionWarning": {
-          "term": "Diffraction",
-          "definition": "At very small apertures, light bends around the aperture edges, softening the image. On full-frame sensors, this typically becomes noticeable beyond f/16."
+          "term": "Diffractie",
+          "definition": "Bij zeer kleine diafragma's buigt licht om de randen van de lensopening heen, waardoor het beeld zachter wordt. Op fullframe-sensoren wordt dit meestal zichtbaar voorbij f/16."
         }
       },
       "challenges": {

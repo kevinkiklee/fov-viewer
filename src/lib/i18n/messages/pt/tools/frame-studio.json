@@ -69,7 +69,7 @@
       "quality": "Qualidade:",
       "qualityMaximum": "Máxima",
       "includeGridOverlay": "Incluir grade de composição",
-      "downscaleNotice": "Your image ({from}) exceeds the browser's maximum canvas size and will be exported at {to}.",
+      "downscaleNotice": "Sua imagem ({from}) excede o tamanho máximo do canvas do navegador e será exportada em {to}.",
       "cancel": "Cancelar",
       "exporting": "Exportando...",
       "download": "Baixar",

@@ -11,16 +11,16 @@
       "description": "さまざまな焦点距離とセンサーサイズで画角を比較。無料、インタラクティブ、共有可能。"
     },
     "dof-simulator": {
-      "title": "Depth-of-Field Simulator | PhotoTools",
-      "description": "Visualize how aperture, focal length, and distance affect background blur with real-time WebGL simulation"
+      "title": "被写界深度シミュレーター | PhotoTools",
+      "description": "絞り、焦点距離、被写体距離が背景ボケにどう影響するかをリアルタイムWebGLシミュレーションで可視化します。"
     },
     "focus-stacking-calculator": {
-      "title": "Focus Stacking Calculator | PhotoTools",
-      "description": "Calculate optimal focus distances for front-to-back sharpness in macro and landscape photography"
+      "title": "フォーカススタッキング計算ツール | PhotoTools",
+      "description": "マクロ撮影や風景写真で手前から奥までシャープに仕上げるための最適なピント位置を計算します。"
     },
     "equivalent-settings-calculator": {
-      "title": "Equivalent Settings Calculator | PhotoTools",
-      "description": "Find equivalent aperture and focal length across sensor formats to match depth of field"
+      "title": "等価設定計算ツール | PhotoTools",
+      "description": "異なるセンサーフォーマット間で被写界深度を揃えるための等価絞りと焦点距離を算出します。"
     },
     "exposure-simulator": {
       "title": "露出トライアングルシミュレーター",

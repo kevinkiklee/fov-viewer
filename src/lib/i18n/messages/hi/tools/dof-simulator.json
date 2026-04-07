@@ -45,7 +45,7 @@
       "modeWipe": "Wipe Compare",
       "modeSplit": "Split Compare",
       "blurReadout": "Blur: {value}",
-      "diffractionWarning": "Diffraction softening may reduce sharpness at this aperture",
+      "diffractionWarning": "इस अपर्चर पर विवर्तन के कारण शार्पनेस कम हो सकती है",
       "depthRulerNear": "Near",
       "depthRulerFar": "Far",
       "depthRulerInFocus": "In Focus",

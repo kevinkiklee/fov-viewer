@@ -1,132 +1,110 @@
 {
   "education": {
     "focus-stacking-calculator": {
-      "beginner": "Focus stacking is a technique where you take multiple photos at different focus distances and merge them in software to create an image with front-to-back sharpness. It is essential for macro photography, where depth of field is razor-thin, and useful in landscape photography when you need both near foreground and distant background in sharp focus.",
+      "beginner": "Il focus stacking è una tecnica in cui scatti più foto a diverse distanze di messa a fuoco e le fondi via software per creare un'immagine nitida dal primo piano allo sfondo. È essenziale per la macrofotografia, dove la profondità di campo è sottilissima, ed è utile nella fotografia di paesaggio quando hai bisogno che sia il primo piano vicino sia lo sfondo lontano siano perfettamente nitidi.",
       "deeper": {
         "0": {
-          "heading": "Why Stacking Is Necessary",
-          "text": "At macro magnifications, even f/16 may yield only a few millimeters of depth of field. Stopping down further introduces diffraction softening that degrades the image. Focus stacking lets you shoot at the lens's sharpest aperture (typically f/5.6-f/8) and combine the sharp slices. Each frame shifts focus slightly forward, covering a new slice of the subject."
+          "heading": "Perché lo stacking è necessario",
+          "text": "Agli ingrandimenti macro, anche f/16 può dare solo pochi millimetri di profondità di campo. Chiudere ulteriormente il diaframma introduce un ammorbidimento da diffrazione che degrada l'immagine. Il focus stacking ti permette di scattare all'apertura più nitida dell'obiettivo (tipicamente f/5.6-f/8) e combinare le fette nitide. Ogni fotogramma sposta leggermente il fuoco in avanti, coprendo una nuova fetta del soggetto."
         },
         "1": {
-          "heading": "Planning the Stack",
-          "text": "The key to a successful stack is ensuring each shot's depth of field overlaps the next by 20-30%. Too little overlap creates gaps where nothing is sharp; too much wastes frames without benefit. The calculator determines the per-shot DoF using the circle of confusion formula, subtracts the overlap margin, and divides the total depth range by the effective step to compute the number of shots."
+          "heading": "Pianificare lo stack",
+          "text": "La chiave di uno stack riuscito è assicurarsi che la profondità di campo di ogni scatto si sovrapponga a quella successiva del 20-30%. Una sovrapposizione insufficiente crea lacune in cui nulla è nitido; una troppo alta spreca fotogrammi senza vantaggi. Il calcolatore determina la PdC per scatto usando la formula del cerchio di confusione, sottrae il margine di sovrapposizione e divide l'intervallo di profondità totale per il passo effettivo per calcolare il numero di scatti."
         },
         "2": {
-          "heading": "Merging & Alignment",
-          "text": "Software like Photoshop, Helicon Focus, or Zerene Stacker aligns the frames (slight magnification shifts occur as focus changes), then selects the sharpest pixels from each layer. Shooting on a sturdy tripod with consistent lighting and using a focus rail for precise increments produces the cleanest results."
+          "heading": "Fusione e allineamento",
+          "text": "Software come Photoshop, Helicon Focus o Zerene Stacker allineano i fotogrammi (piccoli spostamenti di ingrandimento avvengono al variare del fuoco), quindi selezionano i pixel più nitidi da ogni livello. Scattare su un treppiede solido con illuminazione costante e usare una slitta per il focus per incrementi precisi produce i risultati più puliti."
         }
       },
       "keyFactors": {
         "0": {
-          "label": "Aperture",
-          "description": "Determines per-shot depth of field. A moderate aperture (f/5.6-f/8) balances sharpness and DoF per frame. Avoid very small apertures — diffraction reduces the sharpness you are stacking for."
+          "label": "Apertura",
+          "description": "Determina la profondità di campo per scatto. Un'apertura moderata (f/5.6-f/8) bilancia nitidezza e PdC per fotogramma. Evita aperture molto piccole — la diffrazione riduce la nitidezza per cui stai facendo lo stacking."
         },
         "1": {
-          "label": "Depth Range",
-          "description": "The distance from the nearest to farthest point you want sharp. Wider ranges require more shots. In macro work this may be just centimeters; in landscapes it can span meters to infinity."
+          "label": "Intervallo di profondità",
+          "description": "La distanza dal punto più vicino a quello più lontano che vuoi nitido. Intervalli più ampi richiedono più scatti. Nel lavoro macro può essere di pochi centimetri; nei paesaggi può coprire metri fino all'infinito."
         },
         "2": {
-          "label": "Overlap",
-          "description": "The percentage of each shot's DoF that overlaps the adjacent shots. 20-30% is standard. Less risks gaps; more wastes frames."
+          "label": "Sovrapposizione",
+          "description": "La percentuale della PdC di ogni scatto che si sovrappone agli scatti adiacenti. Il 20-30% è lo standard. Meno rischia lacune; di più spreca fotogrammi."
         }
       },
       "tips": {
         "0": {
-          "text": "Use a focus rail instead of the lens's focus ring for macro stacking. A rail moves the entire camera forward in precise increments, avoiding the slight magnification changes that occur when refocusing the lens."
+          "text": "Usa una slitta per il focus invece della ghiera dell'obiettivo per lo stacking macro. La slitta sposta l'intera fotocamera in avanti con incrementi precisi, evitando le piccole variazioni di ingrandimento che si verificano rifocalizzando l'obiettivo."
         },
         "1": {
-          "text": "Keep your aperture at the lens's sweet spot (typically f/5.6-f/8). The point of stacking is to avoid stopping down to f/16+, so use the sharpest aperture and let the stack handle depth."
+          "text": "Mantieni l'apertura al punto dolce dell'obiettivo (tipicamente f/5.6-f/8). Lo scopo dello stacking è evitare di chiudere fino a f/16 o oltre, quindi usa l'apertura più nitida e lascia che sia lo stack a gestire la profondità."
         },
         "2": {
-          "text": "For landscape stacks, shoot front-to-back: focus on the nearest element first, then step focus toward infinity. This makes alignment easier since the foreground (with the most parallax) is captured first."
+          "text": "Per gli stack di paesaggio, scatta dal primo piano allo sfondo: metti a fuoco prima sull'elemento più vicino, poi sposta gradualmente il fuoco verso l'infinito. Questo rende l'allineamento più facile, perché il primo piano (con più parallasse) viene catturato per primo."
         }
       },
       "tooltips": {
         "focalLength": {
-          "term": "Focal Length",
-          "definition": "The lens focal length in millimeters. Longer focal lengths reduce per-shot depth of field, requiring more frames to cover the same depth range."
+          "term": "Lunghezza focale",
+          "definition": "La lunghezza focale dell'obiettivo in millimetri. Lunghezze focali maggiori riducono la profondità di campo per scatto, richiedendo più fotogrammi per coprire lo stesso intervallo di profondità."
         },
         "aperture": {
-          "term": "Aperture",
-          "definition": "The lens opening (f-number). For stacking, use the lens's sharpest aperture rather than stopping down — the stack provides the depth."
+          "term": "Apertura",
+          "definition": "L'apertura dell'obiettivo (numero f). Per lo stacking, usa l'apertura più nitida dell'obiettivo invece di chiudere il diaframma — è lo stack a fornire la profondità."
         },
         "sensor": {
-          "term": "Sensor Size",
-          "definition": "Larger sensors have a shallower per-shot depth of field at equivalent framing, which may increase the number of required stack frames."
+          "term": "Dimensione del sensore",
+          "definition": "Sensori più grandi hanno una profondità di campo per scatto più ridotta a inquadratura equivalente, il che può aumentare il numero di fotogrammi richiesti per lo stack."
         },
         "nearLimit": {
-          "term": "Near Limit",
-          "definition": "The closest point in the scene that you want sharp. This is where the first shot in the stack will be focused."
+          "term": "Limite vicino",
+          "definition": "Il punto più vicino della scena che vuoi nitido. È qui che verrà messo a fuoco il primo scatto dello stack."
         },
         "farLimit": {
-          "term": "Far Limit",
-          "definition": "The farthest point in the scene that you want sharp. The last shot in the stack will cover this distance."
+          "term": "Limite lontano",
+          "definition": "Il punto più lontano della scena che vuoi nitido. L'ultimo scatto dello stack coprirà questa distanza."
         },
         "overlap": {
-          "term": "Overlap",
-          "definition": "The percentage of depth-of-field overlap between consecutive shots. 20-30% ensures no gaps after software alignment and merging."
+          "term": "Sovrapposizione",
+          "definition": "La percentuale di sovrapposizione della profondità di campo tra scatti consecutivi. Il 20-30% garantisce che non ci siano lacune dopo l'allineamento e la fusione via software."
         },
         "shotCount": {
-          "term": "Shot Count",
-          "definition": "The total number of frames needed to cover the depth range with the specified overlap. More shots = more processing but smoother results."
+          "term": "Numero di scatti",
+          "definition": "Il numero totale di fotogrammi necessari per coprire l'intervallo di profondità con la sovrapposizione specificata. Più scatti = più elaborazione ma risultati più fluidi."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "You are photographing a small flower that is 3cm deep from front petal to back stem. Your macro lens at f/8 gives about 4mm of DoF per shot. Roughly how many frames do you need with 25% overlap?",
-          "hint": "Each shot covers 4mm, but 25% overlap means the effective step is 3mm per frame. Divide 30mm by 3mm.",
-          "successMessage": "Correct! With 4mm DoF and 25% overlap, each step advances 3mm. 30mm / 3mm = 10 shots to cover the entire flower.",
-          "failureMessage": "With 25% overlap, each frame's effective step is 75% of the DoF: 4mm × 0.75 = 3mm. You need 30mm / 3mm = 10 shots.",
+          "scenario": "Stai fotografando un piccolo fiore profondo 3cm dal petalo anteriore allo stelo posteriore. Il tuo obiettivo macro a f/8 dà circa 4mm di PdC per scatto. Approssimativamente quanti fotogrammi ti servono con una sovrapposizione del 25%?",
+          "hint": "Ogni scatto copre 4mm, ma con una sovrapposizione del 25% il passo effettivo è di 3mm per fotogramma. Dividi 30mm per 3mm.",
+          "successMessage": "Corretto! Con 4mm di PdC e il 25% di sovrapposizione, ogni passo avanza di 3mm. 30mm / 3mm = 10 scatti per coprire l'intero fiore.",
+          "failureMessage": "Con il 25% di sovrapposizione, il passo effettivo di ogni fotogramma è il 75% della PdC: 4mm × 0,75 = 3mm. Servono 30mm / 3mm = 10 scatti.",
           "options": {
-            "0": {
-              "label": "5 shots"
-            },
-            "1": {
-              "label": "10 shots"
-            },
-            "2": {
-              "label": "20 shots"
-            },
-            "3": {
-              "label": "30 shots"
-            }
+            "0": { "label": "5 scatti" },
+            "1": { "label": "10 scatti" },
+            "2": { "label": "20 scatti" },
+            "3": { "label": "30 scatti" }
           }
         },
         "1": {
-          "scenario": "You want the sharpest possible result from your focus stack. Should you shoot each frame at f/2.8, f/8, or f/22?",
-          "hint": "Consider the lens's sharpest aperture and how diffraction affects small apertures.",
-          "successMessage": "Right! f/8 is typically the sharpest aperture for most lenses. f/2.8 has too little DoF per shot (wasting frames) and f/22 suffers from diffraction softening.",
-          "failureMessage": "f/8 is the best choice. f/2.8 gives very thin per-shot DoF (requiring many more frames), and f/22 introduces diffraction softening that defeats the purpose of stacking for sharpness.",
+          "scenario": "Vuoi il risultato più nitido possibile dal tuo focus stack. Dovresti scattare ogni fotogramma a f/2.8, f/8 o f/22?",
+          "hint": "Considera l'apertura più nitida dell'obiettivo e come la diffrazione influisce sulle aperture piccole.",
+          "successMessage": "Esatto! f/8 è tipicamente l'apertura più nitida per la maggior parte degli obiettivi. f/2.8 ha troppa poca PdC per scatto (sprecando fotogrammi) e f/22 soffre di ammorbidimento da diffrazione.",
+          "failureMessage": "f/8 è la scelta migliore. f/2.8 dà una PdC per scatto molto sottile (richiedendo molti più fotogrammi), mentre f/22 introduce ammorbidimento da diffrazione che vanifica lo scopo dello stacking per la nitidezza.",
           "options": {
-            "0": {
-              "label": "f/2.8 — widest for fastest shutter"
-            },
-            "1": {
-              "label": "f/8 — lens sweet spot"
-            },
-            "2": {
-              "label": "f/22 — maximum per-shot DoF"
-            }
+            "0": { "label": "f/2.8 — la più ampia per tempi più rapidi" },
+            "1": { "label": "f/8 — punto dolce dell'obiettivo" },
+            "2": { "label": "f/22 — PdC per scatto massima" }
           }
         },
         "2": {
-          "scenario": "After merging your focus stack, you notice a soft band across the middle of the image where nothing is sharp. What most likely went wrong?",
-          "hint": "Think about what connects one frame's sharp zone to the next.",
-          "successMessage": "Exactly! Insufficient overlap between adjacent frames creates a gap where neither shot is sharp. Increase overlap to 25-30% and reshoot.",
-          "failureMessage": "A soft band usually means the gap between focus steps was too large — the DoF of adjacent frames did not overlap enough. Increase the overlap percentage.",
+          "scenario": "Dopo aver fuso il tuo focus stack, noti una fascia sfocata al centro dell'immagine dove nulla è nitido. Cosa è probabilmente andato storto?",
+          "hint": "Pensa a cosa collega la zona nitida di un fotogramma alla successiva.",
+          "successMessage": "Esatto! Una sovrapposizione insufficiente tra fotogrammi adiacenti crea una lacuna in cui nessuno dei due scatti è nitido. Aumenta la sovrapposizione al 25-30% e riscatta.",
+          "failureMessage": "Una fascia sfocata di solito significa che il salto tra i passi di messa a fuoco era troppo grande — la PdC dei fotogrammi adiacenti non si sovrapponeva abbastanza. Aumenta la percentuale di sovrapposizione.",
           "options": {
-            "0": {
-              "label": "The aperture was too wide"
-            },
-            "1": {
-              "label": "Insufficient overlap between focus steps"
-            },
-            "2": {
-              "label": "The tripod moved during the sequence"
-            },
-            "3": {
-              "label": "The ISO was too high"
-            }
+            "0": { "label": "L'apertura era troppo ampia" },
+            "1": { "label": "Sovrapposizione insufficiente tra i passi di messa a fuoco" },
+            "2": { "label": "Il treppiede si è mosso durante la sequenza" },
+            "3": { "label": "L'ISO era troppo alto" }
           }
         }
       }

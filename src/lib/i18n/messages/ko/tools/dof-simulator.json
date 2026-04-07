@@ -45,7 +45,7 @@
       "modeWipe": "Wipe Compare",
       "modeSplit": "Split Compare",
       "blurReadout": "Blur: {value}",
-      "diffractionWarning": "Diffraction softening may reduce sharpness at this aperture",
+      "diffractionWarning": "이 조리개에서는 회절 현상으로 인해 선명도가 저하될 수 있습니다",
       "depthRulerNear": "Near",
       "depthRulerFar": "Far",
       "depthRulerInFocus": "In Focus",

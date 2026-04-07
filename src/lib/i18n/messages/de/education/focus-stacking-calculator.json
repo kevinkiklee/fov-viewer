@@ -1,131 +1,131 @@
 {
   "education": {
     "focus-stacking-calculator": {
-      "beginner": "Focus stacking is a technique where you take multiple photos at different focus distances and merge them in software to create an image with front-to-back sharpness. It is essential for macro photography, where depth of field is razor-thin, and useful in landscape photography when you need both near foreground and distant background in sharp focus.",
+      "beginner": "Focus Stacking ist eine Technik, bei der du mehrere Fotos mit unterschiedlichen Fokusabständen aufnimmst und sie anschließend in der Software zu einem Bild mit durchgehender Schärfe vom Vordergrund bis zum Hintergrund zusammensetzt. Sie ist unverzichtbar in der Makrofotografie, wo die Schärfentiefe hauchdünn ist, und hilfreich in der Landschaftsfotografie, wenn sowohl naher Vordergrund als auch ferner Hintergrund scharf abgebildet werden sollen.",
       "deeper": {
         "0": {
-          "heading": "Why Stacking Is Necessary",
-          "text": "At macro magnifications, even f/16 may yield only a few millimeters of depth of field. Stopping down further introduces diffraction softening that degrades the image. Focus stacking lets you shoot at the lens's sharpest aperture (typically f/5.6-f/8) and combine the sharp slices. Each frame shifts focus slightly forward, covering a new slice of the subject."
+          "heading": "Warum Stacking nötig ist",
+          "text": "Bei Makro-Abbildungsmaßstäben liefert selbst f/16 oft nur wenige Millimeter Schärfentiefe. Noch weiter abzublenden führt zu Beugungsunschärfe, die das Bild verschlechtert. Focus Stacking erlaubt es dir, bei der schärfsten Blende des Objektivs (meist f/5.6–f/8) zu fotografieren und die scharfen Schichten zu kombinieren. Jede Aufnahme verschiebt den Fokus ein Stück nach vorn und erfasst eine neue Ebene des Motivs."
         },
         "1": {
-          "heading": "Planning the Stack",
-          "text": "The key to a successful stack is ensuring each shot's depth of field overlaps the next by 20-30%. Too little overlap creates gaps where nothing is sharp; too much wastes frames without benefit. The calculator determines the per-shot DoF using the circle of confusion formula, subtracts the overlap margin, and divides the total depth range by the effective step to compute the number of shots."
+          "heading": "Den Stack planen",
+          "text": "Der Schlüssel zu einem gelungenen Stack ist, dass sich die Schärfentiefe jeder Aufnahme mit der nächsten um 20–30% überlappt. Zu wenig Überlappung erzeugt Lücken, in denen nichts scharf ist; zu viel verschwendet Aufnahmen ohne Mehrwert. Der Rechner bestimmt die Schärfentiefe pro Aufnahme über die Zerstreuungskreis-Formel, zieht den Überlappungsspielraum ab und teilt den Gesamttiefenbereich durch den effektiven Schritt, um die Anzahl der Aufnahmen zu ermitteln."
         },
         "2": {
-          "heading": "Merging & Alignment",
-          "text": "Software like Photoshop, Helicon Focus, or Zerene Stacker aligns the frames (slight magnification shifts occur as focus changes), then selects the sharpest pixels from each layer. Shooting on a sturdy tripod with consistent lighting and using a focus rail for precise increments produces the cleanest results."
+          "heading": "Zusammenfügen & Ausrichten",
+          "text": "Programme wie Photoshop, Helicon Focus oder Zerene Stacker richten die Einzelaufnahmen aus (beim Fokussieren entstehen leichte Vergrößerungsverschiebungen) und wählen dann die schärfsten Pixel aus jeder Ebene. Die saubersten Ergebnisse erzielst du mit einem stabilen Stativ, gleichmäßigem Licht und einem Fokusschlitten für präzise Schritte."
         }
       },
       "keyFactors": {
         "0": {
-          "label": "Aperture",
-          "description": "Determines per-shot depth of field. A moderate aperture (f/5.6-f/8) balances sharpness and DoF per frame. Avoid very small apertures — diffraction reduces the sharpness you are stacking for."
+          "label": "Blende",
+          "description": "Bestimmt die Schärfentiefe pro Aufnahme. Eine mittlere Blende (f/5.6–f/8) balanciert Schärfe und Schärfentiefe pro Bild. Vermeide sehr kleine Blendenöffnungen — Beugung mindert genau die Schärfe, für die du stapelst."
         },
         "1": {
-          "label": "Depth Range",
-          "description": "The distance from the nearest to farthest point you want sharp. Wider ranges require more shots. In macro work this may be just centimeters; in landscapes it can span meters to infinity."
+          "label": "Tiefenbereich",
+          "description": "Der Abstand vom nächsten bis zum entferntesten Punkt, den du scharf haben willst. Größere Bereiche benötigen mehr Aufnahmen. Im Makrobereich sind das oft nur Zentimeter; in Landschaften können es Meter bis unendlich sein."
         },
         "2": {
-          "label": "Overlap",
-          "description": "The percentage of each shot's DoF that overlaps the adjacent shots. 20-30% is standard. Less risks gaps; more wastes frames."
+          "label": "Überlappung",
+          "description": "Der Prozentsatz, um den sich die Schärfentiefe jeder Aufnahme mit der nächsten überschneidet. 20–30% sind Standard. Weniger riskiert Lücken; mehr verschwendet Aufnahmen."
         }
       },
       "tips": {
         "0": {
-          "text": "Use a focus rail instead of the lens's focus ring for macro stacking. A rail moves the entire camera forward in precise increments, avoiding the slight magnification changes that occur when refocusing the lens."
+          "text": "Verwende für Makro-Stacks einen Fokusschlitten statt des Fokusrings am Objektiv. Ein Schlitten bewegt die gesamte Kamera in präzisen Schritten nach vorn und vermeidet die leichten Vergrößerungsänderungen, die beim Nachfokussieren entstehen."
         },
         "1": {
-          "text": "Keep your aperture at the lens's sweet spot (typically f/5.6-f/8). The point of stacking is to avoid stopping down to f/16+, so use the sharpest aperture and let the stack handle depth."
+          "text": "Halte die Blende im Sweet Spot deines Objektivs (meist f/5.6–f/8). Der Sinn des Stackings ist, nicht auf f/16+ abblenden zu müssen — wähle die schärfste Blende und lass den Stack die Tiefe übernehmen."
         },
         "2": {
-          "text": "For landscape stacks, shoot front-to-back: focus on the nearest element first, then step focus toward infinity. This makes alignment easier since the foreground (with the most parallax) is captured first."
+          "text": "Für Landschafts-Stacks arbeite von vorn nach hinten: Fokussiere zuerst auf das nächste Element und schiebe den Fokus dann Richtung unendlich. Das erleichtert die Ausrichtung, weil der Vordergrund (mit dem meisten Parallaxeneffekt) zuerst erfasst wird."
         }
       },
       "tooltips": {
         "focalLength": {
-          "term": "Focal Length",
-          "definition": "The lens focal length in millimeters. Longer focal lengths reduce per-shot depth of field, requiring more frames to cover the same depth range."
+          "term": "Brennweite",
+          "definition": "Die Brennweite des Objektivs in Millimetern. Längere Brennweiten verringern die Schärfentiefe pro Aufnahme und erfordern mehr Einzelbilder, um denselben Tiefenbereich abzudecken."
         },
         "aperture": {
-          "term": "Aperture",
-          "definition": "The lens opening (f-number). For stacking, use the lens's sharpest aperture rather than stopping down — the stack provides the depth."
+          "term": "Blende",
+          "definition": "Die Objektivöffnung (Blendenzahl). Beim Stacking solltest du die schärfste Blende des Objektivs nutzen, statt abzublenden — der Stack liefert die Tiefe."
         },
         "sensor": {
-          "term": "Sensor Size",
-          "definition": "Larger sensors have a shallower per-shot depth of field at equivalent framing, which may increase the number of required stack frames."
+          "term": "Sensorgröße",
+          "definition": "Größere Sensoren haben bei gleichem Bildausschnitt eine geringere Schärfentiefe pro Aufnahme, was die Anzahl der nötigen Stack-Bilder erhöhen kann."
         },
         "nearLimit": {
-          "term": "Near Limit",
-          "definition": "The closest point in the scene that you want sharp. This is where the first shot in the stack will be focused."
+          "term": "Nahgrenze",
+          "definition": "Der nächste Punkt in der Szene, den du scharf haben willst. Hier wird die erste Aufnahme des Stacks fokussiert."
         },
         "farLimit": {
-          "term": "Far Limit",
-          "definition": "The farthest point in the scene that you want sharp. The last shot in the stack will cover this distance."
+          "term": "Ferngrenze",
+          "definition": "Der entfernteste Punkt in der Szene, den du scharf haben willst. Die letzte Aufnahme des Stacks deckt diese Entfernung ab."
         },
         "overlap": {
-          "term": "Overlap",
-          "definition": "The percentage of depth-of-field overlap between consecutive shots. 20-30% ensures no gaps after software alignment and merging."
+          "term": "Überlappung",
+          "definition": "Der Prozentsatz der Schärfentiefen-Überlappung zwischen aufeinanderfolgenden Aufnahmen. 20–30% stellen sicher, dass nach dem Ausrichten und Zusammenfügen keine Lücken bleiben."
         },
         "shotCount": {
-          "term": "Shot Count",
-          "definition": "The total number of frames needed to cover the depth range with the specified overlap. More shots = more processing but smoother results."
+          "term": "Aufnahmezahl",
+          "definition": "Die Gesamtzahl der Einzelbilder, die nötig sind, um den Tiefenbereich mit der angegebenen Überlappung abzudecken. Mehr Aufnahmen = mehr Verarbeitung, aber weichere Ergebnisse."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "You are photographing a small flower that is 3cm deep from front petal to back stem. Your macro lens at f/8 gives about 4mm of DoF per shot. Roughly how many frames do you need with 25% overlap?",
-          "hint": "Each shot covers 4mm, but 25% overlap means the effective step is 3mm per frame. Divide 30mm by 3mm.",
-          "successMessage": "Correct! With 4mm DoF and 25% overlap, each step advances 3mm. 30mm / 3mm = 10 shots to cover the entire flower.",
-          "failureMessage": "With 25% overlap, each frame's effective step is 75% of the DoF: 4mm × 0.75 = 3mm. You need 30mm / 3mm = 10 shots.",
+          "scenario": "Du fotografierst eine kleine Blume, die von vorderen Blütenblättern bis zum hinteren Stiel 3 cm tief ist. Dein Makroobjektiv liefert bei f/8 etwa 4 mm Schärfentiefe pro Aufnahme. Wie viele Bilder brauchst du ungefähr bei 25% Überlappung?",
+          "hint": "Jede Aufnahme deckt 4 mm ab, aber 25% Überlappung bedeutet, dass der effektive Schritt 3 mm pro Bild beträgt. Teile 30 mm durch 3 mm.",
+          "successMessage": "Richtig! Bei 4 mm Schärfentiefe und 25% Überlappung beträgt jeder Schritt 3 mm. 30 mm / 3 mm = 10 Aufnahmen, um die gesamte Blume abzudecken.",
+          "failureMessage": "Bei 25% Überlappung beträgt der effektive Schritt pro Bild 75% der Schärfentiefe: 4 mm × 0,75 = 3 mm. Du brauchst 30 mm / 3 mm = 10 Aufnahmen.",
           "options": {
             "0": {
-              "label": "5 shots"
+              "label": "5 Aufnahmen"
             },
             "1": {
-              "label": "10 shots"
+              "label": "10 Aufnahmen"
             },
             "2": {
-              "label": "20 shots"
+              "label": "20 Aufnahmen"
             },
             "3": {
-              "label": "30 shots"
+              "label": "30 Aufnahmen"
             }
           }
         },
         "1": {
-          "scenario": "You want the sharpest possible result from your focus stack. Should you shoot each frame at f/2.8, f/8, or f/22?",
-          "hint": "Consider the lens's sharpest aperture and how diffraction affects small apertures.",
-          "successMessage": "Right! f/8 is typically the sharpest aperture for most lenses. f/2.8 has too little DoF per shot (wasting frames) and f/22 suffers from diffraction softening.",
-          "failureMessage": "f/8 is the best choice. f/2.8 gives very thin per-shot DoF (requiring many more frames), and f/22 introduces diffraction softening that defeats the purpose of stacking for sharpness.",
+          "scenario": "Du willst das schärfstmögliche Ergebnis aus deinem Focus Stack. Solltest du jedes Bild bei f/2.8, f/8 oder f/22 aufnehmen?",
+          "hint": "Denke an die schärfste Blende des Objektivs und wie Beugung kleine Blendenöffnungen beeinflusst.",
+          "successMessage": "Richtig! f/8 ist bei den meisten Objektiven die schärfste Blende. f/2.8 liefert zu wenig Schärfentiefe pro Aufnahme (mehr Bilder nötig), und f/22 leidet unter Beugungsunschärfe.",
+          "failureMessage": "f/8 ist die beste Wahl. f/2.8 liefert eine sehr dünne Schärfentiefe pro Aufnahme (viel mehr Bilder nötig), und f/22 bringt Beugungsunschärfe, die den Sinn des Stackings — maximale Schärfe — zunichtemacht.",
           "options": {
             "0": {
-              "label": "f/2.8 — widest for fastest shutter"
+              "label": "f/2.8 — weiteste Öffnung für schnellste Verschlusszeit"
             },
             "1": {
-              "label": "f/8 — lens sweet spot"
+              "label": "f/8 — Sweet Spot des Objektivs"
             },
             "2": {
-              "label": "f/22 — maximum per-shot DoF"
+              "label": "f/22 — maximale Schärfentiefe pro Aufnahme"
             }
           }
         },
         "2": {
-          "scenario": "After merging your focus stack, you notice a soft band across the middle of the image where nothing is sharp. What most likely went wrong?",
-          "hint": "Think about what connects one frame's sharp zone to the next.",
-          "successMessage": "Exactly! Insufficient overlap between adjacent frames creates a gap where neither shot is sharp. Increase overlap to 25-30% and reshoot.",
-          "failureMessage": "A soft band usually means the gap between focus steps was too large — the DoF of adjacent frames did not overlap enough. Increase the overlap percentage.",
+          "scenario": "Nach dem Zusammenfügen deines Focus Stacks fällt dir ein weicher Streifen quer durch die Bildmitte auf, in dem nichts scharf ist. Was ist wahrscheinlich schiefgelaufen?",
+          "hint": "Überlege, was den scharfen Bereich einer Aufnahme mit dem der nächsten verbindet.",
+          "successMessage": "Genau! Zu wenig Überlappung zwischen benachbarten Aufnahmen erzeugt eine Lücke, in der keine der beiden scharf ist. Erhöhe die Überlappung auf 25–30% und nimm die Serie neu auf.",
+          "failureMessage": "Ein weicher Streifen bedeutet meist, dass der Abstand zwischen den Fokusschritten zu groß war — die Schärfentiefen benachbarter Aufnahmen haben sich nicht ausreichend überlappt. Erhöhe den Überlappungsprozentsatz.",
           "options": {
             "0": {
-              "label": "The aperture was too wide"
+              "label": "Die Blende war zu weit geöffnet"
             },
             "1": {
-              "label": "Insufficient overlap between focus steps"
+              "label": "Zu wenig Überlappung zwischen den Fokusschritten"
             },
             "2": {
-              "label": "The tripod moved during the sequence"
+              "label": "Das Stativ hat sich während der Serie bewegt"
             },
             "3": {
-              "label": "The ISO was too high"
+              "label": "Der ISO-Wert war zu hoch"
             }
           }
         }

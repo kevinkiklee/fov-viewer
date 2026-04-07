@@ -69,7 +69,7 @@
       "quality": "品質:",
       "qualityMaximum": "最高",
       "includeGridOverlay": "グリッドオーバーレイを含める",
-      "downscaleNotice": "Your image ({from}) exceeds the browser's maximum canvas size and will be exported at {to}.",
+      "downscaleNotice": "画像サイズ（{from}）がブラウザのキャンバス最大サイズを超えているため、{to}でエクスポートされます。",
       "cancel": "キャンセル",
       "exporting": "エクスポート中...",
       "download": "ダウンロード",

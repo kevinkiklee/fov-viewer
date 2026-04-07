@@ -4,16 +4,16 @@
       "beginner": "La profondità di campo (PdC) è l'intervallo di distanza nella tua foto che appare accettabilmente nitido. Una PdC ridotta sfoca lo sfondo dietro il soggetto, mentre una PdC ampia mantiene tutto a fuoco dal primo piano all'orizzonte. Controllare la PdC è uno degli strumenti creativi più potenti in fotografia.",
       "deeper": {
         "0": {
-          "heading": "How DoF Works",
-          "text": "Depth of field is governed by the circle of confusion (CoC) — the largest blur spot on the sensor that still looks sharp to the human eye. Three physical factors determine DoF: focal length, aperture, and subject distance. A wider aperture (lower f-number) produces a shallower DoF because the lens converges light at steeper angles, causing out-of-focus points to spread into larger circles on the sensor."
+          "heading": "Come funziona la profondità di campo",
+          "text": "La profondità di campo è governata dal cerchio di confusione (CoC) — il più grande punto sfocato sul sensore che appare ancora nitido all'occhio umano. Tre fattori fisici determinano la PdC: lunghezza focale, apertura e distanza del soggetto. Un'apertura più ampia (numero f più basso) produce una PdC più ridotta perché l'obiettivo converge la luce con angoli più ripidi, facendo sì che i punti fuori fuoco si distribuiscano in cerchi più ampi sul sensore."
         },
         "1": {
-          "heading": "Focal Length & Distance",
-          "text": "Longer focal lengths magnify the image, which also magnifies the blur circles, narrowing the DoF. Moving closer to your subject reduces DoF for the same reason — the relative difference in distance between the subject and background becomes greater. The hyperfocal distance is the focus distance at which DoF extends from half that distance to infinity, maximizing sharpness across the entire scene."
+          "heading": "Lunghezza focale e distanza",
+          "text": "Lunghezze focali maggiori ingrandiscono l'immagine, il che ingrandisce anche i cerchi di sfocatura, restringendo la PdC. Avvicinarsi al soggetto riduce la PdC per lo stesso motivo — la differenza relativa di distanza tra soggetto e sfondo diventa maggiore. La distanza iperfocale è la distanza di messa a fuoco alla quale la PdC si estende da metà di quella distanza fino all'infinito, massimizzando la nitidezza in tutta la scena."
         },
         "2": {
-          "heading": "Bokeh & Diffraction",
-          "text": "Bokeh refers to the quality of the out-of-focus areas. The number and shape of aperture blades affect bokeh character — more rounded blades produce smoother, more circular highlights. At very small apertures (f/16+), diffraction causes light to spread as it passes the aperture edges, softening the entire image even within the DoF zone. There is always a sweet spot — typically around f/5.6-f/8 on full-frame — where sharpness and depth of field are optimally balanced."
+          "heading": "Bokeh e diffrazione",
+          "text": "Il bokeh si riferisce alla qualità delle aree fuori fuoco. Il numero e la forma delle lamelle del diaframma influenzano il carattere del bokeh — lamelle più arrotondate producono luci più morbide e circolari. Ad aperture molto piccole (f/16 e oltre), la diffrazione fa sì che la luce si diffonda passando dai bordi del diaframma, ammorbidendo l'intera immagine anche all'interno della zona di PdC. C'è sempre un punto ottimale — tipicamente intorno a f/5.6-f/8 su full-frame — dove nitidezza e profondità di campo sono bilanciate al meglio."
         }
       },
       "keyFactors": {
@@ -63,8 +63,8 @@
           "definition": "Le dimensioni fisiche del sensore della fotocamera. Sensori più grandi (full-frame, medio formato) producono una profondità di campo più ridotta a inquadratura equivalente rispetto a sensori più piccoli (APS-C, Micro Quattro Terzi)."
         },
         "orientation": {
-          "term": "Orientation",
-          "definition": "Toggle between landscape (horizontal) and portrait (vertical) shooting orientation. This affects the framing reference for subject distance calculations."
+          "term": "Orientamento",
+          "definition": "Alterna tra orientamento di scatto orizzontale (landscape) e verticale (portrait). Influisce sul riferimento dell'inquadratura per i calcoli della distanza del soggetto."
         },
         "nearFocus": {
           "term": "Limite di messa a fuoco vicino",
@@ -83,24 +83,24 @@
           "definition": "La distanza di messa a fuoco che massimizza la profondità di campo. Quando metti a fuoco a questa distanza, tutto da metà della distanza iperfocale all'infinito appare nitido."
         },
         "backgroundBlur": {
-          "term": "Background Blur",
-          "definition": "A measure of how blurred the background appears behind your subject. Higher values mean stronger blur and more subject isolation."
+          "term": "Sfocatura dello sfondo",
+          "definition": "Una misura di quanto lo sfondo appaia sfocato dietro il soggetto. Valori più alti indicano una sfocatura più marcata e un maggiore isolamento del soggetto."
         },
         "coc": {
-          "term": "Circle of Confusion",
-          "definition": "The maximum diameter of a blur spot on the sensor that still appears as a point to the human eye. Determines the boundary of acceptable sharpness for depth-of-field calculations."
+          "term": "Cerchio di confusione",
+          "definition": "Il diametro massimo di un punto sfocato sul sensore che appare ancora come un punto all'occhio umano. Determina il limite della nitidezza accettabile nei calcoli della profondità di campo."
         },
         "isolationScore": {
-          "term": "Isolation Score",
-          "definition": "A composite rating (0-100) indicating how well the subject is separated from the background, based on the amount of background blur relative to the subject size."
+          "term": "Punteggio di isolamento",
+          "definition": "Una valutazione composita (0-100) che indica quanto bene il soggetto è separato dallo sfondo, basata sulla quantità di sfocatura dello sfondo rispetto alla dimensione del soggetto."
         },
         "bokehShape": {
-          "term": "Bokeh Shape",
-          "definition": "The shape of out-of-focus highlights, determined by the number and curvature of aperture blades. More blades produce rounder, smoother bokeh."
+          "term": "Forma del bokeh",
+          "definition": "La forma delle luci fuori fuoco, determinata dal numero e dalla curvatura delle lamelle del diaframma. Più lamelle producono un bokeh più rotondo e morbido."
         },
         "diffractionWarning": {
-          "term": "Diffraction",
-          "definition": "At very small apertures, light bends around the aperture edges, softening the image. On full-frame sensors, this typically becomes noticeable beyond f/16."
+          "term": "Diffrazione",
+          "definition": "Ad aperture molto piccole, la luce si piega intorno ai bordi del diaframma, ammorbidendo l'immagine. Sui sensori full-frame, questo effetto diventa tipicamente evidente oltre f/16."
         }
       },
       "challenges": {

@@ -11,16 +11,16 @@
       "description": "다양한 초점 거리와 센서 크기에 따른 화각을 비교합니다. 무료, 인터랙티브, 공유 가능."
     },
     "dof-simulator": {
-      "title": "Depth-of-Field Simulator | PhotoTools",
-      "description": "Visualize how aperture, focal length, and distance affect background blur with real-time WebGL simulation"
+      "title": "피사계 심도 시뮬레이터 | PhotoTools",
+      "description": "실시간 WebGL 시뮬레이션으로 조리개, 초점 거리, 거리가 배경 블러에 어떤 영향을 미치는지 시각화합니다"
     },
     "focus-stacking-calculator": {
-      "title": "Focus Stacking Calculator | PhotoTools",
-      "description": "Calculate optimal focus distances for front-to-back sharpness in macro and landscape photography"
+      "title": "포커스 스태킹 계산기 | PhotoTools",
+      "description": "매크로 및 풍경 사진에서 앞뒤 전체 선명도를 위한 최적의 초점 거리를 계산합니다"
     },
     "equivalent-settings-calculator": {
-      "title": "Equivalent Settings Calculator | PhotoTools",
-      "description": "Find equivalent aperture and focal length across sensor formats to match depth of field"
+      "title": "환산 설정 계산기 | PhotoTools",
+      "description": "센서 포맷 간 피사계 심도를 일치시키기 위한 환산 조리개와 초점 거리를 찾아줍니다"
     },
     "exposure-simulator": {
       "title": "노출 삼각형 시뮬레이터",

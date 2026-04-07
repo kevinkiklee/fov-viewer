@@ -1,82 +1,82 @@
 {
   "education": {
     "equivalent-settings-calculator": {
-      "beginner": "Different sensor sizes produce different depth of field and field of view even at the same focal length and aperture. Equivalent settings let you find the lens and aperture combination on a second camera that reproduces the same framing and background blur. This is essential when comparing gear across formats or switching between camera systems.",
+      "beginner": "센서 크기가 다르면 같은 초점 거리와 조리개에서도 피사계 심도와 화각이 달라집니다. 환산 설정은 다른 카메라에서 같은 프레이밍과 배경 흐림을 재현하는 렌즈와 조리개 조합을 찾아줍니다. 포맷이 다른 장비를 비교하거나 카메라 시스템을 바꿀 때 꼭 필요한 개념입니다.",
       "deeper": {
         "0": {
-          "heading": "The Crop Factor",
-          "text": "Every sensor has a crop factor relative to the 35mm full-frame standard. APS-C sensors have a factor around 1.5×, Micro Four Thirds 2×, and medium format around 0.79×. Multiplying the actual focal length by the crop factor gives the full-frame equivalent field of view. A 35mm lens on APS-C frames like a 52.5mm on full frame."
+          "heading": "크롭 팩터",
+          "text": "모든 센서는 35mm 풀프레임 기준에 대한 크롭 팩터를 가집니다. APS-C 센서는 약 1.5×, 마이크로 포서드는 2×, 중형 포맷은 약 0.79× 정도입니다. 실제 초점 거리에 크롭 팩터를 곱하면 풀프레임 환산 화각을 얻을 수 있습니다. APS-C에서 35mm 렌즈는 풀프레임의 52.5mm와 같은 프레이밍을 제공합니다."
         },
         "1": {
-          "heading": "Equivalent Aperture & DoF",
-          "text": "To match depth of field across formats, multiply the f-number by the same crop factor. An f/1.4 lens on Micro Four Thirds produces DoF equivalent to f/2.8 on full frame (1.4 × 2 = 2.8). This is why full-frame cameras are prized for shallow DoF — you can use physically faster lenses at wider actual apertures to achieve blur that smaller sensors cannot replicate."
+          "heading": "환산 조리개와 피사계 심도",
+          "text": "포맷 간의 피사계 심도를 일치시키려면 f값에도 같은 크롭 팩터를 곱해야 합니다. 마이크로 포서드에서 f/1.4 렌즈는 풀프레임의 f/2.8과 같은 피사계 심도를 만듭니다(1.4 × 2 = 2.8). 풀프레임 카메라가 얕은 피사계 심도로 평가받는 이유입니다 — 더 밝은 렌즈를 넓은 실제 조리개로 사용해 작은 센서로는 재현할 수 없는 흐림을 얻을 수 있기 때문입니다."
         },
         "2": {
-          "heading": "Equivalent ISO & Total Light",
-          "text": "Matching exposure brightness across formats requires adjusting ISO by the crop factor squared. The larger sensor collects more total light for the same scene, which means it can use a lower ISO for equivalent noise performance. A full-frame sensor at ISO 800 produces similar noise to an APS-C sensor at ISO 356 and a Micro Four Thirds sensor at ISO 200."
+          "heading": "환산 ISO와 총 광량",
+          "text": "포맷 간 노출 밝기를 맞추려면 ISO를 크롭 팩터의 제곱만큼 조정해야 합니다. 큰 센서는 같은 장면에서 더 많은 총 광량을 모으므로, 동일한 노이즈 수준에서 더 낮은 ISO를 사용할 수 있습니다. 풀프레임에서 ISO 800은 APS-C의 ISO 356, 마이크로 포서드의 ISO 200과 비슷한 노이즈를 만듭니다."
         }
       },
       "keyFactors": {
         "0": {
-          "label": "Crop Factor",
-          "description": "The ratio of the full-frame sensor diagonal to the target sensor diagonal. This single number drives all equivalence calculations for focal length, aperture, and ISO."
+          "label": "크롭 팩터",
+          "description": "풀프레임 센서 대각선과 대상 센서 대각선의 비율입니다. 이 값 하나가 초점 거리, 조리개, ISO의 모든 환산 계산을 결정합니다."
         },
         "1": {
-          "label": "Sensor Size",
-          "description": "Physically larger sensors capture more light and produce shallower DoF at equivalent framing. The equivalence calculator reveals exactly how much difference each format makes."
+          "label": "센서 크기",
+          "description": "물리적으로 더 큰 센서는 더 많은 빛을 받아들이고 동일한 프레이밍에서 더 얕은 피사계 심도를 만듭니다. 환산 계산기는 각 포맷이 만들어 내는 차이를 구체적으로 보여줍니다."
         },
         "2": {
-          "label": "Available Lenses",
-          "description": "Equivalence math may call for a lens that does not exist. A 17mm f/0.7 is the equivalent of 35mm f/1.4 on MFT — but no such lens is made. Real-world gear limits what is achievable."
+          "label": "사용 가능한 렌즈",
+          "description": "환산 계산이 실제로 존재하지 않는 렌즈를 요구할 수도 있습니다. 17mm f/0.7은 MFT에서 35mm f/1.4의 환산값이지만 그런 렌즈는 만들어지지 않습니다. 실제 구현 가능 여부는 현실의 장비에 달려 있습니다."
         }
       },
       "tips": {
         "0": {
-          "text": "When comparing camera systems, always compare at equivalent settings rather than matching f-numbers. An f/2.8 lens on Micro Four Thirds does not give the same background blur as f/2.8 on full frame — you need f/1.4 on MFT to match."
+          "text": "카메라 시스템을 비교할 때는 f값을 그대로 맞추지 말고 항상 환산 설정으로 비교하세요. 마이크로 포서드의 f/2.8 렌즈는 풀프레임 f/2.8과 같은 배경 흐림을 만들지 않으며, 비슷하게 맞추려면 MFT에서 f/1.4가 필요합니다."
         },
         "1": {
-          "text": "Use equivalence to plan lens purchases when switching systems. If you love the look of 85mm f/1.8 on full frame, look for a 56mm f/1.2 on APS-C or a 42.5mm f/0.95 on MFT for a similar rendering."
+          "text": "시스템을 바꿀 때는 환산을 활용해 렌즈 구매 계획을 세워 보세요. 풀프레임의 85mm f/1.8 느낌을 좋아한다면 APS-C에서는 56mm f/1.2, MFT에서는 42.5mm f/0.95를 찾으면 비슷한 렌더링을 얻을 수 있습니다."
         },
         "2": {
-          "text": "Remember that equivalence applies to depth of field and field of view, not to lens speed for exposure. An f/2.8 lens on any format still lets in the same amount of light per unit area — the larger sensor just collects more total light because of its greater area."
+          "text": "환산은 피사계 심도와 화각에 적용되는 개념이며, 노출을 위한 렌즈 밝기에는 적용되지 않습니다. 어느 포맷에서든 f/2.8 렌즈는 단위 면적당 같은 양의 빛을 통과시킵니다 — 큰 센서는 면적이 더 넓기 때문에 총 광량만 더 많이 모을 뿐입니다."
         }
       },
       "tooltips": {
         "sourceSensor": {
-          "term": "Source Sensor",
-          "definition": "The sensor format of the camera whose settings you want to match. All equivalence calculations are relative to this starting point."
+          "term": "원본 센서",
+          "definition": "설정을 맞추고 싶은 기준 카메라의 센서 포맷입니다. 모든 환산 계산은 이 시작점을 기준으로 이루어집니다."
         },
         "sourceFocalLength": {
-          "term": "Focal Length",
-          "definition": "The actual focal length of the lens on your source camera. This will be converted to equivalent focal lengths on target formats."
+          "term": "초점 거리",
+          "definition": "원본 카메라에 장착된 렌즈의 실제 초점 거리입니다. 이 값이 대상 포맷의 환산 초점 거리로 변환됩니다."
         },
         "sourceAperture": {
-          "term": "Aperture",
-          "definition": "The f-number on your source camera. The equivalent aperture on each target format determines matching depth of field."
+          "term": "조리개",
+          "definition": "원본 카메라의 f값입니다. 각 대상 포맷에서의 환산 조리개가 동일한 피사계 심도를 결정합니다."
         },
         "targetSensor": {
-          "term": "Target Sensor",
-          "definition": "The sensor format you want to find equivalent settings for. The calculator applies the relative crop factor to compute matching focal length and aperture."
+          "term": "대상 센서",
+          "definition": "환산 설정을 확인하고 싶은 센서 포맷입니다. 계산기는 상대적인 크롭 팩터를 적용해 일치하는 초점 거리와 조리개를 계산합니다."
         },
         "cropFactor": {
-          "term": "Crop Factor",
-          "definition": "The ratio between the diagonal of a 35mm full-frame sensor and the target sensor. Multiply focal length by crop factor for equivalent FOV; multiply aperture by crop factor for equivalent DoF."
+          "term": "크롭 팩터",
+          "definition": "35mm 풀프레임 센서 대각선과 대상 센서 대각선의 비율입니다. 환산 화각을 구할 때는 초점 거리에 크롭 팩터를 곱하고, 환산 피사계 심도를 구할 때는 조리개에 크롭 팩터를 곱합니다."
         },
         "equivalentFL": {
-          "term": "Equivalent Focal Length",
-          "definition": "The focal length on the target format that produces the same field of view as the source setup."
+          "term": "환산 초점 거리",
+          "definition": "원본 설정과 같은 화각을 만드는 대상 포맷의 초점 거리입니다."
         },
         "equivalentAperture": {
-          "term": "Equivalent Aperture",
-          "definition": "The f-number on the target format that produces the same depth of field as the source setup. May be faster than any real lens."
+          "term": "환산 조리개",
+          "definition": "원본 설정과 같은 피사계 심도를 만드는 대상 포맷의 f값입니다. 실제로 존재하는 어떤 렌즈보다도 밝을 수 있습니다."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "You shoot portraits with an 85mm f/1.8 lens on a full-frame camera. A friend uses Micro Four Thirds (2× crop). What focal length does your friend need to match your field of view?",
-          "hint": "Divide the full-frame focal length by the MFT crop factor to find the actual lens needed.",
-          "successMessage": "Correct! 85mm / 2 = 42.5mm. Your friend needs a 42.5mm lens on Micro Four Thirds to get the same framing as your 85mm on full frame.",
-          "failureMessage": "To match the field of view, divide by the crop factor: 85mm / 2 = 42.5mm. That is the actual focal length needed on the MFT body.",
+          "scenario": "풀프레임 카메라에 85mm f/1.8 렌즈로 인물 사진을 촬영합니다. 친구는 마이크로 포서드(2× 크롭)를 사용합니다. 친구가 같은 화각을 얻으려면 어떤 초점 거리의 렌즈가 필요할까요?",
+          "hint": "풀프레임 초점 거리를 MFT 크롭 팩터로 나누면 실제로 필요한 렌즈의 초점 거리를 구할 수 있습니다.",
+          "successMessage": "정답입니다! 85mm / 2 = 42.5mm. 친구가 풀프레임의 85mm와 같은 프레이밍을 얻으려면 마이크로 포서드에서 42.5mm 렌즈가 필요합니다.",
+          "failureMessage": "화각을 맞추려면 크롭 팩터로 나눠야 합니다: 85mm / 2 = 42.5mm. 이것이 MFT 바디에서 필요한 실제 초점 거리입니다.",
           "options": {
             "0": {
               "label": "42.5mm"
@@ -93,36 +93,36 @@
           }
         },
         "1": {
-          "scenario": "Your friend found a 42.5mm f/1.8 lens for their MFT camera. Will the background blur match your 85mm f/1.8 on full frame?",
-          "hint": "Apply the crop factor to the aperture as well to find the equivalent DoF.",
-          "successMessage": "Right! The 42.5mm f/1.8 on MFT gives equivalent DoF to 85mm f/3.6 on full frame (1.8 × 2 = 3.6). Your f/1.8 full-frame shot produces significantly more blur.",
-          "failureMessage": "No — the MFT f/1.8 gives DoF equivalent to f/3.6 on full frame (1.8 × 2× crop = 3.6). To match your full-frame f/1.8 blur, your friend would need f/0.9 on MFT, which does not exist.",
+          "scenario": "친구가 MFT 카메라용 42.5mm f/1.8 렌즈를 구했습니다. 풀프레임에서 사용하는 85mm f/1.8과 배경 흐림이 같을까요?",
+          "hint": "환산 피사계 심도를 구할 때는 조리개에도 크롭 팩터를 적용해야 합니다.",
+          "successMessage": "맞습니다! MFT의 42.5mm f/1.8은 풀프레임의 85mm f/3.6과 같은 피사계 심도를 만듭니다(1.8 × 2 = 3.6). 풀프레임 f/1.8 샷이 훨씬 더 큰 배경 흐림을 만듭니다.",
+          "failureMessage": "아닙니다 — MFT의 f/1.8은 풀프레임의 f/3.6에 해당하는 피사계 심도를 만듭니다(1.8 × 2× 크롭 = 3.6). 풀프레임 f/1.8의 흐림을 맞추려면 친구에게 MFT의 f/0.9가 필요한데, 그런 렌즈는 존재하지 않습니다.",
           "options": {
             "0": {
-              "label": "Yes — same f/1.8 means same blur"
+              "label": "네 — f/1.8이 같으니 흐림도 같습니다"
             },
             "1": {
-              "label": "No — MFT f/1.8 equals full-frame f/3.6 depth of field"
+              "label": "아니요 — MFT의 f/1.8은 풀프레임의 f/3.6 피사계 심도에 해당합니다"
             },
             "2": {
-              "label": "No — MFT produces more blur because the sensor is smaller"
+              "label": "아니요 — 센서가 작아서 MFT가 더 큰 흐림을 만듭니다"
             }
           }
         },
         "2": {
-          "scenario": "A photographer switching from full frame to APS-C (1.5× crop) wants to match the look of a 50mm f/1.4 on full frame. What equivalent lens and aperture do they need on APS-C?",
-          "hint": "Divide focal length by the crop factor for equivalent FOV. Divide aperture by the crop factor for equivalent DoF.",
-          "successMessage": "Exactly! 50 / 1.5 = 33mm for field of view, and f/1.4 / 1.5 = f/0.93 for matching DoF. Since no f/0.93 lens exists, the APS-C camera cannot fully replicate the full-frame look.",
-          "failureMessage": "The correct answer is ~33mm f/0.93. Since 50 / 1.5 = 33.3mm and 1.4 / 1.5 = 0.93. No f/0.93 lens exists, so the full-frame look cannot be fully matched on APS-C.",
+          "scenario": "풀프레임에서 APS-C(1.5× 크롭)로 바꾸는 사진가가 풀프레임 50mm f/1.4의 느낌을 재현하고 싶어 합니다. APS-C에서 어떤 환산 렌즈와 조리개가 필요할까요?",
+          "hint": "환산 화각은 초점 거리를 크롭 팩터로 나누고, 환산 피사계 심도는 조리개를 크롭 팩터로 나눠서 구합니다.",
+          "successMessage": "정확합니다! 화각을 위해서는 50 / 1.5 = 33mm, 피사계 심도를 맞추려면 f/1.4 / 1.5 = f/0.93이 필요합니다. f/0.93 렌즈는 존재하지 않기 때문에 APS-C 카메라로는 풀프레임의 느낌을 완전히 재현할 수 없습니다.",
+          "failureMessage": "정답은 약 33mm f/0.93입니다. 50 / 1.5 = 33.3mm, 1.4 / 1.5 = 0.93이기 때문입니다. f/0.93 렌즈는 존재하지 않으므로 APS-C에서는 풀프레임의 느낌을 완전히 맞출 수 없습니다.",
           "options": {
             "0": {
-              "label": "35mm f/1.4 — close enough"
+              "label": "35mm f/1.4 — 비슷하게 맞습니다"
             },
             "1": {
-              "label": "33mm f/0.93 — exact match, but no such lens exists"
+              "label": "33mm f/0.93 — 정확히 맞지만 그런 렌즈는 존재하지 않습니다"
             },
             "2": {
-              "label": "75mm f/2.1 — multiply by crop factor"
+              "label": "75mm f/2.1 — 크롭 팩터를 곱합니다"
             }
           }
         }
