@@ -13,7 +13,7 @@ export function drawPrintPreset(
   paper: PrintSizePreset,
   orientation: 'landscape' | 'portrait',
   fitMode: 'crop' | 'fit',
-  dpi: number,
+  _dpi: number,
   viewingDistance: ViewingDistance,
   _units: UnitSystem,
 ): { contentHeight: number; pxPerMm: number } {
