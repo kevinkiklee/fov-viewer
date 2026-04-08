@@ -73,9 +73,8 @@ export default withSentryConfig(withBundleAnalyzer(withNextIntl(nextConfig)), {
   // Suppress source map upload logs except in CI
   silent: !process.env.CI,
 
-  // Don't serve source maps to browsers
-  hideSourceMaps: true,
-
-  // Widen file upload for better stack traces
-  widenClientFileUpload: true,
+  // Delete source maps after upload so browsers can't access them
+  sourcemaps: {
+    filesToDeleteAfterUpload: ['.next/static/**/*.map'],
+  },
 })
