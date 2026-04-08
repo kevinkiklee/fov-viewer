@@ -1,3 +1,5 @@
+import { mpToPixelDimensions } from './resolution'
+
 /**
  * Calculate pixel pitch (the physical size of one pixel) from sensor dimensions.
  *
@@ -16,10 +18,11 @@
  * @returns Pixel pitch in micrometers (µm)
  */
 export function pixelPitch(sensorWidthMm: number, resolutionMp: number, sensorHeightMm?: number): number {
-  const totalPixels = resolutionMp * 1e6
-  const aspect = sensorHeightMm ? sensorWidthMm / sensorHeightMm : 3 / 2
-  const widthPixels = Math.sqrt(totalPixels * aspect)
-  const pitchMm = sensorWidthMm / widthPixels
+  const aspect = sensorHeightMm
+    ? { w: sensorWidthMm, h: sensorHeightMm }
+    : { w: 3, h: 2 }
+  const { pxW } = mpToPixelDimensions(resolutionMp, aspect)
+  const pitchMm = sensorWidthMm / pxW
   return pitchMm * 1000
 }
 
