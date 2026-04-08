@@ -174,7 +174,14 @@ export function MegapixelVisualizer() {
             </div>
           ) : (
             <Suspense fallback={<div className={ss.printTableWrap} />}>
-              <PrintTableView />
+              <PrintTableView
+                visibleMps={state.visibleMps}
+                aspectId={state.aspectId}
+                units={state.units}
+                viewingDistance={state.viewingDistance}
+                bitDepth={state.bitDepth}
+                cropTargetId={state.cropTargetId}
+              />
             </Suspense>
           )}
         </div>
