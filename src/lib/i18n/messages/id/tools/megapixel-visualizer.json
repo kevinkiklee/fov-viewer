@@ -1,0 +1,26 @@
+{
+  "toolUI": {
+    "megapixel-visualizer": {
+      "megapixels": "Megapixels",
+      "customMegapixels": "Custom Megapixels",
+      "phoneBinningNote": "{advertised} MP (effective {effective} MP)",
+      "aspectRatio": "Aspect Ratio",
+      "units": "Units",
+      "unitsMetric": "Metric",
+      "unitsImperial": "Imperial",
+      "dpi": "DPI",
+      "advancedDpi": "Advanced DPI",
+      "viewingDistance": "Viewing Distance",
+      "distanceArms": "Arm's Length",
+      "distanceNear": "Near",
+      "distanceFar": "Far",
+      "bitDepth": "Bit Depth",
+      "bitDepthJpeg": "JPEG (8-bit)",
+      "bitDepthRaw14": "RAW (14-bit)",
+      "bitDepthTiff": "TIFF (16-bit)",
+      "fileSizeJpeg": "JPEG",
+      "fileSizeRaw": "RAW",
+      "fileSizeTiff": "TIFF"
+    }
+  }
+}
