@@ -9,6 +9,7 @@ import type {
   GridType,
   TexturePreset,
 } from '@/app/[locale]/frame-studio/_components/types'
+import { ASPECT_RATIOS as SHARED_ASPECTS } from './aspectRatios'
 
 // ---------------------------------------------------------------------------
 // Aspect ratios (CropPanel)
@@ -16,13 +17,13 @@ import type {
 
 export const ASPECT_RATIOS: AspectRatioPreset[] = [
   { label: 'Original', value: 'original', w: 0, h: 0 },
-  { label: 'Free', value: null, w: 0, h: 0 },
-  { label: '1:1', value: 1, w: 1, h: 1 },
-  { label: '4:3', value: 4 / 3, w: 4, h: 3 },
-  { label: '3:2', value: 3 / 2, w: 3, h: 2 },
-  { label: '16:9', value: 16 / 9, w: 16, h: 9 },
-  { label: '5:4', value: 5 / 4, w: 5, h: 4 },
-  { label: '7:5', value: 7 / 5, w: 7, h: 5 },
+  { label: 'Free',     value: null,       w: 0, h: 0 },
+  ...SHARED_ASPECTS.map(a => ({
+    label: a.label,
+    value: a.w / a.h,
+    w: a.w,
+    h: a.h,
+  })),
 ]
 
 // ---------------------------------------------------------------------------
