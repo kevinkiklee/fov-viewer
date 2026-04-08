@@ -30,17 +30,14 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     // Vercel Live toolbar (feedback widget, comments, real-time presence) is
-    // injected on preview/deployment URLs by the Vercel platform. Allowing
-    // vercel.live and its Pusher websocket only on non-production environments
-    // keeps the production CSP locked down while preview URLs stay functional.
-    const isProd = process.env.VERCEL_ENV === 'production'
-    const vercelLiveScript = isProd ? '' : ' https://vercel.live'
-    const vercelLiveStyle = isProd ? '' : ' https://vercel.live'
-    const vercelLiveImg = isProd ? '' : ' https://vercel.live https://vercel.com'
-    const vercelLiveConnect = isProd ? '' : ' https://vercel.live wss://ws-us3.pusher.com'
-    const vercelLiveFrame = isProd ? '' : ' https://vercel.live'
-    const vercelLiveFont = isProd ? '' : ' https://vercel.live https://assets.vercel.com'
-
+    // injected by the Vercel platform whenever the deployment is accessed via
+    // a *.vercel.app URL. `VERCEL_ENV` reflects the *environment* (production
+    // / preview / development), NOT the host the request came in on — pushes
+    // to `main` are VERCEL_ENV='production' but still get a *.vercel.app
+    // alias that serves the toolbar, so gating by env was wrong. Static
+    // response headers can't see the request host, so we always allow the
+    // first-party vercel.live origins. These are Vercel-owned and only load
+    // when the platform actively injects the toolbar on deployment URLs.
     return [
       {
         source: '/images/:path*',
@@ -63,12 +60,12 @@ const nextConfig: NextConfig = {
             key: 'Content-Security-Policy',
             value: [
               "default-src 'self'",
-              `script-src 'self' 'unsafe-inline'${process.env.NODE_ENV === 'development' ? " 'unsafe-eval'" : ''} https://www.googletagmanager.com https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://cdn-cookieyes.com https://va.vercel-scripts.com https://us-assets.i.posthog.com https://static.cloudflareinsights.com https://connect.facebook.net${vercelLiveScript}`,
-              `style-src 'self' 'unsafe-inline'${vercelLiveStyle}`,
-              `img-src 'self' blob: data: https://pagead2.googlesyndication.com https://www.google.com https://googleads.g.doubleclick.net https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://cdn-cookieyes.com https://www.facebook.com${vercelLiveImg}`,
-              `font-src 'self'${vercelLiveFont}`,
-              `connect-src 'self' blob: https://www.google.com https://analytics.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://cdn-cookieyes.com https://log.cookieyes.com https://us.i.posthog.com https://us-assets.i.posthog.com https://cloudflareinsights.com https://www.facebook.com${vercelLiveConnect}`,
-              `frame-src 'self' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://www.facebook.com${vercelLiveFrame}`,
+              `script-src 'self' 'unsafe-inline'${process.env.NODE_ENV === 'development' ? " 'unsafe-eval'" : ''} https://www.googletagmanager.com https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://cdn-cookieyes.com https://va.vercel-scripts.com https://us-assets.i.posthog.com https://static.cloudflareinsights.com https://connect.facebook.net https://vercel.live`,
+              "style-src 'self' 'unsafe-inline' https://vercel.live",
+              "img-src 'self' blob: data: https://pagead2.googlesyndication.com https://www.google.com https://googleads.g.doubleclick.net https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://cdn-cookieyes.com https://www.facebook.com https://vercel.live https://vercel.com",
+              "font-src 'self' https://vercel.live https://assets.vercel.com",
+              "connect-src 'self' blob: https://www.google.com https://analytics.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://cdn-cookieyes.com https://log.cookieyes.com https://us.i.posthog.com https://us-assets.i.posthog.com https://cloudflareinsights.com https://www.facebook.com https://vercel.live wss://ws-us3.pusher.com",
+              "frame-src 'self' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://www.facebook.com https://vercel.live",
               "frame-ancestors 'self'",
               "base-uri 'self'",
               "form-action 'self'",
