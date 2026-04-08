@@ -28,14 +28,20 @@ export function AdUnit({ slot, format, className, channel, testId }: AdUnitProps
   const { width, height } = AD_FORMATS[format]
 
   useEffect(() => {
-    if (!isAdsEnabled()) return
+    // Skip when there's no configured slot — the component returns null
+    // below and never renders an <ins>, so calling push({}) would target
+    // some OTHER adsbygoogle element (e.g. one Auto Ads auto-injected) and
+    // throw "All 'ins' elements already have ads in them" once those were
+    // already filled. Return null early and let AdSense's auto-ads layer
+    // manage the queue on its own.
+    if (!isAdsEnabled() || !slot) return
 
     // Guard against AdSense's "All 'ins' elements already have ads in them"
-    // TagError. push({}) tells AdSense to fill the next unfilled <ins>, but
-    // the error gets logged asynchronously from AdSense's queue processor
-    // (outside our try/catch) if the effect runs again for an <ins> that's
-    // already filled — e.g. on App Router route transitions where the
-    // component re-mounts but AdSense's DOM state was never cleared.
+    // TagError. The error gets logged asynchronously from AdSense's queue
+    // processor (outside our try/catch) if the effect runs again for an
+    // <ins> that's already filled — e.g. on App Router route transitions
+    // where the component re-mounts but AdSense's DOM state was never
+    // cleared.
     if (pushedRef.current) return
     pushedRef.current = true
 
