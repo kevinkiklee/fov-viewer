@@ -81,7 +81,7 @@ export function MegapixelVisualizer() {
             </div>
           ) : (
             <Suspense fallback={<div className={ss.printTableWrap} />}>
-              <PrintTableView {...state} />
+              <PrintTableView />
             </Suspense>
           )}
         </div>
