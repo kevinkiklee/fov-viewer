@@ -3,6 +3,7 @@ import { FRAME_STUDIO_SKELETON } from './frame-studio'
 import { HYPERFOCAL_SKELETON, SENSOR_SIZE_SKELETON } from './content-hyperfocal-sensor'
 import { EXIF_VIEWER_SKELETON, HISTOGRAM_SKELETON } from './content-exif-histogram'
 import { COLOR_SCHEME_SKELETON, FOV_SIMULATOR_SKELETON } from './content-color-fov'
+import { MEGAPIXEL_VISUALIZER_SKELETON } from './megapixel-visualizer'
 
 export const TOOL_EDUCATION_SKELETONS_2: ToolEducationSkeleton[] = [
   HYPERFOCAL_SKELETON,
@@ -12,4 +13,5 @@ export const TOOL_EDUCATION_SKELETONS_2: ToolEducationSkeleton[] = [
   COLOR_SCHEME_SKELETON,
   FOV_SIMULATOR_SKELETON,
   FRAME_STUDIO_SKELETON,
+  MEGAPIXEL_VISUALIZER_SKELETON,
 ]
