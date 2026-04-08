@@ -73,7 +73,7 @@ npm install
 npm run dev
 ```
 
-The dev server starts at `http://localhost:3000`. In development, all tools are visible regardless of production status — draft tools show a banner.
+The dev server starts at `http://localhost:3100`. In development, all tools are visible regardless of production status — draft tools show a banner.
 
 ## Scripts
 

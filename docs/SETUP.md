@@ -17,7 +17,7 @@ git clone https://github.com/kevinkiklee/phototools.io.git
 cd phototools.io
 npm install
 npm run dev
-# Open http://localhost:3000
+# Open http://localhost:3100
 ```
 
 ## Available Scripts
@@ -139,7 +139,7 @@ npm run test:watch     # Watch mode
 
 | Issue | Fix |
 |-------|-----|
-| Blank page at `localhost:3000` | Check the dev server is running (`npm run dev`) |
+| Blank page at `localhost:3100` | Check the dev server is running (`npm run dev`) |
 | `npm ci` fails | Delete `node_modules` and retry, or ensure Node 20+ |
 | Tests fail to run | Run `npm ci` to ensure vitest is installed |
 | Build fails on types | Run `npx tsc --noEmit` to see TypeScript errors |

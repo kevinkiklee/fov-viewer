@@ -20,7 +20,7 @@ PhotoTools is an educational photography application — free calculators, simul
 
 ## Commands
 
-- `npm run dev` — start dev server with Turbopack at `http://localhost:3000`
+- `npm run dev` — start dev server with Turbopack at `http://localhost:3100`
 - `npm run build` — production build via `next build`
 - `npm run start` — serve production build locally
 - `npm test` — run Vitest tests (781 tests across 56 files)
@@ -273,7 +273,7 @@ src/e2e/
 
 1. Build first: `npm run build`
 2. Run tests: `npm run test:e2e` (or `npx playwright test`)
-3. If port 3000 is in use: `lsof -ti:3000 | xargs kill -9` then retry
+3. If port 3100 is in use: `lsof -ti:3100 | xargs kill -9` then retry
 4. Run a single spec: `npx playwright test src/e2e/tools/fov-simulator.spec.ts`
 5. Debug mode: `npx playwright test --debug`
 6. View last report: `npx playwright show-report`

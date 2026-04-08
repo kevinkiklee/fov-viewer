@@ -10,7 +10,7 @@ export default defineConfig({
     ? [['html', { open: 'never' }], ['github']]
     : [['html', { open: 'never' }]],
   use: {
-    baseURL: process.env.BASE_URL ?? 'http://localhost:3000',
+    baseURL: process.env.BASE_URL ?? 'http://localhost:3100',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'on-first-retry',
@@ -26,7 +26,7 @@ export default defineConfig({
   ],
   webServer: {
     command: 'npm run start',
-    url: 'http://localhost:3000',
+    url: 'http://localhost:3100',
     reuseExistingServer: !process.env.CI,
   },
 })
