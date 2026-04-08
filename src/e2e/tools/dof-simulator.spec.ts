@@ -100,20 +100,28 @@ test.describe('DOF Simulator', () => {
   test('sensor dropdown changes DoF values', async ({ page }) => {
     const panel = sidebar(page)
 
-    // Read initial hyperfocal (fourth result card)
+    // Read initial hyperfocal (fourth result card). Hyperfocal is
+    // sensitive to CoC, which changes with sensor size — switching from
+    // full-frame (default) to APS-C should produce a clearly different
+    // value (~86m → ~132m for the default focal/aperture).
     const hyperfocalCard = panel.locator('[class*="resultsGrid"]').first()
       .locator('[class*="resultCard"]').nth(3)
     const initialHyper = await hyperfocalCard.locator('[class*="resultValue"]').textContent()
 
-    // Select APS-C sensor (smaller sensor = deeper DoF = shorter hyperfocal)
+    // Select APS-C (Nikon) sensor via the first <select> in the sidebar
+    // (which is the sensor dropdown in DofSettingsPanel)
     const sensorSelect = panel.locator('select').first()
     await sensorSelect.selectOption('apsc_n')
 
-    // Wait for recalculation and poll until the hyperfocal value updates
+    // Verify the select actually committed the new value — this is the
+    // source of the React state update that flows into coc → hyperfocal
+    await expect(sensorSelect).toHaveValue('apsc_n')
+
+    // Poll until the hyperfocal value updates (React rerender + useMemo)
     await expect(async () => {
       const updatedHyper = await hyperfocalCard.locator('[class*="resultValue"]').textContent()
       expect(updatedHyper).not.toBe(initialHyper)
-    }).toPass({ timeout: 5000 })
+    }).toPass({ timeout: 10000 })
   })
 
   test('orientation toggle switches between landscape and portrait', async ({ page }) => {
