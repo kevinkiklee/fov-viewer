@@ -39,7 +39,7 @@ export function AnalyticsProvider({ children }: AnalyticsProviderProps) {
   const [marketingConsent, setMarketingConsent] = useState(false)
   const [enabled, setEnabled] = useState(false)
   const initializedRef = useRef(false)
-  const prevPathnameRef = useRef(pathname)
+  const prevPathnameRef = useRef<string | null>(null)
 
   useEffect(() => {
     if (!navigator.webdriver) {

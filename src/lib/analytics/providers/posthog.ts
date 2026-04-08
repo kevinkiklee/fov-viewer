@@ -9,6 +9,7 @@ export function initPostHog(): void {
 
   posthog.init(key, {
     api_host: host,
+    ui_host: 'https://eu.posthog.com',
     persistence: 'memory',
     autocapture: true,
     capture_pageview: false,
@@ -24,7 +25,11 @@ export function initPostHog(): void {
 
 export function trackPostHog(eventName: string, properties: Record<string, unknown>): void {
   if (!initialized) return
-  posthog.capture(eventName, properties)
+  // PostHog's built-in dashboards (DAU/WAU, retention, web analytics) key off
+  // the special `$pageview` event. Translate our generic `page_view` event name
+  // when forwarding to PostHog so those dashboards populate.
+  const phEventName = eventName === 'page_view' ? '$pageview' : eventName
+  posthog.capture(phEventName, properties)
 }
 
 export function upgradePostHog(): void {

@@ -52,6 +52,17 @@ describe('posthog provider', () => {
     expect(mockPosthog.capture).not.toHaveBeenCalled()
   })
 
+  it('translates page_view to $pageview so PostHog dashboards populate', () => {
+    vi.stubEnv('NEXT_PUBLIC_POSTHOG_KEY', 'phc_test123')
+    vi.stubEnv('NEXT_PUBLIC_POSTHOG_HOST', '/phog/ingest')
+    initPostHog()
+    trackPostHog('page_view', { page_path: '/en/fov-simulator', page_title: 'FOV Simulator' })
+    expect(mockPosthog.capture).toHaveBeenCalledWith('$pageview', {
+      page_path: '/en/fov-simulator',
+      page_title: 'FOV Simulator',
+    })
+  })
+
   it('upgradePostHog enables full tracking', () => {
     vi.stubEnv('NEXT_PUBLIC_POSTHOG_KEY', 'phc_test123')
     vi.stubEnv('NEXT_PUBLIC_POSTHOG_HOST', '/phog/ingest')
