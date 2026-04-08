@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl'
 import { calcCropFactor, calcAspectCropFactor } from '@/lib/data/sensors'
 import type { SensorPreset } from '@/lib/types'
-import { formatAspectRatio } from './sensorSizeHelpers'
+import { formatAspectRatio } from '@/lib/math/resolution'
 import ss from './SensorSize.module.css'
 
 export function SensorTable({ sensors }: { sensors: Required<SensorPreset>[] }) {

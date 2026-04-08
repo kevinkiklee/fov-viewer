@@ -9,26 +9,6 @@ export function setCustomColorIdx(n: number) { customColorIdx = n }
 export const ALL_SENSOR_IDS = SENSORS.map((s) => s.id)
 export const ALL_SENSOR_ID_SET = new Set(ALL_SENSOR_IDS)
 
-export function gcd(a: number, b: number): number {
-  a = Math.round(a * 10)
-  b = Math.round(b * 10)
-  while (b) { [a, b] = [b, a % b] }
-  return a
-}
-
-export function formatAspectRatio(w: number, h: number): string {
-  const g = gcd(w, h)
-  const rw = Math.round(w * 10 / g)
-  const rh = Math.round(h * 10 / g)
-  const ratio = w / h
-  if (Math.abs(ratio - 3 / 2) < 0.02) return '3:2'
-  if (Math.abs(ratio - 4 / 3) < 0.02) return '4:3'
-  if (Math.abs(ratio - 16 / 9) < 0.02) return '16:9'
-  if (Math.abs(ratio - 5 / 4) < 0.02) return '5:4'
-  if (Math.abs(ratio - 1) < 0.02) return '1:1'
-  return `${rw}:${rh}`
-}
-
 export function rgba(hex: string, a: number): string {
   const n = parseInt(hex.replace('#', ''), 16)
   return `rgba(${(n >> 16) & 0xff},${(n >> 8) & 0xff},${n & 0xff},${a})`
