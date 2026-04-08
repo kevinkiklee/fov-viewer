@@ -1,4 +1,5 @@
 import type { SensorPreset } from '@/lib/types'
+import { CUSTOM_ENTRY_COLORS } from '@/lib/data/colors'
 
 export type DisplayMode = 'overlay' | 'side-by-side' | 'pixel-density'
 
@@ -6,7 +7,7 @@ export type SensorRect = { id: string; x: number; y: number; w: number; h: numbe
 
 export type StoredCustomSensor = { id: string; name: string; w: number; h: number; cropFactor: number; color: string; mp?: number }
 
-export const CUSTOM_COLORS = ['#06b6d4', '#f97316', '#84cc16', '#e879f9', '#facc15', '#fb7185']
+export const CUSTOM_COLORS = CUSTOM_ENTRY_COLORS
 
 export const ANIM_DURATION = 300
 
