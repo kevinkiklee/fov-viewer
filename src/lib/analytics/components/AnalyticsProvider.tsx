@@ -49,6 +49,29 @@ export function AnalyticsProvider({ children }: AnalyticsProviderProps) {
     }
   }, [])
 
+  // Inject gtag bootstrap via DOM rather than rendering <script> in JSX.
+  // Because `enabled` flips from false → true inside the effect above, the
+  // AnalyticsProvider re-renders post-hydration with the script tags. React 19
+  // warns (and refuses to execute) scripts that first appear in a client
+  // component after the initial render. DOM injection sidesteps both issues
+  // while preserving the load order (init snippet must run before gtag.js so
+  // window.dataLayer is ready to queue commands).
+  useEffect(() => {
+    if (!enabled) return
+    if (document.getElementById('phototools-gtag-loader')) return
+
+    const init = document.createElement('script')
+    init.id = 'phototools-gtag-init'
+    init.textContent = GTAG_INIT_SNIPPET
+    document.head.appendChild(init)
+
+    const loader = document.createElement('script')
+    loader.id = 'phototools-gtag-loader'
+    loader.async = true
+    loader.src = 'https://www.googletagmanager.com/gtag/js?id=G-B0QND42GRG'
+    document.head.appendChild(loader)
+  }, [enabled])
+
   useEffect(() => {
     if (!enabled || initializedRef.current) return
     initializedRef.current = true
@@ -68,8 +91,7 @@ export function AnalyticsProvider({ children }: AnalyticsProviderProps) {
     const cleanupConsent = onConsentChange((state) => applyConsent(state))
 
     if (process.env.NODE_ENV !== 'production') {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      ;(window as any).__analytics = {
+      ;(window as unknown as Record<string, unknown>).__analytics = {
         grantConsent: (category: string) => {
           const current = getConsentState()
           applyConsent({
@@ -167,18 +189,12 @@ export function AnalyticsProvider({ children }: AnalyticsProviderProps) {
       {children}
       <SpeedInsights />
       <Analytics />
-      {/* GTM/gtag loaded via native React 19 <script async> rather than
-          next/script. next/script's "afterInteractive" strategy emits
-          <link rel="preload" as="script"> and then defers execution,
-          which fires the browser's "preloaded but not used within a
-          few seconds" warning. The inline init snippet populates
-          window.dataLayer so gtag.js can process queued commands
-          whenever it loads. */}
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-B0QND42GRG"
-      />
-      <script dangerouslySetInnerHTML={{ __html: GTAG_INIT_SNIPPET }} />
+      {/* GTM/gtag is injected via DOM in the effect above rather than via
+          next/script or React <script> JSX. next/script emits a preload hint
+          that fires the browser's "preloaded but not used" warning, and
+          rendering <script> in a client component after hydration triggers
+          React 19's "scripts inside React components are never executed"
+          warning. DOM injection avoids both. */}
       {marketingConsent && metaPixelId && (
         <Script
           id="meta-pixel"
