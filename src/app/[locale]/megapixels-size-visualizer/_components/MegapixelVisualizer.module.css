@@ -55,6 +55,40 @@
   gap: 16px;
 }
 
+/* ── Group MP list and custom form with tight spacing ── */
+.mpListGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Compact shared ModeToggle buttons anywhere inside the sidebar (e.g. Units toggle) */
+.sidebar .controlGroup button {
+  min-height: 28px;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+/* ── Table controls row (viewing distance + bit depth above the print table) ── */
+.tableControls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+.tableControls .controlGroup {
+  margin-bottom: 0;
+}
+.tableControls .legend {
+  margin-bottom: 4px;
+}
+/* Shrink the shared ModeToggle buttons inside this row only */
+.tableControls button {
+  min-height: 28px;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
 .mobileControls {
   display: none;
 }
@@ -256,25 +290,53 @@
   .appBody {
     flex-direction: column;
     overflow: visible;
+    padding: 12px;
+    gap: 16px;
+  }
+
+  /* Unwrap .main so canvas, table controls, and table become direct flex
+     children of .appBody — lets us reorder them relative to the sidebar. */
+  .main {
+    display: contents;
   }
 
   .sidebar {
-    display: none;
+    width: 100%;
+    min-width: 0;
+    border-right: none;
+    border-bottom: none;
+    padding: 0;
+    overflow-y: visible;
+    order: 2;
   }
 
-  .main {
-    padding: 8px;
+  .canvasWrap {
+    flex: 0 0 auto;
+    min-height: 340px;
+    height: 340px;
+    order: 1;
+  }
+
+  .tableControls {
+    grid-template-columns: 1fr;
+    order: 3;
+  }
+
+  .printTableWrap {
+    max-width: 100%;
+    order: 4;
   }
 
   .canvas {
-    min-height: 500px;
+    min-height: 340px;
   }
 
-  .mobileControls {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 16px;
+  .printTable {
+    font-size: 11px;
+  }
+  .printTable th,
+  .printTable td {
+    padding: 5px 3px;
   }
 
   .desktopOnly {
@@ -284,25 +346,13 @@
     display: block;
   }
 
-  .modeBtn {
-    min-height: 44px;
-  }
-
   .checkLabel {
     padding: 6px 8px;
   }
 
-  .resolutionField input {
-    min-height: 44px;
-  }
-
   .customInput {
-    min-height: 44px;
+    min-height: 40px;
     font-size: 16px;
-  }
-
-  .customAddBtn {
-    min-height: 44px;
   }
 }
 
@@ -323,14 +373,6 @@
 .customFormMp {
   flex: 0 0 52px;
   text-align: center;
-}
-
-.customFormAddBtn {
-  flex: 0 0 auto;
-  padding: 6px 10px;
-  font-size: 16px;
-  line-height: 1;
-  font-weight: 600;
 }
 
 .customFormError {
@@ -389,6 +431,21 @@
   font-weight: 500;
   cursor: pointer;
   transition: background var(--duration-fast) var(--ease-out), opacity var(--duration-fast);
+}
+
+/* Single-row form variant: darker text, larger + icon for readability */
+.customFormAddBtn {
+  flex: 0 0 auto;
+  padding: 4px 14px;
+  min-height: 28px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  color: #000;
+}
+.customFormAddBtn:hover {
+  color: #000;
+  background: var(--accent-hover);
 }
 
 .customAddBtn:hover {
@@ -554,7 +611,7 @@
   contain: layout paint;
   position: relative;
   width: 100%;
-  flex: 1;
+  flex: 1 1 400px;
   min-height: 300px;
 }
 
@@ -588,21 +645,39 @@
 }
 
 .printTableWrap {
-  flex: 1;
-  min-height: 400px;
-  overflow: auto;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }
 
 .printTable {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   font-size: 12px;
 }
 .printTable th,
 .printTable td {
-  padding: 6px 8px;
+  padding: 6px 4px;
   border: 1px solid var(--border);
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-variant-numeric: tabular-nums;
+}
+
+.unitBadge {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-muted);
+  text-transform: none;
+  letter-spacing: 0;
 }
 .printTable th:first-child {
   position: sticky;
@@ -630,15 +705,22 @@
   padding: 0;
 }
 
-/* ── Aspect ratio compact button grid (3 cols × 2 rows) ── */
+/* ── Compact button grid (shared: aspect ratio, display mode) ── */
 .aspectGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4px;
 }
 
+.modeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
 .aspectBtn {
-  padding: 6px 4px;
+  min-height: 28px;
+  padding: 4px 10px;
   background: var(--bg-primary);
   color: var(--text-secondary);
   border: 1px solid var(--border);
@@ -650,18 +732,35 @@
   transition: background var(--duration-fast), color var(--duration-fast), border-color var(--duration-fast);
 }
 
-.aspectBtn:hover {
+.modeBtn {
+  min-height: 28px;
+  padding: 4px 10px;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--duration-fast), color var(--duration-fast), border-color var(--duration-fast);
+}
+
+.aspectBtn:hover,
+.modeBtn:hover {
   border-color: var(--text-secondary);
   color: var(--text-primary);
 }
 
-.aspectBtnActive {
+.aspectBtnActive,
+.modeBtnActive {
   background: var(--accent);
   color: var(--text-on-accent, #fff);
   border-color: var(--accent);
 }
 
-.aspectBtnActive:hover {
+.aspectBtnActive:hover,
+.modeBtnActive:hover {
   background: var(--accent-hover, var(--accent));
   color: var(--text-on-accent, #fff);
 }

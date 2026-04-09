@@ -7,7 +7,8 @@ export function roundRect(
   ctx: CanvasRenderingContext2D,
   x: number, y: number, w: number, h: number, r: number,
 ) {
-  r = Math.min(r, w / 2, h / 2)
+  // Clamp: radius must be non-negative and no larger than half the shortest side.
+  r = Math.max(0, Math.min(r, w / 2, h / 2))
   ctx.beginPath()
   ctx.moveTo(x + r, y)
   ctx.lineTo(x + w - r, y)
@@ -30,6 +31,8 @@ export function drawRect(
   color: string,
   alpha: number,
 ) {
+  // Skip entirely if the rect has no area (prevents negative radius in roundRect).
+  if (w <= 0 || h <= 0) return
   const r = Math.min(4, w * 0.02)
   ctx.save()
   ctx.globalAlpha = alpha

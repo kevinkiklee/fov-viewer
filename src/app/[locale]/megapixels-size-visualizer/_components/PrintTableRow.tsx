@@ -4,8 +4,6 @@ import { memo } from 'react'
 import type { MegapixelPreset, UnitSystem } from '@/lib/types'
 import { mpToPixelDimensions } from '@/lib/math/resolution'
 import { printSizeMm, qualityTier, fileSizeBytes, type ViewingDistance, type BitDepth, type QualityTier } from '@/lib/math/megapixel'
-import { cropReach } from '@/lib/math/resolution'
-import { mmToDisplay } from '@/lib/utils/units'
 import ss from './MegapixelVisualizer.module.css'
 
 type DpiCol = { value: number }
@@ -17,7 +15,6 @@ interface Props {
   units: UnitSystem
   viewingDistance: ViewingDistance
   bitDepth: BitDepth
-  cropTarget: { id: string; label: string; cropFactor: number } | null
 }
 
 function tierClass(tier: QualityTier): string {
@@ -39,12 +36,18 @@ function tierLabel(tier: QualityTier): string {
   return tier
 }
 
+/** Format a mm measurement as an integer in the target unit, no suffix. */
+function formatSize(mm: number, units: UnitSystem): string {
+  const value = units === 'imperial' ? mm / 25.4 : mm / 10
+  return Math.round(value).toString()
+}
+
 export const PrintTableRow = memo(function PrintTableRow({
-  mp, aspect, dpis, units, viewingDistance, bitDepth, cropTarget,
+  mp, aspect, dpis, units, viewingDistance, bitDepth,
 }: Props) {
   const { pxW, pxH } = mpToPixelDimensions(mp.mp, aspect)
   const size = fileSizeBytes(mp.mp, bitDepth)
-  const cropped = cropTarget ? cropReach(mp.mp, cropTarget.cropFactor).toFixed(1) : null
+  const unitLabel = units === 'imperial' ? 'in' : 'cm'
 
   return (
     <tr>
@@ -52,21 +55,20 @@ export const PrintTableRow = memo(function PrintTableRow({
       {dpis.map(d => {
         const { wMm, hMm } = printSizeMm(pxW, pxH, d.value)
         const tier = qualityTier(d.value, viewingDistance)
-        const wStr = mmToDisplay(wMm, units).replace(/ (in|cm)$/, '')
-        const hStr = mmToDisplay(hMm, units)
+        const wStr = formatSize(wMm, units)
+        const hStr = formatSize(hMm, units)
         return (
           <td
             key={d.value}
             className={tierClass(tier)}
             data-testid="quality-cell"
             data-tier={tier}
-            aria-label={`${wStr} × ${hStr}, ${tierLabel(tier)} quality`}
+            aria-label={`${wStr}×${hStr} ${unitLabel}, ${tierLabel(tier)} quality`}
           >
             {wStr}×{hStr}
           </td>
         )
       })}
-      {cropTarget && <td>{cropped} MP</td>}
       <td>{formatMb(size)}</td>
     </tr>
   )

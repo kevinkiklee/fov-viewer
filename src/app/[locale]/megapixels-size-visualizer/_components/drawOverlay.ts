@@ -34,20 +34,26 @@ export function drawOverlay(
   const maxWMm = sized[0].wMm
   const maxHMm = sized[0].hMm
 
-  const isMobile = canvasWidth < 600
-  const labelColumnW = isMobile ? 0 : 110
+  // Label column width shrinks on narrow canvases so rectangles keep breathing room.
+  const labelColumnW = canvasWidth < 420 ? 78 : 110
   const scaleBarReserve = 40
 
-  // Fit-to-viewport (centered in remaining area, with label column reserved on the left desktop only)
-  const availW = canvasWidth - padding * 2 - labelColumnW
-  const availH = canvasHeight - padding * 2 - scaleBarReserve
+  const availW = Math.max(0, canvasWidth - padding * 2 - labelColumnW)
+  const availH = Math.max(0, canvasHeight - padding * 2 - scaleBarReserve)
+
+  if (availW <= 0 || availH <= 0) {
+    return { contentHeight: 300, pxPerMm: 0 }
+  }
 
   const pxPerMm = Math.min(availW / maxWMm, availH / maxHMm)
+  if (pxPerMm <= 0) {
+    return { contentHeight: 300, pxPerMm: 0 }
+  }
   const rectsW = maxWMm * pxPerMm
   const rectsH = maxHMm * pxPerMm
 
   const cx = padding + labelColumnW + (canvasWidth - padding * 2 - labelColumnW) / 2
-  const cy = padding + (canvasHeight - padding * 2 - scaleBarReserve) / 2
+  const cy = padding + availH / 2
 
   // Draw rectangles from largest (back) to smallest (front)
   for (const { mp, wMm, hMm } of sized) {
@@ -63,11 +69,7 @@ export function drawOverlay(
   }
 
   // Labels: pills in a column to the left of the largest rectangle, with leader lines
-  if (isMobile) {
-    drawOverlayMobileLabels(ctx, sized, hoveredId, cx, cy, rectsH, padding)
-  } else {
-    drawOverlayDesktopLabels(ctx, sized, hoveredId, cx, cy, pxPerMm, rectsW)
-  }
+  drawOverlayDesktopLabels(ctx, sized, hoveredId, cx, cy, pxPerMm, rectsW)
 
   const contentHeight = Math.max(rectsH + padding * 2 + scaleBarReserve, 400)
   return { contentHeight, pxPerMm }
@@ -148,43 +150,3 @@ function drawOverlayDesktopLabels(
   }
 }
 
-function drawOverlayMobileLabels(
-  ctx: CanvasRenderingContext2D,
-  sorted: SizedMp[],
-  hoveredId: string | null,
-  cx: number, cy: number, rectsH: number, _padding: number,
-) {
-  const pillH = 18
-  const labelGap = 4
-
-  ctx.font = '11px system-ui, sans-serif'
-  const pillWidths = sorted.map(s => ctx.measureText(s.mp.name).width + 12)
-
-  let labelY = cy + rectsH / 2 + 16
-  for (let i = 0; i < sorted.length; i++) {
-    const { mp } = sorted[i]
-    const alpha = hoveredId && hoveredId !== mp.id ? 0.3 : 1
-    const pillW = pillWidths[i]
-    const pillX = cx - pillW / 2
-
-    ctx.save()
-    ctx.globalAlpha = alpha
-
-    roundRect(ctx, pillX, labelY, pillW, pillH, 4)
-    ctx.fillStyle = rgba(mp.color, 0.18)
-    ctx.fill()
-
-    ctx.beginPath()
-    ctx.arc(pillX - 8, labelY + pillH / 2, 3, 0, Math.PI * 2)
-    ctx.fillStyle = mp.color
-    ctx.fill()
-
-    ctx.fillStyle = mp.color
-    ctx.textAlign = 'left'
-    ctx.textBaseline = 'middle'
-    ctx.fillText(mp.name, pillX + 6, labelY + pillH / 2)
-
-    ctx.restore()
-    labelY += pillH + labelGap
-  }
-}

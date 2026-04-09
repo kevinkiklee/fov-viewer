@@ -2,11 +2,7 @@
 
 import { useState, useEffect, useMemo, useCallback } from 'react'
 import { useLocale } from 'next-intl'
-import {
-  MP_PRESETS, DEFAULT_VISIBLE_MP_IDS, DEFAULT_DPI,
-  DEFAULT_PRINT_METRIC_ID, DEFAULT_PRINT_IMPERIAL_ID,
-  ALL_MP_ID_SET,
-} from '@/lib/data/megapixelVisualizer'
+import { MP_PRESETS, DEFAULT_VISIBLE_MP_IDS, ALL_MP_ID_SET } from '@/lib/data/megapixelVisualizer'
 import { DEFAULT_ASPECT_ID } from '@/lib/data/aspectRatios'
 import { defaultUnitSystemForLocale } from '@/lib/utils/units'
 import type { Locale } from '@/lib/i18n/routing'
@@ -21,18 +17,9 @@ export function useMegapixelState() {
   const [visible, setVisible] = useState<Set<string>>(() => new Set(DEFAULT_VISIBLE_MP_IDS))
   const [mode, setMode] = useState<DisplayMode>('overlay')
   const [aspectId, setAspectId] = useState<string>(DEFAULT_ASPECT_ID)
-  const [dpi, setDpi] = useState<number>(DEFAULT_DPI)
   const [units, setUnits] = useState<'metric' | 'imperial'>(() => defaultUnitSystemForLocale(locale))
   const [viewingDistance, setViewingDistance] = useState<ViewingDistance>('arms')
   const [bitDepth, setBitDepth] = useState<BitDepth>('raw14')
-  const [printPresetId, setPrintPresetId] = useState<string>(
-    () => defaultUnitSystemForLocale(locale) === 'imperial'
-      ? DEFAULT_PRINT_IMPERIAL_ID
-      : DEFAULT_PRINT_METRIC_ID,
-  )
-  const [printOrientation, setPrintOrientation] = useState<'landscape' | 'portrait'>('landscape')
-  const [printFitMode, setPrintFitMode] = useState<'crop' | 'fit'>('crop')
-  const [cropTargetId, setCropTargetId] = useState<string | null>(null)
   const [hoveredMpId, setHoveredMpId] = useState<string | null>(null)
 
   const { customMps, addCustomMp, editCustomMp, removeCustomMp, removeAllCustomMps } = useMegapixelCustomStorage()
@@ -65,13 +52,11 @@ export function useMegapixelState() {
   }, [])
 
   return {
-    visible, mode, aspectId, dpi, units, viewingDistance, bitDepth,
-    printPresetId, printOrientation, printFitMode, cropTargetId,
+    visible, mode, aspectId, units, viewingDistance, bitDepth,
     hoveredMpId, customMps,
     allMps, visibleMps, allMpIdSet,
-    setVisible, setMode, setAspectId, setDpi, setUnits, setViewingDistance,
-    setBitDepth, setPrintPresetId, setPrintOrientation, setPrintFitMode,
-    setCropTargetId, setHoveredMpId,
+    setVisible, setMode, setAspectId, setUnits, setViewingDistance, setBitDepth,
+    setHoveredMpId,
     toggleMp, addCustomMp, editCustomMp, removeCustomMp, removeAllCustomMps,
   }
 }

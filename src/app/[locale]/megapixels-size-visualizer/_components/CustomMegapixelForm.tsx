@@ -10,17 +10,11 @@ interface Props {
 
 export function CustomMegapixelForm({ onAdd }: Props) {
   const t = useTranslations('toolUI.megapixel-visualizer')
-  const [name, setName] = useState('')
   const [mp, setMp] = useState('')
   const [error, setError] = useState<string | null>(null)
 
   const handleAdd = () => {
     setError(null)
-    const trimmedName = name.trim()
-    if (!trimmedName) {
-      setError(t('mpNameRequired'))
-      return
-    }
     const mpNum = parseFloat(mp)
     if (!mpNum || mpNum <= 0) {
       setError(t('mpMustBePositive'))
@@ -30,27 +24,27 @@ export function CustomMegapixelForm({ onAdd }: Props) {
       setError(t('mpMaxExceeded'))
       return
     }
-    onAdd(trimmedName, mpNum)
-    setName('')
+    const name = `${mpNum} MP`
+    onAdd(name, mpNum)
     setMp('')
+  }
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      e.preventDefault()
+      handleAdd()
+    }
   }
 
   return (
     <div className={ss.customForm} data-testid="custom-mp-form">
       <input
-        type="text"
-        placeholder={t('placeholderMpName')}
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        className={`${ss.customInput} ${ss.customFormName}`}
-        data-testid="custom-mp-name"
-      />
-      <input
         type="number"
-        placeholder={t('placeholderMpShort')}
+        placeholder={t('placeholderMp')}
         value={mp}
         onChange={(e) => setMp(e.target.value)}
-        className={`${ss.customInput} ${ss.customFormMp}`}
+        onKeyDown={handleKeyDown}
+        className={`${ss.customInput} ${ss.customFormName}`}
         min={1}
         max={1000}
         step="0.1"

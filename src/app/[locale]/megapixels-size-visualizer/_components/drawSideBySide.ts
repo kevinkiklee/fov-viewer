@@ -30,11 +30,18 @@ export function drawSideBySide(
   const labelH = 30
   const scaleBarReserve = 40
   const totalMmW = sized.reduce((acc, s) => acc + s.wMm, 0)
-  const availW = canvasWidth - padding * 2 - gap * (sized.length - 1)
+  const availW = Math.max(0, canvasWidth - padding * 2 - gap * (sized.length - 1))
   const maxHMm = Math.max(...sized.map(s => s.hMm))
-  const availH = canvasHeight - padding * 2 - labelH - scaleBarReserve
+  const availH = Math.max(0, canvasHeight - padding * 2 - labelH - scaleBarReserve)
+
+  if (availW <= 0 || availH <= 0) {
+    return { contentHeight: 300, pxPerMm: 0 }
+  }
 
   const pxPerMm = Math.min(availW / totalMmW, availH / maxHMm)
+  if (pxPerMm <= 0) {
+    return { contentHeight: 300, pxPerMm: 0 }
+  }
   const totalRectsW = totalMmW * pxPerMm + gap * (sized.length - 1)
   const maxRectsH = maxHMm * pxPerMm
 

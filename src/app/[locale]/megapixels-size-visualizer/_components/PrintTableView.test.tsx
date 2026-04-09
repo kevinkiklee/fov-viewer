@@ -34,7 +34,6 @@ describe('PrintTableView', () => {
         units="metric"
         viewingDistance="arms"
         bitDepth="raw14"
-        cropTargetId={null}
       />,
     ))
     expect(screen.getByText('Select megapixels')).toBeInTheDocument()
@@ -49,7 +48,6 @@ describe('PrintTableView', () => {
         units="metric"
         viewingDistance="arms"
         bitDepth="raw14"
-        cropTargetId={null}
       />,
     ))
     const cells = screen.getAllByTestId('quality-cell')
