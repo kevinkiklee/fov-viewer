@@ -64,6 +64,12 @@
 
 /* ── Sensor checkboxes ── */
 .checkboxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px 6px;
+}
+
+.checkboxesSingleCol {
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -76,9 +82,10 @@
   gap: 6px;
   font-size: 12px;
   cursor: pointer;
-  padding: 5px 8px;
+  padding: 5px 6px;
   border-radius: 6px;
   transition: background 0.15s;
+  min-width: 0;
 }
 
 .checkLabel:hover {
@@ -106,6 +113,10 @@
   color: var(--text-secondary);
   transition: color 0.15s;
   flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .checkLabel input:checked ~ .checkName {
@@ -148,6 +159,8 @@
   border: 1px solid var(--border);
   border-radius: 10px;
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* ── Table ── */
@@ -296,8 +309,32 @@
 /* ── Custom Sensor Form ── */
 .customForm {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   gap: 6px;
+  flex-wrap: wrap;
+}
+
+.customFormName {
+  flex: 1 1 100px;
+  min-width: 0;
+}
+
+.customFormMp {
+  flex: 0 0 52px;
+  text-align: center;
+}
+
+.customFormAddBtn {
+  flex: 0 0 auto;
+  padding: 6px 10px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.customFormError {
+  flex: 1 0 100%;
 }
 
 .customRow {
@@ -374,6 +411,13 @@
   transition: color var(--duration-fast);
 }
 
+/* Phone-binned indicator (shows alongside MP name) */
+.binnedSuffix {
+  color: var(--accent);
+  font-weight: 700;
+  margin-left: 2px;
+}
+
 /* Sensor model tooltip */
 .modelTooltip {
   position: relative;
@@ -398,13 +442,15 @@
   position: absolute;
   bottom: calc(100% + 6px);
   right: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.92);
   color: var(--text-primary);
   font-size: 11px;
   font-weight: 400;
   padding: 6px 10px;
   border-radius: 6px;
-  white-space: nowrap;
+  white-space: normal;
+  width: max-content;
+  max-width: 220px;
   pointer-events: none;
   opacity: 0;
   transform: translateY(4px);
@@ -497,7 +543,6 @@
 
 /* CLS + perf enhancements */
 .main {
-  min-height: 600px;
   contain: layout;
 }
 
@@ -506,8 +551,10 @@
 }
 
 .canvasWrap {
-  contain: strict;
+  contain: layout paint;
   position: relative;
+  width: 100%;
+  flex: 1;
   min-height: 300px;
 }
 
@@ -541,8 +588,9 @@
 }
 
 .printTableWrap {
+  flex: 1;
   min-height: 400px;
-  overflow-x: auto;
+  overflow: auto;
 }
 
 .printTable {
@@ -570,13 +618,52 @@
   border: none;
   padding: 0;
   margin: 0 0 12px;
+  min-width: 0;
 }
 .legend {
   font-size: 11px;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--text-secondary);
+  color: var(--accent);
   margin-bottom: 6px;
+  padding: 0;
+}
+
+/* ── Aspect ratio compact button grid (3 cols × 2 rows) ── */
+.aspectGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.aspectBtn {
+  padding: 6px 4px;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--duration-fast), color var(--duration-fast), border-color var(--duration-fast);
+}
+
+.aspectBtn:hover {
+  border-color: var(--text-secondary);
+  color: var(--text-primary);
+}
+
+.aspectBtnActive {
+  background: var(--accent);
+  color: var(--text-on-accent, #fff);
+  border-color: var(--accent);
+}
+
+.aspectBtnActive:hover {
+  background: var(--accent-hover, var(--accent));
+  color: var(--text-on-accent, #fff);
 }
 
 .emptyState {
@@ -607,4 +694,66 @@
   display: flex;
   justify-content: space-between;
   color: var(--text-secondary);
+}
+
+/* ── Disclosure toggle (collapsible panel header) ── */
+.disclosureToggle {
+  width: 100%;
+  padding: 8px 12px;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color var(--duration-fast), color var(--duration-fast);
+}
+
+.disclosureToggle:hover {
+  border-color: var(--text-secondary);
+  color: var(--text-primary);
+}
+
+/* ── Select input (native select dropdown) ── */
+.selectInput {
+  width: 100%;
+  padding: 8px 12px;
+  margin-top: 6px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color var(--duration-fast);
+}
+
+.selectInput:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.selectInput:hover {
+  border-color: var(--text-secondary);
+}
+
+/* ── Advanced toggle (expand more DPI options) ── */
+.advancedToggle {
+  margin-top: 6px;
+  padding: 4px 0;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition: color var(--duration-fast);
+}
+
+.advancedToggle:hover {
+  color: var(--accent);
 }

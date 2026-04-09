@@ -21,6 +21,12 @@ export function MpListPanel({ visible, customMps, onToggleMp }: Props) {
         <div className={ss.checkboxes}>
           {MP_PRESETS.map(p => {
             const binned = PHONE_BINNING[p.mp]
+            const tooltipParts: string[] = []
+            if (binned) {
+              tooltipParts.push(t('phoneBinningNote', { advertised: p.mp, effective: binned }))
+            }
+            if (p.models) tooltipParts.push(p.models)
+            const tooltip = tooltipParts.join(' · ')
             return (
               <label key={p.id} className={ss.checkLabel}>
                 <input
@@ -30,17 +36,16 @@ export function MpListPanel({ visible, customMps, onToggleMp }: Props) {
                   data-testid={`mp-toggle-${p.id}`}
                 />
                 <span className={ss.checkDot} style={{ backgroundColor: p.color }} />
-                <span className={ss.checkName}>{p.name}</span>
-                {p.models && (
-                  <span className={ss.modelTooltip} data-models={p.models}>
+                <span className={ss.checkName}>
+                  {p.name}
+                  {binned && <span className={ss.binnedSuffix}>*</span>}
+                </span>
+                {tooltip && (
+                  <span className={ss.modelTooltip} data-models={tooltip}>
                     ?
                   </span>
                 )}
-                {binned && (
-                  <span className={ss.binningNote}>
-                    {t('phoneBinningNote', { advertised: p.mp, effective: binned })}
-                  </span>
-                )}
+                <span className={ss.checkOutline} />
               </label>
             )
           })}
@@ -63,6 +68,7 @@ export function MpListPanel({ visible, customMps, onToggleMp }: Props) {
                 <span className={ss.checkName}>
                   {c.name} ({c.mp} MP)
                 </span>
+                <span className={ss.checkOutline} />
               </label>
             ))}
           </div>

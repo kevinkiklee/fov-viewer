@@ -26,27 +26,32 @@ export function drawSideBySide(
     })
     .sort((a, b) => b.wMm * b.hMm - (a.wMm * a.hMm))
 
-  const gap = 20
+  const gap = 24
   const labelH = 30
+  const scaleBarReserve = 40
   const totalMmW = sized.reduce((acc, s) => acc + s.wMm, 0)
   const availW = canvasWidth - padding * 2 - gap * (sized.length - 1)
   const maxHMm = Math.max(...sized.map(s => s.hMm))
+  const availH = canvasHeight - padding * 2 - labelH - scaleBarReserve
 
-  const scaleByW = availW / totalMmW
-  const scaleByH = (canvasHeight - padding * 2 - labelH - 40) / maxHMm
-  const pxPerMm = Math.min(scaleByW, scaleByH)
+  const pxPerMm = Math.min(availW / totalMmW, availH / maxHMm)
+  const totalRectsW = totalMmW * pxPerMm + gap * (sized.length - 1)
+  const maxRectsH = maxHMm * pxPerMm
 
-  let x = padding
-  const baseY = padding + maxHMm * pxPerMm
+  // Horizontally center the row of rectangles, vertically center within available area
+  let x = (canvasWidth - totalRectsW) / 2
+  const cy = padding + (canvasHeight - padding * 2 - scaleBarReserve - labelH) / 2
+  const baseY = cy + maxRectsH / 2
+
   for (const { mp, wMm, hMm } of sized) {
     const w = wMm * pxPerMm
     const h = hMm * pxPerMm
     const y = baseY - h
     drawRect(ctx, x, y, w, h, mp.color, 1)
-    drawLabel(ctx, mp.name, x + w / 2, baseY + 6, mp.color, 1)
+    drawLabel(ctx, mp.name, x + w / 2, baseY + 8, mp.color, 1)
     x += w + gap
   }
 
-  const contentHeight = Math.max(400, baseY + labelH + padding + 40)
+  const contentHeight = Math.max(400, baseY + labelH + padding + scaleBarReserve)
   return { contentHeight, pxPerMm }
 }

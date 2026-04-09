@@ -1,3 +1,26 @@
+export function rgba(hex: string, a: number): string {
+  const n = parseInt(hex.replace('#', ''), 16)
+  return `rgba(${(n >> 16) & 0xff},${(n >> 8) & 0xff},${n & 0xff},${a})`
+}
+
+export function roundRect(
+  ctx: CanvasRenderingContext2D,
+  x: number, y: number, w: number, h: number, r: number,
+) {
+  r = Math.min(r, w / 2, h / 2)
+  ctx.beginPath()
+  ctx.moveTo(x + r, y)
+  ctx.lineTo(x + w - r, y)
+  ctx.arcTo(x + w, y, x + w, y + r, r)
+  ctx.lineTo(x + w, y + h - r)
+  ctx.arcTo(x + w, y + h, x + w - r, y + h, r)
+  ctx.lineTo(x + r, y + h)
+  ctx.arcTo(x, y + h, x, y + h - r, r)
+  ctx.lineTo(x, y + r)
+  ctx.arcTo(x, y, x + r, y, r)
+  ctx.closePath()
+}
+
 export function drawRect(
   ctx: CanvasRenderingContext2D,
   x: number,
@@ -7,11 +30,16 @@ export function drawRect(
   color: string,
   alpha: number,
 ) {
+  const r = Math.min(4, w * 0.02)
   ctx.save()
   ctx.globalAlpha = alpha
-  ctx.strokeStyle = color
-  ctx.lineWidth = 2
-  ctx.strokeRect(x, y, w, h)
+  roundRect(ctx, x, y, w, h, r)
+  ctx.fillStyle = rgba(color, 0.08)
+  ctx.fill()
+  roundRect(ctx, x, y, w, h, r)
+  ctx.strokeStyle = rgba(color, 0.75)
+  ctx.lineWidth = 1.5
+  ctx.stroke()
   ctx.restore()
 }
 

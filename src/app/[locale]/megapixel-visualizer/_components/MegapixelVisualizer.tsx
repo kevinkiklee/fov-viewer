@@ -12,7 +12,6 @@ import { drawOverlay } from './drawOverlay'
 import { drawSideBySide } from './drawSideBySide'
 import { drawPrintPreset } from './drawPrintPreset'
 import { drawScaleBar } from './drawScaleBar'
-import { estimateContentHeight } from './megapixelHelpers'
 import { getAspect } from '@/lib/data/aspectRatios'
 import { PRINT_SIZES_METRIC, PRINT_SIZES_IMPERIAL } from '@/lib/data/megapixelVisualizer'
 import ss from './MegapixelVisualizer.module.css'
@@ -41,24 +40,23 @@ export function MegapixelVisualizer() {
 
     const dpr = window.devicePixelRatio || 1
     const cssWidth = canvas.clientWidth
-    if (cssWidth === 0) return
+    const cssHeight = canvas.clientHeight
+    if (cssWidth === 0 || cssHeight === 0) return
 
-    const estimatedH = estimateContentHeight(state.mode, state.visible.size)
     canvas.width = cssWidth * dpr
-    canvas.height = estimatedH * dpr
-    canvas.style.height = `${estimatedH}px`
+    canvas.height = cssHeight * dpr
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
-    ctx.clearRect(0, 0, cssWidth, estimatedH)
+    ctx.clearRect(0, 0, cssWidth, cssHeight)
 
     const padding = 30
     const aspect = getAspect(state.aspectId)
-    let result: { contentHeight: number; pxPerMm: number } = { contentHeight: estimatedH, pxPerMm: 0 }
+    let result: { contentHeight: number; pxPerMm: number } = { contentHeight: cssHeight, pxPerMm: 0 }
 
     if (state.mode === 'overlay') {
       result = drawOverlay(
         ctx,
         cssWidth,
-        estimatedH,
+        cssHeight,
         padding,
         state.visibleMps,
         aspect,
@@ -70,7 +68,7 @@ export function MegapixelVisualizer() {
       result = drawSideBySide(
         ctx,
         cssWidth,
-        estimatedH,
+        cssHeight,
         padding,
         state.visibleMps,
         aspect,
@@ -83,7 +81,7 @@ export function MegapixelVisualizer() {
       result = drawPrintPreset(
         ctx,
         cssWidth,
-        estimatedH,
+        cssHeight,
         padding,
         state.visibleMps,
         aspect,
@@ -97,7 +95,7 @@ export function MegapixelVisualizer() {
     }
 
     if (result.pxPerMm > 0) {
-      drawScaleBar(ctx, cssWidth, estimatedH, result.pxPerMm, state.units)
+      drawScaleBar(ctx, cssWidth, cssHeight, result.pxPerMm, state.units)
     }
 
     canvas.dataset.rendered = 'true'

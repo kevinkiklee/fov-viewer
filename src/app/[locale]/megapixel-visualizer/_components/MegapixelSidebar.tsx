@@ -1,6 +1,8 @@
 'use client'
 
-import type { MegapixelControlsProps } from './megapixelTypes'
+import { useTranslations } from 'next-intl'
+import { ModeToggle } from '@/components/shared/ModeToggle'
+import type { MegapixelControlsProps, DisplayMode } from './megapixelTypes'
 import { MpListPanel } from './MpListPanel'
 import { ImageSettingsPanel } from './ImageSettingsPanel'
 import { PrintSettingsPanel } from './PrintSettingsPanel'
@@ -9,11 +11,12 @@ import { CropReachPanel } from './CropReachPanel'
 import { CustomMegapixelForm } from './CustomMegapixelForm'
 
 export function MegapixelSidebar(props: MegapixelControlsProps) {
+  const t = useTranslations('toolUI.megapixel-visualizer')
   const {
     visible, customMps, mode,
     aspectId, units, dpi, viewingDistance, bitDepth,
     printPresetId, printOrientation, printFitMode, cropTargetId,
-    onToggleMp, onAspectChange, onUnitsChange, onDpiChange,
+    onToggleMp, onModeChange, onAspectChange, onUnitsChange, onDpiChange,
     onViewingDistanceChange, onBitDepthChange,
     onPrintPresetChange, onPrintOrientationChange, onPrintFitModeChange,
     onCropTargetChange, onAddCustomMp,
@@ -21,6 +24,17 @@ export function MegapixelSidebar(props: MegapixelControlsProps) {
 
   return (
     <>
+      <ModeToggle<DisplayMode>
+        title={t('displayMode')}
+        options={[
+          { value: 'overlay', label: t('modeOverlay') },
+          { value: 'side-by-side', label: t('modeSideBySide') },
+          { value: 'print-preset', label: t('modePrintPreset') },
+          { value: 'print-table', label: t('modePrintTable') },
+        ]}
+        value={mode}
+        onChange={onModeChange}
+      />
       <MpListPanel
         visible={visible}
         customMps={customMps}

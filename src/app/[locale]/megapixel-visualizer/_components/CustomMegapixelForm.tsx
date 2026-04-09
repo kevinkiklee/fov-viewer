@@ -42,7 +42,7 @@ export function CustomMegapixelForm({ onAdd }: Props) {
         placeholder={t('placeholderMpName')}
         value={name}
         onChange={(e) => setName(e.target.value)}
-        className={ss.textInput}
+        className={`${ss.customInput} ${ss.customFormName}`}
         data-testid="custom-mp-name"
       />
       <input
@@ -50,7 +50,7 @@ export function CustomMegapixelForm({ onAdd }: Props) {
         placeholder={t('placeholderMpShort')}
         value={mp}
         onChange={(e) => setMp(e.target.value)}
-        className={ss.numberInput}
+        className={`${ss.customInput} ${ss.customFormMp}`}
         min={1}
         max={1000}
         step="0.1"
@@ -59,12 +59,14 @@ export function CustomMegapixelForm({ onAdd }: Props) {
       <button
         type="button"
         onClick={handleAdd}
-        className={ss.addButton}
+        className={`${ss.customAddBtn} ${ss.customFormAddBtn}`}
+        aria-label={t('addMegapixel')}
+        title={t('addMegapixel')}
         data-testid="custom-mp-add"
       >
-        {t('addMegapixel')}
+        +
       </button>
-      {error && <div className={ss.formError}>{error}</div>}
+      {error && <div className={`${ss.customWarning} ${ss.customFormError}`}>{error}</div>}
     </div>
   )
 }

@@ -25,11 +25,19 @@ export function ImageSettingsPanel({
     <>
       <fieldset className={ss.controlGroup}>
         <legend className={ss.legend}>{t('aspectRatio')}</legend>
-        <ModeToggle
-          options={ASPECT_RATIOS.map(a => ({ value: a.id, label: a.label }))}
-          value={aspectId}
-          onChange={onAspectChange}
-        />
+        <div className={ss.aspectGrid}>
+          {ASPECT_RATIOS.map(a => (
+            <button
+              key={a.id}
+              type="button"
+              onClick={() => onAspectChange(a.id)}
+              className={`${ss.aspectBtn} ${aspectId === a.id ? ss.aspectBtnActive : ''}`}
+              aria-pressed={aspectId === a.id}
+            >
+              {a.label}
+            </button>
+          ))}
+        </div>
       </fieldset>
 
       <fieldset className={ss.controlGroup}>
