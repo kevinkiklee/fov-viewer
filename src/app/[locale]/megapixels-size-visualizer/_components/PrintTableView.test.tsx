@@ -6,7 +6,7 @@ import type { MegapixelPreset } from '@/lib/types'
 
 const messages = {
   toolUI: {
-    'megapixel-visualizer': {
+    'megapixels-size-visualizer': {
       tableMegapixels: 'MP',
       tableFileSize: 'File size',
       tableCropReach: 'Crop reach',

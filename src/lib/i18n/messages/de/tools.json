@@ -60,9 +60,9 @@
       "name": "EXIF-Betrachter",
       "description": "EXIF-Metadaten und Histogramm für jedes Foto anzeigen — 100 % clientseitig"
     },
-    "megapixel-visualizer": {
-      "name": "Megapixel Size Visualizer",
-      "description": "Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs"
+    "megapixels-size-visualizer": {
+      "name": "Megapixel-Visualisierer",
+      "description": "Megapixel vergleichen, Druckgrößen visualisieren und Dateigrößen nach Seitenverhältnis und DPI anzeigen"
     }
   }
 }

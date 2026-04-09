@@ -86,9 +86,9 @@
       "title": "Photography Glossary",
       "description": "Searchable glossary ng 50+ photography terms na may mga definition at links sa mga interactive tool."
     },
-    "megapixel-visualizer": {
-      "title": "Megapixel Size Visualizer",
-      "description": "Visualize how megapixels translate to print sizes at 72-300 DPI, across aspect ratios. Compare cameras, file sizes, pixel binning, and crop reach — with a quality-tiered print table."
+    "megapixels-size-visualizer": {
+      "title": "Visualizer ng Megapixel Size — tingnan ang mga print size",
+      "description": "I-visualize kung paano nai-translate ang megapixels sa print sizes sa 72–300 DPI, sa iba't ibang aspect ratio. Ikumpara ang mga camera, file sizes, pixel binning, at crop reach — may quality-tiered print table."
     }
   }
 }

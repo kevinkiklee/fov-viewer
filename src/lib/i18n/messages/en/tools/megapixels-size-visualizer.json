@@ -1,7 +1,7 @@
 {
   "toolUI": {
-    "megapixel-visualizer": {
-      "pageHeading": "Megapixel Size Visualizer",
+    "megapixels-size-visualizer": {
+      "pageHeading": "Megapixels Size Visualizer",
       "heroIntro": "Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs.",
       "displayMode": "Display Mode",
       "modeOverlay": "Overlay",

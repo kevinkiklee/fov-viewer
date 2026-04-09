@@ -1,77 +1,77 @@
 {
   "education": {
-    "megapixel-visualizer": {
-      "beginner": "Megapixels count the tiny dots your sensor captures — more megapixels means higher resolution, but how that translates to print sharpness, screen size, and file size depends on several factors you can explore here. Most photos viewed on screens need far fewer megapixels than you'd expect; large prints depend on viewing distance, not just DPI.",
+    "megapixels-size-visualizer": {
+      "beginner": "Megapixely počítají drobné body, které zachytí tvůj snímač — víc megapixelů znamená vyšší rozlišení, ale jak se to promítne do ostrosti tisku, velikosti na obrazovce a velikosti souboru, záleží na několika faktorech, které tu můžeš prozkoumat. Většina fotek prohlížených na displeji vyžaduje daleko méně megapixelů, než bys čekal; u velkých tisků záleží na pozorovací vzdálenosti, ne jen na DPI.",
       "deeper": {
         "0": {
-          "heading": "From pixels to prints",
-          "text": "Total pixels equals megapixels × 1,000,000. Aspect ratio determines how those pixels are split into width and height. Print size in inches equals pixels divided by DPI. A 24 MP photo at 3:2 gives 6000×4000 pixels; at 300 DPI that prints at 20×13 inches."
+          "heading": "Od pixelů k tisku",
+          "text": "Celkový počet pixelů = megapixely × 1 000 000. Poměr stran určuje, jak se pixely rozdělí na šířku a výšku. Rozměr tisku v palcích = pixely děleno DPI. Fotka s 24 MP v poměru 3:2 dává 6000×4000 pixelů; při 300 DPI to vytiskne na cca 50×33 cm (asi 20×13 palců)."
         },
         "1": {
-          "heading": "The DPI myth and viewing distance",
-          "text": "The human eye resolves about 1 arcminute of angular detail, which translates to approximately 300 PPI at 12 inches, 100 PPI at 36 inches, and 50 PPI at 72 inches. A billboard printed at 30 DPI looks perfectly sharp from across the street — the viewer's distance is doing the work."
+          "heading": "Mýtus o DPI a pozorovací vzdálenost",
+          "text": "Lidské oko rozlišuje přibližně 1 obloukovou minutu úhlového detailu, což odpovídá asi 300 PPI na 30 cm, 100 PPI na 90 cm a 50 PPI na 180 cm. Billboard vytištěný při 30 DPI vypadá dokonale ostře z druhé strany ulice — práci za tebe odvede vzdálenost."
         },
         "2": {
-          "heading": "Megapixels vs file size",
-          "text": "Uncompressed 16-bit TIFF is roughly 6 bytes per pixel. 14-bit compressed RAW is about 1.75 bytes per pixel. JPEG at quality 90 is around 0.3 bytes per pixel. That's why a 24 MP RAW file is 40-50 MB while the JPEG version is 7-10 MB."
+          "heading": "Megapixely vs. velikost souboru",
+          "text": "Nekomprimovaný 16bitový TIFF zabírá přibližně 6 bajtů na pixel. 14bitový komprimovaný RAW je asi 1,75 bajtu na pixel. JPEG v kvalitě 90 je kolem 0,3 bajtu na pixel. Proto je 24 MP RAW soubor 40–50 MB, zatímco JPEG verze má jen 7–10 MB."
         },
         "3": {
-          "heading": "Phones and pixel binning",
-          "text": "Modern phones advertise 48, 50, 108, or even 200 MP sensors, but output 12 MP photos by default via 4-in-1 or 9-in-1 pixel binning. Binning improves low-light performance by effectively creating larger virtual pixels. Full-resolution modes expose the advertised count at the cost of more noise in dim light."
+          "heading": "Telefony a pixel binning",
+          "text": "Moderní telefony uvádějí snímače s 48, 50, 108 nebo dokonce 200 MP, ale standardně pořizují 12 MP fotky pomocí slučování 4-v-1 nebo 9-v-1 pixelů. Binning zlepšuje výkon za šera díky vytvoření větších virtuálních pixelů. Režimy plného rozlišení využijí uváděný počet za cenu většího šumu při slabém osvětlení."
         }
       },
       "keyFactors": {
-        "0": { "label": "Pixel dimensions", "description": "Megapixels × aspect ratio → width and height in pixels" },
-        "1": { "label": "Print DPI", "description": "Density of pixels per inch; determines print size and apparent sharpness" },
-        "2": { "label": "Viewing distance", "description": "Human eye acuity means prints viewed far away need much lower DPI" },
-        "3": { "label": "Pixel binning", "description": "Phones advertise higher MP but output fewer via 4-in-1 or 9-in-1 binning" },
-        "4": { "label": "Sensor area", "description": "At the same MP count, larger sensors have larger pixels and better low-light performance — see the sensor-size-comparison tool" }
+        "0": { "label": "Rozměry v pixelech", "description": "Megapixely × poměr stran → šířka a výška v pixelech" },
+        "1": { "label": "Tiskové DPI", "description": "Hustota pixelů na palec; určuje velikost tisku a vnímanou ostrost" },
+        "2": { "label": "Pozorovací vzdálenost", "description": "Rozlišovací schopnost oka znamená, že tisky prohlížené z dálky vyžadují mnohem nižší DPI" },
+        "3": { "label": "Pixel binning", "description": "Telefony uvádějí vyšší MP, ale reálný výstup je nižší díky 4-v-1 nebo 9-v-1 slučování" },
+        "4": { "label": "Plocha snímače", "description": "Při stejném počtu MP má větší snímač větší pixely a lepší výkon za šera — viz srovnání velikostí snímačů" }
       },
       "tips": {
-        "0": { "text": "Most web photos are viewed at 2000px or smaller — 12 MP is plenty for screens and Instagram." },
-        "1": { "text": "For wall prints at 6-foot viewing distance, the eye only needs ~60 PPI — a 24 MP photo covers a 60-inch wide print." },
-        "2": { "text": "Your 48 MP phone photo is typically a 12 MP binned output — only the 'full resolution' mode delivers the advertised count." }
+        "0": { "text": "Většina fotek na webu se zobrazuje v rozlišení 2000 px nebo menším — 12 MP bohatě stačí na displeje a Instagram." },
+        "1": { "text": "U tisků na stěnu pozorovaných ze 2 metrů oko potřebuje jen asi 60 PPI — fotka s 24 MP pokryje 150 cm široký tisk." },
+        "2": { "text": "Tvá 48 MP fotka z telefonu je typicky 12 MP binnutý výstup — pouze režim \u201Eplné rozlišení\u201C dodá uváděný počet." }
       },
       "tooltips": {
         "Megapixels": {
-          "term": "Megapixels",
-          "definition": "One megapixel equals 1,000,000 pixels. It counts the total pixels your sensor captures, not the sharpness of the image."
+          "term": "Megapixely",
+          "definition": "Jeden megapixel se rovná 1 000 000 pixelů. Udává celkový počet pixelů, které snímač zachytí — ne ostrost snímku."
         },
         "Aspect Ratio": {
-          "term": "Aspect Ratio",
-          "definition": "The ratio of width to height. 3:2 is traditional for DSLRs, 4:3 for Micro Four Thirds and phones, 16:9 for video."
+          "term": "Poměr stran",
+          "definition": "Poměr šířky k výšce. 3:2 je standard pro zrcadlovky, 4:3 pro Micro Four Thirds a telefony, 16:9 pro video."
         },
         "DPI": {
           "term": "DPI",
-          "definition": "Dots per inch — the density of pixels when printed. Higher DPI gives smaller but sharper prints from the same pixel count."
+          "definition": "Dots per inch — hustota pixelů při tisku. Vyšší DPI dává menší, ale ostřejší tisky ze stejného počtu pixelů."
         },
         "Units": {
-          "term": "Units",
-          "definition": "Switch between metric (mm/cm) and imperial (inches). Defaults to your locale."
+          "term": "Jednotky",
+          "definition": "Přepínej mezi metrickými (mm/cm) a imperiálními (palce). Výchozí nastavení odpovídá tvému místu."
         },
         "Viewing Distance": {
-          "term": "Viewing Distance",
-          "definition": "How far the viewer stands from the print. The farther away, the lower the required DPI for perceived sharpness."
+          "term": "Pozorovací vzdálenost",
+          "definition": "Jak daleko stojí divák od tisku. Čím dál, tím nižší DPI stačí pro vnímanou ostrost."
         },
         "Print Size": {
-          "term": "Print Size",
-          "definition": "The physical dimensions of the printed image at a given DPI. Calculated from pixel dimensions divided by DPI."
+          "term": "Velikost tisku",
+          "definition": "Fyzické rozměry vytištěného snímku při daném DPI. Spočítá se z rozměrů v pixelech děleno DPI."
         },
         "Bit Depth": {
-          "term": "Bit Depth",
-          "definition": "The number of bits per color channel. 8-bit (JPEG) is standard; 14-bit or 16-bit (RAW/TIFF) preserve more tonal range."
+          "term": "Bitová hloubka",
+          "definition": "Počet bitů na barevný kanál. 8-bit (JPEG) je standard; 14-bit nebo 16-bit (RAW/TIFF) zachovává větší tónový rozsah."
         },
         "Crop Reach": {
-          "term": "Crop Reach",
-          "definition": "How many megapixels remain after cropping to a smaller sensor area. A 45 MP full-frame image cropped to APS-C is about 20 MP."
+          "term": "Dosah ořezu",
+          "definition": "Kolik megapixelů zbude po ořezu na menší snímač. 45 MP full-frame snímek ořezaný na APS-C dává asi 20 MP."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "A 24 MP camera shoots in 3:2. What are the approximate pixel dimensions?",
-          "hint": "Total pixels = MP × 1,000,000. Split by aspect ratio.",
-          "successMessage": "Correct! 24 MP at 3:2 is 6000 × 4000 pixels.",
-          "failureMessage": "24 MP means 24 million pixels. At 3:2, that's 6000 × 4000.",
+          "scenario": "Fotoaparát s 24 MP fotí v poměru 3:2. Jaké jsou přibližné rozměry v pixelech?",
+          "hint": "Celkový počet pixelů = MP × 1 000 000. Rozděl podle poměru stran.",
+          "successMessage": "Správně! 24 MP v poměru 3:2 je 6000 × 4000 pixelů.",
+          "failureMessage": "24 MP znamená 24 milionů pixelů. V poměru 3:2 to dává 6000 × 4000.",
           "options": {
             "0": { "label": "6000×4000" },
             "1": { "label": "5657×4243" },
@@ -79,10 +79,10 @@
           }
         },
         "1": {
-          "scenario": "You want to print a 24 MP photo at 300 DPI in a 3:2 aspect ratio. What's the approximate print size?",
-          "hint": "Print size in inches = pixels ÷ DPI.",
-          "successMessage": "Right! 6000 ÷ 300 = 20 in, 4000 ÷ 300 ≈ 13.3 in. So ~20×13 in.",
-          "failureMessage": "At 300 DPI, a 24 MP (6000×4000) photo prints at ~20×13 inches.",
+          "scenario": "Chceš vytisknout 24 MP fotku při 300 DPI v poměru 3:2. Jaká bude přibližná velikost tisku?",
+          "hint": "Velikost tisku v palcích = pixely ÷ DPI.",
+          "successMessage": "Správně! 6000 ÷ 300 = 20 in, 4000 ÷ 300 ≈ 13,3 in. Tedy asi 20×13 in.",
+          "failureMessage": "Při 300 DPI se 24 MP (6000×4000) fotka vytiskne na přibližně 20×13 palců.",
           "options": {
             "0": { "label": "20×13 in" },
             "1": { "label": "17×11 in" },
@@ -90,10 +90,10 @@
           }
         },
         "2": {
-          "scenario": "A phone advertises 48 MP. What's the typical output resolution after pixel binning?",
-          "hint": "Pixel binning combines 4 sensor pixels into 1 output pixel.",
-          "successMessage": "Correct! 48 MP ÷ 4 (4-in-1 binning) = 12 MP output.",
-          "failureMessage": "4-in-1 pixel binning reduces 48 MP advertised to 12 MP output.",
+          "scenario": "Telefon uvádí 48 MP. Jaké je typické výstupní rozlišení po pixel binningu?",
+          "hint": "Pixel binning sloučí 4 pixely snímače do 1 výstupního pixelu.",
+          "successMessage": "Správně! 48 MP ÷ 4 (4-v-1 binning) = 12 MP výstup.",
+          "failureMessage": "4-v-1 pixel binning sníží uváděných 48 MP na 12 MP výstupního rozlišení.",
           "options": {
             "0": { "label": "12 MP" },
             "1": { "label": "24 MP" },
@@ -101,10 +101,10 @@
           }
         },
         "3": {
-          "scenario": "At 6-foot viewing distance, what's the minimum PPI for a print to appear sharp to the human eye?",
-          "hint": "The eye resolves ~1 arcmin at any distance; at 72 inches that maps to ~50-60 PPI.",
-          "successMessage": "Right! At 6 feet the eye only needs ~60 PPI for perceived sharpness.",
-          "failureMessage": "At 6 feet the eye only resolves about 60 PPI. That's why billboards can print at very low DPI.",
+          "scenario": "Při pozorovací vzdálenosti 2 metry, jaká je minimální PPI pro ostrý tisk?",
+          "hint": "Oko rozlišuje přibližně 1 obloukovou minutu; při 180 cm to odpovídá asi 50–60 PPI.",
+          "successMessage": "Správně! Ve 2 metrech oko potřebuje pouze asi 60 PPI pro vnímanou ostrost.",
+          "failureMessage": "Ve 2 metrech oko rozliší jen asi 60 PPI. Proto se billboardy mohou tisknout s velmi nízkým DPI.",
           "options": {
             "0": { "label": "~60 PPI" },
             "1": { "label": "~150 PPI" },
@@ -112,10 +112,10 @@
           }
         },
         "4": {
-          "scenario": "You crop a 45 MP full-frame image down to APS-C (1.5× crop factor). What's the effective megapixel count?",
-          "hint": "Area crop factor = linear crop factor squared.",
-          "successMessage": "Correct! 45 ÷ 1.5² = 45 ÷ 2.25 = 20 MP.",
-          "failureMessage": "Cropping by 1.5× linearly means 2.25× area reduction. 45 ÷ 2.25 = 20 MP.",
+          "scenario": "Ořežeš 45 MP full-frame snímek na APS-C (1,5× crop faktor). Jaký je efektivní počet megapixelů?",
+          "hint": "Plošný crop faktor = lineární crop faktor na druhou.",
+          "successMessage": "Správně! 45 ÷ 1,5² = 45 ÷ 2,25 = 20 MP.",
+          "failureMessage": "Ořez 1,5× lineárně znamená 2,25× zmenšení plochy. 45 ÷ 2,25 = 20 MP.",
           "options": {
             "0": { "label": "30 MP" },
             "1": { "label": "20 MP" },

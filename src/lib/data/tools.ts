@@ -19,7 +19,7 @@ export const TOOLS: ToolDef[] = [
   { slug: 'sensor-size-comparison', name: 'Sensor Size Comparison', description: 'Compare camera sensor sizes visually', dev: 'live', prod: 'live', category: 'visualizer' },
   { slug: 'frame-studio', name: 'Frame Studio', description: 'Crop, frame, and compose photos with grid overlays', dev: 'live', prod: 'live', category: 'file-tool' },
   { slug: 'exif-viewer', name: 'EXIF Viewer', description: 'View EXIF metadata and histogram for any photo — 100% client-side', dev: 'live', prod: 'live', category: 'file-tool' },
-  { slug: 'megapixel-visualizer', name: 'Megapixel Size Visualizer', description: 'Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs', dev: 'live', prod: 'draft', category: 'visualizer' },
+  { slug: 'megapixels-size-visualizer', name: 'Megapixels Size Visualizer', description: 'Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs', dev: 'live', prod: 'live', category: 'visualizer' },
 ]
 
 function getStatus(tool: ToolDef): ToolStatus {

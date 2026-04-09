@@ -65,7 +65,7 @@ export const TOOL_FAQS: ToolFaqs[] = [
     ],
   },
   {
-    slug: 'megapixel-visualizer',
+    slug: 'megapixels-size-visualizer',
     questions: [
       { id: 'how-many-megapixels-for-large-print' },
       { id: 'why-phone-48mp-shows-12mp' },

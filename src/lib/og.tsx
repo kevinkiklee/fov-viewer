@@ -15,7 +15,7 @@ const TOOL_EMOJIS: Record<string, string> = {
   'sensor-size-comparison': '📏',
   'exif-viewer': '🗂️',
   'perspective-compression-simulator': '🏔️',
-  'megapixel-visualizer': '🖼️',
+  'megapixels-size-visualizer': '🖼️',
 }
 
 const CATEGORY_LABELS: Record<string, string> = {

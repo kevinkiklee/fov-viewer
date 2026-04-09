@@ -17,7 +17,7 @@ function formatBytes(bytes: number): string {
 }
 
 export function FileSizeDisplay({ visibleMps, hoveredMpId }: Props) {
-  const t = useTranslations('toolUI.megapixel-visualizer')
+  const t = useTranslations('toolUI.megapixels-size-visualizer')
 
   const target = (hoveredMpId && visibleMps.find(m => m.id === hoveredMpId))
     ?? visibleMps[0]

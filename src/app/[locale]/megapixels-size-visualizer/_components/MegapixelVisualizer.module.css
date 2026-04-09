@@ -21,7 +21,6 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  animation: slideInLeft var(--duration-slow) var(--ease-out) both;
 }
 
 .header {
@@ -49,7 +48,6 @@
   overflow: auto;
   padding: 16px;
   min-width: 0;
-  animation: fadeIn var(--duration-slow) var(--ease-out) both;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -62,19 +60,14 @@
   gap: 6px;
 }
 
-/* Compact shared ModeToggle buttons anywhere inside the sidebar (e.g. Units toggle) */
-.sidebar .controlGroup button {
-  min-height: 28px;
-  padding: 4px 10px;
-  font-size: 12px;
-}
-
 /* ── Table controls row (viewing distance + bit depth above the print table) ── */
 .tableControls {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   align-items: start;
+  width: 100%;
+  min-height: 51px;
 }
 .tableControls .controlGroup {
   margin-bottom: 0;
@@ -82,11 +75,45 @@
 .tableControls .legend {
   margin-bottom: 4px;
 }
-/* Shrink the shared ModeToggle buttons inside this row only */
-.tableControls button {
+/* Segmented button group — pure CSS, no animated indicator to go stale */
+.segmentedGroup {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.segmentedBtn {
+  flex: 1;
   min-height: 28px;
   padding: 4px 10px;
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
   font-size: 12px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background var(--duration-fast), color var(--duration-fast);
+}
+
+.segmentedBtn:not(:last-child) {
+  border-right: 1px solid var(--border);
+}
+
+.segmentedBtn:hover:not(.segmentedBtnActive) {
+  color: var(--text-primary);
+  background: var(--bg-surface);
+}
+
+.segmentedBtnActive {
+  background: var(--accent);
+  color: var(--text-on-accent, #000);
+}
+
+.segmentedBtnActive:hover {
+  background: var(--accent-hover, var(--accent));
 }
 
 .mobileControls {
@@ -599,9 +626,6 @@
 }
 
 /* CLS + perf enhancements */
-.main {
-  contain: layout;
-}
 
 .sidebar {
   contain: layout paint;
@@ -613,18 +637,6 @@
   width: 100%;
   flex: 1 1 400px;
   min-height: 300px;
-}
-
-.skeletonOverlay {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.15;
-}
-
-.canvas[data-rendered="true"] + .skeletonOverlay,
-.canvas[data-rendered="true"] ~ .skeletonOverlay {
-  display: none;
 }
 
 .visuallyHidden {
@@ -640,8 +652,10 @@
 }
 
 .learnPanelWrap {
-  content-visibility: auto;
-  contain-intrinsic-size: 800px;
+  /* Fixed 260px width, natural height — avoids layout shift caused by
+     browsers interpreting a single contain-intrinsic-size value as both
+     width and height, which used to push .main into a ~70px column. */
+  flex: 0 0 260px;
 }
 
 .printTableWrap {

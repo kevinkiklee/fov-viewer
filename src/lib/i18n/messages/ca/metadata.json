@@ -86,9 +86,9 @@
       "title": "Glossari de fotografia",
       "description": "Glossari cercable amb més de 50 termes de fotografia amb definicions i enllaços a eines interactives."
     },
-    "megapixel-visualizer": {
-      "title": "Megapixel Size Visualizer",
-      "description": "Visualize how megapixels translate to print sizes at 72-300 DPI, across aspect ratios. Compare cameras, file sizes, pixel binning, and crop reach — with a quality-tiered print table."
+    "megapixels-size-visualizer": {
+      "title": "Visualitzador de mida de megapíxels — mides d'impressió",
+      "description": "Visualitza com els megapíxels es tradueixen en mides d'impressió a 72–300 DPI, en diferents relacions d'aspecte. Compara càmeres, mides de fitxer, pixel binning i abast de retall — amb una taula d'impressió per nivells de qualitat."
     }
   }
 }

@@ -60,9 +60,9 @@
       "name": "Προβολέας EXIF",
       "description": "Δες EXIF metadata και ιστόγραμμα για οποιαδήποτε φωτογραφία — 100% στον browser σου"
     },
-    "megapixel-visualizer": {
-      "name": "Megapixel Size Visualizer",
-      "description": "Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs"
+    "megapixels-size-visualizer": {
+      "name": "Οπτικοποιητής μεγέθους μεγαπίξελ",
+      "description": "Σύγκρινε μεγαπίξελ, οπτικοποίησε μεγέθη εκτύπωσης και δες μεγέθη αρχείων σε διάφορες αναλογίες και DPI"
     }
   }
 }

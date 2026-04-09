@@ -60,9 +60,9 @@
       "name": "Переглядач EXIF",
       "description": "Переглядай EXIF і гістограму будь-якого фото — 100% у браузері"
     },
-    "megapixel-visualizer": {
-      "name": "Megapixel Size Visualizer",
-      "description": "Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs"
+    "megapixels-size-visualizer": {
+      "name": "Візуалізатор мегапікселів",
+      "description": "Порівнюй мегапікселі, дивись розміри друку та файлів для різних співвідношень сторін і DPI"
     }
   }
 }

@@ -86,9 +86,9 @@
       "title": "Fotoğrafçılık Sözlüğü",
       "description": "Tanımlar ve interaktif araç bağlantıları ile 50'den fazla fotoğrafçılık terimini içeren aranabilir sözlük."
     },
-    "megapixel-visualizer": {
-      "title": "Megapixel Size Visualizer",
-      "description": "Visualize how megapixels translate to print sizes at 72-300 DPI, across aspect ratios. Compare cameras, file sizes, pixel binning, and crop reach — with a quality-tiered print table."
+    "megapixels-size-visualizer": {
+      "title": "Megapiksel Boyut Görselleştirici — Baskı Boyutlarını Hesaplayın",
+      "description": "Megapiksellerin 72-300 DPI aralığında farklı en-boy oranlarındaki baskı boyutlarına nasıl dönüştüğünü görselleştirin. Kameraları, dosya boyutlarını, piksel birleştirmeyi ve kırpma erişimini kalite sınıflı baskı tablosuyla karşılaştırın."
     }
   }
 }

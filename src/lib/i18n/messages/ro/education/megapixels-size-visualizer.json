@@ -1,77 +1,77 @@
 {
   "education": {
-    "megapixel-visualizer": {
-      "beginner": "Megapixels count the tiny dots your sensor captures — more megapixels means higher resolution, but how that translates to print sharpness, screen size, and file size depends on several factors you can explore here. Most photos viewed on screens need far fewer megapixels than you'd expect; large prints depend on viewing distance, not just DPI.",
+    "megapixels-size-visualizer": {
+      "beginner": "Megapixelii numără micile puncte pe care le captează senzorul tău — mai mulți megapixeli înseamnă rezoluție mai mare, dar modul în care asta se traduce în claritate la tipărire, dimensiune pe ecran și dimensiune de fișier depinde de câțiva factori pe care îi poți explora aici. Majoritatea fotografiilor vizualizate pe ecrane au nevoie de mult mai puțini megapixeli decât ai crede; printurile mari depind de distanța de vizualizare, nu doar de DPI.",
       "deeper": {
         "0": {
-          "heading": "From pixels to prints",
-          "text": "Total pixels equals megapixels × 1,000,000. Aspect ratio determines how those pixels are split into width and height. Print size in inches equals pixels divided by DPI. A 24 MP photo at 3:2 gives 6000×4000 pixels; at 300 DPI that prints at 20×13 inches."
+          "heading": "De la pixeli la tipărire",
+          "text": "Total pixeli = megapixeli × 1.000.000. Raportul de aspect determină cum se împart pixelii în lățime și înălțime. Dimensiunea tipăririi în inci = pixeli împărțiți la DPI. O fotografie de 24 MP la 3:2 dă 6000×4000 pixeli; la 300 DPI tipărește la aproximativ 50×33 cm (circa 20×13 inci)."
         },
         "1": {
-          "heading": "The DPI myth and viewing distance",
-          "text": "The human eye resolves about 1 arcminute of angular detail, which translates to approximately 300 PPI at 12 inches, 100 PPI at 36 inches, and 50 PPI at 72 inches. A billboard printed at 30 DPI looks perfectly sharp from across the street — the viewer's distance is doing the work."
+          "heading": "Mitul DPI și distanța de vizualizare",
+          "text": "Ochiul uman distinge aproximativ 1 minut de arc de detaliu unghiular, ceea ce se traduce în aproximativ 300 PPI la 30 cm, 100 PPI la 90 cm și 50 PPI la 180 cm. Un panou publicitar tipărit la 30 DPI arată perfect clar de pe cealaltă parte a străzii — distanța face toată treaba."
         },
         "2": {
-          "heading": "Megapixels vs file size",
-          "text": "Uncompressed 16-bit TIFF is roughly 6 bytes per pixel. 14-bit compressed RAW is about 1.75 bytes per pixel. JPEG at quality 90 is around 0.3 bytes per pixel. That's why a 24 MP RAW file is 40-50 MB while the JPEG version is 7-10 MB."
+          "heading": "Megapixeli vs. dimensiunea fișierului",
+          "text": "TIFF necomprimat pe 16 biți ocupă aproximativ 6 octeți per pixel. RAW comprimat pe 14 biți este circa 1,75 octeți per pixel. JPEG la calitate 90 este aproximativ 0,3 octeți per pixel. De aceea un fișier RAW de 24 MP are 40–50 MB, în timp ce versiunea JPEG are doar 7–10 MB."
         },
         "3": {
-          "heading": "Phones and pixel binning",
-          "text": "Modern phones advertise 48, 50, 108, or even 200 MP sensors, but output 12 MP photos by default via 4-in-1 or 9-in-1 pixel binning. Binning improves low-light performance by effectively creating larger virtual pixels. Full-resolution modes expose the advertised count at the cost of more noise in dim light."
+          "heading": "Telefoane și pixel binning",
+          "text": "Telefoanele moderne anunță senzori de 48, 50, 108 sau chiar 200 MP, dar produc implicit fotografii de 12 MP prin combinarea pixelilor 4-în-1 sau 9-în-1. Binning-ul îmbunătățește performanța pe lumină slabă prin crearea efectivă a unor pixeli virtuali mai mari. Modurile de rezoluție completă accesează numărul anunțat, dar cu mai mult zgomot pe lumină slabă."
         }
       },
       "keyFactors": {
-        "0": { "label": "Pixel dimensions", "description": "Megapixels × aspect ratio → width and height in pixels" },
-        "1": { "label": "Print DPI", "description": "Density of pixels per inch; determines print size and apparent sharpness" },
-        "2": { "label": "Viewing distance", "description": "Human eye acuity means prints viewed far away need much lower DPI" },
-        "3": { "label": "Pixel binning", "description": "Phones advertise higher MP but output fewer via 4-in-1 or 9-in-1 binning" },
-        "4": { "label": "Sensor area", "description": "At the same MP count, larger sensors have larger pixels and better low-light performance — see the sensor-size-comparison tool" }
+        "0": { "label": "Dimensiuni în pixeli", "description": "Megapixeli × raport de aspect → lățime și înălțime în pixeli" },
+        "1": { "label": "DPI tipărire", "description": "Densitatea pixelilor pe inci; determină dimensiunea tipăririi și claritatea percepută" },
+        "2": { "label": "Distanța de vizualizare", "description": "Acuitatea ochiului uman înseamnă că printurile vizualizate de departe au nevoie de DPI mult mai mic" },
+        "3": { "label": "Pixel binning", "description": "Telefoanele anunță mai mulți MP, dar produc mai puțini prin binning 4-în-1 sau 9-în-1" },
+        "4": { "label": "Suprafața senzorului", "description": "La același număr de MP, un senzor mai mare are pixeli mai mari și performanță mai bună pe lumină slabă — vezi comparația dimensiunilor senzorilor" }
       },
       "tips": {
-        "0": { "text": "Most web photos are viewed at 2000px or smaller — 12 MP is plenty for screens and Instagram." },
-        "1": { "text": "For wall prints at 6-foot viewing distance, the eye only needs ~60 PPI — a 24 MP photo covers a 60-inch wide print." },
-        "2": { "text": "Your 48 MP phone photo is typically a 12 MP binned output — only the 'full resolution' mode delivers the advertised count." }
+        "0": { "text": "Majoritatea fotografiilor de pe web sunt vizualizate la 2000 px sau mai puțin — 12 MP sunt de ajuns pentru ecrane și Instagram." },
+        "1": { "text": "Pentru printuri de perete la 2 metri distanță, ochiul are nevoie doar de ~60 PPI — o fotografie de 24 MP acoperă un print de 150 cm lățime." },
+        "2": { "text": "Fotografia ta de 48 MP de pe telefon este de obicei un rezultat binnat de 12 MP — doar modul \u201Erezoluție completă\u201D oferă numărul anunțat." }
       },
       "tooltips": {
         "Megapixels": {
-          "term": "Megapixels",
-          "definition": "One megapixel equals 1,000,000 pixels. It counts the total pixels your sensor captures, not the sharpness of the image."
+          "term": "Megapixeli",
+          "definition": "Un megapixel este egal cu 1.000.000 de pixeli. Numără totalul pixelilor pe care îi captează senzorul, nu claritatea imaginii."
         },
         "Aspect Ratio": {
-          "term": "Aspect Ratio",
-          "definition": "The ratio of width to height. 3:2 is traditional for DSLRs, 4:3 for Micro Four Thirds and phones, 16:9 for video."
+          "term": "Raport de aspect",
+          "definition": "Raportul dintre lățime și înălțime. 3:2 este standard pentru DSLR-uri, 4:3 pentru Micro Four Thirds și telefoane, 16:9 pentru video."
         },
         "DPI": {
           "term": "DPI",
-          "definition": "Dots per inch — the density of pixels when printed. Higher DPI gives smaller but sharper prints from the same pixel count."
+          "definition": "Dots per inch — densitatea pixelilor la tipărire. DPI mai mare produce printuri mai mici, dar mai clare din același număr de pixeli."
         },
         "Units": {
-          "term": "Units",
-          "definition": "Switch between metric (mm/cm) and imperial (inches). Defaults to your locale."
+          "term": "Unități",
+          "definition": "Comută între metric (mm/cm) și imperial (inci). Implicit urmează setările regionale."
         },
         "Viewing Distance": {
-          "term": "Viewing Distance",
-          "definition": "How far the viewer stands from the print. The farther away, the lower the required DPI for perceived sharpness."
+          "term": "Distanța de vizualizare",
+          "definition": "Cât de departe stă privitorul de print. Cu cât e mai departe, cu atât DPI-ul necesar pentru claritate percepută este mai mic."
         },
         "Print Size": {
-          "term": "Print Size",
-          "definition": "The physical dimensions of the printed image at a given DPI. Calculated from pixel dimensions divided by DPI."
+          "term": "Dimensiune tipărire",
+          "definition": "Dimensiunile fizice ale imaginii tipărite la un anumit DPI. Se calculează din dimensiunile în pixeli împărțite la DPI."
         },
         "Bit Depth": {
-          "term": "Bit Depth",
-          "definition": "The number of bits per color channel. 8-bit (JPEG) is standard; 14-bit or 16-bit (RAW/TIFF) preserve more tonal range."
+          "term": "Adâncimea de biți",
+          "definition": "Numărul de biți per canal de culoare. 8 biți (JPEG) este standard; 14 biți sau 16 biți (RAW/TIFF) păstrează o gamă tonală mai largă."
         },
         "Crop Reach": {
-          "term": "Crop Reach",
-          "definition": "How many megapixels remain after cropping to a smaller sensor area. A 45 MP full-frame image cropped to APS-C is about 20 MP."
+          "term": "Rază de decupare",
+          "definition": "Câți megapixeli rămân după decuparea la o zonă de senzor mai mică. O imagine full-frame de 45 MP decupată la APS-C dă aproximativ 20 MP."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "A 24 MP camera shoots in 3:2. What are the approximate pixel dimensions?",
-          "hint": "Total pixels = MP × 1,000,000. Split by aspect ratio.",
-          "successMessage": "Correct! 24 MP at 3:2 is 6000 × 4000 pixels.",
-          "failureMessage": "24 MP means 24 million pixels. At 3:2, that's 6000 × 4000.",
+          "scenario": "Un aparat de 24 MP fotografiază în 3:2. Care sunt dimensiunile aproximative în pixeli?",
+          "hint": "Total pixeli = MP × 1.000.000. Împarte după raportul de aspect.",
+          "successMessage": "Corect! 24 MP la 3:2 înseamnă 6000 × 4000 pixeli.",
+          "failureMessage": "24 MP înseamnă 24 de milioane de pixeli. La 3:2, asta dă 6000 × 4000.",
           "options": {
             "0": { "label": "6000×4000" },
             "1": { "label": "5657×4243" },
@@ -79,10 +79,10 @@
           }
         },
         "1": {
-          "scenario": "You want to print a 24 MP photo at 300 DPI in a 3:2 aspect ratio. What's the approximate print size?",
-          "hint": "Print size in inches = pixels ÷ DPI.",
-          "successMessage": "Right! 6000 ÷ 300 = 20 in, 4000 ÷ 300 ≈ 13.3 in. So ~20×13 in.",
-          "failureMessage": "At 300 DPI, a 24 MP (6000×4000) photo prints at ~20×13 inches.",
+          "scenario": "Vrei să tipărești o fotografie de 24 MP la 300 DPI în raportul 3:2. Care e dimensiunea aproximativă a tipăririi?",
+          "hint": "Dimensiunea tipăririi în inci = pixeli ÷ DPI.",
+          "successMessage": "Corect! 6000 ÷ 300 = 20 in, 4000 ÷ 300 ≈ 13,3 in. Adică ~20×13 in.",
+          "failureMessage": "La 300 DPI, o fotografie de 24 MP (6000×4000) tipărește la aproximativ 20×13 inci.",
           "options": {
             "0": { "label": "20×13 in" },
             "1": { "label": "17×11 in" },
@@ -90,10 +90,10 @@
           }
         },
         "2": {
-          "scenario": "A phone advertises 48 MP. What's the typical output resolution after pixel binning?",
-          "hint": "Pixel binning combines 4 sensor pixels into 1 output pixel.",
-          "successMessage": "Correct! 48 MP ÷ 4 (4-in-1 binning) = 12 MP output.",
-          "failureMessage": "4-in-1 pixel binning reduces 48 MP advertised to 12 MP output.",
+          "scenario": "Un telefon anunță 48 MP. Care e rezoluția tipică de ieșire după pixel binning?",
+          "hint": "Pixel binning combină 4 pixeli de senzor în 1 pixel de ieșire.",
+          "successMessage": "Corect! 48 MP ÷ 4 (binning 4-în-1) = 12 MP la ieșire.",
+          "failureMessage": "Pixel binning 4-în-1 reduce cei 48 MP anunțați la 12 MP la ieșire.",
           "options": {
             "0": { "label": "12 MP" },
             "1": { "label": "24 MP" },
@@ -101,10 +101,10 @@
           }
         },
         "3": {
-          "scenario": "At 6-foot viewing distance, what's the minimum PPI for a print to appear sharp to the human eye?",
-          "hint": "The eye resolves ~1 arcmin at any distance; at 72 inches that maps to ~50-60 PPI.",
-          "successMessage": "Right! At 6 feet the eye only needs ~60 PPI for perceived sharpness.",
-          "failureMessage": "At 6 feet the eye only resolves about 60 PPI. That's why billboards can print at very low DPI.",
+          "scenario": "La distanța de vizualizare de 2 metri, care e PPI-ul minim pentru ca un print să pară clar?",
+          "hint": "Ochiul distinge ~1 minut de arc la orice distanță; la 180 cm asta corespunde la ~50–60 PPI.",
+          "successMessage": "Corect! La 2 metri, ochiul are nevoie doar de ~60 PPI pentru claritate percepută.",
+          "failureMessage": "La 2 metri, ochiul distinge doar aproximativ 60 PPI. De aceea panourile publicitare se pot tipări la DPI foarte scăzut.",
           "options": {
             "0": { "label": "~60 PPI" },
             "1": { "label": "~150 PPI" },
@@ -112,10 +112,10 @@
           }
         },
         "4": {
-          "scenario": "You crop a 45 MP full-frame image down to APS-C (1.5× crop factor). What's the effective megapixel count?",
-          "hint": "Area crop factor = linear crop factor squared.",
-          "successMessage": "Correct! 45 ÷ 1.5² = 45 ÷ 2.25 = 20 MP.",
-          "failureMessage": "Cropping by 1.5× linearly means 2.25× area reduction. 45 ÷ 2.25 = 20 MP.",
+          "scenario": "Decupezi o imagine full-frame de 45 MP la APS-C (factor de crop 1,5×). Care e numărul efectiv de megapixeli?",
+          "hint": "Factorul de crop al suprafeței = factorul de crop liniar la pătrat.",
+          "successMessage": "Corect! 45 ÷ 1,5² = 45 ÷ 2,25 = 20 MP.",
+          "failureMessage": "Decuparea cu 1,5× liniar înseamnă reducere de 2,25× a suprafeței. 45 ÷ 2,25 = 20 MP.",
           "options": {
             "0": { "label": "30 MP" },
             "1": { "label": "20 MP" },

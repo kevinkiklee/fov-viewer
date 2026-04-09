@@ -60,9 +60,9 @@
       "name": "Vizualizator EXIF",
       "description": "Vezi datele EXIF și histograma oricărei fotografii — 100% în browser"
     },
-    "megapixel-visualizer": {
-      "name": "Megapixel Size Visualizer",
-      "description": "Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs"
+    "megapixels-size-visualizer": {
+      "name": "Vizualizator megapixeli",
+      "description": "Compară megapixelii, vizualizează dimensiunile de tipărire și vezi dimensiunile fișierelor pentru diferite rapoarte de aspect și DPI"
     }
   }
 }

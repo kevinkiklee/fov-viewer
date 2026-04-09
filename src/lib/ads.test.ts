@@ -51,4 +51,23 @@ describe('ads config', () => {
     const { getCookieyesId } = await import('./ads')
     expect(getCookieyesId()).toBe('site-xyz')
   })
+
+  it('getAdsenseClient trims whitespace and newlines', async () => {
+    process.env.NEXT_PUBLIC_ADSENSE_CLIENT = '  ca-pub-999\n'
+    const { getAdsenseClient } = await import('./ads')
+    expect(getAdsenseClient()).toBe('ca-pub-999')
+  })
+
+  it('getCookieyesId trims whitespace and newlines', async () => {
+    process.env.NEXT_PUBLIC_COOKIEYES_ID = '\tsite-xyz\n'
+    const { getCookieyesId } = await import('./ads')
+    expect(getCookieyesId()).toBe('site-xyz')
+  })
+
+  it('treats whitespace-only values as undefined', async () => {
+    process.env.NEXT_PUBLIC_ADSENSE_CLIENT = '   \n'
+    const { getAdsenseClient, isAdsEnabled } = await import('./ads')
+    expect(getAdsenseClient()).toBeUndefined()
+    expect(isAdsEnabled()).toBe(false)
+  })
 })

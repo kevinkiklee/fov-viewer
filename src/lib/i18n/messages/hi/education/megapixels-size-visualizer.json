@@ -1,77 +1,77 @@
 {
   "education": {
-    "megapixel-visualizer": {
-      "beginner": "Megapixels count the tiny dots your sensor captures — more megapixels means higher resolution, but how that translates to print sharpness, screen size, and file size depends on several factors you can explore here. Most photos viewed on screens need far fewer megapixels than you'd expect; large prints depend on viewing distance, not just DPI.",
+    "megapixels-size-visualizer": {
+      "beginner": "मेगापिक्सल आपके सेंसर द्वारा कैप्चर किए गए छोटे डॉट्स की संख्या है — ज़्यादा मेगापिक्सल का मतलब है ज़्यादा रेज़ोलूशन, लेकिन प्रिंट शार्पनेस, स्क्रीन साइज़ और फ़ाइल साइज़ पर इसका कैसा असर पड़ता है, यह कई फ़ैक्टर्स पर निर्भर करता है जिन्हें आप यहाँ एक्सप्लोर कर सकते हैं। स्क्रीन पर देखी जाने वाली ज़्यादातर फ़ोटो को आपकी सोच से कहीं कम मेगापिक्सल चाहिए; बड़े प्रिंट DPI से ज़्यादा देखने की दूरी पर निर्भर करते हैं।",
       "deeper": {
         "0": {
-          "heading": "From pixels to prints",
-          "text": "Total pixels equals megapixels × 1,000,000. Aspect ratio determines how those pixels are split into width and height. Print size in inches equals pixels divided by DPI. A 24 MP photo at 3:2 gives 6000×4000 pixels; at 300 DPI that prints at 20×13 inches."
+          "heading": "पिक्सल से प्रिंट तक",
+          "text": "कुल पिक्सल = मेगापिक्सल × 1,000,000। आस्पेक्ट रेशियो तय करता है कि ये पिक्सल चौड़ाई और ऊँचाई में कैसे बँटते हैं। इंच में प्रिंट साइज़ = पिक्सल ÷ DPI। 24 MP की 3:2 फ़ोटो में 6000×4000 पिक्सल होते हैं; 300 DPI पर यह 20×13 इंच (लगभग 50×33 cm) में प्रिंट होती है।"
         },
         "1": {
-          "heading": "The DPI myth and viewing distance",
-          "text": "The human eye resolves about 1 arcminute of angular detail, which translates to approximately 300 PPI at 12 inches, 100 PPI at 36 inches, and 50 PPI at 72 inches. A billboard printed at 30 DPI looks perfectly sharp from across the street — the viewer's distance is doing the work."
+          "heading": "DPI का भ्रम और देखने की दूरी",
+          "text": "मानव आँख लगभग 1 आर्कमिनट का कोणीय विवरण पहचान सकती है, जो 12 इंच (30 cm) पर लगभग 300 PPI, 36 इंच (90 cm) पर 100 PPI, और 72 इंच (180 cm) पर 50 PPI के बराबर होता है। 30 DPI पर प्रिंट किया गया बिलबोर्ड भी सड़क के पार से बिल्कुल शार्प दिखता है — दर्शक की दूरी ही असली फ़ैक्टर है।"
         },
         "2": {
-          "heading": "Megapixels vs file size",
-          "text": "Uncompressed 16-bit TIFF is roughly 6 bytes per pixel. 14-bit compressed RAW is about 1.75 bytes per pixel. JPEG at quality 90 is around 0.3 bytes per pixel. That's why a 24 MP RAW file is 40-50 MB while the JPEG version is 7-10 MB."
+          "heading": "मेगापिक्सल बनाम फ़ाइल साइज़",
+          "text": "बिना कम्प्रेशन के 16-bit TIFF लगभग 6 बाइट प्रति पिक्सल लेता है। 14-bit कम्प्रेस्ड RAW लगभग 1.75 बाइट प्रति पिक्सल। क्वालिटी 90 का JPEG लगभग 0.3 बाइट प्रति पिक्सल। इसीलिए 24 MP की RAW फ़ाइल 40-50 MB होती है जबकि JPEG वर्ज़न सिर्फ़ 7-10 MB।"
         },
         "3": {
-          "heading": "Phones and pixel binning",
-          "text": "Modern phones advertise 48, 50, 108, or even 200 MP sensors, but output 12 MP photos by default via 4-in-1 or 9-in-1 pixel binning. Binning improves low-light performance by effectively creating larger virtual pixels. Full-resolution modes expose the advertised count at the cost of more noise in dim light."
+          "heading": "फ़ोन और पिक्सल बिनिंग",
+          "text": "आधुनिक फ़ोन 48, 50, 108 या 200 MP सेंसर का दावा करते हैं, लेकिन डिफ़ॉल्ट रूप से 4-in-1 या 9-in-1 पिक्सल बिनिंग के ज़रिए 12 MP फ़ोटो देते हैं। बिनिंग पास-पास के पिक्सल को मिलाकर बड़े वर्चुअल पिक्सल बनाती है, जिससे कम रोशनी में परफ़ॉर्मेंस बेहतर होती है। फ़ुल-रेज़ोलूशन मोड में विज्ञापित काउंट मिलता है, लेकिन कम रोशनी में नॉइज़ बढ़ता है।"
         }
       },
       "keyFactors": {
-        "0": { "label": "Pixel dimensions", "description": "Megapixels × aspect ratio → width and height in pixels" },
-        "1": { "label": "Print DPI", "description": "Density of pixels per inch; determines print size and apparent sharpness" },
-        "2": { "label": "Viewing distance", "description": "Human eye acuity means prints viewed far away need much lower DPI" },
-        "3": { "label": "Pixel binning", "description": "Phones advertise higher MP but output fewer via 4-in-1 or 9-in-1 binning" },
-        "4": { "label": "Sensor area", "description": "At the same MP count, larger sensors have larger pixels and better low-light performance — see the sensor-size-comparison tool" }
+        "0": { "label": "पिक्सल डाइमेंशन", "description": "मेगापिक्सल × आस्पेक्ट रेशियो → पिक्सल में चौड़ाई और ऊँचाई" },
+        "1": { "label": "प्रिंट DPI", "description": "प्रति इंच पिक्सल की डेंसिटी; प्रिंट साइज़ और दिखने वाली शार्पनेस तय करती है" },
+        "2": { "label": "देखने की दूरी", "description": "आँख की सीमित दृष्टि के कारण दूर से देखे जाने वाले प्रिंट को कम DPI चाहिए" },
+        "3": { "label": "पिक्सल बिनिंग", "description": "फ़ोन ज़्यादा MP दिखाते हैं लेकिन 4-in-1 या 9-in-1 बिनिंग से कम आउटपुट देते हैं" },
+        "4": { "label": "सेंसर एरिया", "description": "समान MP काउंट पर बड़े सेंसर में बड़े पिक्सल होते हैं और कम रोशनी में बेहतर परफ़ॉर्मेंस मिलती है — सेंसर साइज़ तुलना टूल देखें" }
       },
       "tips": {
-        "0": { "text": "Most web photos are viewed at 2000px or smaller — 12 MP is plenty for screens and Instagram." },
-        "1": { "text": "For wall prints at 6-foot viewing distance, the eye only needs ~60 PPI — a 24 MP photo covers a 60-inch wide print." },
-        "2": { "text": "Your 48 MP phone photo is typically a 12 MP binned output — only the 'full resolution' mode delivers the advertised count." }
+        "0": { "text": "ज़्यादातर वेब फ़ोटो 2000px या उससे कम पर दिखाई जाती हैं — स्क्रीन और Instagram के लिए 12 MP काफ़ी है।" },
+        "1": { "text": "6 फ़ीट की दूरी से देखी जाने वाली वॉल प्रिंट के लिए आँख को सिर्फ़ ~60 PPI चाहिए — 24 MP की फ़ोटो 60 इंच चौड़ी प्रिंट कवर कर सकती है।" },
+        "2": { "text": "आपकी 48 MP वाली फ़ोन फ़ोटो असल में 12 MP बिन्ड आउटपुट है — सिर्फ़ 'फ़ुल रेज़ोलूशन' मोड में विज्ञापित काउंट मिलता है।" }
       },
       "tooltips": {
         "Megapixels": {
-          "term": "Megapixels",
-          "definition": "One megapixel equals 1,000,000 pixels. It counts the total pixels your sensor captures, not the sharpness of the image."
+          "term": "मेगापिक्सल",
+          "definition": "एक मेगापिक्सल 1,000,000 पिक्सल के बराबर होता है। यह सेंसर द्वारा कैप्चर किए गए कुल पिक्सल की गिनती है, इमेज की शार्पनेस नहीं।"
         },
         "Aspect Ratio": {
-          "term": "Aspect Ratio",
-          "definition": "The ratio of width to height. 3:2 is traditional for DSLRs, 4:3 for Micro Four Thirds and phones, 16:9 for video."
+          "term": "आस्पेक्ट रेशियो",
+          "definition": "चौड़ाई और ऊँचाई का अनुपात। 3:2 DSLR के लिए, 4:3 माइक्रो फ़ोर थर्ड्स और फ़ोन के लिए, 16:9 वीडियो के लिए प्रचलित है।"
         },
         "DPI": {
           "term": "DPI",
-          "definition": "Dots per inch — the density of pixels when printed. Higher DPI gives smaller but sharper prints from the same pixel count."
+          "definition": "डॉट्स प्रति इंच — प्रिंट में पिक्सल की डेंसिटी। ज़्यादा DPI से समान पिक्सल से छोटी लेकिन शार्प प्रिंट मिलती है।"
         },
         "Units": {
-          "term": "Units",
-          "definition": "Switch between metric (mm/cm) and imperial (inches). Defaults to your locale."
+          "term": "इकाई",
+          "definition": "मीट्रिक (mm/cm) और इम्पीरियल (इंच) के बीच बदलें। डिफ़ॉल्ट आपकी भाषा के अनुसार सेट होता है।"
         },
         "Viewing Distance": {
-          "term": "Viewing Distance",
-          "definition": "How far the viewer stands from the print. The farther away, the lower the required DPI for perceived sharpness."
+          "term": "देखने की दूरी",
+          "definition": "दर्शक प्रिंट से कितनी दूर खड़ा है। जितनी दूर, शार्पनेस के लिए उतना कम DPI चाहिए।"
         },
         "Print Size": {
-          "term": "Print Size",
-          "definition": "The physical dimensions of the printed image at a given DPI. Calculated from pixel dimensions divided by DPI."
+          "term": "प्रिंट साइज़",
+          "definition": "किसी दिए गए DPI पर प्रिंट इमेज का भौतिक आकार। पिक्सल डाइमेंशन ÷ DPI से कैलकुलेट होता है।"
         },
         "Bit Depth": {
-          "term": "Bit Depth",
-          "definition": "The number of bits per color channel. 8-bit (JPEG) is standard; 14-bit or 16-bit (RAW/TIFF) preserve more tonal range."
+          "term": "बिट डेप्थ",
+          "definition": "प्रति कलर चैनल बिट्स की संख्या। 8-bit (JPEG) स्टैंडर्ड है; 14-bit या 16-bit (RAW/TIFF) ज़्यादा टोनल रेंज सुरक्षित रखते हैं।"
         },
         "Crop Reach": {
-          "term": "Crop Reach",
-          "definition": "How many megapixels remain after cropping to a smaller sensor area. A 45 MP full-frame image cropped to APS-C is about 20 MP."
+          "term": "क्रॉप रीच",
+          "definition": "छोटे सेंसर एरिया में क्रॉप करने के बाद कितने मेगापिक्सल बचते हैं। 45 MP फ़ुल-फ़्रेम इमेज को APS-C में क्रॉप करने पर लगभग 20 MP मिलते हैं।"
         }
       },
       "challenges": {
         "0": {
-          "scenario": "A 24 MP camera shoots in 3:2. What are the approximate pixel dimensions?",
-          "hint": "Total pixels = MP × 1,000,000. Split by aspect ratio.",
-          "successMessage": "Correct! 24 MP at 3:2 is 6000 × 4000 pixels.",
-          "failureMessage": "24 MP means 24 million pixels. At 3:2, that's 6000 × 4000.",
+          "scenario": "24 MP कैमरा 3:2 में शूट करता है। अनुमानित पिक्सल डाइमेंशन क्या होंगे?",
+          "hint": "कुल पिक्सल = MP × 1,000,000। आस्पेक्ट रेशियो से बाँटें।",
+          "successMessage": "सही! 24 MP, 3:2 पर 6000 × 4000 पिक्सल होते हैं।",
+          "failureMessage": "24 MP मतलब 2.4 करोड़ पिक्सल। 3:2 में यह 6000 × 4000 होता है।",
           "options": {
             "0": { "label": "6000×4000" },
             "1": { "label": "5657×4243" },
@@ -79,10 +79,10 @@
           }
         },
         "1": {
-          "scenario": "You want to print a 24 MP photo at 300 DPI in a 3:2 aspect ratio. What's the approximate print size?",
-          "hint": "Print size in inches = pixels ÷ DPI.",
-          "successMessage": "Right! 6000 ÷ 300 = 20 in, 4000 ÷ 300 ≈ 13.3 in. So ~20×13 in.",
-          "failureMessage": "At 300 DPI, a 24 MP (6000×4000) photo prints at ~20×13 inches.",
+          "scenario": "आप 24 MP फ़ोटो को 3:2 आस्पेक्ट रेशियो में 300 DPI पर प्रिंट करना चाहते हैं। प्रिंट साइज़ लगभग कितना होगा?",
+          "hint": "इंच में प्रिंट साइज़ = पिक्सल ÷ DPI।",
+          "successMessage": "सही! 6000 ÷ 300 = 20 in, 4000 ÷ 300 ≈ 13.3 in। यानी ~20×13 in।",
+          "failureMessage": "300 DPI पर 24 MP (6000×4000) फ़ोटो ~20×13 इंच में प्रिंट होती है।",
           "options": {
             "0": { "label": "20×13 in" },
             "1": { "label": "17×11 in" },
@@ -90,10 +90,10 @@
           }
         },
         "2": {
-          "scenario": "A phone advertises 48 MP. What's the typical output resolution after pixel binning?",
-          "hint": "Pixel binning combines 4 sensor pixels into 1 output pixel.",
-          "successMessage": "Correct! 48 MP ÷ 4 (4-in-1 binning) = 12 MP output.",
-          "failureMessage": "4-in-1 pixel binning reduces 48 MP advertised to 12 MP output.",
+          "scenario": "एक फ़ोन 48 MP बताता है। पिक्सल बिनिंग के बाद सामान्य आउटपुट रेज़ोलूशन क्या होता है?",
+          "hint": "पिक्सल बिनिंग सेंसर के 4 पिक्सल को 1 आउटपुट पिक्सल में मिलाती है।",
+          "successMessage": "सही! 48 MP ÷ 4 (4-in-1 बिनिंग) = 12 MP आउटपुट।",
+          "failureMessage": "4-in-1 पिक्सल बिनिंग विज्ञापित 48 MP को 12 MP आउटपुट में बदल देती है।",
           "options": {
             "0": { "label": "12 MP" },
             "1": { "label": "24 MP" },
@@ -101,10 +101,10 @@
           }
         },
         "3": {
-          "scenario": "At 6-foot viewing distance, what's the minimum PPI for a print to appear sharp to the human eye?",
-          "hint": "The eye resolves ~1 arcmin at any distance; at 72 inches that maps to ~50-60 PPI.",
-          "successMessage": "Right! At 6 feet the eye only needs ~60 PPI for perceived sharpness.",
-          "failureMessage": "At 6 feet the eye only resolves about 60 PPI. That's why billboards can print at very low DPI.",
+          "scenario": "6 फ़ीट की देखने की दूरी पर, प्रिंट शार्प दिखने के लिए न्यूनतम PPI कितना होना चाहिए?",
+          "hint": "आँख किसी भी दूरी पर ~1 आर्कमिनट रिज़ॉल्व करती है; 72 इंच पर यह ~50-60 PPI होता है।",
+          "successMessage": "सही! 6 फ़ीट पर आँख को शार्पनेस के लिए सिर्फ़ ~60 PPI चाहिए।",
+          "failureMessage": "6 फ़ीट पर आँख लगभग 60 PPI ही रिज़ॉल्व करती है। इसीलिए बिलबोर्ड बहुत कम DPI पर भी शार्प दिखते हैं।",
           "options": {
             "0": { "label": "~60 PPI" },
             "1": { "label": "~150 PPI" },
@@ -112,10 +112,10 @@
           }
         },
         "4": {
-          "scenario": "You crop a 45 MP full-frame image down to APS-C (1.5× crop factor). What's the effective megapixel count?",
-          "hint": "Area crop factor = linear crop factor squared.",
-          "successMessage": "Correct! 45 ÷ 1.5² = 45 ÷ 2.25 = 20 MP.",
-          "failureMessage": "Cropping by 1.5× linearly means 2.25× area reduction. 45 ÷ 2.25 = 20 MP.",
+          "scenario": "आप 45 MP फ़ुल-फ़्रेम इमेज को APS-C (1.5× क्रॉप फ़ैक्टर) में क्रॉप करते हैं। इफ़ेक्टिव मेगापिक्सल काउंट कितना होगा?",
+          "hint": "एरिया क्रॉप फ़ैक्टर = लीनियर क्रॉप फ़ैक्टर का वर्ग।",
+          "successMessage": "सही! 45 ÷ 1.5² = 45 ÷ 2.25 = 20 MP।",
+          "failureMessage": "1.5× लीनियर क्रॉप का मतलब है 2.25× एरिया रिडक्शन। 45 ÷ 2.25 = 20 MP।",
           "options": {
             "0": { "label": "30 MP" },
             "1": { "label": "20 MP" },

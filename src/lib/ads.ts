@@ -18,12 +18,23 @@ export const AD_FORMATS: Record<AdFormat, { width: number; height: number }> = {
   'mobile-banner': { width: 320, height: 50 }, // sticky mobile bottom (MobileAdBanner)
 }
 
+// Trim whitespace/newlines and treat empty strings as undefined. Guards against
+// env vars with trailing newlines (a common footgun when the value is copied
+// from a terminal heredoc or multi-line `.env` entry), which otherwise get
+// URL-encoded into the AdSense request as %0A and produce a 400 response.
+function readEnv(key: string): string | undefined {
+  const raw = process.env[key]
+  if (!raw) return undefined
+  const trimmed = raw.trim()
+  return trimmed || undefined
+}
+
 export function getAdsenseClient(): string | undefined {
-  return process.env.NEXT_PUBLIC_ADSENSE_CLIENT // ca-pub-XXXX publisher ID
+  return readEnv('NEXT_PUBLIC_ADSENSE_CLIENT') // ca-pub-XXXX publisher ID
 }
 
 export function getCookieyesId(): string | undefined {
-  return process.env.NEXT_PUBLIC_COOKIEYES_ID // CookieYes site identifier
+  return readEnv('NEXT_PUBLIC_COOKIEYES_ID') // CookieYes site identifier
 }
 
 // Both AdSense AND CookieYes must be configured — we never serve ads without consent management

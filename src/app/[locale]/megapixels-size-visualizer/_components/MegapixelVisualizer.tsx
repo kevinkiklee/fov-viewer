@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useCallback, Suspense, lazy, useEffect } from 'react'
+import { useRef, useCallback, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { useToolSession } from '@/lib/analytics/hooks/useToolSession'
 import { LearnPanel } from '@/components/shared/LearnPanel'
@@ -9,6 +9,7 @@ import { useMegapixelState } from './useMegapixelState'
 import { useMegapixelUrlSync } from './useMegapixelUrlSync'
 import { MegapixelSidebar } from './MegapixelSidebar'
 import { TableControls } from './TableControls'
+import { PrintTableView } from './PrintTableView'
 import { drawOverlay } from './drawOverlay'
 import { drawSideBySide } from './drawSideBySide'
 import { drawScaleBar } from './drawScaleBar'
@@ -16,12 +17,8 @@ import { getAspect } from '@/lib/data/aspectRatios'
 import { FIXED_DPI } from './megapixelTypes'
 import ss from './MegapixelVisualizer.module.css'
 
-const PrintTableView = lazy(() =>
-  import('./PrintTableView').then(m => ({ default: m.PrintTableView })),
-)
-
 export function MegapixelVisualizer() {
-  const t = useTranslations('toolUI.megapixel-visualizer')
+  const t = useTranslations('toolUI.megapixels-size-visualizer')
   const { trackParam } = useToolSession()
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const ctxRef = useRef<CanvasRenderingContext2D | null>(null)
@@ -67,8 +64,6 @@ export function MegapixelVisualizer() {
     if (result.pxPerMm > 0) {
       drawScaleBar(ctx, cssWidth, cssHeight, result.pxPerMm, state.units)
     }
-
-    canvas.dataset.rendered = 'true'
   }, [state])
 
   useEffect(() => {
@@ -97,7 +92,7 @@ export function MegapixelVisualizer() {
       <div className={ss.appBody}>
         <div className={ss.sidebar}>
           <ToolActions
-            toolSlug="megapixel-visualizer"
+            toolSlug="megapixels-size-visualizer"
             canvasRef={canvasRef}
             imageFilename="megapixel-comparison.png"
             onReset={onReset}
@@ -123,12 +118,6 @@ export function MegapixelVisualizer() {
               role="img"
               aria-label={t('canvasAriaLabel', { mode: state.mode, count: state.visible.size })}
             />
-            <svg className={ss.skeletonOverlay} aria-hidden="true" viewBox="0 0 400 300">
-              <rect x="80" y="60" width="240" height="160" stroke="#3b82f6" fill="none" strokeWidth="2" />
-              <rect x="120" y="90" width="160" height="110" stroke="#f59e0b" fill="none" strokeWidth="2" />
-              <rect x="150" y="110" width="100" height="70"  stroke="#10b981" fill="none" strokeWidth="2" />
-              <rect x="170" y="125" width="60"  height="40"  stroke="#64748b" fill="none" strokeWidth="2" />
-            </svg>
           </div>
 
           <TableControls
@@ -138,23 +127,21 @@ export function MegapixelVisualizer() {
             onBitDepthChange={(b) => { trackParam({ param_name: 'bit-depth', param_value: b, input_type: 'toggle' }); state.setBitDepth(b) }}
           />
 
-          <Suspense fallback={<div className={ss.printTableWrap} />}>
-            <PrintTableView
-              visibleMps={state.visibleMps}
-              aspectId={state.aspectId}
-              units={state.units}
-              viewingDistance={state.viewingDistance}
-              bitDepth={state.bitDepth}
-            />
-          </Suspense>
+          <PrintTableView
+            visibleMps={state.visibleMps}
+            aspectId={state.aspectId}
+            units={state.units}
+            viewingDistance={state.viewingDistance}
+            bitDepth={state.bitDepth}
+          />
         </div>
 
         <div className={`${ss.learnPanelWrap} ${ss.desktopOnly}`}>
-          <LearnPanel slug="megapixel-visualizer" />
+          <LearnPanel slug="megapixels-size-visualizer" />
         </div>
       </div>
       <div className={ss.mobileOnly}>
-        <LearnPanel slug="megapixel-visualizer" />
+        <LearnPanel slug="megapixels-size-visualizer" />
       </div>
     </div>
   )

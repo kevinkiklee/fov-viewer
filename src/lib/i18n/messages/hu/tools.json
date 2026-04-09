@@ -60,9 +60,9 @@
       "name": "EXIF-megjelenítő",
       "description": "Nézd meg bármelyik fotó EXIF metaadatait és hisztogramját — 100%-ban a böngésződben"
     },
-    "megapixel-visualizer": {
-      "name": "Megapixel Size Visualizer",
-      "description": "Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs"
+    "megapixels-size-visualizer": {
+      "name": "Megapixel méretmegjelenítő",
+      "description": "Hasonlítsd össze a megapixeleket, nézd meg a nyomatméreteket és a fájlméreteket különböző képarányoknál és DPI-knél"
     }
   }
 }

@@ -189,7 +189,7 @@ function EquivalentSettingsCalc(p: IconProps) {
   )
 }
 
-/** Megapixel Size Visualizer — pixel grid with one highlighted cell */
+/** Megapixels Size Visualizer — pixel grid with one highlighted cell */
 function MegapixelVisualizerIcon(p: IconProps) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={s} height={s}
@@ -224,7 +224,7 @@ const ICON_MAP: Record<string, (props: IconProps) => React.JSX.Element> = {
   'exif-viewer': ExifViewer,
   'perspective-compression-simulator': PerspectiveCompression,
   'frame-studio': FrameStudioIcon,
-  'megapixel-visualizer': MegapixelVisualizerIcon,
+  'megapixels-size-visualizer': MegapixelVisualizerIcon,
 }
 
 interface ToolIconProps extends IconProps {

@@ -19,7 +19,7 @@ interface Props {
 export function PrintTableView({
   visibleMps, aspectId, units, viewingDistance, bitDepth,
 }: Props) {
-  const t = useTranslations('toolUI.megapixel-visualizer')
+  const t = useTranslations('toolUI.megapixels-size-visualizer')
   const aspect = getAspect(aspectId)
   const sorted = [...visibleMps].sort((a, b) => a.mp - b.mp)
   const dpiCols = DPI_PRESETS.slice(0, 4)
@@ -33,12 +33,25 @@ export function PrintTableView({
   }
 
   const unitLabel = units === 'imperial' ? 'in' : 'cm'
+  // Explicit column widths keep Turbopack's initial layout pass from producing a
+  // flash of narrow columns before the header text measures.
+  const mpShare = 14
+  const fileShare = 16
+  const dpiShare = (100 - mpShare - fileShare) / dpiCols.length
+
   return (
     <div className={ss.printTableWrap} data-testid="print-table">
       <table className={ss.printTable}>
         <caption className={ss.visuallyHidden}>
           {t('printTableCaption', { distance: viewingDistance })}
         </caption>
+        <colgroup>
+          <col style={{ width: `${mpShare}%` }} />
+          {dpiCols.map((d) => (
+            <col key={`col-${d.value}`} style={{ width: `${dpiShare}%` }} />
+          ))}
+          <col style={{ width: `${fileShare}%` }} />
+        </colgroup>
         <thead>
           <tr>
             <th scope="col">{t('tableMegapixels')}</th>

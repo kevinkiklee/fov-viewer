@@ -60,9 +60,9 @@
       "name": "EXIF-katselin",
       "description": "Tarkastele minkä tahansa kuvan EXIF-tietoja ja histogrammia — 100 % selaimessa"
     },
-    "megapixel-visualizer": {
-      "name": "Megapixel Size Visualizer",
-      "description": "Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs"
+    "megapixels-size-visualizer": {
+      "name": "Megapikselien visualisointi",
+      "description": "Vertaa megapikseleitä, visualisoi tulostuskokoja ja tarkastele tiedostokokoja eri kuvasuhteilla ja DPI-arvoilla"
     }
   }
 }

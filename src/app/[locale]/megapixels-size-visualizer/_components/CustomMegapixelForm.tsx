@@ -9,7 +9,7 @@ interface Props {
 }
 
 export function CustomMegapixelForm({ onAdd }: Props) {
-  const t = useTranslations('toolUI.megapixel-visualizer')
+  const t = useTranslations('toolUI.megapixels-size-visualizer')
   const [mp, setMp] = useState('')
   const [error, setError] = useState<string | null>(null)
 

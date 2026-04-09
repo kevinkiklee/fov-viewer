@@ -60,9 +60,9 @@
       "name": "EXIF 檢視器",
       "description": "讀取照片的 EXIF 資訊與直方圖 — 完全在瀏覽器端處理"
     },
-    "megapixel-visualizer": {
-      "name": "Megapixel Size Visualizer",
-      "description": "Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs"
+    "megapixels-size-visualizer": {
+      "name": "百萬畫素視覺化工具",
+      "description": "比較百萬畫素、視覺化沖印尺寸，並查看不同長寬比與 DPI 下的檔案大小"
     }
   }
 }

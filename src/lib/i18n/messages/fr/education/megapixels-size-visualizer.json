@@ -1,77 +1,77 @@
 {
   "education": {
-    "megapixel-visualizer": {
-      "beginner": "Megapixels count the tiny dots your sensor captures — more megapixels means higher resolution, but how that translates to print sharpness, screen size, and file size depends on several factors you can explore here. Most photos viewed on screens need far fewer megapixels than you'd expect; large prints depend on viewing distance, not just DPI.",
+    "megapixels-size-visualizer": {
+      "beginner": "Les mégapixels comptent les minuscules points capturés par votre capteur — plus de mégapixels signifie une résolution supérieure, mais la netteté d'impression, la taille à l'écran et la taille de fichier qui en résultent dépendent de plusieurs facteurs à explorer ici. La plupart des photos vues sur écran nécessitent bien moins de mégapixels qu'on ne le pense ; pour les grands tirages, c'est la distance d'observation qui compte, pas seulement les DPI.",
       "deeper": {
         "0": {
-          "heading": "From pixels to prints",
-          "text": "Total pixels equals megapixels × 1,000,000. Aspect ratio determines how those pixels are split into width and height. Print size in inches equals pixels divided by DPI. A 24 MP photo at 3:2 gives 6000×4000 pixels; at 300 DPI that prints at 20×13 inches."
+          "heading": "Des pixels au tirage",
+          "text": "Total de pixels = mégapixels × 1 000 000. Le ratio d'aspect détermine la répartition entre largeur et hauteur. Taille d'impression en pouces = pixels ÷ DPI. Une photo de 24 MP en 3:2 donne 6000×4000 pixels ; à 300 DPI, cela s'imprime à 50×33 cm (20×13 pouces)."
         },
         "1": {
-          "heading": "The DPI myth and viewing distance",
-          "text": "The human eye resolves about 1 arcminute of angular detail, which translates to approximately 300 PPI at 12 inches, 100 PPI at 36 inches, and 50 PPI at 72 inches. A billboard printed at 30 DPI looks perfectly sharp from across the street — the viewer's distance is doing the work."
+          "heading": "Le mythe des DPI et la distance d'observation",
+          "text": "L'œil humain résout environ 1 minute d'arc de détail angulaire, soit environ 300 PPI à 30 cm, 100 PPI à 90 cm et 50 PPI à 180 cm. Une affiche imprimée à 30 DPI paraît parfaitement nette depuis l'autre côté de la rue — c'est la distance du spectateur qui fait tout le travail."
         },
         "2": {
-          "heading": "Megapixels vs file size",
-          "text": "Uncompressed 16-bit TIFF is roughly 6 bytes per pixel. 14-bit compressed RAW is about 1.75 bytes per pixel. JPEG at quality 90 is around 0.3 bytes per pixel. That's why a 24 MP RAW file is 40-50 MB while the JPEG version is 7-10 MB."
+          "heading": "Mégapixels et taille de fichier",
+          "text": "Un TIFF 16 bits non compressé pèse environ 6 octets par pixel. Un RAW 14 bits compressé, environ 1,75 octet par pixel. Un JPEG à qualité 90, environ 0,3 octet par pixel. C'est pourquoi un fichier RAW de 24 MP fait 40-50 Mo tandis que la version JPEG ne pèse que 7-10 Mo."
         },
         "3": {
-          "heading": "Phones and pixel binning",
-          "text": "Modern phones advertise 48, 50, 108, or even 200 MP sensors, but output 12 MP photos by default via 4-in-1 or 9-in-1 pixel binning. Binning improves low-light performance by effectively creating larger virtual pixels. Full-resolution modes expose the advertised count at the cost of more noise in dim light."
+          "heading": "Téléphones et pixel binning",
+          "text": "Les téléphones modernes annoncent des capteurs de 48, 50, 108 voire 200 MP, mais produisent par défaut des photos de 12 MP grâce au pixel binning 4-en-1 ou 9-en-1. Le binning améliore les performances en basse lumière en créant des pixels virtuels plus grands. Les modes pleine résolution exploitent le nombre de pixels annoncé, au prix de plus de bruit en faible luminosité."
         }
       },
       "keyFactors": {
-        "0": { "label": "Pixel dimensions", "description": "Megapixels × aspect ratio → width and height in pixels" },
-        "1": { "label": "Print DPI", "description": "Density of pixels per inch; determines print size and apparent sharpness" },
-        "2": { "label": "Viewing distance", "description": "Human eye acuity means prints viewed far away need much lower DPI" },
-        "3": { "label": "Pixel binning", "description": "Phones advertise higher MP but output fewer via 4-in-1 or 9-in-1 binning" },
-        "4": { "label": "Sensor area", "description": "At the same MP count, larger sensors have larger pixels and better low-light performance — see the sensor-size-comparison tool" }
+        "0": { "label": "Dimensions en pixels", "description": "Mégapixels × ratio d'aspect → largeur et hauteur en pixels" },
+        "1": { "label": "DPI d'impression", "description": "Densité de pixels par pouce ; détermine la taille d'impression et la netteté apparente" },
+        "2": { "label": "Distance d'observation", "description": "L'acuité visuelle humaine fait que les tirages vus de loin nécessitent bien moins de DPI" },
+        "3": { "label": "Pixel binning", "description": "Les téléphones annoncent plus de MP mais en produisent moins via le binning 4-en-1 ou 9-en-1" },
+        "4": { "label": "Surface du capteur", "description": "À nombre de MP égal, un capteur plus grand a des pixels plus grands et de meilleures performances en basse lumière — voir l'outil de comparaison des tailles de capteur" }
       },
       "tips": {
-        "0": { "text": "Most web photos are viewed at 2000px or smaller — 12 MP is plenty for screens and Instagram." },
-        "1": { "text": "For wall prints at 6-foot viewing distance, the eye only needs ~60 PPI — a 24 MP photo covers a 60-inch wide print." },
-        "2": { "text": "Your 48 MP phone photo is typically a 12 MP binned output — only the 'full resolution' mode delivers the advertised count." }
+        "0": { "text": "La plupart des photos web sont affichées à 2000 px ou moins — 12 MP suffisent largement pour les écrans et Instagram." },
+        "1": { "text": "Pour des tirages muraux vus à 2 mètres, l'œil ne requiert que ~60 PPI — une photo de 24 MP couvre un tirage de 150 cm de large." },
+        "2": { "text": "Votre photo de 48 MP prise au téléphone est en réalité une sortie de 12 MP avec pixel binning — seul le mode « pleine résolution » délivre le nombre annoncé." }
       },
       "tooltips": {
         "Megapixels": {
-          "term": "Megapixels",
-          "definition": "One megapixel equals 1,000,000 pixels. It counts the total pixels your sensor captures, not the sharpness of the image."
+          "term": "Mégapixels",
+          "definition": "Un mégapixel équivaut à 1 000 000 de pixels. Il mesure le nombre total de pixels capturés par votre capteur, pas la netteté de l'image."
         },
         "Aspect Ratio": {
-          "term": "Aspect Ratio",
-          "definition": "The ratio of width to height. 3:2 is traditional for DSLRs, 4:3 for Micro Four Thirds and phones, 16:9 for video."
+          "term": "Ratio d'aspect",
+          "definition": "Le rapport entre la largeur et la hauteur. 3:2 est le standard des reflex, 4:3 pour le Micro Quatre Tiers et les téléphones, 16:9 pour la vidéo."
         },
         "DPI": {
           "term": "DPI",
-          "definition": "Dots per inch — the density of pixels when printed. Higher DPI gives smaller but sharper prints from the same pixel count."
+          "definition": "Points par pouce — la densité de pixels à l'impression. Un DPI plus élevé donne des tirages plus petits mais plus nets pour le même nombre de pixels."
         },
         "Units": {
-          "term": "Units",
-          "definition": "Switch between metric (mm/cm) and imperial (inches). Defaults to your locale."
+          "term": "Unités",
+          "definition": "Basculez entre métrique (mm/cm) et impérial (pouces). Par défaut selon votre région."
         },
         "Viewing Distance": {
-          "term": "Viewing Distance",
-          "definition": "How far the viewer stands from the print. The farther away, the lower the required DPI for perceived sharpness."
+          "term": "Distance d'observation",
+          "definition": "La distance à laquelle le spectateur se tient du tirage. Plus c'est loin, moins le DPI requis pour une netteté perçue est élevé."
         },
         "Print Size": {
-          "term": "Print Size",
-          "definition": "The physical dimensions of the printed image at a given DPI. Calculated from pixel dimensions divided by DPI."
+          "term": "Taille d'impression",
+          "definition": "Les dimensions physiques de l'image imprimée à un DPI donné. Calculé en divisant les dimensions en pixels par le DPI."
         },
         "Bit Depth": {
-          "term": "Bit Depth",
-          "definition": "The number of bits per color channel. 8-bit (JPEG) is standard; 14-bit or 16-bit (RAW/TIFF) preserve more tonal range."
+          "term": "Profondeur de bits",
+          "definition": "Le nombre de bits par canal de couleur. 8 bits (JPEG) est le standard ; 14 ou 16 bits (RAW/TIFF) préservent davantage de gamme tonale."
         },
         "Crop Reach": {
-          "term": "Crop Reach",
-          "definition": "How many megapixels remain after cropping to a smaller sensor area. A 45 MP full-frame image cropped to APS-C is about 20 MP."
+          "term": "Portée de recadrage",
+          "definition": "Le nombre de mégapixels restant après recadrage à une surface de capteur plus petite. Une image plein format de 45 MP recadrée en APS-C donne environ 20 MP."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "A 24 MP camera shoots in 3:2. What are the approximate pixel dimensions?",
-          "hint": "Total pixels = MP × 1,000,000. Split by aspect ratio.",
-          "successMessage": "Correct! 24 MP at 3:2 is 6000 × 4000 pixels.",
-          "failureMessage": "24 MP means 24 million pixels. At 3:2, that's 6000 × 4000.",
+          "scenario": "Un appareil de 24 MP photographie en 3:2. Quelles sont les dimensions approximatives en pixels ?",
+          "hint": "Total de pixels = MP × 1 000 000. Répartir selon le ratio d'aspect.",
+          "successMessage": "Correct ! 24 MP en 3:2 donne 6000 × 4000 pixels.",
+          "failureMessage": "24 MP signifie 24 millions de pixels. En 3:2, cela donne 6000 × 4000.",
           "options": {
             "0": { "label": "6000×4000" },
             "1": { "label": "5657×4243" },
@@ -79,10 +79,10 @@
           }
         },
         "1": {
-          "scenario": "You want to print a 24 MP photo at 300 DPI in a 3:2 aspect ratio. What's the approximate print size?",
-          "hint": "Print size in inches = pixels ÷ DPI.",
-          "successMessage": "Right! 6000 ÷ 300 = 20 in, 4000 ÷ 300 ≈ 13.3 in. So ~20×13 in.",
-          "failureMessage": "At 300 DPI, a 24 MP (6000×4000) photo prints at ~20×13 inches.",
+          "scenario": "Vous voulez imprimer une photo de 24 MP à 300 DPI en format 3:2. Quelle est la taille d'impression approximative ?",
+          "hint": "Taille d'impression en pouces = pixels ÷ DPI.",
+          "successMessage": "Correct ! 6000 ÷ 300 = 20 in, 4000 ÷ 300 ≈ 13,3 in. Soit ~50×33 cm.",
+          "failureMessage": "À 300 DPI, une photo de 24 MP (6000×4000) s'imprime à environ 20×13 pouces (~50×33 cm).",
           "options": {
             "0": { "label": "20×13 in" },
             "1": { "label": "17×11 in" },
@@ -90,10 +90,10 @@
           }
         },
         "2": {
-          "scenario": "A phone advertises 48 MP. What's the typical output resolution after pixel binning?",
-          "hint": "Pixel binning combines 4 sensor pixels into 1 output pixel.",
-          "successMessage": "Correct! 48 MP ÷ 4 (4-in-1 binning) = 12 MP output.",
-          "failureMessage": "4-in-1 pixel binning reduces 48 MP advertised to 12 MP output.",
+          "scenario": "Un téléphone annonce 48 MP. Quelle est la résolution de sortie typique après pixel binning ?",
+          "hint": "Le pixel binning combine 4 pixels du capteur en 1 pixel de sortie.",
+          "successMessage": "Correct ! 48 MP ÷ 4 (binning 4-en-1) = 12 MP en sortie.",
+          "failureMessage": "Le pixel binning 4-en-1 réduit les 48 MP annoncés à 12 MP en sortie.",
           "options": {
             "0": { "label": "12 MP" },
             "1": { "label": "24 MP" },
@@ -101,10 +101,10 @@
           }
         },
         "3": {
-          "scenario": "At 6-foot viewing distance, what's the minimum PPI for a print to appear sharp to the human eye?",
-          "hint": "The eye resolves ~1 arcmin at any distance; at 72 inches that maps to ~50-60 PPI.",
-          "successMessage": "Right! At 6 feet the eye only needs ~60 PPI for perceived sharpness.",
-          "failureMessage": "At 6 feet the eye only resolves about 60 PPI. That's why billboards can print at very low DPI.",
+          "scenario": "À 2 mètres de distance d'observation, quel est le PPI minimum pour qu'un tirage paraisse net à l'œil humain ?",
+          "hint": "L'œil résout ~1 minute d'arc à toute distance ; à 180 cm cela correspond à ~50-60 PPI.",
+          "successMessage": "Correct ! À 2 mètres, l'œil ne nécessite que ~60 PPI pour percevoir la netteté.",
+          "failureMessage": "À 2 mètres, l'œil ne résout qu'environ 60 PPI. C'est pourquoi les affiches peuvent être imprimées à très faible DPI.",
           "options": {
             "0": { "label": "~60 PPI" },
             "1": { "label": "~150 PPI" },
@@ -112,10 +112,10 @@
           }
         },
         "4": {
-          "scenario": "You crop a 45 MP full-frame image down to APS-C (1.5× crop factor). What's the effective megapixel count?",
-          "hint": "Area crop factor = linear crop factor squared.",
-          "successMessage": "Correct! 45 ÷ 1.5² = 45 ÷ 2.25 = 20 MP.",
-          "failureMessage": "Cropping by 1.5× linearly means 2.25× area reduction. 45 ÷ 2.25 = 20 MP.",
+          "scenario": "Vous recadrez une image plein format de 45 MP au format APS-C (facteur de recadrage 1,5×). Combien de mégapixels effectifs reste-t-il ?",
+          "hint": "Facteur de recadrage surfacique = facteur de recadrage linéaire au carré.",
+          "successMessage": "Correct ! 45 ÷ 1,5² = 45 ÷ 2,25 = 20 MP.",
+          "failureMessage": "Un recadrage de 1,5× linéaire équivaut à une réduction de surface de 2,25×. 45 ÷ 2,25 = 20 MP.",
           "options": {
             "0": { "label": "30 MP" },
             "1": { "label": "20 MP" },

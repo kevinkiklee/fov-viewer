@@ -1,77 +1,77 @@
 {
   "education": {
-    "megapixel-visualizer": {
-      "beginner": "Megapixels count the tiny dots your sensor captures — more megapixels means higher resolution, but how that translates to print sharpness, screen size, and file size depends on several factors you can explore here. Most photos viewed on screens need far fewer megapixels than you'd expect; large prints depend on viewing distance, not just DPI.",
+    "megapixels-size-visualizer": {
+      "beginner": "Megapixlar räknar de små punkter som din sensor fångar — fler megapixlar innebär högre upplösning, men hur det påverkar utskriftsskärpa, skärmstorlek och filstorlek beror på flera faktorer som du kan utforska här. De flesta foton som visas på skärmar behöver långt färre megapixlar än du tror; stora utskrifter beror på betraktningsavstånd, inte bara DPI.",
       "deeper": {
         "0": {
-          "heading": "From pixels to prints",
-          "text": "Total pixels equals megapixels × 1,000,000. Aspect ratio determines how those pixels are split into width and height. Print size in inches equals pixels divided by DPI. A 24 MP photo at 3:2 gives 6000×4000 pixels; at 300 DPI that prints at 20×13 inches."
+          "heading": "Från pixlar till utskrift",
+          "text": "Totala pixlar = megapixlar × 1 000 000. Bildformatet avgör hur pixlarna fördelas i bredd och höjd. Utskriftsstorlek i tum = pixlar ÷ DPI. Ett 24 MP-foto i 3:2 ger 6000×4000 pixlar; vid 300 DPI blir utskriften ca 50×33 cm."
         },
         "1": {
-          "heading": "The DPI myth and viewing distance",
-          "text": "The human eye resolves about 1 arcminute of angular detail, which translates to approximately 300 PPI at 12 inches, 100 PPI at 36 inches, and 50 PPI at 72 inches. A billboard printed at 30 DPI looks perfectly sharp from across the street — the viewer's distance is doing the work."
+          "heading": "DPI-myten och betraktningsavstånd",
+          "text": "Det mänskliga ögat upplöser ungefär 1 bågminut av vinkeldetalj, vilket motsvarar cirka 300 PPI på 30 cm, 100 PPI på 90 cm och 50 PPI på 180 cm. En affischtavla tryckt med 30 DPI ser perfekt skarp ut från andra sidan gatan — betraktarens avstånd gör jobbet."
         },
         "2": {
-          "heading": "Megapixels vs file size",
-          "text": "Uncompressed 16-bit TIFF is roughly 6 bytes per pixel. 14-bit compressed RAW is about 1.75 bytes per pixel. JPEG at quality 90 is around 0.3 bytes per pixel. That's why a 24 MP RAW file is 40-50 MB while the JPEG version is 7-10 MB."
+          "heading": "Megapixlar kontra filstorlek",
+          "text": "Okomprimerad 16-bitars TIFF är ungefär 6 byte per pixel. 14-bitars komprimerad RAW är ca 1,75 byte per pixel. JPEG med kvalitet 90 ger cirka 0,3 byte per pixel. Därför väger en 24 MP RAW-fil 40–50 MB medan JPEG-versionen blir 7–10 MB."
         },
         "3": {
-          "heading": "Phones and pixel binning",
-          "text": "Modern phones advertise 48, 50, 108, or even 200 MP sensors, but output 12 MP photos by default via 4-in-1 or 9-in-1 pixel binning. Binning improves low-light performance by effectively creating larger virtual pixels. Full-resolution modes expose the advertised count at the cost of more noise in dim light."
+          "heading": "Telefoner och pixel binning",
+          "text": "Moderna telefoner marknadsför 48, 50, 108 eller till och med 200 MP sensorer, men levererar 12 MP-foton som standard via 4-i-1 eller 9-i-1 pixel binning. Binning förbättrar prestandan i svagt ljus genom att effektivt skapa större virtuella pixlar. Fullupplösningslägen ger det annonserade pixelantalet men med mer brus i dåligt ljus."
         }
       },
       "keyFactors": {
-        "0": { "label": "Pixel dimensions", "description": "Megapixels × aspect ratio → width and height in pixels" },
-        "1": { "label": "Print DPI", "description": "Density of pixels per inch; determines print size and apparent sharpness" },
-        "2": { "label": "Viewing distance", "description": "Human eye acuity means prints viewed far away need much lower DPI" },
-        "3": { "label": "Pixel binning", "description": "Phones advertise higher MP but output fewer via 4-in-1 or 9-in-1 binning" },
-        "4": { "label": "Sensor area", "description": "At the same MP count, larger sensors have larger pixels and better low-light performance — see the sensor-size-comparison tool" }
+        "0": { "label": "Pixeldimensioner", "description": "Megapixlar × bildformat → bredd och höjd i pixlar" },
+        "1": { "label": "Utskrifts-DPI", "description": "Pixeltäthet per tum; bestämmer utskriftsstorlek och upplevd skärpa" },
+        "2": { "label": "Betraktningsavstånd", "description": "Ögats upplösningsförmåga innebär att utskrifter sedda på avstånd kräver mycket lägre DPI" },
+        "3": { "label": "Pixel binning", "description": "Telefoner annonserar fler MP men levererar färre via 4-i-1 eller 9-i-1 binning" },
+        "4": { "label": "Sensoryta", "description": "Vid samma MP-antal har större sensorer större pixlar och bättre svagljusprestanda — se verktyget för sensorstorleksjämförelse" }
       },
       "tips": {
-        "0": { "text": "Most web photos are viewed at 2000px or smaller — 12 MP is plenty for screens and Instagram." },
-        "1": { "text": "For wall prints at 6-foot viewing distance, the eye only needs ~60 PPI — a 24 MP photo covers a 60-inch wide print." },
-        "2": { "text": "Your 48 MP phone photo is typically a 12 MP binned output — only the 'full resolution' mode delivers the advertised count." }
+        "0": { "text": "De flesta webbfoton visas i 2000 px eller mindre — 12 MP räcker mer än väl för skärmar och Instagram." },
+        "1": { "text": "För väggutskrifter på 2 meters betraktningsavstånd behöver ögat bara ~60 PPI — 24 MP täcker en 150 cm bred utskrift." },
+        "2": { "text": "Ditt 48 MP-telefonfoto är oftast en 12 MP binnad bild — bara \"fullupplösningsläget\" levererar det annonserade antalet." }
       },
       "tooltips": {
         "Megapixels": {
-          "term": "Megapixels",
-          "definition": "One megapixel equals 1,000,000 pixels. It counts the total pixels your sensor captures, not the sharpness of the image."
+          "term": "Megapixlar",
+          "definition": "En megapixel är 1 000 000 pixlar. Det anger det totala antalet pixlar som din sensor fångar, inte bildens skärpa."
         },
         "Aspect Ratio": {
-          "term": "Aspect Ratio",
-          "definition": "The ratio of width to height. 3:2 is traditional for DSLRs, 4:3 for Micro Four Thirds and phones, 16:9 for video."
+          "term": "Bildformat",
+          "definition": "Förhållandet mellan bredd och höjd. 3:2 är standard för systemkameror, 4:3 för Micro Four Thirds och telefoner, 16:9 för video."
         },
         "DPI": {
           "term": "DPI",
-          "definition": "Dots per inch — the density of pixels when printed. Higher DPI gives smaller but sharper prints from the same pixel count."
+          "definition": "Punkter per tum — pixeltäthet vid utskrift. Högre DPI ger mindre men skarpare utskrifter från samma pixelantal."
         },
         "Units": {
-          "term": "Units",
-          "definition": "Switch between metric (mm/cm) and imperial (inches). Defaults to your locale."
+          "term": "Enheter",
+          "definition": "Växla mellan metriskt (mm/cm) och imperialt (tum). Standardvärde baseras på din plats."
         },
         "Viewing Distance": {
-          "term": "Viewing Distance",
-          "definition": "How far the viewer stands from the print. The farther away, the lower the required DPI for perceived sharpness."
+          "term": "Betraktningsavstånd",
+          "definition": "Hur långt betraktaren står från utskriften. Ju längre bort, desto lägre DPI krävs för upplevd skärpa."
         },
         "Print Size": {
-          "term": "Print Size",
-          "definition": "The physical dimensions of the printed image at a given DPI. Calculated from pixel dimensions divided by DPI."
+          "term": "Utskriftsstorlek",
+          "definition": "De fysiska måtten på den utskrivna bilden vid ett givet DPI. Beräknas som pixeldimensioner ÷ DPI."
         },
         "Bit Depth": {
-          "term": "Bit Depth",
-          "definition": "The number of bits per color channel. 8-bit (JPEG) is standard; 14-bit or 16-bit (RAW/TIFF) preserve more tonal range."
+          "term": "Bitdjup",
+          "definition": "Antal bitar per färgkanal. 8-bitars (JPEG) är standard; 14-bitars eller 16-bitars (RAW/TIFF) bevarar fler nyanser."
         },
         "Crop Reach": {
-          "term": "Crop Reach",
-          "definition": "How many megapixels remain after cropping to a smaller sensor area. A 45 MP full-frame image cropped to APS-C is about 20 MP."
+          "term": "Beskärningsreserv",
+          "definition": "Hur många megapixlar som återstår efter beskärning till en mindre sensoryta. En 45 MP fullformatsbild beskuren till APS-C ger cirka 20 MP."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "A 24 MP camera shoots in 3:2. What are the approximate pixel dimensions?",
-          "hint": "Total pixels = MP × 1,000,000. Split by aspect ratio.",
-          "successMessage": "Correct! 24 MP at 3:2 is 6000 × 4000 pixels.",
-          "failureMessage": "24 MP means 24 million pixels. At 3:2, that's 6000 × 4000.",
+          "scenario": "En 24 MP-kamera fotograferar i 3:2. Vad är de ungefärliga pixeldimensionerna?",
+          "hint": "Totala pixlar = MP × 1 000 000. Fördela efter bildformat.",
+          "successMessage": "Rätt! 24 MP i 3:2 blir 6000 × 4000 pixlar.",
+          "failureMessage": "24 MP innebär 24 miljoner pixlar. I 3:2 blir det 6000 × 4000.",
           "options": {
             "0": { "label": "6000×4000" },
             "1": { "label": "5657×4243" },
@@ -79,10 +79,10 @@
           }
         },
         "1": {
-          "scenario": "You want to print a 24 MP photo at 300 DPI in a 3:2 aspect ratio. What's the approximate print size?",
-          "hint": "Print size in inches = pixels ÷ DPI.",
-          "successMessage": "Right! 6000 ÷ 300 = 20 in, 4000 ÷ 300 ≈ 13.3 in. So ~20×13 in.",
-          "failureMessage": "At 300 DPI, a 24 MP (6000×4000) photo prints at ~20×13 inches.",
+          "scenario": "Du vill skriva ut ett 24 MP-foto i 300 DPI med 3:2-format. Ungefär hur stor blir utskriften?",
+          "hint": "Utskriftsstorlek i tum = pixlar ÷ DPI.",
+          "successMessage": "Rätt! 6000 ÷ 300 = 20 tum, 4000 ÷ 300 ≈ 13,3 tum. Alltså ~20×13 tum.",
+          "failureMessage": "Vid 300 DPI ger ett 24 MP-foto (6000×4000) en utskrift på ca 20×13 tum.",
           "options": {
             "0": { "label": "20×13 in" },
             "1": { "label": "17×11 in" },
@@ -90,10 +90,10 @@
           }
         },
         "2": {
-          "scenario": "A phone advertises 48 MP. What's the typical output resolution after pixel binning?",
-          "hint": "Pixel binning combines 4 sensor pixels into 1 output pixel.",
-          "successMessage": "Correct! 48 MP ÷ 4 (4-in-1 binning) = 12 MP output.",
-          "failureMessage": "4-in-1 pixel binning reduces 48 MP advertised to 12 MP output.",
+          "scenario": "En telefon annonserar 48 MP. Vilken är den typiska utdataupplösningen efter pixel binning?",
+          "hint": "Pixel binning slår ihop 4 sensorpixlar till 1 utdatapixel.",
+          "successMessage": "Rätt! 48 MP ÷ 4 (4-i-1 binning) = 12 MP.",
+          "failureMessage": "4-i-1 pixel binning minskar annonserade 48 MP till 12 MP i utdata.",
           "options": {
             "0": { "label": "12 MP" },
             "1": { "label": "24 MP" },
@@ -101,10 +101,10 @@
           }
         },
         "3": {
-          "scenario": "At 6-foot viewing distance, what's the minimum PPI for a print to appear sharp to the human eye?",
-          "hint": "The eye resolves ~1 arcmin at any distance; at 72 inches that maps to ~50-60 PPI.",
-          "successMessage": "Right! At 6 feet the eye only needs ~60 PPI for perceived sharpness.",
-          "failureMessage": "At 6 feet the eye only resolves about 60 PPI. That's why billboards can print at very low DPI.",
+          "scenario": "På 2 meters betraktningsavstånd — vad är den lägsta PPI som krävs för att utskriften ska se skarp ut?",
+          "hint": "Ögat upplöser ~1 bågminut; på 2 meter motsvarar det ~50–60 PPI.",
+          "successMessage": "Rätt! På 2 meter behöver ögat bara ~60 PPI för upplevd skärpa.",
+          "failureMessage": "På 2 meter upplöser ögat ungefär 60 PPI. Därför kan affischtavlor tryckas med mycket låg DPI.",
           "options": {
             "0": { "label": "~60 PPI" },
             "1": { "label": "~150 PPI" },
@@ -112,10 +112,10 @@
           }
         },
         "4": {
-          "scenario": "You crop a 45 MP full-frame image down to APS-C (1.5× crop factor). What's the effective megapixel count?",
-          "hint": "Area crop factor = linear crop factor squared.",
-          "successMessage": "Correct! 45 ÷ 1.5² = 45 ÷ 2.25 = 20 MP.",
-          "failureMessage": "Cropping by 1.5× linearly means 2.25× area reduction. 45 ÷ 2.25 = 20 MP.",
+          "scenario": "Du beskär en 45 MP fullformatsbild till APS-C (1,5× cropfaktor). Hur många megapixlar återstår?",
+          "hint": "Areacropfaktor = linjär cropfaktor i kvadrat.",
+          "successMessage": "Rätt! 45 ÷ 1,5² = 45 ÷ 2,25 = 20 MP.",
+          "failureMessage": "1,5× linjär beskärning innebär 2,25× areareduktion. 45 ÷ 2,25 = 20 MP.",
           "options": {
             "0": { "label": "30 MP" },
             "1": { "label": "20 MP" },

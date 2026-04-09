@@ -86,9 +86,9 @@
       "title": "Glosari Fotografi",
       "description": "Glosari boleh cari dengan lebih 50 istilah fotografi beserta definisi dan pautan ke alat interaktif."
     },
-    "megapixel-visualizer": {
-      "title": "Megapixel Size Visualizer",
-      "description": "Visualize how megapixels translate to print sizes at 72-300 DPI, across aspect ratios. Compare cameras, file sizes, pixel binning, and crop reach — with a quality-tiered print table."
+    "megapixels-size-visualizer": {
+      "title": "Pemapar Saiz Megapiksel — visualkan saiz cetakan",
+      "description": "Visualkan bagaimana megapiksel diterjemahkan kepada saiz cetakan pada 72–300 DPI, merentasi nisbah aspek. Bandingkan kamera, saiz fail, pixel binning dan jangkauan pangkasan — dengan jadual cetakan mengikut tahap kualiti."
     }
   }
 }

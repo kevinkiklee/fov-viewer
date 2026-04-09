@@ -60,9 +60,9 @@
       "name": "EXIF Görüntüleyici",
       "description": "Herhangi bir fotoğrafın EXIF meta verilerini ve histogramını görüntüleyin — %100 istemci tarafı"
     },
-    "megapixel-visualizer": {
-      "name": "Megapixel Size Visualizer",
-      "description": "Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs"
+    "megapixels-size-visualizer": {
+      "name": "Megapiksel Boyut Görselleştirici",
+      "description": "Megapikselleri karşılaştırın, baskı boyutlarını görselleştirin ve farklı en-boy oranları ile DPI'larda dosya boyutlarını görün"
     }
   }
 }

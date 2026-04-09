@@ -1,7 +1,6 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { ModeToggle } from '@/components/shared/ModeToggle'
 import { ASPECT_RATIOS } from '@/lib/data/aspectRatios'
 import type { UnitSystem } from '@/lib/types'
 import ss from './MegapixelVisualizer.module.css'
@@ -13,13 +12,18 @@ interface Props {
   onUnitsChange: (u: UnitSystem) => void
 }
 
+const UNIT_OPTIONS: { value: UnitSystem; labelKey: string }[] = [
+  { value: 'metric',   labelKey: 'unitsMetric' },
+  { value: 'imperial', labelKey: 'unitsImperial' },
+]
+
 export function ImageSettingsPanel({
   aspectId,
   units,
   onAspectChange,
   onUnitsChange,
 }: Props) {
-  const t = useTranslations('toolUI.megapixel-visualizer')
+  const t = useTranslations('toolUI.megapixels-size-visualizer')
 
   return (
     <>
@@ -42,14 +46,19 @@ export function ImageSettingsPanel({
 
       <fieldset className={ss.controlGroup}>
         <legend className={ss.legend}>{t('units')}</legend>
-        <ModeToggle
-          options={[
-            { value: 'metric', label: t('unitsMetric') },
-            { value: 'imperial', label: t('unitsImperial') },
-          ]}
-          value={units}
-          onChange={(v) => onUnitsChange(v as UnitSystem)}
-        />
+        <div className={ss.segmentedGroup}>
+          {UNIT_OPTIONS.map(opt => (
+            <button
+              key={opt.value}
+              type="button"
+              onClick={() => onUnitsChange(opt.value)}
+              className={`${ss.segmentedBtn} ${units === opt.value ? ss.segmentedBtnActive : ''}`}
+              aria-pressed={units === opt.value}
+            >
+              {t(opt.labelKey)}
+            </button>
+          ))}
+        </div>
       </fieldset>
     </>
   )

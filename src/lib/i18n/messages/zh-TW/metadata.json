@@ -86,9 +86,9 @@
       "title": "攝影術語表",
       "description": "收錄超過 50 個攝影術語的可搜尋術語表，包含詳細解釋與相關互動工具連結。"
     },
-    "megapixel-visualizer": {
-      "title": "Megapixel Size Visualizer",
-      "description": "Visualize how megapixels translate to print sizes at 72-300 DPI, across aspect ratios. Compare cameras, file sizes, pixel binning, and crop reach — with a quality-tiered print table."
+    "megapixels-size-visualizer": {
+      "title": "百萬畫素視覺化工具 — 沖印尺寸與檔案大小",
+      "description": "視覺化百萬畫素在 72–300 DPI、不同長寬比下的沖印尺寸。比較相機、檔案大小、畫素合併與裁切餘裕 — 附帶品質分級沖印表格。"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "education": {
-    "megapixel-visualizer": {
+    "megapixels-size-visualizer": {
       "beginner": "Megapixels count the tiny dots your sensor captures — more megapixels means higher resolution, but how that translates to print sharpness, screen size, and file size depends on several factors you can explore here. Most photos viewed on screens need far fewer megapixels than you'd expect; large prints depend on viewing distance, not just DPI.",
       "deeper": {
         "0": {

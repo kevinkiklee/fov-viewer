@@ -86,9 +86,9 @@
       "title": "Valokuvauksen sanasto",
       "description": "Haettava sanasto yli 50 valokuvauksen termille määritelmineen ja linkkeineen interaktiivisiin työkaluihin."
     },
-    "megapixel-visualizer": {
-      "title": "Megapixel Size Visualizer",
-      "description": "Visualize how megapixels translate to print sizes at 72-300 DPI, across aspect ratios. Compare cameras, file sizes, pixel binning, and crop reach — with a quality-tiered print table."
+    "megapixels-size-visualizer": {
+      "title": "Megapikselien visualisointi — tulostuskoot ja tiedostokoot",
+      "description": "Visualisoi, miten megapikselit muuttuvat tulostuskoiksi 72–300 DPI:llä eri kuvasuhteilla. Vertaa kameroita, tiedostokokoja, pikselien yhdistämistä ja rajausaluetta — mukana laatuluokiteltu tulostustaulukko."
     }
   }
 }

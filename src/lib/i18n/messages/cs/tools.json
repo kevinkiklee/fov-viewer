@@ -60,9 +60,9 @@
       "name": "Prohlížeč EXIF",
       "description": "Zobraz EXIF metadata a histogram libovolné fotky — vše běží u tebe v prohlížeči"
     },
-    "megapixel-visualizer": {
-      "name": "Megapixel Size Visualizer",
-      "description": "Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs"
+    "megapixels-size-visualizer": {
+      "name": "Vizualizér megapixelů",
+      "description": "Porovnej megapixely, vizualizuj velikosti tisku a podívej se na velikosti souborů pro různé poměry stran a DPI"
     }
   }
 }

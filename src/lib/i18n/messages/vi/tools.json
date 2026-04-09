@@ -60,9 +60,9 @@
       "name": "Trình xem EXIF",
       "description": "Xem metadata EXIF và biểu đồ histogram cho mọi ảnh — 100% phía máy khách"
     },
-    "megapixel-visualizer": {
-      "name": "Megapixel Size Visualizer",
-      "description": "Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs"
+    "megapixels-size-visualizer": {
+      "name": "Trực quan hóa kích thước Megapixel",
+      "description": "So sánh megapixel, trực quan hóa kích thước in và xem dung lượng file ở các tỷ lệ khung hình và DPI khác nhau"
     }
   }
 }

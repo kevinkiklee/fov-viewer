@@ -1,77 +1,77 @@
 {
   "education": {
-    "megapixel-visualizer": {
-      "beginner": "Megapixels count the tiny dots your sensor captures — more megapixels means higher resolution, but how that translates to print sharpness, screen size, and file size depends on several factors you can explore here. Most photos viewed on screens need far fewer megapixels than you'd expect; large prints depend on viewing distance, not just DPI.",
+    "megapixels-size-visualizer": {
+      "beginner": "메가픽셀은 센서가 캡처하는 작은 점의 수입니다. 메가픽셀이 많을수록 해상도가 높아지지만, 인쇄 선명도, 화면 크기, 파일 크기에 어떤 영향을 미치는지는 여러 요소에 따라 달라지며, 이 도구에서 직접 탐색해 볼 수 있습니다. 화면에서 보는 대부분의 사진은 생각보다 훨씬 적은 메가픽셀로 충분합니다. 대형 인쇄는 DPI보다 관람 거리가 더 중요합니다.",
       "deeper": {
         "0": {
-          "heading": "From pixels to prints",
-          "text": "Total pixels equals megapixels × 1,000,000. Aspect ratio determines how those pixels are split into width and height. Print size in inches equals pixels divided by DPI. A 24 MP photo at 3:2 gives 6000×4000 pixels; at 300 DPI that prints at 20×13 inches."
+          "heading": "픽셀에서 인쇄까지",
+          "text": "총 픽셀 수 = 메가픽셀 × 1,000,000. 종횡비에 따라 이 픽셀이 가로와 세로로 나뉩니다. 인쇄 크기(인치) = 픽셀 ÷ DPI. 24 MP 사진(3:2)은 6000×4000 픽셀이 되고, 300 DPI에서 20×13인치(약 50×33 cm)로 인쇄됩니다."
         },
         "1": {
-          "heading": "The DPI myth and viewing distance",
-          "text": "The human eye resolves about 1 arcminute of angular detail, which translates to approximately 300 PPI at 12 inches, 100 PPI at 36 inches, and 50 PPI at 72 inches. A billboard printed at 30 DPI looks perfectly sharp from across the street — the viewer's distance is doing the work."
+          "heading": "DPI의 오해와 관람 거리",
+          "text": "인간의 눈은 약 1 아크분(arcminute)의 각도 해상력을 가지고 있어서, 30 cm 거리에서 약 300 PPI, 90 cm 거리에서 약 100 PPI, 180 cm 거리에서 약 50 PPI를 인식합니다. 30 DPI로 인쇄된 옥외 광고판도 도로 건너편에서 보면 선명하게 보입니다 — 관람 거리가 그만큼 중요합니다."
         },
         "2": {
-          "heading": "Megapixels vs file size",
-          "text": "Uncompressed 16-bit TIFF is roughly 6 bytes per pixel. 14-bit compressed RAW is about 1.75 bytes per pixel. JPEG at quality 90 is around 0.3 bytes per pixel. That's why a 24 MP RAW file is 40-50 MB while the JPEG version is 7-10 MB."
+          "heading": "메가픽셀 vs 파일 크기",
+          "text": "비압축 16-bit TIFF는 픽셀당 약 6바이트입니다. 14-bit 압축 RAW는 픽셀당 약 1.75바이트, 품질 90의 JPEG은 픽셀당 약 0.3바이트입니다. 그래서 24 MP RAW 파일이 40~50 MB인 반면, 같은 사진의 JPEG은 7~10 MB 정도입니다."
         },
         "3": {
-          "heading": "Phones and pixel binning",
-          "text": "Modern phones advertise 48, 50, 108, or even 200 MP sensors, but output 12 MP photos by default via 4-in-1 or 9-in-1 pixel binning. Binning improves low-light performance by effectively creating larger virtual pixels. Full-resolution modes expose the advertised count at the cost of more noise in dim light."
+          "heading": "스마트폰과 픽셀 비닝",
+          "text": "최신 스마트폰은 48, 50, 108, 심지어 200 MP 센서를 탑재하지만, 기본적으로 4-in-1 또는 9-in-1 픽셀 비닝으로 12 MP 사진을 출력합니다. 비닝은 인접 픽셀을 합쳐 더 큰 가상 픽셀을 만들어 저조도 성능을 높입니다. 풀 해상도 모드를 사용하면 광고된 화소 수를 활용할 수 있지만, 어두운 환경에서는 노이즈가 증가합니다."
         }
       },
       "keyFactors": {
-        "0": { "label": "Pixel dimensions", "description": "Megapixels × aspect ratio → width and height in pixels" },
-        "1": { "label": "Print DPI", "description": "Density of pixels per inch; determines print size and apparent sharpness" },
-        "2": { "label": "Viewing distance", "description": "Human eye acuity means prints viewed far away need much lower DPI" },
-        "3": { "label": "Pixel binning", "description": "Phones advertise higher MP but output fewer via 4-in-1 or 9-in-1 binning" },
-        "4": { "label": "Sensor area", "description": "At the same MP count, larger sensors have larger pixels and better low-light performance — see the sensor-size-comparison tool" }
+        "0": { "label": "픽셀 치수", "description": "메가픽셀 × 종횡비 → 가로 및 세로 픽셀 수" },
+        "1": { "label": "인쇄 DPI", "description": "인치당 픽셀 밀도로, 인쇄 크기와 체감 선명도를 결정합니다" },
+        "2": { "label": "관람 거리", "description": "인간의 눈 해상력으로 인해 멀리서 보는 인쇄물은 훨씬 낮은 DPI로도 충분합니다" },
+        "3": { "label": "픽셀 비닝", "description": "스마트폰이 높은 MP를 표기하지만 4-in-1 또는 9-in-1 비닝으로 실제 출력은 더 적습니다" },
+        "4": { "label": "센서 면적", "description": "같은 MP 수에서 센서가 클수록 개별 픽셀이 커져 저조도 성능이 향상됩니다 — 센서 크기 비교 도구를 참고하세요" }
       },
       "tips": {
-        "0": { "text": "Most web photos are viewed at 2000px or smaller — 12 MP is plenty for screens and Instagram." },
-        "1": { "text": "For wall prints at 6-foot viewing distance, the eye only needs ~60 PPI — a 24 MP photo covers a 60-inch wide print." },
-        "2": { "text": "Your 48 MP phone photo is typically a 12 MP binned output — only the 'full resolution' mode delivers the advertised count." }
+        "0": { "text": "대부분의 웹 사진은 2000px 이하로 표시됩니다 — 화면과 인스타그램에는 12 MP면 충분합니다." },
+        "1": { "text": "2 m 관람 거리의 벽걸이 인쇄에는 눈이 약 60 PPI만 필요합니다 — 24 MP 사진으로 150 cm 폭의 대형 인쇄가 가능합니다." },
+        "2": { "text": "48 MP 스마트폰 사진은 실제로 12 MP 비닝 출력입니다 — '풀 해상도' 모드에서만 광고된 화소 수를 사용할 수 있습니다." }
       },
       "tooltips": {
         "Megapixels": {
-          "term": "Megapixels",
-          "definition": "One megapixel equals 1,000,000 pixels. It counts the total pixels your sensor captures, not the sharpness of the image."
+          "term": "메가픽셀",
+          "definition": "1 메가픽셀은 1,000,000 픽셀입니다. 센서가 캡처하는 총 픽셀 수를 나타내며, 이미지의 선명도와는 다릅니다."
         },
         "Aspect Ratio": {
-          "term": "Aspect Ratio",
-          "definition": "The ratio of width to height. 3:2 is traditional for DSLRs, 4:3 for Micro Four Thirds and phones, 16:9 for video."
+          "term": "종횡비",
+          "definition": "가로 대 세로 비율. 3:2는 DSLR, 4:3은 마이크로 포서드와 스마트폰, 16:9는 영상에서 일반적으로 사용됩니다."
         },
         "DPI": {
           "term": "DPI",
-          "definition": "Dots per inch — the density of pixels when printed. Higher DPI gives smaller but sharper prints from the same pixel count."
+          "definition": "인치당 도트 수 — 인쇄 시 픽셀 밀도. DPI가 높을수록 같은 픽셀 수에서 더 작지만 선명한 인쇄물을 얻습니다."
         },
         "Units": {
-          "term": "Units",
-          "definition": "Switch between metric (mm/cm) and imperial (inches). Defaults to your locale."
+          "term": "단위",
+          "definition": "미터법(mm/cm)과 인치법(inches) 사이를 전환합니다. 기본값은 로케일에 따라 설정됩니다."
         },
         "Viewing Distance": {
-          "term": "Viewing Distance",
-          "definition": "How far the viewer stands from the print. The farther away, the lower the required DPI for perceived sharpness."
+          "term": "관람 거리",
+          "definition": "관람자가 인쇄물에서 얼마나 떨어져 서는지. 멀수록 체감 선명도를 유지하기 위한 DPI가 낮아집니다."
         },
         "Print Size": {
-          "term": "Print Size",
-          "definition": "The physical dimensions of the printed image at a given DPI. Calculated from pixel dimensions divided by DPI."
+          "term": "인쇄 크기",
+          "definition": "특정 DPI에서 인쇄된 이미지의 물리적 크기. 픽셀 치수 ÷ DPI로 계산됩니다."
         },
         "Bit Depth": {
-          "term": "Bit Depth",
-          "definition": "The number of bits per color channel. 8-bit (JPEG) is standard; 14-bit or 16-bit (RAW/TIFF) preserve more tonal range."
+          "term": "비트 심도",
+          "definition": "색상 채널당 비트 수. 8-bit(JPEG)가 표준이며, 14-bit 또는 16-bit(RAW/TIFF)는 더 넓은 톤 범위를 보존합니다."
         },
         "Crop Reach": {
-          "term": "Crop Reach",
-          "definition": "How many megapixels remain after cropping to a smaller sensor area. A 45 MP full-frame image cropped to APS-C is about 20 MP."
+          "term": "크롭 도달 범위",
+          "definition": "더 작은 센서 영역으로 크롭했을 때 남는 메가픽셀 수. 45 MP 풀프레임을 APS-C로 크롭하면 약 20 MP가 됩니다."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "A 24 MP camera shoots in 3:2. What are the approximate pixel dimensions?",
-          "hint": "Total pixels = MP × 1,000,000. Split by aspect ratio.",
-          "successMessage": "Correct! 24 MP at 3:2 is 6000 × 4000 pixels.",
-          "failureMessage": "24 MP means 24 million pixels. At 3:2, that's 6000 × 4000.",
+          "scenario": "24 MP 카메라가 3:2로 촬영합니다. 대략적인 픽셀 치수는?",
+          "hint": "총 픽셀 수 = MP × 1,000,000. 종횡비로 나누세요.",
+          "successMessage": "정답! 24 MP(3:2)는 6000 × 4000 픽셀입니다.",
+          "failureMessage": "24 MP는 2,400만 픽셀입니다. 3:2 비율에서 6000 × 4000이 됩니다.",
           "options": {
             "0": { "label": "6000×4000" },
             "1": { "label": "5657×4243" },
@@ -79,10 +79,10 @@
           }
         },
         "1": {
-          "scenario": "You want to print a 24 MP photo at 300 DPI in a 3:2 aspect ratio. What's the approximate print size?",
-          "hint": "Print size in inches = pixels ÷ DPI.",
-          "successMessage": "Right! 6000 ÷ 300 = 20 in, 4000 ÷ 300 ≈ 13.3 in. So ~20×13 in.",
-          "failureMessage": "At 300 DPI, a 24 MP (6000×4000) photo prints at ~20×13 inches.",
+          "scenario": "24 MP 사진을 3:2 종횡비, 300 DPI로 인쇄하려 합니다. 대략적인 인쇄 크기는?",
+          "hint": "인쇄 크기(인치) = 픽셀 ÷ DPI",
+          "successMessage": "맞습니다! 6000 ÷ 300 = 20 in, 4000 ÷ 300 ≈ 13.3 in. 약 20×13 in입니다.",
+          "failureMessage": "300 DPI에서 24 MP(6000×4000) 사진은 약 20×13인치로 인쇄됩니다.",
           "options": {
             "0": { "label": "20×13 in" },
             "1": { "label": "17×11 in" },
@@ -90,10 +90,10 @@
           }
         },
         "2": {
-          "scenario": "A phone advertises 48 MP. What's the typical output resolution after pixel binning?",
-          "hint": "Pixel binning combines 4 sensor pixels into 1 output pixel.",
-          "successMessage": "Correct! 48 MP ÷ 4 (4-in-1 binning) = 12 MP output.",
-          "failureMessage": "4-in-1 pixel binning reduces 48 MP advertised to 12 MP output.",
+          "scenario": "스마트폰이 48 MP로 광고합니다. 픽셀 비닝 후 실제 출력 해상도는?",
+          "hint": "픽셀 비닝은 센서 픽셀 4개를 출력 픽셀 1개로 합칩니다.",
+          "successMessage": "정답! 48 MP ÷ 4 (4-in-1 비닝) = 12 MP 출력.",
+          "failureMessage": "4-in-1 픽셀 비닝으로 광고된 48 MP는 12 MP로 출력됩니다.",
           "options": {
             "0": { "label": "12 MP" },
             "1": { "label": "24 MP" },
@@ -101,10 +101,10 @@
           }
         },
         "3": {
-          "scenario": "At 6-foot viewing distance, what's the minimum PPI for a print to appear sharp to the human eye?",
-          "hint": "The eye resolves ~1 arcmin at any distance; at 72 inches that maps to ~50-60 PPI.",
-          "successMessage": "Right! At 6 feet the eye only needs ~60 PPI for perceived sharpness.",
-          "failureMessage": "At 6 feet the eye only resolves about 60 PPI. That's why billboards can print at very low DPI.",
+          "scenario": "2 m 관람 거리에서 인쇄물이 선명하게 보이려면 최소 PPI는?",
+          "hint": "인간의 눈은 거리에 상관없이 약 1 아크분을 분해합니다. 180 cm 거리에서 약 50~60 PPI에 해당합니다.",
+          "successMessage": "맞습니다! 2 m 거리에서는 체감 선명도를 위해 약 60 PPI면 충분합니다.",
+          "failureMessage": "2 m 거리에서 눈은 약 60 PPI만 분해합니다. 옥외 광고판이 낮은 DPI로 인쇄되어도 괜찮은 이유입니다.",
           "options": {
             "0": { "label": "~60 PPI" },
             "1": { "label": "~150 PPI" },
@@ -112,10 +112,10 @@
           }
         },
         "4": {
-          "scenario": "You crop a 45 MP full-frame image down to APS-C (1.5× crop factor). What's the effective megapixel count?",
-          "hint": "Area crop factor = linear crop factor squared.",
-          "successMessage": "Correct! 45 ÷ 1.5² = 45 ÷ 2.25 = 20 MP.",
-          "failureMessage": "Cropping by 1.5× linearly means 2.25× area reduction. 45 ÷ 2.25 = 20 MP.",
+          "scenario": "45 MP 풀프레임 이미지를 APS-C(1.5× 크롭 팩터)로 크롭하면 유효 메가픽셀은?",
+          "hint": "면적 크롭 팩터 = 선형 크롭 팩터의 제곱.",
+          "successMessage": "정답! 45 ÷ 1.5² = 45 ÷ 2.25 = 20 MP.",
+          "failureMessage": "1.5× 선형 크롭은 면적으로 2.25배 줄어듭니다. 45 ÷ 2.25 = 20 MP.",
           "options": {
             "0": { "label": "30 MP" },
             "1": { "label": "20 MP" },

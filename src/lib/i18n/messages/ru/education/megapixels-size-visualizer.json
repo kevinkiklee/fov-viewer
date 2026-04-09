@@ -1,77 +1,77 @@
 {
   "education": {
-    "megapixel-visualizer": {
-      "beginner": "Megapixels count the tiny dots your sensor captures — more megapixels means higher resolution, but how that translates to print sharpness, screen size, and file size depends on several factors you can explore here. Most photos viewed on screens need far fewer megapixels than you'd expect; large prints depend on viewing distance, not just DPI.",
+    "megapixels-size-visualizer": {
+      "beginner": "Мегапиксели — это количество точек, которые фиксирует матрица камеры. Больше мегапикселей — выше разрешение, но как это влияет на резкость печати, размер на экране и объём файла — зависит от нескольких факторов, которые можно изучить здесь. Для просмотра на экране большинству фото достаточно гораздо меньше мегапикселей, чем вы думаете, а при крупной печати ключевую роль играет дистанция просмотра, а не только DPI.",
       "deeper": {
         "0": {
-          "heading": "From pixels to prints",
-          "text": "Total pixels equals megapixels × 1,000,000. Aspect ratio determines how those pixels are split into width and height. Print size in inches equals pixels divided by DPI. A 24 MP photo at 3:2 gives 6000×4000 pixels; at 300 DPI that prints at 20×13 inches."
+          "heading": "От пикселей к отпечатку",
+          "text": "Общее число пикселей = мегапиксели × 1 000 000. Соотношение сторон определяет, как пиксели распределяются по ширине и высоте. Размер отпечатка в дюймах = пиксели ÷ DPI. Так, 24 MP при 3:2 — это 6000×4000 пикселей; при 300 DPI получается отпечаток 50×33 см."
         },
         "1": {
-          "heading": "The DPI myth and viewing distance",
-          "text": "The human eye resolves about 1 arcminute of angular detail, which translates to approximately 300 PPI at 12 inches, 100 PPI at 36 inches, and 50 PPI at 72 inches. A billboard printed at 30 DPI looks perfectly sharp from across the street — the viewer's distance is doing the work."
+          "heading": "Миф о DPI и дистанция просмотра",
+          "text": "Человеческий глаз различает примерно 1 угловую минуту. Это примерно 300 PPI с 30 см, 100 PPI с 90 см и 50 PPI с 180 см. Билборд, напечатанный при 30 DPI, выглядит идеально чётко с противоположной стороны улицы — расстояние делает всю работу."
         },
         "2": {
-          "heading": "Megapixels vs file size",
-          "text": "Uncompressed 16-bit TIFF is roughly 6 bytes per pixel. 14-bit compressed RAW is about 1.75 bytes per pixel. JPEG at quality 90 is around 0.3 bytes per pixel. That's why a 24 MP RAW file is 40-50 MB while the JPEG version is 7-10 MB."
+          "heading": "Мегапиксели и размер файла",
+          "text": "Несжатый 16-битный TIFF — примерно 6 байт на пиксель. Сжатый 14-битный RAW — около 1,75 байт на пиксель. JPEG с качеством 90 — порядка 0,3 байт на пиксель. Вот почему RAW-файл на 24 MP весит 40–50 MB, а тот же кадр в JPEG — 7–10 MB."
         },
         "3": {
-          "heading": "Phones and pixel binning",
-          "text": "Modern phones advertise 48, 50, 108, or even 200 MP sensors, but output 12 MP photos by default via 4-in-1 or 9-in-1 pixel binning. Binning improves low-light performance by effectively creating larger virtual pixels. Full-resolution modes expose the advertised count at the cost of more noise in dim light."
+          "heading": "Телефоны и биннинг пикселей",
+          "text": "Современные смартфоны заявляют 48, 50, 108 и даже 200 MP, но по умолчанию выдают фото 12 MP через биннинг 4-в-1 или 9-в-1. Биннинг улучшает съёмку при слабом освещении, фактически создавая более крупные виртуальные пиксели. Режим полного разрешения даёт заявленное число мегапикселей, но с бо́льшим шумом при недостатке света."
         }
       },
       "keyFactors": {
-        "0": { "label": "Pixel dimensions", "description": "Megapixels × aspect ratio → width and height in pixels" },
-        "1": { "label": "Print DPI", "description": "Density of pixels per inch; determines print size and apparent sharpness" },
-        "2": { "label": "Viewing distance", "description": "Human eye acuity means prints viewed far away need much lower DPI" },
-        "3": { "label": "Pixel binning", "description": "Phones advertise higher MP but output fewer via 4-in-1 or 9-in-1 binning" },
-        "4": { "label": "Sensor area", "description": "At the same MP count, larger sensors have larger pixels and better low-light performance — see the sensor-size-comparison tool" }
+        "0": { "label": "Размер в пикселях", "description": "Мегапиксели × соотношение сторон → ширина и высота в пикселях" },
+        "1": { "label": "DPI печати", "description": "Плотность пикселей на дюйм; определяет размер отпечатка и видимую резкость" },
+        "2": { "label": "Дистанция просмотра", "description": "Острота зрения человека означает, что для отпечатков, рассматриваемых издалека, нужен гораздо меньший DPI" },
+        "3": { "label": "Биннинг пикселей", "description": "Телефоны заявляют больше MP, но выдают меньше через биннинг 4-в-1 или 9-в-1" },
+        "4": { "label": "Площадь матрицы", "description": "При одинаковом числе MP бо́льшая матрица имеет более крупные пиксели и лучшую работу при слабом освещении — см. инструмент сравнения размеров матриц" }
       },
       "tips": {
-        "0": { "text": "Most web photos are viewed at 2000px or smaller — 12 MP is plenty for screens and Instagram." },
-        "1": { "text": "For wall prints at 6-foot viewing distance, the eye only needs ~60 PPI — a 24 MP photo covers a 60-inch wide print." },
-        "2": { "text": "Your 48 MP phone photo is typically a 12 MP binned output — only the 'full resolution' mode delivers the advertised count." }
+        "0": { "text": "Большинство фото в вебе просматриваются при 2000 пикселях или меньше — 12 MP более чем достаточно для экранов и Instagram." },
+        "1": { "text": "Для настенных отпечатков при просмотре с 2 метров глазу нужно лишь ~60 PPI — 24 MP хватает на печать шириной 150 см." },
+        "2": { "text": "Фото с вашего 48 MP телефона — обычно 12 MP после биннинга. Полное разрешение доступно только в специальном режиме съёмки." }
       },
       "tooltips": {
         "Megapixels": {
-          "term": "Megapixels",
-          "definition": "One megapixel equals 1,000,000 pixels. It counts the total pixels your sensor captures, not the sharpness of the image."
+          "term": "Мегапиксели",
+          "definition": "Один мегапиксель — это 1 000 000 пикселей. Мегапиксели считают общее количество пикселей матрицы, а не резкость изображения."
         },
         "Aspect Ratio": {
-          "term": "Aspect Ratio",
-          "definition": "The ratio of width to height. 3:2 is traditional for DSLRs, 4:3 for Micro Four Thirds and phones, 16:9 for video."
+          "term": "Соотношение сторон",
+          "definition": "Отношение ширины к высоте. 3:2 — стандарт для зеркалок, 4:3 — для Micro Four Thirds и телефонов, 16:9 — для видео."
         },
         "DPI": {
           "term": "DPI",
-          "definition": "Dots per inch — the density of pixels when printed. Higher DPI gives smaller but sharper prints from the same pixel count."
+          "definition": "Точек на дюйм — плотность пикселей при печати. Выше DPI — меньше, но резче отпечаток при том же количестве пикселей."
         },
         "Units": {
-          "term": "Units",
-          "definition": "Switch between metric (mm/cm) and imperial (inches). Defaults to your locale."
+          "term": "Единицы",
+          "definition": "Переключение между метрической (мм/см) и имперской (дюймы) системами. По умолчанию — по вашей локали."
         },
         "Viewing Distance": {
-          "term": "Viewing Distance",
-          "definition": "How far the viewer stands from the print. The farther away, the lower the required DPI for perceived sharpness."
+          "term": "Дистанция просмотра",
+          "definition": "Расстояние зрителя от отпечатка. Чем дальше — тем ниже DPI, необходимый для ощущения резкости."
         },
         "Print Size": {
-          "term": "Print Size",
-          "definition": "The physical dimensions of the printed image at a given DPI. Calculated from pixel dimensions divided by DPI."
+          "term": "Размер отпечатка",
+          "definition": "Физические размеры напечатанного изображения при заданном DPI. Рассчитывается как размер в пикселях ÷ DPI."
         },
         "Bit Depth": {
-          "term": "Bit Depth",
-          "definition": "The number of bits per color channel. 8-bit (JPEG) is standard; 14-bit or 16-bit (RAW/TIFF) preserve more tonal range."
+          "term": "Битность",
+          "definition": "Число бит на цветовой канал. 8 бит (JPEG) — стандарт; 14 или 16 бит (RAW/TIFF) сохраняют больше тональных переходов."
         },
         "Crop Reach": {
-          "term": "Crop Reach",
-          "definition": "How many megapixels remain after cropping to a smaller sensor area. A 45 MP full-frame image cropped to APS-C is about 20 MP."
+          "term": "Запас кропа",
+          "definition": "Сколько мегапикселей останется после кропа до меньшего формата матрицы. Например, 45 MP полного кадра при кропе до APS-C — это около 20 MP."
         }
       },
       "challenges": {
         "0": {
-          "scenario": "A 24 MP camera shoots in 3:2. What are the approximate pixel dimensions?",
-          "hint": "Total pixels = MP × 1,000,000. Split by aspect ratio.",
-          "successMessage": "Correct! 24 MP at 3:2 is 6000 × 4000 pixels.",
-          "failureMessage": "24 MP means 24 million pixels. At 3:2, that's 6000 × 4000.",
+          "scenario": "Камера 24 MP снимает в формате 3:2. Какие приблизительные размеры кадра в пикселях?",
+          "hint": "Всего пикселей = MP × 1 000 000. Распределите по соотношению сторон.",
+          "successMessage": "Верно! 24 MP при 3:2 — это 6000 × 4000 пикселей.",
+          "failureMessage": "24 MP — это 24 миллиона пикселей. При 3:2 это 6000 × 4000.",
           "options": {
             "0": { "label": "6000×4000" },
             "1": { "label": "5657×4243" },
@@ -79,10 +79,10 @@
           }
         },
         "1": {
-          "scenario": "You want to print a 24 MP photo at 300 DPI in a 3:2 aspect ratio. What's the approximate print size?",
-          "hint": "Print size in inches = pixels ÷ DPI.",
-          "successMessage": "Right! 6000 ÷ 300 = 20 in, 4000 ÷ 300 ≈ 13.3 in. So ~20×13 in.",
-          "failureMessage": "At 300 DPI, a 24 MP (6000×4000) photo prints at ~20×13 inches.",
+          "scenario": "Вы хотите напечатать 24 MP фото при 300 DPI в формате 3:2. Какой примерный размер отпечатка?",
+          "hint": "Размер в дюймах = пиксели ÷ DPI.",
+          "successMessage": "Правильно! 6000 ÷ 300 = 20 дюймов, 4000 ÷ 300 ≈ 13,3 дюйма. Итого ~20×13 дюймов.",
+          "failureMessage": "При 300 DPI фото 24 MP (6000×4000) печатается примерно 20×13 дюймов.",
           "options": {
             "0": { "label": "20×13 in" },
             "1": { "label": "17×11 in" },
@@ -90,10 +90,10 @@
           }
         },
         "2": {
-          "scenario": "A phone advertises 48 MP. What's the typical output resolution after pixel binning?",
-          "hint": "Pixel binning combines 4 sensor pixels into 1 output pixel.",
-          "successMessage": "Correct! 48 MP ÷ 4 (4-in-1 binning) = 12 MP output.",
-          "failureMessage": "4-in-1 pixel binning reduces 48 MP advertised to 12 MP output.",
+          "scenario": "Телефон заявляет 48 MP. Какое типичное выходное разрешение после биннинга пикселей?",
+          "hint": "Биннинг объединяет 4 пикселя матрицы в 1 выходной.",
+          "successMessage": "Верно! 48 MP ÷ 4 (биннинг 4-в-1) = 12 MP.",
+          "failureMessage": "Биннинг 4-в-1 уменьшает заявленные 48 MP до 12 MP на выходе.",
           "options": {
             "0": { "label": "12 MP" },
             "1": { "label": "24 MP" },
@@ -101,10 +101,10 @@
           }
         },
         "3": {
-          "scenario": "At 6-foot viewing distance, what's the minimum PPI for a print to appear sharp to the human eye?",
-          "hint": "The eye resolves ~1 arcmin at any distance; at 72 inches that maps to ~50-60 PPI.",
-          "successMessage": "Right! At 6 feet the eye only needs ~60 PPI for perceived sharpness.",
-          "failureMessage": "At 6 feet the eye only resolves about 60 PPI. That's why billboards can print at very low DPI.",
+          "scenario": "При просмотре с расстояния 2 метра — какой минимальный PPI нужен для ощущения резкости?",
+          "hint": "Глаз различает ~1 угловую минуту; на 2 метрах это ~50–60 PPI.",
+          "successMessage": "Верно! С 2 метров глазу достаточно ~60 PPI для ощущения резкости.",
+          "failureMessage": "С 2 метров глаз различает около 60 PPI. Вот почему билборды печатают с очень низким DPI.",
           "options": {
             "0": { "label": "~60 PPI" },
             "1": { "label": "~150 PPI" },
@@ -112,10 +112,10 @@
           }
         },
         "4": {
-          "scenario": "You crop a 45 MP full-frame image down to APS-C (1.5× crop factor). What's the effective megapixel count?",
-          "hint": "Area crop factor = linear crop factor squared.",
-          "successMessage": "Correct! 45 ÷ 1.5² = 45 ÷ 2.25 = 20 MP.",
-          "failureMessage": "Cropping by 1.5× linearly means 2.25× area reduction. 45 ÷ 2.25 = 20 MP.",
+          "scenario": "Вы кропнули 45 MP полнокадровое фото до APS-C (кроп-фактор 1,5×). Сколько мегапикселей осталось?",
+          "hint": "Кроп по площади = линейный кроп-фактор в квадрате.",
+          "successMessage": "Верно! 45 ÷ 1,5² = 45 ÷ 2,25 = 20 MP.",
+          "failureMessage": "Кроп 1,5× линейно — это уменьшение площади в 2,25 раза. 45 ÷ 2,25 = 20 MP.",
           "options": {
             "0": { "label": "30 MP" },
             "1": { "label": "20 MP" },

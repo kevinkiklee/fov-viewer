@@ -12,7 +12,7 @@ interface Props {
 }
 
 export function EditCustomMegapixelRow({ mp, onSave, onCancel }: Props) {
-  const t = useTranslations('toolUI.megapixel-visualizer')
+  const t = useTranslations('toolUI.megapixels-size-visualizer')
   const [name, setName] = useState(mp.name)
   const [mpValue, setMpValue] = useState(String(mp.mp))
 

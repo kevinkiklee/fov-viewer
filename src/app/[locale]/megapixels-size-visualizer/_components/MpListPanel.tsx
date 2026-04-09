@@ -12,7 +12,7 @@ interface Props {
 }
 
 export function MpListPanel({ visible, customMps, onToggleMp }: Props) {
-  const t = useTranslations('toolUI.megapixel-visualizer')
+  const t = useTranslations('toolUI.megapixels-size-visualizer')
 
   return (
     <>

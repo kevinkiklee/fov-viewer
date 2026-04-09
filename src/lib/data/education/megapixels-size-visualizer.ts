@@ -1,7 +1,7 @@
 import type { ToolEducationSkeleton } from './types'
 
-export const MEGAPIXEL_VISUALIZER_SKELETON: ToolEducationSkeleton = {
-  slug: 'megapixel-visualizer',
+export const MEGAPIXELS_SIZE_VISUALIZER_SKELETON: ToolEducationSkeleton = {
+  slug: 'megapixels-size-visualizer',
   deeperSections: 4,
   keyFactorCount: 5,
   tipCount: 3,

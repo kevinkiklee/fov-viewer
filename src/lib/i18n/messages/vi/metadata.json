@@ -86,9 +86,9 @@
       "title": "Thuật ngữ nhiếp ảnh",
       "description": "Bảng thuật ngữ nhiếp ảnh có thể tìm kiếm với hơn 50 thuật ngữ kèm định nghĩa và liên kết đến các công cụ tương tác."
     },
-    "megapixel-visualizer": {
-      "title": "Megapixel Size Visualizer",
-      "description": "Visualize how megapixels translate to print sizes at 72-300 DPI, across aspect ratios. Compare cameras, file sizes, pixel binning, and crop reach — with a quality-tiered print table."
+    "megapixels-size-visualizer": {
+      "title": "Trực quan hóa kích thước Megapixel — Kích thước in & Dung lượng",
+      "description": "Trực quan hóa cách megapixel chuyển đổi sang kích thước in ở 72-300 DPI với các tỷ lệ khung hình khác nhau. So sánh máy ảnh, dung lượng file, pixel binning và tầm crop — với bảng in phân loại chất lượng."
     }
   }
 }

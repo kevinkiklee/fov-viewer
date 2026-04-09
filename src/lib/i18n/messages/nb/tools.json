@@ -60,9 +60,9 @@
       "name": "EXIF-leser",
       "description": "Se EXIF-metadata og histogram for hvilket som helst bilde — 100 % i nettleseren"
     },
-    "megapixel-visualizer": {
-      "name": "Megapixel Size Visualizer",
-      "description": "Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs"
+    "megapixels-size-visualizer": {
+      "name": "Megapiksel-visualisering",
+      "description": "Sammenlign megapiksler, visualiser utskriftsstørrelser og se filstørrelser på tvers av bildeformater og DPI-verdier"
     }
   }
 }

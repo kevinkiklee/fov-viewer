@@ -10,8 +10,8 @@ export default async function Image({ params }: { params: Promise<{ locale: stri
   let description: string | undefined
   try {
     const messages = (await import(`@/lib/i18n/messages/${locale}/tools.json`)).default
-    name = messages?.tools?.['megapixel-visualizer']?.name
-    description = messages?.tools?.['megapixel-visualizer']?.description
+    name = messages?.tools?.['megapixels-size-visualizer']?.name
+    description = messages?.tools?.['megapixels-size-visualizer']?.description
   } catch { /* fallback in og.tsx */ }
-  return generateOgImage('megapixel-visualizer', { name, description })
+  return generateOgImage('megapixels-size-visualizer', { name, description })
 }

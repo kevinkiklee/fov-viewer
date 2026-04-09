@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test'
 
-const URL = '/en/megapixel-visualizer'
+const URL = '/en/megapixels-size-visualizer'
 
-test.describe('Megapixel Size Visualizer', () => {
+test.describe('Megapixels Size Visualizer', () => {
   test('page renders without errors', async ({ page }) => {
     const errors: string[] = []
     page.on('pageerror', (err) => errors.push(err.message))

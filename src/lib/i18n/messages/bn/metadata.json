@@ -86,9 +86,9 @@
       "title": "ফটোগ্রাফি শব্দকোষ",
       "description": "সংজ্ঞা ও ইন্টারঅ্যাক্টিভ টুলসের লিংকসহ ৫০+ ফটোগ্রাফি শব্দের অনুসন্ধানযোগ্য শব্দকোষ।"
     },
-    "megapixel-visualizer": {
-      "title": "Megapixel Size Visualizer",
-      "description": "Visualize how megapixels translate to print sizes at 72-300 DPI, across aspect ratios. Compare cameras, file sizes, pixel binning, and crop reach — with a quality-tiered print table."
+    "megapixels-size-visualizer": {
+      "title": "মেগাপিক্সেল সাইজ ভিজ্যুয়ালাইজার — প্রিন্ট সাইজ ও ফাইল সাইজ",
+      "description": "72-300 DPI-তে বিভিন্ন অ্যাসপেক্ট রেশিওতে মেগাপিক্সেল থেকে প্রিন্ট সাইজ ভিজ্যুয়ালাইজ করো। ক্যামেরা, ফাইল সাইজ, পিক্সেল বিনিং ও ক্রপ রিচ তুলনা করো — কোয়ালিটি স্তরের প্রিন্ট টেবিলসহ।"
     }
   }
 }

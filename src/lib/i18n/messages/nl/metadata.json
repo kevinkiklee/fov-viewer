@@ -86,9 +86,9 @@
       "title": "Fotografiewoordenlijst",
       "description": "Doorzoekbare woordenlijst met meer dan 50 fotografietermen met definities en links naar interactieve tools."
     },
-    "megapixel-visualizer": {
-      "title": "Megapixel Size Visualizer",
-      "description": "Visualize how megapixels translate to print sizes at 72-300 DPI, across aspect ratios. Compare cameras, file sizes, pixel binning, and crop reach — with a quality-tiered print table."
+    "megapixels-size-visualizer": {
+      "title": "Megapixel-visualisator — Afdruk- en bestandsgroottes",
+      "description": "Visualiseer hoe megapixels zich vertalen naar afdrukformaten bij 72-300 DPI en verschillende beeldverhoudingen. Vergelijk camera's, bestandsgroottes, pixel binning en crop-bereik — met een kwaliteitsgerangschikte afdruktabel."
     }
   }
 }

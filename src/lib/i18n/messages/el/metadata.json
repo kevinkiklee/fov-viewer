@@ -86,9 +86,9 @@
       "title": "Γλωσσάρι φωτογραφίας",
       "description": "Γλωσσάρι με αναζήτηση για πάνω από 50 όρους φωτογραφίας, με ορισμούς και συνδέσμους σε διαδραστικά εργαλεία."
     },
-    "megapixel-visualizer": {
-      "title": "Megapixel Size Visualizer",
-      "description": "Visualize how megapixels translate to print sizes at 72-300 DPI, across aspect ratios. Compare cameras, file sizes, pixel binning, and crop reach — with a quality-tiered print table."
+    "megapixels-size-visualizer": {
+      "title": "Οπτικοποιητής μεγέθους μεγαπίξελ — μεγέθη εκτύπωσης",
+      "description": "Δες πώς τα μεγαπίξελ μεταφράζονται σε μεγέθη εκτύπωσης στα 72–300 DPI, σε διάφορες αναλογίες. Σύγκρινε κάμερες, μεγέθη αρχείων, pixel binning και εύρος περικοπής — με πίνακα εκτύπωσης ανά επίπεδο ποιότητας."
     }
   }
 }

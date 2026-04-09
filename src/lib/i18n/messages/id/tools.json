@@ -60,9 +60,9 @@
       "name": "Penampil EXIF",
       "description": "Lihat metadata EXIF dan histogram untuk foto apa pun — 100% di sisi klien"
     },
-    "megapixel-visualizer": {
-      "name": "Megapixel Size Visualizer",
-      "description": "Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs"
+    "megapixels-size-visualizer": {
+      "name": "Visualisator Ukuran Megapiksel",
+      "description": "Bandingkan megapiksel, visualisasikan ukuran cetak, dan lihat ukuran file di berbagai rasio aspek dan DPI"
     }
   }
 }

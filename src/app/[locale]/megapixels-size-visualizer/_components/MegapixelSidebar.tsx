@@ -13,7 +13,7 @@ const MODE_OPTIONS: { value: DisplayMode; labelKey: string }[] = [
 ]
 
 export function MegapixelSidebar(props: MegapixelControlsProps) {
-  const t = useTranslations('toolUI.megapixel-visualizer')
+  const t = useTranslations('toolUI.megapixels-size-visualizer')
   const {
     visible, customMps, mode,
     aspectId, units,

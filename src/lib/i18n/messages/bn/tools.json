@@ -60,9 +60,9 @@
       "name": "EXIF ভিউয়ার",
       "description": "যেকোনো ছবির EXIF মেটাডেটা ও হিস্টোগ্রাম দেখো — ১০০% ব্রাউজারে"
     },
-    "megapixel-visualizer": {
-      "name": "Megapixel Size Visualizer",
-      "description": "Compare megapixels, visualize print sizes, and see file sizes across aspect ratios and DPIs"
+    "megapixels-size-visualizer": {
+      "name": "মেগাপিক্সেল সাইজ ভিজ্যুয়ালাইজার",
+      "description": "মেগাপিক্সেল তুলনা করো, প্রিন্ট সাইজ ভিজ্যুয়ালাইজ করো এবং বিভিন্ন অ্যাসপেক্ট রেশিও ও DPI-তে ফাইল সাইজ দেখো"
     }
   }
 }
